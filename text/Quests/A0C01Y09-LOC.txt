@@ -48,9 +48,9 @@ QuestComplete:  [1004]
 <ce>아주 잘하셨습니다, %pcn 님. 약속한 골드입니다.
 
 RumorsDuringQuest:  [1005]
-<ce>_questg_ 님이 %g3의 여동생인 _sister_
-<ce>님을 정말 싫어한다는 소문을 들었어요. 그리고 %g
-<ce>님은 곧 결혼을 앞두고 있다더군요.
+<ce>_questg_ 님이 %g3 의 여동생인 _sister_
+<ce>님을 정말 싫어한다는 소문을 들었어요. 그리고
+<ce>%g 님은 곧 결혼을 앞두고 있다더군요.
 
 RumorsPostfailure:  [1006]
 <ce>_sister_ 님이 %g2 님을 독살하려던 시도를
@@ -58,7 +58,7 @@ RumorsPostfailure:  [1006]
 
 RumorsPostsuccess:  [1007]
 <ce>_sister_ 님이 죽은 채로 발견되었답니다! 그것도
-<ce>%g3의 결혼식 전날 밤에 말이에요.
+<ce>%g3 의 결혼식 전날 밤에 말이에요.
 
 QuestorPostsuccess:  [1008]
 <ce>흠. 음, 그렇군요. 제 여동생의 결혼식을 위해 그... 물건을

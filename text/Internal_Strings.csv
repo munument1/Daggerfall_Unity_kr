@@ -20,19 +20,19 @@ youHaveNoArrows,화살이 없습니다.
 oldSaveNoTrade,이전 실내 저장 파일이 불러와졌습니다. 거래 창이 작동하지 않으니 건물을 나갔다가 다시 들어오십시오.
 theBodyHasNoTreasure,시체에 보물이 없습니다.
 youAreTooFarAway,너무 멀리 있습니다...
-youSeeAn,%s의 모습이 보입니다.
-youSeeA,%s의 모습이 보입니다.
+youSeeAn,%s 의 모습이 보입니다.
+youSeeA,%s 의 모습이 보입니다.
 youSeeADeadPerson,죽은 사람이 보입니다.
-youSeeADead,죽은 %s의 모습이 보입니다.
+youSeeADead,죽은 %s 의 모습이 보입니다.
 youCollectArrows,시체에서 화살을 뽑아냈습니다.
 loiterHowManyHours,몇 시간 동안 배회하시겠습니까 :
 restHowManyHours,몇 시간 동안 휴식하시겠습니까 :
-potionRecipeFor,%po의 물약 제조법
+potionRecipeFor,%po 의 물약 제조법
 potionRecipeWeight,무게: %kg 킬로그램
-potionOf,%po의 물약
+potionOf,%po 의 물약
 letterPrefix,편지:
 multipleAssignments,여러 개의 임무를 수행 중입니다...
-youAreEntering,%s에 들어갑니다.
+youAreEntering,%s 에 들어갑니다.
 storeClosed,상점이 닫혔습니다. %d1:00부터 %d2:00까지 영업합니다.
 guildClosed,길드가 닫혔습니다. %d1:00부터 %d2:00까지 영업합니다.
 any,아무 %s
@@ -50,9 +50,9 @@ grab,잡기
 info,정보
 dialogue,대화
 residence,거주지
-youSee,%s의 모습이 보입니다.
+youSee,%s 의 모습이 보입니다.
 theNamedResidence,%s 거주지
-playerResidence,%s의 집
+playerResidence,%s 의 집
 materialIneffective,사용 중인 무기의 재질이 효과가 없습니다.
 successfulBackstab,기습 공격 성공!
 languagePacified,%s 기술을 사용하여 %e 진정에 성공했습니다.
@@ -103,9 +103,9 @@ lockpickChance,"이 자물쇠를 열 수 있을지 의문입니다...
 한심한 수준의 자물쇠가 보입니다...
 이 자물쇠는 당신의 실력에 대한 모욕입니다..."
 youPinchedGoldPiece,금화 1닢을 훔쳤습니다.
-youPinchedGoldPieces,금화 %d닢을 훔쳤습니다.
+youPinchedGoldPieces,금화 %d 닢을 훔쳤습니다.
 youAreNotSuccessful,성공하지 못했습니다...
-daysUntilFreedom,자유까지 %d일 남았습니다.
+daysUntilFreedom,자유까지 %d 일 남았습니다.
 skillImprove,%s 기술이 향상되었습니다.
 mustDistributeBonusPoints,모든 보너스 포인트를 분배해야 합니다.
 enterNewName,새 이름을 입력하십시오 :
@@ -212,7 +212,7 @@ Pickpocketing,소매치기
 Theft,절도
 Treason,반역
 Loan_Default,대출 불이행
-Regular_Punishment_String,벌금 %gtp 골드 및 징역 %dip일
+Regular_Punishment_String,벌금 %gtp 골드 및 징역 %dip 일
 Banishment,추방
 Execution,사형
 cannotChangeTransportationIndoors,실내에서는 이동 수단을 변경할 수 없습니다.
@@ -351,7 +351,7 @@ repWithGroups,"평민
 전체"
 youReceiveGoldPieces,%s 골드를 받았습니다.
 bankPurchasePrice,가격 : %s 골드
-youHaveRentedRoom,%s에서 %d시간 동안 방을 빌렸습니다.
+youHaveRentedRoom,%s 에서 %d 시간 동안 방을 빌렸습니다.
 haveNotRentedRoom,이곳에 방을 빌리지 않았습니다.
 expiredRentedRoom,방 대여 시간이 만료되었습니다.
 tavernAle,에일 (1 골드)
@@ -803,9 +803,9 @@ endedQuest,종료됨
 finishQuestHeader,{2}에서의 {0} {1}:
 quest,퀘스트
 noteHeader,{1}의 {0}:
-houseDeed,당신은 증서를 획득하여 이제 %region의 %town에 있는 집을 소유하게 되었습니다.
+houseDeed,당신은 증서를 획득하여 이제 %region 의 %town 에 있는 집을 소유하게 되었습니다.
 levelProgress,다음 레벨까지의 진행도: {0}%
-readMap,지도를 연구한 끝에 %map의 위치를 발견했습니다.
+readMap,지도를 연구한 끝에 %map 의 위치를 발견했습니다.
 readMapTG,도둑 길드가 %map 물품이라 불리는 보물 창고의 철저히 숨겨진 위치를 알려주었습니다.
 readMapDB,다크 브라더후드가 %map 물품이라 불리는 곳에 위치한 보물이 가득한 무덤의 비밀을 알려주었습니다.
 readMapFail,이 지도가 보여주는 위치는 이미 발견했습니다.
@@ -813,7 +813,7 @@ howManyItems,몇 개의 아이템을 선택하시겠습니까 (최대 {0}개)?
 wagonFullGold,당신의 마차에는 {0} 골드만 실을 수 있습니다.
 itemsIdentified,아이템 식별 완료.
 repairDone,완료
-repairDays,%d일
+repairDays,%d 일
 interruptRepair,수리되기 전에 아이템을 되찾으시겠습니까?
 repairNote,{1}에 수리를 맡긴 {0}.
 doesntNeedIdentify,이것은 식별할 필요가 없습니다.
@@ -827,11 +827,11 @@ cannotCarryAnymore,더 이상 물건을 들 수 없습니다.
 cannotHoldAnymore,마차에 더 이상 물건을 실을 수 없습니다.
 cannotUseThis,이것은 사용할 수 없습니다.
 equippingWeapon,%s 장착 중
-lightDouse,%it의 불을 끕니다.
-lightLight,%it에 불을 붙입니다.
-lightDies,%it의 깜빡임이 멈추고 꺼집니다.
-lightEmpty,%it에 연료가 없습니다.
-lightRefuel,기름 한 병으로 %it에 연료를 채웁니다.
+lightDouse,%it 의 불을 끕니다.
+lightLight,%it 에 불을 붙입니다.
+lightDies,%it 의 깜빡임이 멈추고 꺼집니다.
+lightEmpty,%it 에 연료가 없습니다.
+lightRefuel,기름 한 병으로 %it 에 연료를 채웁니다.
 lightFull,%it 내부가 가득 찼습니다.
 kgSrc,킬로그램
 kgRep,kg
@@ -1104,22 +1104,22 @@ dispelMagicFailed,마법 해제 실패...
 smallerDungeonsChanged,던전 내부에 있는 동안 더 작은 던전으로 변경되었습니다. 플레이어를 던전 출구로 이동합니다.
 youNote,메모:
 customName,사용자 지정 이름:
-StoresA,"%ef의
-%cn의 최고
+StoresA,"%ef 의
+%cn 의 최고
 필수품
 %ef 군주의
 모험가의
 이상한
-%ef의 최상품
+%ef 의 최상품
 할인품
 빈티지
 황제의
 %cn
-%ef의 일반품
+%ef 의 일반품
 우수한
-%ef의 품질
+%ef 의 품질
 일류
-%rt의
+%rt 의
 용사의
 %ef 박사의
 %ef 숙녀의"
@@ -1425,9 +1425,9 @@ seasonNames,"가을
 봄
 여름
 겨울"
-longDateTimeFormatString,"{3}, {6:00} {4}{5}, 3E{7} {0:00}:{1:00}:{2:00}"
-dateTimeFormatString,"{3}{4} {5:00}, 3E{6} {0:00}:{1:00}:{2:00}"
-dateFormatString,{3:00}의 {1}{2} {0}
+longDateTimeFormatString,3E{7}년 {6:00} {4}일 {3} {0:00}:{1:00}:{2:00}
+dateTimeFormatString,3E{6}년 {5:00} {3}일 {0:00}:{1:00}:{2:00}
+dateFormatString,{3:00} {1}일 {0}
 ingredientFormatString,{0} {1}
 longWeaponNameFormatString,{0} {1}
 longArmorNameFormatString,{0} {1}

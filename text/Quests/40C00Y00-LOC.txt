@@ -25,11 +25,11 @@ RefuseQuest:  [1001]
 AcceptQuest:  [1002]
 <ce>그럴 텐가? 그대가 나의 마취제가 되어주겠나? 그대는
 <ce>___mondung_에 있는 _monster_ =monster_의 은신처로
-<ce>가서 %g2를 살해할 텐가? 아, %pcf, 그 일을
-<ce>해준다면 나는 나의 _artifact_ 물품을 그대에게 주겠네.
-<ce>그것은 나의 노예 _qgfriend_에게 맡겨두었지. =monster_
-<ce>개체가 죽은 후에, ___qgfriend_ 방향으로 가서
-<ce>__qgfriend_에 있는 나의 노예를 만나게나. %g2를
+<ce>가서 %g2 를 살해할 텐가? 아, %pcf, 그
+<ce>일을 해준다면 나는 나의 _artifact_ 물품을 그대에게
+<ce>주겠네. 그것은 나의 노예 _qgfriend_에게 맡겨두었지.
+<ce>=monster_ 개체가 죽은 후에, ___qgfriend_ 방향으로 가서
+<ce>__qgfriend_에 있는 나의 노예를 만나게나. %g2 를
 <ce>쉽게 알아볼 수 있을 걸세 - =qgfriend_ 측이지. 그곳에서
 <ce>그대는 _artifact_ 물품을 받게 될 걸세. 이제, 나는
 <ce>오블리비언의 차가운 궁전으로 돌아가야겠네. 소식을
@@ -62,24 +62,24 @@ ___fakedung_ 쪽으로 향하는 걸 봤네. <---> 배신자
 
 RumorsPostfailure:  [1006]
 =monster_의 문제 연루는 알고 있었지, 그렇지 않고서야
-%g가 그렇게 빨리 떠날 리가 없잖아? <--->
+%g 가 그렇게 빨리 떠날 리가 없잖아? <--->
 마법사 길드에서 =monster_ 처리를 길드의 이미지에 해가
 되는 존재로 판단한 모양이야.
 
 RumorsPostsuccess:  [1007]
-음, =monster_에 대해서는 놀랍지도 않군. %g3의
-과거가 %g2를 따라잡은 거지. <--->
+음, =monster_에 대해서는 놀랍지도 않군. %g3 의
+과거가 %g2 를 따라잡은 거지. <--->
 대마도학장조차 =monster_의 죽음을 슬퍼할 것 같지는
 않군.
 
 Message:  1011
-_qgfriend_의 신분은 이곳에서 %di에 있는
+_qgfriend_의 신분은 이곳에서 %di 에 있는
 __qgfriend_의 단골손님 중 한 명이지. <--->
 _qgfriend_의 정체는 __qgfriend_ 배회자인
 =qgfriend_일세. 그곳은 %di 방향이지.
 
 Message:  1012
-_qgfriend_의 신분은 이곳에서 %di에 있는
+_qgfriend_의 신분은 이곳에서 %di 에 있는
 __qgfriend_에서 활동하는 녹터널의 요원일세. <--->
 _qgfriend_의 정체는 밤의 데이드라 여신, 녹터널의 노예 중
 한 명이지.
@@ -121,13 +121,13 @@ Message:  1018
 Message:  1019
 %qdt:
  =monster_의 매수 시도 이후 ___fakedung_에서
- %g를 기다리겠다는 내용의 쪽지를 발견했네.
+ %g 를 기다리겠다는 내용의 쪽지를 발견했네.
 
 Message:  1020
 %qdt:
  이제 나는 오블리비언의 데이드릭 프린스 중 한 분인 녹터널과
  계약을 맺었네. 나는 녹터널의 아티팩트인 _artifact_
- 수령을 대가로 %g3의 요새 ___mondung_에 있는
+ 수령을 대가로 %g3 의 요새 ___mondung_에 있는
  뱀파이어 _monster_ =monster_ 살해를 하기로 했지.
  =1stparton_일 안에 __qgfriend_의 ___qgfriend_에서 그녀의
  요원 _qgfriend_ 접선을 통해 임무를 완수해야 하네, 그렇지
@@ -136,25 +136,25 @@ Message:  1020
 
 Message:  1021
 %qdt:
- =monster_ 개체가 %g3의 생명을 대가로
+ =monster_ 개체가 %g3 의 생명을 대가로
  _bow_ 물품을 제안했고, 나는 거절할 수 없었네.
- %g는 그것이 ___bowdung_ 어딘가에 있다고 했지.
+ %g 는 그것이 ___bowdung_ 어딘가에 있다고 했지.
  이미 녹터널을 배신했으니, 그것을 찾아보는 것도 나쁘지
  않겠어.
 
 Message:  1022
 %qdt:
- =monster_ 개체가 %g3의 생명을 대가로
+ =monster_ 개체가 %g3 의 생명을 대가로
  _ring_ 물품을 제안했고, 나는 거절할 수 없었네.
- %g는 그것이 ___ringdung_ 어딘가에 있다고 했지.
+ %g 는 그것이 ___ringdung_ 어딘가에 있다고 했지.
  이미 녹터널을 배신했으니, 그것을 찾아보는 것도 나쁘지
  않겠어.
 
 Message:  1023
 %qdt:
- =monster_ 개체가 %g3의 생명을 대가로
+ =monster_ 개체가 %g3 의 생명을 대가로
  _staff_ 물품을 제안했고, 나는 거절할 수 없었네.
- %g는 그것이 ___staffdung_ 어딘가에 있다고 했지.
+ %g 는 그것이 ___staffdung_ 어딘가에 있다고 했지.
  이미 녹터널을 배신했으니, 그것을 찾아보는 것도 나쁘지
  않겠어.
 

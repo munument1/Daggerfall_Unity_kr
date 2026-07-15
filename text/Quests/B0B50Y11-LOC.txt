@@ -13,7 +13,7 @@ QRC:
 QuestorOffer:  [1000]
 <ce>저는 _qgiver_입니다. 지역 귀족 중 한 명인
 <ce>_nobleman_께서 방금 버려진 부동산의 권리증을 얻었습니다.
-<ce>너무 늦게도, %g께서는 그곳에 유령이 나온다는
+<ce>너무 늦게도, %g 께서는 그곳에 유령이 나온다는
 <ce>사실을 알게 되었습니다. 누군가 가서 그곳을 떠도는 유령을
 <ce>쫓아내야 합니다. 이 퀘스트를 맡아주시겠습니까?
 
@@ -23,12 +23,12 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>_nobleman_님은 =2dung_일 이내에 재건을 시작하고
-<ce>싶어 합니다. %g께서는 ___dungeon_의 권리증을
+<ce>싶어 합니다. %g 께서는 ___dungeon_의 권리증을
 <ce>가지고 있으며, 그곳에서 영혼을 찾을 수 있을 것입니다.
 
 QuestComplete:  [1004]
 <ce>_nobleman_님께서 매우 기뻐하실 것입니다.
-<ce>%g께서는 심지어 당신의 이름을 딴 분수를
+<ce>%g 께서는 심지어 당신의 이름을 딴 분수를
 <ce>헌정하겠다고 제안했습니다.
 
 RumorsDuringQuest:  [1005]
@@ -36,7 +36,7 @@ _nobleman_님께서 ___dungeon_의 권리증을 받아들이다니
 제정신이 아닙니다. 미쳤거나 멍청한 게 분명합니다.
 
 RumorsPostfailure:  [1006]
-불쌍한 _nobleman_님께서 %kno에게 ___dungeon_
+불쌍한 _nobleman_님께서 %kno 에게 ___dungeon_
 퇴마를 요청했지만, 실패하고 말았습니다.
 
 RumorsPostsuccess:  [1007]
@@ -48,7 +48,7 @@ QuestorPostsuccess:  [1008]
 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-당신은 _nobleman_ 임무를 실패함으로써 %kno님을
+당신은 _nobleman_ 임무를 실패함으로써 %kno 님을
 실망시켰습니다, %pcf. 정말 큰 실망이군요.
 
 

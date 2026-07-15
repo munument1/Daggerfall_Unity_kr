@@ -11,20 +11,20 @@ DisplayName: 영토 전쟁
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%vam의 더 큰 영광을 위해 위험한 임무를 맡아보지
+<ce>%vam 의 더 큰 영광을 위해 위험한 임무를 맡아보지
 <ce>않겠나?
 
 RefuseQuest:  [1001]
-<ce>%vam의 다른 자에게 맡기고 영예를 놓치고 싶은 건가?
-<ce>좋네, 하지만 자네의 유순함에 실망했다는 건 인정하지.
+<ce>%vam 의 다른 자에게 맡기고 영예를 놓치고 싶은
+<ce>건가? 좋네, 하지만 자네의 유순함에 실망했다는 건 인정하지.
 
 AcceptQuest:  [1002]
 <ce>자네는 정말 아름다울 정도로 순종적이군, %pcf. 경쟁
 <ce>뱀파이어가 내 영토로 들어왔다. 자네가 그놈을 죽여야겠어.
 <ce>조심하게, %pcf. 뱀파이어 고대 뱀파이어는, 비록
-<ce>%vam보다 열등한 부족이라 해도 만만한 상대가
+<ce>%vam 보다 열등한 부족이라 해도 만만한 상대가
 <ce>아니니까. 준비 없이 전투에 뛰어들지 마라. 이놈은
-<ce>_vampname_의 이름으로 불리는 불리며, %g3의
+<ce>_vampname_의 이름으로 불리는 불리며, %g3 의
 <ce>새로운 성소는 ___mondung_ 지역이다. 그놈은 희생자의
 <ce>가죽으로 만든 _vampproof_ 측을 자랑하는 것으로 유명하지.
 <ce>그걸 가져오게. =1stparton_일 밤 뒤에 이곳에서 다시 보길
@@ -32,11 +32,11 @@ AcceptQuest:  [1002]
 
 QuestFail:  [1003]
 <ce>혹시 _vampname_의 자살을 바랐나? 그럴 리가 없지. 자네가
-<ce>%g3의 죽음의 대리인이 되어야 한다.
+<ce>%g3 의 죽음의 대리인이 되어야 한다.
 
 QuestComplete:  [1004]
 <ce>돌아왔구나, %pcf, 내 아이야. 흥미롭군. 사실 자네의
-<ce>안위가 꽤 걱정되었거든. 뱀파이어가 %vam의
+<ce>안위가 꽤 걱정되었거든. 뱀파이어가 %vam 의
 <ce>뱀파이어에게 감상적이라니, 정말 말도 안 되는 일이지!
 <ce>%vam 장로들의 축하를 전하마. 그들이 자네에게 이
 <ce>_reward_ 물품을 주라고 하더군. 보수 같은 저속한 것으로
@@ -45,19 +45,19 @@ QuestComplete:  [1004]
 RumorsDuringQuest:  [1005]
 ___mondung_에서 많은 활동이 있었지만, 그곳은 수년간
 버려진 곳이었어. <---> 그 _vampname_의 신분은
-귀족이야. %g가 ___mondung_ 및 %reg
-정리를 맡고 있다고 하더군.
+귀족이야. %g 가 ___mondung_ 및
+%reg 정리를 맡고 있다고 하더군.
 
 RumorsPostfailure:  [1006]
 _vampname_의 이사 소식을 들었어. ___mondung_에서
 떠났다더군. 귀족이 살 곳은 아니지. <---> 이제
 _vampname_의 거처가 ___mondung_에서 옮겨졌으니,
-%g는 궁전에 자주 드나들 거야.
+%g 는 궁전에 자주 드나들 거야.
 
 RumorsPostsuccess:  [1007]
 그 친절한 _vampname_의 정체가 뱀파이어였다니! 전혀
 몰랐어! <---> 그 훌륭한 %ra 용병이
-___mondung_의 뱀파이어를 처치했으니 %god에게
+___mondung_의 뱀파이어를 처치했으니 %god 에게
 감사해야 해.
 
 QuestorPostsuccess:  [1008]
@@ -67,27 +67,27 @@ QuestorPostsuccess:  [1008]
 QuestorPostfailure:  [1009]
 <ce>_vampname_의 밤길은 여전히 계속되는군, %pcf.
 <ce>이번 임무는 용납할 수 없는 방식으로 처리되었어.
-<ce>%vam의 모두가... 자네에게 실망했다네.
+<ce>%vam 의 모두가... 자네에게 실망했다네.
 
 Message:  1020
 친애하는 %pcn,
-
-%vam에게 잠재적인 문제가 생긴 것 같네. 곧
+ 
+%vam 에게 잠재적인 문제가 생긴 것 같네. 곧
 ___vampire_ 쪽으로 오게.
-
+ 
 죽음 속에서,
 <ce>_vampire_
 
 Message:  1011
-%g는 __vampire_에 있는 아주 친절하고 지적인
+%g 는 __vampire_에 있는 아주 친절하고 지적인
 =vampire_ 측이야. <---> _vampire_ 측은 이곳
-%di의 __vampire_에서 찾을 수 있는 그 친절한
+%di 의 __vampire_에서 찾을 수 있는 그 친절한
 =vampire_ 측이지.
 
 Message:  1012
 _vampire_의 혈통은 %vam 뱀파이어다.
 <---> _vampire_의 신분은 더 어린 뱀파이어들을
-가르치는 %vam의 젊은 뱀파이어다.
+가르치는 %vam 의 젊은 뱀파이어다.
 
 Message:  1013
 _vampname_의 _vampproof_ 소재는 기묘한 창백한 가죽으로
@@ -106,8 +106,8 @@ Message:  1022
 
 Message:  1025
 %qdt:
- ___vampire_의 _vampire_의 부름을 받아 %vam
- 업무차 __vampire_ 쪽으로 소환되었다.
+ ___vampire_의 _vampire_의 부름을 받아
+ %vam 업무차 __vampire_ 쪽으로 소환되었다.
 
 Message:  1026
 %qdt:

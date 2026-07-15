@@ -22,7 +22,7 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>좋습니다. 그 배신자는 =monster_의 이름으로 불리는
-<ce>나이트블레이드입니다. 그는 %g3의 실험실인
+<ce>나이트블레이드입니다. 그는 %g3 의 실험실인
 <ce>___mondung_에 은신하고 있습니다. 만약 =1stparton_일 안에
 <ce>_monster_의 피를 묻히고 돌아오지 않는다면, 당신이
 <ce>실패했거나 =monster_ 개체와 한패가 되었다고 간주하고
@@ -57,7 +57,7 @@ _monster_의 체포 소식은 안타깝군요. 그자가 아주
 흥미로운 비밀을 많이 알고 있었다던데.
 
 QuestorPostsuccess:  [1008]
-<ce>당신은 %pcn입니다. 그 =monster_의 처리를 맡아
+<ce>당신은 %pcn 입니다. 그 =monster_의 처리를 맡아
 <ce>고생 많았습니다. 기억하시죠, 그 변절한 마법사 말입니다?
 
 QuestorPostfailure:  [1009]
@@ -68,7 +68,7 @@ Message:  1030
 %qdt:
  ___questgiver_의 줄리아노스 학파에서 제게 신전의 타락한
  _monster_인 =monster_ 처단을 의뢰했습니다.
- %g3의 은신처인 ___mondung_까지 가서 학파로
+ %g3 의 은신처인 ___mondung_까지 가서 학파로
  돌아오기까지 =1stparton_일이 남았습니다.
 
 Message:  1031

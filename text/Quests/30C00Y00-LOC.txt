@@ -31,16 +31,16 @@ AcceptQuest:  [1002]
 <ce>훌륭하군. 그대의 눈빛을 봐야 하는데, %pcf. 그대는
 <ce>강력해질 거야, 눈빛에서 보이거든. 이제, 권력을 향한 그대의
 <ce>디딤돌은 나를 불쾌하게 만든 고대 뱀파이어,
-<ce>=monster_일세. %g의 강력한 적수라는 점을
-<ce>명심하게. 그리고 %g3의 은신처인 ___mondung_의
-<ce>위치는 아주 잘 보호받고 있지. 하지만 그대는 %g2를
-<ce>죽일 수 있고, 또 죽일 걸세. 일단 그렇게 하고 나면, 나의
-<ce>사랑하는 친구, __qgfriend_에 있는 _qgfriend_에게
-<ce>가게나. ___qgfriend_에 있지. _qgfriend_ 은 바쁜
-<ce>사람이니, %g2를 =1stparton_일 이상 기다리게 하지
-<ce>말게. _qgfriend_의 행방은 그대가 아주 기뻐할 만한 선물을
-<ce>가지고 있을 걸세. 잘 가게, %pcf. 우리는 분명 다시
-<ce>만나게 될 거야.
+<ce>=monster_일세. %g 의 강력한 적수라는 점을
+<ce>명심하게. 그리고 %g3 의 은신처인 ___mondung_의
+<ce>위치는 아주 잘 보호받고 있지. 하지만 그대는
+<ce>%g2 를 죽일 수 있고, 또 죽일 걸세. 일단 그렇게
+<ce>하고 나면, 나의 사랑하는 친구, __qgfriend_에 있는
+<ce>_qgfriend_에게 가게나. ___qgfriend_에 있지. _qgfriend_
+<ce>은 바쁜 사람이니, %g2 를 =1stparton_일 이상
+<ce>기다리게 하지 말게. _qgfriend_의 행방은 그대가 아주
+<ce>기뻐할 만한 선물을 가지고 있을 걸세. 잘 가게,
+<ce>%pcf. 우리는 분명 다시 만나게 될 거야.
 
 QuestFail:  [1003]
 <ce>그 고대 뱀파이어가 여전히 살아있는 동안에는, 우리 사이에
@@ -73,9 +73,9 @@ RumorsPostsuccess:  [1007]
 
 Message:  1011
 _qgfriend_의 정체는 __qgfriend_ 너머에 있는
-=qgfriend_인 것 같군. 그래, 이곳의 %di지.
+=qgfriend_인 것 같군. 그래, 이곳의 %di 지.
 <---> _qgfriend_의 정체는 __qgfriend_에 있는
-=qgfriend_의 이름이야. %di의 행방을 찾아보게.
+=qgfriend_의 이름이야. %di 의 행방을 찾아보게.
 
 Message:  1012
 _qgfriend_의 정체는 굶주림의 데이드릭 프린스, 나미라를

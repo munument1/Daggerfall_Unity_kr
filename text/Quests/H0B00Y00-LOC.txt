@@ -61,7 +61,7 @@ QuestorPostsuccess:  [1008]
 
 QuestorPostfailure:  [1009]
 ___mondung_의 영혼은 여전히 저주를 받고 있다, 이 멍청한
-%pcf야!
+%pcf 야!
 
 QuestLogEntry:  [1010]
 %qdt:

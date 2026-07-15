@@ -52,7 +52,7 @@ QuestorPostfailure:  [1009]
 <ce>말았어야지.
 
 QuestLogEntry:  [1010]
-%qdt에, ___qgiver_의 전사 길드에서
+%qdt 에, ___qgiver_의 전사 길드에서
 __house_에 있는 _house_의 괴롭힘을 멈추기 위해
 좀비를 처치하라는 의뢰를 받았다. 완료까지 =2dung_일이
 남았다.
@@ -64,7 +64,7 @@ Message:  1011
 Message:  1080
 <ce>이봐 %pcf, 좀비 사냥이 재미있었다면 이 지도를
 <ce>챙겨서 몬스터가 들끓는 ___newdung_의 명칭으로 불리는
-<ce>구멍으로 가보게. 자네 같은 %ra에게는 휴가나
+<ce>구멍으로 가보게. 자네 같은 %ra 에게는 휴가나
 <ce>다름없을 걸세.
 
 

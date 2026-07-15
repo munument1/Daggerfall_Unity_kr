@@ -21,15 +21,15 @@ QuestComplete:  [1004]
 <ce>닢을 받는 것이 관례다. 여기 네 몫이다.
 
 RumorsDuringQuest:  [1005]
-_npc_의 행보와 %g3의 행보를 조심해야 할
-거야. %g는 적이 너무 많거든.
+_npc_의 행보와 %g3 의 행보를 조심해야 할
+거야. %g 는 적이 너무 많거든.
 
 RumorsPostfailure:  [1006]
 다크 브라더후드를 무시하는 건 현명하지 못한 짓이지.
 현명하지 못할 뿐만 아니라 치명적이라네.
 
 RumorsPostsuccess:  [1007]
-불쌍한 _npc_. %g는 적을 너무 많이 만든
+불쌍한 _npc_. %g 는 적을 너무 많이 만든
 모양이야. 하나라도 너무 많았지. <--->
 _npc_의 술병에 든 와인이 상했나 보군. 와인이란 게
 원래 그렇지.
@@ -85,17 +85,16 @@ Message:  1019
 
 Message:  1020
 %pcn
-
+ 
 다크 브라더후드는 자네를 지켜보고 있었네. 자네는 승인 없이
 여러 번 살인을 저질렀지. 이제 우리와 함께하거나, 우리의
 적으로 간주될 수밖에 없네. ___apo_의 ___apo_
 방향으로 여행하여 _apothecary_ 개체를 만나게. 그가 추가
 지시를 내릴 걸세. 자네에게 =S.01_일의 시간을 주겠네.
-
+ 
 <ce>형제로부터
 
---지역 일관성을 위해 %reg 지역을 ____apo_
-방향으로 변경함
+--changed %reg to ____apo_ here to ensure region consistency
 
 -- Symbols used in the QRC file:
 --

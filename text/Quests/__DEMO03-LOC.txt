@@ -9,9 +9,9 @@ QuestLogEntry: [1010]
  __qgiver_, ___qgiver_에 있는 다크 브라더후드의
  _qgiver_의 지시에 따라 ___mondung_에서 계약을 수행
  중인 경쟁 암살자 =assassin_의 소재를 파악하라고 했다.
- %g가 =assassin_의 고용주에 대한 단서를 찾을 수
- 있다면, 그 자도 처리할 생각이다. 어쨌든 이 피비린내 나는
- 일을 =queston_일 안에 끝내야 한다.
+ %g 가 =assassin_의 고용주에 대한 단서를 찾을
+ 수 있다면, 그 자도 처리할 생각이다. 어쨌든 이 피비린내
+ 나는 일을 =queston_일 안에 끝내야 한다.
 
 Message:	1012
 %qdt:
@@ -27,8 +27,8 @@ Message:	1013
 
 
 Message:	1014
-%qdt에, ___agent_의 _agent_의 만남을
-가졌다. %g는 %g3의 의뢰인이 데이드릭
+%qdt 에, ___agent_의 _agent_의 만남을
+가졌다. %g 는 %g3 의 의뢰인이 데이드릭
 _ingredient_의 행방을 찾고 있다고 말했다. 찾아낸다면
 _artifact_의 보상을 받을 것이다. 데이드릭 _ingredient_의
 위치는 ___dungeon_ 어딘가에 있다. 찾으면 __meetingplace_의
@@ -44,7 +44,7 @@ Message:	1015
 
 Message:	1016
 %qdt ___giver_의 _giver_의 제안에 따라
-%g3의 책인 _book_의 회수를 완료하면
+%g3 의 책인 _book_의 회수를 완료하면
 _gold_ 골드를 주겠다고 했다.
 
 Message:	1017
@@ -58,10 +58,11 @@ Message:	1017
 Message:	1018
 %qdt:
  ___qgiver_에 있는 __qgiver_의 _qgiver_의 전언에
- 따르면 %g3의 신이 분노했다고 한다. %g는
- 속죄 의식을 위해 ___dungeon_에서 얻은 오염되지 않은
- _ingredient_의 확보가 필요하다. =traveltime_일 안에
- __qgiver_에서 _qgiver_의 손에 들어가야 한다.
+ 따르면 %g3 의 신이 분노했다고 한다.
+ %g 는 속죄 의식을 위해 ___dungeon_에서 얻은
+ 오염되지 않은 _ingredient_의 확보가 필요하다.
+ =traveltime_일 안에 __qgiver_에서 _qgiver_의 손에
+ 들어가야 한다.
 
 QBN:
 

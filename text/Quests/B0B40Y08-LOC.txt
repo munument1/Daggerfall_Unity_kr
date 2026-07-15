@@ -14,7 +14,7 @@ QRC:
 QuestorOffer:  [1000]
 <ce>사람들은 저를 _qgiver_ 측이라 부릅니다. 당신이 감당할
 <ce>수 있다면, 제게 임무가 하나 있습니다. 강력한 오크 무리가
-<ce>%reg에서 상단을 습격하고 있습니다. 누군가 그들을
+<ce>%reg 에서 상단을 습격하고 있습니다. 누군가 그들을
 <ce>이끄는 오크 전쟁군주를 처단해야 합니다.
 
 RefuseQuest:  [1001]
@@ -28,8 +28,8 @@ AcceptQuest:  [1002]
 <ce>더럽혀지지 않을 것입니다.
 
 QuestComplete:  [1004]
-<ce>오크의 위협이 %reg에서 사라졌습니다. %pcn
-<ce>만세!
+<ce>오크의 위협이 %reg 에서 사라졌습니다.
+<ce>%pcn 만세!
 
 RumorsDuringQuest:  [1005]
 ___dungeon_의 오크들 때문에 ___qgiver_의 상인들이
@@ -47,12 +47,12 @@ QuestLogEntry:  [1010]
 %qdt:
  ___qgiver_에 있는 ==qgiver_의 _qgiver_ 측에서
  제게 ___dungeon_에 있는 강력한 오크 무리의 _monster_인
- =monster_ 처치 기회를 주었습니다. %reg의 점령을
- 막으려면 =2dung_일이 남았습니다.
+ =monster_ 처치 기회를 주었습니다. %reg 의
+ 점령을 막으려면 =2dung_일이 남았습니다.
 
 Message:  1011
 <ce>=monster_ 처치가 완료되었습니다. 이제 오크들은 더 이상
-<ce>%reg의 위협이 되지 않을 것입니다.
+<ce>%reg 의 위협이 되지 않을 것입니다.
 
 
 -- Symbols used in the QRC file:

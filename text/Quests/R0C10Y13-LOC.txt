@@ -18,13 +18,13 @@ QuestorOffer:  [1000]
 RefuseQuest:  [1001]
 <ce>보상 때문인가, 번거로움 때문인가, 아니면 임무가 하찮아서
 <ce>불만인 건가, %pcf? 상관없네. 정치적 입지를 다지는
-<ce>데 관심 있는 다른 %ra의 인물을 쉽게 찾을 수
+<ce>데 관심 있는 다른 %ra 의 인물을 쉽게 찾을 수
 <ce>있으니까.
 
 AcceptQuest:  [1002]
 <ce>아주 좋네, %pcf. 이제 잘 듣게. 이 _item_의
 <ce>물건을 __palace_의 궁전으로 가져가서 =contact_의
-<ce>인물을 찾게나. 그게 바로 _contact_일세. %g가
+<ce>인물을 찾게나. 그게 바로 _contact_일세. %g 가
 <ce>자네를 기다리고 있을 테니, 아마 수고비도 챙겨줄 걸세. 어서
 <ce>출발하는 게 좋겠군. 나를 실망시키지 말게, %pcf.
 
@@ -53,7 +53,7 @@ RumorsPostsuccess:  [1007]
 _contact_(이) _questgiver_에게서 받은 선물에 아주
 만족하고 있다더군. <---> _questgiver_(이) 그
 _item_(을) _contact_ 쪽으로 가져가서 다행이야.
-%god에게 감사해야지. 자칫하면 험악해질 뻔했어.
+%god 에게 감사해야지. 자칫하면 험악해질 뻔했어.
 
 QuestorPostsuccess:  [1008]
 아, 나의 평화의 사절이 왔군. 잘 지냈나, 친구? <--->
@@ -74,7 +74,7 @@ QuestLogEntry:  [1010]
 
 Message:  1020
 <ce>_questgiver_(이) 나에게 줄 물건을 주지 않았나? 젠장, 만약
-<ce>이게 %g3의 속임수 중 하나라면...
+<ce>이게 %g3 의 속임수 중 하나라면...
 
 
 -- Symbols used in the QRC file:

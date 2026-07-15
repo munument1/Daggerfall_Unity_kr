@@ -33,7 +33,7 @@ RumorsDuringQuest:  [1005]
 <ce>정말 웃기는군요! _qgiver_의
 <ce>_house_에 거대한 벌레들이 들끓고 있다더군요!
 <--->
-<ce>_qgiver_ 님이 안됐군요. %g3의
+<ce>_qgiver_ 님이 안됐군요. %g3 의
 <ce>_house_ 쪽은 독침을 가진 12피트 길이의 쥐들에게
 <ce>거의 점령당했다고 합니다. 놈들은 눈빛 한 번으로 사람을
 <ce>돌로 만들 수 있다더군요!
@@ -45,12 +45,12 @@ RumorsPostfailure:  [1006]
 <ce>괴물들을 소탕하려다 죽었다는군요.
 
 RumorsPostsuccess:  [1007]
-<ce>당신이 _qgiver_ 님의 %g3의 _house_
+<ce>당신이 _qgiver_ 님의 %g3 의 _house_
 <ce>지역을
 <ce>점령한 짐승들을 소탕하도록 도운
 <ce>%ra 님 아니신가요?
 <--->
-<ce>_qgiver_ 님이 %g3의 _house_ 지역을
+<ce>_qgiver_ 님이 %g3 의 _house_ 지역을
 <ce>점령한
 <ce>모든 괴물을 죽여달라고 누군가를 고용했다는
 <ce>이야기를 들었습니다.
@@ -61,7 +61,7 @@ QuestorPostsuccess:  [1008]
 <--->
 <ce>여러분, 주목하세요. 제 친구이자 뛰어난
 <ce>퇴치 전문가인 %pcn 님을 소개합니다.
-<ce>%g는 제 _house_에서 서른여섯 마리의 괴물을
+<ce>%g 는 제 _house_에서 서른여섯 마리의 괴물을
 <ce>몰아냈습니다!
 
 QuestorPostfailure:  [1009]
@@ -75,8 +75,8 @@ QuestorPostfailure:  [1009]
 QuestLogEntry:  [1010]
 %qdt:
  ___qgiver_에서 _qgiver_의 행방을 확인했다.
- %g는 나에게 __house_에 있는 _house_의
- 괴물들을 소탕해달라고 부탁했다. %g는 하루 안에
+ %g 는 나에게 __house_에 있는 _house_의
+ 괴물들을 소탕해달라고 부탁했다. %g 는 하루 안에
  괴물들을 처리해주길 원한다.
 
 Message:  1011

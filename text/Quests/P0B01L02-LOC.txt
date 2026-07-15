@@ -12,7 +12,7 @@ QRC:
 
 QuestorOffer:  [1000]
 친애하는 %pcf,
-
+ 
 당신이 우리 중 하나가 될 결의를 증명하기 위해 수행해야 할
 작은 임무가 있습니다. __itemdung_의 마법사 길드에 진부한
 고서처럼 숨겨져 있는 우리의 _vamprelic_ 존재가 하나
@@ -23,8 +23,8 @@ QuestorOffer:  [1000]
 겁니다. =vampire_의 행방을 찾으십시오. %pcf,
 당신과 더 격식 없이 알게 되기를 기대합니다. 반드시
 오십시오.
-
-<ce>죽음 속에서, %vam의 _vampire_
+ 
+<ce>죽음 속에서, %vam 의 _vampire_
 
 RefuseQuest:  [1001]
 오류: Dagtext 1001 호출됨.
@@ -36,7 +36,7 @@ QuestComplete:  [1004]
 <ce>드디어 만나서 반갑군, %pcf. 물론, 나는
 <ce>_vampire_라네. %vam 부족이 _vamprelic_의
 <ce>인수를 적절하게 진행할 걸세. 이에 대한 보상을 받을 생각
-<ce>따위는 하지 말게. %vam의 섬김만으로도 영광이니까.
+<ce>따위는 하지 말게. %vam 의 섬김만으로도 영광이니까.
 
 RumorsDuringQuest:  [1005]
 마법사 길드에서 쓸모없는 오래된 잡동사니들을 많이 처분하고
@@ -66,14 +66,14 @@ QuestorPostfailure:  [1009]
 
 QuestLogEntry:  [1010]
 그 이름의 불길해 보이는 인물은 이곳 __vampire_의
-%di입니다. <---> _vampire_의 이름을
-지닌 이상한 =vampire_의 존재가 이곳 %di인
+%di 입니다. <---> _vampire_의 이름을
+지닌 이상한 =vampire_의 존재가 이곳 %di 인
 __vampire_에 머물고 있습니다.
 
 Message:  1011
 _vampire_의 지위는 %vam 부족의 일원이자
 젊은이들의 멘토입니다. <---> _vampire_의 신분은
-%vam의 꽤 젊은 일원이지만, 자랑스럽고 강인하기도
+%vam 의 꽤 젊은 일원이지만, 자랑스럽고 강인하기도
 합니다.
 
 Message:  1013
@@ -81,9 +81,10 @@ Message:  1013
 <---> 기이하게 생긴 _vamprelic_입니다.
 
 Message:  1015
-들리는 바로는 %vam의 원로 서클의 _vamprelic_의
-직책이라고 합니다. <---> 그것은 %vam
-마스터들의 특정 비밀 의식에 사용되는 _vamprelic_입니다.
+들리는 바로는 %vam 의 원로 서클의 _vamprelic_의
+직책이라고 합니다. <---> 그것은
+%vam 마스터들의 특정 비밀 의식에 사용되는
+_vamprelic_입니다.
 
 Message:  1020
 %qdt:

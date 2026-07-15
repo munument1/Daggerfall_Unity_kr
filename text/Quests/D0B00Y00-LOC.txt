@@ -76,7 +76,8 @@ Message:  1030
  가서, 용 학살자를 처치하고 =1stparton_일 내에
  ___questgiver_에 있는 성가회로 돌아와야 합니다.
 
--%qdat의 %qdt 수정함
+
+-corrected %qdat to %qdt
 
 
 -- Symbols used in the QRC file:

@@ -52,10 +52,10 @@ RumorsPostsuccess:  [1007]
 발견했다더군.
 
 QuestorPostsuccess:  [1008]
-<ce>이봐! 그 하피들을 처리한 %ra의 귀환이군.
+<ce>이봐! 그 하피들을 처리한 %ra 의 귀환이군.
 
 QuestorPostfailure:  [1009]
-<ce>하피 무리조차 처리하지 못한 %ra의 실력이라니.
+<ce>하피 무리조차 처리하지 못한 %ra 의 실력이라니.
 <ce>한심하군.
 
 Message:  1020
@@ -66,6 +66,9 @@ Message:  1030
  ___questgiver_의 전사 길드가 나를 고용해 ___mondung_에
  들끓는 하피 둥지를 소탕하기로 했다. 보상을 받으려면 최소
  다섯 마리를 죽이고 =1stparton_일 안에 돌아와야 한다.
+
+
+--separated qdt line, added s to Fighter
 
 
 Message:  1080

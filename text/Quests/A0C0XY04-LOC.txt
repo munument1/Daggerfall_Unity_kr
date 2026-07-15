@@ -28,7 +28,7 @@ AcceptQuest:  [1002]
 <ce>필요합니다. 어디에 있는지는 모르지만, 당신이라면 찾을 수
 <ce>있을 겁니다. 데이드릭 _ingredient_의 확보 후, 마을의
 <ce>_meetingplace_ 쪽으로 가져오십시오. 그곳에서 _qgiver_의
-<ce>만남이 가능할 겁니다. 그러면 %g가 당신에게
+<ce>만남이 가능할 겁니다. 그러면 %g 가 당신에게
 <ce>_artifact_의 보상을 줄 것입니다.
 
 RumorsDuringQuest:  [1005]
@@ -39,7 +39,7 @@ RumorsPostfailure:  [1006]
 <ce>악마들로 가득하다던데.
 
 RumorsPostsuccess:  [1007]
-<ce>_qgiver_ 근처에는 가지 마십시오. %g는
+<ce>_qgiver_ 근처에는 가지 마십시오. %g 는
 <ce>거짓말쟁이에 사기꾼이라더군요.
 
 QuestorPostsuccess:  [1008]
@@ -51,8 +51,8 @@ QuestorPostfailure:  [1009]
 <ce>엮이고 싶지 않으니, 저를 내버려 두십시오.
 
 QuestLogEntry:  [1010]
-%qdt에, ___agent_의 _agent_ 측을 만났다.
-%g는 %g3의 의뢰인이 데이드릭
+%qdt 에, ___agent_의 _agent_ 측을 만났다.
+%g 는 %g3 의 의뢰인이 데이드릭
 _ingredient_ 물품을 찾고 있다고 말했다. 그것을 찾으면
 _artifact_ 물품을 받을 것이다. 데이드릭 _ingredient_
 물품은 ___dungeon_ 어딘가에 있다. 찾게 되면
@@ -60,7 +60,7 @@ __meetingplace_의 _meetingplace_에서 _qgiver_ 측을 만나기로
 했다.
 
 Message:  1011
-%qdt에, 데이드릭 _ingredient_의 수호자가
+%qdt 에, 데이드릭 _ingredient_의 수호자가
 _agent_의 의뢰인은 _artifact_조차 가지고 있지
 않다고 말했다. 만약 데이드릭 _ingredient_의 인도를
 요구한다면, 죽음만이 보상으로 돌아올 것이다. 수호자는
@@ -68,14 +68,15 @@ _qgiver_의 무력화가 가능한 마법 토큰을 주었다.
 
 Message:  1012
 <ce>_ingredient_ 수호에 목숨을 걸겠다. _qgiver_의 실체는
-<ce>%g가 생각하는 그런 존재가 아니라는 걸 알아야
-<ce>한다. _artifact_의 힘은 %g가 한 번도 소유해 본
-<ce>적 없는 엄청난 위력을 지닌 잃어버린 유물이다.
-<ce>%g는 %g가 데이드릭 _ingredient_의 획득
-<ce>즉시 너를 죽이려 할 것이다. 이 헛된 공격을 멈춰라. 그러면
-<ce>_qgiver_의 무력화가 가능한 마법의 징표를 주겠다. 만약
-<ce>%g2를 죽인다면, 마법사 길드가 한동안 너를 좋게
-<ce>평가하도록 손을 써주지. 내 제안을 받아들이겠나?
+<ce>%g 가 생각하는 그런 존재가 아니라는 걸 알아야
+<ce>한다. _artifact_의 힘은 %g 가 한 번도 소유해
+<ce>본 적 없는 엄청난 위력을 지닌 잃어버린 유물이다.
+<ce>%g 는 %g 가 데이드릭 _ingredient_의
+<ce>획득 즉시 너를 죽이려 할 것이다. 이 헛된 공격을 멈춰라.
+<ce>그러면 _qgiver_의 무력화가 가능한 마법의 징표를
+<ce>주겠다. 만약 %g2 를 죽인다면, 마법사 길드가
+<ce>한동안 너를 좋게 평가하도록 손을 써주지. 내 제안을
+<ce>받아들이겠나?
 <ce>
 <ce>
 <ce>
@@ -104,8 +105,8 @@ Message:  1014
 
 Message:  1015
 <ce>당신의 정신 속으로 낯선 목소리의 부드러운 속삭임이
-<ce>들려옵니다. "잘했다, %pcn여. _qgiver_, 혹은
-<ce>%g가 %g3의 백성들에게 알려진 대로
+<ce>들려옵니다. "잘했다, %pcn 여. _qgiver_, 혹은
+<ce>%g 가 %g3 의 백성들에게 알려진 대로
 <ce>=monster_의 처단은, 너에게 보상을 받을 자격을 주었다.
 <ce>이제 마법사 길드 구성원들은 이전보다 너를 훨씬 더 신뢰하게
 <ce>될 것이다."

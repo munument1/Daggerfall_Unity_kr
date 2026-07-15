@@ -133,7 +133,9 @@ Content:
 
 [/center]
 
-[/center] *                                *                                  *
+[/center] *
+    *
+    *
 
 [/center]
 

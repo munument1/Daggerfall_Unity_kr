@@ -64,7 +64,7 @@ QuestorPostsuccess:  [1008]
 
 QuestorPostfailure:  [1009]
 <ce>제국 사절들은 반지가 없어진 걸 눈치채지 못했네,
-<ce>%god에게 감사해야겠지. 하지만, 자네는 지금 내가
+<ce>%god 에게 감사해야겠지. 하지만, 자네는 지금 내가
 <ce>가장 좋아하는 사람은 아니야, %pcf.
 
 QuestLogEntry:  [1010]

@@ -38,7 +38,7 @@ RumorsDuringQuest:  [1005]
 해주길 바라고 있죠.
 
 RumorsPostfailure:  [1006]
-%god에게 감사하십시오. 기사단이 아니라, 그
+%god 에게 감사하십시오. 기사단이 아니라, 그
 _monster_의 행방은 떠났습니다. <---> 그
 _monster_의 이동은 당연한 일입니다. 하지만 다시 돌아올
 겁니다.

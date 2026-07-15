@@ -46,7 +46,7 @@ QuestorPostsuccess:  [1008]
 QuestorPostfailure:  [1009]
 <ce>변명하려고 하지 말게, %pcf. 책이 어디 있는지,
 <ce>얼마나 서둘러야 하는지 말해줬는데도 자네는 그러지 않았지.
-<ce>이제 너무 늦었고, 난 피곤하네. 그냥 착한 %ra답게
+<ce>이제 너무 늦었고, 난 피곤하네. 그냥 착한 %ra 답게
 <ce>썩 꺼져주겠나?
 
 QuestLogEntry:  [1010]

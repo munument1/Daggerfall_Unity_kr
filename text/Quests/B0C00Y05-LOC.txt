@@ -40,15 +40,15 @@ QuestComplete:  [1004]
 RumorsDuringQuest:  [1005]
 그 _monster_의 행방은 마치 지옥의 사냥개들이 뒤쫓는
 것처럼 ___mondun_ 쪽으로 도망쳤습니다. <--->
-_qgiver_의 입장에서 %g가 기사단에 저지른
+_qgiver_의 입장에서 %g 가 기사단에 저지른
 짓을 생각하면 =monster_의 처분을 그냥 내버려 둘 수
 없습니다.
 
 RumorsPostfailure:  [1006]
 =monster_의 힘은 _qgiver_의 예상보다 훨씬 강한
 모양입니다. 대단한 탈출이군요. <---> =monster_의
-행보는 북쪽으로 이동했다고 들었지만, %g3의 기억은
-여전히 기사단을 괴롭히고 있습니다.
+행보는 북쪽으로 이동했다고 들었지만, %g3 의
+기억은 여전히 기사단을 괴롭히고 있습니다.
 
 RumorsPostsuccess:  [1007]
 =monster_의 이야기가 그것을 증명하죠. ==qgiver_의

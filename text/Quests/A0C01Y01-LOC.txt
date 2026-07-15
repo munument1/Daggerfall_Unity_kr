@@ -61,9 +61,9 @@ QuestorPostfailure:  [1009]
 <ce>일을 망치셨군요. 당장 제 눈앞에서 사라지세요.
 
 QuestLogEntry:  [1010]
-%qdt에서, ___qgiver_의 _qgiver_께서 저에게
+%qdt 에서, ___qgiver_의 _qgiver_께서 저에게
 %g2 보호를 요청했습니다. _villains_들이 9시에서
-자정 사이에 _qgiverhome_에서 %g2를 공격하겠다고
+자정 사이에 _qgiverhome_에서 %g2 를 공격하겠다고
 협박했습니다.
 
 Message:  1011

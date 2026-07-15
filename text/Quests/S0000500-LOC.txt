@@ -26,7 +26,7 @@ RumorsPostsuccess:  [1007]
 Message:  1020
 %qdt:
  _contact1_의 이름으로 불리는 자에게서 편지를 받았다.
- __tavern_의 _tavern_에서 %g2를 만나달라는
+ __tavern_의 _tavern_에서 %g2 를 만나달라는
  내용이었다. ____tavern_, 센티넬의 _traitor_ 관련
  일이라고 한다.
 
@@ -46,12 +46,12 @@ Message:  1022
 
 Message:  1030
 친애하는 %pcn 님께:
-
+ 
 _traitor_ 님의 친구라면, 부디 __tavern_의
 _tavern_에서 ___tavern_ 님을 가능한 한 빨리 만나
 주십시오. 생사가 걸린 문제입니다! =firsttimer_일 이내로
 저를 찾아와 주십시오!
-
+ 
 <ce>_contact1_
 
 Message:  1040
@@ -73,8 +73,8 @@ Message:  1041
 <ce>않소? 추격자들을 따돌리면, ____safehouse_의
 <ce>__safehouse_에게 나를 데려다주시오. 그곳 _safehouse_에
 <ce>센티넬 정복을 다시 조직하도록 도와줄 친구가 있소.
-<ce>앞장서시오, 훌륭한 %pcn여, 어서 떠납시다! 연락책을
-<ce>만나기까지 =escapetime_일밖에 남지 않았소.
+<ce>앞장서시오, 훌륭한 %pcn 여, 어서 떠납시다!
+<ce>연락책을 만나기까지 =escapetime_일밖에 남지 않았소.
 
 Message:  1050
 <ce>경보를 울려라! _traitor_의 탈출이 확인되었다!

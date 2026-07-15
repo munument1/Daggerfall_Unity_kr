@@ -18,22 +18,23 @@ QuestorOffer:  [1000]
 <ce>있습니까?
 
 RefuseQuest:  [1001]
-<ce>싫다고요? %god께서 나를 한가한 %ra의
+<ce>싫다고요? %god 께서 나를 한가한 %ra 의
 <ce>손길로부터 구원하시길.
 
 AcceptQuest:  [1002]
 <ce>운이 좋군요. 자, 이 _item_ 물품을 가지고
 <ce>___qgfriend_의 __qgfriend_의 명칭으로 불리는 곳으로
 <ce>가십시오. 거기에 _qgfriend_의 이름으로 불리는 이상한
-<ce>=qgfriend_ 측이 있을 겁니다. %g2에게
-<ce>_item_ 물품을 주면 %g의가 당신에게
+<ce>=qgfriend_ 측이 있을 겁니다. %g2 에게
+<ce>_item_ 물품을 주면 %g 의가 당신에게
 <ce>_reward_ 골드를 줄 겁니다. 아, 그리고 =queston_일
 <ce>안에 도착해야 합니다. 문제없을 겁니다. 당신은 다리가
 <ce>튼튼한 젊은이니까요. 자, 어서 가보세요.
 
 QuestFail:  [1003]
 <ce>당신은 %pcf 님과 똑같이 생겼지만, 그럴 리가 없지.
-<ce>%pcn의가 ___qgfriend_ 방향으로 가는 길에 있으니까.
+<ce>%pcn 의가 ___qgfriend_ 방향으로 가는 길에
+<ce>있으니까.
 
 QuestComplete:  [1004]
 <ce>_questgiver_의 심부름꾼으로 고용되었군요? 아, 내가
@@ -54,7 +55,7 @@ RumorsPostsuccess:  [1007]
 떠났습니다.
 <--->
 <ce>_questgiver_의 _item_ 절도 여부 혹은
-<ce>%g의 소행일 가능성이 높군요.
+<ce>%g 의 소행일 가능성이 높군요.
 
 QuestorPostsuccess:  [1008]
 그 튼튼한 젊은 다리를 보니 누군지 알겠군요. 잘 지냈나,
@@ -67,7 +68,7 @@ QuestorPostfailure:  [1009]
 <ce>없네.
 
 Message:  1011
-%g는 도벽 기질이 있긴 하지만 아주 존경받는
+%g 는 도벽 기질이 있긴 하지만 아주 존경받는
 통치자지. <---> 내가 듣기로는 거물급 보석
 밀수꾼이라더군.
 

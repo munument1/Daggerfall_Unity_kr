@@ -104,6 +104,7 @@ Message:  1051
 Message:  1060
 <ce>데이드라 =daedra_의 오블리비언 차원 추방이
 <ce>완료되었습니다.
+   
 
 
 -- Symbols used in the QRC file:

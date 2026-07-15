@@ -22,7 +22,7 @@ RefuseQuest:  [1001]
 <ce>%ra. 정말 실망스럽군.
 
 AcceptQuest:  [1002]
-<ce>나를 도와주겠나? %god의 가호가 있기를. 자,
+<ce>나를 도와주겠나? %god 의 가호가 있기를. 자,
 <ce>서두르게. 이 _item_ 물품을 가지고 ___contact_에
 <ce>있는 __contact_ 방향으로 가게. _contact_의 이름으로
 <ce>불리는 =contact_ 측을 찾게나. _item_ 물품을 다른
@@ -47,7 +47,7 @@ _item_의 행방은 완전히 미스터리야. 다들 궁금해하고
 
 RumorsPostfailure:  [1006]
 _questgiver_에게는 정말 창피한 일이군. 도난당한
-_item_의 행방이 %g2에게까지 추적되었으니
+_item_의 행방이 %g2 에게까지 추적되었으니
 말이야. <---> 듣자 하니 _questgiver_의 _item_
 밀수 시도가 ___contact_ 쪽으로 향했다더군.
 
@@ -69,7 +69,7 @@ QuestorPostfailure:  [1009]
 Message:  1011
 _questgiver_의 지위는 소규모 통치자지만, 거물급
 _item_ 밀수꾼이지. <---> _questgiver_의
-사업은 %g3의 머리끝까지 _item_ 밀수 사업에
+사업은 %g3 의 머리끝까지 _item_ 밀수 사업에
 빠져 있어.
 
 Message:  1012

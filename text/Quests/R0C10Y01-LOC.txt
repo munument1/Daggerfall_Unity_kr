@@ -57,7 +57,7 @@ QuestorPostfailure:  [1009]
 <ce>그 엉망이 된 밀수 사건에 대해 사과하러 온 모양이군.
 <ce>사과는 받아줄 수 없네.
 <--->
-<ce>간단한 배달조차 완수하지 못한 %ra의 장본인이
+<ce>간단한 배달조차 완수하지 못한 %ra 의 장본인이
 <ce>바로 당신이지? 왜 내가 당신에게 시간을 낭비해야 하지?
 
 QuestLogEntry:  [1010]
@@ -65,7 +65,7 @@ QuestLogEntry:  [1010]
  _questgiver_의 지시로 ___contact_의 _contact_의
  이름으로 불리는 연락책에게 _item_ 물품을 전달하러
  간다. _item_ 물품을 =queston_일 안에
- __contact_에 있는 %g2에게 전달하지 못하면
+ __contact_에 있는 %g2 에게 전달하지 못하면
  보상은 몰수된다.
 
 Message:  1020

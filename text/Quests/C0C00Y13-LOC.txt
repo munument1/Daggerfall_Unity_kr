@@ -35,7 +35,7 @@ RumorsDuringQuest:  [1005]
 그 _religitem_ 물건을 두고 두 신전이 경쟁 중이라네.
 
 RumorsPostfailure:  [1006]
-_priest_ 측은 %g3의 _religitem_ 물품을 얻지
+_priest_ 측은 %g3 의 _religitem_ 물품을 얻지
 못했고, _qgiver_ 측은 분노하고 있네.
 
 RumorsPostsuccess:  [1007]
@@ -43,7 +43,7 @@ RumorsPostsuccess:  [1007]
 지역은 그 _religitem_ 물품을 손에 넣었네.
 
 QuestorPostsuccess:  [1008]
-%god, 축복이 있기를. 물론 %pcf에 관해서는
+%god, 축복이 있기를. 물론 %pcf 에 관해서는
 기억하고말고. 잘 지냈나, 나의 아이야?
 
 QuestorPostfailure:  [1009]

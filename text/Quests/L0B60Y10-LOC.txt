@@ -12,9 +12,9 @@ DisplayName: 베테랑
 QRC:
 
 QuestorOffer:  [1000]
-<ce>이건 꽤 힘든 일이 될 거야, 자네 %pcf에게도 말이지.
-<ce>%reg에서 가장 뛰어난 전사 중 하나거든. 정말 이
-<ce>일을 맡겠나?
+<ce>이건 꽤 힘든 일이 될 거야, 자네 %pcf 에게도
+<ce>말이지. %reg 에서 가장 뛰어난 전사 중 하나거든.
+<ce>정말 이 일을 맡겠나?
 
 RefuseQuest:  [1001]
 <ce>조금도 비난하지 않네. 너무 위험한 일일 수도 있으니까.
@@ -49,7 +49,7 @@ RumorsPostsuccess:  [1007]
 
 QuestorPostsuccess:  [1008]
 그 전쟁 영웅과의 전투에 대한 이야기가 아직도
-%pcn에 퍼지고 있네.
+%pcn 에 퍼지고 있네.
 
 QuestorPostfailure:  [1009]
 자네는 전쟁 영웅을 암살하겠다는 계약을 완수하지 못했네.
