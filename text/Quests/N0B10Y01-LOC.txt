@@ -6,93 +6,159 @@
 -- QuestId: 1
 Messages: 21
 Quest: N0B10Y01
-DisplayName: 아크로나크 사냥
+DisplayName: 아트로나크 사냥
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>좀 부끄러운일이지만, 길드 연구소 한곳에서
-<ce>실험물이 완전히 완성되기 전에 탈출했습니다.
-<ce>더 문제인것은, 식사를 주기전에 탈출해서
-<ce>성질이 절대로 좋은 상태가 아닐거라는 점입니다.
-<ce>그나마 다행인 것은 소모해도 되는 대상이라는 것이죠.
-<ce>실험물은 평범한 아크로나크 입니다.
-<ce>하지만 광포해진 아크로나크가 난장판을 벌여서
-<ce>길드의 명성을 망치면 안되겠지요.
-<ce>이 안탙까운 짐승을 추적해서 생명활동을 끝내주신다면
-<ce>얼마면 될까, 그, _reward_ 골드 드리겠습니다.
-<ce>관심 있으십니까?
-                                     <--->
-<ce>그게, 최근에 꽤 흥미로운 일이 흥미롭지 않은 오래된 장소에서
-<ce>생겼습니다. 일상적인 아크로나크 수업에서 수업 실험 대상이...
-<ce>음, 자세한건 중요하지 않습니다. 중요한건 %reg 에
-<ce>아크로나크 하나가 풀려났다는 것이고,
-<ce>이 문제가 길드의 관리 책임이 된다는 것입니다.
-<ce>당신이라면 이 문제를 최소한의 대외적인 손해만
-<ce>내고 해결 할 수 있겠지요, 그렇죠?
+<ce>창피한 이야기지만, 우리 실험체 중 하나가
+<ce>실험실을 조기에 탈출했습니다. 더 나쁜 건,
+<ce>먹이를 먹기도 전에 떠나버려서 분명히
+<ce>성질이 사나워졌을 겁니다. 다행히도, 그건 흔한
+<ce>아트로나크라는
+<ce>일회용 생물입니다. 반면에,
+<ce>미쳐 날뛰는 아트로나크의 난동으로 우리의
+<ce>명성이 더럽혀지는 것은 결코 원치 않습니다. 만약 당신이
+<ce>그 가련한 짐승을 추적하여 그 짐승과,
+<ce>우리 모두의 고통을 끝내주신다면, 보상으로 _reward_
+<ce>골드를 드릴 수 있습니다. 관심 있으신가요?
+<--->
+<ce>사실, 이 지루한 곳에 최근 약간의 소동이 있었습니다.
+<ce>평범한 아트로나크 수업 중에, 실험체 중 하나가
+<ce>... 뭐, 자세한 내용은 중요하지 않습니다. 중요한 건,
+<ce>%reg에
+<ce>길드와 우리의 관리 소홀로 인해 풀려난 아트로나크가 있다는
+<ce>것입니다.
+<ce>당신이라면 이 일을 최소한의 망신으로
+<ce>끝낼 수 있는 분 같군요, 그렇죠?
 
 RefuseQuest:  [1001]
-<ce>안타깝군요 정말.
-<ce>길드를 도와줄 열의가 있는 다른 모험가가 있으면 좋겠군요.
+<ce>정말 안타깝군요. 뭐, 다른 열정적인 모험가가 우리를
+<ce>도와주겠죠.
 
 AcceptQuest:  [1002]
-<ce>해주시는 겁니까? 세상에, 정말 다행이군요.
-<ce>이 아크로나크는 ___mondung_에
-<ce>자리를 잡은 것 같습니다. 더러운 곳이죠.
-<ce>길드의 명예가 걸렸으니, 빠르고 조용하게
-<ce>처리하는 것이 중요합니다.
-<ce>=1stparton_일 내에 아크로나크를 처리하지 못하면
-<ce>다시 돌아올 필요는 없습니다.
-<ce>좋은 하루 되시길.
+<ce>정말입니까? %oth, 정말 다행이군요. 그 비참한
+<ce>생물은 ___mondung_의 명칭으로 불리는 불리는 불쾌한 구멍에
+<ce>자리를 잡은 모양입니다. 우리의 명성을 위해서라도 이 일은
+<ce>빠르고 조용하게 처리되어야 합니다. 그러니 만약
+<ce>=1stparton_ 일 이내에 아트로나크를 처치하지 못하신다면,
+<ce>보상을 받으러 다시 오지 마십시오. 안녕히 가십시오.
 
 QuestFail:  [1003]
-<ce>제가 멍청한 모자를 쓰고 바보 같이 웃는 것 같습니까?
-<ce>아니지요? 그럼 왜 저를 바보로 생각 하시는 겁니까?
-<ce>아크로나크가 살아있는건 확실히 알고 있습니다.
-<ce>다음부터는 완수할 의지나 능력이 없으면 일을 맡지 마십시오.
+<ce>제가 바보 같은 모자를 쓰고 멍청하게 웃고 있나요?
+<ce>아니라고요? 그런데 왜 저를 바보 취급하시죠? 저는
+<ce>아트로나크가 여전히 살아있다는 것을 잘 알고 있습니다.
+<ce>앞으로는, 당신이 수행할 수 없거나 의지가 없는 일은
+<ce>요청하지 마십시오.
 
 QuestComplete:  [1004]
-<ce>사냥꾼이 돌아오셨군요!
-<ce>길드가 아크로나크 사태로 큰 망신을
-<ce>겪을걸 빠른 행동으로 구해주셨습니다.
-<ce>여러모로 최고의 일처리입니다.
-<ce>이 금화와 제 감사를 받으시지요.
+<ce>사냥꾼이 돌아왔군요! 당신의 신속한 아트로나크 위기 해결
+<ce>덕분에 우리는 상당한 곤경을 면했습니다. 정말 훌륭한
+<ce>일처리였습니다. 골드와 제 감사를 받아주십시오.
 
 RumorsDuringQuest:  [1005]
-몇일전 밤에 메이지 길드 연구실에서 뭔가 탈출했다고 들었습니다.
-<--->
-%oth, 어둠 속에서 뭔가 숨어 움직이는 걸 봤습니다.
+며칠 전 마법사 길드 실험실에서 무언가 탈출했다는 소리를
+들었습니다. <---> %oth, 그때쯤 그림자
+속에서 무언가 기어 다니는 형체를 보았습니다.
 
 RumorsPostfailure:  [1006]
-음, 메이지 길드 보안에 작은 문제가 있었다고 합니다.
-<--->
-듣자하니 메이지 길드가 또 연구물을 분실했다고 합니다.
+음, 마법사 길드 실험실 보안과 관련된 작은 스캔들이
+있습니다. <---> 마법사 길드가 또 다른 실험체를
+잃어버린 모양입니다.
 
 RumorsPostsuccess:  [1007]
-%t 의 형제 영혼으로 아크로나크를 제조했다는걸 알아냈다고 들었습니다.
-<--->
-아크로나크가 죽어서 다들 안심하고 있습니다.
-<--->
-다들 그 %ra 인지가 잡았다는 아크로나크 이야기를 하더군요.
+그 아트로나크가 %t의 형제의 영혼으로
+만들어졌다는 사실을 알아냈다고 하더군요! <---> 그
+아트로나크가 죽었다는 사실에 안도하는 사람들이 많습니다.
+<---> 다들 %ra의 사냥 대상인 그
+아트로나크에 대해 이야기하고 있나요?
 
 QuestorPostsuccess:  [1008]
-아크로나크 사건을 잊은게 아닌지 걱정하는 거라면 그럴 필요 없습니다.
+아트로나크 위기에 대해서는 잊지 않고 있습니다, 그게
+걱정되시는 거라면요.
 
 QuestorPostfailure:  [1009]
-<ce>아크로나크를 처리하라고 했더니 실패했군요.
-<ce>변명은 필요 없습니다, %pcf.
-<ce>결과를 곱씹게 절 놔두시죠.
+<ce>당신에게 아트로나크를 막으라고 보냈는데 실패했군요. 변명은
+<ce>필요 없습니다, %pcf. 그냥 저를 우울함 속에 내버려
+<ce>두십시오.
 
 QuestLogEntry:  [1010]
-<ce>"메이지 길드 실험실로
-<ce>돌아가느니 차라리 죽겠다."
-<ce>아크로나크의 눈에서 생기가 사라졌다.
+<ce>"마법사 길드 실험실로 돌아가느니 차라리 죽는 게 낫다."
+<ce>아트로나크의 눈에서 생기가 사라진다.
 
 Message:  1020
 %qdt:
- ___questgiver_ 메이지 길드 실험실에서
- 탈출한 아크로나크를 찾아달라는 의뢰를 받았다.
- ___mondung_에 자리를 잡고 있으며
- =1stparton_일내로 괴물을 죽이고
- ___questgiver_에 돌아가야 한다.
- 
+ ___questgiver_의 마법사 길드에서 실험실을 탈출한
+ 아트로나크를 찾아달라는 의뢰를 받았다. 녀석은
+ ___mondung_에 은신 중이다. =1stparton_일 내로 그
+ 생명체를 처치하고 ___questgiver_ 쪽으로 돌아가야 한다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 2 times.
+--              %pcf occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--              %reg occurs 1 time.
+--                %t occurs 2 times.
+--       =1stparton_ occurs 4 times.
+--       ___mondung_ occurs 2 times.
+--    ___questgiver_ occurs 4 times.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Iron_atronach
+Foe _F.01_ is Ice_atronach
+Foe _F.02_ is Fire_atronach
+Foe _F.03_ is Flesh_atronach
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	pick one of _fire_ _flesh_ _ice_ _iron_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+variable _queston_
+_mondead_ task:
+	killed 1 _F.02_ saying 1010 
+	killed 1 _F.03_ saying 1010 
+	killed 1 _F.01_ saying 1010 
+	killed 1 _F.00_ saying 1010 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_fire_ task:
+	place foe _F.02_ at _mondung_ 
+
+_iron_ task:
+	place foe _F.00_ at _mondung_ 
+
+_flesh_ task:
+	place foe _F.03_ at _mondung_ 
+
+_ice_ task:
+	place foe _F.01_ at _mondung_ 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 

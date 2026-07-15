@@ -1,0 +1,222 @@
+-- Quest: C:\QUESTS\WORKING\A0C01Y06.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 01
+-- QuestId: 6
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 36
+Quest: A0C01Y06
+DisplayName: 예기치 못한 여정 2부
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 이름은 _qgiver_입니다.
+<ce>제 주인께서 위험한 임무를 수행할 용감한
+<ce>모험가를 찾아달라고 부탁하셨습니다. 더 자세한 내용은
+<ce>말씀드릴 수 없지만, 성공하는 사람에게는 _gold_
+<ce>골드를
+<ce>지불할 가치가 있는 일입니다. 관심 있으십니까?
+<--->
+<ce>저를 _qgiver_의 이름으로 불리는 부르세요. 저는
+<ce>흥미로운 일거리를
+<ce>가진 사람을 알고 있습니다.
+<ce>그 일을 할 수 있는 사람에게는 _gold_ 골드가
+<ce>주어질 겁니다.
+
+RefuseQuest:  [1001]
+<ce>주인의 퀘스트를 완수할 영웅을 다른 곳에서 찾아보겠습니다.
+
+AcceptQuest:  [1002]
+<ce>_meetingplace_ 가십시오. 그곳에서
+<ce>제 주인 _master_ 찾으실 수 있을 겁니다.
+<--->
+<ce>_meetingplace_에서 _master_ 찾으십시오.
+<ce>그러면 %g 당신에게 일거리를 줄 것입니다.
+
+QuestComplete:  [1004]
+<ce>=mmaster_ 죽었습니다. 당신의 적들은 다시는 그런 배신을
+<ce>꾀하기 전에 두 번 생각할 것입니다.
+
+RumorsDuringQuest:  [1005]
+<ce>오늘 마을에서 오크가 목격되었다는 소문을 들었어요. 그들이
+<ce>그 오크를 잡았으면 좋겠네요.
+
+RumorsPostfailure:  [1006]
+<ce>던전 바닥으로 순간이동된 %ra에 대한 이야기
+<ce>들으셨나요? 정말 웃기지 않나요! 아. 죄송합니다.
+
+RumorsPostsuccess:  [1007]
+<ce>이봐요! 당신이 그 오크 주술사를 죽인 그 %ra 맞죠?
+<ce>잘하셨어요!
+
+QuestorPostsuccess:  [1008]
+<ce>좋아요, 알겠어요. 오크 주술사 사건은 당신 덕분에
+<ce>해결했으니 신세를 졌군요. 그놈은 마법으로 평범한 사람처럼
+<ce>보이게 변장했었죠.
+
+QuestorPostfailure:  [1009]
+<ce>그냥 저리 가세요! 누구를 다치게 하려던 건 아니었어요. 그
+<ce>오크는 마법으로 평범한 사람처럼 보이게 변장했었단
+<ce>말입니다. 그놈이 당신을 던전으로 순간이동시킨 건 제 잘못이
+<ce>아니에요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 저는 ___qgiver_에서 _qgiver_ 측을 만났고,
+ %g3의(의) 주인인 _master_ 측이 알려지지
+ 않았지만 분명히 위험한 임무에 _gold_ 골드를 지불할
+ 것이라는 이야기를 들었습니다. %g1 개체는
+ __meetingplace_의(의) _meetingplace_에 머물고 있습니다.
+
+Message:  1011
+%qdt:
+ _master_ 쪽으로 변장한 배신자 =mmaster_ 측이 저를
+ ___dungeon_ 방향으로 순간이동시켰습니다. 만약 제가
+ 빠져나간다면, %g는 우리의 다음 만남을 후회하게
+ 될 것입니다.
+
+Message:  1012
+<ce>내가 진짜 누구인지 똑똑히 알아두어라. 나는 너의
+<ce>철천지원수, =mmaster_ 측이다! 너를 위해 특별한 운명을
+<ce>준비해 두었다.
+
+Message:  1013
+<ce>저를 해치지 마세요, %pcn 님! 저는 _master_
+<ce>님이 무슨 계획을 세우고 있었는지 몰랐어요. 맹세컨대,
+<ce>당신과 원한을 질 일은 없어요. %g 님은 저에게
+<ce>아무것도 말해주지 않았어요, 정말이에요. %g 님은
+<ce>그저 저에게 당신을 %g2 님께 보내달라고 돈을 줬을
+<ce>뿐이에요. %g2 님께서 원하시는 건 저지, 당신이
+<ce>아니잖아요, 그렇죠? 듣자 하니 %g 님께서
+<ce>__hidingplace_ %g2로 거처를 옮기셨다더군요.
+
+Message:  1014
+<ce>어떻게 ___dungeon_ %pcf 님에게서 탈출했는지는
+<ce>모르겠지만, 그게 당신에게 별 도움이 되진 않을 겁니다. 죽을
+<ce>준비나 하십시오!
+
+Message:  1020
+<ce>_master_ 님이라고요? 아니요, %g 님은 이 근처
+<ce>출신이 아닌 것 같군요.
+<--->
+<ce>_master_ 님은 이 마을에 새로 오신 분이에요.
+<ce>%g 님께서
+<ce>어디 출신인지는 잘 모르겠네요.
+
+Message:  1021
+<ce>_master_ 님께서 %ra 님에 대해 여기저기 묻고
+<ce>다니시더군요.
+<--->
+<ce>_master_ 님은 이 마을에 머물고 계세요. 듣자 하니
+<ce>%g 님께서 %ra 님에 대해 질문을 많이
+<ce>하신다더군요. 당신은 %ra 님이시죠? 혹시
+<ce>%g 님께서 당신을 찾고 있었던 건 아닐까요?
+
+Message:  1030
+%qdt:
+ =mmaster_ 님이 현재 __hidingplace_에 숨어들었다는 사실을
+ 알아냈다.
+
+Message:  1035
+오크 주술사의 노랫소리가 커진다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 14 times.
+--               %g2 occurs 8 times.
+--               %g3 occurs 1 time.
+--              %pcf occurs 1 time.
+--              %pcn occurs 1 time.
+--              %qdt occurs 3 times.
+--               %ra occurs 6 times.
+--         =mmaster_ occurs 4 times.
+--       ___dungeon_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--    __hidingplace_ occurs 3 times.
+--   __meetingplace_ occurs 3 times.
+--            _gold_ occurs 3 times.
+--          _master_ occurs 10 times.
+--    _meetingplace_ occurs 3 times.
+--          _qgiver_ occurs 3 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+Person _master_ face 1 group Group_6.0 local anyInfo 1020 rumors 1021
+
+Place _dungeon_ remote dungeon
+Place _meetingplace_ local tavern
+Place _hidingplace_ remote house1
+
+Clock _escapetime_ 00:00 0 flag 1 range 0 5
+Clock _shortdelay_ 00:01
+--flags extend the timer greatly
+Clock _S.13_ 1.00:00 0 flag 1 range 0 1
+
+Foe _mmaster_ is Orc_shaman
+
+--	Quest start-up:
+	dialog link for location _hidingplace_ 
+	start timer _escapetime_ 
+	log 1010 step 0 
+	place npc _master_ at _meetingplace_ 
+
+_escapetime_ task:
+	end quest 
+
+variable _shortdelay_
+_clickonenemy_ task:
+	clicked npc _master_ say 1012 
+	start timer _shortdelay_ 
+	hide npc _master_ 
+	cast Shield spell on _mmaster_ 
+	cast Spell_Reflection spell on _mmaster_ 
+	cast Free_Action spell on _mmaster_ 
+	place foe _mmaster_ at _meetingplace_ 
+
+_traitordead_ task:
+	killed 1 _mmaster_ 
+	give pc nothing 
+	start timer _S.13_ 
+
+_teleportpc_ task:
+	pc at _hidingplace_ set _S.12_ 
+	when not _traitordead_ and _shortdelay_ 
+	reveal _dungeon_ 
+	log 1011 step 1 
+	say 1035 
+	place foe _mmaster_ at _hidingplace_ 
+	place npc _master_ at _hidingplace_ 
+	teleport pc to _dungeon_ 
+
+_hittraitor_ task:
+	injured _mmaster_ 
+
+variable _revenge_
+_foundme_ task:
+	when _S.12_ and _hittraitor_ and _teleportpc_ 
+	say 1014 
+
+variable _questdone_
+_clickqgiver_ task:
+	clicked npc _qgiver_ 
+
+_findtraitor_ task:
+	when _clickqgiver_ and _teleportpc_ 
+	log 1030 step 2 
+	say 1013 
+
+_clearclick_ task:
+	when _clickqgiver_ and not _teleportpc_ 
+	clear _clickqgiver_ _clearclick_ 
+	clear _clickqgiver_ 
+
+_S.12_ task:
+	hide npc _master_ 
+
+_S.13_ task:
+	end quest 

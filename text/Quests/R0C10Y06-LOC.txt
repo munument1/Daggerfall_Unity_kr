@@ -1,0 +1,128 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y06.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 6
+Messages: 12
+Quest: R0C10Y06
+DisplayName: 가보
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+내게 매우 소중한 _item_ 물품이 하나 있습니다. 우리
+가문에서 대대로 내려온 물건이지요. 그런데 오크식 산적
+무리가 이 사실을 알고는 물건을 훔쳐가 몸값을 요구하고
+있습니다. 그들의 파렴치한 짓에 보상을 해줄 생각은 추호도
+없습니다. 하지만 당신이 그들의 은신처에 가서 _item_
+물품을 되찾아온다면, 몸값 전액인 _reward_ 금화를
+보상으로 드리겠습니다. 해주시겠습니까?
+
+RefuseQuest:  [1001]
+%oth! 나를 위해 이 일을 해주지 않겠다는 건가요?
+그렇다면 어쩔 수 없이 몸값을 지불해야겠군요.
+실망스럽습니다, %pcf.
+
+AcceptQuest:  [1002]
+좋습니다. 오크들의 은신처는 ___itemdung_의 명칭으로 불리는
+옛 유적지에 있다고 들었습니다. 내 _item_도 그곳에
+보관하고 있을 겁니다. =1stparton_일 안에 돌아오지
+못한다면, _item_ 물품을 찾지 못한 것으로 간주하고
+보상금을 오크들에게 몸값으로 주겠습니다. 이 일에 실패하지
+마십시오, %pcf. 행운을 빕니다.
+
+QuestFail:  [1003]
+당신과 대화하고 싶지 않습니다, %pcf. 내
+_item_의 반환을 요구합니다.
+
+QuestComplete:  [1004]
+당신이 내 _item_의 행방을 찾아낼 줄 알았습니다,
+%pcf. _item_의 몸값으로 준비해두었던 금화를
+기꺼이 드리겠습니다. 정말이지 아무리 감사해도 부족할
+지경입니다.
+
+RumorsDuringQuest:  [1005]
+___itemdung_에 오크 무리가 진을 치고 있습니다.
+<---> ___itemdung_에 있는 그 오크들은 _questgiver_
+쪽으로 한몫 챙길 생각인가 봅니다.
+
+RumorsPostfailure:  [1006]
+___itemdung_의 오크들은 _questgiver_의 몸값 지불에
+떠나버렸습니다. <---> _questgiver_의 태도는 어떤
+%ra 모험가 때문에 몹시 화가 난 모양입니다.
+
+RumorsPostsuccess:  [1007]
+오크 무리가 _questgiver_의 유물을 훔쳐갔다며 불평하고
+있습니다. <---> ___itemdung_ 쪽은 생각보다 안전한
+은신처가 아닌 모양입니다.
+
+QuestorPostsuccess:  [1008]
+다시 만나서 반갑군요, 젊은 친구. 오크 건은 잊지
+않았습니다. <---> 보상으로 준 금화를 벌써 다 써버린
+건 아니길 바랍니다, 친구.
+
+QuestorPostfailure:  [1009]
+오블리비언으로 가버리세요, %pcf. 당신이 내 임무를
+실패했다는 사실을 잊지 않았습니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___questgiver_에 있는 __questgiver_의 _questgiver_ 측은 오크
+ 무리에게 도난당한 가문의 가보, _item_ 물품을
+ 찾아달라며 나를 ___itemdung_ 방향으로 보냈다.
+ =1stparton_일 안에 _questgiver_의 손에 물건을 돌려주지
+ 못하면, %g가 몸값을 지불하게 되어 내 보상금은
+ 사라질 것이다.
+
+Message:  1011
+당신은 _item_의 소재를 파악했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--              %oth occurs 1 time.
+--              %pcf occurs 7 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 4 times.
+--       =1stparton_ occurs 2 times.
+--      ___itemdung_ occurs 6 times.
+--    ___questgiver_ occurs 2 times.
+--            _item_ occurs 14 times.
+--      _questgiver_ occurs 6 times.
+--          _reward_ occurs 1 time.
+
+QBN:
+Item _item_ trinket
+Item _reward_ gold
+
+Person _questgiver_ face 112 group Questor
+
+Place _itemdung_ remote dungeon1
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	place item _item_ at _itemdung_ 
+	start timer _1stparton_ 
+	reveal _itemdung_ 
+	log 1010 step 0 
+
+_pcgetsgold_ task:
+	toting _item_ and _questgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+variable _queston_
+_pchasitem_ task:
+	clicked item _item_ say 1011 
+
+_1stparton_ task:
+	make _item_ permanent 
+	change repute with _questgiver_ by -5 
+	end quest 
+
+variable _qgclicked_
+variable _clearclick_

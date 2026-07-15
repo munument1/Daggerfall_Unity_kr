@@ -12,123 +12,188 @@ DisplayName: 사라진 책
 QRC:
 
 QuestorOffer:  [1000]
-<ce>제 이름은 _giver_입니다.
-<ce>메이지 길드의 회원이 아니지만 일을 원한다는 겁니까?
-<ce>아시겠지만 회원에게만 적절한 일거리를 알선한다는건
-<ce>알고 계실겁니다. 하지만, 처리해야하는 작은 일거리가
-<ce>있습니다. 길드의 장서중 하나가 사라졌습니다.
-<ce>찾아서 돌려주신다면, 개인적인 감사를 드리겠습니다.
-<ce>길드 전체에 알려질 감사이지요.
+<ce>제 이름은 _giver_입니다. 일거리를 찾으시는군요,
+<ce>하지만 마법사 길드 회원이 아니시죠? 저희는 회원에게만
+<ce>양질의 일거리를 제공한다는 점을 이해해 주시리라 믿습니다.
+<ce>하지만, 제가 처리해야 할 작은 심부름이 하나 있습니다. 저희
+<ce>책 중 하나가 없어졌거든요. 만약 그것을 찾아 돌려주신다면,
+<ce>개인적인 호의로 생각하겠습니다. 길드 전체에 귀하에 대한
+<ce>좋은 평판이 퍼지게 될 겁니다.
 
 RefuseQuest:  [1001]
-<ce>메이지 길드와 좋은 관계를 유지하는데는
-<ce>관심이 없으신 것을 잘 알았습니다.
+<ce>보아하니 마법사 길드와 좋은 관계를 맺을 생각은 없으신
+<ce>모양이군요.
 
 AcceptQuest:  [1002]
-<ce>지금은 단서가 없습니다.
-<ce>책 이름은 _book_ 입니다.
-<ce>주변을 돌아다니시면서 사람들에게
-<ce>아는 것이 있는지 물어보시죠.
-<ce>책을 찾으면 다시 돌아오시면 됩니다.
+<ce>현재로선 단서가 없습니다. 책의 이름은 _book_입니다.
+<ce>직접 돌아다니며 사람들에게 들은 것이 있는지 물어봐야 할
+<ce>겁니다. 책을 찾으시면 제게 가져오십시오.
 
 QuestFail:  [1003]
 %qdt:
- 메이지 길드의 ___giver_의 의뢰로
- _book_ 책을 찾아주기로 했다.
- 책을 찾고 giver_에게
- 되돌려 주면 %g가 길드에 좋은 말을 해줄 것이다
+ ___giver_ 마법사 길드를 위해 _book_ 책을 찾기로
+ 했습니다. 만약 책을 찾으면 _giver_에게 돌려줘야 하며,
+ %g는 길드에 제 평판을 좋게 말해줄 것입니다.
 
 QuestComplete:  [1004]
-<ce>아, _book_.
-<ce>잘했습니다, %pcf.
-<ce>길드에서 당신에 대한 평가가
-<ce>분명 나아질 겁니다.
+<ce>아, _book_. 잘하셨습니다, %pcf. 길드에서
+<ce>귀하를 더욱 호의적으로 대하게 될 겁니다.
 
 RumorsDuringQuest:  [1005]
-메이지 길드에 이름이 _book_인 아주 희귀한 책이 있답니다. 아니 있었지요, 한권.
-<--->
-그 책 _book_, 귀한 책인데 메이지 길드에는 그중에서도 더 귀한 판본이 있다고 합니다.
+마법사 길드에는 _book_의 매우 희귀한 판본이
+있습니다. 아니, 적어도 예전에는 있었죠. <--->
+_book_의 희귀함은 인정하지만, 마법사 길드가 소장했던
+판본은 그보다 훨씬 더 귀했습니다.
 
 RumorsPostfailure:  [1006]
-메이지 길드에서 _book_ 희귀 판본을 분실했다던데, 큰 손실일 겁니다.
-<--->
-_book_ 희귀판을 분실했으니 메이지 길드 도서관도 예전만 못할 겁니다.
+마법사 길드에 큰 손실입니다. _book_의 그 특별한 판본
+말이죠. <---> _book_의 부재로 인해 마법사
+길드 도서관은 예전 같지 않습니다.
 
 RumorsPostsuccess:  [1007]
-_book_ 판본을 회수 했으니 메이지 길드 장서도 다시 풍성해졌겠군요.
+_book_의 서가 복귀로 마법사 길드의 도서관이 한층
+풍성해졌군요.
 
 QuestorPostsuccess:  [1008]
-_book_ 읽어보셨습니까? 놀라운 책입니다.
+_book_ 관련 내용을 가지고 계실 때 혹시 읽어보셨나요?
+꽤 흥미로운 책이죠.
 
 QuestorPostfailure:  [1009]
-<ce>저는 기회를 드렸습니다, %pcf.
-<ce>그 _book_, 되찾아오셨다면
-<ce>기쁘게 받아들였을텐데.
-<ce>지금은, 뭐, 당신은 갈길 가시면 됩니다.
+<ce>기회를 드렸잖습니까, %pcf. 기억하시죠?
+<ce>_book_의 행방을 알려주셨다면 기꺼이 대화를 나눴을
+<ce>겁니다. 지금은 보시다시피, 이제 그만 가보시죠.
 
 QuestLogEntry:  [1010]
 <ce>_informant1_에 있는
-<ce>_informant_에게 찾아가 보는게
-<ce>좋을 것 같습니다. %g는 __informant1_에서
-<ce>일어나는 모든 일을 아는 것 같으니까요.
-                                     <--->
-<ce>주변 여관을 찾아보는게 좋겠습니다.
-<ce>그런 곳에선 온갖 이야기가 떠도니까요.
-                                     <--->
-<ce>_informant1_ 한번 가보시죠.
-<ce>거기엔 항상 말이 오가거든요.
-                                     <--->
-<ce>그게 _giver_의 장서중에 도난당했다는 책입니다.
-                                     <--->
-<ce>그 _giver_, 책에 대해 물어보고 다니더군요.
-                                     <--->
-<ce>그 책 읽어봤는데 정말 흥미로웠습니다.
-                                     <--->
-<ce>도서관에 가보는게 좋을 것 같군요.
+<ce>_informant_의 소재를 찾아보시는 게 좋겠군요.
+<ce>%g의 정보력은
+<ce>__informant1_ 주변에서 일어나는
+<ce>모든 일을 꿰뚫고 있는 듯합니다.
+<--->
+<ce>지역 여관에서 물어보십시오. 그곳은
+<ce>소문으로 가득하니까요.
+<--->
+<ce>_informant1_의 방문을 시도해 보십시오.
+그곳엔 항상 이야깃거리가 넘쳐납니다.
+<--->
+<ce>그 책은 _giver_에서 도난당했습니다.
+<--->
+<ce>_giver_의 책에 대한 문의가 잦더군요.
+<--->
+<ce>읽어보니 정말 재미있었습니다.
+<--->
+<ce>도서관을 방문해 보시는 게 좋겠네요.
 
 Message:  1011
-<ce>이 책이 __giver_가 말한 그 도난당한 책이 분명하다.
+<ce>이게 바로 __giver_에서 도난당한 그 책이 틀림없습니다.
 
 Message:  1025
-<ce>안녕하십니까, %pcn.
-<ce>절 찾고 있다는 이야길 들었습니다.
-<ce>__informant1_의 모든 소식은
-<ce>제 귀를 거쳐가기 때문이지요.
-<ce>제 이야기는 이쯤 하고. _giver_ 이야기는
-<ce>들었습니다, 불행한 일이 있었다지요.
-<ce>_thief_에 대해 알아보시죠.
-<ce>%g가 _book_ 책을
-<ce>찾고 있었습니다.
-<ce>그리고 %g는 물건을 말 안하고
-<ce>빌리는 유형의 사람이거든요.
-<ce>무슨말인지는 아시겠지요.
+<ce>안녕하세요, %pcn. 제게 대해 묻고 다니신다는 소문을
+<ce>들었습니다. __informant1_의 모든 소식은 이 귀를 거쳐 가니
+<ce>당연히 알고 있죠. 제 이야기는 이쯤 하죠. _giver_의
+<ce>불운에 대해 들은 게 있습니다. _thief_의 행방을
+<ce>찾으시는군요. %g의 경우 한동안 _book_의
+<ce>초판본을 찾고 있었습니다. 그리고 %g는 묻지도
+<ce>않고 물건을 가져가는 그런 부류의 사람이기도 하죠, 무슨
+<ce>뜻인지 아시겠죠?
 
 Message:  1027
-그 _thief_, __house_의 _house_에 삽니다.
-<--->
-_thief_의 거주지는 _house_ 입니다.
-<--->
-_thief_, 밤에는 _house_에서 지낸다고 합니다.
-<--->
-_thief_ 집에 있는지 가보시죠, %g의 집은 _house_ 입니다.
-<--->
-_thief_, _store_에서 거래를 많이 합니다.
-<--->
-_thief_ 처럼 _store_에서 물건을 거래해보는건 어떨지요.
-<--->
-_store_에선 장물거래가 많이 되고 있습니다. _thief_ 도 거기 많이 가지요.
-<--->
-_store_에서 _thief_ 얼굴을 봤다고 하더군요.
-<--->
-_inn_ 선술집은 도둑이 많이 들락거립니다.
-<--->
-_thief_, _inn_ 여관에서 마시는걸 좋아할겁니다.
-<--->
-_inn_ 선술집이 _thief_의 가장 좋아하는 술집입니다.
-<--->
-_thief_? _inn_에서 식사하는걸 제일 좋아할겁니다.
+_thief_의 거처는 __house_의 _house_입니다.
+<---> _thief_의 실제 거주지는
+_house_입니다. <---> _thief_의 밤은
+%g3의 _house_에서 보냅니다. <--->
+_thief_ 관련 인물을 집에서 찾아보십시오,
+%g는 _house_에 삽니다. <--->
+_thief_의 주요 거래처는 _store_입니다.
+<---> _store_에서 쇼핑을 시작해 보시는 게 좋을
+겁니다, _thief_의 행보가 그러하니까요. <--->
+_store_의 장소는 _thief_의 장물들을 거래하기에
+인기 있는 곳입니다. <---> _thief_의 목격
+장소는 _store_입니다. <---> _inn_의
+장소는 많은 도둑들의 아지트입니다. <--->
+_thief_의 취향은 _inn_에서 술 마시는 것입니다.
+<---> _thief_의 단골 선술집은
+_inn_입니다. <---> _thief_의 가장
+좋아하는 식사는 _inn_에서 제공됩니다.
 
 Message:  1040
-<ce>_thief_ 이름을 찾고 있다고 들었는데.
-<ce>내가, %g2다. 이제 진짜 다치기 전에
-<ce>꺼져.
+<ce>_thief_의 행방을 찾고 계신다는 소문을 들었습니다. 자,
+<ce>여기 %g2를 찾으셨군요. 이제 정말로 다치고 싶지
+<ce>않다면 당장 꺼지십시오.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 5 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 1 time.
+--              %pcf occurs 2 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--         ___giver_ occurs 23 times.
+--          __house_ occurs 1 time.
+--     __informant1_ occurs 3 times.
+--            _book_ occurs 14 times.
+--           _giver_ occurs 6 times.
+--           _house_ occurs 5 times.
+--      _informant1_ occurs 2 times.
+--       _informant_ occurs 1 time.
+--             _inn_ occurs 5 times.
+--           _store_ occurs 4 times.
+--           _thief_ occurs 24 times.
+
+QBN:
+Item _book_ book1 anyInfo 1010 used 1011
+
+Person _informant_ face 245 group Group_6.0 male local
+Person _giver_ group Questor
+Person _thief_ face 99 group Chemist female local anyInfo 1027 rumors 1027
+
+Place _inn_ local tavern
+Place _store_ local weaponstore
+Place _house_ local house2
+Place _informant1_ local tavern
+
+Clock _S.00_ 00:00 0 flag 9 range 0 0
+Clock _S.01_ 10.00:00 0 flag 9 range 0 1
+
+Foe _thiefFoe_ is Thief
+-added underscores to thiefFoe
+
+--	Quest start-up:
+	dialog link for person _thief_ 
+	dialog link for location _house_ person _informant_ 
+	start timer _S.01_ 
+	log 1003 step 0 
+	give item _book_ to _thiefFoe_ 
+	place npc _informant_ at _informant1_ 
+
+variable _S.00_
+_S.01_ task:
+	end quest 
+
+_S.02_ task:
+	daily from 00:00 to 08:00 
+	place foe _thiefFoe_ at _house_ 
+
+_S.03_ task:
+	daily from 16:02 to 23:59 
+--changed 24:00 to 23:59, 24:00 is not a valid time
+	place foe _thiefFoe_ at _inn_ 
+
+_S.04_ task:
+	daily from 08:01 to 16:01 
+	place foe _thiefFoe_ at _store_ 
+
+_S.05_ task:
+	clicked npc _informant_ say 1025 
+	add dialog for person _thief_ 
+
+_S.06_ task:
+	toting _book_ and _giver_ clicked 
+	give pc nothing 
+	end quest 
+
+variable _S.07_
+_S.08_ task:
+	injured _thiefFoe_ saying 1040 

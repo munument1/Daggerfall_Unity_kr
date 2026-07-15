@@ -1,0 +1,121 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y10.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 10
+Messages: 11
+Quest: R0C10Y10
+DisplayName: 무기 보급
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>만약 _reward_ 골드를 벌고 싶다면,
+<ce>내 요원에게 작은 소포를 전달하는 것 외에
+<ce>아무것도 할 필요가 없습니다. 지금 말하십시오.
+<--->
+<ce>적당한 재능과 평균 이상의 신중함,
+<ce>그리고 _reward_ 골드에 하급 전달자의
+<ce>역할을 기꺼이 맡을 사람이 필요합니다.
+<ce>당신이 그 사람입니까?
+
+RefuseQuest:  [1001]
+<ce>정말입니까? 너무 바쁜가 보군요. 당신 손해죠.
+
+AcceptQuest:  [1002]
+<ce>훌륭합니다. 여기 _weapon_의 물건이 있습니다. 이제
+<ce>_contact_의 확인이 =queston_일 안에 ___contact_에서
+<ce>이루어져야 합니다. 충분한 시간이라고 생각합니다.
+<ce>_contact_의 물건을 알아볼 수 있을 겁니다.
+<ce>=contact_의 물건을 찾기만 하면 됩니다. 행운을 빕니다.
+<ce>감사합니다.
+
+QuestFail:  [1003]
+<ce>간단한 배달 하나 제대로 못 하다니, %pcf? 설마
+<ce>아직도 보상을 기대하는 건 아니겠지.
+
+QuestComplete:  [1004]
+<ce>아, %pcf, 다시 보니 좋군요. 그리고 _weapon_도
+<ce>가져왔군요. 훌륭합니다. 여기 약속된 _questgiver_의
+<ce>_reward_ 골드입니다.
+
+RumorsDuringQuest:  [1005]
+_questgiver_의 밀수업은 여전하다고 들었습니다.
+<---> 최근 밀수가 비정상적으로 증가했습니다.
+
+RumorsPostfailure:  [1006]
+최근 누군가 근처에서 아주 멋진 _weapon_의 발견 소식을
+전했습니다. <---> _questgiver_의 무능한
+%ra 전달자 때문에 몹시 화가 났다고 들었습니다.
+
+RumorsPostsuccess:  [1007]
+_contact_의 이름으로 불리는 사람이 _weapon_의 소지
+사실을 떠벌리고 다닌다고 합니다. <---> 종교적 유물
+밀수가 최근 큰 범죄로 떠오르고 있습니다.
+
+QuestorPostsuccess:  [1008]
+오, 나의 옛 전달자군요. 매력적이기도 하지. 무엇을
+도와줄까요? <---> 낯이 익군요. 최근에 나를 위해
+작은 배달을 하나 해주지 않았나요?
+
+QuestorPostfailure:  [1009]
+<ce>당신은 나를 위해 배달을 실패했던 %ra 종족과 거의
+<ce>똑같이 생겼군요. 흥미롭군. 이제 가보세요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ __questgiver_, ___questgiver_의 _questgiver_의가 나를 보내
+ _contact_의 이름으로 불리는 동료에게 _weapon_의
+ 전달을 지시했다. =queston_일 안에 _contact_의 손에
+ _weapon_의 인계를 마쳐야 한다. =contact_의 행방은
+ ___contact_의 __contact_의 명칭으로 불리는 곳에서 찾을
+ 수 있다고 한다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--         =contact_ occurs 2 times.
+--         =queston_ occurs 3 times.
+--       ___contact_ occurs 4 times.
+--    ___questgiver_ occurs 1 time.
+--        __contact_ occurs 1 time.
+--     __questgiver_ occurs 1 time.
+--         _contact_ occurs 5 times.
+--      _questgiver_ occurs 5 times.
+--          _reward_ occurs 3 times.
+--          _weapon_ occurs 6 times.
+
+QBN:
+Item _weapon_ weapon
+Item _reward_ gold
+
+Person _questgiver_ face 112 group Questor
+Person _contact_ group Local_3.0 remote
+
+
+Clock _queston_ 00:00 0 flag 1 range 1 2
+
+
+--	Quest start-up:
+	start timer _queston_ 
+	log 1010 step 0 
+	get item _weapon_ 
+	create npc _contact_ 
+
+_pcgetsgold_ task:
+	toting _weapon_ and _contact_ clicked 
+	give pc _reward_ 
+	end quest 
+
+variable _pchasitem_
+variable _npcclicked_
+_queston_ task:
+	make _weapon_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+variable _1stparton_

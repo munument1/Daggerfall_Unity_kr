@@ -1,0 +1,146 @@
+-- Quest: C:\QUESTS\WORKING\B0C00Y05.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: knight
+-- Repute: 0
+-- QuestId: 5
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 81
+Quest: B0C00Y05
+DisplayName: 배신자
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>당신은 아직 우리 기사단의 신뢰받는 일원이 아닙니다,
+<ce>%pcn. 하지만 당신이 우리의 신뢰를 얻을 방법을 알고
+<ce>있는 것 같군요. ___qgiver_에 우리를 적들에게 팔아넘긴
+<ce>비열한 _monster_인 배신자가 있습니다. 반역에 대한
+<ce>정당한 처벌은 죽음이라고 생각하지 않습니까, %pcn?
+<ce>기사단을 위해 이 일을 해주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>이 기사단으로부터 조만간 어떤 호의도 기대하지 마십시오.
+
+AcceptQuest:  [1002]
+<ce>배신자는 =monster_의 이름을 지닌 _monster_ 개체가며,
+<ce>겁쟁이처럼 ___mondun_에 숨어 있습니다. =queston_일
+<ce>내에 돌아오지 않는다면, 우리의 신뢰는 무효가 되고 다른
+<ce>이가 당신의 자리를 대신할 것입니다.
+
+QuestFail:  [1003]
+<ce>_monster_의 생존은 확실합니다. 저를 설득하려 하지
+<ce>마십시오.
+
+QuestComplete:  [1004]
+<ce>당신은 사람들이 말하는 것만큼 나쁘지는 않은 것 같군요.
+<ce>%pcn, 당신은 이 기사단에서 어느 정도 존경을
+<ce>얻었습니다.
+
+RumorsDuringQuest:  [1005]
+그 _monster_의 행방은 마치 지옥의 사냥개들이 뒤쫓는
+것처럼 ___mondun_ 쪽으로 도망쳤습니다. <--->
+_qgiver_의 입장에서 %g가 기사단에 저지른
+짓을 생각하면 =monster_의 처분을 그냥 내버려 둘 수
+없습니다.
+
+RumorsPostfailure:  [1006]
+=monster_의 힘은 _qgiver_의 예상보다 훨씬 강한
+모양입니다. 대단한 탈출이군요. <---> =monster_의
+행보는 북쪽으로 이동했다고 들었지만, %g3의 기억은
+여전히 기사단을 괴롭히고 있습니다.
+
+RumorsPostsuccess:  [1007]
+=monster_의 이야기가 그것을 증명하죠. ==qgiver_의
+처우를 함부로 다뤄선 안 됩니다. <---> 저는 기사단이
+=monster_ 같은 멍청이에게는 더 자비로울 줄 알았습니다.
+
+QuestorPostsuccess:  [1008]
+살인자여, 당신을 도울 수 있다면 무엇이든 기꺼이
+돕겠습니다.
+
+QuestorPostfailure:  [1009]
+당신의 마음은 너무 무릅니다, %pcf. 내 시간을
+낭비하지 마십시오.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 _qgiver_께서 제게 ___mondun_에서
+ 어슬렁거리는 =monster_의 이름을 지닌 _monster_
+ 처단을 명하셨습니다. 제게는 이 임무를 완수할
+ =queston_일의 시간이 있습니다.
+
+Message:  1011
+<ce>당신은 _monster_인 =monster_ 처치에 성공했습니다.
+<ce>기사단이 자랑스러워할 것입니다.
+
+Message:  1080
+<ce>감사의 표시로, ___newdung_ 쪽으로 가는 지도를
+<ce>받아주십시오. 모두가 말하길 해충이 들끓는 사악한
+<ce>구덩이라고 하더군요. 이제 막 기사가 된 이가 청소하기에 딱
+<ce>좋은 장소일 겁니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--               %g3 occurs 1 time.
+--              %pcf occurs 2 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--         ==qgiver_ occurs 1 time.
+--         =monster_ occurs 28 times.
+--         =queston_ occurs 2 times.
+--        ___mondun_ occurs 3 times.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 2 times.
+--         _monster_ occurs 6 times.
+--          _qgiver_ occurs 3 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _mondun_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Nightblade
+
+--	Quest start-up:
+	start timer _queston_ 
+	reveal _mondun_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ 
+	place foe _monster_ at _mondun_ 
+
+_queston_ task:
+	end quest 
+
+_pcgetsgold_ task:
+	when _mondead_ and _qgclicked_ 
+	give pc nothing 
+
+_mondead_ task:
+	killed 1 _monster_ saying 1011 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_clearclick_ task:
+	when not _mondead_ and _qgclicked_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.07_ task:
+	when _map_ and _pcgetsgold_
+    say 1080
+	reveal _newdung_
+	end quest
+
+_S.08_ task:
+    when not _map_ and _pcgetsgold_
+    end quest

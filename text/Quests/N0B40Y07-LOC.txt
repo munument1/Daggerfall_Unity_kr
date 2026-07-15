@@ -12,110 +12,183 @@ DisplayName: 데이드라 추방
 QRC:
 
 QuestorOffer:  [1000]
-<ce>도와주실 수 있을지 모르겠군요, %pcf.
-<ce>성공확률이 낮은 데이드라 추방 주문을
-<ce>쓸 수 있는 강력한 마법사를 찾고 있습니다.
-<ce>도와주실 수 있습니까?
-                                     <--->
-<ce>데이드라 추방은 표준 윤형 주문중
-<ce>시전하기 까다로운 주문 입니다.
-<ce>더 뛰어난 내재 매지카와 기술이 필요한
-<ce>주문이지요. 그래서 말인데
-<ce>데이드라 추방을 쓸 수 있으십니까?
-                                     <--->
-<ce>데이드라 소환은 비교적 쉬운 반면
-<ce>데이드라 추방은 어려우니 큰 아이러니입니다.
-<ce>혹시 표준 윤형 데이드라 추방 주문을
-<ce>사용할 줄 아시는지요?
+<ce>당신이 저를 도울 수 있을지 모르겠군요, %pcf.
+<ce>실패 확률이 거의 없이 데이드라 추방 주문을
+<ce>시전할 수 있을 만큼 강력한 마법사를 찾고 있습니다.
+<ce>가능하신가요?
+<--->
+<ce>데이드라 추방은 가장 시전하기 어려운 표준 윤생 주문 중
+<ce>하나입니다.
+<ce>더 많은 타고난 매지카와 기술을 요구하는 주문은 거의 없죠.
+<ce>혹시 데이드라 추방을 시전할 수 있으신가요?
+<--->
+<ce>데이드라를 소환하는 것은 비교적 간단한 일이지만,
+<ce>추방하는 것은 그렇지 않다는 것이 참 아이러니하죠.
+<ce>혹시 표준 윤생 주문인 데이드라 추방을
+<ce>시전할 능력이 있으신가요?
 
 RefuseQuest:  [1001]
-<ce>아, 음, 적합한 사람을 계속 찾도록 해야겠군요.
+<ce>아, 그렇군요. 수색은 계속되어야겠네요.
 
 AcceptQuest:  [1002]
-<ce>부디 거짓말 한것이 아니길 바라겠습니다.
-<ce>데이드라는 나중에 써야할 곳이 있기 때문에
-<ce>죽이면 안되지만, 현재 처리하기 까다로운
-<ce>상태입니다. 그리고 절대 주문 제작으로
-<ce>만든 데이드라 추방 주문을 쓰면 안됩니다.
-<ce>꼭 표준 기본형 주문을 써야 합니다.
-<ce>자, 제가 이 데이드라를 소환한 술자이기
-<ce>때문에 일을 더 쉽게 해드릴 수 있지만
-<ce>제가 지시하는대로 정확히 따라야 합니다.
-<ce>이 스크롤을 받으시죠. 데이드라의 진명을
-<ce>사용해서 일시적으로 감금하는 주문이 적혀
-<ce>있습니다. 다만 사용하기 전에 대상이 피를
-<ce>흘리게 해야 합니다. 그렇지 않으면 주문이
-<ce>되돌아 오면서 예상할수 없는 결과를 낳습니다.
-<ce>데이드라를 잡은 후에는 데이드라 추방이
-<ce>실패할 확률이 아주 낮아집니다.
-<ce>데이드라는 ___mondung_에 있습니다.
-<ce>=queston_일 내로 다시 뵙지요.
+<ce>이 일에 대해 거짓말을 하지 않기를 진심으로 바랍니다. 이
+<ce>특정 데이드라를 죽이고 싶지는 않습니다. 나중에 그 능력이
+<ce>필요할지도 모르니까요. 하지만 지금은 아주 성가신
+<ce>존재입니다. 주문 제작에서 데이드라 추방 같은 주문을 만들지
+<ce>마십시오. 표준적인 기본 윤생 주문이어야 합니다. 이제, 제가
+<ce>이 데이드라를 소환했기 때문에, 당신의 일을 조금 더 쉽게
+<ce>만들어 줄 수 있습니다. 하지만 제 지시를 정확히 따라야
+<ce>합니다. 이 두루마리를 가져가십시오. 그 안에는 데이드라의
+<ce>참된 이름을 사용하여 잠시 동안 구속하는 주문이 담겨
+<ce>있습니다. 하지만 사용하기 전에, 반드시 대상에게서 피를
+<ce>뽑아야 합니다. 그렇지 않으면 예측할 수 없는 결과가 나타날
+<ce>수 있습니다. 데이드라가 구속되면, 데이드라 추방은 실패할
+<ce>확률이 거의 없습니다. 해당 데이드라는 ___mondung_에
+<ce>있습니다. =queston_일 안에 돌아오길 기대하겠습니다.
 <ce>행운을 빕니다, %pct.
 
 QuestComplete:  [1004]
-<ce>훌륭합니다, %pct.
-<ce>자, 드릴 금화는 업ㅅ지만,
-<ce>제가 특히 즐겁게 본 책을 드리죠.
+<ce>잘하셨습니다, %pct. 이제, 드릴 골드는 없지만, 제가
+<ce>특히 즐겨 읽은 책을 드리죠.
 
 RumorsDuringQuest:  [1005]
-___mondung_에 데이드라가 많이 꼬이는 것 같습니다. 영적인 무언가 있는 것 같더군요.
+데이드라들이 ___mondung_에 끌리는 것 같습니다. 뭔가
+영적인 이유가 있겠죠.
 <--->
-<ce>그 _qgiver_ 늙다리, 계속 소환 같은걸
-<ce>하다가 문제가 터진 모양입니다.
+<ce>늙은 _qgiver_의 소환술은 항상 무언가를 불러내어
+<ce>%g2 자신을 곤경에 빠뜨리곤 하죠.
 
 RumorsPostfailure:  [1006]
-어젯밤 데이드라의 별이 특이하게 밝게 빛났습니다.
+어젯밤 데이드릭 별들이 유난히 밝게 빛났습니다.
 
 RumorsPostsuccess:  [1007]
-_qgiver_의 데이드라가 사라졌다고 하는데, 데이드라들은 계속 돌아오는 경향이 있습니다.
-<--->
-___mondung_의 데이드라 영향력이 어느정도 사라졌다더군요, 뭐 얼마 못가겠지만.
+_qgiver_의 데이드라는 이제 사라졌습니다. 하지만
+데이드라는 돌아오는 습성이 있죠. <---> 적어도
+지금은 ___mondung_에서 데이드릭 영향력이 비교적
+정화되었습니다.
 
 QuestorPostsuccess:  [1008]
-책은 잘 보셨습니까, %pcf? 저는 꽤나 감명깊게 봤는데 말이죠.
+그 책은 재미있게 읽고 계신가요, %pcf? 저는 꽤
+계몽적인 책이라고 생각했습니다.
 
 QuestorPostfailure:  [1009]
-<ce>데이드라 추방 주문이 없다면
-<ce>의뢰를 받지 말았어야지요.
-<ce>갈길 가십쇼.
+<ce>데이드라 추방 주문이 없었다면, 퀘스트를 받지 말았어야죠.
+<ce>이제 나가주세요.
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_ 메이지 길드의
- _qgiver_에게
- ___mondung_에
- 가달라는 의뢰를 받았다.
- 그곳에 있는 데이드라에 데이드라 추방 주문을
- 써달라고 했다. 추방 주문을 쓰기 쉽도록
- 데이드라를 잠시 움직이지 못하게 하는
- 주문 두루마리를 받았지만, 피를 흘리게
- 해야만 사용 할 수 있다.
- =queston_일 안에 완료하고
- 돌아가면 의뢰는 성공이다.
+ ___qgiver_ 마법사 길드의 _qgiver_께서 나를
+ ___mondung_ 쪽으로 보내 데이드라에게 데이드라 추방 주문을
+ 시전하게 했다. _qgiver_께서 데이드라를 잠시 구속하여
+ 추방하기 쉽게 만드는 주문이 담긴 두루마리를 주셨지만, 그
+ 주문은 반드시 먼저 피를 뽑아야만 작동한다. =queston_일
+ 안에 임무를 성공하고 돌아가야 한다.
 
 Message:  1030
-자노스 나' =daedra_
- 자노스 나' ==dummydaedra_
- 세넷 세네스 모르.
+Zanoth na' =daedra_. Zanoth na' ==dummydaedra_. Senet
+seneth mor.
 
 Message:  1040
-<ce>아둔한 멍청이 같으니,
-<ce>=daedra_ 추방 방법을
-<ce>정확히 알려줬잖습니까.
-<ce>다른 데이드라의 진명을 알아내려고
-<ce>그 고생을 해야 하다니.
-<ce>여기 계시는게 불편해졌습니다.
-<ce>%pcf.
-<ce>지금 당장 나가주시죠.
+<ce>이 멍청한 녀석, 내가 분명히 =daedra_의 추방을
+<ce>지시했지, 죽이라고 하지 않았다. 이제 나는 다른 데이드라의
+<ce>참된 이름을 알아내는 수고를 해야겠군. 여기에 있는 당신의
+<ce>존재가 억압적으로 느껴지는군, %pcf. 당장 떠나주게.
 
 Message:  1050
-<ce>두루마리의 마지막 단어를 읽자
-<ce>불길이 솟아올라 두루마리를 태워버렸다.
+<ce>마지막 단어를 읽자마자 불꽃이 터지며 두루마리가 타버린다.
 
 Message:  1051
-<ce>나는 =firedaedra_.
-<ce>내가 속한 오블리비언으로 부르는 자는 누구인가?
+<ce>나는 =firedaedra_ 개체가다. 누가 오블리비언의 내 집에서
+<ce>나를 부르는가?
 
 Message:  1060
-<ce>=daedra_의
-<ce>오블리비언 차원 추방에 제대로 성공했다.
+<ce>데이드라 =daedra_의 오블리비언 차원 추방이
+<ce>완료되었습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g2 occurs 3 times.
+--              %pcf occurs 6 times.
+--              %pct occurs 3 times.
+--              %qdt occurs 1 time.
+--    ==dummydaedra_ occurs 1 time.
+--          =daedra_ occurs 3 times.
+--      =firedaedra_ occurs 1 time.
+--         =queston_ occurs 3 times.
+--       ___mondung_ occurs 4 times.
+--        ___qgiver_ occurs 5 times.
+
+--in msg 1015, shifted text downward to avoid exposed hyphen
+
+QBN:
+Item _book_ book
+Item _spellScroll_ letter used 1030
+--added underscores to spellScroll
+
+Person _qgiver_ group Questor
+Person _dummydaedra_ face 249 factiontype Daedra remote
+
+Place _mondung_ remote dungeon9
+Place aide remote dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _daedra_ is Frost_daedra
+Foe _firedaedra_ is Fire_daedra
+
+--	Quest start-up:
+	start timer _queston_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	get item _spellScroll_ 
+	place foe _daedra_ at _mondung_ 
+
+_queston_ task:
+	end quest 
+
+_reward_ task:
+	when _qgclicked_ and _S.10_ and not _S.06_ 
+	give pc _book_ 
+	unset _qgclicked_ 
+	end quest 
+
+_out_ task:
+	remove foe _daedra_
+	--changed faulty "place enemy at other dungeon" task with simple "remove" for reliability
+
+variable _S.03_
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.05_ task:
+	take _spellScroll_ from pc 
+	--changed "place item spellScroll at aide" to this "take from pc" action. 
+	say 1050
+	--"say 1050" transferred from middle of "until _S.07_ performed," had faulty placing and this is a better ordering
+	create foe _firedaedra_ every 1 minutes 1 times with 100% success
+	say 1051 
+	--transferred "msg 1051" from previous line to this one, not known to be a valid argument
+
+_S.06_ task:
+	killed 1 _daedra_ 
+
+_S.07_ task:
+	injured _daedra_ 
+	_spellScroll_ used do _S.08_ 
+
+until _S.07_ performed:
+	_spellScroll_ used do _S.05_ 
+	
+_S.08_ task:
+	cast Banish_Daedra spell do _out_ 
+	restrain foe _daedra_ 
+
+_S.09_ task:
+	when _qgclicked_ and _S.06_ 
+	say 1040 
+	end quest 
+
+_S.10_ task:
+	when _out_ and not _S.06_ 
+	say 1060 

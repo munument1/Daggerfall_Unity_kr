@@ -7,252 +7,511 @@
 -- Edited for Daggerfall Unity by Jay_H
 Messages: 74
 Quest: M0B11Y18
-DisplayName: 영주 카바르 임무 파트 I
+DisplayName: 카바르 경 퀘스트 1부
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pcf, 극도의 신중함을 요구하는 중요한 임무가 있네.
-<ce>맡아 주겠다는 약속 없이는 더 알려줄 수 없어.
-<ce>어떻게 하겠나?
+<ce>%pcf, 제게는 극도의 신중함이 요구되는 중요한
+<ce>임무가 있습니다. 당신이 도와주겠다고 동의하지 않는다면 더
+<ce>이상 말씀드릴 수 없습니다. 어떻게 하시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>%oth, 자네에게 기대를 많이 했었는데.
+<ce>%oth, 당신에게 훨씬 더 많은 것을 기대했건만.
 
 AcceptQuest:  [1002]
-<ce>내 오랜 친구 하나가 사면초가야.
-<ce>실력이 좋고 비밀을 지킬줄 아는 호위가 필요하네.
-<ce>당연히 자네가 떠올랐지. 오늘 밤 10:00,
-<ce>_targethouse_에 가면 _target_의 얼굴을
-<ce>볼 수 있을거야. 같이 가고 싶지만, 그 친구하고
-<ce>내가 친하다는건 모두 알고 있어서 말이야.
-<ce>적들이 따라 붙을 걸세.
-<ce>이번 일은 주위를 잘 살피면서 행동하게.
+<ce>제 오랜 친구가 심각한 위험에 처해 있습니다. 검을 잘 다루고
+<ce>비밀을 지킬 수 있는 호위가 필요하죠. 당연히 당신이
+<ce>떠올랐습니다. _target_님이 오늘 밤 10시에
+<ce>_targethouse_에서 당신을 만날 겁니다. %g가
+<ce>도착하면 더 자세히 말해줄 겁니다. 제가 직접 가고 싶지만,
+<ce>제가 %g3의 친구로 알려져 있어서 오히려
+<ce>%g3의 적들을 %g2에게로 이끌지도
+<ce>모릅니다. 이번 일은 조심하세요.
 
 QuestFail:  [1003]
-<ce>더 이상 할말은 없네, %pcn.
+<ce>더 이상 논의할 것은 없습니다, %pcn.
 
 QuestComplete:  [1004]
-<ce>이 땅에 큰 위험이 될 일을 경고해 주었군.
-<ce>내 진심이 담긴 감사와 이 금화 _reward_닢을 받아주게.
+<ce>왕국에 닥친 심각한 위협을 알려주셨군요. 진심 어린 감사와
+<ce>함께 이 _reward_ 골드를 받아주십시오.
 
 RumorsDuringQuest:  [1005]
-<ce>_enemy_에서 용병을 고용해서 ___stronghold_ 쪽에
-<ce>모으고 있습니다. 뭘 하려는걸까요?
+<ce>_enemy_님이 ___stronghold_에서 용병들을 모집하고
+<ce>있다더군요. 대체 무엇 때문일까요?
 
 RumorsPostfailure:  [1006]
-<ce>__targethouse_에서 습격이 있었다는
-<ce>이야기 들으셨습니까? 센티넬 여왕의 심복이
-<ce>죽었다더군요.
+<ce>__targethouse_에서 있었던 매복 공격 소식 들으셨나요?
+<ce>센티넬의 여왕의 대리인이 살해당했다고 합니다.
 
 RumorsPostsuccess:  [1007]
-<ce>센티넬 궁정 귀족 하나가 역모를 꾸민 모양입니다만,
-<ce>여왕이 알아내서 그 귀족의 ___stronghold_ 성채를 쓸어버렸다더군요.
-                                     <--->
-<ce>_ruler_의 군대가 ___stronghold_에 공격을 했지만,
-<ce>공격한 목표인 _traitor_의 체포는 도망쳐버려 실패했다고 합니다.
+<ce>센티넬의 궁정 귀족 중 한 명이 왕좌를 노리고 음모를
+<ce>꾸미다가 여왕에게 발각되어
+<ce>___stronghold_에 있는 그의 요새가 파괴되었다고 합니다.
+<--->
+<ce>_ruler_의 군대가 ___stronghold_ 쪽을 공격했지만, 공격의
+<ce>주 목표였던 _traitor_ 인물은 도망쳤다고 들었습니다.
 
 QuestorPostsuccess:  [1008]
-<ce>_target_ 쪽은 죽었긴 하지만, _ruler_ 여왕을 알현했다고 들었네.
+<ce>_ruler_님과 연락이 닿았다고 들었습니다만,
+<ce>_target_님은 돌아가셨다더군요.
 
 QuestorPostfailure:  [1009]
-<ce>_target_의 신변을 호위해서 _ruler_여왕을 알현하는 임무는 어떻게 된건가?
+<ce>_target_님을 _ruler_까지 호위하는 임무는 어떻게
+<ce>되었습니까?
 
 Message:  1020
 %qdt:
- ___questgiver_ __questgiver_의
- _questgiver_에게 의뢰를 받았다.
- 오늘 밤 10시 _targethouse_에 있는
- _target_와 만나라는 내용이다.
- _target_의 신변이 강력한 적때문에
- 위협받고 있다는 것 말고는 알고 있는 것이 없다.
+ ___questgiver_에 있는 __questgiver_의 _questgiver_님이 오늘
+ 밤 10시에 _targethouse_에서 _target_님을 만나라고
+ 요청했습니다. _target_님이 강력한 적들로부터 위험에
+ 처해 있다는 것 외에는 아는 것이 없습니다.
 
 Message:  1021
 %qdt:
- _target_와 만난 후,
- 센티넬로 이동하기로 했다.
+ _target_님을 만났고, 우리는 센티넬로 향하고 있습니다.
 
 Message:  1022
 %qdt:
- _targethouse_에서 나가자마자 매복 당했고,
- _target_의 보호에 실패했다. %g 가 죽기 전
- 센티넬 _ruler_의 궁정 요인
- _traitor_의 역모에 대한 편지를 건넸다.
- %g 는 죽어가면서 편지를 _ruler_에게
- 전해달라고 부탁했다. =patsy_일 안에
- 편지를 전달해야 한다.
+ _targethouse_ 쪽을 떠나던 중 매복 공격을 받았고,
+ _target_님이 살해당했습니다. 하지만 %g님이
+ 죽기 전에, %g님이 제 손에 센티넬의 _ruler_
+ 궁정 일원인 _traitor_에 관한 반역 고발 편지를
+ 쥐여주었습니다. _target_님의 마지막 유언은 이 편지를
+ _ruler_님께 전달해 달라는 것이었습니다.
+ =patsy_일이 지나기 전에 그분께 이 편지를 보여드려야
+ 합니다.
 
 Message:  1023
 %qdt:
- _ruler_ 여왕에게 역모에 대한 편지를 보여줬지만,
- _traitor_은 이미 자기의 성채인
- ___stronghold_으로 도망쳤다.
- 여왕은 성채에 잠입해서 _traitor_의
- 구속 혹은 처단을 요청했다.
- 여왕은 임무를 성공하고 센티넬로 돌아오는데
- =gettraitor_일을 줬다.
+ _ruler_님께 반역의 편지를 보여드렸지만,
+ _traitor_님은 이미 ___stronghold_에 있는 자신의 요새로
+ 도망친 뒤였습니다. 여왕님은 제게 요새에 잠입하여
+ _traitor_님을 생포하거나 처단하라고 요청하셨습니다.
+ 여왕님은 이 임무를 완수하고 센티넬로 돌아올 기한으로
+ =gettraitor_일을 주셨습니다.
 
 Message:  1030
-친애하는 %pcn,
- 
- 계획에 변경이 있음. _questgiver_
- 즉시 마을을 떠나야함, _tavern_에서
- 당신과 만나라고 말했음.
- 즉시 출발할 것. 극히 시급한 문제임.
- 
-<ce>                                _enemy_
+사랑하는 %pcn에게,
+
+계획이 바뀌었습니다. _questgiver_님이 급히 마을을 떠나야
+해서, _tavern_에서 당신을 만나기로 했습니다. 즉시
+와주세요. 매우 긴급한 문제입니다.
+
+<ce>_enemy_
 
 Message:  1031
-친애하는 _enemy_,
- ___stronghold_에서 내 병사들 훈련이
- 잘 되고 있다니 아주 기쁘군.
- 돈을 마련하는대로 좀 더 보내도록 하겠네, _ruler_을
- 잡으려면 병사를 더 고용해야지.
- 자네가 여왕과 전면전을 하는건 가망이 없다고 한건 분명 맞는 말이야,
- 여왕의 성에서만 쿠데타를 한다고 해도 지금보다 병사가 더 필요해.
- 
- 몇 주 후에 ___stronghold_에서 직접 만나서
- 더 이야기 하지. 그 전에 날 봐야겠으면 __palace_의 궁전에 있겠네.
- 일이 다 잘돌아가면, 곧 새로운 동지가 생길지도 몰라.
- 여기 일이 부드럽게 진행 되서 정리가 끝나면 센티넬로 돌아가서
- 우리의 경애하는 여왕께 인사를("마지막 인사" 일지도 모르니까!)
- 드리러 가야만 해. 요즘 여왕의 요원들이 날 미행하고 있거든,
- 몸 좀 굽혀주고 굽신거려서 의심을 누그려 트려야겠어
- 이런걸 여왕이 좋아하거든.
- 
- 상황을 계속 알려주게.
- 
-<ce>깊은 신뢰와 함께,
-<ce>_traitor_,
-<ce>__palace_에서
+친애하는 _enemy_에게,
+
+___stronghold_에서 내 군대를 훈련시키는 당신의 진척 상황을
+듣게 되어 기쁩니다. _ruler_님을 물리치려면 더 많은
+병사를 고용해야 하기에, 자금이 마련되는 대로 더 많은 돈을
+보내겠습니다. 그녀와 정면으로 맞서는 것이 승산 없는
+싸움이라는 당신의 말은 분명 옳지만, 성 자체를 기습하기
+위해서라도 더 많은 병력이 필요하다고 생각합니다.
+
+이 문제는 제가 몇 주 후 ___stronghold_에 도착하면 직접
+논의할 수 있을 겁니다. 그동안 저와 연락해야 한다면, 저는
+__palace_의 황궁에 머물고 있을 겁니다. 모든 것이 잘
+풀리면, 곧 새로운 동맹을 얻게 될지도 모릅니다. 이곳 상황이
+다시 원활하게 진행되면, 저는 센티넬로 돌아가 우리 여왕님께
+경의(어쩌면 "마지막 경의"일지도 모르죠!)를 표해야 합니다.
+여왕의 첩자들이 최근 제 뒤를 밟고 있으니, 여왕이 좋아하는
+아첨을 떨며 의심을 사지 않도록 하겠습니다.
+
+진행 상황을 계속 알려주세요.
+
+<ce>진심을 담아,
+<ce>
+<ce>_traitor_, __palace_
 
 Message:  1032
-<ce>성별을 알 수 없는 작은 아이가 쪽지를 건네곤,
-<ce>반응도 채 하기도전에 도망쳤다.
+<ce>성별을 알 수 없는 작은 아이가 당신에게 쪽지를 건네고는
+<ce>반응할 틈도 없이 도망쳐 버립니다.
 
 Message:  1040
-<ce>%pcn, 맞죠? 이렇게 만나서 다행이군요.
-<ce>_questgiver_ 쪽에서
-<ce>무슨 상황인지 들은게 있나요? 들은게 없겠죠.
-<ce>네크로맨서가 관련이 있다는 말이면 충분할겁니다.
-<ce>정말, 엮이면 위험한 사람들이죠.
-<ce>하지만 제게 _amulet_가 있습니다, 근처에
-<ce>네크로맨서가 있으면 경고해주죠.
-<ce>도움이 될겁니다.
-<ce>항상 조심 하십시오, 친구여.
+<ce>%pcn님 맞죠? 연락이 닿아서 다행이네요.
+<ce>_questgiver_님이 무슨 일이 벌어지고 있는지 자세히
+<ce>말해주던가요? 그렇지 않았을 것 같군요. 간단히 말해
+<ce>강령술사단이 연루되어 있습니다. 정말 위험한 자들이죠.
+<ce>하지만, 강령술사단의 요원들이 근처에 있으면 경고해 줄
+<ce>_amulet_ 장치를 드릴게요. 유용하게 쓰일 겁니다.
+<ce>조심하세요, 친구.
 
 Message:  1041
-<ce>당신이 %pcn? _questgiver_ 설명이
-<ce>딱 맞는군요. 제 이름은 _target_.
-<ce>저와 같이 즉시 센티넬로 출발해야 합니다.
-<ce>우리를 막고 싶어 하는 자가
-<ce>_ruler_의 적이라는 것밖에
-<ce>알려드릴 수 없습니다.
+<ce>당신이 %pcn인가요? _questgiver_님이 당신을 잘
+<ce>묘사해주더군요. 저는 _target_입니다. 당장 센티넬로
+<ce>향해야 합니다. _ruler_님의 적들이 우리를 막기 위해
+<ce>무엇이든 할 것이라는 것 외에는 더 이상 말할 수 없습니다.
 
 Message:  1042
-<ce>_target_의 놀라 들이키는 숨소리에
-<ce>몸을 돌려 보니, 깃털이 달린 화살대가 %g 의 가슴팍에서
-<ce>튀어 나와 있었다. %g 가 무릎을 꿇으며 무너졌고,
-<ce>손에 편지를 쥐어주곤, 속삭였다,
+<ce>_target_님이 헐떡이자, 당신은 %g3의 가슴에
+<ce>깃털 달린 화살이 박혀 있는 것을 봅니다. %g가
+<ce>%g3의 무릎을 꿇으며, %g님이 당신의 손에
+<ce>편지를 쥐여주고는 중얼거립니다.
 <ce>
-<ce>"_traitor_는 센티넬의 배신자입니다.
-<ce>이걸 _ruler_께 반드시 전해주십쇼."
+<ce>"_traitor_ 인물은 센티넬의 반역자입니다. 이걸
+<ce>_ruler_님께 전해야 합니다."
 <ce>
-<ce>_target_의 숨이 끊겼다.
+<ce>_target_님이 죽었습니다.
 
 Message:  1043
-<ce>갑자기 밝은 빛에 둘러 쌓였다. 아래를 보자,
-<ce>빛이 _enemy_에게 받은 목걸이에서
-<ce>나오고 이썼다. 땅바닥이 발밑에서 벌어지는 것 처럼
-<ce>보이더니, 어둠이 당신을 집어 삼켰다.
+<ce>갑자기 당신 주위가 밝은 빛으로 감싸입니다. 아래를
+<ce>내려다보니, 그 빛은 _enemy_님이 준 부적에서 나오고
+<ce>있습니다. 발밑의 땅이 열리는 것 같더니, 어둠이 당신을
+<ce>집어삼킵니다.
 
 Message:  1050
-<ce>역모 편지를 _ruler_에게 줍니까?
+<ce>_ruler_에게 반역의 편지를 전하시겠습니까?
 
 Message:  1051
-<ce>"음? 이 편지는 뭐지? %god 맙소사, _traitor_,
-<ce>그것이 반역을?! 경비병! 즉시 궁전을 수색해
-<ce>찾아 여기로 데려오라."
+<ce>"응? 이 편지는 뭐지? 친애하는 %god, _traitor_
+<ce>인물이 나를 상대로 음모를 꾸미고 있다고?! 경비병! 성을
+<ce>샅샅이 뒤져 _traitor_ 대상을 찾아내 당장 내 앞으로 끌고
+<ce>오너라."
 <ce>
-<ce>경비병 몇명이 방에서 뛰어 나갔다. 몇분 후 한명이
-<ce>돌아왔다. 경례를 하더니, _traitor_의
-<ce>행방을 찾을 수 없었다고 보고 했다.
+<ce>경비병 몇 명이 방에서 뛰쳐나갔습니다. 몇 분 후 한 명이
+<ce>돌아와 경례하며 _traitor_ 대상을 어디에서도 찾을 수
+<ce>없었다고 보고합니다.
 <ce>
-<ce>_ruler_이 당신쪽으로 몸을 돌리더니 말했다.
+<ce>_ruler_ 인물이 당신을 돌아보며 말합니다:
 <ce>
-<ce>"반역 계획이 노출될 것을 미리 경고 받은게 분명하다.
-<ce>편지에서 언급된 ___stronghold_ 성채로 돌아갔겠지
-<ce>지금 상황에선 직접 공격은 피하고 싶군. 이 근방은
-<ce>익숙하지? 날 위해 한번 더 노력해줬으면 좋겠네.
-<ce>이 배신자에게 정의를 구현해줄 수 있겠나?
+<ce>"그놈은 자신의 반역이 곧 탄로 날 것을 눈치챘음이 분명하오.
+<ce>아마 편지에서 언급한 이 ___stronghold_ 장소로 숨어들었을
+<ce>것이오. 현 상황에서 직접적인 공격은 피하고 싶구려. 그대는
+<ce>이 지역에 익숙하지, 그렇지 않소? 나를 위해 한 번 더
+<ce>수고해주어 이 반역자를 심판대에 세워주겠소?"
 
 Message:  1052
-<ce>%pcn,
-<ce>그대는 센티넬 왕실에 뛰어난 충성심을 증명했네.
-<ce>_traitor_의 성채로 공격을 =gettraitor_일 미루지.
-<ce>내 지금 _traitor_에게 무법자임을 선고하노라.
-<ce>가능하면 생포하되, 피할 수 없으면 처단하라.
+<ce>%pcn, 그대는 센티넬의 왕좌에 매우 충성스럽다는
+<ce>것을 증명하고 있소. _traitor_의 요새를 공격하기 전까지
+<ce>=gettraitor_일간 기다리겠소. 이에 _traitor_ 대상을 법의
+<ce>테두리 밖으로 선포하노라 -- 가능하면 생포하고, 필요하다면
+<ce>죽여도 좋다.
 
 Message:  1053
-<ce>잘 알겠다. 내 직접 놈을 처리하지.
+<ce>좋소. 그놈은 내가 직접 처리하겠소.
 
 Message:  1054
-<ce>_ruler_이 편지를 열어 읽었다.
-<ce>그녀의 얼굴이 분노로 어두워졌다.
+<ce>_ruler_의 편지 읽기가 시작됩니다. 그녀의 얼굴이
+<ce>분노로 어두워집니다.
 <ce>
-<ce>"이건 분명히 그자의 인장과 서명이야.
-<ce>경비병! 즉시 대 회랑으로 가서
-<ce>_traitor_의 신병을 구속하고,
-<ce>지하 감옥에 넣어라."
+<ce>"의심할 여지가 없군. 이것은 그놈의 개인 인장이자 서명이다.
+<ce>경비병! 대연회장으로 가서 당장 _traitor_ 체포를
+<ce>수행하고 지하 감옥에 처넣어라."
 <ce>
-<ce>여왕이 당신에게 몸을 돌렸다.
+<ce>그녀가 당신을 돌아봅니다.
 
 Message:  1055
-<ce>그렇게 하지. _traitor_ 스스로 결정한 것이니
-<ce>그 대가도 치른 것이지, 치르게 한 것은 그대고.
-<ce>자 여기 마법을 부여한 _queenreward_.
-<ce>센티넬을 위해 치른 그대에 대한 보답이네.
+<ce>그렇게 되었군. _traitor_ 측은 스스로 길을 선택했고,
+<ce>그대 덕분에 그 대가를 치렀소. 센티넬을 위한 그대의 봉사에
+<ce>대한 보답으로 마법이 깃든 _queenreward_ 물품을 주겠소.
 
 Message:  1056
-<ce>%oth! _traitor_ 참 재빠른 놈이군.
-<ce>뭐, 곧 찾아낼테니까, 걱정하지 말게.
-<ce>센티넬의 병사들이 그것이 어디에 숨었든
-<ce>쫓아갈테니. 줄을 대고 있던 놈들도
-<ce>체포 되던가 나라를 떴으니, _traitor_에겐
-<ce>더이상 위협이 될 것이 없어. %pcn,
-<ce>_queenreward_. 이걸 받게 마법이 부여된 것이야.
-<ce>센티넬에 기여한 보답이야.
+<ce>%oth! _traitor_ 측은 정말이지 교활한 자로군.
+<ce>좋소, 걱정 마시오. 결국 내가 그놈을 찾아낼 테니. 센티넬의
+<ce>정의는 그놈이 어디에 숨든 끝까지 쫓아갈 것이오. 그놈의
+<ce>공범들은 모두 체포되었거나 영지를 떠났으니, 적어도
+<ce>_traitor_ 측은 더 이상 위협이 되지 않을 것이오.
+<ce>%pcn, 센티넬을 위한 그대의 봉사에 대한 보답으로 이
+<ce>마법이 깃든 _queenreward_ 물품을 받아주시오.
 
 Message:  1060
-<ce>역모 편지를 _traitor_에게 줍니까?
+<ce>_traitor_에게 반역의 편지를 전하시겠습니까?
 
 Message:  1061
-<ce>자네를 잘못 판단했던 모양이군, %pcn.
-<ce>우리가 친구가 될 수 있을지도 모르겠어.
-<ce>자, 고생했으니 _traitorreward_, 이걸 받게.
+<ce>내가 그대를 잘못 판단했던 모양이군, %pcn. 어쩌면
+<ce>우리는 결국 친구가 될 수 있을지도 모르겠어. 자, 수고비로
+<ce>이 _traitorreward_ 물품을 받게나.
 
 Message:  1062
-<ce>_traitor_의 눈이 즉시 당신을 향했다.
-<ce>당신이 누구인지 알자마자 얼굴 빛이
-<ce>하얗게 되더니 채 막으려 하기도 전에
-<ce>몸을 돌려 문쪽으로 박차고 나갔다.
+<ce>_traitor_의 시선이 당신을 뚫어지게 쳐다봅니다. 당신이
+<ce>누구인지 깨닫는 순간 그의 얼굴에서 핏기가 가시고, 아무도
+<ce>그를 막지 못하는 사이에 그는 몸을 돌려 문을 향해
+<ce>달아납니다.
 
 Message:  1070
-<ce>%ra 놈아, _traitor_의 일에
-<ce>간섭한 대가를 치르게 해주마.
+<ce>%ra 같은 놈, _traitor_의 일에 참견한 대가를
+<ce>치르게 될 것이다.
 
 Message:  1071
-<ce>항복해서 센티넬 저잣거리에
-<ce>구경거리가 되라고?
-<ce>그럴순 없어!
+<ce>항복하고 센티넬의 거리에서 대중의 구경거리가 되라고? 절대
+<ce>안 되지!
 
 Message:  1072
-<ce>_traitor_의 목숨을 끊었다.
+<ce>_traitor_ 사망이 확인되었습니다.
 
 Message:  1073
-<ce>_traitor_ 스스로 무기를 던지자
-<ce>항복을 하려는 걸로 생각하고 공격을 멈췄다,
-<ce>하지만 항복이 아니라 손가락의 반지를 잡고 돌렸고
-<ce>빛이 나면서 사라져 버렸다. 사라지면서 외치길.
+<ce>_traitor_의 무기 투척이 이어집니다. 항복하는 줄 알고
+<ce>당신은 공격을 멈추지만, 그 순간 그는 손가락의 반지를
+<ce>비튼다. _traitor_의 빛의 안개 속으로 사라지며 희미하게
+<ce>외치는 소리가 들린다.
 <ce>
-<ce>"그 창녀 한테 두고 보자고 해라!"
+<ce>"그년한테 전해! 이게 끝이 아니라고!"
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 10 times.
+--               %g2 occurs 6 times.
+--               %g3 occurs 8 times.
+--              %god occurs 1 time.
+--              %oth occurs 2 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 9 times.
+--              %qdt occurs 4 times.
+--               %ra occurs 1 time.
+--      =gettraitor_ occurs 2 times.
+--    ___questgiver_ occurs 1 time.
+--    ___stronghold_ occurs 10 times.
+--         __palace_ occurs 2 times.
+--     __questgiver_ occurs 1 time.
+--    __targethouse_ occurs 1 time.
+--          _amulet_ occurs 1 time.
+--           _enemy_ occurs 5 times.
+--     _queenreward_ occurs 2 times.
+--      _questgiver_ occurs 4 times.
+--          _reward_ occurs 2 times.
+--           _ruler_ occurs 225 times.
+--          _target_ occurs 64 times.
+--     _targethouse_ occurs 3 times.
+--          _tavern_ occurs 1 time.
+--         _traitor_ occurs 24 times.
+--   _traitorreward_ occurs 1 time.
+
+QBN:
+Item _amulet_ amulet
+Item _reward_ gold
+Item _I.02_ letter used 1030
+Item _I.03_ letter used 1031
+Item _I.04_ dead_body
+Item _queenreward_ magic_item
+Item _traitorreward_ diamond
+
+Person _ruler_ named Queen_Akorithi atHome
+Person _questgiver_ group Questor
+Person _target_ face 1 factiontype Knightly_Guard remote
+Person _enemy_ face 1 group Resident2 remote
+Person _traitor_ face 1 named Lord_K'avar
+
+Place _L.00_ remote dungeon
+Place _stronghold_ remote dungeon2
+Place _tavern_ local tavern
+Place _targethouse_ local house2
+Place _palace_ remote palace
+Place _aide_ remote dungeon
+
+Clock _S.00_ 00:05 0 flag 1 range 0 1
+Clock _patsy_ 30.00:00 0 flag 1 range 0 1
+Clock _S.02_ 3.11:20 13.21:20
+Clock _S.03_ 00:35 0 flag 1 range 0 1
+Clock _S.05_ 02:00
+--removed flags from S.05, could vary too much
+Clock _gettraitor_ 30.00:00 0 flag 1 range 0 1
+Clock _S.35_ 00:01
+--removed flags from S.35, needed to be precise
+
+Foe _F.00_ is 3 Archer
+Foe _mages_ is 2 Mage
+Foe _F.03_ is 3 Archer
+Foe _mtraitor_ is Ranger
+
+--	Quest start-up:
+	dialog link for person _enemy_ 
+	start timer _S.03_ 
+	start timer _S.02_ 
+	start timer _patsy_ 
+	log 1020 step 0 
+	place npc _enemy_ at _tavern_ 
+	place npc _traitor_ at _palace_ 
+	have _I.04_ set _deadbody_
+
+_S.00_ task:
+	have _amulet_ set _S.11_ 
+
+variable _patsy_
+_S.02_ task:
+	place npc _traitor_ at _stronghold_ 
+
+_S.03_ task:
+	hide npc _questgiver_ 
+	give pc _I.02_ notify 1032 
+
+_S.04_ task:
+	daily from 22:00 to 23:59 
+	start timer _S.05_ 
+	hide npc _enemy_ 
+	place npc _target_ at _targethouse_ 
+
+_S.05_ task:
+	place item _I.04_ at _targethouse_ 
+	hide npc _target_ 
+
+_deadbody_ task:
+	take _I.04_ from pc
+--added deadbody task. otherwise body would clog inventory
+
+_S.06_ task:
+	clicked npc _target_ 
+	pc at _targethouse_ set _S.08_ 
+	stop timer _S.05_ 
+	log 1021 step 1 
+	hide npc _target_ 
+	say 1041 
+	add _target_ face 
+
+_S.07_ task:
+	toting _I.02_ and _enemy_ clicked 
+	get item _amulet_ 
+	say 1040 
+
+variable _S.08_
+_S.09_ task:
+	when _S.06_ and not _S.08_ 
+	_I.03_ used do _S.27_ 
+	say 1042
+	create foe _F.00_ every 1 minutes 1 times with 100% success 
+	create foe _mages_ every 2 minutes 1 times with 100% success 
+	start timer _S.00_ 
+	log 1022 step 2 
+	get item _I.03_ 
+	drop _target_ face 
+
+_S.10_ task:
+	pc at _L.00_ set _S.12_ 
+	when _S.11_ and _S.00_ 
+	reveal _L.00_ 
+	say 1043 
+	teleport pc to _L.00_ 
+
+variable _S.11_
+_S.12_ task:
+	clear _conhouse_ 
+
+_conhouse_ task:
+	when _S.00_ and not _S.12_ 
+	create foe _F.03_ every 30 minutes 5 times with 10% success 
+
+_S.14_ task:
+	injured _F.03_ 
+	say 1070 
+
+_S.15_ task:
+	toting _I.03_ and _traitor_ clicked 
+	prompt 1060 yes _S.17_ no _S.19_ 
+
+_S.16_ task:
+	toting _I.03_ and _ruler_ clicked 
+	prompt 1050 yes _S.18_ no _S.20_ 
+	stop timer _patsy_
+
+_S.17_ task:
+	start quest 500 500 
+	get item _traitorreward_ 
+	say 1061 
+	make _traitorreward_ permanent 
+	change repute with _traitor_ by +15 
+	remove foe _F.03_
+--added remove foe action. K'avar's forces shouldn't try to kill you now
+
+_S.18_ task:
+	give pc _reward_ 
+	change repute with _ruler_ by +15 
+
+_S.19_ task:
+	stop timer _S.02_ 
+	get item _I.03_ 
+	start task _S.02_ 
+	say 1062 
+
+_S.20_ task:
+	get item _I.03_ 
+
+_S.21_ task:
+	when _S.18_ and not _S.02_ 
+	say 1054 
+
+_S.22_ task:
+	when _S.18_ and _S.02_ 
+	prompt 1051 yes _S.23_ no _S.24_ 
+
+_S.23_ task:
+	pc at _stronghold_ set _S.26_ 
+	start timer _gettraitor_ 
+	reveal _stronghold_ 
+	log 1023 step 3 
+	say 1052 
+
+_S.24_ task:
+	say 1053 
+
+variable _gettraitor_
+_S.26_ task:
+	hide npc _traitor_ 
+	place foe _mtraitor_ at _stronghold_ 
+
+_S.27_ task:
+	reveal _stronghold_ 
+
+_hittraitor_ task:
+	injured _mtraitor_ 
+	start timer _S.35_ 
+	stop timer _gettraitor_ 
+	say 1071 
+
+_S.29_ task:
+	killed 1 _mtraitor_ 
+	say 1072 
+
+_S.30_ task:
+	clicked npc _ruler_ 
+
+_success_ task:
+	when _S.29_ and _S.30_ 
+	get item _queenreward_ 
+	say 1055 
+	make _queenreward_ permanent 
+
+_S.32_ task:
+	when _patsy_ and not _S.23_ 
+
+_S.33_ task:
+	when _S.21_ or _success_ 
+	destroy _traitor_ 
+
+_S.34_ task:
+	when _S.21_ or _S.24_ 
+
+variable _S.35_
+_S.36_ task:
+	when _S.35_ and not _S.29_ 
+	say 1073 
+	remove foe _mtraitor_
+--changed "place foe in false dungeon" to remove foe.
+
+_S.37_ task:
+	when _S.36_ and _S.30_ 
+	get item _queenreward_ 
+	say 1056 
+	make _queenreward_ permanent 
+	unset _S.30_ 
+
+_S.38_ task:
+	when _S.34_ or _S.37_ 
+	start quest 501 501 
+
+_S.39_ task:
+	when _S.17_ or _gettraitor_ or _success_ 
+
+_S.40_ task:
+	when _S.32_ or _S.38_ 
+
+_S.41_ task:
+	when _S.39_ or _S.40_ 
+	restore _questgiver_ 
+	make _amulet_ permanent 
+	end quest 
+
+_qgclicked_ task:
+	clicked npc _questgiver_
+	say 1003

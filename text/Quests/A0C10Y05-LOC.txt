@@ -1,0 +1,199 @@
+-- Quest: C:\QUESTS\WORKING\A0C10Y05.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 10
+-- QuestId: 5
+-- Edited for Daggerfall Unity by Jay_H
+Quest: A0C10Y05
+DisplayName: 중매쟁이
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>저는 _betrothed_ 측과 약혼한 사이입니다.
+<ce>제 큰 불행은 _ruler_ 측이 _betrothed_에 대해
+<ce>다른 계획을 품고 있다는 것입니다.
+<ce>제 유일한 희망은 %g2를 신전으로 데려가
+<ce>_ruler_ 측이 우리를 잡기 전에 결혼식을
+<ce>마치는 것입니다. 제가 약혼자를 신전으로
+<ce>데려가는 동안 저를 보호해 주시겠습니까?
+<ce>보수로 _gold_ 골드를 드리겠습니다.
+<--->
+<ce>__betrothedhome_에서, 제 사랑하는
+<ce>_betrothed_ 측이 잔혹한 _ruler_의 폭정에
+<ce>시달리며 저를 기다리고 있습니다.
+<ce>_betrothed_ 측이 그렇게 갇혀 있는 동안 저는 잠도
+<ce>잘 수 없습니다. 하지만 우리를 갈라놓으려는
+<ce>_ruler_의 요원들이 두렵습니다. 저와 함께
+<ce>__betrothedhome_ 방향으로 가서 저를 보호해 주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>아아, 제 사랑하는 _betrothed_의 안위를 _ruler_
+<ce>쪽으로부터 보호해 줄 다른 수호자를 찾아야겠군요.
+
+AcceptQuest:  [1002]
+<ce>끝없는 감사를 드립니다, %pcn 님. 어서 서둘러
+<ce>_betrothed_의 행방을 찾으러 갑시다. __betrothedhome_의
+<ce>_betrothedhome_에서 %g2를 찾을 수 있을 겁니다.
+
+QuestComplete:  [1004]
+<ce>%pcf 님, 정말 큰 신세를 졌습니다. 이제 결혼식이
+<ce>진행 중이니, _ruler_도 방해할 수 없을 겁니다.
+<ce>약속드린 _gold_ 골드입니다.
+
+RumorsDuringQuest:  [1005]
+<ce>_ruler_께서 하렘을 만들려고 하나 보군. %g가
+<ce>_betrothed_의 신병을 확보하라고 %g3의 경비병들을
+<ce>보냈다는 소문을 들었어.
+
+RumorsPostfailure:  [1006]
+<ce>_betrothed_께서 _ruler_의 하렘에 들어갔다는 소문을
+<ce>들었어. 내 생각엔 납치나 다름없어 보이는데.
+
+RumorsPostsuccess:  [1007]
+<ce>_qgiver_ 측과 _betrothed_ 측이 방금 결혼했대. 정말
+<ce>멋진 소식 아니야?
+
+QuestorPostsuccess:  [1008]
+<ce>_betrothed_ 측과 제가 당신께 감사드립니다. 당신의 도움이
+<ce>없었다면 %g는 _ruler_ 측과 강제로 결혼해야
+<ce>했을 겁니다.
+
+QuestorPostfailure:  [1009]
+<ce>제 _betrothed_ 측을 영원히 잃어버렸습니다! %g는
+<ce>_ruler_ 측과 강제로 결혼하게 되었죠. 그런데도 저에게
+<ce>도움을 구하시나요? 당장 나가세요!
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 _qgiver_ 님이 _betrothed_ 측을 찾기
+ 위해 __betrothedhome_ 방향으로 %g2를 호위해 달라고
+ 요청했다. _qgiver_ 측은 _betrothed_ 측과 약혼한
+ 사이지만, _ruler_ 측은 결혼을 막기 위해 _qgiver_
+ 측을 죽이려 한다. 그들은 __temple_의 _temple_에서
+ 결혼식을 올릴 예정이다.
+
+Message:  1011
+<ce>아, 나의 사랑하는 _betrothed_! %pcn 님이 우리를
+<ce>_ruler_의 위협으로부터 보호해 주기로 하셨어요. 어서
+<ce>%pcn 님, 우리를 __temple_의 _temple_ 쪽으로
+<ce>데려가 주세요.
+
+Message:  1012
+<ce>우리는 _ruler_의 명령을 받아 이 결혼을 막으러 왔다.
+<ce>_betrothed_께서 지금 우리와 함께 간다면, 아무도 다치지
+<ce>않을 것이다.
+
+Message:  1013
+<ce>그러니까 _qgiver_, 너는 너를 보호하려고 이런
+<ce>보잘것없는 녀석을 고용했단 말이지. _ruler_께서 네가
+<ce>저항했다는 걸 알면 기뻐하지 않으실 거다. 비켜라,
+<ce>_betrothed_의 신병을 데려가겠다. 너에게는 상황이 더
+<ce>나빠질 뿐이다.
+
+Message:  1014
+<ce>_qgiver_께서 흥분하며 속삭인다. "그래! 이곳이 바로
+<ce>_ruler_의 깡패들이 내 사랑하는 이를 가두고 있는
+<ce>곳이야. 서둘러야 해!"
+
+Message:  1015
+<ce>"%oth!" _qgiver_께서 외친다. "여기
+<ce>_temple_께서 있어요! 이제 _priest_ 님이 우리를
+<ce>결혼시켜 주기만 하면 _betrothed_도 _ruler_의 손길이
+<ce>닿지 않는 곳으로 영원히 벗어날 수 있어요!"
+
+Message:  1020
+<ce>_qgiver_께서 혐오스러운 듯 %g2 머리를 흔든다.
+<ce>"결국 _betrothed_의 신병을 직접 구해야겠군. 당신은 나를
+<ce>실망시켰어, %pcf."
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 4 times.
+--               %g3 occurs 3 times.
+--              %pcf occurs 4 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--  __betrothedhome_ occurs 5 times.
+--         __temple_ occurs 4 times.
+--       _betrothed_ occurs 19 times.
+--   _betrothedhome_ occurs 1 time.
+--            _gold_ occurs 4 times.
+--          _priest_ occurs 1 time.
+--          _qgiver_ occurs 8 times.
+--           _ruler_ occurs 18 times.
+--          _temple_ occurs 3 times.
+
+QBN:
+Item _gold_ gold
+
+Person _betrothed_ face 1 group Group_7.0 remote
+Person _qgiver_ group Questor
+Person _priest_ face 201 factiontype Temple remote
+Person _ruler_ factiontype Province remote
+
+Place _betrothedhome_ remote house2
+Place _temple_ remote temple
+
+Clock _traveltime_ 00:00 0 flag 1 range 0 5
+
+Foe _F.00_ is 3 Burglar
+Foe _F.01_ is 2 Warrior
+
+--	Quest start-up:
+	start timer _traveltime_ 
+	--this odd location marker has no use
+	log 1010 step 0 
+	pc at _temple_ set _S.03_ saying 1015 
+	pc at _betrothedhome_ set _S.02_ saying 1014 
+	hide npc _qgiver_ 
+	add _qgiver_ face 
+	place npc _betrothed_ at _betrothedhome_ 
+	place npc _priest_ at _temple_ 
+
+_traveltime_ task:
+	restore _qgiver_ 
+	say 1020 
+	drop _betrothed_ face 
+	drop _qgiver_ face 
+	end quest 
+
+_S.01_ task:
+	clicked npc _betrothed_ say 1011 
+	hide npc _betrothed_ 
+	add _betrothed_ face 
+
+_S.02_ task:
+	create foe _F.00_ every 1 minutes 1 times with 15% success 
+
+_S.03_ task:
+	create foe _F.01_ every 2 minutes 1 times with 50% success 
+
+_dummy_ task:
+	injured _F.01_ saying 1012 
+	injured _F.00_ saying 1013 
+
+_S.05_ task:
+	clicked npc _priest_
+
+_success_ task:
+    when _S.01_ and _S.05_
+	give pc _gold_ 
+	drop _qgiver_ face 
+	drop _betrothed_ face 
+	change repute with _ruler_ by -20 
+	place npc _qgiver_ at _temple_ 
+	place npc _betrothed_ at _temple_ 
+
+_clearclick_ task:
+	when not _S.01_ and _S.05_ 
+	clear _S.05_ _clearclick_ 
+
+_questdone_ task:
+	when _success_ and not _S.03_
+	restore _qgiver_ 
+	end quest 

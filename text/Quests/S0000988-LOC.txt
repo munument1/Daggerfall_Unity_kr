@@ -1,0 +1,173 @@
+-- Quest: C:\QUESTS\WORKING\S0000988.Qbn.
+-- Main story quest.
+-- QuestId: 988
+Messages: 21
+Quest: S0000988
+DisplayName: 만텔라의 진실
+-- Message panels
+QRC:
+
+QuestLogEntry:  [1010]
+친애하는 %pcf 귀하,
+
+누미디움에 관한 동화는 들어본 적 없으시겠지만, 꼭
+알아두셔야 합니다.
+
+그 전설은 제3시대 초기로 거슬러 올라갑니다.
+
+누미디움은 손으로 달을 하늘에서 떨어뜨릴 수 있을 만큼
+거대한 거인이었다고 합니다. 이야기에 누미디움이 선한
+존재였는지 악한 존재였는지는 기억나지 않지만, 어릴 적 그
+전설은 저를 공포에 떨게 했습니다.
+
+사실 그 전설은 진실입니다. 누미디움은 실존했고, 상황이
+계속된다면 다시 나타날 것입니다. 타이버 셉팀의 토템은
+누미디움을 조종하는 데 사용됩니다. 하지만 전설에 따르면
+위대한 누미디움은 타이버 셉팀의 전투마법사와의 마지막
+전투에서 만텔라 심장을 잃어버렸다고 합니다. 그게 무엇이든
+간에 말이죠. 심장을 찾기 전까지 토템은 쓸모가 없습니다.
+
+<ce>친구로부터
+
+Message:  1011
+친애하는 %pcf 귀하,
+
+누미디움은 절대 권력을 향한 타이버 셉팀의 비밀
+병기였습니다. 천 피트 높이의 자동인형이자, 만텔라라는
+보석으로 동력을 얻는 골렘 혹은 아트로나크였죠. 만텔라는
+타이버 셉팀의 제국 전투마법사의 생명력을 불어넣은
+것이었고, 셉팀은 그것을 이용해 앞길을 막는 모든 자를
+짓밟았습니다. 모든 적을 완전히 패배시킨 후, 셉팀은
+누미디움을 이용해 탐리엘의 중립적인 왕가들을 짓밟아 자신이
+충성심을 확인한 자들만을 왕위에 앉혔습니다. 그의 제국
+전투마법사는 자신의 창조물이 이런 식으로 사용되는 것에
+분노하여 만텔라를 되찾기 위해 싸웠습니다. 이어지는
+전투에서 창조물과 창조주 모두 파멸했습니다. 그들이
+공유하던 심장은 이 현실에서 에이테리우스라 불리는 저승으로
+날아가 버렸죠. 누미디움의 몸은 탐리엘 전역으로 흩어졌고,
+생명력을 잃은 제국 전투마법사는 지하 금고에서 반쯤 잠든
+상태가 되었습니다. 그 후 수 세기 동안, 황제의 정예
+병사들은 대를 이어 누미디움의 조각들을 수집했고 블레이드라
+불리게 되었습니다. 타이버 셉팀의 제국 전투마법사는
+언더킹이라 불리게 되었고, 만텔라를 찾기 위해 자신의 군대를
+보냈습니다.
+
+그러니 경고하건대, 타이버 셉팀의 토템을 찾는 자들은 첫
+번째 탐리엘의 황제가 누미디움을 조종하기 위해 사용했던
+장치를 찾는 것입니다. 누미디움이 돌아온다면, 토템을 쥔
+자가 탐리엘의 운명을 결정하게 될 것입니다.
+
+<ce>친구로부터
+
+Message:  1012
+친애하는 %pcf 귀하,
+
+모두가 탐내는 타이버 셉팀의 토템에 대해 말씀드려야겠군요.
+당신이 무엇을 요구받고 있는지 그 진실을 알아야 합니다.
+
+토템은 타이버 셉팀의 명령에 따라 탐리엘의 초대 제국
+전투마법사가 제작했습니다. 이는 본질적으로 누미디움이라
+불리는 거대한 생명체를 조종하는 수단입니다. 그것이 없으면
+누미디움은 작동하지 않습니다. 제국 전투마법사는 토템에
+봉인을 걸어 셉팀 혈통이 아니거나 그 자신과 같은 특별한
+초자연적 친화력을 지니지 않은 자가 사용하려 하면 즉시
+죽음에 이르게 했습니다. 토템은 누미디움의 나머지 부분과
+함께 제국 전투마법사와 그의 창조물 사이의 거대한 전투 중에
+사라졌습니다.
+
+<ce>친구로부터
+
+Message:  1020
+<ce>당신을 알아보며 미소 짓는 어린 시종이 다가와 당신의 이름을
+<ce>묻지도 않고
+<ce>당신 앞으로 된 편지를 건넵니다. 당신의 모든 질문에 그는
+<ce>그저 멍한 표정과 미소로만
+<ce>대답할 뿐입니다.
+<--->
+<ce>당신의 손에 편지가 쥐어집니다. 누가 준 것인지 보려고 뒤를
+<ce>돌아보지만,
+<ce>군중 속으로 사라지는 제복의 뒷모습만 얼핏 보일 뿐입니다.
+<--->
+<ce>시종이 앞으로 다가와 "%pcn 님께 드리는
+<ce>편지입니다."라고 말하며 쪽지를 건넵니다.
+<--->
+<ce>전령이 당신에게 다가와 편지를 내밉니다. "당신 인상착의를
+<ce>가진 분께 이 편지를 전해달라고 들었습니다."
+<ce>전령이 말합니다. 당신이 편지를 받자, 전령은 돌아서서
+<ce>빠르게 걸어갑니다.
+<--->
+<ce>먹을 것을 찾으려고 가방을 뒤지다가 쪽지를 발견합니다.
+<ce>아까는 없던 것입니다.
+<--->
+<ce>얼굴이 붉어진 전령이 "%pcn 님께 드리는 편지입니다!
+<ce>아, 당신이군요. 여기 있습니다. 가봐야겠네요.
+<ce>다른 배달할 곳이 있어서요."라고 외치며 당신을 놀라게
+<ce>합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 6 times.
+--              %pcn occurs 2 times.
+
+QBN:
+Item _letter1_ letter used 1010
+Item _letter2_ letter used 1011
+Item _letter3_ letter used 1012
+
+Person _darkb_ face 1 faction Dark_Plotters remote
+Person _lhotun_ named Prince_Lhotun atHome
+Person _vampires_ face 113 factiontype Vampire_Clan remote
+Person _gortwog_ face 144 named Gortwog atHome
+Person _underking_ named The_Underking
+Person _aubk-i_ named Queen_Aubk-i atHome
+Person _thievesguild_ face 1 faction The_Thieves_Guild remote
+Person _kingofworms_ named King_of_Worms atHome
+Person _elysana_ named Princess_Elysana atHome
+Person _witches_ face 1 factiontype Witches_Coven remote
+Person _magesguild_ face 13 faction The_Mages_Guild male remote
+
+
+Clock _delay_ 1.00:00 0 flag 1 range 0 1
+
+
+--	Quest start-up:
+	dialog link for person _darkb_ 
+	dialog link for person _gortwog_ 
+	dialog link for person _kingofworms_ 
+	dialog link for person _magesguild_ 
+	dialog link for person _thievesguild_ 
+	dialog link for person _vampires_ 
+	dialog link for person _witches_ 
+	dialog link for person _underking_ 
+	repute with _darkb_ exceeds 50 do _S.00_ 
+	repute with _lhotun_ exceeds 25 do _S.00_
+	repute with _vampires_ exceeds 10 do _S.00_
+	repute with _gortwog_ exceeds 25 do _S.00_ 
+	repute with _underking_ exceeds 5 do _S.01_ 
+	repute with _aubk-i_ exceeds 25 do _S.01_
+	repute with _thievesguild_ exceeds 50 do _S.01_ 
+	repute with _kingofworms_ exceeds 15 do _S.02_ 
+	repute with _elysana_ exceeds 25 do _S.02_ 
+	repute with _witches_ exceeds 25 do _S.02_ 
+	repute with _magesguild_ exceeds 50 do _S.02_ 
+
+_S.00_ task:
+	give pc _letter1_ notify 1020 
+
+_S.01_ task:
+	give pc _letter2_ notify 1020 
+
+_S.02_ task:
+	give pc _letter3_ notify 1020 
+
+_S.03_ task:
+	when _S.00_ or _S.01_ or _S.02_ 
+	start quest 9 9 
+	start timer _delay_ 
+
+_delay_ task:
+	end quest 
+
+FinishedMantellanCrux _S.05_
+	end quest 

@@ -12,59 +12,98 @@ DisplayName: 거대 전갈 사냥
 QRC:
 
 QuestorOffer:  [1000]
-<ce>나는 _qgiver_.
-<ce>길드에선 보통 회원에만 일을 주지만,
-<ce>싹수가 보이는 친구에겐 다르지, %pcn.
-<ce>자 들어보게, 거대 전갈을 처리해달라는
-<ce>요청이 있는데 말이야.
-<ce>처리해주면 길드에서 그쪽을 다시보도록
-<ce>손을 써보지. 거래 할텐가?
+<ce>제 이름은 _qgiver_입니다. 보통은 길드원에게만 일을
+<ce>맡기지만, 당신은 가능성이 보여서 말이죠, %pcn.
+<ce>거대 전갈을 처치해 달라는 의뢰가 들어왔습니다. 그 일을
+<ce>해내면 길드에서 당신의 평판을 눈감아줄지 알아보겠습니다.
+<ce>거래하시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>잘해주려고 했더니만,
-<ce>이 대접이라니.
-<ce>됐으니 여기서 나가라고.
+<ce>친절을 베풀려 했더니 돌아오는 게 이거라니. 그냥
+<ce>나가십시오.
 
 AcceptQuest:  [1002]
-<ce>강단이 있구만, %pcf. 그건 인정해주지.
-<ce>이 전갈은 누군가의 개인 소유였다가
-<ce>도망친 모양이야. 이제는 _house_에
-<ce>박혀있지. 오늘 안에 죽이면
-<ce>길드에 그쪽 이야기를 잘 해주지.
+<ce>배짱이 있군요, %pcf, 인정하죠. 이 전갈은 누군가의
+<ce>개인 수집품에서 탈출한 모양입니다. 지금은 _house_에
+<ce>구석에 몰려 있죠. 오늘 안으로 처치하면 당신을 좋게
+<ce>추천하겠습니다.
 
 QuestComplete:  [1004]
-<ce>다들 허약한 물렁이라더니 아닌가 보군.
-<ce>자네의 일처리를 알아야할 사람에게 잘 알려주겠네.
+<ce>당신을 겁쟁이라고 부르던 사람들의 말이 틀렸나 보군요.
+<ce>적절한 사람들에게 이 일을 꼭 전하겠습니다.
 
 RumorsDuringQuest:  [1005]
-<ce>자기 집에 거대 전갈이 있는 걸 찾았다는
-<ce>불쌍한 멍청이 이야기 들으셨습니까?
-<ce>답 없이 이제는 술에 곯아 떨어져 있다고 합니다.
+<ce>집에서 거대 전갈을 발견한 불쌍한 바보에 대해 들으셨나요?
+<ce>지금 술에 취해 있다더군요.
 
 RumorsPostfailure:  [1006]
-<ce>어떤 취한 바보가 집에 처들어가서 거대 전갈에 죽었답니다.
-<ce>파이터 길드가 전갈을 처리한줄 알았나 봅니다.
+<ce>어떤 술 취한 바보가 집에 들어갔다가 거대 전갈에게
+<ce>죽었답니다. 전사 길드가 그 짐승을 처리했다고 생각했나
+<ce>보더군요.
 
 RumorsPostsuccess:  [1007]
-<ce>파이터 길드는 좋은 사람들입니다.
-<ce>그 집에 들어갔다던 거대 전갈을 잡아줬답니다.
+<ce>전사 길드는 참 좋은 집단이에요. 누군가의 집에 들어온 거대
+<ce>전갈을 처치해 줬거든요.
 
 QuestorPostsuccess:  [1008]
-<ce>거대 전갈을 잘 처리했어.
-<ce>이렇게 계속하면 길드에서
-<ce>인정 받을 수 있겠어.
+<ce>거대 전갈 처치, 잘했습니다. 이 속도라면 곧 길드에 정식으로
+<ce>가입하게 되겠군요.
 
 QuestorPostfailure:  [1009]
-<ce>고작 거대 전갈 하나 잡아달라
-<ce>그게 다 였는데.
-<ce>%pcf, 쓸모 없는 녀석이구만.
+<ce>거대 전갈을 죽여달라고 부탁했을 뿐입니다. 당신은 정말
+<ce>쓸모없는 %pcf 님이군요.
 
 QuestLogEntry:  [1010]
 %qdt:
- 파이터 길드에서 ___qgiver_의
- 의뢰로 _house_에 들어간
- 거대 전갈을 처리하게 되었다.
- 오늘 안에 완료해야 한다.
+ ___qgiver_의 전사 길드에서 _house_에 침입한 거대
+ 전갈을 처치할 기회를 주었습니다. 오늘 안으로 끝내야
+ 합니다.
 
 Message:  1011
-<ce>_monster_이 죽었다.
+<ce>_monster_ 사망이 확인되었습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 4 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--           _house_ occurs 2 times.
+--         _monster_ occurs 3 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _house_ local random
+
+Clock _2dung_ 1.00:00 0 flag 1 range 0 1
+
+Foe _monster_ is Giant_scorpion
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _house_ 
+	log 1010 step 0 
+	place foe _monster_ at _house_ 
+	create npc at _house_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	when _qgclicked_ and _S.01_ 
+	give pc nothing 
+	end quest 
+
+_qgclicked_ task:
+               clicked npc _qgiver_
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.01_ 
+	clear _qgclicked_ _clearclick_ 

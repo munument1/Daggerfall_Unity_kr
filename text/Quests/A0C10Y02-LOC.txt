@@ -1,0 +1,157 @@
+-- Quest: C:\QUESTS\WORKING\A0C10Y02.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 10
+-- QuestId: 2
+Quest: A0C10Y02
+DisplayName: 납치된 아이
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>정말 절박합니다. 다크 브라더후드
+<ce>가 제 아이 _child_ 납치를 자행했습니다.
+<ce>몸값을 지불하지 않으면 %g2 살해하겠다고
+<ce>협박하고 있습니다. %g3의 자유를 살 만큼
+<ce>충분한 돈은 없지만, %g2 구해주신다면
+<ce>_money_ 골드를 사례하겠습니다.
+<--->
+<ce>제 아이, 가엾은 _child_
+<ce>가 사라졌습니다. 다크 브라더후드가 %god
+<ce>도 알 수 없는 끔찍한 목적을 위해
+<ce>납치해 갔습니다. 제발 도와주십시오, %pcf 님.
+<ce>아이를 집으로 데려와 주신다면, 제 전 재산인
+<ce>_money_ 골드를 모두 드리겠습니다.
+
+RefuseQuest:  [1001]
+<ce>저에게는 암울한 날이군요. 다크 브라더후드가 _child_
+<ce>살해를 단행할 것입니다. %g3의 유령이 당신의 남은
+<ce>생애 동안 당신을 괴롭히길 바랍니다!
+
+AcceptQuest:  [1002]
+<ce>당신은 저의 구원자입니다! 제 이름은 _qgiver_입니다.
+<ce>어서 서두르세요. 그들이 _child_ 살해하기까지 이제
+<ce>=timeforq_일밖에 남지 않았습니다. %g는
+<ce>__dbguild_의 _dbguild_에 갇혀 있습니다.
+
+QuestFail:  [1003]
+<ce>_child_의 행방은 어디입니까? %g는 어디에
+<ce>있나요? 왜 아직 %g2를 데려오지 않으셨습니까?
+<ce>%g3의 목숨을 구하고 싶다면, 지금 당장 가십시오!
+
+QuestComplete:  [1004]
+<ce>_child_! 무사히 살아있었군요! %pcf 님,
+<ce>당신께는 결코 다 갚을 수 없는 빚을 졌습니다. 이 작은
+<ce>보상은 제가 드릴 수 있는 최소한의 성의일 뿐입니다.
+
+RumorsDuringQuest:  [1005]
+<ce>다크 브라더후드가 이번에는 너무 선을 넘었군.
+<ce>_qgiver_의 아이를 납치하다니 용서할 수 없는 일이야.
+
+RumorsPostfailure:  [1006]
+<ce>_qgiver_의 생명이 이번 계절을 넘기지 못할 것 같군.
+<ce>%g는 아마 자살할지도 몰라. 다크 브라더후드가
+<ce>%g3의 아이인 _child_ 납치 후 살해했다는 소식
+<ce>들었나?
+
+
+RumorsPostsuccess:  [1007]
+<ce>당신이 바로 아기 _child_ 측을 구출한 %ra
+<ce>종족이군요! 정말 영웅이십니다.
+
+QuestorPostsuccess:  [1008]
+<ce>제 아이의 구원자시여! 당신께 감사드리며 %g3의
+<ce>생명을 구해준 것에 대해 _child_ 님께도 감사를
+<ce>표합니다. 축복이 있기를, %pcf 님.
+
+QuestorPostfailure:  [1009]
+<ce>당신 때문에 제 아이 _child_ 사망했습니다! 다시는 제
+<ce>문 앞을 얼씬도 하지 마십시오.
+
+QuestLogEntry:  [1010]
+<ce>저를 구하러 오셨나요? 제 이름은 _child_입니다. 저는
+<ce>이 사람들이 싫어요. 제발 저를 가족에게 데려다 주세요.
+
+Message:  1011
+<ce>_dbguild_의 분위기는 어둡고 불길하다. 적들이 어디에나
+<ce>숨어 있음이 분명하다.
+
+Message:  1012
+%qdt에, _qgiver_ 님이 다크 브라더후드에 의한
+%g3의 아이 _child_의 가슴 아픈 납치 사건에
+대해 말해 주었다. 나는 즉시 __dbguild_의 _dbguild_에
+갇힌 %g2를 구출하기로 동의했다. %g3의
+가족은 내가 ___qgiver_의 __qgiver_ 쪽으로 돌아오기를
+=timeforq_일 동안 기다릴 것이다.
+
+Message:  1020
+<ce>다크 브라더후드를 건드리고 살아남은 자는 없다!
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 5 times.
+--               %g3 occurs 18 times.
+--              %god occurs 1 time.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--        =timeforq_ occurs 2 times.
+--        ___qgiver_ occurs 2 times.
+--        __dbguild_ occurs 3 times.
+--         __qgiver_ occurs 1 time.
+--           _child_ occurs 46 times.
+--         _dbguild_ occurs 4 times.
+--           _money_ occurs 2 times.
+--          _qgiver_ occurs 6 times.
+
+QBN:
+Item _money_ gold
+
+Person _child_ face 1 faction Children remote
+Person _qgiver_ face 121 group Questor
+Person _dummydarkb_ face 169 faction The_Dark_Brotherhood remote
+
+Place _dbguild_ remote house1
+
+Clock _timeforq_ 00:00 0 flag 17 range 1 4
+
+Foe _darkb_ is Assassin
+
+--	Quest start-up:
+	dialog link for person _child_ 
+	start timer _timeforq_ 
+	log 1012 step 0 
+	pc at _dbguild_ set _S.01_ saying 1011 
+	place npc _child_ at _dbguild_ 
+
+_timeforq_ task:
+	end quest 
+
+_S.01_ task:
+	create foe _darkb_ every 2 minutes 4 times with 30% success 
+
+_S.02_ task:
+	clicked npc _child_ say 1010 
+	hide npc _child_ 
+	add _child_ face 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_vamp1_ task:
+	when _qgclicked_ and _S.02_ 
+	give pc _money_ 
+	change repute with _dummydarkb_ by -15 
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.02_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+_S.06_ task:
+	injured _darkb_ 
+	say 1020 

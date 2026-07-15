@@ -12,80 +12,171 @@ DisplayName: 길드 경비
 QRC:
 
 QuestorOffer:  [1000]
-<ce>메이지 길드에서 오늘밤
-<ce>마법 물품 _treasure_
-<ce>보호 경비가 필요합니다.
-<ce>이를 감당할 수 있겠습니까?
-<ce>보수는 _potion_ 입니다.
-                                     <--->
-<ce>길드 건물, 어떻게 설명해야 할지?
-<ce>일을 하다보면, 알겠지만, 그 항상
-<ce>그 하는 사람들이... 음, 계속 길드와
-<ce>대립하는, 아니 뭐랄까, 문제를 일으키는...
-<ce>내말은, %pct, 이곳에 경비가 필요합니다.
-<ce>맡아보겠습니까?
+<ce>마법사 길드에서 오늘 밤 마법 _treasure_ 개체를
+<ce>지켜줄 사람이 필요합니다.
+<ce>당신이 우리를 위해 그 일을
+<ce>해줄 수 있겠습니까? 보상으로
+<ce>_potion_ 물품을 드리겠습니다.
+<--->
+<ce>길드홀이라... 어떻게 말해야 할까요? 살다 보면,
+<ce>동의하시겠지만,
+<ce>항상 어떤 사람들은... 음, 길드는 항상
+<ce>...에 대해 입장을 고수해 왔거나, 혹은 문제를 겪어왔죠...
+<ce>들어보세요, 젊은 %pct, 경비가 필요합니다.
+<ce>해주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>괜찮습니다. 일을 찾는 길드원은
-<ce>언제나 있기 때문이지요.
+<ce>문제없습니다. 항상 일거리를 찾는 다른 길드원들이
+<ce>있으니까요.
 
 AcceptQuest:  [1002]
-<ce>메이지 길드에 자정이 되기 전까지
-<ce>도착해야 합니다. 새벽 3:00까지
-<ce>경비 시간입니다.
+<ce>자정까지 마법사 길드로 오십시오. 당신의 경비 임무는 새벽
+<ce>3시까지 지속될 것입니다.
 
 QuestComplete:  [1004]
-<ce>수고했습니다, %pcf.
-<ce>도둑을 손쉽게 처리했군요.
-<ce>여기 _potion_입니다.
-<ce>받아 주십시오.
+<ce>잘했습니다, %pcf. 그 도둑들은 당신을 상대로는
+<ce>어림도 없었겠군요. 여기, 이 _potion_ 받으세요. 이것이
+<ce>우리가 해줄 수 있는 최소한의 성의입니다.
 
 RumorsDuringQuest:  [1005]
-도둑들이 메이지 길드에 있는 _treasure_ 값어치가 엄청나다고 생각하는게 분명합니다.
-<--->
-도둑들이 메이지 길드에 있는 _treasure_ 라는 걸 훔치겠다고 위협하고 있다고 합니다.
+도둑들은 마법사 길드의 _treasure_ 품목이 매우 가치
+있다고 생각하는 모양입니다. <---> 도둑들이 마법사
+길드의 _treasure_ 품목을 훔치겠다고 위협하고 있습니다.
 
 RumorsPostfailure:  [1006]
-도둑놈들이 결국 _treasure_ 인가를 훔쳐낸 모양입니다.
-<--->
-메이지 길드에서 제대로된 경비를 못구한 것 같습니다. 그 _treasure_, 도난 당했다고 하니까요.
+도둑들이 결국 그 _treasure_ 품목을 손에 넣었군요.
+<---> 마법사 길드는 진짜 경비원을 고용했어야
+했습니다. 그래서 _treasure_ 품목을 잃어버린 거죠.
 
 RumorsPostsuccess:  [1007]
-그 도둑들 다시는 _treasure_ 훔치려고 못 덤벼들겁니다, 제가 장담하죠.
-<--->
-그 _treasure_ 훔치려고 했던 도둑놈들, 제대로된 경비가 있을거라곤 몰랐을 겁니다.
+그 도둑들은 다시는 그 _treasure_ 품목을 노리지 않을
+겁니다, 장담하죠. <---> 그 _treasure_ 품목을
+노렸던 도둑들은 진짜 경비원이 있을 줄은 몰랐을 겁니다,
+장담하죠.
 
 QuestorPostsuccess:  [1008]
-잘 지냅니까, %pcf? 그 _potion_, 잘 썼는지 모르겠습니다.
+어떻게 지내시나요, %pcf? 그 _potion_ 품목은
+어디 쓸모가 있었나요?
 
 QuestorPostfailure:  [1009]
-<ce>_treasure_ 잃어놓고,
-<ce>아직도 여기에 있는 겁니까?
-<ce>이해를 못하겠군요.
-<ce>가십시오, %pcn.
+<ce>_treasure_의 부재가 확인되었지만, 당신은 여기 있군요?
+<ce>이건 그다지 공평한 교환은 아니라고 생각합니다. 저를
+<ce>떠나주세요, %pcn.
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_ 메이지 길드의 의뢰로
- 마법이 부여된 _treasure_ 경호를
- 맡기로 했다.
- 자정부터 세시 사이에 경비를 서야 한다.
+ 마법사 길드의 마법 _treasure_ 경비를 ___qgiver_에서
+ 수행하기로 했습니다. 자정부터 3시 사이에 그곳에 있어야
+ 합니다.
 
--moved line down from %qdt line.
+-%qdt 줄에서 아래로 이동됨.
 
 Message:  1011
 %qdt:
- 참을 수가 없었다.
- 지켜야할 _treasure_에 손을 댔다.
- 분명 뒷감당을 해야 하리라.
+ 참을 수가 없었습니다. 경비 대상이었던 _treasure_의
+ 탈취가 발생했습니다. 분명 그들이 저를 뒤쫓을 겁니다.
 
 Message:  1012
-<ce>여거 보게 친구들. 경비 나부랭이잖아.
-<ce>세상에, 너무 무서워서 몸이 다 떨리네.
-<ce>문앞에다 혀 좀 잘라서 놔두자고.
-<ce>도둑 길드에 대들면 안된다는 경고로 말이지.
-<ce>저놈 잡아!
+<ce>이봐들, 여기 좀 봐. 경비병이야. 이런, 겁이 나서 떨리는군.
+<ce>도둑 길드를 건드리면 어떻게 되는지 본보기로 혀를 문에
+<ce>남겨두자고. 저놈 잡아!
 
 Message:  1013
-<ce>메이지 길드가 나에게
-<ce>도둑이자 배신자로서 현상금을 걸었다.
+<ce>마법사 길드의 도둑이자 배신자에 대한 현상금을 청구합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 2 times.
+--              %pcn occurs 2 times.
+--              %pct occurs 1 time.
+--              %qdt occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--          _potion_ occurs 33 times.
+--        _treasure_ occurs 11 times.
+
+QBN:
+Item _treasure_ magic_item
+Item _potion_ gem
+
+Person _qgiver_ group Questor
+
+Place _magesguild_ local magery
+
+Clock _oneday_ 1.03:00
+Clock _S.10_ 3.00:00
+
+Foe _F.00_ is Thief
+Foe _F.01_ is 4 Knight
+
+--	Quest start-up:
+	place item _treasure_ at _magesguild_ 
+	start timer _oneday_ 
+	log 1010 step 0
+	create npc at _magesguild_ 
+
+variable _oneday_
+
+_timeout_ task:
+	when _oneday_ and not _S.07_ 
+	end quest 
+
+_clickonqgiver_ task:
+	clicked npc _qgiver_ 
+
+_S.02_ task:
+	daily from 00:00 to 03:00 
+	pc at _magesguild_ set _S.03_ 
+
+_S.03_ task:
+	create foe _F.00_ every 3 minutes 1 times with 100% success 
+	create foe _F.00_ every 3 minutes 1 times with 100% success 
+	create foe _F.00_ every 3 minutes 1 times with 100% success 
+	create foe _F.00_ every 3 minutes 1 times with 100% success 
+	--spawn times reduced. leaving them at classic values would be very disjointed; one thief would arrive nearly half an hour later. classic tended to spawn all at once
+
+_S.04_ task:
+	injured _F.00_ saying 1012 
+
+_S.05_ task:
+	killed 2 _F.00_ 
+
+_S.06_ task:
+	clicked item _treasure_ 
+	clear _dropped_
+
+_dropped_ task:
+	dropped _treasure_ at _magesguild_ 
+	clear _S.06_
+
+_S.07_ task:
+	when _S.06_ and not _S.02_ 
+	create foe _F.01_ every 60 minutes 5 times with 10% success 
+	start timer _S.10_ 
+	log 1011 step 1 
+	change repute with _qgiver_ by -30 
+
+_S.08_ task:
+	injured _F.01_ saying 1013 
+
+_questdone_ task:
+	when _S.10_ and _S.07_ 
+	make _treasure_ permanent 
+	end quest 
+
+variable _S.10_
+
+_pcgetsgold_ task:
+	when _clickonqgiver_ and _S.05_ and not _S.07_ and not _S.02_ 
+	give pc _potion_ 
+	end quest 
+
+_clearclick_ task:
+               when _clickonqgiver_ and not _S.05_
+               clear _clearclick_ _clickonqgiver_
+
+_clearclick2_ task:
+               when _clickonqgiver_ and _S.02_
+               clear _clearclick2_ _clickonqgiver_
+
+variable _S.13_

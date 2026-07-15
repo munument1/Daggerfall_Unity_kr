@@ -1,0 +1,44 @@
+---- Example quest to demonstrate direction hints for dungeon locations
+
+Quest: __DEMO19
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>길 찾기 능력을 시험해 보시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>음, 올바른 길을 전혀 모르시는 것 같군요, 그렇지 않나요?
+
+AcceptQuest:  [1002]
+<ce>훌륭합니다! 당신이 스스로 ___lostdung_의 위치를 찾을 수
+<ce>있는지 시험해 보고 싶군요. ___lostdung_의 행방을 어디서
+<ce>찾을 수 있는지 농부들에게 물어보라는 팁 외에는 저에게
+<ce>도움을 기대하지 마십시오.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 스스로 ___lostdung_의 위치를 찾으라는 의뢰를 받았다.
+ 유일한 조언은 농부들에게 물어봐서 어디에 있는지 정보를
+ 얻으라는 것뿐이었다.
+
+Message:  1011
+저는 ___lostdung_의 위험성만 압니다. <---> 이곳의
+%di 상태를 살펴보시는 게 좋을 겁니다.
+<---> ___lostdung_의 행방을 찾고 싶으신가요?
+이곳에서 %di에 있습니다.
+
+Message:  1012
+드디어 ___lostdung_의 위치를 찾았습니다!
+
+QBN:
+
+Place _lostdung_ remote dungeon anyInfo 1011
+
+--	Quest start-up:
+	log 1010 step 0
+	pc at _lostdung_ set _S.00_
+
+_S.00_ task:
+	say 1012
+	end quest

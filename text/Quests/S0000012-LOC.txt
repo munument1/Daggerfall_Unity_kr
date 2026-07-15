@@ -1,0 +1,235 @@
+-- Quest: C:\QUESTS\WORKING\S0000012.Qbn.
+-- Main story quest.
+-- QuestId: 12
+Messages: 22
+Quest: S0000012
+DisplayName: 황제의 전령
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>안녕하세요, %pcn 님. 귀하에 대해 많이 들었습니다.
+<ce>이제 귀하께서 아주 흥미로운 기만 이야기를 가지고 저를
+<ce>찾아오셨군요. 시녀 신다사가 아우브키가 저에게 보내는
+<ce>황제의 편지를 뜯어보았다고 말하더군요. 분명히 말씀드리지만
+<ce>%pcf, 그녀는 그런 편지를 저에게 전달한 적이
+<ce>없습니다.
+<ce>
+<ce>이 일을 더 조사해 주셨으면 합니다, %pcn 님.
+<ce>고스리드 왕을 분노하게 하지 않으면서 아우브키의 일을
+<ce>파헤치는 것은 위험할 수 있습니다. 비록 그가 제 아들이긴
+<ce>하지만요. 하시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>아우브키가 귀하를 완전히 손아귀에 넣었나 보군요,
+<ce>%pcn 님. 그녀의 후원을 받아 살아남으시길 바랍니다.
+
+AcceptQuest:  [1002]
+<ce>좋습니다. 저는 오랫동안 아우브키의 황제에 대한 충성심을
+<ce>의심해 왔습니다. 그녀는 센티넬의 성채에서 해머펠을
+<ce>통치했던 고 카마론 왕의 딸입니다.
+<ce>
+<ce>제 남편 리산더스 왕, %god께서 그 영혼을 안식케
+<ce>하시길, 카마론 왕과 함께 크링게인에서 전사하셨지요.
+<ce>리산더스의 시신은 수습되지 못해서 진정한 무덤 대신 그곳에
+<ce>기념비가 세워져 있습니다. 아... 생각이 딴 데로 샜군요.
+<ce>
+<ce>황제는 대거폴에서 _messenger_의 전령 활용을 지시합니다.
+<ce>%g의 위치는 지역 어디든 서신을 전달하러 다닐 수
+<ce>있습니다. 하지만, _messenger_의 소속은 용 기사단입니다.
+<ce>__location_에 있는 _location_ 쪽으로 가서
+<ce>_dispatcher_의 행방을 찾으십시오. %g는
+<ce>_messenger_의 소재를 알고 있을지도 모릅니다. 저에게
+<ce>보내는 편지가 왜 아우브키에게 전달되었는지 알아내
+<ce>주십시오.
+
+QuestComplete:  [1004]
+<ce>아! 이제 이해가 되는군요. 우리엘 셉팀은 대거폴의 여왕에게
+<ce>메시지를 보냈습니다. 그가 보냈을 당시에는 제가 여왕이었죠.
+<ce>도착했을 때는 제 사랑하는 리산더스는 죽고 아우브키가
+<ce>여왕이 된 후였습니다. 그 편지에 무엇이 들어있었는지
+<ce>알아내야 합니다. 저는 아우브키를 한 번도 믿은 적이
+<ce>없습니다.
+<ce>
+<ce>어제 저는 웨이레스트의 모르기아 공주로부터 황제의 편지에
+<ce>대해 무언가 알고 있다는 편지를 받았습니다. 황제의 통치
+<ce>아래에서 부글부글 끓고 있는 가문이죠. 누가 황제의 편지를
+<ce>가지고 있는지 알아내면 저에게 돌아오십시오.
+<ce>
+<ce>지금까지 귀하께서는 스스로를 증명해 보이셨습니다,
+<ce>%pcn 님. 제 감사의 표시로 _jewelry_ 물품을
+<ce>가지십시오. 이제 아우브키의 것은 무엇이든 소유하고 싶지
+<ce>않군요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 고스리드의 대비인 미니세라는 저에게 황제가 보낸 편지가 왜
+ 아우브키 여왕의 손에 들어갔는지 조사해달라고 요청했습니다.
+ 황제의 전령인 _messenger_ 개체는 __location_의
+ _dispatcher_ 개체를 통해서만 연락할 수 있습니다. 두 사람
+ 모두 용 기사단의 일원입니다. 그녀는 그들에게 제 신뢰를
+ 증명할 수 있는 인장 반지를 주었습니다.
+
+Message:  1011
+%qdt:
+ 미니세라의 인장 반지가 _dispatcher_의 신뢰를 샀습니다.
+ %g는 _messenger_의 존재가 =2palace_일 후에
+ __palace_의 _palace_에 있을 것이라고
+ 말해주었습니다.
+
+Message:  1015
+<ce>황제 폐하의 편지 말씀입니까? 사실 %pcf 이건 좀
+<ce>곤란한 문제입니다. 편지를 받은 바로 그날 도둑맞고
+<ce>말았거든요. 저는 한 번도 읽어보지 못했습니다. 편지가 다시
+<ce>나타나거나 황제 폐하께서 다른 편지를 보내주시길 바라고
+<ce>있었죠. 만약 그 편지를 찾으신다면 부디 제가 직접 미니세라
+<ce>님께 전달할 수 있도록 해주신다면 정말 감사하겠습니다.
+
+Message:  1016
+<ce>황제 폐하의 편지 %pcn에 대한 조사를 하지 말았어야
+<ce>했다. 이제 그 대가로 네 목숨을 내놓아야 할 것이다.
+
+Message:  1017
+%ra 처치에 성공하라. __location_ 쪽으로 가는
+길에 매복하는 것이
+가장 좋은 기회다. 그 바보는 거기서
+_dispatcher_의 심문을 진행할 생각이다.
+<ce>
+<ce>--- A.
+
+Message:  1019
+대거폴의 문장과 리산더스의 개인 문장이 새겨진 인장 반지.
+
+Message:  1020
+<ce>저는 _dispatcher_입니다. 평소라면 용 기사가 아닌 사람에게
+<ce>_messenger_의 위치를 알려주지 않았을 겁니다. 하지만 저는
+<ce>미니세라 여왕님께 충성하고 있습니다. 또한 _messenger_의
+<ce>행보를 보면 지난번에 %g2를 매복 공격하려던 자의
+<ce>배를 갈라버렸다는 사실도 알고 있죠. =2palace_일 후면
+<ce>%g는 __palace_의 _palace_에 도착할
+<ce>예정입니다. 거기서 %g2를 찾아보십시오.
+
+Message:  1021
+<ce>이봐! 경고하는데, 나는 황제 폐하를 직접 모시는 용 기사다.
+<ce>만약 이게 나를 매복 공격하려는 수작이라면, 후회하며 죽게
+<ce>될 줄 알아라.
+<ce>
+<ce>흠. 그래, 내가 _messenger_ 개체가다. 이 인장 반지는 네가
+<ce>미니세라 님의 명을 받고 왔다는 증거군. 얼마 전 나는 황제
+<ce>폐하께서 대거폴의 여왕께 보내는 편지를 전달했다. 내가
+<ce>틀리지 않았다면, 대거폴의 여왕은 미니세라가 아니라
+<ce>오브키다. 미니세라에게 전해라. 나는 내 임무를 매우
+<ce>진지하게 수행한다고. 나는 잘못된 상대에게 편지를 전달하는
+<ce>실수는 절대 하지 않는다. 오브키 여왕께서 감사의 표시로 이
+<ce>_jewelry_ 물품을 주셨다. 미니세라에게 보여주면 내가
+<ce>충직한 신하이자 기사단에 헌신하고 있음을 알게 될 것이다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 4 times.
+--               %g2 occurs 3 times.
+--              %god occurs 1 time.
+--              %pcf occurs 2 times.
+--              %pcn occurs 5 times.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+--         =2palace_ occurs 3 times.
+--       __location_ occurs 3 times.
+--         __palace_ occurs 3 times.
+--      _dispatcher_ occurs 6 times.
+--         _jewelry_ occurs 2 times.
+--        _location_ occurs 1 time.
+--       _messenger_ occurs 8 times.
+--          _palace_ occurs 4 times.
+
+QBN:
+Item signetRing ring anyInfo 1019
+Item letter47 letter used 1017
+Item _jewelry_ trinket
+
+Person _Mynisera_ face 96 named Mynisera atHome
+Person _messenger_ face 1 faction The_Knights_of_the_Dragon remote
+Person _dispatcher_ faction The_Knights_of_the_Dragon remote
+Person _aubki_ named Queen_Aubk-i atHome
+
+Place _location_ remote random
+Place _palace_ remote palace
+
+Clock _2palace_ 00:00 0 flag 1 range 0 2
+Clock _S.07_ 2.00:00 0 flag 1 range 0 1
+
+Foe _F.00_ is Nightblade
+
+--	Quest start-up:
+	dialog link for item signetRing 
+	add _Mynisera_ as questor 
+
+_S.00_ task:
+	clicked npc _Mynisera_ 
+	prompt QuestorOffer yes _yes_ no _no_ 
+	add _aubki_ as questor 
+
+_yes_ task:
+	add dialog for item signetRing 
+	log 1010 step 0 
+	get item signetRing 
+	say AcceptQuest 
+	create npc at _location_ 
+	place npc _dispatcher_ at _location_ 
+
+_no_ task:
+	say RefuseQuest 
+	end quest 
+
+_S.03_ task:
+	clicked npc _dispatcher_ 
+	start timer _2palace_ 
+	log 1011 step 1 
+	say 1020 
+
+_2palace_ task:
+	start timer _S.07_ 
+	place npc _messenger_ at _palace_ 
+
+_S.05_ task:
+	toting signetRing and _messenger_ clicked 
+	stop timer _S.07_ 
+	get item _jewelry_ 
+	get item signetRing 
+	say 1021 
+
+variable _S.06_
+_S.07_ task:
+	drop _aubki_ as questor 
+	drop _Mynisera_ as questor 
+	end quest 
+	destroy _messenger_ 
+
+_S.08_ task:
+	clicked npc _aubki_ 
+
+_preventspawn_ task:
+	when _S.08_ and not _yes_
+	clear _S.08_ _preventspawn_
+
+_S.09_ task:
+	injured _F.00_ saying 1016 
+	give item letter47 to _F.00_ 
+
+_S.10_ task:
+	toting _jewelry_ and _Mynisera_ clicked 
+	give pc _jewelry_ 
+	start quest 20 20 
+	take signetRing from pc 
+	change repute with _aubki_ by -10 
+	change repute with _Mynisera_ by +20 
+	drop _Mynisera_ as questor 
+	drop _aubki_ as questor 
+	end quest 
+
+_S.11_ task:
+	when _yes_ and _S.08_ 
+	say 1015 
+	change repute with _aubki_ by -10 
+	send _F.00_ every 500 minutes 10 times with 50% success 

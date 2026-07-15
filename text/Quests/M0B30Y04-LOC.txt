@@ -6,82 +6,141 @@
 -- QuestId: 4
 Messages: 81
 Quest: M0B30Y04
-DisplayName: 전사의 리치
+DisplayName: 전사 길드 리치
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>들어봐, %pcf.
-<ce>길드 의뢰를 많이 해주지 않았다면
-<ce>이런 일은 말도 안했을거야, 일이 있는데
-<ce>말해주기도 힘든 일이야. 터무니 없이
-<ce>어려운 일인 데다 아주 위험하기까지 해.
-<ce>___mondung_에 있는 리치를
-<ce>잡아야 하는데다, 보수도 _reward_ 밖에 되지 않아.
-<ce>역시 관심 없겠지?
+<ce>들어보게, %pcf. 만약 자네가 우리 일을 이미 여러 번
+<ce>해본 게 아니라면 이런 제안은 하지도 않았을 걸세. 하지만
+<ce>자네에게 말하기조차 꺼려지는 일이 하나 있네. 달을 따달라고
+<ce>생떼를 쓰는 것보다 더 위험한 일이지. ___mondung_에 있는
+<ce>리치를 처리하는 일이네. 보수는 고작 _reward_
+<ce>골드뿐이고. 관심 없지, 그렇지?
 
 RefuseQuest:  [1001]
-<ce>%god께 감사를.
-<ce>그래도 아직 제정신은 있구만.
-<ce>리치는 그냥 맘대로 설치게 놔두자고.
-<ce>나한테는 그게 나아.
+<ce>%god님, 아직 제정신이 남아있어서 다행이군. 그
+<ce>리치가 무슨 짓을 하든 그냥 내버려 두지. 그게 나도
+<ce>편하니까.
 
 AcceptQuest:  [1002]
-<ce>아, 말을 꺼내지 않는건데. 잘듣게,
-<ce>최대한 최고로 잘 챙겨 가라고, 마법 지팡이,
-<ce>에보니 검, 뭐든 간에.
-<ce>리치는 =1stparton_일 안에 오블리비언으로 돌려보내야 돼.
-<ce>보수를 받으려면 너도 시간 안에 들어와야 돼.
-<ce>감당이 안되는 친구구만, %pcf.
-<ce>행운을 비네. 많이 필요할거야.
+<ce>아, 말하지 말았어야 했는데. 듣게, 정말로 이 일을 하겠다면,
+<ce>구할 수 있는 최고의 장비를 챙기게. 마법 아이템이나 에보니
+<ce>블레이드 같은 것들 말일세. 이 리치는 =1stparton_일 안에
+<ce>오블리비언으로 넘어가야 하니, 보상을 받으려면 그 시간 안에
+<ce>여기로 돌아와야 하네. 자네는 정말 믿을 수가 없군,
+<ce>%pcf. 행운을 비네. 분명 필요할 테니까.
 
 QuestFail:  [1003]
-<ce>리치 사냥 전에 휴식인가, %pcf?
-<ce>너무 오래 하지 말라고.
+<ce>리치 사냥을 떠나기 전에 잠시 쉬는 건가, %pcf? 너무
+<ce>오래 지체하지는 말게.
 
 QuestComplete:  [1004]
-<ce>다시 보게될 줄은 몰랐군, %pcf.
-<ce>%god께서 보살펴 주시는게 분명하구만.
-<ce>여기 금화 _reward_닢이네.
-<ce>만끽하라고.
+<ce>자네를 다시 보게 될 줄은 몰랐군, %pcf, 정말로.
+<ce>%god께서 자네를 보살피고 계신 게 분명해. 여기
+<ce>_reward_ 골드일세. 즐기게나.
 
 RumorsDuringQuest:  [1005]
-어떤 멍청한 %ra 인지, ___mondung_에 있는 리치를 잡으러 갔다고 들었습니다.
-<--->
-다들 ___mondung_에 있는 리치를 잡으러 간다는 %ra에 내기를 걸고 있습니다.
+어떤 멍청한 %ra 종족이 ___mondung_에 있는 리치를
+상대하러 간다더군. <---> 다들 ___mondung_에 있는
+리치를 잡으러 간 그 %ra에게 내기를 걸고 있어.
 
 RumorsPostfailure:  [1006]
-그 리치 아직 어딘가에 있을텐데, 기분이 좋진 않군요.
-<--->
-리치를 건드리질 말았어야 했습니다. 괜히 리치가 화나게 만든것 아닌가 합니다.
+그 리치는 아직 어딘가에 살아있고, 우리에게 단단히 화가
+났어. <---> 그냥 리치를 내버려 뒀어야 했는데. 괜히
+자극만 했어.
 
 RumorsPostsuccess:  [1007]
-누군지 몰라도 리치를 정말 죽였답니다! 리치는 죽일 수 없는 건 줄 알았는데.
-<--->
-리치를 죽이러 간다는 그 %ra 한테 돈을 걸었다가 잃었습니다.
+누군가 정말로 그 리치를 죽였어! 리치는 불사신인 줄
+알았는데. <---> 그 리치를 죽이러 간
+%ra에게 걸었다가 돈만 날렸군.
 
 QuestorPostsuccess:  [1008]
-<ce>리치 척살자가 돌아왔구만!
-<ce>이제 뭘 잡을텐가?
-<ce>드래곤? 데이드라?
+<ce>리치 사냥꾼이 돌아왔군! 다음엔 무엇을 상대할 텐가? 드래곤?
+<ce>데이드라?
 
 QuestorPostfailure:  [1009]
-<ce>나는 리치를 잡아야 하는 일이면 맡지 않았을거야.
-<ce>왜 맡았는지 도저히 이해가 안되더군.
-<ce>리치를 못죽인거 보니 그냥 멍청이였구만.
+<ce>나라면 리치를 상대하는 일은 맡지 않았을 걸세. 자네가 왜
+<ce>그랬는지 도무지 이해가 안 가는군. 이제 자네는 리치조차
+<ce>죽이지 못한 멍청이로 보일 뿐이야.
 
 Message:  1020
-<ce>저열한 필멸자!
-<ce>너는 언데드를 방해하지 말았어야 했다.
-<ce>내 %ra 용병 수집품에 널 추가해주마.
+<ce>가련한 필멸자여! 언데드의 일에 간섭하지 말았어야 했다.
+<ce>이제 너를 내 수집품에 추가해주마. 살해당한 %ra
+<ce>용병들 말이다.
 
 Message:  1030
 %qdt:
- 파이터 길드의 ___questgiver_에게
- 리치 처리 일로 고용되었다.
- =1stparton_일 이내로 일을 처리해야 한다.
- 리치의 소굴은 ___mondung_에 있다.
+ ___questgiver_의 전사 길드에서 =1stparton_일 이내에 리치를
+ 처치하라는 의뢰를 받았다. 리치의 은신처는 ___mondung_의
+ 명칭으로 불리는 불리는 곳이다.
 
 Message:  1080
-<ce>여기, ___newdung_에 가는 지도다.
-<ce>리치를 잡는 너라면 이정도는 손쉽겠지.
+<ce>여기, ___newdung_ 쪽으로 가는 지도를 받게. 자네 같은 리치
+<ce>사냥꾼에겐 아침 식사 전 가벼운 운동 정도밖에 안 되겠지.
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 2 times.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 6 times.
+--       =1stparton_ occurs 2 times.
+--       ___mondung_ occurs 5 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon
+Place _newdung_ remote dungeon14
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Lich
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	pick one of _map_ _nomap_ _nomap_ _map_ 
+	place foe _monster_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+
+_S.01_ task:
+	injured _monster_ 
+	say 1020 
+
+_mondead_ task:
+	killed 1 _monster_ 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.07_ task:
+	when _map_ and _pcgetsgold_ 
+	reveal _newdung_ readmap
+    say 1080 
+	end quest
+
+_S.08_ task:
+	when _nomap_ and _pcgetsgold_ 
+	end quest

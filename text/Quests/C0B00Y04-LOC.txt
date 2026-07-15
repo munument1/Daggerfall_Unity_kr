@@ -1,0 +1,158 @@
+-- Quest: C:\QUESTS\WORKING\C0B00Y04.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: temple
+-- Repute: 0
+-- QuestId: 4
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 13
+Quest: C0B00Y04
+DisplayName: 광기에 빠진 사제
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>__qgiver_의 종종 우주적인 규모의
+<ce>신비를 탐구하곤 하는데, 가끔 우리는 영원이라는
+<ce>시간 앞에서 우리 사제들의 정신이 얼마나
+<ce>유연한지 잘못 판단하곤 합니다. 다시 말해,
+<ce>우리 사제 중 한 명이 미쳐버렸다는 뜻입니다.
+<ce>그 광인을 __qgiver_ 쪽으로 데려오는 것을
+<ce>도와주시겠습니까?
+<--->
+<ce>늙은 =priest_의
+<ce>날뛰는 행태가 심상치 않습니다. 아마 %g가 또
+<ce>__qgiver_
+<ce>와인 저장고에 손을 댄 모양입니다.
+<ce>어쨌든, 그 늙은 미치광이를 집으로 데려오는
+<ce>일을 도와주실 수 있습니까?
+
+RefuseQuest:  [1001]
+<ce>%oth, 당신이 정신을 잃었을 때, 누군가 친절하게
+<ce>당신을 구하러 와주기를 바랍니다, %pct.
+
+AcceptQuest:  [1002]
+<ce>잘해주셨습니다, %pct. 그럼, =priest_의
+<ce>___mondung_ 쪽으로 달아났습니다. 불쌍한 광인을 너무
+<ce>심하게 다치게 하지는 마십시오. =priest_의 상태는 지금
+<ce>%g가 무슨 짓을 하는지 모릅니다. 그냥
+<ce>%g2의 머리를 살짝 때려서 %g2를 여기로
+<ce>데려오십시오. =queston_일 동안 기다리겠습니다.
+<ce>조심하십시오.
+
+QuestComplete:  [1004]
+<ce>다시 뵙게 되어 기쁩니다, %pct. =priest_에
+<ce>대해서는 걱정 마십시오. 우리가 %g2를 잘
+<ce>돌보겠습니다.
+
+RumorsDuringQuest:  [1005]
+그 미치광이 =priest_의 ___mondung_ 은신은 뻔하지.
+바보가 아니고서야 거길 가겠어. <---> ___mondung_의
+위치는 제정신인 사람에겐 위험한 곳이야. _priest_의
+생존은 오래 버티지 못할걸.
+
+RumorsPostfailure:  [1006]
+보아하니 =priest_의 집 복귀는 어려울 모양이야.
+<---> =priest_의 상태는 여전히 %g3의
+정신을 잃고 ___mondung_ 배회하고 있지.
+
+RumorsPostsuccess:  [1007]
+어떤 %ra의 =priest_ 구출 소식을 들었네.
+%g3의 제정신이 돌아왔는지는 의문이지만.
+<---> =priest_의 상태는 매우 경건하거나, 매우
+취했거나, 아니면 매우 미친 사람이야. 어쩌면 셋 다일지도
+모르지.
+
+QuestorPostsuccess:  [1008]
+=priest_ 구출에 쏟아주신 당신의 따뜻한 마음을 기억하고
+있습니다. 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+당신에게 할 말은 없습니다. 보시다시피, 저는 =priest_의
+존재를 기억하고 있으니까요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ __qgiver_의 _qgiver_, ___qgiver_께서는 광기에
+ 빠져 ___mondung_ 쪽으로 달아난 =priest_ 사제를
+ 찾아달라고 나를 보냈다. 나는 =queston_일 안에 그곳으로
+ 가서, 그 미치광이를 찾아 _qgiver_ 쪽으로 돌아와야
+ 한다.
+
+Message:  1011
+<ce>"%oth, 내 머리라고!"
+<ce>=priest_ 의식을 잃고 쓰러지고
+<ce>당신은 %g2를 들어 올린다.
+<--->
+<ce>=priest_ 고통과 광기 속에서
+<ce>%g3의 눈을 굴린다. 낮은 신음과 함께,
+<ce>%g는 당신의 품으로 쓰러진다.
+
+Message:  1012
+<ce>당신은 가볍고 광기 어린 웃음소리를 듣고,
+<ce>=priest_ 모습은 마치 허공으로
+<ce>사라지듯 감춰진다.
+<--->
+<ce>"나에겐 다스려야 할 왕국이 있어,
+<ce>먼지나 털면서 시간을 보낼 순 없다고!" =priest_께서는
+<ce>놀라운 민첩성으로 당신의 손아귀를 벗어나
+<ce>도망친다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 4 times.
+--               %g2 occurs 7 times.
+--               %g3 occurs 3 times.
+--              %oth occurs 1 time.
+--              %pct occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--          _priest_ occurs 49 times.
+--         =queston_ occurs 8 times.
+--       ___mondung_ occurs 5 times.
+--        ___qgiver_ occurs 8 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _mondung_ remote dungeon
+--removed fake dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _priest_ is Monk
+
+--	Quest start-up:
+	start timer _queston_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	place foe _priest_ at _mondung_ 
+
+variable _reward_
+_bonk_ task:
+	injured _priest_ 
+	say 1011 
+	add foe _priest_ face 
+	remove foe _priest_
+	--changed "place foe in fake dungeon" to remove foe action.
+
+_queston_ task:
+	end quest 
+
+_cick_ task:
+	when _bonk_ and _queston_ 
+	say 1012 
+
+_S.04_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _S.04_ and _bonk_ 
+	give pc nothing 
+	end quest 
+
+_nope_ task:
+	when _S.04_ and not _bonk_ 
+	clear _S.04_ _nope_ 

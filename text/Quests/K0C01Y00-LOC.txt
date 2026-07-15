@@ -1,0 +1,257 @@
+-- Quest: C:\QUESTS\WORKING\K0C01Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: merchant
+-- Repute: 01
+-- QuestId: 0
+Messages: 21
+Quest: K0C01Y00
+DisplayName: 운명을 돕기 위하여
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>지난 2년간 내 비굴하고 부정직한 연인이 납치되어 아마도
+<ce>죽었을 것이라는 사실을 알았을 때의 순수한 기쁨을 상상해
+<ce>보십시오. 그다음, =victim_의 생존 사실을 알았을 때의
+<ce>절망을 상상해 보십시오. 다음으로, %g3의
+<ce>납치범들이 몸값을 요구했을 때의 재미를 상상해 보십시오.
+<ce>마지막으로, %g3의 사촌이 실제로 몸값을 지불하기로
+<ce>동의했을 때의 짜증을 상상해 보십시오. 이래서는 안 됩니다.
+<ce>누군가 나서서 몸값 지불이 실패하도록 확실히 만들어야
+<ce>합니다. 저를 도와주시겠습니까?
+
+
+RefuseQuest:  [1001]
+<ce>%oth, 태도가 참 그렇군요. 당신의 이기적인 도덕관은
+<ce>언젠가 당신을 곤경에 빠뜨릴 겁니다.
+
+AcceptQuest:  [1002]
+<ce>%oth, %oth, 그리고 %oth. 제가
+<ce>보기에 이 몸값 지불을 막을 방법은 세 가지입니다. 하나는
+<ce>=queston1_일 뒤인 몸값 지불일 전에 사랑하는
+<ce>_victim_의 사망을 유도하는 것입니다. 물론,
+<ce>%g가 어디 있는지 모르니 어려운 일이죠. 다음
+<ce>선택지는 같은 기간 내에 %g3의 사촌이 우연히 죽게
+<ce>만드는 것입니다. 그런데, =cousin_, 즉 그 사촌은
+<ce>___mondung2_에 살고 있는데, 그곳은 방비가 철저한
+<ce>요새입니다. 그래서 어려움이 있죠. 마지막으로,
+<ce>=cousin_의 몸값으로 사용하려는 _gem_의 제거를
+<ce>___mondung2_에서 수행할 수 있습니다. 어떤 방법을 쓰든,
+<ce>=queston1_일 이내에 소식을 가지고 돌아오면 _gold_
+<ce>골드를 더 벌게 될 겁니다. 행운을 빕니다, 늙은
+<ce>%ra여.
+
+QuestComplete:  [1004]
+<ce>그럼, 불쌍한 _victim_의 귀환은 불가능하겠군요?
+<ce>잘했습니다, 친구. 여기 약속했던 _gold_ 골드입니다.
+<ce>최고의 돈 씀씀이였군요.
+
+RumorsDuringQuest:  [1005]
+불쌍한 _qgiver_. 슬픔이란 끔찍한 것이죠. 아시다시피,
+%g는 10년은 더 젊어 보입니다. <--->
+=cousin_의 의심에 따르면 _qgiver_의 입장에서
+_victim_의 귀환을 원하지 않는다고 합니다.
+
+RumorsPostfailure:  [1006]
+_qgiver_의 상태는 %ra의 명칭을 지닌
+%pcn에게 어떤 이유로든 격분해 있습니다.
+
+RumorsPostsuccess:  [1007]
+_victim_의 상황을 보면 정말로 다시는 ___qgiver_
+쪽으로 돌아오지 못할 것 같군요. <--->
+_qgiver_의 태도는 이제 _victim_의 명복을 빌며 깊은
+애도를 표하고 있습니다. 정말 슬픈 일이죠.
+
+QuestorPostsuccess:  [1008]
+당신은 저를 그 뚱뚱한 두꺼비 _victim_에게서
+구해줬어요, %pcf. 잊지 않겠습니다.
+
+QuestorPostfailure:  [1009]
+<ce>한 가지 일을 부탁했고, 세 가지 방법을 알려주었건만. 당신은
+<ce>실패했군요. 왜 내가 당신과 대화를 해야 하죠, 이 썩어빠진
+<ce>똥덩어리 같은 인간아?
+
+QuestLogEntry:  [1010]
+%qdt:
+ __qgiver_의 _qgiver_, ___qgiver_께서 저를 보내
+ %g3의 의뢰인인 사랑받지 못하는 연인의 몸값 지불을
+ 막으라고 하셨습니다. 이 _victim_ 처치도 방법이지만,
+ %g의 행방에 대한 단서가 없습니다. 아니면
+ ___mondung2_, 즉 %g3의 사촌인 =cousin_의
+ 요새로 가서 %g2 처치 혹은 %g가 몸값으로
+ 사용하려던 _gem_ 탈취를 수행할 수도 있습니다.
+ 어쨌든, 일을 처리하고 몸값 지불 기한인 =queston1_일 안에
+ 늙은 _qgiver_에게 돌아와야 합니다.
+
+Message:  1011
+<ce>_victim_의 심장이 %ra
+<ce>용병을 보고 충격을 받아 멈춥니다.
+<--->
+<ce>"폭력적인 죽음이여 오라,"
+<ce>_victim_ 독약을 마시며 말합니다. "나는 내 진정한 사랑
+<ce>_qgiver_ 및 저세상에서
+<ce>재회할 것이다."
+<--->
+<ce>"암살자다! 암살자!"
+<ce>_victim_ 히스테리로 숨을 거둡니다.
+
+
+Message:  1013
+%pcf,
+
+_victim_의 ___mondung_ 억류 사실을 알립니다. 마음대로
+하십시오.
+
+우리는 상관없습니다. 납치범들은 빌어먹을
+프리랜서들이니까요.
+
+<ce>도둑 길드
+
+Message:  1015
+<ce>평범한 차림의 사내가 당신의 손에 쪽지를 쥐여주고는, 윙크를
+<ce>하고 떠납니다.
+
+Message:  1017
+%qdt:
+ 도둑 길드로부터 편지를 받았습니다. 납치범들은 길드 소속이
+ 아니기에, 그들의 위치인 ___mondung_ 공개에 아무런
+ 거리낌이 없다고 합니다. 만약 제가 사랑받지 못하는
+ _victim_의 삶을 끝내고 싶다면, 그곳이 바로 적격입니다.
+
+Message:  1018
+<ce>이 빌어먹을, 멍청한
+<ce>%ra, 아프잖아!
+<--->
+<ce>아픈 줄은 아나 보지, 안 그래?
+
+Message:  1019
+<ce>_victim_의 사촌이자 %g3의
+<ce>유일한 희망이 영원으로 떠났습니다.
+<--->
+<ce>=cousin_의 판단에 이제 아무도
+<ce>몸값을 지불하지 못할 겁니다.
+
+Message:  1020
+<ce>당신은 _victim_의 행방을 몸값으로 지불하려던
+<ce>_gem_ =cousin_ 쪽에서 찾았습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %dat occurs 1 time.
+--                %g occurs 4 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 6 times.
+--              %oth occurs 4 times.
+--              %pcf occurs 83 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 9 times.
+--          =cousin_ occurs 6 times.
+--        =queston1_ occurs 3 times.
+--          =victim_ occurs 1 time.
+--      ___mondung2_ occurs 3 times.
+--       ___mondung_ occurs 2 times.
+--        ___qgiver_ occurs 3 times.
+--             _gem_ occurs 3 times.
+--            _gold_ occurs 2 times.
+--          _qgiver_ occurs 7 times.
+--          _victim_ occurs 14 times.
+
+QBN:
+Item _letter15_ letter used 1013
+Item _gold_ gold
+Item _gem_ gem
+
+Person _qgiver_ group Questor
+Person _victim_ face 1 group Group_7.0
+Person _tg_ faction The_Thieves_Guild local
+
+Place _mondung_ remote dungeon
+Place _mondung2_ remote dungeon2
+
+Clock _queston1_ 00:00 0 flag 17 range 0 2
+Clock _S.05_ 08:20 3.11:20
+
+Foe _cousin_ is Knight
+
+--	Quest start-up:
+	place item _gem_ at _mondung2_ 
+	dialog link for location _mondung_ person _victim_ 
+	dialog link for person _tg_ 
+	start timer _queston1_ 
+	reveal _mondung2_ 
+	log 1010 step 0 
+	repute with _tg_ exceeds 10 do _S.03_ 
+	place foe _cousin_ at _mondung2_ 
+	place npc _victim_ at _mondung_ 
+
+_queston1_ task:
+	have _gem_ set _S.15_ 
+	end quest 
+
+variable _queston2_
+variable _S.02_
+_S.03_ task:
+	start timer _S.05_ 
+
+variable _S.04_
+_S.05_ task:
+	_letter15_ used do _S.06_ 
+	get item _letter15_ 
+	say 1015 
+
+_S.06_ task:
+	reveal _mondung_ readmap
+	log 1017 step 2 
+
+variable _S.07_
+_S.08_ task:
+	clicked npc _victim_ 
+	hide npc _victim_ 
+	say 1011 
+
+_S.09_ task:
+	injured _cousin_ 
+	say 1018 
+
+_S.10_ task:
+	killed 1 _cousin_ 
+	say 1019 
+	start task _victory_
+
+variable _victory_
+_S.11_ task:
+	clicked item _gem_ 
+	say 1020 
+
+_qgclicked_ task:
+	clicked npc _qgiver_
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _victory_ 
+	give pc _gold_ 
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _victory_
+	clear _clearclick_ _qgclicked_
+
+_S.13_ task:
+	toting _gem_ and _qgiver_ clicked 
+	give pc _gold_
+	end quest 
+--added victory condition here, per message block 1002
+
+_S.14_ task:
+	when _S.10_ or _S.08_
+-or _S.13_ 
+-
+-until _S.14_ performed:
+-	clear _qgclicked_ 
+
+_S.15_ task:
+	make _gem_ permanent 
+
+variable _S.16_

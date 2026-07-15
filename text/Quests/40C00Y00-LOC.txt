@@ -1,0 +1,456 @@
+-- Quest: C:\QUESTS\WORKING\40C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Nocturnal
+-- Repute: 0
+-- QuestId: 0
+Messages: 51
+Quest: 40C00Y00
+DisplayName: 녹터널의 퀘스트
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>그대는 권력을 원하는군, %pcn. 그것으로 그대는
+<ce>그림자를 휘두르고 희망을 품을 수 있지. 내가 그대에게 이
+<ce>희망을 가져다준다면, 그대는 내게 무엇을 주겠나? 내게
+<ce>고통을 주는 자를 파멸시킬 텐가?
+
+RefuseQuest:  [1001]
+<ce>생각했던 대로, 심장이 전혀 없군. 그렇다면 우리 사이에
+<ce>계약은 없네. 실망스럽군, 나는 나의 차가운 궁전으로
+<ce>돌아가겠네. 그 안의 영혼들도 이곳의 영혼들보다 친절하진
+<ce>않지만, 그곳에서 그들은 복종하지.
+
+AcceptQuest:  [1002]
+<ce>그럴 텐가? 그대가 나의 마취제가 되어주겠나? 그대는
+<ce>___mondung_에 있는 _monster_ =monster_의 은신처로
+<ce>가서 %g2를 살해할 텐가? 아, %pcf, 그 일을
+<ce>해준다면 나는 나의 _artifact_ 물품을 그대에게 주겠네.
+<ce>그것은 나의 노예 _qgfriend_에게 맡겨두었지. =monster_
+<ce>개체가 죽은 후에, ___qgfriend_ 방향으로 가서
+<ce>__qgfriend_에 있는 나의 노예를 만나게나. %g2를
+<ce>쉽게 알아볼 수 있을 걸세 - =qgfriend_ 측이지. 그곳에서
+<ce>그대는 _artifact_ 물품을 받게 될 걸세. 이제, 나는
+<ce>오블리비언의 차가운 궁전으로 돌아가야겠네. 소식을
+<ce>기다리겠네.
+
+QuestFail:  [1003]
+<ce>아니. 그대는 다른 =qgfriend_ 측을 찾고 있는 게 분명하군.
+<ce>내 이름은 _qgfriend_ 측이 아니네.
+
+QuestComplete:  [1004]
+<ce>그러니까, 그대가 %pcn 님이지, 맞나? 나는
+<ce>_qgfriend_일세. 말해야겠군, _monster_의 요새에
+<ce>미끄러져 들어가서, 주인을 살해하고, 아무 일 없다는 듯이
+<ce>빠져나오려면 어떤 %ra 종족이 필요한지 궁금했거든.
+<ce>아주 인상적이야. 녹터널께서도 그대에게 흥미를 느끼셨지,
+<ce>그래서 이 선물을 주시는 거야: _artifact_. 조심해서
+<ce>다루게, %pcf.
+
+RumorsDuringQuest:  [1005]
+=monster_의 행보는 교활해 -- %g 때문에 마법사
+길드 전체가 의심을 사고 있지. <---> =monster_의
+마법사 길드원 신분을 알고 나니 누구도 믿을 수가 없군.
+<---> 마법사들은 =monster_의 오블리비언의 분노를
+피해 ___fakedung_에 숨어 있다고 하더군. <--->
+마법사들이 그 악당 =monster_ 검거를 위해 ___fakedung_
+수색을 샅샅이 하고 있어. <---> 마법사 무리가
+___fakedung_ 쪽으로 향하는 걸 봤네. <---> 배신자
+=monster_의 현재 은신처가 ___fakedung_의 명칭으로
+불리는 소문을 들었네.
+
+RumorsPostfailure:  [1006]
+=monster_의 문제 연루는 알고 있었지, 그렇지 않고서야
+%g가 그렇게 빨리 떠날 리가 없잖아? <--->
+마법사 길드에서 =monster_ 처리를 길드의 이미지에 해가
+되는 존재로 판단한 모양이야.
+
+RumorsPostsuccess:  [1007]
+음, =monster_에 대해서는 놀랍지도 않군. %g3의
+과거가 %g2를 따라잡은 거지. <--->
+대마도학장조차 =monster_의 죽음을 슬퍼할 것 같지는
+않군.
+
+Message:  1011
+_qgfriend_의 신분은 이곳에서 %di에 있는
+__qgfriend_의 단골손님 중 한 명이지. <--->
+_qgfriend_의 정체는 __qgfriend_ 배회자인
+=qgfriend_일세. 그곳은 %di 방향이지.
+
+Message:  1012
+_qgfriend_의 신분은 이곳에서 %di에 있는
+__qgfriend_에서 활동하는 녹터널의 요원일세. <--->
+_qgfriend_의 정체는 밤의 데이드라 여신, 녹터널의 노예 중
+한 명이지.
+
+Message:  1013
+녹터널은 신비로운 밤의 여신이자, 데이드릭 섭정 중 한
+분이시지. <---> 녹터널은 오블리비언의 섭정이시며,
+그분의 영역은 어둠과 신비라네.
+
+Message:  1014
+_artifact_의 능력은 어떤 잠금이라도 열 수 있다네.
+
+Message:  1015
+마법사들은 =monster_ 개체가 오블리비언의 분노를 피해
+___fakedung_에 숨어 있다고 하더군. <---> 마법사들이
+그 악당 =monster_ 개체를 찾으려고 ___fakedung_ 지역을
+샅샅이 뒤지고 있어. <---> 마법사 무리가
+___fakedung_ 방향으로 향하는 걸 봤네. <---> 배신자
+=monster_ 개체가 지금 ___fakedung_에 숨어 있다는 소문을
+들었네.
+
+Message:  1016
+<ce>%oth! =monster_, 오블리비언의 요원이 우리를
+<ce>덮쳤네! 가장 귀중한 시약들을 ___fakedung_ 쪽으로
+<ce>옮겨두었으니 그대가 그 성가신 %ra 처리를 마친
+<ce>후에 그곳에서 만나기로 하지.
+<ce>
+<ce>N.
+
+Message:  1017
+<ce>목소리가 귓가에 울리는 것 같군: =monster_
+<ce>...확실히...특별한 장소... 소식...
+
+Message:  1018
+%qdt:
+ ___mondung_에 도착했을 때, 메아리가 안쪽의 '특별한
+ 장소'에 대해 언급했네.
+
+Message:  1019
+%qdt:
+ =monster_의 매수 시도 이후 ___fakedung_에서
+ %g를 기다리겠다는 내용의 쪽지를 발견했네.
+
+Message:  1020
+%qdt:
+ 이제 나는 오블리비언의 데이드릭 프린스 중 한 분인 녹터널과
+ 계약을 맺었네. 나는 녹터널의 아티팩트인 _artifact_
+ 수령을 대가로 %g3의 요새 ___mondung_에 있는
+ 뱀파이어 _monster_ =monster_ 살해를 하기로 했지.
+ =1stparton_일 안에 __qgfriend_의 ___qgfriend_에서 그녀의
+ 요원 _qgfriend_ 접선을 통해 임무를 완수해야 하네, 그렇지
+ 않으면 계약은 실패할 걸세. 이는 단순히 _artifact_ 획득
+ 실패보다 더 나쁜 결과를 의미할지도 모르지.
+
+Message:  1021
+%qdt:
+ =monster_ 개체가 %g3의 생명을 대가로
+ _bow_ 물품을 제안했고, 나는 거절할 수 없었네.
+ %g는 그것이 ___bowdung_ 어딘가에 있다고 했지.
+ 이미 녹터널을 배신했으니, 그것을 찾아보는 것도 나쁘지
+ 않겠어.
+
+Message:  1022
+%qdt:
+ =monster_ 개체가 %g3의 생명을 대가로
+ _ring_ 물품을 제안했고, 나는 거절할 수 없었네.
+ %g는 그것이 ___ringdung_ 어딘가에 있다고 했지.
+ 이미 녹터널을 배신했으니, 그것을 찾아보는 것도 나쁘지
+ 않겠어.
+
+Message:  1023
+%qdt:
+ =monster_ 개체가 %g3의 생명을 대가로
+ _staff_ 물품을 제안했고, 나는 거절할 수 없었네.
+ %g는 그것이 ___staffdung_ 어딘가에 있다고 했지.
+ 이미 녹터널을 배신했으니, 그것을 찾아보는 것도 나쁘지
+ 않겠어.
+
+Message:  1030
+<ce>잠깐! 녹터널이 그대를 보냈고, 그녀가 그대에게 _artifact_
+<ce>수여를 약속했다는 걸 알고 있네. 하지만 그대가 진정으로
+<ce>권력을 원한다면, 그녀의 제안보다 더 나은 것을 줄 수 있지
+<ce>-- 공격을 멈춘다면, _bow_의 위치를 알려주겠네. 나의
+<ce>제안에 동의하겠나?
+
+Message:  1031
+<ce>잠깐! 녹터널께서 당신을 보내셨고, _artifact_ 수여를
+<ce>약속하셨다는 걸 알고 있소. 하지만 진정으로 힘을 원한다면,
+<ce>내가 그 제안보다 더 나은 것을 줄 수 있소. 공격을 멈춘다면,
+<ce>_ring_의 위치를 알려주겠소. 내 제안에 동의하겠소?
+
+Message:  1032
+<ce>잠깐! 녹터널께서 당신을 보내셨고, _artifact_ 제공을
+<ce>약속하셨다는 걸 알고 있소. 하지만 진정으로 힘을 원한다면,
+<ce>내가 그 제안보다 더 나은 것을 줄 수 있소. 공격을 멈춘다면,
+<ce>_staff_의 위치를 알려주겠소. 내 제안에 동의하겠소?
+
+Message:  1035
+<ce>=monster_ 처치 완료. 데이드릭 프린스 녹터널께서 이제
+<ce>편히 쉬실 것이오.
+
+Message:  1040
+<ce>훌륭하오. 당신에게 용병의 심장이 있다는 걸 알고 있었지.
+<ce>_bow_의 소재는 ___bowdung_에 숨겨져 있소. 그것을
+<ce>찾기만 하면 당신은 무시할 수 없는 힘을 갖게 될 것이오.
+<ce>이제, 당신이 _bow_ 및 _artifact_ 모두 차지하려고
+<ce>나를 죽이는 결정을 내리기 전에, 당신 같은 용병의 심장은
+<ce>너무 믿어서는 안 되겠지!
+
+Message:  1041
+<ce>훌륭하오. 당신에게 용병의 심장이 있다는 걸 알고 있었지.
+<ce>_ring_의 소재는 ___ringdung_에 숨겨져 있소. 그것을
+<ce>찾기만 하면 당신은 무시할 수 없는 힘을 갖게 될 것이오.
+<ce>이제, 당신이 _ring_ 및 _artifact_ 모두 차지하려고
+<ce>나를 죽이는 결정을 내리기 전에, 당신 같은 용병의 심장은
+<ce>너무 믿어서는 안 되겠지!
+
+Message:  1042
+<ce>훌륭하오. 당신에게 용병의 심장이 있다는 걸 알고 있었지.
+<ce>_staff_의 소재는 ___staffdung_에 숨겨져 있소. 그것을
+<ce>찾기만 하면 당신은 무시할 수 없는 힘을 갖게 될 것이오.
+<ce>이제, 당신이 _staff_ 및 _artifact_ 모두 차지하려고
+<ce>나를 죽이는 결정을 내리기 전에, 당신 같은 용병의 심장은
+<ce>너무 믿어서는 안 되겠지!
+
+QuestTimeLapse:  [1045]
+<ce>당신의 정신 속에 조롱하는 웃음소리가 메아리치오.
+<ce>
+<ce>"나를 믿지 말았어야지, %pcn. 아마 이 그림자의 힘이
+<ce>당신의 갈망을 잠시나마 채워줄 수 있을지도 모르겠군. 당신이
+<ce>실제로 그것을 소유한 자들에게 헛되이 분노하는 동안 말이야.
+<ce>예를 들면 나처럼. 사랑스러운 녹터널께서 당신의 배신을 그리
+<ce>달가워하지 않으시길 바랄 뿐이오."
+<ce>
+<ce>_bow_의 형체가 당신의 손안에서 먼지가 되어
+<ce>사라지오.
+
+Message:  1046
+<ce>당신의 정신 속에 조롱하는 웃음소리가 메아리치오.
+<ce>
+<ce>"나를 믿지 말았어야지, %pcn. 아마 이 그림자의 힘이
+<ce>당신의 갈망을 잠시나마 채워줄 수 있을지도 모르겠군. 당신이
+<ce>실제로 그것을 소유한 자들에게 헛되이 분노하는 동안 말이야.
+<ce>예를 들면 나처럼. 사랑스러운 녹터널께서 당신의 배신을 그리
+<ce>달가워하지 않으시길 바랄 뿐이오."
+<ce>
+<ce>_ring_의 형체가 당신의 손안에서 먼지가 되어
+<ce>사라지오.
+
+Message:  1047
+<ce>당신의 정신 속에 조롱하는 웃음소리가 메아리치오.
+<ce>
+<ce>"나를 믿지 말았어야지, %pcn. 아마 이 그림자의 힘이
+<ce>당신의 갈망을 잠시나마 채워줄 수 있을지도 모르겠군. 당신이
+<ce>실제로 그것을 소유한 자들에게 헛되이 분노하는 동안 말이야.
+<ce>예를 들면 나처럼. 사랑스러운 녹터널께서 당신의 배신을 그리
+<ce>달가워하지 않으시길 바랄 뿐이오."
+<ce>
+<ce>_staff_의 형체가 당신의 손안에서 먼지가 되어
+<ce>사라지오.
+
+Message:  1050
+<ce>녹터널께서는 당신의 대담함에 깊은 인상을 받으셨소,
+<ce>%pcn. 그녀는 당신의 그 뻔뻔한 배신에 대한 보상으로
+<ce>당신을 즉시 죽여달라고 내게 부탁했지.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 4 times.
+--                %g occurs 11 times.
+--               %g2 occurs 5 times.
+--               %g3 occurs 5 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 3 times.
+--              %pcn occurs 6 times.
+--              %qdt occurs 6 times.
+--               %ra occurs 5 times.
+--       =1stparton_ occurs 1 time.
+--         =monster_ occurs 37 times.
+--        =qgfriend_ occurs 4 times.
+--       ___bowdung_ occurs 2 times.
+--      ___fakedung_ occurs 38 times.
+--       ___mondung_ occurs 3 times.
+--      ___qgfriend_ occurs 2 times.
+--      ___ringdung_ occurs 2 times.
+--     ___staffdung_ occurs 2 times.
+--       __qgfriend_ occurs 6 times.
+--        _artifact_ occurs 14 times.
+--             _bow_ occurs 7 times.
+--         _monster_ occurs 3 times.
+--        _qgfriend_ occurs 9 times.
+--            _ring_ occurs 10 times.
+--           _staff_ occurs 40 times.
+
+QBN:
+Item _artifact_ artifact Skeletons_Key anyInfo 1014
+Item _bow_ artifact Auriels_Bow
+Item _ring_ artifact Warlocks_Ring
+Item _staff_ artifact Staff_of_Magnus
+Item _letter_ letter used 1016
+
+Person _questgiver_ face 112 named Nocturnal anyInfo 1013
+Person _qgfriend_ group Librarian anyInfo 1011 rumors 1012
+
+Place _mondung_ remote dungeon
+Place _bowdung_ remote dungeon
+Place _ringdung_ remote dungeon
+Place _staffdung_ remote dungeon
+Place _fakedung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+Clock _bonk_ 01:00 0 flag 1 range 0 1
+Clock _S.22_ 1.00:00 2.18:40
+Clock _betrayQuestor_ 00:02 00:30
+
+Foe _monster_ is Mage
+Foe _monster1_ is Mage
+Foe _daedra_ is Frost_daedra
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	pick one of _S.08_ _S.09_ _S.33_ 
+	pc at _mondung_ set _S.00_ 
+	_letter_ used do _S.02_ 
+	place foe _monster_ at _mondung_ 
+
+variable _S.00_
+_S.01_ task:
+	when _S.00_ and not _S.05_ and not _S.17_ 
+	log 1018 step 1 
+	say 1017 
+
+_S.02_ task:
+	reveal _fakedung_ 
+	log 1019 step 1 
+
+_1stparton_ task:
+	end quest 
+
+_S.04_ task:
+	clicked npc _qgfriend_ 
+
+_S.05_ task:
+	killed 1 _monster_ 
+	killed 1 _monster1_
+	say 1035 
+
+_S.06_ task:
+	when _S.04_ and _S.05_ 
+	give pc _artifact_ 
+	start timer _bonk_ 
+	unset _S.04_ 
+
+_clearclick_ task:
+	when _S.04_ and not _S.05_
+	say 1003
+	clear _S.04_ _clearclick_
+
+_S.07_ task:
+	injured _monster_ 
+	place item _letter_ at _mondung_ 
+
+variable _S.08_
+variable _S.09_
+variable _betrayQuestor_
+_S.11_ task:
+	clicked item _bow_ 
+	clear _S.08_ 
+
+_S.12_ task:
+	clicked item _ring_ 
+	clear _S.09_ 
+
+_S.13_ task:
+	clicked item _staff_ 
+	clear _S.33_ 
+
+_S.14_ task:
+	when _S.17_ and _S.19_ 
+	place item _bow_ at _bowdung_ 
+	reveal _bowdung_ 
+	log 1021 step 2 
+	say 1040 
+
+_S.15_ task:
+	when _S.17_ and _S.20_ 
+	place item _ring_ at _ringdung_ 
+	reveal _ringdung_ 
+	log 1022 step 2 
+	say 1041 
+
+_S.16_ task:
+	when _S.17_ and _S.21_ 
+	place item _staff_ at _staffdung_ 
+	reveal _staffdung_ 
+	log 1023 step 2 
+	say 1042 
+
+_S.17_ task:
+	place item _letter_ at _mondung_ 
+	dialog link for location _fakedung_ 
+	start timer _S.22_ 
+	rumor mill 1015 
+	change repute with _questgiver_ by -20 
+	remove foe _monster_
+	place foe _monster1_ at _fakedung_
+--replaced faulty action "place foe _monster_ at _fakedung_" with remove foe, otherwise foe would not disappear. added new monster1 variable
+
+
+variable _S.18_
+_S.19_ task:
+	when _S.07_ and _S.08_ 
+	prompt 1030 yes _S.17_ no _S.18_ 
+
+_S.20_ task:
+	when _S.07_ and _S.09_ 
+	prompt 1031 yes _S.17_ no _S.18_ 
+
+_S.21_ task:
+	when _S.07_ and _S.33_ 
+	prompt 1032 yes _S.17_ no _S.18_ 
+
+_S.22_ task:
+	create foe _daedra_ every 3 minutes 4 times with 100% success 
+
+_S.23_ task:
+	injured _daedra_ 
+	say 1050 
+
+_S.24_ task:
+	when _betrayQuestor_ and _S.14_ 
+	place item _bow_ at _fakedung_ 
+	say 1045 
+
+_S.25_ task:
+	when _betrayQuestor_ and _S.15_ 
+	place item _ring_ at _fakedung_ 
+	say 1046 
+
+_S.26_ task:
+	when _betrayQuestor_ and _S.16_ 
+	place item _staff_ at _fakedung_ 
+	say 1047 
+
+_S.27_ task:
+	when _S.11_ and not _S.05_ 
+	start timer _betrayQuestor_ 
+
+_S.28_ task:
+	when _S.12_ and not _S.05_ 
+	start timer _betrayQuestor_ 
+
+_S.29_ task:
+	when _S.13_ and not _S.05_ 
+	start timer _betrayQuestor_ 
+
+_S.30_ task:
+	when _S.11_ and _S.05_ 
+	make _bow_ permanent 
+
+_S.31_ task:
+	when _S.12_ and _S.05_ 
+	make _ring_ permanent 
+
+_S.32_ task:
+	when _S.13_ and _S.05_ 
+	make _staff_ permanent 
+
+variable _S.33_
+_bonk_ task:
+	end quest 

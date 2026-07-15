@@ -6,77 +6,141 @@
 -- QuestId: 0
 Messages: 81
 Quest: M0B00Y00
-DisplayName: 수인 사냥
+DisplayName: 라이칸스로프 사냥
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>관심 있을지 모르겠지만 조그만 의뢰가 들어왔어.
-<ce>늑대인간이나, 맷돼지인간 인지 뭔 짐승인간 인지 모르겠지만
-<ce>비슷한게 있는 모양이야. 근방에 있는 많은 농부들이
-<ce>오랫동안 골치가 아팠던거 같더군. 이걸 죽일 사람이 필요해.
-<ce>자네 주머니에 _reward_닢이 들어간단 소리지.
-<ce>관심 있나?
+<ce>관심 있을 만한 작은 일거리가 하나 있네. 어떤 놈이...
+<ce>그러니까 흔히 말하는 웨어울프, 웨어보어, 혹은 그 비슷한
+<ce>늑대인간형 야수가 이 근처 농부들을 계속 괴롭히고 있어서
+<ce>누군가 처리해 줄 사람이 필요하거든. 성공하면 _reward_
+<ce>골드를 주지. 관심 있나?
 
 RefuseQuest:  [1001]
-<ce>어쩔수 없군. 다른 누가 해야 겠구만.
+<ce>좋아. 다른 사람을 찾아봐야겠군.
 
 AcceptQuest:  [1002]
-<ce>훌륭해. ___mondung_에서 그놈을 찾을 수 있을거야.
-<ce>=1stparton_일 이내에 잡도록 하게.
-<ce>그 다음에 돌아오면 된다, 애송이.
+<ce>좋아. 그 놈은 ___mondung_에 있을 거야. 불쌍한 짐승을
+<ce>=1stparton_일 안에 처리해야 하니, 서두르는 게 좋을 거야,
+<ce>애송이.
 
 QuestFail:  [1003]
-<ce>짐승이 너무 벅찼던 모양이구만, 애송이
-<ce>아님 아예 시도도 못해봤나?
-<ce>아 뭐, 지금쯤 다른 어딘가로 이동했겠군.
-<ce>안타깝구만.
+<ce>그 놈이 너무 벅찼나, 아니면 시도조차 안 한 건가? 뭐,
+<ce>어쨌든 지금쯤은 떠났겠지. 안됐군.
 
 QuestComplete:  [1004]
-<ce>잘했어, 수인-사냥꾼. 금화 잘 맛보라고.
+<ce>잘했네, 늑대인간 사냥꾼. 보상을 즐기라고.
 
 RumorsDuringQuest:  [1005]
-이 근방에 무슨 늑대인간 같은게 돌아다닌다고 들었습니다.
-<--->
-___mondung_에 맷돼지인간 소굴이 있다고 들었습니다.
-<--->
-어젯밤 울부짖는 소리 들으셨습니까? 늑대 울음?
+이 근처에 웨어울프가 돌아다닌다는 소문을 들었어.
+<---> 웨어보어가 ___mondung_의 명칭으로 불리는
+곳에 은신처를 마련했다더군. <---> 어젯밤에 울음소리
+들었어? 늑대 울음소리 말이야?
 
 RumorsPostfailure:  [1006]
-늑대인간은 자주 이동하는 모양입니다. 수인이 남쪽으로 갔다고 들었습니다.
-<--->
-친척이 맷돼지인간이 남쪽으로 가는걸 봤다고 하더군요.
+웨어울프는 정말 떠돌이인가 봐. 놈이 남쪽으로 이동했다는
+소문을 들었어. <---> 사촌이 말하길 우리 웨어보어가
+남쪽 어딘가에서 목격됐대.
 
 RumorsPostsuccess:  [1007]
-그 변신하는 뭐가 낮에는 성직자였다고 합니다!
-<--->
-그 수인이 죽어서 다들 안전해 졌다고 좋아합니다.
-<--->
-당신이 그 늑대인간을 잡았다던 %ra 맞습니까?
+그 괴물이 낮에는 사제였다는 사실이 밝혀졌대! <--->
+그 늑대인간형 야수가 죽었다니 다들 안심하는 분위기야.
+<---> 누군가 %ra 사냥에 성공했다는 소식
+들었어?
 
 QuestorPostsuccess:  [1008]
-<ce>그 골칫거리 수인 문제를 처리해줘서 고맙군, %pcf.
+<ce>그 늑대인간형 야수를 처리해 줘서 고맙네, %pcf.
 
 QuestorPostfailure:  [1009]
-<ce>여기서 나가. 한심한.
-<ce>늑대인간 하나 처리를 못하다니.
+<ce>당장 꺼져. 정말 한심하군. 웨어울프 하나도 제대로 처리 못
+<ce>하다니.
 
 Message:  1020
-<ce>수인 문제를 처리했다.
+<ce>라이칸스로프의 위협이 종식되었습니다.
 
 Message:  1021
-<ce>이게 분명 다들 두려워하는 "맷돼지인간" 인 것 같다.
-<ce>하지만 그냥 평범한 불곰이다.
+<ce>모두가 두려워하던 "괴물"이 이거였나. 그저 평범한 회색곰일
+<ce>뿐이군.
 
 Message:  1030
 %qdt:
- 파이터 길드의 ___questgiver_에게 의뢰를 받았다.
- ___mondung_에 있는
- 늑대인간, 맷돼지인간, 인지 뭔지 모를 것의
- 소굴로 가서 그 짐승을 죽이라는 것이다.
- =1stparton_일 안에 죽여야 보수를 받을 수 있닫.
+ ___questgiver_의 전사 길드에서 나를 고용해 ___mondung_에
+ 있는 은신처에서 골칫거리인 웨어울프, 웨어보어, 혹은 그
+ 비슷한 놈을 죽이라고 했다. 보상을 받으려면 =1stparton_일
+ 안에 그 짐승을 죽여야 한다.
 
 Message:  1080
-<ce>여기 ___newdung_ 지도가 있네.
-<ce>죽일거 죽이고 챙길거 다 챙기라고.
-<ce>잘 벌어보라고.
+<ce>___newdung_ 쪽으로 가는 지도일세. 마음껏 사냥하고 보물도
+<ce>챙기라고. 실컷 즐겨보게.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 26 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--       ___mondung_ occurs 4 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 1 time.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _werewolf_ is Werewolf
+Foe _wereboar_ is Wereboar
+Foe _bear_ is Grizzley_bear
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	pick one of _map_ _nomap_ _nomap_ _nomap_ 
+	pick one of _S.06_ _S.07_ _S.08_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_mondead_ task:
+	killed 1 _werewolf_ saying 1020 
+	killed 1 _wereboar_ saying 1020 
+	killed 1 _bear_ saying 1021 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+_S.06_ task:
+	place foe _bear_ at _mondung_ 
+
+_S.07_ task:
+	place foe _wereboar_ at _mondung_ 
+
+_S.08_ task:
+	place foe _werewolf_ at _mondung_ 
+
+variable _map_
+variable _nomap_
+_S.11_ task:
+	when _map_ and _pcgetsgold_ 
+	reveal _newdung_ readmap
+    say 1080 

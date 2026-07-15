@@ -1,0 +1,168 @@
+-- Quest: C:\QUESTS\WORKING\L0B10Y03.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Brotherhood
+-- Repute: 10
+-- QuestId: 3
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 15
+Quest: L0B10Y03
+DisplayName: 무단 결근
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>다크 브라더후드는 모든 형제가 항상 어디에 있는지
+<ce>파악하는 것을 자랑으로 여깁니다. 저는 지난 티르다스에
+<ce>당신이
+<ce>어디에 있었는지 흙 한 줌 오차도 없이 말할 수 있습니다.
+<ce>하지만 우리 형제 중 한 명이 임무 수행 중에 사라졌습니다.
+<ce>당신은 =target_의 행방을 찾아야 합니다.
+<ce>만약 %g에게 %g3의 부재에 대한 타당한
+<ce>변명이 없다면,
+<ce>당신이 %g2를 처리하십시오.
+<ce>이 일을 할 시간이 있으시겠죠?
+<--->
+<ce>아시다시피, 다크 브라더후드를 떠나는 사람은 없습니다.
+<ce>한 형제가 임무 중 사라졌으니, 우리는 =target_의
+<ce>생사를 확인해야 합니다. 당신이 이 임무에 선택되었습니다.
+
+RefuseQuest:  [1001]
+<ce>정말입니까? 뭐, 가끔은 임무를 거절할 권리가 있다고
+<ce>생각합니다.
+
+AcceptQuest:  [1002]
+<ce>좋습니다. =target_(에)게는 ___contact_에 사촌이
+<ce>있습니다. _contact_의 이름을 지닌 =contact_인데,
+<ce>보통 __contact_의 명칭으로 불리는 곳에서 찾을 수
+<ce>있습니다. 그 %g2를 찾아가서 단호하게
+<ce>%g3의 사촌이 어디 있는지 알아내십시오. 이 일을
+<ce>처리하고 돌아올 시간을 =queston_일 주겠습니다.
+
+QuestComplete:  [1004]
+<ce>=target_의 뱀파이어 여부가 확인되었습니까? 그렇다면
+<ce>상황이 이해가 가는군요. 아직 안 하셨다면, 템플에 가서
+<ce>치료를 받으십시오. 당신이 =target_의 피를 빠는 가족이
+<ce>되지 않도록 말입니다.
+
+RumorsDuringQuest:  [1005]
+누구든, 정말 누구든 다크 브라더후드를 배신할 수는
+없습니다. <---> =target_의 행방은
+%g가 사라지기 전에 %reg 어딘가에 있는
+남작을 쫓았던 것으로 보입니다.
+
+RumorsPostfailure:  [1006]
+어떤 이들은 =target_의 사망을 이야기합니다. 하지만
+다른 이들은 %g2를 보았다고 하죠... 밤에만
+말입니다.
+
+RumorsPostsuccess:  [1007]
+다크 브라더후드가 그 뱀파이어를 처리했다니 재미있군요.
+서로 잘 지낼 줄 알았는데 말이죠. <---> 보아하니
+=target_의 마지막 표적은 %g가 예상했던
+것보다 훨씬 강했던 모양입니다.
+
+QuestorPostsuccess:  [1008]
+안녕하세요, %pcf. 그 뱀파이어와의 전투 후에
+사제에게 진찰을 받았기를 바랍니다.
+
+QuestorPostfailure:  [1009]
+<ce>임무에 실패한 자들에게는 경멸뿐입니다. 당장 꺼지십시오,
+<ce>%pcf.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 다크 브라더후드의 _qgiver_ 측이
+ 사라진 형제를 추적하라고 했다. 타당한 설명이 없다면
+ 처리하라고 했다. =target_의 이름으로 불리는 이 인물은
+ ___contact_에 사는 사촌이 있는데, _contact_의 이름으로
+ 불리는 =contact_ 측이다. 이 사촌이 무엇을 알고 있는지
+ 알아내고, =target_ 측을 추적하여 __qgiver_ 방향으로
+ 돌아올 시간은 =queston_일이다.
+
+Message:  1011
+<ce>%g가 ___mondung_에 있는 그 남작을 찾으러 떠난
+<ce>이후로 =target_(에)게서 소식을 듣지 못했습니다. 그
+<ce>남작은 이상한 사람이었습니다. 낮에는 절대 나타나지 않고,
+<ce>그 으스스한 곳에 살았죠. 누군가 그를 죽이고 싶어 했던 것도
+<ce>당연합니다. 그래도 누군가 내 사촌의 다크 브라더후드 경력을
+<ce>끝내려 했다면, 그렇게 비쩍 마르고 창백한 남작일 줄은
+<ce>몰랐을 겁니다.
+
+Message:  1012
+%qdt:
+ _contact_ 측이 =target_ 측이 처리를 위해
+ ___mondung_에 있는 의문의 남작을 찾으러 갔다고 했다. 다음
+ 목적지는 ___mondung_ 지역이다.
+
+Message:  1013
+<ce>"남작이 내게 준 불멸을 공유하게 해주지," =target_의
+<ce>쉿쉿거리는 목소리가 들립니다.
+
+Message:  1014
+<ce>뱀파이어 =target_의 안식이 마침내 찾아왔습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 6 times.
+--               %g2 occurs 4 times.
+--               %g3 occurs 2 times.
+--              %pcf occurs 5 times.
+--              %qdt occurs 2 times.
+--              %reg occurs 2 times.
+--         =contact_ occurs 2 times.
+--         =queston_ occurs 2 times.
+--          =target_ occurs 16 times.
+--       ___contact_ occurs 2 times.
+--       ___mondung_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--        __contact_ occurs 1 time.
+--         __qgiver_ occurs 2 times.
+--         _contact_ occurs 3 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+
+Person _qgiver_ group Questor
+Person _contact_ face 176 group Innkeeper
+
+Place _mondung_ remote dungeon8
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _target_ is Vampire
+
+--	Quest start-up:
+	start timer _queston_ 
+	log 1010 step 0 
+	place foe _target_ at _mondung_ 
+
+_queston_ task:
+	end quest 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_reward_ task:
+    when _qgclicked_ and _S.04_
+    give pc nothing 
+	end quest 
+
+_S.02_ task:
+	clicked npc _contact_ 
+	reveal _mondung_ 
+	log 1012 step 1 
+	say 1011 
+
+_S.03_ task:
+	injured _target_ saying 1013 
+
+_S.04_ task:
+	killed 1 _target_ saying 1014 
+
+variable _S.06_
+--unused variables
+_clearclick_ task:
+	when _qgclicked_ and not _S.04_ 
+	clear _qgclicked_ _clearclick_ 

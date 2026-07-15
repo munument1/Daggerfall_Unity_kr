@@ -1,0 +1,136 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y11.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 11
+Messages: 16
+Quest: R0C10Y11
+DisplayName: 밀수품
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>혹시 나를 위해 작은 심부름을 해줄 시간이 있습니까? 아주
+<ce>간단한 일입니다. 내가 직접 하거나 내 심부름꾼 중 하나에게
+<ce>시킬 수도 있지만, 우리 모두 너무 바빠서 말입니다. 추가로
+<ce>_reward_ 골드를 주겠습니다. 나쁘지 않죠. 시간
+<ce>있습니까?
+
+RefuseQuest:  [1001]
+<ce>싫다고요? %god께서 나를 한가한 %ra의
+<ce>손길로부터 구원하시길.
+
+AcceptQuest:  [1002]
+<ce>운이 좋군요. 자, 이 _item_ 물품을 가지고
+<ce>___qgfriend_의 __qgfriend_의 명칭으로 불리는 곳으로
+<ce>가십시오. 거기에 _qgfriend_의 이름으로 불리는 이상한
+<ce>=qgfriend_ 측이 있을 겁니다. %g2에게
+<ce>_item_ 물품을 주면 %g의가 당신에게
+<ce>_reward_ 골드를 줄 겁니다. 아, 그리고 =queston_일
+<ce>안에 도착해야 합니다. 문제없을 겁니다. 당신은 다리가
+<ce>튼튼한 젊은이니까요. 자, 어서 가보세요.
+
+QuestFail:  [1003]
+<ce>당신은 %pcf 님과 똑같이 생겼지만, 그럴 리가 없지.
+<ce>%pcn의가 ___qgfriend_ 방향으로 가는 길에 있으니까.
+
+QuestComplete:  [1004]
+<ce>_questgiver_의 심부름꾼으로 고용되었군요? 아, 내가
+<ce>기다리던 _item_군요. 아주 좋습니다. 여기 골드입니다.
+<ce>고맙습니다.
+
+RumorsDuringQuest:  [1005]
+_questgiver_의 밀수업은 여전하다고 들었습니다.
+<---> 최근 밀수가 비정상적으로 증가했습니다.
+
+RumorsPostfailure:  [1006]
+누군가 외딴곳에서 _item_의 발견 소식을 전했습니다.
+<---> _questgiver_의 무능한 %ra 전달자
+때문에 몹시 화가 났다고 합니다.
+
+RumorsPostsuccess:  [1007]
+어떤 =qgfriend_(이) 방문하여 _item_(을) 휘두르고
+떠났습니다.
+<--->
+<ce>_questgiver_의 _item_ 절도 여부 혹은
+<ce>%g의 소행일 가능성이 높군요.
+
+QuestorPostsuccess:  [1008]
+그 튼튼한 젊은 다리를 보니 누군지 알겠군요. 잘 지냈나,
+나의 오랜 전령이여? <---> 나의 오랜 고용주를 다시
+찾아온 건가, %pcf?
+
+QuestorPostfailure:  [1009]
+<ce>기억하고 있네. 자네는 그 간단한 %ra 배달 임무를
+<ce>실패했던 사람이군. %oth, 자네와는 나눌 시간이
+<ce>없네.
+
+Message:  1011
+%g는 도벽 기질이 있긴 하지만 아주 존경받는
+통치자지. <---> 내가 듣기로는 거물급 보석
+밀수꾼이라더군.
+
+Message:  1012
+_questgiver_의 장물아비 중 하나지. _qgfriend_의 거처는
+사실상 __qgfriend_ 내부에 있어. <---> 그
+=qgfriend_ 말인가? _qgfriend_의 위치는 __qgfriend_에
+있는 밀수꾼 소굴의 장물아비야.
+
+Message:  1015
+%qdt:
+ __questgiver_의 _questgiver_ 측이 나에게 특정 _item_
+ 물품을 _qgfriend_의 이름으로 불리는 동료에게 전달해
+ 달라고 부탁했다. _qgfriend_의 현재 거처는 ___qgfriend_에
+ 있는 __qgfriend_ 지역이며, 약 =queston_일 정도 걸리는
+ 여정이다. 어쨌든 나에게는 그만큼의 시간이 있다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 4 times.
+--               %g2 occurs 1 time.
+--              %god occurs 1 time.
+--              %oth occurs 1 time.
+--              %pcf occurs 7 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 4 times.
+--        =qgfriend_ occurs 3 times.
+--         =queston_ occurs 2 times.
+--      ___qgfriend_ occurs 18 times.
+--     __questgiver_ occurs 1 time.
+--            _item_ occurs 13 times.
+--        _qgfriend_ occurs 5 times.
+--      _questgiver_ occurs 6 times.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _reward_ gold
+Item _item_ ring
+
+Person _questgiver_ group Questor anyInfo 1011
+Person _qgfriend_ group Local_3.0 remote anyInfo 1012
+
+
+Clock _queston_ 00:00 0 flag 1 range 1 4
+
+
+--	Quest start-up:
+	start timer _queston_ 
+	log 1015 step 0 
+	get item _item_ 
+	create npc _qgfriend_ 
+
+_pcgetsgold_ task:
+	toting _item_ and _qgfriend_ clicked 
+	give pc _reward_ 
+	end quest 
+
+variable _pchasitem_
+_queston_ task:
+	make _item_ permanent 
+	change repute with _questgiver_ by -30 
+	end quest 
+
+variable _npcclicked_

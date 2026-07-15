@@ -1,0 +1,167 @@
+-- Quest: C:\QUESTS\WORKING\F0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Dibella
+-- Repute: 0
+-- QuestId: 0
+Messages: 31
+Quest: F0B00Y00
+DisplayName: 원하는 예술품
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>디벨라 교단의 중요한 기능 중 하나는 위대한 예술 작품을
+<ce>보존하는 것입니다. 우리는 탐리엘 전역에 희귀하고 아름다운
+<ce>작품을 찾는 정찰대를 두고 있습니다. 그런 걸작 하나를
+<ce>회수해 주실 수 있겠습니까? 멀지 않은 곳에 있으며,
+<ce>가져오시면 _reward_ 골드를 기꺼이 지불하겠습니다.
+<--->
+<ce>탐리엘의 4천 년이 넘는 고도의 문명 속에서, 디벨라 교단은
+<ce>시간의 탐욕스럽고 거친 손길로부터 고대 예술품을 구하고
+<ce>보존하기 위해 끊임없이 노력해 왔습니다. 우리는 교단을 위해
+<ce>예술품을 조달하는 고고학자, 상인, 전달자들의 정교한
+<ce>네트워크를 구축했습니다. 이런 사업에 동참해 주시겠습니까,
+<ce>%pcf 님?
+
+
+RefuseQuest:  [1001]
+<ce>아쉽군요. 모든 즐거움 중 가장 희귀한 것인 진정한
+<ce>아름다움을 위해 시간을 쓰는 것이 너무 아깝게 여겨진다니
+<ce>슬플 따름입니다.
+
+AcceptQuest:  [1002]
+<ce>오, 놀라워라. 자, 이 특별한 작품의 조달자는 꽤 재미있는
+<ce>=contact_인 _contact_의 이름으로 불리는 자입니다.
+<ce>%g께서 발견한 물건은 보아하니 매우 희귀하고
+<ce>경이로운 모양이라, %g께서 %g2를 우리
+<ce>교단으로 가져오기도 전에 도적들이 %g를 습격할까
+<ce>봐 두려워하고 계십니다. 얼마나 위험한지는 모르겠지만,
+<ce>___contact_에 있는 __contact_ 쪽으로 가서
+<ce>%g2에게서 그 유물을 가져와 주신다면 정말
+<ce>감사하겠습니다. 시간이 생명입니다. %g께서
+<ce>말씀하시길, =1stparton_일 안에 누군가 가서 가져가지
+<ce>않으면 %g께서 그 유물을 포기할 것이라 하더군요.
+<ce>그동안 저는 =1stparton_일 뒤에 당신이 돌아오기를 기다리고
+<ce>있겠습니다. 부디 몸조심하시고 디벨라께서 당신의 짐을
+<ce>덜어주시길.
+
+QuestFail:  [1003]
+<ce>안녕하세요, %pcf. __contact_에 있는 유물에 대해
+<ce>잊으신 건 아니겠죠?
+
+QuestComplete:  [1004]
+<ce>아름답군요! 대칭적인 선과 양식화된 인물들, 섬세한 주름과
+<ce>장식을 보세요... 오, %pcf 님, 이 아이콘으로
+<ce>우리에게 정말 큰 선물을 주셨군요. _reward_ 골드는
+<ce>우리가 드릴 수 있는 최소한의 보답일 뿐입니다. 디벨라의
+<ce>가호가 함께하기를.
+
+RumorsDuringQuest:  [1005]
+그 떨고 있는 =contact_의 모습은 %g3의 음모론
+때문에 정말 성가시군요. <---> 저 =contact_에게
+훔칠 만한 가치가 있는 물건이 있는지 궁금하네요.
+
+RumorsPostfailure:  [1006]
+디벨라 교단은 그 성상을 잃어버린 것이 마치 세상의
+종말이라도 된 것처럼 행동하는군요. <---> 교단이
+너무 사람을 잘 믿으니, 저 %ra 용병이 그 점을
+이용한 것도 놀랍지 않네요.
+
+RumorsPostsuccess:  [1007]
+소문들을 들어보니, 어차피 그 성상은 가짜였다고 하더군요.
+<---> 디벨라 교단이 그 성상을 전시할지 아니면 그냥
+보관할지 궁금하네요.
+
+QuestorPostsuccess:  [1008]
+그 아름다운 성상을 가져다준 %ra에게 제가 무엇을
+해드리면 좋을까요?
+
+QuestorPostfailure:  [1009]
+예술을 이해하지 못하는 자는 교단을 저버린 것과 다름없소,
+%pcf. 당장 떠나시오!
+
+QuestLogEntry:  [1010]
+<ce>디벨라의 이름으로 맹세컨대, 당신이 나타나기를 기다리느라
+<ce>신경쇠약에 걸릴 지경이었소. 여기 성상이 있소. 이제 이것을
+<ce>넘기게 되어 정말 기쁘구려. 모든 살인자의 눈길이 이것에
+<ce>쏠려 있는 것만 같았소. 교단에서 당신이 성상을 들고
+<ce>도망쳤다고 생각하기 전에 어서 돌아가는 게 좋을 것이오.
+
+Message:  1011
+_contact_의 정체는 디벨라 교단을 위해 일하는 평범한
+고고학자이자 모험가입니다. <---> __contact_에
+있는 저 =contact_ 말입니까? 그냥 도둑이나 용병 같은
+자일 뿐이죠.
+
+Message:  1013
+가짜일 게 분명해요. 하지만 교단은 아마 차이를 모를 겁니다.
+<---> 십중팔구 위조품이겠죠. 하지만 그럼에도 아주
+예쁘긴 하네요.
+
+Message:  1030
+%qdt:
+ 디벨라 교단은 저에게 성상을 발굴한 고고학자를 만나 그
+ 성상을 대가를 치르고 구매하여 교단으로 가져오라는 의뢰를
+ 했습니다. 이 _contact_의 위치는 ___contact_의
+ __contact_입니다. 저는 =1stparton_일 안에 성상을
+ ___questgiver_에 있는 _questgiver_에게 가져다주어야 합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 5 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 1 time.
+--              %pcf occurs 13 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--       =1stparton_ occurs 5 times.
+--         =contact_ occurs 6 times.
+--    ___questgiver_ occurs 3 times.
+--        __contact_ occurs 8 times.
+--      _questgiver_ occurs 1 time.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+Item _item_ scarab anyInfo 1013
+
+Person _questgiver_ face 112 group Questor
+Person _contact_ group Innkeeper remote anyInfo 1011
+
+
+Clock _1stparton_ 00:00 0 flag 17 range 1 4
+
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1030 step 0 
+
+_1stparton_ task:
+	end quest 
+
+variable _pcgetsgold_
+_npcclicked_ task:
+	clicked npc _contact_ 
+	get item _item_ 
+	say 1010 
+
+_qgclicked_ task:
+	toting _item_ and _questgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+_qgclick2_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _qgclick2_ and not _qgclicked_
+	say 1003
+	clear _clearclick_ _qgclick2_
+
+variable _S.04_
+variable _S.05_
+_S.06_ task:
+	when _npcclicked_ and _1stparton_ 
+	make _item_ permanent 

@@ -1,0 +1,56 @@
+---- Example quest to demonstrate rumor mill and dialog link
+---- get information after (and only after) hearing the correct rumor
+---- this might be extending vanilla daggerfall's behaviour -
+---- not 100% sure about this
+---- once an npc talked about the correct rumor the linked dialog option
+---- will be available in the tell me about section
+---- only one of the two rumors will reveal the chat topic about the person
+---- rumor mill is using message 1020 here
+---- (you have to switch dialog option and then it will show up in the
+---- tell me about section)
+---- you can then ask peasants for the correct place where the person
+---- can be found
+---- one (and only one) of the three possible answers is revealing the correct place
+
+Quest: __DEMO17
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>최근 의문의 인물에 대한 이야기가 많습니다. 그 소문에 대해
+<ce>더 알아볼 의향이 있으십니까?
+
+RefuseQuest:  [1001]
+<ce>유감스럽군요. 물론 이해는 합니다만, 실망스럽네요.
+
+AcceptQuest:  [1002]
+<ce>잘됐군요. 뉴스나 소문에 대해 주변에 물어봐야 합니다...
+
+QuestLogEntry:  [1010]
+%qdt:
+ 의문의 인물에 관한 뉴스나 소문을 주변에 물어봐야 한다.
+
+Message:  1011
+_thief_의 과거 직업은 마스터 도둑이었다고 합니다.
+<---> _thief_의 역할은 도둑 길드의 모든 잡일을
+처리하는 것입니다. <---> _thief_의 내용은
+=thief_의 위치가 _tavern_에 있다는 것입니다.
+
+Message:  1020
+_thief_의 소재가 마을로 확인되었습니다.
+%g2를 만나보시는 게 좋겠군요. _thief_의
+행방을 어디서 찾을 수 있는지 주변에 물어보세요.
+<---> 마을에 의문의 인물이 있다는 소문이 있지만,
+안타깝게도 이름을 알려드릴 수는 없습니다.
+
+QBN:
+
+Person _thief_ face 81 faction The_Thieves_Guild anyInfo 1011
+Place _tavern_ local tavern
+
+--	Quest start-up:
+	dialog link for person _thief_ 
+	log 1010 step 0  
+	create npc _thief_ 
+	place npc _thief_ at _tavern_
+	rumor mill 1020 

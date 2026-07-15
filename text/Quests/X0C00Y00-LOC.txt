@@ -1,0 +1,141 @@
+-- Quest: C:\QUESTS\WORKING\X0C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Hircine
+-- Repute: 0
+-- QuestId: 0
+Messages: 31
+Quest: X0C00Y00
+DisplayName: 허씬의 퀘스트
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>내 작은 부탁 하나를 들어준다면, 아주 훌륭한 보상인
+<ce>_artifact_의 가치를 주지. 내게는 내가 준 축복들에도
+<ce>불만족스러워하는 자식이 하나 있는데, 그 녀석에게... 뭐라
+<ce>표현해야 할까? 교훈을 가르쳐야겠어. 아주 심각한 교훈
+<ce>말이지. 이 계약, 받아들이겠나, %pct?
+
+RefuseQuest:  [1001]
+<ce>매우 실망스럽군, %pct.
+<--->
+<ce>나를 소환하는 일은 드물고, 내가 응하는 경우는 더욱 드물지.
+<ce>솔직히 말해서, 이건 내 귀중한 시간을 낭비한 셈이야.
+
+AcceptQuest:  [1002]
+<ce>아, 좋군. 내 자식은 ___mondung_의 명칭으로 불리는 곳에
+<ce>굴을 파고 사는 웨어보어다. 찾는 건 어렵지 않을 거야. 그
+<ce>녀석의 비참한 삶을 끝내주는 데 =1stparton_일이면
+<ce>충분하겠지. 그 후 ___contact_에 있는 __contact_의
+<ce>명칭으로 불리는 곳으로 가서 _contact_의 이름으로 불리는
+<ce>자를 찾아라. 지금부터 =1stparton_일 안에 웨어보어를
+<ce>죽이고 도착하면, %g가 _artifact_ 물품을 줄
+<ce>것이다. 거래는 즐거웠네, %pct. 행운을 빌지, 잘
+<ce>가라.
+
+QuestFail:  [1003]
+<ce>이봐, %pcf, 너와 나 둘 다 그 웨어보어가 아직 숨
+<ce>쉬고 있다는 걸 알고 있지. 계약은 계약이야.
+
+QuestComplete:  [1004]
+<ce>안녕, %pcf. 해냈군. 허씬께서 당신을 인상 깊게
+<ce>보셨어. 그건 결코 쉬운 일이 아니지. 약속한 _artifact_
+<ce>여기 있네. 몸조심하게.
+
+RumorsDuringQuest:  [1005]
+%di의 ___mondung_에서 정말 끔찍한 꽥꽥거리는
+소리와 꿀꿀거리는 소리가 들려. <---> %di의
+___mondung_에 미친 반인반돼지 괴물이 있다는 소문이 있어.
+
+RumorsPostfailure:  [1006]
+여기 있던 그 돼지 괴물이 북쪽으로 도망쳤어, 마치 무언가에
+쫓기는 것처럼 말이야. <---> 웨어보어를 겁먹게 해서
+도망치게 만든 게 대체 뭘까.
+
+RumorsPostsuccess:  [1007]
+요즘 ___mondung_ 근처는 정말 조용해. <---> 이
+근처를 돌아다니던 그 돼지 괴물은 어떻게 된 걸까.
+
+Message:  1011
+가장 미천한 데이드라 프린스이자, 그들의 사냥대가입니다.
+<---> 허씬은 모든 라이칸스로프의 창조주로 알려져
+있습니다.
+
+Message:  1012
+__contact_에 있는 이상한 행동을 하는 =contact_,
+이곳에서 %di입니다. <---> 그 이름의
+=contact_의 행방은 꽤 최근에 이곳에서 %di인
+__contact_에 있었습니다.
+
+Message:  1013
+_artifact_의 업무는 무엇인지 전혀 모르겠습니다.
+
+Message:  1020
+%qdt:
+ _artifact_의 대가로 데이드릭 프린스 허씬으로부터
+ ___mondung_에 있는 웨어보어를 처치하라는 의뢰를
+ 받았습니다. 웨어보어는 =1stparton_일 안에 죽어야 하며,
+ _artifact_에 관해 =contact_인 _contact_의 만남을
+ 위해 =1stparton_일 안에 ___contact_에 있는
+ __contact_에 도착해야 합니다.
+
+Message:  1030
+웨어보어는 죽었습니다. 데이드릭 프린스 허씬과 약속한 대로
+말입니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 13 times.
+--                %g occurs 2 times.
+--              %pcf occurs 2 times.
+--              %pct occurs 5 times.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 4 times.
+--         =contact_ occurs 7 times.
+--       ___mondung_ occurs 6 times.
+--        __contact_ occurs 5 times.
+--        _artifact_ occurs 9 times.
+--         _contact_ occurs 9 times.
+
+QBN:
+Item _artifact_ artifact Hircine_Ring anyInfo 1013
+
+Person _questgiver_ face 112 named Hircine anyInfo 1011
+Person _contact_ face 238 faction The_Cabal female remote
+
+Place _mondung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Wereboar
+
+--	Quest start-up:
+	start timer _1stparton_
+	reveal _mondung_
+	log 1020 step 0
+	place foe _monster_ at _mondung_
+
+_pcgetsgold_ task:
+	when _mondead_ and _qgclicked_
+	give pc _artifact_
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_
+	say 1030
+	create npc _contact_
+
+_qgclicked_ task:
+	clicked npc _contact_
+
+_1stparton_ task:
+	end quest
+
+variable _2ndparton_
+_clearclick_ task:
+	when not _mondead_ and _qgclicked_
+	say 1003
+	clear _qgclicked_ _clearclick_

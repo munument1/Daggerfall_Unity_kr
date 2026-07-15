@@ -12,98 +12,192 @@ DisplayName: 암살자
 QRC:
 
 QuestorOffer:  [1000]
-<ce>제 이름은 중요하지 않습니다. 음, 금화 _gold_닢에
-<ce>피를 보게해줄 사람이 필요하다는 것만 아시면 됩니다.
-<ce>관심 없다면 없다고 해주시면 됩니다.
-<ce>일을 맡아 주시겠습니까?
-                                     <--->
-<ce>쉬이잇! 목소리를 낮춰 주십시오.
-<ce>당신은 금화로 사람을 죽일 수있는 종류의 %ra 이신지요?
-<ce>금화 _gold_닢에 어떻습니까?
-                                     <--->
-<ce>피를 봐도 기절하지 않을 사람을 찾고 있습니다.
-<ce>사람 피를 _gold_ 골드에 말이죠.
-<ce>사람 하나 죽이실 수 있습니까?
+<ce>제 이름은 중요하지 않습니다. 당신이 알아야 할 것은
+<ce>피를 조금 흘리는 것을 두려워하지 않는 사람이 필요하다는
+<ce>것뿐입니다.
+<ce>보수는 _gold_ 골드입니다. 관심이 없다면 지금
+<ce>말하세요.
+<ce>이 일을 맡으시겠습니까?
+<--->
+<ce>쉿! 목소리를 낮추세요. 더 말하기 전에, 당신은
+<ce>골드를 위해서라면 사람을 죽일 수 있는 %ra인가요?
+<ce>_gold_ 골드는 어떤가요?
+<--->
+<ce>저는 피를 보고 기절하지 않을 사람을 찾고 있습니다.
+<ce>인간의 피 말입니다. _gold_ 골드에, 사람을 죽일 수
+<ce>있겠습니까?
 
 RefuseQuest:  [1001]
-<ce>절 본적 없는 걸로 하시죠.
-                                     <--->
-<ce>집어치웁시다. 더이상 우리가 이야기한걸 누구에게도 보이고 싶지 않군요.
-                                     <--->
-<ce>좋습니다. 그렇게 하죠.
+<ce>당신은 나를 본 적이 없습니다.
+<--->
+<ce>꺼지세요. 우리가 대화하는 모습을 남들이 보는 건 원치
+<ce>않습니다.
+<--->
+<ce>좋아요. 마음대로 하세요.
 
 AcceptQuest:  [1002]
-<ce>_darkb_, 이자를 죽여주십시오.
-<ce>다크 브라더후드가 일을 맡아주질 않습니다. 빚이라도 있는 모양이라,
-<ce>프리랜서가 필요합니다. 일주일내로 일을 처리하고 돌아오십시오.
-<ce>그럼 금화 _gold_닢을 드리겠습니다. 전 _questgiver_입니다.
-<ce>여기서 기다리고 있겠습니다.
+<ce>_darkb_ 처치를 부탁드립니다. 문제는 다크 브라더후드가
+<ce>이 일을 맡지 않으려 한다는 겁니다. 그들이 빚진 호의
+<ce>때문이라더군요. 독립적인 암살자가 필요합니다. 일주일 안에
+<ce>일을 끝내고 돌아오면 _gold_ 골드를 지불하겠습니다.
+<ce>_questgiver_ 님을 찾으세요. 여기서 당신을 기다리고
+<ce>있겠습니다.
 
 QuestComplete:  [1004]
-<ce>복수 했다! 아참, 마을을 떠나는게 좋으실겁니다.
-<ce>브라더후드가 냄새를 맡았다고 들었습니다.
-<ce>여기 돈 받으시죠, %pcf.
+<ce>복수는 나의 것이다! 그건 그렇고, 당장 마을을 떠나는 게
+<ce>좋을 겁니다. 다크 브라더후드가 이 일을 눈치챘다는 소문이
+<ce>있거든요. 여기 보수입니다, %pcf 님.
 
 RumorsDuringQuest:  [1005]
-<ce>_questgiver_ 말입니다. _darkb_에게 원한이 많은 모양입니다.
-                                     <--->
-<ce>_darkb_에겐 다크브라더후드 연줄이 있는 것 같습니다.
+<ce>_questgiver_ 님이 _darkb_ 님을 증오한다는군요.
+<--->
+<ce>_darkb_ 님은 다크 브라더후드와 연관되어 있습니다.
 
 RumorsPostsuccess:  [1007]
-<ce>어떤 사람이 _darkb_ 목숨을 끊었다네요, 그것도 사람들이 있는데서!
-                                     <--->
-<ce>사람 죽었다는 이야기 들으셨습니까? 그 _darkb_ 인지
-<ce>암살자 하나에 죽었답니다.
-                                     <--->
-<ce>_darkb_, 예전부터 마음에 안들었었지요. 누군가 %g2를 끝장내서
-<ce>다행이라고 생각합니다. 다크 브라더후드가 했다고 하더군요.
+<ce>누군가 _darkb_ 님을 살해했습니다, 그것도 공개적인
+<ce>장소에서 말이죠!
+<--->
+<ce>살인 사건 소식 들으셨나요? _darkb_ 님이
+<ce>암살자에게 살해당했습니다.
+<--->
+<ce>저는 _darkb_ 님이 마음에 든 적이 없었습니다. 누군가
+<ce>드디어 %g2를 처리해서 기쁘군요. 다크 브라더후드
+<ce>소행이라더군요.
 
 QuestorPostsuccess:  [1008]
-<ce>목소릴 줄여주십시오. _darkb_의 목숨을 끊으셨으니,
-<ce>제가 빚을 졌습니다만, 사람들이 저와 관련있다고
-<ce>생각하지 않았으면 좋겠습니다.
+<ce>목소리를 낮추세요. 당신이 _darkb_ 님을 죽여준 것에
+<ce>대해 감사하지만, 제가 그 일에 관여했다고 사람들이 생각하는
+<ce>건 원치 않습니다.
 
 QuestorPostfailure:  [1009]
-<ce>일을 처리해 달라고 했는데, 실패했지요.
-<ce>_darkb_ 만 죽이면 되는건데.
-<ce>이젠 다 늦었습니다. 다크 브라더후드가 절 쫓으니.
-<ce>절 가만 놔두시죠.
+<ce>일을 맡겼는데, 해내지 못했군요. _darkb_ 님을 죽이기만
+<ce>하면 됐는데 말입니다. 이제 너무 늦었습니다. 다크
+<ce>브라더후드가 저를 쫓고 있어요. 그냥 저를 내버려 두세요.
 
 QuestLogEntry:  [1010]
 %qdt:
- _darkb_ 살인 의뢰를 받았다.
- ___questgiver_, _questgiver_에게
- 일주일 안에 일을 끝내고 돌아가야 한다.
+ _darkb_ 처치 계약을 수락했다. 일주일 안에
+ ___questgiver_의 _questgiver_ 쪽으로 돌아가 임무를 완수해야
+ 한다.
 
 Message:  1015
-<ce>_darkb_ 목숨이 아직 살아있잖습니까!
-<ce>날 무슨 바보로 아는 겁니까, %pcf?
+<ce>_darkb_ 님은 죽지 않았어! 나를 무슨 바보로 아는 건가,
+<ce>%pcf?
 
 Message:  1021
-<ce>도와줘! 살인자다! 도와주시오!
+<ce>도와줘! 살인자다! 도와줘!
 
 Message:  1022
-<ce>허! 어디서 온 암살자냐? 적이다! 무기를 들어라!
+<ce>이런 비겁한 놈! 무슨 암살자가 이래? 무기를 들어라! 무기를!
 
 Message:  1023
 <ce>당했다! %oth.
 
 Message:  1024
-<ce>비겁한놈! 정당히 공격하지 않고 암습이라니.
+<ce>비겁한 놈! 아무런 이유나 도발도 없이 나를 공격하다니.
 
 Message:  1030
-<ce>_questgiver_? %g2에 대해선 잘 모릅니다.
-<ce>항상 숨기며 살고 있으니.
+<ce>_questgiver_ 님? %g2(에) 대해서는 잘 모릅니다.
+<ce>%g2self(에)만 머무르더군요.
 
 Message:  1031
-<ce>_questgiver_에겐 음침한 친구들이
-<ce>좀 있다고 들었습니다만, 제가 말했다곤 하지 마십시오.
+<ce>_questgiver_ 님에게 수상한 친구들이 많다는 소문을
+<ce>들었습니다. 하지만 저한테 들었다고는 하지 마세요.
 
 Message:  1032
-<ce>훌륭한 상류계층 시민입니다. 누구라도 그렇게 말할겁니다.
+<ce>훌륭하고 정직한 시민입니다. 누구에게 물어봐도 알 겁니다.
 
 Message:  1033
-<ce>_darkb_ 말입니까.
-<ce>보통 _place_에 있긴 한데,
-<ce>저는 %g3 하곤 가능하면 만나지 않죠.
-<ce>선의로 하는 말입니다.
+<ce>_darkb_ 님은 보통 _place_에 계시지만, 저는
+<ce>%g3의 일에 엮이고 싶지 않군요. 그냥 친절한
+<ce>조언입니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g2 occurs 4 times.
+--           %g2self occurs 2 times.
+--               %g3 occurs 1 time.
+--              %oth occurs 2 times.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--    ___questgiver_ occurs 2 times.
+--           _darkb_ occurs 15 times.
+--            _gold_ occurs 9 times.
+--           _place_ occurs 1 time.
+--      _questgiver_ occurs 8 times.
+
+QBN:
+Item _gold_ gold
+
+Person _questgiver_ group Questor anyInfo 1030 rumors 1031
+Person _darkb_ face 1 faction The_Dark_Brotherhood remote anyInfo 1032 rumors 1033
+
+Place _place_ local random
+
+Clock _S.00_ 7.00:00 0 flag 1 range 0 1
+
+Foe _bard_ is Bard
+Foe _rogue_ is Rogue
+Foe _archer_ is Archer
+Foe _spellsword_ is Spellsword
+
+--	Quest start-up:
+	start timer _S.00_ 
+	log 1010 step 0 
+	pc at _place_ set _S.11_ 
+	place npc _darkb_ at _place_ 
+
+_S.00_ task:
+	end quest 
+
+_S.01_ task:
+	restrain foe _archer_ 
+	place foe _archer_ at _place_ 
+
+_S.02_ task:
+	restrain foe _bard_ 
+	place foe _bard_ at _place_ 
+
+_S.03_ task:
+	restrain foe _rogue_ 
+	place foe _rogue_ at _place_ 
+
+_S.04_ task:
+	restrain foe _spellsword_ 
+	place foe _spellsword_ at _place_ 
+
+variable _S.05_
+_S.06_ task:
+	injured _rogue_ saying 1023 
+	injured _archer_ saying 1021 
+	injured _bard_ saying 1022 
+	injured _spellsword_ saying 1024 
+
+_S.07_ task:
+	killed 1 _archer_ 
+	killed 1 _bard_ 
+	killed 1 _rogue_ 
+	killed 1 _spellsword_ 
+	change repute with _darkb_ by -20 
+	legal repute -20
+--nerfed legal repute, not fair for normal gameplay
+
+_S.08_ task:
+	clicked npc _questgiver_ 
+
+_clearclick_ task:
+	when _S.08_ and not _S.07_ 
+	say 1015 
+	clear _S.08_ _clearclick_
+--added an additional clear clearclick here. Otherwise this clearing function would stop working after the first click.
+
+_S.10_ task:
+	when _S.08_ and _S.07_ 
+	give pc _gold_ 
+	end quest 
+
+_S.11_ task:
+	pick one of _S.01_ _S.02_ _S.03_ _S.04_ 
+	hide npc _darkb_ 

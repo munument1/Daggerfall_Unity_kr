@@ -1,0 +1,262 @@
+-- Quest: C:\QUESTS\WORKING\L0B50Y11.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Brotherhood
+-- Repute: 50
+-- QuestId: 11
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 32
+Quest: L0B50Y11
+DisplayName: 도둑 길드에 가담하기
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>도둑 길드의 고위급 일원에게 흥미로운 일거리가 하나
+<ce>들어왔네. 꽤 힘든 일이 될 거야. 맡겠나?
+
+RefuseQuest:  [1001]
+<ce>심장이 약한 자들에겐 어울리지 않지.
+<--->
+<ce>알겠네. 진짜 일을 할 마음이 생기면 다시 오게.
+
+AcceptQuest:  [1002]
+<ce>눈치가 빠르군. 목표의 이름은 _marknpc_ 개체가고, 여기
+<ce>___questgiver_에 있네. %g의 움직임이 잦고 보통
+<ce>경호원들의 보호를 받고 있지. 조심하게. 7일 주겠네. 일이
+<ce>끝나면, 여기로 돌아와. _gold_ 골드를 주지.
+<ce>_questgiver_ 측을 찾게.
+
+QuestComplete:  [1004]
+<ce>훌륭한 솜씨야, %pcn. 너무 거칠게 다루지 않았길
+<ce>바라네. 여기 길드 수수료일세.
+
+RumorsDuringQuest:  [1005]
+_marknpc_의 상황은 %g가 만든 적들 때문에 결국
+곤경에 처할지도 몰라. <---> _marknpc_의 최후는
+피비린내 나는 결말을 맞이할 거야, 내 말을 명심해.
+
+RumorsPostfailure:  [1006]
+_marknpc_의 %reg 이탈이 확인되었으나,
+%g는 다시 돌아올 거야.
+
+RumorsPostsuccess:  [1007]
+_marknpc_의 실수는 너무 많았어 -- %g는 진작에
+파멸할 운명이었지. <---> _marknpc_의 죽음이라는
+사실에 놀라는 사람은 아무도 없어 -- %g는
+골칫덩이였으니까.
+
+QuestorPostsuccess:  [1008]
+자네가 _marknpc_에게 무슨 짓을 했는지 잊지 않았네,
+%pcf. 그건 걱정하지 말게.
+
+QuestorPostfailure:  [1009]
+<ce>_marknpc_의 생존이 아직 확인되었군, %pcf. 어떤
+<ce>면으로 보나 명예로운 상황이 아니며, 난 조금도 즐겁지 않네.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 다크 브라더후드를 위해 ___questgiver_의 _marknpc_ 암살
+ 계약을 수락했다. 내 연락책인 _questgiver_의 말에 따르면,
+ 그 자는 움직임이 잦다고 한다. 나는 7일 안에 일을 끝내야
+ 한다.
+
+Message:  1015
+<ce>_marknpc_의 생존이 아직 확인되었군. 나를 가지고 놀지
+<ce>마라, %pcn. 다크 브라더후드에게 유머 감각 따위는
+<ce>없다. 방금 _fakeplace_의 주소는 가짜 주소라는 소식을
+<ce>들었다. 거긴 가지 마라. %g가 어디서 시간을
+<ce>보내는지 다른 단서를 찾아보도록 해.
+
+Message:  1020
+<ce>_marknpc_의 밀회는 가끔 나와 즐기지. %g는
+<ce>절대 오래 머물지 않아. %g는 그저 %g3의
+<ce>쾌락을 위해 나를 이용할 뿐이지. 50 골드만 주면 기꺼이
+<ce>%g2를 팔아넘기겠어.
+
+Message:  1021
+<ce>도와줘! _marknpc_! 집에 암살자가 들어왔어!
+
+Message:  1022
+<ce>네가 _marknpc_의 목숨을 끊었잖아! 제발 살려만 준다면
+<ce>누구 짓인지 절대 말하지 않겠다고 맹세할게.
+
+Message:  1023
+<ce>_marknpc_의 방문은 매일 6시쯤 이곳에 오지.
+<ce>%g는 %g3의 경호원들을 돌려보내.
+<ce>%g는 이곳에 한 시간 정도만 머물러.
+
+Message:  1030
+<ce>_marknpc_ 개체는 도둑이자 악당이지.
+<--->
+<ce>모두들 _marknpc_ 개체가 _fakeplace_에서 어울린다고
+<ce>생각하지만, %g는 그렇지 않아.
+<--->
+<ce>_marknpc_ 개체는 보통 %g3의 저녁을
+<ce>_inn_에서 보내지.
+<--->
+<ce>_marknpc_ 개체는 %g3의 아침을 집에서 잠자며
+<ce>보내.
+<--->
+<ce>_marknpc_ 개체는 _house_에 살지만, %g는
+<ce>거기서 많은 시간을 보내지 않아.
+<--->
+<ce>오후가 되면, _marknpc_ 개체는 _guildhall_에서 볼 수
+<ce>있지.
+<--->
+<ce>_guildhall_ 지역이 도둑 길드의 아지트라는 소문을 들었어.
+<ce>거기 가봐.
+<--->
+<ce>_marknpc_에게는 정부가 있어.
+<--->
+<ce>_marknpc_의 정부는 _mistresshome_에 살아.
+<--->
+<ce>_marknpc_ 개체는 경호원이 아주 많아.
+<--->
+<ce>_marknpc_ 개체가 %g3의 정부를 방문할 때면,
+<ce>%g는 %g3의 경호원들을 돌려보내지.
+<--->
+<ce>난 _marknpc_의 경호원들과는 엮이고 싶지 않아.
+<--->
+<ce>사람들이 말하길 _marknpc_ 개체는 마법으로 보호받고
+<ce>있다더군.
+
+Message:  1031
+<ce>_marknpc_의 바닥에 쓰러져 죽는다. 브라더후드가
+<ce>자랑스러워할 것이다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 23 times.
+--               %g2 occurs 6 times.
+--               %g3 occurs 10 times.
+--              %pcf occurs 43 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 2 times.
+--    ___questgiver_ occurs 2 times.
+--       _fakeplace_ occurs 3 times.
+--            _gold_ occurs 4 times.
+--       _guildhall_ occurs 4 times.
+--           _house_ occurs 2 times.
+--             _inn_ occurs 2 times.
+--         _marknpc_ occurs 35 times.
+--    _mistresshome_ occurs 2 times.
+--      _questgiver_ occurs 3 times.
+
+QBN:
+Item _gold_ gold
+Item _bribe3_ gold range 50 to 50
+
+Person _mistress_ face 3 group Group_7.2 female local
+Person _questgiver_ face 1 group Questor
+Person _marknpc_ face 5 faction The_Thieves_Guild male local anyInfo 1030
+
+Place _house_ local house2
+Place _inn_ local tavern
+Place _guildhall_ local random
+Place _mistresshome_ local house2
+Place _fakeplace_ local random
+
+Clock _S.00_ 7.00:00 0 flag 1 range 0 1
+
+Foe _home_ is Thief
+Foe _F.01_ is Sorceror
+Foe _F.02_ is Knight
+Foe _F.03_ is Rogue
+
+--	Quest start-up:
+	dialog link for location _mistresshome_ person _mistress_ 
+	dialog link for location _house_ 
+	dialog link for location _guildhall_ 
+	dialog link for location _fakeplace_ 
+	start timer _S.00_ 
+	log 1010 step 0 
+	pc at _fakeplace_ set _S.11_ 
+	place npc _mistress_ at _mistresshome_ 
+	place npc _marknpc_ at _fakeplace_ 
+
+_S.00_ task:
+	end quest 
+
+_S.01_ task:
+	daily from 00:00 to 10:00 
+	pc at _house_ set _S.05_ 
+	cast Shield spell on _home_ 
+	place foe _home_ at _house_ 
+
+_S.02_ task:
+	daily from 19:01 to 23:59 
+	pc at _inn_ set _S.05_ 
+	cast Shield spell on _home_ 
+	place foe _home_ at _inn_ 
+
+_S.03_ task:
+	daily from 10:01 to 18:00 
+	pc at _guildhall_ set _S.05_ 
+	cast Shield spell on _home_ 
+	place foe _home_ at _guildhall_ 
+
+_S.04_ task:
+	daily from 18:01 to 19:00 
+	pc at _mistresshome_ set _S.06_ 
+	place foe _home_ at _mistresshome_ 
+
+_S.05_ task:
+	create foe _F.03_ every 2 minutes 5 times with 50% success 
+	create foe _F.02_ every 4 minutes 5 times with 50% success 
+	create foe _F.01_ every 3 minutes 5 times with 50% success 
+
+variable _S.06_
+_S.07_ task:
+	killed 1 _home_ saying 1031 
+
+_S.08_ task:
+	clicked npc _mistress_ 
+
+_clearclick_ task:
+	when not _S.07_ and _S.21_ 
+	say 1015 
+	clear _S.21_ _clearclick_ 
+
+_vamp3_ task:
+	when _S.07_ and _S.21_ 
+	give pc _gold_ 
+	end quest 
+
+_S.11_ task:
+	hide npc _marknpc_ 
+
+until _S.11_ performed:
+	restore _marknpc_ 
+
+_S.12_ task:
+	when _S.04_ and _S.08_ and not _S.07_ 
+	say 1021 
+
+_S.13_ task:
+	when _S.04_ and _S.08_ and _S.07_ 
+	say 1022 
+
+_S.14_ task:
+	when not _S.04_ and _S.08_ and not _S.07_ 
+	prompt 1020 yes _yes_ no _no_ 
+
+variable _yes_
+variable _no_
+_S.17_ task:
+	clicked _mistress_ and at least 50 gold otherwise do _S.18_ 
+
+variable _S.18_
+_S.19_ task:
+	when _S.17_ and _no_ 
+	get item _bribe3_ 
+
+_S.20_ task:
+	when _S.17_ and _yes_ 
+	say 1023 
+	unset _S.08_ 
+
+_S.21_ task:
+	clicked npc _questgiver_ 

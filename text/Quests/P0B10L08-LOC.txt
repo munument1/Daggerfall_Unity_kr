@@ -1,0 +1,225 @@
+-- Quest: C:\QUESTS\WORKING\P0B10L08.Qbn.
+-- StartsBy: letter
+-- Questee: member
+-- Questor: vampire
+-- Repute: 10
+-- QuestId: 8
+Messages: 22
+Quest: P0B10L08
+DisplayName: 결의의 시험
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+오류: 퀘스트 텍스트 1000이 호출되었습니다.
+
+RefuseQuest:  [1001]
+오류: 퀘스트 텍스트 1001이 호출되었습니다.
+
+AcceptQuest:  [1002]
+오류: 퀘스트 텍스트 1002이 호출되었습니다.
+
+QuestFail:  [1003]
+오류: 퀘스트 텍스트 1003이 호출되었습니다.
+
+QuestComplete:  [1004]
+<ce>당신은 오늘 밤 %vam에게 영예를 안겨주었습니다,
+<ce>%pcf. ==daedra_의 존경심은 우리와 당신에 대해
+<ce>다른 어떤 뱀파이어 부족도 얻지 못한 수준입니다. 당신의
+<ce>피의 아버지가 당신에게 %vam에서의 당신의 지위가
+<ce>영원함을 상징하는 이 _gem_의 하사를 명하셨습니다.
+
+RumorsDuringQuest:  [1005]
+___mondung_에서 이상한 일들이 벌어지고 있습니다. 평소보다
+더 이상하다고 해야겠군요.
+
+RumorsPostfailure:  [1006]
+___mondung_ 주변은 조용해졌습니다. 하지만 밤마다 데이드라
+별이 불타오르는군요.
+
+RumorsPostsuccess:  [1007]
+___mondung_의 정적이 감돕니다. 어젯밤에는 데이드라 별조차
+희미하게 빛났습니다.
+
+QuestorPostsuccess:  [1008]
+오류: 퀘스트 텍스트 1008이 호출되었습니다.
+
+QuestorPostfailure:  [1009]
+오류: 퀘스트 텍스트 1009이 호출되었습니다.
+
+QuestLogEntry:  [1010]
+__vamp_ ___vamp_
+
+친애하는 %pcn에게,
+
+%vam의 부름이 있습니다. 즉시 오십시오.
+
+죽음 안에서,
+
+_vamp_
+
+Message:  1011
+<ce>아, %pcf, 내 편지를 받았군요. 우리 부족의 고대인,
+<ce>당신의 피의 아버지가 당신에게 그를 크게 괴롭히는 문제를
+<ce>조사해 달라고 요청했습니다. 그가 자신의 성소에서 칼에 감긴
+<ce>채 발견한 편지의 사본을 여기 보냅니다. 분명히 이것을 보낸
+<ce>자는 만만한 힘을 가진 자가 아니며 %vam의 힘을
+<ce>시험하려 합니다. 편지에 언급된 던전, 이 ___mondung_
+<ce>쪽으로 가서, 이 편지를 쓴 _daedra_의 행방을 찾아
+<ce>%g2에게 %vam의 위협이나 조롱을 견딜
+<ce>나약한 무리가 아님을 보여주십시오. %vam의 긍지가
+<ce>당신과 함께할 것입니다, %pcf. =queston_일 안에
+<ce>이 문제를 해결하고 돌아오기를 기대하겠습니다. 우리를
+<ce>실망시키지 마십시오, %pcf.
+
+Message:  1012
+%qdt:
+ ___vamp_의 _vamp_ 존재가 우리 부족
+ %vam의 명예를 모욕하는 ___mondung_의 _daedra_
+ 존재가 쓴 편지를 주었습니다. 나는 ___mondung_ 쪽으로 가서
+ 이 _daedra_ 존재가 %g3의 말을 취소하게
+ 만들어야 합니다. __vamp_ 쪽으로 돌아가기까지
+ =queston_일이 남았습니다.
+
+Message:  1013
+피의 스펀지여,
+
+내 마녀회가 말하길, 당신의 괴물들, 피를 들이마시는 기괴한
+꼬마 악마 무리가 %reg의 공포 사업을 독점하고
+있으며, 내 아이들이 %vam의 원초적인 힘 때문에
+세력을 확장하기를 두려워한다고 하더군요. 겁쟁이들은 적절히
+처벌받았고 이제 내 마녀회는 전진합니다. 스스로를
+%vam 혈족이라 부르는 안일한 독수리들이 내 마녀회가
+한때 믿었던 잠재력을 조금이라도 가지고 있다면, 내 도전에
+응하십시오. 그렇지 않다면, %reg에 %vam
+혈족과 당신의 하찮은 범죄를 위한 자리가 조금 줄어들 준비를
+하십시오. 나는 ==daedra_ 마녀회의 _daedra_입니다.
+장갑을 던졌으니 그리 아십시오. ___mondung_에서 당신의
+응답을 기다리겠습니다.
+
+Message:  1014
+%qdt:
+ %vam의 _vamp_에게서 ___vamp_에 있는
+ __vamp_의 명칭으로 불리는 곳으로 즉시 와달라는 편지를
+ 받았습니다.
+
+Message:  1015
+<ce>___mondung_에 온 것을 환영한다, %pcn.
+<ce>%vam의 대리인으로 온 것이겠지. 오블리비언의 왕자,
+<ce>==daedra_의 마녀회가 이제부터 %reg에서 최고라는
+<ce>것을 인정하러 온 건가?
+
+Message:  1016
+<ce>비겁한 피 빨아먹는 놈. 기대도 안 했지만, 그래도 혹시나
+<ce>했지. _vamp_ 쪽으로 돌아가라, 애송아.
+
+Message:  1017
+<ce>감히 ==daedra_의 패권에 도전하겠다고, 내 면전에서
+<ce>말이지, 언데드 벌레 같은 놈? =daedroth_의 위력으로 네
+<ce>건방진 뼈를 으스러뜨리는 걸 즐길 것이다! 허풍만큼이나 잘
+<ce>싸우는 %vam의 일원을 보여봐라!
+
+Message:  1018
+<ce>당신의 머릿속에서 ==daedra_의 말하는 소리가 들립니다:
+<ce>"당신은 %vam의 존경받을 자격이 있음을 내게
+<ce>증명했소. _vamp_에게 %reg의 소유권을
+<ce>당신에게 넘긴다고 말해도 좋소. 당신은 흥미로운 표본이군요,
+<ce>%pcn. 우리는 분명 다시 만나게 될 거요."
+
+Message:  1019
+<ce>당신은 %vam의 기대를 저버렸습니다, %pcf.
+<ce>==daedra_ 마녀회가 우리에게 도전했고, 당신은 수치스러운
+<ce>모습을 보였습니다. 오늘은 부끄러운 밤입니다.
+
+Message:  1021
+<ce>몹시 창백하고 눈빛이 사나운 소년이 당신에게 편지를 건네고
+<ce>어둠 속으로 사라집니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g2 occurs 1 time.
+--               %g3 occurs 1 time.
+--              %pcf occurs 8 times.
+--              %pcn occurs 4 times.
+--              %qdt occurs 2 times.
+--              %reg occurs 6 times.
+--              %vam occurs 18 times.
+--         ==daedra_ occurs 6 times.
+--        =daedroth_ occurs 1 time.
+--         =queston_ occurs 2 times.
+--       ___mondung_ occurs 11 times.
+--          ___vamp_ occurs 12 times.
+--          _daedra_ occurs 4 times.
+--             _gem_ occurs 1 time.
+--            _vamp_ occurs 8 times.
+
+QBN:
+Item _letter_ letter used 1010
+Item _letter2_ letter used 1013
+Item _gem_ gem
+
+Person _vamp_ factiontype Vampire_Clan local
+Person _daedra_ face 1 factiontype Daedra remote
+
+Place _mondung_ remote dungeon7
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _daedroth_ is Daedroth
+
+--	Quest start-up:
+	dialog link for person _vamp_ 
+	start timer _queston_ 
+	_letter_ used do _readletter_ 
+	give pc _letter_ notify 1021 
+
+_queston_ task:
+	end quest 
+
+_vampclicked_ task:
+	clicked npc _vamp_ 
+	reveal _mondung_ 
+	log 1012 step 1 
+	get item _letter2_ 
+	say 1011 
+	place npc _daedra_ at _mondung_ 
+
+_failure_ task:
+	say 1016 
+	change repute with _vamp_ by -5 
+	change repute with _daedra_ by -10 
+	destroy _daedra_ 
+
+_success_ task:
+	killed 1 _daedroth_ 
+	say 1018 
+	change repute with _daedra_ by +10 
+
+_nononono_ task:
+	when _vampclicked_ and not _failure_ and not _success_ 
+	clear _vampclicked_ 
+
+_daedclicked_ task:
+	clicked npc _daedra_ 
+	prompt 1015 yes _failure_ no _challenge_ 
+
+_challenge_ task:
+	create foe _daedroth_ every 1 minutes 1 times with 100% success 
+	hide npc _daedra_ 
+	say 1017 
+
+_badpcn_ task:
+	when _vampclicked_ and _failure_ 
+	say 1019 
+	end quest 
+
+_reward_ task:
+	when _vampclicked_ and _success_ 
+	give pc _gem_ 
+	make _gem_ permanent 
+	end quest 
+
+_readletter_ task:
+	add dialog for person _vamp_ 
+	log 1014 step 0 

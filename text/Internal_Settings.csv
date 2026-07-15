@@ -1,75 +1,75 @@
-﻿Key,Value
+Key,Value
 weaponSwingModes,"바닐라
 클릭
-누르고유지"
+길게 누르기"
 mouseLookSmoothingStrengths,"없음
 최저
 낮음
 중간
 높음
 최고"
-configureAdvancedControls,고급 조작 설정
+configureAdvancedControls,고급 설정 구성
 continueUpper,계속
-mouseLookSmoothing,마우스 시야 스무딩
-mouseLookSensitivity,마우스 시야 민감도
-invertLookY,시야 세로축 반전
-movementAcceleration,이동시 가속
-weaponSwingMode,무기 공격 모드
-bowDrawback,활 - 당겨서 놓기
-toggleSneak,은신 토글
-mouseWeaponAttackThreshold,마우스 무기공격 임계치
-Escape,이스케이프
+mouseLookSmoothing,마우스 시점 부드럽게 하기
+mouseLookSensitivity,마우스 시점 감도
+invertLookY,Y축 시점 반전
+movementAcceleration,이동 가속
+weaponSwingMode,무기 휘두르기 모드
+bowDrawback,활 - 당기기 및 발사
+toggleSneak,은신 전환
+mouseWeaponAttackThreshold,마우스 무기 공격 임계값
+Escape,탈출
 AutoRun,자동 달리기
 ToggleConsole,콘솔
 PrintScreen,스크린샷
-QuickSave,퀵세이브
-QuickLoad,퀵로드
+QuickSave,빠른 저장
+QuickLoad,빠른 불러오기
 close,닫기
 dungeonTextureModes,"클래식
 기후
-기후만
-랜덤
-랜덤만"
+기후 전용
+무작위
+무작위 전용"
 cameraRecoilStrengths,"끄기
 낮음 (25%)
 중간 (50%)
 높음 (75%)
-최고(100%)"
+매우 높음 (100%)"
 interactionModeIconModes,"없음
-미니멀
-대형
+최소
+큼
 클래식
-컬러
+색상
 흑백
-클래식 크로스헤어
-컬러 크로스헤어"
+클래식 조준점
+색상 조준점"
 iconsPositioningSchemes,"클래식
 중간
-소형
-소형 계단 좌측
-소형 계단 우측
-소형 수직 좌측
-소형 수직 우측
-소형 수평 하단"
+작게
+작은 데크 왼쪽
+작은 데크 오른쪽
+작은 수직 왼쪽
+작은 수직 오른쪽
+작은 수평 하단"
 helmAndShieldMaterialDisplay,"끄기
-가죽/체인 제외
-가죽 제외
+가죽 사슬 없음
+가죽 없음
 켜기"
-qualitySettings,"최고빠른
-빠른
-단순한
-좋은
-아름다운
-환상적인"
+qualitySettings,"가장 빠르게
+빠르게
+단순하게
+좋게
+아름답게
+환상적으로"
 filterModes,"포인트
-이중선형보간
-삼중선형보간"
+이선형
+삼선형"
 shadowResolutionModes,"낮음
 중간
 높음
-최고"
-textureArrayLabel,텍스트 어레이: 
-unsupported,호환불가
-enabled,활성화
-disabled,비활성화
-textureArrayInfo,"개선된 지형 텍스쳐 배치, 더 빠르고 모드 지원"
+매우 높음"
+textureArrayLabel,텍스처 배열:
+unsupported,지원되지 않음
+enabled,활성화됨
+disabled,비활성화됨
+textureArrayInfo,더 나은 성능과 모딩 지원을 갖춘 지형 텍스처의 개선된 구현

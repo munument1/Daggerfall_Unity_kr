@@ -1,0 +1,123 @@
+-- Quest: C:\QUESTS\WORKING\B0B80Y17.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: knight
+-- Repute: 80
+-- QuestId: 17
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: B0B80Y17
+DisplayName: 언데드 군대
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>저는 ==qgiver_의 _qgiver_입니다. 매우 위험한 의뢰가
+<ce>하나 있습니다. %pcn. 당신은 이 일을 맡을 수 있는
+<ce>몇 안 되는 사람 중 하나입니다. 리치가 언데드 군대를
+<ce>일으키고 있습니다. 누군가 가서 그것을 막아야 합니다.
+
+RefuseQuest:  [1001]
+<ce>알겠습니다, %pcn. 이건 당신에게도 너무 위험합니다.
+<ce>이 일을 해낼 수 있을 만한 다른 영웅이 한두 명 더 있을
+<ce>겁니다. 그들에게 가서 물어보죠.
+
+AcceptQuest:  [1002]
+<ce>당신은 정말 용감하군요. 리치가 ___dungeon_에 은신처를
+<ce>마련했습니다. 그곳으로 가서 그 사악한 존재를 파괴하십시오.
+<ce>=2dung_일 안에 당신이 돌아오지 않는다면, 다른
+<ce>누군가를 보낼 것입니다.
+
+QuestComplete:  [1004]
+<ce>영웅 %pcn에게 경의를! 잘했습니다! 당신의 이름은
+<ce>모든 역사에 기록될 것입니다.
+
+RumorsDuringQuest:  [1005]
+___dungeon_의 위대한 리치가 다시 깨어났습니다.
+
+RumorsPostfailure:  [1006]
+___dungeon_의 리치가 일리악 만을 건너갔다고 들었습니다.
+<---> 리치가 %reg 밖에서 군대를 모으고
+있습니다.
+
+RumorsPostsuccess:  [1007]
+==qgiver_의 행방을 위해 %god에게 감사하십시오.
+그들이 우리 모두를 구했습니다. <---> ==qgiver_
+출신인 %ra의 활약으로 ___dungeon_의 리치가
+파괴되었습니다.
+
+QuestorPostsuccess:  [1008]
+영웅님, 어떤 방식으로든 당신을 도울 수 있다면
+영광이겠습니다.
+
+QuestorPostfailure:  [1009]
+___dungeon_ 사태 이후에 다시 돌아오다니 배짱이
+대단하군요. <---> 당신이 그 리치를 처치할 거라
+믿었습니다. 내 입장을 생각해 보십시오!
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 ==qgiver_의 _qgiver_ 측에서
+ 제게 ___dungeon_의 리치를 파괴하라는 임무를 맡겼습니다.
+ 임무를 완수하기까지 =2dung_일 남았습니다.
+
+Message:  1011
+<ce>리치가 죽었습니다. 마법적인 지원이 사라졌으니, 언데드
+<ce>군대는 다시 무덤으로 돌아갈 것입니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 1 time.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--              %reg occurs 1 time.
+--           =2dung_ occurs 2 times.
+--         ==qgiver_ occurs 4 times.
+--       ___dungeon_ occurs 6 times.
+--        ___qgiver_ occurs 3 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+Person _local_ face 1 group Resident2 local
+
+Place _dungeon_ remote dungeon0
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Ancient_lich
+Foe _F.01_ is Lich
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _old_ _S.04_ _S.04_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _F.00_ saying 1011 
+	killed 1 _F.01_ saying 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _S.02_ and _S.01_ 
+	give pc nothing 
+	change repute with _local_ by +4 
+	end quest 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 
+
+_S.04_ task:
+	place foe _F.01_ at _dungeon_ 
+
+_old_ task:
+	place foe _F.00_ at _dungeon_ 

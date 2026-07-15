@@ -7,98 +7,203 @@
 -- Edited for Daggerfall Unity by Jay_H
 Messages: 21
 Quest: L0A01L00
-DisplayName: 입단 시험
+DisplayName: 입문 시험
 -- Message panels
 QRC:
 
 QuestComplete:  [1004]
-<ce>훌륭하다, %pcn.
-<ce>심장마비로 _npc_ 의 숨은 끊겼다. 가여운 녀석.
-<ce>그저 칼날만이 아니라 높은 수를 쓸 수 있다는 것을
-<ce>너는 증명했다. 이제 다크 브라더후드의 완전한 일원으로
-<ce>너는 이제 어떤 마을이든 길드의 건물이 있다면 바로 알게 되리라.
-<ce>길드의 인가를 받아 치룬 첫번째 죽음에는 한닢의 금화로
-<ce>보상하는 것이 전통이며,
-<ce>이것이 네것이다.
+<ce>잘했다, %pcn. _npc_의 갑작스러운 심장마비로
+<ce>사망했다. 불쌍한 녀석 같으니. 너는 단순히 칼을 휘두르는
+<ce>것만이 아니라 신중하게 살해할 수 있음을 증명했다. 이제
+<ce>너는 다크 브라더후드의 정식 일원이다. 앞으로 마을에 들어설
+<ce>때마다 길드 건물이 있는지 알게 될 것이다. 입문자가
+<ce>%pg3 첫 번째 공인된 살인에 대한 대가로 금화 한
+<ce>닢을 받는 것이 관례다. 여기 네 몫이다.
 
 RumorsDuringQuest:  [1005]
-_npc_? 조심해야 할겁니다. 적이 꽤 있거든요.
+_npc_의 행보와 %g3의 행보를 조심해야 할
+거야. %g는 적이 너무 많거든.
 
 RumorsPostfailure:  [1006]
-다크 브라더후드를 거스르는건 현명하지 못합니다. 무모하고 위험하지요.
+다크 브라더후드를 무시하는 건 현명하지 못한 짓이지.
+현명하지 못할 뿐만 아니라 치명적이라네.
 
 RumorsPostsuccess:  [1007]
-_npc_, 말입니까? 안타까운 일이죠. 적을 너무 많이 만든게 아닌가 합니다. 많아도 너무 많았죠.
-<--->
-_npc_의 와인병 상태가 좋지 않았나 봅니다. 와인이 상태가 안좋을때가 있죠.
+불쌍한 _npc_. %g는 적을 너무 많이 만든
+모양이야. 하나라도 너무 많았지. <--->
+_npc_의 술병에 든 와인이 상했나 보군. 와인이란 게
+원래 그렇지.
 
 QuestLogEntry:  [1010]
 %qdt:
- _apothecary_,
- 암살자 길드인 다크 브라더후드의 일원과
- ___apothecary_에서 만났다.
- _poison_ 병을 주면서
- __mansion_의 _mansion_에 있는
- _npc_이 마시는 와인에
- 몰래 독을 넣으라고 했다.
- 그 후에 ___darkbmember_의
- _darkbmember_에게 가면
- 다크 브라더후드의 일원이 될 수 있다.
- =traveltime_일 안에 일을 처리하고 가지 않으면
- 브라더후드는 내가 임무에 실패한것으로 간주할 것이다.
+ 나는 ___apothecary_에서 암살자 길드인 다크 브라더후드의 일원
+ _apothecary_ 개체와 비밀리에 만났네. 나는 _mansion_의
+ _npc_ 개체가 머무는 __mansion_의 와인에
+ _poison_ 개체를 몰래 넣으라는 지시를 받았지.
+ _apothecary_의 말에 따르면, 그 후 ___darkbmember_에 있는
+ _darkbmember_ 측을 찾아가면 다크 브라더후드의 일원이 될 수
+ 있다더군. 나에게는 그를 찾아갈 =traveltime_일의 시간이
+ 주어졌네. 그렇지 않으면 브라더후드는 내가 임무에
+ 실패했다고 간주할 걸세.
 
 Message:  1011
-<ce>한 어린아이가 당신의 손에
-<ce>편지 하나를 밀어 넣었다.
-<ce>뭔가 물어보려던 찰나
-<ce>아이가 벙어리에 귀머거리인 것이 뻔해 보였다.
-<ce>실망감에 아이를 그냥 보냈다.
-                                     <--->
-<ce>손에 편지가 밀려 들어오는 것을 느끼자마자
-<ce>재빠르게 뛰어 달아나는 소리를 들었다.
-<ce>이 정체 모를 배달부가 어디로 갔는지는
-<ce>알 수 없다.
+<ce>어린 거리의 부랑자가 편지 한 통을
+<ce>자네 손에 쥐여주네. 그를 심문하려 하지만,
+<ce>그가 듣지도 말하지도 못하는 아이라는 게 분명해지네.
+<ce>좌절하며 손을 휘저어 그를 돌려보내네.
+<--->
+<ce>편지 한 통이 자네 손에 미끄러져 들어오고
+<ce>발소리가 멀어지는 소리가 들리네.
+<ce>신비로운 전령의 흔적은 어디에도 없네.
 
 Message:  1012
 %qdt:
- 한 골목아이로 부터 정체 모를 편지를 건네받았다.
- 이 일지에 편지 내용을 옮겨적을 생각은 감히 하지 못했다.
+ 거리의 부랑자에게서 의문의 편지를 받았네. 그 내용을 이
+ 일지에 옮겨 적을 엄두가 나지 않는군.
 
 Message:  1014
-<ce>너는 실패했다, %pcn
-<ce>_npc_ 의 숨은 붙어있다.
-<ce>의뢰를 수락함은 누군가 목숨을
-<ce>잃어야 함이 길드의 규약이니.
-<ce>네가 _npc_ 의 대신이 되리라.
+<ce>실패했군, %pcn. _npc_의 생존이 확인되었다.
+<ce>길드 규칙상 계약을 수락했으면 누군가는 반드시 죽어야 하네.
+<ce>자네가 _npc_의 자리를 대신해야겠어.
 
 Message:  1015
-<ce>아, 네가 %pcn 임이 분명하군.
-<ce>다크 브라더후드는 널 지켜보고 있었다.
-<ce>칼날로서 살인을 불러올 수 있음을 증명했군.
-<ce>브라더후드는 무단이탈을 범한 암살자에겐 관용을 베풀지 않는다.
-<ce>우리와 함께 하던가, 아니면 암살 대상일뿐.
-<ce>이 _poison_ 을 __mansion_ 의
-<ce>_mansion_ 에 있는 _npc_ 의 와인병에 넣으면
-<ce>브라더후드에서 널 완전한 일원으로서 입단하게 할 것이다.
-<ce>=traveltime_ 일 안에 완수해야하며,
-<ce>___darkbmember_ 의 _darkbmember_ 에 보고하라.
-<ce>메팔라의 축복이 있길, %pcn.
+<ce>아, 자네가 %pcn 님이군. 다크 브라더후드는 자네를
+<ce>지켜보고 있었네. 자네는 칼로 살인을 저지를 수 있음을
+<ce>증명했지. 브라더후드는 도적 같은 암살자를 용납하지 않네.
+<ce>우리와 함께하거나, 죽음의 표적이 되거나 선택하게. 자네가
+<ce>이 _poison_ 개체를 __mansion_의 _mansion_에 있는
+<ce>_npc_의 와인 디캔터에 넣는다면, 브라더후드는 자네를
+<ce>정식 일원으로 입문시킬 걸세. 자네에게는 =traveltime_일의
+<ce>시간이 주어지네. 임무를 마치고 ___darkbmember_의
+<ce>_darkbmember_에게 보고하게. 메팔라의 축복이 자네와
+<ce>함께하기를, %pcn.
 
 Message:  1019
-<ce>_poison_ 이 와인에 구름처럼
-<ce>퍼져 나갔지만 잠시뿐이었다.
-<ce>몇초후 와인은 다시 정상적으로
-<ce>보이게 되었다. 이제 되돌려 놓기만
-<ce>하면 될 것이다.
+<ce>_poison_의 투입으로 와인이 잠시 흐려지지만, 몇 초
+<ce>지나지 않아 술은 다시 평소처럼 보이네. 이제 다시 제자리에
+<ce>갖다 놓기만 하면 되네.
 
 Message:  1020
 %pcn
- 
-    다크 브라더후드는 널 지켜보고 있었다.
- 처벌없이 여러번의 살해를 저질렀더군. 이제 넌
- 우리와 함께하던가, 아니면 우리의 적이 될 것이다.
- ____apo_ 의 ___apo_ 에 있는
- _apothecary_ 에게 가라.
- 추가적인 지시를 줄 것이다.
- =S.01_ 일 주겠다.
-                              브라더후드.
+
+다크 브라더후드는 자네를 지켜보고 있었네. 자네는 승인 없이
+여러 번 살인을 저질렀지. 이제 우리와 함께하거나, 우리의
+적으로 간주될 수밖에 없네. ___apo_의 ___apo_
+방향으로 여행하여 _apothecary_ 개체를 만나게. 그가 추가
+지시를 내릴 걸세. 자네에게 =S.01_일의 시간을 주겠네.
+
+<ce>형제로부터
+
+--지역 일관성을 위해 %reg 지역을 ____apo_
+방향으로 변경함
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 2 times.
+--               %g3 occurs 1 time.
+--              %pcn occurs 6 times.
+--              %qdt occurs 2 times.
+--              %reg occurs 1 time.
+--      =traveltime_ occurs 2 times.
+--    ___apothecary_ occurs 2 times.
+--   ___darkbmember_ occurs 2 times.
+--        __mansion_ occurs 2 times.
+--      _apothecary_ occurs 3 times.
+--     _darkbmember_ occurs 2 times.
+--         _mansion_ occurs 2 times.
+--             _npc_ occurs 11 times.
+--          _poison_ occurs 3 times.
+
+QBN:
+Item _letter_ letter used 1020
+Item _decanter_ decanter
+Item _poison_ snake_venom
+Item _gold_ gold range 1 to 1
+
+Person _darkbmember_ faction The_Dark_Brotherhood remote
+Person _apothecary_ face 144 group Chemist remote
+Person _npc_ face 1 group Resident1 remote
+
+Place _mansion_ remote house1
+Place _apo_ remote apothecary
+--added _apo_ place due to spawning problem for chemist
+
+Clock _traveltime_ 0:00 0 flag 1 range 2 5
+--changed 14.00:00 to 0:00. specified time limit was too short for some cases.
+Clock _S.01_ 30.00:00 0 flag 1 range 1 4
+
+Foe _F.00_ is 2 Assassin
+Foe _guards_ is Spellsword
+Foe _F.02_ is 2 Nightblade
+
+--	Quest start-up:
+	start timer _S.01_ 
+	log 1012 step 0 
+	get item _letter_ 
+	say 1011
+	place npc _apothecary_ at _apo_
+--added place npc command
+
+_traveltime_ task:
+	change repute with _darkbmember_ by -35 
+	end quest 
+
+variable _S.01_
+_S.02_ task:
+	clicked npc _apothecary_ 
+	pc at _mansion_ set _S.08_ 
+	place item _decanter_ at _mansion_ 
+	add dialog for location _mansion_ person _darkbmember_ 
+	start timer _traveltime_
+    stop timer _S.01_
+	log 1010 step 1 
+	get item _poison_ 
+	say 1015 
+
+_S.03_ task:
+    when _hasDecanter_ and _hasPoison_
+	give item _poison_ to _F.00_ 
+	say 1019 
+	take _poison_ from pc
+    --added take item action. poison would linger in inventory.
+
+variable _hasDecanter_
+variable _hasPoison_
+
+_S.04_ task:
+	clicked item _decanter_
+--	have decanter and _poison_ do _S.03_
+    have _decanter_ set _hasDecanter_
+    have _poison_ set _hasPoison_
+	clear _S.11_ 
+
+_S.05_ task:
+	clicked npc _darkbmember_ 
+
+_S.06_ task:
+	when _S.11_ and _S.05_ 
+--removed " and _S.03_." superfluous when decanter has been dropped
+	give pc _gold_ 
+	end quest 
+--removed unnecessary delay
+
+_S.07_ task:
+	when _S.01_ and not _S.02_ 
+	change repute with _darkbmember_ by -25 
+	end quest 
+
+_S.08_ task:
+	create foe _guards_ every 3 minutes 3 times with 25% success 
+
+_S.09_ task:
+	when not _S.11_ and not _S.03_ and _S.05_ 
+	create foe _F.00_ every 1 minutes 1 times with 100% success 
+	create foe _F.02_ every 1 minutes 1 times with 100% success 
+	say 1014 
+	change repute with _darkbmember_ by -50 
+	change repute with _darkbmember_ by -100 
+
+variable _S.10_
+_S.11_ task:
+	dropped _decanter_ at _mansion_ 
+	clear _S.04_

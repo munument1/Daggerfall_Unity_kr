@@ -3,114 +3,236 @@
 -- QuestId: 501
 Messages: 62
 Quest: S0000501
-DisplayName: 카바르 영주 임무 파트 III
+DisplayName: 카바르 경 퀘스트 3부
 -- Message panels
 QRC:
 
 QuestComplete:  [1004]
-<ce>%pcn, 역시 믿을만한 사람인줄 알았어.
-<ce>센티넬 여왕과의 친분이면 그 자체로도 충분한
-<ce>보상이지만, 더 눈에 보이는 선물을 더 준비했네.
+<ce>%pcn, 당신을 믿을 수 있다는 걸 알고 있었소. 센티넬
+<ce>여왕의 우정만으로도 충분한 보상이겠지만, 더 실질적인
+<ce>선물도 준비했소.
 
 RumorsDuringQuest:  [1005]
-<ce>_traitor_ 그 반역자가 센티넬 궁성 지하감옥에서
-<ce>도망쳤다고 들었습ㄴ다. 아시겠지만, 반역죄로
-<ce>처형될 예정이었지요.
+<ce>_traitor_의 센티넬 성 지하 감옥 탈출 소식을 들었나?
+<ce>반역죄로 처형당하기 직전이었는데 말이야.
 
 RumorsPostsuccess:  [1007]
-<ce>_traitor_ 생각으론 웨이레스트로 가서 센티넬 왕위 찬탈을
-<ce>위한 지원을 받을 생각이었겠지만, _queen_의 요원들이
-<ce>알아낸거죠. 반역자가 어떻게 된지는 아무도 모르지만,
-<ce>제 생각엔 죽은 것 같습니다.
+<ce>_traitor_의 센티넬 왕좌 권리 지지 요청을 웨이레스트가
+<ce>거절하도록 _queen_의 요원들이 그를 가로챘지. 그에게
+<ce>무슨 일이 일어났는지는 아무도 모르지만, 죽었을 거라고
+<ce>생각하오.
 
 Message:  1020
 %qdt:
- 센티넬의 _queen_이 보낸 편지를 받았다
- _traitor_의 탈출을 언급하며
- 다시 추적해 잡아줄 것을 요청했다.
+ 센티넬의 _queen_에게서 편지를 받았다. _traitor_의
+ 탈출 소식과 함께, 그를 다시 추적하는 일에 대해 논의하고
+ 싶다고 한다.
 
 Message:  1021
 %qdt:
- _queen_의 첩자들이 _traitor_의 목적지가
- 웨이레스트이며, 센티넬에 대항해 목소리를 내려 한다는 것을
- 알아냈다. 지금은 웨이레스트 궁성 근처의 지하감옥 어딘가에 숨어있다.
- =time2_일 내로 찾아내서 처형을 위해 센티넬로 다시 잡아가야 한다.
+ _queen_의 첩자들이 _traitor_의 웨이레스트 은신 및
+ 센티넬 대항 음모를 알아냈다. 그는 왕실 성의 지하 감옥
+ 어딘가에 숨어 있다. =time2_일 안에 그를 찾아 센티넬로
+ 압송하여 처형해야 한다.
 
 Message:  1022
 %qdt:
- _traitor_ 체포에 성공했다.
- 센티넬로 돌아가 _queen_에게
- 넘겨야 한다.
+ _traitor_ 포획에 성공했다. 그를 _queen_에게 넘기기
+ 위해 센티넬로 돌아가는 중이다.
 
 Message:  1030
-Dear %pcn,
- 
-   전하기 안타깝지만 그대가 센티넬읠 위해 바친 노력이
- 무위로 돌아간 것 같네.
- _traitor_ 놈은 친구 몇이 아직 남은것 같네.
- 교수형을 몇일 안남기고 지하 감옥을 탈옥했지.
-   자네의 도움으로 이 문제에 완전히 끝을 내준다면
- 정말 고맙겠어. =patsy_이리 내로 날 만나러 와주게.
+친애하는 %pcn에게,
 
-<ce>친우,
+당신의 고귀한 센티넬을 위한 봉사가 수포로 돌아갔음을
+알리게 되어 유감이오. _traitor_에게는 아직 몇몇
+친구들이 남아 있는 모양이오. 그는 교수형을 며칠 앞두고
+지하 감옥에서 탈출했소. 이 문제를 완전히 매듭짓기 위해
+당신의 도움이 절실하오. =patsy_일 안에 나를 찾아와
+주시오.
 
+<ce>당신의 친구,
+<ce>
 <ce>센티넬의 _queen_
 
 Message:  1031
-<ce>센티넬의 갑옷을 입은 덩치 큰 기사가
-<ce>당신 앞에 서더니 경례를 했다.
-<ce>"%pcn? 편지가 있습니다. _queen_께서
-<ce>직접 보내신 전언이니다."
+<ce>센티넬의 문장을 단 건장한 기사가 당신 앞에 멈춰 서서
+<ce>경례한다.
+<ce>
+<ce>"%pcn? 당신에게 온 편지입니다. _queen_님께서
+<ce>직접 보내신 메시지입니다."
 
 Message:  1040
-<ce>아, %pcn, 마침 얼굴을 봤으면 했었지.
-<ce>내 첩자들이 _traitor_ 행적을 알아 냈지.
-<ce>다른 온갖 곳을 놔두고 바로 웨이레스트 궁정에
-<ce>있었더군, 내 왕좌를 뺐으려는 가소로운 말에
-<ce>지원을 받으려고 간 것 이겠지. 웨이레스트는
-<ce>센티넬에서 반역죄를 받은 자라면 쉽게 내쫓진
-<ce>않을 거야, 웨이레스트 성 어딘가에 숨어 있을거야.
-<ce>그 자를 찾아서 다시 데려오게.
-<ce>가능하면 살려서 데려오고, 어쩔 수 없다면 죽이게.
-<ce>다시 도망치게 하면 안될것이야.
-<ce>=time2_일 주도록 하지.
+<ce>아, %pcn, 당신이 와주길 바랐소. 내 첩자들이 그
+<ce>교활한 _traitor_의 행방을 찾아냈소. 그는 하필이면
+<ce>웨이레스트 궁정에 나타나, 내 왕좌에 대한 자신의 가련한
+<ce>권리를 지지해달라고 요청하고 있소. 웨이레스트가 센티넬의
+<ce>유죄 판결을 받은 반역자에게 공개적으로 피난처를 제공할
+<ce>만큼 경솔하지는 않겠지만, 그는 웨이레스트 성 어딘가에 숨어
+<ce>있소. 당신이 그를 찾아 데려오길 바라오. 가능하다면 산
+<ce>채로, 하지만 필요하다면 죽여도 좋소. 다시는 그가 탈출하게
+<ce>두지 마시오. 당신에게 =time2_일의 시간을 주겠소.
 
 Message:  1041
-<ce>또 너냐! %oth, 날 좀 놔둘순 없나?
-<ce>이번에 아주 끝을 내야겠어!
+<ce>또 너냐! %oth, 나를 가만히 두지 않겠다는 거냐?
+<ce>이번엔 확실히 끝장을 내주마!
 
 Message:  1042
-<ce>"잠깐! 죽이지마! 항복하겠다!"
+<ce>"멈춰! 죽이지 마! 항복하겠다!"
 <ce>
-<ce>_traitor_의 항복을 받아 주겠습니까?
+<ce>_traitor_의 항복을 받아들이겠습니까?
 
 Message:  1043
-<ce>반역자 _traitor_은 죽었다.
+<ce>반역자 _traitor_ 사망이 확인되었다.
 
 Message:  1044
-<ce>_traitor_의 무기가 땅에 떨어졌다,
-<ce>당신은 재빠르게 손을 묶고 눈을 가려서
-<ce>허튼짓을 못하게 막았다. 이제 웨이레스트를
-<ce>빠져나가야 한다...
+<ce>_traitor_의 무기를 떨어뜨리고, 당신은 재빨리 그의 손을
+<ce>묶고 눈을 가려 더 이상의 속임수를 쓰지 못하게 한다. 이제
+<ce>웨이레스트에서 탈출할 차례다...
 
 QuestTimeLapse:  [1045]
-<ce>그렇다면, %god 에 맹세하건데, 우리 둘 모두 여기서 죽는다!
+<ce>그렇다면, %god의 이름으로, 우리 함께 죽자!
 
 Message:  1050
-<ce>이런, 이런, 내 충직한 _traitor_ 아닌가,
-<ce>다시 돌아 왔군. 내 징벌을 진짜 피할 수 있다고 생각한건가?
-<ce>경비병, 이 자를 끌고 가서 즉시 처형하라.
+<ce>이런, 이런, 나의 충직한 _traitor_의 귀환이군. 내 분노를
+<ce>피할 수 있을 거라 정말 믿었나? 경비병들, 이 자를 지하로
+<ce>끌고 가서 즉시 처형하라.
 
 Message:  1051
-<ce>_traitor_, 죽어 마땅한 자이지. 공개적으로 처형해서,
-<ce>다른 이들에게 경고하고 싶지만, 이런 더러운 일은
-<ce>조용히 끝을 보고 싶군.
+<ce>_traitor_의 죽음은 마땅했다. 다른 이들에게 본보기가
+<ce>되도록 공개적으로 처형하고 싶었지만, 이 지저분한 문제가
+<ce>드디어 해결되어 만족스럽군.
 
 Message:  1060
-<ce>이 _traitor_, 쉽게 죽일 수 있을거라고 생각했나?
-<ce>센티넬의 영주를 간단하게 상대할 순 없을거다!
+<ce>_traitor_ 처치에 성공할 거라 생각했나? 센티넬의 영주를
+<ce>함부로 건드려선 안 된다는 걸 알게 될 것이다!
 
 Message:  1061
-<ce>센티넬 양식의 갑옷을 입은 기사가 다가왔다.
-<ce>"이 돼지 같은 역적놈은 제가 데려가도록
-<ce>하겠습니다."
+<ce>센티넬의 제복을 입은 기사가 다가옵니다. "이제 그 배신자
+<ce>놈을 _traitor_ 쪽에서 떼어놓겠다."
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--              %god occurs 2 times.
+--              %oth occurs 1 time.
+--              %pcn occurs 4 times.
+--              %qdt occurs 3 times.
+--           _queen_ occurs 10 times.
+--         _traitor_ occurs 16 times.
+
+QBN:
+Item _letter_ letter used 1030
+Item _reward1_ item class 4 subclass 26
+Item _reward2_ gold
+
+Person _queen_ face 224 named Queen_Akorithi atHome
+Person _traitor_ face 217 named Lord_K'avar
+
+Place _wayrest_ permanent WayrestCastle2
+Place aide remote dungeon
+
+Clock _S.00_ 12.06:00 23.18:00
+--shortened timer drastically. getting attacked by Kavar minions for months is annoying
+Clock _patsy_ 30.00:00 0 flag 1 range 0 1
+Clock _time2_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is 3 Archer
+Foe _mtraitor_ is Ranger
+
+--	Quest start-up:
+	create foe _F.00_ every 2000 minutes 5 times with 100% success 
+	start timer _S.00_ 
+	have _letter_ set _startpatsy_
+-- reduced spawning trio from 20 to 5 times
+
+_startpatsy_ task:
+	start timer _patsy_ 
+
+_S.00_ task:
+	_letter_ used do _readletter_ 
+	give pc _letter_ notify 1031 
+	place npc _traitor_ at _wayrest_ marker 3
+
+variable _patsy_
+_time2_ task:
+	end quest 
+
+_readletter_ task:
+	log 1020 step 0 
+
+_S.04_ task:
+	clicked npc _queen_ 
+
+_S.05_ task:
+	clicked npc _traitor_ 
+	hide npc _traitor_ 
+	say 1041 
+	place foe _mtraitor_ at _wayrest_ marker 3
+
+_hittraitor_ task:
+	injured _mtraitor_ 
+
+_S.07_ task:
+	killed 1 _mtraitor_ 
+	say 1043 
+
+_S.08_ task:
+	when _hittraitor_ and not _S.07_ 
+	prompt 1042 yes _yes_ no _no_ 
+
+_S.09_ task:
+	when _S.04_ and _S.00_ 
+	stop timer _patsy_
+	start timer _time2_ 
+	log 1021 step 1 
+	say 1040 
+	remove log step 0
+	start task _stagger_
+
+_notyet_ task:
+	when _S.04_ and not _S.00_
+	clear _S.04_ _notyet_
+
+variable _stagger_
+_clearclick_ task:
+	when _stagger_ and _S.04_ and not _hittraitor_
+	clear _S.04_ _clearclick_
+
+_S.10_ task:
+	when _yes_ and _S.04_ 
+	say 1050 
+	drop _traitor_ face 
+
+_traitordead_ task:
+	when _S.07_ and _S.04_ 
+	say 1051 
+	unset _S.04_ 
+
+_yes_ task:
+	log 1022 step 2 
+	say 1044 
+	add _traitor_ face 
+	place foe _mtraitor_ at aide 
+
+_no_ task:
+	say 1045 
+
+_S.14_ task:
+	when _S.10_ or _traitordead_ 
+	give pc _reward1_
+	give pc _reward2_ 
+	end quest 
+
+_S.15_ task:
+	when _patsy_ and not _S.09_ 
+	end quest 
+
+_S.16_ task:
+	when _yes_ and _time2_ 
+	say 1061 
+	end quest 
+
+_S.17_ task:
+	injured _F.00_ 
+	say 1060 

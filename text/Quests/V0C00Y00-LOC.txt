@@ -6,96 +6,149 @@
 -- QuestId: 0
 Messages: 31
 Quest: V0C00Y00
-DisplayName: 클라비쿠스 바일의 임무
+DisplayName: 클라비쿠스 바일의 퀘스트
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>내 욕구는 뭐랄까... 겸손한편이지, 하지만 내 제안은 수락할거라 생각해.
-<ce>이타심과 후함이란 말을 떼어 놓을 수 없을 정도의 제안이니까.
-<ce>위대한 힘을 가진 _artifact_을 주는 대신, 내가 요구하는 거라곤
-<ce>아주 작은 털복숭이 하나를 처치해달라는 것이거든.
-<ce>___mondung_에 있는 내 친구 몇을 사냥한 놈이지.
-<ce>늑인놈들은 보통은 날 위해 일하는 자들이나 나한텐 꽤 호의적이지만
-<ce>이놈은... 음, 애들은 애들 짓을 하는 법이니까.
-<ce>이해 했나?
+<ce>내 요구는 꽤... 소박하지만, 내 제안은 당신도 동의하겠지만
+<ce>이타적이고 관대함 그 자체입니다. 위대한 힘을 가진 유물인
+<ce>_artifact_ 물품을 대가로, 나는 그저 ___mondung_ 근처에
+<ce>사는 내 친구들을 사냥해온 작고 끔찍한 털 뭉치를
+<ce>제거해달라고 부탁하는 것뿐입니다. 루핀들은 보통 나와 내
+<ce>동료들과 꽤 친하게 지내지만, 이 녀석은... 뭐, 철없는 짓을
+<ce>하는 거죠. 서로 이해한 걸로 할까요?
 
 RefuseQuest:  [1001]
-<ce>이 역겨운 벌레놈. 네놈의 생각없는 무례한 장난질에
-<ce>공기마저 더러워지는구나. 감히 오블리비언의 프린스 중
-<ce>가장 강대한 자를 소환하고도 내가 제안할 가장 간단한
-<ce>요청을 거절해? 물을 받고 와인을 주겠다 했는데
-<ce>내 얼굴에 침을 뱉다니.
-<ce>이 일은 잊지 않겠다, %pcn.
+<ce>왜, 이 역겨운 벌레 같은 놈. 당신의 둔한 오만함으로 공기를
+<ce>더럽히는군요. 감히 오블리비언의 위대한 프린스 중 하나인
+<ce>나를 소환해놓고 내가 제안한 가장 간단한 요청을 거절하다니?
+<ce>물 대신 와인을 주었더니 둘 다 내 얼굴에 뱉는군요. 이 일은
+<ce>잊지 않겠다, %pcn.
 
 AcceptQuest:  [1002]
-<ce>아, 괜찮은 거래인걸 알아줬군, 그렇지? 늑대인간은
-<ce>___mondung_ 근처에서 찾을 수 있지.
-<ce>안타깝지만, 이 문제는 시간이 우리편이 아니야.
-<ce>의논하기엔 너무 귀찮은 이유니, =1stparton_일내로
-<ce>죽여줘. 그 괴물을 죽였으면, ___contact_에
-<ce>있을 내 친구 __contact_에게 가봐.
-<ce>=contact_, 찾아보면 될거야.
-<ce>거래 이야기 즐거웠네, %pcn.
-<ce>분명 다시 만나게 될거야.
+<ce>아, 좋은 거래라는 걸 알아보시는군요? ___mondung_의
+<ce>명칭으로 불리는 곳에서 루핀의 위협을 찾으실 수 있을
+<ce>겁니다. 안타깝게도, 이 일은 시간이 그리 넉넉하지 않습니다.
+<ce>구구절절 설명하기엔 지루한 이유로, 그 멍청이를
+<ce>=1stparton_일 안에 처리해주셔야 합니다. 그 괴물을 죽인
+<ce>뒤에는 ___contact_에 있는 __contact_에서 제 친구를
+<ce>만나십시오. =contact_ 측을 찾으시면 됩니다.
+<ce>%pcn님, 좋은 거래였습니다. 조만간 다시 뵙길
+<ce>바랍니다.
 
 QuestFail:  [1003]
-<ce>잘들어, 애송이. 클라비쿠스 바일과
-<ce>어떤 거래를 했는지 모르겠지만, 이건 말해두지.
-<ce>일을 반만 하는건 절대 좋아하지 않더군.
-<ce>늑대인간은 아직 죽지 않은거 알고 있어.
-<ce>바일을 속일 수 있다고 생각했다면 넌 멍청이야.
-<ce>늑대인간이 살아있으면, _artifact_도 없다.
-<ce>간단한 문제야.
+<ce>이봐, 꼬마. 클라비쿠스 바일과 얼마나 많은 거래를
+<ce>해봤는지는 모르겠지만,
+<ce>이것만은 알아둬. 그는 어설픈 일 처리를 아주 싫어해.
+<ce>그 웨어울프가 아직 살아있다는 걸 알아. 바일을 속일 수
+<ce>있다고 생각한다면, 넌 바보야. 웨어울프를 죽이지 못하면,
+<ce>_artifact_도 없어.
+간단하지.
 
 QuestComplete:  [1004]
-<ce>아, %pcf, 기다리고 있으라고 바일한테 들었다.
-<ce>음, 거래 조건을 처리해준것으로 알고,
-<ce>여기 약속한 _artifact_.
-<ce>다른 이야기지만, 바일이 인상깊게 널 봤더군.
-<ce>친하게 지내도 괜찮은 친구구만.
-<ce>자 가져가게.
+<ce>아, %pcf님, 바일께서 당신이 올 거라고 하더군요.
+<ce>약속하신 일을 완수하셨으니, 여기 바일께서 약속하신
+<ce>_artifact_ 물품을 드립니다. 그분께서 당신을 아주 인상
+<ce>깊게 보셨더군요. 나쁘지 않은 친구를 두셨네요. 제 말을
+<ce>믿으세요.
 
 RumorsDuringQuest:  [1005]
-이 근처에 늑대인간 같은게 돌아다닌다고 들었습니다.
-<--->
-___mondung_에 늑대인간 소굴이 있다고 합니다.
-<--->
-어제 밤에 울부짖는 소리 들었수? 늑대 우는?
+이 근처에 웨어울프가 돌아다닌다는 소문이 있어.
+<---> 그 웨어울프가 ___mondung_의 명칭으로 불리는
+곳에 은신처를 마련했다더군. <---> 어젯밤에 울음소리
+들었어? 늑대 울음소리 말이야.
 
 RumorsPostfailure:  [1006]
-늑대인간은 진짜 잘 이동하는 것 같습니다. 늑인이 남쪽으로 갔다고 들었습니다.
-<--->
-친척에게 들었는데 근처에 있던 늑대인간이 남쪽으로 가는 걸 봤다고 합니다.
+웨어울프는 정말 떠돌이인가 봐. 우리 루핀이 남쪽으로
+이동했다는 소문이 있어. <---> 사촌이 말하길 우리
+웨어울프가 남쪽 어딘가에서 목격됐대.
 
 RumorsPostsuccess:  [1007]
-___mondung_ 근처에 무슨 이상한 사이비 같은게 생겼다는 이야기를 들었습니다.
-<--->
-늑대인간이 죽었다는 소식이 들리니까 다들 안심하고 있습니다.
-<--->
-%ra 인지 누군지가 잡았다는 늑대인간 소식 들으셨습니까?
+___mondung_ 근처에서 이상한 광신도 활동이 시작됐어.
+<---> 그 웨어울프가 죽었다니 다들 안심하는
+분위기야. <---> 어떤 %ra의 웨어울프 사냥
+소식 들었어?
 
 Message:  1011
-클라비쿠스 바일은 오블리비언의 노련한 정치꾼입니다.
-<--->
-클라비쿠스 바일 보다 더 신중하게 중립을 지키는 데이드릭 프린스는 없을 것입니다.
+클라비쿠스 바일은 오블리비언의 노련한 정치가다.
+<---> 클라비쿠스 바일만큼 철저하게 중립적인
+데이드릭 프린스는 없을 것이다.
 
 Message:  1012
-그 말 잘하는 =contact_, 여기서 %di __contact_에 있을 겁니다.
-<--->
-%di으로 가면 있는__contact_에 가보면 =contact_ 이름으로 찾아보면 될겁니다.
+말솜씨 좋은 =contact_의 행방은 __contact_의
+%di에 있다. <---> 만약 __contact_의
+%di 쪽으로 간다면, =contact_의 행방을
+찾아보도록 해.
 
 Message:  1014
-아마, 가면은 사용하면 매력을 올려줄겁니다.
+전해지는 바에 따르면, 그 가면은 착용자의 매력을 높여준다고
+한다.
 
 Message:  1020
 %qdt:
- 클라비쿠스 바일이 ___mondung_에 있는
- 늑대인간을 죽여달라고 했다.
- 완료후 접선책인 =contact_ _contact_에
- =1stparton_일내로 가면, 클라비쿠스 바일의
- 가면을 주기로 했다.
+ 클라비쿠스 바일이 ___mondung_ 던전에 있는 웨어울프를
+ 죽여달라고 의뢰했다. =contact_인 _contact_의
+ 도움으로 __contact_의 ___contact_에서 =1stparton_일
+ 동안 나를 기다리며 클라비쿠스 바일의 가면을 건네줄 것이다.
 
 Message:  1030
-<ce>클라비쿠스 바일이 처리를 요청했던
-<ce>늑대인간을 죽였습니다.
+<ce>클라비쿠스 바일의 명령대로 웨어울프를 처치했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 2 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--         =contact_ occurs 7 times.
+--       ___mondung_ occurs 6 times.
+--        __contact_ occurs 4 times.
+--        _artifact_ occurs 11 times.
+--         _contact_ occurs 1 time.
+
+QBN:
+Item _artifact_ artifact Masque_of_Clavicus_Vile anyInfo 1014
+
+Person _questgiver_ face 112 named Clavicus_Vile anyInfo 1011
+Person _contact_ face 238 faction The_Cabal female remote anyInfo 1012
+
+Place _mondung_ remote dungeon
+Place _tavern_ remote tavern
+
+Clock _1stparton_ 00:00 0 flag 1 range 0 5
+
+Foe _monster_ is Werewolf
+--removed period from 1003
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	place foe _monster_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+variable _queston_
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1030 
+
+_qgclicked_ task:
+	clicked npc _contact_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 

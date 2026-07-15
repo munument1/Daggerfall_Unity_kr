@@ -1,0 +1,13 @@
+Key,Value
+about,이 CSV는 예시 커스텀 주문인 마법사의 빛에 대한 텍스트 레코드를 제공합니다.
+groupName,마법사의 빛
+subGroupNames,"인페르노
+라임
+베놈
+스톰
+아케인"
+effectDescription,시전자 주변에 부드러운 빛을 생성합니다.
+durationSpellMaker,지속 시간: 빛이 유지되는 라운드 수입니다.
+durationSpellBook,지속 시간: %bdr + 레벨당 %adr (%cld 레벨 기준)
+chance,확률: 해당 없음
+magnitude,위력: 해당 없음

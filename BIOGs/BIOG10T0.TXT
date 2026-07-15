@@ -1,212 +1,193 @@
-1.	Of all disagreeable types, you have the
-	most personal hatred for ___.
-a.	Sanctimonious priests
+1.	불쾌한 유형들 중, 당신이 가장 개인적으로 증오하는 것은 ___입니다.
+a.	독선적인 사제
 	#4650
 	!4651
 	AE M 8 12 +3
-b.	Diabolic wizards
+b.	사악한 마법사
 	#4652
 	!4653
 	AE M 8 2 +4
-c.	Power-mad robber barons
+c.	권력에 미친 강도 남작
 	#4654
 	!4655
 	AE M 8 17 +4
-d.	Greedy Merchants
+d.	탐욕스러운 상인회
 	#4656
 	!4657
 	AE M 8 11 +2
 
-2.	The one skill you could not work
-	without must be ___.
-a.	Lockpicking
+2.	당신이 없이는 일할 수 없는 유일한 기술은 반드시 ___이어야 합니다.
+a.	자물쇠 따기
 	#4522
 	13 +6
-b.	Pickpocketing
+b.	소매치기
 	#4523
 	15 +6
-c.	Stealthy Movement
+c.	은밀 행동
 	#4524
 	16 +6
-d.	Dodging
+d.	회피
 	#4525
 	20 +6
-e.	Climbing
+e.	등반
 	#4526
 	18 +6
-f.	Backstabbing
+f.	기습 공격
 	#4527
 	19 +6
 
-3.	Where is your expertise in combat?
-a.	Short-bladed weapons
+3.	당신의 전투 전문 분야는 어디입니까?
+a.	단검
 	#4200
 	IT 3 0 2
 	28 +6
-b.	Hand-to-hand combat
+b.	맨손 격투
 	#4201
 	30 +6
 	IT 2 1 0
-c.	Axe fighting
+c.	도끼술
 	#4202
 	31 +6
 	IT 3 14 0
-d.	Blunt weapons
+d.	둔기
 	#4203
 	32 +6
 	IT 3 11 0
-e.	Archery
+e.	궁술
 	#4204
 	33 +6
-	IT 3 16 0
-	IT 3 18 0
-	IT 3 18 0
-	IT 3 18 0
-	IT 3 18 0
-	IT 3 18 0
-	IT 3 18 0
+	IT 2 3 0
 
-4.	In gratitude for services rendered, the
-	Emperor gave you ___.
-a.	Over 200 gold pieces
+4.	제공한 서비스에 대한 감사의 표시로, 황제는 당신에게 ___ 항목을 주었습니다.
+a.	금화 200닢 이상
 	#4528
 	GP +250
-b.	An ebony dagger
+b.	에보니 단검
 	#4529
 	IT 3 0 7
-c.	An interesting book
+c.	흥미로운 책
 	#4530
 	IT 7 0 0
-d.	A ruby
+d.	루비
 	#4531
 	IT 14 0 0
-e.	A silver staff
+e.	은 지팡이
 	#4532
 	IT 3 2 2
-f.	An amulet
+f.	부적
 	#4192
 	IT 25 0 0
 
-5.	As a child, your nickname was ___.
-a.	Rabbit
+5.	어릴 적 당신의 별명은 ___였습니다.
+a.	토끼
 	3 +6
-b.	Guppy
+b.	구피
 	17 +6
-c.	Quicksilver
+c.	퀵실버
 	21 +6
-d.	Scrapper
+d.	싸움꾼
 	30 +6
-e.	Monkey
+e.	원숭이
 	18 +6
 
-6.	You are friendlier than most with ___.
-a.	the savage Harpies
+6.	당신은 대부분의 사람보다 ___ 쪽과 더 친합니다.
+a.	야만적인 하피
 	5 +6
-b.	the simple Giants
+b.	단순한 거인
 	6 +6
-c.	the glorious Dragons
+c.	영광스러운 드래곤
 	7 +6
-d.	the immodest Nymphs
+d.	방종한 님프
 	8 +6
-e.	the infernal Daedra
+e.	지옥의 데이드라
 	9 +6
-f.	the bucolic Spriggans
+f.	전원적인 스프리건
 	10 +6
-g.	the primitive Centaurs
+g.	원시적인 켄타우로스
 	11 +6
-h.	the mischevious Imps
+h.	장난기 많은 임프
 	12 +6
 
-7.	Since childhood, you have saved ___.
-a.	100 gold pieces
+7.	어릴 적부터 당신은 ___ 항목을 모아왔습니다.
+a.	금화 100닢
 	GP +100
-b.	Your favorite book
+b.	가장 좋아하는 책
 	IT 7 0 0
-c.	A cuirass
+c.	흉갑
 	IT 2 0 0
-d.	A pearl
+d.	진주
 	IT 22 1 0
 
-8.	As much as you are able, you ___.
-a.	socialize with aristocrats
+8.	당신은 할 수 있는 한, ___합니다.
+a.	귀족들과 어울리기
 	1 +6
 	r3 +5
 	r0 -5
-b.	learn streetsmarts
+b.	거리의 지혜 배우기
 	2 +6
 	r0 +2
 	r4 +3
 	r3 -5
-c.	practice acrobatics
+c.	곡예 연습하기
 	3 +2
 	20 +2
 	18 +2
-d.	trespass
+d.	무단 침입하기
 	13 +6
-e.	study economics
+e.	경제학 공부하기
 	14 +6
-f.	swim
+f.	수영하기
 	17 +6
-g.	spar
+g.	스파링하기
 	34 +6
 
-9.	What motivates you into a life of
-	adventure?
-a.	Riches
+9.	당신을 모험의 삶으로 이끄는 동기는 무엇입니까?
+a.	부
 	GP +500
-b.	Fame
+b.	명성
 	r4 +10
 	r2 +10
-c.	Knowledge
+c.	지식
 	IT 7 0 0
-d.	Fun
+d.	재미
 	1 +3
 	2 +3
-e.	Helping Others
+e.	타인 돕기
 	r0 +10
 
-10.	What god, if any, do you worship?
-a.	None
+10.	당신은 어떤 신을 숭배합니까?
+a.	없음
 	r2 +5
-b.	Arkay, Birth and Death God
-	rf82 +5
-c.	Zenithar, God of Commerce
-	rf84 +5
-d.	Mara, the Mother Goddess
-	rf88 +5
-e.	Dibella, Goddess of Beauty
-	rf98 +5
-f.	Julianos, God of Logic
-	rf94 +5
-g.	Akatosh, God of Time
-	rf92 +5
-h.	Stendarr, God of Mercy
-	rf106 +5
-i.	Kynareth, Goddess of Air
-	rf36 +5
+b.	아케이, 탄생과 죽음의 신 rf82 +5
+c.	제니타르, 상업의 신 rf84 +5
+d.	마라, 어머니 여신 rf88 +5
+e.	디벨라, 미의 여신 rf98 +5
+f.	줄리아노스, 논리의 신 rf94 +5
+g.	아카토쉬, 시간의 신 rf92 +5
+h.	스텐다르, 자비의 신 rf106 +5
+i.	키나레스, 공기의 여신 rf36 +5
 
-11.	Before you set out for the Imperial City,
-	you brought with you ___.
-a.	100 gold pieces
+11.	제국 도시로 떠나기 전, 당신은 ___ 항목을 가져왔습니다.
+a.	금화 100닢
 	GP +100
-b.	A book
+b.	책
 	IT 7 0 0
-c.	A buckler
+c.	버클러
 	IT 2 7 1
-d.	Gauntlets
+d.	건틀릿
 	IT 2 1 0
 
-12.	You have the most trouble ___.
-a.	Resisting poisons
+12.	당신은 ___에 가장 큰 어려움을 겪습니다.
+a.	독에 저항하기
 	RP -10
-b.	Staying awake and alert
+b.	깨어 있고 경계하기
 	FT -5
-c.	Getting along with others
+c.	타인과 잘 지내기 &
 	RR -5
-d.	Avoiding diseases
+d.	질병 피하기
 	RD -5
-e.	Resisting magic 
+e.	마법에 저항하기
 	MR -5
-f.	Fighting 
+f.	싸우기
 	TH -5
 

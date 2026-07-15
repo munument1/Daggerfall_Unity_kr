@@ -7,325 +7,613 @@
 -- Edited for Daggerfall Unity by Jay_H
 Messages: 56
 Quest: K0C30Y03
-DisplayName: 귀족에게 빌린 빚
+DisplayName: 귀족의 빚
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>어휴, 제말을 들어 주십시오. 잘못된 사업 선택을 한 것을 인정하기 싫지만,
-<ce>사실은 사실이니 말씀 드리겠습니다. 알고 계실지 모르지만,
-<ce>_patsy_ 이름을 가진 귀족에게 돈을 어느정도 빌려줬습니다.
-<ce>담보는 값나가는 부동산의 토지 문서 였는데 얼마 전,
-<ce>_patsy_ 와 담보 문서 둘 다 사라졌습니다.
-<ce>소문으로는 그 귀족이 금전적으로 상황이 안좋았다고 합니다.
-<ce>제가 빌려준 돈은 융통이 안되면 사업에 상당히 않좋습니다.
-<ce>그 귀족같은 자와 얽히면 위험한건 알고 있었지만, 도와주십시오.
-<ce>크기가 상당한 다이아몬드 원석을 드릴테니 부디 도와주십시오.
+<ce>아, 친구여. 유감스럽게도 제가 사업상 좋지 못한 결정을
+<ce>내렸음을 인정해야겠군요. 하지만 사실은 사실이니까요. 저는
+<ce>_patsy_의 이름을 지닌 귀족에게 상당한 금액을
+<ce>빌려주었습니다. 아마 들어보셨을지도 모르겠군요. 그 대출의
+<ce>담보는 가치 있는 부동산의 권리증서였습니다. 그런데 지금
+<ce>_patsy_ 개체와 그 권리증서가 모두 사라져 버렸습니다.
+<ce>소문에 따르면 %g의 재정 상황이 어려워졌다고는
+<ce>하지만, 제가 빌려준 금액은 제 사업체 입장에서 쉽게 감당할
+<ce>수 있는 수준이 아닙니다. _patsy_ 같은 자들과 얽히는
+<ce>것은 위험할 테지만, 제게는 용사가 필요합니다. 친구여,
+<ce>커다란 가공되지 않은 다이아몬드를 대가로 저를
+<ce>도와주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>안타깝군요. 물론 왜 거절하신지는 알겠지만,
-<ce>그래도 실망스럽습니다.
+<ce>그 소식을 들으니 유감이군요. 물론 이해는 합니다만,
+<ce>실망스럽네요.
 
 AcceptQuest:  [1002]
-<ce>다행입니다. 자 그럼, 제가 부도 기한 까지 30일이 남았습니다.
-<ce>부동산 문서는 __bank_의 _bank_에서
-<ce>다른 귀중품하고 같이 도난 당했고, 그 귀족이 사라졌을때
-<ce>도난 당했으니 연관성을 조사하면 좋을 것입니다.
-<ce>귀족이 전에 살던 곳은 __house2_의 _house2_입니다.
-<ce>제 생각으론 지금은 비어있을겁니다. 제가 아는 건 이것뿐입니다.
-<ce>그 귀족이 빌려간 금화를 다시 찾던가, 그 귀족의 머리를
-<ce>30일 안에 가져와 주십시오. 기대하고 있겠습니다, %pcf.
+<ce>그 말을 들으니 다행이군요. 자, 제 자본을 건드려야 할
+<ce>때까지 30일이 남았습니다. 그 권리증서는 __bank_에
+<ce>있는 _bank_ 시설에서 다른 귀중품들과 함께
+<ce>도난당했습니다. 하지만 _patsy_의 부재 시점과
+<ce>권리증서가 사라진 시점이 일치한다는 점은 조사해 볼 가치가
+<ce>있습니다. _patsy_의 예전 거주지는 __house2_의
+<ce>_house2_였는데, 지금은 비어 있다고 들었습니다. 그
+<ce>외에는 단서가 없습니다. 30일 안에 _patsy_의 차용금
+<ce>회수, 집의 권리증서 확보, 혹은 그 귀족의 머리를 막대기에
+<ce>꽂아 가져와야 합니다. 실망시키지 마십시오, %pcf.
 
 QuestFail:  [1003]
-<ce>약속한건 지키려고 노력이라도
-<ce>좀 해줬으면 했는데.
+<ce>약속을 지키려고 노력이라도 해보셔야죠.
 
 QuestComplete:  [1004]
-<ce>_patsy_의 수작이 당신에겐 어림없군요.
-<ce>여기 약속드렸던 다이아몬드 입니다.
-<ce>고맙습니다, 친구여.
+<ce>_patsy_의 속임수는 통하지 않았군요, %pcf?
+<ce>여기 약속했던 다이아몬드입니다. 잘해주셨습니다, 친구여.
 
 RumorsDuringQuest:  [1005]
-그 _qgiver_, 대출을 _patsy_에게만 해준건 아닙니다. 그사람 금화를 빌린 사람이 꽤 많습니다.
-<--->
-_patsy_ 갑자기 __house2_ 집에서 도망쳐 나왔다고 합니다. 빚도 안갚았으니 속 앓을 사람도 있겠죠.
+_qgiver_의 존재가 _patsy_의 유일한 희생양은
+아니었을 겁니다. 많은 사람이 %g2에게 금을
+빌려주었죠. <---> _patsy_의 갑작스러운
+__house2_ 이탈로 빚과 상처만이 남았습니다.
 
 RumorsPostfailure:  [1006]
-_patsy_ 말입니다. 아예 도망간것 같습니다. 돈을 잔뜩 챙기고 북쪽으로 갔다고 들었습니다.
-<--->
-죽은것 같다고 들었지만, _patsy_? 제가 보기엔 절대 죽었을리가 없습니다.
+_patsy_의 모든 것을 가지고 도망친 것 같군요.
+%g가 북쪽에서 큰 재산을 모았다는 소문이
+있습니다. <---> _patsy_의 사망설이 돌지만,
+저는 전혀 믿지 않습니다.
 
 RumorsPostsuccess:  [1007]
-_qgiver_에 돈빌리고 튈 생각은 아무도 못할걸요, _patsy_ 이야기 소문 다났습니다.
-<--->
-_patsy_ 건으로 다들 _qgiver_에 사기치면 좋은꼴 못본다는걸 잘 알게 됬습니다.
+_qgiver_에게 채무 불이행을 하려는 사람은 없을 겁니다.
+그 _patsy_ 사건 이후로는 말이죠. <--->
+_patsy_의 증명은 _qgiver_ 같은 사람을 속이려 드는
+것이 현명하지 못하다는 사실뿐입니다.
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_ __qgiver_의
- _qgiver_에게 의뢰를 받았다.
- _patsy_, 라는 귀족에게
- 대출을 해주고 담보로 받았던
- 부동산 문서, 혹은 빌려준 금화를
- 회수하던지 그것도 안된다면,
- 사라진 _patsy_의 행방을
- 찾아달라고 했다.
- 담보 문서는 도난 당하기 전에는
- __bank_ _bank_에 보관 중이었다.
- 또한 __house2_의 _house2_에
- 도망간 귀족이 살았었다는 이야기를 들었다.
- 30일안에 셋중 어떤 것이든 찾으면
- 큰 다이아몬드 원석을 받기로 했다.
+ ___qgiver_에 있는 __qgiver_의 _qgiver_ 관련
+ 권리증서를 30일 안에 찾아야 한다. 귀족 _patsy_에게
+ 빌려준 대출의 담보로 받은 것이다. 아니면 _qgiver_의
+ _patsy_ 대여금을 찾거나, 그것도 안 되면 행방불명된
+ _patsy_의 소재를 파악해야 한다. 담보는 은행이 털리기
+ 전 __bank_의 _bank_에 있었다. 그 외에 들은 곳은
+ __house2_에 있는 _patsy_의 예전 거주지인
+ _house2_뿐이다. 30일 안에 이 목표 중 하나라도 성공하면
+ _qgiver_의 보상으로 커다란 가공되지 않은 다이아몬드를
+ 받을 것이다.
 
 Message:  1011
-_hooker_에게 금화를 주겠습니까?
+_hooker_에게 금을 주시겠습니까?
 
 Message:  1012
-<ce>고마워요, 친절한분. 좋은 분이라도 들었었는데,
-<ce>정말 그러니 도와드리죠. _patsy_에게
-<ce>몇주전에 일을 해주고 돈을 받았었어요.
-<ce>절대 그렇고 그런 일은 아니었어요.
-<ce>어느 늙은 십장을 꾀어내서 정해둔 날에 저녁 약속을
-<ce>잡게 하는 거였어요. 아마 집을 비우게 하려는 거였겠죠.
-<ce>우리가 나간동안 그 십장 집이 털린걸 나중에 알았거든요.
-<ce>듣기론 물건을 많이 털렸다고 하더라구요.
-<ce>그 아저씨 늙긴 했지만 착하고 나름 귀여워서 많이 미안했는데.
-<ce>혹시 만나고 싶으면 이름은 _gaffer_ 에요.
-<ce>아니면 _patsy_ 만났던 곳으로 가던지요.
-<ce>__house2_ _house2_에 가면 되요.
-<ce>제가 도움이 됬으면 좋겠네요, %pcf.
-<ce>저도 그 _patsy_, 손좀 봐주고 싶거든요.
+<ce>고마워요, 친절한 분. 당신이 괜찮은 사람이라는 이야기를
+<ce>들었고, 기회를 드리고 싶었어요. 저는 몇 주 전에
+<ce>_patsy_에게 고용되었어요. 당신이 생각하는 그런 이유는
+<ce>아니에요. 제가 해야 했던 일은 어떤 늙은 영감과
+<ce>시시덕거리며 특정 날짜에 저와 저녁 식사를 하러 나가게
+<ce>만드는 것뿐이었죠. 아마 그를 집에서 내보내기 위해서였을
+<ce>거예요. 나중에 알고 보니 우리가 나간 사이에 그 사람의 집이
+<ce>털렸더라고요. 물건을 많이 가져갔다고 들었어요. 그 노인은
+<ce>귀엽고 다정해서 마음이 안 좋았어요. 그 사람과 이야기해
+<ce>보는 게 좋을 거예요. 이름은 _gaffer_예요. 아니면 제가
+<ce>그 _patsy_ 만났던 곳인 __house2_의 _house2_에
+<ce>가서 아는 사람이 있는지 확인해 봐도 좋겠네요. 도움이 되길
+<ce>바라요, %pcf. 저도 늙은 _patsy_의 수감 소식을
+<ce>듣고 싶거든요.
 
 Message:  1013
 %pcn,
- 일리악만에서 건강히 오래 살고 싶으면, 쓸데없이 들쑤시고
- 다니지 않는걸 추천하지. 결국엔 안좋은 일만 생길거고,
- 감당해야 하는건 그쪽일테니까. 난 이 돈 가지고 잡힐리가 없거든.
- 
- 
- _patsy_
+
+일리악 만 지역에서 길고 건강한 경력을 쌓고 싶다면,
+무의미하고 파멸적인 추적을 그만두는 것이 좋을 겁니다.
+비극만이 유일한 결과가 될 것이며, 그 비극은 바로 당신의
+것이 될 테니까요. 저는 잡히지 않을 겁니다, %pcf.
+저는 잡히기엔 너무 많은 돈을 가지고 있거든요.
+
+진심을 담아,
+
+_patsy_
 
 Message:  1014
-<ce>목표는 %ra %pcn, 용병이자 모험가다.
-<ce>극히 위험하니 전투를 대비할 것.
+<ce>당신의 목표는 %ra인 모험가이자 용병,
+<ce>%pcn입니다. 극도로 주의하고 싸움에 대비하십시오.
 <ce>
-<ce>이놈은 약한 놈이 아니야.
-<ce>_patsy_
-
---eliminating unmarked white spaces. this problem was patched out in previous versions but i still prefer to have lines with blank spaces filled just in case.
+<ce>이번엔 만만한 상대가 아닙니다.
+<ce>
+<ce>
+_patsy_
 
 Message:  1015
-_banker_? __bank_ _bank_ 말이군요. 일처리야 흠잡을데가 없는 사람이죠.
-<--->
-_banker_, 은행일 하고 재미 없는 사람입니다. __bank_ _bank_에서 일합니다.
+_banker_의 근무지는 __bank_의 _bank_입니다.
+아주 존경받는 부류죠. <---> 지루하기 짝이 없는
+은행가입니다. _banker_의 근무지는 __bank_의
+_bank_입니다.
 
 Message:  1016
-<ce>_patsy_에게 제가 한 이야기를 해드리죠.
-<ce>__banker_에서 이번 절도 사건으로 분실한
-<ce>금화를 전부 보상해줄겁니다.
-<ce>저희는 절도 사건 자체에만 관심이 있죠.
-<ce>그리고 이런 일은 외부인과 이야기 하기엔 적절치 않습니다.
-<ce>이해 하시리라 생각합니다.
+<ce>_patsy_에게 말했던 것을 당신에게도 말하죠.
+<ce>__banker_의 강도 사건으로 잃어버린 모든 금을 마지막 한
+<ce>푼까지 보상할 것입니다. 우리는 단지 강도 사건 자체에 대한
+<ce>특정 질문에 답을 얻고 싶을 뿐입니다. 낯선 사람과 논의하지
+<ce>않는 것이 좋을 만한 일들이죠. 이해하시리라 믿습니다.
 
 Message:  1017
-<ce>아, 만나서 반갑습니다, %pcf.
-<ce>최근에 있던 절도 사건 때문에 일이 좀 있었습니다.
-<ce>특정한 몇몇 계좌, 대여 금고만 털렸습니다.
-<ce>보안 담당은 _guard_ 인데, 도난 당한
-<ce>계좌 주인들을 살펴보고 있습니다.
-<ce>뭔가 정보가 있을지도 모릅니다.
-<ce>___guard_ __guard_에 가보시면 됩니다.
+<ce>아, 만나서 반갑군요, %pcf. 최근 강도 사건 때문에
+<ce>이곳이 좀 소란스럽습니다. 특정 계좌와 예금만 노린 것이라,
+<ce>우리 보안 요원인 _guard_의 계좌 소유자 조사가 진행
+<ce>중입니다. 아마 %g가 당신에게 더 많은 정보를 줄
+<ce>수 있을지도 모르겠군요, %pcf. _guard_의
+<ce>위치는 ___guard_의 __guard_입니다.
 
 Message:  1018
-<ce>안타깝지만 이 문제에 대한 이야기는 나누기가 어렵습니다.
-<ce>저와 _patsy_ 문제고, 다른 이가 상관할 일은 아닙니다.
-<ce>하지만 정말 도와주고 싶으시다면, 이름이 _hooker_인
-<ce>창녀를 찾아가 보시죠, 우리 친구 _patsy_와
-<ce>친분 같은게 있었던거 같더군요. 협조에 금화 10닢 정도
-<ce>달라고 할지도 모릅니다. __house1_ _house1_에
-<ce>있을겁니다. 행운을 빌죠, %pcf.
-<ce>아마 다시 볼일은 없을 것 같군요.
-<ce>그래도 그쪽은 혼자서 조사할 능력이 있으니 문제 없을겁니다.
+<ce>유감스럽지만 이 문제는 당신과 논의할 수 없습니다,
+<ce>%pcn. 이 사건은 _patsy_ 개체와 저, 우리
+<ce>둘만의 일입니다. 정말로 돕고 싶다면, 우리 친구
+<ce>_patsy_ 개체와 관계가 있었던 매춘부 _hooker_
+<ce>개체와 대화해 보십시오. 그녀는 협조하는 대가로 금화 10개를
+<ce>원할 겁니다. 그녀는 __house1_의 _house1_의 명칭으로
+<ce>불리는 곳에 있습니다. 행운을 빕니다, %pcf. 당신이
+<ce>돌아올 때 제가 여기 없을지도 모르지만, 당신은 분명
+<ce>혼자서도 조사를 계속할 능력이 있습니다.
 
 Message:  1019
-<ce>아, %pcn, 내 친구. 이 일에서 우리가 서로
-<ce>도울 수 있을 것 같군요. 그 귀족이 사라진건 알고 있지만,
-<ce>그 패거리가 찾는걸 방해하고 있습니다. 금화 수백만개면
-<ce>힘있는 연줄을 살 수 있죠. 제가 바라는건 이 연줄을 끊고
-<ce>저와 합류해서 _patsy_ 처리를 하는 겁니다.
-<ce>___mondung_에 이 편지를 전달하고
-<ce>___mondung2_에 돌아오시면 됩니다.
-<ce>운이 따르면 그쪽의 병사들을 분산시켜서
-<ce>_patsy_의 방어를 어느정도 줄일 수 있을겁니다.
-<ce>직접 고용한 경호원은 빼고요. 이해 하셨군요, 좋습니다.
-<ce>끝나고 곧 다시 뵙죠.
+<ce>아, %pcn, 친구여. 이 사건에서 우리가 서로 도울 수
+<ce>있을 것 같군요. 저는 _patsy_ 개체가 어디로 갔는지
+<ce>알고 있지만, %g3의 동료들 때문에 %g2에게
+<ce>접근하기가 어렵습니다. 수백만 개의 금화는 강력한 친구들을
+<ce>살 수 있거든요. 당신이 이 연결 고리를 끊어주면, 우리가
+<ce>함께 _patsy_ 개체를 완전히 제거할 수 있을 겁니다. 이
+<ce>편지를 %g3의 동료들의 요새인 ___mondung_에
+<ce>전달하고 ___mondung2_ 방향으로 오십시오. 운이 좋다면, 이
+<ce>편지가 병사들의 주의를 분산시켜 %g3의 개인
+<ce>경호원들을 제외하면 _patsy_ 개체는 비교적 무방비
+<ce>상태가 될 겁니다. 아주 좋습니다, %pcf, 곧
+<ce>뵙겠습니다.
 
 Message:  1020
-__guard_에서 _guard_쪽이 빠져나간 것같더군요. 그 _patsy_ 인지 뭔지 어디로 갔는지 아는것 같습니다.
-<--->
-_patsy_ 행방을 몰랐으면 그 _guard_ 패거리가 __guard_에서 나갈리가 없지요.
-<--->
-다들 __guard_에서 _guard_ 병력이 왜 갑자기 사라진건지 궁금해 하고 있습니다.
+_guard_의 __guard_ 이탈이 확인되었습니다.
+겉보기엔 %g가 _patsy_의 행방을 아는
+모양입니다. <---> %g가 _patsy_의
+은신처를 알지 못했다면 _guard_의 __guard_ 이탈은
+없었을 겁니다. <---> 모두가 왜 _guard_의
+갑작스러운 __guard_ 이탈이 발생했는지 알아내려 애쓰고
+있습니다.
 
 Message:  1021
-<ce>변경 사항이 좀 있어, 친구. ___qgiver_에
-<ce>가줬으면 좋겠군. 가서 내 지시를 기다려.
-<ce>몇일 안걸릴거야.
+<ce>계획 변경이다, 다들 들어라. 당장 ___qgiver_ 쪽으로 와라.
+<ce>거기로 가서 내 응답을 기다려라. 며칠 이상 걸리지는 않을
+<ce>거다.
 <ce>
 <ce>
-<ce>           _patsy_
+<ce>
+<ce>_patsy_
 
 Message:  1023
-<ce>보자마자 _patsy_ 인 것을
-<ce>알았습니다.
+<ce>이것이 _patsy_임을 즉시 알 수 있습니다.
 
 Message:  1024
-<ce>당신은 한치도 망설임 없이 _patsy_의 숨통을 끊었습니다.
+<ce>당신은 의심할 여지 없이 _patsy_ 처치에 성공했습니다.
 
 Message:  1025
-이 %ra 소문이 맞다면 병력이 더 필요하겠어.
- 문서는 ___mondung_에서 계속 지키고,
- 금화와 지금 데리고 있는 병력은 여기
- ___mondung2_에 가지고 와.
- 도착하면 더 논의 하지.
-          _patsy_
+이 %ra에 대한 소문이 사실이라면 지원군이 좀
+필요할 것 같군. 권리증서는 ___mondung_에 숨겨두고, 금과
+부하들을 데리고 ___mondung2_ 쪽으로 와라. 도착하면 더
+자세히 논의하지.
+
+_patsy_
 
 Message:  1026
-<ce>___mondung_ 처럼 보이는 글자가 써진
-<ce>도장 자국이 있는 _rock_이 떨어져 있습니다.
+<ce>_rock_ 조각에는 ___mondung_의 명칭으로 불리는 적힌
+<ce>도장이 찍혀 있습니다.
 
 Message:  1027
-그냥 _rock_인 것 같은데. ___house2_에 떨어져 있었다니 이상합니다.
-<--->
-이 _rock_엔 도장 같은게 찍힌것 같은데, 아니면 깎은 걸지도 모르겠습니다.
-<--->
-___mondung_에서 파내던 돌인 것 같습니다.
+그저 _rock_의 조각일 뿐입니다. ___house2_에
+굴러다니는 것을 발견하다니 이상하군요. <---> 그
+_rock_에는 일종의 도장이나 각인이 있는 것 같습니다.
+<---> 예전에 ___mondung_에서 채굴하던 물건들처럼
+보이는군요.
 
 Message:  1028
-_rock_에 ___mondung_ 표시가 있군요. %di 에 있는 버려진 광산입니다.
-<--->
-이 _rock_, 몇년전 ___mondung_ 광산이 돌아가던 시절에 파낸게 확실합니다.
+_rock_에는 ___mondung_의 명칭으로 불리는 적혀
+있습니다. %di에 있는 폐광이죠. <---> 그
+_rock_ 개체는 ___mondung_ 지역이 광산이었던 시절에
+채굴된 것임이 틀림없습니다.
 
 Message:  1029
-<ce>_patsy_ 쪽에서 _qgiver_에
-<ce>담보로 줬었던 부동산 문서같다.
+<ce>이것은 _patsy_의 소유였던 권리증서로,
+<ce>_qgiver_에게 담보로 주었던 것으로 보입니다.
 
 Message:  1030
-<ce>의뢰주가 _patsy_에게 빌려줬던
-<ce>금화인 것 같다.
+<ce>이것은 _qgiver_의 소유였던 금으로, _patsy_에게
+<ce>빌려준 것으로 보입니다.
 
 Message:  1031
-                                             해질녘 성소
- 
- 
- 친애하는 %pcf,
- 
- 
-      저희는 _patsy_의 행방을 쫓는 것을 알고 있습니다.
- 당신의 명성을 존중해서, 이 건에 대해 도움을 드리려고 합니다.
- 그 자는 몇주전 일을 의뢰했고 몇명의 위협적인 인원들을 통해서
- 보수를 전달받았습니다. ___mondung_에 자리를
- 잡고 있었습니다. 그자를 정말 찾기 바라신다면, 가보시면
- 좋을 겁니다. 행운을 빌며 메팔라께서 지켜보시길 바랍니다.
+Nightside Asylum
 
+친애하는 %pcf 귀하,
 
+귀하께서 _patsy_의 행방을 찾고 계신다는 것을 알고
+있습니다. 귀하와 귀하의 업무를 존중하기에, 저희는 이
+문제에 도움을 드리기로 했습니다. _patsy_의 방문은 몇
+주 전 저희 서비스를 이용한 적이 있으며, 저희는
+___mondung_의 명칭으로 불리는 캠프에 주둔한
+%g3의 작지만 사나운 무리를 통해 대금을
+받았습니다. _patsy_의 행방을 찾는 데 정말 관심이
+있으시다면, 그곳에서부터 시작하는 것이 현명할 것입니다.
+행운을 빕니다. 메팔라께서 귀하의 조준을 안정시켜 주시길.
 
-          브라더후드
+형제단 올림
 
 Message:  1032
-<ce>손에 편지가 쥐어지는 것을 느끼고 나서야 옆에 남자아이가
-<ce>있다는 것을 깨달았다. 몸을 돌리기도 전에 아이는 사라졌다.
-<ce>너무 빠르게 사라져 잡을 수 있을지 감조차 잡기 힘든 속도였다.
+<ce>어린 소년이 당신의 손에 편지를 찔러 넣을 때까지 당신은
+<ce>그가 옆에 있다는 사실조차 깨닫지 못합니다. 당신이 뒤를
+<ce>돌아보았을 때는 이미 그가 사라진 뒤였고, 너무 빨리
+<ce>도망쳐서 잡을 엄두조차 낼 수 없습니다.
 
 Message:  1033
 %pcn,
- 
-      _patsy_ 그 자는 도둑이지만, 우리 일원은 아니다.
- 길드도 %g2가 잡히길 원하고 있다. 이 정보를 그쪽의
- 노력에 보태줬으면 한다. _patsy_에겐
- 조력자가 있다. 그 자가 부리는 용병들이
- ___mondung_에 모여있다. %g3의 일부 재산도 있을지
- 모른다, 하지만 %g3 자신은 없을 것이다.
-      행운을 빌겠다, %pcf, 바안 다르께서 함께 걸으시길.
-<ce>길드
+
+_patsy_ 개체는 도둑이지만, 우리 길드 소속은 아닙니다.
+우리도 %g2가 잡히기를 바랍니다. 귀하의 경비에
+보태시길 바라며, 이 정보를 드립니다. _patsy_ 개체는
+혼자 일하는 것이 아닙니다. ___mondung_의 명칭으로 불리는
+곳에 %g3의 지휘를 받는 용병단이 있습니다.
+%g3의 보물 일부도 그곳에 보관되어 있을 수 있지만,
+_patsy_ 개체가 그곳에 있다고 생각하지는 않습니다.
+행운을 빕니다, %pcf. Baan Dar와 함께 걸으시길.
+
+<ce>길드 올림
 
 Message:  1034
-<ce>아, %pcf, 내 친구. 난 또 다시 매혹에 넘어가 배신 당한 것 같습니다.
-<ce>정말 수도원이라도 들어가야 할지도 모르겠습니다. %oth,
-<ce>여자만 없으면 사는게 편할텐데. 자 이 금화를 받아 주십시오,
-<ce>그 악랄한 _patsy_ 잡는데 써주시면 좋겠습니다.
-<ce>더 드리고 싶지만, 이번 사건 때문에 사정이 좋지 않습니다.
-<ce>%reg 지역에 은거지가 두곳이 있는데 하나는 ___mondung_,
-<ce>다른 하나는 ___mondung2_에 있습니다.
-<ce>둘 중 어느 곳이 사용되는지는 모르지만, 싸울 준비를 단단히
-<ce>하시는게 좋을 겁니다. _patsy_ 도 쉽게 당할 생각은
-<ce>없을테니까요. 행운을 빌며 %god 께서 도와주시길.
+<ce>아, %pcf, 내 친구여. 나는 또다시 유혹에 빠져
+<ce>배신당하고 말았네. 정말이지 수도원에라도 들어가야겠어.
+<ce>%oth, 여자들이 없다면 내 삶은 훨씬 단순해질 텐데.
+<ce>여기, 그 사악한 _patsy_ 처치에 보태게나. 더 주고
+<ce>싶지만, 최근 일들로 인해 빈털터리가 되었네. 참고로,
+<ce>_patsy_의 거점은 %reg에 두 개의 은신처를 두고
+<ce>있네. 하나는 ___mondung_에, 다른 하나는 ___mondung2_에
+<ce>있지. 현재 어느 곳을 사용 중인지는 모르겠지만, 최고의 검을
+<ce>준비하는 게 좋을 걸세. _patsy_의 위협은 쉽게 당할
+<ce>상대가 아니니까. 행운을 비네, %god의 가호가
+<ce>함께하기를.
 
 Message:  1035
-<ce>내가 왜 그쪽에 알고 있는 걸 말해줘야 하지?
-<ce>넌 _qgiver_에 속아 넘어간 놈 밖에 안돼,
-<ce>그 _patsy_ 같이 날 엿먹인 놈.
-<ce>아니면 %god 저주 받을 _hooker_ 년 같은 것들.
-<ce>___mondung_ 같은 데나 찾아 기어들어가서
-<ce>썩어 죽어, 이 매독걸린 %ra 창녀 자식놈.
+<ce>내가 아는 걸 왜 너한테 말해야 하지? 너는 _qgiver_의
+<ce>앞잡이일 뿐이잖아. _patsy_의 배신이나, 그
+<ce>%god 같은 _hooker_의 행태처럼 너도 나를 망치려
+<ce>들겠지. ___mondung_ 같은 구멍을 찾아 기어 들어가서, 말라
+<ce>죽어버려라. 이 썩어빠진 %ra 창녀의 자식아.
 
 Message:  1036
-친애하는 %pcn,
- 
-      그 쥐새끼 _patsy_ 행방을 찾으신다면
- 도움이될 작은 정보가 있습니다. 관심 있으시면
- __house1_의 _house1_에 있겠습니다.
- 금화 10닢을 가져오시길, 정보를 그냥 드리진 않겠습니다.
+친애하는 %pcn에게,
+
+그 쥐새끼 같은 _patsy_의 행방을 찾는 데 도움이 될
+만한 정보가 있네. 관심이 있다면 __house1_의
+_house1_의 명칭으로 불리는 허름한 곳으로 나를
+찾아오게. 금화 10닢을 가져오는 것도 잊지 말고. 정보는
+공짜가 아니니까.
 
 <ce>_hooker_
 
 Message:  1037
-<ce>"_hooker_에서 온겁니다" 젊은 배달부가
-<ce>손에 쪽지를 쥐어주며 속삭였다.
-<ce>반응하기도 전에 그는 사라졌다.
+<ce>"_hooker_에게서 온 것이다." 누군가 속삭이며 젊은
+<ce>전령이 쪽지를 건네네. 반응하기도 전에 그는 서둘러 사라져
+<ce>버리네.
 
 Message:  1055
-<ce>미안해요 자기, 제 정보는 공짜가 아니야.
+<ce>미안하지만, 내 지식에는 대가가 따르지.
 
 Message:  1038
 %qdt:
- _banker_ 에게 ___guard_ __guard_에서
- _bank_을 위해서 은행 강도 사건과
- _patsy_에 관해 조사하는
- _guard_와 만나보라는 말을 들었다.
+ _banker_의 제안대로 ___guard_에 있는 __guard_의
+ _guard_ 처치 후 찾아가라고 했네. 그는 현재 은행 강도
+ 사건과 _patsy_에 대해 _bank_ 조사 중이라더군.
 
 Message:  1039
 %qdt:
- _guard_와 만났다. _patsy_의
- 현재 위치가 ___mondung2_에
- 있다는 것을 알아냈다고 한다.
- _patsy_의 사병을 분산시키기 위해선
- ___mondung_에 있는 _patsy_ 패거리의
- 본거지에 편지를 전달하고,
- ___mondung2_ _guard_에 돌아가야 한다.
+ _guard_ 측을 만났네. %g는 _patsy_의
+ 은신처가 ___mondung2_에 있다는 걸 알아냈지. %g3의
+ 병사들을 따돌리기 위해, 나는 %g3의 동맹 거점인
+ ___mondung_에 편지를 떨어뜨리고, _guard_ 측을
+ ___mondung2_에서 만나 _patsy_ 개체를 받아야 하네.
 
 Message:  1040
 %qdt:
- _guard_와 만났다. _patsy_이
- _hooker_ 라는 매춘부와 친했다고 한다.
- __house1_에서 찾을 수 있을 것이다.
+ _guard_ 측을 만났네. %g가 말하길
+ _patsy_ 개체는 __house1_의 매춘부인 _hooker_
+ 개체와 관계가 있었다더군. 그곳의 _house1_에서 그녀를
+ 찾아볼 생각일세.
 
 Message:  1041
 %qdt:
- _hooker_의 말로는 _gaffer_의
- 관심을 끌어 달라는 _patsy_의
- 의뢰를 받았었다고 했다.
- __tavern_의 _tavern_에
- 가면 찾을 수 있으리라 했다.
+ _hooker_의 말에 따르면 _patsy_의 고용으로 어느 날
+ 밤 _gaffer_의 이름으로 불리는 자를 유인해달라고
+ 했다더군. 그자는 __tavern_의 _tavern_에서 찾을 수
+ 있을 걸세.
 
 Message:  1042
 %qdt:
- _gaffer_에게 _patsy_의
- 은거지는 두곳이 있고, 하나는 ___mondung_
- 또 하나는 ___mondung2_에 있다는 말을 들었다.
+ _gaffer_ 개체가 말하길 _patsy_에게는 두 개의
+ 은신처가 있는데, 하나는 ___mondung_ 지역이고 다른 하나는
+ ___mondung2_라더군.
 
 Message:  1050
-이 문서는 %reg __house3_ _house3_
- 소유권을 보증한다.
- _patsy_ 만이 상기한 부동산의
- 유일하며 정당한 소유자임을 명시한다.
+이 문서는 %reg에 위치한 __house3_의
+_house3_에 대한 소유권을 증명한다. 이 글을 읽는 모든
+이는 _patsy_의 소유권이 상기 부동산의 유일하고 정당한
+것임을 알라.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 1 time.
+--                %g occurs 7 times.
+--               %g2 occurs 3 times.
+--               %g3 occurs 9 times.
+--              %god occurs 3 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 33 times.
+--              %pcn occurs 7 times.
+--              %qdt occurs 6 times.
+--               %ra occurs 6 times.
+--              %reg occurs 2 times.
+--         ___guard_ occurs 3 times.
+--        ___house2_ occurs 1 time.
+--      ___mondung2_ occurs 10 times.
+--       ___mondung_ occurs 21 times.
+--        ___qgiver_ occurs 2 times.
+--           __bank_ occurs 56 times.
+--         __banker_ occurs 1 time.
+--          __guard_ occurs 6 times.
+--         __house1_ occurs 3 times.
+--         __house2_ occurs 5 times.
+--         __house3_ occurs 1 time.
+--         __qgiver_ occurs 1 time.
+--         __tavern_ occurs 2 times.
+--            _bank_ occurs 59 times.
+--          _banker_ occurs 4 times.
+--          _gaffer_ occurs 3 times.
+--           _guard_ occurs 10 times.
+--          _hooker_ occurs 8 times.
+--          _house1_ occurs 5 times.
+--          _house2_ occurs 3 times.
+--          _house3_ occurs 1 time.
+--           _patsy_ occurs 62 times.
+--          _qgiver_ occurs 74 times.
+--            _rock_ occurs 8 times.
+--          _tavern_ occurs 4 times.
+
+QBN:
+Item _deed_ letter used 1050
+Item _reward_ diamond
+Item _letter27_ letter used 1036
+Item _bribe4_ gold range 10 to 10
+Item _letter28_ letter used 1013
+Item _bribe2_ letter used 1014
+Item _deed3_ gold_bar
+Item _letter29_ letter used 1021
+Item _letter30_ letter used 1025
+Item _rock_ element anyInfo 1027
+Item _letter32_ letter used 1031
+Item _letter15_ letter used 1033
+Item _bothdorjii_ gold range 15 to 50
+Item _letter33_ gold range 20 to 40
+
+Person _qgiver_ group Questor
+Person _patsy_ face 1 factiontype Province
+Person _hooker_ face 187 faction The_Prostitutes female
+Person _gaffer_ face 73 named Chulmore_Quill
+Person _banker_ face 1 group Banker local anyInfo 1015
+Person _guard_ face 80 factiontype Knightly_Guard
+Person _darkb_ face 81 faction The_Dark_Brotherhood
+Person _tguild_ face 81 faction The_Thieves_Guild local
+
+Place _bank_ remote bank
+Place _house1_ remote house2
+Place _house2_ remote house1
+Place _mondung_ remote dungeon
+--changed from dungeon2 which is very restricted; in DF region it's only Privateer's Hold
+Place _mondung2_ remote dungeon
+Place _tavern_ remote tavern
+Place _house3_ local house2
+
+Clock _queston_ 30.00:00 0 flag 1 range 0 1
+Clock _S.03_ 1.09:20 2.03:40
+Clock _S.13_ 1.01:00 2.13:40
+Clock _S.26_ 1.09:20 2.02:00
+Clock _S.27_ 16:40 2.02:00 flag 9 range 0 0
+Clock _2letter_ 00:25 00:50
+
+Foe _warrior_ is Warrior
+Foe _F.01_ is Knight
+Foe _F.02_ is Barbarian
+Foe _F.03_ is Spellsword
+Foe _F.04_ is Rogue
+
+--	Quest start-up:
+	place item _deed_ at _mondung_ 
+	place item _rock_ at _house2_ 
+	place item _letter30_ at _mondung_ 
+	dialog link for location _house3_ person _gaffer_ item _rock_ 
+	dialog link for person _guard_ 
+	dialog link for location _house1_ person _hooker_ 
+	start timer _queston_ 
+	start timer _2letter_ 
+	log 1010 step 0 
+	repute with _hooker_ exceeds 10 do _S.02_ 
+	repute with _darkb_ exceeds 15 do _S.25_ 
+	repute with _victin_ exceeds 15 do _S.28_ 
+	pc at _mondung2_ set _S.16_ 
+	_letter30_ used do _S.35_ 
+	_rock_ used do _S.19_ 
+	place npc _hooker_ at _house1_ 
+	place npc _gaffer_ at _tavern_ 
+	place npc _banker_ at _bank_ 
+
+_pcgetsgold1_ task:
+	toting _deed3_ and _qgiver_ clicked 
+	give pc _reward_
+	end quest 
+
+_pcgetsgold2_ task:
+	toting _deed_ and _qgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+_pcgetsgold3_ task:
+	when _qgclicked_ and _S.18_ 
+	give pc _reward_ 
+	end quest 
+
+_queston_ task:
+	end quest 
+
+_S.02_ task:
+	start timer _S.03_ 
+
+_S.03_ task:
+	add dialog for person _hooker_ 
+	add dialog for location _house1_ 
+	get item _letter27_ 
+	say 1037 
+
+_S.04_ task:
+	clicked _hooker_ and at least 10 gold otherwise do _S.34_ 
+	prompt 1011 yes _thankyou_ no _gimme_ 
+
+_thankyou_ task:
+	add dialog for person _gaffer_ 
+	log 1041 step 4 
+	give item _bribe2_ to _F.01_ 
+	say 1012 
+	change repute with _hooker_ by +5 
+	send _F.01_ every 80 minutes 30 times with 15% success 
+	--data taken from UESP
+
+_gimme_ task:
+	get item _bribe4_ 
+	make _bribe4_ permanent 
+
+_S.07_ task:
+	clicked npc _banker_ 
+	start timer _S.13_ 
+	repute with _banker_ exceeds 10 do _S.08_ 
+
+_S.08_ task:
+	log 1038 step 1 
+	say 1017 
+
+_S.09_ task:
+	when _S.07_ and not _S.08_ 
+	say 1016 
+
+_S.10_ task:
+	clicked npc _guard_ 
+	repute with _guard_ exceeds 10 do _S.11_ 
+
+_S.11_ task:
+	reveal _mondung_ 
+	reveal _mondung2_ 
+	log 1039 step 2 
+	get item _letter29_ 
+	say 1019 
+
+_S.12_ task:
+	when not _S.11_ and _S.10_ 
+	add dialog for location _house1_ 
+	add dialog for person _hooker_ 
+	log 1040 step 3 
+	say 1018 
+
+_S.13_ task:
+	rumor mill 1020 
+	hide npc _guard_ 
+
+_S.14_ task:
+	dropped _letter29_ at _mondung2_ 
+
+_S.15_ task:
+	when _S.16_ and not _S.14_ 
+	create foe _F.02_ every 221 minutes 200 times with 10% success 
+
+_S.16_ task:
+	place item _deed3_ at _mondung2_ 
+	create foe _F.04_ every 111 minutes 200 times with 5% success 
+	create foe _F.03_ every 100 minutes 200 times with 5% success 
+	place foe _warrior_ at _mondung2_ 
+
+_S.17_ task:
+	injured _warrior_ 
+	say 1023 
+
+_S.18_ task:
+	killed 1 _warrior_ 
+	say 1024 
+
+_S.19_ task:
+	say 1026 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+variable _S.21_
+variable _S.22_
+_S.23_ task:
+	clicked item _deed_ 
+	say 1029 
+
+_S.24_ task:
+	clicked item _deed3_ 
+	say 1030 
+
+_S.25_ task:
+	start timer _S.26_ 
+
+_S.26_ task:
+	reveal _mondung_ readmap
+	get item _letter32_ 
+	say 1032 
+
+_S.27_ task:
+	reveal _mondung_ readmap
+	get item _letter15_ 
+	get item _bothdorjii_ 
+	say 1032 
+	make _bothdorjii_ permanent 
+
+_S.28_ task:
+	start timer _S.27_ 
+
+_S.29_ task:
+	clicked npc _gaffer_ 
+	repute with _gaffer_ exceeds 10 do _S.30_ 
+
+_S.30_ task:
+	reveal _mondung_ readmap
+	reveal _mondung2_ readmap
+	log 1042 step 4 
+	get item _letter33_ 
+	say 1034 
+	make _letter33_ permanent 
+
+_S.31_ task:
+	when _S.29_ and not _S.30_ 
+	reveal _mondung_ 
+	say 1035 
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.18_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 
+
+_S.33_ task:
+	clicked item _rock_
+	say 1026 
+	add dialog for item _rock_ 
+	reveal _mondung_ 
+
+_S.34_ task:
+	say 1055 
+
+_S.35_ task:
+	reveal _mondung2_ readmap
+
+_2letter_ task:
+	get item _letter28_ 
+	say 1032 

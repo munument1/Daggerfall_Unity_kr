@@ -1,0 +1,118 @@
+-- Quest: C:\QUESTS\WORKING\O0B20Y02.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 20
+-- QuestId: 2
+Messages: 11
+Quest: O0B20Y02
+DisplayName: 귀중한 물건
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>목소리 낮추게. 내 이름은... 어, 그냥 _qgiver_의
+<ce>이름으로 불리는 부르게. 길드 임무가 하나 있네. 보수는
+<ce>평소대로지. 관심 있나?
+
+RefuseQuest:  [1001]
+<ce>자세한 내용을 말해주지 않길 잘했군. 이제 여기서 나가게.
+
+AcceptQuest:  [1002]
+<ce>자네는 __mansion_에 있는 _mansion_에서 _magicitem_의
+<ce>절도를 수행해야 하네. =traveltime_일 안에 해내지 못하면
+<ce>거래는 없던 걸로 하지. 그곳에 경비가 있다는 말은 했었나?
+<ce>분명히 말했던 것 같은데.
+
+QuestComplete:  [1004]
+<ce>물건은 가져왔나? 아! 잘했네. 이 임무의 표준 보수는
+<ce>_gold_ 골드라네. 한곳에서 다 써버리지 말게.
+
+RumorsDuringQuest:  [1005]
+_mansion_에 있는 __mansion_님은 방대한 마법 희귀품
+컬렉션을 가지고 있답니다.
+
+RumorsPostfailure:  [1006]
+보안상의 이유로 _mansion_에서 _magicitem_의 위치를
+다른 곳으로 옮겼답니다.
+
+RumorsPostsuccess:  [1007]
+그 _magicitem_의 물건은 _mansion_에서 도난당했답니다.
+정말 큰 스캔들이죠.
+
+QuestorPostsuccess:  [1008]
+나를 보고 놀랐나, %pcf? 내가 _magicitem_의 물건을
+가지고 도망쳤을 거라 생각했나?
+
+QuestorPostfailure:  [1009]
+<ce>그들은 이미 _mansion_에서 _magicitem_의 위치를
+<ce>옮겨버렸네, %pcf. 다시 말해, 자네는 임무에
+<ce>실패했다는 뜻이지. 이제 가보게.
+
+QuestLogEntry:  [1010]
+%qdt:
+ _qgiver_(이)라 자칭하는 길드의 %g는
+ %g2로부터 __mansion_에 있는 _mansion_에게서
+ _magicitem_ 물품을 훔쳐달라는 의뢰를 했다. =traveltime_일
+ 내로 ___qgiver_에 있는 %g2에게 __qgiver_
+ 지역을 가져다주어야 한다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--               %g2 occurs 2 times.
+--              %pcf occurs 2 times.
+--              %qdt occurs 1 time.
+--      =traveltime_ occurs 2 times.
+--        ___qgiver_ occurs 3 times.
+--        __mansion_ occurs 3 times.
+--         __qgiver_ occurs 4 times.
+--            _gold_ occurs 1 time.
+--       _magicitem_ occurs 21 times.
+--         _mansion_ occurs 6 times.
+--          _qgiver_ occurs 2 times.
+
+QBN:
+Item _magicitem_ magic_item
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _mansion_ remote house1
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is 2 Spellsword
+Foe _F.01_ is Gargoyle
+Foe _F.02_ is Flesh_atronach
+Foe _F.03_ is Ghost
+
+--	Quest start-up:
+	place item _magicitem_ at _mansion_ 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pc at _mansion_ set _S.01_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	pick one of _guard1_ _guard2_ _guard3_ _guard4_ 
+
+_questdone_ task:
+	toting _magicitem_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+_guard1_ task:
+	create foe _F.00_ every 4 minutes 1 times with 10% success 
+
+_guard2_ task:
+	create foe _F.01_ every 4 minutes 1 times with 10% success 
+
+_guard3_ task:
+	create foe _F.02_ every 4 minutes 1 times with 10% success 
+
+_guard4_ task:
+	create foe _F.03_ every 4 minutes 1 times with 10% success 

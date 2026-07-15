@@ -1,0 +1,333 @@
+-- Quest: C:\QUESTS\WORKING\$CUREVAM.Qbn.
+-- StartsBy: letter
+-- Questee: anyone
+-- Questor: hunter
+-- QuestId: 0
+Messages: 53
+Quest: $CUREVAM
+DisplayName: 흡혈귀병 치료
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+오류 -- 1000 호출됨
+
+RefuseQuest:  [1001]
+오류 -- 1001 호출됨
+
+AcceptQuest:  [1002]
+오류 -- 1002 호출됨
+
+QuestFail:  [1003]
+<ce>오류 -- 1003 호출됨
+
+QuestComplete:  [1004]
+<ce>=bloodfather_ 처치 후, 당신은 영혼에서 흡혈귀병의 저주가
+<ce>풀리는 것을 느낍니다. 당신은 더 이상 뱀파이어가 아닙니다.
+
+RumorsDuringQuest:  [1005]
+<ce>_hunter_의 주도하에 %reg 전역에서 뱀파이어를
+<ce>상대로 새로운 성전이 시작될 예정입니다. 그때가 되면 다시
+<ce>두려움 없이 밤거리를 걸을 수 있을지도 모르겠군요.
+
+RumorsPostfailure:  [1006]
+<ce>_hunter_ 및 %g3의 부하들은 %reg에서
+<ce>많은 뱀파이어를 죽였지만, 그들이
+<ce>모두 처치했는지는 의문입니다.
+<--->
+<ce>_hunter_ 처치는 재고했어야 했습니다. %g3의
+<ce>성전은 단지
+<ce>뱀파이어들을 숨게 만들 뿐이며, %g가 떠나면
+<ce>그들은 전보다 더 강해져서 돌아옵니다.
+
+RumorsPostsuccess:  [1007]
+<ce>_hunter_ 및 %g3의 부하들은 %reg에서
+<ce>많은 뱀파이어를 죽였지만, 그들이
+<ce>모두 처치했는지는 의문입니다.
+<--->
+<ce>_hunter_ 처치는 재고했어야 했습니다. %g3의
+<ce>성전은 단지
+<ce>뱀파이어들을 숨게 만들 뿐이며, %g가 떠나면
+<ce>그들은 전보다 더 강해져서 돌아옵니다.
+
+QuestorPostsuccess:  [1008]
+오류 -- 1008 호출됨
+
+QuestorPostfailure:  [1009]
+오류 -- 1009 호출됨
+
+Message:  1011
+_hunter_의 활동은 탐리엘 전역에서 뱀파이어를 찾아내어
+파괴하는 것입니다. <---> _hunter_의 삶은
+뱀파이어 사냥에 바쳐졌습니다. %g3의 일생이
+그러합니다.
+
+Message:  1012
+<ce>사람들은 _hunter_의 아버지가 뱀파이어에게 살해당했다고
+<ce>합니다. 그것이
+<ce>%g2를 뱀파이어에 대한 %g3의 광적인
+<ce>증오로 몰아넣었습니다.
+<--->
+<ce>_hunter_ 처치는 뱀파이어가 된 %g3의 아버지를
+<ce>직접 죽였습니다. 그야말로
+<ce>진정한 광신도라고 할 수 있겠군요!
+
+Message:  1020
+%qdt
+
+%vam의 %pcn님께,
+
+제 소개를 하죠. 저는 _hunter_입니다. 저에 대해
+들어보셨을지도 모르겠군요. 유명한 뱀파이어 사냥꾼
+말입니다. 하지만 저를 너무 성급하게 판단하지는 마십시오.
+저는 당신의 적이 아닙니다. 적어도 지금은 말이죠. 저는
+흡혈귀병을 혐오하며, 탐리엘에서 이 어두운 역병을 뿌리 뽑는
+데 제 삶을 바쳐왔지만, 당신처럼 많은 이들이 무고한
+희생자라는 사실도 잘 알고 있습니다. 살고자 하는 의지 그
+자체는 악이 아니기에, 저는 항상 제 사냥감에게 그들의
+피비린내 나는 행위가 살육을 즐겨서가 아니라 생존을 위한
+필요에 의한 것임을 증명할 기회를 주려 노력합니다. 당신의
+"동족"들은 말해주지 않았겠지만, 흡혈귀병은 치료할 수
+있습니다. 그러려면 당신을 이끈 뱀파이어 혈통을 만든 고대의
+악, 즉 당신의 "피의 아버지"를 죽여야 합니다. 그렇게
+함으로써 당신은 스스로를 해방할 뿐만 아니라,
+%reg의 심장에 박힌 암덩어리를 제거하게 될
+것입니다.
+
+<ce>(계속)
+
+저 역시 당신의 "피의 아버지"가 어디에 있는지 알지
+못하지만, 제 정보통에 따르면 %vam의 고위 인사이자
+이 정보를 알고 있을 ___vamp1_의 _vamp1_에 대해
+알게 되었습니다. 저는 %reg의 뱀파이어들을 상대로
+움직이기 전까지 =huntstart_일 동안 기다릴 것입니다.
+당신에게 스스로를 구할 기회를 주기 위해서죠. 제 제안을 잘
+고려해 보십시오, %pcn. 당신에게는 =huntstart_일의
+시간이 있습니다. 그 시간이 지나면 당신과 %vam의
+나머지 무리들은 해충처럼 사냥당할 것입니다.
+
+<ce>_hunter_
+
+Message:  1021
+<ce>_vamp1_에게 _hunter_의 편지를 보여주시겠습니까?
+
+Message:  1022
+<ce>이것을 제게 가져온 것은 잘한 일입니다, %pcn.
+<ce>_hunter_의 행보는 수년간 %vam의
+<ce>골칫거리였습니다. 이 사전 경고 덕분에, 우리 동족들의
+<ce>생명을 많이 구할 수 있게 되었습니다. 당신이 처한 위험을
+<ce>과소평가하지 마십시오, %pcf. _hunter_의 성향은
+<ce>무자비하고 유능하며, %g3의 첩자들은 어디에나
+<ce>있습니다. %g는 %vam에 훌륭한 인재가 될
+<ce>수 있을 텐데, 어쩌면 %g 그렇게 될지도
+<ce>모르겠군요. 어쨌든 %g는 당신의 이름을 알고
+<ce>있으니, %g가 %g3의 위협을 실행에 옮기려
+<ce>할 것임을 의심치 마십시오. 밤의 가호가 함께하기를.
+
+Message:  1023
+<ce>%pcn 맞으시죠? %vam의 다른 이들에게서
+<ce>당신에 대한 좋은 이야기를 들었습니다. 그래서, 당신의 피의
+<ce>아버지를 찾고 싶으시군요. 이해할 만한 갈망이지만, 이는
+<ce>보통 당신 같은 젊은이에게는 허락되지 않는 특권입니다.
+<ce>하지만 당신은 이미 %vam에서 큰 진전을 이루었으니,
+<ce>예외를 두어도 좋겠다고 생각합니다. 어디 보자, 그는
+<ce>=elder_ 아니면 =bloodfather_일 겁니다. 그들은 각각
+<ce>___wrongdung_ 쪽과 ___fatherdung_에 있습니다. 하지만 어르신의
+<ce>은신처에 함부로 침입하는 것은 권하고 싶지 않군요.
+<ce>___vamp2_의 _vamp2_ 쪽을 찾아가는 것이 가장 좋을
+<ce>것입니다. %g는 혈통의 수호자이니, %vam의
+<ce>어르신 중 누가 당신의 피의 아버지인지 확실히 알려줄 수
+<ce>있을 겁니다. 이 팔찌를 %g2에게 가져가십시오.
+<ce>그러면 %g가 제가 보낸 것을 알 것입니다.
+
+Message:  1024
+<ce>흠. 그런 정보를 맡기기에는 당신은 너무 어리군요. 하지만
+<ce>_vamp1_의 징표를 가지고 있으니, 당신의 피의 아버지인
+<ce>=bloodfather_의 거처를 알려주죠. 그는 ___fatherdung_에 있는
+<ce>자신의 은신처에 있을 겁니다. 일 년 중 이맘때는 어르신들이
+<ce>누구에게도 방해받고 싶어 하지 않는다는 점을 명심하십시오.
+<ce>위험을 감수하고 =bloodfather_의 고독을 방해해 보시든가.
+
+Message:  1025
+<ce>피의 배신자! 우리가 당신의 배신을 알게 되었다. 당신은 결코
+<ce>=bloodfather_의 행방을 찾지 못할 것이다. %vam의
+<ce>일원으로서의 당신의 날들은 곧 끝날 테니 걱정 마라.
+<ce>_hunter_의 추적을 받을 필요도 없을 테니까.
+
+Message:  1030
+<ce>애송이, 내 명상을 방해하지 마라! 당장 꺼져라, 그렇지
+<ce>않으면 굶주림 때문에 너를 죽이게 될 것이다!
+
+Message:  1031
+<ce>=elder_ 처치 완료. %vam의 장로.
+
+Message:  1032
+<ce>%pcn, 당신의 피가 나를 부르는군요. 어찌하여 자신의
+<ce>아버지를 공격합니까? %vam께서는 존속 살해를
+<ce>죽음으로 다스리십니다. 내가 직접 이 형벌을 집행하게 만들지
+<ce>마십시오. 도망치세요, 내 아이야!
+
+Message:  1040
+<ce>_hunter_의 말에 따르면 당신을 여기서 찾을 수 있다고
+<ce>하더군요. 죽어라, 밤의 추적자여!
+
+QuestTimeLapse:  [1045]
+<ce>가방 속의 낯선 물건이 눈에 띕니다. 우아하고 유려한 필체로
+<ce>당신에게 보내는 편지입니다. 어떻게 여기에 들어온 걸까요?
+
+Message:  1050
+%qdt:
+ 뱀파이어 사냥꾼 _hunter_의 편지를 받았다. 내 혈통의
+ 수호자를 죽여 흡혈귀병을 치료하지 않으면 나를 사냥하겠다고
+ 맹세했다. _hunter_의 정체나 위치는 알 수 없지만,
+ %g는 ___vamp1_의 _vamp1_ 쪽이 알지도
+ 모른다고 제안했다. 뱀파이어 사냥이 시작되기까지
+ =huntstart_일 남았다.
+
+Message:  1051
+%qdt:
+ _vamp1_의 추측에 따르면 내 혈통의 수호자가
+ ___wrongdung_ 또는 ___fatherdung_에 살고 있다고 한다. 하지만
+ %g3의 팔찌를 __vamp2_의 _vamp2_,
+ ___vamp2_에게 가져가 보라고 조언했다. 그라면 그가
+ 어디에 있는지 확실히 알려줄 수 있을 것이다.
+
+Message:  1052
+%qdt:
+ _vamp2_ 측은 내 혈통의 수호자의 이름이 =bloodfather_
+ 측이며, 그가 ___fatherdung_에 살고 있다고 말했다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 14 times.
+--               %g2 occurs 4 times.
+--               %g3 occurs 11 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 6 times.
+--              %qdt occurs 7 times.
+--              %reg occurs 112 times.
+--              %vam occurs 22 times.
+--     =bloodfather_ occurs 7 times.
+--           =elder_ occurs 2 times.
+--       =huntstart_ occurs 3 times.
+--    ___fatherdung_ occurs 6 times.
+--         ___vamp1_ occurs 2 times.
+--         ___vamp2_ occurs 2 times.
+--     ___wrongdung_ occurs 2 times.
+--          __vamp2_ occurs 1 time.
+--          _hunter_ occurs 19 times.
+--           _vamp1_ occurs 5 times.
+--           _vamp2_ occurs 3 times.
+
+QBN:
+Item _letter_ letter used 1020
+Item _token_ bracelet
+
+Person _vamp1_ face 40 factiontype Vampire_Clan remote
+Person _vamp2_ face 4 factiontype Vampire_Clan male remote
+Person _hunter_ face 1 factiontype Knightly_Guard remote anyInfo 1011 rumors 1012
+
+Place _fatherdung_ remote dungeon8
+Place _wrongdung_ remote dungeon5
+
+Clock _S.10_ 1.00:00 2.22:00
+Clock _S.13_ 7.00:00 27.23:40
+Clock _huntstart_ 00:00 0 flag 1 range 3 5
+
+Foe _bloodfather_ is Ancient_vampire
+Foe _vampire_ is Vampire
+Foe _F.02_ is Knight
+Foe _elder_ is Ancient_vampire
+
+--	Quest start-up:
+	dialog link for person _vamp2_ 
+	dialog link for location _fatherdung_ person _vamp1_ 
+	dialog link for person _hunter_ 
+	_letter_ used do _readletter_ 
+	have _letter_ set _S.19_ 
+	give pc _letter_ notify 1045 
+	place foe _bloodfather_ at _fatherdung_ 
+	create npc _vamp1_ 
+	place foe _elder_ at _wrongdung_ 
+
+_S.00_ task:
+	killed 1 _bloodfather_ 
+	give pc nothing 
+	cure vampirism 
+	change repute with _vamp1_ by -20 
+	end quest 
+
+_S.01_ task:
+	clicked npc _vamp1_ 
+	have _letter_ set _S.06_ 
+
+variable _S.02_
+_readletter_ task:
+	add dialog for person _hunter_ 
+	add dialog for person _vamp1_ 
+	log 1050 step 0 
+
+_S.04_ task:
+	daily from 06:00 to 18:00 
+	clear _S.17_ 
+
+variable _S.05_
+variable _S.06_
+_S.07_ task:
+	when _S.06_ and _S.01_ 
+	prompt 1021 yes _S.08_ no _S.09_ 
+
+_S.08_ task:
+	hide npc _vamp2_ 
+	hide npc _vamp1_ 
+	say 1022 
+
+_S.09_ task:
+	add dialog for person _vamp2_ 
+	start timer _S.10_ 
+	reveal _fatherdung_ 
+	reveal _wrongdung_ 
+	log 1051 step 1 
+	get item _token_ 
+	say 1023 
+
+_S.10_ task:
+	hide npc _vamp1_ 
+	hide npc _vamp2_ 
+	change repute with _vamp1_ by -15 
+
+_S.11_ task:
+	injured _bloodfather_ saying 1032 
+	injured _elder_ saying 1030 
+
+_S.12_ task:
+	killed 1 _elder_ saying 1031 
+	change repute with _vamp1_ by -20 
+
+_S.13_ task:
+	end quest 
+
+_huntstart_ task:
+	create foe _F.02_ every 60 minutes 30 times with 20% success 
+	start timer _S.13_ 
+	hide npc _vamp2_ 
+	hide npc _vamp1_ 
+
+_S.15_ task:
+	injured _F.02_ saying 1040 
+
+_givetoken_ task:
+	toting _token_ and _vamp2_ clicked 
+	log 1052 step 2 
+	say 1024 
+
+_S.17_ task:
+	when _S.10_ and not _S.04_ and not _givetoken_ 
+	create foe _vampire_ every 60 minutes 10 times with 25% success 
+
+_S.18_ task:
+	injured _vampire_ saying 1025 
+
+_S.19_ task:
+	start timer _huntstart_ 

@@ -1,0 +1,116 @@
+-- Quest: C:\QUESTS\WORKING\B0C00Y06.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: knight
+-- Repute: 0
+-- QuestId: 6
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: B0C00Y06
+DisplayName: 사냥꾼
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>당신을 믿을 수 없습니다, %pcn. 당신은 우리
+<ce>기사단의 일원이 아닙니다. 만약 내 신뢰와 약간의 존경이라도
+<ce>얻고 싶다면, 농장을 습격하는 _monster_ 처치 후
+<ce>돌아오십시오. 할 수 있겠습니까?
+
+RefuseQuest:  [1001]
+<ce>그럴 줄 알았습니다. 당신의 가슴 속에는 겁쟁이의 심장이
+<ce>뛰고 있군요. 당신을 보는 것만으로도 구역질이 납니다.
+
+AcceptQuest:  [1002]
+_monster_의 행방이 ___dungeon_에 둥지를 틀었습니다.
+그곳으로 가서 처치하십시오. 다른 _monster_의 존재가
+있을지도 모르지만, 상관없습니다. 저는 등 뒤에 커다란 화상
+자국이 있는 놈에게만 관심이 있습니다. 그놈이 농민들을
+습격하고 다녔거든요. =2dung_일의 시간이 주어집니다.
+
+QuestComplete:  [1004]
+흠. 기대보다 잘해주었군요, %pcn. 언젠가는 기사단에
+가입할 자격이 생길지도 모르겠네요.
+
+RumorsDuringQuest:  [1005]
+그 _monster_의 존재는 ___qgiver_의 골칫거리입니다.
+<---> 많은 이들이 기사단이 그 _monster_의 처리를
+해주길 바라고 있죠.
+
+RumorsPostfailure:  [1006]
+%god에게 감사하십시오. 기사단이 아니라, 그
+_monster_의 행방은 떠났습니다. <---> 그
+_monster_의 이동은 당연한 일입니다. 하지만 다시 돌아올
+겁니다.
+
+RumorsPostsuccess:  [1007]
+모두가 그 _monster_ 처치에 성공한 기사들에게 감사하고
+있습니다. <---> 아무도 기사단이 그 _monster_의
+처리를 위해 무언가를 할 줄은 몰랐거든요.
+
+QuestorPostsuccess:  [1008]
+좋아, 꼬마야. 네가 한 일을 보니, 이제 너를 예의 바르게
+대할 수 있겠군.
+
+QuestorPostfailure:  [1009]
+_monster_ 애호가, 여기서 당장 꺼져. <---> 역겨운
+_monster_ 애호가 같으니라고.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 기사단의 _qgiver_의 정보에 따르면
+ ___dungeon_에서 처치해야 할 _monster_에 대해 알게
+ 되었다. 내게는 =2dung_일밖에 없다.
+
+Message:  1011
+등 뒤에 커다란 화상 자국이 있다. _qgiver_의 언급대로
+그놈이 틀림없다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 1 time.
+--              %god occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--           =2dung_ occurs 4 times.
+--       ___dungeon_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--         _monster_ occurs 29 times.
+--          _qgiver_ occurs 4 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+Person _local_ face 207 group Resident2 female local
+
+Place _dungeon_ remote dungeon13
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Giant
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	place foe _monster_ at _dungeon_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _S.02_ and _S.01_ 
+	give pc nothing 
+	change repute with _local_ by +4 
+	end quest 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 

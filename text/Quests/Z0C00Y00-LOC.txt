@@ -6,106 +6,183 @@
 -- QuestId: 0
 Messages: 42
 Quest: Z0C00Y00
-DisplayName: 메팔라의 임무
+DisplayName: 메팔라의 퀘스트
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>너일 거라 짐작은 했었지. 이런 소환엔 거의 응하지 않지만.
-<ce>뭐, 벌레가 말벌로 진화하길 원하는 게 자연스러운 걸지도
-<ce>모르겠네. 좋아, %pcf, 네게 힘을 주지, 하지만 뭘 좀 해줘야겠어.
-<ce>문제를 좀 일으키는 말단 귀족이 있는데 암살해줬으면 좋겠군.
-<ce>맡겨도 되겠나?
+당신일 줄 알았습니다. 이런 소환에는 응하지 말았어야
+했는데. 뭐, 벌레가 말벌로 진화하고 싶어 하는 것은
+자연스러운 일일지도 모르겠군요. 좋습니다, %pcf.
+힘을 드리죠. 하지만 먼저 저를 위해 해주셔야 할 일이
+있습니다. 골치 아픈 하급 귀족 하나를 암살해 주십시오. 믿고
+맡겨도 되겠습니까?
 
 RefuseQuest:  [1001]
-<ce>그것도 괜찮지. 감사할 줄 모르는 게으른
-<ce>말썽꾸러기를 위해서 힘을 키워주느니
-<ce>그 시간에 다른 걸 하는게 더 낫거든.
+그게 좋겠군요. 배은망덕하고 게으른 부랑자들을 위해 힘의
+기반을 닦는 것보다 제 시간을 더 가치 있게 쓸 곳이
+많으니까요.
 
 AcceptQuest:  [1002]
-<ce>음, 하긴 하는군. __palace_에
-<ce>짜증나는 _enemy_라는 관료가 있어,
-<ce>그 궁전에서 아늑하고 안전하게 있고,
-<ce>그렇게 믿고 있지. 어떻게 궁전에
-<ce>들어갈지는 나도 모르지만, 스스로
-<ce>잘 알아낼거라 생각하네.
-<ce>안죽고 잘 처리하면 ___qgfriend_으로 가.
-<ce>네게 줄 새로운 힘을 내 종에게 준비시켜 두지.
-<ce>_artifact_.
-<ce>__qgfriend_의 _qgfriend_에게
-<ce>=1stparton_일동안 기다리라고 하겠어.
-<ce>부디 늦지말도록, 이상이네.
+뭐, 어쨌든 그 정도면 됐습니다. 그 성가신 관리는
+__palace_의 궁전에 안전하게 머물고 있다고 믿고 있는
+_enemy_입니다. 어떻게 침입할지는 당신이 알아서
+생각해보십시오. 운 좋게 죽지 않는다면 ___qgfriend_
+방향으로 오십시오. 그러면 제 하인이 당신에게 새로운 힘의
+원천인 _artifact_ 물품을 가져다줄 것입니다. 제 하인
+_qgfriend_에게 __qgfriend_에서 =1stparton_일 동안
+당신을 기다리라고 하겠습니다. 부디 늦지 마십시오.
+이상입니다.
 
 QuestFail:  [1003]
-<ce>아냐, 아냐, 아냐, 아냐! __palace_에
-<ce>있는 기사를 먼저 죽이고, 그 다음 날 보러 와야해!
-<ce>%oth, 메팔라께서 옳으셨군.
+안 돼, 안 돼, 안 돼! __palace_에 있는 기사를 먼저
+죽이고 나서 저를 찾아와야죠! %oth, 메팔라의 말이
+맞았군요.
 
 QuestComplete:  [1004]
-<ce>안녕하신가, %pcf, 나는 _qgfriend_.
-<ce>메팔라께 누가 올지도 모른다고 들었지만,
-<ce>_enemy_와 맞붙고 살아 있을지 의심하시는 것
-<ce>같았는데. 뭐, 칼을 가져오길 잘한것 같네, 안그래?
-<ce>메팔라께서 내리신 말씀이 기분이 나빴다면 미안해.
-<ce>_enemy_ 놈이 죽었으니 메팔라께서도
-<ce>기분이 훨씬 나아지셨겠지. 그래서 말인데, 고마워.
+좋은 날입니다, %pcf. 저는 _qgfriend_입니다.
+메팔라가 당신이 올지도 모른다고 했지만, _enemy_
+측과의 만남에서 살아남을 가능성에 대해서는 의구심을
+표하더군요. 뭐, 제가 칼을 가져온 게 다행이군요, 그렇지
+않나요? 메팔라에게 안 좋은 소리를 들었다면 미안합니다.
+_enemy_ 측이 죽었으니, 이제 기분이 훨씬 나아졌을
+겁니다. 그것만으로도 당신께 감사드립니다.
 
---removed odd <---> in 1004.
+-- 1004번의 이상한 <---> 제거.
 
 RumorsDuringQuest:  [1005]
-_enemy_의 말로는 자기가 다크 브라더후드의 본부를 찾아낼 수 있다고 했답니다.
-<--->
-다크 브라더후드도 _enemy_에겐 못당하고 무서워할겁니다.
+_enemy_의 말에 따르면 %g가 다크
+브라더후드의 본부로 가는 %g3의 길을 찾을 수
+있다고 합니다. <---> 다크 브라더후드는
+_enemy_의 방해 공작에 공포에 떨고 있을 겁니다.
 
 RumorsPostfailure:  [1006]
-다크 브라더후드가 _enemy_ 암살을 위해 누군가 보냈지만, %g2를 죽이지 못했답니다!
-<--->
-_enemy_ 암살 시도가 실패한 후에 __palace_에서 다른 곳으로 떠났다고 합니다.
+다크 브라더후드가 _enemy_ 측을 처리하려 사람을
+보냈지만, %g2를 죽이지 못했습니다! <--->
+암살 시도가 실패한 후, _enemy_ 측은 __palace_
+지역을 떠났습니다.
 
 RumorsPostsuccess:  [1007]
-그 _enemy_, 암흑의 은신처 위치를 찾는데 너무 가까이 갔던 모양입니다.
-<--->
-다크 브라더후드가 _enemy_의 목적에 대해 알아냈나 보더군요.
+_enemy_의 행적을 보면 나이트사이드 어사일럼의 위치를
+거의 찾아낼 뻔했던 게 분명합니다. <---> 다크
+브라더후드가 _enemy_ 및 %g3의 야망에 대해
+들은 모양이군요.
 
 Message:  1011
-_qgfriend_ 그 젠체하는 =qgfriend_ 말입니까, 여기서 %di __qgfriend_에 처박혀 있을겁니다.
-<--->
-_qgfriend_, 그 =qgfriend_ 말이시군요. %di __qgfriend_에 있습니다.
+_qgfriend_ 측은 __qgfriend_에서 빈둥거리는 잘난 척하는
+=qgfriend_ 측이며, 이곳에서 %di입니다.
+<---> _qgfriend_ 측은 __qgfriend_에 있는 이곳의
+=qgfriend_ %di의 이름입니다.
 
 Message:  1012
-%reg의 __qgfriend_에 있는 메팔라의 요원의 이름은 _qgfriend_입니다.
-<--->
-%g는 __qgfriend_에 있는 =qgfriend_인 메팔라의 종이며 이름은 _qgfriend_입니다.
+_qgfriend_의 소속은 __qgfriend_에서 활동하는
+%reg의 메팔라 요원 중 한 명입니다. <--->
+_qgfriend_의 정체는 메팔라의 졸개이며, %g는
+__qgfriend_의 =qgfriend_입니다.
 
 Message:  1013
-메팔라는 살해의 데이드라 군주이며 다크 브라더후드의 후원자입니다.
-<--->
-메팔라는 오블리비언의 살해 영역을 지배하는 데이드릭 프린스입니다.
+메팔라는 살육의 데이드라 섭정이자 다크 브라더후드의
+수호자입니다. <---> 메팔라는 살육을 관장하는
+오블리비언의 프린스 중 한 명입니다.
 
 Message:  1014
-<ce>_artifact_는 흡혈의 힘을 가진 아티팩트입니다,
-<ce>베인자의 생명력을 빨아들여 사용자에게 돌려줍니다.
+_artifact_의 특성은 뱀파이어의 힘을 가진 유물로, 주인의
+허기를 채우기 위해 희생자의 생명력을 빨아들입니다.
 
 Message:  1020
 %qdt:
- 데이드릭 프린스 중 하나인 메팔라와 계약을 맺었다.
- 관리 _enemy_의 암살을 처리하면 _artifact_라는
- 아티팩트를 주기로 했다.
- 접선책은 ___qgfriend_, __qgfriend_에서
- =1stparton_일 동안 날 기다릴 것이다.
- 이름은 _qgfriend_.
- 유일한 문제는 목표가 __palace_ 궁에
- 산다는 점이다. %g2에게 접근하는게 어려울 수도 있다.
+ 데이드릭 프린스 메팔라와 계약을 맺었습니다. _enemy_의
+ 이름으로 불리는 관리를 암살하면 _artifact_의 명칭으로
+ 불리는 유물을 주겠다고 합니다. 그녀의 연락책 _qgfriend_
+ 측이 ___qgfriend_의 __qgfriend_에서 =1stparton_일 동안
+ 저를 기다릴 것입니다. 유일한 문제는 메팔라가 _enemy_
+ 측이 __palace_의 궁전에 살고 있다고 말한 점입니다.
+ %g2에게 접근하기가 쉽지 않을 것 같습니다.
 
 Message:  1030
-<ce>_enemy_의 죽음은 메팔라가
-<ce>좋아할 것이다.
-<ce>이제 도주해야할 시간이다.
+메팔라께서 자랑스러워하실 겁니다. _enemy_ 사망이
+확인되었습니다. 이제 탈출할 시간입니다.
 
 Message:  1040
-<ce>넌 누구고 여기서 뭘 하는거냐?
+누구냐, 여기서 뭘 하고 있는 거지?
 
 Message:  1041
-<ce>숨으려 기어다니는 암살자 놈들은 다 똑같지.
-<ce>그래서 제대로된 경호원을 구해두었다.
-<ce>=bodyguard_! 일어나라, 덩치놈. 저걸 죽여!
+너 같은 암살자 놈들은 다 똑같지. 그래서 내가 제대로 된
+보호를 받기로 한 거다. =bodyguard_! 일어나라, 이 멍청한
+놈아. 죽여라!
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 2 times.
+--                %g occurs 2 times.
+--               %g2 occurs 3 times.
+--               %g3 occurs 8 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 3 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--       =bodyguard_ occurs 1 time.
+--        =qgfriend_ occurs 5 times.
+--         __palace_ occurs 4 times.
+--       __qgfriend_ occurs 6 times.
+--        _artifact_ occurs 3 times.
+--           _enemy_ occurs 18 times.
+--        _qgfriend_ occurs 8 times.
+
+QBN:
+Item _artifact_ artifact Ebony_Blade anyInfo 1014
+
+Person _questgiver_ face 112 named Mephala remote anyInfo 1013
+Person _qgfriend_ group Librarian remote anyInfo 1011
+Person _enemy_ face 1 factiontype Knightly_Guard remote
+
+Place _palace_ remote palace
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+
+Foe _monster_ is Knight
+Foe _guards_ is Warrior
+Foe _bodyguard_ is Giant
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1020 step 0 
+	pc at _palace_ set _S.06_ 
+	place npc _enemy_ at _palace_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_pcgetsgold_ task:
+	when _npcclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1030 
+
+_npcclicked_ task:
+	clicked npc _qgfriend_ 
+
+_clearclick_ task:
+	when _npcclicked_ and not _mondead_ 
+	say 1003
+	clear _npcclicked_ _clearclick_ 
+
+_S.06_ task:
+	create foe _guards_ every 2 minutes 10 times with 25% success 
+	hide npc _enemy_ 
+	place foe _monster_ at _palace_ 
+
+_S.07_ task:
+	injured _monster_ 
+	create foe _bodyguard_ every 1 minutes 1 times with 100% success 
+	say 1041 
+
+_greklith_ task:
+	injured _guards_ saying 1040 

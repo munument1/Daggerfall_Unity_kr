@@ -1,0 +1,246 @@
+-- Quest: C:\QUESTS\WORKING\S0000006.Qbn.
+-- Main story quest.
+-- QuestId: 6
+Messages: 31
+Quest: S0000006
+DisplayName: 엘리사나의 로브
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>안녕하세요, %pcf. 저는 에드와이어 왕의 자녀이자
+<ce>웨이레스트의 왕위 계승자인 엘리사나예요. 혹시 조금
+<ce>당혹스러운 곤경에서 저를 도와주실 수 있을까요? 원로 의회의
+<ce>고위 의원이자 아버지의 좋은 친구인 카스텔리안 경께서
+<ce>휴가를 떠나셨는데, 제가 그분께 빌린 망토를 돌려드리는 걸
+<ce>깜빡했지 뭐예요. 당신에게 너무 지루한 일이 아니라면,
+<ce>그것을 ___casfort_에 계신 그분께 가져다주시겠어요?
+<ce>보답으로 멋진 _jewelry_ 제공을 약속할게요.
+
+RefuseQuest:  [1001]
+<ce>싫으신가요? 오, %oth.
+
+AcceptQuest:  [1002]
+<ce>저 같은 철없는 소녀를 도와주시다니 정말 친절하시네요. 여기
+<ce>로브가 있어요. 이제, _casfort_에 있는 카스텔리안 경께
+<ce>이 로브를 빨리 전해드리는 것이 매우 중요해요. 그분은
+<ce>___casfort_에 있는 저택 중 한 곳에 계실 거예요.
+<ce>카스텔리안 경을 찾는 건 그리 어렵지 않을 거예요. 그분이나
+<ce>_casfort_에 대해 주변에 물어보고 로브를 전해주세요.
+<ce>정말 감사드려요, %pcf 님. ___casfort_까지
+<ce>다녀오는 데 =queston_일 이상 걸리지는 않을 테니, 그때
+<ce>다시 뵙도록 해요.
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+
+QuestFail:  [1003]
+<ce>카스텔리안 경이 아직 로브를 받지 못했다는 걸 알아요.
+<ce>그분은 참을성이 많은 분이 아니거든요.
+
+QuestComplete:  [1004]
+<ce>오, 정말 대단하시군요. 자, 여기 약속했던 _jewelry_
+<ce>제공을 완료하죠. 로드 카스텔리안께서 제가 이 로브에 들인
+<ce>추가적인 노고를 알아주셨으면 좋겠군요. 이제 정말 시선을
+<ce>사로잡는 물건이 되었으니까요. _jewelry_보다 더 가치
+<ce>있는 것을 드리죠, %pcf. 제 아버지께서는 타이버
+<ce>셉팀의 토템이라 불리는 고대 유물에 관심이 많으십니다.
+<ce>그분은 곳곳에 첩자를 보내 그것을 찾고 계시죠. 그들이
+<ce>유물을 찾게 되면, 아버지께서는 그것을 확보할 누군가가
+<ce>필요하실 겁니다. 분명 그분이 선택하는 사람은 엄청난 보상을
+<ce>받게 될 거예요. 아버지께 당신의 이름을 말씀드리죠. 그
+<ce>정도는 제가 해드릴 수 있으니까요.
+
+RumorsDuringQuest:  [1005]
+카스텔리안 경은 헬세스를 후계자로 만드는 법안을 지지하고
+있습니다. <---> 엘리사나 공주님은 원로 평의회의
+고위 의원에게 미움을 사고 있습니다.
+
+RumorsPostfailure:  [1006]
+카스텔리안 경이 _casfort_에서 웨이레스트 성으로
+돌아왔습니다. 휴가는 끝났죠. <---> 엘리사나
+공주님은 카스텔리안 경이 휴가에서 돌아온 것을 보고 기뻐
+보이지 않네요.
+
+RumorsPostsuccess:  [1007]
+카스텔리안 경이 휴가를 보내던 _casfort_에서
+사라졌습니다. <---> 에드와이어 왕께서는 카스텔리안
+경의 실종에 부정한 음모가 있다고 의심하고 계십니다.
+
+QuestorPostsuccess:  [1008]
+아름다운 로브군요. 특별히 이상한 점은 없습니다.
+<---> 훌륭한 솜씨입니다. 누군가 자수에 정성을 많이
+들였군요.
+
+QuestorPostfailure:  [1009]
+옷감에 데이드릭 주문이 수놓아져 있군요. <---> 이
+로브에는 데이드라 소환 의식이 수놓아져 있습니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 엘리사나 공주님께서 제게 로브를 가져다 달라고
+ 부탁하셨습니다. 웨이레스트 원로 평의회의 고위 의원인
+ 카스텔리안 경에게 말이죠. ___casfort_, _casfort_에
+ 있는 그의 저택으로요. =queston_일 안으로 웨이레스트
+ 성으로 돌아와야 합니다.
+
+Message:  1020
+<ce>멍청한 놈! 어떤 진취적인 영혼이 너를 죽이라고 나를
+<ce>소환하는 로브를 너에게 주었구나. 정말 즐겁군!
+
+Message:  1021
+<ce>카스텔리안 경을 암살한 반역자에게 죽음을!
+<--->
+<ce>내 주군을 죽인 대가를 치르게 해주마.
+<--->
+<ce>암살자 놈! 카스텔리안 경은 최고의 분이셨다.
+네가 저지른 짓에 대한 대가로 죽게 될 것이다.
+
+Message:  1022
+<ce>"엘리사나 님께서 주신 선물입니다. 감사합니다,
+<ce>%pcn. 장갑처럼 딱 맞네요."
+<ce>
+<ce>마치 현실의 구조가 찢겨 나가는 듯한 찢어지는 소리가
+<ce>들립니다.
+
+Message:  1023
+<ce>이곳을 떠나라, 작은 %ra. 우리는 카스텔리안 경을
+<ce>데리러 왔다. 너는 그를 소환한 장례용 수의를 전달함으로써
+<ce>자신의 역할을 다했다.
+
+Message:  1030
+카스텔리안 경은 웨이레스트에서 가장 영향력 있는 평의회
+의원입니다. <---> 사람들은 엘리사나 공주님이
+카스텔리안 경을 별로 좋아하지 않는다고 말합니다.
+<---> 카스텔리안 경은 엘리사나 공주님과 결혼하고
+싶다는 욕망을 숨기지 않습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 2 times.
+--              %pcf occurs 3 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--         =queston_ occurs 3 times.
+--       ___casfort_ occurs 9 times.
+--         _jewelry_ occurs 4 times.
+
+QBN:
+Item _I.00_ Formal_cloak anyInfo QuestorPostsuccess used QuestorPostfailure
+Item _jewelry_ trinket
+Item _I.04_ dead_body
+
+Person _elysana_ named Princess_Elysana atHome
+Person Castellian face 1 named Lord_Castellian anyInfo 1030
+
+Place _casfort_ remote house1
+
+Clock _S.04_ 04:00 01:40
+Clock _queston_ 00:00 0 flag 17 range 0 2
+Clock _S.16_ 1.00:00 0 flag 1 range 0 1
+
+Foe _F.00_ is Daedra_seducer
+Foe _F.01_ is 2 Knight
+Foe _F.02_ is 2 Spellsword
+Foe _F.03_ is Daedra_seducer
+Foe _F.04_ is Daedroth
+Foe _F.05_ is Daedroth
+
+--	Quest start-up:
+	prompt QuestorOffer yes yes no _no_ 
+	have _I.04_ set _deadbody_
+
+_pcgetsgold_ task:
+	when _S.01_ and _S.03_ 
+	give pc _jewelry_ 
+	start task _S.07_ 
+	change repute with _elysana_ by +10 
+	drop _elysana_ as questor 
+
+_S.01_ task:
+	clicked npc _elysana_ 
+
+variable _S.02_
+_S.03_ task:
+	toting _I.00_ and Castellian clicked saying 1022 
+	pc at _casfort_ set _S.12_ 
+	place item _I.04_ at _casfort_
+	start timer _S.04_ 
+	hide npc Castellian 
+
+_S.04_ task:
+	create foe _F.02_ every 53 minutes 20 times with 15% success 
+
+_queston_ task:
+	when _S.15_ and _S.02_ 
+	drop _elysana_ as questor 
+	end quest 
+
+_deadbody_ task:
+	take _I.04_ from pc
+--added deadbody task. otherwise body would clog inventory
+
+UnknownElysanna _S.06_
+ElysannaSatisfied _S.07_
+	end quest 
+
+yes task:
+	_I.00_ used do _S.02_ 
+	start timer _queston_ 
+	log 1010 step 0 
+	get item _I.00_ 
+	say AcceptQuest 
+	add _elysana_ as questor 
+	create npc at _casfort_ 
+	place npc Castellian at _casfort_ 
+
+_no_ task:
+	say RefuseQuest 
+	end quest 
+
+_S.10_ task:
+	injured _F.03_ saying 1020 
+	injured _F.04_ 
+	say 1020 
+
+_clearclick_ task:
+	when _S.01_ and not _S.03_ 
+	clear _S.01_ _clearclick_ 
+
+_S.12_ task:
+	create foe _F.01_ every 2 minutes 4 times with 50% success 
+
+_S.13_ task:
+	injured _F.00_ 
+	injured _F.05_ 
+	say 1023 
+	restrain foe _F.00_ 
+
+_greklith_ task:
+	injured _F.01_ saying 1021 
+	injured _F.02_ saying 1021 
+
+_S.15_ task:
+	killed 3 _F.03_ 
+
+variable _S.16_
+UnknownHelseth _S.17_
+_S.18_ task:
+	when not _S.17_ and _S.02_ 
+	create foe _F.03_ every 1 minutes 3 times with 20% success 
+
+_S.19_ task:
+	when _S.17_ and _S.02_ 
+	create foe _F.04_ every 1 minutes 3 times with 20% success 
+
+_S.20_ task:
+	when not _S.17_ and _S.12_ 
+	create foe _F.00_ every 1 minutes 3 times with 50% success 
+
+_S.21_ task:
+	when _S.17_ and _S.12_ 
+	create foe _F.05_ every 1 minutes 32768 times with 100% success 

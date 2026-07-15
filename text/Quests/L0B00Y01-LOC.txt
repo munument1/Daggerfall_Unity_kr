@@ -1,0 +1,151 @@
+-- Quest: C:\QUESTS\WORKING\L0B00Y01.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Brotherhood
+-- Repute: 0
+-- QuestId: 1
+Messages: 14
+Quest: L0B00Y01
+DisplayName: 탈출 불가
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>알다시피, %pct, 다크 브라더후드에는
+<ce>실패를 위한 자리는 없다네. 우리를 실망시킨
+<ce>형제들은 처단 대상이 되지. 자네가 직접 가서
+<ce>그 잘못된 전직 멤버를 바로잡아 주게.
+<--->
+<ce>이것은 엄숙한 의무이며, 우리에게 실패한
+<ce>요원들을 처리하는 일은 그리 불쾌한
+<ce>일도 아니지. 자네, 이 임무를 맡을
+<ce>시간적 여유가 있겠지?
+
+RefuseQuest:  [1001]
+<ce>내 말을 제대로 들은 건가? %pct, 자네가 형제들과
+<ce>협력하지 않는다는 사실에 슬픔을 느끼는군.
+
+AcceptQuest:  [1002]
+<ce>아주 좋습니다, %pct. =target_ 측은
+<ce>브라더후드에서 %g3의 재임 기간 동안 무언가를 배운
+<ce>덕분에 현명하게 %g2self 개체를 숨겼습니다. 하지만
+<ce>__snitch_에 우리 연락책이 있는데, _snitch_의 이름을
+<ce>지닌 비참한 =snitch_입니다. %g2에게
+<ce>이야기해서 =target_의 위치를 알아내십시오. 임무를
+<ce>완수하고 =queston_일 안에 이곳으로 돌아오길
+<ce>기대하겠습니다.
+
+QuestComplete:  [1004]
+<ce>잘했네, %pct. 브라더후드를 실망시킨 모든 이들에게
+<ce>좋은 교훈이 될 걸세.
+
+RumorsDuringQuest:  [1005]
+=target_의 행방은 %reg 어딘가에 숨어
+버들가지처럼 떨고 있을 게 분명해. <--->
+=target_의 실력은 꽤 괜찮은 암살자였지. 하지만
+충분하진 않았던 모양이야.
+
+RumorsPostfailure:  [1006]
+다크 브라더후드를 이길 수 있다는 모양이군요. 예를 들어
+=target_의 사례를 보십시오. <--->
+=target_의 태도는 정말이지 %g3의 코웃음을
+치며 다크 브라더후드를 조롱하고 있습니다.
+
+RumorsPostsuccess:  [1007]
+=target_, 그들은 %g가 한때 브라더후드를
+실망시켰다고 하더군. 그리고 그것이 %g3의
+대가였지. <---> 다크 브라더후드는 실패를 용납하지
+않아. 불쌍한 =target_에게 무슨 일이 일어났는지 보라고.
+
+QuestorPostsuccess:  [1008]
+안녕, %pcn. 우리를 배신한 형제를 처단한 자네를
+어떻게 도와줄까?
+
+QuestorPostfailure:  [1009]
+<ce>이해를 좀 해보자고. 자네에게 브라더후드를 실망시킨
+<ce>_target_의 처단을 맡겼더니... 실패했군. 그런데 이제
+<ce>와서 잡담이나 하겠다고? 믿을 수가 없군.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 다크 브라더후드에서 임무를 실패한 형제를
+ 처단하라는 명령을 받았다. ___snitch_의 __snitch_에
+ 있는 _snitch_의 이름으로 불리는 밀고자에게 말을 걸어
+ =target_의 도주 경로를 알아내야 한다.
+
+Message:  1011
+<ce>%pcn인가? 나는 _snitch_라네. 자네가 쫓는 그
+<ce>물고기는 낚싯바늘을 빠져나가 ___mondung_에서 호화롭게
+<ce>살고 있지. 조심하게, %ra. =target_의 전투
+<ce>능력은 뛰어나고 %g는 겁에 질려 있거든.
+
+Message:  1012
+%qdt:
+ _snitch_의 말에 따르면 =target_의 행방은
+ ___mondung_에 있다고 알려주었다.
+
+Message:  1013
+<ce>자네는 =target_의 처단을 완수했네. 브라더후드도 기뻐할
+<ce>걸세.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 4 times.
+--              %pcn occurs 3 times.
+--              %pct occurs 4 times.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+--              %reg occurs 1 time.
+--         =queston_ occurs 2 times.
+--          =snitch_ occurs 1 time.
+--          =target_ occurs 47 times.
+--       ___mondung_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--        ___snitch_ occurs 9 times.
+--          _target_ occurs 1 time.
+
+QBN:
+
+Person _qgiver_ group Questor
+Person _snitch_ factiontype Temple local
+
+Place _mondung_ remote dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _target_ is Assassin
+
+--	Quest start-up:
+	dialog link for location _mondung_ 
+	start timer _queston_ 
+	log 1010 step 0 
+	place foe _target_ at _mondung_ 
+
+_queston_ task:
+	end quest 
+
+_reward_ task:
+	when _qgclicked_ and _S.02_ 
+	give pc nothing 
+	end quest 
+
+_S.02_ task:
+	killed 1 _target_ 
+	say 1013 
+
+_S.03_ task:
+	clicked npc _snitch_ 
+	add dialog for location _mondung_ 
+	reveal _mondung_ 
+	log 1012 step 1 
+	say 1011 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.05_ task:
+	when _qgclicked_ and not _S.02_ 
+	clear _qgclicked_ _S.05_ 

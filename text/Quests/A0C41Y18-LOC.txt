@@ -1,0 +1,248 @@
+-- Quest: C:\QUESTS\WORKING\A0C41Y18.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 41
+-- QuestId: 18
+Quest: A0C41Y18
+DisplayName: 미라의 손가락
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>누군가 제 대신 물건을 배달해 줄 사람이 필요합니다. 아주
+<ce>후하게 보상해 드리죠. 선금으로 _gold1_ 골드, 일이
+<ce>끝나면 _gold2_ 골드를 더 드리겠습니다.
+<ce>도와주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>%oth, 이 물건을 영영 떨쳐낼 수 없을 것 같군요! 왜
+<ce>아무도 저를 도와주지 않는 거죠?
+
+AcceptQuest:  [1002]
+<ce>%god 님, 감사합니다! 이 일이 저에게 얼마나 큰
+<ce>의미인지 모르실 겁니다. 여기 보상금입니다. 이제 이것을
+<ce>___dummy_에 있는 _dummy_에게 가져다주세요.
+<ce>%g가 나머지 보상을 줄 겁니다. 저는 정말 가봐야
+<ce>합니다. 정말 감사합니다!
+
+QuestComplete:   [1004]
+<ce>_giver_께서 작은 물건을 감싼 편지를 당신에게 건네고
+<ce>서둘러 떠납니다.
+
+RumorsDuringQuest:  [1005]
+<ce>올해는 해적들이 유난히 활발하게 활동하고 있군.
+
+RumorsPostfailure:  [1006]
+<ce>미라의 손가락에 얽힌 저주 이야기를 들어본 적 있나요? 아,
+<ce>죄송합니다. 제가 미처... 몰랐네요.
+
+RumorsPostsuccess:  [1007]
+<ce>용감한 %ra 님이 ___dungeon_에 들어갔습니다.
+<ce>가엾은 바보 같으니.
+
+QuestorPostsuccess:  [1008]
+<ce>올해는 미치광이들이 일찍 돌아오겠군.
+
+QuestorPostfailure:  [1009]
+<ce>내가 뚱뚱하다고 생각하나? 다들 내가 뚱뚱하다고 말하지만,
+<ce>난 그렇게 생각하지 않아.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___dummy_의 _dummy_에게 배달을 하라는 의뢰를
+ 받았다. 정체를 알 수 없는 고용주가 _gold1_ 골드를
+ 선금으로 주었고, 임무를 완수하면 _gold2_의 보상을 더
+ 주겠다고 약속했다. 기한은 정해지지 않았지만, 고용주는 내가
+ 서둘러 떠나기를 매우 바라는 눈치였다.
+
+Message:  1011
+%qdt:
+ 속았다. _dummy_에게 배달하려던 물건은 사실 저주받은
+ 미라의 손가락이었다.
+
+Message:  1012
+%qdt:
+ 내가 겪고 있는 저주의 원흉인 미라가 ___dungeon_에 묻혀
+ 있다는 사실을 알게 되었다. 그자의 본체를 파괴해야 한다.
+ 그렇지 않으면 그 영혼이 1001일 밤 동안 나를 계속 괴롭힐
+ 것이다.
+
+Message:  1013
+<ce>소포? _giver_에게서 온 거라고? 아니, %g1
+<ce>님이라면 미리 말해줬을 거야. 뭔가 착각한 게 분명해.
+<ce>내용물을 읽어보고 누구 앞으로 온 건지 확인해보는 게 어때?
+
+Message:  1015
+<ce>그건 잘 모르겠는데. 사원에 가서 물어봐.
+<--->
+<ce>_sage_ 님이라면 그런 걸 알지도 모르지.
+<ce>%g2에게 가서 물어봐.
+<--->
+<ce>___sage_에 있는 __sage_에서 물어본 적은 있나?
+<--->
+<ce>___sage_에 있는 누군가가 그런 걸 알지도 모른다는
+<ce>소리를 들었어.
+<--->
+<ce>사람들이 말하길 _sage_ 님이 그런 방면의 최고
+<ce>전문가라더군.
+<--->
+<ce>__sage_에 있는 그 현자라면 알지도 모르지.
+
+Message:  1016
+<ce>내 _finger_ 개체를 훔쳐 간 자는 죽어야 한다!
+<--->
+<ce>내 _finger_ 개체를 찾으러 왔다.
+<--->
+<ce>파멸을 받아들여라. 무기를 내려놓아라.
+<--->
+<ce>내 _finger_, 내 _finger_.
+<--->
+<ce>너는 내 _finger_ 개체를 가지고 있다. 그것 없이는 쉴
+<ce>수가 없다.
+<--->
+<ce>오늘 밤 나를 파괴할 순 있겠지만, 나는 다시 돌아올 것이다.
+<--->
+<ce>나는 다시 일어나 내 _finger_ 개체를 되찾으러 갈
+<ce>것이다.
+
+Message:  1020
+<ce>내 무덤을 더럽히는 자는 모두 파괴될 것이다!
+
+Message:  1025
+<ce>어디 보자, _finger_ 개체가군. 아... 그래,
+<ce>=realmummy_의 저주가 깃들어 있군. 1001일 밤 동안 매일 밤,
+<ce>자정이 되면 =realmummy_의 영혼이 이 _finger_의 주인을
+<ce>찾아갈 걸세. 저주를 푸는 유일한 방법은 ___dungeon_에 있는
+<ce>그자의 무덤에서 진짜 =realmummy_ 개체를 파괴하는
+<ce>것뿐이라네.
+
+Message:  1026
+<ce>자네가 말하는 건 전형적인 미라의 저주 같군. 하지만
+<ce>_finger_ 자체가 없으면 더 자세한 건 알 수 없네. 이걸
+<ce>가져오게. 그러면 어디서 온 것인지 알아낼 수 있을지도
+<ce>모르니.
+
+Message:  1030
+<ce>=realmummy_ 처치 완료. 이제 %g3의 저주에서
+<ce>영원히 벗어났음을 알 수 있다.
+
+Message:  1040
+친애하는 낯선 이여,
+
+제가 저지른 일에 대해 부디 용서해주시길 바랍니다. 하지만
+저에게는 선택의 여지가 없었습니다. 이 저주받은 손가락을
+발견한 이후로 매일 밤 미라가 저를 괴롭혔습니다. 버려보기도
+했지만 소용없었습니다. 학식 있는 현자께서 미라의 무덤을
+찾거나 이 손가락을 다른 사람에게 넘겨야만 그 지독한
+저주에서 벗어날 수 있다고 조언해주셨습니다. 저는 전사가
+아니며, 누가 이 짐을 기꺼이 대신 짊어지겠습니까? 당신은
+저주를 견뎌내고 어쩌면 해결까지 할 수 있을 만큼 용감해
+보였습니다. 부디 악의는 없었다는 점을 이해해주십시오.
+그렇지 않았다면 저는 죽거나 미쳐버렸을 것입니다!
+
+Message:  1050
+<ce>_sage_ 님은 ___sage_의 저명한 현자입니다.
+<--->
+<ce>_sage_ 님은 ___sage_의
+<ce>__sage_에 계십니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--               %g2 occurs 6 times.
+--              %god occurs 1 time.
+--              %oth occurs 1 time.
+--              %qdt occurs 3 times.
+--               %ra occurs 1 time.
+--       =realmummy_ occurs 4 times.
+--         ___dummy_ occurs 2 times.
+--       ___dungeon_ occurs 5 times.
+--          ___sage_ occurs 17 times.
+--           _dummy_ occurs 3 times.
+--          _finger_ occurs 15 times.
+--           _giver_ occurs 1 time.
+--           _gold1_ occurs 2 times.
+--           _gold2_ occurs 8 times.
+--            _sage_ occurs 5 times.
+
+QBN:
+Item _finger_ finger anyInfo 1015
+Item _letter_ letter used 1040
+Item _gold1_ gold
+Item _gold2_ gold
+--changed msg 1030 %g2 to %g3
+
+Person _sage_ group Cleric remote anyInfo 1050 rumors 1050
+Person _giver_ group Questor
+Person _dummy_ group Innkeeper remote
+
+Place _dungeon_ remote dungeon0
+
+Clock _S.10_ 1001.00:00 0 flag 1 range 0 1
+
+Foe _F.00_ is Mummy
+Foe _realmummy_ is Mummy
+
+--	Quest start-up:
+	dialog link for person _sage_ item _finger_ 
+	start timer _S.10_ 
+	log 1010 step 0 
+	get item _letter_ 
+	get item _finger_ 
+	get item _gold1_ 
+	start task _S.03_ 
+	give pc nothing
+--changed "say 1045" to "give pc nothing." This ensures faction increase for completing this quest.
+	_letter_ used do _readletter_ 
+	place foe _realmummy_ at _dungeon_ 
+	destroy _giver_ 
+
+variable _S.00_
+_S.01_ task:
+	daily from 00:00 to 01:00 
+	create foe _F.00_ every 35 minutes 1001 times with 100% success 
+
+_S.02_ task:
+	injured _F.00_ saying 1016 
+	unset _S.02_ 
+
+_dummytalk_ task:
+	clicked npc _dummy_
+	say 1013
+
+variable _S.03_
+_S.04_ task:
+	clicked npc _sage_ 
+	have _finger_ set _S.07_ 
+
+_S.05_ task:
+	killed 1 _realmummy_ 
+	say 1030 
+	make _gold1_ permanent 
+	end quest 
+
+_S.06_ task:
+	when _S.04_ and _S.07_ 
+	reveal _dungeon_ 
+	log 1012 step 2 
+	say 1025 
+	unset _S.06_ _S.08_ _S.04_ _S.07_ 
+
+variable _S.07_
+_S.08_ task:
+	when _S.04_ and not _S.07_ 
+	say 1026 
+
+_S.09_ task:
+	injured _realmummy_ 
+	say 1020 
+
+_S.10_ task:
+	make _gold1_ permanent 
+	end quest 
+
+_readletter_ task:
+	add dialog for item _finger_ 
+	log 1011 step 1 

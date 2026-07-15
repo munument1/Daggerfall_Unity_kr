@@ -7,79 +7,127 @@
 -- Edited for Daggerfall Unity by Jay_H
 Messages: 21
 Quest: N0C00Y12
-DisplayName: 풀려난 애완 임프
+DisplayName: 탈출한 임프
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>_qgiver_ 라고 불러주십시오.
-<ce>전 보통은 길드 회원에게만 일을 줍니다만,
-<ce>제 학생중 하나에 작은 문제가 하나 있는데
-<ce>외부로 알려지면 부끄러운일이 될 문제입니다.
-<ce>보수는 드릴 수 없지만, 약간의 위험을 감수해
-<ce>도망친 실험 대상을 추적해 주신다면 제가
-<ce>기쁘게 다른 길드 회원들에게 당신에 대해
-<ce>좋게 말해두도록 하겠습니다.
+<ce>저는 _qgiver_입니다. 원래는 길드 회원에게만 일을 맡길
+<ce>수 있습니다. 하지만 제 제자 중 한 명이 곤란한 문제를 겪고
+<ce>있는데, 밖으로 알려지면 창피한 일이라서요. 보상은 드릴 수
+<ce>없지만, 귀하께서 위험을 무릅쓰고 탈출한 실험체를
+<ce>잡아주신다면, 다른 길드원들에게 귀하에 대해 좋게 이야기할
+<ce>만큼 감사하게 생각하겠습니다.
 
 RefuseQuest:  [1001]
-<ce>그렇다면 왜 일에 대해 물어 본겁니까?
-<ce>종종 일반 모험가들은 도저히 이해가 안가는 군요.
+<ce>그럼 왜 제게 일거리를 물어보셨죠? 가끔은 귀하 같은 평범한
+<ce>모험가들을 도저히 이해할 수가 없군요.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. 제 학생은 애완 임프를 키웠는데,
-<ce>이 마법 생물은 아주 위험하지는 않지만,
-<ce>관리하지 못해 도망친 것은 그에겐 창피한 일이겠지요.
-<ce>저희가 마법으로 들여다본 바로는 임프가 도망쳐서
-<ce>___mondung_에 들어간 것 같습니다.
-<ce>그걸 죽이고 =1stparton_일 내로 돌아와 보고해 주십시오.
+<ce>좋습니다. 제 제자가 사역마인 임프를 기르고 있습니다. 이
+<ce>마법 생물들은 그리 위험하지는 않지만, 제자에게는
+<ce>잠재적으로 당혹스러운 일이 될 수 있습니다. 점술을 통해
+<ce>확인한 결과, 그 임프는 ___mondung_ 쪽으로 도망쳤다고
+<ce>합니다. 그것을 처치하고 =1stparton_일 이내에 저에게
+<ce>보고하십시오.
 
 QuestFail:  [1003]
-<ce>오늘 일찍 마법으로 보았습니다만,
-<ce>임프는 아직 살아 있었습니다.
-<ce>아직까지 뭘 하시는 건지요?
+<ce>아까 점을 쳐보았습니다. 임프는 여전히 살아있더군요. 여기서
+<ce>뭘 하고 계신 겁니까?
 
 QuestComplete:  [1004]
-<ce>그거 다행이군요. %pcn.
-<ce>제가 작은 빚을 졌군요.
-<ce>메이지 길드엔 잘 해놓도록 하겠습니다.
+<ce>정말 다행이군요. 당신에게 작은 빚을 졌습니다,
+<ce>%pcn. 마법사 길드에 대한 당신의 평판이
+<ce>높아졌습니다.
 
 RumorsDuringQuest:  [1005]
-메이지 길드 연구실에서 밤에 뭔가 도망쳤다고 들었습니다.
-<--->
-%oth, 저번 밤에 작은 뭔가가 어두운 곳에서 슬금슬금 움직이는걸 봤습니다.
+지난밤 마법사 길드 실험실에서 무언가 탈출했다는 소문을
+들었습니다. <---> %oth, 어젯밤 그림자
+속에서 작은 형체가 살금살금 움직이는 것을 보았습니다.
 
 RumorsPostfailure:  [1006]
-음, 메이지 길드 연구실의 안전 관리에 작은 문제가 있었던 모양입니다.
-<--->
-메이지 길드에서 또 실험물을 놓쳐버린 것 같습니다.
+음, 마법사 길드의 실험실 보안과 관련된 작은 소동이
+있습니다. <---> 마법사 길드에서 또 다른 실험체를
+놓친 모양입니다.
 
 RumorsPostsuccess:  [1007]
-메이지 길드 연구소에서 임프를 고문하는 소리한다는 이야기를 들었습니다!
+마법사 길드 실험실에서 임프를 고문한다는 소문을
+들었습니다!
 <--->
-<ce>임프란 것들은 아주 고약한 놈들이죠.
-<ce>빗자루로 쫓아내기만 했는데도
-<ce>%nam 집이 쥐 떼가 들이닥쳤답니다.
-                                     <--->
-<ce>메이지 길드에서 임프 패밀리어가 도망쳤다고 들었습니다.
-<ce>마법사가 패밀리어를 잃으면 적들이 쓰는 주문에
-<ce>취약해진다고 합니다.
+<ce>그 임프들은 성질이 고약합니다.
+<ce>%nam의 집은 쥐떼로 들끓었는데,
+<ce>단지 빗자루로 쫓아내려 했다는 이유만으로 그랬죠.
+<--->
+<ce>마법사 길드에서 임프 사역마가 탈출했다는
+<ce>이야기를 들었습니다. 사역마를 잃은 위저드는
+<ce>적들의 마법에 취약해진다고들 하더군요.
 
 QuestorPostsuccess:  [1008]
-잘 지내십니까, %pcf? 임프 문제는 이제 없었으면 좋겠습니다.
+어떻게 지내십니까, %pcf? 임프 때문에 더 이상 골치
+아픈 일은 없겠지요, 그렇죠?
 
 QuestorPostfailure:  [1009]
-<ce>임프를 잡으라고 보낸걸로 기억합니다만.
-<ce>그쪽과 이야기 하느라 또 시간낭비할
-<ce>이유는 없습니다.
+<ce>그 임프를 처리하라고 보냈던 기억이 나는군요. 당신과 다시
+<ce>입씨름을 할 이유는 없다고 봅니다.
 
 QuestLogEntry:  [1010]
-<ce>"메이지 길드 연구실에 돌아가느니
-<ce>죽는게 낫다."
+<ce>"마법사 길드 실험실로 돌아가느니 차라리 죽는 게 낫겠다."
 
 Message:  1020
 %qdt:
- 메이지 길드 ___qgiver_에게
- 길드 연구실에서 도망친 임프를 찾아달라고
- 고용되었다. ___mondung_에
- 숨어있는것 같다. =1stparton_일 내로
- 이 생물을 죽이고 ___qgiver_에 돌아가야 한다.
+ ___qgiver_의 마법사 길드에서 실험실을 탈출한 임프를
+ 찾아달라는 의뢰를 받았습니다. 놈은 ___mondung_에 숨어있는
+ 것 같습니다. 놈을 처치하고 =1stparton_일 이내에
+ ___qgiver_ 측으로 돌아가야 합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %nam occurs 1 time.
+--              %oth occurs 1 time.
+--              %pcf occurs 1 time.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 5 times.
+--       ___mondung_ occurs 2 times.
+--        ___qgiver_ occurs 5 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _mondung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _imp_ is Imp
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	place foe _imp_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc nothing 
+	end quest 
+
+variable _queston_
+_mondead_ task:
+	killed 1 _imp_ 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_clearclick_ task:
+    when _qgclicked_ and not _mondead_
+	say 1003
+    clear _qgclicked_ _clearclick_
+--merged unused _clearclick_ variable into this _reset_ task and renamed it.
+
+_1stparton_ task:
+	end quest 
+
+_S.06_ task:
+	injured _imp_ saying 1010 

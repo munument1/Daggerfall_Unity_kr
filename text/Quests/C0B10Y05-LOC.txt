@@ -1,0 +1,139 @@
+-- Quest: C:\QUESTS\WORKING\C0B10Y05.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: temple
+-- Repute: 10
+-- QuestId: 5
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 13
+Quest: C0B10Y05
+DisplayName: 저주받은 무기
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pcn, 당신에게 매우 위험한 임무가 있습니다. 우리
+<ce>사원이 오크들이 오랫동안 찾아 헤매던 사악한 마법 무기를
+<ce>손에 넣었습니다. 사원은 이미 이 생명체들에게 두 번이나
+<ce>공격받았습니다. 이 무기를 안전한 곳으로 옮겨야 합니다.
+<ce>우리를 위해 이 일을 해주시겠습니까? 사원에서 _gold_
+<ce>골드를 지불하겠습니다.
+
+RefuseQuest:  [1001]
+<ce>당신의 사원에 대한 충성심이 그토록 낮다니 슬프군요. 하지만
+<ce>위험을 고려하여, 용서하겠습니다.
+
+AcceptQuest:  [1002]
+<ce>이 _evilitem_ 물품을 가져가십시오. ___dungeon_에서,
+<ce>수년간 우리 사원을 섬겨온 _custodian_ 개체를 찾으십시오.
+<ce>%g께서 이 물건을 안전하게 보관하여 오크들의 손에
+<ce>들어가지 않게 할 것입니다. 우리는 이 무기의 사악한
+<ce>영향으로부터 당신을 보호하기 위해 주문을 걸어두었습니다.
+<ce>하지만 이 주문은 =traveltime_일이 지나면 효력이 사라질
+<ce>것입니다.
+
+QuestComplete:  [1004]
+<ce>아, 이것이 _qgiver_ 측이 말했던 사악한 _evilitem_
+<ce>물품이군요. 안전하게 지킬 방어 수단이 많은 이곳에
+<ce>보관하겠습니다. _qgiver_께서 안전한 배달에 대한 대가로
+<ce>당신에게 _gold_ 골드를 지불하라고 하셨습니다.
+
+RumorsDuringQuest:  [1005]
+오크들이 __qgiver_ 상단을 공격하고 있습니다.
+
+RumorsPostfailure:  [1006]
+오크들이 결국 그 _evilitem_의 소유권을 확보했습니다.
+
+RumorsPostsuccess:  [1007]
+_evilitem_의 안전은 오크들의 손길로부터 보장됩니다.
+
+QuestorPostsuccess:  [1008]
+_evilitem_ 처리를 마쳤다는 소식을 들었습니다. 이제,
+무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+당신에게 _evilitem_의 관리를 맡겼는데 무슨 일이
+벌어졌는지 보십시오.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 __qgiver_의 _qgiver_의 요청으로
+ 오크들이 손에 넣지 못하도록 사악한 _evilitem_의 전달을
+ ___dungeon_에게 부탁받았다. 배달을 완료하기까지 내게는
+ =traveltime_일의 시간이 있다.
+
+Message:  1011
+<ce>당신이 바로 오크들의 성스러운 전쟁 무기인 Manshrieker의
+<ce>운반자인가 보군요. 인간을 죽여라! 우리는 반드시
+<ce>_evilitem_의 확보를 완수해야 한다.
+
+Message:  1012
+<ce>사악한 _evilitem_의 파편이 불꽃을 튀기며 부서집니다.
+<ce>당신은 갑자기 심한 구역질을 느낍니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--      =traveltime_ occurs 3 times.
+--       ___dungeon_ occurs 2 times.
+--        ___qgiver_ occurs 3 times.
+--       _custodian_ occurs 1 time.
+--        _evilitem_ occurs 10 times.
+--            _gold_ occurs 4 times.
+--          _qgiver_ occurs 3 times.
+
+QBN:
+Item _evilitem_ weapon
+Item _gold_ gold
+
+Person _qgiver_ face 1 group Questor
+Person _custodian_ face 1 group Group_5.0 remote
+
+Place _dungeon_ remote dungeon
+
+Clock _traveltime_ 00:00 0 flag 1 range 0 2
+
+Foe _orc1_ is Orc_shaman
+Foe _orc2_ is Orc_warlord
+Foe _orc3_ is 2 Orc_sergeant
+Foe _orc4_ is 3 Orc
+
+--	Quest start-up:
+	start timer _traveltime_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	get item _evilitem_ 
+	place npc _custodian_ at _dungeon_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	toting _evilitem_ and _custodian_ clicked 
+	give pc _gold_ 
+	end quest 
+
+until _S.01_ performed:
+	create foe _orc2_ every 21 minutes 20 times with 5% success 
+	create foe _orc4_ every 41 minutes 20 times with 5% success 
+	create foe _orc1_ every 21 minutes 20 times with 5% success 
+	create foe _orc3_ every 31 minutes 20 times with 5% success 
+
+variable _gem1_
+variable _bear_
+variable _gem3_
+variable _gem4_
+_S.06_ task:
+	injured _orc2_ saying 1011 
+	injured _orc4_ saying 1011 
+	injured _orc3_ saying 1011 
+	injured _orc1_ saying 1011 
+
+_S.07_ task:
+	when _traveltime_ and not _S.01_ 
+	make pc ill with Witches'_Pox
+	say 1012 
+	--moved saying 1012 to its own line

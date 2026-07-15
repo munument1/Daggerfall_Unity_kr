@@ -12,115 +12,198 @@ DisplayName: 스프리건 사냥
 QRC:
 
 QuestorOffer:  [1000]
-<ce>벌목꾼들이 스프리건을 잡아달라고
-<ce>길드에 의뢰를 냈어.
-<ce>나무를 하러 숲에 있을때 스프리건에게
-<ce>공격 당했한거 같아.
-<ce>나무 좀 해볼텐가 %pcn?
+<ce>나무꾼들이 스프리건을 죽여달라고 길드에 의뢰를 했네.
+<ce>숲에서 벌목을 할 때마다 몬스터가 공격을 해댄다더군. 한 번
+<ce>해보겠나, %pcn?
 
 RefuseQuest:  [1001]
-<ce>뭐 좋네. 할거 하러 가게.
-<ce>대신할 사람을 찾아야 되겠구만.
+<ce>알겠네. 가보게. 다른 사람을 찾아봐야겠군.
 
 AcceptQuest:  [1002]
-<ce>매복해서 잡으려는 시도는 두번이나 실패 했어.
-<ce>스프리건이 너무 똑똑했거든.
-<ce>___dungeon_에 있는 둥지로 가야할거야.
-<ce>=2dung_일내로 돌아오면 금화 _gold_닢을
-<ce>준비해 놓고 있겠네.
+<ce>두 번의 매복 시도가 실패했네. 스프리건이 너무 영리한
+<ce>모양이야. ___dungeon_에 있는 놈의 은신처로 직접 가야겠네.
+<ce>=2dung_일 안에 돌아오면 _gold_ 골드를 주겠네.
 
 QuestFail:  [1003]
-<ce>스프리건이 열좀 냈나보지?
-<ce>아주 정말 믿음직 한걸 잘 알겠네
+<ce>스프리건이 땔감이 되었나? 자네는 정말 믿음직하군,
 <ce>%pct.
 
 QuestComplete:  [1004]
-<ce>약속했던 _gold_닢이야.
+<ce>약속한 _gold_ 골드일세. 받게나.
 
 RumorsDuringQuest:  [1005]
-<ce>_woodsman_의 주도로 나무꾼들이
-<ce>스프리건에 대항하기로 했다고 들었습니다.
-<ce>웃긴 이야기죠. 스프리건이 문제를 일으켰단
-<ce>이야기는 예전엔 전혀 못 들어 봤으니까요.
+<ce>_woodsman_의 선동으로 나무꾼들이 스프리건을 공격하게
+<ce>만든다는 소문을 들었네. 웃기는군. 스프리건이 우리에게
+<ce>문제를 일으킨 적은 없었는데 말이야.
 
 RumorsPostfailure:  [1006]
-<ce>벌목꾼이 또 죽었습니다.
-<ce>_woodsman_ 인가 그렇답니다.
-<ce>남은 나무꾼들은 다른데서
-<ce>나무를 하기로 결정했다고 합니다.
+<ce>또 다른 나무꾼이 죽었네. _woodsman_ 개체가라더군. 나머지
+<ce>사람들은 다른 곳에서 벌목하기로 했네.
 
 RumorsPostsuccess:  [1007]
-<ce>요즘엔 그 스프리건 소식을 못들었습니다.
-<ce>근방에서 떠난게 분명합니다.
+<ce>요즘 그 스프리건에 대한 이야기는 없더군. 이 지역을 떠난
+<ce>모양이야.
 
 QuestorPostsuccess:  [1008]
-<ce>스프리건 처리 훌륭했어.
+<ce>스프리건 처리는 잘해주었네.
 
 QuestorPostfailure:  [1009]
-<ce>스프리건은 별로 강한편이 아니야.
-<ce>뭐야? 겁이라도 먹고 숨었던 건가?
+<ce>스프리건이 그렇게 강한가? 무슨 일인가? 겁을 먹고
+<ce>숨어버리기라도 한 건가?
 
 QuestLogEntry:  [1010]
-%qdt,
- 파이터 길드의 ___qgiver_에게서
- 나무꾼들을 괴롭히는 스프리건을
- 죽여달라는 의뢰를 받았다.
- 스프리건은 ___dungeon_에 있으며
- 일처리에 =2dung_일을 받았다.
+%qdt에, ___qgiver_의 전사 길드에서 나무꾼들을
+괴롭히는 스프리건을 처치하라는 의뢰를 받았다. 놈은
+___dungeon_에 숨어있다. 완료까지 =2dung_일이
+주어졌다.
 
 Message:  1011
-<ce>스프리건은 죽었다.
-<ce>이제 나무꾼들은 안전하게
-<ce>벌목을 할 수 있을 것이다.
+<ce>스프리건은 죽었네. 이제 나무꾼들은 안전하게 벌목할 수
+<ce>있겠군.
 
 Message:  1020
-<ce>너는 나를 명분없이 공격하는군, %ra.
-<ce>그래 내가 숲의 파괴자들에게 복수를 했다.
-<ce>그자들이 내 묘목들을 죽였음을 알라.
-<ce>너라면 네 아이들을 죽인 자들을 보고
-<ce>뿌리내린채 방관하겠나?
-<ce>너에게 원한은 없다.
-<ce>나무꾼들이 세심하게 벌목하게 설득해주면
-<ce>그들을 공격하지 않겠다. 이를 받아 들이겠나?
+<ce>이유 없이 나를 공격하는군, %ra. 그래, 내가 숲의
+<ce>살해자들에게 복수를 한 것은 사실이다. 그들은 나의 묘목들을
+<ce>죽였다. 누군가 너의 묘목을 죽인다면 너는 가만히 서서
+<ce>지켜만 볼 텐가? 나는 너와 싸울 생각이 없다. 나무꾼들에게
+<ce>조심해서 벌목하라고 설득한다면, 나는 그들을 평화롭게
+<ce>놓아주겠다. 이 임무를 맡겠나?
 
 Message:  1021
-<ce>제일 큰 주범은 _woodsman_,
-<ce>무참히 나무를 베어넘긴 자다.
-<ce>___woodsman_에 있으니 가보라.
-<ce>%g3의 약속을 받아내라.
-<ce>되돌아 오진 마라.
-<ce>나무꾼들의 행동으로 네 설득 여부를
-<ce>보도록 하겠다.
+<ce>주범은 _woodsman_입니다. 아무 생각 없이 나무를 베어
+<ce>넘기는 자죠. ___woodsman_에 있는 __woodsman_에게 가서
+<ce>%g3의 약속을 받아내십시오. 다시는 저를 찾아오지
+<ce>마십시오. 저는 당신이 성공했는지 실패했는지 나무꾼들이
+<ce>어떻게 일하는지를 보고 알게 될 것입니다.
 
 Message:  1022
-<ce>살덩이를 가진 것들을 믿지 말았어야 했다.
-<ce>이제 네게 베풀 자비 따윈 없다.
+<ce>살점을 가진 생물을 믿는 게 아니었는데. 이제 당신에게
+<ce>자비란 없을 것입니다.
 
 Message:  1023
-<ce>그래 나무 괴물이 거래를 원한다는 겁니까, 에?
-<ce>애들이 다 큰 나무만 치게 말해볼 수 있을 것 같습니다.
-<ce>하지만 그것들이 다시 공격해오면, 묘목이란 묘목은 찾는대로
-<ce>죄다 불태워 버릴겁니다!
-<ce>거래는 받아 들이겠습니다, %pcn.
+<ce>그래서 그 나무 생물이 거래를 하고 싶어 한다고? 흠,
+<ce>%pcn, 그럼 녀석들에게 큰 나무만 베라고 설득해 볼
+<ce>수는 있겠군. 하지만 녀석의 동족이 우리를 다시 공격한다면,
+<ce>눈에 띄는 묘목은 모조리 불태워 버릴 거야! 거래는 성사된
+<ce>걸로 하지.
 
 Message:  1025
-<ce>스프리건과 나무꾼이 싸우지 않게 했다고?
-<ce>아주 똑똑하구만 %pcn.
-<ce>이렇게 머릴 잘 굴리면 꽤 올라갈 수 있을거야.
+<ce>나무꾼들과 스프리건이 싸우지 않게 만들었다고? 정말
+<ce>영리하군, %pcn. 그 재치를 계속 유지한다면 크게 될
+<ce>거야.
 
 Message:  1030
 %qdt:
- 스프리건이 자신이 악당이 아니라는걸
- 나에게 납득시켰다.
- __woodsman_에 있는 _woodsman_,
- ___woodsman_가 스프리건의 나무를 베고 있었다.
- 숲을 벌목할때 더 조심히 하겠다는 
- _woodsman_의 동의를 받아낸다면,
- 이 소란은 피흘일일 없이 정리될 수 있다.
+ 스프리건은 자신이 악당이 아니라고 나를 설득했다. 알고 보니
+ ___woodsman_, __woodsman_에 있는 _woodsman_의 이름으로
+ 불리는 나무꾼이 그곳의 나무를 베어내고 있었다고 한다. 만약
+ 내가 _woodsman_의 마음을 돌려 숲을 더 조심스럽게
+ 벌목하도록 할 수 있다면, 이 모든 일을 유혈 사태 없이
+ 해결할 수 있을 것이다.
 
 Message:  1080
-<ce>기분인데 받아두게,
-<ce>___newdung_ 지도인데
-<ce>잡을만한 괴물이 득실거리고
-<ce>보물도 있을거야, 털만하겠지.
-<ce>즐겨보게.
+<ce>그나저나, 내가 관대한 기분이니 ___newdung_의 명칭으로
+<ce>불리는 구멍으로 가는 지도를 주지. 처치해야 할 괴물들과
+<ce>약탈할 보물들로 가득한 곳이지. 즐기라고.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcn occurs 5 times.
+--              %pct occurs 2 times.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+--           =2dung_ occurs 2 times.
+--       ___dungeon_ occurs 2 times.
+--         ___house_ occurs 2 times.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--            _gold_ occurs 4 times.
+--        _woodsman_ occurs 5 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+Person _woodsman_ face 168 group Resident2 remote
+
+Place _dungeon_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+Clock _end_ 00:00
+
+Foe _monster_ is Spriggan
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_
+	place foe _monster_ at _dungeon_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+	hide npc _woodsman_
+	remove log step 1
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_normalvict_ task:
+    when _qgclicked_ and _S.01_
+	say 1003
+    start task _victory_
+--1003 appears to be a victory statement for kill path
+
+_victory_ task:
+	give pc _gold_ 
+    start timer _end_
+--	end quest 
+--this would cause double quest ending, for double reputation gain
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.01_ and not _S.07_ 
+	clear _qgclicked_ _clearclick_ 
+
+_S.04_ task:
+	injured _monster_
+
+_injtalk_ task:
+    when _S.04_ and not _S.01_
+	prompt 1020 yes _yes_ no _no_ 
+
+_yes_ task:
+	add dialog for person _woodsman_ 
+	log 1030 step 1 
+	say 1021 
+	restrain foe _monster_
+
+_no_ task:
+	say 1022 
+
+_S.07_ task:
+	clicked npc _woodsman_
+
+_notkill_ task:
+	when _S.07_ and _injtalk_ and not _S.01_
+    say 1023 
+	change repute with _woodsman_ by +10 
+
+_S.08_ task:
+	when _qgclicked_ and _notkill_ 
+	say 1025 
+	start task _victory_
+
+variable _map_
+variable _nomap_
+_S.11_ task:
+	when _map_ and _victory_ 
+	reveal _newdung_ readmap
+    say 1080 
+
+_end_ task:
+    end quest

@@ -7,67 +7,151 @@
 -- Edited for Daggerfall Unity by Jay_H
 Messages: 11
 Quest: N0B30Y15
-DisplayName: 도망친 임프
+DisplayName: 떠돌이 임프
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>제 이름은 _questgiver_ 입니다.
-<ce>도망친 임프를 죽일 사람이 필요합니다.
-<ce>관심 있으십니까? 금화 _gold_닢을 드리겠습니다.
+<ce>제 이름은 _questgiver_입니다. 떠돌이 임프를 처치해 줄
+<ce>사람이 필요합니다. 관심 있으신가요? 보수는 _gold_
+<ce>골드입니다.
 
 RefuseQuest:  [1001]
-<ce>안타깝군요.
-                                     <--->
-<ce>아쉽습니다.
-                                     <--->
-<ce>알겠습니다.
-<ce>다른 쪽으로 알아보도록 하죠, %pcn.
+<ce>안됐군요.
+<--->
+<ce>참 안타깝네요.
+<--->
+<ce>알겠습니다. 그럼 다른 곳으로
+<ce>가보시죠, %pcn.
 
 AcceptQuest:  [1002]
-<ce>좋은 마음가짐입니다 %pcn.
-<ce>아직 말씀드리지 않은게 있습니다. 이 임프는
-<ce>고위 마법사의 패밀리어 입니다.
-<ce>실험중인 주문에 맞아 온갖 마법적인
-<ce>능력을 얻은 것 같습니다.
-<ce>__palace_ _palace_에서
-<ce>찾을 수 있을 겁니다, 스스로 장소에 걸맞는다고
-<ce>생각하는 모양이지요. 조심 하십시오, %pcn.
-<ce>=traveltime_일 내로 돌아와 주십시오,
-<ce>그렇지 못하면 당신이 죽었다고 생각하겠습니다.
+<ce>태도가 좋군요, %pcn. 한 가지 말씀 안 드린 게
+<ce>있습니다. 이 임프는 매우 높은 지위의 마법사가 부리던
+<ce>사역마였습니다. 임프가 실험적인 주문에 휘말려 온갖 종류의
+<ce>주문과 같은 능력을 갖게 된 것 같습니다. 그 생물은
+<ce>__palace_의 _palace_에서 찾을 수 있을 겁니다.
+<ce>보아하니 스스로를 지배자로 생각하는 모양이더군요.
+<ce>조심하십시오, %pcn. 만약 =traveltime_일 안에
+<ce>돌아오지 않는다면, 죽은 것으로 간주하겠습니다.
 
 QuestComplete:  [1004]
-<ce>작은 놈이 고약했군요?
-<ce>보수를 받을 자격이 있으십니다.
+<ce>끈질긴 녀석이었죠, 그렇죠? 보수는 확실히 받으실 자격이
+<ce>있습니다.
 
 RumorsDuringQuest:  [1005]
-__palace_ _palace_에서 뭔 일이 난 모양입니다. 뭔가 수상한 일이요.
-<--->
-__palace_ 사람들이 _palace_에서 뭔 일이 나는거 아닌가 궁금해 하고 있습니다.
+_palace_의 __palace_에서 무슨 일이 벌어지고
+있습니다. 아주 이상한 일이죠. <---> __palace_의
+모든 사람이 _palace_에서 무슨 일이 일어나는지
+궁금해하고 있습니다.
 
 RumorsPostfailure:  [1006]
-__palace_ _palace_ 에서 어떤 괴물이 튀어나와 남쪽으로 도망갔다고 합니다.
+어떤 생물 하나가 _palace_의 __palace_에서 튀어나와
+남쪽으로 날아갔습니다.
 
 RumorsPostsuccess:  [1007]
-%god 께 감사 드릴일이지요. 그 %ra 용병이 __palace_에 있던 임프를 잡았다고 합니다.
-<--->
-그 %ra 도움이 없었으면 임프 때문에 __palace_에 피해가 꽤 나왔을겁니다.
+그 임프를 처치하기 위해 __palace_에 그 %ra
+용병이 있었다니 %god께 감사합니다. <---> 그
+%ra의 도움이 없었다면 그 임프가 __palace_에 큰
+피해를 입혔을지도 모릅니다.
 
 QuestorPostsuccess:  [1008]
-아직 기억하고 있지요, %pcf. 그 짜증나던 임프를 잡은 %ra 아닙니까.
+당신을 잊지 않았습니다, %pcf. 그 성가신 임프를
+처치한 %ra 분이시죠.
 
 QuestorPostfailure:  [1009]
-<ce>그 임프가 때문에 __palace_ 쪽이
-<ce>거의 부서질뻔 했습니다.
-<ce>그리고 당신은 도움된게 하나도 없죠.
-<ce>저는 이런걸 아주 나쁘게 생각합니다,
+<ce>__palace_의 파괴를 막지 못한 당신은 돕기 위해 아무것도
+<ce>하지 않았군요. 그건 제게 아주 비열한 짓으로 보입니다,
 <ce>%pcf.
 
 QuestLogEntry:  [1010]
 %qdt:
- ___questgiver_ 메이지 길드의
- _questgiver_에게 폭주 임프의
- 척살 임무를 받았다. 이 짐승은
- __palace_ _palace_에 있다.
- =traveltime_일 안에 성공해야 한다.
- 
+ ___questgiver_ 마법사 길드의 _questgiver_께서 내게 떠돌이
+ 임프를 처치하라는 임무를 맡기셨다. 그 짐승은
+ __palace_의 _palace_에 숨어 있다. 성공하기까지
+ =traveltime_일이 남았다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 1 time.
+--              %pcf occurs 4 times.
+--              %pcn occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 17 times.
+--      =traveltime_ occurs 4 times.
+--    ___questgiver_ occurs 1 time.
+--         __palace_ occurs 8 times.
+--            _gold_ occurs 6 times.
+--          _palace_ occurs 5 times.
+--      _questgiver_ occurs 2 times.
+
+QBN:
+Item _gold_ gold
+
+Person _questgiver_ face 8 group Questor
+
+Place _palace_ remote palace
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+Clock _S.02_ 00:04 00:20
+Clock _Gothryd_ 00:04
+--timer Gothryd given underscores
+Clock _S.08_ 00:04
+Clock _S.09_ 00:04
+--flags removed to make timers precise
+
+Foe _imp_ is Imp
+
+--	Quest start-up:
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pc at _palace_ set _S.01_ 
+	place foe _imp_ at _palace_ 
+	create npc at _palace_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	start timer _S.02_ 
+	cast Spell_Shield spell on _imp_ 
+	cast Troll's_Blood spell on _imp_ 
+	cast Shield spell on _imp_ 
+	cast Shield spell on _imp_ 
+	cast Invisibility spell on _imp_ 
+
+_S.02_ task:
+	start timer _Gothryd_ 
+	cast Shield spell on _imp_ 
+	cast Troll's_Blood spell on _imp_ 
+	cast Spell_Shield spell on _imp_ 
+	cast Invisibility spell on _imp_ 
+
+_S.03_ task:
+	killed 1 _imp_ 
+
+_S.04_ task:
+	clicked npc _questgiver_ 
+
+_clearclick_ task:
+	when _S.04_ and not _S.03_ 
+	clear _S.04_ _clearclick_ 
+
+_S.06_ task:
+	when _S.04_ and _S.03_ 
+	give pc _gold_ 
+	end quest 
+
+_Gothryd_ task:
+	start timer _S.08_ 
+	cast Invisibility spell on _imp_ 
+	cast Spell_Shield spell on _imp_ 
+	cast Troll's_Blood spell on _imp_ 
+
+_S.08_ task:
+	cast Spell_Shield spell on _imp_ 
+	cast Troll's_Blood spell on _imp_ 
+	cast Shield spell on _imp_ 
+	cast Invisibility spell on _imp_ 
+
+variable _S.09_

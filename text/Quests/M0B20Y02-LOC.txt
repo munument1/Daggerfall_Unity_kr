@@ -6,86 +6,144 @@
 -- QuestId: 2
 Messages: 81
 Quest: M0B20Y02
-DisplayName: 자이언트 무리
+DisplayName: 거인 무리
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>그래, 일거리가 하나 있어.
-<ce>아무한테 줄수는 없는 일이지만, 너는 잘 해왔으니까.
-<ce>거인 패거리가 있는데 좀 잡아줘야 겠어.
-<ce>보수는 그냥 평균 수준이지, 금화 _reward_닢.
-<ce>하겠나?
+<ce>그래, 너한테 작은 일거리가 하나 있어. 아무한테나 주는 일은
+<ce>아니지만, 네가 일을 잘한다는 건 알고 있거든. 죽여야 할
+<ce>거인 무리가 있어. 보수는 평범하게 _reward_ 골드 야. 할
+<ce>마음 있나?
 
 RefuseQuest:  [1001]
-<ce>알았수다, 뭐 괜찮아.
-<ce>이런 일 마음에 들어할 줄 알았는데 말이지.
+<ce>좋아, 뭐 상관없어. 네가 좋아할 만한 일이라고 생각했는데
+<ce>말이야.
 
 AcceptQuest:  [1002]
-<ce>잘 생각했어, %pcf. 고객 말로는
-<ce>___mondung_ 라는 곳에 자이언트들이
-<ce>본거지를 차렸다더군. 여섯 놈이 있고,
-<ce>=1stparton_일 안에 다 잡기전엔
-<ce>돈 안내겠다는구만.
-<ce>알아들었지, %pcf? 좋아.
+<ce>좋은 거래야, %pcf. 의뢰인은 거인들이 그들의 요새인
+<ce>___mondung_에 있다고 하더군. 여섯 마리가 있는데, 전부
+<ce>죽이지 않으면 돈을 안 주겠다고 해. =1stparton_일 안에
+<ce>끝내야 해. 알겠나, %pcf? 좋아.
 
 QuestFail:  [1003]
-<ce>알고 있겠지만,
-<ce>그 거인 여섯 숨통을 끊기 전엔
-<ce>이야기 할게 없어.
+<ce>있잖아, 그 여섯 마리 거인들이 숨을 쉬지 않게 되기 전까지는
+<ce>잡담할 시간이 없어.
 
 QuestComplete:  [1004]
-<ce>%oth,
-<ce>거인놈들 정신도 못차리고
-<ce>당했겠구만, 안그런가, %pcf?
-<ce>약속했던 보수야, 금화 _reward_닢.
+<ce>%oth, 그 거인들은 뭐가 덮쳤는지도 몰랐겠지, 그렇지
+<ce>%pcf? 약속대로 여기 _reward_ 골드다.
 
 RumorsDuringQuest:  [1005]
-___mondung_에 거인들이 잔뜩 있다는데, 문제를 일으키고 있지는 않다고 합니다.
-<--->
-듣기로는 %t 께서 ___mondung_의 거인을 싹 처리하라고 하셨답니다.
+___mondung_에 거인 무리가 있지만, 아무도 괴롭히지 않아.
+<---> %t의 거인 소탕 의지에 관한 소문을
+들었어. ___mondung_에 있는 거인들을 완전히 없애고 싶어
+한다더군.
 
 RumorsPostfailure:  [1006]
-뭔가 일이 나서 거인들이 겁을 먹고 도망간 모양빈다. 뭐가 일어난건지.
-<--->
-내가 그 거인들이라도 도망갔을 겁니다. 이 근방은 너무 사람이 많거든요.
+무언가가 그 거인들을 겁주어 쫓아냈어. 무엇이었을지
+궁금하군. <---> 내가 거인 중 하나였다면 나도
+도망쳤을 거야. 너무 시끄럽거든.
 
 RumorsPostsuccess:  [1007]
-___mondung_에 다른 거인 무리가 꼬이는데 얼마나 걸릴지 궁금하군요.
-<--->
-그 거인들 제가 보기엔 불쌍한데요. 아무 말썽도 일으킨 적이 없었거든요.
+새로운 거인 무리가 ___mondung_에 들어오기까지 얼마나
+걸릴지 궁금하군. <---> 그 거인들이 좀 안됐다는
+생각이 들어. 딱히 누구를 괴롭힌 것도 아닌데.
 
 QuestorPostsuccess:  [1008]
-<ce>자이언트들은 거친 놈들이지. 잘했어 %pcf.
-<ce>이걸로 길드에서 입지가 좀 스겠구만.
+<ce>거인은 강하지. 잘 해냈어 %pcf. 길드에서 크게
+<ce>성공할 거야.
 
 QuestorPostfailure:  [1009]
-<ce>자이언트 상대는 너무 힘들었던건가?
-<ce>다른 애송이를 보내는게 낫겠군.
+<ce>거인들은 당신에게 너무 벅찼나 보군요? 길드에서 당신 대신
+<ce>피그미족이나 상대하게 보냈어야 했나 봅니다.
 
 QuestLogEntry:  [1010]
-<ce>자이언트는 모두 죽었다.
+<ce>거인들은 모두 죽었습니다.
 
 Message:  1020
-<ce>여긴 거인 영역이다!
-<ce>네 조그만 영역으로
-<ce>돌아가라 %ra, 얼른 가!
-                                     <--->
-<ce>어젠 %ra 고기를 먹었지.
-<ce>맛있었다.
-                                     <--->
-<ce>부셔주마! 납작하게 부셔주마!
+<ce>여기는 거인의 영토다!
+<ce>네 보잘것없는 땅으로 돌아가라
+<ce>%ra 파리!
+<--->
+<ce>어제 %ra의 식사를 마쳤다.
+<ce>맛이 좋더군.
+<--->
+<ce>박살 내주마! 납작하게 짓눌러주마!
 
 Message:  1030
 %qdt:
- ___questgiver_ 파이터 길드에서
- ___mondung_에 자리를 잡은
- 거인 부족 6마리를 죽여달라는
- 의뢰를 받았다.
- 의뢰를 수행하고 =1stparton_일 이내에
- 보고하면 보수를 받을 수 있다.
+ ___questgiver_의 전사 길드에서 나를 고용해 ___mondung_의
+ 명칭으로 불리는 은신처에 있는 거인 여섯 마리 부족을
+ 처치하라고 했다. 임무를 완수하고 =1stparton_일 안에
+ 돌아와야 보상을 받을 수 있다.
 
 Message:  1080
-<ce>어이 %pct, 뭐좀 잡아볼 생각이면,
-<ce>여기 ___newdung_ 지도 받으라고.
-<ce>여기에 잡을게 많거든.
+<ce>이봐 %pct, 살육을 원한다면 이 지도를 가지고
+<ce>___newdung_ 쪽으로 가봐. 거기엔 널린 게 살육이니까.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 1 time.
+--              %pcf occurs 5 times.
+--              %pct occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--                %t occurs 1 time.
+--       =1stparton_ occurs 3 times.
+--       ___mondung_ occurs 5 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 5 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon13
+Place _newdung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Giant
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	pick one of _map_ _nomap_ _nomap_ _nomap_ 
+	pc at _mondung_ set _S.01_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_S.01_ task:
+	create foe _monster_ every 15 minutes 15 times with 50% success 
+
+_mondead_ task:
+	killed 6 _monster_ 
+	say 1010 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_S.05_ task:
+	injured _monster_ saying 1020 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	clear _qgclicked_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.09_ task:
+	when _map_ and _pcgetsgold_ 
+	reveal _newdung_ readmap
+    say 1080 

@@ -1,144 +1,141 @@
-1.	Besides the bow and arrow, you are best at ___.
-a.	Short-bladed weapons
+1.	활과 화살 외에, 당신이 가장 잘하는 것은 ___입니다.
+a.	단검
 	#4416
 	33 +9
 	28 +3
 	IT 3 3 0
-b.	Hand-to-hand combat
+b.	맨손 격투
 	#4417
 	33 +9
 	30 +3
 	IT 2 1 0
-c.	Axe fighting
+c.	도끼술
 	#4418
 	33 +9
 	31 +3
 	IT 3 15 0
-d.	Blunt weapons
+d.	둔기
 	#4419
 	33 +9
 	32 +3
 	IT 3 13 0
-e.	Longblade
+e.	장검
 	#4205
 	33 +9
 	29 +3
 	IT 3 9 0
 
-2.	What motivates you into a life of
-	adventure?
-a.	Riches
+2.	당신을 모험의 삶으로 이끄는 동기는 무엇입니까?
+a.	부
 	#4560
 	GP +500
-b.	Fame
+b.	명성
 	#4561
 	r4 +10
 	r2 +10
-c.	Knowledge
+c.	지식
 	#4562
 	IT 7 0 0
-d.	Fun
+d.	재미
 	#4563
 	1 +3
 	2 +3
-e.	Helping Others
+e.	타인 돕기
 	#4564
 	r0 +10
 	
-3.	Which of the following skills have you
-	been studying the longest?
-a.	Dodging
+3.	다음 기술 중 당신이 가장 오랫동안 공부한 것은 무엇입니까?
+a.	회피
 	20 +6
-b.	Stealth
+b.	은신
 	16 +6
-c.	Backstabbing
+c.	기습 공격
 	19 +6
-d.	Lockpicking
+d.	자물쇠 따기
 	13 +6
-e.	Pickpocketing
+e.	소매치기
 	15 +6
-f.	Climbing
+f.	등반
 	18 +6
-g.	Critical-Striking
+g.	치명타
 	34 +6
-h.	Running
+h.	달리기
 	21 +6
-i.	Jumping
+i.	도약
 	3 +6
 
-4.	As a child, your nickname was ___.
-a.	Rabbit
+4.	어릴 적 당신의 별명은 ___이었습니다.
+a.	토끼
 	3 +6
-b.	Guppy
+b.	구피
 	17 +6
-c.	Quicksilver
+c.	퀵실버
 	21 +6
-d.	Scrapper
+d.	싸움꾼
 	30 +6
-e.	Monkey
+e.	원숭이
 	18 +6
 
-5.	Of all disagreeable types, you have the
-	most personal hatred for ___.
-a.	Sanctimonious priests
+5.	모든 불쾌한 유형 중에서, 당신이 개인적으로 가장 증오하는 것은 ___입니다.
+a.	독선적인 사제
 	#4212
 	AE M 8 12 +3
-b.	Diabolic wizards
+b.	사악한 마법사
 	#4213
 	AE M 8 2 +4
-c.	Stupid peasants
+c.	멍청한 농부
 	#4214
 	AE M 8 8 +3
-d.	Power-mad robber barons
+d.	권력에 미친 강도 남작
 	#4215
 	AE M 8 17 +4
 
-6.	You have an unusually high affinity with ___.
-a.	the savage Harpies
+6.	당신은 ___ 쪽과 유난히 높은 친화력을 가지고 있습니다.
+a.	사나운 하피
 	#4428
 	5 +6
-b.	the simple Giants
+b.	단순한 거인
 	#4429
 	6 +6
-c.	the glorious Dragons
+c.	영광스러운 드래곤
 	#4430
 	7 +6
-d.	the immodest Nymphs
+d.	뻔뻔한 님프
 	#4431
 	8 +6
-e.	the infernal Daedra
+e.	지옥의 데이드라
 	#4432
 	9 +6
-f.	the bucolic Spriggans
+f.	전원적인 스프리건
 	#4433
 	10 +6
-g.	the primitive Centaurs
+g.	원시적인 켄타우로스
 	#4434
 	11 +6
-h.	the mischevious Imps
+h.	장난꾸러기 임프
 	#4435
 	12 +6
 
-7.	You have the most trouble ___.
-a.	Resisting poisons
+7.	당신은 ___에 가장 큰 어려움을 겪습니다.
+a.	독 저항
 	RP -10
-b.	Staying awake and alert
+b.	깨어 있고 경계하기
 	FT -5
-c.	Getting along with others
+c.	타인과 어울리기 &
 	RR -5
-d.	Avoiding diseases
+d.	질병 피하기
 	RD -5
-e.	Resisting spells
+e.	주문 저항
 	MR -5
-f.	Fighting and parrying
+f.	싸우고 막아내기
 	TH -5
 
-8.	Since childhood, you have saved  ___.
-a.	100 gold pieces
+8.	어릴 적부터 당신은 ___ 항목을 모아왔습니다.
+a.	금화 100닢
 	GP +100
-b.	A book
+b.	책
 	IT 7 0 0
-c.	A dozen arrows
+c.	화살 한 다스
 	IT 3 18 0
 	IT 3 18 0
 	IT 3 18 0
@@ -151,64 +148,62 @@ c.	A dozen arrows
 	IT 3 18 0
 	IT 3 18 0
 	IT 3 18 0
-d.	A cuirass
+d.	흉갑
 	IT 2 0 0
 
-9.	You feel most comfortable ___.
-a.	On stable ground
+9.	당신은 ___할 때 가장 편안함을 느낍니다.
+a.	안정된 땅 위
 	21 +4
-b.	In the water
+b.	물속
 	17 +4
-c.	On a ledge or tree
+c.	바위 턱이나 나무 위
 	18 +4
-d.	Anywhere dark
+d.	어두운 곳 어디든
 	16 +4
-e.	With other people
+e.	다른 사람들과 함께
 	1 +2
 	2 +2
 
-10.	Given 200 gold pieces as a reward,
-	You decided to ___.
-a.	Save it.
+10.	보상으로 금화 200닢을 받았을 때, 당신은 ___하기로 했습니다.
+a.	저축하기.
 	GP +200
-b.	Buy an ebony dagger
+b.	에보니 단검 사기
 	IT 3 0 7
-c.	Buy a rare book
+c.	희귀한 책 사기
 	IT 7 0 0
-d.	Buy a ruby
+d.	루비 사기
 	IT 14 0 0
-e.	Buy a silver staff
+e.	은 지팡이 사기
 	IT 3 2 2
 
-11.	You spend any free time you have
-	training with ___.
-a.	Short-bladed weapons
+11.	당신은 여가 시간을 ___ 훈련에 보냅니다.
+a.	단검
 	28 +6
-b.	Hand-to-hand combat
+b.	맨손 격투
 	30 +6
-c.	Axe fighting
+c.	도끼술
 	31 +6
-d.	Blunt weapons
+d.	둔기
 	32 +6
-e.	Archery
+e.	궁술
 	33 +6
-f.	Longblade
+f.	장검
 	29 +6
 
-12.	You are intimate friends with ___.
-a.	a Monk
+12.	당신은 ___ 쪽과 절친한 친구입니다.
+a.	수도사
 	#4212
 	AF O 8 12 +1
-b.	a Mage
+b.	마법사
 	#4213
 	AF O 8 2 +1
-c.	a Rogue
+c.	도적
 	#4214
 	AF O 8 8 +1
-d.	a Warrior
+d.	전사
 	#4215
 	AF O 8 17 +1
-e.	an Assassin
+e.	암살자
 	#4216
 	AF O 8 11 +1
 

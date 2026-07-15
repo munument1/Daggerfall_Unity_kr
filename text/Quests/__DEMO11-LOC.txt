@@ -1,0 +1,156 @@
+Quest: __DEMO11
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>저는 _qgiver_입니다.
+<ce>원칙적으로 길드원만이 보수를 받고 일합니다. 하지만,
+<ce>꼭 처리해야 할 작은 임무가 하나 있습니다.
+<ce>만약 보수 없이 이 일을 해주신다면,
+<ce>길드에 당신을 좋게 추천해 드리겠습니다. 하시겠습니까?
+<--->
+<ce>저는 _qgiver_입니다. 길드 일은
+<ce>길드원만 할 수 있습니다. 하지만,
+<ce>다른 누구도 하려 하지 않는 작은 일이 하나 있습니다. 우리
+<ce>길드의
+<ce>괴짜 마법사 중 한 명이 _ingredient_ 확보를
+<ce>고집하는데, 마침 재고가 다 떨어졌군요.
+<ce>만약 저를 위해 좀 구해다 주신다면,
+<ce>정말 감사하겠습니다.
+<ce>길드 내에서의 당신의 입지가
+<ce>분명히 좋아질 것입니다.
+
+RefuseQuest:  [1001]
+<ce>그럴 줄 알았습니다. 이 대화는 이제 지겹군요, %pcn.
+<ce>안녕히 가십시오.
+
+AcceptQuest:  [1002]
+<ce>훌륭한 태도입니다, %pcf. _ingredient_ 확보가 좀
+<ce>필요합니다. 현재 알고 있는 유일한 표본은 ___dungeon_에
+<ce>있습니다. =traveltime_일 내로 가져오십시오.
+
+QuestComplete:  [1004]
+<ce>더 좋은 표본을 본 적이 있습니다. 돌아오는 내내 깔고 앉아
+<ce>있었습니까? 어쨌든, 이걸로 충분하겠군요. 길드 홀에서
+<ce>당신에 대해 좋게 이야기해 두겠습니다.
+
+RumorsDuringQuest:  [1005]
+길드에 있는 그 미친 마법사가 ___dungeon_에 최고의
+_ingredient_ 표본이 있다고 고집하더군요.
+
+RumorsPostfailure:  [1006]
+얼마 전에 종기가 났었는데... 다행히 나았습니다.
+<---> 방금 날씨에 대해 세 시간 동안 대화를
+나눴습니다. <---> 날씨는 이맘때 치고는 평범합니다.
+<---> 올해는 %cn의 날씨가 이맘때 치고는
+조금 쌀쌀한 것 같군요. <---> 작년 이맘때보다 오늘이
+훨씬 따뜻하네요. <---> 제 큰이모가 일리악 만
+건너편에 있는 전문의를 만나러 가십니다. <---> 이
+동네는 어두워지는 시간이 항상 신기하단 말이죠.
+<---> 이 근처에 전쟁 기념비를 세워야 합니다.
+<---> 요즘 애들은 마법을 쓴다니. %oth, 잘
+모르겠군요. <---> 어젯밤에 아주 이상한 꿈을
+꿨습니다. <---> 재미있는 농담을 하나 들었습니다.
+%jok <---> %jok 사실, 농담입니다.
+<---> %jok 그게 무슨 뜻인지 설명해
+주시겠습니까? <---> %reg의 법 체계는 장점도
+있고 단점도 있습니다.
+
+RumorsPostsuccess:  [1007]
+얼마 전에 종기가 났었는데... 다행히 나았습니다.
+<---> 방금 날씨에 대해 세 시간 동안 대화를
+나눴습니다. <---> 날씨는 이맘때 치고는 평범합니다.
+<---> 올해는 %cn의 날씨가 이맘때 치고는
+조금 쌀쌀한 것 같군요. <---> 작년 이맘때보다 오늘이
+훨씬 따뜻하네요. <---> 제 큰이모가 일리악 만
+건너편에 있는 전문의를 만나러 가십니다. <---> 이
+동네는 어두워지는 시간이 항상 신기하단 말이죠.
+<---> 이 근처에 전쟁 기념비를 세워야 합니다.
+<---> 요즘 애들은 마법을 쓴다니. %oth, 잘
+모르겠군요. <---> 어젯밤에 아주 이상한 꿈을
+꿨습니다. <---> 재미있는 농담을 하나 들었습니다.
+%jok <---> %jok 사실, 농담입니다.
+<---> %jok 그게 무슨 뜻인지 설명해
+주시겠습니까? <---> %reg의 법 체계는 장점도
+있고 단점도 있습니다.
+
+QuestorPostsuccess:  [1008]
+당신을 잊지 않았습니다, %pcf. _ingredient_ 물품을
+가져온 %ra(이)군요.
+
+QuestorPostfailure:  [1009]
+<ce>제가 부탁한 일은 그리 어려운 일이 아니었습니다,
+<ce>%pcf. 그저 _ingredient_의 확보만 하면 됐죠. 그런데
+<ce>그것조차 못 하시다니. 왜 제가 당신에게 시간을 낭비해야
+<ce>하는 거죠?
+
+QuestLogEntry:  [1010]
+%qdt, 저는 ___qgiver_의 마법사 길드 소속
+_qgiver_에게서 ___dungeon_에 숨겨져 있다는
+_ingredient_ 표본을 찾아달라는 의뢰를 받았습니다.
+%g2에게 가져다주기까지 =traveltime_일이
+주어졌습니다.
+
+Message:  1040
+<ce>_qgiver_ 님이 찾아달라고 하신 _ingredient_인
+<ce>모양이군요.
+
+Message:  1080
+<ce>마법사 길드에서 드리는 특별한 감사의 표시로, ___newdung_
+<ce>위치가 표시된 지도를 드리겠습니다. 당신 같은 사람들은 이런
+<ce>것에 사족을 못 쓴다고 들었습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 2 times.
+--               %g2 occurs 2 times.
+--              %jok occurs 6 times.
+--              %oth occurs 10 times.
+--              %pcf occurs 3 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 27 times.
+--              %reg occurs 2 times.
+--      =traveltime_ occurs 2 times.
+--       ___dungeon_ occurs 3 times.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--      _ingredient_ occurs 61 times.
+--          _qgiver_ occurs 4 times.
+
+QBN:
+Item _ingredient_ organs
+
+Person _qgiver_ group Questor male
+
+Place _dungeon_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	place item _ingredient_ at _dungeon_ 
+	start timer _traveltime_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ 
+
+_traveltime_ task:
+	end quest 
+
+_giveingredient_ task:
+	toting _ingredient_ and _qgiver_ clicked 
+	give pc nothing 
+	end quest 
+
+_dummymage_ task:
+	clicked item _ingredient_ 
+	say 1040 
+
+variable _map_
+variable _nomap_
+_S.05_ task:
+	when _map_ and _giveingredient_ 
+	reveal _newdung_ saying 1080 

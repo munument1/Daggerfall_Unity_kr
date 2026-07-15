@@ -1,0 +1,146 @@
+-- Quest: C:\QUESTS\WORKING\B0B60Y12.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: knight
+-- Repute: 60
+-- QuestId: 12
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: B0B60Y12
+DisplayName: 영원한 안식
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>정말 좋은 일거리가 하나 있습니다.
+<ce>_nobleman_ 님이 방금
+<ce>고대의 가문 저주에 관한 글을
+<ce>읽으신 모양입니다. 지금 %g 님은 %g3의
+<ce>정신이
+<ce>나갈 정도로 겁에 질려 있습니다. %g 님은 누군가가
+<ce>%g3의 고조할머니를 처치해주길 원하는데,
+<ce>%g 님은 그분이
+<ce>언데드 괴물이 되어 세상을 떠돌고 있다고
+<ce>두려워하고 있습니다. 관심 있으신가요, %pct 님?
+<--->
+<ce>이 일은 단순히 무덤을 뒤지는 것 이상의
+<ce>일이 될 수도 있겠지만, _nobleman_ 님께서 저희에게
+<ce>%g3의 고조할머니가 잠든 곳을 조사해달라고
+<ce>부탁하셨습니다. 보아하니 %g 님께서 %g
+<ce>님이
+<ce>되살아나 =2dung_일 안에 가족 묘지에서
+<ce>탈출할 것이라는 꿈을 꾸신 모양입니다.
+<ce>어쩌면 전부 헛소리일지도 모르지만,
+<ce>아닐 수도 있겠지요. 조사하시겠습니까,
+<ce>%pct 님?
+
+RefuseQuest:  [1001]
+<ce>이 일을 맡을 만한 기사를 만나게 되면, 저에게 보내주십시오.
+
+AcceptQuest:  [1002]
+<ce>_nobleman_의 고대 조상은 도굴을 방지하기 위해 설계된
+<ce>___dungeon_의 명칭으로 불리는 이름의 묘지에 안치되어
+<ce>있습니다. 그녀가 언데드라는 증거는 없습니다. 아마도 그냥
+<ce>시체일 가능성이 높습니다. 그렇다면 적절한 장례식에서
+<ce>시신을 화장하십시오. =2dung_일 이내에 돌아오십시오.
+<ce>그렇지 않으면 _nobleman_ 말대로 저주가 발동될 것입니다.
+
+QuestComplete:  [1004]
+<ce>세상에, 이런 일이. 저는 _nobleman_의 조상이 정말로 걸어
+<ce>다니는 죽은 자일 줄은 몰랐습니다! 당신은 지역 주민들을 큰
+<ce>고통과 불행에서 구해주었습니다.
+
+RumorsDuringQuest:  [1005]
+_nobleman_님은 미신을 믿는 바보지만, %g3의
+고조할머니는 이상한 분이셨죠. <--->
+_nobleman_님은 이상한 가문 출신입니다. 아마
+%g3의 고조할머니는 좀비일지도 모릅니다.
+
+RumorsPostfailure:  [1006]
+%kno님께서 _nobleman_의 이야기를 조사해 보고는,
+아마도 거짓이라고 결론 내린 모양입니다.
+
+RumorsPostsuccess:  [1007]
+_nobleman_의 고조할머니가 결국 언데드였다니! 그런 일이
+다 있군요?
+
+QuestorPostsuccess:  [1008]
+우리가 알지도 못했던 언데드의 위협으로부터
+%reg님을 구해주셨는데, 제가 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+사실, _nobleman_의 이야기는 거짓이 아니었다는 걸 알고
+있습니다, 이 게으름뱅이 같으니! <---> 저는
+___dungeon_에 진짜 괴물이 있었다는 걸 알고 있습니다, 이
+겁쟁이 같으니! <---> 당신은 _nobleman_ 임무를
+실패함으로써 %kno님을 실망시켰습니다,
+%pcf.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 ==qgiver_의 _qgiver_께서 제게
+ ___dungeon_에 있는 _nobleman_의 고대 조상 시신을
+ 화장하는 임무를 맡겼습니다. 언데드 괴물일 가능성도 있으니,
+ 성불시켜야 할 것입니다. 퀘스트를 완료하기까지 =2dung_
+ 일이 남았습니다.
+
+Message:  1011
+<ce>_monster_님은 안식을 찾았습니다. _nobleman_님은 이제
+<ce>그 저주에 대해 걱정하실 필요 없습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 5 times.
+--               %g3 occurs 5 times.
+--              %kno occurs 3 times.
+--              %pcf occurs 18 times.
+--              %pct occurs 3 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--           =2dung_ occurs 3 times.
+--         ==qgiver_ occurs 1 time.
+--       ___dungeon_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--         _monster_ occurs 1 time.
+--        _nobleman_ occurs 22 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+Person _nobleman_ group Resident1 remote
+Person _local_ face 1 group Resident2 local
+
+Place _dungeon_ remote dungeon0
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Mummy
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	place foe _monster_ at _dungeon_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _S.02_ and _S.01_ 
+	give pc nothing 
+	change repute with _local_ by +4 
+	change repute with _nobleman_ by +10 
+	end quest 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 

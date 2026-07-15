@@ -4,234 +4,234 @@ schema: *key,text
 
 - Tabs and section titles
 
-gamePlay,                                           게임플레이
-interface,                                          인터페이스
-enhancements,                                       개선점
-video,                                              비디오
-accessibility,                                      접근성
+gamePlay,게임 플레이
+interface,인터페이스
+enhancements,향상된 기능
+video,비디오
+accessibility,접근성
 
-game,                                               게임
-controls,                                           컨트롤
-audio,                                              오디오
-spells,                                             마법주문
-tooltips,                                           툴팁
-hud,                                                HUD
-gui,                                                GUI
-light,                                              조명
-basic,                                              기본
-advanced,                                           고급
-automap,                                            오토맵
-dungeonmicromap,                                    던전 마이크로-맵
+game,게임
+controls,컨트롤
+audio,오디오
+spells,주문
+tooltips,툴팁
+hud,HUD
+gui,GUI
+light,조명
+basic,기본
+advanced,고급
+automap,자동 지도
+dungeonmicromap,던전 미니맵
 
 - Settings and tooltip descriptions
 
-startInDungeon,                                     던전 안에서 시작
-startInDungeonInfo,                                 초기 던전 안에서 새 게임을 시작합니다
-smallerDungeons,                                    더 작은 던전
-smallerDungeonsInfo,                                무작위 생성 던전이 하나의 내부 블럭에 4개의 경계 블럭만을 가지게 됩니다
-randomDungeonTextures,                              던전 텍스쳐
-randomDungeonTexturesInfo,                          던전 텍스쳐 테이블 생성에 사용할 랜덤 시드를 선택합니다
-cameraRecoilStrength,                               카메라 반동 강도
-cameraRecoilStrengthInfo,                           피해를 입을때 화면 흔들림의 강도를 결정합니다. 피해량에 따라 증가합니다
-mouseSensitivity,                                   마우스 민감도
-mouseSensitivityInfo,                               마우스 시야 민감도
-weaponSensitivity,                                  무기 민감도
-weaponSensitivityInfo,                              마우스 움직임으로 무기 공격을 할때의 민감도
-movementAcceleration,                               이동시 가속
-movementAccelerationInfo,                           이동시에 약간의 가속/감속을 추가합니다
-weaponAttackThreshold,                              무기공격 임계치
-weaponAttackThresholdInfo,                          무기로 공격하기 위한 최소 마우스 움직을 결정합니다
-soundFont,                                          사운드폰트
-soundFontInfo,                                      사운드폰트를 활성화합니다
-alternateMusic,                                     대체 음악
-alternateMusicInfo,                                 OPL3-최적화된 버전의 사운드트랙을 사용합니다\r(MIDI 기종 차이에 따른 약간의 음색 변화)
-soundVolume,                                        사운드 볼륨
-soundVolumeInfo,                                    사운드 볼륨
-musicVolume,                                        음악 볼륨
-musicVolumeInfo,                                    음악 볼륨
-spellLighting,                                      주문 광원
-spellLightingInfo,                                  마법 사용시 광원을 활성화
-spellShadows,                                       주문 그림자
-spellShadowsInfo,                                   마법 사용시 그림자를 활성화
-instantRepairs,                                     즉각적인 수리 서비스
-instantRepairsInfo,                                 장비 수리시의 대기시간을 제거하고 즉시 수리함
-bowDrawback,                                        활 - 당기기 놓기
-bowDrawbackInfo,                                    오른쪽 마우스 클릭시 활을 당기고 클릭을 놓으면 사격
-toggleSneak,                                        은신 토글
-toggleSneakInfo,                                    키를 누를때 마다 은신/비은신 상태 전환
+startInDungeon,던전에서 시작
+startInDungeonInfo,첫 번째 던전 내부에서 새 게임 시작
+smallerDungeons,더 작은 던전
+smallerDungeonsInfo,무작위 던전은 하나의 내부 블록과 4개의 경계 블록으로만 구성됩니다.
+randomDungeonTextures,던전 텍스처
+randomDungeonTexturesInfo,무작위 시드에서 던전 텍스처 테이블 생성
+cameraRecoilStrength,카메라 반동 강도
+cameraRecoilStrengthInfo,플레이어가 피해를 입었을 때 화면 반동 강도. 피해량에 따라 조정됩니다.
+mouseSensitivity,마우스 감도
+mouseSensitivityInfo,마우스 시점 감도.
+weaponSensitivity,무기 감도
+weaponSensitivityInfo,마우스 움직임에 대한 무기 휘두르기 감도
+movementAcceleration,이동 가속
+movementAccelerationInfo,이동 중 약간의 가속/감속 추가
+weaponAttackThreshold,무기 공격 임계값
+weaponAttackThresholdInfo,공격을 위한 최소 마우스 제스처 이동 거리
+soundFont,사운드폰트
+soundFontInfo,활성 사운드폰트
+alternateMusic,대체 음악
+alternateMusicInfo,OPL3 최적화 사운드트랙 버전 사용.
+soundVolume,효과음 볼륨
+soundVolumeInfo,효과음 볼륨.
+musicVolume,음악 볼륨
+musicVolumeInfo,음악 볼륨.
+spellLighting,주문 조명
+spellLightingInfo,주문 조명 활성화
+spellShadows,주문 그림자
+spellShadowsInfo,주문 그림자 활성화
+instantRepairs,즉시 수리 서비스
+instantRepairsInfo,수리 대기 시간을 비활성화하고 즉시 수리
+bowDrawback,활 - 당기기 및 발사
+bowDrawbackInfo,마우스 오른쪽 버튼을 누르는 동안 활 당기기 활성화; 떼면 발사
+toggleSneak,은신 토글
+toggleSneakInfo,은신 동작을 길게 누르는 대신 토글 방식으로 변경
 
-toolTips,                                           툴팁
-toolTipsInfo,                                       아이템 정보를 띄웁니다
-toolTipDelayInSeconds,                              딜레이
-toolTipDelayInSecondsInfo,                          툴팁 표시까지 대기시간(초)
-toolTipTextColor,                                   문자 색
-toolTipTextColorInfo,                               툴팁 문자의 색을 변경합니다
-toolTipBackgroundColor,                             배경 색
-toolTipBackgroundColorInfo,                         툴팁 배경의 색을 변경합니다
-crosshair,                                          크로스헤어
-crosshairInfo,                                      HUD의 크로스헤어 활성화
-vitalsIndicators,                                   건강상태 증감표시
-vitalsIndicatorsInfo,                               화면에 표시되는 건강상태의 증감 지시를 표시함
-interactionModeIcon,                                상호작용 모드 아이콘
-interactionModeIconInfo,                            상호작용 모드 아이콘의 모양 선택
-arrowCounter,                                       화살 개수표시
-arrowCounterInfo,                                   활을 사용할때 HUD에 남은 화살 개수를 표시
-showQuestJournalClocksAsCountdown,                  저널 퀘스트 잔여기간 표시
-showQuestJournalClocksAsCountdownInfo,              시작 시간을 표시하는 대신 남은 시간을 표기
-inventoryInfoPanel,                                 인벤토리 정보 패널
-inventoryInfoPanelInfo,                             인벤토리 정보 패널
-enhancedItemLists,                                  향상된 아이템 리스트
-enhancedItemListsInfo,                              인벤토리 창 표시 개수를 16개로 늘림
-enableModernConversationStyleInTalkWindow,          대화창 현대적 스타일
-enableModernConversationStyleInTalkWindowInfo,      대화창을 발전된 형식으로 변경
-iconsPositioningScheme,                             버프 아이콘 배치방식
-iconsPositioningSchemeInfo,                         화면에 표시되는 버프 혹은 디버프 아이콘의 크기 및 위치
-helmAndShieldMaterialDisplay,                       투구와 방패 재질 표시
-helmAndShieldMaterialDisplayInfo,                   투구와 방패의 재질을 정보 팝업과 툴팁으로 표시
-geographicBackgrounds,                              지리적 배경표시
-geographicBackgroundsInfo,                          캐릭터 페이퍼돌 배경을 현재 지리적 위치에 따라 변경
-dungeonExitWagonPrompt,                             던전 마차 접근 메뉴표시
-dungeonExitWagonPromptInfo,                         던전 출구 사용시 마차 접근 메뉴 표시(출구 5m 이내에서 마차 항시 사용가능)
-travelMapLocationsOutline,                          지역 지도 외곽선 표시
-travelMapLocationsOutlineInfo,                      지역 지도에 위치 표시에 외곽선을 표시해 가시성을 높입니다
-guildQuestListBox,                                  길드 퀘스트 플레이어 선택
-guildQuestListBoxInfo,                              현재 접근 가능한 길드 퀘스트를 리스트 형식의 박스창으로 표시합니다
-bowLeftHandWithSwitching,                           활 장비시 왼손만 가능
-bowLeftHandWithSwitchingInfo,                       활을 왼손으로만 장비 가능하게 해서 한손 무기 변경을 가능하게 함\r무기 변경에 약간의 대기시간
-loiterLimitInHours,                                 최대 대기시간
-loiterLimitInHoursInfo,                             기본 대기 시간 제한을 변경
-automapTempleColor,                                 길드홀 색상
-automapTempleColorInfo,                             야외 오토맵의 길드홀/사원의 색상
-automapShopColor,                                   상점 색상
-automapShopColorInfo,                               야외 오토맵의 상점 색상
-automapTavernColor,                                 주점 색상
-automapTavernColorInfo,                             야외 오토맵의 주점 색상
-automapHouseColor,                                  거주지 색상
-automapHouseColorInfo,                              야외 오토맵의 거주지 및 기타 색상
-dungeonMicMapQoL,                                   마이크로-맵 개선점 토글
-dungeonMicMapQoLInfo,                               끄기 = 기본 마이크로-맵 색상 | 켜기 = 마이크로-맵 개선 색상
-dunMicMapInnerColor,                                내부 블럭 색상
-dunMicMapInnerColorInfo,                            개선점 옵션 사용시 마이크로맵에 던전 내부 블록 색상
-dunMicMapBorderColor,                               외각 블럭 색상
-dunMicMapBorderColorInfo,                           개선점 옵션 사용시 마이크로맵에 던전 외각 블록 색상
+toolTips,툴팁
+toolTipsInfo,GUI 항목에 대한 정보 표시
+toolTipDelayInSeconds,지연 시간
+toolTipDelayInSecondsInfo,초 단위 툴팁 지연 시간
+toolTipTextColor,텍스트 색상
+toolTipTextColorInfo,툴팁 텍스트의 폰트 색상
+toolTipBackgroundColor,배경 색상
+toolTipBackgroundColorInfo,툴팁 배경 색상
+crosshair,조준선
+crosshairInfo,HUD에 조준선 활성화
+vitalsIndicators,상태 표시기
+vitalsIndicatorsInfo,상태 변화를 표시하는 상태 바의 표시기 활성화
+interactionModeIcon,상호작용 모드 아이콘
+interactionModeIconInfo,상호작용 모드용 컨텍스트 아이콘 스타일
+arrowCounter,화살 카운터
+arrowCounterInfo,활 사용 시 HUD에 화살 카운터 활성화
+showQuestJournalClocksAsCountdown,퀘스트 일지 카운트다운
+showQuestJournalClocksAsCountdownInfo,시작 시간 대신 남은 시간 표시
+inventoryInfoPanel,인벤토리 정보 패널
+inventoryInfoPanelInfo,인벤토리 정보 패널
+enhancedItemLists,향상된 아이템 목록
+enhancedItemListsInfo,인벤토리 16x 아이템 격자
+enableModernConversationStyleInTalkWindow,대화창 현대적 스타일
+enableModernConversationStyleInTalkWindowInfo,대화창 내 현대적 대화 스타일
+iconsPositioningScheme,버프 아이콘 레이아웃
+iconsPositioningSchemeInfo,화면상 (디)버프 아이콘의 크기 및 위치
+helmAndShieldMaterialDisplay,투구 및 방패 재질 표시
+helmAndShieldMaterialDisplayInfo,정보 팝업 및 툴팁에 투구와 방패의 재질 표시
+geographicBackgrounds,지리적 배경
+geographicBackgroundsInfo,지리적 위치에 기반한 상황별 캐릭터 배경
+dungeonExitWagonPrompt,던전 마차 접근 알림
+dungeonExitWagonPromptInfo,던전 출구에서 마차 접근 알림. (마차는 출구 5m 이내에서 항상 접근 가능)
+travelMapLocationsOutline,지역 지도 위치 외곽선
+travelMapLocationsOutlineInfo,가시성 향상을 위해 지역 지도상의 위치에 외곽선 그리기
+guildQuestListBox,길드 퀘스트 플레이어 선택
+guildQuestListBoxInfo,수행 가능한 길드 퀘스트를 목록 상자에 표시
+bowLeftHandWithSwitching,활은 왼손에만 장착
+bowLeftHandWithSwitchingInfo,활을 왼손에 장착하고 한손 무기 교체 허용 - 교체 시 짧은 지연 시간 발생
+loiterLimitInHours,최대 배회 시간(시간 단위)
+loiterLimitInHoursInfo,기본 배회 시간 제한을 시간 단위로 변경
+automapTempleColor,길드홀 색상
+automapTempleColorInfo,외부 자동 지도상의 사원 및 길드홀 색상
+automapShopColor,상점 색상
+automapShopColorInfo,외부 자동 지도상의 상점 색상
+automapTavernColor,여관 색상
+automapTavernColorInfo,외부 자동 지도상의 여관 색상
+automapHouseColor,주거지 색상
+automapHouseColorInfo,외부 자동 지도상의 주거지 및 기타 건물 색상
+dungeonMicMapQoL,미니맵 편의 기능 전환
+dungeonMicMapQoLInfo,거짓 = 기본 미니맵 색상 사용 | 참 = 미니맵 편의 기능 색상 사용
+dunMicMapInnerColor,내부 구역 색상
+dunMicMapInnerColorInfo,편의 기능 옵션이 참일 때 미니맵상 던전 내부 구역의 색상
+dunMicMapBorderColor,경계 구역 색상
+dunMicMapBorderColorInfo,편의 기능 옵션이 참일 때 미니맵상 던전 경계 구역의 색상
 
-modSystem,                                          모드 시스템
-modSystemInfo,                                      모드 지원 활성화.
-assetInjection,                                     에셋 인젝션
-assetInjectionInfo,                                 활성화한 모드와 개별 파일로 부터 임포트한 에셋 오버라이드.
-compressModdedTextures,                             모드 텍스쳐 압축
-compressModdedTexturesInfo,                         모드 텍스쳐를 압축 포맷으로 임포트해 그래픽 메모리 사용량을 줄임.
-gameConsole,                                        게임 콘솔
-gameConsoleInfo,                                    콘솔 명령 입력을 활성화
-nearDeathWarning,                                   빈사상태 경고
-nearDeathWarningInfo,                               빈사 상태시에 깜빡임/박동 화면 효과로 경고를 표시합니다.
-alternateRandomEnemySelection,                      대체 무작위 적 배치
-alternateRandomEnemySelectionInfo,                  던전의 무작위 적 종류를 더 다양하게 만듭니다.
-advancedClimbing,                                   고급 등반 시스템
-advancedClimbingInfo,                               벽등반시 모든 방향 & 등반시 점프와 점프해서 벽잡기 가능.
-dungeonAmbientLightScale,                           던전 배경 조명
-dungeonAmbientLightScaleInfo,                       던전 안의 기본 배경 조명 밝기
-nightAmbientLightScale,                             야간 배경 조명
-nightAmbientLightScaleInfo,                         실내와 야외 야간시 기본 배경 조명 밝기
-playerTorchLightScale,                              플레이어 횃불 조명
-playerTorchLightScaleInfo,                          플레이어 개인 조명의 밝기
-playerTorchFromItems,                               아이템 기반 플레이 조명
-playerTorchFromItemsInfo,                           횃불/촛불/랜턴 같은 인게임 물품으로 조명을 켤 수 있게 합니다.
-combatVoices,                                       전투시 음성
-combatVoicesInfo,                                   플레이어와 엔피시가 공격과 피격시 소리를 내게 됩니다.
-enemyInfighting,                                    적 내부교전
-enemyInfightingInfo,                                AI 캐릭터가 아군 관계가 아닐시 서로 싸우게 됩니다
-enhancedCombatAI,                                   고급 전투 AI
-enhancedCombatAIInfo,                               전투 AI에 오리지널 대거폴에 없던 여러가지 개선점을 적용합니다
-allowMagicRepairs,                                  마법 물품 수리
-allowMagicRepairsInfo,                              인챈트된 일상물품을 수리 가능하게 합니다
+modSystem,모드 시스템
+modSystemInfo,모드 지원 활성화.
+assetInjection,에셋 주입
+assetInjectionInfo,활성화된 모드 및 개별 파일에서 에셋 재정의 가져오기.
+compressModdedTextures,모드 텍스처 압축
+compressModdedTexturesInfo,그래픽 메모리를 적게 사용하는 압축 형식으로 텍스처 가져오기.
+gameConsole,게임 콘솔
+gameConsoleInfo,콘솔 명령어 입력 활성화
+nearDeathWarning,임사 상태 경고
+nearDeathWarningInfo,임사 상태일 때 화면 깜빡임/맥동 효과로 경고 표시.
+alternateRandomEnemySelection,대체 무작위 적 선택
+alternateRandomEnemySelectionInfo,던전 내 무작위 적 생성 시 변동성 증가.
+advancedClimbing,고급 등반 시스템
+advancedClimbingInfo,모든 방향으로 벽을 등반하고 벽에서 뛰어내리거나 다시 잡기.
+dungeonAmbientLightScale,던전 주변 광원
+dungeonAmbientLightScaleInfo,던전 내부 주변 광원의 밝기
+nightAmbientLightScale,야간 주변 광원
+nightAmbientLightScaleInfo,실내 및 실외 야간 주변 광원의 밝기
+playerTorchLightScale,플레이어 횃불 광원
+playerTorchLightScaleInfo,플레이어 개인 광원의 밝기
+playerTorchFromItems,아이템 기반 플레이어 횃불
+playerTorchFromItemsInfo,게임 내 광원에 의해 플레이어 횃불 광원 활성화
+combatVoices,전투 발성
+combatVoicesInfo,플레이어와 NPC가 공격하거나 타격받을 때 발성
+enemyInfighting,적 간의 내분
+enemyInfightingInfo,AI 캐릭터가 동맹이 아닌 다른 캐릭터와 전투
+enhancedCombatAI,향상된 전투 AI
+enhancedCombatAIInfo,원작 대거폴에 없던 다양한 전투 AI 향상 기능 활성화
+allowMagicRepairs,마법 아이템 수리 허용
+allowMagicRepairsInfo,마법 아이템을 일반 아이템처럼 수리할 수 있도록 허용
 
-resolution,                                         해상도
-resolutionInfo,                                     화면 해상도
-fullscreen,                                         전체화면
-fullscreenInfo,                                     전체화면 활성화
-exclusiveFullscreen,                                독점 전체화면
-exclusiveFullscreenInfo,                            독점 전체화면 활성화
-runInBackground,                                    백그라운드 실행
-runInBackgroundInfo,                                게임이 활성화 상태가 아니더라도 계속 실행
-qualityLevel,                                       품질 수준
-qualityLevelInfo,                                   일반 그래픽 수준
-mainFilterMode,                                     메인 필터
-mainFilterModeInfo,                                 게임 택스쳐 필터 선택
-guiFilterMode,                                      GUI 필터
-guiFilterModeInfo,                                  HUD 이미지 필터 선택
-videoFilterMode,                                    비디오 필터
-videoFilterModeInfo,                                무비 필터 선택
-antiAliasingMethod,                                 안티-에일리어싱 방법
-antiAliasingMethodInfo,                             안티-에일리어싱 방식 선택
-ambientOcclusionIntensity,                          앰비언트 오큘루젼 강도
-ambientOcclusionIntensityInfo,                      AO 후처리 효과 강도 선택
-fovSlider,                                          시야각
-fovSliderInfo,                                      한번에 볼 수 있는 시야의 각도 변경
-terrainDistance,                                    지형 표시거리
-terrainDistanceInfo,                                플레이어 위치에서 볼 수 있는 최대 지형 거리 변경
-shadowResolutionMode,                               그림자 해상도
-shadowResolutionModeInfo,                           그림자 품질
-dungeonLightShadows,                                던전 조명 그림자
-dungeonLightShadowsInfo,                            던전 조명에 표시되는 그림자
-interiorLightShadows,                               실내 조명 그림자
-interiorLightShadowsInfo,                           실내 조명에 표시되는 그림자
-exteriorLightShadows,                               야외 조명 그림자
-exteriorLightShadowsInfo,                           야외 조명에 표시되는 그림자
-ambientLitInteriors,                                실내 조명 단순화
-ambientLitInteriorsInfo,                            덜 복잡한 조명처리 방식을 사용해 실내 광원 성능을 높입니다.
+resolution,해상도
+resolutionInfo,화면 해상도
+fullscreen,전체 화면
+fullscreenInfo,전체 화면 활성화
+exclusiveFullscreen,독점 전체 화면
+exclusiveFullscreenInfo,독점 전체 화면 활성화
+runInBackground,백그라운드 실행
+runInBackgroundInfo,게임이 포커스를 잃었을 때 계속 실행할지 여부
+qualityLevel,품질 수준
+qualityLevelInfo,일반 그래픽 품질
+mainFilterMode,메인 필터
+mainFilterModeInfo,게임 텍스처용 필터
+guiFilterMode,GUI 필터
+guiFilterModeInfo,HUD 이미지용 필터
+videoFilterMode,비디오 필터
+videoFilterModeInfo,동영상용 필터
+antiAliasingMethod,안티앨리어싱 방식
+antiAliasingMethodInfo,안티앨리어싱 방식 선택
+ambientOcclusionIntensity,앰비언트 오클루전 강도
+ambientOcclusionIntensityInfo,AO 후처리 효과의 강도 설정
+fovSlider,시야각
+fovSliderInfo,특정 시점에 관찰 가능한 세계의 범위
+terrainDistance,지형 거리
+terrainDistanceInfo,플레이어 위치로부터 활성화되는 지형의 최대 거리
+shadowResolutionMode,그림자 해상도
+shadowResolutionModeInfo,그림자 품질
+dungeonLightShadows,던전 광원 그림자
+dungeonLightShadowsInfo,던전 광원이 그림자를 생성
+interiorLightShadows,실내 광원 그림자
+interiorLightShadowsInfo,실내 광원이 그림자를 생성
+exteriorLightShadows,실외 광원 그림자
+exteriorLightShadowsInfo,실외 햇빛이 그림자를 생성
+ambientLitInteriors,실내 조명 단순화
+ambientLitInteriorsInfo,성능 향상을 위해 실내 조명을 덜 복잡하게 사용
 
 - Configure Joystick Controls UI
 
-rightClickString,                                   오른쪽-클릭
-middleClickString,                                  가운데-클릭
-leftClickString,                                    좌측-클릭
-backString,                                         뒤
-configureJoystickControls,                          조이스틱 조작 설정
-continue,                                           계속
-enableController,                                   컨트롤러 활성화
-invert,                                             반전
-lookSensitivity,                                    시야 조작 민감도
-uiMouseSensitivity,                                 UI 마우스 민감도
-maximumMovementThreshold,                           최대 이동 임계치
-deadzone,                                           데드존
-movementH,                                          수평 이동.
-movementV,                                          수직 이동.
-cameraH,                                            카메라 수평.
-cameraV,                                            카메라 수직.
-primary,                                            기본
-secondary,                                          부가
+rightClickString,우클릭
+middleClickString,휠클릭
+leftClickString,좌클릭
+backString,뒤로
+configureJoystickControls,조이스틱 컨트롤 구성
+continue,계속
+enableController,컨트롤러 활성화
+invert,반전
+lookSensitivity,시점 감도
+uiMouseSensitivity,UI 마우스 감도
+maximumMovementThreshold,최대 이동 임계값
+deadzone,데드존
+movementH,이동 가로
+movementV,이동 세로
+cameraH,카메라 가로
+cameraV,카메라 세로
+primary,기본
+secondary,보조
 
 
 - Options shared among sliders. Missing keys use default text.
 
-Off,                                                끄기
-On,                                                 켜기
-HQ,                                                 고품질
+Off,끄기
+On,켜기
+HQ,고품질
 
-Low,                                                낮음
-Medium,                                             중간
-High,                                               높음
-Very High,                                          매우 높음
+Low,낮음
+Medium,중간
+High,높음
+Very High,매우 높음
 
-Low (25%),                                          낮음 (25%)
-Medium (50%),                                       중간 (50%)
-High (75%),                                         높음 (75%)
-V. High(100%),                                      최고(100%)
+Low (25%),낮음 (25%)
+Medium (50%),중간 (50%)
+High (75%),높음 (75%)
+V. High(100%),매우 높음 (100%)
 
-Point,                                              포인트
-Bilinear,                                           이중선형
-Trilinear,                                          삼중선형
+Point,포인트
+Bilinear,이선형
+Trilinear,삼선형
 
-none,                                               없음
-classic,                                            클래식
-climate,                                            기후
-climateOnly,                                        기후만
-random,                                             랜덤
-randomOnly,                                         랜덤만
-minimal,                                            미니멀
-large,                                              대형
-colour,                                             색상
-monochrome,                                         흑백
+none,없음
+classic,클래식
+climate,기후
+climateOnly,기후만
+random,무작위
+randomOnly,무작위만
+minimal,최소
+large,대형
+colour,색상
+monochrome,흑백
 
-reset,                                              초기화
+reset,재설정

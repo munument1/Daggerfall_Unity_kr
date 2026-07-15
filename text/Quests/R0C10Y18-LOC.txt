@@ -1,0 +1,190 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y18.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 18
+Messages: 22
+Quest: R0C10Y18
+DisplayName: 대여 중인 물건
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+%pcf님, 며칠 정도 시간을 내어 제 부탁을 하나
+들어주시겠습니까? 빌려준 물건을 주인에게 돌려주기만 하면
+됩니다. 그리 힘든 일은 아니며, 보상으로 _reward_
+골드를 드리겠습니다. 꽤 솔깃한 제안이지 않습니까?
+
+RefuseQuest:  [1001]
+아쉽군요. 그럼 다른 사람을 고용해야겠네요.
+
+AcceptQuest:  [1002]
+%oth님, 바로 그 자세입니다! 제 좋은 친구인
+_npc1_에게 빌린 _item1_ 있습니다, 그 친구는
+___npc1_의 __npc1_에 있는 사제입니다.
+%g2에게 물건을 돌려주는 일이 조금 급합니다.
+%g께서 =1stparton_일 내로 필요하다고 하시니
+서둘러 주십시오. 부탁드립니다, %pcf님.
+
+QuestFail:  [1003]
+서두르라고 말씀드리지 않았습니까, %pcf님?
+
+QuestComplete:  [1004]
+아, 좋습니다. _item2_ 관련 들었던 대로 아주
+훌륭하군요. 솜씨가 좋으시네요, %pcf님. 당신의
+속도와 침묵에 대한 보상으로 여기 _reward_ 골드를
+드립니다.
+
+RumorsDuringQuest:  [1005]
+__npc1_ 지역을 오가는 사람들이 부쩍 늘었더군요. 무슨
+일인지 모르겠습니다. <---> _npc1_ 개체가
+%g3의 _item1_ 물품을 찾고 있던데,
+%g가 그런 걸 좋아하는 줄은 몰랐네요.
+
+RumorsPostfailure:  [1006]
+__npc1_ 언제부터 밀수 거점으로 쓰였는지 모르겠군요.
+정말 추잡한 일입니다. <---> 그들은 _item1_
+안에 보석을 숨겨 밀수하고 있었어요. 이제 보니 너무 뻔한
+수법이었네요, 그렇지 않나요?
+
+RumorsPostsuccess:  [1007]
+재미있군요. __npc1_ 쪽으로 향하는 _item1_ 화물이
+있다는 건 알았지만, 뭔가 이상했습니다. <--->
+___npc2_ 관련 _item2_ 밀수의 온상이라고들
+하더군요. 아주 교묘하게 숨겨져 있나 봅니다.
+
+QuestorPostsuccess:  [1008]
+돌아오셨군요. 보석에 대해 말씀드릴 수 없었던 점,
+이해하시죠? <---> 아니, %pcf님 아닙니까.
+보석 밀수 건은 정말 잘 처리해주셨습니다, 친구여.
+
+QuestorPostfailure:  [1009]
+%pcf님, 실패하신 퀘스트가 결코 작은 일은
+아니었습니다. 시간이 지나면 용서할 수 있을지도 모르겠군요.
+어쩌면 말이죠.
+
+QuestLogEntry:  [1010]
+오, 다행히 _item1_ 돌아왔군요. 감사합니다,
+%pcf님. 그런데 안에 뭔가 끼어 있는 것 같군요. 오,
+알겠습니다... 이 돌멩이 말이죠. 이 돌멩이를 _questgiver_의
+친구인 _npc2_에게 가져다주실 수 있겠습니까?
+___npc2_에 있는 __npc2_에 있습니다.
+%g께서 보상금을 가지고 계실 겁니다. 하지만
+서두르는 게 좋을 겁니다. %g께서 =2ndparton_일
+이상 기다리게 되면 _npc2_ 인내심을 잃고 말 테니까요.
+
+Message:  1015
+%qdt:
+ ___questgiver_의 _questgiver_ 관련 ___npc1_의 사제에게
+ _item1_ 가져다달라고 부탁했다. __npc1_에 있는
+ =npc1_의 이름을 지닌 _npc1_에게 전달해야 한다.
+ =1stparton_일 이내에 도착해야 한다.
+
+Message:  1016
+%qdt:
+ _item1_ 안에 _item2_ 숨겨져 있었다. 약속받은
+ _reward_ 골드를 받으려면, ___npc2_에 있는 제3자인
+ __npc2_의 _npc2_에게 _item2_ 전달해야
+ 한다. 완수하기까지 =2ndparton_일이 남았다.
+
+Message:  1020
+%reg에서는 도둑 길드만이 밀수를 할 수 있습니다.
+_questgiver_ 관련 %g가 규칙 따위는 무시해도
+된다고 생각했나 보군요. %g는 틀렸습니다. 그
+_item2_ 내놓으시죠. _questgiver_ 관련 도둑 길드의
+심기를 건드리면 어떻게 되는지 배우게 될 겁니다. 순순히
+내놓으십시오, 아니면 죽여버릴 테니까.
+
+Message:  1021
+도둑 길드를 건드리면 어떻게 되는지 아는 사람들에게 다
+전하십시오. 이제 여기서 나가시죠.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 6 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 1 time.
+--              %oth occurs 1 time.
+--              %pcf occurs 9 times.
+--              %qdt occurs 2 times.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 4 times.
+--       =2ndparton_ occurs 3 times.
+--            =npc1_ occurs 3 times.
+--          ___npc2_ occurs 3 times.
+--    ___questgiver_ occurs 1 time.
+--           __npc1_ occurs 5 times.
+--           __npc2_ occurs 2 times.
+--           _item1_ occurs 7 times.
+--           _item2_ occurs 5 times.
+--            _npc1_ occurs 3 times.
+--            _npc2_ occurs 3 times.
+--      _questgiver_ occurs 4 times.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+Item _item1_ religious
+Item _item2_ gem
+
+Person _questgiver_ face 140 group Questor
+Person _npc1_ group Cleric remote
+Person _npc2_ face 254 group Local_3.0 female remote
+Person _dummythief_ faction The_Thieves_Guild remote
+
+
+Clock _1stparton_ 00:00 0 flag 1 range 1 4
+Clock _2ndparton_ 00:00 0 flag 1 range 1 4
+
+Foe _thief_ is Rogue
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1015 step 0 
+	get item _item1_ 
+
+_pcgetsgold_ task:
+	toting _item2_ and _npc2_ clicked 
+	give pc _reward_ 
+	change repute with _dummythief_ by -20 
+	end quest 
+
+variable _pchasitem1_
+variable _pchasitem2_
+_S.03_ task:
+	toting _item1_ and _npc1_ clicked 
+	create foe _thief_ every 1 minutes 5 times with 20% success 
+	start timer _2ndparton_ 
+	log 1016 step 1 
+	get item _item2_ 
+	say 1010 
+	create npc _npc2_ 
+
+variable _S.04_
+_queston_ task:
+	when _1stparton_ and not _S.03_ 
+	make _item1_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+variable _1stparton_
+_2ndparton_ task:
+	make _item2_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+yes task:
+	have _item2_ set _S.10_ 
+
+variable _no_
+_S.10_ task:
+	give item _item2_ to _thief_
+	say 1021 
+	restrain foe _thief_ 
+--moved "saying 1021" to its own line, wouldn't work as was
+
+_S.11_ task:
+	injured _thief_ 
+	prompt 1020 yes yes no _no_ 

@@ -1,0 +1,22 @@
+---- Example quest to demonstrate dialog linked resources
+---- one resource is revealed when mentioned in message of
+---- other resource given as answer by npc (via tell me about)
+
+Quest: __DEMO15
+
+QRC:
+
+Message:  1011
+_someperson_의 과거 소유주는 _someitem_였습니다.
+
+Message:  1012
+_someitem_의 마법적 힘은 널리 알려져 있습니다.
+
+QBN:
+
+Person _someperson_ face 81 faction The_Thieves_Guild anyInfo 1011
+Item _someitem_ trinket anyInfo 1012
+
+--	Quest start-up:
+	dialog link for person _someperson_ item _someitem_
+	add dialog for person _someperson_

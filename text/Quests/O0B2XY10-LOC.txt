@@ -1,0 +1,123 @@
+-- Quest: C:\QUESTS\WORKING\O0B2XY10.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 2X
+-- QuestId: 10
+Messages: 11
+Quest: O0B2XY10
+DisplayName: 귀중한 물약
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pcn, 제 이름은 _qgiver_입니다. _potion_에
+<ce>대한 정보를 입수했습니다. 누군가 그걸 훔쳐다 줬으면
+<ce>하는데요. 보상으로 _gold_ 골드를 드리겠습니다.
+<ce>어떻게 생각하시나요?
+
+RefuseQuest:  [1001]
+<ce>진짜 일을 하고 싶어지면 다시 오게, %pcn.
+
+AcceptQuest:  [1002]
+<ce>__alchemyshop_의 _alchemyshop_에서 _potion_ 찾을 수 있을
+<ce>거요. 그걸 가져와서 =traveltime_일 안에 내게 주면, 보상을
+<ce>주겠소. 그리 어려운 일은 아니지, 안 그런가?
+
+QuestComplete:  [1004]
+<ce>나쁘지 않군, %pcn. 여기 _gold_ 골드일세.
+
+RumorsDuringQuest:  [1005]
+_alchemyshop_ 측은 __alchemyshop_에서 가장 좋은 재료를
+취급합니다. <---> 필요한 게 있다면 __alchemyshop_에
+있는 _alchemyshop_ 쪽으로 가보세요.
+
+RumorsPostfailure:  [1006]
+_alchemyshop_에 희귀한 _potion_ 있었지만, 지금은 더
+안전한 곳으로 옮겨졌습니다.
+
+RumorsPostsuccess:  [1007]
+누군가 _alchemyshop_에서 _potion_ 한 병을 훔쳐
+갔답니다. 정말 간도 크지!
+
+QuestorPostsuccess:  [1008]
+물론 기억하고말고, %pcf. _potion_ 건이었지,
+그렇지?
+
+QuestorPostfailure:  [1009]
+<ce>말도 마. _alchemyshop_까지 가서 _potion_ 찾아놓고는
+<ce>실수로 마셔버린 거잖아, 그렇지? %oth, 도둑놈들은
+<ce>다 똑같아, 매번 같은 소리지.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 도둑 길드원인 _qgiver_ 측에서
+ __alchemyshop_에 있는 _alchemyshop_에게서 _potion_
+ 훔쳐달라고 의뢰했습니다. =traveltime_일 안에
+ %g2에게 가져다줘야 합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g2 occurs 3 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 1 time.
+--              %pcn occurs 4 times.
+--              %qdt occurs 1 time.
+--      =traveltime_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--    __alchemyshop_ occurs 11 times.
+--            _gold_ occurs 3 times.
+--          _potion_ occurs 7 times.
+--          _qgiver_ occurs 2 times.
+
+QBN:
+Item _potion_ Elixir_vitae
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _alchemyshop_ remote apothecary
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Battle_mage
+Foe _F.01_ is Iron_atronach
+Foe _F.02_ is Daedra_seducer
+Foe _F.03_ is Werewolf
+
+--	Quest start-up:
+	place item _potion_ at _alchemyshop_ 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pc at _alchemyshop_ set _S.01_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	pick one of _guard1_ _guard2_ _guard3_ _guard4_ 
+
+_questdone_ task:
+	toting _potion_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+_guard1_ task:
+	create foe _F.00_ every 4 minutes 1 times with 10% success 
+
+_guard2_ task:
+	create foe _F.01_ every 4 minutes 1 times with 10% success 
+
+_guard3_ task:
+	create foe _F.02_ every 4 minutes 1 times with 10% success 
+
+_guard4_ task:
+	create foe _F.03_ every 4 minutes 1 times with 10% success 
+
+_S.07_ task:
+	clicked item _potion_ 
+
+_S.08_ task:
+	when _traveltime_ and _S.07_ 
+	make _potion_ permanent 

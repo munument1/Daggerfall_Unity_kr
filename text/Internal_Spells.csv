@@ -1,89 +1,89 @@
-﻿Key,Value
-1,Fenrik's Door Jam
-2,Buoyancy
-3,Frostbite
-4,Levitate
-5,Light
-6,Invisibility
-7,Wizard's Fire
-8,Shock
-9,Strength Leech
-10,Free Action
-11,Resist Cold
-12,Resist Fire
-13,Resist Shock
-14,Fireball
-15,Cure Poison
-16,Ice Bolt
-17,Shield
-18,Open
-19,Wizard Lock
-20,Ice Storm
-22,Spell Shield
-23,Silence
-24,Troll's Blood
-25,Fire Storm
-26,Resist Poison
-27,Spell Drain
-28,Far Silence
-29,Toxic Cloud
-30,Shalidor's Mirror
-31,Lightning
-32,Gods' Fire
-33,Wildfire
-34,Wizard Rend
-35,Medusa's Gaze
-36,Force Bolt
-37,Slowfalling
-38,Jumping
-39,Spell Resistance
-40,Stamina
-41,Water Walking
-42,Water Breathing
-44,Chameleon
-45,Shadow Form
-46,Spell Reflection
-47,Spell Absorption
-49,Tongues
-50,Paralysis
-51,Sleep
-52,Vampiric Touch
-53,Hand of Sleep
-54,Magicka Leech
-55,Sphere of Negation
-56,Hand of Decay
-57,Banish Daedra
-58,Holy Word
-59,Null Magicka
-60,Balyna's Antidote
-61,Cure Disease
-62,Soul Trap
-64,Heal
-66,Spider Touch
-67,Energy Leech
-71,Nux Vomica
-72,Arsenic
-73,Moonseed
-74,Drothweed
-75,Somnalius
-76,Pyrrhic Acid
-77,Magebane
-78,Thyrwort
-79,Indulcet
-80,Sursum
-81,Quaesto Vil
-82,Orc Strength
-83,Wisdom
-84,Iron Will
-85,Nimbleness
-86,Feet of Notorgo
-87,Fortitude
-88,Charisma
-89,Jack of Trades
-90,Charm Mortal
-91,Calm Humanoid
-92,Lycanthropy
-94,Recall
-97,Balyna's Balm
-98,Quiet Undead
-99,Tame
+Key,Value
+1,펜릭의 문 잠금
+2,부력
+3,동상
+4,부양
+5,빛
+6,투명화
+7,마법사의 불꽃
+8,전격
+9,힘 흡수
+10,행동 자유
+11,냉기 저항
+12,화염 저항
+13,전격 저항
+14,화염구
+15,독 치료
+16,얼음 화살
+17,방패
+18,열기
+19,마법사의 자물쇠
+20,얼음폭풍
+22,주문 방패
+23,침묵
+24,트롤의 피
+25,화염폭풍
+26,독 저항
+27,주문 흡수
+28,원거리 침묵
+29,독구름
+30,샬리도르의 거울
+31,번개
+32,신들의 불꽃
+33,들불
+34,마법사 분쇄
+35,메두사의 시선
+36,힘의 화살
+37,낙하 감속
+38,도약
+39,주문 저항
+40,지구력
+41,수면 보행
+42,수중 호흡
+44,카멜레온
+45,그림자 형상
+46,주문 반사
+47,주문 흡수
+49,언어의 은총
+50,마비
+51,수면
+52,흡혈의 손길
+53,수면의 손
+54,매지카 흡수
+55,무효화의 구체
+56,부패의 손
+57,데이드라 추방
+58,신성한 말씀
+59,매지카 무효화
+60,발리나의 해독제
+61,질병 치료
+62,영혼 덫
+64,치유
+66,거미의 손길
+67,에너지 흡수
+71,마전자
+72,비소
+73,달씨앗
+74,드로스위드
+75,솜날리우스
+76,피릭산
+77,마법사 파멸
+78,시르워트
+79,인둘케트
+80,수르숨
+81,콰에스토 빌
+82,오크의 힘
+83,지혜
+84,강철 의지
+85,날렵함
+86,노토르고의 발
+87,강인함
+88,카리스마
+89,팔방미인
+90,필멸자 매혹
+91,인간형 진정
+92,수인병
+94,귀환
+97,발리나의 연고
+98,언데드 침묵
+99,길들이기

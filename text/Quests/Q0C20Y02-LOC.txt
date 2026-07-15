@@ -1,0 +1,138 @@
+-- Quest: C:\QUESTS\WORKING\Q0C20Y02.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: witch
+-- Repute: 20
+-- QuestId: 2
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 26
+Quest: Q0C20Y02
+DisplayName: 값비싼 구매
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>그대가 ==questgiver_의 친구라는 것은 우리도 알고 있다.
+<ce>하지만 그대를 돕기 위해서는 마법을 걸어야 하는데, 그
+<ce>마법은 창조하기 전에 먼저 파괴해야만 하는 마법이다. 그대가
+<ce>그 파괴의 축복을 받을 수 있도록, 우리 마법의 약을 위한
+<ce>_magicitem_ 확보를 도와주겠는가?
+
+RefuseQuest:  [1001]
+<ce>그 중요성을 알고도 이 일을 하기에는 너무 바쁜가?
+<ce>==questgiver_에게도 불행한 일이고, 그대 %pcn에게도
+<ce>불행한 일이군.
+
+AcceptQuest:  [1002]
+<ce>우리가 필요한 _magicitem_의 소재는 ==other_ 쪽이다.
+<ce>=1stparton_일이 지나기 전에 그것이 필요하다.
+<ce>==other_의 위치는 ___other_에서 찾을 수 있을
+<ce>것이다. _other_에 대해 물어보도록. 신들과 정령들이
+<ce>그대의 발걸음을 인도하기를, %pcf.
+
+QuestFail:  [1003]
+<ce>_magicitem_, %pcf. 잊어버린 건가?
+
+QuestComplete:  [1004]
+<ce>아, 우리 마법에 필요한 _magicitem_ 확보가 완료되었군.
+<ce>어서, 자매들이여. 이것을 찢고, 뜯어서 덮개가 있는 통에
+<ce>넣고 끓여라. 여기 그대의 속도와 용기에 대한 보답으로
+<ce>%pcn, 그대에게 _reward_ 한 덩이를 주겠다.
+
+RumorsDuringQuest:  [1005]
+마녀들이 우리 옛 %t 개체를 달팽이로 변하게 했던
+때를 기억하나? <---> ==questgiver_ 측을 만나는
+것보다 더 나쁜 건 그들의 분노를 사는 것뿐이지.
+
+RumorsPostfailure:  [1006]
+어젯밤 숲에서 울음소리를 들었어. 마녀들이 날뛰고 있는 게
+분명해. <---> 바람에 실려 오는 저 시큼한 냄새를
+맡아봐. ==questgiver_들이 화가 났다는 뜻이야.
+
+RumorsPostsuccess:  [1007]
+==questgiver_들이 어떤 계획을 성공적으로 마쳐서 축하하고
+있다는군. <---> 공기 중에 떠도는 냄새만으로도 취할
+것 같아. 행복한 마녀들이 내리는 축복이지.
+
+QuestorPostsuccess:  [1008]
+그대의 _reward_ 상태가 마음에 드나, %pcf?
+그대에게 잘 어울리는 것 같군.
+
+QuestorPostfailure:  [1009]
+<ce>_magicitem_의 행방을 잊어버린 건가? %oth, 이제
+<ce>너무 늦었어. 하지만 ==questgiver_의 실망이 크네,
+<ce>%pcf. 정말로, 우리는 실망했네.
+
+QuestLogEntry:  [1010]
+<ce>원하는 _magicitem_ 말인가? 1000골드에 주지. 아주 좋아,
+<ce>여기 있네.
+
+Message:  1011
+그녀는 ==questgiver_의 매우 현명한 여인이야. <--->
+그녀는 ==questgiver_ 출신의 함부로 대할 수 없는 여인이지.
+
+Message:  1020
+<ce>난 이 _magicitem_ 건을 1000골드보다 낮은 가격에는 안 넘길
+<ce>거야. 그리고 ==questgiver_에게만 그렇게 해줄 의향이 있지.
+
+Message:  1025
+%qdt:
+ ==questgiver_의 _questgiver_님이 ___other_에 있는
+ =other_의 이름을 지닌 _other_ 개체가 가지고 있는
+ _magicitem_ 물품을 가져오라고 하셨다. ==other_ 개체가
+ 가지고 있는 물건이다. =1stparton_일 안에 _magicitem_
+ 물품을 구해서 ___questgiver_에게 돌아가야 한다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 1 time.
+--              %pcf occurs 5 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--                %t occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--          ==other_ occurs 3 times.
+--     ==questgiver_ occurs 30 times.
+--           =other_ occurs 4 times.
+--    ___questgiver_ occurs 1 time.
+--       _magicitem_ occurs 9 times.
+--           _other_ occurs 2 times.
+--      _questgiver_ occurs 1 time.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _reward_ gem
+Item _magicitem_ magic_item
+
+Person _questgiver_ face 112 group Questor anyInfo 1011
+Person _other_ factiontype Knightly_Guard remote
+
+Clock _1stparton_ 00:00 0 flag 17 range 1 4
+
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1025 step 0 
+	create npc _other_ 
+
+_pcgetsgold_ task:
+	toting _magicitem_ and _questgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+_pchasitem_ task:
+	clicked _other_ and at least 1000 gold otherwise do _S.07_ 
+	get item _magicitem_ 
+	say 1010 
+
+variable _npcclicked_
+variable _qgclicked_
+_1stparton_ task:
+	make _magicitem_ permanent 
+	end quest 
+
+variable _2ndparton_
+variable _queston_
+_S.07_ task:
+	say 1020 

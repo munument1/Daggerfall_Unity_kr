@@ -11,77 +11,135 @@ DisplayName: 수면 주문 시전
 QRC:
 
 QuestorOffer:  [1000]
-<ce>메이지 길드는 귀족이신 _warrior_께
-<ce>많은 사업 부분에서 후원을 받아왔는데,
-<ce>우리에겐 적이 있고 그분에게도 적이 있습니다.
-<ce>배달부 편으로 연락을 받았는데 어떤 마녀가
-<ce>그분께 잠들지 못하는 저주를 걸었다고 합니다.
-<ce>가서 주문을 구사할 여유가 있으신지요?
-<ce>_gold_닢을 지급하겠습니다.
-                                     <--->
-<ce>표준 원형화 주문인 수면을 구사할 능력이
-<ce>있으시다면, 길드의 협력자 한 사람이 도움이
-<ce>필요합니다.
-<ce>저주 때문에 _warrior_에게
-<ce>수면 주문이 필요합니다.
-<ce>힘을 빌려주신다면 금화 _gold_닢을
-<ce>지급하겠습니다.
+<ce>고귀한 _warrior_ 개체는 우리 길드의 많은 사업을 후원해
+<ce>왔으며, 우리가 적을 만든 만큼 %g 또한 적을
+<ce>만들었습니다. %g2의 전령으로부터 마녀가
+<ce>%g2에게 끝없는 불면의 저주를 걸었다는 소식을
+<ce>들었습니다. 간단한 수면 주문이면 %g2를 치료할 수
+<ce>있을 텐데, 혹시 시전해 주실 수 있겠습니까? 기꺼이
+<ce>_gold_ 골드를 드리겠습니다.
+<--->
+<ce>만약 표준 윤생 주문인 수면을 시전할 수 있다면, 길드의
+<ce>친구가 도움이 필요합니다.
+<ce>_warrior_ 개체가 저주를 받아 그 수면 주문이 필요한
+<ce>상황입니다. 이 서비스를 제공해 주신다면 _gold_
+<ce>골드를 드리겠습니다.
 
 RefuseQuest:  [1001]
-<ce>알겠습니다.  %oth, 수면 주문은
-<ce>비교적 간단한 주문인데.
-<ce>배워두면 도움이 될 것입니다.
+<ce>알겠습니다. %oth, 수면은 비교적 간단한 주문입니다.
+<ce>배우시는 게 좋을 겁니다.
 
 AcceptQuest:  [1002]
-<ce>아주 좋습니다, _warrior_께는
-<ce>배달부를 통해 수면 말고 다른 주문은 사용하지
-<ce>않겠다고 전해 두었습니다.
-<ce>저주 주문으로 많은 고통을 받았으니 불안하겠지요.
-<ce>__castle_의 _castle_에 가보시면 됩니다.
-<ce>아마 무장을 잘 갖춘 상태일 겁니다.
-<ce>길드의 친구에게 제대로 잠을 잘 수 있게 하고,
-<ce>꼭 =queston_일 내로 돌아오십시오.
+<ce>아주 좋습니다. 자, 전령에게 _warrior_에게 수면 주문
+<ce>외에는 사용하지 않겠다고 말해두었습니다. %g2의
+<ce>저주받은 주문에 대한 과거 경험을 생각하면, %g2의
+<ce>이런 불안감을 탓할 수는 없을 겁니다. _warrior_의 위치는
+<ce>__castle_의 _castle_에서 찾을 수 있을 겁니다.
+<ce>_warrior_의 경우 갑옷을 잘 갖춰 입은 자일 겁니다.
+<ce>=queston_일 안에 우리 친구를 깊은 잠에 빠뜨린 채로
+<ce>돌아오도록 하십시오.
 
 QuestComplete:  [1004]
-<ce>_warrior_ 소식 들었습니다.
-<ce>긍정적인 깊은 무력상태에 빠지셨다고 하더군요.
-<ce>생을 마감하기 전에 깨어나겠지요.
-<ce>물론 당신은 확실히 금화 _gold_닢을
-<ce>받을 자격이 있습니다.
+<ce>_warrior_의 상태가 %g3의 발치에서 깊은 잠에
+<ce>빠졌다는 소식을 들었습니다. %g가 다음 새 삶의
+<ce>축제 전에 깨어나길 바랍니다. 훌륭한 %ra여, 당신은
+<ce>_gold_ 골드를 받을 자격이 충분합니다.
 
 RumorsDuringQuest:  [1005]
-그 불쌍한 _warrior_ 인지 몇일동안 잠을 못잤답니다. 정신이 제정신이 아니겠지요.
-<--->
-그 마녀가 _warrior_에 걸었다는 저주가 정말 심한건가 봅니다.
+불쌍한 _warrior_의 상태는 며칠째 깨어 있습니다.
+%g2의 정신이 온전치 못한 것 같습니다.
+<---> _warrior_에게 불면의 저주를 건 마녀가
+%g2에게 정말 끔찍한 짓을 저질렀군요.
 
 RumorsPostfailure:  [1006]
-메이지 길드와 _warrior_ 사이가 틀어졌다고 하니다. 길드가 도움이 못된 것 같습니다.
-<--->
-마녀와 _warrior_ 간에 다툼이 끝난 것 같지만, 메이지 길드를 용서하진 않을 것 같습니다.
+_warrior_ 및 마법사 길드는 사이가 좋지 않습니다. 그들은
+%g2를 도울 수 없었습니다. <--->
+_warrior_께서는 마녀들과 화해했지만, 마법사 길드를
+용서하지는 않았습니다.
 
 RumorsPostsuccess:  [1007]
-듣기로는 _warrior_의 깊은 수면이 아직도 이어진다고 합니다. 이젠 일어나지 못하는게 아닐까 걱정한다더군요.
-<--->
-마녀에게 불면 저주를 받았던 사람이 마녀에 복수를 맹세했다고 하더군요.
+_warrior_께서 여전히 자고 있다고 들었습니다. 이제
+사람들은 %g가 영영 깨어나지 못할까 봐 두려워하고
+있습니다. <---> _warrior_에게 저주를 건 마녀는
+%g2를 치료한 자에게 복수를 맹세했습니다.
 
 QuestorPostsuccess:  [1008]
-이번에 _warrior_와의 관계 유지에 도움을 주셨지요. 뭘 도와드릴까요?
+당신 덕분에 _warrior_ 및 그 세력과의 좋은 관계를 유지할
+수 있었습니다. 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-<ce>_warrior_ 의뢰 실패는 길드에게도 좋지 않습니다.
-<ce>한동안은 오지마시고 나중에 기회가 있을겁니다, %pcn.
+<ce>우리 친구 _warrior_의 구출에 실패하여 길드에 오점을
+<ce>남겼군요. 여기서 떠나십시오. %pcn, 언젠가 제가
+<ce>당신을 용서할지도 모르겠군요.
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_ 메이지 길드의
- 후원자인 _warrior_에
- 수면 마법을 시전해 주는 의뢰를 받았다.
- =queston_일 안에 __castle_의 
- _castle_에 가서 주문을 써줘야 한다.
- 그 후 메이지 길드의 _qgiver_에게
- 돌아가야 한다.
+ ___qgiver_ 마법사 길드의 후원자인 _warrior_에게 수면
+ 주문을 시전하기로 했습니다. _warrior_께서 계신
+ __castle_의 _castle_ 쪽으로 가서 주문을 성공적으로
+ 시전하고, 마법사 길드의 _qgiver_에게 돌아올 기한은
+ =queston_일입니다.
 
 Message:  1011
-<ce>_warrior_에게 수면 주문을 썼다,
-<ce>아직은 서있지만, 곧 깊은 수면 상태가
-<ce>될 것이다.
+<ce>_warrior_께서는 깊은 잠에 빠져, 여전히 %g3의
+<ce>발로 서 있다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 9 times.
+--               %g3 occurs 7 times.
+--              %oth occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--         =queston_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--         __castle_ occurs 4 times.
+--            _gold_ occurs 6 times.
+--          _qgiver_ occurs 1 time.
+--         _warrior_ occurs 42 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+Person _warrior_ face 219 group Group_5.0 female remote
+Person _witch_ face 218 factiontype Witches_Coven female remote
+
+Place _castle_ remote house1
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Warrior
+
+--	Quest start-up:
+	start timer _queston_ 
+	log 1010 step 0 
+	pc at _castle_ set _S.05_ 
+	restrain foe _F.00_ 
+	create npc at _castle_ 
+	place foe _F.00_ at _castle_ 
+
+_queston_ task:
+	end quest 
+
+_reward_ task:
+	when _qgclicked_ and _out_ 
+	give pc _gold_ 
+	change repute with _witch_ by -5 
+	end quest 
+
+_S.02_ task:
+	when _qgclicked_ and not _out_ 
+	clear _qgclicked_ _S.02_ 
+
+_out_ task:
+	say 1011 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.05_ task:
+	cast Sleep spell do _out_ 

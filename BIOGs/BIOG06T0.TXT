@@ -1,57 +1,55 @@
-1.	What school of magic have you been
-	studying the most?
-a.	Destruction
+1.	당신이 가장 많이 공부한 마법 학파는 무엇입니까?
+a.	파괴마법
 	#4156
 	22 +6
-b.	Restoration
+b.	회복마법
 	#4157
 	23 +6
-c.	Illusion
+c.	환영술
 	#4158
 	24 +6
-d.	Alteration
+d.	변화마법
 	#4159
 	25 +6
-e.	Thaumaturgy
+e.	기적술
 	#4160
 	26 +6
-f.	Mysticism
+f.	신비마법
 	#4161
 	27 +6
 
-2.	As a child, your nickname was ___.
-a.	Rabbit
+2.	어릴 적 당신의 별명은 ___였습니다.
+a.	토끼
 	#4450
 	3 +6
-b.	Quicksilver
+b.	퀵실버
 	#4451
 	21 +6
-c.	Scrapper
+c.	싸움꾼
 	#4452
 	30 +6
-d.	Monkey
+d.	원숭이
 	#4453
 	18 +6
 
-3.	You have a certain degree of training
-	with ___.
-a.	Short-bladed weapons
+3.	당신은 ___에 대해 어느 정도 훈련을 받았습니다.
+a.	단검
 	#4454
 	28 +6
 	IT 3 0 3
-b.	Hand-to-hand combat
+b.	맨손 격투
 	#4455
 	30 +6
 	IT 2 1 0
-c.	Axe fighting
+c.	도끼술
 	#4456
 	31 +6
 	IT 3 14 0
-d.	Blunt weapons
+d.	둔기
 	#4457
 	32 +6
 	IT 3 2 0
-e.	Archery
+e.	궁술
 	#4458
 	33 +6
 	IT 3 16 1
@@ -61,167 +59,155 @@ e.	Archery
 	IT 3 18 1
 	IT 3 18 1
 	IT 3 18 1
-f.	Longblade
+f.	장검
 	#4459
 	29 +6
 	IT 3 9 0
 
-4.	Whenever you had a chance growing up
-	you liked to spend time ___.
-a.	socializing with aristocrats
+4.	성장하면서 기회가 있을 때마다 당신은 ___하며 시간을 보내는 것을 좋아했습니다.
+a.	귀족들과 어울리기
 	#4223
 	1 +6
 	r3 +5
 	r0 -5
-b.	learning streetsmarts
+b.	거리의 처세술 배우기
 	#4224
 	2 +6
 	r0 +2
 	r4 +3
 	r3 -5
-c.	practicing acrobatics
+c.	곡예 연습하기
 	#4225
 	3 +2
 	20 +2
 	18 +2
-d.	learning economics
+d.	경제학 배우기
 	#4226
 	14 +6
-e.	swimming
+e.	수영하기
 	#4228
 	17 +6
-f.	sparring
+f.	대련하기
 	#4229
 	34 +6
 
-5.	What thieving skill have you been studying
-	the longest?
-a.	Dodging
+5.	당신이 가장 오랫동안 공부한 도둑 기술은 무엇입니까?
+a.	회피
 	20 +6
-b.	Stealth
+b.	은신
 	16 +6
-c.	Backstabbing
+c.	기습 공격
 	19 +6
-d.	Lockpicking
+d.	자물쇠 따기
 	13 +6
-e.	Pickpocketing
+e.	소매치기
 	15 +6
-f.	Climbing
+f.	등반
 	18 +6
-g.	Critical-Striking
+g.	치명타
 	34 +6
-h.	Running
+h.	달리기
 	21 +6
-i.	Jumping
+i.	도약
 	3 +6
 
-6.	Given your choice of reward, you would
-	choose ___.
-a.	Over 200 gold pieces
+6.	보상을 선택할 수 있다면, 당신은 ___ 항목을 선택할 것입니다.
+a.	200 골드 이상
 	#4528
 	GP +250
-b.	An ebony dagger
+b.	에보니 단검
 	#4529
 	IT 3 0 7
-c.	A book
+c.	책
 	#4530
 	IT 7 0 0
-d.	A ruby
+d.	루비
 	#4531
 	IT 14 0 0
-e.	A silver staff
+e.	은 지팡이
 	#4532
 	IT 3 2 2
-f.	An amulet
+f.	부적
 	#4192
 	IT 25 0 0
 
-7.	What motivates you into a life of
-	adventure?
-a.	Riches
+7.	당신을 모험의 삶으로 이끄는 동기는 무엇입니까?
+a.	부
 	GP +500
-b.	Fame
+b.	명성
 	r4 +10
 	r2 +10
-c.	Knowledge
+c.	지식
 	IT 7 0 0
-d.	Fun
+d.	재미
 	1 +3
 	2 +3
-e.	Helping Others
+e.	타인 돕기
 	r0 +10
 
-8.	What god, if any, do you worship?
-a.	None
+8.	당신은 어떤 신을 숭배합니까? (없다면 없음)
+a.	없음
 	r2 +5
-b.	Arkay, Birth and Death God
-	rf82 +5
-c.	Zenithar, God of Commerce
-	rf84 +5
-d.	Mara, the Mother Goddess
-	rf88 +5
-e.	Dibella, Goddess of Beauty
-	rf98 +5
-f.	Julianos, God of Logic
-	rf94 +5
-g.	Akatosh, God of Time
-	rf92 +5
-h.	Stendarr, God of Mercy
-	rf106 +5
-i.	Kynareth, Goddess of Air
-	rf36 +5
+b.	탄생과 죽음의 신, 아케이 rf82 +5
+c.	상업의 신, 제니타르 rf84 +5
+d.	어머니 여신, 마라 rf88 +5
+e.	미의 여신, 디벨라 rf98 +5
+f.	논리의 신, 줄리아노스 rf94 +5
+g.	시간의 신, 아카토쉬 rf92 +5
+h.	자비의 신, 스텐다르 rf106 +5
+i.	공기의 여신, 키나레스 rf36 +5
 
-9.	You have the most trouble ___.
-a.	Resisting poisons
+9.	당신이 가장 어려워하는 것은 ___입니다.
+a.	독 저항하기
 	RP -10
-b.	Staying awake and alert
+b.	깨어 있고 정신 차리기
 	FT -5
-c.	Getting along with others
+c.	타인과 잘 지내기 &
 	RR -5
-d.	Avoiding diseases
+d.	질병 피하기
 	RD -5
-e.	Resisting magic
+e.	마법 저항하기
 	MR -5
-f.	Fighting without magic
+f.	마법 없이 싸우기
 	TH -5
 
-10.	Since childhood, you have saved  ___.
-a.	100 gold pieces
+10.	어린 시절부터, 당신은 ___ 항목을 모아왔습니다.
+a.	100 골드
 	GP +100
-b.	An interesting book
+b.	흥미로운 책
 	IT 7 0 0
-c.	A cuirass
+c.	흉갑
 	IT 2 0 0
-d.	A buckler
+d.	버클러
 	IT 2 7 1
 
-11.	You are friendlier than most with ___.
-a.	the savage Harpies
+11.	당신은 다른 사람들보다 ___ 쪽과 더 친합니다.
+a.	사나운 하피
 	5 +6
-b.	the simple Giants
+b.	단순한 거인
 	6 +6
-c.	the glorious Dragons
+c.	영광스러운 드래곤
 	7 +6
-d.	the immodest Nymphs
+d.	방자한 님프
 	8 +6
-e.	the infernal Daedra
+e.	지옥의 데이드라
 	9 +6
-f.	the bucolic Spriggans
+f.	전원적인 스프리건
 	10 +6
-g.	the primitive Centaurs
+g.	원시적인 켄타우로스
 	11 +6
-h.	the mischevious Imps
+h.	장난꾸러기 임프
 	12 +6
 
-12.	You are intimate friends with ___.
-a.	a Monk
+12.	당신은 ___ 쪽과 막역한 친구 사이입니다.
+a.	수도사
 	AF O 8 12 +1
-b.	a Mage
+b.	마법사
 	AF O 8 2 +1
-c.	a Rogue
+c.	도적
 	AF O 8 8 +1
-d.	a Warrior
+d.	전사
 	AF O 8 17 +1
-e.	an Assassin
+e.	암살자
 	AF O 8 11 +1
 

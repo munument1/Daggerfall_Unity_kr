@@ -1,264 +1,265 @@
 Key,Value
-about_internal_strings,This string table collection stores text that was hard-coded in FALL.EXE and text unique to Daggerfall Unity.
-pleaseSelectYourHomeProvince,출신 지역을 선택하십시오...
+about_internal_strings,이 문자열 테이블 모음은 FALL.EXE에 하드코딩되었던 텍스트와 대거폴 유니티 고유의 텍스트를 저장합니다.
+pleaseSelectYourHomeProvince,고향 주를 선택하십시오...
 saveGame,게임 저장
-loadGame,게임 로드
-thingJustDied,%s-죽었습니다.
-gameSaved,게임 저장됨.
-gameLoaded,"게임 로드됨."
-thisHouseHasNothingOfValue,이 집은 아무 가치도 없습니다.
-findLocationPrompt,장소 이름 입력 :
-rightHandEquipped,오른손 장비됨.
-leftHandEquipped,왼손 장비됨.
-usingRightHand,오른손의 무기 사용.
-usingLeftHand,왼손의 무기 사용.
-itemHasBroken,%s-부서졌습니다.
-itemHasBrokenPlural,%s-부서졌습니다.
-cannotCarryGold,금화를 더 이상 들 수 없습니다.
-cannotFloat,소지무게가 너무 무거워 수영을 할 수 없습니다.
+loadGame,게임 불러오기
+thingJustDied,%s 사망이 확인되었습니다.
+gameSaved,게임이 저장되었습니다.
+gameLoaded,게임이 불러와졌습니다.
+thisHouseHasNothingOfValue,이 집에는 가치 있는 것이 없습니다.
+findLocationPrompt,장소 이름을 입력하십시오 :
+rightHandEquipped,오른손이 장착되었습니다.
+leftHandEquipped,왼손이 장착되었습니다.
+usingRightHand,오른손의 무기를 사용 중입니다.
+usingLeftHand,왼손의 무기를 사용 중입니다.
+itemHasBroken,%s 파손이 확인되었습니다.
+itemHasBrokenPlural,%s 파손이 확인되었습니다.
+cannotCarryGold,그만큼의 금을 운반할 수 없습니다.
+cannotFloat,너무 많이 운반하고 있어 물에 뜰 수 없습니다.
 youHaveNoArrows,화살이 없습니다.
-oldSaveNoTrade,"구버전 실내 저장파일 로드됨, 실내에서 나간 후 재입장 전까지 거래 메뉴 사용불가."
-theBodyHasNoTreasure,이 시체엔 아무 보물도 없습니다.
-youAreTooFarAway,너무 멉니다...
-youSeeAn,%s.
-youSeeA,%s.
-youSeeADeadPerson,죽은 사람.
-youSeeADead,죽은 %s.
+oldSaveNoTrade,이전 실내 저장 파일이 불러와졌습니다. 거래 창이 작동하지 않으니 건물을 나갔다가 다시 들어오십시오.
+theBodyHasNoTreasure,시체에 보물이 없습니다.
+youAreTooFarAway,너무 멀리 있습니다...
+youSeeAn,%s의 모습이 보입니다.
+youSeeA,%s의 모습이 보입니다.
+youSeeADeadPerson,죽은 사람이 보입니다.
+youSeeADead,죽은 %s의 모습이 보입니다.
 youCollectArrows,시체에서 화살을 뽑아냈습니다.
-loiterHowManyHours,대기 시간:
-restHowManyHours,휴식 시간:
-potionRecipeFor,%po 포션 제작법
-potionOf,%po 포션
-letterPrefix,편지: 
-multipleAssignments,키 설정이 중복되었습니다...
-youAreEntering,%s 입장.
-storeClosed,상점이 문을 닫음. 개점 시간 %d1:00 에서 %d2:00.
-guildClosed,길드가 문을 닫음. 개방 시간 %d1:00 에서 %d2:00.
+loiterHowManyHours,몇 시간 동안 배회하시겠습니까 :
+restHowManyHours,몇 시간 동안 휴식하시겠습니까 :
+potionRecipeFor,%po의 물약 제조법
+potionRecipeWeight,무게: %kg 킬로그램
+potionOf,%po의 물약
+letterPrefix,편지:
+multipleAssignments,여러 개의 임무를 수행 중입니다...
+youAreEntering,%s에 들어갑니다.
+storeClosed,상점이 닫혔습니다. %d1:00부터 %d2:00까지 영업합니다.
+guildClosed,길드가 닫혔습니다. %d1:00부터 %d2:00까지 영업합니다.
 any,아무 %s
-arkayDesc,삶과 죽음의 신
-zenDesc,직업과 상업의 신
+arkayDesc,탄생과 죽음의 신
+zenDesc,노동과 상업의 신
 maraDesc,사랑의 여신
 akatoshDesc,시간의 신
 julianosDesc,논리의 신
-dibellaDesc,아름다움의 여신
+dibellaDesc,미의 여신
 stendarDesc,자비의 신
-kynarethDesc,바람의 여신
-interactionIsNowInMode,상호작용 %s 모드.
-steal,절도
+kynarethDesc,공기의 여신
+interactionIsNowInMode,상호작용이 현재 %s 모드입니다.
+steal,훔치기
 grab,잡기
 info,정보
 dialogue,대화
 residence,거주지
-youSee,%s 입니다.
+youSee,%s의 모습이 보입니다.
 theNamedResidence,%s 거주지
-playerResidence,%s 의 집
-materialIneffective,사용중인 무기의 재질 때문에 효과가 없습니다.
-successfulBackstab,백스탭 성공
-languagePacified,"%e, %s 기술로 진정화 성공."
-lockpickingSuccess,잠금장치가 철컥 소리를 내며 풀렸습니다.
-lockpickingFailure,잠금이 풀리지 않았습니다.
-magicLock,마법적 방법으로 잠겨있습니다...
-lockpickChance1,이 잠금 장치는 열기 힘듭니다...
-lockpickChance2,이 잠금 장치를 열 가망이 없습니다...
-lockpickChance3,이 잠금 장치 수준이 너무 높습니다...
-buildingNames,"아카토쉬의 사원
-아케이의 사원
-디벨라의 사원
-줄리아노스의 사원
-키나레스의 사원
-마라의 사원
-스텐다르의 사원
-젠의 사원
+playerResidence,%s의 집
+materialIneffective,사용 중인 무기의 재질이 효과가 없습니다.
+successfulBackstab,기습 공격 성공!
+languagePacified,%s 기술을 사용하여 %e 진정에 성공했습니다.
+lockpickingSuccess,자물쇠가 딸깍하며 열립니다.
+lockpickingFailure,열리지 않습니다.
+magicLock,마법으로 잠긴 자물쇠입니다...
+lockpickChance1,이 자물쇠는 당신을 두려워하지 않습니다...
+lockpickChance2,이 자물쇠를 따는 것은 기적일 것입니다...
+lockpickChance3,이 자물쇠는 당신의 실력 밖인 것 같습니다...
+buildingNames,"아카토쉬 신전
+아케이 신전
+디벨라 신전
+줄리아노스 신전
+키나레스 신전
+마라 신전
+스텐다르 신전
+젠 신전
 까마귀 기사단
 용 기사단
 부엉이 기사단
 촛불 기사단
-화염 기사단
-뿔의 주인
+불꽃 기사단
+뿔의 군세
 장미 기사단
 바퀴 기사단
-딱정벌레 기사단
+쇠똥구리 기사단
 매 기사단
-메이지 길드
-파이터 길드
-선술집
+마법사 길드
+전사 길드
+여관
 도서관
 무기 대장장이
-갑옷 대장장이
+갑옷 제작자
 연금술사
 은행
 서점
 의류점
 보석상
 전당포"
-lockpickChance,"이 잠금을 열 수 있을지 자신의 능력에 의문이 듭니다...
-이 잠금은 열기 어려워 보입니다...
-이 잠금장치 열기는 힘든 일이 될 것입니다...
-여는게 좀 어려운 일이 될 것 같습니다...
-잠긴 걸 열 수 있을 것 같습니다...
-그럭저럭 쉬워 보이는 잠금장치 입니다...
-이 잠금 수준은 꽤 웃깁니다...
-초보적인 잠금장치 수준에 웃고 말았습니다...
-이 잠금은 처참한 수준입니다...
-이걸 열지 못하면 모욕적인 일이 될 것입니다..."
-youPinchedGoldPiece,"금화 한 닢을 집어냈습니다."
-youPinchedGoldPieces,"금화 %d 닢을 집어냈습니다."
-youAreNotSuccessful,소매치기에 실패했습니다...
-daysUntilFreedom,석방까지 %d 일.
+lockpickChance,"이 자물쇠를 열 수 있을지 의문입니다...
+이 자물쇠는 어려워 보입니다...
+이 자물쇠는 당신에게 도전이 될 것입니다...
+이 자물쇠는 좋은 도전이 될 것입니다...
+이 자물쇠는 딸 수 있을 것 같습니다...
+이 자물쇠는 비교적 쉬워 보입니다...
+이 자물쇠를 보니 재미있군요...
+이 자물쇠의 아마추어 같은 수준에 웃음이 나옵니다...
+한심한 수준의 자물쇠가 보입니다...
+이 자물쇠는 당신의 실력에 대한 모욕입니다..."
+youPinchedGoldPiece,금화 1닢을 훔쳤습니다.
+youPinchedGoldPieces,금화 %d닢을 훔쳤습니다.
+youAreNotSuccessful,성공하지 못했습니다...
+daysUntilFreedom,자유까지 %d일 남았습니다.
 skillImprove,%s 기술이 향상되었습니다.
-mustDistributeBonusPoints,보너스 점수를 모두 분배해야 합니다.
-enterNewName,새로운 이름 입력 : 
+mustDistributeBonusPoints,모든 보너스 포인트를 분배해야 합니다.
+enterNewName,새 이름을 입력하십시오 :
 affiliation,소속
-rank,등급
+rank,계급
 serviceQuests,퀘스트 받기
 serviceSell,판매
-serviceBanking,은행업무
-serviceIdentify,식별
-serviceBuySpells,주문 구입
+serviceBanking,은행 업무
+serviceIdentify,감정
+serviceBuySpells,주문 구매
 serviceTraining,훈련
-serviceTeleport,텔레포트
+serviceTeleport,순간이동
 serviceMakeSpells,주문 제작
-serviceBuyMagicItems,마법 물품 구입
-serviceSellMagicItems,마법 물품 판매
+serviceBuyMagicItems,마법 아이템 구매
+serviceSellMagicItems,마법 아이템 판매
 serviceDaedraSummon,데이드라 소환
-serviceMakeMagicItems,마법 물품 제작
+serviceMakeMagicItems,마법 아이템 제작
 serviceRepairs,수리
-serviceDonate,기부
+serviceDonate,기부하기
 serviceCure,질병 치료
-serviceSpymaster,첩보장
-serviceMakePotions,포션 제작
-serviceBuyPotions,포션 구입
-serviceBuySoulgems,소울젬 구입
-serviceReceiveArmor,갑옷 지급
-serviceReceiveHouse,주택 지급
-serviceReceiveHouseAlready,이미 주택을 지급 받았습니다.
-accessMembersOnly,사용하려면 일정 등급 이상이 되어야 합니다.
-serviceCured,치료되었습니다.
-serviceSummonCost1,"%pcn,"
-serviceSummonCost2,"%dae 소환에 필요한 금화는"
-serviceSummonCost3," 닢입니다."
-roomFreeForKnightSuchAsYou,기사이기 때문에 숙박은 무료입니다.
-roomFreeDueToHeartsDay,사랑의 날이기 때문에 숙박이 무료입니다.
-youAreNotHungry,배가 고프지 않습니다.
-exhaustedInWater,"피로가 몸을 덮쳐, 물속 깊은 곳으로 끌고 갑니다...."
-youFeelSomewhatBad,뭔가 좋지 않은 기분이 듭니다.
-avoidDeath,"스텐다르의 자비로, 죽을 상황에서 살아남았습니다!"
+serviceSpymaster,첩보대장
+serviceMakePotions,물약 제조
+serviceBuyPotions,물약 구매
+serviceBuySoulgems,영혼석 구매
+serviceReceiveArmor,갑옷 받기
+serviceReceiveHouse,집 받기
+serviceReceiveHouseAlready,이미 집을 받으셨습니다.
+accessMembersOnly,여기에 접근하려면 충분한 계급의 일원이어야 합니다.
+serviceCured,치유되었습니다.
+serviceSummonCost1,"%pcn, 제가 시도하는 비용은"
+serviceSummonCost2,%dae 소환 비용은
+serviceSummonCost3,골드입니다.
+roomFreeForKnightSuchAsYou,당신 같은 기사에게는 방을 무료로 제공합니다.
+roomFreeDueToHeartsDay,마음의 날이라 방이 무료입니다.
+youAreNotHungry,배고프지 않습니다.
+exhaustedInWater,피로가 몰려와 당신을 물속의 무덤으로 보냅니다....
+youFeelSomewhatBad,몸 상태가 좋지 않습니다.
+avoidDeath,"스텐다르의 자비로, 죽음의 문턱에서 살아남았습니다!"
 pronounHe,그
 pronounShe,그녀
-pronounHim,그
-pronounHer,그녀
-pronounHis,놈
-pronounHers,년
+pronounHim,그를
+pronounHer,그녀를
+pronounHis,그의
+pronounHers,그녀의
 pronounHimself,그 자신
 pronounHerself,그녀 자신
 city,도시
 village,마을
-hamlet,부락
+hamlet,작은 마을
 farm,농장
-shack,오두막
+shack,판잣집
 manor,저택
-community,촌락
+community,공동체
 shrine,성소
-King,왕
+King,국왕
 Queen,여왕
 Duke,공작
-Duchess,여공작
+Duchess,공작부인
 Marquis,후작
-Marquise,여후작
+Marquise,후작부인
 Count,백작
-Countess,여백작
+Countess,백작부인
 Baron,남작
-Baroness,여남작
-Lord,경
-Lady,부인
-revered,숭배받는
-esteemed,존경받는
-honored,명예로운
-admired,칭찬받는
+Baroness,남작부인
+Lord,영주
+Lady,귀부인
+revered,존경받는
+esteemed,높이 평가받는
+honored,영예로운
+admired,칭송받는
 respected,존중받는
-dependable,믿을만한
-aCommonCitizen,일반 시민
-hated,증오의 대상
-pondScum,하급 쓰레기
+dependable,믿음직한
+aCommonCitizen,평범한 시민
+hated,미움받는
+pondScum,연못의 찌꺼기
 aVillain,악당
 aCriminal,범죄자
-aScoundrel,불량배
-undependable,의심받는
-unknown,누구인지 모르는
-Broken,부서짐
+aScoundrel,건달
+undependable,믿을 수 없는
+unknown,알 수 없음
+Broken,파손됨
 Useless,쓸모없음
-Battered,닳아빠진
-Worn,낡은
-Used,꽤 사용한
-SlightlyUsed,약간 사용한
-AlmostNew,거의 새 것
-New,새 것
-Nothing,Nothing
-local,local
+Battered,낡음
+Worn,닳음
+Used,사용됨
+SlightlyUsed,약간 사용됨
+AlmostNew,거의 새것
+New,새것
+Nothing,없음
+local,지역
 tavern,선술집
-Attempted_Breaking_And_Entering,무단 침입 시도
-Trespassing,무단 통행
-Breaking_And_Entering,무단 침입
-Assault,상해
+Attempted_Breaking_And_Entering,주거 침입 미수
+Trespassing,무단 침입
+Breaking_And_Entering,주거 침입
+Assault,폭행
 Murder,살인
 Tax_Evasion,탈세
-Criminal_Conspiracy,범죄 모의
-Vagrancy,노숙
+Criminal_Conspiracy,범죄 공모
+Vagrancy,부랑
 Smuggling,밀수
-Piracy,해적행위
-High_Treason,역모
+Piracy,해적 행위
+High_Treason,대역죄
 Pickpocketing,소매치기
 Theft,절도
 Treason,반역
-Loan_Default,Loan Default
-Regular_Punishment_String,"벌금 금화 %gtp 닢, 징역 %dip 일"
+Loan_Default,대출 불이행
+Regular_Punishment_String,벌금 %gtp 골드 및 징역 %dip일
 Banishment,추방
 Execution,사형
-cannotChangeTransportationIndoors,실내에서 이동 수단을 바꿀 수 없습니다.
-cannotTravelWithEnemiesNearby,적이 가까울 때는 여행할 수 없습니다.
+cannotChangeTransportationIndoors,실내에서는 이동 수단을 변경할 수 없습니다.
+cannotTravelWithEnemiesNearby,근처에 적이 있으면 여행할 수 없습니다.
 cannotTravelIndoors,실내에서는 여행할 수 없습니다.
-powersUnknown,마법 알 수 없음.
-itemPowers,"사용할때 마법:
-손에들때 마법:
-공격 적중시 마법:
+powersUnknown,알 수 없는 힘.
+itemPowers,"사용 시 시전:
+소지 시 시전:
+타격 시 시전:
 추가 주문 점수
-상대에 강함
-생명력 재생
-흡혈 효과
+대상에게 강력함:
+체력 재생
+뱀파이어 효과
 무게 제한 증가
-물품 수리
+물체 수리
 주문 흡수
-기술 향상
-물품 무게 감소
-방어력 강화
-특성 향상
-상대에 좋은평판
-영혼 속박
-물품 내구감소
+기술 강화
+깃털 무게
+방어구 강화
+재능 향상
+우호도 상승:
+영혼 결속
+아이템 내구도 저하
 사용자 피해
-시각 문제
+시야 문제
 보행 문제
-상대에 주는 피해약화
-생명력 피해
-상대에 나쁜반응
-물품 무게 증가
-방어력 약화
-상대에 나쁜평판"
+대상에게 낮은 피해:
+체력 흡수
+대상에게 나쁜 반응:
+추가 무게
+방어구 약화
+우호도 하락:"
 enemyNames,"쥐
 임프
 스프리건
-대형 박쥐
-회색 곰
-검치 호랑이
+거대 박쥐
+회색곰
+검치호
 거미
 오크
-센타우로스
-늑대인간
+켄타우로스
+웨어울프
 님프
-슬로터피쉬
-오크 하사
+도살물고기
+오크 하사관
 하피
-맷돼지인간
+웨어보어
 해골 전사
 거인
 좀비
@@ -267,116 +268,116 @@ enemyNames,"쥐
 거대 전갈
 오크 주술사
 가고일
-망령
+레이스
 오크 전쟁군주
-냉기 데이드라
+서리 데이드라
 화염 데이드라
 데이드로스
 뱀파이어
-데이드라 세듀서
+데이드라 유혹자
 고대 뱀파이어
 데이드라 군주
 리치
 고대 리치
-드래곤 새끼
-화염 아크로나크
-철 아크로나크
-살점 아크로나크
-얼음 아크로나크
+드래곤링
+화염 아트로나크
+철 아트로나크
+살점 아트로나크
+얼음 아트로나크
 말
-드래곤 새끼
-Dreugh
+드래곤링
+드레우그
 라미아
 마법사
 마검사
-배틀메이지
+전투마법사
 소서러
-치료사
+치유사
 나이트블레이드
-바드
-버글러
-로그
-아크로뱃
+음유시인
+도둑
+도적
+곡예사
 도둑
 암살자
-수도승
+수도사
 궁수
 레인저
 야만인
 전사
 기사
-도시 경비병"
-extraSpellPtsTimes,"겨울동안
-봄동안
-여름동안
-가을동안
-보름달동안
-반달동안
-초승달동안
+도시 경비대"
+extraSpellPtsTimes,"겨울 동안
+봄 동안
+여름 동안
+가을 동안
+보름달 동안
+반달 동안
+그믐달 동안
 언데드 근처
 데이드라 근처
 인간형 근처
 동물 근처"
 regensHealthTimes,"항상
-태양빛 아래
-어둠 속"
-vampiricEffectRanges,"원거리
-공격 시"
+햇빛 아래에서
+어둠 속에서"
+vampiricEffectRanges,"원거리에서
+타격 시"
 increasedWeightAllowances,"25% 추가
 50% 추가"
-improvedTalents,"청력
-운동능력
-아드레날린 러시"
+improvedTalents,"예민한 청각
+운동 능력
+아드레날린 쇄도"
 itemDeteriorateLocations,"항상
-태양빛 아래
-성스러운 장소"
-userTakesDamageLocations,"태양빛 아래
-성스러운 장소"
+햇빛 아래에서
+성스러운 장소에서"
+userTakesDamageLocations,"햇빛 아래에서
+성스러운 장소에서"
 enemyGroupNames,"언데드
 데이드라
 인간형
 동물"
-healthLeechStopConditions,"사용할때마다
-매일 사용하지 않을시
-매주 사용하지 않을시"
+healthLeechStopConditions,"사용할 때마다
+매일 사용하지 않는 한
+매주 사용하지 않는 한"
 badReactionFromEnemyGroups,"인간형
 동물
 데이드라"
 repWithGroups,"평민
-상인
-학자
+상인회
+학자회
 귀족
-범죄자
-모두"
-youReceiveGoldPieces,금화 %s 닢을 받았습니다.
-bankPurchasePrice,가격 : 금화 %s 닢
-youHaveRentedRoom,%s 숙박 기간이 %d 시간 남았습니다.
-haveNotRentedRoom,이곳에 방을 잡지 않았습니다.
-expiredRentedRoom,숙박 기간이 끝났습니다.
-tavernAle,에일 (금화 1닢)
-tavernBeer,맥주 (금화 1)
-tavernMead,벌꿀주 (금화 2닢)
-tavernWine,와인 (금화 3닢)
-tavernBread,빵 (금화 1닢)
-tavernBroth,묽은 스프 (금화 1닢)
-tavernCheese,치즈 (금화 2닢)
-tavernFowl,닭고기 (금화 3닢)
-tavernGruel,곡물 죽 (금화 2닢)
-tavernPie,파이 (금화 2닢)
-tavernStew,스튜 (금화 3닢)
-pressButtonToFireSpell,사용 버튼을 눌러 주문 사용.
+암흑가
+전체"
+youReceiveGoldPieces,%s 골드를 받았습니다.
+bankPurchasePrice,가격 : %s 골드
+youHaveRentedRoom,%s에서 %d시간 동안 방을 빌렸습니다.
+haveNotRentedRoom,이곳에 방을 빌리지 않았습니다.
+expiredRentedRoom,방 대여 시간이 만료되었습니다.
+tavernAle,에일 (1 골드)
+tavernBeer,맥주 (1 골드)
+tavernMead,미드 (2 골드)
+tavernWine,와인 (3 골드)
+tavernBread,빵 (1 골드)
+tavernBroth,수프 (1 골드)
+tavernCheese,치즈 (2 골드)
+tavernFowl,가금류 (3 골드)
+tavernGruel,죽 (2 골드)
+tavernPie,파이 (2 골드)
+tavernStew,스튜 (3 골드)
+pressButtonToFireSpell,버튼을 눌러 주문을 발사하세요.
 climbingMode,등반 모드.
-rappelMode,레펠 모드.
-hangingMode,고정 모드
-acuteHearing,청력 민감
-adrenalineRush,아드레날린 러시
-athleticism,높은 운동능력
-bonusToHit,명중률 추가
-expertiseIn,무기 숙련됨
+rappelMode,라펠 모드.
+hangingMode,매달리기 모드
+acuteHearing,예민한 청각
+adrenalineRush,아드레날린 쇄도
+athleticism,운동 능력
+bonusToHit,명중 보너스
+expertiseIn,전문 지식:
 immunity,면역
-increasedMagery,주문점수 증가
-rapidHealing,고속 회복
-regenerateHealth,생명력 재생
+increasedMagery,마법 능력 증가
+rapidHealing,빠른 치유
+regenerateHealth,체력 재생
 resistance,저항
 spellAbsorption,주문 흡수
 animals,동물
@@ -385,73 +386,73 @@ humanoid,인간형
 undead,언데드
 axe,도끼
 bluntWeapon,둔기
-handToHand,격투
+handToHand,맨손 격투
 longBlade,장검
 missileWeapon,원거리 무기
-shortBlade,소검
-toDisease,질병
-toFire,화염
-toFrost,냉기
-toMagic,마법
-toParalysis,마비
-toPoison,독기
-toShock,전기
-intInSpellPoints15,주문 점수 1.5x지능
-intInSpellPoints175,주문 점수 1.75x지능
-intInSpellPoints2,주문 점수 2x지능
-intInSpellPoints3,주문 점수 3x지능
-intInSpellPoints,주문 점수 1x지능
+shortBlade,단검
+toDisease,질병 저항
+toFire,화염 저항
+toFrost,서리 저항
+toMagic,마법 저항
+toParalysis,마비 저항
+toPoison,독 저항
+toShock,전격 저항
+intInSpellPoints15,지능의 1.5배 주문 점수
+intInSpellPoints175,지능의 1.75배 주문 점수
+intInSpellPoints2,지능의 2배 주문 점수
+intInSpellPoints3,지능의 3배 주문 점수
+intInSpellPoints,지능만큼의 주문 점수
 general,일반
-inDarkness,어두운 곳에서
-inLight,밝은 곳에서
-whileImmersed,수면 아래서
-criticalWeakness,심각한 약점
+inDarkness,어둠 속에서
+inLight,빛 속에서
+whileImmersed,물속에 있을 때
+criticalWeakness,치명적 약점
 damage,피해
-darknessPoweredMagery,어둠 기반 마법능력
-forbiddenArmorType,금지 방어구 종류
-forbiddenMaterial,금지 재질
-forbiddenShieldTypes,금지 방패 종류
-forbiddenWeaponry,금지 무기 종류
-inabilityToRegen,주문점수 재생 불가
-lightPoweredMagery,태양 기반 마법능력
-lowTolerance,저항력 약함
+darknessPoweredMagery,어둠 기반 마법
+forbiddenArmorType,착용 불가 방어구 유형
+forbiddenMaterial,착용 불가 재질
+forbiddenShieldTypes,착용 불가 방패 유형
+forbiddenWeaponry,착용 불가 무기
+inabilityToRegen,주문 점수 재생 불가
+lightPoweredMagery,빛 기반 마법
+lowTolerance,낮은 내성
 phobia,공포증
-fromHolyPlaces,성스러운 장소
-fromSunlight,태양빛
-lowerMagicAbilityDaylight,태양빛을 받으면 마법능력 감소
-unableToUseMagicInDaylight,태양빛을 받으면 마법영창 불가
-chain,체인
+fromHolyPlaces,성스러운 장소에서
+fromSunlight,햇빛 아래에서
+lowerMagicAbilityDaylight,낮 동안 마법 능력 저하
+unableToUseMagicInDaylight,낮 동안 마법 사용 불가
+chain,사슬
 leather,가죽
-plate,중갑
+plate,판금
 adamantium,아다만티움
 daedric,데이드릭
-dwarven,드워븐
+dwarven,드워프식
 ebony,에보니
-elven,엘븐
+elven,엘프식
 iron,철
 mithril,미스릴
-orcish,오키쉬
-silver,실버
+orcish,오크식
+silver,은
 steel,강철
 buckler,버클러
-kiteShield,카이트 쉴드
-roundShield,라운드 쉴드
-towerShield,타워 쉴드
-lowerMagicAbilityDarkness,어두운 곳에서 마법능력 감소
-unableToUseMagicInDarkness,어두운 곳에서 마법영창 불가
+kiteShield,카이트 실드
+roundShield,라운드 실드
+towerShield,타워 실드
+lowerMagicAbilityDarkness,어둠 속에서 마법 능력 저하
+unableToUseMagicInDarkness,어둠 속에서 마법 사용 불가
 helpAttributes,능력치
 helpClassName,직업 이름
 helpGeneral,일반
-helpReputations,명성치
-helpSkillAdvancement,기술 연마
+helpReputations,평판
+helpSkillAdvancement,기술 숙련도
 helpSkills,기술
 helpSpecialAdvantages,특수 장점
 helpSpecialDisadvantages,특수 단점
-lower,감소
-higher,증가
-unchanged,변동없음
+lower,낮음
+higher,높음
+unchanged,변경 없음
 elsweyr,엘스웨어
-blackMarsh,블랙 마쉬
+blackMarsh,블랙 마시
 hammerfell,해머펠
 highRock,하이 락
 morrowind,모로윈드
@@ -460,52 +461,52 @@ sumurset,서머셋
 valenwood,발렌우드
 rollingHills,구릉지
 desertLand,사막
-mountains,산
-swamps,늪지
+mountains,산악 지대
+swamps,습지
 forests,숲
 shores,해안
-medical,의료
-etiquette,에티켓
-streetwise,거리예절
+medical,의술
+etiquette,예법
+streetwise,거리 감각
 jumping,도약
-harpy,하피어
-giantish,자이언트어
+harpy,하피
+giantish,거인어
 dragonish,용언
-nymph,님프어
-aedric,Daedric
-spriggan,스프리건어
-centaurian,센타우리어
+nymph,님프
+aedric,데이드릭
+spriggan,스프리건
+centaurian,켄타우로스어
 impish,임프어
-lockpicking,잠금해제
+lockpicking,자물쇠 따기
 mercantile,상술
 pickpocket,소매치기
 stealth,은신
 swimming,수영
 climbing,등반
-backstabbing,후방공격
+backstabbing,기습 공격
 dodging,회피
 running,달리기
 destruction,파괴마법
 restoration,회복마법
-illusion,환영마법
+illusion,환영술
 alteration,변화마법
-thaumaturgy,역동마법
+thaumaturgy,기적술
 mysticism,신비마법
 archery,궁술
-criticalStrike,치명 공격
-strength,근력
+criticalStrike,치명타
+strength,힘
 intelligence,지능
-willpower,의지
-agility,민첩
-endurance,체력
+willpower,의지력
+agility,민첩성
+endurance,지구력
 personality,매력
 speed,속도
 luck,행운
-STR,근력
+STR,힘
 INT,지능
-WIL,의지
-AGI,민첩
-END,체력
+WIL,의지력
+AGI,민첩성
+END,지구력
 PER,매력
 SPD,속도
 LUC,행운
@@ -519,22 +520,22 @@ argonian,아르고니안
 vampire,뱀파이어
 werewolf,웨어울프
 wereboar,웨어보어
-vraseth,Vraseth
-haarvenu,Haarvenu
-thrafey,Thrafey
-lyrezi,Lyrezi
-montalion,Montalion
-khulari,Khulari
-garlythi,Garlythi
-anthotis,Anthotis
-selenu,Selenu
+vraseth,브라세스
+haarvenu,하르베누
+thrafey,트라페이
+lyrezi,리레지
+montalion,몬탈리온
+khulari,쿨라리
+garlythi,갈리시
+anthotis,안토티스
+selenu,셀레누
 lockedExteriorDoor,잠김.
-canOnlyCastOncePerDay,하루에 한번만 쓸 수 있습니다...
-youNeedToHuntTheInnocent,먹이감을 사냥하고 싶은 욕구가 생깁니다...
-youDreamOfTheMoon,"꿈을, 꿨다, 달의 꿈을..."
-inventoryWhileShapechanged,변형 중에는 소지품을 볼 수 없습니다...
-youGetNoResponse,대답이 없습니다.
-copyLogbookInfo,왼쪽-클릭: 선택한 글 복사. 오른쪽-클릭: 현재 대화 전부 복사.
+canOnlyCastOncePerDay,하루에 한 번만 시전할 수 있습니다...
+youNeedToHuntTheInnocent,무고한 자를 사냥하고 싶은 충동이 느껴집니다...
+youDreamOfTheMoon,다시 한번 달에 대한 꿈을 꿉니다...
+inventoryWhileShapechanged,변신 중에는 인벤토리에 접근할 수 없습니다...
+youGetNoResponse,아무런 반응이 없습니다.
+copyLogbookInfo,왼쪽 클릭: 선택한 텍스트 복사 전환. 오른쪽 클릭: 현재 대화 전체 복사.
 east,동쪽
 northeast,북동쪽
 north,북쪽
@@ -543,417 +544,467 @@ west,서쪽
 southwest,남서쪽
 south,남쪽
 southeast,남동쪽
-thisPlace,이 장소
-AnyNews,새로운 소식?
-WhereAmI,이곳은 어디인지?
-AnswerTextWhereAmI,{1} 의 {0} 입니다.
-YouAreInSameBuilding,여기가 {0} 입니다. 지금 있는 곳입니다.
-NpcInSameBuilding,{0}? {1} 주변에 있을겁니다.
+thisPlace,이곳
+AnyNews,새로운 소식 있나요?
+WhereAmI,여기가 어디죠?
+AnswerTextWhereAmI,당신은 {1}의 {0}에 있습니다.
+YouAreInSameBuilding,{0}의 위치를 찾았습니다. 당신은 그 안에 있습니다.
+NpcInSameBuilding,{0}의 위치는 {1}의 근처입니다.
 PreviousList,이전 목록
 General,일반
-Regional,지역 단위
-Alchemists,연금술사
-Armorers,갑옷 대장장이
+Regional,지역
+Alchemists,연금술사 조합
+Armorers,방어구 제작자
 Banks,은행
 Bookstores,서점
 Clothingstores,의류점
 Gemstores,보석상
-Generalstores,일반 상점
+Generalstores,잡화점
 Guilds,길드
 Libraries,도서관
 Pawnshops,전당포
-Taverns,선술집
-Weaponsmiths,무기 대장장이
+Taverns,여관
+Weaponsmiths,무기 제작자
 Localtemples,지역 사원
 Sir,경
 Ma'am,부인
-oldLeaderFate0,심장마비로 사망했습니다
-oldLeaderFate1,떨어져서 머리를 부딪혔습니다
-oldLeaderFate2,질병으로 사망했습니다
-oldLeaderFate3,압력으로 사임했습니다
-oldLeaderFate4,강판되었습니다
-oldLeaderFate5,침대에서 암살당한 채로 발견되었습니다
-toBeReplacedStringRegional,Any
-replacementStringRegional,any
-comma,",  "
-resolvingError,...never mind...
+oldLeaderFate0,심장마비로 사망
+oldLeaderFate1,넘어져 머리를 부딪쳐 사망
+oldLeaderFate2,역병으로 사망
+oldLeaderFate3,압박을 견디지 못하고 사임
+oldLeaderFate4,전복됨
+oldLeaderFate5,침대에서 살해된 채 발견됨
+toBeReplacedStringRegional,모든
+replacementStringRegional,모든
+comma,","
+resolvingError,...신경 쓰지 마세요...
 chameleon,카멜레온
-charm,매료
+charm,매혹
 comprehendLanguages,언어 이해
 continuousDamage,지속 피해
 createItem,물품 생성
 cure,치료
 detect,탐지
 disintegrate,분해
-dispel,디스펠
-drain,감쇄
+dispel,해제
+drain,흡수
 elementalResistance,원소 저항
-fortifyAttribute,능력치 증가
-freeAction,프리 액션
-heal,회복
-identify,식별
+fortifyAttribute,능력치 강화
+freeAction,행동 자유
+heal,치유
+identify,감정
 invisibility,투명화
-levitate,공중부양
-light,조명
+levitate,부양
+light,빛
 lock,잠금
-morphSelf,Morph Self
-open,잠금해제
-pacify,진정화
+morphSelf,자기 변신
+open,열기
+pacify,진정
 paralyze,마비
 regenerate,재생
-shadow,쉐도우
-shield,쉴드
+shadow,그림자
+shield,방패
 silence,침묵
-slowfall,낙하감속
-soulTrap,소울 트랩
+slowfall,낙하 감속
+soulTrap,영혼 덫
 spellReflection,주문 반사
 spellResistance,주문 저항
-teleport,텔레포트
-transfer,이전
+teleport,순간이동
+transfer,전이
 waterBreathing,수중 호흡
 waterWalking,수면 보행
 fire,화염
-frost,냉기
+frost,서리
 magicka,매지카
 poison,독
-shock,전기
+shock,전격
 enemy,적
 magic,마법
 treasure,보물
-fatigue,지구력
-health,생명력
-spellPoints,주문점수
+fatigue,피로도
+health,체력
+spellPoints,주문 점수
 disease,질병
 paralyzation,마비
 animal,동물
-normal,보통
-TRUE,유지
-noName,<no-name>
-youDontHaveTheSpellPoints,주문점수가 없습니다.
-youAreSilenced,침묵에 걸렸습니다.
-youAreParalyzed,몸이 마비되었습니다.
-youFeelDrained,몸에서 뭔가 빠져나간 느낌이 듭니다.
-youAreFortified,강화 효과를 받았습니다.
-youAreInvisible,몸이 투명해졌습니다.
-youAreLevitating,몸이 떠오릅니다.
-youAreRegenerating,몸이 재생합니다.
-youAreBlending,그림자에 섞여듭니다.
-youAreAShade,그림자 그 자체가 됩니다.
-slowFallActive,낙하 감속 활성화
-saveVersusSpellMade,주문을 버텨냈습니다.
-spellEffectFailed,주문 효과 실패.
+normal,일반
+TRUE,참
+noName,<이름 없음>
+youDontHaveTheSpellPoints,주문 점수가 부족합니다.
+youAreSilenced,침묵 상태입니다.
+youAreParalyzed,마비 상태입니다.
+youFeelDrained,기력이 흡수된 느낌입니다.
+youAreFortified,강화 상태입니다.
+youAreInvisible,투명 상태입니다.
+youAreLevitating,부양 중입니다.
+youAreRegenerating,재생 중입니다.
+youAreBlending,주변과 섞여 있습니다.
+youAreAShade,그림자 형상입니다.
+slowFallActive,낙하 감속이 활성화되었습니다.
+saveVersusSpellMade,주문 저항에 성공했습니다.
+spellEffectFailed,주문 효과가 실패했습니다.
 spellAbsorbed,주문이 흡수되었습니다.
 spellReflected,주문이 반사되었습니다.
-spellResisted,주문을 저항했습니다.
-readyToLock,잠금 준비됨.
-readyToOpen,잠금해제 준비됨.
-doorLocked,문을 잠갔습니다
-doorAlreadyLocked,문이 이미 잠겨있습니다.
-openFailed,잠금 수준이 너무 강합니다.
-noSpellbook,주문책이 없습니다!
-sunlightDamageFastTravelDay,대낮에는 빠른 이동을 할 수 없습니다.
-trapActive,함정 발동.
-trapHumanoid,인간형에는 함정이 작동하지 않습니다.
-trapSuccess,소울 트랩 성공.
-trapFail,소울 트랩 실패.
-trapNoneEmpty,비어있는 소울젬이 없습니다!
+spellResisted,주문이 저항되었습니다.
+readyToLock,잠금 준비 완료.
+readyToOpen,열기 준비 완료.
+doorLocked,문이 잠겼습니다.
+doorAlreadyLocked,문이 이미 잠겨 있습니다.
+openFailed,잠금 장치가 너무 강력합니다.
+noSpellbook,주문서가 없습니다!
+sunlightDamageFastTravelDay,낮에는 빠른 이동을 시작할 수 없습니다.
+trapActive,함정이 활성화되었습니다.
+trapHumanoid,함정은 인간형 생물에게는 작동하지 않습니다.
+trapSuccess,영혼이 갇혔습니다.
+trapFail,함정 설치에 실패했습니다.
+trapNoneEmpty,빈 영혼 덫이 없습니다!
 stamina,지구력
-orcStrength,오크 근력
-healing,회복
-restorePower,매지카 회복
+orcStrength,오크의 힘
+healing,치유
+restorePower,힘 회복
 resistFire,화염 저항
-resistFrost,냉기 저항
-resistShock,전기 저항
+resistFrost,서리 저항
+resistShock,전격 저항
 cureDisease,질병 치료
 slowFalling,낙하 감속
-healTrue,회복 대
-levitation,공중부양
-resistPoison,독기 저항
+healTrue,완전 치유
+levitation,부양
+resistPoison,독 저항
 curePoison,독 치료
-chameleonForm,카멜레온
-shadowForm,그림자
+chameleonForm,카멜레온 형상
+shadowForm,그림자 형상
 purification,정화
-LeatherCuirass,가죽 퀴레이스
+LeatherCuirass,가죽 흉갑
 LeatherGauntlets,가죽 건틀릿
-LeatherGreaves,가죽 그레이브
-LeatherLeftPauldron,가죽 좌측 폴드론
-LeatherRightPauldron,가죽 우측 폴드론
+LeatherGreaves,가죽 각반
+LeatherLeftPauldron,가죽 왼쪽 견갑
+LeatherRightPauldron,가죽 오른쪽 견갑
 LeatherHelm,가죽 투구
-LeatherBoots,가죽 부츠
-ChainCuirass,체인 퀴레이스
-ChainGauntlets,체인 건틀릿
-ChainGreaves,체인 그레이브
-ChainLeftPauldron,체인 좌측 폴드론
-ChainRightPauldron,체인 우측 폴드론
-ChainHelm,체인 투구
-ChainBoots,체인 부츠
-SteelCuirass,강철 퀴레이스
+LeatherBoots,가죽 장화
+ChainCuirass,사슬 흉갑
+ChainGauntlets,사슬 건틀릿
+ChainGreaves,사슬 각반
+ChainLeftPauldron,사슬 왼쪽 견갑
+ChainRightPauldron,사슬 오른쪽 견갑
+ChainHelm,사슬 투구
+ChainBoots,사슬 장화
+SteelCuirass,강철 흉갑
 SteelGauntlets,강철 건틀릿
-SteelGreaves,강철 그레이브
-SteelLeftPauldron,강철 좌측 폴드론
-SteelRightPauldron,강철 우측 폴드론
+SteelGreaves,강철 각반
+SteelLeftPauldron,강철 왼쪽 견갑
+SteelRightPauldron,강철 오른쪽 견갑
 SteelHelm,강철 투구
-SteelBoots,강철 부츠
+SteelBoots,강철 장화
 SteelBuckler,강철 버클러
-SteelDagger,강철 대거
+SteelDagger,강철 단검
 SteelLongsword,강철 롱소드
-SteelStaff,강철 스태프
+SteelStaff,강철 지팡이
 ShortBow,단궁
 Arrows,화살
-SteelBattleAxe,강철 전투 도끼
+SteelBattleAxe,강철 배틀 액스
 Robes,로브
-CastWhenUsed,사용할때 마법:
-CastWhenHeld,손에들때 마법:
-CastWhenStrikes,공격 적중시 마법:
+CastWhenUsed,사용 시 시전:
+CastWhenHeld,소지 시 시전:
+CastWhenStrikes,타격 시 시전:
 ExtraSpellPts,추가 주문 점수
-PotentVs,상대에 강함
-RegensHealth,생명력 재생
-VampiricEffect,흡혈 효과
-IncreasedWeightAllowance,무게 제한 증가
+PotentVs,대상에게 강력함:
+RegensHealth,체력 재생
+VampiricEffect,뱀파이어 효과
+IncreasedWeightAllowance,소지 무게 증가
 RepairsObjects,물품 수리
 AbsorbsSpells,주문 흡수
-EnhancesSkill,기술 향상
-FeatherWeight,물품 무게 감소
-StrengthensArmor,방어력 강화
-ImprovesTalents,특성 향상
-GoodRepWith,상대에 좋은평판
-SoulBound,영혼 속박
-ItemDeteriorates,물품 내구감소
+EnhancesSkill,기술 강화
+FeatherWeight,깃털 무게
+StrengthensArmor,방어구 강화
+ImprovesTalents,재능 향상
+GoodRepWith,우호적인 평판:
+SoulBound,영혼 결속
+ItemDeteriorates,물품 내구도 저하
 UserTakesDamage,사용자 피해
-VisionProblems,시각 문제
+VisionProblems,시야 문제
 WalkingProblems,보행 문제
-LowDamageVs,상대에 주는 피해약화
-HealthLeech,생명력 피해
-BadReactionsFrom,상대에 나쁜반응
-ExtraWeight,물품 무게 증가
-WeakensArmor,방어력 약화
-BadRepWith,상대에 나쁜평판
-inHolyPlaces,성스러운 장소
+LowDamageVs,대상에게 낮은 피해:
+HealthLeech,체력 흡수
+BadReactionsFrom,적대적인 반응:
+ExtraWeight,추가 무게
+WeakensArmor,방어구 약화
+BadRepWith,나쁜 평판:
+inHolyPlaces,성스러운 장소에서
 wheneverUsed,사용할 때마다
-unlessUsedDaily,매일 사용하지 않을시
-unlessUsedWeekly,매주 사용하지 않을시
-fromHumanoids,인간형
-fromAnimals,동물
-fromDaedra,데이드라
-duringWinter,겨울동안
-duringSpring,봄동안
-duringSummer,여름동안
-duringFall,가을동안
-duringFullMoon,보름달동안
-duringHalfMoon,반달동안
-duringNewMoon,신월동안
+unlessUsedDaily,매일 사용하지 않으면
+unlessUsedWeekly,매주 사용하지 않으면
+fromHumanoids,인간형 생물로부터
+fromAnimals,동물로부터
+fromDaedra,데이드라로부터
+duringWinter,겨울 동안
+duringSpring,봄 동안
+duringSummer,여름 동안
+duringFall,가을 동안
+duringFullMoon,보름달 동안
+duringHalfMoon,반달 동안
+duringNewMoon,그믐달 동안
 nearUndead,언데드 근처에서
 nearDaedra,데이드라 근처에서
-nearHumanoids,인간형 근처에서
+nearHumanoids,인간형 생물 근처에서
 nearAnimals,동물 근처에서
 undeadLower,언데드
-humanoidLower,인간형
+humanoidLower,인간형 생물
 animalsLower,동물
 animalsUpper,동물
 allTheTime,항상
-inSunlight,태양빛 아래서
-inDarknessLower,어두운 곳에서
+inSunlight,햇빛 아래에서
+inDarknessLower,어둠 속에서
 atRange,원거리에서
-whenStrikes,공격 적중시
+whenStrikes,타격 시
 add25Percent,25% 추가
 add50Percent,50% 추가
-hearing,청력 민감
-athleticismLower,높은 운동능력
-adrenalineRushLower,"아드레날린 러시"
+hearing,예민한 청각
+athleticismLower,운동 능력
+adrenalineRushLower,아드레날린 쇄도
 commoners,평민
-merchants,상인
-scholars,학자
+merchants,상인회
+scholars,학자회
 nobility,귀족
-underworld,범죄자
-all,모두
-noRoomInItem,물품에 여유가 없습니다...
-noEnchantments,부여할 인챈트 효과가 없습니다.
-noMonstersNearby,근처에 적이 없습니다.
+underworld,암흑가
+all,전체
+noRoomInItem,아이템을 넣을 공간이 없습니다...
+noEnchantments,이 아이템에 부여할 마법을 준비하지 않았습니다.
+noMonstersNearby,근처에 괴물이 없습니다.
 Fire,화염
-Frost,냉기
-Poison,독기
-Shock,전기
+Frost,서리
+Poison,독
+Shock,전격
 Magicka,매지카
 Animal,동물
 Undead,언데드
 Humanoid,인간형
 Daedra,데이드라
-dialogButtonInfo,다음 순서로 변경: 진행중 퀘스트; 완료된 퀘스트; 메모장; 메세지
-activeQuests,진행중 퀘스트
-activeQuestsInfo,진행중 퀘스트를 누르면 퀘스트 목적지로 여행.
+dialogButtonInfo,전환: 진행 중인 퀘스트; 완료된 퀘스트; 수첩; 메시지
+activeQuests,진행 중인 퀘스트
+activeQuestsInfo,목표 위치가 있는 퀘스트를 클릭하여 여행을 시작하십시오.
 finishedQuests,완료된 퀘스트
-finishedQuestsInfo,좌 클릭시 누른 곳으로 이동. 우 클릭시 삭제.
-notebook,메모장
-notebookInfo,좌 클릭으로 메모 이동. 우 클릭으로 삭제. 빈 곳 좌 클릭시 새 메모 작성.
-messages,메세지
-messagesInfo,화면에 표시된 메세지 내역
+finishedQuestsInfo,항목을 클릭하여 이동하십시오. 우클릭하면 삭제됩니다.
+notebook,수첩
+notebookInfo,메모를 클릭하여 이동하십시오. 우클릭하면 삭제됩니다. 사이를 클릭하여 새 메모를 추가하십시오.
+messages,메시지
+messagesInfo,최근 화면에 표시된 메시지 기록
 confirmMoveHead,항목 이동
-confirmMove,Do you want to change the position of this entry?
-confirmMove2,(It will be moved to before the next entry clicked)
-confirmRemoveHead,Delete entry
-confirmRemove,Are you sure you want to remove this entry?
-confirmRemove2,(It will be deleted permanently and cannot be restored)
-confirmFindHead,Travel to location
-confirmFind,Do you want to open the world map to travel to:
-confirmFind2,(Note: you can cancel travel from the world map)
-enterNote,메모 입력:
-completedQuest,완료
-endedQuest,실패
-finishQuestHeader,{0} {1} 시간 {2}:
-quest,Quest
-noteHeader,시간:{0} 장소:{1}
-houseDeed,"등록 문서를 획득했고, %region 의 %town 에 있는 집을 얻었다."
-levelProgress,다음 레벨 까지 누적된 진행도: {0}%
-readMap,지도를 보고 %map 위치를 알아냈다.
-readMapTG,도둑 길드에서 긴밀히 지켜오던 보물 위치가 적힌 %map 지도를 받았습니다.
-readMapDB,다크 브라더후드에서 보물이 있는 %map 에 대한 비밀을 건네받았습니다.
-readMapFail,이미 이 지도에 나오는 지역은 알고 있습니다.
-howManyItems,물품 몇 개를 이동 합니까(최대 {0})?
-wagonFullGold,마차에 금화 {0}닢 이상 실을 수 없습니다.
-itemsIdentified,물품을 식별했습니다.
+confirmMove,이 항목의 위치를 변경하시겠습니까?
+confirmMove2,(다음 클릭한 항목 앞으로 이동합니다)
+confirmRemoveHead,항목 삭제
+confirmRemove,이 항목을 정말로 삭제하시겠습니까?
+confirmRemove2,(영구적으로 삭제되며 복구할 수 없습니다)
+confirmFindHead,위치로 여행
+confirmFind,다음 위치로 여행하기 위해 세계 지도를 여시겠습니까:
+confirmFind2,(참고: 세계 지도에서 여행을 취소할 수 있습니다)
+enterNote,메모를 입력하십시오:
+completedQuest,완료됨
+endedQuest,종료됨
+finishQuestHeader,{2}에서의 {0} {1}:
+quest,퀘스트
+noteHeader,{1}의 {0}:
+houseDeed,당신은 증서를 획득하여 이제 %region의 %town에 있는 집을 소유하게 되었습니다.
+levelProgress,다음 레벨까지의 진행도: {0}%
+readMap,지도를 연구한 끝에 %map의 위치를 발견했습니다.
+readMapTG,도둑 길드가 %map 물품이라 불리는 보물 창고의 철저히 숨겨진 위치를 알려주었습니다.
+readMapDB,다크 브라더후드가 %map 물품이라 불리는 곳에 위치한 보물이 가득한 무덤의 비밀을 알려주었습니다.
+readMapFail,이 지도가 보여주는 위치는 이미 발견했습니다.
+howManyItems,몇 개의 아이템을 선택하시겠습니까 (최대 {0}개)?
+wagonFullGold,당신의 마차에는 {0} 골드만 실을 수 있습니다.
+itemsIdentified,아이템 식별 완료.
 repairDone,완료
-repairDays,%d 일
-interruptRepair,수리가 완료되기 전입니다. 회수합니까?
-repairNote,{0}의 수리를 {1}에 맡겼다.
-doesntNeedIdentify,이 물품은 식별할 필요가 없습니다.
-goldAmount,금화 {0} 닢
-goldWeight,무게: {0} 킬로그램
-letterOfCredit,어음으로 대금을 받았습니다.
+repairDays,%d일
+interruptRepair,수리되기 전에 아이템을 되찾으시겠습니까?
+repairNote,{1}에 수리를 맡긴 {0}.
+doesntNeedIdentify,이것은 식별할 필요가 없습니다.
+goldAmount,{0} 골드
+goldWeight,무게: {0} kg
+letterOfCredit,신용장으로 보상을 받았습니다.
 stealSuccess,성공했습니다.
-stealFailure,실패했습니다...
-cannotRemoveItem,이것은 버릴 수 없습니다.
-cannotCarryAnymore,더 이상의 물건은 소지할 수 없습니다.
-cannotHoldAnymore,수레에 더 이상 물건을 넣을 수 없습니다.
+stealFailure,성공하지 못했습니다...
+cannotRemoveItem,이 아이템은 제거할 수 없습니다.
+cannotCarryAnymore,더 이상 물건을 들 수 없습니다.
+cannotHoldAnymore,마차에 더 이상 물건을 실을 수 없습니다.
 cannotUseThis,이것은 사용할 수 없습니다.
-equippingWeapon,%s-손에 들었습니다.
-lightDouse,%it 의 불을 껐습니다.
-lightLight,%it 에 불을 붙였습니다.
-lightDies,%it 의 빛이 깜빡거리더니 꺼졌습니다.
-lightEmpty,%it 에 기름이 없습니다.
-lightRefuel,%it 의 기름을 채웠습니다.
-lightFull,%it 에 기름이 가득 찼습니다.
+equippingWeapon,%s 장착 중
+lightDouse,%it의 불을 끕니다.
+lightLight,%it에 불을 붙입니다.
+lightDies,%it의 깜빡임이 멈추고 꺼집니다.
+lightEmpty,%it에 연료가 없습니다.
+lightRefuel,기름 한 병으로 %it에 연료를 채웁니다.
+lightFull,%it 내부가 가득 찼습니다.
 kgSrc,킬로그램
 kgRep,kg
-damSrc,points of damage
-damRep,damage
-arSrc,armor rating
-arRep,armor
-northern,(북방)
-southern,(남방)
-noWagon,수레를 가지고 있지 않습니다.
-exitTooFar,출구에서 너무 멀리 있어 수레를 쓸 수 없습니다.
-bookUnavailable,책이 손상되어 읽을 수 없습니다.
-unknownAuthor,작자 미상
-cannotDeleteVamp,뱀파이어 특수 주문은 삭제할 수 없습니다.
-cannotDeleteWere,늑대인간 특수 주문은 삭제할 수 없습니다.
-noRecipes,제작법이 없습니다.
-potionMixed,포션을 제조 했습니다.
-potionFailed,이 재료로는 효능이 있는 포션을 만들 수 없습니다.
+damSrc,피해량
+damRep,피해
+arSrc,방어 등급
+arRep,방어구
+northern,(북부)
+southern,(남부)
+noWagon,소유한 마차 없음.
+exitTooFar,출구가 너무 멀어 마차에 접근할 수 없습니다.
+bookUnavailable,책이 훼손되어 읽을 수 없습니다.
+unknownAuthor,저자 미상
+cannotDeleteVamp,특별한 뱀파이어 주문은 삭제할 수 없습니다.
+cannotDeleteWere,특별한 수인병 주문은 삭제할 수 없습니다.
+noRecipes,레시피가 없습니다.
+potionMixed,물약이 혼합되었습니다.
+potionFailed,그 재료들로는 효과적인 물약을 만들 수 없습니다.
 reqIngredients,필요한 재료가 없습니다.
 region,지역
 account,계좌
 loan,대출
-dueDate,대출 기한
+dueDate,대출 만기일
 noAccount,없음
-loanReminder,{1}에서 대출 받은 금화 {0}닢을
-loanReminder2,{0} 달 안에 상환해야 합니다.
-classicIcons,Classic
-suggestedIcons,Suggested
-serviceMembersOnly,이 서비스는 회원 전용입니다.
-serviceDonateHowMuch,기부할 금화 : 
-curedDisease,질병이 치료 되었습니다.
-freeHolidayCuring,오늘이 명절이기 때문에 무료로 치료 받았습니다.
-gettingQuests1,의뢰 목록을 찾아보고 있는 것 같다.
-gettingQuests2,당신은 잠시 기다렸다.
-illegalRestWarning,도시 안이나 근처에서 노숙은 불법입니다. 노숙 하시겠습니까?
-cannotLoiterMoreThanXHours1,대기 불가
-cannotLoiterMoreThanXHours2,{0} 시간 이상 대기 할 수 없습니다.
-automapToolTipTextGridButton,left click: switch between 2D top view and 3D view (hotkey: {0})\rright click: reset rot. axis to player pos (hotkey: {1})\rmouse wheel up while over btn: inc. perspective (only 3D mode)\rmouse wheel down while over btn: dec. perspective (only 3D mode)
-automapToolTipForwardButton,left click: move viewpoint forward (hotkey: {0})\rright click: move rotation axis forward (hotkey: {1})
-automapToolTipBackwardButton,left click: move viewpoint backwards (hotkey: {0})\rright click: move rotation axis backwards (hotkey: {1})
-automapToolTipLeftButton,left click: move viewpoint to the left (hotkey: {0})\rright click: move rotation axis to the left (hotkey: {1})
-automapToolTipRightButton,left click: move viewpoint to the right (hotkey: {0})\rright click: move rotation axis to the right (hotkey: {1})
-automapToolTipRotateLeftButton,left click: rotate dungeon to the left (hotkey: {0})\rright click: rotate camera to the left (hotkey: {1})
-automapToolTipRotateRightButton,left click: rotate dungeon to the right (hotkey: {0})\rright click: rotate camera to the right (hotkey: {1})
-automapToolTipUpstairsButton,left click: increase viewpoint (hotkey: {0})\rright click: increase slice level (hotkey: {1})\rslice level can also be adjusted by holding down middle mouse btn\r\rhint: different render modes may show hidden geometry:\rhotkey {2}: cutout mode\rhotkey {3}: wireframe mode\rhotkey {4}: transparent mode\rswitch between modes with return key\r
-automapToolTipDownstairsButton,left click: decrease viewpoint (hotkey: {0})\rright click: decrease slice level (hotkey: {1})\rslice level can also be adjusted by holding down middle mouse btn\r\rhint: different render modes may show hidden geometry:\rhotkey {2}: cutout mode\rhotkey {3}: wireframe mode\rhotkey {4}: transparent mode\rswitch between modes with return key\r
-automapToolTipPanelCompass,"left click: toggle focus (hotkey: {0})\rbeacons: red ... player, green ... entrance, blue ... rotation axis\r\rright click: reset view (hotkey: {1})\r\rdouble-click left mouse btn in window to create+edit marker note\rdouble-click left mouse btn (+Ctrl key) in window to create marker\rdouble-click left mouse btn on a marker to add/edit a note\rdouble-click right mouse btn on a marker to delete it\rdouble-click right mouse btn in window to position rotation axis\rdouble-click middle mouse btn in window to center view\rdouble-click left mouse btn on discovered portal marker to jump\rto connected teleporter portal"
-automapPlayerPositionBeacon,player position beacon
-automapRotationPivotAxis,rotation pivot axis
-automapEntranceExitPositionBeacon,entrance/exit position beacon
-automapEntranceExit,entrance/exit
-automapPlayerMarker,player marker
-automapTeleporterEntrance,teleporter (entrance)
-automapTeleporterExit,teleporter (exit)
-exteriorAutomapBuildingTypeAlchemist,Alchemist
-exteriorAutomapBuildingTypeArmorer,Armorer
-exteriorAutomapBuildingTypeBank,Bank
-exteriorAutomapBuildingTypeBookseller,Bookseller
-exteriorAutomapBuildingTypeClothingStore,Clothing Store
-exteriorAutomapBuildingTypeFurnitureStore,Furniture Store
-exteriorAutomapBuildingTypeGemStore,Gem Store
-exteriorAutomapBuildingTypeGeneralStore,General Store
-exteriorAutomapBuildingTypeGuildHall,Guild Hall
-exteriorAutomapBuildingTypeHouseForSale,HouseForSale
-exteriorAutomapBuildingTypeLibrary,Library
-exteriorAutomapBuildingTypePalace,Palace
-exteriorAutomapBuildingTypePawnShop,Pawn Shop
-exteriorAutomapBuildingTypeTavern,Tavern
-exteriorAutomapBuildingTypeTemple,Temple
-exteriorAutomapBuildingTypeWeaponSmith,Weapon Smith
-exteriorAutomapBuildingTypeUnknown,Unknown
-exteriorAutomapToolTipTextGridButton,"left click: switch to next view mode (hotkey: {0})\ravailable view modes are:\r- original (hotkey {1})\r- extra: includes extra buildings (hotkey {2})\r- all: includes extra buildings, ground flats (hotkey {3})\rswitch background texture with {4}, {5}, {6}, {7}"
-exteriorAutomapToolTipForwardButton,left click: move up (hotkey: {0})\rright click: move to north location border (hotkey: {1})
-exteriorAutomapToolTipBackwardButton,left click: move down (hotkey: {0})\rright click: move to south location border (hotkey: {1})
-exteriorAutomapToolTipLeftButton,left click: move to the left (hotkey: {0})\rright click: move to west location border (hotkey: {1})
-exteriorAutomapToolTipRightButton,left click: move to the right (hotkey: {0})\rright click: move to east location border (hotkey: {1})
-exteriorAutomapToolTipRotateLeftButton,left click: rotate map to the left (hotkey: {0})\rright click: rotate map around the player position\rto the left  (hotkey: {1})
-exteriorAutomapToolTipRotateRightButton,left click: rotate map to the right (hotkey: {0})\rright click: rotate map around the player position\rto the right (hotkey: {1})
-exteriorAutomapToolTipUpstairsButton,left click: zoom in (hotkey: {0})\rright click: apply maximum zoom)
-exteriorAutomapToolTipDownstairsButton,left click: zoom out (hotkey: {0}\rright click: apply minimum zoom)
-exteriorAutomapToolTipPanelCompass,left click: focus player position (hotkey: {0})\rright click: reset view (hotkey: {1})
-loading,기다려 주십시오...
+loanReminder,{0} 골드의 대출 만기가 다가옵니다:
+loanReminder2,{1}에서 {0}개월 미만
+classicIcons,클래식
+suggestedIcons,추천
+serviceMembersOnly,제 서비스는 회원 전용입니다.
+serviceDonateHowMuch,기부할 금액:
+curedDisease,치유되었습니다.
+freeHolidayCuring,오늘은 휴일이므로 무료로 치유되었습니다.
+gettingQuests1,"흠, 가능한 작업이 무엇인지 확인해 보죠."
+gettingQuests2,"잠시만 기다려 주십시오, %pcf."
+illegalRestWarning,도시 안이나 근처에서 야영하는 것은 불법입니다. 계속하시겠습니까?
+cannotLoiterMoreThanXHours1,더 이상 빈둥거릴 수 없습니다
+cannotLoiterMoreThanXHours2,한 번에 {0}시간 이상.
+automapToolTipTextGridButton,"좌클릭: 2D 평면도와 3D 보기 전환 (단축키: {0})
+우클릭: 회전축을 플레이어 위치로 초기화 (단축키: {1})
+버튼 위에서 마우스 휠 위로: 원근감 증가 (3D 모드 전용)
+버튼 위에서 마우스 휠 아래로: 원근감 감소 (3D 모드 전용)"
+automapToolTipForwardButton,"좌클릭: 시점을 앞으로 이동 (단축키: {0})
+우클릭: 회전축을 앞으로 이동 (단축키: {1})"
+automapToolTipBackwardButton,"좌클릭: 시점을 뒤로 이동 (단축키: {0})
+우클릭: 회전축을 뒤로 이동 (단축키: {1})"
+automapToolTipLeftButton,"좌클릭: 시점을 왼쪽으로 이동 (단축키: {0})
+우클릭: 회전축을 왼쪽으로 이동 (단축키: {1})"
+automapToolTipRightButton,"좌클릭: 시점을 오른쪽으로 이동 (단축키: {0})
+우클릭: 회전축을 오른쪽으로 이동 (단축키: {1})"
+automapToolTipRotateLeftButton,"좌클릭: 던전을 왼쪽으로 회전 (단축키: {0})
+우클릭: 카메라를 왼쪽으로 회전 (단축키: {1})"
+automapToolTipRotateRightButton,"좌클릭: 던전을 오른쪽으로 회전 (단축키: {0})
+우클릭: 카메라를 오른쪽으로 회전 (단축키: {1})"
+automapToolTipUpstairsButton,"좌클릭: 시점 높이기 (단축키: {0})
+우클릭: 슬라이스 레벨 높이기 (단축키: {1})
+슬라이스 레벨은 마우스 가운데 버튼을 누른 채로 조정할 수도 있습니다.
+
+힌트: 렌더링 모드에 따라 숨겨진 지형이 보일 수 있습니다:
+단축키 {2}: 컷아웃 모드
+단축키 {3}: 와이어프레임 모드
+단축키 {4}: 투명 모드
+Enter 키로 모드 전환"
+automapToolTipDownstairsButton,"좌클릭: 시점 낮추기 (단축키: {0})
+우클릭: 슬라이스 레벨 낮추기 (단축키: {1})
+슬라이스 레벨은 마우스 가운데 버튼을 누른 채로 조정할 수도 있습니다.
+
+힌트: 렌더링 모드에 따라 숨겨진 지형이 보일 수 있습니다:
+단축키 {2}: 컷아웃 모드
+단축키 {3}: 와이어프레임 모드
+단축키 {4}: 투명 모드
+Enter 키로 모드 전환"
+automapToolTipPanelCompass,"좌클릭: 초점 전환 (단축키: {0})
+비컨: 빨간색... 플레이어, 녹색... 입구, 파란색... 회전축
+
+우클릭: 보기 초기화 (단축키: {1})
+
+창에서 마우스 좌클릭 더블 클릭: 마커 메모 생성+편집
+창에서 Ctrl+마우스 좌클릭 더블 클릭: 마커 생성
+마커 위에서 마우스 좌클릭 더블 클릭: 메모 추가/편집
+마커 위에서 마우스 우클릭 더블 클릭: 마커 삭제
+창에서 마우스 우클릭 더블 클릭: 회전축 위치 지정
+창에서 마우스 가운데 버튼 더블 클릭: 보기 중심 맞추기
+발견된 포털 마커 위에서 마우스 좌클릭 더블 클릭: 연결된 텔레포터 포털로 이동"
+automapPlayerPositionBeacon,플레이어 위치 비컨
+automapRotationPivotAxis,회전 피벗 축
+automapEntranceExitPositionBeacon,입구/출구 위치 비컨
+automapEntranceExit,입구/출구
+automapPlayerMarker,플레이어 마커
+automapTeleporterEntrance,텔레포터 (입구)
+automapTeleporterExit,텔레포터 (출구)
+exteriorAutomapBuildingTypeAlchemist,연금술사
+exteriorAutomapBuildingTypeArmorer,갑옷 제작자
+exteriorAutomapBuildingTypeBank,은행
+exteriorAutomapBuildingTypeBookseller,서점
+exteriorAutomapBuildingTypeClothingStore,의류점
+exteriorAutomapBuildingTypeFurnitureStore,가구점
+exteriorAutomapBuildingTypeGemStore,보석상
+exteriorAutomapBuildingTypeGeneralStore,잡화점
+exteriorAutomapBuildingTypeGuildHall,길드 회관
+exteriorAutomapBuildingTypeHouseForSale,매물 주택
+exteriorAutomapBuildingTypeLibrary,도서관
+exteriorAutomapBuildingTypePalace,궁전
+exteriorAutomapBuildingTypePawnShop,전당포
+exteriorAutomapBuildingTypeTavern,여관
+exteriorAutomapBuildingTypeTemple,신전
+exteriorAutomapBuildingTypeWeaponSmith,무기 대장장이
+exteriorAutomapBuildingTypeUnknown,알 수 없음
+exteriorAutomapToolTipTextGridButton,"좌클릭: 다음 보기 모드로 전환 (단축키: {0})
+사용 가능한 보기 모드:
+- 기본 (단축키 {1})
+- 추가: 추가 건물 포함 (단축키 {2})
+- 전체: 추가 건물 및 지면 평면 포함 (단축키 {3})
+배경 텍스처 전환: {4}, {5}, {6}, {7}"
+exteriorAutomapToolTipForwardButton,"좌클릭: 위로 이동 (단축키: {0})
+우클릭: 북쪽 위치 경계로 이동 (단축키: {1})"
+exteriorAutomapToolTipBackwardButton,"좌클릭: 아래로 이동 (단축키: {0})
+우클릭: 남쪽 위치 경계로 이동 (단축키: {1})"
+exteriorAutomapToolTipLeftButton,"좌클릭: 왼쪽으로 이동 (단축키: {0})
+우클릭: 서쪽 위치 경계로 이동 (단축키: {1})"
+exteriorAutomapToolTipRightButton,"좌클릭: 오른쪽으로 이동 (단축키: {0})
+우클릭: 동쪽 위치 경계로 이동 (단축키: {1})"
+exteriorAutomapToolTipRotateLeftButton,"좌클릭: 지도를 왼쪽으로 회전 (단축키: {0})
+우클릭: 플레이어 위치를 중심으로 지도를 왼쪽으로 회전 (단축키: {1})"
+exteriorAutomapToolTipRotateRightButton,"좌클릭: 지도를 오른쪽으로 회전 (단축키: {0})
+우클릭: 플레이어 위치를 중심으로 지도를 오른쪽으로 회전 (단축키: {1})"
+exteriorAutomapToolTipUpstairsButton,"좌클릭: 확대 (단축키: {0})
+우클릭: 최대 확대)"
+exteriorAutomapToolTipDownstairsButton,"좌클릭: 축소 (단축키: {0})
+우클릭: 최소 축소)"
+exteriorAutomapToolTipPanelCompass,"좌클릭: 플레이어 위치에 초점 (단축키: {0})
+우클릭: 보기 초기화 (단축키: {1})"
+loading,잠시만 기다려 주십시오...
 classicSave,클래식
 cancel,취소
-renameSave,이름변경
+renameSave,이름 변경
 deleteSave,삭제
-switchChar,캐릭터 변경
+switchChar,캐릭터 전환
 savePrompt,게임 저장
-loadPrompt,게임 로드
+loadPrompt,게임 불러오기
 saveButton,저장
-loadButton,로드
-enterSaveName,세이브 이름 입력
-selectSaveName,세이브 선택
-confirmDeleteSave,정말 세이브를 삭제합니까?
-confirmOverwriteSave,이 세이브를 덮어 씌웁니까?
-youMustEnterASaveName,세이브 이름을 입력해야 합니다.
-youMustSelectASaveName,세이브 이름을 선택해야 합니다.
-noSavesFound,세이브가 없습니다. 클래식 세이브를 로드합니까?
+loadButton,불러오기
+enterSaveName,저장 이름 입력
+selectSaveName,저장 파일 선택
+confirmDeleteSave,정말로 저장 파일을 삭제하시겠습니까?
+confirmOverwriteSave,이 저장 파일을 덮어쓰시겠습니까?
+youMustEnterASaveName,저장 이름을 입력해야 합니다.
+youMustSelectASaveName,저장 이름을 선택해야 합니다.
+noSavesFound,저장 파일을 찾을 수 없습니다. 클래식 저장 파일을 불러오시겠습니까?
 cannotSaveNow,지금은 저장할 수 없습니다.
 addEffect,효과 추가
-buySpell,주문 구입
-newSpell,신규 주문
+buySpell,주문 구매
+newSpell,새 주문
 exit,나가기
-casterOnly,시전자에만
-byTouch,접촉
-singleTargetAtRange,원거리 단일 목표
-areaAroundCaster,시전자 주변
+casterOnly,시전자 전용
+byTouch,접촉 시
+singleTargetAtRange,단일 대상 원거리
+areaAroundCaster,시전자 주변 범위
 areaAtRange,원거리 범위
 fireBased,화염 기반
 coldBased,냉기 기반
-poisonBased,독기 기반
-shockBased,전기 기반
+poisonBased,독 기반
+shockBased,전격 기반
 magicBased,마법 기반
 selectIcon,아이콘 선택
 nextIcon,다음 아이콘
 previousIcon,이전 아이콘
 nameSpell,주문 이름
-enterSpellName,주문 이름 입력 :
-noEffectsError,주문에 적어도 하나의 효과가 있어야 합니다.
-deleteSpell,이 주문을 삭제합니까?
-sortSpells,주문 목록을 정렬합니까?
+enterSpellName,주문 이름을 입력하세요 :
+noEffectsError,이 주문에 최소 하나의 효과를 추가해야 합니다.
+deleteSpell,이 주문을 삭제하시겠습니까?
+sortSpells,주문을 정렬하시겠습니까?
 effectNotFoundError,<효과를 찾을 수 없음>
-noItemToActivate,사용 가능한 마법 물품이 없습니다.
+noItemToActivate,사용 가능한 마법 아이템이 없습니다
 Akatosh,아카토쉬
 Arkay,아케이
 Dibella,디벨라
@@ -962,296 +1013,296 @@ Kynareth,키나레스
 Mara,마라
 Stendarr,스텐다르
 Zenithar,제니타르
-removeKeybind,{0} ('{1}') 키 설정을 삭제하시겠습니까?
-nord,노드
-settingsNotApplied,비고: 일부 변경사항은 게임 재시작이 필요합니다.
+removeKeybind,{0}('{1}')에 대한 키 바인딩을 정말로 제거하시겠습니까?
+nord,노르드
+settingsNotApplied,참고: 일부 변경 사항은 게임을 다시 시작해야 적용될 수 있습니다.
 doneButton,완료
 temple,사원
-unknownPowers,Unknown Powers
-cannotBeRepaired,이 물품은 수리할 수 없습니다.
-youNeverAwaken,You never awaken.
+unknownPowers,미지의 힘
+cannotBeRepaired,수리할 수 없습니다.
+youNeverAwaken,당신은 절대 깨어나지 못합니다.
 modSettings,모드 설정
 gameEffectsSettings,효과 설정
 antialiasing,안티앨리어싱
-ambientOcclusion,Ambient Occlusion
+ambientOcclusion,앰비언트 오클루전
 bloom,블룸
 motionBlur,모션 블러
 vignette,비네트
-depthOfField,시야 심도
-antialiasingTip,부드러운 화면을 보여줍니다
-enable,Enable
+depthOfField,피사계 심도
+antialiasingTip,더 부드러운 외관 제공
+enable,활성화
 fxaa,FXAA
 smaa,SMAA
 taa,TAA
 none,없음
-method,Method
+method,방식
 fxaaFastMode,FXAA 고속 모드
 low,낮음
 medium,중간
 high,높음
 smaaQuality,SMAA 품질
 taaSharpness,TAA 선명도
-disabled,Disabled
-setPageDefaults,페이지 기본값으로 변경
-ambientOcclusionTip,구멍이나 맞닿는 부분을 어둡게 합니다
-scalableAmbientObscurance,Scalable Ambient Obscurance
-multiScaleVolumetricObscurance,Multi Scale Volumetric Obscurance
-scalableAmbient,Scalable Ambient
-multiScaleVolumetric,MultiScale Volumetric
-intensity,Intensity
-lowest,Lowest
-ultra,Ultra
-radius,Radius
-quality,Quality
-thickness,Thickness
-bloomTip,밝은 부분을 빛나게 합니다
-threshold,Threshold
-diffusion,Diffusion
-bloomFastMode,Bloom fast mode
-motionBlurTip,물체를 카메라 초점보다 빠른것처럼 보이게 합니다
-shutterAngle,Shutter Angle
-sampleCount,Sample Count
-vignetteTip,화면의 주변부를 어둡게 합니다
-smoothness,Smoothness
-roundness,Roundness
-rounded,Rounded
-depthOfFieldTip,카메라 렌즈의 초점처럼 보이게 합니다
-focusDistance,Focus Distance
-aperture,Aperture
-focalLength,Focal Length
-maxBlurSize,Max Blur Size
-small,Small
-large,Large
-veryLarge,Very Large
-ditherTip,색상 대역 효과 같은 패턴이 대량 반복되는 곳에 노이즈를 넣습니다
-dither,디더
-colorBoost,색상부스트
-colorBoostTip,색상을 부각시켜 보이게 합니다
-dungeonScale,Dungeon Scale
-interiorScale,Interior Scale
-exteriorScale,Exterior Scale
-dungeonFalloff,Dungeon Falloff
+disabled,비활성화
+setPageDefaults,페이지 기본값 설정
+ambientOcclusionTip,틈새와 구멍을 어둡게 함
+scalableAmbientObscurance,확장 가능한 앰비언트 오스큐런스
+multiScaleVolumetricObscurance,다중 스케일 볼류메트릭 오스큐런스
+scalableAmbient,확장 가능한 앰비언트
+multiScaleVolumetric,다중 스케일 볼류메트릭
+intensity,강도
+lowest,가장 낮음
+ultra,울트라
+radius,반경
+quality,품질
+thickness,두께
+bloomTip,밝은 영역을 빛나게 함
+threshold,임계값
+diffusion,확산
+bloomFastMode,블룸 고속 모드
+motionBlurTip,카메라 노출보다 빠르게 움직이는 물체를 시뮬레이션
+shutterAngle,셔터 각도
+sampleCount,샘플 수
+vignetteTip,화면 가장자리로 갈수록 어둡게 함
+smoothness,부드러움
+roundness,둥근 정도
+rounded,둥글게
+depthOfFieldTip,카메라 렌즈의 초점을 시뮬레이션
+focusDistance,초점 거리
+aperture,조리개
+focalLength,초점 길이
+maxBlurSize,최대 블러 크기
+small,작게
+large,크게
+veryLarge,매우 크게
+ditherTip,색상 밴딩과 같은 대규모 패턴을 줄이기 위해 노이즈 적용
+dither,디더링
+colorBoost,색상 부스트
+colorBoostTip,카메라 근처의 색상을 밝게 함
+dungeonScale,던전 스케일
+interiorScale,실내 스케일
+exteriorScale,실외 스케일
+dungeonFalloff,던전 감쇠
 retroMode,레트로 모드
-retroModeTip,더 낮은 해상도로 화면을 표현합니다
-mode,Mode
-retroModeOff,Off
+retroModeTip,세계를 낮은 해상도로 렌더링
+mode,모드
+retroModeOff,끄기
 retroMode320x200,320x200
 retroMode640x400,640x400
-off,Off
-posterizationFull,Posterization (full)
-posterizationMinusSky,Posterization (-sky)
-palettizationFull,Palettization (full)
-palettizationMinusSky,Palettization (-sky)
-postProcess,Postprocess
-retroModeAspectCorrection,Aspect Ratio Correction
+off,끄기
+posterizationFull,포스터화 (전체)
+posterizationMinusSky,포스터화 (-하늘)
+palettizationFull,팔레트화 (전체)
+palettizationMinusSky,팔레트화 (-하늘)
+postProcess,후처리
+retroModeAspectCorrection,종횡비 보정
 FourThree,4:03
 SixteenTen,16:10
-notEnoughSpellpointsLeft,주문 점수가 충분하지 않습니다.
-totalIdentified,{1}개 중 {0}개를 식별했습니다.
-dispelMagicSuccess,마법 디스펠을 성공했습니다...
-dispelMagicFailed,마법 디스펠을 실패했습니다...
-smallerDungeonsChanged,던전 내부에서 더 작은 던전 옵션 변경함. 플레이어를 던전 출구로 이동합니다.
-youNote,기록: 
-customName,Custom name: 
-StoresA,"%ef 의
-%cn 최고급
-최상품
-%ef 경의
+notEnoughSpellpointsLeft,남은 주문 점수가 충분하지 않습니다.
+totalIdentified,{0}/{1} 식별됨.
+dispelMagicSuccess,마법 해제 성공...
+dispelMagicFailed,마법 해제 실패...
+smallerDungeonsChanged,던전 내부에 있는 동안 더 작은 던전으로 변경되었습니다. 플레이어를 던전 출구로 이동합니다.
+youNote,메모:
+customName,사용자 지정 이름:
+StoresA,"%ef의
+%cn의 최고
+필수품
+%ef 군주의
 모험가의
-특출난
-%ef 의 최상품
-저렴한
-최상품
+이상한
+%ef의 최상품
+할인품
+빈티지
 황제의
 %cn
-%ef 의 일반
-특상품
-%ef 의 고급
-최고급
-%rt 의
-The Champion
-전문가 %ef 의 
-%ef 여사의"
+%ef의 일반품
+우수한
+%ef의 품질
+일류
+%rt의
+용사의
+%ef 박사의
+%ef 숙녀의"
 GeneralStoresB,"보급품
-보급 상점
-용품점
-용품점
+보급품 상점
 장비
-장비점
-일상용품점
-식료품점
-상품점
-일반 상점
+장비 상점
+도구
+도구 상점
+잡화
+식료품
+상품
+잡화점
 소매점
-거래소
-Market
-Wares
-Warehouse"
+교역소
+시장
+판매품
+창고"
 WeaponStoresB,"무기
-무기점
-병기점
+무기류
+병기
 무장
-무장점
-무장 제작점
-도검 제작소
+병기고
+무기 제작자
+검
 대장간
-대장장이
+금속 세공
 무기 대장장이"
-ArmorStoresB,"갑옷점
-갑주
-방호구
+ArmorStoresB,"병기고
+사슬 갑옷
+방패류
 갑옷
-방패점
-Aegis
-Metalworks
-대장장이
-Metalsmith
-갑옷 대장장이
+방패
+이지스
+금속 공예
+대장간
+금속 세공
+갑옷 제작자
 대장장이
 대장간"
 BookStoresB,"책
 서점
 서점
-책 거래
-책 거래점
-서적판매
-서적매매
-고서거래"
+책 판매상
+책 센터
+서적상
+책 가판대
+고서"
 LibraryStoresB,"도서관
-책방
-Athenaeum
+서재
+아테나이움
 공공 도서관
-역사서
-책방
-Seminary
-Lyceum"
-ClothingStoresB,"Clothing
-Clothes
-Garments
-Apparel
-Costumes
-Vestments
-Attire
-Fashion
-Tailoring
-Outfits
-Finery"
-AlchemyStoresB,"약초
-Potherbs
-Spices
-Remedies
-Antidotes
-Physics
-Medicines
-Potions
-Tinctures
-Medicaments
-Elixirs
+역사학자
+서재
+신학교
+리케이온"
+ClothingStoresB,"의류
+옷
+의복
+복장
+의상
+예복
+복식
+패션
+재단
+옷가지
+장신구"
+AlchemyStoresB,"허브
+식용 허브
+향신료
+치료제
+해독제
+물리학
+의약품
+물약
+팅크제
+약제
+엘릭서
 약국
-생약
-Unguents
-Medicinal Agents
-Herb Garden
-Pharmaceuticals
-Chemistry
-Chemicals
-Experiental Products
-Alchemistry
-Alchemical Solutions
-Metallurgy"
+연금술사
+연고
+의약품
+허브 정원
+제약
+화학
+화학물질
+실험 제품
+연금술
+연금술 용액
+야금술"
 GemStoresB,"보석
+원석
+장신구
+보석류
+귀중한 돌
+보석 세공
 보석상
-귀금속
-귀금속점
-귀금속 판매점
-장신구점
-보석상
-보석 거래
-보석 거래점
-보석 가공점"
+보석함
+보석 가게
+보석 세공사"
 PawnStoresB,"전당포
-담보거래점
-중고품
-중고장비
-중고장비
-중고품
+전당업자
+중고 보급품
+중고 장비
+중고 도구
+중고 상품
 전당포
 골동품"
-FurnitureStoresB,"Furniture
-Furnishings
-Interior Design
-Furniture Shop
-Decor
-Carpentry
-Woodworking
-Crafts
-Woodwork"
-LivestockStoresB,"Livestock
-Breeders
-Farm Animals
-Beasts
-Creatures
-Game
-Animalia
-Fauna
-Menagerie"
+FurnitureStoresB,"가구
+가구류
+인테리어 디자인
+가구점
+장식
+목공
+목공예
+공예품
+목공품"
+LivestockStoresB,"가축
+사육자
+농장 동물
+짐승
+생물
+사냥감
+동물군
+동물상
+동물원"
 TavernsA,"여왕의
 왕의
 더러운
 검은
 두더지와
 녹색
-적색
-금
-하얀
-은
 붉은
-날으는
+황금
+흰색
+은색
+진홍색
+나는
 춤추는
 웃는
-잠못이루는
+쉬지 않는
 목마른
-불행한
+불운한
 행운의
-악마
+악마의
 녹슨
 울부짖는
-비명지르는
+비명 지르는
 박쥐와
 사자와
-시라소니와
+스라소니와
 드워프와
 비버와
 여우와
-집쥐와
+생쥐와
 돼지와
 깃털과
 두꺼비와
-들쥐와
-흉폭한
-못된
+쥐와
+야만적인
+악당과
 죽은"
-TavernsB,"틈새
+TavernsB,"심연
 머그잔
 구덩이
 고양이
 개
 고블린
 그리핀
-용
-오거
+드래곤
+오우거
 거인
-지니
+진
 늑대
 사냥꾼
 단검
 해골
-칼
+검
 경비병
-지하감옥
+던전
 투구
-성채
-주전자
+성
+물병
 새
 노움
 고슴도치
@@ -1261,348 +1312,317 @@ TavernsB,"틈새
 오소리
 염소
 호저
-성직자
+사제
 새끼 사슴
-숫사슴
+수사슴
 야만인
-말썽꾸러기
+악동
 요정"
-houseForSale,내놓은 집
-theBankOf,은행:
+houseForSale,매매용 주택
+theBankOf,대거폴 은행
 daggerfall,대거폴
 wayrest,웨이레스트
 sentinel,센티넬
-palace,궁전
-regionNames,"알리키어 사막
-Dragontail Mountains
-글렌포인트 Foothills
-Daggerfall Bluffs
-Yeorth Burrowland
-드위넨
-Ravennian Forest
-Devilrock
-Malekna Forest
-Isle of Balfiera
-Bantha
-Dak'fron
-Islands in the Western Iliac Bay
-Tamarilyn Point
-라인린 Cliffs
-Bjoulsae River
-Wrothgarian Mountains
+palace,황궁
+regionNames,"알리크르 사막
+드래곤테일 산맥
+글렌포인트 구릉
+대거폴 절벽
+요스 버로우랜드
+드윈넨
+라베니안 숲
+데빌록
+말레크나 숲
+발피에라 섬
+반타
+닥프론
+서부 일리악 만의 섬들
+타마릴린 곶
+레인린 절벽
+비욜세 강
+로스가리안 산맥
 대거폴
 글렌포인트
-Betony
+베토니
 센티넬
 안티클레어
-라인린
+레인린
 웨이레스트
-Gen Tem High Rock village
-Gen Rai Hammerfell village
-Orsinium Area
-Skeffington Wood
-Hammerfell bay coast
-Hammerfell sea coast
-High Rock bay coast
-High Rock sea coast
-Northmoor
-Menevia
-Alcaire
-Koegria
-Bhoriane
-Kambria
-Phrygias
-Urvaius
-Ykalon
-Daenia
-Shalgora
+하이 락 마을
+해머펠 마을
+오시니움 지역
+스케핑턴 숲
+해머펠 만 해안
+해머펠 바다 해안
+하이 락 만 해안
+하이 락 바다 해안
+노스무어
+메네비아
+알카이르
+코에그리아
+보리아네
+캄브리아
+프리기아스
+우르바이우스
+이칼론
+대니아
+샬고라
 아비본-고라
-Kairou
-Pothago
-Myrkwasa
-Ayasofya
-Tigonus
-Kozanset
-Satakalaam
-Totambu
-Mournoth
-Ephesus
-Santaki
+카이루
+포타고
+미르콰사
+아야소피아
+티고누스
+코잔세트
+사타칼람
+토탐부
+모른노스
+에페소스
+산타키
 안티필로스
-Bergama
-Gavaudon
-Tulune
-Glenumbra Moors
-Ilessan Hills
-Cybiades"
-ocean,Ocean
-unknownUpper,Unknown
-switchToRegion,Switch To: {0} Region
-locationInRegionProvince,{0} in {1} province
-dayNames,"Sundas
-Morndas
-Tirdas
-Middas
-Turdas
-Fredas
-Loredas"
-monthNames,"Morning Star
-Sun's Dawn
-First Seed
-Rain's Hand
-Second Seed
-Midyear
-Sun's Height
-Last Seed
-Hearthfire
-Frostfall
-Sun's Dusk
-Evening Star"
-birthSignNames,"The Ritual
-The Lover
-The Lord
-The Mage
-The Shadow
-The Steed
-The Apprentice
-The Warrior
-The Lady
-The Tower
-The Atronach
-The Thief"
+베르가마
+가보돈
+툴룬
+글렌움브라 황야
+일레산 구릉
+시비아데스"
+ocean,대양
+unknownUpper,알 수 없음
+switchToRegion,전환: {0} 지역
+locationInRegionProvince,{1} 주의 {0}
+dayNames,"순다스
+모른다스
+티르다스
+미다스
+투르다스
+프레다스
+로레다스"
+monthNames,"새벽별의 달
+해오름의 달
+첫 씨앗의 달
+비의 손의 달
+둘째 씨앗의 달
+한해중
+해오름의 달
+마지막 씨앗의 달
+난롯불의 달
+서리내림의 달
+해질녘의 달
+저녁별의 달"
+birthSignNames,"의식좌
+연인좌
+군주좌
+마법사좌
+그림자좌
+군마좌
+견습생좌
+전사좌
+숙녀
+탑좌
+아트로나크좌
+도둑좌"
 seasonNames,"가을
 봄
 여름
 겨울"
-longDateTimeFormatString,"{0:00}:{1:00}:{2:00} on {3}, {4}{5} of {6:00}, 3E{7}"
-dateTimeFormatString,"{0:00}:{1:00}:{2:00} on {3}{4} of {5:00}, 3E{6}"
-dateFormatString,{0} the {1}{2} of {3:00}
+longDateTimeFormatString,"{3}, {6:00} {4}{5}, 3E{7} {0:00}:{1:00}:{2:00}"
+dateTimeFormatString,"{3}{4} {5:00}, 3E{6} {0:00}:{1:00}:{2:00}"
+dateFormatString,{3:00}의 {1}{2} {0}
 ingredientFormatString,{0} {1}
 longWeaponNameFormatString,{0} {1}
 longArmorNameFormatString,{0} {1}
-strRatings,"처참한
-빈약한
+strRatings,"형편없는
+허약한
 약한
-평균 미만
-평균
-꽤 좋은
-운동선수
-강한
+평균 이하
+평균 정도
+꽤 강한
+운동선수 같은
+매우 강한
 강력한
-초인"
-intRatings,"식물인간
-멍청이
-반푼이
-모자란
-평균
-약은
-꽤 머리가 돌아가는
-아주 똑똑한
-수재
-천재"
-wilRatings,"멍한
+초인적인"
+intRatings,"식물 같은
+멍청한
+얼간이 같은
+우둔한
+평균 정도
+교활한
+꽤 영리한
+매우 지적인
+뛰어난
+천재적인"
+wilRatings,"무기력한
 순종적인
 수동적인
 산만한
-유우부단한
+주관 없는
 안정적인
 자신감 있는
-의지력이 좋은
-집중력이 강한
-초월적인"
-agiRatings,"돌덩이
-몸을 가누지 못하는
-덜렁이
-움직임이 어색한
-평균적인
-활발한
+의지가 강한
+매우 집중하는
+깨달은"
+agiRatings,"어설픈
+서투른
+둔한
+어색한
+평균 정도
+활기찬
 민첩한
-몸이 날랜
-몸이 날렵한
-곡예사"
+손재주 좋은
+매우 민첩한
+곡예사 같은"
 endRatings,"병약한
-허약한
-잔병이 많은
-상태가 별로인
-평균적인
+가련한
+불안정한
+변덕스러운
+평균 정도
 평균 이상
-꽤 건강한
+매우 건강한
 튼튼한
-괴물
-불사신"
+거대한
+불멸의"
 perRatings,"혐오스러운
-인기가 없는
-눈에 띄지 않는
-기억에 남지 않는
-별다를것 없는
+인기 없는
+평범한
+겸손한
+주목받지 못하는
 흥미로운
 매력적인
-눈길이 가는
-눈을 뗄 수 없는
-카리스마 그 자체인"
-spdRatings,"거의 움직이지 못하는
-어기적 거리는
-꽤 느린
+시선을 끄는
+권위 있는
+카리스마 있는"
+spdRatings,"비활동적인
+느릿한
+매우 느린
 느린
-평균
+평균 정도
 평균 이상
 빠른
 발이 빠른
-번개 같은
-초월적인"
+번개처럼 빠른
+유성 같은"
 lucRatings,"저주받은
-가망이 없는
-절망적인
-불행한
-평균
+희망 없는
+운이 없는
+불운한
+평균 정도
+꽤 운이 좋은
 운이 좋은
-운이 꽤 좋은
-운에 강한
-운에는 따라올 자가 없는
-신이 편애하는"
-Mage,메이지
-Spellsword,스펠스워드
-Battlemage,배틀메이지
+행운의
+매우 상서로운
+신의 축복을 받은"
+Mage,마법사
+Spellsword,마검사
+Battlemage,전투마법사
 Sorcerer,소서러
-Healer,힐러
+Healer,치유사
 Nightblade,나이트블레이드
-Bard,바드
-Burglar,버글러
-Rogue,로그
-Acrobat,아크로뱃
-Thief,시프
-Assassin,어새신
-Monk,몽크
-Archer,아처
+Bard,음유시인
+Burglar,도둑
+Rogue,도적
+Acrobat,곡예사
+Thief,도둑
+Assassin,암살자
+Monk,수도사
+Archer,궁수
 Ranger,레인저
-Barbarian,바바리안
-Warrior,워리어
-Knight,나이트
-Custom,커스텀
-darkBrotherhoodRanks,"어프렌티스
-저니맨
-Operator
-Slayer
-처형자
-처벌자
-제거자
+Barbarian,야만인
+Warrior,전사
+Knight,기사
+Custom,사용자 지정
+darkBrotherhoodRanks,"견습생
+숙련공
+운영자
+슬레이어
+처형인
+응징자
+터미네이터
 암살자
-다크 브라더
-마스터 어새신"
-fightersRanks,"어프렌티스
-숙련자
-소드맨
-프로텍터
-디펜더
-워더
+어둠의 형제
+마스터 암살자"
+fightersRanks,"견습생
+숙련공
+검사
+보호자
+수호자
+파수꾼
 가디언
-챔피언
-워리어
+용사
+전사
 마스터"
-knightlyOrderRanks,"지원자
+knightlyOrderRanks,"지망생
 종자
-Gallant
-Chevalier
-Keeper
-Knight Brother
-Commander
-Marshall
-대집사
+갤런트
+슈발리에
+관리자
+기사 형제
+사령관
+원수
+궁내관
 팔라딘"
-magesRanks,"어프렌티스
-숙련자
+magesRanks,"견습생
+숙련공
 에보커
-컨져러
-매지션
+소환사
+마술사
 인챈터
 워록
 위저드
 마스터 위저드
-아크메이지"
-templeRanks,"예비자
-입교자
-복사
-Adept
-Curate
-Disciple
-Brother
-Diviner
+대마법사"
+templeRanks,"초심자
+입문자
+시종사제
+숙련자
+부사제
+제자
+형제
+예언자
 마스터
 총대주교"
 thievesRanks,"견습생
-숙련자
+숙련공
 좀도둑
-불량배
+사기꾼
 강도
-도적
+산적
 도둑
-행동대장
-마스터 마인드
-마스터 시프"
-darkSister,Dark Sister
-nonMember,non-member
-knightSister,Knight Sister
-matriarch,Matriarch
-sister,Sister
-daedricSkill,데이드라어
-orcishSkill,오크어
+두목
+마스터마인드
+마스터 도둑"
+darkSister,어둠의 자매
+nonMember,비회원
+knightSister,기사 자매
+matriarch,여교황
+sister,자매
+daedricSkill,데이드릭
+orcishSkill,오크식
 midDateTimeFormatString,{0:00}:{1:00}:{2:00} {3:00} {4:00} 3E{5}
-hthDamageFormatString,{0} 피해량: {1}-{2}
+hthDamageFormatString,{0} 피해: {1}-{2}
 affiliationFormatString,{0} (평판:{1})
-answers_5404,"bow
-bow arrow
-crossbow
-bows
-crossbows
-활
-활 화살
-쇠뇌
-십자궁
-석궁"
-answers_5406,"one
-1
-하나
-한개
-한명"
-answers_5423,"Benefactor
-the Benefactor
+answers_5404,"활
+화살
+석궁
+활류
+석궁류"
+answers_5406,"하나
+1"
+answers_5423,"후원자
 후원자"
-answers_5424,"shut up
-shutup
-shaddup
+answers_5424,"닥쳐
 닥쳐
-닥쳐주세요
-닥치라고
-입닫아
-입닫으라고
-입닫아주세요"
+입 닥쳐"
 answers_5464,"예
-좋소
-동의하지
-ㅇ
-ㅇㅇ
-동의
-그래
-알았어
-알아들었어
-알겠어
-좋아
-그러지
-그렇게 하지
-그렇게하지
-그렇게 할게
-그렇게할게
-동의하겠소
-동의하겟소
-동의 하겠소
-동의 하겟소
-물론
-물론이지
-fine
-okay
-sure
-yep"
-random,랜덤
+알겠습니다
+동의합니다
+네
+동의함
+완료
+좋습니다
+알겠어요
+확실합니다
+그래요"
+random,무작위
 nordSurnameImmutableSuffix,sen
-confirmDefaultControls,조작방식을 기본값으로 되돌리시겠습니까?
-saveLoadPromptFormat,'{1}' 캐릭터 {0}
+confirmDefaultControls,기본 조작 설정을 복구하시겠습니까?
+saveLoadPromptFormat,{0}: '{1}'

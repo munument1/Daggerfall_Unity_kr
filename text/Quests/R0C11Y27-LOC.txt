@@ -1,0 +1,160 @@
+-- Quest: C:\QUESTS\WORKING\R0C11Y27.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 11
+-- QuestId: 27
+Messages: 13
+Quest: R0C11Y27
+DisplayName: 특별한 물질
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+제게 작은 부탁 하나 들어주실 수 있을지 궁금하군요. 제
+친구가 특정 시간에 특정 물질을 배달받아야 하거든요. 제
+말이 무슨 뜻인지 이해하셨으리라 믿습니다. 보상으로
+_reward_ 골드를 드린다면 이 일을 맡으시겠습니까?
+
+RefuseQuest:  [1001]
+실망스럽군요. 더 열정적인 모습을 기대했는데요. 뭐,
+나태함과 게으름이 판치는 요즘 세상이니 어쩔 수 없죠.
+
+AcceptQuest:  [1002]
+그럼 수락하시는 거군요. 아주 좋습니다. 자, 여기
+_item1_의 명칭으로 불리는 물건이 있습니다. 이걸
+_npc1_의 이름을 지닌 연금술사에게 가져다주셔야
+합니다. ___npc1_의 __npc1_에서 %g2를
+찾으실 수 있을 겁니다. 운이 좋다면 %g가 제 친구
+_npc2_에게 가져다줄 물건을 줄 겁니다. 자, 어서
+출발하세요. _npc1_ 측에서 %g에게
+=1stparton_일 이내에 _item1_의 확보가 필요하다고
+했거든요. 감사합니다. 좋은 여행 되시길.
+
+QuestFail:  [1003]
+임무를 완수하시면 더 자세히 이야기할 시간이 있을 겁니다.
+
+QuestComplete:  [1004]
+%oth, 언제 오나 기다리고 있었습니다. 당신이
+%pcf인가요? 저는 _npc2_입니다. 그리고 저게
+제 _item2_군요. 아직 안 해보셨다면 꼭 해보세요.
+효과가 정말 천국 같거든요. 어쨌든, 여기 약속한
+_reward_ 골드입니다. 정말 고마워요, %pcf.
+당신은 생명의 은인입니다.
+
+RumorsDuringQuest:  [1005]
+_npc2_의 _item2_ 중독설을 들었지만, 증거는 본
+적이 없어요. <---> 좋은 _item2_ 제조는 아주
+어려워서 수년간의 연구가 필요하다고들 하죠.
+
+RumorsPostfailure:  [1006]
+결국 _npc2_의 _item2_ 중독은 사실이었어요.
+%g2가 약을 사는 걸 들켰거든요. <--->
+도대체 누가 %g에게 필요한 재료를
+_npc1_에게 공급했는지 궁금하네요.
+
+RumorsPostsuccess:  [1007]
+_npc2_의 도움으로 %g가 기다리던 물건을
+드디어 받았습니다. 하피처럼 기뻐하더군요. <--->
+_questgiver_의 경우 %ra 용병에게 꽤 만족하는
+눈치지만, 이유는 말해주지 않네요.
+
+QuestorPostsuccess:  [1008]
+배달 임무를 훌륭하게 완수했더군요, 친구. 무엇을
+도와줄까요? <---> %oth, 다시 봐서 반갑군요,
+%pcf. 그... 작은 일 처리를 아주 잘해주었어요.
+
+QuestorPostfailure:  [1009]
+지난번에 맡긴 임무를 실패했던 걸로 기억합니다. 이제 당신과
+나눌 이야기는 별로 없군요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ _questgiver_ 측이 제3자에게 전달하기를 원하는 물건을 받기
+ 위해 __npc1_의 _npc1_, ___npc1_
+ _item1_ 물품을 가져다주고 있습니다. 첫 번째 배달을
+ 완수하기까지 =1stparton_일 남았습니다.
+
+Message:  1011
+%qdt:
+ _npc1_ 개체는 _item2_ 물품을 가지고
+ ___npc2_에 있는 제3자 _npc2_에게 저를
+ 보냈습니다. __npc2_에 있는 =npc2_인
+ _npc2_ 개체를 알아볼 것입니다. =2ndparton_일 안에
+ %g2에게 전달하기만 한다면 말이죠.
+
+Message:  1012
+<ce>아주 좋군요, %pcf, 정말 좋습니다. 이제,
+<ce>__npc2_의 ___npc2_에 있는 _npc2_에게
+<ce>전달해야 할 _item2_ 물품이 여기 있습니다. 꾸물거리지
+<ce>마십시오, %pct. _npc2_ 개체는 =2ndparton_일
+<ce>이내에 이것을 받아야 합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 4 times.
+--               %g2 occurs 3 times.
+--              %oth occurs 2 times.
+--              %pcf occurs 6 times.
+--              %pct occurs 1 time.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--       =2ndparton_ occurs 6 times.
+--            =npc2_ occurs 1 time.
+--          ___npc1_ occurs 2 times.
+--          ___npc2_ occurs 2 times.
+--           __npc1_ occurs 2 times.
+--           __npc2_ occurs 2 times.
+--           _item1_ occurs 3 times.
+--           _item2_ occurs 6 times.
+--            _npc1_ occurs 5 times.
+--            _npc2_ occurs 9 times.
+--      _questgiver_ occurs 2 times.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+Item _item1_ misc
+Item _item2_ drug
+
+Person _questgiver_ face 136 group Questor
+Person _npc1_ group Chemist female
+Person _npc2_ face 248 group Local_3.0
+
+Clock _1stparton_ 00:00 0 flag 1 range 1 4
+Clock _2ndparton_ 00:00 0 flag 1 range 1 4
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1010 step 0 
+	get item _item1_ 
+
+_pcgetsgold_ task:
+	toting _item2_ and _npc2_ clicked 
+	give pc _reward_ 
+	end quest 
+--removed unnecessary delay
+
+variable _pchasitem1_
+variable _pchasitem2_
+_S.03_ task:
+	toting _item1_ and _npc1_ clicked 
+	start timer _2ndparton_ 
+	log 1011 step 1 
+	get item _item2_ 
+	say 1012 
+
+variable _S.04_
+_queston_ task:
+	when _1stparton_ and not _S.03_ 
+	make _item1_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+variable _1stparton_
+_2ndparton_ task:
+	make _item2_ permanent 
+	change repute with _questgiver_ by -2 
+	end quest 

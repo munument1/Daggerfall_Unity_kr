@@ -6,88 +6,144 @@
 -- QuestId: 5
 Messages: 41
 Quest: N0B20Y05
-DisplayName: 위험한 마법사
+DisplayName: 위험한 위저드
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>분명, 미친 마법사 _wizard_ 이야기를
-<ce>들어보셨을겁니다. 강대한 힘을 가지고 있어서
-<ce>%rt %rn 께서 공격 결정을
-<ce>내리시는 것이 지연 되었지만, 이런 지연 전략도
-<ce>이제 끝입니다. %t 께서 길드 요원을
-<ce>보내 이 광란의 마법사를 숙청하라는 요청을 하셨습니다.
-<ce>임무 보수로 마법 부여된 _reward_의 지급이
-<ce>있을겁니다. 길드를 위해 해주시겠습니까?
-                                     <--->
-<ce>%reg 주민들이 메이지 길드에 대해
-<ce>미친 마법사에 대한 대응을 요구했습니다.
-<ce>이 지역에 한동안 두려움의 대상이었습니다.
-<ce>아치 마지스터께서 직접 내리신 명령으로
-<ce>저희가 하게 되었습니다. 메이지 길드 같이
-<ce>학술적 기관 성격의 단체에서 이런 임무라니
-<ce>저도 힘든 일인 것응 알지만, 광란의 마법사를
-<ce>찾아서 조각내 주실 수 있으십니까?
+<ce>의심할 여지 없이, 미친 위저드
+<ce>_wizard_에 대해 들어봤겠지. %g가
+<ce>%g3의
+<ce>명령 하에 가진 엄청난 힘 때문에, %rt
+<ce>%rn의
+<ce>_wizard_에 대한 어떠한 공격적인 움직임도 미뤄왔지만,
+<ce>이제 그 전략도 끝났다. %t께서
+<ce>우리에게 이 정신 나간 마법사를 처단할 사람을 보내달라고
+<ce>요청하셨다. 마법 _reward_에 대한 보상으로, 우리를 위해
+<ce>그 일을 해주겠나?
+<--->
+<ce>%reg의 사람들은
+<ce>마법사 길드가 한동안 이 땅을 공포에 떨게 한 미친
+<ce>위저드에게
+<ce>맞서주기를 요구해왔다. 이제, 대마도학장님의
+<ce>직접적인 명령에 따라, 우리는 그렇게 할 것이다. 학술
+<ce>기관이 내릴 만한 임무는 아니라는 걸 알지만,
+<ce>그 미친 위저드를 찾아가서 갈기갈기 찢어버릴
+<ce>의지와 능력이 있나?
 
 RefuseQuest:  [1001]
-<ce>이런.
-<ce>일을 믿고 맡길 수 있을 거로 생각했는데.
+<ce>젠장. 이번 일에 당신을 믿을 수 있기를 바랐는데.
 
 AcceptQuest:  [1002]
-<ce>훌륭하군요. 길드를 실망시키지 않을거라 믿습니다.
-<ce>%pcf. 자, _wizard_의 실험실 위치는
-<ce>___mondung_ 입니다.
-<ce>%g3 는 =1stparton_일 후쯤 실험실을 옮길겁니다.
-<ce>%t 께서 =1stparton_일 안에 마법사를 처단하라
-<ce>명하셨으니, 일 처리후에 늦지 마십시오.
-<ce>=1stparton_일 안에 다시 봅시다.
-<ce>맡아줘서 고맙고 행운을 빕니다, %pcf.
+<ce>훌륭해. 당신이 우리를 실망시키지 않을 거라 믿었네,
+<ce>%pcf. 자, _wizard_의 위치는 %g3의
+<ce>실험실인 ___mondung_일 걸세. 최대 =1stparton_일 뒤면
+<ce>새로운 장소로 이동할 테니 서두르게. %t께서는
+<ce>마법사가 =1stparton_일 안에 죽었다는 소식을 원하시니,
+<ce>일을 마친 후 지체하지 말게나. =1stparton_일 뒤에 보세.
+<ce>고맙네, 행운을 비네, %pcf.
 
 QuestFail:  [1003]
-<ce>이전 일을 생각하면 그쪽은 갈 길이나
-<ce>가는 게 좋겠지요, 안 그렇습니까?
-I think you ought to be moving along on that matter we spoke of, don't you?
+<ce>우리가 이야기했던 그 문제에 대해 이제 움직여야 할 것
+<ce>같은데, 그렇지 않나?
+
 QuestComplete:  [1004]
-<ce>또다시 뛰어난 기술과 효율적인 일처리로
-<ce>절 놀라게 하는군요, %pcf.
-<ce>탁월한 성과였습니다. %t 께서도
-<ce>저만큼 만족하시겠지요.
-<ce>자 약속드렸던 _reward_ 입니다.
-<ce>잘 써주십시오.
+<ce>다시 한번, 당신의 기술과 효율성에 놀랐네, %pcf.
+<ce>훌륭한 일이었어. %t께서도 나만큼이나 기뻐하실
+<ce>걸세. 여기 약속했던 _reward_ 있네. 즐기게나.
 
 RumorsDuringQuest:  [1005]
-메이지 길드에서 ___mondung_에 있다는 미친 마법사를 처리할 사람을 보냈다더군요.
-<--->
-모두들 그 마법사가 다음에 무슨 짓을 할지 두려워 숨을 죽이고 있습니다.
+마법사 길드에서 ___mondung_에 있는 그 미친 위저드를
+처리할 사람을 보냈어. <---> 모두가 그 위저드의 다음
+행동을 기다리며 숨을 죽이고 있지.
 
 RumorsPostfailure:  [1006]
-메이지 길드도 그 미친 마법사를 어떻게 하진 못했습니다.
-<--->
-그 _wizard_ 인지 어디로 갔는지 몰라도, 그 마법사가 죽기전엔 어디든 안전한 곳이 없을 겁니다.
+마법사 길드조차 그 미친 소서러에 대해서는 아무것도 할 수
+없었어. <---> 그 _wizard_의 행방은 아무도
+모르지만, %g1의 부재 속에서는 어디도 안전하지
+않아.
 
 RumorsPostsuccess:  [1007]
-___mondung_의 그 미친 마법사 이야기를 듣는 건 이번이 마지막이었길 빕니다.
-<--->
-미친 마법사 걱정이 없으니, 이젠 뭔가 조용하단 느낌까지 듭니다.
+바라건대, ___mondung_의 미친 위저드에 대한 소식은 이제
+마지막이었으면 좋겠군. <---> 미친 위저드 걱정을 안
+해도 되니 이제 좀 조용해진 것 같아.
 
 QuestorPostsuccess:  [1008]
-안녕하십니까, %pcf. 그 미친 마법사에 당한게 많이 아프진 않았길 바랍니다.
+안녕, %pcf. 그 미친 위저드에게 너무 많이 다치지는
+않았길 바라네.
 
 QuestorPostfailure:  [1009]
-<ce>그래, 돌아오셨습니까, 그런데
-<ce>___mondung_에 있는
-<ce>미친 마법사 처리는 못하셨군요?
-<ce>참담합니다, %pcf,
-<ce>참담해.
+<ce>돌아왔군, 하지만 ___mondung_의 미친 위저드를 처단하지는
+<ce>못했지, 그렇지? 구제 불능이군, %pcf, 구제
+<ce>불능이야.
 
 Message:  1030
 %qdt:
- ___questgiver_ 메이지 길드에서
- ___mondung_의 마법사를 죽여달라는
- 의뢰를 요청했다.
- =1stparton_일 안에 일을 끝내야
- 보상을 받을 수 있다.
+ ___questgiver_의 마법사 길드에서 ___mondung_의 위저드를
+ 처단해달라고 요청했다. 보상을 받으려면 =1stparton_일 안에
+ 일을 끝내야 한다.
 
 Message:  1040
-<ce>___mondung_의 미친 마법사
-<ce>_wizard_ 처리를 해결했다.
+<ce>당신은 _wizard_ 처단에 성공했다, ___mondung_의 미친
+<ce>위저드 말이다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--               %g1 occurs 1 time.
+--               %g3 occurs 3 times.
+--              %pcf occurs 6 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--               %rn occurs 1 time.
+--               %rt occurs 1 time.
+--                %t occurs 3 times.
+--       =1stparton_ occurs 10 times.
+--       ___mondung_ occurs 8 times.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 2 times.
+--          _wizard_ occurs 5 times.
+
+QBN:
+Item _reward_ magic_item
+
+Person _questgiver_ group Questor
+Person _wizard_ face 249 faction The_Mages_Guild remote
+
+Place _mondung_ remote dungeon9
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Mage
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	place foe _monster_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	unset _qgclicked_ 
+	end quest 
+
+variable _queston_
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1040 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+--added full clearclick action. was mere variable previously.

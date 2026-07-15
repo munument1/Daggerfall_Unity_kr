@@ -11,71 +11,123 @@ DisplayName: 하피 사냥
 QRC:
 
 QuestorOffer:  [1000]
-<ce>애송이, 난 네가 맘에 들어. 이 일은 아무나 할수 있는게 아니야.
-<ce>날아다니는 육식 하피들이 있어서 행상인들이 아주 걱정이 많아.
-<ce>___mondung_에 가서
-<ce>좀 찌르고 썰고 해서 금화 _reward_개 챙길 생각 없나?
+<ce>마음에 드는군, 꼬마야. 이 임무는 아무에게나 맡기는 게
+<ce>아니지. 하늘을 나는 육식 괴물들, 즉 하피 무리가 여행하는
+<ce>상인들을 아주 불안하게 만들고 있다더군. _reward_
+<ce>골드면 ___mondung_ 쪽으로 가서 시원하게 썰어버리고 올
+<ce>텐가?
 
 RefuseQuest:  [1001]
-<ce>거 아깝구만.
-<ce>난 보수가 꽤 괜찮다고 생각 했는데 말이야.
+<ce>아쉽군. 꽤나 관대한 거래라고 생각했는데 말이야.
 
 AcceptQuest:  [1002]
-<ce>좋아 그럼. ___mondung_에는
-<ce>이 아름다운 놈들이 다섯놈이 있어,
-<ce>=1stparton_일 안에 잡아야해, 못하면 일 없고.
-<ce>조언 하나 하자면 =1stparton_일 안에
-<ce>잡고 돌아와야할뿐 아니라 ___mondung_에
-<ce>가능한 빨리 가야해, 하피가 이동할때가 되면
-<ce>못잡는거야. 알았지 애송이, 자 가봐, 행운을 빈다.
+<ce>좋아. ___mondung_에 그 예쁜 것들이 다섯 마리 있는데, 전부
+<ce>=1stparton_ 이내에 죽여야 해. 안 그러면 거래는 없어. 충고
+<ce>하나 하지: =1stparton_ 이내에 돌아오되, 가능한 한 빨리
+<ce>___mondung_ 쪽으로 가야 해. 안 그러면 하피들이
+<ce>이동해버려서 운이 없게 될 테니까. 자, 꼬마야, 행운을 빈다.
+<ce>어서 가봐.
 
 QuestFail:  [1003]
-<ce>애송이 잘들어, 내가 자꾸 보고 싶은 미남인건 알지만,
-<ce>그 하피들이 아직 남았어, 다섯놈 확실히 다 잡으라고
-<ce>알겠나?
+<ce>들어봐 꼬마야, 내가 매력적인 건 알지만, 하피들이 기다리고
+<ce>있잖아. 다섯 마리 전부 다 처리하는 거 잊지 마, 알겠어?
 
 QuestComplete:  [1004]
-<ce>아좋구만, 애송이, 잘했어.
-<ce>금화 _reward_닢이야.
-<ce>이정도면 두둑한편이지.
+<ce>좋아, 꼬마야, 잘했어. 여기 _reward_ 골드다. 나쁘지
+<ce>않지?
 
 RumorsDuringQuest:  [1005]
-얼마전 ___mondung_ 상황을 보러간 사람이 갈기갈기 찢겨서 죽었다고 들었습니다.
-<--->
-그 하피들이 계속 남쪽으로 이동했으면 하는게 제 유일한 바람입니다.
+누군가 최근에 ___mondung_ 확인을 하러 갔다가 갈갈이 찢겨
+죽었어. <---> 그 하피들이 계속 남쪽으로
+이동하기만을 바랄 뿐이야.
 
 RumorsPostfailure:  [1006]
-___mondung_에 하피들이 아예 둥지 자리를 잡았다고 들었는데, 쫒아내야 합니다.
-<--->
-하피들이 행상인 무리를 돌아다니는 음식 잔치 처럼 쫒아다니고 있습니다.
+하피들이 ___mondung_에 있는 둥지를 더럽히고 떠나야 했다는
+소문을 들었어. <---> 그 하피들은 마치 움직이는
+잔치처럼 상인들의 마차를 뒤쫓고 있어.
 
 RumorsPostsuccess:  [1007]
-그 하피들 장사 경기에 정말 피해가 많았었습니다. 이제 나아지겠지요.
-<--->
-하피 둥지 가본 사람 이야기를 들었는데 알이 산더미 처럼 있었답니다.
+하피들은 정말 경제적인 골칫거리였지. 이제 상황이 나아질
+거야. <---> 그 하피 둥지에서 알을 수천 개나
+발견했다더군.
 
 QuestorPostsuccess:  [1008]
-<ce>어이! 그 하피들 골칫거리를 처리한
-<ce>%ra 친구가 다시 왔구만.
+<ce>이봐! 그 하피들을 처리한 %ra의 귀환이군.
 
 QuestorPostfailure:  [1009]
-<ce>그 하피 몇놈도 처리 못한 %ra 친구 아닌가.
-<ce>한심하구만.
+<ce>하피 무리조차 처리하지 못한 %ra의 실력이라니.
+<ce>한심하군.
 
 Message:  1020
-<ce>이걸로 다섯 마리다.
-<ce>_questgiver_에 보고할 수 있다.
+<ce>다섯 마리야. _questgiver_의 유지를 위해 충분하겠지.
 
 Message:  1030
 %qdt:
- ___questgiver_ 파이터길드에서
- ___mondung_에 있는
- 하피 둥지를 소탕하라는 의뢰를 받았다.
- 하피 다섯을 처리하고 =1stparton_일내로
- 돌아가야 보수를 받을 수 있다.
+ ___questgiver_의 전사 길드가 나를 고용해 ___mondung_에
+ 들끓는 하피 둥지를 소탕하기로 했다. 보상을 받으려면 최소
+ 다섯 마리를 죽이고 =1stparton_일 안에 돌아와야 한다.
+
 
 Message:  1080
-<ce>이번 일 도움이 많이 됬어, 자,
-<ce>___newdung_ 지도야.
-<ce>가서 다 잡고 챙길거 챙기라고.
-<ce>내가 주는 거야.
+<ce>이봐, 그동안 정말 큰 도움이 됐으니, ___newdung_ 쪽으로
+<ce>가는 지도를 주지. 마음껏 죽이고 약탈할 수 있을 거야. 내
+<ce>선물이라구.
+
+
+-- Symbols used in the QRC file:
+--
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--       =1stparton_ occurs 3 times.
+--       ___mondung_ occurs 6 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 3 times.
+--          _reward_ occurs 4 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon10
+Place _newdung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Harpy
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	pick one of _map_ _nomap_ _nomap_ 
+	pc at _mondung_ set _S.04_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_mondead_ task:
+	killed 5 _monster_ saying 1020 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_S.04_ task:
+	create foe _monster_ every 15 minutes 20 times with 50% success 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.08_ task:
+	when _map_ and _pcgetsgold_ 
+	reveal _newdung_ readmap
+    say 1080 

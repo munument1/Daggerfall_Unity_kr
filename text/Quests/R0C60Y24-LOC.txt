@@ -1,0 +1,246 @@
+-- Quest: C:\QUESTS\WORKING\R0C60Y24.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 60
+-- QuestId: 24
+Messages: 41
+Quest: R0C60Y24
+DisplayName: 뱀파이어와의 거래
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pcf, 자네를 보는 건 언제나 즐겁군, 내 소중한
+<ce>친구여, 특히 내가 도움이 필요할 때는 더더욱 말이야. 이
+<ce>_item_의 명칭으로 불리는 물건을 ___contact_에 있는
+<ce>내 연락책에게 전달해야 하는데, 뱀파이어 부족이 내 전령이
+<ce>통과하는 걸 원치 않는다는 소식을 들었네. 자네만이 이
+<ce>임무를 완수할 수 있을 것 같아서 말이야. 해보겠나?
+
+RefuseQuest:  [1001]
+<ce>정말인가? 너무 바쁜가 보군. 아쉽구먼.
+
+AcceptQuest:  [1002]
+<ce>아, 훌륭해. _item_의 존재를 확인했네. 이제
+<ce>_contact_ 측에서 __contact_에서 =queston_일 안에
+<ce>이걸 받아야 하네. =contact_의 행방을 찾아보게.
+<ce>%g2를 놓칠 리 없을 걸세. 그리고 가는 길에 죽지
+<ce>말게나. 행운을 비네, 고맙네.
+
+QuestFail:  [1003]
+<ce>%pcf, 소중한 시간을 낭비하고 있군. 당장
+<ce>___contact_ 쪽으로 향하게.
+
+QuestComplete:  [1004]
+<ce>아, %pcf 님을 뵙게 되어 기쁩니다. 그리고
+<ce>_item_ 님도요. 훌륭합니다. 그 밤의 추적자들은 이
+<ce>물건을 제 손에 들어가지 않게 하려고 현명하게 행동했군요.
+<ce>수고비로 여기 약간의 금을 드립니다. 몸조리 잘하십시오.
+
+RumorsDuringQuest:  [1005]
+__contact_에서 뱀파이어 관련 문제를 조사하고 있다는
+소문이 들리더군요. <---> 가장 위대한 뱀파이어
+사냥꾼 중 한 명인 _contact_ 님이 __contact_에
+합류했다고 합니다.
+
+RumorsPostfailure:  [1006]
+최근 이 근처에서 아주 멋진 _item_의 명칭으로 불리는
+물건을 발견한 사람이 있습니다. <---> _questgiver_
+님이 어떤 %ra 모험가에게 단단히 화가 났다는
+이야기를 들었습니다.
+
+RumorsPostsuccess:  [1007]
+%reg의 거리를 걷기가 더 안전해진 것 같더군요.
+<---> 확실히 뱀파이어의 습격이 줄어들고 있습니다.
+하지만 아직 방심할 때는 아닙니다.
+
+QuestorPostsuccess:  [1008]
+그 피를 빠는 자들이 교훈을 얻은 모양이군요, %pcf
+님? 무엇을 도와드릴까요? <---> 배달이 완료되었다고
+들었습니다. 물론, 저에게는 놀라운 일도 아니지요.
+
+QuestorPostfailure:  [1009]
+<ce>뱀파이어들이 너무 강력했나요, %pcf 님? 자책하지
+<ce>마십시오. 그들은 강력한 존재들입니다. 지금은 이야기할 때가
+<ce>아닙니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ _questgiver_ 님이 제게 특정 _item_ 배달을
+ ___contact_에 있는 %g3의 연락책, 즉
+ __contact_에 있는 _contact_ 샤먼에게 요청했습니다.
+ 현지의 뱀파이어들이 제가 배달을 완료하는 것을 원치 않는
+ 듯하지만, 저는 =queston_일 이내에 _item_ 전달을
+ ___contact_에게 마쳐야 합니다. 그렇지 않으면 보상을 받을
+ 수 없습니다.
+
+Message:  1011
+<ce>당신이 그 용맹한 %pcn 님이시군요. 저의 보잘것없는
+<ce>거처에 오신 것을 환영합니다. =vampleader_의 공격이
+<ce>실패했다는 소식을 들었을 때, 당신이 저를 찾아올지도
+<ce>모른다고 생각했습니다. 제 소개를 하죠. 저는 ==vampire_의
+<ce>_vampire_입니다. 가장 오래되고 존경받는 뱀파이어
+<ce>혈통이지요. 이제 당신이 그 악명 높은 처형자
+<ce>_contact_에게 특정 _item_의 명칭으로 불리는
+<ce>물건을 배달하기로 합의했다는 것을 알고 있습니다.
+<ce>==vampire_ 님께서는 당신이 그 배달을 저에게 대신
+<ce>해주기를 매우 바라고 계십니다. 순전히 의미론적인 차이일
+<ce>뿐이지 않습니까? 특히 저희가 당신에게 _vampreward_ 골드와
+<ce>보너스로 마법 _vampitem_의 명칭으로 불리는 물건을 지불할
+<ce>의사가 있다는 점을 고려하면 말입니다. 이 관대한 제안에
+<ce>대해 어떻게 생각하십니까?
+
+Message:  1012
+<ce>놀랍군요. 떠오르는 %ra 모험가가 현명하게 충성을
+<ce>바꾸는군요. _questgiver_ 님은 기뻐하지 않겠지만,
+<ce>%g 님도 실망을 받아들이는 법을 배워야 할 겁니다.
+<ce>당신과 거래하게 되어 정말 기뻤습니다. 아마 우리도 더...
+<ce>친밀한... 기회에 다시 만나게 될지도 모르겠군요.
+
+Message:  1013
+<ce>_questgiver_ 님에 대한 당신의 충성심은 감동적이지만, 우리
+<ce>둘 모두에게는 매우 불행한 일입니다. 이제 나가보시죠,
+<ce>%pcf 님. 아, 그나저나 밤에 너무 깊이 잠들지는
+<ce>마십시오. ==vampire_ 님은 항상 빚을 청산하니까요.
+
+Message:  1015
+_contact_ 님은 뱀파이어들을 %reg에서 몰아내기
+위한 성전을 이끌어왔습니다.
+<--->
+<ce>가끔 _contact_ 님이 화형에 처한 사람들이 정말로
+<ce>뱀파이어였는지 의문이 듭니다.
+<ce>그렇게 많은 뱀파이어가 주변에 있다는 게 믿기 어렵거든요.
+
+Message:  1030
+<ce>양피지에는 다크프론에 있는 키코스 마녀회의 위치가 표시되어
+<ce>있습니다. 당신은 재빨리 지도에 그것을 표시합니다.
+
+Message:  1040
+=vampleader_님,
+
+그 저주받을 _questgiver_ 측이 마침내 %g께서
+찾으시던 _item_ 물품을 손에 넣었고, 이를
+_contact_에게 보내려 합니다. ==vampire_께서 그것이
+도착하도록 내버려 둘 수 없다는 사실은 귀하도 잘 아실
+겁니다. _questgiver_께서는 우리가 %g2를 막으려 할
+것을 예상하고 있으므로, %g께서는 %pcn의
+이름을 지닌 %ra 종족을 전령으로 고용하려 합니다.
+이 자를 과소평가하지 마십시오. %pcf 님은 꽤 악명이
+높습니다. _item_ 물품을 즉시 제게 가져오십시오.
+__vamphouse_의 _vamphouse_에서 기다리고 있겠습니다.
+
+죽음 안에서,
+
+_vampire_
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 1 time.
+--              %pcf occurs 7 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 4 times.
+--              %reg occurs 2 times.
+--        ==vampire_ occurs 4 times.
+--         =contact_ occurs 1 time.
+--         =queston_ occurs 8 times.
+--      =vampleader_ occurs 2 times.
+--       ___contact_ occurs 15 times.
+--      __vamphouse_ occurs 1 time.
+--         _contact_ occurs 7 times.
+--            _item_ occurs 9 times.
+--      _questgiver_ occurs 7 times.
+--       _vamphouse_ occurs 3 times.
+--         _vampire_ occurs 4 times.
+--        _vampitem_ occurs 1 time.
+--      _vampreward_ occurs 1 time.
+
+QBN:
+Item _reward_ gold
+Item _item_ Holy_relic
+Item _map_ letter used 1030
+Item _note_ letter used 1040
+Item _vampreward_ gold
+Item _vampitem_ magic_item
+
+Person _questgiver_ group Questor
+Person _contact_ group Cleric remote anyInfo 1015 rumors 1015
+Person _vampire_ face 1 factiontype Vampire_Clan remote
+
+Place kykosCoven permanent KykosCoven
+Place _vamphouse_ remote house1
+
+Clock _queston_ 00:00 0 flag 1 range 1 4
+
+Foe _vampires_ is Vampire
+Foe _vampleader_ is Ancient_vampire
+
+--	Quest start-up:
+	dialog link for location _vamphouse_ person _vampire_ 
+	start timer _queston_ 
+	log 1010 step 0 
+	get item _item_ 
+	pick one of _yesmap_ _nomap_ _nomap_ _nomap_ 
+
+_queston_ task:
+	change repute with _questgiver_ by -20 
+	end quest 
+
+_npcclicked_ task:
+	toting _item_ and _contact_ clicked 
+	give pc _reward_ 
+	end quest 
+
+_vampclicked_ task:
+	toting _item_ and _vampire_ clicked 
+	prompt 1011 yes _thankyou_ no _gimme_ 
+
+_thankyou_ task:
+	get item _vampreward_ 
+	get item _vampitem_ 
+	say 1012 
+	make _vampitem_ permanent 
+	make _vampreward_ permanent 
+	change repute with _vampire_ by +10 
+	end quest
+--eliminates long wait for quest to end. quest is impossible with this choice
+
+_gimme_ task:
+	get item _item_ 
+	say 1013 
+	change repute with _vampire_ by -5 
+
+_S.07_ task:
+	daily from 05:50 to 17:30 
+
+_S.08_ task:
+	injured _vampires_ 
+
+_readmap_ task:
+	reveal kykosCoven in province 11 at 484567 
+
+variable _yesmap_
+variable _nomap_
+_placemap_ task:
+	when _yesmap_ and _S.08_ 
+	_map_ used do _readmap_ 
+	give item _map_ to _vampires_ 
+
+_S.13_ task:
+	injured _vampleader_ 
+	_note_ used do _readnote_ 
+	give item _note_ to _vampleader_ 
+
+_readnote_ task:
+	add dialog for location _vamphouse_ 
+	create npc at _vamphouse_ 
+	place npc _vampire_ at _vamphouse_ 
+
+_conhouse_ task:
+	when not _S.07_ and not _thankyou_ 
+	create foe _vampires_ every 10 minutes 8 times with 25% success 
+	create foe _vampleader_ every 20 minutes 1 times with 100% success 

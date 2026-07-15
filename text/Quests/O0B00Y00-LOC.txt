@@ -1,0 +1,177 @@
+-- Quest: C:\QUESTS\WORKING\O0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 0
+-- QuestId: 0
+Messages: 21
+Quest: O0B00Y00
+DisplayName: 뜨거운 돌
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>들어보게, %pcf, 우리 가족 중 한 명이 곤경에
+<ce>처했네. 가족을 도울 수 있게 며칠 시간 내줄 수 있겠나?
+
+RefuseQuest:  [1001]
+<ce>좋아. 언젠가 자네도 곤경에 처하지 않기를 바랄 뿐이군.
+
+AcceptQuest:  [1002]
+<ce>좋아, %ra. ___contact_에서 가장 뛰어난 도둑 중
+<ce>한 명이 __contact_의 명칭으로 불리는 쥐구멍 같은 곳에
+<ce>숨어 있네. %g3의 몸에는 궁전에서 훔쳐낸 뜨거운 돌
+<ce>%g가 있지. 소문에 따르면 누군가 %g2가
+<ce>그것을 가진 것을 봤고, 경비병들이 그곳을 뒤지고 있다네.
+<ce>__contact_의 주인에 대한 예우로, 그들은 =1stparton_일
+<ce>동안 기다리고 있지. __contact_ 쪽으로 가서
+<ce>_contact_에게 이 _metal_ 덩어리를 주고
+<ce>_gems_의 교환을 해 오게. 그런 다음 여기로 가져오는
+<ce>거야. 알아들었나? 좋아. 서두르게, 시간이 없네.
+
+QuestFail:  [1003]
+<ce>다시 봐서 반갑네, %pcf, 하지만 빈손으로 오면 안
+<ce>되지. _gems_ 확보를 하기로 했잖나, 기억하나?
+
+QuestComplete:  [1004]
+<ce>잘했네, %pcf. _contact_의 행방이 경비병들에게
+<ce>_gems_의 이름으로 불리는 생각하게 만든 _metal_
+<ce>조각을 보여주었고, 그들은 사과하는 의미로 %g2에게
+<ce>술을 한 잔 샀다더군. 말했지, 악당의 삶만큼 짜릿한 건
+<ce>없다고. 여기 자네 몫의 _gems_일세 -- _reward_
+<ce>골드지. 자네가 벌어들인 거야, %pcf.
+
+RumorsDuringQuest:  [1005]
+다들 _contact_의 보석 절도 사실을 알고 있잖아. 왜
+%g2를 잡지 않는 거지? <--->
+__contact_에는 잘난 척하는 놈들이 많아. 경비병들은 거기
+들어가는 걸 원치 않지.
+
+RumorsPostfailure:  [1006]
+경비병들이 드디어 _contact_ 측을 잡았어. %g도
+영원히 버틸 수는 없었겠지. <---> 그래, 그들은
+%t의 _gems_ 개체를 찾아냈고 그
+=contact_ 측을 체포했어.
+
+RumorsPostsuccess:  [1007]
+결국 _contact_ 측을 풀어줘야 했어. %g는
+무죄였던 모양이야. <---> 어떻게 _metal_ 개체를
+_gems_ 쪽으로 착각할 수가 있지? 둘 다 돌이긴 하지만,
+너무하잖아!
+
+QuestorPostsuccess:  [1008]
+무슨 일인가, %pcf? 그 _gems_의 반환을 원하는
+건가? 분명 그렇겠지!
+
+QuestorPostfailure:  [1009]
+<ce>_contact_에게서 _gems_ 개체를 가져와서
+<ce>%g2에게 내가 준 _metal_ 개체를 주기로 했던
+<ce>거 기억 안 나나? %oth! 무슨 대단한 과학 기술이라도
+<ce>되는 줄 알겠군.
+
+QuestLogEntry:  [1010]
+<ce>%oth, %pcf, 자네는 생명의 은인이야. 누군가
+<ce>내가 _gems_ 개체를 가지고 있는 걸 봤고 그게 훔친
+<ce>보석이라고 생각하는 모양이야. 이 _metal_ 덩어리가
+<ce>여기서 빠져나갈 내 티켓이 될 거야. 언젠가 술 한 잔 사지.
+<ce>이제 서둘러 _questgiver_ 쪽으로 돌아가게. 자네가
+<ce>=1stparton_일 안에 돌아오지 않으면 그들은 정말 의심할
+<ce>거야.
+
+Message:  1015
+%qdt:
+ ___questgiver_에 있는 도둑 길드의 _questgiver_ 측이 나를
+ __contact_의 명칭을 지닌 술집이 있는 ___contact_
+ 방향으로 보냈다. 나는 훔친 보석을 가진 %g와
+ 교환하기 위해 _contact_에게 줄 _metal_ 개체를
+ 가지고 있다. 이 일을 완수하기까지 =1stparton_일이 남았다.
+
+Message:  1020
+<ce>자네가 _contact_ 측이 훔친 _gems_ 개체를 가지고
+<ce>있다는 확실한 정보를 입수했네. 그걸 넘기면 무사히
+<ce>보내주지.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 4 times.
+--               %g2 occurs 6 times.
+--               %g3 occurs 1 time.
+--              %oth occurs 2 times.
+--              %pcf occurs 8 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--                %t occurs 2 times.
+--       =1stparton_ occurs 6 times.
+--         =contact_ occurs 4 times.
+--    ___questgiver_ occurs 1 time.
+--        __contact_ occurs 14 times.
+--            _gems_ occurs 14 times.
+--           _metal_ occurs 7 times.
+--      _questgiver_ occurs 2 times.
+--          _reward_ occurs 1 time.
+
+QBN:
+Item _reward_ gold
+Item _metal_ element
+Item _gems_ gem
+
+Person _questgiver_ face 72 group Questor
+Person _contact_ face 80 group Innkeeper remote
+
+Clock _1stparton_ 00:00 0 flag 18 range 1 4
+
+Foe _guards_ is Knight
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1015 step 0 
+	get item _metal_ 
+
+_qgclicked_ task:
+	toting _gems_ and _questgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+_npcclicked_ task:
+	toting _metal_ and _contact_ clicked 
+	create foe _guards_ every 173 minutes 3 times with 25% success 
+	get item _gems_ 
+	say 1010 
+
+_qgtalk_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _qgtalk_ and not _qgclicked_
+	say 1003
+	clear _clearclick_ _qgtalk_
+--added _qgtalk_ and _clearclick_
+
+_1stparton_ task:
+	have _metal_ set _keptmetal_ 
+	have _gems_ set _keptgems_ 
+	end quest 
+--removed unnecessary delay
+
+_greklith_ task:
+	injured _guards_ 
+	prompt 1020 yes _S.05_ no _S.06_ 
+
+_S.05_ task:
+	take _gems_ from pc 
+	change repute with _questgiver_ by -40 
+	restrain foe _guards_ 
+	end quest 
+--removed unnecessary delay
+
+variable _S.06_
+_keptmetal_ task:
+	make _metal_ permanent 
+
+_keptgems_ task:
+	make _gems_ permanent 
+
+_S.09_ task:
+	when _npcclicked_ and _1stparton_ 
+	change repute with _questgiver_ by -20 

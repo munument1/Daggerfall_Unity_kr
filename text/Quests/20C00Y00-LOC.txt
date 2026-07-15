@@ -1,0 +1,192 @@
+-- Quest: C:\QUESTS\WORKING\20C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Molag Bal
+-- Repute: 0
+-- QuestId: 0
+Messages: 61
+Quest: 20C00Y00
+DisplayName: 몰라그 발의 퀘스트
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>그래서 힘을 원하는군, %pcn. 힘은 지혜보다 훨씬 더
+<ce>실질적인 가치라는 것에 동의하지 않나? 자, 우리가 당신의
+<ce>가치를 판단하기 위해, 당신이 해야 할 약간의 수고가 있네.
+<ce>물론 불쾌한 일은 아니지. 오히려 즐길지도 모르겠군. 간단한
+<ce>암살 임무인데, 완수하면 _artifact_의 보상이 주어지겠네.
+<ce>그러면 우리가 당신이 진정한 힘을 가질 준비가 되었는지
+<ce>확인할 수 있겠지. 동의하나?
+
+RefuseQuest:  [1001]
+<ce>당신은 우리의 시간을 낭비했군. 우리는 불쾌하네.
+
+AcceptQuest:  [1002]
+<ce>당신 마음에 들 줄 알았네. 이제 잘 듣게. 당신의 목표는
+<ce>=monster_의 이름을 지닌 _monster_일세. 이 지옥 같은
+<ce>불꽃시전자는 계약도 없이 우리의 이름을 부르며 우리의 힘을
+<ce>끌어다 쓰고 있지. 무지해서 그런 것일 수도 있겠지만, 우리는
+<ce>자비를 베풀 수 없네. %g3의 실험실인
+<ce>___mondung_에서 그 마법사를 찾아 %g2를 파괴하게.
+<ce>그 후 =1stparton_일이 지나기 전에 __tavern_의
+<ce>_tavern_의 명칭으로 불리는 곳에서 우리의 대리인
+<ce>_contact_(=contact_)을 만나게. 그곳에서
+<ce>%g가 당신에게 _artifact_ 물품을 줄 걸세.
+<ce>지체하지 말게, 시간은 짧네. 우리가 지켜보고 있을 테니.
+<ce>실패하지 말게.
+
+QuestFail:  [1003]
+<ce>들어보게, %pcf. 당신과 나 모두 =monster_의 생존
+<ce>사실을 알고 있네. 계약은 계약이고, 몰라그 발은 절대 잊지
+<ce>않지.
+
+QuestComplete:  [1004]
+<ce>안녕, %pcf. 해냈군. 몰라그 발께서 칭찬을 보내셨네.
+<ce>그리고 물론, _artifact_도 있지. 즐기게나, 그리고 잘
+<ce>가게.
+
+RumorsDuringQuest:  [1005]
+모두가 ___mondung_에서 벌어지는 실험에 대해 수군거리고
+있습니다. <---> %di 방향에 있는 그
+___mondung_에서 뭔가 이상한 일이 벌어지고 있습니다.
+
+RumorsPostfailure:  [1006]
+저 밝은 붉은 별은 데이드라 몰라그 발의 분노라고들 합니다.
+<---> 계약에 대해 소리를 지르며 뛰어다니는 미친
+=contact_의 모습이 여기 있었습니다.
+
+RumorsPostsuccess:  [1007]
+최근 ___mondung_ 주변은 정말 조용합니다. <--->
+___mondung_ 주변에 소란이 많았지만, 이제 다
+가라앉았습니다.
+
+Message:  1011
+모든 데이드라 중 가장 권력에 미친 것으로 알려진 위엄 있는
+데이드릭 프린스입니다. <---> 몰라그 발은 탐리엘을
+자신의 영역으로 만드는 데 집착한다고 전해집니다.
+
+Message:  1012
+이상하게 행동하는 =contact_의 모습이 이곳에서
+%di 방향인 __tavern_에 있었습니다.
+<---> 그 이름의 =contact_의 모습이 꽤 최근에
+이곳에서 %di 방향인 __tavern_에 있었습니다.
+
+Message:  1013
+몰라그 발의 철퇴는 희생자로부터 매지카를 훔칩니다.
+<--->
+<ce>몰라그 발의 철퇴, 혹은 평민들에게는 뱀파이어의 철퇴라고
+<ce>불리는 이 무기는 마법 에너지가 소유자에게 흐르게 하는
+<ce>통로입니다.
+
+Message:  1020
+%qdt:
+ 데이드릭 프린스 몰라그 발께서 내게 던전 ___mondung_에
+ 있는 어떤 마법사를 죽이라고 명령하셨다. =1stparton_일
+ 안에 그 마법사를 죽이고 __tavern_의 _tavern_의
+ 명칭으로 불리는 곳에서 그의 동료 _contact_의 행방을
+ 만나면, _artifact_의 행방을 받을 것이다.
+
+Message:  1030
+<ce>=monster_ 처치 완료. 당신은 몰라그 발과의 계약을
+<ce>이행했다. 이제 보상을 받을 시간이다.
+
+Message:  1040
+<ce>=monster_의 모습이 %g3의 지팡이를 들어
+<ce>올리더니 천둥소리와 함께 사라진다.
+
+Message:  1060
+<ce>___hideout_의 위치를 보여주는 지도이며, 다음과 같은
+<ce>메모가 적혀 있다. "_dummy_에게 보급품을 챙기라고
+<ce>상기시킬 것. 몰라그 발이 나를 감지했다는 징후가 있음."
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 3 times.
+--                %g occurs 1 time.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %pcf occurs 2 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--         =contact_ occurs 4 times.
+--         =monster_ occurs 4 times.
+--       ___hideout_ occurs 2 times.
+--       ___mondung_ occurs 6 times.
+--         __tavern_ occurs 4 times.
+--        _artifact_ occurs 5 times.
+--         _contact_ occurs 2 times.
+--           _dummy_ occurs 1 time.
+--         _monster_ occurs 1 time.
+--          _tavern_ occurs 2 times.
+
+QBN:
+Item _artifact_ artifact Mace_of_Molag_Bal anyInfo 1013
+Item _map_ letter used 1060
+
+Person _questgiver_ face 112 named Molag_Bal anyInfo 1011
+Person _contact_ face 233 faction The_Cabal remote anyInfo 1012
+Person _dummy_ face 1 group Spellcaster remote
+
+Place _mondung_ remote dungeon9
+Place _tavern_ remote tavern
+Place _hideout_ remote dungeon11
+
+Clock _1stparton_ 00:00 0 flag 1 range 0 5
+Clock _S.08_ 00:01 00:04
+
+Foe _monster_ is Mage
+Foe _monster1_ is Mage
+
+--	Quest start-up:
+	place item _map_ at _mondung_ 
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	_map_ used do _readmap_ 
+	place foe _monster_ at _mondung_ 
+	place npc _contact_ at _tavern_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+variable _queston_
+--unused variable
+_mondead_ task:
+	killed 1 _monster_
+	killed 1 _monster1_ 
+	say 1030 
+	--added kill condition for monster1
+
+_qgclicked_ task:
+	clicked npc _contact_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	--this used the timer 2ndparton erroneously. properly changed to mondead.
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+variable _S.08_
+_S.09_ task:
+	injured _monster_ 
+	start timer _S.08_ 
+
+_S.10_ task:
+	when _S.08_ and not _mondead_
+	remove foe _monster_
+	place foe _monster1_ at _hideout_
+	say 1040
+--saying 1040 was previously used here as an invalid argument. Moved it to its own line.
+--added new monster1 creature and properly enabled disappearing act with new remove action.
+
+_readmap_ task:
+	reveal _hideout_ readmap

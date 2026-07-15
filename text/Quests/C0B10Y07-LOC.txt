@@ -1,0 +1,127 @@
+-- Quest: C:\QUESTS\WORKING\C0B10Y07.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: temple
+-- Repute: 10
+-- QuestId: 7
+Messages: 12
+Quest: C0B10Y07
+DisplayName: 배달
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>축복이 함께하기를, %pcn. __qgiver_께서 저희를
+<ce>대신해 심부름을 해주길 원하십니다. 이 _religitem_ 건을
+<ce>___priest_ 쪽으로 =traveltime_일 이내에 전달해 주십시오.
+<ce>사원 보상금으로 _gold_ 골드를 받으실 것입니다.
+<ce>저희를 위해 해주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>하아. 이 임무를 수행할 다른 사원 일꾼을 찾아봐야겠군요.
+
+AcceptQuest:  [1002]
+<ce>여기 _religitem_ 건이 있습니다. ___priest_에 있는
+<ce>__priest_의 _priest_에게 가져다주십시오. 아, 깜빡할
+<ce>뻔했군요. 경쟁 사원에서 당신을 막으려 자객을 보낼지도
+<ce>모릅니다.
+
+QuestComplete:  [1004]
+<ce>%god의 은총이 함께하기를 %pcn. 이
+<ce>_religitem_의 존재는 이곳에 절실히 필요합니다. 사원
+<ce>보상금으로 _gold_ 골드를 받기로 하셨다고 들었습니다.
+
+RumorsDuringQuest:  [1005]
+며칠 전에 종기가 났었는데... 다 나았어. <---> 방금
+날씨에 대해 세 시간 동안이나 대화를 나눴지 뭐야.
+<---> 이맘때 날씨치고는 꽤 평범한 편이지.
+<---> 올해는 %cn의 날씨가 이맘때치고는
+조금 쌀쌀한 것 같아. <---> 작년 이맘때보다 오늘이
+확실히 훨씬 따뜻하네. <---> 우리 큰이모가 만
+건너편에 있는 전문의를 만나러 가셔. <---> 이 동네는
+어두워지는 시간이 항상 신기하단 말이지. <---> 이
+근처에 전쟁 기념비를 세워야 해. <---> 요즘 애들은
+마법을 너무 밝혀. %oth, 잘 모르겠어. <--->
+어젯밤에 정말 이상한 꿈을 꿨어. <---> 재미있는
+농담을 하나 들었어. %jok <---> %jok
+사실, 그건 농담이야. <---> %jok 그게 무슨
+뜻인지 설명해 줄 수 있어? <---> %reg의 법
+체계는 장단점이 있지.
+
+RumorsPostfailure:  [1006]
+__qgiver_의 %pcn에 대한 저주가 계속되고
+있습니다.
+
+RumorsPostsuccess:  [1007]
+_priest_의 %g3의 __qgiver_ 선물에 대한
+만족감이 느껴집니다.
+
+QuestorPostsuccess:  [1008]
+_priest_의 %g3의 안부를 전합니다,
+%pcf. 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+_priest_의 분노는 제가 당신과 대화했다는 사실을 절대
+용서하지 않을 겁니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ __qgiver_의 _qgiver_께서 _religitem_의 전달을
+ ___priest_에 있는 __priest_의 _priest_에게
+ 맡기셨다. =traveltime_일 이내에 도착해야 한다.
+
+Message:  1011
+<ce>그 _religitem_의 운명은 절대 __priest_에 도착하지 못할
+<ce>것이다. 대신, 네놈의 머리를 배달해 주마!
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 1 time.
+--               %g3 occurs 2 times.
+--              %god occurs 1 time.
+--              %jok occurs 3 times.
+--              %oth occurs 5 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--      =traveltime_ occurs 3 times.
+--        ___priest_ occurs 6 times.
+--         __qgiver_ occurs 4 times.
+--            _gold_ occurs 2 times.
+--          _priest_ occurs 5 times.
+--          _qgiver_ occurs 1 time.
+--       _religitem_ occurs 5 times.
+
+QBN:
+Item _religitem_ religious
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+Person _priest_ group Group_5.0 remote
+Person _enemy_ face 176 group Local_4.0 remote
+
+Clock _traveltime_ 00:00 0 flag 1 range 1 2
+
+Foe _thief_ is Thief
+Foe _spellsword_ is Spellsword
+
+--	Quest start-up:
+	create foe _thief_ every 12 minutes 2 times with 5% success 
+	create foe _spellsword_ every 12 minutes 2 times with 5% success 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	get item _religitem_ 
+
+_traveltime_ task:
+	end quest 
+
+_questdone_ task:
+	toting _religitem_ and _priest_ clicked 
+	give pc _gold_ 
+	end quest 
+
+_S.02_ task:
+	injured _thief_ saying 1011 
+	injured _spellsword_ saying 1011 

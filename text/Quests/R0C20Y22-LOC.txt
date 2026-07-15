@@ -1,0 +1,218 @@
+-- Quest: C:\QUESTS\WORKING\R0C20Y22.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 20
+-- QuestId: 22
+Messages: 31
+Quest: R0C20Y22
+DisplayName: 오크와의 거래
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>아, %pcf, 와주셔서 기쁩니다. 고용할 사람을 찾고
+<ce>있는데, 특별한 _item_의 전달을 제 지인에게 맡길 분을
+<ce>구합니다. 임무의 위험성을 감안하여 보상은 매우 후하게 드릴
+<ce>생각입니다. 관심 있으십니까?
+
+RefuseQuest:  [1001]
+<ce>정말입니까? 너무 바쁘신가 보군요. 아쉽네요.
+
+AcceptQuest:  [1002]
+<ce>훌륭합니다. 여기 _item_입니다. 이제, _contact_의
+<ce>전달이 =queston_일 내로 ___contact_에 이루어져야
+<ce>합니다. 충분한 시간이라 생각합니다. _contact_의 위치는
+<ce>찾기 쉬울 겁니다. __contact_에 있는 =contact_의
+<ce>행방을 찾으시면 됩니다. 그나저나, 이 배송을 방해하려는
+<ce>오크들과 마주칠지도 모릅니다. 그들의 종족을 상대하는 법은
+<ce>잘 아시리라 믿습니다. 행운을 빕니다.
+
+QuestFail:  [1003]
+<ce>속도가 생명입니다, %pcf. 오크들이 밤마다
+<ce>___questgiver_ 주변을 배회하는 것이 목격되었습니다. 그들이
+<ce>더 대담해지기 전에 서둘러 길을 떠나는 것이 좋을 겁니다.
+
+QuestComplete:  [1004]
+<ce>아, %pcf, 다시 뵙게 되어 반갑습니다. 그리고
+<ce>_item_도 가져오셨군요. 훌륭합니다. 여기 수고비로
+<ce>작은 장신구를 하나 드리지요. 빨간색을 좋아하시길 바랍니다.
+<ce>몸조심하십시오.
+
+RumorsDuringQuest:  [1005]
+_questgiver_의 밀수업에 관한 소문이 있더군.
+<--->
+<ce>어젯밤 경비병들이 오크 몇 마리를 쫓아냈다는 소리를 들었어.
+<ce>도대체
+<ce>무슨 일로 마을까지 들어온 거지?
+
+RumorsPostfailure:  [1006]
+최근 누군가 이곳 근처에서 아주 아름다운 _item_ 발견
+소식을 전하더군. <---> 듣자 하니 _questgiver_의
+분노가 어떤 %ra 모험가에게 향했다더군.
+
+RumorsPostsuccess:  [1007]
+어떤 =contact_ 측이 방금 여기 와서 _item_ 물품을
+휘두르고 다녔어. <---> 어떤 보석상에서 큰 루비를
+도난당했다고 신고했다는군.
+
+QuestorPostsuccess:  [1008]
+당신의 임무가 성공했다는 소식을 들었습니다, %pcf.
+잘됐군요. 아주 잘됐습니다. <---> 배달이 성공했다는
+소식을 들어 기쁩니다. 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+<ce>배달을 완수하지 못한 그 전령이군요, 그렇지요? 당신에게
+<ce>다시 입을 여는 건 어리석은 짓이겠지요? 참고로, 이건 수사
+<ce>의문문입니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ _questgiver_의 의뢰로 ___contact_에 사는 _contact_의
+ 이름으로 불리는 사람에게 _item_의 배달을 부탁받았다.
+ %g는 =queston_일 내로 __contact_에서 나를
+ 만나 보상을 줄 것이다. 물론, _item_ 쪽을 노리는
+ 오크들에게 당하기 전까지의 이야기지만.
+
+Message:  1012
+___orsinium_에서 온 그 오크 애호가와는 엮이지 않는 게 좋을
+거야. <---> ___orsinium_의 _orsinium_ 말이야?
+그들은 %g가 실제로 오크들과 대화를 나눈다고
+하더군.
+
+Message:  1013
+_orsinium_의 명성은 ___orsinium_에서 오크 동조자로 꽤
+유명하지.
+<--->
+<ce>나는 _orsinium_의 정체가 더러운 오크 애호가라는 사실을
+<ce>알고 있어. ___orsinium_ 밖에서
+<ce>그 짐승들과 만나는 %g2를 직접 봤거든. 내 생각엔
+<ce>%g를 당장
+<ce>마을에서 쫓아내야 해.
+
+Message:  1015
+_questgiver_의 부인에도 불구하고, 사람들은 %g가
+밀수업에 손을 대고 있다고 하더군.
+<--->
+<ce>_questgiver_의 연루 의혹에 관해 옛 오시니움에서 약탈한
+<ce>전리품을 들여오는 밀수 조직과
+<ce>관련이 있다는 소문이 있어.
+
+Message:  1016
+<ce>_questgiver_의 옛 오시니움 전리품 거래가 계속된다면 우리
+<ce>모두에게 오크들을
+<ce>불러들이는 꼴이 될 거야. _orsinium_의 공개적인
+<ce>_questgiver_ 고발에도,
+<ce>물론 아무런 조치도 취해지지 않았지.
+<--->
+<ce>_questgiver_의 출처는 모르겠지만, 최근 %g2가 아주
+<ce>정교한 골동품
+<ce>장신구를 걸치고 있는 걸 봤어. 내가 틀리지 않았다면, 고대
+<ce>오시니움의
+<ce>장인이 만든 물건일 거야.
+
+Message:  1020
+<ce>저를 찾아주셔서 기쁩니다, %pcn. 당신이 운반 중인
+<ce>_item_ 항목은 오크의 고대 수도인 오시니움에서 훔친
+<ce>물건이라는 사실을 아셔야 합니다. _questgiver_의 경우
+<ce>대부분의 사람처럼 오크를 경멸하기에, 그들은 도난당한
+<ce>재산을 되찾기 위해 폭력에 의존할 수밖에 없습니다. 하지만
+<ce>당신은 고용주보다 더 깨어있는 사람이길 바랍니다. 만약
+<ce>저에게 _item_ 항목을 주신다면, 정당한 주인에게
+<ce>돌아가도록 조치하겠습니다.
+
+Message:  1021
+<ce>_item_ 건네주시겠습니까?
+
+Message:  1022
+<ce>당신에 대한 제 판단이 옳았군요. 감사합니다, %pcf.
+<ce>이 은혜는 잊지 않겠습니다.
+
+Message:  1023
+<ce>매우 유감스러운 일이군요. 뭐, 우리 모두에게는 각자의
+<ce>이유가 있으니까요. 이 결정을 안고 살아가시길 바랍니다.
+
+Message:  1030
+<ce>오크가 바닥으로 쓰러지며 알아듣기 힘든 억양으로 헐떡이며
+<ce>말합니다. "_orsinium_ ... 가라 ... _orsinium_ ..."
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 6 times.
+--               %g2 occurs 2 times.
+--              %pcf occurs 5 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--         =contact_ occurs 2 times.
+--         =queston_ occurs 2 times.
+--       ___contact_ occurs 2 times.
+--      ___orsinium_ occurs 6 times.
+--    ___questgiver_ occurs 1 time.
+--        __contact_ occurs 5 times.
+--            _item_ occurs 12 times.
+--        _orsinium_ occurs 7 times.
+--      _questgiver_ occurs 11 times.
+
+QBN:
+Item _reward_ ruby
+Item _item_ trinket
+
+Person _questgiver_ group Questor anyInfo 1015 rumors 1016
+Person _contact_ group Local_3.0 remote
+Person _orsinium_ face 184 faction Orsinium remote anyInfo 1012 rumors 1013
+
+Place orcCastle permanent OrsiniumCastle3
+
+--changed flags on timer, was giving very short time limits before
+Clock _queston_ 00:00 0 flag 3 range 3 5
+
+Foe _note_ is 3 Orc
+Foe _F.01_ is Orc_sergeant
+
+--	Quest start-up:
+	dialog link for location orcCastle person _orsinium_ 
+	start timer _queston_ 
+	log 1010 step 0 
+	get item _item_ 
+	create npc _orsinium_ 
+	create npc _contact_ 
+
+variable _pcgetsgold_
+variable _pchasitem_
+_queston_ task:
+	make _item_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+_npcclicked_ task:
+	toting _item_ and _contact_ clicked 
+	give pc _reward_ 
+	end quest 
+
+_S.04_ task:
+	clicked npc _orsinium_ 
+	say 1020 
+
+_S.05_ task:
+	say 1022 
+	change repute with _orsinium_ by +30 
+
+until _S.05_ performed:
+	create foe _note_ every 5 minutes 12 times with 35% success 
+	create foe _F.01_ every 10 minutes 12 times with 35% success 
+
+_bookstore_ task:
+	get item _item_ 
+	say 1023 
+	change repute with _orsinium_ by -10 
+
+_S.07_ task:
+	killed 1 _F.01_ 
+	add dialog for person _orsinium_ 
+	say 1030 
+
+_S.08_ task:
+	toting _item_ and _orsinium_ clicked 
+	prompt 1021 yes _S.05_ no _bookstore_ 

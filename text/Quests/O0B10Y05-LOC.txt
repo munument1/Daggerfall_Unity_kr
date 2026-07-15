@@ -1,0 +1,131 @@
+-- Quest: C:\QUESTS\WORKING\O0B10Y05.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 10
+-- QuestId: 5
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 11
+Quest: O0B10Y05
+DisplayName: 귀중한 예술품
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>어이, %pcf! 나, _qgiver_ 기억하나? 오늘 길드
+<ce>일 하나 할 텐가? 자네에게 딱 맞는 일거리가 하나 있네.
+
+RefuseQuest:  [1001]
+<ce>다음 기회에 하지.
+
+AcceptQuest:  [1002]
+<ce>어떤 부자가 꽤 비싼 값을 받을 수 있는 그림을 하나 구했어.
+<ce>그걸 __townhouse_에 있는 _townhouse_에 숨겨뒀지. 가져오면
+<ce>길드 보수로 _gold_ 골드를 주지. 아, 그리고
+<ce>=traveltime_일 안으로 가져와야 해.
+
+QuestComplete:  [1004]
+<ce>흠집 하나 없군. 수호자 때문에 고생했겠어. 그놈이 그런 짓을
+<ce>해놨을 줄은 몰랐거든. 여기 보수일세.
+
+RumorsDuringQuest:  [1005]
+_townhouse_의 상태는 거의 예술품 갤러리 수준이야.
+
+RumorsPostfailure:  [1006]
+며칠 전에 종기가 났는데... 다 나았어. <---> 방금
+날씨에 대해 세 시간 동안 대화를 나눴지. <--->
+날씨는 이맘때 치고는 평범해. <---> %cn의
+날씨는 이맘때 치고는 약간 쌀쌀한 것 같아. <--->
+작년 이맘때보다 오늘이 확실히 더 따뜻하군. <--->
+우리 큰이모가 만 건너편의 전문의를 만나러 가셔.
+<---> 이곳은 어두워지는 시간이 항상 신기해.
+<---> 이 근처에 전쟁 기념비를 세워야 해.
+<---> 요즘 애들은 마법을 너무 밝혀. %oth,
+잘 모르겠군. <---> 어젯밤에 아주 이상한 꿈을 꿨어.
+<---> 재미있는 농담을 들었지. %jok
+<---> %jok 사실 그건 농담이야. <--->
+%jok 그게 무슨 뜻인지 설명해줄 수 있어?
+<---> %reg의 법 체계는 장단점이 있지.
+
+RumorsPostsuccess:  [1007]
+_townhouse_의 강력한 수호자가 있었는데도 털렸어.
+<---> _townhouse_의 절도범은 뭘 해야 할지 확실히
+알고 있었던 게 분명해.
+
+QuestorPostsuccess:  [1008]
+그 그림은 암시장에서 아주 비싼 값에 팔렸네, %pcf.
+
+QuestorPostfailure:  [1009]
+<ce>자네는 보이는데, 가져오기로 했던 그림은 안 보이는군. 내가
+<ce>왜 자네에게 시간 낭비를 했을까?
+
+QuestLogEntry:  [1010]
+%qdt:
+ _qgiver_의 의뢰로 __townhouse_에 있는 _townhouse_에서
+ 그림을 훔쳐오게 되었다. _qgiver_에 있는 도둑 길드의
+ ___qgiver_에게 전달하기까지 =traveltime_일이 남았다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 1 time.
+--              %jok occurs 3 times.
+--              %oth occurs 5 times.
+--              %pcf occurs 16 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--      =traveltime_ occurs 3 times.
+--        ___qgiver_ occurs 2 times.
+--      __townhouse_ occurs 2 times.
+--            _gold_ occurs 1 time.
+--          _qgiver_ occurs 3 times.
+--       _townhouse_ occurs 5 times.
+
+QBN:
+Item _painting_ painting
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _townhouse_ remote house4
+--reverted to house4 as original
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Barbarian
+Foe _F.01_ is Giant_bat
+Foe _F.02_ is Spider
+Foe _F.03_ is Sabretooth_tiger
+
+--	Quest start-up:
+	place item _painting_ at _townhouse_ 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pc at _townhouse_ set _S.01_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	start task _S.01a_
+
+_S.01a_ task:
+	pick one of _guard1_ _guard2_ _guard3_ _guard4_ 
+--set this apart to a permanent task, previous setup would randomly pick again upon re-entering the house
+
+_questdone_ task:
+	toting _painting_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+_guard1_ task:
+	create foe _F.00_ every 4 minutes 1 times with 10% success 
+
+_guard2_ task:
+	create foe _F.01_ every 4 minutes 1 times with 10% success 
+
+_guard3_ task:
+	create foe _F.02_ every 4 minutes 1 times with 10% success 
+
+_guard4_ task:
+	create foe _F.03_ every 4 minutes 1 times with 10% success 

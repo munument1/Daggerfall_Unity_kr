@@ -12,65 +12,131 @@ DisplayName: 가정 불화
 QRC:
 
 QuestorOffer:  [1000]
-<ce>좀 이상한 가정내 다툼 일이야,  %pcf.
-<ce>__house_에 있는 여자가
-<ce>자기 남편을 없애달라고 하더군.
-<ce>문제는 남편이 죽었다는거고.
-<ce>일 맡아 보겠나?
+<ce>좀 골치 아픈 가정 불화가 있네, %pcf.
+<ce>__house_에 사는 어떤 여인이 자기 집에서 남편을
+<ce>치워달라고 의뢰했네. 문제는 그 남편이 이미 죽었다는 거지.
+<ce>이 일을 맡겠나?
 
 RefuseQuest:  [1001]
-<ce>아쉽구만. 보통 이런일은 사원에만 들어오거든.
-<ce>괜찮은 일거리를 안받는구만 %pcn.
+<ce>아쉽군. 보통 이런 일은 신전에서나 맡는데. 좋은 기회를
+<ce>놓쳤군, %pcn.
 
 AcceptQuest:  [1002]
-<ce>남편이 좀비야. 낮에는 어딘가에 숨어있지.
-<ce>낮이 아닐땐 _house_에 없다는군.
-<ce>밤에는 주변을 돌아다니는 거지.
-<ce>그 남편의 고통을 끝내주고
-<ce>=2dung_일 안에 와서 보고하게
-<ce>금화 _gold_닢 값을 치르지.
+<ce>그녀의 남편은 좀비라네. 낮에는 어딘가에 숨어있어서
+<ce>_house_에서는 그를 볼 수 없지. 하지만 밤이 되면 집
+<ce>주변을 배회한다네. 그를 안식에 들게 하고 =2dung_일
+<ce>안에 돌아오게나. 보상으로 _gold_ 골드를 주지.
 
 QuestComplete:  [1004]
-<ce>그 친구, 소문처럼 냄새가 고약했나?
-<ce>속옷 들어있는 장롱을 장마에 한달은
-<ce>내팽겨놓은 냄새라던데.
-<ce>어쨌든, 여기 보수야, %pcn.
+<ce>그 늙은이가 소문대로 악취가 심하던가? 한 달 동안 빗속에
+<ce>방치된 속옷 서랍 같았을 텐데. 자, 여기 자네 보상이네,
+<ce>%pcn.
 
 RumorsDuringQuest:  [1005]
-<ce>들으셨습니까? 어떤 할망구가 그러는데
-<ce>그 여자를 괴롭히려고 남편이 무덤에서
-<ce>일어나 돌아온거고 합니다.
+<ce>들었나? 어떤 노파가 죽은 남편이 무덤에서 돌아와 자신을
+<ce>괴롭힌다고 하더군.
 
 RumorsPostfailure:  [1006]
-<ce>그 여자, 집에서 죽은채로 발견됬답니다.
-<ce>오래전에 죽은 남편 옆에 썩은 시체로
-<ce>있었다고 합니다.
+<ce>어떤 여인이 집에서 죽은 채 발견되었네. 그녀의 곁에는
+<ce>오래전에 죽은 남편의 썩어가는 시체가 있었다더군.
 
 RumorsPostsuccess:  [1007]
-<ce>파이터 길드에서 그 좀비를 사람을 보내서
-<ce>처리했다고 들었습니다.
-<ce>길드쪽 사람들은 괜찮은 사람들입니다.
+<ce>전사 길드에서 그 좀비를 처리하려고 누군가를 보냈다고
+<ce>하더군. 길드 사람들은 참 믿음직해.
 
 QuestorPostsuccess:  [1008]
-<ce>그 좀비 잘 처리했어, %pcn.
+<ce>그 좀비 처리는 잘해주었네, %pcn.
 
 QuestorPostfailure:  [1009]
-<ce>좀비는 감당이 안된건가, 응?
-<ce>못하는 거면 받질 말았어야지.
+<ce>좀비가 너무 강했나 보군? 감당할 수 없는 일은 애초에 맡지
+<ce>말았어야지.
 
 QuestLogEntry:  [1010]
-%qdt,
- ___qgiver_ 파이터 길드에서
- __house_의 _house_에 있는
- 좀비를 처리해 달라는 의뢰를
- 받았다. =2dung_일 안에 해결해야 한다.
+%qdt에, ___qgiver_의 전사 길드에서
+__house_에 있는 _house_의 괴롭힘을 멈추기 위해
+좀비를 처치하라는 의뢰를 받았다. 완료까지 =2dung_일이
+남았다.
 
 Message:  1011
-<ce>_monster_는 죽었다.
-<ce>부인은 안심하고 잘수 있을것이다.
+<ce>_monster_의 사망이 확인되었네. 이제 아내는 편히 잠들 수
+<ce>있겠군.
 
 Message:  1080
-<ce>어이 %pcf, 좀비 사냥이 재밌었으면,
-<ce>여기 괴물이 들끓는 곳 지도를 받아
-<ce>이름이 ___newdung_.
-<ce>너 같은 %ra 한테는 노는 수준일거야.
+<ce>이봐 %pcf, 좀비 사냥이 재미있었다면 이 지도를
+<ce>챙겨서 몬스터가 들끓는 ___newdung_의 명칭으로 불리는
+<ce>구멍으로 가보게. 자네 같은 %ra에게는 휴가나
+<ce>다름없을 걸세.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 2 times.
+--              %pcn occurs 6 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 3 times.
+--           =2dung_ occurs 2 times.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--          __house_ occurs 2 times.
+--            _gold_ occurs 2 times.
+--           _house_ occurs 2 times.
+--         _monster_ occurs 1 time.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _house_ remote random
+Place _newdung_ remote dungeon
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Zombie
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _house_ 
+	log 1010 step 0 
+	pick one of _map_ _map_ _nomap_ _nomap_ 
+	pc at _house_ set _S.04_ 
+	create npc at _house_ 
+
+_2dung_ task:
+	end quest 
+
+_mondead_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	when _qgclicked_ and _mondead_ and _nomap_
+	give pc _gold_ 
+	end quest 
+
+_mapvict_ task:
+	when _qgclicked_ and _mondead_ and _map_
+	give pc _gold_ 
+	reveal _newdung_ readmap
+    say 1080
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	clear _qgclicked_ _clearclick_ 
+
+_qgclicked_ task:
+	clicked npc _qgiver_
+
+variable _S.04_
+_S.05_ task:
+	daily from 05:00 to 19:00 
+
+_S.06_ task:
+	when _S.04_ and not _S.05_ 
+	place foe _monster_ at _house_ 
+
+variable _map_
+variable _nomap_
+_S.09_ task:
+	when _map_ and _S.02_ 
+

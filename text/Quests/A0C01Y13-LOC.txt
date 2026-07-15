@@ -1,0 +1,281 @@
+-- Quest: C:\QUESTS\WORKING\A0C01Y13.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 01
+-- QuestId: 13
+Quest: A0C01Y13
+DisplayName: 명예 훼손
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>좋은 날입니다. 제 이름은 _giver_입니다. 최근에 제
+<ce>이름을
+<ce>들어보셨을지도 모르겠군요. 누군가 제 사생활에 관한 끔찍한
+<ce>거짓말을 거리에 퍼뜨리고 다닙니다. 이 일을 멈춰줄
+<ce>사람에게 _gold_ 골드를 지불하겠습니다. 어떻게
+<ce>생각하시나요?
+<--->
+<ce>저에 대한 악의적이고 명백한 비방을 당장
+<ce>멈춰야 합니다. 이 소문의 근원을 추적해 줄 익명의
+<ce>조력자가 필요합니다. _gold_ 골드면 당신의
+<ce>조사 능력을 이 문제에
+<ce>사용하기에 충분할까요?
+
+RefuseQuest:  [1001]
+<ce>제가 약속을 지키지 않는다는 소문을 들으셨나 보군요.
+<ce>빌어먹을 거짓말들입니다!
+
+AcceptQuest:  [1002]
+<ce>정말이신가요? 훌륭합니다. 저에 대한 이 지독한 소문들의
+<ce>배후가 누구인지 증거를 찾으면 돌아오십시오. 그때 골드를
+<ce>드리겠습니다. 한 달 안에 돌아오지 않으신다면, 실패한
+<ce>것으로 간주하겠습니다.
+
+QuestFail:  [1003]
+%qdt:
+ 누군가 ___giver_ 지역에 _giver_ 님에 대한 소문을
+ 퍼뜨리고 있다. %g 님은 이 일을 멈춰주는 대가로
+ _gold_ 골드를 제안했다. 성공을 증명할 증거를
+ 가져오기까지 한 달의 시간이 있다.
+
+QuestComplete:  [1004]
+<ce>당신은 명예로웠습니다, %pcn 님. 감사합니다. 제
+<ce>가장 소중한 보물인 이 _magicsword_ 님을 받으십시오. 이것이
+<ce>제가 드릴 수 있는 최소한의 성의입니다. 우리는 영원한
+<ce>친구이며, 당신께 빚을 졌습니다. _giver_ 님과
+<ce>_sister_ 님은 저에게 맡기십시오. 그들을 위해 계획해 둔
+<ce>것이 있습니다.
+
+RumorsDuringQuest:  [1005]
+<ce>_giver_ 님이 노예를 부린다는 소문을 들었어요!
+<--->
+<ce>_giver_ 님이 %g3의 배우자를 때린다더군요.
+
+RumorsPostfailure:  [1006]
+<ce>_giver_ 님은 따돌림을 당하고 있어요. 마을의 누구도
+<ce>%g2 님과 엮이고 싶어 하지 않죠. %g 님이
+<ce>저지른 일들에 대해 들어보셨나요?
+
+RumorsPostsuccess:  [1007]
+<ce>_lover_ 님이 어떤 %ra 님에 의해
+<ce>___dungeon_에서 구출되었다더군요. 이봐요! 당신이 그
+<ce>%ra 님 아닌가요?
+
+QuestorPostsuccess:  [1008]
+<ce>제 여동생의 연인인 _lover_ 님에게 제가 한 짓을 알고
+<ce>당신은 저를 끔찍한 사람이라고 생각하시겠죠. 보상할 기회를
+<ce>주십시오.
+
+QuestorPostfailure:  [1009]
+<ce>당신은 저를 실망시켰어요! 제 여동생이 더 이상 저와 말도
+<ce>섞지 않는데, 다 당신 탓이에요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ _giver_ 님이 %g3의 여동생 _sister_ 님과
+ 공모하여 그녀의 연인 _lover_ 님을 납치하기로
+ 거래했다는 사실을 알아냈다. _giver_ 님이 받은 편지에
+ 그 계획이 적혀 있다.
+
+Message:  1015
+_giver_ 님,
+간단히 말하죠. 당신이 말했듯이 _lover_ 님은 도가
+지나치니, 약간의 겁을 주는 것이 필요할지도 모르겠군요.
+오늘 밤 여행을 떠날 예정이니, 내일 해 질 녘에 그를
+처리하세요. 다시 연락하겠지만, 일주일 이상 지속할 필요는
+없을 것 같군요.
+<ce>-_sister_
+
+Message:  1017
+<ce>무슨 말씀을 하시는 건가요? _giver_ 말인가요? 들은
+<ce>이야기가 좀 있습니다... 하지만 조용히 말씀 나누시죠.
+<ce>%g3의 자매인 _sister_ 측이 연인 문제로
+<ce>골머리를 앓고 있었다더군요. 그 남자 이름은 _lover_인
+<ce>걸로 압니다. 확실한 건 _giver_ 및 %g3의 자매
+<ce>사이에 _lover_ 처치와 관련된 거래가 있었다는
+<ce>사실이죠. 어떻게 된 건지는 모르겠지만, 제가 만난 젊은
+<ce>친구가 말하길 _sister_ 측이 _giver_에게 계획을
+<ce>적은 편지를 전달했다고 하더군요.
+
+Message:  1018
+%qdt:
+ _giver_ _lover_ 납치할 계획이 담긴 편지를
+ 보여주었다. _giver_ %g ___dungeon_에 그를
+ 가두기 위해 도적들을 고용했다고 털어놓았다. %g
+ 살려달라고 애원하며 _lover_ 구해달라고 부탁했다.
+
+Message:  1020
+<ce>거짓말, 다 거짓말이야! 그 지긋지긋한 거리의 소문들 정말
+<ce>싫군. 어서 빨리 그 입들을 다물게 해줘!
+
+Message:  1021
+<ce>뭐?! 이게 대체 무슨 일이야? 오, 세상에... 제발, 제발
+<ce>죽이지 마세요! 제 자매가 시킨 일이에요... 해칠 생각은
+<ce>없었어요. 그저 그 사람을 조금 겁주어서 자매를 더 소중히
+<ce>여기게 만들라고 했을 뿐이에요. 하지 말았어야 했는데. 이제
+<ce>돌이킬 수 없게 됐어요... 보시다시피, 제가 도적 무리를
+<ce>고용해서 그를 데려가 ___dungeon_에 가두라고 했거든요.
+<ce>겁만 좀 주려고 했던 건데... 그가 돌아오질 않아요! 제가
+<ce>너무 멀리 갔나 봐요... 알아요. 제발... 그를 구해줘야 해요!
+<ce>숨길 수 있을 줄 알았는데, 이제는 안 되겠어요. 그를 꼭
+<ce>구해주세요. 만약 제 자매가 돌아왔을 때 그가 없다면... 분명
+<ce>저를 죽일 거예요!
+
+Message:  1022
+<ce>_giver_ 측은 요즘 큰 화제죠.
+<--->
+<ce>_giver_ 측은 _givershouse_에 머물고 있습니다.
+<--->
+<ce>_giver_의 자매의 연인이 실종되었습니다.
+<--->
+<ce>보통 _giver_ 측은 __giver_에서 찾을 수 있습니다.
+<--->
+<ce>_giver_요? %g2는 __giver_ 지역이나
+<ce>집인 _givershouse_에서 찾을 수 있을 겁니다.
+<--->
+<ce>_giver_ 측은 ___giver_에서 평판이 좋습니다.
+<--->
+<ce>_inn_에 가보시는 게 좋겠군요.
+<ce>좋은 소문은 항상 거기 있으니까요.
+<--->
+<ce>_giver_ 측은 종종 %g3의 자매인 _sister_
+<ce>측과 쇼핑하는 모습이 보입니다.
+<--->
+<ce>_giver_ 측은 _inn_에서 물건을 훔치고 다닙니다.
+<ce>아니면 다른 사람인가?
+<--->
+<ce>_giver_ 측은 자기 자매를 살해했습니다.
+<--->
+<ce>_giver_의 아버지는 오크에게 길러졌답니다.
+<--->
+<ce>_giver_ 측은 오크 연인을 두었습니다.
+<--->
+<ce>_giver_ 측은 사원에서 물건을 훔치고 있습니다.
+<--->
+<ce>_giver_ 측은 오크들과 한패입니다.
+<--->
+<ce>이번 주 ___giver_에서 _giver_에 대한 소문이
+<ce>가장 많이 돌고 있습니다.
+<--->
+<ce>_giver_ 측은 %g3의 자매의 연인을
+<ce>납치하겠다고 약속했습니다.
+<--->
+<ce>이 근처에는 아무것도 아닌 일에 대한 이야기가 너무 많군요.
+<--->
+<ce>_giver_ 측은 %g3의 약속을 지키지 않습니다.
+<--->
+<ce>_giver_ 측은 비밀을 간직하고 있습니다.
+<--->
+<ce>여기 사람들은 저마다의 사연이 있죠.
+<--->
+<ce>항상 _inn_에서는 이야기가 끊이지 않죠.
+
+Message:  1030
+<ce>_lover_의 연인은 _sister_입니다. 그러고 보니,
+<ce>최근에 그를 본 적이 없네요.
+<--->
+<ce>_lover_의 모습이 며칠째 마을에서 보이지 않습니다.
+<ce>_giver_ 측이 무슨 짓을 꾸민 게 분명해요.
+
+Message:  2000
+<ce>%god께 감사드립니다, 누군가 저를 찾아냈군요!
+<ce>여기서 영영 못 나가는 줄 알았습니다. 살아남으려고 며칠
+<ce>동안 이 통로를 헤매고 다녔어요. 무슨 말씀을 하시는 건가요?
+<ce>_sister_ 및 _giver_ 측이 이 모든 일의
+<ce>배후라고요!? 좋습니다, 저를 _sistershouse_까지 __sistershouse_
+<ce>안에서 데려다주시면 보상은 확실히 하겠습니다. 그다음엔 그
+<ce>두 녀석을 제가 직접 처리하죠!
+
+Message:  2001
+%qdt:
+ _lover_의 행방을 찾았고, __sistershouse_에 있는
+ _sistershouse_ 쪽으로 호송 중이다.
+
+Message:  2005
+<ce>_lover_의 말에 따르면, "도와줘서 고마워요,
+<ce>%pcn. 하지만 여기서부터는 제 힘으로 집에 갈게요."
+<ce>라고 했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 5 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 16 times.
+--              %god occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 4 times.
+--               %ra occurs 4 times.
+--       ___dungeon_ occurs 3 times.
+--         ___giver_ occurs 11 times.
+--   __sistershouse_ occurs 3 times.
+--           _giver_ occurs 38 times.
+--     _givershouse_ occurs 4 times.
+--            _gold_ occurs 3 times.
+--             _inn_ occurs 4 times.
+--           _lover_ occurs 14 times.
+--      _magicsword_ occurs 1 time.
+--          _sister_ occurs 29 times.
+--    _sistershouse_ occurs 2 times.
+
+QBN:
+Item _letter_ letter used 1015
+Item _gold_ gold
+Item _magicsword_ magic_item
+
+Person _giver_ group Questor anyInfo 1022 rumors 1022
+Person _teller_ face 1 group Innkeeper local
+Person _sister_ face 19 group Group_6.0 female local
+Person _lover_ face 117 group Group_6.0 male local anyInfo 1030 rumors 1030
+
+Place _givershouse_ local house2
+Place _sistershouse_ local house2
+Place _dungeon_ remote dungeon
+Place _inn_ local tavern
+
+Clock _S.00_ 30.00:00 0 flag 9 range 0 1
+
+
+--	Quest start-up:
+	place item _letter_ at _givershouse_ 
+	dialog link for location _givershouse_ person _teller_ 
+	dialog link for location _sistershouse_ person _lover_ item _letter_ 
+	dialog link for location _dungeon_ person _sister_ item _gold_ 
+	start timer _S.00_ 
+	log 1003 step 0 
+	clicked npc _giver_ say 1020 
+	place npc _teller_ at _inn_ 
+	place npc _lover_ at _dungeon_ 
+
+_S.00_ task:
+	end quest 
+
+_S.01_ task:
+	clicked npc _teller_ say 1017 
+	log 1010 step 1 
+
+variable _S.02_
+variable _S.03_
+_S.04_ task:
+	toting _letter_ and _giver_ clicked saying 1021 
+	reveal _dungeon_ 
+	log 1018 step 2 
+
+_S.05_ task:
+	give pc _magicsword_ 
+	drop _lover_ face 
+	end quest 
+
+_S.06_ task:
+	clicked npc _lover_ say 2000 
+	pc at _sistershouse_ set _S.05_ 
+	log 2001 step 3 
+	hide npc _lover_ 
+	add _lover_ face 
+
+_S.07_ task:
+	when _S.00_ and _S.06_ and not _S.05_ 
+	say 2005 
+	drop _lover_ face 

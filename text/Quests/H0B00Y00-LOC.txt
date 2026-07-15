@@ -1,0 +1,138 @@
+-- Quest: C:\QUESTS\WORKING\H0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Mara
+-- Repute: 0
+-- QuestId: 0
+Messages: 21
+Quest: H0B00Y00
+DisplayName: 강력한 영혼
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>마라의 자애회는 살아있는 모든 생명체에게 고의로 해를
+<ce>끼치는 것을 금기시합니다. 하지만 불행히도 직접적이고
+<ce>치명적인 행동을 요구하는 상황이 발생했습니다. 만약
+<ce>_reward_ 골드를 드린다면, 우리 성소 중 하나를 괴롭히고
+<ce>있는 부정한 영혼을 퇴치할 준비가 되셨습니까?
+
+RefuseQuest:  [1001]
+<ce>상당히 위험한 임무이긴 합니다만, 당신이 고려조차 하지
+<ce>않겠다니 실망스럽군요.
+
+AcceptQuest:  [1002]
+<ce>여기서 그리 멀지 않은 곳에 ___mondung_의 명칭으로 불리는
+<ce>버려진 신전이 있습니다. 수 세기 동안 우리 자애회의 성지로
+<ce>여겨져 왔죠. 지금은 예배를 드리지 않지만, 악의 영향이 닿지
+<ce>않도록 관리하고 있습니다. 불행히도 그곳을 괴롭히는 영혼이
+<ce>너무 강력하여 우리가 쫓아낼 수 없습니다. =1stparton_일
+<ce>안에 돌아오지 않는다면, 실패한 것으로 간주하고 대신 마라
+<ce>기사단을 보낼 것입니다. 당연히 보상은 받지 못할 것입니다.
+<ce>여신의 축복이 함께하기를.
+
+QuestFail:  [1003]
+<ce>왜 지체하고 있습니까, %pcf? 영혼이 여전히 우리
+<ce>신전을 더럽히고 있습니다.
+
+QuestComplete:  [1004]
+<ce>당신은 마라의 자애회에 큰 공헌을 했습니다, %pcf.
+<ce>결코 잊지 않을 호의입니다. _reward_ 골드를 즐기십시오
+<ce>-- 당신은 그럴 자격이 있습니다.
+
+RumorsDuringQuest:  [1005]
+저 ___mondung_의 장소는 항상 으스스했지. 이제는 유령이
+나온다더군. <---> 내 생각엔, 그냥 내버려 두는 게
+좋아. 어차피 아무도 근처에 가지 않으니까.
+
+RumorsPostfailure:  [1006]
+그냥 ___mondung_ 내버려 뒀으면 좋았을 텐데. 이제 망령이
+우리 밖으로 나왔잖아. <---> 뻔한 일이지. 유령들을
+쫓아내서 진짜 피해를 보게 만들다니.
+
+RumorsPostsuccess:  [1007]
+있잖아, ___mondung_에서 유령이 사라졌어도 난 거기 안 갈
+거야. <---> 마라의 자애회는 그들의 ___mondung_
+상태가 다시 깨끗해져서 기뻐하고 있지.
+
+QuestorPostsuccess:  [1008]
+우리를 위해 ___mondung_ 탐색에 힘썼으니, 최소한 인사라도
+해야겠군.
+
+QuestorPostfailure:  [1009]
+___mondung_의 영혼은 여전히 저주를 받고 있다, 이 멍청한
+%pcf야!
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___questgiver_의 _questgiver_께서 저에게 마라의 자애회에
+ 성스러운 장소인 ___mondung_ 괴롭히는 정체불명의 영혼을
+ 퇴치해달라고 의뢰했습니다. 저에게는 =1stparton_일 안에
+ ___mondung_의 저주를 정화할 시간이 있습니다.
+
+Message:  1020
+<ce>"내 영혼은 이제 평안히 쉴 것이다." ___mondung_ 정화 완료.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 16 times.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--       ___mondung_ occurs 10 times.
+--    ___questgiver_ occurs 2 times.
+--          _reward_ occurs 4 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon4
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _wraith_ is Wraith
+Foe _ghost_ is Ghost
+Foe _zombie_ is Zombie
+Foe _mummy_ is Mummy
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	pick one of _S.05_ _S.06_ _S.07_ _S.08_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_mondead_ task:
+	killed 1 _mummy_ saying 1020 
+	killed 1 _ghost_ saying 1020 
+	killed 1 _wraith_ saying 1020 
+	killed 1 _zombie_ saying 1020 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+_S.05_ task:
+	place foe _ghost_ at _mondung_ 
+
+_S.06_ task:
+	place foe _mummy_ at _mondung_ 
+
+_S.07_ task:
+	place foe _zombie_ at _mondung_ 
+
+_S.08_ task:
+	place foe _wraith_ at _mondung_ 

@@ -1,0 +1,186 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y05.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 5
+Messages: 31
+Quest: R0C10Y05
+DisplayName: 치명적인 외교
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제가 _qgfriend_ 및 그 세력과 동맹을 맺으려 한다는 사실을
+<ce>알고 계실지도 모르겠군요. 우정을 다지기 위해, 저는
+<ce>%g2에게 끊임없는 위협이 되는 어떤 괴물을
+<ce>처치하기로 합의했습니다. 이 사악한 기생충은 ___mondung_의
+<ce>명칭으로 불리는 낡고 쇠락한 곳에 살고 있죠. %g는
+<ce>그 괴물을 처치한 암살자에게 보상으로 _reward_ 골드를
+<ce>지불하기로 했습니다. 나쁘지 않은 제안이죠? 당신 같은
+<ce>모험가에게 딱 맞는 일 같은데, %pcn?
+
+RefuseQuest:  [1001]
+<ce>정말인가요? 저를 이렇게 곤경에 빠뜨리다니 참
+<ce>무책임하시군요.
+
+AcceptQuest:  [1002]
+<ce>좋은 거래라는 걸 알아보는군요, 그렇죠? 저는
+<ce>_qgfriend_에게 =1stparton_일 안에 괴물이 죽을 것이며,
+<ce>그렇지 않으면 %g가 다른 사람을 고용할 것이라고
+<ce>말했습니다. 그러니 괴물을 처치하고 ___qgfriend_ 쪽으로
+<ce>가서 시간이 다 되기 전에 %g2를 찾으세요.
+
+QuestFail:  [1003]
+<ce>어서 길을 떠나세요, %pcf. 시간이 얼마 없습니다.
+
+QuestComplete:  [1004]
+네, _giant_ 역병이 끝났다는 소식은 이미 들었습니다.
+_questgiver_ 측에서 어디서 당신을 찾았는지는 모르겠지만,
+%g가 당신을 찾아서 다행이군요. 여기 약속한
+_reward_ 금화 보상입니다. 수고해주셔서 감사합니다,
+%pcf.
+
+RumorsDuringQuest:  [1005]
+___mondung_에 _qgfriend_ 괴롭히기를 일삼는 괴물이 하나
+있습니다. <---> ___mondung_에 있는 그 괴물은
+박쥐와 쥐 떼를 거느리고 있는 모양입니다.
+
+RumorsPostfailure:  [1006]
+이제 괴물 =giant_의 은신처가 탄로 난 것을 알고 자리를
+옮겼습니다. <--->
+
+괴물 =giant_의 거처는 ___mondung_에서 떠났지만,
+여전히 _qgfriend_ 괴롭히기를 멈추지 않고 있습니다.
+
+RumorsPostsuccess:  [1007]
+=giant_의 저주가 마침내 %reg에서
+사라졌습니다. <---> 성스러운 %ra 전사가
+우리 땅의 재앙인 =giant_ 처치에 성공했습니다.
+
+QuestorPostsuccess:  [1008]
+아, 내 친구이자 =giant_의 숙적이여! 무엇을
+도와드릴까요? <--->
+
+당신은 내가 동맹을 결성하는 데 도움을 주었지요,
+%pcf. 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+그 괴물을 처치하지 못한 당신의 실패 때문에 일이
+복잡해졌습니다. 당신 같은 사람에게 쓸 시간은 없습니다.
+
+Message:  1011
+=qgfriend_, 맞지요? _questgiver_의 잠재적 동맹이면서
+___mondung_에 있는 그 괴물 때문에 골치를 앓고 있는 분
+말입니다.
+
+<---> _qgfriend_의 존재는 =giant_의 철천지
+원수입니다.
+
+Message:  1012
+당신은 =giant_ 처치에 성공했습니다.
+
+Message:  1015
+%qdt:
+ ___questgiver_의 _questgiver_ 측은 동맹인 ___qgfriend_의
+ _qgfriend_ 측을 대신하여, ___mondung_ 주변을 공포에
+ 떨게 하는 =giant_의 이름으로 불리는 괴물을
+ 처치해달라고 내게 의뢰했다. 괴물이 죽고 내가
+ =1stparton_일 안에 _qgfriend_에 도착한다면, 보상을 받을
+ 것이다.
+
+Message:  1021
+오, 깜빡할 뻔했군요. ___mondung_ 관련 괴물이 어떤
+종류인지는 모르겠지만, =giant_의 이름으로 불리는
+이름이 그 공포의 근원이라는 소문이 있습니다.
+
+Message:  1030
+누가 감히 =giant_ 더 테러블의 %g3의 은신처를
+방해하는가? 곧 네 해골을 내 벽에 전리품으로 걸어주마!
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 1 time.
+--              %pcf occurs 25 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 5 times.
+--           =giant_ occurs 12 times.
+--        =qgfriend_ occurs 1 time.
+--       ___mondung_ occurs 10 times.
+--      ___qgfriend_ occurs 2 times.
+--    ___questgiver_ occurs 1 time.
+--           _giant_ occurs 1 time.
+--        _qgfriend_ occurs 8 times.
+--      _questgiver_ occurs 3 times.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ face 112 group Questor
+Person _qgfriend_ group Local_3.0 remote anyInfo 1011 rumors 1011
+
+Place _mondung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _vampire_ is Vampire
+Foe _wereboar_ is Wereboar
+Foe _mage_ is Battle_mage
+Foe _giant_ is Giant
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1015 step 0 
+	pick one of _S.06_ _S.07_ _orsinium_ _S.09_ 
+	say 1021 
+
+_1stparton_ task:
+	end quest 
+
+_pcgetsgold_ task:
+	when _npcclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+variable _queston_
+_mondead_ task:
+	killed 1 _giant_ 
+	killed 1 _wereboar_ 
+	killed 1 _vampire_ 
+	killed 1 _mage_ 
+	say 1012 
+	create npc _qgfriend_ 
+
+_npcclicked_ task:
+	clicked npc _qgfriend_ 
+
+_clearclick_ task:
+	when _npcclicked_ and not _mondead_ 
+	clear _npcclicked_ _clearclick_ 
+
+_S.06_ task:
+	place foe _giant_ at _mondung_ 
+
+_S.07_ task:
+	place foe _mage_ at _mondung_ 
+
+_orsinium_ task:
+	place foe _wereboar_ at _mondung_ 
+
+_S.09_ task:
+	place foe _vampire_ at _mondung_ 
+
+_S.10_ task:
+	injured _wereboar_ 
+	injured _vampire_ 
+	injured _mage_ 
+	injured _giant_ 
+	say 1030 

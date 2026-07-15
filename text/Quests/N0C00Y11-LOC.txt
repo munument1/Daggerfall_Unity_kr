@@ -7,127 +7,161 @@
 -- Edited for Daggerfall Unity by Jay_H
 Messages: 81
 Quest: N0C00Y11
-DisplayName: 재료 찾기
+DisplayName: 재료 구하기
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>저는 _qgiver_ 입니다.
-<ce>길두 규약에 따라서, 호이원만이 보수를 받고
-<ce>의뢰를 받을 수 있는데, 해주셔씅면 하는 작은 일이
-<ce>있습니다. 무보수로 해주신다면 길드에 말을 잘 해두도록
-<ce>하겠습니다. 관심 있스신지요?
-                                     <--->
-<ce>저는 _qgiver_ 입니다. 길드 의뢰 수주는
-<ce>회원만 가능하지만, 아무도 맡지 않으려는
-<ce>작은 일이 하나 있습니다. 길드의 마스터 중에
-<ce>특이한 분이 계신데 _ingredient_ 요청을
-<ce>끈질기게 하시며 그녀의 연구에 꼭 필요하다고
-<ce>하십니다. 이걸 구해주셨으면 합니다.
-<ce>그럼 정말 고마울 겁니다. 제가 길드에
-<ce>말을 잘할테니 평판도 분명 오를겁니다.
+<ce>저는 _qgiver_입니다.
+<ce>원칙적으로 길드 회원만이 일에 대한 보상을
+<ce>받습니다. 하지만, 처리해야 할 작은 일이 하나
+<ce>있습니다. 만약 무료로 해주신다면, 길드에
+<ce>귀하를 위해 좋은 말을 전하겠습니다.
+<ce>하시겠습니까?
+<--->
+<ce>저는 _qgiver_입니다. 길드 일은
+<ce>길드 회원만을 위한 것입니다. 하지만, 다른 누구도
+<ce>하기 싫어하는 작은 일이 하나 있습니다. 저희의 괴짜
+<ce>마스터 중 한 분이 _ingredient_ 샘플을
+<ce>구해오라고 고집을 부리시는데, 저희는
+<ce>재고가 다 떨어졌거든요. 만약 구해주신다면
+<ce>정말 감사하겠습니다. 길드 내에서의 귀하의
+<ce>입지도 분명히 좋아질 겁니다.
 
 RefuseQuest:  [1001]
-<ce>이럴줄 알았어야 했는데.
-<ce>이런 대화는 하기도 지치는군요 %pcn.
-<ce>좋은 하루 되십시오.
+<ce>이럴 줄 알았습니다. %pcn, 이 대화도 이제 지겹군요.
+<ce>안녕히 가십시오.
 
 AcceptQuest:  [1002]
-<ce>의욕이 훌륭하군요 %pcf.
-<ce>_ingredient_ 견본이 필요합니다.
-<ce>구할만한 곳으로 지금 생각 나는 데는
-<ce>___dungeon_ 밖에 없군요.
-<ce>=traveltime_ㅇ리 내로 가져다 주십시오.
+<ce>훌륭한 태도입니다, %pcf. _ingredient_ 확보가
+<ce>필요합니다. 현재 제가 아는 유일한 표본은 ___dungeon_에
+<ce>있습니다. =traveltime_일 안으로 가져오셔야 합니다.
 
 QuestComplete:  [1004]
-<ce>상태가 별로인데. 돌아오는 길에
-<ce>계속 앉고 있었던겁니까?
-<ce>어쨌든, 쓸 수는 있겠군요.
-<ce>길드쪽에 좋게 이야기는 확실하게 하겠습니다.
+<ce>더 좋은 샘플도 본 적이 있습니다. 돌아오는 길에 내내 깔고
+<ce>앉아 있었나요? 어쨌든, 이걸로 충분합니다. 길드 홀에서
+<ce>귀하에 대해 좋게 이야기해 두도록 하죠.
 
 RumorsDuringQuest:  [1005]
-메이지 길드 그 미친 마법사가 ___dungeon_에 _ingredient_ 제일 좋은게 있다고 고집을 피운다고 합니다.
+길드의 그 미친 마법사가 ___dungeon_에 최고의 _ingredient_
+물건이 있다고 고집하더군요.
 
 RumorsPostfailure:  [1006]
-끓는 물에 데였는데... 지금은 나았습니다.
-<--->
-방금전에 날씨 이야기를 세시간을 했지요.
-<--->
-날씨가 딱 이맘때 날씨입니다.
-<--->
-이때쯤에는 %cn 날씨가 약간 쌀쌀한 것 같습니다.
-<--->
-오늘은 작년에 보다는 많이 따뜻합니다.
-<--->
-고모 할머니께서 일리악만 건너편에 있는 의사한테 가본다고 하시는구뇽.
-<--->
-이 근방은 해가 넘어가는 시간이 제멋대로 입니다.
-<--->
-이 주변에 전쟁 기념 석상을 세워야 할 것 같습니다.
-<--->
-요즘 애들이 마법으로 하는 짓이란게, %oth. 저는 이해가 안갑니다.
-<--->
-어제 밤에 아주 이상한 꿈을 꿨습니다.
-<--->
-엄청 웃기는 농담을 들었습니다. %jok
-<--->
-%jok, 농담입니다.
-<--->
-%jok, 농담이라는데 저한테 설명좀 해주시겠습니까?
-<--->
-%reg 법이 돌아가는게 좋은 점도 있고 나쁜 점도 있고 그렇습니다.
+며칠 전에 종기가 났었는데... 다 나았습니다. <--->
+방금 날씨에 대해 세 시간 동안 대화를 나눴습니다.
+<---> 날씨는 이맘때 치고는 평범한 편입니다.
+<---> 이맘때 치고는 %cn의 날씨가 약간
+쌀쌀한 것 같군요. <---> 작년 이맘때보다 오늘이
+확실히 더 따뜻하네요. <---> 제 큰이모가 만 건너편의
+전문의를 만나러 가십니다. <---> 이곳은 어두워지는
+시간이 항상 신기하단 말이죠. <---> 이 근처에 전쟁
+기념상을 세워야 합니다. <---> 요즘 애들은 마법을
+너무 좋아해요. %oth, 잘 모르겠군요. <--->
+어젯밤에 아주 이상한 꿈을 꿨습니다. <---> 재미있는
+농담을 하나 들었습니다. %jok <--->
+%jok 사실, 그건 농담입니다. <--->
+%jok 그게 무슨 뜻인지 설명해 주실 수 있나요?
+<---> %reg의 법 체계에는 장단점이 있습니다.
 
 RumorsPostsuccess:  [1007]
-끓는 물에 데였는데... 지금은 나았습니다.
-<--->
-방금전에 날씨 이야기를 세시간을 했지요.
-<--->
-날씨가 딱 이맘때 날씨입니다.
-<--->
-이때쯤에는 %cn 날씨가 약간 쌀쌀한 것 같습니다.
-<--->
-오늘은 작년에 보다는 많이 따뜻합니다.
-<--->
-고모 할머니께서 일리악만 건너편에 있는 의사한테 가본다고 하시는구뇽.
-<--->
-이 근방은 해가 넘어가는 시간이 제멋대로 입니다.
-<--->
-이 주변에 전쟁 기념 석상을 세워야 할 것 같습니다.
-<--->
-요즘 애들이 마법으로 하는 짓이란게, %oth. 저는 이해가 안갑니다.
-<--->
-어제 밤에 아주 이상한 꿈을 꿨습니다.
-<--->
-엄청 웃기는 농담을 들었습니다. %jok
-<--->
-%jok, 농담입니다.
-<--->
-%jok, 농담이라는데 저한테 설명좀 해주시겠습니까?
-<--->
-%reg 법이 돌아가는게 좋은 점도 있고 나쁜 점도 있고 그렇습니다.
+며칠 전에 종기가 났었는데... 다 나았습니다. <--->
+방금 날씨에 대해 세 시간 동안 대화를 나눴습니다.
+<---> 날씨는 이맘때 치고는 평범한 편입니다.
+<---> 이맘때 치고는 %cn의 날씨가 약간
+쌀쌀한 것 같군요. <---> 작년 이맘때보다 오늘이
+확실히 더 따뜻하네요. <---> 제 큰이모가 만 건너편의
+전문의를 만나러 가십니다. <---> 이곳은 어두워지는
+시간이 항상 신기하단 말이죠. <---> 이 근처에 전쟁
+기념상을 세워야 합니다. <---> 요즘 애들은 마법을
+너무 좋아해요. %oth, 잘 모르겠군요. <--->
+어젯밤에 아주 이상한 꿈을 꿨습니다. <---> 재미있는
+농담을 하나 들었습니다. %jok <--->
+%jok 사실, 그건 농담입니다. <--->
+%jok 그게 무슨 뜻인지 설명해 주실 수 있나요?
+<---> %reg의 법 체계에는 장단점이 있습니다.
 
 QuestorPostsuccess:  [1008]
-아직 기억하고 있습니다, %pcf. _ingredient_ 재료를 구해다준 %ra 안닙니까.
+잊지 않았습니다, %pcf. _ingredient_ 물건을 가져온
+%ra 분이시죠.
 
 QuestorPostfailure:  [1009]
-<ce>부탁한게 특출나게 어려운게 아니었는데 말입니다, %pcf.
-<ce>그냥 _ingredient_ 좀 구해다 주면 되는 거였는데.
-<ce>그걸 못하시고. 말하는게 시간 낭비군요.
+<ce>제가 부탁드린 건 그리 어려운 일이 아니었습니다,
+<ce>%pcf. 그냥 _ingredient_ 확보만 하면 됐죠. 그런데
+<ce>그것조차 못 하시다니. 제가 왜 귀하에게 시간을 낭비해야
+<ce>하죠?
 
 QuestLogEntry:  [1010]
 %qdt:
- _ingredient_ 견본을 찾아달라는
- 의뢰를 받았다. ___dungeon_에서
- 구할 수 있을 것이다.
- ___qgiver_ 메이지 길드의
- _qgiver_에게 견본을 구하고
- 돌아오는데 =traveltime_일을 받았다.
+ ___dungeon_에 숨겨져 있다는 _ingredient_ 샘플을 찾으라는
+ 의뢰를 받았습니다. ___qgiver_ 마법사 길드의 _qgiver_
+ 측에서 제게 %g2에게 그것을 가져다줄
+ =traveltime_일의 시간을 주었습니다.
 
 Message:  1040
-<ce>이게 분명 _qgiver_에게 의뢰 받았던
-<ce>_ingredient_ 임이 틀림 없다.
+<ce>이게 바로 _qgiver_ 측에서 찾아달라고 한
+<ce>_ingredient_임이 틀림없습니다.
 
 Message:  1080
-<ce>메이지 길드에서 특별한 감사를 드리면서,
-<ce>이 ___newdung_ 지도를 받아 주십시오.
-<ce>꽤 구미가 당기리라 생각 합니다.
+<ce>마법사 길드의 특별한 감사의 표시로, ___newdung_ 쪽으로
+<ce>가는 이 지도를 드립니다. 귀하 같은 분들이 이런 것에 사족을
+<ce>못 쓴다는 걸 잘 알고 있습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 2 times.
+--               %g2 occurs 2 times.
+--              %jok occurs 6 times.
+--              %oth occurs 10 times.
+--              %pcf occurs 3 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 27 times.
+--              %reg occurs 2 times.
+--      =traveltime_ occurs 2 times.
+--       ___dungeon_ occurs 3 times.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--      _ingredient_ occurs 61 times.
+--          _qgiver_ occurs 4 times.
+
+QBN:
+Item _ingredient_ organs
+
+Person _qgiver_ group Questor
+
+Place _dungeon_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+Clock _end_ 00:00
+
+
+--	Quest start-up:
+	place item _ingredient_ at _dungeon_ 
+	start timer _traveltime_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ 
+
+_traveltime_ task:
+	end quest 
+
+_giveingredient_ task:
+	toting _ingredient_ and _qgiver_ clicked 
+	give pc nothing 
+                start timer _end_
+
+_end_ task:
+	end quest 
+
+_dummymage_ task:
+	clicked item _ingredient_ 
+	say 1040 
+
+variable _map_
+variable _nomap_
+_S.05_ task:
+	when _map_ and _giveingredient_ 
+	reveal _newdung_ readmap
+    say 1080 

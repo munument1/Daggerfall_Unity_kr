@@ -1,0 +1,175 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y07.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 7
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 11
+Quest: A0C00Y07
+DisplayName: 말살자
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>도움이 필요합니다. _qgiver_의 도움이 절실합니다. 물론
+<ce>당신도 저를 도와주셨으면 합니다. _house_에 괴물들이
+<ce>들끓고 있습니다. 저를 대신해 그들을 처치해주시겠습니까?
+<ce>_gold_ 골드를 지불하겠습니다.
+
+RefuseQuest:  [1001]
+<ce>도와주세요! 아무도 저를 도와주지 않나요?
+
+AcceptQuest:  [1002]
+<ce>정말 감사합니다! 내일 이 시간까지 괴물들이 사라지지 않으면
+<ce>저는 파멸하고 말 겁니다.
+
+QuestComplete:  [1004]
+<ce>정말 다행입니다. 그 괴물들이 정말 싫었거든요. 정말 큰
+<ce>도움이 되었습니다, %pcn 님. 약속드린 _gold_
+<ce>골드입니다.
+
+RumorsDuringQuest:  [1005]
+<ce>정말 웃기는군요! _qgiver_의
+<ce>_house_에 거대한 벌레들이 들끓고 있다더군요!
+<--->
+<ce>_qgiver_ 님이 안됐군요. %g3의
+<ce>_house_ 쪽은 독침을 가진 12피트 길이의 쥐들에게
+<ce>거의 점령당했다고 합니다. 놈들은 눈빛 한 번으로 사람을
+<ce>돌로 만들 수 있다더군요!
+
+RumorsPostfailure:  [1006]
+<ce>_qgiver_ 님이 _house_의 매각을 결정하셨습니다.
+<--->
+<ce>전사 길드 누군가가 _qgiver_의 _house_에 들끓는
+<ce>괴물들을 소탕하려다 죽었다는군요.
+
+RumorsPostsuccess:  [1007]
+<ce>당신이 _qgiver_ 님의 %g3의 _house_
+<ce>지역을
+<ce>점령한 짐승들을 소탕하도록 도운
+<ce>%ra 님 아니신가요?
+<--->
+<ce>_qgiver_ 님이 %g3의 _house_ 지역을
+<ce>점령한
+<ce>모든 괴물을 죽여달라고 누군가를 고용했다는
+<ce>이야기를 들었습니다.
+
+QuestorPostsuccess:  [1008]
+<ce>%pcf 님, 제 _house_에서 괴물들을 소탕해주셔서
+<ce>정말 감사합니다.
+<--->
+<ce>여러분, 주목하세요. 제 친구이자 뛰어난
+<ce>퇴치 전문가인 %pcn 님을 소개합니다.
+<ce>%g는 제 _house_에서 서른여섯 마리의 괴물을
+<ce>몰아냈습니다!
+
+QuestorPostfailure:  [1009]
+<ce>당신 때문에 망했습니다! _house_ 안에 있는
+<ce>괴물 몇 마리도 처리하지 못하다니.
+<--->
+<ce>저를 실망시킨 %ra 님 아니신가요?
+<ce>제 _house_에 들끓는 괴물들을 죽여달라고 고용했더니,
+<ce>결국 해내지 못했군요. 당장 떠나세요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에서 _qgiver_의 행방을 확인했다.
+ %g는 나에게 __house_에 있는 _house_의
+ 괴물들을 소탕해달라고 부탁했다. %g는 하루 안에
+ 괴물들을 처리해주길 원한다.
+
+Message:  1011
+<ce>그 정도면 충분하겠군.
+
+Message:  1012
+<ce>벽 너머에서 긁는 소리가 들립니다. 괴물들은 당신의 침입을
+<ce>매우 불쾌하게 여길 것입니다.
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g3 occurs 5 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--          __house_ occurs 1 time.
+--            _gold_ occurs 3 times.
+--           _house_ occurs 18 times.
+--          _qgiver_ occurs 8 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _house_ local random
+
+--time set to 24 strict hours. if it carries flags in DFU, time becomes variable
+Clock _oneday_ 1.00:00
+
+Foe _spiders_ is Spider
+Foe _rats_ is Giant_rat
+Foe _scorpions_ is Giant_scorpion
+Foe _bats_ is Giant_bat
+
+--	Quest start-up:
+	start timer _oneday_ 
+	log 1010 step 0 
+	pc at _house_ set _S.01_ 
+	create npc at _house_ 
+
+_oneday_ task:
+	end quest 
+
+--instant reward glitch fixed.
+_questdone_ task:
+	clicked npc _qgiver_
+
+_S.01_ task:
+	say 1012
+	start task _pickspawn_
+--preventing multiple spawns by using static pick
+
+_pickspawn_ task:
+	pick one of _S.04_ _S.05_ _S.06_ _S.07_ 
+
+--this quest had a rare case of no victory message
+_S.03_ task:
+	killed 6 _bats_ 
+	killed 3 _spiders_ 
+	killed 7 _rats_ 
+	killed 3 _scorpions_
+	say 1011
+
+variable _S.04_
+_spawn1_ task:
+	when _S.01_ and _S.04_ and not _S.03_
+	create foe _bats_ every 2 minutes indefinitely with 100% success 
+
+variable _S.05_
+_spawn2_ task:
+	when _S.01_ and _S.05_ and not _S.03_
+	create foe _rats_ every 2 minutes indefinitely with 100% success 
+
+variable _S.06_
+_spawn3_ task:
+	when _S.01_ and _S.06_ and not _S.03_
+	create foe _scorpions_ every 3 minutes indefinitely with 100% success 
+
+variable _S.07_
+_spawn4_ task:
+	when _S.01_ and _S.07_ and not _S.03_
+	create foe _spiders_ every 3 minutes indefinitely with 100% success 
+
+_clearclick_ task:
+	when not _S.03_ and _questdone_ 
+	clear _questdone_ _clearclick_ 
+
+
+_pcgetsgold_ task:
+	when _questdone_ and _S.03_
+	give pc _gold_ 
+	end quest

@@ -1,0 +1,142 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y01.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 1
+Messages: 22
+Quest: R0C10Y01
+DisplayName: 밀수품 거래
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>일거리를 찾는다면, 특별한 _item_ 물품을 내 지인에게
+<ce>전달해 줄 사람이 필요하오. 보상은 매우 후하게 주겠소. 관심
+<ce>있소?
+
+RefuseQuest:  [1001]
+<ce>정말인가? 너무 바쁜 모양이군. 아쉽구려.
+
+AcceptQuest:  [1002]
+<ce>훌륭하오. 여기 _item_ 물품이 있소. 이제
+<ce>___contact_에 있는 _contact_에게 =queston_일 안에
+<ce>전달해야 하오. 그 정도면 충분한 시간이 되리라 믿소.
+<ce>_contact_의 식별이 가능할 거요. __contact_의 명칭으로
+<ce>불리는 곳으로 가서 =contact_의 행방을 찾으시오. 행운을
+<ce>비오, 고맙소.
+
+QuestFail:  [1003]
+<ce>%pcf, 우리 사이의 작은 약속을 서둘러 처리하는 게
+<ce>좋을 거요.
+
+QuestComplete:  [1004]
+<ce>아, %pcf, 만나서 반갑소. 그리고 _item_도
+<ce>말이오. 훌륭하군. 수고에 대한 작은 장신구 하나 주겠소.
+<ce>빨간색을 좋아하길 바라오. 몸조심하시오.
+
+RumorsDuringQuest:  [1005]
+_questgiver_의 밀수업이 여전히 성행한다는 소문이 있더군.
+<---> 최근 들어 밀수가 비정상적으로 늘었어.
+
+RumorsPostfailure:  [1006]
+누군가 최근 이곳에서 아주 멋진 _item_ 물품을
+발견했어. <---> _questgiver_의 분노는 어떤
+%ra 모험가 때문이라는군.
+
+RumorsPostsuccess:  [1007]
+어떤 =contact_의 방문객이 방금 여기 와서 _item_
+물건을 휘두르고 갔어. <---> 어떤 보석상에서 큰
+루비를 도난당했다고 들었어.
+
+QuestorPostsuccess:  [1008]
+아, %pcf. 그 루비를 안전하게 보관하고 있길 바라네,
+친구. <---> 다시 만나 반갑네, 젊은 친구.
+
+QuestorPostfailure:  [1009]
+<ce>그 엉망이 된 밀수 사건에 대해 사과하러 온 모양이군.
+<ce>사과는 받아줄 수 없네.
+<--->
+<ce>간단한 배달조차 완수하지 못한 %ra의 장본인이
+<ce>바로 당신이지? 왜 내가 당신에게 시간을 낭비해야 하지?
+
+QuestLogEntry:  [1010]
+%qdt:
+ _questgiver_의 지시로 ___contact_의 _contact_의
+ 이름으로 불리는 연락책에게 _item_ 물품을 전달하러
+ 간다. _item_ 물품을 =queston_일 안에
+ __contact_에 있는 %g2에게 전달하지 못하면
+ 보상은 몰수된다.
+
+Message:  1020
+<ce>그 보석 내놔. 네가 가지고 있는 거 다 알아. 길드에서 다
+<ce>들었거든. 안 내놓으면, 아주 천천히 죽여줄 테니까.
+
+Message:  1021
+<ce>거 참 곱구먼. 내 맘이 바뀌기 전에 썩 꺼져.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g2 occurs 13 times.
+--              %pcf occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--         =contact_ occurs 2 times.
+--         =queston_ occurs 2 times.
+--       ___contact_ occurs 7 times.
+--            _item_ occurs 7 times.
+--      _questgiver_ occurs 3 times.
+
+QBN:
+Item _reward_ ruby
+Item _item_ ruby
+
+Person _questgiver_ group Questor
+Person _contact_ group Local_3.0 remote
+
+
+Clock _queston_ 00:00 0 flag 1 range 1 4
+Clock _delay_ 00:30
+--removed flags from _delay_
+
+Foe _thief_ is Nightblade
+
+--	Quest start-up:
+	create foe _thief_ every 5 minutes 5 times with 25% success 
+	start timer _queston_ 
+	log 1010 step 0 
+	get item _item_ 
+	create npc _contact_ 
+
+variable _pcgetsgold_
+variable _pchasitem_
+_queston_ task:
+	change repute with _questgiver_ by -20 
+	end quest 
+
+_npcclicked_ task:
+	toting _item_ and _contact_ clicked 
+	give pc _reward_ 
+	start timer _delay_ 
+
+yes task:
+	have _item_ set _S.07_ 
+
+variable _no_
+_S.06_ task:
+	injured _thief_ 
+	prompt 1020 yes yes no _no_ 
+
+_S.07_ task:
+	give item _item_ to _thief_
+	say 1021
+--moved "saying 1021" to new line. bad argument 
+	restrain foe _thief_ 
+
+_delay_ task:
+	end quest 
+
+_S.09_ task:
+	when _queston_ or _delay_ 
+	make _item_ permanent 

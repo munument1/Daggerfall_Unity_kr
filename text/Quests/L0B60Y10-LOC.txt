@@ -1,0 +1,150 @@
+-- Quest: C:\QUESTS\WORKING\L0B60Y10.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Brotherhood
+-- Repute: 60
+-- QuestId: 10
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 24
+Quest: L0B60Y10
+DisplayName: 베테랑
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>이건 꽤 힘든 일이 될 거야, 자네 %pcf에게도 말이지.
+<ce>%reg에서 가장 뛰어난 전사 중 하나거든. 정말 이
+<ce>일을 맡겠나?
+
+RefuseQuest:  [1001]
+<ce>조금도 비난하지 않네. 너무 위험한 일일 수도 있으니까.
+
+AcceptQuest:  [1002]
+<ce>자네가 이 일을 맡을 줄 알았지. 자네 장례식이 될 거야. 이
+<ce>표적은 아레나 검투사가 아니거든. 베토니 전쟁의 베테랑에
+<ce>대해 말하는 거야. 이야기가 사실이라면 9명을 죽였지.
+<ce>___mondung_에 있는 _mondung_ 쪽으로 가게. 다리를 절기
+<ce>때문에 표적을 쉽게 알아볼 수 있을 거야. 전쟁 중에 무릎에
+<ce>창을 맞았거든. =1stparton_일 안에 돌아오게.
+
+QuestFail:  [1003]
+<ce>누구를 죽였다고 생각하는지는 모르겠지만, 표적이 아니었어.
+<ce>___mondung_ 쪽으로 돌아가서 우리가 계약한 일을 완수하게.
+
+QuestComplete:  [1004]
+<ce>정말 대단한 전투였어! 벌써 소문이 다 났더군. 거리의 소문은
+<ce>말보다 빠르다니까. 여기 일에 대한 _reward_ 골드 일세,
+<ce>%pcf.
+
+RumorsDuringQuest:  [1005]
+대거폴에서 벌어지는 일이라니, 정말 안타까운 일이야.
+
+RumorsPostfailure:  [1006]
+여왕이 임신했다는 소문을 들었어. 적어도 모두들 그렇게
+말하더군.
+
+RumorsPostsuccess:  [1007]
+그 전쟁 영웅에 대해 들었나? 결투 중에 죽었다더군. 정말
+안타까운 일이야.
+
+QuestorPostsuccess:  [1008]
+그 전쟁 영웅과의 전투에 대한 이야기가 아직도
+%pcn에 퍼지고 있네.
+
+QuestorPostfailure:  [1009]
+자네는 전쟁 영웅을 암살하겠다는 계약을 완수하지 못했네.
+브라더후드는 실패를 절대 잊지 않지.
+
+Message:  1020
+%qdt:
+ ___questgiver_에서 다크 브라더후드를 위해 받은 내 계약은
+ ___mondung_에 있는 _mondung_의 전쟁 영웅을 처리하는
+ 것이다. 이 일은 =1stparton_일 안에 완수해야 한다.
+
+Message:  1021
+<ce>"당신은 성공했군... 베토니 전쟁의 모든... 병사들이
+<ce>실패했던 곳에서."
+<ce>
+<ce>계약이 완수되었다.
+
+Message:  1022
+<ce>"내가 다리를 좀 전다고 해서 나를 불구라고 생각하지 마라.
+<ce>네놈의 팔다리를 찢어버릴 테니까!"
+
+Message:  1023
+<ce>이건 사람이 아니야! 뱀파이어라고!
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 3 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 4 times.
+--    ___questgiver_ occurs 1 time.
+--        __mondung_ occurs 8 times.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ face 112 group Questor
+
+Place _mondung_ remote weaponstore
+
+Clock _1stparton_ 00:00 0 flag 18 range 0 2
+
+Foe _F.00_ is Ancient_vampire
+Foe _F.01_ is Ranger
+Foe _F.02_ is Monk
+Foe _F.03_ is Barbarian
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1020 step 0 
+	pick one of _S.06_ _S.07_ _S.08_ _onehour_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _S.02_ 
+	give pc _reward_ 
+	end quest 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+--removed duplicate clearclick here
+
+_S.02_ task:
+	killed 1 _F.00_ saying 1021 
+	killed 1 _F.03_ saying 1021 
+	killed 1 _F.02_ saying 1021 
+	killed 1 _F.01_ saying 1021 
+
+variable _queston_
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_S.06_ task:
+	place foe _F.00_ at _mondung_ 
+
+_S.07_ task:
+	place foe _F.01_ at _mondung_ 
+
+_S.08_ task:
+	place foe _F.02_ at _mondung_ 
+
+_onehour_ task:
+	place foe _F.03_ at _mondung_ 
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.02_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 
+
+_S.11_ task:
+	injured _F.03_ saying 1022 
+	injured _F.02_ saying 1022 
+	injured _F.01_ saying 1022 
+	injured _F.00_ saying 1023 

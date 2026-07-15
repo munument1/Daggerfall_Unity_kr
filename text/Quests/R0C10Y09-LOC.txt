@@ -1,0 +1,170 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y09.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 9
+Messages: 21
+Quest: R0C10Y09
+DisplayName: 조달자
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>네, 건장한 젊은 %ra에게 맡길 일이 좀 있습니다.
+<ce>특별한 건 아니고, 간단한 심부름입니다만, 추가로
+<ce>_reward_ 골드를 벌 수 있을 겁니다. 관심 있습니까?
+
+RefuseQuest:  [1001]
+<ce>%oth, 공짜로 _reward_ 골드를 받길 원하신
+<ce>모양이군요. 아니면 정말 흥미로운 일이라도 기대하셨나요?
+<ce>글쎄요, 그런 건 좀 기다리셔야 할 겁니다, %pcf.
+
+AcceptQuest:  [1002]
+<ce>좋습니다. 제 밑에... 조달자가 하나 있습니다. 눈에 띄는
+<ce>외모의 =spy_인데, _spy_의 이름으로 불리는
+<ce>이름을 쓰고 있죠. 글쎄, _spy_의가 제 흥미를 끄는
+<ce>특별한 _item_의 물건을 찾아냈는데, 이전 주인들이
+<ce>%g2를 __hidingplace_ 어딘가에 가둬두었더군요.
+<ce>공식적으로 제 손은 묶여 있지만, 당신이라면 친절하게
+<ce>__hidingplace_ 쪽으로 가서 _spy_의 물건을 찾아, 제
+<ce>_item_의 물건을 가져와 줄 수 있겠지요. 물론,
+<ce>=1stparton_일 안에 돌아오지 않는다면, _reward_ 골드의
+<ce>보상은 몰수될 겁니다. 이해하시리라 믿습니다. 자, 이제
+<ce>출발하시죠. 안녕히.
+
+QuestFail:  [1003]
+<ce>%pcf, 돌아오셨군요. 반갑긴 합니다만, 제
+<ce>_item_의 행방이 묘연하니 그리 반갑지만은 않군요.
+<ce>임무가 이해하기에 너무 어려운가요? 가서 제 _item_의
+<ce>물건을 가져와서 여기에 내놓으십시오.
+
+QuestComplete:  [1004]
+<ce>아, 훌륭합니다. 제 _item_의 물건이 최소한의 소동으로
+<ce>신속하게 돌아왔군요. 아주 좋습니다. 여기 약속한
+<ce>_reward_ 골드 보상입니다.
+
+RumorsDuringQuest:  [1005]
+그들은 __hidingplace_의 소지품을 샅샅이 뒤지며 도난당한
+희귀한 _item_의 물건을 찾고 있습니다. <--->
+최근 개인 소장품 중에서 희귀한 _item_의 물건이
+도난당했습니다.
+
+RumorsPostfailure:  [1006]
+그들은 그 장신구를 회수했고, 범인은 즉결 처형당했습니다.
+<---> 그들이 찾던 장신구는 결국 나타났습니다.
+
+RumorsPostsuccess:  [1007]
+그들은 결국 그 장신구를 찾지 못했습니다. 경비병들은
+포기했습니다.
+<--->
+<ce>그 도난당한 장신구 안에는 희귀한 보석이
+숨겨져 있었다고 합니다.
+
+QuestorPostsuccess:  [1008]
+아, 나의 젊은 용사여. 여전히 용병 일을 하고 있군요.
+잘됐습니다. <---> 무엇을 도와드릴까요,
+%pcf? 당신이 나를 위해 해준 일을 잊지 않았습니다.
+
+QuestorPostfailure:  [1009]
+나를 실망시킨 사람을 위해 내가 왜 뭔가를 해야 하는지
+모르겠지만, 계속하시죠.
+<--->
+<ce>내 물건을 가져오는 데 실패하고도 돌아오다니
+<ce>꽤 배짱이 두둑하시군요.
+<ce>난 그런 배짱이 싫습니다.
+
+QuestLogEntry:  [1010]
+<ce>_questgiver_의 의뢰로 오셨군요? %oth, 당신이 오는
+<ce>소리를 듣고 드디어 그들이 나를 추적해 낸 줄 알고 겁이
+<ce>났습니다. 당신이 먼저 나를 찾아내서 다행입니다,
+<ce>%pcf! 여기 _item_의 물건이 있습니다. 이걸
+<ce>_questgiver_에게 즉시 가져다주세요. %g의가 며칠
+<ce>내로 이게 필요하답니다. 그리고 조심하세요. 이전 주인의
+<ce>요원들이 이 작은 보물을 찾으려고 __hidingplace_의 구역을
+<ce>샅샅이 뒤지고 있습니다.
+
+Message:  1011
+=spy_의 위치는 여기서 %di 너머,
+_hidingplace_ 근처에 있다고 들었습니다. <--->
+신경질적인 =spy_ 말인가요? _hidingplace_ 근처에서
+%g2를 본 적이 있습니다.
+
+Message:  1015
+%qdt:
+ __questgiver_, ___questgiver_의 _questgiver_의 의뢰로 나를
+ 보내 _spy_의 이름을 지닌 누군가로부터 특별한
+ _item_의 물건을 가져오라고 했다. 그 자는
+ __hidingplace_ 어딘가에 숨어 있다. _item_의 진짜
+ 주인들이 나를 막으려 할지도 모르지만, =1stparton_일 안에
+ _questgiver_의 손에 _item_의 물건을 넘겨주어야 한다.
+ 그렇지 않으면 _reward_ 골드 보상을 받을 수 없다.
+
+Message:  1020
+<ce>도와줘서 고맙군, %ra. 우리가 _item_ 쪽으로
+<ce>바로 안내해 줄 줄 알았지. 자, 여기 네 보상이다. 죽음이다!
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 1 time.
+--                %g occurs 1 time.
+--               %g2 occurs 3 times.
+--              %oth occurs 2 times.
+--              %pcf occurs 8 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--       =1stparton_ occurs 2 times.
+--             =spy_ occurs 3 times.
+--    ___questgiver_ occurs 1 time.
+--    __hidingplace_ occurs 5 times.
+--     __questgiver_ occurs 1 time.
+--     _hidingplace_ occurs 6 times.
+--            _item_ occurs 14 times.
+--      _questgiver_ occurs 4 times.
+--          _reward_ occurs 8 times.
+--             _spy_ occurs 4 times.
+
+QBN:
+Item _reward_ gold
+Item _item_ trinket
+
+Person _questgiver_ face 112 group Questor
+Person _spy_ face 1 group Local_3.0 remote anyInfo 1011
+
+Place _hidingplace_ remote random
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+
+Foe _F.00_ is Assassin
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1015 step 0 
+	pc at _hidingplace_ set _S.06_ 
+	create npc at _hidingplace_ 
+	place npc _spy_ at _hidingplace_ 
+
+_pcgetsgold_ task:
+	toting _item_ and _questgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+variable _queston_
+_pchasitem_ task:
+	clicked npc _spy_ 
+	get item _item_ 
+	say 1010 
+
+variable _npcclicked_
+variable _qgclicked_
+_1stparton_ task:
+	make _item_ permanent 
+	change repute with _questgiver_ by -10 
+	end quest 
+
+_S.06_ task:
+	create foe _F.00_ every 2 minutes 4 times with 30% success 
+
+_S.07_ task:
+	injured _F.00_ saying 1020 

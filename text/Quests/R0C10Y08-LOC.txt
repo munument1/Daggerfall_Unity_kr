@@ -1,0 +1,191 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y08.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 8
+Messages: 21
+Quest: R0C10Y08
+DisplayName: 신전에서의 절도
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+가능하다면, %pcf, 완전히 멍청이는 아니라고
+생각되는 사람의 도움이 필요합니다. 신전에 작은 소포를
+전달하라고 다른 용병을 보냈는데, 별로 값비싼 물건도
+아니건만 도둑맞고 말았습니다. 뭐, 적어도 그 멍청한
+고용인은 산적들이 어디로 갔는지는 기억하고 있더군요. 혹시
+내 소포를 되찾아오는 일을 도와줄 수 있겠습니까?
+
+RefuseQuest:  [1001]
+%oth, 그렇게 말할까 봐 걱정했습니다. 뭐,
+알겠습니다. 승낙하고 실패하는 것보다는 낫겠지요.
+
+AcceptQuest:  [1002]
+미리 감사드립니다, %pcf. 자, 복잡한 사정이
+있습니다. 산적들이 _item_의 물건을 __itemplace_에
+있는 신전, _itemplace_에 팔아넘겼습니다. 그들에게는 어떤
+종교적 의미가 있는 모양입니다. 망신을 피하기 위해, 당신이
+신전에서 _item_의 물건을 훔쳐내어 _transporter_에게
+전달해주었으면 합니다. %g2는 __inn_의
+_inn_에 있습니다. _item_의 기한은
+=1stparton_일이며, 그 안에 멍청한 _transporter_의 손에
+들어가야 합니다. 그리고 당신은 그 후 =2ndparton_일 안에
+__inn_에서 이곳으로 돌아와야 합니다. 이해했습니까?
+시간이 별로 없습니다. 당신을 믿겠습니다, %pcf.
+행운을 빌며, 작별입니다.
+
+QuestFail:  [1003]
+네? 일을 시작하기도 전에 보상을 바란 건 아니겠지요,
+%pcf?
+
+QuestComplete:  [1004]
+%oth, 다시 돌아왔군요, %pcf. 애초에 왜
+그런 정신 나간 녀석을 고용했는지 모르겠습니다. 자, 여기
+당신의 _reward_ 금화입니다. 충분히 받을 자격이
+있습니다.
+
+RumorsDuringQuest:  [1005]
+_itemplace_의 경비가 강화되고 있습니다. <---> 무슨
+이유인지 _itemplace_의 경계가 평소보다 삼엄합니다.
+
+RumorsPostfailure:  [1006]
+_itemplace_의 도난품이었던 _item_의 회수에
+성공했습니다. <---> _itemplace_의 조치로
+도난당했던 _item_의 물건을 되찾아 더 안전한 곳으로
+옮겼습니다.
+
+RumorsPostsuccess:  [1007]
+어떤 귀중한 _item_의 물건이 _itemplace_에서
+도난당했습니다. <---> 이제 신전까지 털리는
+지경이군요. 충격적입니다.
+
+QuestorPostsuccess:  [1008]
+다시 뵙게 되어 정말 기쁩니다. 무엇을 도와드릴까요?
+<---> 신전과 관련된 그 불쾌한 일을 도와주었던
+%ra 맞지요?
+
+QuestorPostfailure:  [1009]
+%oth, 당신이군요. 엉망진창으로 임무를 수행한 것에
+대해 사과하러 온 모양인데, 그럴 필요 없습니다. 시간이
+없거든요.
+
+QuestLogEntry:  [1010]
+%god, 와주어서 고맙습니다, %pcf. 잘
+들으세요, 서둘러 _questgiver_ 쪽으로 돌아가야 합니다.
+=2ndparton_일 안에 돌아오지 않으면 %g는 당신의
+존재 자체를 잊은 척할 것이고, 당신은 구리 한 닢도 받지
+못할 겁니다. %g3의 방식을 잘 아니까, 내 말을
+믿으세요.
+
+Message:  1011
+_transporter_의 정체는 _questgiver_ 및 연줄이 있는,
+신경질적으로 보이는 =transporter_입니다. <--->
+=transporter_ -- %g의 %di의 위치는
+__transporter_입니다.
+
+Message:  1012
+_item_의 물건을 집어 들었습니다. 이제
+_transporter_에게 가져다주면 됩니다.
+
+Message:  1015
+%qdt:
+ _questgiver_ 가 __itemplace_에 있는 _itemplace_ 로 저를
+ 보내 _item_ 하나를 훔치게 한 뒤, __inn_에 있는
+ _transporter_에게 _inn_의 장소에서 전달하라고
+ 했습니다. 배달을 완료하기까지 =1stparton_일이 남았습니다.
+ 마지막으로, 보상을 받으러 돌아가야 합니다.
+ __inn_에서 ___questgiver_에 있는 _questgiver_의 집인
+ __questgiver_까지 이동하는 데 =2ndparton_일이
+ 주어졌습니다.
+
+Message:  1020
+<ce>도둑 잡아라! 우리 성스러운 _item_의 비열한 모독자다!
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 1 time.
+--                %g occurs 2 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %god occurs 1 time.
+--              %oth occurs 3 times.
+--              %pcf occurs 7 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--       =2ndparton_ occurs 3 times.
+--     =transporter_ occurs 2 times.
+--    ___questgiver_ occurs 2 times.
+--            __inn_ occurs 4 times.
+--      __itemplace_ occurs 2 times.
+--     __questgiver_ occurs 11 times.
+--             _inn_ occurs 2 times.
+--            _item_ occurs 11 times.
+--       _itemplace_ occurs 7 times.
+--      _questgiver_ occurs 5 times.
+--          _reward_ occurs 1 time.
+--     _transporter_ occurs 6 times.
+
+QBN:
+Item _reward_ gold
+Item _item_ religious
+
+Person _questgiver_ face 112 group Questor
+Person _transporter_ face 1 group Local_3.0 remote anyInfo 1011
+Person _dummypriest_ factiontype Temple remote
+
+Place _itemplace_ remote temple
+Place _inn_ remote tavern
+
+Clock _1stparton_ 00:00 0 flag 1 range 0 5
+Clock _2ndparton_ 00:00 0 flag 1 range 2 3
+
+Foe _F.00_ is Monk
+
+--	Quest start-up:
+	place item _item_ at _itemplace_ 
+	start timer _1stparton_ 
+	reveal _inn_ 
+	log 1015 step 0 
+	place npc _transporter_ at _inn_ 
+
+_pcgetsgold_ task:
+	when _S.05_ and _qgclicked_ 
+	give pc _reward_ 
+	end quest 
+
+_pchasitem_ task:
+	clicked item _item_ 
+	pc at _itemplace_ set _S.09_ 
+	say 1012 
+	change repute with _dummypriest_ by -10 
+
+_queston_ task:
+	when _2ndparton_ 
+	when _1stparton_ and not _S.05_ 
+	make _item_ permanent 
+	end quest 
+
+variable _npcclicked_
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_S.05_ task:
+	toting _item_ and _transporter_ clicked 
+	start timer _2ndparton_ 
+	say 1010 
+
+variable _1stparton_
+variable _2ndparton_
+_clearclick_ task:
+	when _qgclicked_ and not _S.05_ 
+	clear _qgclicked_ _clearclick_ 
+
+_S.09_ task:
+	create foe _F.00_ every 3 minutes 4 times with 50% success 
+
+totemLetter5 task:
+	injured _F.00_ saying 1020 

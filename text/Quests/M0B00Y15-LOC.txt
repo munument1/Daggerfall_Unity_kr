@@ -12,69 +12,126 @@ DisplayName: 거대 설치류 사냥
 QRC:
 
 QuestorOffer:  [1000]
-<ce>내 이름은 _qgiver_.
-<ce>받을 생각이 있으면 작은 일이 있는데 말이야.
-<ce>사실 길드원중 몇몇은 이런 일을 더 좋아하긴해
-<ce>더 어려운 일하고 보수가 별 차이 없거든.
-<ce>마을에 있는 집에 거대 설치류가 꼬였더군.
-<ce>남편은 박쥐라고 하고 부인은 쥐라고 하던데
-<ce>뭐가 되었든 잡아달라는구만.
-<ce>관심 있나?
+<ce>저는 _qgiver_입니다. 괜찮으시다면, 비교적 단순한
+<ce>일거리가 하나 있습니다. 사실, 일부 길드원들은 이 일이
+<ce>어려운 일만큼이나 보수가 좋아서 선호하기도 합니다. 시내의
+<ce>한 주택에 거대 쥐들이 들끓고 있다고 합니다. 아내는 쥐라고
+<ce>주장하고, 남편은 박쥐라고 주장하더군요. 어느 쪽이든,
+<ce>그들을 없애주길 원합니다. 관심 있으십니까?
 
 RefuseQuest:  [1001]
-<ce>파이터 길드에 열정은 없나 보구만.
-<ce>다들 잘 알도록 해두지.
+<ce>분명 당신은 전사 길드를 좋아하지 않는군요. 당신이 정말로
+<ce>어떻게 생각하는지 그들에게 확실히 전해두죠.
 
 AcceptQuest:  [1002]
-<ce>_house_에 박쥐가 있어.
-<ce>가서 전부 죽이면 보수를 주겠네.
-<ce>일은 하루안에 끝내줘.
+<ce>박쥐들이 _house_에 들끓고 있습니다. 그곳으로 가서
+<ce>모두 처치하면 보수를 받으실 겁니다. 이 일은 하루 안에
+<ce>끝내셔야 합니다.
 
 QuestComplete:  [1004]
-<ce>박쥐 사냥이라, 거대한 놈이긴해도
-<ce>잡는데 별 기술은 필요 없잖나,
-<ce>그런데 보수는 똑같지, 응?
+<ce>박쥐를 죽이는 건, 설령 거대한 놈들이라 해도 별다른 기술이
+<ce>필요 없지만, 보수는 똑같으니, 그렇지 않습니까?
 
 RumorsDuringQuest:  [1005]
-<ce>어떤 바보들이 몇달 동안 지붕을 안고친 모양입니다.
-<ce>그래서 거대 박쥐가 집에 창궐을 했다더군요.
+<ce>어떤 바보가 두어 달 동안 지붕 수리를 안 했답니다. 이제 그
+<ce>여자 집에는 거대 박쥐들이 들끓고 있죠.
 
 RumorsPostfailure:  [1006]
-<ce>집 버린 여자 이야기 들으셨습니까?
-<ce>거대 박쥐가 잔뜩 몰렸는데
-<ce>파이터 길드에 잡아달라고할
-<ce>돈이 없었다고 합니다.
+<ce>집을 버려야 했던 그 여자 이야기 들으셨나요? 거대 박쥐들이
+<ce>들끓는데, 그들을 죽일 만큼 전사 길드에 지불할 금화가
+<ce>충분하지 않았답니다.
 
 RumorsPostsuccess:  [1007]
-<ce>파이커 길드에서 그 여자집 박쥐를 잡게
-<ce>%ra 용병을 보냈다고 들었습니다.
-<ce>꽤나 들었겠지만, 집을 버리는 것보단
-<ce>나았겠지요.
+<ce>전사 길드에서 그 여자 집의 박쥐들을 죽이려고 %ra
+<ce>종족을 보냈다는 소리를 들었습니다. 돈은 꽤 들었겠지만,
+<ce>집을 버리는 것보다는 낫다고 생각합니다.
 
 QuestorPostsuccess:  [1008]
-<ce>그래 그 큰 박쥐를 잡았구만.
-<ce>그렇다고 너무 들뜨지 말라고.
-<ce>그냥 큰 박쥐 밖에 안되는 거니까.
+<ce>그래서 거대 박쥐들을 죽였군요. 너무 우쭐대지는 마십시오.
+<ce>고작 거대 박쥐였을 뿐이니까요.
 
 QuestorPostfailure:  [1009]
-<ce>큰 박쥐도 처리를 못하다니.
-<ce>%pcn, 자네 가망이 없는 친구구만.
+<ce>거대 박쥐조차 처리하지 못하다니. 당신은 구제 불능인
+<ce>%pcn 님이군요.
 
 QuestLogEntry:  [1010]
 %qdt:
- 파이터 길드의 ___qgiver_에게
- 거대 쥐 혹은 거대 박쥐가
- 들끓는 _house_의 정리를
- 요쳥받았다. 하루 안에 처리해야 한다.
+ ___qgiver_의 전사 길드에서 _house_에 들끓는 거대
+ 쥐나 박쥐들을 제거해 달라고 요청했다. 하루 안에 끝내야
+ 한다.
 
 Message:  1011
-<ce>몇마리의 쥐가 발톱으로 땅을 긁는 소리가
-<ce>희미하게 들렸다. 점점 가까워 지고 있다.
+<ce>희미하게 여러 마리의 쥐가 발톱으로 바닥을 긁는 소리가
+<ce>들립니다. 점점 가까워지는 것 같습니다.
 
 Message:  1012
-<ce>몇마리의 박쥐가 찍쮝 거리는 작은 소리를
-<ce>들었다. 점점 가까워 지고 있다.
+<ce>희미하게 여러 마리의 박쥐가 찍찍거리는 소리가 들립니다.
+<ce>점점 가까워지는 것 같습니다.
 
 Message:  1020
-<ce>거의 잡은 것 같다. 이정도면
-<ce>파이터 길드에서도 납득 할 것이다.
+<ce>대부분 처리했습니다. 전사 길드에서는 나머지는 크게 신경
+<ce>쓰지 않을 겁니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--           _house_ occurs 2 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+Item _reward_ gold
+
+Person _qgiver_ group Questor
+
+Place _house_ local random
+
+Clock _2dung_ 1.00:00 0 flag 1 range 0 1
+
+Foe _monster_ is Giant_bat
+Foe _rats_ is Giant_rat
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _house_ 
+	log 1010 step 0 
+	pick one of _monster1_ _monster2_ 
+	create npc at _house_ 
+
+_2dung_ task:
+	end quest 
+
+_mondead_ task:
+	killed 4 _rats_ 
+	killed 4 _monster_ 
+	say 1020 
+
+_S.02_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	clear _qgclicked_ _clearclick_ 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.04_ task:
+	say 1011
+	create foe _rats_ every 2 minutes 7 times with 100% success 
+
+_monster1_ task:
+	pc at _house_ set _S.04_ 
+
+_monster2_ task:
+	pc at _house_ set _S.07_ 
+
+_S.07_ task:
+	say 1012
+	create foe _monster_ every 2 minutes 7 times with 100% success 
+--slowed enemy spawn due to feedback

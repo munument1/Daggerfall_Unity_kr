@@ -6,115 +6,239 @@
 -- QuestId: 16
 Messages: 81
 Quest: M0B00Y16
-DisplayName: 거인 죽이기
+DisplayName: 거인 학살
 -- Message panels
 QRC:
 
 QuestorOffer:  [1000]
-<ce>안녕하신가, %pcf. 몇일 시간이 있으면,
-<ce>거인을 좀 잡는 일거리가 방금 들어왔는데,
-<ce>네 생각이 났거든. 관심 있나?
+<ce>여보게, %pcf. 며칠 시간 여유가 있다면, 방금 거인
+<ce>학살 의뢰가 들어왔는데, 자네가 생각나더군. 관심 있나?
 
 RefuseQuest:  [1001]
-<ce>많이 바쁜가 보지? 내가 네 나이땐,
-<ce>거인 한두놈 잡을 시간은 항상 있었는데.
-<ce>요즘 어린 것들이란, 거참.
+<ce>너무 바쁜가 보군? 내가 자네 나이였을 때는, 거인 한두
+<ce>마리쯤 처리할 시간은 항상 있었지. 요즘 젊은이들은 말이야.
 
 AcceptQuest:  [1002]
-<ce>그래. 이 거인 말인데, ___mondung_에
-<ce>들어간 것 같아. 그리고 바로 얼마전
-<ce>_dummy_의 양하고 근처 마을 사람 몇명으로
-<ce>잔치를 벌인 모양이야 뭐, 먹은거지,
-<ce>그런데 이 _dummy_, 전혀 관심이 없어.
-<ce>어쨌든, 의뢰주는 =qtime_일 안에 거인을
-<ce>처리해 달라고 하고, 금 _gold_ 닢 내겠다는군.
-<ce>좀 있다가 보자고.
+<ce>그래. 얼마 전 ___mondung_에 거인 하나가 들어와서 주변
+<ce>_dummy_의 양들을 잡아먹으며 아주 신나게 지내고
+<ce>있다더군. 현지 마을 사람 몇 명도 잡아먹은 모양인데, 늙은
+<ce>_dummy_의 관심사는 그 일이 아닌 것 같아. 어쨌든,
+<ce>%g는 =qtime_일 안에 이 거인을 처리하길
+<ce>원하고, %g는 그 대가로 _gold_ 금화를
+<ce>지불할 걸세. 나중에 보지.
 
 QuestFail:  [1003]
-<ce>뭐, 거인들이 과식으로 죽기라도 바란건가?
-<ce>갈길가, %pcf. 네 할일 해.
+<ce>뭐라고, 거인이 과식해서 죽기라도 했나? 어서 가게,
+<ce>%pcf. 자네가 해야 할 일이 있지 않나.
 
 QuestComplete:  [1004]
-<ce>거인 척살자 만세!
-<ce>이일에 적임자인줄 알고 있었지.
-<ce>여기 금화 _gold_개 받으라구.
+<ce>거인 학살자에게 경의를! 자네가 이 일에 적임자라는 걸 알고
+<ce>있었지. 여기 _gold_ 금화일세.
 
 RumorsDuringQuest:  [1005]
-<ce>___mondung_의 거인이 근방 주민에 두려움의 대상이지만,
-<ce>_dummy_ 쪽에선 관심이 없는 것 같습니다.
-                                     <--->
-<ce>___mondung_에 있다는 거인이 또 마을 사람을 잡아갔습니다.
+<ce>___mondung_의 거인이 마을 사람들을 공포에 떨게 하고
+<ce>있는데, _dummy_의 반응은
+<ce>별로 신경 쓰지 않는 것 같군.
+<--->
+<ce>___mondung_의 그 거인이 얼마 전에도 마을 사람을 또
+<ce>잡아갔어.
 
 RumorsPostfailure:  [1006]
-<ce>거인들이 드디어 ___mondung_에서 나갔다니 다행입니다.
-<ce>매일매일 같은 마을 사람만 먹다보니 질렸나봅니다.
+<ce>그 거인이 드디어 ___mondung_에서 떠나서 기쁘군. 밤마다
+<ce>마을 사람만 먹는 밋밋한 식단에 질린 모양이야.
 
 RumorsPostsuccess:  [1007]
-<ce>%god 시여, _dummy_ 쪽에서 드디어 ___mondung_ 거인을
-<ce>잡을 사람을 보내셨습니다. %g3 의 비싼 양을 죽인거겠지요.
+<ce>%god의 거인 처치 인력이 드디어 ___mondung_에
+<ce>도착했군. _dummy_에게 감사해야지. 그 거인이
+<ce>%g3의 소중한 양 중 하나를 죽였을 게 분명해.
 
 QuestorPostsuccess:  [1008]
-<ce>우리 거인 척살자 %pcf 왔구만!
+<ce>나의 오랜 친구 거인 학살자 %pcf 님이군!
 
 QuestorPostfailure:  [1009]
-<ce>나때는, 거인 한놈 못잡을 수준이면
-<ce>파이터 길드에서 쫓겨날 수도 있었어.
-<ce>세상이 변했구만.
+<ce>내 젊은 시절에는, 평범한 거인 하나 죽이지 못하면 전사
+<ce>길드에서 쫓겨나곤 했지. 세상이 변한 모양이야.
 
 Message:  1020
 %qdt:
- ___questgiver_ 파이터 길드의
- _questgiver_에게
- ___mondung_에 있는
- 거인 처리 의뢰를 받았다.
- =qtime_일 안에 일을 처리후 보고하면
- 금화 _gold_ 닢을 보수로 받기로 했다.
+ ___questgiver_ 전사 길드의 _questgiver_의 의뢰:
+ ___mondung_의 거인을 죽여달라. =qtime_일 안에
+ 돌아가서 보상으로 _gold_ 금화를 받아야 한다.
 
 Message:  1021
 %qdt:
- 거인이 간식으로 먹으려고
- 잡아둔 상인을 구출했다.
- _villager_의 말로는
- __store_에 있는
- _store_에 데려다 달라고 한다.
+ 거인이 간식으로 먹으려던 상인을 구출했다. _villager_의
+ 요청: %g2를 __store_의 _store_까지
+ 데려다 줄 것.
 
 Message:  1030
-<ce>거인은 고통으로 울부짖었다.
-<ce>육중한 발소리가 다가오는 것을 들었다.
-<ce>거인이 식사에 친구 몇을 더 부른 것 같다...
+<ce>거인이 고통에 울부짖습니다. 무거운 발소리가 당신을 향해
+<ce>다가오는 소리가 들립니다. 아마도 거인이 저녁 식사에 친구
+<ce>몇 명을 초대한 모양이군요...
 
 Message:  1031
-<ce>잡으러 왔던 거인들을 처리했다.
+<ce>당신은 의뢰받은 거인을 처치했습니다.
 
 Message:  1040
-<ce>와주시다니 %god 께 감사를! 저는 어제
-<ce>시장에 가는 길이었는데 거인이 저와 같이
-<ce>여행 가던 다른 상인 넷을 끌고 왔습니다.
-<ce>다른 상인은 거인이 잡아먹었지만,
-<ce>전 나중에 먹으려고 놔둔 것 같습니다.
-<ce>제발 여기서 나가게 도와주실 수 있으십니까?
-<ce>제 스스로는 절대 여길 탈출하지 못할겁니다.
+<ce>%god님, 와주셔서 감사합니다! 어제 시장에 가던 길에
+<ce>거인이 저를 붙잡아 갔습니다. 함께 여행하던 다른 상인 네
+<ce>명도 같이요. 그들은 이미 거인이 잡아먹었고, 나중에
+<ce>먹으려고 저를 남겨둔 것 같습니다. 이곳에서 나갈 수 있게
+<ce>도와주시겠습니까? 저 혼자서는 도저히 나갈 수 없을 겁니다.
 
 Message:  1041
-<ce>진정한 영웅이시군요. 제 소개를 하자면 전
-<ce>___villager_의 _villager_입니다.
-<ce>__store_의 _store_에
-<ce>가던 중이었습니다. 절 데려다 주실 수 있다면
-<ce>이 빚은 영원히 잊지 않겠습니다.
+<ce>당신은 진정한 영웅입니다. 제 소개를 하죠: ___villager_의
+<ce>_villager_입니다. 저는 __store_의 _store_
+<ce>쪽으로 가던 중이었습니다. 그곳에 저를 데려다 주신다면,
+<ce>평생 당신의 은혜를 잊지 않겠습니다.
 
 Message:  1042
-<ce>도와주셔서 감사합니다만, 여기서 부터는
-<ce>제 스스로 알아서 갈 수 있겠습니다.
+<ce>도와주셔서 감사합니다만, 이제는 혼자서도 길을 찾을 수 있을
+<ce>것 같습니다.
 
 Message:  1043
-<ce>정말 인정이 없으십니다.
+<ce>당신은 정말 냉혈한이군요.
 
 Message:  1044
-<ce>동행해주셔서 감사합니다, %pcf
-<ce>제 목숨을 구해주신것, 절대 잊지 않겠습니다.
+<ce>당신과 함께해서 즐거웠습니다, %pcf. 제 목숨을
+<ce>구해주셨으니, 절대 잊지 않겠습니다.
 
 Message:  1080
-<ce>어이, 여기 ___newdung_ 지도야.
-<ce>다른 친구가 저번에 찾은거지.
-<ce>내가 몇년만 더 젊었으면,
-<ce>그런데는 갈아버렸을텐데 말이지.
+<ce>이봐, 다른 친구가 얼마 전에 찾은 ___newdung_의 지도일세.
+<ce>내가 몇 년만 젊었어도, 예전처럼 함께 그곳을 휩쓸고 다녔을
+<ce>텐데 말이야.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 40 times.
+--               %g2 occurs 3 times.
+--              %god occurs 2 times.
+--              %pcf occurs 6 times.
+--              %qdt occurs 2 times.
+--           =qtime_ occurs 2 times.
+--       ___mondung_ occurs 8 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 1 time.
+--      ___villager_ occurs 1 time.
+--          __store_ occurs 3 times.
+--           _dummy_ occurs 6 times.
+--            _gold_ occurs 6 times.
+--      _questgiver_ occurs 1 time.
+--           _store_ occurs 3 times.
+--        _villager_ occurs 2 times.
+
+QBN:
+Item _gold_ gold
+Item _magic_ magic_item
+
+Person _questgiver_ group Questor
+Person _dummy_ face 9 group Noble remote
+Person _villager_ face 8 group Shopkeeper remote
+
+Place _mondung_ remote dungeon
+Place _newdung_ remote dungeon
+Place _store_ remote generalstore
+
+Clock _qtime_ 00:00 0 flag 17 range 0 2
+
+Foe _giant_ is Giant
+Foe _giantFriends_ is Giant
+
+--	Quest start-up:
+	start timer _qtime_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	pick one of _victim_ _S.09_ _S.09_ 
+	pick one of _map_ _nomap_ _nomap_ 
+	pick one of _magicItem_ _noMagicItem_ _noMagicItem_ _noMagicItem_
+	place foe _giant_ at _mondung_ 
+
+variable _map_
+variable _nomap_
+_S.02_ task:
+	injured _giant_ 
+	start task _giantWaveWhileInDungeon_
+	say 1030 
+
+_S.03_ task:
+	killed 1 _giant_ 
+	say 1031
+
+_clickqgiver_ task:
+	clicked npc _questgiver_ 
+
+_clearclick_ task:
+	when _clickqgiver_ and not _S.03_
+	say 1003
+	clear _clickqgiver_ _clearclick_
+
+_success_ task:
+	when _clickqgiver_ and _S.03_ 
+	give pc _gold_ 
+
+variable _qtime_
+_duelist_ task:
+	when _success_ and _map_ 
+	reveal _newdung_ readmap
+	say 1080 
+
+_victim_ task:
+	place npc _villager_ at _mondung_ 
+
+variable _noMagicItem_
+_magicItem_ task:
+	give item _magic_ to _giant_ 
+	make _magic_ permanent 
+
+_S.09_ task:
+	hide npc _villager_ 
+
+_S.10_ task:
+	clicked npc _villager_ 
+	prompt 1040 yes _yes_ no _no_ 
+
+_yes_ task:
+	pc at _store_ set _S.13_ 
+	log 1021 step 1 
+	hide npc _villager_ 
+	say 1041 
+	add _villager_ face 
+
+_no_ task:
+	say 1043 
+	change repute with _villager_ by -10 
+
+variable _escortComplete_
+_S.13_ task:
+	say 1044 
+	drop _villager_ face 
+	change repute with _villager_ by +15 
+	place npc _villager_ at _store_ 
+	start task _escortComplete_
+
+_S.14_ task:
+	when _yes_ and not _escortComplete_ and _qtime_ 
+	say 1042 
+
+_S.15_ task:
+	when _success_ and _no_ 
+
+_S.16_ task:
+	when _success_ and _S.09_
+
+_S.17_ task:
+	when _success_ and _escortComplete_ 
+
+_S.18_ task:
+	when _qtime_ or _S.15_ or _S.16_ or _S.17_ or _S.19_
+	end quest 
+
+_S.19_ task:
+	when _success_ and _victim_ and not _S.10_
+
+_giantWaveWhileInDungeon_ task:
+	pc at _mondung_ set _spawnGiants_
+
+_spawnGiants_ task:
+	create foe _giantFriends_ every 3 minutes 6 times with 50% success 

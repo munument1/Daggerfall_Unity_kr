@@ -1,0 +1,107 @@
+-- Quest: C:\QUESTS\WORKING\B0B40Y08.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: knight
+-- Repute: 40
+-- QuestId: 8
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: B0B40Y08
+DisplayName: 오크와 관련된 더 많은 문제
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>사람들은 저를 _qgiver_ 측이라 부릅니다. 당신이 감당할
+<ce>수 있다면, 제게 임무가 하나 있습니다. 강력한 오크 무리가
+<ce>%reg에서 상단을 습격하고 있습니다. 누군가 그들을
+<ce>이끄는 오크 전쟁군주를 처단해야 합니다.
+
+RefuseQuest:  [1001]
+<ce>겁쟁이.
+
+AcceptQuest:  [1002]
+<ce>오크들이 ___dungeon_ 지역을 거점으로 삼고 있습니다.
+<ce>원하는 만큼 오크를 처치하되, 반드시 =monster_의 목을
+<ce>베어 오십시오. 그놈이 오크들의 전쟁군주입니다.
+<ce>=2dung_일 이내에 소식을 들을 수 있다면, 당신의 명예는
+<ce>더럽혀지지 않을 것입니다.
+
+QuestComplete:  [1004]
+<ce>오크의 위협이 %reg에서 사라졌습니다. %pcn
+<ce>만세!
+
+RumorsDuringQuest:  [1005]
+___dungeon_의 오크들 때문에 ___qgiver_의 상인들이
+살아가기 힘들어하고 있습니다.
+
+RumorsPostfailure:  [1006]
+___dungeon_의 오크들이 다른 곳을 약탈하러 떠났습니다.
+하지만 얼마나 갈까요?
+
+RumorsPostsuccess:  [1007]
+용감한 %ra 덕분에 ___dungeon_에서 오크들이
+소탕되었습니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 ==qgiver_의 _qgiver_ 측에서
+ 제게 ___dungeon_에 있는 강력한 오크 무리의 _monster_인
+ =monster_ 처치 기회를 주었습니다. %reg의 점령을
+ 막으려면 =2dung_일이 남았습니다.
+
+Message:  1011
+<ce>=monster_ 처치가 완료되었습니다. 이제 오크들은 더 이상
+<ce>%reg의 위협이 되지 않을 것입니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 15 times.
+--              %reg occurs 7 times.
+--           =2dung_ occurs 2 times.
+--         ==qgiver_ occurs 1 time.
+--         =monster_ occurs 3 times.
+--       ___dungeon_ occurs 5 times.
+--        ___qgiver_ occurs 1 time.
+--         _monster_ occurs 1 time.
+--          _qgiver_ occurs 2 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+Person _local_ face 207 group Resident2 female local
+
+Place _dungeon_ remote dungeon1
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Orc_warlord
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	place foe _monster_ at _dungeon_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _S.02_ and _S.01_ 
+	give pc nothing 
+	change repute with _local_ by +4 
+	end quest 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 

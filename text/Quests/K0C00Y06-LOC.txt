@@ -1,0 +1,1032 @@
+-- Quest: C:\QUESTS\WORKING\K0C00Y06.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: merchant
+-- Repute: 0
+-- QuestId: 6
+Messages: 101
+Quest: K0C00Y06
+DisplayName: 오해
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%oth, 당신은 마치
+<ce>그 %ra, %pcn처럼 보이는군요.
+<ce>혹시 %pcf 아니신가요?
+<--->
+<ce>혹시 %pcn 아니신가요?
+<--->
+<ce>잠깐만요. 당신 %pcn 아니죠?
+
+RefuseQuest:  [1001]
+<ce>알겠습니다. 그냥 궁금해서 물어본 겁니다.
+<--->
+<ce>좋아요. 기분 나쁘게 듣지 마세요.
+
+AcceptQuest:  [1002]
+<ce>"도둑이다! 내 _gem_의 소유물을 훔쳐 간 놈이 바로
+<ce>너구나! _guard_! 죽여라!"
+<ce>
+<ce>비난의 소리를 듣는 순간, 당신은 그것이 거짓임을
+<ce>알았습니다. 가끔 보석을 슬쩍한 적은 있을지 몰라도, 이번
+<ce>일은 당신에게 뒤집어씌울 수 없는 노릇입니다.
+<--->
+<ce>"내 _gem_의 소유물을 가져가고도 뻔뻔하게 다시
+<ce>나타나다니!
+<ce>내 동료 =guard_의 처리가 네 일을 대신할 것이다."
+<ce>
+<ce>분명 뭔가 잘못되었습니다. 이 사람은 당신에게 화를 낼
+<ce>이유가 전혀 없습니다.
+
+QuestComplete:  [1004]
+<ce>"그러니까, 내 _gem_ 개체를 훔친 건 당신이
+<ce>아니었군요. %oth, 잘못 비난한 것에 대해 부끄러움을
+<ce>느낍니다. 여기, 사과의 의미로 _reward_ 물품을
+<ce>받아주십시오. 당신이 결백한 %ra 관련 사실을
+<ce>%cn 경비병들에게 확실히 전해두겠습니다."
+<ce>
+<ce>당신은 _qgiver_ 측이 당신을 위해 변호해 준다 해도,
+<ce>당신의 평판이 예전 같지는 않으리라는 것을 마음속으로 알고
+<ce>있습니다.
+
+RumorsDuringQuest:  [1005]
+_inn_에서는 항상 최고의 정보를 얻을 수 있죠,
+__inn_. <---> __inn_의 _inn_만큼
+알짜 정보를 얻기 좋은 곳은 없어요. <---> 그
+%ra 도둑을 잡으면, 아주 제대로 된 교수형 파티가
+열릴 겁니다. <---> 불쌍한 _qgiver_, 하지만 그
+%ra의 처지는 _gem_ 가격의 두 배를 치르게
+될 겁니다.
+
+RumorsPostfailure:  [1006]
+모든 증거는 %pcn의 ___qgiver_ 도둑 행각을
+가리키고 있습니다. <---> _qgiver_ 쪽에서는 그
+%ra의 행방을 거의 강박적으로 계속 찾고 있습니다.
+
+RumorsPostsuccess:  [1007]
+%pcn의 결백은 ___qgiver_ 강도 사건과 무관한
+것으로 밝혀졌습니다. <---> 그 %ra 용병은
+___qgiver_ 강도 사건에서 결백함이 증명되었습니다.
+
+QuestorPostsuccess:  [1008]
+당신을 잘못 비난했던 일은 여전히 마음이 무겁군요,
+%pcf.
+
+QuestorPostfailure:  [1009]
+<ce>도둑이야! 도둑! 당장 나가지 않으면 경비병을 부르겠어!
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 __qgiver_에 있는 =qgiver_,
+ _qgiver_ 측이 갑자기 저를 절도 혐의로 고발했습니다.
+ 제가 %g3의 _gem_ 개체를 훔쳤다는군요. 물론
+ 저는 결백하지만, %reg에서 다시 얼굴을 들고
+ 다니려면 제 결백을 증명해야 할 것 같습니다.
+
+Message:  1011
+불쌍한 _qgiver_ 측은 %g3의 _gem_
+개체를 잃어버렸습니다. 목격자가 __qgiver_에서 당신과
+같은 %ra 종족을 보았다고 합니다. <--->
+_qgiver_ 측은 그 보석을 훔친 %ra 모험가를
+계속 추적 중입니다.
+
+Message:  1012
+_merchant_ 측은 성실하고 기본적으로 정직한 __merchanthome_
+상인입니다. <---> 손님에게 바가지를 씌우는 사람은
+아니죠, 그 _merchant_ 측은. 적어도 너무 심하게는 안
+합니다. <---> _merchant_ 말인가요? %g2는
+지금 __merchanthome_ _merchanthome_에 있을 겁니다. <--->
+_priest_의 말을 듣자면, _merchant_ 측은 %reg
+전체의 골칫거리라고 하더군요. <---> _merchant_
+측은 대부분의 사람과 잘 지내지만, %g는
+_thief_ 측을 좋아하지 않습니다.
+
+Message:  1013
+_noble_ 측은 __noblehome_ 왕가의 일원입니다.
+%oth, %g3의 가문은 영원히 통치해 왔죠.
+<---> _noble_ 측은 %g3의 계급의
+전형적인 인물입니다. 퇴폐적이고, 무자비하며, 오만하죠.
+<---> _noble_ 측은 %g3의 시간을
+__noblehome_ _noblehome_에서 보냅니다. <--->
+_thief_ 측은 _noble_ 측을 별로 좋아하지 않지만,
+다른 사람들은 대부분 좋아합니다. <---> _noble_
+측은 ==priest_ 측과 _priest_에 대해 오랫동안
+경멸감을 품어왔습니다.
+
+Message:  1014
+_priest_ 측은 물론 ==priest_의 성직자이며, 꽤
+열성적인 인물입니다. <---> _priest_ 측은
+==priest_에서 겪었던 %g3의 초기 스캔들을
+극복했습니다. <---> _priest_ 측은 보통
+__priesthome_ _priesthome_에서 명상하는 모습을 볼 수
+있습니다. <---> _noble_ 측을 제외한
+__priesthome_의 거의 모든 사람이 _priest_ 측을 크게
+존경합니다. <---> _priest_ 측이 명백히 싫어하는
+유일한 사람은 바로 그 =merchant_, _merchant_입니다.
+
+Message:  1015
+_thief_ 말인가요, %g는 은퇴한 보석
+도둑입니다. 아니면 제가 알기로는 반쯤 은퇴했죠.
+<---> _thief_ 측은 한때 __thiefhome_에서 꽤
+유명한 보석 도둑이었습니다. <---> 누군가 말하길
+_thief_ 측이 매일 이맘때 _thiefhome_ 주변을
+배회한다고 하더군요. <---> _merchant_ 측은
+_thief_ 측이 %g3의 삶을 완전히
+개과천선했다고 믿지 않습니다. <---> _thief_
+측은 =noble_의 귀족 혈통에도 불구하고 _noble_
+측을 싫어합니다.
+
+Message:  1016
+_witness_의 신원은 __qgiver_에서 절도 사건을 목격한
+그 =witness_의 이름입니다. <---> _witness_의
+정체는 그냥 =witness_일 뿐입니다. %g2는
+___witness_ __witness_에서 찾을 수 있을 겁니다.
+
+Message:  1017
+<ce>누더기를 걸친 어린 거지가 갑자기 당신 손에 편지를
+<ce>쥐여주고는, 당신이 질문을 던질 틈도 없이 사라져 버립니다.
+
+Message:  1018
+친애하는 %pcn에게,
+
+우아하지는 않지만 효율적인 방식으로 연락하게 되어
+미안하오. 우리의 적들이 당신의, 음, 말하자면 거의 눈처럼
+희지는 않지만 거의 그에 가까운 삶을 엉망으로 만들어
+놓았더군. 우리는 도둑질을 존중하고 감탄하지만, 당신은 이번
+사건을 저지르지 않았기에, 당신이 진정한 범인을 대중의 눈과
+올가미 앞에 드러내는 것이 최선이라고 생각하오.
+당신이 대화하기에 가장 효과적인 인물은 _inn_에서
+빈둥거리고 있을 =witness_, _witness_일 것이오.
+%g2가 가장 친절한 사람은 아닐 테니 기대는 마시오.
+어쨌든 %g는 __qgiver_에서 당신이
+_gem_의 물건을 훔치는 것을 본 목격자니까. 그럼에도
+불구하고, 약간의 노력만 기울인다면 그 만남에서 정보를 얻을
+수 있을 것이오.
+행운을 비오, 나의 친구여. 당신이 저지르지도 않은
+무분별하고 악마적인 탐욕의 행위로 비난받는 것만큼 피곤한
+일은 없을 테니까.
+<ce>-- 강령술사단
+
+Message:  1019
+친애하는 %pcf에게,
+
+우리는 범죄자로 잘못 지목되는 것이 어떤 기분인지 잘
+알지만, 그런 비난에 맞설 수 있는 처지가 못 되는 경우가
+많소. 당신의 경우, 우리는 적어도 당신을 고발한 사람 중 한
+명인 _witness_의 이름을 알고 있소. %g가
+당신의 적을 위해 일하는지, 우리의 적을 위해 일하는지,
+아니면 완전히 무고한 장기말인지는 모르겠지만,
+%g는 __qgiver_에서 발생한 절도 사건의
+목격자라고 주장하고 있소. _witness_ 및 그 주변과 대화할
+때는 조심하시오. %g는 강력한 친구들을 두고
+있을지도 모르니까. 가장 좋은 방법은 %g2를
+공개적인 장소에서 만나는 것이오. %g는
+__inn_의 _inn_ 장소를 자주 찾는다고 하더군.
+
+<ce>요원들
+
+Message:  1020
+%pcf,
+
+이봐, 짧게 적겠는데, 도둑 길드의 동료들이 당신을 돕고 싶어
+해. 우리는 누가 __qgiver_에서 그 _gem_ 개체를
+실제로 가져갔는지는 모르지만, 당신이 아니라는 건 알아.
+솔직히 말해서, 당신이 그 _gem_ 개체를 훔쳤다면 이런
+곤경에 처하지도 않았겠지. 당신은 똑똑한 녀석이니까, 들키지
+않고 해냈을 테니까. 하지만 누군가 당신에게 누명을 씌우고
+있어. 당신과 닮은 %ra 종족이 _gem_ 개체를
+훔치는 것을 목격했다고 말한 사람은 _witness_의 이름을
+지닌 =witness_ 개체가야. %g가 진실을
+말하는지, 아니면 %g가 당신과 닮은 누군가를 본
+건지는 모르겠지만, 당신이 직접 확인해 볼 수 있을 거라
+생각하네. 이 _witness_ 개체는 __inn_에 있는
+_inn_의 명칭으로 불리는 술집에서 찾을 수 있을 거야.
+몸조심하게. 이건 게임이 아니니까.
+
+<ce>도둑 길드
+
+Message:  1021
+친애하는 친구에게,
+
+당신이 하지 않았다는 걸 알고 있어. 내가 __qgiver_에서
+그 _gem_ 개체를 훔치지 않은 것만큼이나 확실하지.
+내가 의심하는 사람이 누구냐고? 음, __priesthome_에 있는 이
+=priest_ 측이 있는데, 이 녀석은 내가 더운 여름날
+시원한 맥주를 마시는 것만큼이나 보석을 훔치고 사람들에게
+누명을 씌우는 걸 즐기는 놈이지. 증거는 없지만,
+%g2에 대해 조사해 보는 게 좋을 거야. 이 성직자의
+이름은 _priest_ 측이지. 행운을 빌어.
+
+<ce>친구
+
+Message:  1022
+%pcn,
+
+너는 나를 모르고 나도 너에게 빚진 게 없으니, 이 일이 끝난
+뒤에도 서로 빚진 건 없는 거다. 알아들었나? 나는 예전에
+=merchant_의 이름으로 불리는 자 밑에서 일했지. 이름은
+_merchant_의 이름으로 불리는 했다. %g는 정말
+미친 작자였어. 항상 부자가 될 궁리만 했지. 그러다
+%g가 %g3의 손이 꼬리 잡히는 짓을
+저지르면 항상 남 탓하기 바빴어. %g가 그랬지.
+그래서 내가 감옥에 갔던 거다. 나라면 내 옛 친구가
+__qgiver_에서 벌어진 절도 사건과 관련이 있는지 확인해
+보겠어.
+
+<ce>친구
+
+Message:  1023
+친애하는 %pcn에게,
+
+갑작스러운 연락을 용서하시오. 당신의 마음이 정중한
+잡담보다는 다른 주제에 쏠려 있으리라 확신하기에, 바로
+본론으로 들어가겠소. 나는 당신이 __qgiver_에서 발생한
+절도 사건의 범인이라고 생각하지 않지만, 결백을 증명하지
+못한다면 영원히 그 일로 박해받게 될 것이오. 내 지인 중에
+그 사건에 대해 누구보다 잘 알고 있다고 생각되는
+=noble_ 측이 있소. 어쩌면 %g가 그 범죄를
+계획했거나 직접 저질렀을지도 모르지. 더 이상 말할 수는
+없지만, %g3의 이름은 _noble_ 측이며
+%g는 __noblehome_에 살고 있소. 마지막으로 한
+가지 더: %g는 매우 강력한 친구들을 두고 있소.
+불리한 상황에서 %g2를 마주하지 마시오.
+
+<ce>친구
+
+Message:  1024
+친애하는 %pcn에게,
+
+당신이 범인이 아니라고 생각하는 사람이 적어도 한 명 있다는
+사실이 흥미로울지도 모르겠군. 아니, __thiefhome_에는
+당신이 범인이 아니라고 생각하는 사람이 두 명 있다고
+해야겠지. 나와 범인, 즉 절도를 저지른 =thief_ 말이야.
+사실 증거는 없지만, =thief_인 _thief_의 모습은
+예전에도 그런 보석 절도를 저지른 적이 있어. %oth,
+%g는 그것 때문에 감옥살이까지 했지.
+그러니 _thief_의 모습이 범인이 아닐지도 몰라. 어쩌면
+말이지. 하지만 %g가 범인이 아니라면, 이건 확실히
+말할 수 있어. %g는 당신보다 누가 진짜 범인인지
+더 잘 알고 있다는 거지. 그러니 누가 범인이고 누가 당신에게
+누명을 씌웠는지 알고 싶다면, 이 _thief_의 행방을
+찾아가서 %g2에게 질문을 던져보게.
+<ce>친구
+
+Message:  1025
+<ce>"너였구나! __qgiver_의 행방을
+<ce>털어간 놈이 바로 너였어! 경비병!
+<ce>경비병!"
+<ce>
+<ce>_witness_의 모습이 달아나며 %g의 쪽지를
+<ce>당신에게 슬쩍 건넵니다.
+<--->
+<ce>"%ra의 모습이 __qgiver_의 행방을
+<ce>털어갔어! 누가 좀 도와줘!"
+<ce>
+<ce>_witness_의 모습이 달아나며 %g의 쪽지를
+<ce>당신에게 슬쩍 건넵니다.
+
+Message:  1026
+%qdt:
+ 강령술사단으로부터 __qgiver_에서 _gem_ 개체를
+ 훔치는 나를 목격했다고 주장하는 =witness_에 대한 편지를
+ 받았습니다. 그 사람의 이름은 _witness_ 개체가며
+ %g는 _inn_ 지역을 자주 찾는다고 합니다.
+
+Message:  1027
+%qdt:
+ 언더킹의 요원들이 제게 편지를 보내, =witness_의 행방을
+ 지목했습니다. %g 말하길, %ra 같은 자가
+ _gem_에서 __qgiver_의 행방을 훔치는 것을
+ 보았다고 합니다. _witness_의 모습은 그저 순진한
+ 장기말일 수도 있고, 제 적들 중 한 명의 요원일 수도
+ 있습니다. _inn_에 있는 %g2와 대화를 나누기
+ 전까지는 __inn_에서 무슨 일이 벌어지는지 알 수 없을
+ 것입니다.
+
+Message:  1028
+%qdt:
+ 도둑 길드에서 제게 편지를 보내, 제가 그 절도 사건과
+ 무관하다는 사실을 알고 있다고 전했습니다. 또한 그들은
+ %g 제가 그 _gem_의 행방을 훔치는 것을
+ 보았다고 말한 =witness_의 이름도 언급했습니다.
+ _witness_의 모습은 _inn_의 명칭을 지닌 선술집을
+ 자주 드나든다고 합니다. 그곳에 찾아가 인사를
+ 나누어야겠습니다.
+
+Message:  1029
+%qdt:
+ 익명의 친구로부터 편지를 받았습니다. =priest_인
+ _priest_의 이름으로 불리는 자가 제가 누명을 쓴
+ _gem_ 절도 사건의 배후에 있을 가능성이 있다고
+ 지목했습니다.
+
+Message:  1030
+%qdt:
+ 누군가 제게 _merchant_의 이름을 지닌 =merchant_에 관한
+ 편지를 보냈습니다. _gem_의 행방을 훔치고 제게 죄를
+ 뒤집어씌울 만한 인물이라고 합니다.
+
+Message:  1031
+%qdt:
+ 익명으로 받은 편지에 따르면, __noblehome_에 _noble_의
+ 이름으로 불리는 귀족이 있는데, 그 자가 __qgiver_에서
+ 실제로 무슨 일이 있었는지 꽤 잘 알고 있을지도 모릅니다.
+
+Message:  1032
+%qdt:
+ 익명의 정보원으로부터 _thief_의 이름으로 불리는 자가
+ __thiefhome_에 살고 있는 악명 높은 보석 도둑이라는 편지를
+ 받았습니다. 설령 %g 실제로 __qgiver_의 행방을
+ 털지 않았더라도, 대화를 나눠보면 누가 범인인지 밝혀낼 수
+ 있을지도 모릅니다.
+
+Message:  1033
+%pcn,
+
+__withouse_에 있는 _withouse_에서 만나자.
+
+<ce>_witness_
+
+Message:  1034
+%qdt:
+ _witness_의 모습이 제가 %g2와 대화할 때 몰래
+ 쪽지를 건넸는데, %g 경비병을 불렀습니다. 저는
+ _withouse_의 명칭으로 불리는 곳에서 %g2를
+ 만나라는 요청을 받았습니다.
+
+Message:  1035
+<ce>%god님, 쪽지를 받아주셔서 감사합니다. 경비병을
+<ce>불러서 죄송합니다만, 당신과 대화하는 모습을 들킬 수는
+<ce>없었습니다. 들어보세요. 길게 말할 시간은 없지만, 이제
+<ce>당신이 범인이 아니라는 걸 압니다. 제가 __qgiver_에서
+<ce>_gem_의 행방을 훔치는 %ra 같은 사람을
+<ce>봤다고 말한 건 사실이지만, 그 후에 다른 것을 보았습니다.
+<ce>_merchant_의 이름으로 불리는 =merchant_의 모습이
+<ce>있는데, 당신이 마을에 온 것을 알고는 당신과 아주 닮은
+<ce>사람을 고용해 _gem_의 행방을 훔쳐 숨겨두게 한 것
+<ce>같습니다. 누명을 벗고 싶다면 _merchant_의 모습이 보석을
+<ce>숨겨둔 ___mondung_에서 그것을 찾아내거나, _merchant_의
+<ce>모습이 자주 드나드는 _thiefhouse_에서 다른 증거를
+<ce>찾아보세요. 이제 가봐야겠군요. 행운을 빕니다.
+
+Message:  1036
+<ce>들어보세요, 제 말을 믿어주셔야 합니다. 정말 당신과 닮은
+<ce>%ra 종족이 _gem_ 개체를 가져가는 것을 보고
+<ce>당신인 줄 알았습니다. 하지만 그건 __noblehome_에서
+<ce>_noble_의 사촌을 보기 전의 일입니다. 그 아이는 당신과
+<ce>거의 똑같이 생겼는데, _noble_ 측이 최근에
+<ce>%g3의 사촌을 ___mondung_ 방향으로 보냈다는
+<ce>사실을 우연히 알게 되었습니다. _gem_ 개체를
+<ce>숨기기에 아주 좋은 장소일 겁니다. 다른 좋은 선택지라면
+<ce>_noble_ 측이 밤마다 머무는 _thiefhouse_ 정도겠군요.
+<ce>그 사촌을 보자마자 당신이 결백하다는 걸 알았습니다. 하지만
+<ce>증거는 직접 찾아야 할 겁니다. 이제 가봐야겠네요. 행운을
+<ce>빕니다, 친구여.
+
+Message:  1037
+<ce>당신과 닮은 누군가가 __qgiver_에서 _gem_ 개체를
+<ce>훔치는 것을 봤다고 말한 건 거짓이 아니었습니다. 그 후
+<ce>_priesthome_에서 그 %ra 종족을 다시 보았는데,
+<ce>그곳의 사제 중 한 명인 _priest_ 측과 대화하고
+<ce>있더군요. 두 사람이 ___mondung_에 대해 이야기하는 것을
+<ce>엿들었고, 그 %ra 종족을 따라 _thiefhouse_까지
+<ce>갔습니다. 그곳에서 %ra 종족은 ___mondung_
+<ce>방향으로 향했습니다. 몇 분 뒤에 당신이 제 선술집에
+<ce>들어왔죠. _priest_에 맞서 당신과 제 말을 믿어줄 사람은
+<ce>아무도 없을 겁니다. 누명을 벗으려면 ___mondung_나
+<ce>_thiefhouse_에서 증거를 찾아야 합니다. 이제 가봐야겠군요.
+<ce>행운을 빕니다.
+
+Message:  1038
+<ce>제 쪽지를 받으셨군요. 이런 일이 생겨서 정말 유감입니다,
+<ce>%pcf님. 하지만 저는 정말 당신과 똑같이 생긴 사람이
+<ce>__qgiver_에서 _gem_ 개체를 훔치는 것을
+<ce>보았습니다. 범인은 변장의 달인이자 _thief_의 이름을
+<ce>지닌 도둑이었습니다. 절도 사건 직후, _thiefhouse_ 측을
+<ce>지나가다가 그 도둑의 목소리를 들었는데, ___mondung_에
+<ce>물건을 숨겼다는 이야기를 하더군요. 말하는 사람을
+<ce>확인해보니 유명한 _thief_ 측이었습니다. 요즘
+<ce>%g는 지역 사회에서 존경받는 인물이라
+<ce>%g2를 유죄로 만들려면 증거가 필요할 겁니다. 제가
+<ce>도와드릴 수는 없지만, 필요한 것은 _thiefhouse_ 측과
+<ce>___mondung_에 있을 것 같군요. 행운을 빕니다.
+
+Message:  1039
+<ce>쪽지를 받으셨군요. 들어보세요, %pcf님. 당신이
+<ce>__qgiver_ 절도와 무관하다는 건 알지만, 우리가 대화하는
+<ce>걸 들키면 제 목숨이 위험하다는 걸 이해해주셔야 합니다.
+<ce>저는 _merchant_의 지시를 받아 일하는데, 당신에겐 아무
+<ce>의미 없을지 몰라도 %g가 사실상 __merchanthome_의
+<ce>실권을 쥐고 있습니다. 누명을 벗고 제 상사를 범인으로
+<ce>지목하려면 확실한 증거가 필요합니다. 저라면 이 지역을
+<ce>떠나거나, _thiefhouse_에 있는 %g2의 집이나
+<ce>%g3의 집, 혹은 %g3의 비밀 보물 창고인
+<ce>___mondung_에서 증거를 찾아보겠습니다. 이제 가봐야겠군요.
+<ce>저를 본 적 없는 겁니다, %pcf님.
+
+Message:  1040
+<ce>잘 들으세요, %pcf님. 무슨 일이 있었는지
+<ce>말씀드리죠. 저는 __qgiver_에서 벌어진 절도 사건을
+<ce>목격했지만, 진실을 말하면 아무도 믿어주지 않을 것이고
+<ce>반역죄로 교수형을 당할까 봐 두려웠습니다. 그래서 낯선
+<ce>사람이 범인이라고 말했죠. 바로 당신입니다. 진짜 범인은
+<ce>의심할 여지가 없는 %reg 왕가의 _noble_입니다.
+<ce>이를 증명하려면 증거가 필요할 텐데, 저는 더 이상 위험을
+<ce>감수할 수 없습니다. 한 가지 더 말씀드리자면, 주말 동안
+<ce>_noble_의 행보는 ___mondung_에서 %g3의
+<ce>시간을 보내고, 밤에는 _thiefhouse_에 머뭅니다. 그곳들 중
+<ce>한 곳에서 증거를 찾으시길 바랍니다. 행운을 빕니다, 정말
+<ce>죄송합니다.
+
+Message:  1041
+<ce>안녕하세요, %pcf님. 선술집에서는 너무 공개적인
+<ce>장소라 대화할 수 없었습니다. 저는 __qgiver_ 절도 사건의
+<ce>목격자가 맞습니다. 사실 제가 저질렀죠. 하지만 저를 고용해
+<ce>범행을 저지르게 하고 낯선 사람에게 죄를 뒤집어씌우라고
+<ce>시킨 건 ==priest_의 사제인 _priest_였습니다. 물론
+<ce>그냥 말만 해서는 아무도 믿어주지 않을 겁니다. 증거가
+<ce>필요하죠. 저는 _gem_의 행방을 ___mondung_의
+<ce>명칭으로 불리는 곳으로 숨겨두었습니다. 하지만 보석을
+<ce>되찾는 것만으로는 아무도 설득할 수 없을 겁니다.
+<ce>_thiefhouse_ 쪽을 확인해보세요. _priest_의 밤 시간은
+<ce>주로 그곳에서 보내집니다. 아마 그곳에서 %g2에
+<ce>대한 증거를 찾을 수 있을지도 모릅니다. 이제 가봐야겠네요.
+<ce>이 대화는 나중에 부인하겠지만, 지금은 행운을 빌어드리죠.
+
+Message:  1042
+<ce>아니에요, %pcf 님, 당신이 저지른 일이 아니라는 걸
+<ce>알아요. 그건 =thief_인 _thief_의 이름으로 불리는
+<ce>자의 짓이에요. __thiefhouse_의 대부분 사람들은
+<ce>%g가 예전에 도둑이었다는 걸 알지만, 다들
+<ce>%g가 은퇴해서 공직 생활을 하고 있다고 생각하죠.
+<ce>전 %g가 그렇지 않다는 걸 알아요. 보세요,
+<ce>%g는 마을의 낯선 사람을 하나 골라 %g3의
+<ce>모든 도둑질을 뒤집어씌워서 %g가 비난받지 않게
+<ce>하려는 거예요. %g2가 잡히는 걸 보고 싶지만,
+<ce>확실한 증거가 필요할 거예요. 보통 밤마다 %g는
+<ce>_thiefhouse_ 쪽에서 머무르니, 거기나 %g3의 옛
+<ce>은신처인 ___mondung_의 조사를 부탁해요. 조심해요,
+<ce>%pcf 님, 행운을 빌게요.
+
+Message:  1043
+%qdt:
+ _witness_ 개체가 _merchant_ 측이 실제로 절도 사건의
+ 범인이라고 말했지만, 누구든 설득하려면 확실한 증거가
+ 필요합니다. 필요한 모든 것을 찾으려면 _thiefhouse_ 측과
+ ___mondung_ 모두 가봐야 할지도 모릅니다.
+
+Message:  1044
+%qdt:
+ _witness_ 개체가 귀족인 _noble_ 측이 실제로 절도
+ 사건을 꾸몄다고 말했지만, %g는 의심을 살 위치가
+ 아니기에 증거를 찾아야 합니다. 제안받은 두 장소는
+ _noble_ 측이 밤마다 자주 드나드는 _thiefhouse_ 측과
+ ___mondung_입니다.
+
+QuestTimeLapse:  [1045]
+%qdt:
+ _witness_의 고백에 따르면 %g가 절도 사건의
+ 범인을 알고 있으며 그게 제가 아니라고 합니다. 반면,
+ 배후에서 사건을 꾸민 진짜 범인인 _priest_의 유죄를
+ 입증하기는 어려울 것입니다. _witness_의 조언대로 증거를
+ 찾을 수 있는 두 장소는 _thiefhouse_ 및 ___mondung_입니다.
+
+Message:  1046
+%qdt:
+ _witness_에 따르면, 악명 높지만 은퇴한 것으로 알려진
+ 보석 도둑 _thief_ 측이 제가 누명을 쓴 절도 사건의
+ 범인이라고 합니다. 더 나아가 %g는 _thief_
+ 측이 이제 너무 존경받는 인물이라 %g2를 유죄로
+ 만들려면 확실한 증거가 필요하다고 말합니다. _thiefhouse_
+ 측이나 ___mondung_, 혹은 두 곳 모두에서 증거를 찾을 수
+ 있을지도 모릅니다.
+
+Message:  1047
+<ce>당신은 __qgiver_에서 도난당한 _gem_의 회수에
+<ce>성공했습니다.
+
+Message:  1048
+_merchant_ __merchanthome_
+
+친애하는 _merchant_에게,
+
+__merchanthome_의 모든 일이 잘 풀리고 당신과 가족 모두
+건강하기를 바랍니다. 날씨도 온화하다고 들었는데, 제 방문을
+위해 날씨를 그렇게 정해주신 점 감사드립니다.
+본론으로 들어가죠. 지난 편지에서 _gem_의 품질이
+최고가 아니고 이미 범죄에 대한 편리한 희생양을 찾았으니 제
+서비스에 대한 할인을 원한다고 하셨죠. %ra 용병이
+당신이 말한 그 바보 같은 자라는 것을 확실히 한다면, 당신의
+조건을 수락하겠습니다. 만약 상황이 뒤집힌다면, 당신도
+알다시피 각자도생해야 합니다. 그리고 만약 그 =priest_
+_priest_ 측이 개입한다면, %g는 모든 일을
+망칠 수 있습니다.
+곧 뵙겠습니다, 친구여.
+<ce>-- %n
+
+Message:  1049
+_noble_ __noblehome_
+
+사랑하는 _noble_에게,
+
+정말 교활하고 사악한 사람이군요. 제가 불쌍한
+_qgiver_의 불행 뒤에 당신이 있었다는 걸 의심하지
+않았다고 생각하지 마세요. 제가 원하던 _gem_ 개체를
+가져다준 건 정말 고맙지만, 당신이 그 대가를 치를 줄
+알았거든요.
+제 사랑하는 이여, 제가 감사할 줄 모른다고 생각하지 마세요.
+하지만 그 _gem_ 개체가 ___mondung_에서 빠져나가고
+누군가 저를 추적한다면, 당신은 자신을 향해 쏟아지는 비난의
+화살을 다 셀 수도 없을 겁니다. 특히 그 고약한 _thief_
+측을 조심하세요. %g가 아주 좋아할 만한 협박
+거리니까요.
+그럼에도 불구하고, _gem_ 개체는 정말 다정한
+생각이었고 감사드립니다.
+<ce>사랑을 담아,
+<ce>%n
+
+Message:  1050
+_priest_ __priesthome_
+
+친애하는 _priest_ 귀하,
+
+==priest_에 대한 귀하의 지대한 공헌을 치하했던 지난
+편지는 무시해 주십시오. 귀하께서 기부라고 말씀하셨던 그
+_gem_ 건은 _qgiver_에서 훔친 물건이었습니다.
+만약 그 보석이 우리 사원을 위해 도난당했다는 사실이
+알려지면, %reg 내 우리 사원의 위신은 크게 실추될
+것입니다. _noble_ 측은 이미 우리를 증오하고 있으며,
+왕실에 대한 %g3의 영향력을 고려할 때 ==priest_
+측에서 이에 대해 많은 책임을 져야 할 것입니다. 이 상황에
+합당한 징벌이 무엇인지 다음 회의에서 논의할 것입니다.
+사원에 도전할 생각은 하지 마십시오.
+
+<ce>유감을 표하며, %n 올림 ==priest_
+
+Message:  1051
+_thief_ __thiefhome_
+
+나의 친애하는 _thief_,
+
+다시 일을 시작했다지? __qgiver_에서 있었던 일을 들었을
+때, 유쾌한 향수가 밀려오더군. 우리 둘이 파트너였던 그
+좋았던 시절을 내가 완전히 잊을 수 있을까? 자네가
+%ra 용병에게 누명을 씌우는 바로 그 방식으로
+나에게 보석 절도 누명을 씌웠던 일을 내가 잊지 못하는
+것만큼이나 말이야. 그건 _merchant_의 사업장에서 있었던
+일이었지, 아마? 걱정 마, 이건 협박 편지가 아니야.
+누구에게도 한마디도 하지 않을 테니까... 물론, 그들이 묻지
+않는다면 말이지. 당연히 자네가 ___mondung_ 어디에 그
+_gem_ 물건을 숨겼는지 말해준다면 내 기억은 흐려질
+수도 있겠지. 자네의 추억을 담아 답장을 보내주게.
+
+<ce>%n
+
+Message:  1052
+<ce>이것은 범죄를 입증할 증거로 보이는군요. 부디
+<ce>_qgiver_의 친구를 찾아내어, 이 글을 읽고
+<ce>%g2가 은신처에서 나오도록 설득할 수 있기를
+<ce>바랍니다.
+
+Message:  1053
+<ce>_noble_의 도둑질 배후가 자네였나? 허허, 이거 참.
+<ce>자네가 해야 할 일은 이렇네. 내가 %g3의 가족과
+<ce>이야기하지. 그들은 이 상황을 최대한 깔끔하게 수습하고 싶어
+<ce>할 테니까. 자네는 _gem_의 행방을 __qgiver_에
+<ce>있는 _qgiver_ 쪽으로 가져가게. 그러면 %g도
+<ce>만족할 걸세. _noble_ 저 친구는 정말 아마추어
+<ce>도둑이군.
+
+Message:  1054
+<ce>그러니까 _thief_의 도둑질 배후가 자네였다는 건가? 내
+<ce>사업을 거의 망칠 뻔했군. 그리고 이제 %g가
+<ce>자네에게 누명을 씌우려 하는군. 좋아, 내가 당국과
+<ce>%g3의 친구에게 이야기하지. 자네에게 필요한 건 그
+<ce>_gem_뿐이야. 그것을 __qgiver_에 있는
+<ce>_qgiver_ 쪽으로 가져오게. 그러면 자네의 혐의가 벗겨질
+<ce>뿐만 아니라, %g2와의 평판도 좋아질 걸세.
+
+Message:  1055
+<ce>축복받은 %god 신격이여, 이것은 위조가 아닙니다!
+<ce>작성자의 말이 맞습니다. _merchant_ 측은 저를 두려워할
+<ce>이유가 있습니다. ==priest_께서 _merchant_ 측이 적절한
+<ce>당국에 넘겨지도록 조치할 것입니다. 하지만 우리는 귀하가
+<ce>공범으로 간주되지 않도록 해야 합니다. 만약 _gem_
+<ce>개체를 구해서 _qgiver_ 쪽으로 가져오신다면, 우리가
+<ce>필요로 하는 %g3의 호의를 확신할 수 있을 것입니다.
+<ce>서둘러 __qgiver_ 방향으로 가십시오. 그 _gem_
+<ce>개체를 가지고, %pcf.
+
+Message:  1056
+<ce>이걸 _thiefhouse_에 있는 _priest_의 감방에서 꺼냈다고?
+<ce>%oth, 이건 값을 매길 수 없는 물건이야! 어서,
+<ce>%pcf, 그 _gem_ 확보 후 _qgiver_ 쪽으로
+<ce>가져가게. 그러면 내가 __qgiver_의 진짜 도둑이
+<ce>==priest_의 사제라는 소문을 퍼뜨려 주지!
+
+Message:  1057
+<ce>네가 바로 _witness_의 언급대로 모두에게 알려진 그
+<ce>도둑이구나! 경비병!
+<--->
+<ce>경비병! _witness_의 지목을 받은
+<ce>그 %ra의 등장이오!
+<--->
+<ce>난 흔해 빠진 보석 도둑과 할 말이 없다. _witness_의
+<ce>네놈에 대한 증언을 들었거든. 경비병!
+<ce>경비병!
+
+Message:  1058
+<ce>이 생각 없는 %ra 같으니! 왜
+<ce>희생양으로 만족할 수 없었던 거지? _guard4_!
+<--->
+<ce>왜 그냥 %reg에서 떠나서 모든 것을
+<ce>내버려 두지 않았나, %ra? %oth,
+<ce>그렇게 하지 않은 걸 후회하게 될 거다!
+
+Message:  1059
+%qdt:
+ 진짜 도둑을 밝혀내 처벌받게 하겠지만, 우선 _qgiver_에
+ 있는 __qgiver_ 쪽으로 _gem_ 확보를 위해 움직여야
+ 한다.
+
+Message:  1060
+<ce>이 모든 시간이 지난 후에도, ___qgiver_에서 귀하의 평판을
+<ce>쉽게 회복할 방법은 없습니다. 한동안 그곳을 멀리하는 것이
+<ce>최선일 것입니다.
+
+Message:  1061
+%qdt:
+ _witness_의 이름으로 불리는 자가 _gem_ 도난
+ 사건의 범인으로 나를 지목하고 있다는 소식을 들었다. 이
+ 사람을 찾아봐야겠다.
+
+Message:  1091
+%qdt:
+ _witness_ 개체를 만나 _gem_ 도난 사건의 배후가
+ 바로 _merchant_ 관련 사실을 들었다. %g는
+ ___thiefhouse_의 _thiefhouse_에 있는 집에서 %g3의
+ 밤을 보내며, ___mondung_에 은닉처를 가지고 있다. 이
+ 곤경에서 벗어날 수 있을지도 모르겠다.
+
+Message:  1092
+%qdt:
+ _witness_ 개체를 만나 _gem_ 도난 사건의 배후가
+ 바로 _noble_ 관련 사실을 들었다. %g는
+ ___thiefhouse_의 _thiefhouse_에 있는 집에서 %g3의
+ 밤을 보내며, ___mondung_에 은닉처를 가지고 있다. 이
+ 곤경에서 벗어날 수 있을지도 모르겠다.
+
+Message:  1093
+%qdt:
+ _witness_ 개체를 만나 _gem_ 도난 사건의 배후가
+ 바로 _priest_ 관련 사실을 들었다. %g는
+ ___thiefhouse_의 _thiefhouse_에 있는 집에서 %g3의
+ 밤을 보내며, ___mondung_에 은닉처를 가지고 있다. 이
+ 곤경에서 벗어날 수 있을지도 모르겠다.
+
+Message:  1094
+%qdt:
+ _witness_ 개체를 만나 _gem_ 도난 사건의 배후가
+ 바로 _thief_ 관련 사실을 들었다. %g는
+ ___thiefhouse_의 _thiefhouse_에 있는 집에서 %g3의
+ 밤을 보내며, ___mondung_에 은닉처를 가지고 있다. 이
+ 곤경에서 벗어날 수 있을지도 모르겠다.
+
+Message:  1100
+<ce>_qgiver_의 문밖 탈출이 목격되었다.
+
+QBN:
+Item _necromancerletter_ letter used 1018
+Item _underkingletter_ letter used 1019
+Item _thievesguildletter_ letter used 1020
+Item _antipriestletter_ letter used 1021
+Item _antimerchantletter_ letter used 1022
+Item _antinobleletter_ letter used 1023
+Item _antithiefletter_ letter used 1024
+Item _gem_ gem
+Item _almightyletter_ letter used 1033
+Item _thiefevidenceletter_ letter used 1051
+Item _merchantevidenceletter_ letter used 1048
+Item _priestevidenceletter_ letter used 1050
+Item _nobleevidenceletter_ letter used 1049
+Item _reward_ trinket
+
+Person _qgiver_ group Questor anyInfo 1011
+Person _priest_ factiontype Temple local anyInfo 1014
+Person _noble_ face 174 factiontype Knightly_Guard female local anyInfo 1013
+Person _merchant_ face 86 faction The_Merchants female local anyInfo 1012
+Person _thief_ face 190 faction The_Thieves_Guild female local anyInfo 1015
+Person _witness_ face 1 group Innkeeper local anyInfo 1016
+Person necromancer faction The_Necromancers remote
+Person underking faction Agents_of_The_Underking remote
+Person _tg_ faction The_Thieves_Guild remote
+
+Place _mondung_ remote dungeon
+Place _thiefhouse_ local house2
+Place _withouse_ local generalstore
+Place _inn_ local tavern
+Place _merchanthome_ remote generalstore
+Place _noblehome_ remote house1
+Place _priesthome_ remote temple
+Place _thiefhome_ remote tavern
+
+Clock _letterarrivaltime_ 00:25 00:50
+Clock _questtimelimit_ 00:00 0 flag 17 range 0 5
+Clock _delay_ 00:01 0 flag 1 range 0 1
+
+Foe _guard_ is Warrior
+Foe _guard2_ is Knight
+Foe _guard3_ is Rogue
+Foe _guard4_ is Spellsword
+
+--	Quest start-up:
+	place item _gem_ at _mondung_ 
+	create foe _guard_ every 1 minutes 1 times with 100% success 
+	dialog link for person necromancer 
+	dialog link for person _tg_ 
+	dialog link for person _thief_ 
+	dialog link for location _withouse_ person _witness_ 
+	dialog link for person underking 
+	dialog link for location _thiefhouse_ person _merchant_ 
+	dialog link for person _priest_ 
+	dialog link for person _noble_ 
+	start timer _questtimelimit_ 
+	start timer _delay_ 
+	start timer _letterarrivaltime_ 
+	log 1010 step 0 
+	pick one of _merchantguilty_ _nobleguilty_ _priestguilty_ _thiefguilty_ 
+	_almightyletter_ used do _havereadwitnessletter_ 
+	legal repute -15 
+	place npc _noble_ at _noblehome_ 
+	place npc _merchant_ at _merchanthome_ 
+	place npc _witness_ at _inn_ 
+	place npc _priest_ at _priesthome_ 
+	place npc _thief_ at _thiefhome_ 
+
+variable _priestguilty_
+variable _merchantguilty_
+variable _nobleguilty_
+variable _thiefguilty_
+
+_delay_ task:
+	hide npc _qgiver_ 
+	say 1100 
+
+_latenight_ task:
+	daily from 00:00 to 02:00 
+
+_priestnight_ task:
+	when _priestguilty_ and _latenight_ and _secondwitnessdiscussion_
+	place npc _priest_ at _thiefhouse_
+	restore _priest_
+
+_priestdayletter_ task:
+	when _priestguilty_ and not _latenight_ and _secondwitnessdiscussion_
+	place item _priestevidenceletter_ at _thiefhouse_ 
+	hide npc _priest_ 
+
+_merchantnight_ task:
+	when _merchantguilty_ and _latenight_ and _secondwitnessdiscussion_
+	place npc _merchant_ at _thiefhouse_ 
+	restore _merchant_
+
+_merchantdayletter_ task:
+	when _merchantguilty_ and not _latenight_ and _secondwitnessdiscussion_
+	place item _merchantevidenceletter_ at _thiefhouse_ 
+	hide npc _merchant_ 
+
+_noblenight_ task:
+	when _nobleguilty_ and _latenight_ and _secondwitnessdiscussion_
+	place npc _noble_ at _thiefhouse_
+	restore _noble_
+
+_nobledayletter_ task:
+	when _nobleguilty_ and not _latenight_ and _secondwitnessdiscussion_
+	place item _nobleevidenceletter_ at _thiefhouse_ 
+	hide npc _noble_ 
+
+_thiefdayletter_ task:
+	when _thiefguilty_ and not _latenight_ and _secondwitnessdiscussion_
+	place item _thiefevidenceletter_ at _thiefhouse_ 
+	hide npc _thief_ 
+
+_thiefnight_ task:
+	when _thiefguilty_ and _latenight_ and _secondwitnessdiscussion_
+	place npc _thief_ at _thiefhouse_ 
+	restore _thief_
+
+_letterarrivaltime_ task:
+	repute with _tg_ exceeds 10 do _friendofthievesguild_ 
+	repute with necromancer exceeds 10 do _friendofnecros_ 
+	repute with underking exceeds 10 do _friendofunderking_
+
+_friendofthievesguild_ task:
+	_thievesguildletter_ used do _havereadthievesguildletter_ 
+	give pc _thievesguildletter_ notify 1017 
+	clear _friendofnecros_ _friendofunderking_ 
+
+_havereadthievesguildletter_ task:
+	log 1028 step 1 
+
+_friendofnecros_ task:
+	_necromancerletter_ used do _havereadnecromancerletter_ 
+	give pc _necromancerletter_ notify 1017 
+	clear _friendofunderking_ 
+
+_havereadnecromancerletter_ task:
+	log 1026 step 1 
+
+_friendofunderking_ task:
+	_underkingletter_ used do _havereadunderkingletter_ 
+	give pc _underkingletter_ notify 1017 
+
+_havereadunderkingletter_ task:
+	log 1027 step 1 
+
+_nobodyismyfriend_ task:
+	when not _friendofnecros_ and not _friendofunderking_ and not _friendofthievesguild_ 
+
+_makehelpfulletterarrive_ task:
+	when _nobodyismyfriend_ and _letterarrivaltime_ 
+
+_clickonwitness_ task:
+	clicked npc _witness_ 
+
+_firstwitnessdiscussion_ task:
+	when _clickonwitness_ and not _havereadwitnessletter_ 
+	create foe _guard2_ every 1 minutes 1 times with 100% success 
+	get item _almightyletter_ 
+	say 1025 
+	place npc _witness_ at _withouse_ 
+	clear _clickonwitness_ 
+
+_havereadwitnessletter_ task:
+	log 1034 step 3 
+
+_secondwitnessdiscussion_ task:
+	when _clickonwitness_ and _havereadwitnessletter_
+	reveal _mondung_ 
+	pick one of _honestmistake_ _annoyingwitness_ 
+	hide npc _witness_ 
+
+_giveantipriestletter_ task:
+	when _priestguilty_ and _makehelpfulletterarrive_ 
+	_antipriestletter_ used do _antipriestlog_ 
+	give pc _antipriestletter_ notify 1017 
+
+_antipriestlog_ task:
+	log 1029 step 2 
+
+_giveantimerchantletter_ task:
+	when _merchantguilty_ and _makehelpfulletterarrive_ 
+	_antimerchantletter_ used do _antimerchantlog_ 
+	give pc _antimerchantletter_ notify 1017 
+
+_antimerchantlog_ task:
+	log 1030 step 2 
+
+_giveantinobleletter_ task:
+	when _nobleguilty_ and _makehelpfulletterarrive_ 
+	_antinobleletter_ used do _antinoblelog_ 
+	give pc _antinobleletter_ notify 1017 
+
+_antinoblelog_ task:
+	log 1031 step 2 
+
+_giveantithiefletter_ task:
+	when _thiefguilty_ and _makehelpfulletterarrive_ 
+	_antithiefletter_ used do _antithieflog_ 
+	give pc _antithiefletter_ notify 1017 
+
+_antithieflog_ task:
+	log 1032 step 2 
+
+variable _annoyingwitness_
+variable _honestmistake_
+_revealthiefhonestmistake_ task:
+	when _honestmistake_ and _thiefguilty_ 
+	log 1046 step 4 
+	say 1038 
+
+_revealnoblehonestmistake_ task:
+	when _honestmistake_ and _nobleguilty_ 
+	log 1044 step 4 
+	say 1036 
+
+_revealmerchanthonestmistake_ task:
+	when _honestmistake_ and _merchantguilty_ 
+	log 1043 step 4 
+	say 1035 
+
+_revealpriesthonestmistake_ task:
+	when _honestmistake_ and _priestguilty_ 
+	log 1045 step 4 
+	say 1037 
+
+_revealthiefannoyingwitness_ task:
+	when _thiefguilty_ and _annoyingwitness_ 
+	log 1094 step 4 
+	say 1042 
+
+_revealpriestannoyingwitness_ task:
+	when _priestguilty_ and _annoyingwitness_ 
+	log 1093 step 4 
+	say 1041 
+
+_revealmerchantannoyingwitness_ task:
+	when _merchantguilty_ and _annoyingwitness_ 
+	log 1091 step 4 
+	say 1039 
+
+_revealnobleannoyingwitness_ task:
+	when _nobleguilty_ and _annoyingwitness_ 
+	log 1092 step 4 
+	say 1040 
+
+_retrievegem_ task:
+	clicked item _gem_ 
+	say 1047 
+
+_readincriminatingletter_ task:
+	clicked item _priestevidenceletter_ 
+	clicked item _thiefevidenceletter_ 
+	clicked item _merchantevidenceletter_ 
+	clicked item _nobleevidenceletter_ 
+	say 1052 
+
+_makevictimreturn_ task:
+	when _deliverlettertomerchant_ or _deliverlettertonoble_ or _deliverlettertopriest_ or _deliverlettertothief_ 
+	log 1059 step 5 
+	restore _qgiver_ 
+
+_deliverlettertothief_ task:
+	toting _nobleevidenceletter_ and _thief_ clicked 
+	say 1053 
+
+_deliverlettertomerchant_ task:
+	toting _thiefevidenceletter_ and _merchant_ clicked 
+	say 1054 
+
+_deliverlettertopriest_ task:
+	toting _merchantevidenceletter_ and _priest_ clicked 
+	say 1055 
+
+_deliverlettertonoble_ task:
+	toting _priestevidenceletter_ and _noble_ clicked 
+	say 1056 
+
+_noevidenceconfrontation_ task:
+	when _clickanyone_ and not _makevictimreturn_ 
+	create foe _guard3_ every 1 minutes 1 times with 100% success 
+	say 1057 
+	clear _clickmerchant_ _clicknoble_ _clickpriest_ _clickthief_ 
+	start task _reminderwitness_
+
+_reminderwitness_ task:
+	log 1061 step 2
+
+_victory_ task:
+	toting _gem_ and _qgiver_ clicked 
+	legal repute -200
+	give pc _reward_ 
+	change repute with _qgiver_ by +10 
+	legal repute +105
+	end quest 
+--changing to -200/+105 again. Criminal conspiracy charges during the quest
+--can lower the player's legal rep more than intended.
+
+_clickmerchant_ task:
+	clicked npc _merchant_ 
+
+_clicknoble_ task:
+	clicked npc _noble_ 
+
+_clickpriest_ task:
+	clicked npc _priest_ 
+
+_clickthief_ task:
+	clicked npc _thief_ 
+
+_clickanyone_ task:
+	when _clickmerchant_ or _clicknoble_ or _clickpriest_ or _clickthief_ 
+
+_revenge_ task:
+	when _clicknoble_ and _deliverlettertothief_ 
+	when _clickpriest_ and _deliverlettertonoble_ 
+	when _clickmerchant_ and _deliverlettertopriest_ 
+	when _clickthief_ and _deliverlettertomerchant_ 
+	create foe _guard4_ every 1 minutes 1 times with 100% success 
+	say 1058 
+
+_questtimelimit_ task:
+	have _gem_ set _illkeepthatgem_ 
+
+_illkeepthatgem_ task:
+	make _gem_ permanent 
+
+_youhavefailed_ task:
+	when _questtimelimit_ and not _victory_ 
+	say 1060 
+	restore _qgiver_ 
+	end quest 

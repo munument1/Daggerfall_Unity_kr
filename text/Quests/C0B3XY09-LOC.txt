@@ -1,0 +1,159 @@
+-- Quest: C:\QUESTS\WORKING\C0B3XY09.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: temple
+-- Repute: 3X
+-- QuestId: 9
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 13
+Quest: C0B3XY09
+DisplayName: 위대한 악
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pcn, 제 이름은 _qgiver_입니다.
+<ce>%god께서 근처 던전의 심장부에서 거대한 악이
+<ce>자라나고 있다는 예언을 하셨습니다. 당신이 가서 이것을
+<ce>파괴해주셨으면 합니다. 해주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>시간이 없습니다. 이 퀘스트를 맡을 사람을 찾아야만 합니다.
+
+AcceptQuest:  [1002]
+<ce>낭비할 시간이 없습니다. ___dungeon_ 쪽으로 여행하십시오.
+<ce>그곳에서 _evilfocus_ 발견이 가능할 것입니다.
+<ce>=traveltime_일 이내에 그것을 파괴하면 모든 것이 다시
+<ce>평온해질 것입니다. 완료되면 사원에 징조가 나타날 것입니다.
+<ce>저에게 돌아오시면 충분한 보상을 드리겠습니다.
+
+QuestComplete:  [1004]
+<ce>%pcn, 우리 성직자들 모두가 당신에게 감사합니다.
+<ce>악은 파괴되었습니다. 약속대로 보상으로 _gold_ 골드를
+<ce>드리겠습니다.
+
+RumorsDuringQuest:  [1005]
+__qgiver_의 갑작스러운 관심이 ___dungeon_에 쏠리고
+있습니다.
+
+RumorsPostfailure:  [1006]
+악은 여전히 ___dungeon_ 안에 남아 있지만, 형태가
+변했습니다.
+
+RumorsPostsuccess:  [1007]
+__qgiver_의 활약으로 ___dungeon_ 안에 존재하던, 거의
+알려지지 않았던 악이 파괴되었습니다.
+
+QuestorPostsuccess:  [1008]
+당신이 바로 그 _evilfocus_의 파괴자군요, 물론
+기억하고말고요.
+
+QuestorPostfailure:  [1009]
+_evilfocus_의 번성은 여전합니다. 당신에게 줄 것은
+경멸뿐입니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 __qgiver_의 일원인 _qgiver_
+ 인물이 제게 ___dungeon_ 안에 있는 사악한 _evilfocus_
+ 파괴 임무를 맡겼습니다. =traveltime_일 이내에 처리하지
+ 않으면 이 악이 무고한 세상에 풀려나게 될 것입니다. 뭐,
+ 대부분은 무고하겠지만요.
+
+Message:  1011
+<ce>_evilfocus_에 손을 뻗자 아름다운 여인으로 변합니다.
+<ce>
+<ce>"정말 맛있는 젊은 필멸자군! _evilfocus_ 개체를 파괴하러
+<ce>온 모양이네. 더 좋은 생각이 있어. 이 마법 _magicitem_
+<ce>물품을 줄 테니, 사원으로 돌아가서 _evilfocus_ 개체를 찾을
+<ce>수 없었다고 말하는 거야. 그들도 당신을 탓하긴 어려울 테고,
+<ce>당신은 _magicitem_ 물품을 가질 수 있지."
+
+Message:  1012
+<ce>"그렇다면 그 경건한 필멸자처럼 죽어라!"
+
+Message:  1013
+<ce>저주가 풀렸습니다. _qgiver_에게 보고하십시오.
+
+Message:  1014
+<ce>이 배신에 대한 __qgiver_의 분노는
+쉽게 가라앉지 않을 것입니다.
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--      =traveltime_ occurs 2 times.
+--       ___dungeon_ occurs 8 times.
+--        ___qgiver_ occurs 4 times.
+--       _evilfocus_ occurs 9 times.
+--            _gold_ occurs 1 time.
+--       _magicitem_ occurs 2 times.
+--          _qgiver_ occurs 2 times.
+
+QBN:
+Item _evilfocus_ religious
+Item _gold_ gold
+Item _magicitem_ magic_item
+
+Person _qgiver_ group Questor
+
+Place _dungeon_ remote dungeon
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _guardian_ is Daedra_seducer
+Foe _spiders_ is 6 Spider
+Foe _F.02_ is Gargoyle
+Foe _F.03_ is Harpy
+Foe _lesserdaedra_ is Daedroth
+
+--	Quest start-up:
+	place item _evilfocus_ at _dungeon_ 
+	start timer _traveltime_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	clicked item _evilfocus_ 
+	place foe _guardian_ at _dungeon_ 
+	prompt 1011 yes _yes_ no _no_ 
+	take _evilfocus_ from pc
+
+_yes_ task:
+	remove foe _guardian_
+--better to just remove the daedra and avoid confusion
+	get item _magicitem_ 
+	make _magicitem_ permanent 
+	change repute with _qgiver_ by -10 
+	say 1014
+	end quest 
+
+_no_ task:
+	create foe _F.02_ every 5 minutes 1 times with 100% success 
+	create foe _spiders_ every 9 minutes 1 times with 100% success 
+	create foe _lesserdaedra_ every 7 minutes 1 times with 100% success 
+	create foe _F.03_ every 3 minutes 1 times with 100% success 
+	say 1012 
+
+_S.04_ task:
+	killed 1 _guardian_ 
+	say 1013
+--added a victory message. original quest was confusing up to this point.
+
+_questdone_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _questdone_ and _S.04_
+	give pc _gold_ 
+	end quest 
+
+_clearclick_ task:
+	when _questdone_ and not _S.04_ 
+	clear _questdone_ _clearclick_
+--permits repeated clearclick

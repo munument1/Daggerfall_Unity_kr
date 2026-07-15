@@ -1,0 +1,153 @@
+-- Quest: C:\QUESTS\WORKING\K0C00Y08.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: merchant
+-- Repute: 0
+-- QuestId: 8
+Messages: 13
+Quest: K0C00Y08
+DisplayName: 희귀한 책
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+_book_에 대해 들어본 적 있나? 아주 희귀한 책이라
+거의 볼 수 없지만, %reg의 던전에 숨겨진 사본을
+찾아냈네. 지금 _upfront_ 골드 조각을 주고, 책을 손에
+넣으면 _gold_ 골드 조각을 주겠네. 동의하나?
+<---> 어떤 상점에서도 구할 수 없는, 천문학적인
+가격을 줘도 살 수 없는 아주 특별한 책을 찾고 있네. 최근에
+그 책의 사본이 여기서 멀지 않은 던전에 나타났다는 소문을
+들었네. 이 책을 찾는 퀘스트를 수락한다면, 지금
+_upfront_ 골드 조각을 주고 돌아오면 _gold_ 골드
+조각을 더 주겠네. 거래하겠나, %pcf?
+
+RefuseQuest:  [1001]
+좋네. 그럼 다른 용병을 찾아보지.
+
+AcceptQuest:  [1002]
+좋아. ___mondung_에서 책을 가져와 돌아올 때까지
+=queston_일을 주겠네. 그 시간이 지나면 _gold_
+골드 조각은 몰수될 걸세. 책 이름은 _book_일세.
+행운을 비네, %pcf.
+
+QuestComplete:  [1004]
+아, 훌륭하군. 여기 약속했던 _gold_ 골드 조각이 있네.
+정말 고맙네, %pcf.
+
+RumorsDuringQuest:  [1005]
+며칠 전에 종기가 났는데... 다 나았어. <---> 방금
+날씨에 대해 세 시간 동안 대화했어. <---> 날씨는
+이맘때쯤이면 꽤 평범한 편이지. <---> 올해는
+%cn의 날씨가 이맘때치고는 조금 쌀쌀한 것 같아.
+<---> 작년 이맘때보다 오늘이 훨씬 따뜻한 건 확실해.
+<---> 우리 큰이모가 일리악 만 건너편에 있는
+전문의를 만나러 가셔. <---> 이 동네는 어두워지는
+시간이 항상 신기하단 말이지. <---> 이 근처에 전쟁
+기념비를 세워야 해. <---> 요즘 애들은 마법을 쓰니
+원. %oth, 잘 모르겠어. <---> 어젯밤에 아주
+이상한 꿈을 꿨어. <---> 재미있는 농담을 들었어.
+%jok <---> %jok 사실 그건 농담이야.
+<---> %jok 그게 무슨 뜻인지 설명해 줄 수
+있어? <---> %reg의 법 체계는 장점도 있고
+단점도 있지.
+
+RumorsPostfailure:  [1006]
+며칠 전에 종기가 났는데... 다 나았어. <---> 방금
+날씨에 대해 세 시간 동안 대화했어. <---> 날씨는
+이맘때쯤이면 꽤 평범한 편이지. <---> 올해는
+%cn의 날씨가 이맘때치고는 조금 쌀쌀한 것 같아.
+<---> 작년 이맘때보다 오늘이 훨씬 따뜻한 건 확실해.
+<---> 우리 큰이모가 일리악 만 건너편에 있는
+전문의를 만나러 가셔. <---> 이 동네는 어두워지는
+시간이 항상 신기하단 말이지. <---> 이 근처에 전쟁
+기념비를 세워야 해. <---> 요즘 애들은 마법을 쓰니
+원. %oth, 잘 모르겠어. <---> 어젯밤에 아주
+이상한 꿈을 꿨어. <---> 재미있는 농담을 들었어.
+%jok <---> %jok 사실 그건 농담이야.
+<---> %jok 그게 무슨 뜻인지 설명해 줄 수
+있어? <---> %reg의 법 체계는 장점도 있고
+단점도 있지.
+
+RumorsPostsuccess:  [1007]
+_qgiver_의 모습은 %g3의 새로운 획득물에
+하피처럼 기뻐하고 있다.
+
+QuestorPostsuccess:  [1008]
+_book_ 전달을 맡은 %ra, 무엇을
+도와드릴까요?
+
+QuestorPostfailure:  [1009]
+_book_의 행방이 또다시 묘연해졌는데, 자네가 나를
+귀찮게 하다니 정말 몰상식하군. 꺼져버려.
+
+QuestLogEntry:  [1010]
+%qdt:
+ __qgiver_의 _qgiver_, ___qgiver_ 지역이 아주
+ 희귀한 책인 _book_ 물품을 찾기 위해 나를
+ ___mondung_ 방향으로 보냈다. =queston_일 이내에
+ 돌아오면 _gold_ 골드 조각을 받기로 했다.
+
+Message:  1011
+_book_ 획득에 성공했다.
+
+Message:  1012
+_qgiver_의 분노가 예상된다. 자네가 %g2에게
+책을 가져다주기로 한 시간이 지났어.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 2 times.
+--               %g2 occurs 3 times.
+--               %g3 occurs 1 time.
+--              %jok occurs 6 times.
+--              %oth occurs 10 times.
+--              %pcf occurs 5 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--              %reg occurs 3 times.
+--         =queston_ occurs 7 times.
+--       ___mondung_ occurs 2 times.
+--        ___qgiver_ occurs 2 times.
+--            _book_ occurs 17 times.
+--            _gold_ occurs 14 times.
+--          _qgiver_ occurs 3 times.
+--         _upfront_ occurs 2 times.
+
+QBN:
+Item _gold_ gold
+Item _upfront_ gold range 5 to 50
+Item _book_ book2
+
+Person _qgiver_ group Questor
+
+Place _mondung_ remote dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	place item _book_ at _mondung_ 
+	start timer _queston_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	get item _upfront_ 
+	make _upfront_ permanent 
+
+_queston_ task:
+	have _book_ set _S.03_ 
+	end quest 
+
+_S.01_ task:
+	clicked item _book_ 
+	say 1011 
+
+_S.02_ task:
+	toting _book_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+_S.03_ task:
+	say 1012 
+	make _book_ permanent 

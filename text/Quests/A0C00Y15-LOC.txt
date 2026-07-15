@@ -1,0 +1,276 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y15.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 15
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 21
+Quest: A0C00Y15
+DisplayName: 배달부
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>당신에 대해 들었습니다, %pcn 님.
+<ce>저는 _questgiver_입니다. 부탁 하나 드려도 되겠습니까? 혹시
+<ce>___pickupregion_ 근처를 지나실 일이 있으신가요?
+<ce>그렇다면 그곳에 있는 누군가에게 소포를 전달해야 합니다.
+<ce>기꺼이 _gold_ 골드를 사례하겠습니다.
+<--->
+<ce>당신의 명성은 익히 들었습니다,
+<ce>%pcn 님. 배달부가 필요합니다. 혹시 ___pickupregion_
+<ce>쪽으로 향하실 계획이 있으신가요?
+<ce>그곳에 소포 하나만 전해주시겠습니까? 수고비로 _gold_
+<ce>골드를 드리겠습니다.
+
+RefuseQuest:  [1001]
+<ce>안타깝군요.
+<--->
+<ce>일할 의지가 있는 사람을 다시 찾아봐야겠네요.
+<--->
+<ce>당신은 제가 익히 들어온 그 %pcn 님과는 다른 분인가
+<ce>보군요.
+
+AcceptQuest:  [1002]
+<ce>좋습니다! 이 소포를 ___pickupregion_ 님께 가져가서
+<ce>_pickupregion_ 님을 찾으십시오.
+<ce>%g 님께서 보상해 주실 겁니다. =traveltime_일
+<ce>안으로 도착해야 합니다.
+<ce>여기 소포가 있습니다.
+<--->
+<ce>운이 좋군요! 제 친구가 ___pickupregion_에 있는
+<ce>_pickupregion_입니다.
+<ce>주변에 물어보시면 다들 %g2 님을 알 겁니다.
+<ce>%g 님께서 즉시 보상해 주실 겁니다. 만약
+<ce>=traveltime_일보다 더 걸린다면,
+<ce>그냥 버리는 게 나을 겁니다.
+<ce>여기 있습니다.
+
+QuestComplete:  [1004]
+<ce>_questgiver_ 님께서 제시간에 이걸 가져다주실 수 있기를
+<ce>바랐습니다. %g 님께서 요새 너무 바쁘셨거든요.
+<ce>약속했던 _gold_ 여기 있습니다.
+
+RumorsDuringQuest:  [1005]
+<ce>오크들이 다시 소란을 피우고 있다는군요.
+
+RumorsPostfailure:  [1006]
+<ce>죽은 Lysandus 왕의 유령이 대거폴에서 목격되었다고들
+<ce>합니다.
+
+RumorsPostsuccess:  [1007]
+<ce>대거폴 해안 근처에서 폭풍으로 배 한 척이 난파되었다고
+<ce>합니다. 황제의 사절이 타고 있었다는군요.
+
+QuestorPostsuccess:  [1008]
+<ce>___pickupregion_ 님께 소포를 전달해 주셔서 정말 감사합니다.
+
+QuestorPostfailure:  [1009]
+<ce>이런 악당 같으니! 내 소포로 무슨 짓을 한 거지? 팔아치웠나?
+<ce>___pickupregion_ 님께 도착하지 않았어. 당장 나가.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___questgiver_의 _questgiver_ 님께서 ___pickupregion_의
+ _pickupregion_ 님께 소포를 전달하는 임무를 맡기셨다.
+ =traveltime_일 안으로 전달해야 한다.
+
+Message:  1011
+<ce>이 책은 감상적인 가치가 좀 있습니다. _pickupregion_ 님께서는
+<ce>_book_ 사본을 본 지 수년이 지났거든요.
+
+Message:  1012
+<ce>_pickupregion_ 님께서 %g 님께서 만드시는 특별한
+<ce>_ingredient_ 제작에 이것이 필요하답니다.
+
+Message:  1013
+<ce>이 _jewelry_의 경우 _pickupregion_ 님께 드리는 선물로,
+<ce>%g2 님과의 계약을 확정 지을 것입니다.
+
+Message:  1014
+<ce>이것은 _mensclothing_ 특별한 물건입니다. 어머니께서
+<ce>_pickupregion_ 축제를 위해 만들어 주셨지요.
+
+Message:  1015
+<ce>_pickupregion_ 님께서 이 _painting_ 제작을 의뢰하셨습니다.
+<ce>내일 있을 %g3의 모임에 꼭 필요합니다.
+
+Message:  1016
+<ce>_pickupregion_ 님께서 이 _potion_ 물품을 가능한 한 빨리
+<ce>필요로 하십니다.
+
+Message:  1017
+<ce>_pickupregion_ 님께서 위협을 받고 계십니다. 이 _weapon_
+<ce>물건이 %g3의 두려움을 덜어드릴 수 있을 겁니다.
+
+Message:  1018
+<ce>_pickupregion_ 님의 결혼식을 위해 이 훌륭한 _womensclothing_
+<ce>물품을 구매했습니다. 제시간에 도착하지 못한다면 정말이지
+<ce>몹시 난처해질 겁니다.
+
+Message:  1019
+<ce>무엇을 원하시나요? _questgiver_? 네, %g 님께서
+<ce>제게 소포를 보내주시겠다고 약속하셨습니다. 곧 받지 못하면,
+<ce>너무 늦어버릴 겁니다.
+
+Message:  1020
+<ce>당신이 _questgiver_ 님으로부터 온 소포를 가지고 있다는 걸
+<ce>안다. 내놔라, 그럼 아무도 다치지 않을 거다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 6 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 13 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--      =traveltime_ occurs 3 times.
+--  ___pickupregion_ occurs 8 times.
+--    ___questgiver_ occurs 1 time.
+--            _book_ occurs 3 times.
+--            _gold_ occurs 5 times.
+--      _ingredient_ occurs 1 time.
+--         _jewelry_ occurs 1 time.
+--    _mensclothing_ occurs 1 time.
+--        _painting_ occurs 1 time.
+--    _pickupregion_ occurs 11 times.
+--          _potion_ occurs 1 time.
+--      _questgiver_ occurs 5 times.
+--          _weapon_ occurs 1 time.
+--  _womensclothing_ occurs 1 time.
+
+QBN:
+Item _book_ book0
+Item _womensclothing_ womens_clothing
+Item _potion_ misc
+Item _mensclothing_ mens_clothing
+Item _painting_ portrait
+Item _weapon_ weapon
+Item _ingredient_ large_plant
+Item _jewelry_ trinket
+Item _gold_ gold
+
+Person _questgiver_ face 137 group Questor
+Person _pickupregion_ face 232 group Local_3.0 remote
+
+Clock _traveltime_ 00:00 0 flag 1 range 1 4
+--precise timer needed due to short time limit
+
+Foe _thief_ is Burglar
+
+--	Quest start-up:
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pick one of _S.01_ _S.10_ 
+	pick one of _S.14_ _S.15_ _S.15_ _S.15_ 
+	create npc _pickupregion_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	pick one of _S.02_ _snitch0_ _S.04_ _S.05_ 
+--added underscores to snitch0
+
+_S.02_ task:
+	get item _book_ saying 1011 
+
+_snitch0_ task:
+	get item _ingredient_ saying 1012 
+
+_S.04_ task:
+	get item _jewelry_ saying 1013 
+
+_S.05_ task:
+	get item _mensclothing_ saying 1014 
+
+_S.06_ task:
+	get item _painting_ saying 1015 
+
+_S.07_ task:
+	get item _potion_ saying 1016 
+
+_S.08_ task:
+	get item _weapon_ saying 1017 
+
+_S.09_ task:
+	get item _womensclothing_ saying 1018 
+
+_S.10_ task:
+	pick one of _S.06_ _S.07_ _S.08_ _S.09_ 
+
+_S.11_ task:
+	toting _jewelry_ and _pickupregion_ clicked 
+	toting _mensclothing_ and _pickupregion_ clicked 
+	toting _painting_ and _pickupregion_ clicked 
+	toting _potion_ and _pickupregion_ clicked 
+	toting _weapon_ and _pickupregion_ clicked 
+	toting _book_ and _pickupregion_ clicked 
+	toting _ingredient_ and _pickupregion_ clicked 
+	toting _womensclothing_ and _pickupregion_ clicked 
+	give pc _gold_ 
+	end quest 
+--removed unnecessary delay
+
+_S.12_ task:
+	clicked npc _pickupregion_ 
+
+_S.13_ task:
+	when _S.12_ and not _S.11_ 
+	say 1019 
+	clear _S.12_ _S.13_ 
+
+_S.14_ task:
+	create foe _thief_ every 200 minutes 3 times with 10% success 
+
+variable _S.15_
+_S.16_ task:
+	injured _thief_ 
+	prompt 1020 yes _yes_ no _no_ 
+
+_yes_ task:
+	restrain foe _thief_ 
+
+variable _no_
+_yes1_ task:
+	when _yes_ and _S.02_ 
+	take _book_ from pc
+	give item _book_ to _thief_ 
+--added "take X from pc" for all yes# tasks.
+
+_yes2_ task:
+	when _yes_ and _snitch0_ 
+	take _ingredient_ from pc
+	give item _ingredient_ to _thief_ 
+
+_yes3_ task:
+	when _yes_ and _S.04_ 
+	take _jewelry_ from pc
+	give item _jewelry_ to _thief_ 
+
+_yes4_ task:
+	when _yes_ and _S.05_ 
+	take _mensclothing_ from pc
+	give item _mensclothing_ to _thief_ 
+
+_ring_ task:
+	when _yes_ and _S.06_ 
+	take _painting_ from pc
+	give item _painting_ to _thief_ 
+
+_yes6_ task:
+	when _yes_ and _S.07_
+	take _potion_ from pc 
+	give item _potion_ to _thief_ 
+
+_note_ task:
+	when _yes_ and _S.08_ 
+	take _weapon_ from pc
+	give item _weapon_ to _thief_ 
+
+_poet_ task:
+	when _yes_ and _S.09_ 
+	take _womensclothing_ from pc
+	give item _womensclothing_ to _thief_ 
