@@ -49,13 +49,13 @@ QuestorPostfailure:  [1009]
 
 QuestLogEntry:  [1010]
 __vamp_ ___vamp_
-
+ 
 친애하는 %pcn,
-
+ 
 %vam께서 당신을 필요로 하십니다. 즉시 오십시오.
-
+ 
 죽음 속에서,
-
+ 
 _vamp_
 
 Message:  1011

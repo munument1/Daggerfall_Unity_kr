@@ -46,12 +46,12 @@ Message:  1022
 
 Message:  1030
 친애하는 %pcn 님께:
-
+ 
 _traitor_ 님의 친구라면, 부디 __tavern_의
 _tavern_에서 ___tavern_ 님을 가능한 한 빨리 만나
 주십시오. 생사가 걸린 문제입니다! =firsttimer_일 이내로
 저를 찾아와 주십시오!
-
+ 
 <ce>_contact1_
 
 Message:  1040

@@ -65,12 +65,12 @@ Message:  1021
 
 Message:  1030
 %pcn --
-
+ 
 계획대로 ___contact1_에서 만나지 못해 미안하네. 감시가
 너무 심해져서 기다릴 수가 없었네. ___contact2_에 대체
 장소를 마련했네. __contact2_에서 기다리고 있을
 =contact2_ 찾아가게나.
-
+ 
 <ce>등 뒤를 조심하게,
 <ce>
 <ce>_contact1_

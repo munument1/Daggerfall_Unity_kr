@@ -101,12 +101,12 @@ Message:  1020
 
 Message:  1021
 =thief_,
-
+ 
 표적은 %pcn의 이름을 지닌 %ra 종족이며,
 __contact_에서 _item2_ 물품을 가져갈 것이다.
 _item2_ 물품을 내게 가져오도록. 전령은 죽든 살든
 상관없다.
-
+ 
 <ce>_qgenemy_
 
 Message:  1030

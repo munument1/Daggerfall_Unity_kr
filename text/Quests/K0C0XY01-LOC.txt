@@ -91,7 +91,7 @@ Message:  1011
 
 Message:  1012
 __qgiver_, ___qgiver_ 친애하는 %pcn께,
-
+ 
 바쁘신 와중에 번거롭게 해 드려 죄송합니다만, 전사
 길드로부터 ___mondung_ 지역을 청소하기 위해 처음 고용했던
 용병, _contact_에 관한 연락을 받았습니다. 면담의 자세한
@@ -102,9 +102,9 @@ ___mondung_에서 눈에 띌 것입니다. 자, 길드장과의 약속은
 지켰습니다. 개인적으로는 당신이 이 편지를 버리고
 _contact_ 측이 ___mondung_에서 썩어가도록 내버려
 두어도 상관없습니다.
-
+ 
 당신의 귀환을 간절히 기다리고 있습니다.
-
+ 
 <ce>진심을 담아, _qgiver_
 
 Message:  1013
@@ -137,8 +137,7 @@ Message:  1052
 Message:  1053
 하피 4마리 처치
 
---위의 번호들이 이미 사용 중이라 메시지 번호를 103X에서
-105X로 변경함
+--changed these msgs from 103X to 105X since those numbers were already taken above
 
 Message:  1040
 <ce>보수를 드리기 전에 증거가 필요합니다.

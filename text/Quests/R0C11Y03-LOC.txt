@@ -30,6 +30,8 @@ AcceptQuest:  [1002]
 <ce>됩니다. 전달을 마친 후, 보상을 받으러 돌아오십시오.
 <ce>___chemist_에게 행운과 신의 가호가 있기를.
 
+--in 1002, added the name of the city you need to go to at the end.
+
 QuestFail:  [1003]
 <ce>당신이 데이드라의 심장을 제 연금술사에게 전달하지 않았다는
 <ce>걸 제가 모를 줄 아셨나요? 분명한 실패에 대한 보상을
@@ -41,8 +43,7 @@ QuestComplete:  [1004]
 <ce>막지 못할 거라 예상했소. 당신의 뛰어난 기술은 충분히
 <ce>확인되었소. 고맙소, 여기 약속한 =reward_ 골드가 있소.
 
---1004년에 특정 골드 액수를 보장하기 위해 _reward_
-물품을 =reward_ 물품을 이용해 변경함.
+--in 1004, changed _reward_ to =reward_ to ensure specific gold amount.
 
 RumorsDuringQuest:  [1005]
 하늘에 흉조가 나타났습니다. 데이드릭 별들이 밝게 빛나고

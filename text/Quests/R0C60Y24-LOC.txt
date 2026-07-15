@@ -118,7 +118,7 @@ Message:  1030
 
 Message:  1040
 =vampleader_님,
-
+ 
 그 저주받을 _questgiver_ 측이 마침내 %g께서
 찾으시던 _item_ 물품을 손에 넣었고, 이를
 _contact_에게 보내려 합니다. ==vampire_께서 그것이
@@ -129,9 +129,9 @@ _contact_에게 보내려 합니다. ==vampire_께서 그것이
 이 자를 과소평가하지 마십시오. %pcf 님은 꽤 악명이
 높습니다. _item_ 물품을 즉시 제게 가져오십시오.
 __vamphouse_의 _vamphouse_에서 기다리고 있겠습니다.
-
+ 
 죽음 안에서,
-
+ 
 _vampire_
 
 

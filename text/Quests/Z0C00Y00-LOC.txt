@@ -48,7 +48,7 @@ QuestComplete:  [1004]
 _enemy_ 측이 죽었으니, 이제 기분이 훨씬 나아졌을
 겁니다. 그것만으로도 당신께 감사드립니다.
 
--- 1004번의 이상한 <---> 제거.
+--removed odd <---> in 1004.
 
 RumorsDuringQuest:  [1005]
 _enemy_의 말에 따르면 %g가 다크

@@ -130,6 +130,8 @@ Message:  1014
 <ce>직접 죽였을지도 모르겠군요. 여기 _lessgold_ 골드 입니다.
 <ce>전액은 아니지만, 감사하게 생각합니다.
 
+--removed erroneous blank msg inside 1014 
+
 -- Symbols used in the QRC file:
 --
 --                %g occurs 6 times.

@@ -74,9 +74,9 @@ Message:  1012
 
 Message:  1020
 %qdt
-
+ 
 %vam의 %pcn님께,
-
+ 
 제 소개를 하죠. 저는 _hunter_입니다. 저에 대해
 들어보셨을지도 모르겠군요. 유명한 뱀파이어 사냥꾼
 말입니다. 하지만 저를 너무 성급하게 판단하지는 마십시오.
@@ -93,9 +93,9 @@ Message:  1020
 함으로써 당신은 스스로를 해방할 뿐만 아니라,
 %reg의 심장에 박힌 암덩어리를 제거하게 될
 것입니다.
-
+ 
 <ce>(계속)
-
+ 
 저 역시 당신의 "피의 아버지"가 어디에 있는지 알지
 못하지만, 제 정보통에 따르면 %vam의 고위 인사이자
 이 정보를 알고 있을 ___vamp1_의 _vamp1_에 대해
@@ -105,7 +105,7 @@ Message:  1020
 고려해 보십시오, %pcn. 당신에게는 =huntstart_일의
 시간이 있습니다. 그 시간이 지나면 당신과 %vam의
 나머지 무리들은 해충처럼 사냥당할 것입니다.
-
+ 
 <ce>_hunter_
 
 Message:  1021
@@ -183,6 +183,8 @@ Message:  1050
  %g는 ___vamp1_의 _vamp1_ 쪽이 알지도
  모른다고 제안했다. 뱀파이어 사냥이 시작되기까지
  =huntstart_일 남았다.
+
+-moved vamp1 line down, was running outside journal boundaries
 
 Message:  1051
 %qdt:

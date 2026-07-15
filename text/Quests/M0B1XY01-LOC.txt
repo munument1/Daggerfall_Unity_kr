@@ -68,6 +68,9 @@ Message:  1030
  다섯 마리를 죽이고 =1stparton_일 안에 돌아와야 한다.
 
 
+--separated qdt line, added s to Fighter
+
+
 Message:  1080
 <ce>이봐, 그동안 정말 큰 도움이 됐으니, ___newdung_ 쪽으로
 <ce>가는 지도를 주지. 마음껏 죽이고 약탈할 수 있을 거야. 내

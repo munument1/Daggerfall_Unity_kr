@@ -39,9 +39,9 @@ RumorsPostsuccess:  [1007]
 
 Message:  1011
 _temple_ __temple_
-
+ 
 친애하는 %pcn에게,
-
+ 
 해머펠의 현명한 여인인 예언자를 대신하여 당신과 이야기하기
 위해 멀리서 왔습니다. 마법사 길드의 대마도학장님께서
 당신을 명예롭고 재능 있는 매지카 시전자로 높이
@@ -50,9 +50,9 @@ _temple_ __temple_
 어두운 예언이 =queston1_일 안에 실현될 것이며, 모든
 %reg의 눈에서 눈물이 흐를 것입니다. 곧 뵙기를
 바랍니다.
-
+ 
 진심을 담아,
-
+ 
 시종사제
 
 Message:  1012
@@ -109,8 +109,7 @@ Message:  1016
  호위해달라는 요청을 받았다. 그녀라면 _noble_ 설득할
  수 있을지도 모르지만, 나도 할 수 있을 것이다.
 
--changed 1016 to shorter lines, was running offscreen in
-journal
+-changed 1016 to shorter lines, was running offscreen in journal
 
 Message:  1017
 <ce>당신이 %pcn 님이군요, %ra께서 저를
@@ -168,16 +167,16 @@ Message:  1023
 
 Message:  1024
 _temple_ __temple_
-
+ 
 친애하는 %pcn님께,
-
+ 
 가능한 한 빨리 귀하와 이야기를 나누어야 합니다. 저는
 해머펠의 예언자를 대리하고 있습니다. 앞으로 며칠간 저는
 _temple_에 머물 예정입니다. 미래가 돌이킬 수 없이
 결정되기까지 =queston2_일밖에 남지 않았으니, 곧 뵙기를
 바랍니다. 이 문제는 참으로 중대합니다. 부디 저를 만나러
 오는 일을 잊지 마십시오.
-
+ 
 시종사제
 
 

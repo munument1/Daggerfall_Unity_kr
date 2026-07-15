@@ -38,8 +38,7 @@ AcceptQuest:  [1002]
 <ce>기다릴 것입니다. ==daedra_께서 당신의 성스러운 임무에
 <ce>미소 지으시길.
 
---needed to change %g on line 36 due to gender
-mismatches
+--needed to change %g on line 36 due to gender mismatches
 
 QuestComplete:  [1004]
 <ce>훌륭합니다, %pcf 님. ==qgiver_ 님과의 약속을

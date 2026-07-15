@@ -86,7 +86,7 @@ QuestLogEntry:  [1010]
  _magesguild_에서 _sleepingmage_의 보호를 맡기로 했습니다.
  즉시 시작하여 3시간 동안 %g2를 경비해야 합니다.
 
--%qdt 줄에서 아래로 이동됨.
+-moved line down from %qdt line.
 
 Message:  1011
 <ce>비켜라, 견습생 애송아! 우리는 _sleepingmage_ 처단을 위해

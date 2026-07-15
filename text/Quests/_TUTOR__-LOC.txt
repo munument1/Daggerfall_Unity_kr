@@ -30,12 +30,10 @@ RumorsPostfailure:  [1006]
 즐길 기회도 있는 좋은 곳이라고 들었습니다. 왕실에서 위험한
 일을 맡길 영웅들을 찾고 있거든요.
 
---이전 "퀘스트 도중"에 있던 소문들은 "퀘스트 완료 후"로
-옮겨졌습니다. 튜토리얼이 너무 짧아 이 메시지들이
-정상적으로 나타나기 어려웠기에, 퀘스트 종료 후 7일간 소문
-목록에 두는 것이 적절한 기간이라 판단했습니다.
---이론적으로는 튜토리얼을 보이지 않는 상태로 훨씬 길게
-연장하여 소문을 오랫동안 유지할 수도 있습니다.
+--the rumors previously placed in "during quest" have been moved to "after quest." The tutorial was way too short for these messages
+--to appear normally, so having them in rumor mill for 7 days after quest ends is an OK window.
+--could theoretically make tutorial extend on much longer in an invisible state and keep rumors
+--present for a long time.
 
 QuestLogEntry:  [1010]
 <ce>대거폴 유니티에는 업데이트된 튜토리얼이 있습니다. 게임
@@ -170,7 +168,7 @@ Message:  1041
 <ce>왕좌와 그 옆에 레버가 있습니다. 레버를 보면 클릭하여
 <ce>왕좌를 엘리베이터처럼 올리세요. 다른 던전에는 바퀴나 비밀
 <ce>스위치처럼 더 많은 효과를 가진 물체들이 있을 것입니다.
-
+ 
 <ce>이 던전을 탈출하려면 벽에 설치된, 귀하의 키와 비슷한
 <ce>높이의 어두운 석조 아치형 통로를 찾아야 합니다. 클릭하면
 <ce>던전을 나가 야외로 나오게 됩니다. 그때 다음 메시지가
@@ -281,8 +279,7 @@ Message:  1055
 <ce>(다음 메시지가 즉시 나타납니다. 튜토리얼을 종료하려면
 <ce>아니오를 누르십시오.)
 
---had to split page 16 into a new page 17 because it was
-too large on unilength font
+--had to split page 16 into a new page 17 because it was too large on unilength font
 
 Message:  1056
 <ce>17페이지

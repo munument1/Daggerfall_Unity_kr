@@ -129,14 +129,14 @@ _qgiver_의 사주인가? %oth, %god에게
 
 Message:  1015
 =thug_,
-
+ 
 길드에서 _victim_의 이름으로 불리는 자를 납치하는 꽤
 일상적인 일에 자네의 힘이 필요하네. ___qgiver_에 있는
 __qgiver_의 %g3의 집에서 %g2를 데려온
 뒤, ___mondung_ 쪽으로 가게. ___mondung_ 쪽으로 가는
 길은 다음과 같네. 이 계획이 자네에게 너무 어렵지 않기를
 바라네.
-
+ 
 <ce>_kidnapper_
 
 Message:  1016

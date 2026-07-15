@@ -78,21 +78,21 @@ QuestLogEntry:  [1010]
 Message:  1011
 
 _competitor_,
-
+ 
 당신의 보안을 위한 훌륭한 보안.
-
+ 
 <ce>당신의 친애하는 친구로부터
 
 Message:  1012
 __competitor_ ___competitor_
-
+ 
 친애하는 %pcn에게,
-
+ 
 쪽지는 잘 받았습니다. 아주 재미있더군요. 이제 당신이
 고려해볼 만한 제안을 하나 하죠. 훔친 _mitem_ 내게
 가져오면 _gem_ 보상하겠습니다. 만약 그 _mitem_
 고용주에게 가져간다면, 당신은 적을 만들게 될 겁니다.
-
+ 
 <ce>_competitor_
 
 Message:  1013

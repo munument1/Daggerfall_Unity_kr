@@ -89,17 +89,17 @@ Message:  1024
 
 Message:  1030
 내 경고를 듣지 않는 자들에게는 이런 일이 벌어지지.
-
+ 
 <ce>_darkb_
 
 Message:  1031
 친애하는 %pcn에게:
-
+ 
 제 이름은 _daughter_ 개체가며, _victim_의 딸입니다.
 아버지의 원수를 갚아주신 당신의 영웅적인 행동에 대해 듣고,
 직접 감사 인사를 드리고 싶었습니다. 시간 되실 때 저를
 찾아와 주신다면 정말 감사하겠습니다.
-
+ 
 <ce>_daughter_ _daughterhouse_ 올림, __daughterhouse_
 
 Message:  1035

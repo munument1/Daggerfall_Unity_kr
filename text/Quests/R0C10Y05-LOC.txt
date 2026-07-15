@@ -49,7 +49,7 @@ ___mondung_에 _qgfriend_ 괴롭히기를 일삼는 괴물이 하나
 RumorsPostfailure:  [1006]
 이제 괴물 =giant_의 은신처가 탄로 난 것을 알고 자리를
 옮겼습니다. <--->
-
+ 
 괴물 =giant_의 거처는 ___mondung_에서 떠났지만,
 여전히 _qgfriend_ 괴롭히기를 멈추지 않고 있습니다.
 
@@ -61,7 +61,7 @@ RumorsPostsuccess:  [1007]
 QuestorPostsuccess:  [1008]
 아, 내 친구이자 =giant_의 숙적이여! 무엇을
 도와드릴까요? <--->
-
+ 
 당신은 내가 동맹을 결성하는 데 도움을 주었지요,
 %pcf. 무엇을 도와드릴까요?
 
@@ -73,7 +73,7 @@ Message:  1011
 =qgfriend_, 맞지요? _questgiver_의 잠재적 동맹이면서
 ___mondung_에 있는 그 괴물 때문에 골치를 앓고 있는 분
 말입니다.
-
+ 
 <---> _qgfriend_의 존재는 =giant_의 철천지
 원수입니다.
 

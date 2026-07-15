@@ -72,6 +72,8 @@ Message:  1025
 <ce>있습니다. 당신에게는 자신을 증명할 =questtime_일의 시간이
 <ce>있습니다.
 
+--duplicate 1006 removed
+
 QuestLogEntry:  [1010]
 <ce>너무 약해진 기분이에요. 무엇이 잘못된 건지 모르겠어요.
 <ce>저를 도우러 오셨나요? 네? 치료법을 가지고 계신가요?

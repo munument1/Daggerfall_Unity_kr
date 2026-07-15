@@ -85,17 +85,16 @@ Message:  1019
 
 Message:  1020
 %pcn
-
+ 
 다크 브라더후드는 자네를 지켜보고 있었네. 자네는 승인 없이
 여러 번 살인을 저질렀지. 이제 우리와 함께하거나, 우리의
 적으로 간주될 수밖에 없네. ___apo_의 ___apo_
 방향으로 여행하여 _apothecary_ 개체를 만나게. 그가 추가
 지시를 내릴 걸세. 자네에게 =S.01_일의 시간을 주겠네.
-
+ 
 <ce>형제로부터
 
---지역 일관성을 위해 %reg 지역을 ____apo_
-방향으로 변경함
+--changed %reg to ____apo_ here to ensure region consistency
 
 -- Symbols used in the QRC file:
 --

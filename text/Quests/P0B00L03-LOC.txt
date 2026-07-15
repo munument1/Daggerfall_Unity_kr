@@ -71,10 +71,10 @@ QuestorPostfailure:  [1009]
 
 Message:  1020
 친애하는 %pcn,
-
+ 
 %vam에게 잠재적인 문제가 생긴 것 같네. 곧
 ___vampire_ 쪽으로 오게.
-
+ 
 죽음 속에서,
 <ce>_vampire_
 

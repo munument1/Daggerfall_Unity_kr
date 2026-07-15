@@ -71,13 +71,13 @@ QuestLogEntry:  [1010]
 
 Message:  1011
 친애하는 %pcf에게,
-
+ 
 당신은 함정에 빠졌소. _contact_의 경우 _conhouse_에
 없소. =guard_의 이름을 지닌 기사가 당신을 매복
 공격하려고 기다리고 있소. 만약 그 _item_ 물건을
 처리하고 싶다면, ___contact2_의 __contact2_에 있는 나에게
 가져오시오.
-
+ 
 _contact2_
 
 Message:  1012

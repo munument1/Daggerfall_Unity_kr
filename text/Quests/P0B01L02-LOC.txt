@@ -12,7 +12,7 @@ QRC:
 
 QuestorOffer:  [1000]
 친애하는 %pcf,
-
+ 
 당신이 우리 중 하나가 될 결의를 증명하기 위해 수행해야 할
 작은 임무가 있습니다. __itemdung_의 마법사 길드에 진부한
 고서처럼 숨겨져 있는 우리의 _vamprelic_ 존재가 하나
@@ -23,7 +23,7 @@ QuestorOffer:  [1000]
 겁니다. =vampire_의 행방을 찾으십시오. %pcf,
 당신과 더 격식 없이 알게 되기를 기대합니다. 반드시
 오십시오.
-
+ 
 <ce>죽음 속에서, %vam의 _vampire_
 
 RefuseQuest:  [1001]

@@ -143,6 +143,7 @@ Message:  1053
 Message:  1054
 <ce>죽었다고요!? 그럴 리가요? Smiley가 고통받게 만들었길
 <ce>바랍니다, %pcn. 오늘은 저에게 정말 슬픈 날이군요.
+ 
 
 -- Symbols used in the QRC file:
 --

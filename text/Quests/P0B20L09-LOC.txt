@@ -47,13 +47,13 @@ QuestorPostfailure:  [1009]
 
 QuestLogEntry:  [1010]
 __vamp_ ___vamp_
-
+ 
 친애하는 %pcn에게,
-
+ 
 %vam의 부름이 당신을 필요로 합니다. 즉시 오십시오.
-
+ 
 죽음 안에서,
-
+ 
 _vamp_
 
 Message:  1011
@@ -94,6 +94,7 @@ Message:  1021
 <ce>날 죽이게 하지 마라, 피를 빠는 놈아. 돌아가서
 <ce>%vam에게 =wereboar_의 전언을 받았다고 전해라.
 <ce>네가 얌전히 굴지 않았기 때문에 집으로 돌려보낸다고 말이다.
+ 
 
 -- Symbols used in the QRC file:
 --

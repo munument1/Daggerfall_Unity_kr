@@ -79,7 +79,7 @@ QuestLogEntry:  [1010]
 Message:  1011
 %n 처단 후, %reg의 황야에 있는
 ___stronghold_ 쪽으로 가서 보상을 받게.
-
+ 
 =boss_
 
 Message:  1012
