@@ -109,7 +109,7 @@ Message:  1062
 
 Message:  1063
 <ce>너 같은 살인마 쓰레기를 처리하는 법은 잘 알고 있지.
-<ce>=posse_, 이 %ra의 목을 칠 때 _dummy_의
+<ce>=posse_, 이 %ra 의 목을 칠 때 _dummy_의
 <ce>상아에 피가 묻지 않게 조심해라.
 
 

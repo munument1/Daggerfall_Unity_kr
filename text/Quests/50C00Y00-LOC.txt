@@ -34,7 +34,7 @@ AcceptQuest:  [1002]
 <ce>_qgfriend_ 측을 찾아가시오. 매력적인 =qgfriend_
 <ce>측이지. 그 친구가 ___qgfriend_의 __qgfriend_에서 당신을
 <ce>기다리고 있을 거요. 자, 서두르라고 하고 싶진 않지만,
-<ce>%g2에게 =1stparton_일 이상 기다리게 할 수는
+<ce>%g2 에게 =1stparton_일 이상 기다리게 할 수는
 <ce>없소. ___mondung_까지 가는 데도 꽤 시간이 걸릴 테니, 가는
 <ce>길에 꾸물거려선 안 될 거요. _qgfriend_ 측이 기꺼이 주문
 <ce>파괴자를 보여줄 것이오. 자, 너무 길게 떠들었군. 만나서
@@ -57,8 +57,8 @@ RumorsDuringQuest:  [1005]
 ___mondung_의 =monster_ 관련 소문에 따르면
 친구만큼이나 강력한 적들도 많이 만들었다고들 하더군.
 <---> __qgfriend_에서 아주 괜찮은 =qgfriend_의
-존재를 알게 되었소. 왜 %g2를 진작 만나지 못했는지
-모르겠군.
+존재를 알게 되었소. 왜 %g2 를 진작 만나지
+못했는지 모르겠군.
 
 RumorsPostfailure:  [1006]
 늙은 =monster_의 거처가 북쪽으로 옮겨졌소. 이제 역병이
@@ -73,8 +73,8 @@ RumorsPostsuccess:  [1007]
 Message:  1011
 _qgfriend_ 측은 아주 유쾌하고 매력적인 =qgfriend_
 측이며, 데이드라 숭배자이기도 하다고들 하더군.
-<---> _qgfriend_ 측은 %reg에서 페라이트의
-노예라는 소문이 있소.
+<---> _qgfriend_ 측은 %reg 에서
+페라이트의 노예라는 소문이 있소.
 
 Message:  1012
 페라이트는 역병과 전염병의 데이드라요. <--->

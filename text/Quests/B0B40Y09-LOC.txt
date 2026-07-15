@@ -19,7 +19,7 @@ QuestorOffer:  [1000]
 
 RefuseQuest:  [1001]
 <ce>고귀한 기사들은 다 어디에 있습니까? 그들 모두
-<ce>%reg에서 사라진 것입니까? 가십시오, %pcn.
+<ce>%reg 에서 사라진 것입니까? 가십시오, %pcn.
 
 AcceptQuest:  [1002]
 <ce>_monster_의 ___dungeon_ 은신처가 확인되었습니다.
@@ -41,7 +41,7 @@ ___dungeon_ 거인이 남쪽으로 이동했다는 소문을 들었습니다.
 그곳 사람들이 저주를 퍼붓고 있겠군요.
 
 RumorsPostsuccess:  [1007]
-%kno의 활약으로 %reg의 구원이 다시
+%kno 의 활약으로 %reg 의 구원이 다시
 이루어졌습니다. 그 기사단의 %ra 측에서
 ___dungeon_ 거인을 처치했습니다.
 

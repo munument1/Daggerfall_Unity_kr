@@ -51,33 +51,33 @@ _enemy_ 측이 죽었으니, 이제 기분이 훨씬 나아졌을
 --removed odd <---> in 1004.
 
 RumorsDuringQuest:  [1005]
-_enemy_의 말에 따르면 %g가 다크
-브라더후드의 본부로 가는 %g3의 길을 찾을 수
+_enemy_의 말에 따르면 %g 가 다크
+브라더후드의 본부로 가는 %g3 의 길을 찾을 수
 있다고 합니다. <---> 다크 브라더후드는
 _enemy_의 방해 공작에 공포에 떨고 있을 겁니다.
 
 RumorsPostfailure:  [1006]
 다크 브라더후드가 _enemy_ 측을 처리하려 사람을
-보냈지만, %g2를 죽이지 못했습니다! <--->
+보냈지만, %g2 를 죽이지 못했습니다! <--->
 암살 시도가 실패한 후, _enemy_ 측은 __palace_
 지역을 떠났습니다.
 
 RumorsPostsuccess:  [1007]
 _enemy_의 행적을 보면 나이트사이드 어사일럼의 위치를
 거의 찾아낼 뻔했던 게 분명합니다. <---> 다크
-브라더후드가 _enemy_ 및 %g3의 야망에 대해
+브라더후드가 _enemy_ 및 %g3 의 야망에 대해
 들은 모양이군요.
 
 Message:  1011
 _qgfriend_ 측은 __qgfriend_에서 빈둥거리는 잘난 척하는
-=qgfriend_ 측이며, 이곳에서 %di입니다.
+=qgfriend_ 측이며, 이곳에서 %di 입니다.
 <---> _qgfriend_ 측은 __qgfriend_에 있는 이곳의
-=qgfriend_ %di의 이름입니다.
+=qgfriend_ %di 의 이름입니다.
 
 Message:  1012
 _qgfriend_의 소속은 __qgfriend_에서 활동하는
-%reg의 메팔라 요원 중 한 명입니다. <--->
-_qgfriend_의 정체는 메팔라의 졸개이며, %g는
+%reg 의 메팔라 요원 중 한 명입니다. <--->
+_qgfriend_의 정체는 메팔라의 졸개이며, %g 는
 __qgfriend_의 =qgfriend_입니다.
 
 Message:  1013
@@ -97,7 +97,7 @@ Message:  1020
  측이 ___qgfriend_의 __qgfriend_에서 =1stparton_일 동안
  저를 기다릴 것입니다. 유일한 문제는 메팔라가 _enemy_
  측이 __palace_의 궁전에 살고 있다고 말한 점입니다.
- %g2에게 접근하기가 쉽지 않을 것 같습니다.
+ %g2 에게 접근하기가 쉽지 않을 것 같습니다.
 
 Message:  1030
 메팔라께서 자랑스러워하실 겁니다. _enemy_ 사망이

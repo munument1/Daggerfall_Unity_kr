@@ -21,8 +21,8 @@ AcceptQuest:  [1002]
 <ce>일대 _dummy_의 양들을 잡아먹으며 아주 신나게 지내고
 <ce>있다더군요. 마을 주민 몇 명도 잡아먹은 모양인데, 늙은
 <ce>_dummy_의 경우 그 일에는 별로 관심이 없는 것
-<ce>같더군요. 어쨌든, %g는 =qtime_일 안에 이
-<ce>거인을 처리하길 원하고, %g는 그 대가로
+<ce>같더군요. 어쨌든, %g 는 =qtime_일 안에 이
+<ce>거인을 처리하길 원하고, %g 는 그 대가로
 <ce>_gold_ 골드를 지불할 겁니다. 나중에 보죠.
 
 QuestFail:  [1003]
@@ -48,7 +48,7 @@ RumorsPostfailure:  [1006]
 RumorsPostsuccess:  [1007]
 <ce>%god _dummy_ 님께서 드디어 ___mondung_에
 <ce>있는 그 거인을 처치할 사람을 보내주셨군요. 그놈이
-<ce>%g의 소중한 양 중 한 마리를 죽인 게 분명합니다.
+<ce>%g 의 소중한 양 중 한 마리를 죽인 게 분명합니다.
 
 QuestorPostsuccess:  [1008]
 <ce>나의 오랜 친구인 거인 학살자 %pcf 님이군요!
@@ -67,7 +67,7 @@ Message:  1020
 Message:  1021
 %qdt:
  나는 거인이 간식으로 먹으려던 상인을 구출했다.
- _villager_의 경우 나에게 %g2를 __store_의
+ _villager_의 경우 나에게 %g2 를 __store_의
  _store_까지 데려다 달라고 부탁했다.
 
 Message:  1030

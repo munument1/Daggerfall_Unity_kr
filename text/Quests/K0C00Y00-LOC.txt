@@ -51,15 +51,15 @@ RumorsDuringQuest:  [1005]
 
 RumorsPostfailure:  [1006]
 _competitor_의 행방은 _qgiver_의 최신 사업 거래를
-가지고 %g3의 면전에서 대놓고 비웃고 있어.
+가지고 %g3 의 면전에서 대놓고 비웃고 있어.
 <---> 알고 보니 _competitor_의 성격은
 _qgiver_의 상상보다 훨씬 더 독한 상인이더군.
 
 RumorsPostsuccess:  [1007]
-_competitor_ 개체는 %g가 _qgiver_ 쪽으로부터
-어렵게 따낸 계약을 잃어버렸어. <---> _qgiver_
-측은 %g3의 옛 계약을 되찾았고, 배부른 하피처럼
-행복해하고 있지.
+_competitor_ 개체는 %g 가 _qgiver_
+쪽으로부터 어렵게 따낸 계약을 잃어버렸어. <--->
+_qgiver_ 측은 %g3 의 옛 계약을 되찾았고,
+배부른 하피처럼 행복해하고 있지.
 
 QuestorPostsuccess:  [1008]
 좋아, _mitem_ 가져왔으니, 이제 내가 뭘 도와줄까?
@@ -86,7 +86,7 @@ _competitor_,
 Message:  1012
 __competitor_ ___competitor_
  
-친애하는 %pcn에게,
+친애하는 %pcn 에게,
  
 쪽지는 잘 받았습니다. 아주 재미있더군요. 이제 당신이
 고려해볼 만한 제안을 하나 하죠. 훔친 _mitem_ 내게

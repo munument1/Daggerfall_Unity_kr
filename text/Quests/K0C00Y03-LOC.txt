@@ -22,7 +22,7 @@ RefuseQuest:  [1001]
 AcceptQuest:  [1002]
 훌륭해. 계획은 이렇네, %pcf. 나에게는 __conhouse_
 방향으로 _item_ 물품을 수출하는 작은 부업이 있는데,
-내 정규 대리인들이 %t의 경비병들에게 감시당하고
+내 정규 대리인들이 %t 의 경비병들에게 감시당하고
 있거든. 당신이 __conhouse_에 있는 _item_ 물품을
 _conhouse_의 명칭으로 불리는 곳으로 가져다준다면, 내
 의뢰인 _contact_ 측이 당신에게 말했던 _gold_
@@ -42,15 +42,15 @@ QuestComplete:  [1004]
 
 RumorsDuringQuest:  [1005]
 ___qgiver_ 및 __conhouse_ 사이의 _item_ 밀수는
-%reg의 수치입니다. <---> %t의
+%reg 의 수치입니다. <---> %t 의
 경우 _item_ 밀수 소동에 대해 무언가 조치를
 취하겠다고 맹세했습니다.
 
 RumorsPostsuccess:  [1007]
-%reg에서의 _item_ 밀수는 절대 근절되지 않을
+%reg 에서의 _item_ 밀수는 절대 근절되지 않을
 겁니다. 수요가 너무 많거든요. <---> %rt
-%rn의 경우 _qgiver_ 밀수와의 전쟁을 위한 특별
-집행관으로 임명했습니다.
+%rn 의 경우 _qgiver_ 밀수와의 전쟁을 위한
+특별 집행관으로 임명했습니다.
 
 QuestorPostsuccess:  [1008]
 _contact_의 전언에 따르면 당신이 무사히 도착했다고
@@ -64,13 +64,13 @@ QuestLogEntry:  [1010]
 %qdt:
  ___qgiver_의 _qgiver_ 측이 내게 __conhouse_
  방향으로 밀수할 _item_ 물품을 주었소. 그곳의 접선책
- 이름은 _contact_ 측이며, %g는 그곳의
+ 이름은 _contact_ 측이며, %g 는 그곳의
  _conhouse_에서 기다리고 있을 것이오. 당연히 이 일을 하는
  동안 도시 경비병들을 조심해야 할 것이오. 그곳에
  도착하기까지 =queston_일이 남았소.
 
 Message:  1011
-친애하는 %pcf에게,
+친애하는 %pcf 에게,
  
 당신은 함정에 빠졌소. _contact_의 경우 _conhouse_에
 없소. =guard_의 이름을 지닌 기사가 당신을 매복
@@ -87,7 +87,7 @@ Message:  1013
 %qdt:
  _contact2_의 이름으로 불리는 사람에게서 _conhouse_
  내용이 함정이라는 편지를 받았소. _item_ 물건을
- ___contact2_, __contact2_에 있는 %g3의 여관에서
+ ___contact2_, __contact2_에 있는 %g3 의 여관에서
  이 _contact2_에게 넘겨줄 수 있는 선택지가 생겼소.
 
 Message:  1014

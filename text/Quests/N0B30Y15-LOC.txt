@@ -49,10 +49,10 @@ RumorsPostfailure:  [1006]
 남쪽으로 날아갔습니다.
 
 RumorsPostsuccess:  [1007]
-그 임프를 처치하기 위해 __palace_에 그 %ra
-용병이 있었다니 %god께 감사합니다. <---> 그
-%ra의 도움이 없었다면 그 임프가 __palace_에 큰
-피해를 입혔을지도 모릅니다.
+그 임프를 처치하기 위해 __palace_에 그
+%ra 용병이 있었다니 %god 께 감사합니다.
+<---> 그 %ra 의 도움이 없었다면 그 임프가
+__palace_에 큰 피해를 입혔을지도 모릅니다.
 
 QuestorPostsuccess:  [1008]
 당신을 잊지 않았습니다, %pcf. 그 성가신 임프를

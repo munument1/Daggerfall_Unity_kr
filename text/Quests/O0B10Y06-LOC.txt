@@ -38,7 +38,7 @@ _mansion_님이 도둑맞았답니다. 믿기 힘든 일이죠.
 안전한 곳은 어디에도 없어요.
 
 QuestorPostsuccess:  [1008]
-어떻게 지내시나요, %pcf님? 벌써 _gold_
+어떻게 지내시나요, %pcf 님? 벌써 _gold_
 골드를 다 써버린 건 아니겠죠?
 
 QuestorPostfailure:  [1009]
@@ -51,8 +51,8 @@ QuestLogEntry:  [1010]
 %qdt:
  ___qgiver_에 있는 _qgiver_님이 제게 의뢰하여
  ___mansion_에 있는 _mansion_에서 _jewelry_의 탈취를
- 지시했습니다. %g2님께 돌려주기까지 =traveltime_일
- 남았습니다.
+ 지시했습니다. %g2 님께 돌려주기까지
+ =traveltime_일 남았습니다.
 
 
 -- Symbols used in the QRC file:

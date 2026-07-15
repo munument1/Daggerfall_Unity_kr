@@ -23,11 +23,11 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>훌륭합니다, 도와주실 줄 알았습니다. 자, 제 친구는
-<ce>___qgfriend_의 _qgfriend_입니다. %g는 보석,
+<ce>___qgfriend_의 _qgfriend_입니다. %g 는 보석,
 <ce>사파이어 하나를 잃어버렸는데 제 첩자들이 그 보석을
 <ce>하필이면 ___itemdung_에서 찾아냈습니다. _qgfriend_의
-<ce>보석이 필요합니다. 왜냐하면 %g가 제3자에게서
-<ce>빌린 물건이기 때문이죠. 만약 %g3의 손에
+<ce>보석이 필요합니다. 왜냐하면 %g 가 제3자에게서
+<ce>빌린 물건이기 때문이죠. 만약 %g3 의 손에
 <ce>=1stparton_일 내로 들어오지 않는다면, 음, 상당한 곤란이
 <ce>생길 겁니다. 게다가 제 첩자에 따르면, 현재 그 보석을
 <ce>가지고 있는 자들이 며칠 내로 ___itemdung_ 쪽을 떠날
@@ -60,7 +60,7 @@ RumorsPostfailure:  [1006]
 RumorsPostsuccess:  [1007]
 알고 보니 _qgfriend_의 행위는 보석을 훔친 게 아니었어.
 그들은 보석을 발견한 것뿐이지. <---> _qgfriend_의
-혐의는 도둑질이었지만, %g가 훔쳤다고 알려진
+혐의는 도둑질이었지만, %g 가 훔쳤다고 알려진
 보석은 결국 그들이 찾아냈어.
 
 QuestorPostsuccess:  [1008]
@@ -76,7 +76,7 @@ QuestorPostfailure:  [1009]
 QuestLogEntry:  [1010]
 %qdt:
  ___questgiver_의 _questgiver_의 의뢰로 제게 __qgfriend_의
- _qgfriend_, ___qgfriend_인 %g3의 친구에게서
+ _qgfriend_, ___qgfriend_인 %g3 의 친구에게서
  도난당한 사파이어를 찾아오라는 임무를 맡겼다.
  ___itemdung_에서 __qgfriend_까지 사파이어를 가져와 보상을
  받기까지 =1stparton_일이 남았다.

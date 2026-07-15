@@ -29,12 +29,12 @@ AcceptQuest:  [1002]
 <ce>않는다면, 우리는 다른 이를 보낼 것입니다.
 
 QuestComplete:  [1004]
-<ce>영웅 %pcn에게 경의를! 잘했습니다! 당신의 이름은
+<ce>영웅 %pcn 에게 경의를! 잘했습니다! 당신의 이름은
 <ce>역사에 기록될 것입니다.
 
 RumorsDuringQuest:  [1005]
-%reg의 상태는 리치의 맹공에 대비하고 있습니다.
-<---> 모든 %reg의 구성원은 ==qgiver_의
+%reg 의 상태는 리치의 맹공에 대비하고 있습니다.
+<---> 모든 %reg 의 구성원은 ==qgiver_의
 활약으로 그 리치를 처치할 수 있기를 기도하고 있습니다.
 
 RumorsPostfailure:  [1006]
@@ -43,12 +43,12 @@ RumorsPostfailure:  [1006]
 그건 확실합니다.
 
 RumorsPostsuccess:  [1007]
-%reg의 구원 소식에 우리는 ==qgiver_에게
+%reg 의 구원 소식에 우리는 ==qgiver_에게
 감사해야 합니다. <---> ==qgiver_ 출신의
 %ra 기사가 그 아크 리치를 물리쳤습니다.
 
 QuestorPostsuccess:  [1008]
-%reg의 구원자를 돕지 않는다면 무례한 짓이겠지요,
+%reg 의 구원자를 돕지 않는다면 무례한 짓이겠지요,
 안 그렇습니까?
 
 QuestorPostfailure:  [1009]
@@ -135,9 +135,9 @@ Message:  1040
 Message:  1041
 %qdt:
  ___dungeon2_에 있는 _wizard_의 행방을 찾았다. 이제
- ___dungeon3_에 있는 %g3의 증조부를 찾아야 한다.
+ ___dungeon3_에 있는 %g3 의 증조부를 찾아야 한다.
  그분이라면 유물의 위치를 알려줄 수 있을지도 모른다.
- _wizard_의 도움으로 %g3의 머리카락 한 뭉치를
+ _wizard_의 도움으로 %g3 의 머리카락 한 뭉치를
  얻어 그분의 영혼을 안식에 들게 할 수 있게 되었다.
 
 Message:  1042

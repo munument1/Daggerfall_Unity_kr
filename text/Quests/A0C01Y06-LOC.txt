@@ -44,7 +44,7 @@ RumorsDuringQuest:  [1005]
 <ce>그 오크를 잡았으면 좋겠네요.
 
 RumorsPostfailure:  [1006]
-<ce>던전 바닥으로 순간이동된 %ra에 대한 이야기
+<ce>던전 바닥으로 순간이동된 %ra 에 대한 이야기
 <ce>들으셨나요? 정말 웃기지 않나요! 아. 죄송합니다.
 
 RumorsPostsuccess:  [1007]
@@ -65,7 +65,7 @@ QuestorPostfailure:  [1009]
 QuestLogEntry:  [1010]
 %qdt:
  저는 ___qgiver_에서 _qgiver_ 측을 만났고,
- %g3의(의) 주인인 _master_ 측이 알려지지
+ %g3 의(의) 주인인 _master_ 측이 알려지지
  않았지만 분명히 위험한 임무에 _gold_ 골드를 지불할
  것이라는 이야기를 들었습니다. %g1 개체는
  __meetingplace_의(의) _meetingplace_에 머물고 있습니다.
@@ -74,7 +74,7 @@ Message:  1011
 %qdt:
  _master_ 쪽으로 변장한 배신자 =mmaster_ 측이 저를
  ___dungeon_ 방향으로 순간이동시켰습니다. 만약 제가
- 빠져나간다면, %g는 우리의 다음 만남을 후회하게
+ 빠져나간다면, %g 는 우리의 다음 만남을 후회하게
  될 것입니다.
 
 Message:  1012
@@ -90,7 +90,7 @@ Message:  1013
 <ce>그저 저에게 당신을 %g2 님께 보내달라고 돈을 줬을
 <ce>뿐이에요. %g2 님께서 원하시는 건 저지, 당신이
 <ce>아니잖아요, 그렇죠? 듣자 하니 %g 님께서
-<ce>__hidingplace_ %g2로 거처를 옮기셨다더군요.
+<ce>__hidingplace_ %g2 로 거처를 옮기셨다더군요.
 
 Message:  1014
 <ce>어떻게 ___dungeon_ %pcf 님에게서 탈출했는지는

@@ -30,7 +30,7 @@ AcceptQuest:  [1002]
 <ce>충분하겠지. 그 후 ___contact_에 있는 __contact_의
 <ce>명칭으로 불리는 곳으로 가서 _contact_의 이름으로 불리는
 <ce>자를 찾아라. 지금부터 =1stparton_일 안에 웨어보어를
-<ce>죽이고 도착하면, %g가 _artifact_ 물품을 줄
+<ce>죽이고 도착하면, %g 가 _artifact_ 물품을 줄
 <ce>것이다. 거래는 즐거웠네, %pct. 행운을 빌지, 잘
 <ce>가라.
 
@@ -44,9 +44,10 @@ QuestComplete:  [1004]
 <ce>여기 있네. 몸조심하게.
 
 RumorsDuringQuest:  [1005]
-%di의 ___mondung_에서 정말 끔찍한 꽥꽥거리는
-소리와 꿀꿀거리는 소리가 들려. <---> %di의
-___mondung_에 미친 반인반돼지 괴물이 있다는 소문이 있어.
+%di 의 ___mondung_에서 정말 끔찍한 꽥꽥거리는
+소리와 꿀꿀거리는 소리가 들려. <--->
+%di 의 ___mondung_에 미친 반인반돼지 괴물이
+있다는 소문이 있어.
 
 RumorsPostfailure:  [1006]
 여기 있던 그 돼지 괴물이 북쪽으로 도망쳤어, 마치 무언가에
@@ -64,8 +65,8 @@ Message:  1011
 
 Message:  1012
 __contact_에 있는 이상한 행동을 하는 =contact_,
-이곳에서 %di입니다. <---> 그 이름의
-=contact_의 행방은 꽤 최근에 이곳에서 %di인
+이곳에서 %di 입니다. <---> 그 이름의
+=contact_의 행방은 꽤 최근에 이곳에서 %di 인
 __contact_에 있었습니다.
 
 Message:  1013

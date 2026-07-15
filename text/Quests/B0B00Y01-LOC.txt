@@ -12,7 +12,7 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>__qgiver_에 배신자가 있습니다.
-<ce>%g3의 형제들을 배신한 사악한 _monster_입니다.
+<ce>%g3 의 형제들을 배신한 사악한 _monster_입니다.
 <ce>우리의 명예가 걸려 있습니다, %pct 님.
 <ce>우리의 정의로운 분노에 동참해주십시오.
 <--->
@@ -26,7 +26,7 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>아주 좋습니다. 배신자는 _monster_입니다. 이름은
-<ce>=monster_ 개체가며, %di에 있는 ___mondun_에
+<ce>=monster_ 개체가며, %di 에 있는 ___mondun_에
 <ce>숨어들었습니다. =queston_일 내로 돌아오지 않는다면,
 <ce>당신의 명예는 실추될 것이며 다른 이가 당신의 자리를 대신할
 <ce>것입니다. 이 임무를 실패하지 마십시오, %pcf.
@@ -41,19 +41,19 @@ QuestComplete:  [1004]
 RumorsDuringQuest:  [1005]
 그 _monster_의 모습은 마치 지옥의 사냥개들이 뒤쫓는
 것처럼 ___mondun_ 쪽으로 도망쳤습니다. <--->
-_qgiver_의 행방을 생각하면 %g가
-%kno에게 저지른 짓에 대해 =monster_ 처치 외에는
-다른 방도가 없습니다.
+_qgiver_의 행방을 생각하면 %g 가
+%kno 에게 저지른 짓에 대해 =monster_ 처치
+외에는 다른 방도가 없습니다.
 
 RumorsPostfailure:  [1006]
 =monster_의 강인함은 _qgiver_의 예상보다 훨씬
 뛰어난 모양입니다. 정말 대단한 탈출이군요. <--->
 듣자 하니 =monster_의 행방은 북쪽으로 이동했다고
-하지만, %g3의 기억은 여전히 기사단을 괴롭히고
+하지만, %g3 의 기억은 여전히 기사단을 괴롭히고
 있습니다.
 
 RumorsPostsuccess:  [1007]
-=monster_의 이야기가 그것을 증명합니다. %kno의
+=monster_의 이야기가 그것을 증명합니다. %kno 의
 존재를 함부로 건드려선 안 되죠. <---> 저는 기사단이
 =monster_ 같은 멍청이에게는 좀 더 자비를 베풀 줄
 알았습니다.
@@ -68,9 +68,9 @@ __qgiver_의 존재로 인해 =monster_ 사건이 곤욕을
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_의 %kno의 명에 따라 제게
+ ___qgiver_의 %kno 의 명에 따라 제게
  =monster_의 이름을 지닌 _monster_ 처단 임무가
- 주어졌습니다. 그 자는 %g3의 은신처인
+ 주어졌습니다. 그 자는 %g3 의 은신처인
  ___mondun_에 숨어 있습니다. 이 임무를 완수하기까지
  =queston_일이 남았습니다.
 

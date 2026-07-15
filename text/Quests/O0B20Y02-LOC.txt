@@ -51,10 +51,10 @@ QuestorPostfailure:  [1009]
 
 QuestLogEntry:  [1010]
 %qdt:
- _qgiver_(이)라 자칭하는 길드의 %g는
- %g2로부터 __mansion_에 있는 _mansion_에게서
+ _qgiver_(이)라 자칭하는 길드의 %g 는
+ %g2 로부터 __mansion_에 있는 _mansion_에게서
  _magicitem_ 물품을 훔쳐달라는 의뢰를 했다. =traveltime_일
- 내로 ___qgiver_에 있는 %g2에게 __qgiver_
+ 내로 ___qgiver_에 있는 %g2 에게 __qgiver_
  지역을 가져다주어야 한다.
 
 

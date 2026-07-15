@@ -29,7 +29,7 @@ AcceptQuest:  [1002]
 <ce>누군가를 보낼 것입니다.
 
 QuestComplete:  [1004]
-<ce>영웅 %pcn에게 경의를! 잘했습니다! 당신의 이름은
+<ce>영웅 %pcn 에게 경의를! 잘했습니다! 당신의 이름은
 <ce>모든 역사에 기록될 것입니다.
 
 RumorsDuringQuest:  [1005]
@@ -41,9 +41,9 @@ ___dungeon_의 리치가 일리악 만을 건너갔다고 들었습니다.
 있습니다.
 
 RumorsPostsuccess:  [1007]
-==qgiver_의 행방을 위해 %god에게 감사하십시오.
+==qgiver_의 행방을 위해 %god 에게 감사하십시오.
 그들이 우리 모두를 구했습니다. <---> ==qgiver_
-출신인 %ra의 활약으로 ___dungeon_의 리치가
+출신인 %ra 의 활약으로 ___dungeon_의 리치가
 파괴되었습니다.
 
 QuestorPostsuccess:  [1008]

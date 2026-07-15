@@ -52,10 +52,10 @@ RumorsPostsuccess:  [1007]
 발견했다더군.
 
 QuestorPostsuccess:  [1008]
-<ce>이봐! 그 하피들을 처리한 %ra의 귀환이군.
+<ce>이봐! 그 하피들을 처리한 %ra 의 귀환이군.
 
 QuestorPostfailure:  [1009]
-<ce>하피 무리조차 처리하지 못한 %ra의 실력이라니.
+<ce>하피 무리조차 처리하지 못한 %ra 의 실력이라니.
 <ce>한심하군.
 
 Message:  1020

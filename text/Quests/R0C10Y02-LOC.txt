@@ -42,11 +42,11 @@ QuestComplete:  [1004]
 <ce>당신의 더 큰 활약을 기대하겠습니다. 감사합니다.
 
 RumorsDuringQuest:  [1005]
-<ce>최근에 어떤 =contact_의 방문객이 여기 와서 %ra
-<ce>물건을 본 적 있냐고 묻더군요.
+<ce>최근에 어떤 =contact_의 방문객이 여기 와서
+<ce>%ra 물건을 본 적 있냐고 묻더군요.
 <--->
 <ce>얼마 전에는 어떤 =contact_의 방문객이 _item1_
-<ce>물건을 가진 %ra의 행방을 찾고 있었죠.
+<ce>물건을 가진 %ra 의 행방을 찾고 있었죠.
 
 RumorsPostfailure:  [1006]
 <ce>들리는 말에 의하면 _questgiver_의 방문객이 어떤
@@ -54,10 +54,10 @@ RumorsPostfailure:  [1006]
 <ce>단단히 화가 났다고 하더군요.
 <--->
 <ce>_questgiver_의 고용주는 여전히 용병들을 고용하고 있는데,
-<ce>%g의 의뢰가 엉망이 되었다고 들었습니다.
+<ce>%g 의 의뢰가 엉망이 되었다고 들었습니다.
 
 RumorsPostsuccess:  [1007]
-<ce>_questgiver_의 방문객이 드디어 %g에게 필요한
+<ce>_questgiver_의 방문객이 드디어 %g 에게 필요한
 <ce>_item2_ 물건을 구했다고 들었습니다.
 <--->
 <ce>_questgiver_의 지인은 어떤 %ra 용병을 칭찬하고
@@ -69,7 +69,7 @@ QuestorPostsuccess:  [1008]
 되어 기쁩니다.
 
 QuestorPostfailure:  [1009]
-<ce>이런, 무능한 %ra의 전령이군요.
+<ce>이런, 무능한 %ra 의 전령이군요.
 <ce>다시 여기로 돌아올 배짱이 있다니 대단하네요.
 <--->
 <ce>이런, 무능한
@@ -82,7 +82,7 @@ QuestLogEntry:  [1010]
  ___questgiver_의 _questgiver_ 측에서 ___contact_의 연락책
  _contact_에게 금괴를 전달하라고 저를 보냈습니다.
  목적지는 __contact_에 있는 =contact_의 기지입니다.
- 보상을 받으려면 =1stparton_일 안에 %g3의 손에
+ 보상을 받으려면 =1stparton_일 안에 %g3 의 손에
  금괴를 넘겨줘야 합니다.
 
 Message:  1011
@@ -101,7 +101,7 @@ Message:  1021
 Message:  1030
 <ce>아, 당신이 전령이군요. 훌륭합니다, 훌륭해요. 자, 이
 <ce>_item2_ 물건을 즉시 _questgiver_에게 가져다주면,
-<ce>%g가 약속대로 보상할 겁니다. 당신과 거래하게
+<ce>%g 가 약속대로 보상할 겁니다. 당신과 거래하게
 <ce>되어 기쁘군요, %pcf!
 
 

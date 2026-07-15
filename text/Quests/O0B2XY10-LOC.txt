@@ -54,7 +54,7 @@ QuestLogEntry:  [1010]
  ___qgiver_의 도둑 길드원인 _qgiver_ 측에서
  __alchemyshop_에 있는 _alchemyshop_에게서 _potion_
  훔쳐달라고 의뢰했습니다. =traveltime_일 안에
- %g2에게 가져다줘야 합니다.
+ %g2 에게 가져다줘야 합니다.
 
 
 -- Symbols used in the QRC file:

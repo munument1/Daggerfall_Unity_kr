@@ -20,7 +20,7 @@ QuestorOffer:  [1000]
 
 RefuseQuest:  [1001]
 <ce>그 중요성을 알고도 이 일을 하기에는 너무 바쁜가?
-<ce>==questgiver_에게도 불행한 일이고, 그대 %pcn에게도
+<ce>==questgiver_에게도 불행한 일이고, 그대 %pcn 에게도
 <ce>불행한 일이군.
 
 AcceptQuest:  [1002]

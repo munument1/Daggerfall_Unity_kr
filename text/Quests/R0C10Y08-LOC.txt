@@ -28,7 +28,7 @@ AcceptQuest:  [1002]
 있는 신전, _itemplace_에 팔아넘겼습니다. 그들에게는 어떤
 종교적 의미가 있는 모양입니다. 망신을 피하기 위해, 당신이
 신전에서 _item_의 물건을 훔쳐내어 _transporter_에게
-전달해주었으면 합니다. %g2는 __inn_의
+전달해주었으면 합니다. %g2 는 __inn_의
 _inn_에 있습니다. _item_의 기한은
 =1stparton_일이며, 그 안에 멍청한 _transporter_의 손에
 들어가야 합니다. 그리고 당신은 그 후 =2ndparton_일 안에
@@ -74,15 +74,15 @@ QuestorPostfailure:  [1009]
 QuestLogEntry:  [1010]
 %god, 와주어서 고맙습니다, %pcf. 잘
 들으세요, 서둘러 _questgiver_ 쪽으로 돌아가야 합니다.
-=2ndparton_일 안에 돌아오지 않으면 %g는 당신의
+=2ndparton_일 안에 돌아오지 않으면 %g 는 당신의
 존재 자체를 잊은 척할 것이고, 당신은 구리 한 닢도 받지
-못할 겁니다. %g3의 방식을 잘 아니까, 내 말을
+못할 겁니다. %g3 의 방식을 잘 아니까, 내 말을
 믿으세요.
 
 Message:  1011
 _transporter_의 정체는 _questgiver_ 및 연줄이 있는,
 신경질적으로 보이는 =transporter_입니다. <--->
-=transporter_ -- %g의 %di의 위치는
+=transporter_ -- %g 의 %di 의 위치는
 __transporter_입니다.
 
 Message:  1012

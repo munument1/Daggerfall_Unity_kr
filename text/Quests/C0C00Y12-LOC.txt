@@ -31,7 +31,7 @@ AcceptQuest:  [1002]
 
 QuestComplete:  [1004]
 <ce>모든 찬사를 자네에게 돌리네, %pcn. _religitem_
-<ce>물건이 신전으로 돌아왔네. 자네는 %god의 호의를
+<ce>물건이 신전으로 돌아왔네. 자네는 %god 의 호의를
 <ce>얻었네.
 
 RumorsDuringQuest:  [1005]
@@ -80,7 +80,7 @@ Message:  1013
 <ce>=decoy_의 이름으로 불리는? 물론, %g2 알지.
 <ce>___decoy_에 산다네.
 <--->
-<ce>=thief_에 대해 말하는 거라면, %g는 예전에
+<ce>=thief_에 대해 말하는 거라면, %g 는 예전에
 <ce>내 주머니를 털려던
 <ce>__thiefplace_ 출신의 좀도둑 같더군.
 
@@ -88,8 +88,8 @@ Message:  1014
 <ce>물론, 그 얄미운 좀도둑은 알지. __thiefplace_에 있는
 <ce>_thiefplace_ 물건을 확인해보게.
 <ce>
-<ce>_thief_? 그래, %g는 __thiefplace_의
-<ce>_thiefplace_에 "숨어" 있다네. 자네와 내가 %g가
+<ce>_thief_? 그래, %g 는 __thiefplace_의
+<ce>_thiefplace_에 "숨어" 있다네. 자네와 내가 %g 가
 <ce>어디 있는지 아는 이상, 그리 조용히 지내는 건 아니겠지만
 <ce>말이야!
 
