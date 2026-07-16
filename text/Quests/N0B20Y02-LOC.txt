@@ -34,14 +34,14 @@ QuestorOffer:  [1000]
 <ce>적들이 있기 마련이죠. 이 영광을 받아들이시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>흠. 길드원들은 보통 더 협조적인데. 분명 _sleepingmage_
-<ce>님께서 이 일을 기억하실 겁니다.
+<ce>흠. 길드원들은 보통 더 협조적인데.
+<ce>분명 _sleepingmage_ 님께서 이 일을 기억하실 겁니다.
 
 AcceptQuest:  [1002]
-<ce>예상대로군요. _sleepingmage_ 님께서는 이제 막 3시간의 명상을
-<ce>시작하셨으니, 그동안 _magesguild_ 님을 경호하며 취약한
-<ce>상태인 그분을 보호해야 합니다. 명상이 끝나면, 그분은
-<ce>에이테리우스로 이동하실 겁니다. 그분이 안전해지면,
+<ce>예상대로군요. _sleepingmage_ 님께서는 이제 막 3시간의
+<ce>명상을 시작하셨으니, 그동안 _magesguild_ 님을 경호하며
+<ce>취약한 상태인 그분을 보호해야 합니다. 명상이 끝나면,
+<ce>그분은 에이테리우스로 이동하실 겁니다. 그분이 안전해지면,
 <ce>길드에서 보상을 가지고 사람을 보낼 것입니다.
 
 QuestComplete:  [1004]
@@ -50,13 +50,13 @@ QuestComplete:  [1004]
 <ce>
 "길드에서 임무를 훌륭히 완수한 것에 대해 감사를 표합니다.
 _sleepingmage_ 님께서
-매우 고마워하고 계십니다. 여기 %g 님께서
-약속하신 _magicitem_ 있습니다."
+매우 고마워하고 계십니다.
+여기 %g 님께서 약속하신 _magicitem_ 있습니다."
 
 RumorsDuringQuest:  [1005]
 _sleepingmage_ 님은 ___sleepingmage_의 전설적인 인물입니다.
-<---> _sleepingmage_ 님은 강력한 주문을 시전한 후
-휴식을 취하고 계십니다.
+<---> _sleepingmage_ 님은 강력한 주문을 시전한
+후 휴식을 취하고 계십니다.
 
 RumorsPostfailure:  [1006]
 %g 님께서 주무시는 동안 _sleepingmage_ 님께 무슨
@@ -65,15 +65,15 @@ RumorsPostfailure:  [1006]
 %g 님이 살아있는지 죽었는지 아무도 모릅니다.
 
 RumorsPostsuccess:  [1007]
-_sleepingmage_ 님께서 %g3 의 긴 수면을 마치고
-일어나셨는데, 아주 건강해 보이십니다. <--->
-_sleepingmage_ 님은 %g 님이 주무시는 동안
-공격받았지만, %g 님은 경비병의 보호를
-받았습니다.
+_sleepingmage_ 님께서 %g3 의 긴 수면을
+마치고 일어나셨는데, 아주 건강해 보이십니다.
+<---> _sleepingmage_ 님은 %g 님이
+주무시는 동안 공격받았지만, %g 님은
+경비병의 보호를 받았습니다.
 
 QuestorPostsuccess:  [1008]
-_sleepingmage_ 님을 위해 당신이 해준 일에 대해, 당연히
-기꺼이 도와드려야죠.
+_sleepingmage_ 님을 위해 당신이 해준 일에 대해,
+당연히 기꺼이 도와드려야죠.
 
 QuestorPostfailure:  [1009]
 <ce>_sleepingmage_ 님이 사라졌고, 당신은 %g2 님을
@@ -89,27 +89,27 @@ QuestLogEntry:  [1010]
 -moved line down from %qdt line.
 
 Message:  1011
-<ce>비켜라, 견습생 애송아! 우리는 _sleepingmage_ 처단을 위해
-<ce>왔다. 그가 깨어나기 전에 말이지. 비키지 않으면 너도 함께
-<ce>베어버리겠다.
+<ce>비켜라, 견습생 애송아! 우리는 _sleepingmage_
+<ce>처단을 위해 왔다. 그가 깨어나기 전에 말이지.
+<ce>비키지 않으면 너도 함께 베어버리겠다.
 
 Message:  1012
-<ce>멍청한 놈! 마법사가 주문 황홀경에 빠져 있을 때 방해하는 게
-<ce>얼마나 위험한지 알 텐데. 그 대가를 치르게 해주마! 당장 이
-<ce>길드 홀에서 나가라. 이 문제를 의회에 보고하겠다.
+<ce>멍청한 놈! 마법사가 주문 황홀경에 빠져 있을 때 방해하는
+<ce>게 얼마나 위험한지 알 텐데. 그 대가를 치르게 해주마!
+<ce>당장 이 길드 홀에서 나가라. 이 문제를 의회에 보고하겠다.
 
 Message:  1013
-<ce>나를 죽이면 마법사 길드에서 쫓겨날 줄 알아라! 당장 떠나지
-<ce>않으면 그에 따른 결과를 감수해야 할 것이다.
+<ce>나를 죽이면 마법사 길드에서 쫓겨날 줄 알아라!
+<ce>당장 떠나지 않으면 그에 따른 결과를 감수해야 할 것이다.
 
 Message:  1014
 <ce>마법사 길드의 배신자인 이 자에게 현상금을 청구한다.
 <ce>_sleepingmage_의 죽음에 대한 대가다.
 
 Message:  1030
-<ce>대마도학장님께 알려라! 이 %ra 암살자가
-<ce>_sleepingmage_의 목숨을 앗아갔다! 문을 잠가라! 무기를
-<ce>들어라, 무기를!
+<ce>대마도학장님께 알려라!
+<ce>이 %ra 암살자가 _sleepingmage_의 목숨을 앗아갔다!
+<ce>문을 잠가라! 무기를 들어라, 무기를!
 
 
 -- Symbols used in the QRC file:

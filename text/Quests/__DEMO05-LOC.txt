@@ -6,9 +6,9 @@ Quest: __DEMO05
 QRC:
 
 QuestLogEntry:  [1010]
-%qdt 당신은 ___TestBuilding_의 __TestBuilding_에 있는
-_TestBuilding_ 쪽으로 소환되었습니다. 서두르십시오,
-%pcn 님. 지체할 시간이 없습니다!
+%qdt 당신은 ___TestBuilding_의 __TestBuilding_에
+있는 _TestBuilding_ 쪽으로 소환되었습니다.
+서두르십시오, %pcn 님. 지체할 시간이 없습니다!
 
 Message: 1050
 당신은 __TestBuilding_의 _TestBuilding_에 도착했습니다.

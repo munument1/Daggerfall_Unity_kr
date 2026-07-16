@@ -11,12 +11,12 @@ DisplayName: 속죄 의식
 QRC:
 
 QuestorOffer:  [1000]
-<ce>당신이 사원에 매우 충성스럽다고 들었습니다. 우리를 위해
-<ce>중요한 임무를 수행해 주십시오. %god 께서 우리에게
-<ce>화가 나셨습니다. 이유는 신경 쓰지 마십시오. 우리의 유일한
-<ce>희망은 속죄 의식을 거행하는 것입니다. 의식에
-<ce>_ingredient_의 준비가 필요합니다. 제 정보통에 따르면
-<ce>___dungeon_에서 구할 수 있다고 합니다.
+<ce>당신이 사원에 매우 충성스럽다고 들었습니다. 우리를
+<ce>위해 중요한 임무를 수행해 주십시오. %god 께서
+<ce>우리에게 화가 나셨습니다. 이유는 신경 쓰지 마십시오.
+<ce>우리의 유일한 희망은 속죄 의식을 거행하는 것입니다.
+<ce>의식에 _ingredient_의 준비가 필요합니다.
+<ce>제 정보통에 따르면 ___dungeon_에서 구할 수 있다고 합니다.
 <ce>가져다주시겠습니까?
 
 RefuseQuest:  [1001]
@@ -24,11 +24,11 @@ RefuseQuest:  [1001]
 <ce>%pcn.
 
 AcceptQuest:  [1002]
-<ce>의식은 =traveltime_일 이내에 거행되어야 합니다. 사원에서는
-<ce>그 대가로 _gold_ 골드를 보상할 것입니다. 오직
-<ce>오염되지 않은 _ingredient_만이 필요합니다. %god 의
-<ce>가호가 당신과 함께하여 그것을 발견하면 바로 알아볼 수 있을
-<ce>것입니다.
+<ce>의식은 =traveltime_일 이내에 거행되어야 합니다.
+<ce>사원에서는 그 대가로 _gold_ 골드를 보상할 것입니다.
+<ce>오직 오염되지 않은 _ingredient_만이 필요합니다.
+<ce>%god 의 가호가 당신과 함께하여 그것을 발견하면
+<ce>바로 알아볼 수 있을 것입니다.
 
 QuestComplete:  [1004]
 <ce>가지고 오셨군요? _ingredient_! %god 께서 진정하실
@@ -37,8 +37,8 @@ QuestComplete:  [1004]
 RumorsDuringQuest:  [1005]
 최근 __qgiver_ 주변의 분위기가... 꽤 긴장되어 있어.
 <---> __qgiver_에서 허가받지 않은 난잡한 파티가
-있었다더군. <---> 누군가 __qgiver_에서 열린 의식
-중에 %god 의 이름을 거꾸로 말했어.
+있었다더군. <---> 누군가 __qgiver_에서 열린
+의식 중에 %god 의 이름을 거꾸로 말했어.
 
 RumorsPostfailure:  [1006]
 __qgiver_의 상태는 여전히 신의 노여움을 사고 있습니다.
@@ -63,8 +63,8 @@ QuestLogEntry:  [1010]
  __qgiver_에서 _qgiver_의 손에 들어가야 한다.
 
 Message:  1011
-<ce>바로 이거야! _ingredient_의 순수함이 느껴져. 이제 이걸
-<ce>다시 _qgiver_ 쪽으로 가져가야지.
+<ce>바로 이거야! _ingredient_의 순수함이 느껴져.
+<ce>이제 이걸 다시 _qgiver_ 쪽으로 가져가야지.
 
 
 -- Symbols used in the QRC file:

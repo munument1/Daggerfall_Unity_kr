@@ -7,9 +7,9 @@ Quest: __DEMO07
 QRC:
 
 QuestLogEntry:  [1010]
-%qdt 당신은 __dirtypit_의 여관 _dirtypit_에서
-_king_의 대면을 갖고, 대거폴 성의 _queen_의
-방문을 완료해야 합니다.
+%qdt 당신은 __dirtypit_의 여관
+_dirtypit_에서 _king_의 대면을 갖고,
+대거폴 성의 _queen_의 방문을 완료해야 합니다.
 
 Message: 1030
 이봐요 %pcn 님, 방금 _king_ 항목을
@@ -20,8 +20,8 @@ Message: 1035
 클릭하셨군요!
 
 Message: 1040
-잘하셨습니다, %pcn 님. 당신은 대거폴의 왕과 여왕을
-클릭하셨습니다.
+잘하셨습니다, %pcn 님.
+당신은 대거폴의 왕과 여왕을 클릭하셨습니다.
 
 QBN:
 

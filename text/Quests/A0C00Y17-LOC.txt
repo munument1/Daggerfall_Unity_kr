@@ -32,14 +32,14 @@ RefuseQuest:  [1001]
 <ce>냉혈한 같으니!
 
 AcceptQuest:  [1002]
-<ce>축복이 있기를, %pcn. 짐이 가벼우니 바로 출발할 수
-<ce>있습니다. 공짜로 일하지 않는다는 건 압니다. __destination_
-<ce>안에 _destination_까지 데려다주시면 도착했을 때
-<ce>_gold_ 골드를 드리겠습니다.
+<ce>축복이 있기를, %pcn. 짐이 가벼우니 바로
+<ce>출발할 수 있습니다. 공짜로 일하지 않는다는 건 압니다.
+<ce>__destination_ 안에 _destination_까지 데려다주시면 도착했을
+<ce>때 _gold_ 골드를 드리겠습니다.
 
 QuestComplete:  [1004]
-<ce>아! _destination_! 당신은 약속을 지켰군요. 여기 약속했던
-<ce>골드가 있습니다.
+<ce>아! _destination_! 당신은 약속을 지켰군요.
+<ce>여기 약속했던 골드가 있습니다.
 
 RumorsDuringQuest:  [1005]
 <ce>경비병들이 _questgiver_의 행방을 찾고 있다더군요.
@@ -54,17 +54,17 @@ RumorsDuringQuest:  [1005]
 <ce>__destination_에 도착해야 합니다.
 
 RumorsPostfailure:  [1006]
-<ce>그들이 _questgiver_ 체포에 성공했습니다. %g 는
-<ce>다음 주에 재판을 받을 겁니다.
+<ce>그들이 _questgiver_ 체포에 성공했습니다.
+<ce>%g 는 다음 주에 재판을 받을 겁니다.
 
 RumorsPostsuccess:  [1007]
-<ce>들으셨나요? 어떤 %ra 의 도움으로 _questgiver_의
-<ce>마을 밖 밀항이 성공했다더군요. 그렇지 않았다면 분명
-<ce>%g2 의 목을 쳤을 겁니다.
+<ce>들으셨나요? 어떤 %ra 의 도움으로
+<ce>_questgiver_의 마을 밖 밀항이 성공했다더군요.
+<ce>그렇지 않았다면 분명 %g2 의 목을 쳤을 겁니다.
 
 QuestorPostsuccess:  [1008]
-<ce>그 마을에서 빠져나오게 해줘서 고마워요, %pcf. 제
-<ce>친구들에게 당신을 추천해 두었습니다.
+<ce>그 마을에서 빠져나오게 해줘서 고마워요, %pcf.
+<ce>제 친구들에게 당신을 추천해 두었습니다.
 
 QuestorPostfailure:  [1009]
 <ce>당신! 마을에서 빠져나가는 걸 도와주지 않은 탓에 도둑
@@ -78,9 +78,9 @@ QuestLogEntry:  [1010]
  =traveltime_일 안에 _destination_에 도착해야 한다.
 
 Message:  1019
-<ce>_questgiver_의 말에 따르면, "하! 이 %ra 고용으로
-<ce>이런 상황에서 나를 보호하게 했지. %pcn, 당신이
-<ce>나를 넘기려는 건가?"
+<ce>_questgiver_의 말에 따르면, "하!
+<ce>이 %ra 고용으로 이런 상황에서 나를 보호하게 했지.
+<ce>%pcn, 당신이 나를 넘기려는 건가?"
 
 Message:  1020
 <ce>멈춰라! %reg 의 이름으로 _questgiver_의 체포
@@ -90,19 +90,19 @@ Message:  1020
 Message:  1021
 <ce>싸울 필요는 없습니다. 우리의 다툼은 _questgiver_ 관련
 <ce>일입니다. 마법사 길드는 배신을 가볍게 여기지 않습니다.
-<ce>%g2 를 우리에게 넘기면 당신은 가던 길을 가도
-<ce>좋습니다.
+<ce>%g2 를 우리에게 넘기면 당신은 가던 길을
+<ce>가도 좋습니다.
 
 Message:  1022
 <ce>비켜라, %ra. 우리는 _questgiver_의 신병을 원한다.
-<ce>당신은 우리를 막을 수 없다. 그냥 %g2 를 넘겨라.
-<ce>이봐, _questgiver_. 도둑 길드를 속이고 살아남을 수 있을
-<ce>거라 생각했나?
+<ce>당신은 우리를 막을 수 없다.
+<ce>그냥 %g2 를 넘겨라. 이봐, _questgiver_.
+<ce>도둑 길드를 속이고 살아남을 수 있을 거라 생각했나?
 
 Message:  1023
-<ce>비켜라, %ra. _questgiver_의 지명수배가 다크
-<ce>브라더후드에 의해 내려졌다. 당신이 %g2 를
-<ce>보호하려 할 만큼 어리석지는 않겠지?
+<ce>비켜라, %ra.
+<ce>_questgiver_의 지명수배가 다크 브라더후드에 의해 내려졌다.
+<ce>당신이 %g2 를 보호하려 할 만큼 어리석지는 않겠지?
 
 Message:  1030
 <ce>당신의 눈앞에서 _questgiver_의 살해가 이루어졌습니다.
@@ -111,9 +111,9 @@ Message:  1040
 <ce>마음대로 해라. 둘 다 죽여버려!
 
 Message:  1050
-<ce>길을 잃었나요, %pcn? 스스로 __destination_까지 가는
-<ce>길을 찾아야겠군요. 아무것도 아닌 일에 감사할 필요는 없죠,
-<ce>쓸모없는 인간 같으니.
+<ce>길을 잃었나요, %pcn?
+<ce>스스로 __destination_까지 가는 길을 찾아야겠군요. 아무것도
+<ce>아닌 일에 감사할 필요는 없죠, 쓸모없는 인간 같으니.
 
 
 -- Symbols used in the QRC file:

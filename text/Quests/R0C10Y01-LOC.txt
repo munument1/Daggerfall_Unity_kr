@@ -12,23 +12,23 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>일거리를 찾는다면, 특별한 _item_ 물품을 내 지인에게
-<ce>전달해 줄 사람이 필요하오. 보상은 매우 후하게 주겠소. 관심
-<ce>있소?
+<ce>전달해 줄 사람이 필요하오. 보상은 매우 후하게 주겠소.
+<ce>관심 있소?
 
 RefuseQuest:  [1001]
 <ce>정말인가? 너무 바쁜 모양이군. 아쉽구려.
 
 AcceptQuest:  [1002]
-<ce>훌륭하오. 여기 _item_ 물품이 있소. 이제
-<ce>___contact_에 있는 _contact_에게 =queston_일 안에
-<ce>전달해야 하오. 그 정도면 충분한 시간이 되리라 믿소.
+<ce>훌륭하오. 여기 _item_ 물품이 있소.
+<ce>이제 ___contact_에 있는 _contact_에게 =queston_일
+<ce>안에 전달해야 하오. 그 정도면 충분한 시간이 되리라 믿소.
 <ce>_contact_의 식별이 가능할 거요. __contact_의 명칭으로
-<ce>불리는 곳으로 가서 =contact_의 행방을 찾으시오. 행운을
-<ce>비오, 고맙소.
+<ce>불리는 곳으로 가서 =contact_의 행방을 찾으시오.
+<ce>행운을 비오, 고맙소.
 
 QuestFail:  [1003]
-<ce>%pcf, 우리 사이의 작은 약속을 서둘러 처리하는 게
-<ce>좋을 거요.
+<ce>%pcf, 우리 사이의 작은 약속을 서둘러
+<ce>처리하는 게 좋을 거요.
 
 QuestComplete:  [1004]
 <ce>아, %pcf, 만나서 반갑소. 그리고 _item_도
@@ -46,8 +46,8 @@ RumorsPostfailure:  [1006]
 
 RumorsPostsuccess:  [1007]
 어떤 =contact_의 방문객이 방금 여기 와서 _item_
-물건을 휘두르고 갔어. <---> 어떤 보석상에서 큰
-루비를 도난당했다고 들었어.
+물건을 휘두르고 갔어. <---> 어떤 보석상에서
+큰 루비를 도난당했다고 들었어.
 
 QuestorPostsuccess:  [1008]
 아, %pcf. 그 루비를 안전하게 보관하고 있길 바라네,
@@ -62,11 +62,11 @@ QuestorPostfailure:  [1009]
 
 QuestLogEntry:  [1010]
 %qdt:
- _questgiver_의 지시로 ___contact_의 _contact_의
- 이름으로 불리는 연락책에게 _item_ 물품을 전달하러
- 간다. _item_ 물품을 =queston_일 안에
- __contact_에 있는 %g2 에게 전달하지 못하면
- 보상은 몰수된다.
+ _questgiver_의 지시로 ___contact_의
+ _contact_의 이름으로 불리는 연락책에게
+ _item_ 물품을 전달하러 간다.
+ _item_ 물품을 =queston_일 안에 __contact_에
+ 있는 %g2 에게 전달하지 못하면 보상은 몰수된다.
 
 Message:  1020
 <ce>그 보석 내놔. 네가 가지고 있는 거 다 알아. 길드에서 다
