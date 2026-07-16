@@ -32,31 +32,31 @@ AcceptQuest:  [1002]
 <ce>것입니다. 이 임무를 실패하지 마십시오, %pcf.
 
 QuestFail:  [1003]
-<ce>_monster_의 생존이 확인되었습니다. 저를 설득하려 하지
-<ce>마십시오.
+<ce>_monster_의 생존이 확인되었습니다.
+<ce>저를 설득하려 하지 마십시오.
 
 QuestComplete:  [1004]
 <ce>잘했습니다. 자랑스러워할 만한 일입니다.
 
 RumorsDuringQuest:  [1005]
-그 _monster_의 모습은 마치 지옥의 사냥개들이 뒤쫓는
-것처럼 ___mondun_ 쪽으로 도망쳤습니다. <--->
-_qgiver_의 행방을 생각하면 %g 가
-%kno 에게 저지른 짓에 대해 =monster_ 처치
-외에는 다른 방도가 없습니다.
+그 _monster_의 모습은 마치 지옥의 사냥개들이
+뒤쫓는 것처럼 ___mondun_ 쪽으로 도망쳤습니다.
+<---> _qgiver_의 행방을 생각하면
+%g 가 %kno 에게 저지른 짓에 대해
+=monster_ 처치 외에는 다른 방도가 없습니다.
 
 RumorsPostfailure:  [1006]
-=monster_의 강인함은 _qgiver_의 예상보다 훨씬
-뛰어난 모양입니다. 정말 대단한 탈출이군요. <--->
-듣자 하니 =monster_의 행방은 북쪽으로 이동했다고
-하지만, %g3 의 기억은 여전히 기사단을 괴롭히고
-있습니다.
+=monster_의 강인함은 _qgiver_의 예상보다
+훨씬 뛰어난 모양입니다. 정말 대단한 탈출이군요.
+<---> 듣자 하니 =monster_의 행방은 북쪽으로
+이동했다고 하지만, %g3 의 기억은 여전히
+기사단을 괴롭히고 있습니다.
 
 RumorsPostsuccess:  [1007]
-=monster_의 이야기가 그것을 증명합니다. %kno 의
-존재를 함부로 건드려선 안 되죠. <---> 저는 기사단이
-=monster_ 같은 멍청이에게는 좀 더 자비를 베풀 줄
-알았습니다.
+=monster_의 이야기가 그것을 증명합니다.
+%kno 의 존재를 함부로 건드려선 안 되죠.
+<---> 저는 기사단이 =monster_ 같은 멍청이에게는
+좀 더 자비를 베풀 줄 알았습니다.
 
 QuestorPostsuccess:  [1008]
 당신은 =monster_ 사건에서 자신의 능력을 증명했습니다.
@@ -69,10 +69,10 @@ __qgiver_의 존재로 인해 =monster_ 사건이 곤욕을
 QuestLogEntry:  [1010]
 %qdt:
  ___qgiver_의 %kno 의 명에 따라 제게
- =monster_의 이름을 지닌 _monster_ 처단 임무가
- 주어졌습니다. 그 자는 %g3 의 은신처인
- ___mondun_에 숨어 있습니다. 이 임무를 완수하기까지
- =queston_일이 남았습니다.
+ =monster_의 이름을 지닌 _monster_ 처단
+ 임무가 주어졌습니다. 그 자는 %g3 의
+ 은신처인 ___mondun_에 숨어 있습니다.
+ 이 임무를 완수하기까지 =queston_일이 남았습니다.
 
 Message:  1011
 <ce>당신은 _monster_인 =monster_ 처단에 성공했습니다.

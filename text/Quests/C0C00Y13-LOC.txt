@@ -22,21 +22,21 @@ RefuseQuest:  [1001]
 <ce>%pcn.
 
 AcceptQuest:  [1002]
-<ce>여기 _religitem_ 물건이 있네. ___priest_에 있는
-<ce>__priest_의 _priest_에게 가져다주게. 아, 깜빡할
-<ce>뻔했군. 경쟁 신전에서 자네를 막으려 폭도들을 보낼지도
-<ce>모르네.
+<ce>여기 _religitem_ 물건이 있네.
+<ce>___priest_에 있는 __priest_의
+<ce>_priest_에게 가져다주게. 아, 깜빡할 뻔했군.
+<ce>경쟁 신전에서 자네를 막으려 폭도들을 보낼지도 모르네.
 
 QuestComplete:  [1004]
-<ce>신의 축복이 있기를, %pcn. 이 _religitem_ 물건이
-<ce>이곳에 절실히 필요했네.
+<ce>신의 축복이 있기를, %pcn.
+<ce>이 _religitem_ 물건이 이곳에 절실히 필요했네.
 
 RumorsDuringQuest:  [1005]
 그 _religitem_ 물건을 두고 두 신전이 경쟁 중이라네.
 
 RumorsPostfailure:  [1006]
-_priest_ 측은 %g3 의 _religitem_ 물품을 얻지
-못했고, _qgiver_ 측은 분노하고 있네.
+_priest_ 측은 %g3 의 _religitem_ 물품을
+얻지 못했고, _qgiver_ 측은 분노하고 있네.
 
 RumorsPostsuccess:  [1007]
 용감한 %ra 덕분에 _priest_ 측과 __qgiver_
@@ -52,10 +52,10 @@ _priest_의 행방은 묘연하고 _religitem_ 또한 가져오지
 
 QuestLogEntry:  [1010]
 %qdt:
- __qgiver_의 _qgiver_ 측에서 내게 ___priest_에
- 있는 __priest_의 _priest_에게 _religitem_
- 전달이라는 임무를 주었네. =traveltime_일 안에 도착해야
- 하네.
+ __qgiver_의 _qgiver_ 측에서 내게
+ ___priest_에 있는 __priest_의 _priest_에게
+ _religitem_ 전달이라는 임무를 주었네.
+ =traveltime_일 안에 도착해야 하네.
 
 Message:  1011
 <ce>그 _religitem_의 경우 절대 __priest_에 도착하지 못할

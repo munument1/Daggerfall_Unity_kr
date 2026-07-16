@@ -13,9 +13,9 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>%pcn, 제 이름은 _qgiver_입니다.
-<ce>%god 께서 근처 던전의 심장부에서 거대한 악이
-<ce>자라나고 있다는 예언을 하셨습니다. 당신이 가서 이것을
-<ce>파괴해주셨으면 합니다. 해주시겠습니까?
+<ce>%god 께서 근처 던전의 심장부에서
+<ce>거대한 악이 자라나고 있다는 예언을 하셨습니다.
+<ce>당신이 가서 이것을 파괴해주셨으면 합니다. 해주시겠습니까?
 
 RefuseQuest:  [1001]
 <ce>시간이 없습니다. 이 퀘스트를 맡을 사람을 찾아야만 합니다.
@@ -29,36 +29,36 @@ AcceptQuest:  [1002]
 
 QuestComplete:  [1004]
 <ce>%pcn, 우리 성직자들 모두가 당신에게 감사합니다.
-<ce>악은 파괴되었습니다. 약속대로 보상으로 _gold_ 골드를
-<ce>드리겠습니다.
+<ce>악은 파괴되었습니다.
+<ce>약속대로 보상으로 _gold_ 골드를 드리겠습니다.
 
 RumorsDuringQuest:  [1005]
-__qgiver_의 갑작스러운 관심이 ___dungeon_에 쏠리고
-있습니다.
+__qgiver_의 갑작스러운 관심이 ___dungeon_에
+쏠리고 있습니다.
 
 RumorsPostfailure:  [1006]
-악은 여전히 ___dungeon_ 안에 남아 있지만, 형태가
-변했습니다.
+악은 여전히 ___dungeon_ 안에 남아 있지만,
+형태가 변했습니다.
 
 RumorsPostsuccess:  [1007]
-__qgiver_의 활약으로 ___dungeon_ 안에 존재하던, 거의
-알려지지 않았던 악이 파괴되었습니다.
+__qgiver_의 활약으로 ___dungeon_ 안에 존재하던,
+거의 알려지지 않았던 악이 파괴되었습니다.
 
 QuestorPostsuccess:  [1008]
-당신이 바로 그 _evilfocus_의 파괴자군요, 물론
-기억하고말고요.
+당신이 바로 그 _evilfocus_의 파괴자군요,
+물론 기억하고말고요.
 
 QuestorPostfailure:  [1009]
-_evilfocus_의 번성은 여전합니다. 당신에게 줄 것은
-경멸뿐입니다.
+_evilfocus_의 번성은 여전합니다.
+당신에게 줄 것은 경멸뿐입니다.
 
 QuestLogEntry:  [1010]
 %qdt:
  ___qgiver_에 있는 __qgiver_의 일원인 _qgiver_
  인물이 제게 ___dungeon_ 안에 있는 사악한 _evilfocus_
  파괴 임무를 맡겼습니다. =traveltime_일 이내에 처리하지
- 않으면 이 악이 무고한 세상에 풀려나게 될 것입니다. 뭐,
- 대부분은 무고하겠지만요.
+ 않으면 이 악이 무고한 세상에 풀려나게 될 것입니다.
+ 뭐, 대부분은 무고하겠지만요.
 
 Message:  1011
 <ce>_evilfocus_에 손을 뻗자 아름다운 여인으로 변합니다.

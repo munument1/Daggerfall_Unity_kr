@@ -13,22 +13,22 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>그대가 ==questgiver_의 친구라는 것은 우리도 알고 있다.
-<ce>하지만 그대를 돕기 위해서는 마법을 걸어야 하는데, 그
-<ce>마법은 창조하기 전에 먼저 파괴해야만 하는 마법이다. 그대가
-<ce>그 파괴의 축복을 받을 수 있도록, 우리 마법의 약을 위한
-<ce>_magicitem_ 확보를 도와주겠는가?
+<ce>하지만 그대를 돕기 위해서는 마법을 걸어야 하는데,
+<ce>그 마법은 창조하기 전에 먼저 파괴해야만 하는 마법이다.
+<ce>그대가 그 파괴의 축복을 받을 수 있도록,
+<ce>우리 마법의 약을 위한 _magicitem_ 확보를 도와주겠는가?
 
 RefuseQuest:  [1001]
 <ce>그 중요성을 알고도 이 일을 하기에는 너무 바쁜가?
-<ce>==questgiver_에게도 불행한 일이고, 그대 %pcn 에게도
-<ce>불행한 일이군.
+<ce>==questgiver_에게도 불행한 일이고,
+<ce>그대 %pcn 에게도 불행한 일이군.
 
 AcceptQuest:  [1002]
 <ce>우리가 필요한 _magicitem_의 소재는 ==other_ 쪽이다.
 <ce>=1stparton_일이 지나기 전에 그것이 필요하다.
-<ce>==other_의 위치는 ___other_에서 찾을 수 있을
-<ce>것이다. _other_에 대해 물어보도록. 신들과 정령들이
-<ce>그대의 발걸음을 인도하기를, %pcf.
+<ce>==other_의 위치는 ___other_에서 찾을 수
+<ce>있을 것이다. _other_에 대해 물어보도록.
+<ce>신들과 정령들이 그대의 발걸음을 인도하기를, %pcf.
 
 QuestFail:  [1003]
 <ce>_magicitem_, %pcf. 잊어버린 건가?
@@ -40,8 +40,8 @@ QuestComplete:  [1004]
 <ce>%pcn, 그대에게 _reward_ 한 덩이를 주겠다.
 
 RumorsDuringQuest:  [1005]
-마녀들이 우리 옛 %t 개체를 달팽이로 변하게 했던
-때를 기억하나? <---> ==questgiver_ 측을 만나는
+마녀들이 우리 옛 %t 개체를 달팽이로 변하게
+했던 때를 기억하나? <---> ==questgiver_ 측을 만나는
 것보다 더 나쁜 건 그들의 분노를 사는 것뿐이지.
 
 RumorsPostfailure:  [1006]
@@ -51,21 +51,21 @@ RumorsPostfailure:  [1006]
 
 RumorsPostsuccess:  [1007]
 ==questgiver_들이 어떤 계획을 성공적으로 마쳐서 축하하고
-있다는군. <---> 공기 중에 떠도는 냄새만으로도 취할
-것 같아. 행복한 마녀들이 내리는 축복이지.
+있다는군. <---> 공기 중에 떠도는 냄새만으로도
+취할 것 같아. 행복한 마녀들이 내리는 축복이지.
 
 QuestorPostsuccess:  [1008]
 그대의 _reward_ 상태가 마음에 드나, %pcf?
 그대에게 잘 어울리는 것 같군.
 
 QuestorPostfailure:  [1009]
-<ce>_magicitem_의 행방을 잊어버린 건가? %oth, 이제
-<ce>너무 늦었어. 하지만 ==questgiver_의 실망이 크네,
-<ce>%pcf. 정말로, 우리는 실망했네.
+<ce>_magicitem_의 행방을 잊어버린 건가?
+<ce>%oth, 이제 너무 늦었어. 하지만 ==questgiver_의
+<ce>실망이 크네, %pcf. 정말로, 우리는 실망했네.
 
 QuestLogEntry:  [1010]
-<ce>원하는 _magicitem_ 말인가? 1000골드에 주지. 아주 좋아,
-<ce>여기 있네.
+<ce>원하는 _magicitem_ 말인가? 1000골드에 주지.
+<ce>아주 좋아, 여기 있네.
 
 Message:  1011
 그녀는 ==questgiver_의 매우 현명한 여인이야. <--->

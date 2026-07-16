@@ -18,8 +18,8 @@ QuestorOffer:  [1000]
 <ce>쫓아내야 합니다. 이 퀘스트를 맡아주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>유령은 보통 신전의 문제입니다. 이 일은 그들에게
-<ce>넘겨야겠군요.
+<ce>유령은 보통 신전의 문제입니다.
+<ce>이 일은 그들에게 넘겨야겠군요.
 
 AcceptQuest:  [1002]
 <ce>_nobleman_님은 =2dung_일 이내에 재건을 시작하고
@@ -44,8 +44,8 @@ ___dungeon_님께서는 %kno 덕분에 창고나 별장으로
 탈바꿈할 수 있게 되었습니다.
 
 QuestorPostsuccess:  [1008]
-반갑습니다, %pcf. _nobleman_의 조력자로서, 제가
-무엇을 도와드릴까요?
+반갑습니다, %pcf.
+_nobleman_의 조력자로서, 제가 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
 당신은 _nobleman_ 임무를 실패함으로써 %kno 님을
@@ -54,10 +54,10 @@ QuestorPostfailure:  [1009]
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_에 있는 ==qgiver_의 _qgiver_ 측이 제게
- ___dungeon_ 지역을 떠도는 유령을 쫓아내 달라고
- 간청했습니다. 재건을 시작하기까지 =2dung_일이
- 남았습니다.
+ ___qgiver_에 있는 ==qgiver_의
+ _qgiver_ 측이 제게 ___dungeon_ 지역을
+ 떠도는 유령을 쫓아내 달라고 간청했습니다.
+ 재건을 시작하기까지 =2dung_일이 남았습니다.
 
 Message:  1011
 <ce>유령이 성불했습니다. _nobleman_의 도움으로 ___dungeon_

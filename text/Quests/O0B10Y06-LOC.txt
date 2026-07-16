@@ -18,10 +18,10 @@ RefuseQuest:  [1001]
 <ce>가보게. 이 일을 맡을 다른 길드 멤버를 찾아봐야겠군.
 
 AcceptQuest:  [1002]
-<ce>%oth, 아주 훌륭해. __mansion_에 있는
-<ce>_mansion_ 쪽으로 가게. _jewelry_ 물품을 찾아서
-<ce>여기까지 가져오게. 눈 크게 뜨고 다니라고. 그 쓰레기장 같은
-<ce>곳에 어떤 종류의 수호자가 있을지 모르니까.
+<ce>%oth, 아주 훌륭해.
+<ce>__mansion_에 있는 _mansion_ 쪽으로 가게. _jewelry_
+<ce>물품을 찾아서 여기까지 가져오게. 눈 크게 뜨고 다니라고. 그
+<ce>쓰레기장 같은 곳에 어떤 종류의 수호자가 있을지 모르니까.
 
 QuestComplete:  [1004]
 <ce>잘했네, %pcn. 여기 길드 보수일세.
@@ -34,25 +34,25 @@ RumorsPostfailure:  [1006]
 
 RumorsPostsuccess:  [1007]
 _mansion_님이 도둑맞았답니다. 믿기 힘든 일이죠.
-<---> _mansion_님조차 도둑을 맞을 정도라면, 이제
-안전한 곳은 어디에도 없어요.
+<---> _mansion_님조차 도둑을 맞을 정도라면,
+이제 안전한 곳은 어디에도 없어요.
 
 QuestorPostsuccess:  [1008]
-어떻게 지내시나요, %pcf 님? 벌써 _gold_
-골드를 다 써버린 건 아니겠죠?
+어떻게 지내시나요, %pcf 님?
+벌써 _gold_ 골드를 다 써버린 건 아니겠죠?
 
 QuestorPostfailure:  [1009]
 <ce>%oth, 당신이군요. _mansion_의 주인인 그자가
 <ce>이미 _jewelry_의 위치를 옮겨버려서 모든 게 끝났습니다.
-<ce>당신의 그 소위 '열심히 한' 노고에 정말 감사드려요. 정말
-<ce>대단하시네요.
+<ce>당신의 그 소위 '열심히 한' 노고에 정말 감사드려요.
+<ce>정말 대단하시네요.
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_에 있는 _qgiver_님이 제게 의뢰하여
- ___mansion_에 있는 _mansion_에서 _jewelry_의 탈취를
- 지시했습니다. %g2 님께 돌려주기까지
- =traveltime_일 남았습니다.
+ ___qgiver_에 있는 _qgiver_님이 제게
+ 의뢰하여 ___mansion_에 있는 _mansion_에서
+ _jewelry_의 탈취를 지시했습니다.
+ %g2 님께 돌려주기까지 =traveltime_일 남았습니다.
 
 
 -- Symbols used in the QRC file:

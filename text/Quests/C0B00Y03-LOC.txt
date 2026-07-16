@@ -30,10 +30,10 @@ RefuseQuest:  [1001]
 AcceptQuest:  [1002]
 <ce>좋습니다, 좋습니다. 그럼, _cleric_의 약 2주 전 발굴
 <ce>작업을 위한 ___mondung_ 쪽으로의 여정이 시작되었습니다.
-<ce>모든 것이 잘 풀렸을 수도 있지만... =queston_일의 시간을
-<ce>드릴 테니, 그곳으로 가서 _cleric_의 행방을 찾아
-<ce>돌아오십시오. %god 의 가호가 당신과 함께하길,
-<ce>%pct. 안녕히 가십시오.
+<ce>모든 것이 잘 풀렸을 수도 있지만...
+<ce>=queston_일의 시간을 드릴 테니, 그곳으로 가서
+<ce>_cleric_의 행방을 찾아 돌아오십시오. %god 의
+<ce>가호가 당신과 함께하길, %pct. 안녕히 가십시오.
 
 QuestComplete:  [1004]
 <ce>아, %pct 그리고 좋은 _cleric_, __qgiver_에
@@ -46,8 +46,8 @@ _cleric_의 무장 없는 ___mondung_ 진입은 어리석은
 
 RumorsPostfailure:  [1006]
 모두가 _cleric_의 생환을 볼 수 있다는 희망을 버렸어.
-<---> __qgiver_의 슬픔은 _cleric_의 실종으로
-깊어지고 있지.
+<---> __qgiver_의 슬픔은 _cleric_의
+실종으로 깊어지고 있지.
 
 RumorsPostsuccess:  [1007]
 그 %ra 덕분에 _cleric_의 ___mondung_ 역사
@@ -55,19 +55,19 @@ RumorsPostsuccess:  [1007]
 덕분에 __qgiver_의 당신에 대한 평가가 높아졌어.
 
 QuestorPostsuccess:  [1008]
-당신이 _cleric_ 위해 해준 일에 대해, 당연히
-도와드려야지요, %pcf.
+당신이 _cleric_ 위해 해준 일에 대해,
+당연히 도와드려야지요, %pcf.
 
 QuestorPostfailure:  [1009]
 난 아직 _cleric_ 기억하고 있네, %pcf. 떠나게.
 
 QuestLogEntry:  [1010]
 %qdt:
- __qgiver_의 _qgiver_께서 ___mondung_ 쪽으로 저를
- 보내셨습니다. 그곳에서 실종된 _cleric_의 이름을 지닌
- 성직자를 구출해야 합니다. =cleric_의 행방을 찾아
- =queston_일 안에 ___qgiver_에게 돌아가
- __qgiver_해야 합니다.
+ __qgiver_의 _qgiver_께서 ___mondung_
+ 쪽으로 저를 보내셨습니다. 그곳에서 실종된
+ _cleric_의 이름을 지닌 성직자를 구출해야 합니다.
+ =cleric_의 행방을 찾아 =queston_일 안에
+ ___qgiver_에게 돌아가 __qgiver_해야 합니다.
 
 Message:  1011
 <ce>세상에, 깜짝 놀랐잖습니까,
@@ -82,8 +82,8 @@ Message:  1011
 <ce>당신을 따라 사원으로 돌아가겠습니다.
 
 Message:  1012
-<ce>"아, 여기서부터는 길을 알겠네," _cleric_의 비틀거리는
-<ce>발걸음이 멀어진다.
+<ce>"아, 여기서부터는 길을 알겠네," _cleric_의
+<ce>비틀거리는 발걸음이 멀어진다.
 
 
 -- Symbols used in the QRC file:
