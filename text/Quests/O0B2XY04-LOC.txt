@@ -18,43 +18,43 @@ RefuseQuest:  [1001]
 <ce>자네에겐 안 된 일이군, %pcn.
 
 AcceptQuest:  [1002]
-<ce>__mansion_ 방향으로 가게. _mansion_ 개체를 찾게.
-<ce>그 안에는 _book_의 명칭으로 불리는 희귀한 책이 있네.
-<ce>=traveltime_일 안에 가져오면 보수를 주겠네.
-<ce>아주 간단하지, 그렇지 않나?
+<ce>__mansion_ 방향으로 가게. _mansion_ 개체를 찾게. 그
+<ce>안에는 _book_의 명칭으로 불리는 희귀한 책이 있네.
+<ce>=traveltime_일 안에 가져오면 보수를 주겠네. 아주 간단하지,
+<ce>그렇지 않나?
 
 QuestComplete:  [1004]
-<ce>아. %oth. 여기 자네의 길드 수수료네.
-<ce>언젠가 다시 함께 일할 수 있으면 좋겠군.
+<ce>아. %oth. 여기 자네의 길드 수수료네. 언젠가 다시
+<ce>함께 일할 수 있으면 좋겠군.
 
 RumorsDuringQuest:  [1005]
-__mansion_의 한 수집가가 방금 _book_의
-희귀본을 구입했답니다.
+__mansion_의 한 수집가가 방금 _book_의 희귀본을
+구입했답니다.
 
 RumorsPostfailure:  [1006]
-_mansion_의 보안이 좋지 않아서 귀중품들을 다른
-곳으로 옮겼답니다.
+_mansion_의 보안이 좋지 않아서 귀중품들을 다른 곳으로
+옮겼답니다.
 
 RumorsPostsuccess:  [1007]
-_mansion_에서 도난당한 그 _book_ 사본은
-대체할 수 없는 물건이었죠.
+_mansion_에서 도난당한 그 _book_ 사본은 대체할 수
+없는 물건이었죠.
 
 QuestorPostsuccess:  [1008]
-오, 안녕, %pcf. 아까 말 안 했던 것 같은데,
-그 책을 가져온 건 정말 잘한 일이었어.
+오, 안녕, %pcf. 아까 말 안 했던 것 같은데, 그 책을
+가져온 건 정말 잘한 일이었어.
 
 QuestorPostfailure:  [1009]
 <ce>변명하려고 하지 말게, %pcf. 책이 어디 있는지,
 <ce>얼마나 서둘러야 하는지 말해줬는데도 자네는 그러지 않았지.
-<ce>이제 너무 늦었고, 난 피곤하네.
-<ce>그냥 착한 %ra 답게 썩 꺼져주겠나?
+<ce>이제 너무 늦었고, 난 피곤하네. 그냥 착한 %ra 답게
+<ce>썩 꺼져주겠나?
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_의 도둑 길드 일원이 제게 __mansion_에
- 있는 _mansion_에서 _book_의 명칭으로
- 불리는 책을 훔쳐 오라는 의뢰를 했습니다.
- _qgiver_까지 돌아오기까지 =traveltime_일 남았습니다.
+ ___qgiver_의 도둑 길드 일원이 제게 __mansion_에 있는
+ _mansion_에서 _book_의 명칭으로 불리는 책을 훔쳐
+ 오라는 의뢰를 했습니다. _qgiver_까지 돌아오기까지
+ =traveltime_일 남았습니다.
 
 
 -- Symbols used in the QRC file:

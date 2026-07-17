@@ -1,0 +1,71 @@
+-- Quest: C:\QUESTS\WORKING\S0000102.Qbn.
+-- Main story quest.
+-- QuestId: 102
+Messages: 16
+Quest: S0000102
+-- Message panels
+QRC:
+
+Message:  1015
+<ce>고트워그께서 네가 죽어야 한다고 하셨다. 우리는 네
+<ce>모든 물건을 가질 것이다. 토템은 제외하고 말이지.
+<ce>그건 그분의 현상금이니까.
+<--->
+<ce>너 %ra, 오크에게 한 번도 제대로 된
+<ce>존중을 보인 적이 없다. 고트워그 왕을 위해 너를
+<ce>처치하고 토템을 가져가는 건 즐거운 일이
+<ce>될 것이다.
+<--->
+<ce>고트워그 왕께서 너는 믿을 수 없는 %ra 의
+<ce>명칭으로 불리는
+<ce>하셨다. 나는 너를 처치하고 그분께 토템을
+<ce>가져갈 것이다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %ra occurs 2 times.
+
+QBN:
+
+
+
+Clock _S.01_ 01:15 0 flag 1 range 0 1
+Clock _S.02_ 444.10:40 0 flag 1 range 0 1
+
+Foe _F.00_ is 3 Orc_warlord
+Foe _F.01_ is 3 Orc_shaman
+
+--	Quest start-up:
+	create foe _F.01_ every 100 minutes 15 times with 3% success 
+	create foe _F.00_ every 100 minutes 15 times with 3% success 
+	start timer _S.02_ 
+
+_S.00_ task:
+	injured _F.01_ 
+	injured _F.00_ 
+	start timer _S.01_ 
+	say 1015 
+
+_S.01_ task:
+	clear _S.01_ _S.00_ 
+
+_S.02_ task:
+	end quest 
+
+GothrydGotTotem _S.03_
+KingOfWormsGotTotem _S.04_
+GortwogGotTotem _S.05_
+AkorithiGotTotem _S.06_
+UnderkingGotTotem _S.07_
+EadwyreGotTotem _S.08_
+BrisiennaGotTotem _S.09_
+_S.10_ task:
+	when _S.03_ or _S.04_ or _S.05_ or _S.06_ 
+
+_S.11_ task:
+	when _S.07_ or _S.08_ or _S.09_ 
+
+_S.12_ task:
+	when _S.10_ or _S.11_ 
+	start task _S.02_ 

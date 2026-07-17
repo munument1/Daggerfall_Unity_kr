@@ -1,0 +1,181 @@
+-- Quest: C:\QUESTS\WORKING\10C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Meridia
+-- Repute: 0
+-- QuestId: 0
+Messages: 41
+Quest: 10C00Y00
+DisplayName: 메리디아의 퀘스트
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>오, 그래요 나의 친애하는 이여, 당신의 야망을 돕는
+<ce>것도 가능할 것 같군요. 내가 아주 귀중한 것을 준다면,
+<ce>먼저 나를 위해 무언가를 해줄 수 있겠나요?
+
+RefuseQuest:  [1001]
+<ce>오, 안타깝군요. 친절한 경고를 하나 하자면,
+<ce>받기만 하고 주려 하지 않는 탐욕스러운
+<ce>%ra 모험가들에게는 나쁜 일이 생기곤 한답니다.
+
+AcceptQuest:  [1002]
+<ce>정말인가요? 오, 정말 사랑스럽군요. =monster_의
+<ce>이름을 지닌 어떤 _monster_보다 훨씬 더 사랑스러워요.
+<ce>그자는 나와 어떤 계약을 맺었으면서 나중에 어기기로
+<ce>마음먹었죠. 당신이 친절을 베풀어 ___mondung_에
+<ce>있는 =monster_ 개체를 찾아가서 그런 비겁한 행동은
+<ce>치명적이라는 사실을 %g2 에게 알려준다면 좋겠군요.
+<ce>그런 다음 나의 친애하는 친구 _qgfriend_에게 가세요.
+<ce>그자는 ___qgfriend_의 __qgfriend_에서 =1stparton_일 동안
+<ce>당신을 기다릴 것이며, 당신이 도착하면 나의 _artifact_
+<ce>물품을 줄 것입니다. 당신에게 꼭 필요한 물건이죠.
+<ce>자, 이제 어서 가보세요. 조심하고요.
+
+QuestFail:  [1003]
+<ce>메리디아의 친절을 갚으려는 계획이, 우리 둘 다 하지
+<ce>않았다는 걸 아는 =monster_ 처단 건으로 내게 거짓말하는
+<ce>건 아니겠죠? 부디 그러지 않길 바랍니다.
+
+QuestComplete:  [1004]
+<ce>%pcn 인가요? 나는 _qgfriend_입니다.
+<ce>당신이 나를 찾고 있었군요. 여기 메리디아가
+<ce>약속한 _artifact_의 전달이 완료되었습니다.
+<ce>당신이 계약의 조건을 이행한 것에 대해 메리디아께서 깊은
+<ce>인상을 받으셨다는 점을 덧붙이고 싶군요.
+
+RumorsDuringQuest:  [1005]
+___mondung_에 있는 소서러는 기이한 유물을 수집하기로
+악명이 높습니다. <---> 듣자 하니 =monster_의
+행방은 %g3 의 수집품을 늘리기 위해 정령들과
+계약을 맺는다고 하더군요.
+
+RumorsPostfailure:  [1006]
+그 수집광 소서러가 드디어 ___mondung_ 쪽을 떠났습니다.
+아마 더 많은 물건을 얻으러 갔겠죠.
+<---> 그 =qgfriend_ _qgfriend_의 행보는
+부정직한 %ra 에 대해 투덜거리며 __qgfriend_
+쪽을 떠났습니다.
+
+RumorsPostsuccess:  [1007]
+=monster_의 수집품 중 어떤 생명체가
+깨어나 %g2 를 죽였다고들 합니다.
+<---> =monster_의 최후는 %g3 의 방대한
+수집품에 관심을 가진 누군가에게 살해당한 모양입니다.
+
+Message:  1011
+_qgfriend_의 정체는 이곳에서 %di 방향에
+있는 __qgfriend_의 =qgfriend_입니다. <--->
+_qgfriend_의 정체는 __qgfriend_에서 만난 조용한
+=qgfriend_입니다. 그곳은 %di 방향에 있습니다.
+
+Message:  1012
+_qgfriend_의 신분은 %reg 에 있는 메리디아의
+수집가 중 한 명입니다. %g 가 그래야 하듯,
+매력적인 인물이죠. <---> _qgfriend_의 역할은
+데이드라의 탐욕의 여신, 메리디아의 하수인입니다.
+
+Message:  1013
+메리디아는 데이드라 섭정이자 인간 표본 수집가입니다.
+<---> 메리디아는 일종의 데이드릭 프린스 역할을
+하며, 그 탐욕스러움은 무자비할 정도입니다.
+
+Message:  1014
+<ce>이 반지는 고대의 강력한 아이템입니다.
+<ce>소문에 따르면 착용자를 바람처럼 보이지 않게 하고,
+<ce>소리 없이, 빠르게 만들어준다고 합니다.
+
+Message:  1020
+%qdt:
+ =1stparton_일 안에 _monster_인 =monster_
+ 개체를 찾아 처치하고, ___qgfriend_에 가서
+ =qgfriend_인 _qgfriend_ 측을 만나 메리디아의
+ 약속된 아티팩트인 _artifact_ 물품을 받아야 한다.
+ =monster_의 위치는 ___mondung_ 지역이며,
+ _qgfriend_ 측은 ___qgfriend_에 있다는 것을 알고 있다.
+
+
+Message:  1030
+<ce>=monster_의 시신이 당신의 발치에 죽어 있습니다.
+<ce>메리디아 님께서 이제 당신에게 빚을 졌군요.
+
+Message:  1040
+<ce>그래, 메리디아가 나를 상대로 하수인들을 보내는군.
+<ce>하지만 나에게도 동맹이 없는 것은 아니다.
+<ce>오라, 오블리비언의 자식들이여! %g3 의 위기의
+<ce>순간에 주인 =monster_의 뜻을 섬겨라!
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 2 times.
+--                %g occurs 3 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 9 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--         =monster_ occurs 12 times.
+--        =qgfriend_ occurs 4 times.
+--       ___mondung_ occurs 3 times.
+--      ___qgfriend_ occurs 9 times.
+--        _artifact_ occurs 3 times.
+--         _monster_ occurs 2 times.
+--        _qgfriend_ occurs 9 times.
+
+QBN:
+Item _artifact_ artifact Ring_of_Khajiit anyInfo 1014
+
+Person _questgiver_ face 112 named Meridia anyInfo 1013
+Person _qgfriend_ group Librarian anyInfo 1011 rumors 1012
+
+Place _mondung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+
+Foe _monster_ is Sorceror
+Foe _daedra1_ is Fire_daedra
+Foe _daedra2_ is Daedroth
+--added dungeon name to block 1002. Quest previously did not name dungeon except in journal.
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	place foe _monster_ at _mondung_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+--unused variable
+_pcgetsgold_ task:
+	when _npcclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1030 
+	clear _S.08_ 
+
+_npcclicked_ task:
+	clicked npc _qgfriend_ 
+
+_clearclick_ task:
+	when _npcclicked_ and not _mondead_ 
+	say 1003
+	clear _npcclicked_ _clearclick_ 
+
+_S.07_ task:
+	injured _monster_ 
+	say 1040 
+
+_S.08_ task:
+	when _S.07_ and not _mondead_ 
+	create foe _daedra2_ every 3 minutes 3 times with 100% success 
+	create foe _daedra1_ every 2 minutes 2 times with 100% success 

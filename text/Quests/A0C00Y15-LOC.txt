@@ -13,37 +13,37 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>당신에 대해 들었습니다, %pcn 님.
-<ce>저는 _questgiver_입니다. 부탁 하나 드려도 되겠습니까?
-<ce>혹시 ___pickupregion_ 근처를 지나실 일이 있으신가요?
+<ce>저는 _questgiver_입니다. 부탁 하나 드려도 되겠습니까? 혹시
+<ce>___pickupregion_ 근처를 지나실 일이 있으신가요?
 <ce>그렇다면 그곳에 있는 누군가에게 소포를 전달해야 합니다.
 <ce>기꺼이 _gold_ 골드를 사례하겠습니다.
 <--->
 <ce>당신의 명성은 익히 들었습니다,
-<ce>%pcn 님. 배달부가 필요합니다.
-<ce>혹시 ___pickupregion_ 쪽으로 향하실 계획이 있으신가요?
-<ce>그곳에 소포 하나만 전해주시겠습니까?
-<ce>수고비로 _gold_ 골드를 드리겠습니다.
+<ce>%pcn 님. 배달부가 필요합니다. 혹시 ___pickupregion_
+<ce>쪽으로 향하실 계획이 있으신가요?
+<ce>그곳에 소포 하나만 전해주시겠습니까? 수고비로 _gold_
+<ce>골드를 드리겠습니다.
 
 RefuseQuest:  [1001]
 <ce>안타깝군요.
 <--->
 <ce>일할 의지가 있는 사람을 다시 찾아봐야겠네요.
 <--->
-<ce>당신은 제가 익히 들어온 그 %pcn 님과는
-<ce>다른 분인가 보군요.
+<ce>당신은 제가 익히 들어온 그 %pcn 님과는 다른 분인가
+<ce>보군요.
 
 AcceptQuest:  [1002]
 <ce>좋습니다! 이 소포를 ___pickupregion_ 님께 가져가서
 <ce>_pickupregion_ 님을 찾으십시오.
-<ce>%g 님께서 보상해 주실 겁니다.
-<ce>=traveltime_일 안으로 도착해야 합니다.
+<ce>%g 님께서 보상해 주실 겁니다. =traveltime_일
+<ce>안으로 도착해야 합니다.
 <ce>여기 소포가 있습니다.
 <--->
 <ce>운이 좋군요! 제 친구가 ___pickupregion_에 있는
 <ce>_pickupregion_입니다.
 <ce>주변에 물어보시면 다들 %g2 님을 알 겁니다.
-<ce>%g 님께서 즉시 보상해 주실 겁니다.
-<ce>만약 =traveltime_일보다 더 걸린다면,
+<ce>%g 님께서 즉시 보상해 주실 겁니다. 만약
+<ce>=traveltime_일보다 더 걸린다면,
 <ce>그냥 버리는 게 나을 겁니다.
 <ce>여기 있습니다.
 
@@ -89,34 +89,34 @@ Message:  1013
 <ce>%g2 님과의 계약을 확정 지을 것입니다.
 
 Message:  1014
-<ce>이것은 _mensclothing_ 특별한 물건입니다.
-<ce>어머니께서 _pickupregion_ 축제를 위해 만들어 주셨지요.
+<ce>이것은 _mensclothing_ 특별한 물건입니다. 어머니께서
+<ce>_pickupregion_ 축제를 위해 만들어 주셨지요.
 
 Message:  1015
 <ce>_pickupregion_ 님께서 이 _painting_ 제작을 의뢰하셨습니다.
 <ce>내일 있을 %g3 의 모임에 꼭 필요합니다.
 
 Message:  1016
-<ce>_pickupregion_ 님께서 이 _potion_ 물품을 가능한
-<ce>한 빨리 필요로 하십니다.
+<ce>_pickupregion_ 님께서 이 _potion_ 물품을 가능한 한 빨리
+<ce>필요로 하십니다.
 
 Message:  1017
 <ce>_pickupregion_ 님께서 위협을 받고 계십니다. 이 _weapon_
 <ce>물건이 %g3 의 두려움을 덜어드릴 수 있을 겁니다.
 
 Message:  1018
-<ce>_pickupregion_ 님의 결혼식을 위해 이
-<ce>훌륭한 _womensclothing_ 물품을 구매했습니다.
-<ce>제시간에 도착하지 못한다면 정말이지 몹시 난처해질 겁니다.
+<ce>_pickupregion_ 님의 결혼식을 위해 이 훌륭한 _womensclothing_
+<ce>물품을 구매했습니다. 제시간에 도착하지 못한다면 정말이지
+<ce>몹시 난처해질 겁니다.
 
 Message:  1019
 <ce>무엇을 원하시나요? _questgiver_? 네, %g 님께서
-<ce>제게 소포를 보내주시겠다고 약속하셨습니다.
-<ce>곧 받지 못하면, 너무 늦어버릴 겁니다.
+<ce>제게 소포를 보내주시겠다고 약속하셨습니다. 곧 받지 못하면,
+<ce>너무 늦어버릴 겁니다.
 
 Message:  1020
-<ce>당신이 _questgiver_ 님으로부터 온 소포를 가지고 있다는
-<ce>걸 안다. 내놔라, 그럼 아무도 다치지 않을 거다.
+<ce>당신이 _questgiver_ 님으로부터 온 소포를 가지고 있다는 걸
+<ce>안다. 내놔라, 그럼 아무도 다치지 않을 거다.
 
 
 -- Symbols used in the QRC file:

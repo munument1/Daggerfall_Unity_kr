@@ -1,0 +1,64 @@
+-- Quest: C:\QUESTS\WORKING\S0000101.Qbn.
+-- Main story quest.
+-- QuestId: 101
+Messages: 16
+Quest: S0000101
+-- Message panels
+QRC:
+
+Message:  1015
+<ce>에드와이어 왕께서 우리를 보내 너를 죽이고
+<ce>토템을 가져오라 하셨다. 죽을 준비해라, %pcn.
+<--->
+<ce>우린 토템을 원한다. 정확히 말하자면, 바렌지아 여왕께서
+<ce>토템을 원하신다. 여왕께서는 네게 느린 죽음 대신
+<ce>빠른 죽음을 선물로 주겠다고 하셨다.
+<--->
+<ce>웨이레스트와 거래를 잘못했나 보군. 그들이 우리를 보내
+<ce>너를 살해하고 토템을 가져오라 했다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcn occurs 2 times.
+
+QBN:
+
+
+
+Clock _S.01_ 01:15 0 flag 1 range 0 1
+Clock _S.02_ 444.10:40 0 flag 1 range 0 1
+
+Foe _F.00_ is 3 Assassin
+
+--	Quest start-up:
+	create foe _F.00_ every 100 minutes 30 times with 5% success 
+	start timer _S.02_ 
+
+_S.00_ task:
+	injured _F.00_ 
+	start timer _S.01_ 
+	say 1015 
+
+_S.01_ task:
+	clear _S.01_ _S.00_ 
+
+_S.02_ task:
+	end quest 
+
+GothrydGotTotem _S.03_
+KingOfWormsGotTotem _S.04_
+GortwogGotTotem _S.05_
+AkorithiGotTotem _S.06_
+UnderkingGotTotem _S.07_
+EadwyreGotTotem _S.08_
+BrisiennaGotTotem _S.09_
+_S.10_ task:
+	when _S.03_ or _S.04_ or _S.05_ or _S.06_ 
+
+_S.11_ task:
+	when _S.07_ or _S.08_ or _S.09_ 
+
+_S.12_ task:
+	when _S.10_ or _S.11_ 
+	start task _S.02_ 

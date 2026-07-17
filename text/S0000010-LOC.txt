@@ -1,0 +1,188 @@
+-- Quest: C:\QUESTS\WORKING\S0000010.Qbn.
+-- Main story quest.
+-- QuestId: 10
+Messages: 23
+Quest: S0000010
+DisplayName: 블레이드의 요새
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+안녕하십니까, %pcf 님.
+제 이름은 _agentuk_입니다. 솔직히 말씀드리자면
+당신을 뵙게 되어 놀랐습니다. 혹시 강령술사단에
+맞서는 언더킹의 노력을 도와주실 수 있으신지요?
+이 임무를 완수하시면 후하게 보상해 드릴 것이며,
+아마 다른 곳에서는 찾기 힘든 정보를 제공해 드리겠습니다.
+
+RefuseQuest:  [1001]
+<ce>아니오. 알겠습니다. 좋습니다.
+
+AcceptQuest:  [1002]
+<ce>그렇군요. 흠. 놀랍군요. 강령술사단이 우리의
+<ce>물건인 _reward_의 행방을 가져갔습니다.
+<ce>가치는 부차적인 문제입니다. 진짜 문제는 그들이 이
+<ce>물건에 저주를 걸어 블레이드에게 넘겼다는 점입니다. 혹시
+<ce>모르실까 봐 말씀드리자면, 블레이드는 한때 타이버 셉팀의
+<ce>호위대였습니다. 오늘날 그들은 제국과 타이버의 강령에는
+<ce>충성하지만, 항상 현 황제에게 충성하는 것은 아닙니다.
+<ce>언더킹은 블레이드에게 해를 끼치고 싶어 하지 않을
+<ce>이유가 있습니다. 당신이 이칼론의 리구위치 성에 잠입하여
+<ce>_reward_의 회수를 바랍니다. 정보와 보상을 원하신다면
+<ce>=itemindung_일 이내에 완수해 주십시오.
+
+QuestFail:  [1003]
+<ce>속담에도 있듯이, _reward_의 부재는, 정보의 부재입니다,
+<ce>%pcf 님.
+
+QuestComplete:  [1004]
+<ce>잘하셨습니다, %pcf 님.
+<ce>_reward_에 이 주문을 걸겠습니다 ... 됐습니다.
+<ce>이제 _reward_의 상태는 안전하며 당신의 것입니다.
+<ce>
+<ce>죽음조차도 타이버 셉팀의 진정한 후손을 언더킹으로부터
+<ce>숨길 수는 없습니다. 라이샌더스 왕은 크링게인 전투에서 죽지
+<ce>않았습니다. 그분은 그보다 앞서 배신으로 살해당하셨습니다.
+<ce>하이 락에 있는 그분의 기념비는 빈 무덤입니다.
+<ce>그분의 유해는 비밀리에 메네비아의 고대 무덤으로
+<ce>옮겨졌으며, 이제 그 위치를 알려드리겠습니다. 누가
+<ce>라이샌더스를 배신했는지, 왜 그분의 영혼이 크링게인 전장이
+<ce>아닌 대거폴 시를 떠도는지는 알지 못합니다. 저는 약속을
+<ce>지켰고, 당신은 언더킹의 감사를 받을 자격을 얻었습니다.
+
+RumorsDuringQuest:  [1005]
+벌레의 왕과 언더킹은 동일 인물이라고 합니다.
+<---> 언더킹은 죽은 것으로 알려져 있지만,
+그 대리인들은 여전히 그의 목표를 수행하고 있습니다.
+
+RumorsPostfailure:  [1006]
+언더킹의 물건을 훔치는 건 미친 짓이지. 저
+%ra 용병에게 물어봐. <---> 언더킹의 물건을
+훔치려던 %ra 에 대해 들었나? 불쌍한 바보 같으니.
+
+RumorsPostsuccess:  [1007]
+어젯밤 별자리에 이상한 징조가 있었어.
+반신(demi-god)의 분노가 느껴지더군.
+<---> 강령술사들이 _reward_의 행방을 찾으려고
+시골을 샅샅이 뒤지고 다닌다더군.
+
+QuestorPostsuccess:  [1008]
+%qdt:
+ 언더킹의 대리인이 나에게 이칼론의 리구위치 성으로 가서
+ 강령술사들이 언더킹에게서 훔쳐 간 _reward_의 회수를
+ 요청했다. _reward_의 회수까지 =itemindung_일이 남았다.
+
+QuestLogEntry:  [1010]
+<ce>당신은 벌레의 왕의 계획을 방해하고 있다.
+<ce>필멸의 목숨을 두려워하라!
+<--->
+<ce>벌레의 왕께서 복수를 원하신다. 당신은
+<ce>그분의 정당한 소유물을 훔쳤다. 이제
+<ce>죽은 자들의 왕국으로 합류해야 할 것이다.
+<--->
+<ce>어리석은 살과 피여. 죽은 자들의 군주를
+<ce>거역하지 마라. 벌레의 왕께서
+<ce>복수를 행하실 것이다.
+<--->
+<ce>절대 그 _reward_에 손대지 말았어야 했다. 그것은
+<ce>죽은 자들의 땅으로 향하는 관문이다. 이제 당신은 그곳에서
+<ce>우리와 함께해야 한다. 죽을 준비를 하라!
+
+Message:  1021
+친애하는 %pcn 님께,
+ 
+센티넬의 아코리티 여왕께서 당신을 용감하고 유능하며 편견
+없는 %ra 의 명칭으로 불리는 높이 평가하셨습니다.
+실제로는 '영웅'이라고 하셨지요. 우리는 한동안
+그런 분을 찾고 있었습니다. 우리의 충성 대상에 대해
+거짓말은 하지 않겠습니다. 우리는 언더킹을 섬깁니다.
+만약 당신이 동화 같은 이야기를 믿고 언더킹을 궁극적인
+악의 세력으로 간주하신다면, 우리가 사람을 잘못 보았음을
+사과드립니다. 그렇지 않다면, 당신의 도움이 필요합니다.
+센티넬의 __agentplace_에 있는 _agentplace_에서 저를 찾으실
+수 있습니다. 한 달 동안 기다리겠습니다.
+ 
+<ce>-- _agentuk_
+
+Message:  1022
+<ce>젊은 전령이 무뚝뚝하게 편지를 건네고는 한마디 말도
+<ce>없이 성큼성큼 사라집니다.
+<ce>
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 4 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 4 times.
+--      =itemindung_ occurs 2 times.
+--     __agentplace_ occurs 4 times.
+--         _agentuk_ occurs 3 times.
+--          _reward_ occurs 55 times.
+
+QBN:
+Item _reward_ magic_item
+Item letter14 letter used 1021
+
+Person _agentuk_ face 1 faction Agents_of_The_Underking remote
+Person _necromancer_ face 1 faction The_Necromancers remote
+
+Place _llugwych_ permanent LlugwychCastle
+Place _agentplace_ remote house2
+Place _lysandustomb_ permanent LysandusTomb2
+
+Clock _S.04_ 6.23:20 0 flag 1 range 0 1
+Clock _itemindung_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Wraith
+
+--	Quest start-up:
+	repute with _agentuk_ exceeds 0 do _S.07_ 
+
+_pcgetsgold_ task:
+	toting _reward_ and _agentuk_ clicked 
+	give pc _reward_ 
+	reveal _lysandustomb_ in province 33 at 210794 
+	change repute with _necromancer_ by -20 
+	change repute with _agentuk_ by +15 
+	end quest 
+
+_S.01_ task:
+	injured _F.00_ saying 1010 
+
+yes task:
+	place item _reward_ at _llugwych_ marker 0
+	start timer _itemindung_ 
+	log 1008 step 0 
+	reveal _llugwych_ in province 40 at 26340 
+	say AcceptQuest 
+	have _reward_ set _S.06_ 
+
+_no_ task:
+	say RefuseQuest 
+	end quest 
+
+_S.04_ task:
+	add dialog for location _agentplace_ person _agentuk_ 
+	give pc letter14 notify 1022 
+	create npc at _agentplace_ 
+	place npc _agentuk_ at _agentplace_ 
+
+_S.05_ task:
+	clicked npc _agentuk_ 
+	prompt QuestorOffer yes yes no _no_ 
+
+_S.06_ task:
+	send _F.00_ every 50 minutes 10 times with 5% success 
+
+variable _S.07_
+_S.08_ task:
+	level 8 completed 
+
+_S.09_ task:
+	when _S.07_ and _S.08_ 
+	start timer _S.04_ 
+
+_itemindung_ task:
+	end quest 

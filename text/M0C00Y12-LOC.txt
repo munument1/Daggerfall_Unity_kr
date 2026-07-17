@@ -1,0 +1,109 @@
+-- Quest: C:\QUESTS\WORKING\M0C00Y12.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: fighter
+-- Repute: 0
+-- QuestId: 12
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: M0C00Y12
+DisplayName: 거대 거미 사냥
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 이름은 _qgiver_입니다.
+<ce>길드원이 아닌 사람에게 일거리를 주는 건 좋아하지 않습니다.
+<ce>하지만 당신은 믿을 만한 사람 같군요. 어떤 불쌍한 사람이
+<ce>거대 거미 알을 집으로 가져왔는데 부화하고 말았습니다.
+<ce>누에고치인 줄 알았던 모양입니다. 그 불쌍한 친구는 거미를
+<ce>처리할 비용을 길드에 지불할 여력이 없습니다. 하지만
+<ce>당신이 무료로 처리해 준다면 길드의 평판이 좋아질 것이고,
+<ce>당신의 평판도 제가 책임지겠습니다. 관심 있으십니까?
+
+RefuseQuest:  [1001]
+<ce>당신이 일에 진지하다는 걸 알아봤어야 했는데.
+
+AcceptQuest:  [1002]
+<ce>이번이 당신에게 큰 기회입니다.
+<ce>거미는 _house_에 갇혀 있습니다.
+<ce>오늘 안으로 죽이면 당신을 좋게 추천해 주겠습니다.
+
+QuestComplete:  [1004]
+<ce>배짱이 있군요, %pcf. 계속 이렇게 잘해낸다면
+<ce>당신도 전사 길드에 어울리는 인재가 될 겁니다.
+
+RumorsDuringQuest:  [1005]
+<ce>거대 거미 알을 집으로 가져온 바보 이야기를 들었습니까?
+<ce>이제 여덟 다리 달린 애완동물이 그를 저녁 식사로
+<ce>잡아먹으려 한다더군요!
+
+RumorsPostfailure:  [1006]
+<ce>어떤 불쌍한 바보가 자기 집에서 거대 거미에게 쏘여
+<ce>거의 죽을 뻔했답니다!
+
+RumorsPostsuccess:  [1007]
+<ce>당신이 그 거대 거미를 죽인 사람이군요.
+<ce>전사 길드에 가입하거나 뭐 그런 거라도 해보는 게 어때요?
+
+QuestorPostsuccess:  [1008]
+<ce>거대 거미 처리는 훌륭했습니다.
+
+QuestorPostfailure:  [1009]
+<ce>거미 하나도 제대로 처리하지 못하면서, 길드에서 당신에게
+<ce>맡길 다른 일들을 어떻게 처리할 생각입니까?
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 전사 길드에서 _house_에서
+ 부화한 거대 거미를 처치할 기회를 주었습니다.
+ 오늘 안으로 끝내야 합니다.
+
+Message:  1011
+<ce>_monster_ 사망이 확인되었습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 1 time.
+--              %qdt occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--           _house_ occurs 2 times.
+--         _monster_ occurs 3 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _house_ local random
+
+Clock _2dung_ 1.00:00 0 flag 1 range 0 1
+
+Foe _monster_ is Spider
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _house_ 
+	log 1010 step 0 
+	create npc at _house_ 
+	place foe _monster_ at _house_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	when _qgclicked_ and _S.01_ 
+	give pc nothing 
+	end quest 
+
+_qgclicked_ task:
+    clicked npc _qgiver_
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.01_ 
+	clear _qgclicked_ _clearclick_ 
+	--removed duplicate clearclick

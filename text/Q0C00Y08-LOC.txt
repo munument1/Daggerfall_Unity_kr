@@ -1,0 +1,149 @@
+-- Quest: C:\QUESTS\WORKING\Q0C00Y08.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: witch
+-- Repute: 0
+-- QuestId: 8
+Messages: 14
+Quest: Q0C00Y08
+DisplayName: 희귀한 고서
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>사실, 당신이 우리를 도와줄 수 있습니다, %pcf.
+<ce>우리는 외부 세계로부터 두려움과 적대감을 받는 고립된
+<ce>마녀 집단입니다. 만약 당신이 ___contact_에 보관된 희귀한
+<ce>고서를 우리를 위해 가져와 준다면, 당신을 위해 특별히
+<ce>제작한 _mitem_ 물품을 기꺼이 드리겠습니다.
+
+RefuseQuest:  [1001]
+<ce>그렇다면 다음 방랑자가 올 때까지 기다리죠.
+<ce>우리가 그렇게 절박한 것은 아닙니다.
+
+AcceptQuest:  [1002]
+<ce>해주시겠습니까? 그 고서의 이름은 _book_ -- 정말로
+<ce>희귀한 책입니다. 설령 사본을 찾는다 해도, 가격이 매우
+<ce>비쌀 것입니다. 다행히도 우리는 ___contact_에 친구를 두고
+<ce>있습니다. _contact_의 이름을 지닌 =contact_ 측이
+<ce>사본을 훔쳤지요. __contact_에서 %g2 를 만나면,
+<ce>%g 가 당신에게 책을 줄 것입니다.
+<ce>=queston_일 안으로 돌아오길 기대하겠습니다.
+<ce>그 시간이 지나면, 책은 우리에게 아무런 소용이 없습니다.
+<ce>==daedra_께서 당신의 여정을 지켜보시길.
+
+QuestComplete:  [1004]
+<ce>아, 여기 있군요. %pcf 님께서 이 페이지를 정독할
+<ce>기회를 가지셨길 바랐습니다. 이와 같은 것을 다시 찾기는
+<ce>쉽지 않을 겁니다. 자, 여기 _mitem_입니다.
+
+RumorsDuringQuest:  [1005]
+_contact_에 대한 의심이 커지고 있습니다. 사람들이
+말하길 %g 는 마녀들과 어울린다고 하더군요.
+<---> 어떤 이들은 _contact_ 또한 비밀
+마녀라고도 합니다.
+
+RumorsPostfailure:  [1006]
+_contact_ 측은 체포되어 화형당했습니다.
+%g2 에게는 그게 딱이죠.
+<---> 불쌍한 _contact_ 측은 %g3 의 입을
+단속하지 못했습니다. 뭐, 이제는 다물게 되었지만요.
+
+RumorsPostsuccess:  [1007]
+그 _contact_ 측은 체포되었지만, 그들은 _book_
+물품을 찾지 못했습니다. <---> 그들은 _contact_
+측을 잡았지만, %g 는 _book_ 물품을 훔친
+=contact_ 측이 아니었던 모양입니다.
+
+QuestorPostsuccess:  [1008]
+오, 안녕하세요, %pcf 님.
+마침 _book_에 관한 내용을 읽고 있었답니다.
+당신이 우리를 위해 가져다준 사본 말이에요.
+
+QuestorPostfailure:  [1009]
+<ce>_book_의 분실이 확인되었습니다,
+<ce>아마 영원히 찾지 못할 겁니다. 지금은 말할 때가 아닙니다.
+<ce>가세요, ==qgiver_ 님. 당신은 지금 환영받지 못합니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ==qgiver_께서 저를 ___contact_ 쪽으로 보내어
+ =contact_ _contact_ 님을 __contact_에서
+ 만나 아주 희귀한 책에 관해 이야기하게 하셨습니다.
+ 저는 =queston_일 이내에 그 책을 ==qgiver_
+ 님께 돌려드려야 합니다.
+
+Message:  1011
+<ce>좋아, %pcf, 여기 책이다. 몸조심해.
+<ce>경비병들이 ___contact_의 내부를 샅샅이 뒤지고 있으니까.
+<ce>그 물건 때문에 말이야.
+
+Message:  1012
+<ce>멈춰라! 도둑이다!
+
+Message:  1013
+<ce>마녀들이 바로 이 순간에 책을 기대하고 있었다는 사실이
+<ce>갑자기 당신의 머릿속을 스칩니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 6 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 2 times.
+--              %pcf occurs 5 times.
+--              %qdt occurs 1 time.
+--         ==daedra_ occurs 1 time.
+--         ==qgiver_ occurs 3 times.
+--         =contact_ occurs 4 times.
+--         =queston_ occurs 3 times.
+--       ___contact_ occurs 6 times.
+--            _book_ occurs 19 times.
+--         _contact_ occurs 10 times.
+--           _mitem_ occurs 3 times.
+
+QBN:
+Item _mitem_ magic_item
+Item _book_ book2
+
+Person _qgiver_ group Questor
+Person _daedra_ face 1 factiontype Daedra remote
+Person _contact_ face 68 group Innkeeper male remote
+
+
+Clock _queston_ 00:00 0 flag 17 range 1 2
+
+Foe _guard_ is Knight
+
+--	Quest start-up:
+	hide npc _daedra_
+	start timer _queston_ 
+	log 1010 step 0 
+-- hide NPC added to ensure this dummy character won't appear in the wild somewhere.
+-- this NPC is never used in the game world, only as a name drop.
+
+variable _queston_
+_S.01_ task:
+	when _queston_ and _S.05_ 
+	say 1013 
+	make _book_ permanent 
+	end quest 
+
+_S.02_ task:
+	when _queston_ and not _S.05_ 
+	end quest 
+
+_qgclicked_ task:
+	toting _book_ and _qgiver_ clicked 
+	give pc _mitem_ 
+	end quest 
+
+_S.04_ task:
+	clicked npc _contact_ 
+	get item _book_ 
+	say 1011 
+	have _book_ set _S.05_ 
+
+_S.05_ task:
+	create foe _guard_ every 20 minutes 20 times with 50% success msg 1012 
+	legal repute -30 

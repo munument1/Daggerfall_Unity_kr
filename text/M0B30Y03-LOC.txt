@@ -1,0 +1,148 @@
+-- Quest: C:\QUESTS\WORKING\M0B30Y03.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: fighter
+-- Repute: 30
+-- QuestId: 3
+Messages: 81
+Quest: M0B30Y03
+DisplayName: 데이드로스 사냥
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>문제가 하나 생겼네. 자네 말고는 해결할 사람이
+<ce>없을 것 같아서 말이야, %pcf. ___mondung_에
+<ce>흉측한 괴물이 하나 나타났네.
+데이드로스라는 놈이지. 거짓말이 아니야.
+왜 거기 있는지 아무도 모르지만,
+다들 그놈을 없애고 싶어 하지. _reward_
+<ce>골드면 자네가 처리할 수 있겠나,
+그거, %pcf?
+
+RefuseQuest:  [1001]
+<ce>자네를 탓하는 건 아니네, %pcf.
+<ce>나라도 데이드로스를 상대하고 싶지는 않을 테니까.
+
+AcceptQuest:  [1002]
+<ce>좋아, 알겠네. 자네 장례식이 되겠군, %pcf.
+<ce>잘 듣게, 그 데이드로스를 처치하고
+<ce>=1stparton_일 안에 여기로 돌아와 보상을 받게나.
+그놈이 얼마나 오래 거기 머물지 모르니
+서두르는 게 좋을 걸세. 그리고
+이것만은 명심하게, %pcf.
+지옥 같은 싸움이 될 테니 단단히 준비하게나.
+
+QuestFail:  [1003]
+<ce>그 데이드로스가 늙어 죽기만을 기다리고 있는 건가,
+<ce>%pcf?
+
+QuestComplete:  [1004]
+<ce>이봐, 자네는 나보다 더 나은 %ra 종족이군,
+<ce>%pcf. 데이드로스 사냥꾼이라.
+마음에 드는군. 여기 자네 몫의 골드일세.
+
+RumorsDuringQuest:  [1005]
+___mondung_에 있는 그 커다란 도마뱀 같은 게 뭔지는
+모르겠지만, 마음에 안 드는군. <---> 다들
+___mondung_에 있는 그 크고 흉측한 것에 대해 떠들썩하더군.
+
+RumorsPostfailure:  [1006]
+그 데이드로스에게 무슨 일이 일어났는지는 모르겠군.
+아직 어딘가에 있을 거야. <---> 데이드로스가 어디
+있는지 알았을 때가 좋았지. 어디가 안전한지 모르겠어.
+
+RumorsPostsuccess:  [1007]
+데이드로스를 처리해준 전사 길드에 %god 의
+가호가 있기를. <---> 그 크고 흉측한 도마뱀
+같은 게 대체 뭐였는지 궁금하군.
+
+QuestorPostsuccess:  [1008]
+<ce>당신이 바로 ___mondung_에서 나를 위해 데이드로스를 처치한
+<ce>%ra 종족이군. 악수라도 한번 합시다.
+
+QuestorPostfailure:  [1009]
+<ce>전사 길드에서는 실패를 가볍게 여기지 않네. 데이드로스
+<ce>하나 처리하지 못할 거였다면, 애초에 일을 맡지 말았어야지.
+<ce>자네와 시간 낭비하며 떠들기엔 내 할 일이 너무 많군.
+
+Message:  1020
+<ce>데이드로스가 죽었습니다.
+
+Message:  1030
+%qdt:
+ ___questgiver_의 전사 길드에서 ___mondung_에 있는
+ 데이드로스를 =1stparton_일 이내에 처치하면 _reward_
+ 골드를 주겠다고 했다.
+
+-lowered first line of 1030 from %qdt line
+
+Message:  1080
+<ce>데이드로스를 처리하는 데 눈 하나 깜짝하지 않았으니,
+<ce>이 지도를 ___newdung_에게 가져가게.
+<ce>자네 같은 %pct 에게는 아주 즐거운 일이 될 걸세.
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 1 time.
+--              %pcf occurs 9 times.
+--              %pct occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--       =1stparton_ occurs 2 times.
+--       ___mondung_ occurs 6 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Daedroth
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	pick one of _map_ _nomap_ _nomap_ _map_ 
+	place foe _monster_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+
+_mondead_ task:
+	killed 1 _monster_ saying 1020 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.07_ task:
+	when _map_ and _pcgetsgold_ 
+	reveal _newdung_ readmap
+    say 1080 
+
+_S.08_ task:
+	when _nomap_ and _pcgetsgold_ 
+
+_S.09_ task:
+	when _S.07_ or _S.08_ 
+	end quest 

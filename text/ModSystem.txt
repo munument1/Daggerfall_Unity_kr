@@ -65,6 +65,6 @@ dependencyErrorMessage,하나 이상의 모드가 제대로 작동하지 않을 
 dependencyIsMissing,모드 {0} 가져오기에 실패했습니다.
 dependencyNotEnabled,모드 의존성 {0} 항목이 활성화되지 않았습니다.
 dependencyWithIncorrectPosition,{0} 항목은 로드 순서상 더 위에 위치해야 합니다.
-dependencyWithIncompatibleVersion,{0}의 버전은 {1} 개체가지만, {2} 이상의 버전이 필요합니다.
+dependencyWithIncompatibleVersion,{0} 버전: {1}. 요구 버전: {2} 이상.
 sortModsQuestion,모드를 자동으로 정렬하시겠습니까?
 gameVersionUnsatisfied,Daggerfall Unity v.{0} 이상이 필요합니다.

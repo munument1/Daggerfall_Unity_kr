@@ -1,0 +1,201 @@
+-- Quest: C:\QUESTS\WORKING\C0B00Y14.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: temple
+-- Repute: 0
+-- QuestId: 14
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 62
+Quest: C0B00Y14
+DisplayName: 언데드 사냥
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pct, 당신에게 위험한 임무를 하나 맡기려 하오.
+<ce>미리 말해두지만, 꽤 강력한 언데드 생명체를 처치해야
+<ce>하는 일이오. 여전히 __questgiver_ 처치를 위해 이
+<ce>임무를 수행할 의향이 있소?
+
+RefuseQuest:  [1001]
+<ce>음, 당신을 탓할 수는 없겠군요.
+<ce>저 자신도 감히 엄두를 못 낼 테니까요.
+
+AcceptQuest:  [1002]
+<ce>당신의 용기는 우리 교단의 명예입니다, %pcf.
+<ce>우리는 ___mondung_라 불리는 곳을 정화하고자 합니다.
+<ce>오래전 그곳은 우리 사원 중 하나였으나, 지금은
+<ce>더럽혀진 복도에 어떤 언데드 망령이 출몰하고 있습니다.
+<ce>당신은 이 불안한 영혼을 처단하고 그 시신에 특별히
+<ce>준비된 성수를 뿌려야 합니다. 만약 =qtime_일 내에
+<ce>돌아오지 않는다면, 나는 당신의 떠난 영혼을 위해 향을
+<ce>피우고 다른 이를 보내 당신의 원수를 갚게 할 것입니다.
+<ce>%god 께서 당신과 함께하시길.
+
+QuestFail:  [1003]
+<ce>%pct, ___mondung_ 정화 작업을 돕고 싶지 않았다면,
+<ce>진작에 말했어야 합니다.
+
+QuestComplete:  [1004]
+<ce>%god 께 찬양을, 무사히 돌아오셨군요!
+<ce>우리 예언자들이 이미 ___mondung_ 내부의 악이
+<ce>정화되었다고 보고했습니다. __questgiver_의 봉사를 위해
+<ce>당신은 훌륭히 임무를 수행했습니다.
+
+RumorsDuringQuest:  [1005]
+__questgiver_의 계획은 ___mondung_의 예전 영광을
+되돌리는 것입니다.
+
+RumorsPostfailure:  [1006]
+<ce>___mondung_ 내부의 악은 __questgiver_의 힘으로
+<ce>몰아내기에는 너무 강력한 것 같습니다.
+<ce>
+
+RumorsPostsuccess:  [1007]
+<ce>__questgiver_의 뜻에 따라 ___mondung_ 정화를 위해
+<ce>교단원 중 한 명을 보냈습니다.
+
+QuestorPostsuccess:  [1008]
+<ce>반갑습니다, %pcf. ___mondung_ 쪽으로의 당신의
+<ce>원정은 우리에게 큰 도움이 되었습니다.
+
+QuestorPostfailure:  [1009]
+<ce>무엇을 도와드릴까요? ___mondung_의 사악한 영혼에 대한
+<ce>도움을 요청했을 때 당신은 나를 실망시켰습니다.
+
+Message:  1020
+%qdt:
+ ___questgiver_에 있는 __questgiver_의
+ _questgiver_께서 ___mondung_에 출몰하는
+ 언데드 생명체를 처단해달라고 내게 의뢰했다.
+ %g 는 몬스터의 영혼이 돌아오지 못하도록 그
+ 시신에 뿌려야 할 특별히 준비된 성수 한 병을 주었다.
+ _questgiver_ 쪽으로 돌아가지 못하면 %g 가 다른
+ 사람을 보내야 하므로, 내게는 =qtime_일의 시간이 있다.
+
+Message:  1021
+%qdt:
+ ___questgiver_의 _questgiver_ __questgiver_께서 ___mondung_
+ 배회하는 언데드 처치를 의뢰하셨다. 하지만 그전에 먼저
+ ___priest_의 __priest_에 있는 _priest_ 찾아가야
+ 한다. 그분께서 특별히 준비된 성수 병에 마지막 축복을
+ 내려주실 것이다. 몬스터의 영혼이 ___mondung_ 쪽으로
+ 돌아가지 못하게 하려면 그 성수를 시체에 뿌려야 한다.
+ _questgiver_에게 돌아갈 시간은 =qtime_일 남았다.
+ 그렇지 않으면 %g 께서 다른 사람을 보내야
+ 할 것이다.
+
+Message:  1050
+<ce>아, 잠시만요, 요즘 제가 너무 깜빡깜빡하네요!
+<ce>먼저 그 성수를 ___priest_에 있는
+<ce>__priest_의 _priest_에게 가져가야 합니다.
+<ce>%g 께서 그 병에 최종적인 축복을 내려주실 겁니다.
+
+Message:  1051
+<ce>_priest_의 손에 말없이 병이 전달됩니다.
+<ce>%g 는 엄숙하게 병에 축복을 내리고,
+<ce>당신에게도 축복을 내립니다. %g 는 병을 돌려주고
+<ce>%g3 의 명상으로 돌아갑니다.
+
+Message:  1060
+<ce>"나는 =monster1_ 개체가다!
+<ce>너는 나의 물질적 형체를 죽일 수는 있겠지만, 나는 언제나
+<ce>나의 고향인 이곳 ___mondung_ 방향으로 돌아올 것이다!"
+
+Message:  1061
+<ce>당신이 =monster1_의 유해 위에 성수를 뿌리자, 절망적인
+<ce>비명 소리가 ___mondung_의 어두운 홀에 울려 퍼지며,
+<ce>서서히 먼 곳으로 사라집니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 6 times.
+--               %g3 occurs 2 times.
+--              %god occurs 3 times.
+--              %pcf occurs 2 times.
+--              %pct occurs 2 times.
+--              %qdt occurs 2 times.
+--        =monster1_ occurs 2 times.
+--           =qtime_ occurs 3 times.
+--       ___mondung_ occurs 23 times.
+--        ___priest_ occurs 2 times.
+--    ___questgiver_ occurs 2 times.
+--         __priest_ occurs 2 times.
+--     __questgiver_ occurs 11 times.
+--          _priest_ occurs 3 times.
+--      _questgiver_ occurs 4 times.
+
+QBN:
+Item _I.00_ item class 10 subclass 4
+
+Person _questgiver_ group Questor
+Person _priest_ group Cleric remote
+
+Place _mondung_ remote dungeon4
+
+Clock _qtime_ 00:00 0 flag 17 range 1 5
+
+Foe _monster1_ is Zombie
+Foe _monster2_ is Mummy
+Foe _monster3_ is Ghost
+
+--	Quest start-up:
+	start timer _qtime_ 
+	reveal _mondung_ 
+	get item _I.00_ 
+	pick one of _S.05_ _S.05_ _S.04_ 
+	pick one of _S.00_ _S.01_ _S.02_ 
+
+_S.00_ task:
+	place foe _monster1_ at _mondung_ 
+
+_S.01_ task:
+	place foe _monster2_ at _mondung_ 
+
+_S.02_ task:
+	place foe _monster3_ at _mondung_ 
+
+_qtime_ task:
+	end quest 
+
+_S.04_ task:
+	log 1021 step 0 
+	say 1050 
+
+_S.05_ task:
+	log 1020 step 0 
+
+_mondead_ task:
+	killed 1 _monster1_ 
+	killed 1 _monster2_ 
+	killed 1 _monster3_ 
+	say 1060 
+	have _I.00_ set _S.09_ 
+
+_S.07_ task:
+	when _mondead_ and _S.09_ and not _S.10_ 
+	take _I.00_ from pc 
+	say 1061 
+
+_S.08_ task:
+	toting _I.00_ and _priest_ clicked 
+	get item _I.00_ 
+	say 1051 
+
+variable _S.09_
+_S.10_ task:
+	when _S.09_ and not _S.08_ and _S.04_ 
+
+_clickqgiver_ task:
+	clicked npc _questgiver_ 
+
+_success_ task:
+	when _clickqgiver_ and _S.07_ 
+	give pc nothing 
+	end quest 
+
+_clearclick_ task:
+	when not _S.07_ and _clickqgiver_ 
+	say 1003
+	clear _clickqgiver_ _clearclick_ 

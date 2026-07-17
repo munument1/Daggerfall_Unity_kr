@@ -124,6 +124,6 @@ AI 번역 특성상 설정 오해, 고유명사 오역, 문체 불일치가 남�
 - munument1
 - 번역 파이프라인·검수 보조: OpenAI Codex
 
-글꼴 리소스는 [Neo둥근모](https://neodgm.dalgona.dev/)를 참고하십시오.
+글꼴 리소스는 UI, 대화 및 서적 본문 전체에 [NEXON Warhaven](https://brand.nexon.com/)을 사용합니다. 세부 배치와 라이선스는 `fonts\README_fonts.txt`를 확인하십시오.
 
 Daggerfall Unity는 [Daggerfall Workshop](https://www.dfworkshop.net/)과 해당 기여자들이 개발한 프로젝트입니다. *The Elder Scrolls II: Daggerfall* 및 관련 명칭과 자산의 권리는 Bethesda Softworks에 있습니다. 이 저장소는 Bethesda Softworks 및 Daggerfall Workshop의 공식 프로젝트가 아닙니다.

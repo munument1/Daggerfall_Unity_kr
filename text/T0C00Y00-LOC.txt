@@ -1,0 +1,161 @@
+-- Quest: C:\QUESTS\WORKING\T0C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Lady Azura
+-- Repute: 0
+-- QuestId: 0
+Messages: 31
+Quest: T0C00Y00
+DisplayName: 아주라의 퀘스트
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>감히 붉은 문의 아주라를 소환하여 힘을 구걸하는가?
+<ce>네가 그런 은총을 받을 자격이 있는지 모르겠구나.
+<ce>사실, 매우 의심스럽다. 내가 나에 대해 매우 무례한 말을
+<ce>떠들고 다니는 사제를 죽이라고 명령한다면, 너는 그 작고
+<ce>단순한 요청조차 거절하겠지. 나를 위해 그 일을 하겠느냐?
+
+RefuseQuest:  [1001]
+<ce>아니! 예라고 대답해야지! 너는 이렇게 말했어야 했다:
+<ce>아름다운 아주라 님, 당신의 상아 같은 손가락이 튕기는
+<ce>것만으로도 기꺼이 살인을 저지르겠습니다. 무식한 놈!
+<ce>편협한 놈! 야만인! 이제 가야겠다. 내가 숙녀라는 사실을
+<ce>잊고 후회할 말을 내뱉기 전에 말이다...
+
+AcceptQuest:  [1002]
+<ce>정말 하실 건가요! 오, 아주 좋아요. 그런데 이 끔찍한
+<ce>사제는 치유사이기도 하답니다. 그게 무슨 의미가 있는지
+<ce>모르겠지만요. 정말 전형적이지 않나요? 이런 독선적인
+<ce>부류들이 늘 그렇듯, =monster_ ___mondung_에 은둔하며
+<ce>정화 의식 같은 우스꽝스러운 짓을 하고 있죠. 어쨌든, 거기로
+<ce>가서 %g2 의 몸에 칼을 꽂아버리는 게 어떨까요?
+<ce>그러고 나서 ___qgfriend_ 쪽으로 달려가 나의 사랑스러운
+<ce>_qgfriend_ 만나보세요. 그이가 내 별을 줄 거예요.
+<ce>누구에게나 충분한 힘이죠. =1stparton_일이면 충분한
+<ce>시간이라고 생각하는데, 그렇지 않나요? 오, 좋아요. 그럼
+<ce>서둘러요, %pcf. 그리고 너무 낯설게 굴지 말고요.
+<ce>대신 _qgfriend_에게 안부 전해줘요. 그럼, 안녕.
+
+QuestFail:  [1003]
+<ce>음? 뭐죠? 당신을 아나요?
+
+QuestComplete:  [1004]
+<ce>오. 오, %pcn! 여기 온 지 오래되었나요? 미안해요,
+<ce>나의 여주인, 아주라 님에 대해 몽상에 잠겨 있었어요.
+<ce>저 촛불이 그분의 눈동자에서 나오는 빛을 떠올리게 했거든요.
+<ce>정말 바보 같죠. 자, 여기 _artifact_ 있어요.
+<ce>그분은 이걸 아무에게나 주지 않지만,
+<ce>너무 우쭐대지는 마세요. 원래는 제 것이었으니까요.
+
+RumorsDuringQuest:  [1005]
+%g 가 마을에 왔을 때
+=monster_의 허영심에 관한 설교를 들었나요?
+<---> =monster_ 및 그 일행과 대화해보면
+이기주의가 얼마나 큰 죄악인지 깨닫게 될 겁니다.
+
+RumorsPostfailure:  [1006]
+=monster_의 부재에도, 겸손의 미덕에
+관한 %g3 의 메시지는 남아있습니다.
+<---> =monster_의 부재에도,
+%reg 의 곁을 떠나 여전히 허영심에 관한
+%g3 의 메시지를 전파하고 다닌다더군요.
+
+RumorsPostsuccess:  [1007]
+=monster_에 대한 비극은 아니에요.
+제 말은, %g 는 정말 착한 사람이었거든요.
+<--->
+<ce>=monster_ 사망 후 기쁜 건 아니지만,
+<ce>%g3 의 메시지는... 음, 꽤 극단적이지 않았나요?
+
+Message:  1011
+_qgfriend_ 측은 %di 쪽 __qgfriend_에서
+몽상에 잠겨 있던 그 =qgfriend_입니다.
+<---> _qgfriend_ 측은 __qgfriend_에 있는 그 졸린
+눈의 =qgfriend_ 측이며, 이곳의 %di 입니다.
+
+Message:  1012
+_qgfriend_ 아주라 님의 연인 중 한 명이자 %reg 에
+있는 그분의 대리인입니다. <---> _qgfriend_ 아주라
+님이 홀려서 사실상 노예가 된 =qgfriend_입니다.
+
+Message:  1013
+아주라는 오블리비언의 데이드릭 섭정 중 한 명입니다.
+그분의 영역은 허영심이죠. <---> 아주라 님은
+허영과 이기심의 데이드릭 프린스입니다.
+
+Message:  1014
+_artifact_ 살아있는 생명체를 영원히 석상으로
+변하게 할 수 있습니다.
+
+Message:  1020
+%qdt:
+ 저는 데이드릭 프린스 중 하나인 아주라와 계약을 맺었습니다.
+ 버려진 사원에 사는 수도사 ___mondung_ 처치하고,
+ ___qgfriend_의 연락책인 _qgfriend_ =1stparton_일
+ 이내에 만나면, _artifact_ 받기로 했습니다.
+
+Message:  1030
+<ce>당신은 아주라와 약속한 대로 _monster_인
+<ce>=monster_ 처치했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 2 times.
+--                %g occurs 2 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 4 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--              %reg occurs 2 times.
+--       =1stparton_ occurs 2 times.
+--         =monster_ occurs 8 times.
+--        =qgfriend_ occurs 3 times.
+--       ___mondung_ occurs 2 times.
+--      ___qgfriend_ occurs 4 times.
+--        _artifact_ occurs 3 times.
+--         _monster_ occurs 1 time.
+--        _qgfriend_ occurs 7 times.
+
+QBN:
+Item _artifact_ artifact Azuras_Star anyInfo 1014
+
+Person _questgiver_ face 112 named Azura anyInfo 1013
+Person _qgfriend_ group Librarian anyInfo 1011 rumors 1012
+
+Place _mondung_ remote dungeon4
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+
+Foe _monster_ is Healer
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	place foe _monster_ at _mondung_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_pcgetsgold_ task:
+	when _npcclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1030 
+
+_npcclicked_ task:
+	clicked npc _qgfriend_ 
+
+_clearclick_ task:
+	when _npcclicked_ and not _mondead_ 
+	say 1003
+	clear _npcclicked_ _clearclick_ 

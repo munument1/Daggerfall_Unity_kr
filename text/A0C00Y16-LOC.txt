@@ -1,0 +1,306 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y16.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 16
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 55
+Quest: A0C00Y16
+DisplayName: 실종자 사건
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 이름은 _questgiver_입니다.
+<ce>제 친구를 찾는 걸 도와주시겠습니까?
+<ce>보상으로 _gold_ 골드밖에 드릴 수 없지만요.
+<--->
+<ce>제발 도와주세요. 제 친구 _missingperson_ 님이 실종되었습니다.
+<ce>%g 님께서 다치셨을까 봐 두렵습니다.
+<ce>%g2 님을 찾아주신다면 _gold_ 골드를
+<ce>사례하겠습니다.
+
+RefuseQuest:  [1001]
+<ce>좋은 하루 되십시오, %ra 님.
+<ce>다른 사람을 찾아보겠습니다.
+<--->
+<ce>아무도 저를 도와주지 않으려는 건가요?
+<--->
+<ce>천 번 사과드립니다. 당신을 영웅적인 모험가로 착각했군요.
+
+AcceptQuest:  [1002]
+<ce>기도가 응답받았군요. _missingperson_ 님을 본 지 나흘이
+<ce>지났는데, %g2 님 걱정에 잠을 이룰 수가 없습니다.
+<ce>%g 님께서 _friend1_ 님 및 _friend2_ 님과
+<ce>어울리는 모습이 목격되었다고 합니다. 그들부터 찾아보시는
+<ce>게 좋을 겁니다. 만약 이틀 안에 _missingperson_ 님을 찾지
+<ce>못하신다면, 더 이상 찾을 필요도 없을 겁니다.
+
+QuestComplete:  [1004]
+<ce>약속했던 _gold_ 골드 여기 있습니다.
+
+RumorsDuringQuest:  [1005]
+<ce>_questgiver_ 님께서 _missingperson_ 님을 필사적으로
+<ce>찾고 있다는 소문을 들었습니다.
+
+RumorsPostfailure:  [1006]
+<ce>이제 며칠째 _missingperson_ 님을 본 사람이 없습니다.
+<ce>%g 님은 죽은 것으로 간주되었죠.
+<ce>_questgiver_ 님께서 그 일로 비탄에 잠겨 계신다는군요.
+
+RumorsPostsuccess:  [1007]
+<ce>이봐, 당신이 _questgiver_ 님이 _missingperson_ 님을 찾도록
+<ce>도와준 그 %ra 님 아닌가?
+
+QuestorPostsuccess:  [1008]
+<ce>저를 위해 _missingperson_ 님을 찾아주신 %ra 님을
+<ce>어떻게 거절할 수 있겠습니까?
+
+QuestorPostfailure:  [1009]
+<ce>_missingperson_ 님을 찾지 못한 게 당신 잘못이 아니라는 건
+<ce>압니다. 하수구에서 %g2 시신이 발견되었다더군요.
+
+QuestLogEntry:  [1010]
+%qdt 에, 나는 _questgiver_ 님의 친구 _missingperson_
+님을 찾는 일을 돕기로 했다. %g 님은 나흘째
+실종 상태다. %g 님이 최근 _friend2_ 님
+및 _friend1_ 님과 함께 있었다는 것이 유일한 단서다.
+이틀 안에 성공하지 못하면, 보상을 받을 수 없다.
+
+Message:  1021
+<ce>_missingperson_ 개체를 찾으시는군요? 음, %g 는
+<ce>_hidingplace_에 숨어 있습니다. 하지만 _questgiver_에게는
+<ce>말하지 마세요. _missingperson_ 개체는 _questgiver_ 측과
+<ce>다시는 말하지 않겠다고 맹세했거든요. 이유는 묻지 마세요.
+
+Message:  1022
+<ce>최근에 _missingperson_의 행방을 봤냐고요? 그럼요.
+<ce>경비병들이 %g2 가 사원에서 물건을 훔치는 걸
+<ce>잡았거든요. _questgiver_의 경우 %g 가 이
+<ce>사실을 알게 되면 몹시 화를 낼 겁니다.
+
+Message:  1023
+<ce>_questgiver_ 측이 당신을 시켜서 이런 일을 꾸민 건가요?
+<ce>그럴 줄 알았죠. %oth, %g 는
+<ce>며칠 전에 _missingperson_ 개체와 심하게 다퉜거든요.
+<ce>_missingperson_ 개체는 마을을 떠난 뒤로 보이지 않습니다.
+<ce>아니요, %g 가 어디로 갔는지는 모릅니다.
+
+Message:  1024
+<ce>_missingperson_요? 네, %g2 에게 무슨 일이 생겼는지
+<ce>압니다. %g 는 살해당했습니다, 그게 전부죠.
+<ce>제 친구 Smiley가 %g2 에게 %g3 의 금을
+<ce>정중하게 요구했는데, %g 가 내놓지 않았거든요.
+<ce>당신도 Smiley와 제 다른 친구들을 만나봐야 합니다.
+<ce>%ra, Smiley를 찾아가 보세요!
+
+Message:  1031
+<ce>_missingperson_요? 아뇨. 며칠 동안 %g2 를
+<ce>보지 못했습니다. _friend3_에게 물어보세요.
+<ce>%g 는 알지도 모르죠.
+
+Message:  1032
+<ce>이름은 %oth. _missingperson_의 행방은 엊그제 이후로
+<ce>알 수 없습니다. _friend4_ 또는 _friend1_에게 물어볼
+<ce>수 있겠군요. 그중 누군가는 알지도 모릅니다.
+
+Message:  1033
+<ce>_friend1_의 언급이 제가 _missingperson_에 대해 알지도
+<ce>모른다고 하던가요? 유감이지만 아닙니다. 제가 아는 건
+<ce>%g 가 어젯밤에 술을 마시러 나갔다는 것뿐입니다.
+<ce>%g2 에게 나쁜 일이 없었길 바랄 뿐이죠.
+
+Message:  1034
+<ce>죄송합니다만, _missingperson_의 경우 본 지 꽤 오래되었습니다.
+<ce>왜 _friend2_의 요청으로 당신을 저에게 보냈는지
+<ce>모르겠군요... _friend1_에게는 물어보셨나요?
+
+Message:  1040
+<ce>여기서 뭐 하는 거죠? 저는 다시는 _questgiver_의
+<ce>얼굴을 보고 싶지 않습니다. 이봐요! 저를 놓아주세요!
+<ce>저를 질질 끌고 %g2 에게 데려갈 수는 없습니다.
+
+Message:  1050
+<ce>_missingperson_! 당신이 정말로 %g2 를
+<ce>데려올 줄은 몰랐군요, %pcn. _missingperson_,
+<ce>그동안 어디 있었나요? 당신 때문에 걱정했습니다.
+<ce>%pcf, 이제 제가 맡겠습니다.
+
+Message:  1051
+<ce>그래서 _missingperson_의 은신처를 알아냈다는 말씀이군요?
+<ce>그 악당을 %g3 의 은신처에서 끌어내겠습니다.
+<ce>정말 큰 도움이 되었어요, %pcn.
+
+Message:  1052
+<ce>감옥에 있다고!? 당장 떠나야겠군요.
+<ce>행정관에게 뇌물이라도 써봐야 겠어요.
+
+Message:  1053
+<ce>그래서 _missingperson_의 소식으로 마을을 떠났다고요?
+<ce>%g 는 그럴 필요 없었는데.
+<ce>%g2 를 용서해 주려 했거든요.
+
+Message:  1054
+<ce>죽었다고요!? 그럴 리가요? Smiley가 고통받게 만들었길
+<ce>바랍니다, %pcn. 오늘은 저에게 정말 슬픈 날이군요.
+ 
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 20 times.
+--               %g2 occurs 17 times.
+--               %g3 occurs 1 time.
+--              %oth occurs 2 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 5 times.
+--  __missingperson_ occurs 1 time.
+--         _friend1_ occurs 5 times.
+--         _friend2_ occurs 3 times.
+--         _friend3_ occurs 3 times.
+--         _friend4_ occurs 1 time.
+--            _gold_ occurs 7 times.
+--   _missingperson_ occurs 26 times.
+--      _questgiver_ occurs 10 times.
+
+QBN:
+Item _gold_ gold
+
+Person _questgiver_ group Questor
+Person _missingperson_ face 1 group Group_6.0 local
+Person _friend1_ group Local_3.1 local
+Person _friend2_ group Local_3.1 local
+Person _friend3_ group Local_3.1 local
+Person _friend4_ group Local_4.1 local
+
+Place _hidingplace_ local random
+
+Clock _S.16_ 2.00:00
+--removed flags to make exact two days
+
+Clock _delay_ 00:00
+
+Foe _F.00_ is 3 Barbarian
+
+--	Quest start-up:
+	dialog link for person _friend4_ 
+	dialog link for person _missingperson_ 
+	dialog link for location _hidingplace_ person _friend3_ 
+	start timer _S.16_ 
+	log 1010 step 0 
+	pick one of _S.00_ _S.02_ _S.03_ _S.01_ 
+	create npc _friend4_ 
+	create npc _friend2_ 
+	create npc _friend3_ 
+	create npc _friend1_ 
+	
+_S.00_ task:
+	place npc _missingperson_ at _hidingplace_ 
+
+variable _S.01_
+variable _S.02_
+variable _S.03_
+_S.04_ task:
+	clicked npc _friend1_ 
+
+_S.05_ task:
+	clicked npc _friend2_ 
+
+_S.06_ task:
+	clicked npc _friend3_ 
+
+_S.07_ task:
+	clicked npc _friend4_ 
+
+_S.08_ task:
+	when _S.00_ and _S.04_ 
+	add dialog for location _hidingplace_
+	say 1021 
+
+_S.09_ task:
+	when _S.02_ and _S.05_ 
+	say 1022 
+
+_S.10_ task:
+	when _S.03_ and _S.06_ 
+	say 1023 
+
+_S.11_ task:
+	when _S.01_ and _S.07_ 
+	create foe _F.00_ every 1 minutes 1 times with 100% success 
+	say 1024 
+
+_S.12_ task:
+	when not _S.00_ and _S.04_ 
+	add dialog for person _friend3_
+	say 1031 
+
+_S.13_ task:
+	when not _S.02_ and _S.05_ 
+	add dialog for person _friend4_
+	say 1032 
+
+_S.14_ task:
+	when not _S.03_ and _S.06_ 
+	say 1033 
+
+_S.15_ task:
+	when not _S.01_ and _S.07_ 
+	say 1034 
+
+_S.16_ task:
+	end quest 
+
+_S.17_ task:
+	killed 1 _F.00_ 
+	hide npc _friend4_ 
+
+_S.18_ task:
+	clicked npc _questgiver_ 
+
+_clearclick_ task:
+	when not _yes_ and _S.18_ 
+	clear _S.18_ _clearclick_
+
+_yes_ task:
+	when _S.08_ or _S.09_ or _S.10_ or _S.11_ or _S.22_
+
+_givereward_ task:
+	when _yes_ and _S.18_ 
+	start timer _delay_
+
+_delay_ task:
+	give pc _gold_ 
+	end quest 
+
+_S.22_ task:
+	clicked npc _missingperson_ 
+	add _missingperson_ face saying 1040 
+	hide npc _missingperson_ 
+
+_S.23_ task:
+	when _S.22_ and _S.18_ 
+	drop _missingperson_ face 
+
+_S.24_ task:
+	when _S.18_ and _S.08_ and not _S.22_ 
+	say 1051 
+
+_S.25_ task:
+	when _S.18_ and _S.09_ 
+	say 1052 
+
+_S.26_ task:
+	when _S.18_ and _S.10_ 
+	say 1053 
+
+_S.27_ task:
+	when _S.18_ and _S.11_ 
+	say 1054 
+
+_S.28_ task:
+	when _S.18_ and _S.22_ 
+	say 1050 
+--removed unnecessary check. quest can remained "unsolved" after unexpectedly finding the quarry and returning to QG.

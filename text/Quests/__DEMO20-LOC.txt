@@ -7,8 +7,8 @@ Quest: __DEMO20
 QRC:
 
 QuestLogEntry:  [1010]
-%qdt 어떤 집 위치든 찾아내고 야생 지역도
-탐험해야 한다.
+%qdt 어떤 집 위치든 찾아내고 야생 지역도 탐험해야
+한다.
 
 
 QBN:

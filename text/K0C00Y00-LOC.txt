@@ -1,0 +1,217 @@
+-- Quest: C:\QUESTS\WORKING\K0C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: merchant
+-- Repute: 0
+-- QuestId: 0
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 17
+Quest: K0C00Y00
+DisplayName: 본보기
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제게 맡길 작은 일에 당신이 적임자일지도 모르겠군요.
+<ce>제 경쟁자가 제 계약을 가로채 불법적이거나, 적어도
+<ce>부도덕한 거래 관계를 맺었습니다. 저는 이 상황을 바로잡고
+<ce>_competitor_에게 다시는 침범하지 말라는 경고를 보내고
+<ce>싶습니다. 누군가는 머리통을 좀 깨뜨려야 할지도 모르겠군요.
+<ce>_reward_ 골드면 이 일을 맡으시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>%oth, 양심 때문에 성급해지는군요.
+
+AcceptQuest:  [1002]
+<ce>좋습니다. _competitor_ 개체는 __storehouse_에
+<ce>_storehouse_의 명칭으로 불리는 가게를 가지고 있고,
+<ce>그 안에는 제가 되찾고 싶은 _mitem_ 물품이 있습니다.
+<ce>나오는 길에 이 쪽지를 가게 아무 곳에나 떨어뜨려 주십시오.
+<ce>참을 수가 없군요. _competitor_ 개체는 =2storehouse_일 안에
+<ce>그 _mitem_ 물품을 더 안전한 곳으로 옮길 예정이니,
+<ce>신속하게 움직여야 합니다. 그때까지 돌아오지 않으면,
+<ce>당신의 보상은 몰수될 겁니다. _storehouse_ 지역이 지키고
+<ce>있을 거라는 말은 굳이 안 해도 되겠죠? 행운을 빕니다.
+
+QuestFail:  [1003]
+<ce>이건 장난이 아닙니다, %pcf.
+<ce>반드시 일을 끝내주십시오.
+
+QuestComplete:  [1004]
+<ce>정말 잘해주셨습니다, %pcf.
+<ce>아, 그래요, 사랑스러운 _mitem_. 이것이 바로
+<ce>_mitem_ 측에서 _competitor_의 파트너에게 담보로
+<ce>맡겼던 바로 그 물건임이 틀림없군요. %g2 몫으로
+<ce>확실히 _reward_ 골드를 받을 자격이 있습니다.
+
+RumorsDuringQuest:  [1005]
+요즘은 사업 경쟁이 특히나 피비린내 나는 시기지.
+<---> _qgiver_ 측과 _competitor_ 개체는
+고스리드와 아코리티보다 더 지독한 라이벌이라네.
+
+RumorsPostfailure:  [1006]
+_competitor_의 행방은 _qgiver_의 최신 사업 거래를
+가지고 %g3 의 면전에서 대놓고 비웃고 있어.
+<---> 알고 보니 _competitor_의 성격은
+_qgiver_의 상상보다 훨씬 더 독한 상인이더군.
+
+RumorsPostsuccess:  [1007]
+_competitor_ 개체는 %g 가 _qgiver_
+쪽으로부터 어렵게 따낸 계약을 잃어버렸어.
+<---> _qgiver_ 측은 %g3 의 옛 계약을
+되찾았고, 배부른 하피처럼 행복해하고 있지.
+
+QuestorPostsuccess:  [1008]
+좋아, _mitem_ 가져왔으니, 이제 내가 뭘 도와줄까?
+
+QuestorPostfailure:  [1009]
+_competitor_의 하수인과는 할 말이 없다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 _qgiver_ 측에서 나를
+ __storehouse_의 _storehouse_ 쪽으로 보내 그곳에 보관된
+ _mitem_ "해방"시키고 쪽지를 남겨두라고 했다.
+ 이 일을 마치고 __qgiver_ 쪽으로 =2storehouse_일 안에
+ 돌아오면, _reward_ 골드를 받게 된다.
+
+Message:  1011
+
+_competitor_,
+ 
+당신의 보안을 위한 훌륭한 보안.
+ 
+<ce>당신의 친애하는 친구로부터
+
+Message:  1012
+__competitor_ ___competitor_
+ 
+친애하는 %pcn 에게,
+ 
+쪽지는 잘 받았습니다. 아주 재미있더군요. 이제 당신이
+고려해볼 만한 제안을 하나 하죠. 훔친 _mitem_ 내게
+가져오면 _gem_ 보상하겠습니다. 만약 그 _mitem_
+고용주에게 가져간다면, 당신은 적을 만들게 될 겁니다.
+ 
+<ce>_competitor_
+
+Message:  1013
+<ce>어린 소년이 편지를 건네주고는 질문할 틈도 없이
+<ce>도망쳐 버립니다.
+
+Message:  1014
+<ce>_competitor_에게 _gem_ 확보 대가로 _mitem_
+<ce>주시겠습니까?
+
+Message:  1015
+<ce>현명한 결정입니다, %pcf. 이것이 수익성 있는 관계의
+<ce>시작이 될지도 모르겠군요. 반면에 _qgiver_ 수익을
+<ce>내는 날들은 이제 지나가고 있는지도 모르죠.
+
+Message:  1016
+<ce>그럼 왜 여기 온 건지 모르겠군.
+<ce>당장 여기서 나가라, %pcf.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 6 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--     =2storehouse_ occurs 2 times.
+--    ___competitor_ occurs 5 times.
+--        ___qgiver_ occurs 1 time.
+--     __competitor_ occurs 1 time.
+--         __qgiver_ occurs 1 time.
+--     __storehouse_ occurs 2 times.
+--      _competitor_ occurs 16 times.
+--             _gem_ occurs 3 times.
+--           _mitem_ occurs 11 times.
+--          _qgiver_ occurs 7 times.
+--          _reward_ occurs 13 times.
+--      _storehouse_ occurs 3 times.
+
+QBN:
+Item _letter_ letter used 1011
+Item _mitem_ magic_item
+Item _reward_ gold
+Item _letter10_ letter used 1012
+Item _gem_ gem
+
+Person _qgiver_ group Questor
+Person _competitor_ group Group_5.0 remote
+
+Place _storehouse_ remote generalstore
+
+Clock _2storehouse_ 00:00 0 flag 17 range 0 2
+Clock _S.05_ 16:40 1.09:20
+
+Foe _F.00_ is 2 Warrior
+Foe _knight_ is Knight
+Foe _battlemage_ is Battle_mage
+Foe _F.03_ is 2 Rogue
+
+--	Quest start-up:
+	place item _mitem_ at _storehouse_ 
+	log 1010 step 0 
+	get item _letter_ 
+	pc at _storehouse_ set _S.04_ 
+	start timer _2storehouse_
+	--added timer start 2storehouse
+
+_pcgetsgold_ task:
+	toting _mitem_ and _qgiver_ clicked 
+	give pc _reward_ 
+	change repute with _qgiver_ by +10 
+	change repute with _competitor_ by -10 
+	end quest 
+
+variable _qgclicked_
+_S.02_ task:
+	dropped _letter_ at _storehouse_ 
+	start timer _S.05_ 
+	stop timer _2storehouse_
+	--added timer stop 2storehouse
+
+_2storehouse_ task:
+	make _mitem_ permanent 
+	end quest 
+
+_S.04_ task:
+	create foe _knight_ every 8 minutes 2 times with 10% success 
+	create foe _battlemage_ every 7 minutes 2 times with 10% success 
+	create foe _F.00_ every 10 minutes 1 times with 10% success 
+	create foe _F.03_ every 9 minutes 1 times with 10% success 
+
+_S.05_ task:
+	--removed unnecessary "say nothing"
+	give pc _letter10_ notify 1013 
+
+variable _S.06_
+_S.07_ task:
+	toting _mitem_ and _competitor_ clicked 
+	prompt 1014 yes _S.09_ no _gimme_ 
+
+_gimme_ task:
+	get item _mitem_ 
+	say 1016 
+
+_S.09_ task:
+	get item _gem_ 
+	say 1015 
+	make _gem_ permanent 
+	change repute with _competitor_ by +5 
+	change repute with _qgiver_ by -5 
+	end quest 
+
+_qgclick2_ task:
+	clicked npc _qgiver_
+
+_clearclick_ task:
+	when _qgclick2_ and not _pcgetsgold_
+	say 1003
+	clear _clearclick_ _qgclick2_

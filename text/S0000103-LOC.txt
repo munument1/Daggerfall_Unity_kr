@@ -1,0 +1,78 @@
+-- Quest: C:\QUESTS\WORKING\S0000103.Qbn.
+-- Main story quest.
+-- QuestId: 103
+Messages: 16
+Quest: S0000103
+-- Message panels
+QRC:
+
+Message:  1015
+<ce>벌레의 왕을 거역하고 살아남은 자는
+<ce>아무도 없다. 너는 그에게서 타이버 셉팀의 토템을
+<ce>빼앗았다.
+<ce>그러므로 나는 너를 죽이고 그것을 그에게
+<ce>가져갈 것이다.
+<--->
+<ce>나는 토템을 가져가고 오늘 밤 너의
+<ce>혈관에서 피를 마실 것이다. 그냥 항복해라,
+<ce>그러면 비교적 고통 없이 끝날 것이다.
+<--->
+<ce>벌레의 왕은 토템을 원한다.
+<ce>그가 네가 스스로 토템을 바칠 것이라고
+<ce>믿을 이유는 없기에, 나는 너를 죽이러 왔다.
+
+
+-- Symbols used in the QRC file:
+--    ***  None  ***
+
+QBN:
+
+
+
+Clock _S.01_ 01:15 0 flag 1 range 0 1
+Clock _S.02_ 44.10:40 0 flag 1 range 0 1
+
+Foe _F.00_ is 3 Vampire
+Foe _F.01_ is 2 Ancient_vampire
+
+--	Quest start-up:
+	start timer _S.02_ 
+
+_S.00_ task:
+	injured _F.01_ 
+	injured _F.00_ 
+	start timer _S.01_ 
+	say 1015 
+
+_S.01_ task:
+	clear _S.01_ _S.00_ 
+
+_S.02_ task:
+	end quest 
+
+_S.03_ task:
+	daily from 04:10 to 20:50 
+
+until _S.03_ performed:
+	start task _S.04_ 
+
+_S.04_ task:
+	create foe _F.00_ every 1440 minutes 20 times with 5% success 
+	create foe _F.01_ every 1440 minutes 10 times with 3% success 
+
+GothrydGotTotem _S.05_
+KingOfWormsGotTotem _S.06_
+GortwogGotTotem _S.07_
+AkorithiGotTotem _S.08_
+UnderkingGotTotem _S.09_
+EadwyreGotTotem _S.10_
+BrisiennaGotTotem _S.11_
+_S.12_ task:
+	when _S.05_ or _S.06_ or _S.07_ or _S.08_ 
+
+_S.13_ task:
+	when _S.09_ or _S.10_ or _S.11_ 
+
+_S.14_ task:
+	when _S.12_ or _S.13_ 
+	start task _S.02_ 

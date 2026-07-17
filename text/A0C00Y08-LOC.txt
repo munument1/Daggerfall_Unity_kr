@@ -1,0 +1,203 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y08.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 8
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 34
+Quest: A0C00Y08
+DisplayName: 암살자
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 이름은 중요하지 않습니다. 당신이 알아야 할 것은
+<ce>피를 조금 흘리는 것을 두려워하지 않는 사람이
+<ce>필요하다는 것뿐입니다.
+<ce>보수는 _gold_ 골드입니다.
+<ce>관심이 없다면 지금 말하세요.
+<ce>이 일을 맡으시겠습니까?
+<--->
+<ce>쉿! 목소리를 낮추세요. 더 말하기 전에, 당신은
+<ce>골드를 위해서라면 사람을 죽일 수 있는 %ra 인가요?
+<ce>_gold_ 골드는 어떤가요?
+<--->
+<ce>저는 피를 보고 기절하지 않을 사람을 찾고 있습니다.
+<ce>인간의 피 말입니다.
+<ce>_gold_ 골드에, 사람을 죽일 수 있겠습니까?
+
+RefuseQuest:  [1001]
+<ce>당신은 나를 본 적이 없습니다.
+<--->
+<ce>꺼지세요. 우리가 대화하는 모습을 남들이 보는 건
+<ce>원치 않습니다.
+<--->
+<ce>좋아요. 마음대로 하세요.
+
+AcceptQuest:  [1002]
+<ce>_darkb_ 처치를 부탁드립니다. 문제는 다크
+<ce>브라더후드가 이 일을 맡지 않으려 한다는 겁니다.
+<ce>그들이 빚진 호의 때문이라더군요. 독립적인 암살자가
+<ce>필요합니다. 일주일 안에 일을 끝내고 돌아오면 _gold_
+<ce>골드를 지불하겠습니다. _questgiver_ 님을 찾으세요.
+<ce>여기서 당신을 기다리고 있겠습니다.
+
+QuestComplete:  [1004]
+<ce>복수는 나의 것이다! 그건 그렇고, 당장 마을을 떠나는 게
+<ce>좋을 겁니다. 다크 브라더후드가 이 일을 눈치챘다는 소문이
+<ce>있거든요. 여기 보수입니다, %pcf 님.
+
+RumorsDuringQuest:  [1005]
+<ce>_questgiver_ 님이 _darkb_ 님을 증오한다는군요.
+<--->
+<ce>_darkb_ 님은 다크 브라더후드와 연관되어 있습니다.
+
+RumorsPostsuccess:  [1007]
+<ce>누군가 _darkb_ 님을 살해했습니다,
+<ce>그것도 공개적인 장소에서 말이죠!
+<--->
+<ce>살인 사건 소식 들으셨나요? _darkb_ 님이
+<ce>암살자에게 살해당했습니다.
+<--->
+<ce>저는 _darkb_ 님이 마음에 든 적이 없었습니다. 누군가
+<ce>드디어 %g2 를 처리해서 기쁘군요.
+<ce>다크 브라더후드 소행이라더군요.
+
+QuestorPostsuccess:  [1008]
+<ce>목소리를 낮추세요.
+<ce>당신이 _darkb_ 님을 죽여준 것에 대해 감사하지만, 제가
+<ce>그 일에 관여했다고 사람들이 생각하는 건 원치 않습니다.
+
+QuestorPostfailure:  [1009]
+<ce>일을 맡겼는데, 해내지 못했군요. _darkb_ 님을
+<ce>죽이기만 하면 됐는데 말입니다. 이제 너무 늦었습니다. 다크
+<ce>브라더후드가 저를 쫓고 있어요. 그냥 저를 내버려 두세요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ _darkb_ 처치 계약을 수락했다.
+ 일주일 안에 ___questgiver_의 _questgiver_ 쪽으로 돌아가
+ 임무를 완수해야 한다.
+
+Message:  1015
+<ce>_darkb_ 님은 죽지 않았어!
+<ce>나를 무슨 바보로 아는 건가, %pcf?
+
+Message:  1021
+<ce>도와줘! 살인자다! 도와줘!
+
+Message:  1022
+<ce>이런 비겁한 놈! 무슨 암살자가 이래? 무기를 들어라! 무기를!
+
+Message:  1023
+<ce>당했다! %oth.
+
+Message:  1024
+<ce>비겁한 놈! 아무런 이유나 도발도 없이 나를 공격하다니.
+
+Message:  1030
+<ce>_questgiver_ 님? %g2(에) 대해서는 잘 모릅니다.
+<ce>%g2self(에)만 머무르더군요.
+
+Message:  1031
+<ce>_questgiver_ 님에게 수상한 친구들이 많다는 소문을
+<ce>들었습니다. 하지만 저한테 들었다고는 하지 마세요.
+
+Message:  1032
+<ce>훌륭하고 정직한 시민입니다. 누구에게 물어봐도 알 겁니다.
+
+Message:  1033
+<ce>_darkb_ 님은 보통 _place_에 계시지만,
+<ce>저는 %g3 의 일에 엮이고 싶지 않군요.
+<ce>그냥 친절한 조언입니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g2 occurs 4 times.
+--           %g2self occurs 2 times.
+--               %g3 occurs 1 time.
+--              %oth occurs 2 times.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--    ___questgiver_ occurs 2 times.
+--           _darkb_ occurs 15 times.
+--            _gold_ occurs 9 times.
+--           _place_ occurs 1 time.
+--      _questgiver_ occurs 8 times.
+
+QBN:
+Item _gold_ gold
+
+Person _questgiver_ group Questor anyInfo 1030 rumors 1031
+Person _darkb_ face 1 faction The_Dark_Brotherhood remote anyInfo 1032 rumors 1033
+
+Place _place_ local random
+
+Clock _S.00_ 7.00:00 0 flag 1 range 0 1
+
+Foe _bard_ is Bard
+Foe _rogue_ is Rogue
+Foe _archer_ is Archer
+Foe _spellsword_ is Spellsword
+
+--	Quest start-up:
+	start timer _S.00_ 
+	log 1010 step 0 
+	pc at _place_ set _S.11_ 
+	place npc _darkb_ at _place_ 
+
+_S.00_ task:
+	end quest 
+
+_S.01_ task:
+	restrain foe _archer_ 
+	place foe _archer_ at _place_ 
+
+_S.02_ task:
+	restrain foe _bard_ 
+	place foe _bard_ at _place_ 
+
+_S.03_ task:
+	restrain foe _rogue_ 
+	place foe _rogue_ at _place_ 
+
+_S.04_ task:
+	restrain foe _spellsword_ 
+	place foe _spellsword_ at _place_ 
+
+variable _S.05_
+_S.06_ task:
+	injured _rogue_ saying 1023 
+	injured _archer_ saying 1021 
+	injured _bard_ saying 1022 
+	injured _spellsword_ saying 1024 
+
+_S.07_ task:
+	killed 1 _archer_ 
+	killed 1 _bard_ 
+	killed 1 _rogue_ 
+	killed 1 _spellsword_ 
+	change repute with _darkb_ by -20 
+	legal repute -20
+--nerfed legal repute, not fair for normal gameplay
+
+_S.08_ task:
+	clicked npc _questgiver_ 
+
+_clearclick_ task:
+	when _S.08_ and not _S.07_ 
+	say 1015 
+	clear _S.08_ _clearclick_
+--added an additional clear clearclick here. Otherwise this clearing function would stop working after the first click.
+
+_S.10_ task:
+	when _S.08_ and _S.07_ 
+	give pc _gold_ 
+	end quest 
+
+_S.11_ task:
+	pick one of _S.01_ _S.02_ _S.03_ _S.04_ 
+	hide npc _darkb_ 

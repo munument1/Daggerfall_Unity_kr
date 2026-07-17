@@ -1,0 +1,186 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y02.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 2
+Messages: 31
+Quest: R0C10Y02
+DisplayName: 금 밀수
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>___contact_에 있는 제 연락책에게 물건을 전달해 줄
+<ce>사람이 필요합니다. 그 대가로 물건을 하나 받게 될 겁니다.
+<ce>그 물건을 저에게 다시 가져오시면, 기꺼이 _reward_
+<ce>골드를 보상으로 드리겠습니다. 동의하시나요?
+
+RefuseQuest:  [1001]
+<ce>싫으신가요? 참 아쉽군요.
+<ce>꽤 관대한 보상을 준비했었는데 말이죠.
+
+AcceptQuest:  [1002]
+<ce>아주 좋습니다. 이 금괴를 가지고 ___contact_의
+<ce>__contact_의 명칭으로 불리는 곳에 있는 _contact_의
+<ce>이름으로 불리는 =contact_에게 전해주십시오.
+<ce>서둘러야 합니다. =1stparton_일 안에 __contact_에
+<ce>도착하지 못하면, _contact_의 부재로 인해 우리 모두
+<ce>기분 나쁜 상황이 될 겁니다. 특히 당신은 더더욱요.
+<ce>그럼, 행운을 빕니다, %pcf.
+
+QuestFail:  [1003]
+<ce>아직 시작하지 않았거나 실패를 사과하러 오신 모양이군요.
+<ce>그러셨나요, %pcf? 정말, 실망스럽군요, 몹시
+<ce>실망스러워요. 당신의 무능함 때문에 일이 복잡해졌습니다.
+<ce>뭐, 다음번엔 더 잘 알게 되겠죠, 안 그런가요?
+<ce>어서 움직이세요, %pcf. 지금 당장요.
+
+QuestComplete:  [1004]
+<ce>훌륭합니다, %pcf. 약속대로 제 _item2_ 물건을
+<ce>가져오셨군요. 당신의 용기와 담력은 정말 대단합니다.
+<ce>조만간 당신의 더 큰 활약을 기대하겠습니다. 감사합니다.
+
+RumorsDuringQuest:  [1005]
+<ce>최근에 어떤 =contact_의 방문객이 여기 와서
+<ce>%ra 물건을 본 적 있냐고 묻더군요.
+<--->
+<ce>얼마 전에는 어떤 =contact_의 방문객이 _item1_
+<ce>물건을 가진 %ra 의 행방을 찾고 있었죠.
+
+RumorsPostfailure:  [1006]
+<ce>들리는 말에 의하면 _questgiver_의 방문객이 어떤
+<ce>%ra 용병에게
+<ce>단단히 화가 났다고 하더군요.
+<--->
+<ce>_questgiver_의 고용주는 여전히 용병들을 고용하고 있는데,
+<ce>%g 의 의뢰가 엉망이 되었다고 들었습니다.
+
+RumorsPostsuccess:  [1007]
+<ce>_questgiver_의 방문객이 드디어 %g 에게 필요한
+<ce>_item2_ 물건을 구했다고 들었습니다.
+<--->
+<ce>_questgiver_의 지인은 어떤 %ra 용병을
+<ce>칭찬하고 다니더군요.
+
+QuestorPostsuccess:  [1008]
+다시 만나서 반갑군요, 젊은 친구.
+당신이 해준 일은 잊지 않았습니다.
+<---> 아, %pcf. 다시 만나게 되어 기쁩니다.
+
+QuestorPostfailure:  [1009]
+<ce>이런, 무능한 %ra 의 전령이군요.
+<ce>다시 여기로 돌아올 배짱이 있다니 대단하네요.
+<--->
+<ce>이런, 무능한
+<ce>전령이 아니신가. 이제 그만 기어서
+<ce>사라지는 게 어때요, 응?
+
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___questgiver_의 _questgiver_ 측에서 ___contact_의 연락책
+ _contact_에게 금괴를 전달하라고 저를 보냈습니다.
+ 목적지는 __contact_에 있는 =contact_의 기지입니다.
+ 보상을 받으려면 =1stparton_일 안에 %g3 의
+ 손에 금괴를 넘겨줘야 합니다.
+
+Message:  1011
+%qdt:
+ 금괴를 _contact_에게 전달했고, 그 대가로
+ _questgiver_에게 가져갈 _item2_ 물품을 받았습니다.
+
+Message:  1020
+<ce>그 금괴는 꽤 무거울 텐데. 내가 대신 들어줄까?
+<ce>그냥 넘겨주면 당신은 무사히 보내주지.
+
+Message:  1021
+<ce>참 용감한 꼬마 전령이군.
+<ce>내 친구들에게 당신이 얼마나 도움이 되는지 꼭 말해줘야겠어.
+
+Message:  1030
+<ce>아, 당신이 전령이군요. 훌륭합니다, 훌륭해요.
+<ce>자, 이 _item2_ 물건을 즉시 _questgiver_에게
+<ce>가져다주면, %g 가 약속대로 보상할 겁니다.
+<ce>당신과 거래하게 되어 기쁘군요, %pcf!
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 5 times.
+--               %g3 occurs 1 time.
+--              %pcf occurs 8 times.
+--              %qdt occurs 2 times.
+--               %ra occurs 8 times.
+--       =1stparton_ occurs 2 times.
+--         =contact_ occurs 9 times.
+--    ___questgiver_ occurs 1 time.
+--        __contact_ occurs 7 times.
+--           _item1_ occurs 5 times.
+--           _item2_ occurs 4 times.
+--      _questgiver_ occurs 8 times.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+Item _item1_ gold_bar
+Item _item2_ magic_item
+
+Person _questgiver_ face 76 group Questor
+Person _contact_ face 80 group Local_3.0 remote
+
+
+Clock _1stparton_ 00:00 0 flag 1 range 1 4
+Clock _2ndparton_ 00:00 0 flag 1 range 1 4
+
+Foe _thief_ is Spellsword
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1010 step 0 
+	get item _item1_ 
+	create npc _contact_ 
+
+_pcgetsgold_ task:
+	toting _item2_ and _questgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+_queston_ task:
+	when _1stparton_ and not _npcclicked_ 
+	when _2ndparton_ 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+variable _qgclicked_
+_npcclicked_ task:
+	toting _item1_ and _contact_ clicked 
+	start timer _2ndparton_ 
+	log 1011 step 1 
+	get item _item2_ saying 1030 
+
+until _npcclicked_ performed:
+	create foe _thief_ every 5 minutes 5 times with 25% success 
+
+variable _1stparton_
+variable _pchasitem1_
+variable _pchasitem2_
+yes task:
+	have _item1_ set _S.09_ 
+
+variable _no_
+_S.09_ task:
+	give item _item1_ to _thief_
+	say 1021
+--moved "saying 1021" to new line. bad argument 
+	restrain foe _thief_ 
+
+_S.10_ task:
+	injured _thief_ 
+	prompt 1020 yes yes no _no_ 
+
+variable _2ndparton_
+_S.12_ task:
+	when _queston_ or _pcgetsgold_ 
+	make _item2_ permanent 
+	make _item1_ permanent 

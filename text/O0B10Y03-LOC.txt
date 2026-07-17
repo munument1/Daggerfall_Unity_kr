@@ -1,0 +1,137 @@
+-- Quest: C:\QUESTS\WORKING\O0B10Y03.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 10
+-- QuestId: 3
+Messages: 11
+Quest: O0B10Y03
+DisplayName: 신전 방문
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>길드 일거리가 하나 있는데, 관심 있나?
+<ce>이름은 _qgiver_ 측이지. 어떤 놈이 _temple_에서
+<ce>_religiousitem_ 물품을 훔쳐달라더군. 맡을 텐가?
+
+RefuseQuest:  [1001]
+<ce>더 흥미로운 일이 생기면 %pcn, 자네를 기억해두지.
+
+AcceptQuest:  [1002]
+<ce>좋아. 요점만 말하지. __temple_에 있는 _temple_
+<ce>쪽으로 가게. _religiousitem_의 회수를 완료해서 나에게
+<ce>주면 되네. 평소 길드 보수인 _gold_ 골드를 주지.
+<ce>=traveltime_일 안에 내 손에 쥐여주게.
+
+QuestComplete:  [1004]
+<ce>이봐, 이해하기 힘든 놈들이 있다니까.
+<ce>이걸 훔쳐달라고 돈을 썼다니 믿겨져? 그걸 직접 못
+<ce>하게 막는 "흉측한 수호자"가 있었던 것도 아니잖아. 어?
+<ce>있었다고? 아마 그놈이 그렇게 미친 건 아니었나 보군.
+<ce>여기 보수 %pcf 일세. 함께 일해서 좋았네.
+
+RumorsDuringQuest:  [1005]
+며칠 전에 종기가 났는데... 다 나았어.
+<---> 방금 날씨에 대해 세 시간 동안 대화를 나눴지.
+<---> 날씨는 이맘때 치고는 평범해. <--->
+%cn 의 날씨는 이맘때 치고는 약간 쌀쌀한 것 같아.
+<---> 작년 이맘때보다 오늘이 확실히 더 따뜻하군.
+<---> 우리 큰이모가 만 건너편의 전문의를 만나러
+가셔. <---> 이곳은 어두워지는 시간이 항상 신기해.
+<---> 이 근처에 전쟁 기념비를 세워야 해.
+<---> 요즘 애들은 마법을 너무 밝혀. %oth,
+잘 모르겠군. <---> 어젯밤에 아주 이상한 꿈을 꿨어.
+<---> 재미있는 농담을 들었지. %jok
+<---> %jok 사실 그건 농담이야. <--->
+%jok 그게 무슨 뜻인지 설명해줄 수 있어?
+<---> %reg 의 법 체계는 장단점이 있지.
+
+RumorsPostfailure:  [1006]
+_temple_의 방비는 도둑들에 대해 꽤 철저하게
+되어 있는 것 같아.
+
+RumorsPostsuccess:  [1007]
+_temple_의 주인은 자기 장소를 털어달라고
+도둑들을 고용했어.
+
+QuestorPostsuccess:  [1008]
+어떻게 지내나, %pcf?
+우리를 고용한 사람에게서 소식이 오길 기다리는 중이야.
+
+QuestorPostfailure:  [1009]
+<ce>그 신전이 오블리비언의 모든 군주가 지키고 있었다 해도
+<ce>상관없네, %pcf. 도둑 길드의 임무를 실패하는
+<ce>데에는 어떤 변명도 통하지 않아.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 _qgiver_의 의뢰로 __temple_에 있는
+ _temple_에서 _religiousitem_의 절도를 수행해야 한다.
+ 보수를 받으려면 =traveltime_일 안에 %g2 에게
+ 가져다줘야 한다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 1 time.
+--               %g2 occurs 3 times.
+--              %jok occurs 3 times.
+--              %oth occurs 5 times.
+--              %pcf occurs 3 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--      =traveltime_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--         __temple_ occurs 2 times.
+--            _gold_ occurs 1 time.
+--          _qgiver_ occurs 2 times.
+--   _religiousitem_ occurs 3 times.
+--          _temple_ occurs 5 times.
+
+QBN:
+Item _religiousitem_ religious
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _temple_ remote temple
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is 2 Knight
+Foe _F.01_ is Giant_scorpion
+Foe _F.02_ is Monk
+Foe _F.03_ is Zombie
+
+--	Quest start-up:
+	place item _religiousitem_ at _temple_ 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pc at _temple_ set _S.01_ 
+
+_traveltime_ task:
+	make _religiousitem_ permanent 
+	change repute with _qgiver_ by -5 
+	end quest 
+
+_S.01_ task:
+	pick one of _guard1_ _guard2_ _guard3_ _guard4_ 
+
+_questdone_ task:
+	toting _religiousitem_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+_guard1_ task:
+	create foe _F.00_ every 4 minutes 1 times with 10% success 
+
+_guard2_ task:
+	create foe _F.01_ every 4 minutes 1 times with 10% success 
+
+_guard3_ task:
+	create foe _F.02_ every 4 minutes 1 times with 10% success 
+
+_guard4_ task:
+	create foe _F.03_ every 4 minutes 1 times with 10% success 

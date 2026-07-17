@@ -1,0 +1,178 @@
+-- Quest: C:\QUESTS\WORKING\C0B10Y15.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: temple
+-- Repute: 10
+-- QuestId: 15
+Messages: 41
+Quest: C0B10Y15
+DisplayName: 유물
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pct, __questgiver_께서 %god 의 잃어버린
+<ce>_item_ 중 하나를 되찾아오는 위험한 임무를 맡아줄
+<ce>사람이 필요하십니다. 당신은 =lich_의 힘에 맞서야
+<ce>합니다. 그는 이 유물을 만들었으나 사원을 배신하고
+<ce>악의 길로 빠졌습니다. 그는 이제 리치가 되어 여전히
+<ce>_item_의 수호자가 되었습니다. 하시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>알겠습니다. 리치는 당신처럼 젊고 경험이 부족한 이에게는
+<ce>두려운 상대지요. 아마 더 성장하면 다시 이 임무를 맡을 수
+<ce>있을 겁니다. %god 의 가호가 함께하기를.
+
+AcceptQuest:  [1002]
+<ce>당신의 용기는 가상하나, 당신이 마주할 위험을 생각하면
+<ce>몸이 떨리는군요. =lich_의 ___mondung_에 있는
+<ce>%god 의 _item_ 수호가 확인되었습니다.
+<ce>기억하십시오, 리치를 죽일 필요는 없습니다.
+<ce>그저 _item_의 회수 후 이곳 __questgiver_에게
+<ce>가져오기만 하면 됩니다. =qtime_일 안에 소식이 없으면,
+<ce>당신을 위해 떠난 이들의 노래를 부를 것입니다.
+<ce>%god 의 축복이 함께하기를, %pcn.
+
+QuestFail:  [1003]
+<ce>떠나기를 주저하는 마음은 이해하지만, %pcf,
+<ce>기다린다고 해서 위험이 줄어들지는 않습니다.
+
+QuestComplete:  [1004]
+<ce>위대한 %god 께 찬양을!
+<ce>당신이 정말로 성공할 줄은 감히 기대하지도 못했습니다.
+<ce>%god 의 은총이 이 공로에 대해 분명히
+<ce>당신을 비출 것입니다. 사원의 감사의 작은 표시로,
+<ce>이 마법이 깃든 _reward_의 수여를 받아주십시오.
+
+RumorsDuringQuest:  [1005]
+<ce>__questgiver_의 잃어버린 _item_에 대한 갈망은 크지만,
+<ce>리치 =lich_의 상대할 의지가 있는 자를 누가
+<ce>찾을 수 있을까?
+
+RumorsPostfailure:  [1006]
+<ce>__questgiver_의 _item_에 대한 의심이 이제
+<ce>___mondung_에 없었다는 소문으로 번지고 있습니다.
+
+RumorsPostsuccess:  [1007]
+<ce>___mondung_에 들어가 __questgiver_의 _item_ 회수 후
+<ce>돌아온 %ra 에 대한 이야기를 들었습니까?
+
+QuestorPostsuccess:  [1008]
+<ce>%pcf, 그 리치를 물리친 당신은 언제든 이곳에
+<ce>환영받을 것입니다!
+
+QuestorPostfailure:  [1009]
+<ce>___mondung_에서 우리의 _item_ 회수에 실패한 것을
+<ce>탓하려는 것은 아니지만, 당신이 완수할 수 없는 임무를
+<ce>수락했다는 사실에 실망했습니다.
+
+Message:  1015
+<ce>어디선가 불길한 목소리가 속삭입니다,
+<ce>
+<ce>"_item_의 존재는 너나 __questgiver_의
+<ce>감상적인 바보들의 것이 아니다.
+<ce>그러므로 나는 정당하게 내 것을 되찾겠다."
+<ce>
+<ce>_item_의 소멸이 임박했습니다.
+
+Message:  1020
+%qdt:
+ ___questgiver_의 __questgiver_께서 신성한 물건인
+ _item_ 회수를 ___mondung_에서 진행하라고 하셨다.
+ 문제는 리치인 =lich_ 존재가 지키고 있다는 것이다.
+ =lich_ 처치까지는 필요 없지만, _item_ 확보 후
+ =qtime_일 이내에 _questgiver_에게 돌아와야 한다.
+
+Message:  1030
+<ce>이것이 분명 __questgiver_의 오래전 잃어버린
+<ce>_item_임이 틀림없다.
+
+Message:  1035
+<ce>뭐라고요? 신성한 _item_ 회수뿐만 아니라
+<ce>사악한 =lich_ 처치까지 해냈다고요?
+<ce>당신은 진정 %god 의 총애를 받는 자입니다.
+<ce>당신은 분명 우리 교단에서 크게 출세할 것입니다.
+
+Message:  1040
+<ce>=lich_의 분노 섞인 쉭쉭거림이 들립니다:
+<ce>
+<ce>"__questgiver_의 개 같은 놈들아, 내 _item_의 소유권은
+<ce>절대 넘기지 않는다! 내가 만들었으니 내가 가질 것이다.
+<ce>무덤조차도 나를 막을 수는 없다."
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 8 times.
+--              %pcf occurs 2 times.
+--              %pcn occurs 2 times.
+--              %pct occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--            =lich_ occurs 11 times.
+--           =qtime_ occurs 3 times.
+--       ___mondung_ occurs 6 times.
+--    ___questgiver_ occurs 11 times.
+--            _item_ occurs 19 times.
+--      _questgiver_ occurs 3 times.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _item_ talisman
+Item _reward_ magic_item
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon
+
+Clock _qtime_ 00:00 0 flag 17 range 0 2
+Clock _shortdelay_ 00:02 0 flag 1 range 0 1
+
+Foe _lich_ is Lich
+
+--	Quest start-up:
+	place item _item_ at _mondung_ 
+	start timer _qtime_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	place foe _lich_ at _mondung_ 
+
+_qtime_ task:
+	have _item_ set _S.07_ 
+
+_S.01_ task:
+	toting _item_ and _questgiver_ clicked 
+	give pc _reward_ 
+
+_qgclicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.01_
+	say 1003
+	clear _qgclicked_ _clearclick_
+
+_S.02_ task:
+	killed 1 _lich_ 
+
+_S.03_ task:
+	when _S.01_ and _S.02_ 
+	say 1035 
+	change repute with _questgiver_ by +7 
+
+_pickupitem_ task:
+	clicked item _item_ 
+	start timer _shortdelay_ 
+	say 1030 
+
+variable _shortdelay_
+_S.06_ task:
+	when _shortdelay_ and not _S.02_ 
+	say 1040 
+
+_S.07_ task:
+	say 1015 
+
+_S.08_ task:
+    when _S.01_ or _qtime_
+    end quest

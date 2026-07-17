@@ -1,0 +1,165 @@
+-- Quest: C:\QUESTS\WORKING\M0B00Y06.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: fighter
+-- Repute: 0
+-- QuestId: 6
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 81
+Quest: M0B00Y06
+DisplayName: 야생 동물
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>나는 _qgiver_일세. 지역 주민에게서 의뢰가 하나
+<ce>들어왔네. 야생 동물이 집에 침입했다더군. 누군가 가서 그
+<ce>놈을 죽여야 해. 길드에서 _gold_ 골드를 지급할 걸세.
+<ce>할 텐가, %pcn?
+
+RefuseQuest:  [1001]
+<ce>이 성가신 곰을 처리해 줄 다른 사람이 분명히 있을
+<ce>거라고 확신하네.
+
+AcceptQuest:  [1002]
+<ce>"좋아, %pcf. 시내에 있는 _house_ 쪽으로 가게.
+<ce>하루 안에 끝내야 하네.
+<ce>아무도 자기 집에 동물이 돌아다니는 걸 원치 않거든.
+<ce>짐승을 죽이고 돌아오면 보상을 준비해 두겠네."
+<ce>
+<ce>_qgiver_의 외침: "이봐, _house_에 있는
+<ce>동물이 대체 뭐지?"
+
+QuestComplete:  [1004]
+<ce>잘했네, %pcf. 여기 _gold_ 골드일세.
+
+RumorsDuringQuest:  [1005]
+들었어? 시내 건물에 동물이 들어갔대.
+빨리 죽여버렸으면 좋겠어.
+
+RumorsPostfailure:  [1006]
+그 생물이 어떤 여자를 할퀴고 마을 밖으로 쫓겨났어.
+정말 안타까운 일이야.
+
+RumorsPostsuccess:  [1007]
+전사 길드에서 _house_에 들어온 곰을 죽였어.
+그들이 있어서 정말 다행이야.
+
+QuestorPostsuccess:  [1008]
+그 짐승을 죽이느라 고생했네. 뭘 도와줄까?
+
+QuestorPostfailure:  [1009]
+그 생물이 집주인을 잡아먹었다더군. 우리 평판만 나빠졌어.
+다음엔 좀 더 잘해 보게.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 전사 길드에서 _house_에 침입한 야생
+ 짐승을 죽이라는 의뢰를 했다. 하루 안에 끝내야 한다.
+
+Message:  1011
+<ce>곰이 죽었습니다.
+
+Message:  1012
+<ce>하피가 죽었습니다.
+
+Message:  1013
+<ce>거미가 죽었습니다.
+
+Message:  1014
+<ce>호랑이가 죽었습니다.
+
+Message:  1021
+<ce>위층에서 누군가 외치는 소리가 들린다. "곰이야."
+
+Message:  1022
+<ce>위층에서 누군가 외치는 소리가 들린다. "하피야."
+
+Message:  1023
+<ce>위층에서 누군가 외치는 소리가 들린다. "거미야."
+
+Message:  1024
+<ce>위층에서 누군가 외치는 소리가 들린다. "호랑이야."
+
+Message:  1080
+<ce>그건 그렇고, 그 짐승 사냥을 아주 즐기는 것 같으니
+<ce>___newdung_ 쪽으로 가는 지도를 주지. 실컷 즐겨보게.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 2 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--       ___newdung_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--            _gold_ occurs 9 times.
+--           _house_ occurs 6 times.
+--          _qgiver_ occurs 2 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _house_ local random
+Place _newdung_ remote dungeon
+
+Clock _2dung_ 1.00:00 0 flag 1 range 0 1
+
+Foe _bear_ is Grizzley_bear
+Foe _tiger_ is Sabretooth_tiger
+Foe _harpy_ is Harpy
+Foe _spider_ is Spider
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _house_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ _nomap_ 
+	pick one of _monster1_ _monster2_ _monster3_ _monster4_ 
+	create npc at _house_ 
+
+_2dung_ task:
+	end quest 
+
+_mondead_ task:
+	killed 1 _spider_ saying 1013 
+	killed 1 _tiger_ saying 1014 
+	killed 1 _harpy_ saying 1012 
+	killed 1 _bear_ saying 1011 
+
+_S.02_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _gold_ 
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	clear _qgclicked_ _clearclick_ 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+variable _map_
+variable _nomap_
+_S.06_ task:
+	when _map_ and _S.02_ 
+	reveal _newdung_ readmap
+    say 1080 
+
+_monster1_ task:
+	say 1021 
+	place foe _bear_ at _house_ 
+
+_monster2_ task:
+	say 1022 
+	place foe _harpy_ at _house_ 
+
+_monster3_ task:
+	say 1023 
+	place foe _spider_ at _house_ 
+
+_monster4_ task:
+	say 1024 
+	place foe _tiger_ at _house_ 

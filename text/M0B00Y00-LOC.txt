@@ -1,0 +1,146 @@
+-- Quest: C:\QUESTS\WORKING\M0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: fighter
+-- Repute: 0
+-- QuestId: 0
+Messages: 81
+Quest: M0B00Y00
+DisplayName: 라이칸스로프 사냥
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>관심 있을 만한 작은 일거리가 하나 있네. 어떤 놈이...
+<ce>그러니까 흔히 말하는 웨어울프, 웨어보어,
+<ce>혹은 그 비슷한 늑대인간형 야수가 이 근처 농부들을 계속
+<ce>괴롭히고 있어서 누군가 처리해 줄 사람이 필요하거든.
+<ce>성공하면 _reward_ 골드를 주지. 관심 있나?
+
+RefuseQuest:  [1001]
+<ce>좋아. 다른 사람을 찾아봐야겠군.
+
+AcceptQuest:  [1002]
+<ce>좋아. 그 놈은 ___mondung_에 있을 거야.
+<ce>불쌍한 짐승을 =1stparton_일 안에 처리해야 하니,
+<ce>서두르는 게 좋을 거야, 애송이.
+
+QuestFail:  [1003]
+<ce>그 놈이 너무 벅찼나, 아니면 시도조차 안 한 건가?
+<ce>뭐, 어쨌든 지금쯤은 떠났겠지. 안됐군.
+
+QuestComplete:  [1004]
+<ce>잘했네, 늑대인간 사냥꾼. 보상을 즐기라고.
+
+RumorsDuringQuest:  [1005]
+이 근처에 웨어울프가 돌아다닌다는 소문을 들었어.
+<---> 웨어보어가 ___mondung_의 명칭으로 불리는
+곳에 은신처를 마련했다더군. <---> 어젯밤에
+울음소리 들었어? 늑대 울음소리 말이야?
+
+RumorsPostfailure:  [1006]
+웨어울프는 정말 떠돌이인가 봐.
+놈이 남쪽으로 이동했다는 소문을 들었어. <--->
+사촌이 말하길 우리 웨어보어가 남쪽 어딘가에서 목격됐대.
+
+RumorsPostsuccess:  [1007]
+그 괴물이 낮에는 사제였다는 사실이 밝혀졌대!
+<---> 그 늑대인간형 야수가 죽었다니 다들 안심하는
+분위기야. <---> 누군가 %ra 사냥에
+성공했다는 소식 들었어?
+
+QuestorPostsuccess:  [1008]
+<ce>그 늑대인간형 야수를 처리해 줘서 고맙네, %pcf.
+
+QuestorPostfailure:  [1009]
+<ce>당장 꺼져. 정말 한심하군.
+<ce>웨어울프 하나도 제대로 처리 못 하다니.
+
+Message:  1020
+<ce>라이칸스로프의 위협이 종식되었습니다.
+
+Message:  1021
+<ce>모두가 두려워하던 "괴물"이 이거였나.
+<ce>그저 평범한 회색곰일 뿐이군.
+
+Message:  1030
+%qdt:
+ ___questgiver_의 전사 길드에서 나를 고용해
+ ___mondung_에 있는 은신처에서 골칫거리인 웨어울프,
+ 웨어보어, 혹은 그 비슷한 놈을 죽이라고 했다.
+ 보상을 받으려면 =1stparton_일 안에 그 짐승을 죽여야 한다.
+
+Message:  1080
+<ce>___newdung_ 쪽으로 가는 지도일세.
+<ce>마음껏 사냥하고 보물도 챙기라고. 실컷 즐겨보게.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 26 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--       ___mondung_ occurs 4 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 1 time.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _werewolf_ is Werewolf
+Foe _wereboar_ is Wereboar
+Foe _bear_ is Grizzley_bear
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	pick one of _map_ _nomap_ _nomap_ _nomap_ 
+	pick one of _S.06_ _S.07_ _S.08_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_mondead_ task:
+	killed 1 _werewolf_ saying 1020 
+	killed 1 _wereboar_ saying 1020 
+	killed 1 _bear_ saying 1021 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+_S.06_ task:
+	place foe _bear_ at _mondung_ 
+
+_S.07_ task:
+	place foe _wereboar_ at _mondung_ 
+
+_S.08_ task:
+	place foe _werewolf_ at _mondung_ 
+
+variable _map_
+variable _nomap_
+_S.11_ task:
+	when _map_ and _pcgetsgold_ 
+	reveal _newdung_ readmap
+    say 1080 

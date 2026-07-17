@@ -1,0 +1,291 @@
+-- Quest: C:\QUESTS\WORKING\K0C00Y05.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: merchant
+-- Repute: 0
+-- QuestId: 5
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 20
+Quest: K0C00Y05
+DisplayName: 잃어버린 아이
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>전사 길드에 호소해 보았지만,
+<ce>그들은 고귀한 숙녀나 곤경에 처한 아이들을 구하느라
+<ce>너무 바빠서 신분이 낮은 아이의 실종 따위에는
+<ce>관심도 없더군요. 하지만 제 _child_의 존재는
+<ce>제 전부입니다.
+<ce>부탁드립니다, %g2 님을 찾아주시겠어요,
+<ce>제 친구여?
+<--->
+<ce>그 지독한 오크들이 제 어린 사촌을 납치했는데,
+<ce>우리의 보호자라는 전사 길드는 저를
+<ce>진지하게 받아들이지 않습니다. _child_의 신분은
+<ce>그저 =child_일 뿐이라 그들의 관심을 받을
+<ce>가치가 없지만,
+<ce>%g 는 제 전부입니다.
+<ce>부탁드립니다, 훌륭한 %ra 님,
+<ce>저를 도와주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>전사 길드와 똑같이 돌 같은 마음이시군요.
+<ce>무고한 아이의 목숨이 대체 얼마나 가치 있다고 생각하시나요?
+
+AcceptQuest:  [1002]
+<ce>감사합니다, 정말 감사합니다. _child_ 님을
+<ce>찾아주신다면 _gold_ 골드를 드릴 수 있습니다.
+<ce>그게 제 전 재산입니다. 이제, %g2 님을 납치한
+<ce>오크들은 악취 나는 ___mondung_에 진을 치고 있습니다.
+<ce>=queston_일 안에 _child_ 님이 무사한지 알아야
+<ce>합니다. 그렇지 않으면 다른 사람을 보낼 수밖에 없습니다.
+<ce>제발 그런 상황까지 가지 않게 해주세요.
+<ce>%god 님이 함께하시길, 훌륭한 %pcn 님.
+
+QuestComplete:  [1004]
+<ce>_child_ 님, 오, %god 님 감사합니다!
+<ce>%oth 님, 나의 훌륭한 %pcn 님, 당신은 저의
+<ce>구원자입니다. 여기, 약속한 _gold_ 골드입니다.
+
+RumorsDuringQuest:  [1005]
+_qgiver_ 님은 _child_ 님의 실종으로 매우
+괴로워하고 있습니다.
+
+RumorsPostfailure:  [1006]
+_qgiver_ 님은 _child_ 님을 다시 찾을 수
+있을 거라는 희망을 버렸습니다.
+
+RumorsPostsuccess:  [1007]
+%ra 용병 덕분에 _qgiver_ 님과 _child_
+님이 다시 재회했습니다.
+
+QuestorPostsuccess:  [1008]
+_child_ 님을 제게 데려와 주셨군요, %pcf 님.
+보답으로 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+<ce>저를 기억하지 못하시나요, %pcf 님?
+<ce>_qgiver_ 님? _child_ 님을 다시 찾아주겠다고
+<ce>하셨으면서, 실패하셨죠. 당신에게 할 말은 없습니다.
+<ce>오블리비언으로 가버리세요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ __qgiver_의 _qgiver_,
+ ___qgiver_ 님이 저에게 %g3 의 어린 사촌,
+ _child_ 님을 구해달라고 했습니다. %g 님은
+ ___mondung_에 있는 오크 무리에게 붙잡혀 있는 것 같습니다.
+ 아이를 구할 시간은 =queston_일 남았습니다.
+
+Message:  1011
+__knight_ ___knight_
+ 
+%pcn 님께,
+ 
+_child_ 님은 어떤 오크
+부족에게도 납치되지 않았습니다.
+사실, %g 님은 악명 높은 주정뱅이인 _qgiver_
+님으로부터 보호하기 위해 저희와 함께 있습니다. 직접 눈으로
+확인하고 싶으시다면, __knight_ 쪽으로 오십시오.
+ 
+존경을 담아,
+ 
+_knight_
+
+
+Message:  1012
+<ce>전사 길드의 문장이 새겨진 전령이 당신 곁에 나타납니다.
+<ce>그는 편지를 건네주고는 서둘러 떠납니다.
+
+Message:  1013
+%qdt:
+ 전사 길드의 기사인 _knight_ 님으로부터 편지를
+ 받았습니다. %g 님은 제가 ___mondung_에서
+ 구출해야 할 아이를 데리고 있다고 합니다.
+ _knight_ 님에 따르면, =qgiver_ 님이
+ 주정뱅이이기 때문에 _child_ 님이 _qgiver_
+ 님의 보호에서 벗어났다고 합니다. 직접 확인하고 싶다면,
+ _knight_ 님이 ___knight_의 __knight_에 있습니다.
+
+Message:  1014
+<ce>제 편지를 받으셨군요, %pcf 님. 다행입니다.
+<ce>좋은 의도로 하신 일이겠지만, 꽤 곤란한 상황에 휘말리는
+<ce>건 원치 않거든요. _child_ 님은 _qgiver_ 님의
+<ce>사촌이 맞지만, 더 중요한 건 그 아이가 조부모의 재산을
+<ce>상속받을 =child_의 이름으로 불리는 점입니다.
+<ce>%g3 의 안전을 위해, 우리는 %g2 님을
+<ce>__childlocale_의 한 장소로 옮겼습니다.
+<ce>말씀드려도 되겠죠 -- _childlocale_입니다.
+<ce>전사 길드와의 좋은 평판을 유지하고 싶으시다면 어린
+<ce>_child_ 님은 그냥 내버려 두시는 게 좋을 겁니다.
+
+Message:  1015
+<ce>안녕하세요, 저는 _child_입니다.
+<ce>일곱 살이에요.
+<--->
+<ce>안녕하세요. 제 이름은 _child_입니다.
+<ce>농담 하나 해드릴까요? 좋아요, 시작할게요.
+<ce>%jok.
+<--->
+<ce>우리 할아버지가 당신보다 부자예요.
+<--->
+<ce>안녕하세요, 저는 낯선 사람과
+<ce>말하면 안 되기로 되어 있어요. 하지만 낯선 사람과
+<ce>말하지 않으면, 대화할 사람이 아무도 없잖아요. 제 이름은
+<ce>_child_입니다.
+<--->
+<ce>안녕하세요, 당신도 %ra 인가요? 저도
+<ce>그래요, 제 이름은 _child_입니다.
+
+Message:  1016
+<ce>_child_ 님이 %g2 님에게서 등을
+<ce>돌리면 도망칩니다.
+
+Message:  1017
+<ce>_child_ 님을 데려가시겠습니까?
+
+Message:  1018
+<ce>그 전사는 전사 길드의 문장을 달고 있습니다.
+
+Message:  1019
+%qdt:
+ 전사 길드의 _knight_의 행방을 만났습니다.
+ %g 가 말하길, _child_의 위치가
+ __childlocale_의 _childlocale_에 안전하게 보관되어
+ 있다고 합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 5 times.
+--               %g2 occurs 7 times.
+--               %g3 occurs 2 times.
+--              %god occurs 2 times.
+--              %jok occurs 1 time.
+--              %oth occurs 1 time.
+--              %pcf occurs 17 times.
+--              %pcn occurs 5 times.
+--              %qdt occurs 3 times.
+--               %ra occurs 5 times.
+--           =child_ occurs 2 times.
+--          =qgiver_ occurs 1 time.
+--         =queston_ occurs 3 times.
+--        ___knight_ occurs 7 times.
+--       ___mondung_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--    __childlocale_ occurs 4 times.
+--         __knight_ occurs 4 times.
+--         __qgiver_ occurs 1 time.
+--           _child_ occurs 32 times.
+--     _childlocale_ occurs 2 times.
+--            _gold_ occurs 3 times.
+--          _knight_ occurs 7 times.
+--          _qgiver_ occurs 8 times.
+
+QBN:
+Item _letter11_ letter used 1011
+-added underscores to letter11
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+Person _knight_ face 216 faction The_Fighters_Guild remote
+Person _child_ faction Children female
+
+Place _mondung_ remote dungeon1
+Place _childlocale_ local house2
+
+Clock _queston_ 00:00 0 flag 17 range 0 5
+Clock _S.04_ 01:40 06:40
+
+Foe _warrior_ is Knight
+
+--	Quest start-up:
+	dialog link for location _childlocale_ person _child_ 
+	start timer _queston_ 
+	reveal _mondung_ 
+	--moved injured warrior say 1018 to new task S.10
+	log 1010 step 0 
+	pick one of _metal_ _S.01_ 
+
+_queston_ task:
+	end quest 
+--removed unnecessary delay 
+
+_S.01_ task:
+	place npc _child_ at _mondung_ 
+
+_metal_ task:
+	repute with _knight_ exceeds 10 do _S.03_ 
+	place npc _child_ at _childlocale_ 
+
+_S.03_ task:
+	start timer _S.04_ 
+
+_altsafe_ task:
+	when _metal_ and not _S.03_
+	start task _S.01_
+--if FG rep not met, reverts to normal path
+
+_S.04_ task:
+	_letter11_ used do _S.05_ 
+	--removed say nothing
+	give pc _letter11_ notify 1012 
+
+_S.05_ task:
+	log 1013 step 1 
+
+_S.06_ task:
+	clicked npc _knight_ 
+	add dialog for location _childlocale_ 
+	log 1019 step 2 
+	say 1014 
+
+_S.07_ task:
+	clicked npc _child_ 
+	prompt 1017 yes _S.09_ no _no_ 
+
+_S.08_ task:
+	when _S.09_ and _S.04_ 
+	create foe _warrior_ every 21 minutes 10 times with 20% success 
+	change repute with _knight_ by -15 
+--changed _metal_ here to _s.04_ to prevent false knight spawning
+
+_S.09_ task:
+	hide npc _child_ 
+	say 1015 
+	add _child_ face 
+
+_S.10_ task:
+	injured _warrior_
+	say 1018 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_reward_ task:
+	when _qgclicked_ and _S.09_ 
+	give pc _gold_ 
+	drop _child_ face
+	end quest 
+--removed unnecessary delay
+-added drop child face. child would remain on HUD until delay finished.
+
+_S.13_ task:
+	when _S.01_ and _reward_ 
+	change repute with _knight_ by +5 
+	change repute with _qgiver_ by +15 
+
+_S.14_ task:
+	when _queston_ and _S.06_ and not _S.08_ 
+	change repute with _knight_ by +20 
+
+_S.15_ task:
+	when _queston_ and _S.09_ 
+	say 1016 
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.09_ 
+	clear _qgclicked_ _clearclick_ 
+
+variable _no_

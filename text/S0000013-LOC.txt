@@ -1,0 +1,182 @@
+-- Quest: C:\QUESTS\WORKING\S0000013.Qbn.
+-- Main story quest.
+-- QuestId: 13
+Messages: 21
+Quest: S0000013
+DisplayName: 미니세라의 편지
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pcf, 이 문제를 어떻게 꺼내야 할지 모르겠군요.
+<ce>당신 조상들의 명예를 걸고 저를 돕기 위해 최선을
+<ce>다하겠다고, 그리고 제가 하는 말이나 당신이 본 것을
+<ce>다른 누구에게도 절대 발설하지 않겠다고 약속해주십시오.
+<ce>맹세하시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>맹세해놓고 지키지 않는 것보다는 차라리 맹세하지 않는 편이
+<ce>낫겠지요. 그래도 당신에게서 더 큰 기사도를 기대했건만.
+
+AcceptQuest:  [1002]
+<ce>그럼 당신을 믿어보죠, %pcf.
+<ce>문제는 제 시어머니이자 대거폴의 왕대비이며 리산더스의
+<ce>미망인인 미니세라에 관한 것입니다. 가계 재정을 관리하면서,
+<ce>그녀가 ___myndung_의 명칭으로 불리는 요새의 유지비를
+<ce>지불하고 있다는 사실을 알게 되었습니다. 그곳에는 대규모
+<ce>병력까지 주둔하고 있죠. 얼마 전, 그녀는 서류 뭉치를 가지고
+<ce>사라졌다가 며칠 뒤 빈손으로 돌아왔습니다. 최근 그녀는
+<ce>또 다른 편지 뭉치를 가지고 다시 떠났고, 제 첩자들을 통해
+<ce>그녀가 ___myndung_ 쪽으로 갔다는 사실을 확인했습니다.
+<ce>그녀의 행동에 대한 제 의심이 정당하다고 믿어주셔야 합니다.
+<ce>저에게는 증거를 제시할 입장이 아니니까요.
+<ce>당신이 해야 할 일은 ___myndung_ 쪽으로 가서 그 편지
+<ce>뭉치나 그녀의 활동에 관한 다른 정보를 찾아내는 것입니다.
+<ce>미니세라는 =2myndung_일 후에 돌아올 겁니다.
+<ce>안타깝지만 그보다 더 많은 시간은 없습니다. 행운을 빕니다.
+
+QuestFail:  [1003]
+<ce>=2myndung_일 이내에 어떤 식으로든 증거가 필요합니다,
+<ce>%pcf.
+
+QuestComplete:  [1004]
+<ce>정말 슬픈 일이군요. 솔직히 말해서,
+<ce>편지 내용이 이럴 줄은 몰랐습니다. 가엾은 미니세라. 궁정의
+<ce>모든 이들은 그녀의 남편인 고 리산더스 왕이 그녀보다 다른
+<ce>여인의 얼굴과 자태를 더 좋아했다는 사실을 알고 있지만,
+<ce>그녀는 여전히 그 모든 증거를 숨기려 애쓰고 있습니다.
+<ce>리산더스에 대한 그녀의 충성심은 황제에 대한 그의
+<ce>어리석은 충성심만큼이나 대단하군요.
+<ce>
+<ce>그리고 그 가엾은 아이들. 무고한 이들을 학살하다니
+<ce>정말 끔찍하군요. 오크들의 야만성은 익히 알려져 있지만,
+<ce>그들이 그런 일을 당할 이유는 없었을 텐데.
+<ce>미니세라가 자신의 아버지가 그런 끔찍한 일을 저질렀다는
+<ce>사실을 알리고 싶어 하지 않았던 것도 놀랄 일은 아니군요.
+<ce>자, %pcf, 당신의 용기와 신중함에 감사드립니다.
+<ce>보수가 아니라 선물로 제 감사의 표시를 받아주십시오.
+<ce>%god 의 축복이 함께하기를.
+
+QuestorPostfailure:  [1009]
+<ce>편지들이 심하게 불탔지만, 몇몇 단어들은 여전히
+<ce>읽을 수 있습니다.
+
+QuestLogEntry:  [1010]
+<ce>(첫 번째 페이지) ...
+<ce>당신과 너무 오래 떨어져 있었기에, 내 마음은 ...
+<ce>
+<ce>(두 번째 페이지) ... 당신은 내 입술을 사랑하지만,
+<ce>그 입술이 내뱉는 말은 잊어버리죠 ...
+<ce>
+<ce>(세 번째 페이지) ... 그녀는 당신이 자신을 속인다고
+<ce>의심해요 ... 나는 당신의 공허한 왕관과 공허한
+<ce>결혼반지를 제외한 당신의 모든 부분을 숭배하고 사랑해요.
+<ce>당신을 가두고 고통을 주는 그 두 개의 빈 원들 ... 내가
+<ce>리산더스의 메도라로 영원히 남을 만큼 헛된 존재라면 ...
+<ce>당신의 손에서 꿀을 마시고 ... 사랑 ... 영원히 ...
+<ce>
+<ce>(네 번째 페이지) ...오크들. 하지만 그들은 정착지에 대해
+<ce>최악의 상황을 가정했죠. 모든 수컷 오크들이 죽고 ...
+<ce>(암컷 오크들은 전투에서 수컷 오크들보다 약하지 않기에 ...
+<ce>오직 늙고 병든 자들만이 거친 야영지에 남았죠 ...
+<ce>저급한 시로딜어를 구사하는 ... 아이들을 살려달라고
+<ce>애원했지만, 클라이어스 왕자는 아이들이 자라면 강하고
+<ce>튼튼해질 것이며 현명하지 못한 지도자만이 아인종에게 자비를
+<ce>베풀 것이라고 말했죠. 그는 부하들에게 아이들을 죽이며
+<ce>유희를 즐기도록 허락했고, 그들은 모두 글로 옮길 수 없는
+<ce>방식으로 살해당했습니다. 저는 그것을 목격했습니다, 마님.
+<ce>용서를 구하지만, 당신의 아버지는 큰 악을 저질렀습니다 ...
+<ce>거절하지 못한 제 수치심 ... 모두에게 수치스러운 ...
+<ce>
+<ce>(다섯 번째 페이지) ...나의 책임을 저버릴 것입니다. 당신과
+<ce>... 함께. 세상의 나머지는 저주받으라지. 이 ...베토니를
+<ce>뒤로하고. 크링게인에서 그들을 짓밟을 것이다. ...죽은.
+<ce>아무도 왕이 ...을 포기할 것이라고는 의심하지 못할 것이다.
+
+Message:  1011
+%qdt:
+ 오브키 여왕은 내가 대거폴의 왕대비인 시어머니를
+ 따라 ___myndung_ 요새로 가서, 늙은 미니세라가
+ 가져가는 서류 뭉치들이 어떻게 되는지 확인하길 원한다.
+ 나는 =2myndung_일 안에 편지를 가지고 오브키에게 돌아가야
+ 한다. 그 대가로 그녀는 더 많은 정보를 주겠다고 약속했다.
+
+Message:  1015
+<ce>대거폴의 문장이 새겨진 옷을 입은 늠름한
+<ce>젊은 여성이 당신에게 편지를 건넵니다.
+<ce>그녀는 홱 돌아서서 말에 올라타고 떠나갑니다.
+
+Message:  1020
+친애하는 %pcn,
+ 
+당신의 도움이 다시 한번 필요합니다. 지난번 눌파가와 관련된
+문제에서 보여준 당신의 용기와 신중함은 정말 귀중했습니다.
+다음번에 대거폴 성을 지나갈 때 저를 만나주십시오.
+ 
+<ce>오브키 대거폴의 여왕
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 2 times.
+--              %pcf occurs 5 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--        =2myndung_ occurs 4 times.
+--       ___myndung_ occurs 4 times.
+
+QBN:
+Item _treasure_ letter used 1010
+Item _gold_ gold
+Item letter48 letter used 1020
+
+Person _aubki_ named Queen_Aubk-i atHome
+Person _mynisera_ face 184 named Mynisera
+
+Place _myndung_ permanent Castle_Necromoghan
+
+Clock _2myndung_ 00:00 0 flag 17 range 0 2
+Clock _S.04_ 10.00:00 20.00:00
+
+
+--	Quest start-up:
+	start timer _S.04_ 
+	add _aubki_ as questor 
+
+_2myndung_ task:
+	drop _aubki_ as questor 
+	end quest 
+
+_pcgetsgold_ task:
+	toting _treasure_ and _aubki_ clicked 
+	give pc _gold_ 
+	drop _aubki_ as questor 
+	end quest 
+
+_S.02_ task:
+	clicked npc _aubki_ 
+	prompt QuestorOffer yes yes no _no_ 
+
+variable _S.03_
+_S.04_ task:
+	hide npc _mynisera_ 
+	give pc letter48 notify 1015 
+
+until _S.04_ performed:
+	clear _S.02_ 
+
+yes task:
+	place item _treasure_ at _myndung_ anymarker
+	start timer _2myndung_ 
+	reveal _myndung_ 
+	log 1011 step 0 
+	say AcceptQuest 
+
+_no_ task:
+	say RefuseQuest 
+	drop _aubki_ as questor 
+	end quest 
+
+_dummy_ task:
+	clicked item _treasure_ say QuestorPostfailure 
+	_treasure_ used do _S.03_ 

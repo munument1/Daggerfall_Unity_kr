@@ -1,0 +1,164 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y15.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 15
+Messages: 17
+Quest: R0C10Y15
+DisplayName: 네 번째 사람
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>네 번째 사람이 필요한 다소 복잡한 임무가 있습니다.
+<ce>완수하는 데 며칠 걸릴 수도 있지만, 주머니에 _reward_
+<ce>골드를 더 챙길 수 있을 겁니다. 흥미롭지 않나요?
+
+RefuseQuest:  [1001]
+<ce>실망스럽군요. 뭐, 어쩔 수 없죠.
+
+AcceptQuest:  [1002]
+<ce>___npc1_에 제 연락책이 있는데,
+<ce>그 사람이 ___npc2_에 있는 제 다른 동료에게 필요한
+<ce>물건을 가지고 있습니다. 물론, ___npc1_에 있는 제
+<ce>연락책 _npc1_에게 %g3 의 물건에 대한
+<ce>대가를 지불해야 합니다. 그래서 당신이 이 다이아몬드를
+<ce>지불 수단으로 _npc1_에게 가져다주길 바랍니다.
+<ce>다이아몬드는 =1stparton_일 안에 %g3 의 손에
+<ce>들어가야 합니다. __npc1_에 도착하면, _npc1_의
+<ce>추가 지시가 내려질 겁니다. 감사합니다, %pcf 님.
+<ce>%god 의 가호가 함께하길.
+
+QuestFail:  [1003]
+<ce>복잡한 일이라는 건 알았지만, %pcf 님, 당신의 그
+<ce>두꺼운 머릿속에 최소한의 뇌는 들어있을 거라 생각했습니다.
+<ce>메모를 해두었길 바랍니다.
+<ce>저는 같은 말을 반복하는 습관이 없거든요.
+
+QuestComplete:  [1004]
+<ce>아, _item2_의 등장이군요.
+<ce>영영 오지 않을까 봐 걱정했습니다.
+<ce>자, 약속한 _reward_ 골드입니다. _npc1_에게 제가
+<ce>%g3 의 빚을 졌다고 전해주세요. 정말 감사합니다.
+
+RumorsDuringQuest:  [1005]
+__npc2_의 _npc2_의 태도는 여전히
+%g3 의 _item2_에 대해 악을 쓰고 있습니다.
+<---> %oth, 그 _npc1_의 성격은
+탐욕스럽기 짝이 없죠. %g3 의 어머니라도 대가를
+받지 않으면 돕지 않을 사람입니다.
+
+RumorsPostfailure:  [1006]
+_questgiver_의 분노가 어떤 %ra 모험가에게
+향했다는 소문을 들었어요. <---> _npc2_의
+격분은 %g3 의 잃어버린 마법 물건 때문이며,
+그로 인해 __npc2_ 떠났죠.
+
+RumorsPostsuccess:  [1007]
+_questgiver_ 및 _npc2_ 사이에 무슨 관계가
+있는지 궁금하네요. <---> _npc1_의
+%g3 의 _item2_ 판매 소문을 들었어요.
+탐리엘에서 대체 무슨 대가를 받았길래 그런 걸까요?
+
+QuestorPostsuccess:  [1008]
+아니, 이게 누구신가. 최고의 배달부 %pcn 님
+아니신가요. 잘 지냈나요, 친구? <---> 내가 어려울
+때 도와주었죠, %pcf 님. 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+<ce>배달을 완수하지 못한 것에 대해 사과하러 오신 거겠죠,
+<ce>%pcf 님. 사과는 받지 않겠습니다.
+<ce>이제 그만 나가주세요.
+
+QuestLogEntry:  [1010]
+<ce>%god 님, 와주셨군요. %pcf 님.
+<ce>어서 다이아몬드를 주세요. 이제 이 _item2_ 가지고
+<ce>___npc2_에 있는 __npc2_의 _npc2_에게
+<ce>가져다주세요. 도착하면 %g 가 보상을 줄 겁니다.
+
+Message:  1015
+%qdt:
+ ___questgiver_의 _questgiver_ 님께서 저를 ___npc1_에
+ 있는 %g3 의 연락책, __npc1_에 있는
+ =npc1_ _npc1_ 님에게 보내셨습니다. 저는
+ _item1_ 전달을 %g2 에게 마치고, 추가 지시를
+ 받아야 합니다. ___npc1_까지 =1stparton_일 남았습니다.
+
+Message:  1016
+%qdt:
+ _npc1_ 님께서 저를 ___npc2_의 __npc2_에
+ 있는 _npc2_ 님에게 보내셨습니다. =2ndparton_일 안에
+ %g2 에게 _item2_ 전달을 완료해야 합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 12 times.
+--              %god occurs 3 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 13 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--       =2ndparton_ occurs 3 times.
+--            =npc1_ occurs 9 times.
+--          ___npc2_ occurs 3 times.
+--    ___questgiver_ occurs 1 time.
+--           __npc1_ occurs 2 times.
+--           __npc2_ occurs 5 times.
+--           _item1_ occurs 1 time.
+--           _item2_ occurs 8 times.
+--            _npc1_ occurs 10 times.
+--            _npc2_ occurs 5 times.
+--      _questgiver_ occurs 3 times.
+--          _reward_ occurs 4 times.
+
+QBN:
+Item _reward_ gold
+Item _item1_ diamond
+Item _item2_ magic_item
+
+Person _questgiver_ face 136 group Questor
+Person _npc1_ group Local_3.0 remote
+Person _npc2_ face 248 group Local_3.1 remote
+
+
+Clock _1stparton_ 00:00 0 flag 1 range 1 4
+Clock _2ndparton_ 00:00 0 flag 1 range 1 4
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1015 step 0 
+	get item _item1_ 
+
+_pcgetsgold_ task:
+	toting _item2_ and _npc2_ clicked 
+	give pc _reward_ 
+	end quest 
+--removed unnecessary delay
+
+variable _pchasitem1_
+variable _pchasitem2_
+_S.03_ task:
+	toting _item1_ and _npc1_ clicked 
+	start timer _2ndparton_ 
+	log 1016 step 1 
+	get item _item2_ 
+	say 1010 
+
+variable _S.04_
+_queston_ task:
+	when _1stparton_ and not _S.03_ 
+	make _item1_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+variable _1stparton_
+_2ndparton_ task:
+	make _item2_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 

@@ -1,0 +1,134 @@
+-- Quest: C:\QUESTS\WORKING\M0B00Y07.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: fighter
+-- Repute: 0
+-- QuestId: 7
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 81
+Quest: M0B00Y07
+DisplayName: 원치 않는 손님
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>가끔 이런 바보 같은 의뢰인이 찾아오곤 하지.
+<ce>어떤 멍청이가 뒷문을 열어둬서 야생 동물이 들어왔다더군.
+<ce>곰인지 호랑이인지 헷갈려 하지만, 어쨌든 그 놈이
+<ce>의뢰인을 잡아먹으려 했다는군. 가서 그 짐승을 죽여주게.
+<ce>보수는 _gold_ 골드일세. 받겠나, %pcn?
+
+RefuseQuest:  [1001]
+<ce>알겠네. 호랑이한테 먹히게 두지 뭐.
+<ce>애초에 문을 열어둔 그 녀석이 바보 아니겠나?
+
+AcceptQuest:  [1002]
+<ce>좋아. __house_에 있는 _house_ 쪽으로 가게.
+<ce>처리하고 돌아올 시간을 =2dung_일 주겠네.
+
+QuestComplete:  [1004]
+<ce>별다른 어려움은 없었겠지? 그럴 줄 알았네.
+<ce>여기 _gold_ 골드일세.
+
+RumorsDuringQuest:  [1005]
+<ce>_house_에 호랑이가 갇혀 있다는 소문을 들었어.
+<ce>놈을 죽이려면 돈을 내야 할 거야.
+
+RumorsPostfailure:  [1006]
+호랑이가 자기 집에서 어떤 불쌍한 사람을 죽였어.
+정말 끔찍한 비극이야.
+
+RumorsPostsuccess:  [1007]
+_house_에 침입했던 그 난폭한 호랑이를 죽인
+게 자네인가?
+
+QuestorPostsuccess:  [1008]
+호랑이 처리하느라 고생했네.
+
+QuestorPostfailure:  [1009]
+호랑이는 상대하기 힘들지.
+다음엔 다람쥐부터 시작하게 하는 게 좋겠군. 정말 한심하긴.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 _qgiver_의 의뢰: __house_의
+ _house_에 침입한 호랑이나 곰을 처치할 것.
+ =2dung_일 안에 돌아오면 _gold_ 골드를 받는다.
+
+Message:  1011
+<ce>_monster_ 사망이 확인되었습니다.
+
+Message:  1012
+<ce>_bear_ 사망이 확인되었습니다.
+
+Message:  1080
+<ce>이봐, 방금 생각났는데, 우리 길드원 중 하나가
+<ce>___newdung_ 쪽으로 가는 지도를 찾았네.
+<ce>하루 만에 다 죽이려고 하지는 말게나.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--           =2dung_ occurs 2 times.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--          __house_ occurs 2 times.
+--            _bear_ occurs 2 times.
+--            _gold_ occurs 4 times.
+--           _house_ occurs 5 times.
+--         _monster_ occurs 2 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _house_ remote random
+Place _newdung_ remote dungeon
+
+Clock _2dung_ 1.00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Sabretooth_tiger
+Foe _bear_ is Grizzley_bear
+
+--	Quest start-up:
+	start timer _2dung_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ 
+	pick one of _monster1_ _monster2_ 
+	create npc at _house_ 
+
+_2dung_ task:
+	end quest 
+
+_mondead_ task:
+	killed 1 _monster_ saying 1011 
+	killed 1 _bear_ saying 1012 
+
+_S.02_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _gold_ 
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	clear _qgclicked_ _clearclick_ 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+variable _map_
+variable _nomap_
+_S.06_ task:
+	when _map_ and _S.02_ 
+	reveal _newdung_ readmap
+    say 1080 
+
+_monster1_ task:
+	place foe _bear_ at _house_ 
+
+_monster2_ task:
+	place foe _monster_ at _house_ 

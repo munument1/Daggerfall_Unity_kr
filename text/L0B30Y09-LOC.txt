@@ -1,0 +1,132 @@
+-- Quest: C:\QUESTS\WORKING\L0B30Y09.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Brotherhood
+-- Repute: 30
+-- QuestId: 9
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 22
+Quest: L0B30Y09
+DisplayName: 익명의 의뢰
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>자네를 위한 익명의 의뢰가 있네. 가끔 누군가 우리에게
+<ce>돈을 주고 사람을 제거해달라고 하지만, 이유는 밝히지
+<ce>않거나 중개인을 통해 신원을 비밀로 하는 경우가 있지.
+<ce>어쨌든, 자네가 원한다면 이 일은 자네 것이네.
+
+RefuseQuest:  [1001]
+<ce>이런 일에 휘말리고 싶지 않은 건 자네 탓이 아니지.
+
+AcceptQuest:  [1002]
+<ce>___mondung_의 _mondung_ 쪽으로 가게.
+<ce>표적의 왼쪽 뺨에는 흉터가 있네. 우리가 아는 건 그게
+<ce>전부야. =1stparton_일 뒤에 돌아와 보상을 받게.
+<ce>메팔라께서 자네의 칼날을 축복하시길, %pcn.
+
+QuestFail:  [1003]
+<ce>누구를 죽였는지 모르겠지만, 표적이 아니었어.
+<ce>엉덩이를 걷어차서라도 _mondung_ 쪽으로 가서
+<ce>계약대로 처리하고 오게.
+
+QuestComplete:  [1004]
+<ce>아름답군, %pcf, 정말로. 이 지친 눈에 눈물이
+<ce>고이는군. 내가 본 중 가장 멋진 처리였어. 시라도 한 편
+<ce>쓰고 싶어지는군. 왜 _reward_ 골드를 챙겨서 당장 여기서
+<ce>꺼지지 않는 건가? 그래야 내가 이 일에 대한 발라드를 쓸
+<ce>수 있을 테니까. 정말로, 자랑스럽네, %pcf.
+
+RumorsDuringQuest:  [1005]
+날씨가 좋군요.
+
+RumorsPostfailure:  [1006]
+왕이 불륜을 저지르고 있다더군요.
+
+RumorsPostsuccess:  [1007]
+내 생각엔 세금이 너무 높아요.
+
+QuestorPostsuccess:  [1008]
+익명의 의뢰를 잘 처리했더군.
+
+QuestorPostfailure:  [1009]
+익명의 의뢰를 완수하지 못했다니 아쉽군.
+자네 기록에 확실한 오점이 남았어.
+
+Message:  1020
+%qdt:
+ ___questgiver_의 다크 브라더후드에서 받은 새로운 계약은
+ _mondung_에 있는 익명의 표적이다. ___mondung_에 있다.
+ 왼쪽 뺨의 흉터로만 표적을 알아볼 수 있다.
+ =1stparton_일 안에 일을 마쳐야 한다.
+
+Message:  1021
+<ce>표적의 왼쪽 뺨에 새로운 흉터가 있군.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 3 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 3 times.
+--    ___questgiver_ occurs 1 time.
+--        __mondung_ occurs 5 times.
+--          _reward_ occurs 1 time.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ face 112 group Questor
+
+Place _mondung_ remote palace
+
+Clock _1stparton_ 00:00 0 flag 18 range 0 2
+
+Foe _F.00_ is Healer
+Foe _F.01_ is Rogue
+Foe _F.02_ is Burglar
+Foe _F.03_ is Daedra_seducer
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	pick one of _S.06_ _S.07_ _S.08_ _onehour_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _S.02_ 
+	give pc _reward_ 
+	end quest 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_S.02_ task:
+	killed 1 _F.03_ saying 1021 
+	killed 1 _F.02_ saying 1021 
+	killed 1 _F.01_ saying 1021 
+	killed 1 _F.00_ saying 1021 
+
+variable _queston_
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_S.06_ task:
+	place foe _F.00_ at _mondung_ 
+
+_S.07_ task:
+	place foe _F.01_ at _mondung_ 
+
+_S.08_ task:
+	place foe _F.02_ at _mondung_ 
+
+_onehour_ task:
+	place foe _F.03_ at _mondung_ 
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.02_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 

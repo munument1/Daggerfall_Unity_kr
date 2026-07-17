@@ -1,0 +1,206 @@
+-- Quest: C:\QUESTS\WORKING\N0B20Y02.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: mage
+-- Repute: 20
+-- QuestId: 2
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 31
+Quest: N0B20Y02
+DisplayName: 존경받는 마법사 보호
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>저는 _qgiver_ 측이며, 위대한
+<ce>_sleepingmage_ 님의 하인입니다.
+<ce>저는 길드원을 찾아 %g2 님께서
+<ce>주문 명상에 잠겨 계시는 동안 %g 님을
+<ce>보호하도록 지시받았습니다. _sleepingmage_ 님께서는
+<ce>%g3 의 님의 경쟁자가 %g 님께서
+<ce>무방비 상태일 때 %g2 님을 살해하려
+<ce>암살자를 보낼지도 모른다고 의심하십니다.
+<ce>%g 님께서는 암살자들을 막아낸다면
+<ce>_magicitem_ 물품을
+<ce>당신에게 주겠다고 하셨습니다.
+<ce>이 퀘스트를 수락하시겠습니까?
+<--->
+<ce>유명한 _sleepingmage_ 님을 돕도록 선택된 것은
+<ce>친애하는 %pcf 님께
+<ce>아주 큰 영광입니다. %g 님께서
+<ce>직접 %g 님께서 주무시는 동안 %g2 님을
+<ce>지켜달라고 요청하셨습니다. 분명, 그런 지위의
+<ce>마법사라면 %g3 의 님의 엄청난 힘을 질투하는
+<ce>적들이 있기 마련이죠. 이 영광을 받아들이시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>흠. 길드원들은 보통 더 협조적인데.
+<ce>분명 _sleepingmage_ 님께서 이 일을 기억하실 겁니다.
+
+AcceptQuest:  [1002]
+<ce>예상대로군요. _sleepingmage_ 님께서는 이제 막 3시간의
+<ce>명상을 시작하셨으니, 그동안 _magesguild_ 님을 경호하며
+<ce>취약한 상태인 그분을 보호해야 합니다. 명상이 끝나면,
+<ce>그분은 에이테리우스로 이동하실 겁니다. 그분이 안전해지면,
+<ce>길드에서 보상을 가지고 사람을 보낼 것입니다.
+
+QuestComplete:  [1004]
+<ce>짙은 푸른색 로브를 입은 젊은 여성이
+<ce>당신 앞에 깊이 고개를 숙입니다.
+<ce>
+"길드에서 임무를 훌륭히 완수한 것에 대해 감사를 표합니다.
+_sleepingmage_ 님께서
+매우 고마워하고 계십니다.
+여기 %g 님께서 약속하신 _magicitem_ 있습니다."
+
+RumorsDuringQuest:  [1005]
+_sleepingmage_ 님은 ___sleepingmage_의 전설적인 인물입니다.
+<---> _sleepingmage_ 님은 강력한 주문을 시전한
+후 휴식을 취하고 계십니다.
+
+RumorsPostfailure:  [1006]
+%g 님께서 주무시는 동안 _sleepingmage_ 님께 무슨
+일이 생긴 것 같습니다. %g 님께서 돌아가신 것
+같군요. <---> _sleepingmage_ 님이 사라졌습니다.
+%g 님이 살아있는지 죽었는지 아무도 모릅니다.
+
+RumorsPostsuccess:  [1007]
+_sleepingmage_ 님께서 %g3 의 긴 수면을
+마치고 일어나셨는데, 아주 건강해 보이십니다.
+<---> _sleepingmage_ 님은 %g 님이
+주무시는 동안 공격받았지만, %g 님은
+경비병의 보호를 받았습니다.
+
+QuestorPostsuccess:  [1008]
+_sleepingmage_ 님을 위해 당신이 해준 일에 대해,
+당연히 기꺼이 도와드려야죠.
+
+QuestorPostfailure:  [1009]
+<ce>_sleepingmage_ 님이 사라졌고, 당신은 %g2 님을
+<ce>지켜야 했습니다, %pcf. 당신에게 할 말은 없습니다.
+<ce>적어도, 좋은 말은 아니군요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ %g 께서 트랜스 상태로 무방비하게 계시는 동안
+ _magesguild_에서 _sleepingmage_의 보호를 맡기로 했습니다.
+ 즉시 시작하여 3시간 동안 %g2 를 경비해야 합니다.
+
+-moved line down from %qdt line.
+
+Message:  1011
+<ce>비켜라, 견습생 애송아! 우리는 _sleepingmage_
+<ce>처단을 위해 왔다. 그가 깨어나기 전에 말이지.
+<ce>비키지 않으면 너도 함께 베어버리겠다.
+
+Message:  1012
+<ce>멍청한 놈! 마법사가 주문 황홀경에 빠져 있을 때 방해하는
+<ce>게 얼마나 위험한지 알 텐데. 그 대가를 치르게 해주마!
+<ce>당장 이 길드 홀에서 나가라. 이 문제를 의회에 보고하겠다.
+
+Message:  1013
+<ce>나를 죽이면 마법사 길드에서 쫓겨날 줄 알아라!
+<ce>당장 떠나지 않으면 그에 따른 결과를 감수해야 할 것이다.
+
+Message:  1014
+<ce>마법사 길드의 배신자인 이 자에게 현상금을 청구한다.
+<ce>_sleepingmage_의 죽음에 대한 대가다.
+
+Message:  1030
+<ce>대마도학장님께 알려라!
+<ce>이 %ra 암살자가 _sleepingmage_의 목숨을 앗아갔다!
+<ce>문을 잠가라! 무기를 들어라, 무기를!
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 13 times.
+--               %g2 occurs 6 times.
+--               %g3 occurs 3 times.
+--              %pcf occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--  ___sleepingmage_ occurs 1 time.
+--      _magesguild_ occurs 2 times.
+--       _magicitem_ occurs 2 times.
+--          _qgiver_ occurs 1 time.
+--    _sleepingmage_ occurs 19 times.
+
+QBN:
+Item _magicitem_ magic_item
+
+Person _sleepingmage_ face 5 faction The_Mages_Guild male local
+Person _qgiver_ group Questor
+
+Place _magesguild_ local magery
+
+Clock _oneday_ 1.03:00
+Clock _S.09_ 7.00:00
+Clock _S.12_ 03:00
+--precise timers set due to quest time constraints
+
+Foe _F.00_ is 3 Nightblade
+Foe _mage_ is Mage
+Foe _F.02_ is 2 Assassin
+Foe _F.03_ is Knight
+Foe _F.04_ is Battle_mage
+
+--	Quest start-up:
+	start timer _oneday_ 
+	start timer _S.12_ 
+	log 1010 step 0 
+	create npc at _magesguild_ 
+	place npc _sleepingmage_ at _magesguild_ 
+
+variable _oneday_
+_S.01_ task:
+	create foe _F.00_ every 55 minutes 1 times with 100% success 
+
+_S.02_ task:
+	injured _F.00_ saying 1011 
+
+_S.03_ task:
+	killed 3 _F.00_ 
+
+_S.04_ task:
+	clicked npc _sleepingmage_ say 1012 
+	hide npc _sleepingmage_ 
+	change repute with _sleepingmage_ by -10 
+	cast Spell_Shield spell on _mage_ 
+	cast Spell_Absorption spell on _mage_ 
+	place foe _mage_ at _magesguild_ 
+
+_S.05_ task:
+	when not _S.12_ and not _S.04_ 
+
+_questdone_ task:
+	when _S.03_ and _S.12_ and not _S.04_ 
+	give pc _magicitem_ 
+	end quest 
+
+_S.07_ task:
+	killed 1 _mage_ 
+	create foe _F.03_ every 30 minutes 10 times with 10% success 
+	create foe _F.04_ every 2 minutes 5 times with 50% success 
+	create foe _F.02_ every 25 minutes 10 times with 10% success 
+	start timer _S.09_ 
+	change repute with _sleepingmage_ by -50 
+
+_S.08_ task:
+	injured _mage_ saying 1013 
+
+variable _S.09_
+_S.10_ task:
+	injured _F.02_ saying 1014 
+	injured _F.03_ saying 1014 
+	injured _F.04_ saying 1030 
+
+_talisman_ task:
+	when _S.07_ and _S.09_ 
+	end quest 
+
+_S.12_ task:
+	hide npc _sleepingmage_ 
+
+until _S.12_ performed:
+	pc at _magesguild_ set _S.01_ 

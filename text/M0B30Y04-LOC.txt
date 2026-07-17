@@ -1,0 +1,146 @@
+-- Quest: C:\QUESTS\WORKING\M0B30Y04.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: fighter
+-- Repute: 30
+-- QuestId: 4
+Messages: 81
+Quest: M0B30Y04
+DisplayName: 전사 길드 리치
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>들어보게, %pcf. 만약 자네가 우리 일을 이미 여러
+<ce>번 해본 게 아니라면 이런 제안은 하지도 않았을 걸세.
+<ce>하지만 자네에게 말하기조차 꺼려지는 일이 하나 있네.
+<ce>달을 따달라고 생떼를 쓰는 것보다 더 위험한 일이지.
+<ce>___mondung_에 있는 리치를 처리하는 일이네.
+<ce>보수는 고작 _reward_ 골드뿐이고. 관심 없지, 그렇지?
+
+RefuseQuest:  [1001]
+<ce>%god 님, 아직 제정신이 남아있어서 다행이군.
+<ce>그 리치가 무슨 짓을 하든 그냥 내버려 두지.
+<ce>그게 나도 편하니까.
+
+AcceptQuest:  [1002]
+<ce>아, 말하지 말았어야 했는데. 듣게, 정말로 이 일을 하겠다면,
+<ce>구할 수 있는 최고의 장비를 챙기게. 마법 아이템이나 에보니
+<ce>블레이드 같은 것들 말일세. 이 리치는 =1stparton_일 안에
+<ce>오블리비언으로 넘어가야 하니, 보상을 받으려면 그 시간
+<ce>안에 여기로 돌아와야 하네. 자네는 정말 믿을 수가 없군,
+<ce>%pcf. 행운을 비네. 분명 필요할 테니까.
+
+QuestFail:  [1003]
+<ce>리치 사냥을 떠나기 전에 잠시 쉬는 건가, %pcf?
+<ce>너무 오래 지체하지는 말게.
+
+QuestComplete:  [1004]
+<ce>자네를 다시 보게 될 줄은 몰랐군, %pcf, 정말로.
+<ce>%god 께서 자네를 보살피고 계신 게 분명해.
+<ce>여기 _reward_ 골드일세. 즐기게나.
+
+RumorsDuringQuest:  [1005]
+어떤 멍청한 %ra 종족이 ___mondung_에 있는 리치를
+상대하러 간다더군. <---> 다들 ___mondung_에 있는
+리치를 잡으러 간 그 %ra 에게 내기를 걸고 있어.
+
+RumorsPostfailure:  [1006]
+그 리치는 아직 어딘가에 살아있고, 우리에게 단단히 화가
+났어. <---> 그냥 리치를 내버려 뒀어야 했는데.
+괜히 자극만 했어.
+
+RumorsPostsuccess:  [1007]
+누군가 정말로 그 리치를 죽였어!
+리치는 불사신인 줄 알았는데. <---> 그 리치를 죽이러
+간 %ra 에게 걸었다가 돈만 날렸군.
+
+QuestorPostsuccess:  [1008]
+<ce>리치 사냥꾼이 돌아왔군! 다음엔 무엇을 상대할 텐가?
+<ce>드래곤? 데이드라?
+
+QuestorPostfailure:  [1009]
+<ce>나라면 리치를 상대하는 일은 맡지 않았을 걸세.
+<ce>자네가 왜 그랬는지 도무지 이해가 안 가는군.
+<ce>이제 자네는 리치조차 죽이지 못한 멍청이로 보일 뿐이야.
+
+Message:  1020
+<ce>가련한 필멸자여! 언데드의 일에 간섭하지 말았어야 했다.
+<ce>이제 너를 내 수집품에 추가해주마.
+<ce>살해당한 %ra 용병들 말이다.
+
+Message:  1030
+%qdt:
+ ___questgiver_의 전사 길드에서 =1stparton_일 이내에 리치를
+ 처치하라는 의뢰를 받았다. 리치의 은신처는 ___mondung_의
+ 명칭으로 불리는 불리는 곳이다.
+
+Message:  1080
+<ce>여기, ___newdung_ 쪽으로 가는 지도를 받게. 자네 같은 리치
+<ce>사냥꾼에겐 아침 식사 전 가벼운 운동 정도밖에 안 되겠지.
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 2 times.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 6 times.
+--       =1stparton_ occurs 2 times.
+--       ___mondung_ occurs 5 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon
+Place _newdung_ remote dungeon14
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Lich
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	pick one of _map_ _nomap_ _nomap_ _map_ 
+	place foe _monster_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+
+_S.01_ task:
+	injured _monster_ 
+	say 1020 
+
+_mondead_ task:
+	killed 1 _monster_ 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.07_ task:
+	when _map_ and _pcgetsgold_ 
+	reveal _newdung_ readmap
+    say 1080 
+	end quest
+
+_S.08_ task:
+	when _nomap_ and _pcgetsgold_ 
+	end quest

@@ -1,0 +1,149 @@
+-- Quest: C:\QUESTS\WORKING\M0B60Y10.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: fighter
+-- Repute: 60
+-- QuestId: 10
+Messages: 81
+Quest: M0B60Y10
+DisplayName: 아트로나크 사냥
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>아트로나크, 즉 원소 골렘 형태의 생물을 사냥해
+<ce>줄 사람을 찾는 새로운 의뢰인이 있습니다.
+<ce>보수는 _gold_ 골드입니다. 관심 있으십니까?
+
+RefuseQuest:  [1001]
+<ce>쥐 잡기 같은 저위험 일들을 선호하시나 보군요.
+
+AcceptQuest:  [1002]
+<ce>이름을 밝히지 않기로 맹세한 어떤 젊은
+<ce>멋쟁이가 불법적으로 마법을 건드렸답니다.
+<ce>멍청하게도 아트로나크를 소환해 버린 거죠.
+<ce>마법사 길드 녀석들이 알아채기 전에 그놈을 처치해야 합니다.
+<ce>그놈은 ___dungeon_의 깊은 곳으로 도망쳤습니다. 이 임무를
+<ce>=2dung_일 안에 완수하면, 보수를 지급하겠습니다.
+
+QuestComplete:  [1004]
+<ce>훌륭한 솜씨입니다, %pct. 마법사 길드의 그
+<ce>바보들은 의뢰인의 장난질을 눈치채지 못할 겁니다.
+<ce>약속한 _gold_ 골드를 기꺼이 지급하죠.
+
+RumorsDuringQuest:  [1005]
+<ce>자작의 아들이 최근 제정신이 아니랍니다. 마법을 배우려 든
+<ce>대가겠죠. 자기가 잘하는 것에나 집중할 것이지.
+
+RumorsPostfailure:  [1006]
+<ce>마법사 길드에서 %t %rn 에게
+<ce>자작의 아들을 처벌할 권한을 달라고 요청했답니다.
+<ce>그가 아트로나크를 소환했는데,
+<ce>그게 통제 불능 상태가 되었다더군요.
+
+RumorsPostsuccess:  [1007]
+<ce>자작의 아들이 최근 마법사 길드에 가입했답니다.
+<ce>왜 마음을 바꿨는지 궁금하군요.
+
+QuestorPostsuccess:  [1008]
+<ce>아트로나크 0, %pcf 1.
+<ce>이 속도라면 길드에서 크게 성공하겠군요.
+
+QuestorPostfailure:  [1009]
+<ce>아트로나크를 처치할 능력이 안
+<ce>되면 애초에 일을 맡지 말았어야죠.
+<ce>이제 자작의 아들은 불법 마법 사용 혐의를 받게 되었습니다.
+
+QuestLogEntry:  [1010]
+%qdt, ___qgiver_의 전사 길드에서 길드 소속이
+아닌 마법사가 소환한 아트로나크를 은밀히 처치하라는
+의뢰를 받았다. 녀석은 __dungeon_에 숨어 있다.
+임무를 완수할 시간은 =2dung_일이다.
+
+Message:  1011
+<ce>아트로나크가 죽었다.
+<ce>부디 마법사 길드가 이 사실을 알아채지 못하기를 바란다.
+
+Message:  1080
+<ce>그리고, 당신이 아주 협조적이었으니 보답으로 ___newdung_
+<ce>위치가 표시된 지도를 주지. 약탈품으로 가득 차 있다고
+<ce>알려진 곳이지. 마음껏 즐기라고, %pcf.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 4 times.
+--              %pct occurs 1 time.
+--              %qdt occurs 1 time.
+--               %rn occurs 1 time.
+--                %t occurs 1 time.
+--           =2dung_ occurs 2 times.
+--       ___dungeon_ occurs 1 time.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--            _gold_ occurs 7 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _dungeon_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _fire_ is Fire_atronach
+Foe _flesh_ is Flesh_atronach
+Foe _iron_ is Iron_atronach
+Foe _ice_ is Ice_atronach
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ _nomap_ 
+	pick one of _S.04_ _S.05_ _S.06_ _S.07_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _ice_ saying 1011 
+	killed 1 _fire_ saying 1011 
+	killed 1 _flesh_ saying 1011 
+	killed 1 _iron_ saying 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 
+
+_S.04_ task:
+	place foe _iron_ at _dungeon_ 
+
+_S.05_ task:
+	place foe _ice_ at _dungeon_ 
+
+_S.06_ task:
+	place foe _flesh_ at _dungeon_ 
+
+_S.07_ task:
+	place foe _fire_ at _dungeon_ 
+
+variable _map_
+variable _nomap_
+_S.10_ task:
+	when _map_ and _S.02_ 
+	reveal _newdung_ readmap
+    say 1080 
+
+_S.11_ task:
+	when _nomap_ and _S.02_ 
+
+_S.12_ task:
+	when _S.10_ or _S.11_ 
+	give pc _gold_
+	end quest 

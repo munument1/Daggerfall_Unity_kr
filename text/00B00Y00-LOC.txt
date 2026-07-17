@@ -1,0 +1,125 @@
+-- Quest: C:\QUESTS\WORKING\00B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Julianos
+-- Repute: 0
+-- QuestId: 0
+Messages: 32
+Quest: 00B00Y00
+DisplayName: 지식의 대가
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>줄리아노스 학파에는 단 하나의 규칙이 있습니다.
+<ce>지식은 공유되어야 한다는 것이죠. 안타깝게도 이 규칙을
+<ce>저버리고 처벌받아야 할 우리 학파의 전 구성원이 있습니다.
+<ce>만약 _reward_ 골드를 드린다면,
+<ce>이 학파의 전 구성원을 추적하여 처단하시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>실망스럽군요. 뭐, 다른 사람을 찾을 수 있겠지요.
+
+AcceptQuest:  [1002]
+<ce>좋습니다. 그 배신자는 =monster_의 이름으로 불리는
+<ce>나이트블레이드입니다. 그는 %g3 의 실험실인
+<ce>___mondung_에 은신하고 있습니다. 만약 =1stparton_일
+<ce>안에 _monster_의 피를 묻히고 돌아오지 않는다면,
+<ce>당신이 실패했거나 =monster_ 개체와 한패가 되었다고
+<ce>간주하고 보상은 실패하지 않을 다른 이에게 돌아갈 것입니다.
+<ce>제 뜻을 분명히 전달했기를 바랍니다.
+<ce>행운을 빕니다, 안녕히 가십시오.
+
+QuestFail:  [1003]
+그 나이트블레이드가 살아있는 동안에는, %pcf,
+어떤 주제로든 대화하고 싶지 않군요.
+
+QuestComplete:  [1004]
+<ce>아주 좋습니다, %pcf. 정말 훌륭합니다.
+<ce>여기 약속한 _reward_ 골드입니다. 정말 감사합니다.
+
+
+RumorsDuringQuest:  [1005]
+___mondung_에 돈을 받고 주문을 파는
+나이트블레이드가 있다는 소문을 들었습니다.
+<---> 변절한 마법사들은 매우 위험합니다.
+그 _monster_의 체포 소식이 들려왔으면 좋겠군요.
+
+RumorsPostfailure:  [1006]
+=monster_의 행방은 여전히 돈을 받고 주문을 팔며 다른
+곳으로 떠난 모양입니다. <---> 줄리아노스 학파가
+누군가를 쫓기 위해 멘토 기사단을 풀었다는 소문이 있습니다.
+
+RumorsPostsuccess:  [1007]
+드디어 그 _monster_의 체포에 성공했군요.
+규율 없는 마법사를 그냥 두어서는 안 되죠.
+<---> 그 _monster_의 체포 소식은 안타깝군요.
+그자가 아주 흥미로운 비밀을 많이 알고 있었다던데.
+
+QuestorPostsuccess:  [1008]
+<ce>당신은 %pcn 입니다. 그 =monster_의 처리를 맡아
+<ce>고생 많았습니다. 기억하시죠, 그 변절한 마법사 말입니다?
+
+QuestorPostfailure:  [1009]
+<ce>흠. 변절한 마법사 =monster_ 처단 임무를 완전히
+<ce>망쳐버렸군요, 그렇지 않습니까?
+
+Message:  1030
+%qdt:
+ ___questgiver_의 줄리아노스 학파에서 제게 신전의 타락한
+ _monster_인 =monster_ 처단을 의뢰했습니다.
+ %g3 의 은신처인 ___mondung_까지 가서 학파로
+ 돌아오기까지 =1stparton_일이 남았습니다.
+
+Message:  1031
+<ce>=monster_ 처단 완료. 학파에서 자랑스러워할 것입니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g3 occurs 2 times.
+--              %pcf occurs 10 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--         =monster_ occurs 9 times.
+--       ___mondung_ occurs 3 times.
+--    ___questgiver_ occurs 1 time.
+--         _monster_ occurs 5 times.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon9
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Nightblade
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	place foe _monster_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_mondead_ task:
+	killed 1 _monster_ saying 1031 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 

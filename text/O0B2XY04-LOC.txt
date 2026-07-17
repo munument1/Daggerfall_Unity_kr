@@ -1,0 +1,124 @@
+-- Quest: C:\QUESTS\WORKING\O0B2XY04.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 2X
+-- QuestId: 4
+Messages: 11
+Quest: O0B2XY04
+DisplayName: 귀중한 페이지
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>임무가 하나 있네. 평범한 길드 업무지. 보수는 _gold_
+<ce>골드네. 표준 길드 수수료 정도지. 관심 있나?
+
+RefuseQuest:  [1001]
+<ce>자네에겐 안 된 일이군, %pcn.
+
+AcceptQuest:  [1002]
+<ce>__mansion_ 방향으로 가게. _mansion_ 개체를 찾게.
+<ce>그 안에는 _book_의 명칭으로 불리는 희귀한 책이 있네.
+<ce>=traveltime_일 안에 가져오면 보수를 주겠네.
+<ce>아주 간단하지, 그렇지 않나?
+
+QuestComplete:  [1004]
+<ce>아. %oth. 여기 자네의 길드 수수료네.
+<ce>언젠가 다시 함께 일할 수 있으면 좋겠군.
+
+RumorsDuringQuest:  [1005]
+__mansion_의 한 수집가가 방금 _book_의
+희귀본을 구입했답니다.
+
+RumorsPostfailure:  [1006]
+_mansion_의 보안이 좋지 않아서 귀중품들을 다른
+곳으로 옮겼답니다.
+
+RumorsPostsuccess:  [1007]
+_mansion_에서 도난당한 그 _book_ 사본은
+대체할 수 없는 물건이었죠.
+
+QuestorPostsuccess:  [1008]
+오, 안녕, %pcf. 아까 말 안 했던 것 같은데,
+그 책을 가져온 건 정말 잘한 일이었어.
+
+QuestorPostfailure:  [1009]
+<ce>변명하려고 하지 말게, %pcf. 책이 어디 있는지,
+<ce>얼마나 서둘러야 하는지 말해줬는데도 자네는 그러지 않았지.
+<ce>이제 너무 늦었고, 난 피곤하네.
+<ce>그냥 착한 %ra 답게 썩 꺼져주겠나?
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 도둑 길드 일원이 제게 __mansion_에
+ 있는 _mansion_에서 _book_의 명칭으로
+ 불리는 책을 훔쳐 오라는 의뢰를 했습니다.
+ _qgiver_까지 돌아오기까지 =traveltime_일 남았습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 1 time.
+--              %pcf occurs 2 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--      =traveltime_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--        __mansion_ occurs 3 times.
+--            _book_ occurs 4 times.
+--            _gold_ occurs 1 time.
+--         _mansion_ occurs 4 times.
+--          _qgiver_ occurs 3 times.
+
+QBN:
+Item _book_ book3
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _mansion_ remote house1
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Battle_mage
+Foe _F.01_ is Iron_atronach
+Foe _F.02_ is Daedra_seducer
+Foe _F.03_ is Werewolf
+
+--	Quest start-up:
+	place item _book_ at _mansion_ 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pc at _mansion_ set _S.01_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	pick one of _guard1_ _guard2_ _guard3_ _guard4_ 
+
+_questdone_ task:
+	toting _book_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+_guard1_ task:
+	create foe _F.00_ every 4 minutes 1 times with 10% success 
+
+_guard2_ task:
+	create foe _F.01_ every 4 minutes 1 times with 10% success 
+
+_guard3_ task:
+	create foe _F.02_ every 4 minutes 1 times with 10% success 
+
+_guard4_ task:
+	create foe _F.03_ every 4 minutes 1 times with 10% success 
+
+_S.07_ task:
+	clicked item _book_ 
+
+_S.08_ task:
+	when _traveltime_ and _S.07_ 
+	make _book_ permanent 

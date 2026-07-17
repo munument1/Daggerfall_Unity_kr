@@ -1,0 +1,194 @@
+-- Quest: C:\QUESTS\WORKING\A0C01Y03.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 01
+-- QuestId: 3
+Messages: 18
+Quest: A0C01Y03
+DisplayName: 수수께끼
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 이름은 _qgiver_ 측이며, 사람을 사냥하는 사냥꾼의
+<ce>도움이 필요합니다. 저는 _spouse_ 측을 사랑합니다.
+<ce>아아, %g 는 %g3 의(의) 스승인
+<ce>_hermit_ 개체가 %g 사라질 때 남긴 수수께끼를
+<ce>풀어 제 가치를 증명하지 않으면 결혼을 거부하고 있습니다.
+<ce>당신이 %g2 를 찾아 %g3 의(의)
+<ce>수수께끼에 대한 답을 알아내 주셨으면 합니다.
+<ce>성공하신다면 _gold_ 골드를 지불하겠습니다.
+
+RefuseQuest:  [1001]
+<ce>제 의뢰를 기꺼이 맡아줄 모험가를 계속 찾아보겠습니다.
+<ce>혹시 이런 퀘스트에 관심이 있을 만한 사람을 만나게 된다면,
+<ce>_qgiver_에게 보내주십시오.
+
+AcceptQuest:  [1002]
+<ce>당신이 _hermit_ 찾도록 도와줄 수 있는 유일한 사람은
+<ce>_spouse_뿐입니다. %g ___spouse_에서
+<ce>찾을 수 있을 겁니다. 이 꽃들을 가져가세요.
+<ce>%g3 의 가장 좋아하는 꽃입니다.
+<ce>이 꽃이 %g2 당신을 좋게 보게 할지도 모릅니다.
+<ce>여기 _hermit_의 수수께끼가 적힌 편지가 있습니다. 3개월
+<ce>안에 돌아오지 않는다면, 당신이 실패했다고 간주하겠습니다.
+
+QuestComplete:  [1004]
+<ce>_qgiver_ _hermit_에게서 온 편지를 뜯어봅니다.
+<ce>"친절이라! 물론이지. 이제 왜 _spouse_ 나를 이 퀘스트에
+<ce>보냈는지 알겠어. %g2 사랑하는 것만으로는 부족해,
+<ce>%g2 친절함도 보여야 하는군. 당신은 정말 큰 도움이
+<ce>되었소, %pcf. 여기 약속한 골드가 있소."
+
+RumorsDuringQuest:  [1005]
+<ce>_qgiver_ 사랑에 푹 빠졌답니다.
+<ce>%g _spouse_에게 결혼 승낙을 받으려고
+<ce>오랫동안 애쓰고 있어요.
+
+RumorsPostfailure:  [1006]
+<ce>___spouse_에 있는 _spouse_ 결혼했다는 소식을
+<ce>들었어요. %g 그 사실을 알게 되면 _qgiver_
+<ce>비통함에 잠길 거예요.
+
+RumorsPostsuccess:  [1007]
+<ce>좋은 소식이에요! _spouse_ 및 _qgiver_의 최근
+<ce>결혼 소식이 들려왔답니다.
+
+QuestorPostsuccess:  [1008]
+<ce>제 수수께끼의 답을 찾아준
+<ce>%ra 종족을 위해서라면 무엇이든 하죠.
+<ce>_spouse_ 측과 저는 결혼했답니다, 아시죠?
+
+QuestorPostfailure:  [1009]
+<ce>당신은 은둔자의 수수께끼에 대한 답을 찾지 못한
+<ce>%ra 맞군요. 실패한 영웅 따위는 필요 없습니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 _qgiver_ 관련 요청으로
+ 저에게 _hermit_ 탐색을 부탁했습니다.
+ _hermit_의 수수께끼 답 보유 사실을 알렸습니다.
+ 유일한 단서는 %g 가 한때 ___spouse_에서
+ _spouse_ 및 함께 일했다는 것뿐입니다.
+
+Message:  1011
+<ce>_flowers_ 사실 필요 없었어요.
+<ce>_hermit_ __school_에 있는 유명한 스승 _teacher_
+<ce>밑에서 공부하러 떠났거든요. 만약 %g2 이 책을
+<ce>주신다면, %g 당신을 좋게 봐줄지도 모릅니다.
+
+Message:  1012
+<ce>_hermit_ 낯선 사람에게 %g3 의 행방을 알리지
+<ce>말아 달라고 부탁했어요. 하지만 당신이 _spouse_에서
+<ce>_book_ 가져왔으니, 당신은 분명 단순한 낯선
+<ce>사람이 아니군요. _hermit_ 비전 지식을 연구하기 위해
+<ce>%g2self 던전에 은둔시켰습니다. 당신의 지도에 그
+<ce>위치를 표시해 두었습니다. 행운을 빕니다, %pcn.
+
+Message:  1013
+<ce>귀찮게 하는 건 딱 질색이야!
+<ce>당신을 쫓아내는 유일한 방법이 그 멍청한 수수께끼의
+<ce>답을 알려주는 것뿐이라면, 여기, 가져가. 이제 내가 불의
+<ce>데이드라를 소환해서 길을 안내해주기 전에 당장 여기서 꺼져.
+
+Message:  1014
+사랑이나 증오에 대해 말하지 말고,
+이것을 말해보아라: 당신이 나에게 줄 수 있는 선물 중,
+내가 스스로 결코 살 수 없는 것은 무엇인가?
+
+Message:  1015
+%qdt 에서, 저는 _spouse_ 및 대화했습니다.
+%g 는 저에게 _hermit_의 __school_에 있는
+_teacher_ 밑에서 공부하기 위해 떠났다고 말해주었습니다.
+
+Message:  1016
+%qdt 에, 저는 _hermit_의 스승인 __school_의
+_teacher_ 만났습니다. %g _hermit_
+___dungeon_에 %g2self 은둔시켰다고 말했습니다.
+
+Message:  1017
+사랑이나 증오에 대해 말하지 말고,
+이것을 말해보아라: 당신이 나에게 줄 수 있는 선물 중,
+내가 스스로 결코 살 수 없는 것은 무엇인가?
+ 
+'친절(KINDNESS)이야, 멍청아!'
+
+
+-- Symbols used in the QRC file:
+--
+--              %dat occurs 2 times.
+--                %g occurs 12 times.
+--               %g2 occurs 8 times.
+--           %g2self occurs 3 times.
+--               %g3 occurs 3 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--       ___dungeon_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--        ___spouse_ occurs 4 times.
+--         __school_ occurs 4 times.
+--            _book_ occurs 1 time.
+--         _flowers_ occurs 1 time.
+--            _gold_ occurs 3 times.
+--          _hermit_ occurs 12 times.
+--          _qgiver_ occurs 8 times.
+--          _spouse_ occurs 10 times.
+--         _teacher_ occurs 3 times.
+
+QBN:
+Item _book_ book
+Item _letter_ letter used 1014
+Item _flowers_ yellow_flowers
+Item _answer_ letter used 1017
+Item _gold_ gold
+
+Person _hermit_ face 1 group Group_7.2 remote
+Person _qgiver_ group Questor
+Person _spouse_ group Group_7.1 remote
+Person _teacher_ face 1 faction The_Academics remote
+
+Place _dungeon_ remote dungeon
+Place _school_ remote library
+
+Clock _S.01_ 90.00:00
+--removed flags to make timer exactly 90 days
+
+
+--	Quest start-up:
+	dialog link for location _school_ person _teacher_ 
+	dialog link for location _dungeon_ person _hermit_ 
+	start timer _S.01_ 
+	log 1010 step 0 
+	get item _flowers_ 
+	get item _letter_ 
+	create npc _spouse_ 
+	place npc _hermit_ at _dungeon_ 
+	place npc _teacher_ at _school_ 
+
+variable _questdone_
+_S.01_ task:
+	end quest 
+
+_S.02_ task:
+	toting _flowers_ and _spouse_ clicked saying 1011 
+	add dialog for location _school_ person _teacher_ 
+	log 1015 step 1 
+	get item _book_ 
+
+_S.03_ task:
+	toting _book_ and _teacher_ clicked saying 1012 
+	add dialog for person _hermit_ 
+	reveal _dungeon_ 
+	log 1016 step 2 
+
+_S.04_ task:
+	toting _letter_ and _hermit_ clicked saying 1013 
+	get item _answer_ 
+
+_S.05_ task:
+	toting _answer_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 

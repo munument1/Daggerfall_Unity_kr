@@ -1,0 +1,253 @@
+-- Quest: C:\QUESTS\WORKING\O0B00Y11.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 0
+-- QuestId: 11
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 64
+Quest: O0B00Y11
+DisplayName: 골동품 상아
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pcf, 간단한 게임이지.
+<ce>집 안에 있는 물건을 하나 훔쳐 오는 거야. 할 마음 있나?
+
+RefuseQuest:  [1001]
+<ce>그런 태도라면 도둑 길드에서 멀리 갈 수 있을 거야.
+<ce>분명히 말이지.
+
+AcceptQuest:  [1002]
+<ce>그 기세입니다. 말했듯이, 이 일은 복잡할 게 없습니다.
+<ce>의뢰인이 __target_에 있는 _target_에 보관된
+<ce>골동품 상아 조각을 손에 넣고 싶어 합니다. 이틀 안에 제게
+<ce>가져오시면 사례금으로 _reward_ 골드를 드리겠습니다.
+
+QuestFail:  [1003]
+<ce>_heist_의 행방은 어디입니까?
+
+QuestComplete:  [1004]
+<ce>훌륭합니다, %pcf. 제가 좋아하는 방식의 일처리군요.
+<ce>군더더기 없이 깔끔합니다. 여기 _reward_ 골드입니다.
+<ce>성공적인 임무 완수를 축하합니다.
+
+RumorsDuringQuest:  [1005]
+_dummy_ 측에서 무슨 이유인지 _target_에
+경비병을 대거 고용했다고 합니다.
+
+RumorsPostfailure:  [1006]
+_target_에서 발생한 어설픈 침입 사건에 대해
+들으셨나요?
+
+RumorsPostsuccess:  [1007]
+<ce>누군가 _target_에 침입해서 _dummy_의 귀중한
+<ce>골동품 상아를 그 많은 경비병들 눈앞에서 훔쳐 달아났답니다!
+
+QuestorPostsuccess:  [1008]
+무엇을 도와드릴까요, 나의 좀도둑 친구여?
+
+QuestorPostfailure:  [1009]
+그 간단한 절도 사건을 당신이 망쳐버린 일을 잊을
+수가 없군요.
+
+Message:  1011
+<ce>요즘 _target_에 고용된 경비병들이 들끓고 있습니다.
+<ce>이유를 모르겠군요.
+
+Message:  1020
+%qdt:
+ __target_에 있는 _target_에서 골동품 상아를
+ 훔쳐야 한다. 이틀의 시간이 있다. __questgiver_에 있는
+ _questgiver_에게 전달하면 _reward_ 골드를 받는다.
+
+
+Message:  1021
+%qdt:
+ 절도 임무가 순조롭지 않았다. _questgiver_의 상아를 가지고
+ 마을을 떠나라고 했다. __safehouse_에 있는 _safehouse_에서
+ 만날 _contact_에게 물건을 전달해야 한다.
+
+Message:  1040
+<ce>이것이 _questgiver_ 님이 훔쳐 오라고 했던 상아
+<ce>조각인 것 같군요.
+
+Message:  1050
+<ce>%pcf, 여기서 뭐 하는 겁니까? 그렇게 간단한 일을
+<ce>어떻게 망칠 수 있는지 모르겠지만, 당신과 그 빌어먹을
+<ce>상아를 당장 마을 밖으로 빼내지 않으면 우리 모두 감옥에
+<ce>가거나, 더 끔찍한 꼴을 당하게 될 겁니다. 당신 목숨
+<ce>따위는 알 바 아니지만, 도둑 길드는 지켜야 할 명성이 있고,
+<ce>의뢰인에게 그 물건을 약속했습니다. 당장 __safehouse_
+<ce>쪽으로 가십시오. _safehouse_에서 _contact_의 등장을
+<ce>기다릴 겁니다. 다시는 망치지 마십시오.
+
+Message:  1051
+<ce>어디 보자, %pcn, 무능한 좀도둑이 아니신가?
+<ce>그래도 물건을 가져오긴 했군.
+<ce>머리는 나빠도 힘은 쓸 줄 안다는 소리인가 보지.
+<ce>설마 아직도 보상을 받을 수 있을 거라 생각하는 건 아니겠지?
+
+Message:  1052
+<ce>생각보다 똑똑하군.
+<ce>이제 __target_ 경비병에게 넘겨버리기 전에 당장 꺼져.
+
+Message:  1053
+<ce>그럼 네 시체에서 직접 가져가는 수밖에.
+
+Message:  1060
+<ce>%oth, 꽤나 끈질기군, 그렇지?
+<ce>진짜로 다치기 싫으면 당장 여기서 꺼지는 게 좋을 거야.
+
+Message:  1061
+<ce>이 %ra 쓰레기가 =guard_ 살해를 저질렀다!
+
+Message:  1062
+<ce>움직이지 마라, 그 자리에서 베어버릴 테니!
+<ce>_target_에게서 훔친 상아를 내놓으면 살려주지.
+
+Message:  1063
+<ce>너 같은 살인마 쓰레기를 처리하는 법은 잘 알고 있지.
+<ce>=posse_, 이 %ra 의 목을 칠 때 _dummy_의
+<ce>상아에 피가 묻지 않게 조심해라.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 1 time.
+--              %pcf occurs 3 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 2 times.
+--               %ra occurs 5 times.
+--           =guard_ occurs 2 times.
+--           =posse_ occurs 1 time.
+--     __questgiver_ occurs 1 time.
+--      __safehouse_ occurs 3 times.
+--         __target_ occurs 4 times.
+--         _contact_ occurs 2 times.
+--           _dummy_ occurs 3 times.
+--           _heist_ occurs 2 times.
+--      _questgiver_ occurs 3 times.
+--          _reward_ occurs 6 times.
+--       _safehouse_ occurs 2 times.
+--          _target_ occurs 7 times.
+
+QBN:
+Item _heist_ ivory
+Item _reward_ gold
+
+Person _questgiver_ face 44 group Questor
+Person _contact_ face 1 group Local_3.0 remote
+Person _dummy_ face 209 group Resident1 local
+
+Place _target_ local house1 anyInfo 1011 rumors 1011
+Place _safehouse_ remote house3
+
+Clock _time_ 00:00 0 flag 1 range 0 2
+Clock _S.01_ 2.00:00 0 flag 1 range 0 1
+--removed unnecessary delay timer
+
+Foe _guard_ is Rogue
+Foe _posse_ is 3 Archer
+
+--	Quest start-up:
+	place item _heist_ at _target_ 
+	dialog link for location _safehouse_ person _contact_ 
+	start timer _S.01_ 
+	start timer _time_ 
+	log 1020 step 0 
+	pc at _target_ set _S.02_ 
+	place npc _contact_ at _safehouse_ 
+
+_time_ task:
+	end quest 
+
+variable _S.01_
+variable _S.02_
+until _S.02_ performed:
+	clear _S.06_ _S.05_ 
+
+_greklith_ task:
+	injured _guard_ 
+	say 1060 
+
+_S.04_ task:
+	daily from 05:30 to 19:00 
+
+_S.05_ task:
+	when _S.04_ and _S.02_ 
+	create foe _guard_ every 2 minutes 6 times with 50% success 
+
+_S.06_ task:
+	when not _S.04_ and _S.02_ 
+	create foe _guard_ every 10 minutes 3 times with 50% success 
+
+_S.07_ task:
+	toting _heist_ and _questgiver_ clicked 
+
+_S.08_ task:
+	killed 1 _guard_ 
+	killed 1 _posse_ 
+	say 1061 
+
+_S.09_ task:
+	when not _greklith_ and _S.07_ and not _S.01_ 
+	give pc _reward_ 
+	end quest
+--removed unnecessary delay ending
+
+_qgtalk_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _qgtalk_ and not _S.07_
+	say 1003
+	clear _clearclick_ _qgtalk_
+--added _qgtalk_ and _clearclick_
+
+_S.10_ task:
+	when _greklith_ and _S.07_ 
+	create foe _posse_ every 60 minutes 20 times with 50% success 
+	log 1021 step 1 
+	get item _heist_ 
+	say 1050 
+
+_S.10a_ task:
+	when _S.07_ and _S.01_ 
+	create foe _posse_ every 60 minutes 20 times with 50% success 
+	log 1021 step 1 
+	get item _heist_ 
+	say 1050 
+--recent troubles with multiple conditions on a single task, this is better layout
+
+_S.12_ task:
+	toting _heist_ and _contact_ clicked 
+	say 1051 
+	change repute with _questgiver_ by +2 
+	end quest
+
+_S.13_ task:
+	injured _posse_ 
+	have _heist_ set _S.18_ 
+
+_yes_ task:
+	give item _heist_ to _posse_ 
+	say 1052 
+	restrain foe _posse_ 
+	clear _S.10_ _S.07_ 
+
+_no_ task:
+	say 1053 
+
+_S.16_ task:
+	when _S.13_ and _S.08_ 
+	say 1063 
+
+_S.17_ task:
+	when _S.13_ and not _S.08_ and _S.18_ 
+	prompt 1062 yes _yes_ no _no_ 
+
+variable _S.18_
+_S.19_ task:
+	clicked item _heist_ say 1040 

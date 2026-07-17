@@ -1,1 +1,0 @@
-https://neodgm.dalgona.dev

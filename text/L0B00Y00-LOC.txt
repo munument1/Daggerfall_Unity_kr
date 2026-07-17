@@ -1,0 +1,135 @@
+-- Quest: C:\QUESTS\WORKING\L0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Brotherhood
+-- Repute: 0
+-- QuestId: 0
+Messages: 22
+Quest: L0B00Y00
+DisplayName: 배신자 일원
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>브라더후드 내에 배신자가 있네.
+<ce>자네가 이 골칫거리를 처리해 줄 수 있겠나?
+<--->
+<ce>때때로 브라더후드는 우리 내부의 장부를
+<ce>정리해야 할 때가 있지. 우리 조직 내에서
+<ce>처리해야 할 배신자가 발견되었네.
+<ce>자네가 이 영광스러운 임무를 맡게 되었네.
+
+RefuseQuest:  [1001]
+<ce>실망스러운 대답이군. 더 나은 답을 기대했건만.
+
+AcceptQuest:  [1002]
+<ce>아주 좋네. 배신자는 %di 방향의 ___mondun_에
+<ce>숨어들었네. =queston_일 안에 돌아오지 않는다면, 자네의
+<ce>명예는 박탈당하고 다른 이가 자네 자리를 대신할 걸세.
+<ce>이 임무에 실패하지 말게, %pcf.
+
+QuestFail:  [1003]
+<ce>배신자는 죽지 않았네. 다른 말로 나를 설득하려 하지 말게.
+
+QuestComplete:  [1004]
+<ce>잘했네. 자부심을 가져도 좋아.
+
+RumorsDuringQuest:  [1005]
+그 암살자는 마치 지옥의 사냥개들에게 쫓기는 것처럼
+___mondun_ 쪽으로 도망쳤다더군. <--->
+_qgiver_의 입장에서 %g 가 브라더후드에
+저지른 짓을 생각하면 그 배신자를 그냥 내버려 둘 수 없지.
+
+RumorsPostfailure:  [1006]
+그 배신자는 _qgiver_의 예상보다 훨씬 질긴 모양이야.
+대단한 탈출이지.
+<--->
+<ce>나이트블레이드가 북쪽으로 이동했다는 소문이 있지만,
+그 기억은 여전히 브라더후드를 괴롭히고 있네.
+
+RumorsPostsuccess:  [1007]
+배신자의 이야기가 그걸 증명하지.
+브라더후드를 상대로 장난질을 치면 안 된다는 걸 말이야.
+<---> 브라더후드가 그 배신자 같은 멍청이에게
+자비를 베풀 줄은 꿈에도 몰랐어.
+
+QuestorPostsuccess:  [1008]
+무슨 일인가, 배신자를 처단한 자여?
+
+QuestorPostfailure:  [1009]
+<ce>자네와 대화하기가 거북하군. 결국 자네에게 그 배신자를
+<ce>처리하라고 믿고 맡겼던 것 아닌가?
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 다크 브라더후드가 길드를 배신한 자를 찾아
+ 처단하라는 임무를 내렸네. 그 도적 암살자는 ___mondun_에
+ 숨어있지. 임무를 완수할 시간은 =queston_일뿐이네.
+
+Message:  1021
+<ce>"저는... 배신자가 아닙니다. 당신이... 생각하는 그런
+<ce>사람이요. 진짜 배신자는..." 계약이 이행되었습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 1 time.
+--                %g occurs 2 times.
+--              %pcf occurs 2 times.
+--              %qdt occurs 1 time.
+--         =queston_ occurs 3 times.
+--        ___mondun_ occurs 3 times.
+--        ___qgiver_ occurs 3 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _mondun_ remote dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _assassin_ is Assassin
+Foe _nightblade_ is Nightblade
+Foe _acrobat_ is Acrobat
+Foe _battlemage_ is Battle_mage
+
+--	Quest start-up:
+	start timer _queston_ 
+	reveal _mondun_ 
+	log 1010 step 0 
+	pick one of _S.05_ _S.06_ _S.07_ _S.08_ 
+
+_queston_ task:
+	end quest 
+
+_pcgetsgold_ task:
+	when _mondead_ and _qgclicked_ 
+	give pc nothing 
+	end quest 
+
+_mondead_ task:
+	killed 1 _nightblade_ saying 1021 
+	killed 1 _battlemage_ saying 1021 
+	killed 1 _acrobat_ saying 1021 
+	killed 1 _assassin_ saying 1021 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+_S.05_ task:
+	place foe _nightblade_ at _mondun_ 
+
+_S.06_ task:
+	place foe _battlemage_ at _mondun_ 
+
+_S.07_ task:
+	place foe _acrobat_ at _mondun_ 
+
+_S.08_ task:
+	place foe _assassin_ at _mondun_ 

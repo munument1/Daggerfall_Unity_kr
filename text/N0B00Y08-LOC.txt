@@ -1,0 +1,146 @@
+-- Quest: C:\QUESTS\WORKING\N0B00Y08.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: mage
+-- Repute: 0
+-- QuestId: 8
+Messages: 12
+Quest: N0B00Y08
+DisplayName: 수면 주문 시전
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>고귀한 _warrior_ 개체는 우리 길드의 많은 사업을
+<ce>후원해 왔으며, 우리가 적을 만든 만큼 %g 또한
+<ce>적을 만들었습니다. %g2 의 전령으로부터 마녀가
+<ce>%g2 에게 끝없는 불면의 저주를 걸었다는 소식을
+<ce>들었습니다. 간단한 수면 주문이면 %g2 를
+<ce>치료할 수 있을 텐데, 혹시 시전해 주실 수 있겠습니까?
+<ce>기꺼이 _gold_ 골드를 드리겠습니다.
+<--->
+<ce>만약 표준 윤생 주문인 수면을 시전할 수 있다면,
+<ce>길드의 친구가 도움이 필요합니다.
+<ce>_warrior_ 개체가 저주를 받아 그 수면 주문이 필요한
+<ce>상황입니다. 이 서비스를 제공해 주신다면 _gold_
+<ce>골드를 드리겠습니다.
+
+RefuseQuest:  [1001]
+<ce>알겠습니다. %oth, 수면은 비교적 간단한 주문입니다.
+<ce>배우시는 게 좋을 겁니다.
+
+AcceptQuest:  [1002]
+<ce>아주 좋습니다. 자, 전령에게 _warrior_에게 수면
+<ce>주문 외에는 사용하지 않겠다고 말해두었습니다.
+<ce>%g2 의 저주받은 주문에 대한 과거 경험을 생각하면,
+<ce>%g2 의 이런 불안감을 탓할 수는 없을 겁니다.
+<ce>_warrior_의 위치는 __castle_의 _castle_에서
+<ce>찾을 수 있을 겁니다. _warrior_의 경우 갑옷을 잘 갖춰
+<ce>입은 자일 겁니다. =queston_일 안에 우리 친구를 깊은
+<ce>잠에 빠뜨린 채로 돌아오도록 하십시오.
+
+QuestComplete:  [1004]
+<ce>_warrior_의 상태가 %g3 의 발치에서 깊은 잠에
+<ce>빠졌다는 소식을 들었습니다. %g 가 다음 새 삶의
+<ce>축제 전에 깨어나길 바랍니다. 훌륭한 %ra 여,
+<ce>당신은 _gold_ 골드를 받을 자격이 충분합니다.
+
+RumorsDuringQuest:  [1005]
+불쌍한 _warrior_의 상태는 며칠째 깨어 있습니다.
+%g2 의 정신이 온전치 못한 것 같습니다.
+<---> _warrior_에게 불면의 저주를 건 마녀가
+%g2 에게 정말 끔찍한 짓을 저질렀군요.
+
+RumorsPostfailure:  [1006]
+_warrior_ 및 마법사 길드는 사이가 좋지 않습니다.
+그들은 %g2 를 도울 수 없었습니다.
+<---> _warrior_께서는 마녀들과 화해했지만,
+마법사 길드를 용서하지는 않았습니다.
+
+RumorsPostsuccess:  [1007]
+_warrior_께서 여전히 자고 있다고 들었습니다.
+이제 사람들은 %g 가 영영
+깨어나지 못할까 봐 두려워하고 있습니다.
+<---> _warrior_에게 저주를 건 마녀는
+%g2 를 치료한 자에게 복수를 맹세했습니다.
+
+QuestorPostsuccess:  [1008]
+당신 덕분에 _warrior_ 및 그 세력과의 좋은 관계를
+유지할 수 있었습니다. 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+<ce>우리 친구 _warrior_의 구출에 실패하여
+<ce>길드에 오점을 남겼군요. 여기서 떠나십시오.
+<ce>%pcn, 언젠가 제가 당신을 용서할지도 모르겠군요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_ 마법사 길드의 후원자인
+ _warrior_에게 수면 주문을 시전하기로 했습니다.
+ _warrior_께서 계신 __castle_의 _castle_
+ 쪽으로 가서 주문을 성공적으로 시전하고, 마법사 길드의
+ _qgiver_에게 돌아올 기한은 =queston_일입니다.
+
+Message:  1011
+<ce>_warrior_께서는 깊은 잠에 빠져,
+<ce>여전히 %g3 의 발로 서 있다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 9 times.
+--               %g3 occurs 7 times.
+--              %oth occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--         =queston_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--         __castle_ occurs 4 times.
+--            _gold_ occurs 6 times.
+--          _qgiver_ occurs 1 time.
+--         _warrior_ occurs 42 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+Person _warrior_ face 219 group Group_5.0 female remote
+Person _witch_ face 218 factiontype Witches_Coven female remote
+
+Place _castle_ remote house1
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Warrior
+
+--	Quest start-up:
+	start timer _queston_ 
+	log 1010 step 0 
+	pc at _castle_ set _S.05_ 
+	restrain foe _F.00_ 
+	create npc at _castle_ 
+	place foe _F.00_ at _castle_ 
+
+_queston_ task:
+	end quest 
+
+_reward_ task:
+	when _qgclicked_ and _out_ 
+	give pc _gold_ 
+	change repute with _witch_ by -5 
+	end quest 
+
+_S.02_ task:
+	when _qgclicked_ and not _out_ 
+	clear _qgclicked_ _S.02_ 
+
+_out_ task:
+	say 1011 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.05_ task:
+	cast Sleep spell do _out_ 

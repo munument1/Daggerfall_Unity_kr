@@ -1,0 +1,315 @@
+-- Quest: C:\QUESTS\WORKING\N0B21Y14.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: mage
+-- Repute: 21
+-- QuestId: 14
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 25
+Quest: N0B21Y14
+DisplayName: 예언자
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>당신이 %pcn 인가? %pct 인가?
+
+RefuseQuest:  [1001]
+<ce>알겠네, 실례했군.
+
+AcceptQuest:  [1002]
+<ce>아, 좋군. 당신에게 줄 편지가 있네.
+<ce>단순한 우연 이상의 무언가가 당신을 여기로 이끈 모양이군.
+
+QuestComplete:  [1004]
+<ce>당신은 길드의 자랑이네, %pcf.
+
+RumorsDuringQuest:  [1005]
+_noble_의 위상은 확실히 %reg 에서 가장 위대한
+귀족 중 한 명이지. <---> 만약 _noble_에게 무슨
+일이라도 생긴다면, 생각만 해도 몸서리가 쳐지는군.
+
+RumorsPostfailure:  [1006]
+어젯밤 별들이 재앙과 죽음을 이야기했어.
+
+RumorsPostsuccess:  [1007]
+어젯밤 별들이 간신히 피한 재앙에 대해 이야기했어.
+<---> 시종사제가 최근에 마을을 지나갔지.
+그가 무엇을 원했는지 궁금하군.
+
+Message:  1011
+_temple_ __temple_
+ 
+친애하는 %pcn 에게,
+ 
+해머펠의 현명한 여인인 예언자를 대신하여 당신과 이야기하기
+위해 멀리서 왔습니다. 마법사 길드의 대마도학장님께서
+당신을 명예롭고 재능 있는 매지카 시전자로 높이
+평가하셨습니다. 가능한 한 빨리 저를 만나러 와주십시오.
+시간은 한정된 자원입니다. 당신의 도움 없이는,
+예언자의 어두운 예언이 =queston1_일 안에 실현될 것이며,
+모든 %reg 의 눈에서 눈물이 흐를 것입니다.
+곧 뵙기를 바랍니다.
+ 
+진심을 담아,
+ 
+시종사제
+
+Message:  1012
+시종사제는 예언자의 제자가 되기 전에는 귀족이었다고
+하더군. <---> 시종사제는 예언자의 모든 잡일을
+도맡아 하지. 그녀의 나이를 생각하면 이해할 만해.
+<---> 시종사제는 귀족이었지만, 지금은 예언자를
+모시는 데 헌신하고 있어. <---> 시종사제는
+_temple_에 있는 그 =acolyte_입니다. <--->
+시종사제는 아주 어릴 때부터 수년간 예언자의 하인이었지.
+<---> 예언자가 시종사제에게 예언을 전해주면,
+그는 마침내 그녀를 떠날 거야.
+
+Message:  1013
+예언자는 눈이 없지만 탐리엘에서 가장 현명한 여인이라고
+알려져 있지. <---> 예언자는 전통적으로
+센티넬 군주들의 조언자였어. <---> 예언자는
+카마론 왕에게 대거폴과의 전쟁을 반대하라고 조언했지.
+<---> 카마론 왕은 대거폴과의 전쟁을 반대하는
+예언자의 조언을 듣지 않았어. <---> 예언자는
+센티넬이 대거폴과의 전쟁에서 패배할 것을 알고 있었지.
+<---> 만약 센티넬의 카마론이 예언자의 말을
+들었더라면, 오늘날까지 살아있었을 텐데.
+
+Message:  1014
+%qdt:
+ 시종사제로부터 만남을 요청하는 편지를 받았다.
+ 그는 __temple_의 _temple_에 머물고 있다.
+
+Message:  1015
+<ce>와 주셔서 감사합니다, %pcf 님.
+<ce>예언자께서 __temple_의 위대한 귀족 중 한 명인
+<ce>_noble_ 귀족의 죽음을 예견하셨습니다. 고요한 연못에
+<ce>던져진 조약돌처럼, %g3 의 죽음은 %reg 에
+<ce>큰 재앙을 불러올 것입니다. 저는 %g2 께 말씀드려
+<ce>보려 했으나, _noblehouse_에서 %g3 의 곁에 머무는
+<ce>것이 허락되지 않았습니다. 제 주인님이신 예언자께서는
+<ce>%g3 의 은총을 구하고자 __temple_ 쪽으로
+<ce>오시려 하며, 마지막으로 들은 바로는 그녀가 __oracletemple_에
+<ce>계신다고 했습니다. 저는 이 지역에 익숙하지 않아 그곳이
+<ce>얼마나 먼 곳인지 알지 못합니다. 부디 _noble_의 행방을
+<ce>찾아 %g2 께서 %g2 스스로를 보호하도록
+<ce>설득하시거나, __oracletemple_ 근처에서 예언자를 찾아
+<ce>%g2 를 만나게 해 주십시오. 시간이 얼마 없습니다.
+<ce>부디, 간청하오니 서둘러 주십시오.
+
+Message:  1016
+%qdt:
+ 시종사제는 _noble_ 설득을 통해 _noblehouse_ 떠나게
+ 하려 한다고 했다. 그렇지 않으면 %g 가 죽게 되고,
+ 죽음으로써 모든 %reg 에 재앙을 가져올 것이기
+ 때문이다. 나는 _noble_ 직접 설득하거나 __oracletemple_
+ 쪽으로 가서 시종사제의 주인인 예언자를 이곳으로
+ 호위해달라는 요청을 받았다. 그녀라면 _noble_ 설득할
+ 수 있을지도 모르지만, 나도 할 수 있을 것이다.
+
+-changed 1016 to shorter lines, was running offscreen in journal
+
+Message:  1017
+<ce>당신이 %pcn 님이군요, %ra 께서
+<ce>저를 _noble_ 쪽으로 호위하라고 보낸 분이시군요.
+<ce>저는 신들에게 눈을 바쳤기에, 그들의 눈을 통해 당신이 오는
+<ce>것을 보았습니다. 이제, _noble_의 운명이 결정되기 전에
+<ce>__noblehouse_에 있는 _noblehouse_ 쪽으로 서둘러 갑시다.
+
+Message:  1018
+<ce>예언자가 _noble_에게 말을 건네자,
+<ce>그녀의 차분하고 설득력 있는 어조가 마법처럼 작용한다.
+<ce>%g2 가 그녀의 조언에 담긴 지혜를 깨닫는
+<ce>데는 몇 순간밖에 걸리지 않았고, %g 는
+<ce>%reg 의 안녕을 위해 며칠간 숨어 지내기로 동의한다.
+<ce>예언자는 당신의 호위에 감사를 표하며, 당신의 용기와 기지를
+<ce>높이 사 센티넬 궁정에 당신을 추천하겠다고 말한다.
+
+Message:  1019
+<ce>_noble_ 및 _love_ 포옹하고,
+<ce>그 후 %g 는 모든 %reg 의 안녕을 위해,
+<ce>_noble_ 존재가 %g3 의 가장 신뢰하는
+<ce>경비병들과 함께 숨어 지내야 한다고 간청한다.
+<ce>즉시 %g 는 동의하지만, %g3 의 사랑을
+<ce>구해준 것에 대한 감사의 표시로 당신에게 _gold_
+<ce>골드를 주는 것을 잊지 않는다.
+
+Message:  1020
+<ce>그 빌어먹을 시종사제에게 말했듯이, 나는 어떤 미친 노파가
+<ce>나에 대한 나쁜 꿈을 꿨다고 해서 숨어 지낼 생각은 없다.
+<ce>마침 나는 납치된 내 연인, _love_에 대한 소식을
+<ce>기다리는 중이다. 이 문제에 관해서는 %g3 의 조언을
+<ce>듣겠지만, %g 가 위험에 처해 있는 동안 숨어
+<ce>지내지는 않을 것이다. 진작에 %g2 를 적절한 호위도
+<ce>없이 ___mondung_ 근처 100피트 안으로 보내지 말았어야
+<ce>했는데, 하지만 지금 내 연인을 버리지는 않을 것이다.
+<ce>내 대답은 이것이다, %pct.
+
+Message:  1021
+%qdt:
+ _noble_ 존재는 %g 가 %g3 의
+ 연인인 _love_ 인물이 %g3 의 납치범들로부터
+ 구출되었다는 사실을 알 때까지 숨어 지내기를 거부한다. 만약
+ 내가 ___mondung_ 근처에서 %g2 를 구출한다면,
+ _noble_ 인물은 이성적인 말을 들을지도 모른다.
+
+Message:  1022
+<ce>_noble_에서 나를 구하러 오셨나요?
+<ce>%oth, 그렇다면 서두르죠. 끔찍한, 그리고 예지몽이라
+<ce>생각되는 -- %g2 에 관한 꿈을 꾸었거든요.
+
+Message:  1023
+<ce>너무 늦었다. 운명이 인간의 의지와의 전쟁에서 승리할
+<ce>시간이 왔다. 바람조차 _noble_의 죽음을 속삭인다.
+<ce>%reg 의 떨림이 시작될 것이다.
+
+Message:  1024
+_temple_ __temple_
+ 
+친애하는 %pcn 님께,
+ 
+가능한 한 빨리 귀하와 이야기를 나누어야 합니다.
+저는 해머펠의 예언자를 대리하고 있습니다.
+앞으로 며칠간 저는 _temple_에 머물 예정입니다.
+미래가 돌이킬 수 없이 결정되기까지 =queston2_일밖에 남지
+않았으니, 곧 뵙기를 바랍니다. 이 문제는 참으로 중대합니다.
+부디 저를 만나러 오는 일을 잊지 마십시오.
+ 
+시종사제
+
+
+-- Symbols used in the QRC file:
+--
+--              %dat occurs 1 time.
+--                %g occurs 6 times.
+--               %g2 occurs 22 times.
+--               %g3 occurs 9 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 3 times.
+--              %pcn occurs 7 times.
+--              %pct occurs 5 times.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+--              %reg occurs 7 times.
+--         =acolyte_ occurs 1 time.
+--        =queston1_ occurs 4 times.
+--        =queston2_ occurs 1 time.
+--       ___mondung_ occurs 2 times.
+--     __noblehouse_ occurs 1 time.
+--   __oracletemple_ occurs 3 times.
+--         __temple_ occurs 14 times.
+--            _gold_ occurs 1 time.
+--            _love_ occurs 3 times.
+--           _noble_ occurs 22 times.
+--      _noblehouse_ occurs 3 times.
+--          _temple_ occurs 7 times.
+
+QBN:
+Item _oracleNote_ letter used 1011
+Item _oracleMsg_ letter used 1024
+--added underscores to oracleNote and oracleMsg because they are variables
+Item _gold_ gold
+
+Person _oracle_ face 251 named The_Oracle anyInfo 1013
+Person _acolyte_ face 5 named The_Acolyte anyInfo 1012
+-changed oracle and acolyte to Named instead of Faction to prevent dialogue beginning
+Person _noble_ face 25 factiontype Province local
+Person _thd_ named Queen_Akorithi
+--%thd corrected to _thd_
+Person _love_ face 1 group Group_7.0
+Person _giver_ group Questor
+
+Place _mondung_ remote dungeon
+Place _temple_ local temple
+Place _noblehouse_ local house2
+Place _oracletemple_ remote temple
+
+Clock _queston1_ 00:00 0 flag 17 range 0 2
+Clock _queston2_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	dialog link for location _temple_ person _acolyte_ 
+	dialog link for location _mondung_ person _thd_ 
+	dialog link for location _noblehouse_ person _love_ 
+	dialog link for person _noble_ 
+	pick one of _S.02_ _S.01_ 
+	_oracleNote_ used do _readletter_ 
+	_oracleMsg_ used do _readletter_ 
+	create npc at _noblehouse_ 
+	place npc _oracle_ at _oracletemple_ 
+	place npc _acolyte_ at _temple_ 
+	place npc _noble_ at _noblehouse_ 
+
+_S.00_ task:
+	clicked npc _acolyte_ 
+	add dialog for person _oracle_ 
+	add dialog for location _noblehouse_ person _noble_ 
+	log 1016 step 1 
+	say 1015 
+
+_S.01_ task:
+	start timer _queston1_ 
+	get item _oracleNote_ 
+
+_S.02_ task:
+	start timer _queston2_ 
+	get item _oracleMsg_ 
+
+_S.03_ task:
+	clicked npc _oracle_ 
+	hide npc _oracle_ 
+	say 1017 
+	add _oracle_ face 
+
+_S.04_ task:
+	clicked npc _noble_ 
+
+_S.05_ task:
+	when _S.04_ and _S.03_ 
+	say 1018 
+	give pc nothing 
+	change repute with _thd_ by +10 
+	end quest 
+--victory message changed to after 1018, more logical dialogue
+
+_S.06_ task:
+	when _S.04_ and _S.07_ 
+	get item _gold_ 
+	say 1019 
+	give pc _gold_ 
+	end quest 
+-victory message changed to after 1019, more logical dialogue
+
+_S.07_ task:
+	clicked npc _love_ 
+	hide npc _love_ 
+	say 1022 
+	add _love_ face 
+
+_S.08_ task:
+	when _S.04_ and not _S.03_ and not _S.07_ 
+	reveal _mondung_ 
+	log 1021 step 2 
+	say 1020 
+	place npc _love_ at _mondung_ 
+	clear _S.04_ 
+
+_npc1_ task:
+	when _S.10_ and not _S.05_ and not _S.06_ 
+	say 1023 
+
+_S.10_ task:
+	when _queston1_ or _queston2_ 
+
+_readletter_ task:
+	add dialog for person _acolyte_ 
+	log 1014 step 0 
+
+_queston1_ task:
+	end quest 
+
+_queston2_ task:
+	end quest 

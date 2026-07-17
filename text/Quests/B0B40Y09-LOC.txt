@@ -12,10 +12,10 @@ DisplayName: 거인 사냥
 QRC:
 
 QuestorOffer:  [1000]
-<ce>방금 _monster_의 농장 습격 및 가축
-<ce>포식 소식을 들었습니다. 제 이름이요?
-<ce>천 번 사과드립니다, %pcf. 저는 _qgiver_입니다.
-<ce>가서 그 _monster_ 처치를 부탁드려도 되겠습니까?
+<ce>방금 _monster_의 농장 습격 및 가축 포식 소식을
+<ce>들었습니다. 제 이름이요? 천 번 사과드립니다, %pcf.
+<ce>저는 _qgiver_입니다. 가서 그 _monster_ 처치를
+<ce>부탁드려도 되겠습니까?
 
 RefuseQuest:  [1001]
 <ce>고귀한 기사들은 다 어디에 있습니까? 그들 모두
@@ -23,31 +23,31 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>_monster_의 ___dungeon_ 은신처가 확인되었습니다.
-<ce>그곳으로 가서 놈을 처치하십시오.
-<ce>그곳에서 다른 _monster_들을 발견할지도 모릅니다.
-<ce>필요하다면 그들도 죽이되, 팔에 곰 발톱 낙인이 찍힌 놈은
-<ce>반드시 처리하십시오. 제게는 =2dung_일밖에 없습니다.
+<ce>그곳으로 가서 놈을 처치하십시오. 그곳에서 다른
+<ce>_monster_들을 발견할지도 모릅니다. 필요하다면 그들도
+<ce>죽이되, 팔에 곰 발톱 낙인이 찍힌 놈은 반드시 처리하십시오.
+<ce>제게는 =2dung_일밖에 없습니다.
 
 QuestComplete:  [1004]
 <ce>이제 당신은 진정한 _monster_ 학살자입니다,
 <ce>%pcf! 당신과 악수를 하게 될 줄은 몰랐군요.
 
 RumorsDuringQuest:  [1005]
-거인들은 보통 그렇게 공격적이지 않습니다.
-하지만 ___dungeon_에 있는 놈은 확실히 다릅니다.
+거인들은 보통 그렇게 공격적이지 않습니다. 하지만
+___dungeon_에 있는 놈은 확실히 다릅니다.
 
 RumorsPostfailure:  [1006]
 ___dungeon_ 거인이 남쪽으로 이동했다는 소문을 들었습니다.
 그곳 사람들이 저주를 퍼붓고 있겠군요.
 
 RumorsPostsuccess:  [1007]
-%kno 의 활약으로 %reg 의 구원이
-다시 이루어졌습니다. 그 기사단의 %ra 측에서
+%kno 의 활약으로 %reg 의 구원이 다시
+이루어졌습니다. 그 기사단의 %ra 측에서
 ___dungeon_ 거인을 처치했습니다.
 
 QuestorPostsuccess:  [1008]
-어서 오십시오, 거인 학살자 %pcf.
-무엇을 도와드릴까요?
+어서 오십시오, 거인 학살자 %pcf. 무엇을
+도와드릴까요?
 
 QuestorPostfailure:  [1009]
 거인 하나 제대로 처치할 줄 알게 되면 다시 오십시오,
@@ -55,14 +55,14 @@ QuestorPostfailure:  [1009]
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_에 있는 __qgiver_의 _qgiver_께서
- 제게 ___dungeon_에서 처치해야 할 _monster_에 대해
+ ___qgiver_에 있는 __qgiver_의 _qgiver_께서 제게
+ ___dungeon_에서 처치해야 할 _monster_에 대해
  말씀해주셨습니다. 제게는 =2dung_일밖에 없습니다.
 
 Message:  1011
-<ce>곰 발톱 낙인이 _monster_의
-<ce>팔 위쪽에서 분명하게 보입니다.
-<ce>이것이 _qgiver_의 언급과 일치하는 놈임이 틀림없습니다.
+<ce>곰 발톱 낙인이 _monster_의 팔 위쪽에서 분명하게
+<ce>보입니다. 이것이 _qgiver_의 언급과 일치하는 놈임이
+<ce>틀림없습니다.
 
 
 -- Symbols used in the QRC file:

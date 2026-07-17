@@ -1,0 +1,105 @@
+---- Custom quest to slay zombies and skeletons until a necromancer comes out of hiding.
+
+Quest: CUSTOM01
+DisplayName: 황혼에서 죽음까지
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>어둠이 두렵지 않기를 바라네, %pcn...
+<ce>어떤 강령술사가 ___graveyard_에서 좀비와 해골 군단을
+<ce>일으키고 있네. 우리는 이 악당의 생명을 끝내고
+<ce>그들의 사악한 행위를 멈추게 하겠다는 계약을 맺었네.
+<ce>보상으로 _reward_ 골드를 주겠네.
+
+RefuseQuest:  [1001]
+<ce>강령술사는 상대하기 까다롭지, %pcn.
+<ce>이번 일을 거절한다고 해서 자네를 탓하진 않겠네.
+
+AcceptQuest:  [1002]
+<ce>좋아. 해가 진 뒤에 ___graveyard_ 쪽으로 가서
+<ce>강령술사가 은신처에서 나와 자네를 마주할 만큼
+<ce>분노할 때까지 바깥 묘지의 좀비와 해골들을 처치하게.
+<ce>임무를 마치고 돌아올 시간은 =timeLimit_일 주겠네.
+<ce>보상으로 _reward_ 골드를 준비해두겠네.
+
+QuestFail:  [1003]
+<ce>자네에게 실망했네, %pcn.
+<ce>이제 더 믿을 만한 사람에게 계약을 넘겨야겠군.
+
+QuestComplete:  [1004]
+<ce>잘했네, 영웅이여. 자네는 많은 무고한 생명을 구했네.
+
+Message:  1020
+<ce>이 언데드가 쓰러지자 발밑의 땅이 진동하는 것이 느껴집니다.
+<ce>강령술사가 여기 있습니다!
+
+Message:  1030
+<ce>"네놈은... 네놈의... 영혼으로... 대가를 치르게 될 것이다!"
+<ce>강령술사가 바닥으로 고꾸라집니다. 그들의 언데드 군대는
+<ce>흩어질 것이며 더 이상 인근 마을을 위협하지 않을 것입니다.
+
+Message:  1040
+%qdt:
+ ___questgiver_의 전사 길드에서 나를 고용해 ___graveyard_의
+ 명칭으로 불리는 은신처에 있는 골치 아픈 강령술사를
+ 처치하라고 했다. 밤이 되면 밖의 묘지에서 해골과 좀비들을
+ 처치하고 악당이 숨어 있다가 나타나기를 기다려야 한다.
+ 강령술사를 처치하고 돌아와 보상을 받기까지
+ =timeLimit_일의 시간이 주어졌다.
+
+
+QBN:
+
+Item _reward_ gold
+
+Person _questgiver_ group Questor male
+
+Place _graveyard_ remote graveyard
+
+Clock _timeLimit_ 00:00 0 flag 17 range 0 2
+
+Foe _zombie_ is Zombie
+Foe _skeleton_ is Skeletal_warrior
+Foe _necromancer_ is Battle_mage
+
+--	Quest start-up:
+	start timer _timeLimit_
+	reveal _graveyard_
+	pc at _graveyard_ set _onsite_
+	log 1040 step 0
+
+_timeLimit_ task:
+	end quest 
+
+variable _onsite_
+_daytime_ task:
+	daily from 05:00 to 18:00
+
+_attackPlayer_ task:
+	when _onsite_ and not _daytime_ and not _necromancerDead_
+	create foe _zombie_ every 5 minutes indefinitely with 60% success
+	create foe _skeleton_ every 5 minutes indefinitely with 60% success
+
+_summonNecromancer_ task:
+	killed 4 _zombie_
+	killed 4 _skeleton_
+	say 1020
+	create foe _necromancer_ every 1 minutes 1 times with 100% success
+
+_necromancerDead_ task:
+	killed _necromancer_
+	say 1030
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _necromancerDead_
+	say 1003
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _necromancerDead_
+	give pc _reward_
+	end quest

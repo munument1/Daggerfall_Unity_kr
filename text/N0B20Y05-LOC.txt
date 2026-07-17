@@ -1,0 +1,149 @@
+-- Quest: C:\QUESTS\WORKING\N0B20Y05.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: mage
+-- Repute: 20
+-- QuestId: 5
+Messages: 41
+Quest: N0B20Y05
+DisplayName: 위험한 위저드
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>의심할 여지 없이, 미친 위저드
+<ce>_wizard_에 대해 들어봤겠지.
+<ce>%g 가 %g3 의
+<ce>명령 하에 가진 엄청난 힘 때문에,
+<ce>%rt %rn 의
+<ce>_wizard_에 대한 어떠한 공격적인 움직임도 미뤄왔지만,
+<ce>이제 그 전략도 끝났다. %t 께서
+<ce>우리에게 이 정신 나간 마법사를 처단할 사람을 보내달라고
+<ce>요청하셨다. 마법 _reward_에 대한 보상으로,
+<ce>우리를 위해 그 일을 해주겠나?
+<--->
+<ce>%reg 의 사람들은
+<ce>마법사 길드가 한동안 이 땅을 공포에 떨게 한 미친
+<ce>위저드에게
+<ce>맞서주기를 요구해왔다. 이제, 대마도학장님의
+<ce>직접적인 명령에 따라, 우리는 그렇게 할 것이다. 학술
+<ce>기관이 내릴 만한 임무는 아니라는 걸 알지만,
+<ce>그 미친 위저드를 찾아가서 갈기갈기 찢어버릴
+<ce>의지와 능력이 있나?
+
+RefuseQuest:  [1001]
+<ce>젠장. 이번 일에 당신을 믿을 수 있기를 바랐는데.
+
+AcceptQuest:  [1002]
+<ce>훌륭해. 당신이 우리를 실망시키지 않을 거라 믿었네,
+<ce>%pcf. 자, _wizard_의 위치는 %g3 의
+<ce>실험실인 ___mondung_일 걸세. 최대 =1stparton_일 뒤면
+<ce>새로운 장소로 이동할 테니 서두르게. %t 께서는
+<ce>마법사가 =1stparton_일 안에 죽었다는 소식을 원하시니,
+<ce>일을 마친 후 지체하지 말게나. =1stparton_일 뒤에 보세.
+<ce>고맙네, 행운을 비네, %pcf.
+
+QuestFail:  [1003]
+<ce>우리가 이야기했던 그 문제에 대해 이제 움직여야 할
+<ce>것 같은데, 그렇지 않나?
+
+QuestComplete:  [1004]
+<ce>다시 한번, 당신의 기술과 효율성에 놀랐네, %pcf.
+<ce>훌륭한 일이었어. %t 께서도 나만큼이나 기뻐하실
+<ce>걸세. 여기 약속했던 _reward_ 있네. 즐기게나.
+
+RumorsDuringQuest:  [1005]
+마법사 길드에서 ___mondung_에 있는 그 미친 위저드를
+처리할 사람을 보냈어. <---> 모두가 그 위저드의
+다음 행동을 기다리며 숨을 죽이고 있지.
+
+RumorsPostfailure:  [1006]
+마법사 길드조차 그 미친 소서러에
+대해서는 아무것도 할 수 없었어.
+<---> 그 _wizard_의 행방은 아무도 모르지만,
+%g1 의 부재 속에서는 어디도 안전하지 않아.
+
+RumorsPostsuccess:  [1007]
+바라건대, ___mondung_의 미친 위저드에 대한 소식은 이제
+마지막이었으면 좋겠군. <---> 미친 위저드 걱정을
+안 해도 되니 이제 좀 조용해진 것 같아.
+
+QuestorPostsuccess:  [1008]
+안녕, %pcf.
+그 미친 위저드에게 너무 많이 다치지는 않았길 바라네.
+
+QuestorPostfailure:  [1009]
+<ce>돌아왔군, 하지만 ___mondung_의 미친
+<ce>위저드를 처단하지는 못했지, 그렇지?
+<ce>구제 불능이군, %pcf, 구제 불능이야.
+
+Message:  1030
+%qdt:
+ ___questgiver_의 마법사 길드에서 ___mondung_의
+ 위저드를 처단해달라고 요청했다.
+ 보상을 받으려면 =1stparton_일 안에 일을 끝내야 한다.
+
+Message:  1040
+<ce>당신은 _wizard_ 처단에 성공했다,
+<ce>___mondung_의 미친 위저드 말이다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--               %g1 occurs 1 time.
+--               %g3 occurs 3 times.
+--              %pcf occurs 6 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--               %rn occurs 1 time.
+--               %rt occurs 1 time.
+--                %t occurs 3 times.
+--       =1stparton_ occurs 10 times.
+--       ___mondung_ occurs 8 times.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 2 times.
+--          _wizard_ occurs 5 times.
+
+QBN:
+Item _reward_ magic_item
+
+Person _questgiver_ group Questor
+Person _wizard_ face 249 faction The_Mages_Guild remote
+
+Place _mondung_ remote dungeon9
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Mage
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	place foe _monster_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	unset _qgclicked_ 
+	end quest 
+
+variable _queston_
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1040 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+--added full clearclick action. was mere variable previously.

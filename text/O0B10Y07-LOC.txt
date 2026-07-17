@@ -1,0 +1,132 @@
+-- Quest: C:\QUESTS\WORKING\O0B10Y07.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 10
+-- QuestId: 7
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 21
+Quest: O0B10Y07
+DisplayName: 귀족의 보석
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>우리는 당신을 눈여겨보고 있었네, %pcf. "우리"가
+<ce>누구인지는 묻지 말게. 당신은 이 길드의 유망한 일원이니까.
+<ce>만약 보수 없이 우리를 위해 특별한 임무를 수행해 준다면,
+<ce>앞으로 당신을 좋게 봐줄 수도 있지. 어떻게 생각하나?
+
+RefuseQuest:  [1001]
+<ce>등 뒤를 조심해, 이 더러운 배신자 녀석아!
+
+AcceptQuest:  [1002]
+<ce>임무는 아주 간단하네. __palace_의 %rt 님이
+<ce>최근 꽤 괜찮은 솜씨의 _jewelry_ 물품을 "구입"했더군.
+<ce>우리가 좀 자세히 살펴보고 싶은 물건이지.
+<ce>자네는 정확히 =2palace_일 안에 궁전에 잠입해
+<ce>그 장신구를 훔쳐서 여기까지 돌아와야 하네.
+<ce>진정한 도둑 길드 일원이라면 불가능한 일은 아니겠지.
+<ce>자, 뭘 꾸물거리는 건가, %pcf? 어서 출발하게!
+
+QuestFail:  [1003]
+<ce>내 말 안 들려? 당장 꺼져!
+
+QuestComplete:  [1004]
+<ce>축하하네, %pcf. 조만간 다시 연락하지.
+
+RumorsDuringQuest:  [1005]
+%t %rn 님은 %g3 의 새로운
+_jewelry_의 소유를 자랑스러워하는 모양이에요.
+모두가 그걸 보고 싶어 하죠. <---> 새로운
+_jewelry_ 때문인지, _palace_의 경비가 삼엄해졌어요.
+
+RumorsPostfailure:  [1006]
+%t 님의 부하들이 그 엉망이 된 도둑질 사건
+이후 _jewelry_ 물품을 회수하는 데 성공했답니다.
+<---> 도둑 길드라면 _jewelry_ 물품을 손에 넣을
+기회를 그렇게 날려버리진 않았을 텐데 말이죠.
+
+RumorsPostsuccess:  [1007]
+도둑 길드가 꽤 대담해졌어요.
+%t 님에게서 직접 훔치다니요. <---> 도둑
+길드는 _palace_ 도둑의 신원을 성공적으로 숨겼답니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 도둑 길드 내에서 영향력을 얻기 위해, 저는 __palace_에
+ 있는 %t 님의 궁전인 _palace_에 침입하여
+ %t 님의 새로운 _jewelry_ 물품을 훔치기로
+ 했습니다. ___qgiver_에서 _qgiver_님의 손에
+ _jewelry_ 물품을 넘기기까지 =2palace_일 남았습니다.
+
+Message:  1015
+<ce>당신은 가져오기로 한 _jewelry_의 물건을 가지고 있군요.
+
+Message:  1020
+<ce>이게 바로 그 물건이군요!
+
+
+-- Symbols used in the QRC file:
+--
+--               %g3 occurs 1 time.
+--              %pcf occurs 5 times.
+--              %qdt occurs 1 time.
+--               %rn occurs 1 time.
+--               %rt occurs 1 time.
+--                %t occurs 5 times.
+--         =2palace_ occurs 2 times.
+--        ___qgiver_ occurs 2 times.
+--         __palace_ occurs 2 times.
+--         _jewelry_ occurs 8 times.
+--          _palace_ occurs 18 times.
+--          _qgiver_ occurs 3 times.
+
+QBN:
+Item _jewelry_ trinket
+
+Person _qgiver_ group Questor
+
+Place _palace_ remote palace
+
+Clock _2palace_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Knight
+Foe _battlemage_ is Battle_mage
+Foe _F.02_ is 3 Archer
+Foe _F.03_ is Gargoyle
+
+--	Quest start-up:
+	place item _jewelry_ at _palace_ 
+	start timer _2palace_ 
+	log 1010 step 0 
+	pc at _palace_ set _S.02_ 
+
+_2palace_ task:
+	end quest 
+
+_S.01_ task:
+	toting _jewelry_ and _qgiver_ clicked 
+	give pc nothing 
+	change repute with _qgiver_ by +5 
+	end quest
+
+_qgtalk_ task:
+	clicked npc _qgiver_
+
+_clearclick_ task:
+	when _qgtalk_ and not _S.01_
+	say 1003
+	clear _clearclick_ _qgtalk_
+--added _qgtalk_ and _clearclick_
+
+_S.02_ task:
+	create foe _F.03_ every 11 minutes 3 times with 15% success 
+	create foe _F.00_ every 10 minutes 10 times with 15% success 
+	create foe _battlemage_ every 12 minutes 5 times with 15% success 
+	create foe _F.02_ every 13 minutes 20 times with 15% success 
+
+_S.04_ task:
+	clicked item _jewelry_
+                say 1020
+	say 1015 

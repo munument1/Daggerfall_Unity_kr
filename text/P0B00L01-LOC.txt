@@ -1,0 +1,219 @@
+-- Quest: C:\QUESTS\WORKING\P0B00L01.Qbn.
+-- StartsBy: letter
+-- Questee: member
+-- Questor: vampire
+-- Repute: 0
+-- QuestId: 1
+Messages: 27
+Quest: P0B00L01
+DisplayName: 흡혈귀의 편지
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%vam 위해 며칠 밤 시간을 내줄 수 있겠소?
+
+RefuseQuest:  [1001]
+<ce>내가 예상한 대답이 아니군. 앞으로는 %vam 의
+<ce>안위를 위해 시간과 노력을 좀 들이도록 해라, 애송이.
+<ce>버림받는 건 유쾌하지 않을 테니까.
+
+AcceptQuest:  [1002]
+<ce>%pcf, %vam 의 동맹에게 편지를
+<ce>전달해 줘야겠다. _pawn_의 경우 ___pawn_의
+<ce>__pawn_에서 =1stparton_일 밤까지만 기다릴 것이다.
+<ce>약속을 어기지 마라. =1stparton_일 밤 뒤에 이곳에서
+<ce>다시 보길 기대하마. 잘 가라.
+
+QuestFail:  [1003]
+<ce>내 편지가 _pawn_의 땀에 젖은 손에 들어가기 전까지는
+<ce>대화할 생각이 없다, %pcf.
+
+QuestComplete:  [1004]
+<ce>그 편지를 신속하게 전달해 줘서 고맙군, %pcf.
+<ce>꽤 중요한 것이었거든. 나도 바빴던 참이다.
+<ce>임무를 잘 완수했으니 선물로 이 _reward_ 물품을 받도록.
+
+RumorsDuringQuest:  [1005]
+__pawn_의 =pawn_ 쪽에서 누군가를
+기다리고 있더군. 밤에 도착할 누군가를 말이야.
+<---> 사람들은 %t 의 뱀파이어 위협에
+대해 드디어 뭔가 조치를 취하려 한다고들 하더군.
+
+RumorsPostfailure:  [1006]
+그 신경질적인 =pawn_의 모습이
+드디어 __pawn_에서 사라졌어.
+%g3 의 야간 회합을 놓친 게 분명해. <--->
+__vampire_의 그 =vampire_에 관해 %g 가 항상
+데리고 다니는 그 %ra 에 대해 투덜거리고 있었지.
+
+RumorsPostsuccess:  [1007]
+그 %rt 의 경우 %reg 에 뱀파이어가
+존재한다는 사실에 대해 %g3 의 생각을 바꾼
+모양이야. <---> 그 %rt 의 경우 밤에
+경비병을 더 배치하려 했지만 %g3 의 생각을 바꿨지.
+
+QuestorPostsuccess:  [1008]
+반갑네, %pcf.
+_pawn_의 예우가 자네에게 충분했길 바라네.
+
+QuestorPostfailure:  [1009]
+<ce>자네를 _pawn_에게 보냈을 때,
+<ce>나는 자네가 %g2 에게 가길 바랐네, %pcf.
+<ce>나를... 화나게 하지 말게.
+
+QuestLogEntry:  [1010]
+<ce>그래, 내 이름은 _pawn_ 개체가다.
+<ce>자-자네가 %pcn 쪽으로군.
+<ce>_vampire_에게 전해라. 내가 모든 것을 처리하겠다고.
+<ce>%g 에게 내가 충성스럽다는 걸 확실히 알리도록.
+<ce>아무것도 변한 건 없다. 고맙다. 모든 게 잘 해결되도록 하마.
+
+Message:  1011
+_vampire_? __vampire_에 머무는 아주 매력적인
+=vampire_인 것 같군. <---> _vampire_ 측은
+__vampire_에 있는 그 =vampire_ 측이다.
+
+Message:  1012
+_vampire_의 경우 %vam 뱀파이어 중 하나다.
+<---> _vampire_의 경우 멘토이자
+%vam 혈통의 꽤 젊은 일원이다.
+
+Message:  1013
+_pawn_,
+ 
+우리는 %t 의 설명할 수 없는 공격에 대응하기 위해
+%reg 의 야간 순찰 인원을 다시 늘리는 것을 고려하고
+있다는 소식을 들었다. %t %rt 의
+경우 %vam 에서 오는 방문객을 맞이할 것이니 이
+상황은 합리적으로 해결될 것이다. 평소 계획대로 이 문제를
+도와주길 바란다. %vam 의 경우 우리가 이 잠재적인
+문제를 계속해서 다뤄야 한다는 사실에 즐거워하지 않는다.
+참고로 %t 의 가족은 꽤 건강해졌다.
+우연이 아니다. 해결책이 없는 상황도 아니지.
+ 
+<ce>-- _vampire_
+
+Message:  1014
+_pawn_ 개체는 이곳 %di 의 __pawn_에
+있는 신경질적인 =pawn_ 개체가다. <--->
+_pawn_ 개체는 내가 __pawn_에서 본 그
+=pawn_의 이름이다. 그곳은 %di 방향에 있다.
+
+Message:  1015
+_pawn_의 경우 __pawn_에서 활동하는
+%vam 뱀파이어의 하수인이다. <---> 그
+=pawn_의 경우 %vam 뱀파이어의 동맹이며,
+%g 는 __pawn_에 산다.
+
+Message:  1020
+%pcn, %vam 의 소환에 따라 ___vampire_
+쪽으로 오게. 그곳에서 나를 찾아 이 편지를 제시하게.
+ 
+죽어가는 숨결로,
+<ce>_vampire_
+
+Message:  1021
+<ce>편지를 받았다.
+
+Message:  1025
+%qdt:
+ __vampire_, ___vampire_에 있는 %vam 의
+ _vampire_ 측이 나를 보내 ___pawn_에 있는
+ _pawn_의 이름으로 불리는 불운한 이름을
+ 가진 =pawn_에게 편지를 전하게 했다.
+ __pawn_에서 =1stparton_일 밤 이내에 %g2 를
+ 만나는 것이 매우 중요한 모양이다.
+
+Message:  1026
+%qdt:
+ ___vampire_의 _vampire_의 요청으로 %vam 업무를
+ 위해 __vampire_ 쪽으로 소환되었다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 32 times.
+--                %g occurs 31 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 3 times.
+--              %pcf occurs 11 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+--              %reg occurs 2 times.
+--               %rt occurs 3 times.
+--                %t occurs 7 times.
+--              %vam occurs 36 times.
+--       =1stparton_ occurs 13 times.
+--            =pawn_ occurs 6 times.
+--         =vampire_ occurs 3 times.
+--          ___pawn_ occurs 2 times.
+--       ___vampire_ occurs 3 times.
+--           __pawn_ occurs 36 times.
+--        __vampire_ occurs 10 times.
+--            _pawn_ occurs 10 times.
+--          _reward_ occurs 1 time.
+--         _vampire_ occurs 10 times.
+
+QBN:
+Item _reward_ magic_item
+Item _letter_ letter used 1013
+Item letter36 letter used 1020
+
+Person _vampire_ factiontype Vampire_Clan local anyInfo 1011 rumors 1012
+Person _pawn_ group Group_5.0 remote anyInfo 1014 rumors 1015
+
+
+Clock _1stparton_ 00:00 0 flag 17 range 1 2
+
+
+--	Quest start-up:
+	dialog link for person _vampire_ 
+	dialog link for person _pawn_ 
+	letter36 used do _S.12_ 
+	have letter36 set _S.13_ 
+	give pc letter36 notify 1021 
+	create npc _vampire_ 
+
+variable _pcgetsgold_
+variable _queston_
+variable _S.02_
+variable _S.03_
+_npcclicked_ task:
+	toting _letter_ and _pawn_ clicked 
+	say 1010 
+	change repute with _vampire_ by +5 
+
+_vampclicked_ task:
+	toting letter36 and _vampire_ clicked 
+	add dialog for person _pawn_ 
+	log 1025 step 1 
+	get item _letter_ 
+	say AcceptQuest 
+	create npc _pawn_ 
+
+_1stparton_ task:
+	end quest 
+
+_vampsecondclick_ task:
+	clicked npc _vampire_
+
+variable _2ndparton_
+_clearclick_ task:
+	when _vampsecondclick_ and not _npcclicked_ 
+	clear _S.11_ _vampsecondclick_ _clearclick_
+
+variable _S.09_
+variable _S.10_
+_S.11_ task:
+	when _vampsecondclick_ 
+	give pc _reward_ 
+	end quest 
+
+_S.12_ task:
+	add dialog for person _vampire_ 
+	log 1026 step 0 
+
+_S.13_ task:
+	start timer _1stparton_ 

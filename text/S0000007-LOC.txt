@@ -1,0 +1,543 @@
+-- Quest: C:\QUESTS\WORKING\S0000007.Qbn.
+-- Main story quest.
+-- QuestId: 7
+Messages: 37
+Quest: S0000007
+DisplayName: 늑대인간형 야수
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>이봐, 만약 내가 당신에게 정보 하나를 줄 수 있다고 하면,
+<ce>말하자면, 그 아가씨의 편지에 대한 정보 말이야,
+<ce>관심 있나, %pcf? 그럴 줄 알았지.
+<ce>자, 명심해, 공짜로 주는 건 아니야. 내가 당신을 도와주기
+<ce>전에, 당신도 나를 도와줘야 해. 거래할 텐가?
+
+RefuseQuest:  [1001]
+<ce>물론 아니겠지. 당신은 왕 같은 사람들을 위해서만 일하잖아,
+<ce>그렇지? 불쌍한 신다사는 스스로 일해야만 해, 그런 건가?
+<ce>뭐, %oth, 나한테는 상관없어, 그러시든가.
+
+AcceptQuest:  [1002]
+<ce>제 이름은 신다사예요. 대거폴이죠. 제가 아는 모든 걸
+<ce>말씀드릴게요. 하지만 공짜 정보 같은 건 없다는 걸 굳이
+<ce>다시 상기시켜 드릴 필요는 없겠죠, %pcn 님?
+<ce>전 그저 폐하를 모시는 하녀일 뿐, 세상에선 티끌 같은
+<ce>존재라 큰 걸 바라진 않아요. 그저 이 웨어울프를 처리해
+<ce>주셨으면 해요. 어디 있는지 알거든요. 베토니 해안가 근처의
+<ce>%god 의 명칭으로 불리는 버려진 구멍 같은 곳이에요.
+<ce>이유는 말씀드릴 수 없지만, 그 웨어울프를 고통에서 해방해
+<ce>주는 게 제게는 중요해요. 여기서 =2mondung_일 동안
+<ce>기다릴게요. 그 정도면 충분한 시간이겠죠.
+<ce>
+<ce>
+
+QuestFail:  [1003]
+<ce>내가 바보인 줄 아나, %pcn?
+<ce>그 늑대인간이 아직 살아있다는 걸 내가 모를 줄 알았어?
+
+QuestComplete:  [1004]
+<ce>그럼 죽은 건가? 불쌍한 것. 한때 내 오빠였지. 내 생각엔,
+<ce>그는 처음 물렸을 때 이미 오래전에 죽은 거나 다름없어.
+<ce>그 짐승으로 변했을 때 그는 스스로를 증오했지.
+<ce>그를 도울 다른 방법이 있었더라면 좋았을 텐데.
+<ce>
+<ce>당신이 찾는 그 편지에 대해 말해주기로 약속했었지, 그렇지?
+<ce>물론 기억하고 있어, %pcf. 황제 폐하께서 직접
+<ce>보내신 편지를 받는 건 흔한 일이 아니니까, 특히 왕께서
+<ce>그분을 별로 좋아하지 않으신다는 걸 생각하면 더더욱 그렇지.
+<ce>사실, 그분에게서 온 편지는 그게 처음이었어. 내가 여왕님께
+<ce>드렸는데, 여왕님은 잔뜩 흥분해서 편지를 뜯어보시더니 "이건
+<ce>나한테 온 게 아니야, 미니세라에게 온 거잖아."라고 하셨지.
+<ce>그러고는... 쾅! 입을 떡 벌리시고 눈을 크게 뜨셨어.
+<ce>대비님께 확실히 전달할 테니 걱정하지 말라고 하셨지.
+
+RumorsDuringQuest:  [1005]
+트리스토어 연구소의 웨어울프가 몇 주 동안 베토니를 공포에
+떨게 했습니다. <---> 이웃들을 제외하면 트리스토어
+연구소의 웨어울프에 대해 신경 쓰는 사람은 별로 없습니다.
+<---> 불쌍한 아우크-이. 그녀의 하녀가 그녀에
+대한 온갖 이상한 소문을 퍼뜨리고 다녔죠.
+
+RumorsPostfailure:  [1006]
+그 웨어울프는 트리스토어 연구소를 떠났습니다.
+짐승들은 원래 이동하니까요. <---> 그 늑대인간이
+트리스토어 연구소에 그렇게 오래 살 줄은 몰랐네요.
+<---> 이봐, 변신술사 길드 놈들이 저 멀리서
+%ra 처치를 확실히 마쳤더군.
+
+RumorsPostsuccess:  [1007]
+어떤 %ra 모험가가 트리스토어 연구소의 웨어울프를
+베토니 밖으로 쫓아냈습니다. <---> 트리스토어
+연구소 주변에 사는 농부들은 늑대인간이 사라져서 기뻐하고
+있습니다. <---> 변신술사들은 동료 중 하나를 구해준
+%ra 에게 감사해야 할 겁니다.
+
+QuestLogEntry:  [1010]
+<ce>웨어울프의 시체가 당신의 눈앞에서 변하기 시작합니다. 불과
+<ce>몇 분 만에, 신다사와 매우 닮은 젊은 남자로 변했습니다.
+
+Message:  1011
+<ce>%pcf, 그를 그 덫에서 구해줘서 정말 고마워요.
+<ce>상황을 바로잡기 위해 벨다마는 내가 직접 상대하겠어요.
+
+Message:  1012
+<ce>신다사가 여왕의 사적인 일에 대해 떠들고 다니던
+<ce>게 잘 기억나는군. 와인 몇 잔이 어린 소녀의
+<ce>혀를 얼마나 가볍게 만드는지 놀라울 따름이지.
+<ce>황제에게서 온 편지가 전달되는 건 흔한 일이 아니야,
+<ce>특히 알다시피 여왕이 그를 별로 좋아하지 않으니까 말이지.
+<ce>신다사는 그 편지가 그에게서 온 유일한 편지였다고 말했어.
+<ce>여왕이 헉 소리를 내며 "어머, 이건 나한테 온 게 아니야,
+<ce>미니세라에게 온 거잖아."라고 외쳤을 때 깜짝 놀랐다고
+<ce>하더군. 불쌍한 신다사. 그녀는 즉시 자신이 전령의 말을
+<ce>잘못 알아듣고 편지를 잘못된 귀족에게 전달했다고 생각했지.
+<ce>아우크-이가 화를 내지 않고 대비님께 즉시 전달할 테니
+<ce>걱정하지 말라고 했을 때 그녀는 정말 안도했어.
+
+Message:  1013
+<ce>오, 원한다면 _relic_ 소유권은 그냥 가져도 돼.
+
+Message:  1014
+<ce>이런 %pcf, 당신이 내 옛 연인의 일기장 일부를
+<ce>찾았군요. 어디서든 그 필체를 알아볼 수 있죠. 신다사, 그
+<ce>더러운 계집애가 그를 두 마리의 늑대인간에게 감염시켰어요!
+<ce>
+<ce>그런 저주를 치료하는 건 우리의 능력을 벗어난 일이에요.
+<ce>벨다마는 연구를 통해 치료법을 찾길 바라고 있죠.
+<ce>그녀는 몇 주 동안은 과정을 되돌릴 수 있지만,
+<ce>그 이상은 안 돼요. 지금까지 초기 감염 이후 그보다 오래
+<ce>살아남은 사례는 본 적이 없거든요.
+<ce>
+<ce>그를 데리고 돌아와 준다면, 당신에게 유용할지도 모를
+<ce>정보를 줄게요. 이 특별한 _relic_ 건네받으세요.
+<ce>그 안에 있는 짐승을 길들일 수 있을 거예요.
+
+Message:  1015
+%qdt:
+ 신다사 오빠의 옛 연인인 _barmaid_ 만났습니다.
+ 그녀는 _relic_ 사용해 옛 연인을
+ 데려오면 제게 정보를 주겠다고 합니다.
+ 그녀는 __tavern_의 _tavern_에서 기다릴 것입니다.
+
+Message:  1016
+%qdt:
+ 신다사 오빠의 일기장 조각을 찾았습니다.
+ 신다사가 앙심을 품고 그를 라이칸스로프로 변하게
+ 했다는 내용이 적혀 있습니다.
+
+Message:  1017
+당신은 휘갈겨 쓴 글씨로 적힌 일기장 조각을 발견합니다.
+ 
+"...신다사가 단지 내가 그녀의 친구인 _barmaid_ 및
+헤어졌다는 이유로 그렇게 심술궂게 굴었다니 믿을 수가 없다.
+뭐, 나도 ___barmaid_ 방문하는 걸 별로 좋아하지 않았고,
+좋게 헤어졌다고 생각했는데...
+하지만 나를 변신술사들에게 넘기려고 돈을 쓰다니,
+이해할 수가 없군. 신다사는 대거폴 궁정의 그 썩어빠진
+귀족들에게서 나쁜 버릇만 배운 게 분명해."
+
+Message:  1018
+당신은 또렷한 글씨로 적힌 일기장 조각을 발견합니다.
+ 
+"...내가 이곳에 어떻게 왔는지 기억이 나지 않는다. 납치된
+거라면, 왜? 우리에겐 돈도 없고, 신다사는 궁정 귀족들에게
+겨우 용인받는 처지일 뿐이다. 마지막으로 기억나는 건 대거폴
+성 위로 달이 떠오르는 것을 보던 것뿐인데..."
+
+Message:  1019
+쯧. 신다사는 항상 여자 친구들과 무슨 일을 꾸미고 다니지.
+<---> 아우크-이 여왕이 자기 하녀가
+==barmaid_ 및 어울리게 두다니 상상이 가나.
+<---> 아우크-이 여왕이 자기 하녀가 ==barmaid_
+및 어울리게 두다니 믿을 수가 없군. <---> 쯧.
+신다사는 항상 _barmaid_ 및 무슨 일을 꾸미고 다닌다니까.
+
+Message:  1020
+_wereBrother_의 마음을 아프게 하더니,
+이제는 _tavern_에서 몸을 팔고 다니더군요.
+<---> 어떤 젊은 건달이 그녀의 마음을 아프게 했고,
+이제는 __tavern_에서 우울하게 지내고 있습니다.
+<---> 그녀는 항상 __tavern_에서
+자신의 기술을 팔고 다니죠, 무슨 뜻인지 아시겠죠?
+<---> 그 여자가 실연당한 뒤에 신다사에게 부탁해서
+오빠를 웨어울프로 만들게 하지 않았나요?
+
+Message:  1021
+내게서 떨어져, %ra!
+이 더러운 암살자 녀석! <---> 암살자다!
+경비병들에게 널 던져주마, %ra! <---> 감히
+내게 접근하다니, 이 더러운 웨어울프 놈! <---> 그
+더러운 웨어울프 가죽을 내 눈앞에서 치워라, %ra!
+
+Message:  1022
+내게서 떨어져, %ra! 넌 멍청한 웨어울프 놈이야.
+<---> 이 바보 같은 녀석! 어떻게 그 평범한 하녀의
+거짓말에 속아 넘어갈 수 있지? <---> 어리석은
+%ra 같으니. 신다사의 거짓말에 속았다고
+말하지 마라! <---> 네가 저지른 짓을 생각하면,
+%ra, 변신술사들을 네 뒤에 붙여야겠어.
+
+Message:  1023
+%qdt:
+ 대거폴의 오브크-이 여왕의 시녀인 신다사가 내게
+ 베토니의 트리스토어 연구소에 숨어 있는 웨어울프를
+ 처치해 달라고 의뢰했다. 보상은 정보뿐이지만,
+ 황제의 편지에 대해 아는 것을 알려주겠다고 약속했다.
+ 이 일을 완수하기까지 =2mondung_일이 남았다.
+
+Message:  1024
+<ce>웨어울프의 시체가 당신의 눈앞에서 변하기 시작합니다.
+<ce>잠시 후, 그것은 당신의 발치에 혼수상태로 누워
+<ce>있는 청년 _wereBrother_의 모습이 되었습니다.
+<ce>당신은 조심스럽게 그을 들어 올립니다.
+
+Message:  1025
+신다사가 성에서 기다리게 되자 그 가족 전체가
+거드름을 피우더군요. <---> 형제간의 경쟁이
+___wereBrother_에서 한창 유행입니다. <---> 쯧.
+젊은 것들이 관심을 끌려고 별짓을 다 하는군요.
+
+Message:  1026
+변신술사 길드의 소유물
+
+Message:  1027
+_relic_의 모습이 사라지자 속이 울렁거리는
+충격을 느낍니다.
+
+Message:  1028
+<ce>제정신인가, %pct? 도와주려 했지만,
+<ce>_wereBrother_에게 저지른 짓을 보니... 그 창녀 신다사에게나
+<ce>다시 기어들어가라지. 가치 없는 %ra 같은 놈.
+
+Message:  1029
+<ce>다시 생각해보니, %pct, 내가 따라가지.
+<ce>내가 _relic_ 소지하고 있겠어.
+<ce>다루기가 조금 까다로울 테니까.
+
+Message:  1030
+%qdt:
+ _barmaid_에게 듣기로, 신다사가 미니세라에게
+ 전달하려던 편지를 오브크-이 여왕에게 주었고,
+ 여왕은 즉시 대비에게 전달하겠다고 약속했다고 한다.
+
+Message:  1031
+%qdt:
+ _barmaid_ 및 _wereBrother_ 대거폴의 절벽에 있는
+ 마녀회로 호위해야 한다.
+
+Message:  1032
+<ce>웨어울프의 시체가 서서히 굳어가는 동안,
+<ce>_barmaid_ 말합니다: "훌륭해요, %pcf. 당신이
+<ce>찾는 그 편지에 대해 아는 것을 말해주겠다는 약속을 지키죠."
+
+Message:  1033
+<ce>이제, 우리를 절벽의 자매단 벨다마에게 호위해 주시겠습니까?
+<ce>대거폴 지방의 지도에서 찾으실 수 있을 겁니다.
+
+Message:  1034
+<ce>%pcf, 마녀회에 대한 당신의 헌신은 매우
+<ce>귀중했습니다. 언제든 다시 찾아와 주십시오.
+
+Message:  1035
+<ce>_barmaid_ 혐오스러운 눈으로 당신을 봅니다.
+<ce>"무슨 짓을 하려는 거야, %ra? 우리를 납치하려고?"
+<ce>그녀는 _wereBrother_ 집어 들고 허공으로 사라집니다.
+
+Message:  1036
+<ce>_barmaid_의 속삭임이 시작됩니다: "좋아 %pcf,
+<ce>이렇게 하죠. 우리는 흩어져서 __mondung_ 쪽으로
+<ce>향할 겁니다. 그다음 당신이 그를 유인하는 동안,
+<ce>나는 그 안의 짐승을 길들이는 주문을 외우겠어요."
+
+--Changed _wereBrother_ to __mondung_ so _barmaid_ specifies dungeon werewolf is in, not dungeon brother NPC currently stashed in
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 1 time.
+--              %oth occurs 1 time.
+--              %pcf occurs 7 times.
+--              %pcn occurs 1 time.
+--              %pct occurs 3 times.
+--              %qdt occurs 5 times.
+--               %ra occurs 20 times.
+--        =2mondung_ occurs 3 times.
+--        ==barmaid_ occurs 3 times.
+--   ___wereBrother_ occurs 1 time.
+--         __tavern_ occurs 5 times.
+--         _barmaid_ occurs 9 times.
+--           _relic_ occurs 8 times.
+--          _tavern_ occurs 2 times.
+--     _wereBrother_ occurs 6 times.
+
+QBN:
+Item _letter_ letter used 1018
+Item _I.01_ letter used 1017
+Item _relic_ magic_item used 1026
+
+Person _cyndassa_ named Cyndassa atHome anyInfo 1019
+Person courtier face 89 faction Court_of_Daggerfall remote
+Person _barmaid_ face 115 faction The_Daggerfall_Witches anyInfo 1020
+Person _P.03_ faction The_Sisters_of_the_Bluff female
+Person _wereBrother_ face 13 faction The_Mages_Guild anyInfo 1025 male
+Person _P.05_ named Br'itsa
+
+Place _mondung_ permanent Tristore_Laboratory4
+Place _L.01_ permanent Tristore_Laboratory2
+Place _L.02_ permanent Tristore_Laboratory1
+Place _tavern_ remote tavern
+Place _npc2_ local dungeon
+Place glenmorilCoven permanent BluffCoven
+
+Clock _2mondung_ 00:00 0 flag 17 range 0 2
+Clock _2ndparton_ 00:00 0 flag 17 range 0 2
+Clock _delay_ 02:12 1.00:17
+Clock _S.27_ 00:01 00:01
+Clock _S.32_ 00:01 00:01
+--Reduced time before quest success displays after player arrives at coven
+
+Foe _brother_ is Werewolf
+Foe talisman is 2 Werewolf
+Foe boar is Wereboar
+
+--	Quest start-up:
+	dialog link for person _wereBrother_ 
+	dialog link for person _P.05_ 
+	dialog link for item _relic_ 
+	dialog link for person _barmaid_ 
+	start timer _2mondung_ 
+	prompt QuestorOffer yes yes no _no_ 
+	repute with _P.05_ exceeds 4 do _S.11_ 
+	repute with _P.03_ exceeds 4 do _S.11_ 
+	repute with _barmaid_ exceeds 4 do _S.11_ 
+	pc at glenmorilCoven set _S.30_ 
+	pc at _mondung_ set _S.14_ 
+	_I.01_ used do _S.34_ 
+
+_2mondung_ task:
+	drop _cyndassa_ as questor 
+	end quest 
+
+variable _2ndparton_
+_S.02_ task:
+	when _2ndparton_ and _S.29_ 
+	say 1035 
+
+_S.03_ task:
+	when _2ndparton_ 
+	drop _barmaid_ face 
+	drop _wereBrother_ face 
+	drop _cyndassa_ as questor 
+	end quest 
+
+_delay_ task:
+	drop _cyndassa_ as questor 
+	end quest 
+
+_S.05_ task:
+	when _S.06_ and _mondead_ 
+	give pc nothing 
+	start quest 12 12 
+	start timer _delay_ 
+	change repute with courtier by +10 
+	change repute with _cyndassa_ by +15 
+	end quest
+
+_S.06_ task:
+	clicked npc _cyndassa_ 
+
+_mondead_ task:
+	killed 1 _brother_ saying 1010 
+
+_S.08_ task:
+	clicked npc _barmaid_ 
+
+yes task:
+	place item _I.01_ at _L.02_ questmarker 0
+	place item _letter_ at _L.01_ marker 0
+	log 1023 step 0 
+	reveal _mondung_ in province 19 at 255132 
+	pick one of _S.13_ _S.12_ _S.13_ _S.12_ 
+	say AcceptQuest 
+	add _cyndassa_ as questor 
+	place foe _brother_ at _mondung_ marker 1
+
+_no_ task:
+	say RefuseQuest 
+	end quest 
+
+variable _S.11_
+variable _S.12_
+variable _S.13_
+variable _S.14_
+variable _S.15_
+_S.16_ task:
+	when _S.12_ and not _S.11_ 
+
+_S.17_ task:
+	injured _brother_ 
+	have _relic_ set _S.15_ 
+
+_S.18_ task:
+	when _S.22_ and _S.17_ 
+
+_S.19_ task:
+	when _S.15_ or _S.18_ 
+
+_S.20_ task:
+	when _S.14_ and _S.16_ 
+	place foe boar at _L.02_ marker 0
+
+_S.21_ task:
+	when _S.17_ and _S.16_ 
+	cast Heal spell on _brother_ 
+	cast Spider_Touch spell on _brother_ 
+
+_S.22_ task:
+	when _S.14_ and _S.37_ 
+	restore _barmaid_ 
+	say 1036 
+	drop _barmaid_ face 
+	place npc _barmaid_ at _mondung_ 
+
+_S.23_ task:
+	when _S.19_ and not _mondead_ 
+	cast Heal spell on _brother_ 
+	have _relic_ set _S.25_ 
+
+_S.24_ task:
+	when _S.18_ and _S.23_ and not _S.27_ 
+	play sound spell_ball_lightning every 1 minutes 100 times 
+
+_S.25_ task:
+	play sound spell_ball_lightning every 1 minutes 100 times 
+
+_S.26_ task:
+	when _S.19_ and not _mondead_ 
+	start timer _S.27_ 
+	restrain foe _brother_ 
+
+_S.27_ task:
+	clear _S.25_ _S.23_ _S.24_ 
+
+_mmap_ task:
+	when _S.27_ and not _S.37_ and not _mondead_ and _S.11_ and not _S.32_
+	say 1024 
+	add _wereBrother_ face 
+	place foe _brother_ at _npc2_
+    place npc _barmaid_ at _tavern_
+    --Need to move _barmaid_ to tavern mentioned in quest for final reunion
+    clear _S.08_
+    --Clear click on _barmaid_ or ending will fire too soon
+
+_S.29_ task:
+	when _S.27_ and not _S.37_ and not _mondead_ and not _S.11_
+	log 1030 step 0 
+	log 1031 step 1 
+	reveal glenmorilCoven in province 17 at 191097 
+	give item _relic_ to _brother_ 
+	hide npc _barmaid_
+    say 1032 
+	say 1012 
+	say 1033 
+	add _wereBrother_ face 
+	add _barmaid_ face 
+	place foe _brother_ at _npc2_ 
+
+variable _S.30_
+_S.31_ task:
+	when _S.30_ and _S.29_ 
+	start timer _S.32_ 
+
+_S.32_ task:
+	start quest 12 12 
+	start timer _delay_ 
+	stop timer _2ndparton_ 
+	say 1034 
+	drop _barmaid_ face 
+	drop _wereBrother_ face 
+	change repute with courtier by +10 
+	change repute with _barmaid_ by +12 
+	change repute with _P.05_ by +15 
+
+_S.33_ task:
+	when _S.06_ and yes and not _mondead_ 
+	say QuestFail 
+
+_S.34_ task:
+	add dialog for person _barmaid_ 
+	start timer _2ndparton_ 
+	stop timer _2mondung_ 
+	log 1016 step 1 
+	place npc _barmaid_ at _tavern_ 
+
+_S.35_ task:
+	when _S.08_ and not _mondead_ and not _S.17_ 
+	add dialog for person _wereBrother_ 
+	add dialog for item _relic_ 
+	say 1014 
+
+_S.36_ task:
+	when _S.08_ and not _mondead_ and not _S.17_ and _S.11_ 
+	location _tavern_ 100 27000 
+--not known what this intends to do
+	log 1015 step 1 
+	get item _relic_
+
+_S.37_ task:
+	when _S.08_ and not _mondead_ and not _S.17_ and not _S.11_ 
+	hide npc _barmaid_ 
+	say 1029 
+	add _barmaid_ face 
+
+_S.38_ task:
+	when _S.08_ and _mondead_ and _S.17_ and not _S.19_ 
+	--_barmaid_ previously berates player when werewolf injured, even though that is how quest is supposed to be played
+    --Changed this to only happen when player kills werewolf, which seems to be the intent
+	add dialog for person _wereBrother_ 
+	say 1028 
+	change repute with _barmaid_ by -5 
+
+_S.39_ task:
+	when _S.08_ and _mondead_ 
+	pick one of _S.41_ _S.41_ _S.40_ _S.41_ 
+	change repute with _barmaid_ by -10 
+
+_S.40_ task:
+	say 1022 
+
+_S.41_ task:
+	create foe talisman every 5 minutes 10 times with 75% success 
+	give item _relic_ to _brother_ 
+	say 1021 
+
+_S.42_ task:
+	when _S.08_ and not _mondead_ and _S.19_ and not _S.14_
+    say 1011
+	say 1012 
+    say 1013
+	make _relic_ permanent 
+	drop _wereBrother_ face 
+
+_S.43_ task:
+	when _S.42_ 
+	start quest 12 12 
+	start timer _delay_ 
+	stop timer _2ndparton_ 
+	change repute with _barmaid_ by +12 
+	change repute with _P.05_ by +15 
+	change repute with courtier by +10 
+
+_S.44_ task:
+	_relic_ used do _S.45_ 
+
+_S.45_ task:
+	give item _relic_ to talisman 
+	make pc ill with Caliron's_Curse saying 1027 
+	unset _S.06_ _S.33_ 
+	unset _S.08_ _delay_ 
+
+_clearclick_ task:
+	when _S.06_ and not _mondead_
+	clear _S.06_ _clearclick_

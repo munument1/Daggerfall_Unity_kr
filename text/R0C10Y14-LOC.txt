@@ -1,0 +1,126 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y14.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 14
+Messages: 11
+Quest: R0C10Y14
+DisplayName: 잊어버린 장비
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>혹시 시간도 거의 안 걸리고 _reward_ 골드까지 벌 수
+<ce>있는 간단한 임무를 맡을 의향이 있나?
+
+RefuseQuest:  [1001]
+<ce>아니라고? 아쉽군.
+
+AcceptQuest:  [1002]
+<ce>%oth, 그거 잘됐군. 내 멍청한 동료가
+<ce>%g3 의 _item_ 물품을 챙기지도 않고 임무를
+<ce>떠나버렸거든. 이걸 ___contact_ 방향으로 급히 보내야 하네.
+<ce>그곳에 __contact_의 명칭으로 불리는 작은 장소가 있는데,
+<ce>거기서 _contact_의 이름으로 불리는 =contact_ 측을
+<ce>찾을 수 있을 걸세. %g2 에게 _item_ 물품을
+<ce>주게. 그러면 %g 가 _reward_ 골드를 줄 걸세.
+<ce>마지막으로, %g 는 _item_의 유무와 상관없이
+<ce>=queston_일 뒤에 __contact_ 지역을 떠날 테니,
+<ce>어서 출발하는 게 좋을 걸세.
+
+QuestFail:  [1003]
+<ce>_item_ 전달과 함께 배달 장소도 확인했네.
+<ce>더 논의할 게 뭐가 있나?
+
+QuestComplete:  [1004]
+<ce>_questgiver_에서 오셨나요? %oth,
+<ce>나의 _item_! 드디어 왔군요! 이것 없이 떠나야 하는 줄
+<ce>알았어요. 어쨌든, 왜 이렇게 오래 걸린 거죠? 뭐라고요, 내
+<ce>_item_ 수령을 위해 당신에게 돈을 지불해야 한다고요?
+<ce>좋아요, _questgiver_ 님이 그렇게 말씀하셨다면 따르죠.
+<ce>이제, 시간을 너무 많이 낭비했군요. 이제 가봐야겠어요.
+
+RumorsDuringQuest:  [1005]
+_item_의 존재가 확인되면 __contact_에 있는
+저 =contact_에게 팔겠어요. 절박해 보이더군요.
+<---> 저 =contact_의 행보는 며칠째 __contact_
+주변을 배회하고 있어요.
+
+RumorsPostfailure:  [1006]
+불쌍한 _contact_ -- %g3 의 배달품이
+오지 않아서 %g 는 그것 없이 떠나야 했죠.
+<---> 대체 _contact_의 기다림이 무엇을 위한
+것이었는지 궁금하네요. 기적이라도 바란 걸까요?
+
+RumorsPostsuccess:  [1007]
+_contact_ 측은 하피처럼 기뻐하며 __contact_
+지역을 떠났어요. %g 는 %g 가
+필요한 것을 얻은 모양이죠. <---> _questgiver_
+측은 고용된 어떤 %ra 용병 %g 를
+칭찬하느라 여념이 없더군요.
+
+QuestorPostsuccess:  [1008]
+아, 나의 친애하는 친구여. 돌아와 주니 정말 좋군요.
+일은 어떻게 되었나요? <---> 임무를 성공적으로
+마쳤다고 들었습니다. 정말 감사합니다.
+
+QuestorPostfailure:  [1009]
+<ce>연락책을 만나지 못했는데도, 이렇게 돌아오다니.
+<ce>꽤나 이상한 행동이군요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 저는 _questgiver_ 님의 의뢰를 받아 ___contact_ 방향으로
+ 향합니다. 그곳에는 _contact_의 이름을 지닌 =contact_
+ 측이 특별한 _item_ 물품을 기다리고 있습니다.
+ 장소는 __contact_입니다. 이 _contact_ 측은
+ =queston_일 안에 _item_ 없이 혹은 가지고
+ ___contact_ 지역을 떠날 계획이므로, 서둘러야 합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 6 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %oth occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--         =contact_ occurs 6 times.
+--         =queston_ occurs 2 times.
+--       ___contact_ occurs 16 times.
+--            _item_ occurs 9 times.
+--      _questgiver_ occurs 4 times.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gold
+Item _item_ magic_item
+
+Person _questgiver_ group Questor
+Person _contact_ group Local_3.0 remote
+--removed "female" parameter. UESP says it could be either.
+
+
+Clock _queston_ 00:00 0 flag 1 range 1 4
+
+
+--	Quest start-up:
+	start timer _queston_ 
+	log 1010 step 0 
+	get item _item_ 
+	create npc _contact_ 
+
+_pcgetsgold_ task:
+	toting _item_ and _contact_ clicked 
+	give pc _reward_ 
+	end quest 
+
+variable _pchasitem_
+_queston_ task:
+	make _item_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+variable _npcclicked_

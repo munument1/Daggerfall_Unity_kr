@@ -1,0 +1,213 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y12.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 12
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 36
+Quest: A0C00Y12
+DisplayName: 초판본
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>실례합니다. 혹시 _book_의 명칭으로 불리는
+<ce>책을 읽어보셨나요? 정말 훌륭한 책이라 제가 초판본을
+<ce>가지고 있었죠. 아니, 가지고 있었다고 해야겠군요.
+<ce>누군가 가져가 버린 것 같습니다. 가장 먼저 찾아주시는
+<ce>분께 _gold_골드를 기꺼이 드리겠습니다.
+<ce>찾아주실 수 있겠습니까?
+
+RefuseQuest:  [1001]
+<ce>아쉽군요. 그 책을 꼭 찾아야 하는데 말이죠.
+
+AcceptQuest:  [1002]
+<ce>좋습니다! 초판본이라 제게는 매우 중요하거든요.
+<ce>안타깝게도 누가 가져갔는지는 전혀 모르겠습니다.
+<ce>마을 사람들에게 물어보시는 게 좋겠군요.
+
+QuestComplete:  [1004]
+<ce>훌륭합니다! 제 _book_ 사본이군요! 잘하셨습니다,
+<ce>%pcn 님. 약속드린 _gold_골드입니다.
+
+RumorsDuringQuest:  [1005]
+<ce>_giver_님이 냄새나는 낡은 책을 필사적으로 찾고
+<ce>계시더군요. 대체 누가 그런 걸 훔쳐가고 싶어 하겠어요?
+
+RumorsPostfailure:  [1006]
+<ce>_giver_님이 결국 포기하고 그 소중한 책의 다른 사본을
+<ce>샀다는 소식을 들었습니다. %g 님이 책을 찾으려고
+<ce>사람까지 고용했다는 거 아시나요? 정말 바보 같죠!
+
+RumorsPostsuccess:  [1007]
+<ce>_giver_님의 책을 %g2 대신
+<ce>찾아준 %ra 님이시군요.
+<ce>%g 님이 온 동네에 소문을 내고 다니더군요.
+<ce>마치 왕이라도 구한 것처럼 말이에요.
+
+QuestorPostsuccess:  [1008]
+<ce>제 친구 %pcf 님을 위해서라면 무엇이든 해야죠.
+<ce>제 소중한 책을 되찾아주셔서 정말 감사합니다.
+
+QuestorPostfailure:  [1009]
+<ce>흥. 책을 찾아달라고 고용했더니. 실패하는 바람에 직접
+<ce>나가서 다른 사본을 사야 했습니다. 당신과 할 말 없습니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___giver_의 _giver_ 측에서 %g3 의
+ 책인 _book_의 회수를 요청하며 _gold_골드를
+ 주겠다고 제안했다.
+
+Message:  1014
+<ce>_informant1_에 있는 _informant_님을 찾아가 보시는
+<ce>게 좋겠군요.
+<ce>%g 님은 __informant1_ 주변에서 일어나는 모든 일을
+<ce>알고 있는 것 같거든요.
+<--->
+<ce>지역 여관에 물어보시는 게 좋을 겁니다.
+<ce>온갖 소문이 가득하니까요.
+<--->
+<ce>_informant1_에 가보세요.
+<ce>항상 이야기가 오가는 곳이니까요.
+<--->
+<ce>그 책은 _giver_에게서 도난당했습니다.
+<--->
+<ce>_giver_님이 그 책에 대해 묻고 다니더군요.
+<--->
+<ce>읽었을 때 정말 즐거웠던 기억이 납니다.
+<--->
+<ce>도서관에 한번 들러보시는 게 좋겠네요.
+
+Message:  1015
+<ce>이게 _giver_에게서 도난당한 그 책이 틀림없다.
+
+Message:  1025
+<ce>안녕하세요, %pcn 님. 저에 대해 묻고 다니신다는
+<ce>소문을 들었습니다. 제가 잘 알죠. __informant1_의 모든
+<ce>소식은 이 귀를 거쳐 가니까요. 제 이야기는 그만하죠.
+<ce>_giver_님의 불행에 대해 들었습니다.
+<ce>_thief_의 행방을 찾으시는군요. %g 님은
+<ce>한동안 _book_의 초판본을 찾고 계셨죠.
+<ce>그리고 %g 님은 묻지도 않고 물건을 가져가는 그런
+<ce>부류의 사람이기도 하죠, 무슨 뜻인지 아시겠죠?
+
+Message:  1035
+%qdt:
+ _informant_의 실종에 관한 _book_의 귀중한 정보를
+ 주었다. %g 님은 _thief_의 연루 가능성을
+ 의심하는 모양이다. 이제 %g2 만 찾을 수 있다면...
+
+Message:  1027
+_thief_님은 __house_의 _house_에 거주합니다.
+<---> _thief_님은 __house_에 거주합니다.
+<---> _thief_님은 %g3 의 밤을
+_house_에서 보냅니다. <---> %g3 의
+집에서 _thief_님을 찾아보시는 게 좋겠군요.
+%g 님은 __house_에 거주합니다.
+<---> _thief_님은 _store_에서 거래를
+많이 합니다. <---> _store_에서 쇼핑을
+시작해보시는 게 좋을 겁니다. _thief_님도 그러거든요.
+<---> _store_의 경우 _thief_님이 많이
+가지고 있는 장물들이 거래되는 인기 있는 장소입니다.
+<---> _thief_님이 _store_에서
+목격되었습니다. <---> _inn_의 경우 많은
+도둑들의 아지트입니다. <---> _thief_님은
+_inn_에서 술 마시는 걸 좋아합니다. <--->
+_thief_님의 단골 선술집은 _inn_입니다.
+<---> _thief_님이 가장 좋아하는 음식은
+_inn_에서 제공됩니다.
+
+Message:  1030
+<ce>책을 원한다고? 넌 그리 강하지 않아. 어디 한번 뺏어보시지!
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 7 times.
+--               %g2 occurs 3 times.
+--               %g3 occurs 3 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+--         ___giver_ occurs 1 time.
+--          __house_ occurs 5 times.
+--     __informant1_ occurs 3 times.
+--            _book_ occurs 6 times.
+--           _giver_ occurs 32 times.
+--            _gold_ occurs 7 times.
+--           _house_ occurs 1 time.
+--      _informant1_ occurs 2 times.
+--       _informant_ occurs 2 times.
+--             _inn_ occurs 5 times.
+--           _store_ occurs 4 times.
+--           _thief_ occurs 23 times.
+
+QBN:
+Item _book_ book2 anyInfo 1014 used 1015
+Item _gold_ gold
+
+Person _informant_ face 241 group Cleric local
+Person _giver_ group Questor
+Person _thief_ face 97 faction The_Thieves_Guild local anyInfo 1027 rumors 1027
+
+Place _inn_ local tavern
+Place _store_ local generalstore
+Place _house_ local house2
+Place _informant1_ local tavern
+
+Clock _S.01_ 10.00:00 0 flag 9 range 0 1
+
+Foe _thiefFoe_ is Thief
+
+--	Quest start-up:
+	dialog link for location _house_ person _informant_ 
+	dialog link for location _inn_ 
+	dialog link for location _store_ person _thief_ 
+	start timer _S.01_ 
+	log 1010 step 0 
+	place npc _informant_ at _informant1_ 
+
+variable _S.00_
+_S.01_ task:
+	end quest 
+
+_S.02_ task:
+	daily from 00:00 to 08:00 
+	pc at _house_ set _S.09_ 
+
+_S.03_ task:
+	daily from 16:02 to 23:59 
+	pc at _inn_ set _S.10_ 
+
+_S.04_ task:
+	daily from 08:01 to 16:01 
+	pc at _store_ set _S.11_
+--unneeded underscore removed
+
+_S.05_ task:
+	clicked npc _informant_ say 1025 
+	add dialog for person _thief_ 
+	log 1035 step 1 
+
+_S.06_ task:
+	toting _book_ and _giver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+variable _S.07_
+_S.08_ task:
+	injured _thiefFoe_ 
+	give item _book_ to _thiefFoe_ 
+	say 1030 
+
+_S.09_ task:
+	place foe _thiefFoe_ at _house_
+
+_S.10_ task:
+	place foe _thiefFoe_ at _inn_ 
+
+_S.11_ task: 
+	place foe _thiefFoe_ at _store_ 

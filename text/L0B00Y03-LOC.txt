@@ -1,0 +1,126 @@
+-- Quest: C:\QUESTS\WORKING\L0B00Y03.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Brotherhood
+-- Repute: 0
+-- QuestId: 3
+Messages: 12
+Quest: L0B00Y03
+DisplayName: 배신자 마법사
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>마법사 길드에서 너무 지저분하고 끔찍해서
+<ce>직접 처리하기 힘든 일을 우리에게 가져왔네.
+<ce>배신자 마법사를 빨리 처단해야 해. 관심 있나?
+<--->
+<ce>마법사 길드가 또 우리에게 의뢰를 했군.
+<ce>그들의 일원 중 하나가 박쥐 내장을 너무 많이
+<ce>들이마셨는지, 완전히 미쳐 날뛰고 있다네.
+<ce>흥미롭지 않나, %pct?
+
+RefuseQuest:  [1001]
+<ce>실망스럽군.
+
+AcceptQuest:  [1002]
+<ce>좋아. 이 마법사 -- 이름은 =mage_ 측이라네 -- 는
+<ce>마법 물건들을 훔쳐 달아났지. 하지만 마법사 길드는 자네가
+<ce>%g 가 훔친 물건을 가져가도 상관없다고 하더군.
+<ce>그들은 그저 %g2 가 죽길 바랄 뿐이야.
+<ce>처단까지 =queston_일밖에 남지 않았네. %g2 는
+<ce>___mondung_의 명칭으로 불리는 끔찍한 곳에 숨어 있을 걸세.
+<ce>배신자 마법사를 하나 줄여서 =queston_일 안에 돌아오게.
+<ce>메팔라께서 자네의 팔을 굳건히 하시길, %pct.
+
+QuestComplete:  [1004]
+<ce>그래서, 그 불꽃시전자 %pcf 의 불꽃을 꺼버렸나?
+<ce>아, 메팔라께서 자네를 기뻐하시고,
+<ce>그녀의 자식들도 마찬가지라네.
+
+RumorsDuringQuest:  [1005]
+마법사 길드는 =mage_ 측이 자신들의 통제를 벗어났다는
+사실을 부정하고 있지. <---> 등불 기사단은
+=mage_ 측과 엮이기엔 너무 공식적인 조직이라네.
+
+RumorsPostfailure:  [1006]
+=mage_의 일리악 만 건너편 도주가 확인되었습니다.
+%g3 의 계획이 무엇인지 누가 알겠습니까?
+
+RumorsPostsuccess:  [1007]
+사람들 말로는 =mage_의 등불 기사단 피습이 사실이라
+합니다. <---> 그 _mage_의 생존 여부에 따라
+무슨 일이 벌어졌을지 누가 알겠습니까.
+
+QuestorPostsuccess:  [1008]
+반갑습니다. 마법사 사냥꾼 =qgiver_,
+무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+<ce>당신은 우리와의 계약을 이행하지 못했으니,
+<ce>우리는 마법사 길드와의 계약을 이행하지 못하게 되었습니다.
+<ce>지금 당신 %pcf(에)게 남은 것은 경멸뿐입니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ __qgiver_에 있는 다크 브라더후드의 _qgiver_ 측에서,
+ ___qgiver_ 마법사 길드의 배신자 마법사를
+ 처리하라고 나를 ___mondung_ 쪽으로 보냈다.
+ 이 일을 마무리할 시간은 =queston_일 남았다.
+
+Message:  1011
+<ce>=mage_의 빛이 꺼졌습니다.
+<ce>다크 브라더후드와 마법사 길드 모두 만족할 것입니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--               %g2 occurs 2 times.
+--               %g3 occurs 1 time.
+--              %pcf occurs 4 times.
+--              %pct occurs 4 times.
+--              %qdt occurs 1 time.
+--            =mage_ occurs 7 times.
+--          =qgiver_ occurs 1 time.
+--         =queston_ occurs 4 times.
+--       ___mondung_ occurs 2 times.
+--        ___qgiver_ occurs 2 times.
+--            _mage_ occurs 1 time.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _mondung_ remote dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _mage_ is Mage
+
+--	Quest start-up:
+	start timer _queston_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	place foe _mage_ at _mondung_ 
+
+_queston_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _mage_ 
+	say 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+variable _ma1_
+_S.04_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _S.04_ 
+
+_reward_ task:
+	when _S.02_ and _S.01_ 
+	give pc nothing 
+	end quest 

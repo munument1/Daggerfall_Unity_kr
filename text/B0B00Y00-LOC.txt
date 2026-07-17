@@ -1,0 +1,201 @@
+-- Quest: C:\QUESTS\WORKING\B0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: knight
+-- Repute: 0
+-- QuestId: 0
+Messages: 16
+Quest: B0B00Y00
+DisplayName: 공주
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pcf 님, 공주 _lady_ 님이
+<ce>우리의 보호 아래 있다가 납치되었습니다.
+<ce>공주를 구출하는 것은 우리 기사의
+<ce>책무입니다. 불행히도, 우리 기사단원 다수가
+<ce>전쟁터에서 싸우고 있습니다. 기사도의 진정한
+<ce>정신을 발휘하여, 공주를 납치한 _monster_에게서
+<ce>그녀를 구출해주시겠습니까?
+<--->
+<ce>전쟁 때문에 기사단이 너무 바빠서,
+<ce>%reg 의 귀족 여성들의 정조를 보호하는 것과 같은
+<ce>중요한 임무를 소홀히 하게 되었습니다.
+<ce>며칠 전 납치된 공주 _lady_ 님을
+<ce>구출할 사람이 정말로 아무도 없습니다.
+<ce>이토록 가치 있는 퀘스트를
+<ce>맡아주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>아, 그것은 우리 기사단의 정신이 아닙니다.
+<ce>무고한 이들의 정조를 보호하는 것보다 중요한 일은 없습니다.
+
+AcceptQuest:  [1002]
+<ce>정말이십니까? 당신의 마음은 참으로 용감하군요.
+<ce>_monster_ 개체는 두려운 적입니다. 전투 준비를 철저히
+<ce>하십시오. 무모하게 굴지 마십시오. 우리는 오직 공주의
+<ce>구출만을 바랍니다. 만약 _monster_ 개체를 상대하지
+<ce>않아도 된다면, 그냥 두십시오. 만약 =2mondung_일 안에
+<ce>돌아오지 못한다면, 실패한 것으로 간주하고 다른 사람을
+<ce>보낼 것입니다. 당신이 아닌 다른 누군가가 구출의 영예를
+<ce>가로채는 것을 원치 않으시겠지요. %god 님의 축복이
+<ce>___mondung_ 방향으로 향하는 당신의 여정에 함께하기를.
+
+QuestFail:  [1003]
+<ce>서두르십시오, %pcf 님.
+<ce>=2mondung_일밖에 남지 않았습니다.
+
+QuestComplete:  [1004]
+<ce>공주 _lady_ 님, 당신의 훌륭한 구출자인
+<ce>%pcn 님을 공식적으로 소개하겠습니다.
+<ce>당신은 오늘 훌륭하고 명예로운 일을 해냈습니다,
+<ce>나의 친구여. 이 일은 결코 잊히지 않을 것입니다.
+
+RumorsDuringQuest:  [1005]
+가엾은 공주 _lady_ 님.
+그녀의 아버지가 ___qgiver_에 도착하면 몹시 분노할 거야.
+<---> _qgiver_ 님이 공주 _lady_ 님의
+아버지께 그녀를 보호하겠다고 약속했거든.
+
+RumorsPostfailure:  [1006]
+공주가 스스로 ___mondung_에서 탈출했대. 기사의
+용맹함이라곤 찾아볼 수 없군. <---> 공주가 피를
+흘리며 창백한 얼굴로 ___qgiver_에 홀로 걸어 들어왔어.
+
+RumorsPostsuccess:  [1007]
+기사들이 _lady_ 구출이라는 위대한
+%ra 의 영웅적 행위를 축하하고 있어.
+<---> 레이디 _lady_ 님이 자신을 구출해준
+용감한 %ra 님에 대한 시를 쓰기 시작했대.
+
+QuestorPostsuccess:  [1008]
+반갑습니다, %pct 님. 레이디 _lady_ 님이
+무사하다는 소식을 들으면 기뻐하실 겁니다.
+
+QuestorPostfailure:  [1009]
+레이디 _lady_ 사건은 정말 엉망진창이었죠.
+이제 그 일은 잊고 싶으시겠죠.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 __qgiver_의 _qgiver_ 님이
+ 나에게 퀘스트를 주었다. _monster_에게 납치되어
+ ___mondung_에 갇혀 있는 아름다운 레이디 _lady_
+ 님을 구출하는 임무다. 내 명예와 영광을 가로챌 다른 사람이
+ 보내지기 전에 =2mondung_일 안에 그녀를 구출해야 한다.
+
+Message:  1011
+<ce>작고 마르고 창백한 어린 소년이 당신을 향해
+<ce>쉿 소리를 내며 쪽지 하나를 손에 쥐여줍니다.
+<ce>당신이 소년을 알아차리기도 전에 소년은 사라져 버립니다.
+
+Message:  1012
+<ce>당신은 방금 _lady_의 악몽 그 자체인 _monster_
+<ce>처치에 성공했습니다.
+
+Message:  1013
+<ce>레이디 _lady_ 님이 당신을 떠나,
+<ce>스스로의 힘으로 집으로 돌아가려 합니다.
+
+Message:  1014
+친애하는 %pcf 님,
+ 
+만약 당신이 %reg 의 _monster_들이라는 당신의
+소중한 친구들이 그 기사단의 음탕한 계획을 망치는 것을 원치
+않을까 봐 두려워 퀘스트를 주저했다면, 걱정하지 마십시오.
+=monster_의 가치는 우리 차가운 심장에 한 달 된
+토사물 웅덩이만큼도 못합니다. 즐거운 시간 보내십시오.
+그리고 마음이 내킨다면, _lady_도 즐기시길.
+ 
+<ce>당신의 친애하는 친구들, %reg 의 가장 오래된 힘
+
+Message:  1015
+<ce>"당신이 %pcf 님이군요!
+<ce>%god 님께 감사드려요!
+<ce>저는 레이디 _lady_입니다. 어서 여기서 나가요."
+
+
+-- Symbols used in the QRC file:
+--
+--               ___qgiver_ occurs 2 times.
+--              %god occurs 3 times.
+--              %pcf occurs 5 times.
+--              %pcn occurs 1 time.
+--              %pct occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--              %reg occurs 4 times.
+--        =2mondung_ occurs 4 times.
+--         =monster_ occurs 1 time.
+--       ___mondung_ occurs 4 times.
+--        ___qgiver_ occurs 2 times.
+--            _lady_ occurs 18 times.
+--         _monster_ occurs 9 times.
+--          _qgiver_ occurs 2 times.
+
+QBN:
+Item letter31 letter used 1014
+
+Person _qgiver_ group Questor
+Person _lady_ face 2 group Noble female local
+Person _vamp_ face 40 factiontype Vampire_Clan local
+
+Place _mondung_ remote dungeon8
+
+Clock _2mondung_ 00:00 0 flag 17 range 0 2
+Clock _S.07_ 10:00 1.16:00
+
+Foe _monster_ is Vampire
+Foe imp0 is Giant_rat
+
+--	Quest start-up:
+	dialog link for person _vamp_ 
+	start timer _2mondung_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	repute with _vamp_ exceeds 20 do _S.05_ 
+	pc at _mondung_ set _S.03_ 
+	place foe _monster_ at _mondung_ 
+	place npc _lady_ at _mondung_ 
+
+_2mondung_ task:
+	end quest 
+
+_S.01_ task:
+	when _qgclicked_ and _S.04_ 
+	give pc nothing 
+	end quest 
+
+_S.02_ task:
+	killed 1 _monster_ 
+	say 1012 
+
+_S.03_ task:
+	create foe imp0 every 40 minutes 100 times with 15% success 
+
+_S.04_ task:
+	clicked npc _lady_ 
+	hide npc _lady_ 
+	say 1015 
+	add _lady_ face 
+
+_S.05_ task:
+	start timer _S.07_ 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.07_ task:
+	get item letter31 
+	say 1011 
+
+variable _S.08_
+_S.09_ task:
+	when _S.04_ and _2mondung_ 
+	say 1013 
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.04_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 

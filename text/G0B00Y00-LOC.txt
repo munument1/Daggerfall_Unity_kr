@@ -1,0 +1,139 @@
+-- Quest: C:\QUESTS\WORKING\G0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Kynaran
+-- Repute: 0
+-- QuestId: 0
+Messages: 21
+Quest: G0B00Y00
+DisplayName: 분노의 팔
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>우리 기사단은 배신자가 된 전 단원을 처단할 것을 요구하오.
+<ce>당신이 우리의 분노를 대신할 강한 팔이 되어주겠소,
+<ce>%pcf?
+<--->
+<ce>여신께서 점괘를 통해 우리에게 말씀하시길, 그녀의
+<ce>이름을 더럽힌 사악한 악당의 피를 요구하고 계시오.
+<ce>우리의 분노하신 여주인 키나레스의 노여움을 달래도록
+<ce>도와주시오.
+
+RefuseQuest:  [1001]
+<ce>비열한 대답이군. 더 나은 답을 기대했건만.
+
+AcceptQuest:  [1002]
+<ce>아주 좋소. 그 배신자는 %di 방향에
+<ce>있는 ___mondun_에 숨어든 살인자요.
+<ce>=queston_일 안에 돌아오지 않는다면, 당신의 명예는
+<ce>실추될 것이며 다른 이가 당신의 자리를 대신할 것이오.
+<ce>이번 임무에 실패하지 마시오, %pcf.
+
+QuestFail:  [1003]
+<ce>배신자는 아직 살아있소.
+<ce>다른 말로 나를 설득하려 하지 마시오.
+
+QuestComplete:  [1004]
+<ce>잘했소. 자랑스러워할 만한 일이오.
+
+RumorsDuringQuest:  [1005]
+그 배신자는 마치 지옥의 사냥개라도 뒤쫓는 것처럼
+___mondun_ 쪽으로 도망쳤지.
+<--->
+<ce>_qgiver_의 경우 %g 가 키나레스 기사단에
+<ce>저지른 짓을 생각하면
+<ce>그 무능한 놈을 그냥 내버려 둘 수 없을 거야.
+
+RumorsPostfailure:  [1006]
+배신자의 능력은 _qgiver_의 예상보다 훨씬 강한
+모양이군요. 정말 대단한 탈출입니다. <--->
+그 배신자가 북쪽으로 이동했다는 소문이 들리지만,
+그 기억은 여전히 우리 기사단을 괴롭히고 있습니다.
+
+RumorsPostsuccess:  [1007]
+배신자의 이야기가 모든 걸 증명하지. 키나레스 기사단을
+상대로 장난질을 치면 안 되는 법이야. <---> 난
+기사단이 그 멍청이에게 좀 더 자비를 베풀 줄 알았는데.
+
+QuestorPostsuccess:  [1008]
+기사단을 위해 그 배신자를 처단해주었으니,
+최소한 인사라도 해야겠군.
+
+QuestorPostfailure:  [1009]
+당신은 그 배신자를 놓아주었군. 당신과 할 말은 없소.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 키나레스 기사단은 저에게
+ 기사단을 배신하고 ___mondun_의 은신처에
+ 숨어든 배신자를 찾아 처단하라는 의뢰를 했습니다.
+ 저에게는 =queston_일의 시간이 주어졌습니다.
+
+Message:  1020
+<ce>"그러니까... 키나레스 기사단이... 나를 죽이라고... 보냈군.
+<ce>그들에게 전해라... 나는 그들의..." 배신자가 죽었습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 1 time.
+--                %g occurs 2 times.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--         =queston_ occurs 2 times.
+--        ___mondun_ occurs 3 times.
+--        ___qgiver_ occurs 3 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _mondun_ remote dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _nightblade_ is Nightblade
+Foe _assassin_ is Assassin
+Foe _spellsword_ is Spellsword
+Foe _knight_ is Knight
+
+--	Quest start-up:
+	start timer _queston_ 
+	reveal _mondun_ 
+	log 1010 step 0 
+	pick one of _S.05_ _S.06_ _S.07_ _S.08_ 
+
+_queston_ task:
+	end quest 
+
+_pcgetsgold_ task:
+	when _mondead_ and _qgclicked_ 
+	give pc nothing 
+	end quest 
+
+_mondead_ task:
+	killed 1 _assassin_ saying 1020 
+	killed 1 _knight_ saying 1020 
+	killed 1 _spellsword_ saying 1020 
+	killed 1 _nightblade_ saying 1020 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+_S.05_ task:
+	place foe _assassin_ at _mondun_ 
+
+_S.06_ task:
+	place foe _knight_ at _mondun_ 
+
+_S.07_ task:
+	place foe _spellsword_ at _mondun_ 
+
+_S.08_ task:
+	place foe _nightblade_ at _mondun_ 

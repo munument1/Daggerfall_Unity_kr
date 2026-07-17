@@ -1,0 +1,168 @@
+-- Quest: C:\QUESTS\WORKING\N0C00Y13.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: mage
+-- Repute: 0
+-- QuestId: 13
+Messages: 46
+Quest: N0C00Y13
+DisplayName: 고대의 두루마리
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>흠. 당신은 길드 회원이 아니군요. 비회원에게 일거리를
+<ce>주는 건 정말 내키지 않지만, 길드 내의 다른 누구도 알기를
+<ce>원치 않는 처리해야 할 일이 있습니다. 만약 대가 없이 이
+<ce>일을 해준다면, 당신이 우리와 같은 %ra 임을 널리
+<ce>알리도록 하죠. 어떻게 생각합니까, %pcf?
+
+RefuseQuest:  [1001]
+<ce>가버리십시오. 방해됩니다.
+<--->
+<ce>배은망덕한 사람 같으니.
+
+AcceptQuest:  [1002]
+<ce>제 이름은 _questgiver_입니다. ___dungeon_에 숨겨져 있다고
+<ce>알려진 고대 문헌이 하나 있습니다. 그것을 =traveltime_일
+<ce>이내에 가져오면 임무를 완수한 것으로 간주하겠습니다.
+
+QuestComplete:  [1004]
+<ce>훌륭합니다. 읽지 말라고 경고했던 것 기억하시죠?
+<ce>문외한들이 흔히 그렇듯 "nagog"를 강하게 발음했다면 꽤
+<ce>위험했을 겁니다. 도움을 주셔서 감사합니다, %pcn.
+<ce>계속 이렇게 하신다면 마법사 길드 가입을 고려해보겠습니다.
+
+RumorsDuringQuest:  [1005]
+며칠 전에 종기가 났었는데... 다행히 나았습니다.
+<---> 방금 날씨에 관해 세 시간 동안 대화를
+나눴습니다. <---> 날씨는 이맘때쯤이면 꽤 평범한
+편이죠. <---> 올해 이맘때 %cn 의
+날씨는 약간 쌀쌀한 것 같습니다. <---> 작년
+이맘때보다 오늘이 확실히 훨씬 따뜻하네요. <--->
+제 이모할머니께서 일리악 만 건너편의 전문의를 만나러
+가십니다. <---> 이곳은 어두워지는 시간이 항상
+신기하단 말이죠. <---> 이곳에 전쟁 기념비를 세워야
+합니다. <---> 요즘 애들은 마법을 너무 좋아해요.
+%oth, 잘 모르겠네요. <---> 어젯밤에
+아주 이상한 꿈을 꿨습니다. <---> 재미있는 농담을
+들었습니다. %jok <---> %jok 사실
+그건 농담입니다. <---> %jok 그게 무슨
+뜻인지 설명해주실 수 있나요? <---> %reg 의
+법 체계에는 장점과 단점이 공존합니다.
+
+RumorsPostfailure:  [1006]
+며칠 전에 종기가 났었는데... 다행히 나았습니다.
+<---> 방금 날씨에 관해 세 시간 동안 대화를
+나눴습니다. <---> 날씨는 이맘때쯤이면 꽤 평범한
+편이죠. <---> 올해 이맘때 %cn 의
+날씨는 약간 쌀쌀한 것 같습니다. <---> 작년
+이맘때보다 오늘이 확실히 훨씬 따뜻하네요. <--->
+제 이모할머니께서 일리악 만 건너편의 전문의를 만나러
+가십니다. <---> 이곳은 어두워지는 시간이 항상
+신기하단 말이죠. <---> 이곳에 전쟁 기념비를 세워야
+합니다. <---> 요즘 애들은 마법을 너무 좋아해요.
+%oth, 잘 모르겠네요. <---> 어젯밤에
+아주 이상한 꿈을 꿨습니다. <---> 재미있는 농담을
+들었습니다. %jok <---> %jok 사실
+그건 농담입니다. <---> %jok 그게 무슨
+뜻인지 설명해주실 수 있나요? <---> %reg 의
+법 체계에는 장점과 단점이 공존합니다.
+
+RumorsPostsuccess:  [1007]
+며칠 전에 종기가 났었는데... 다행히 나았습니다.
+<---> 방금 날씨에 관해 세 시간 동안 대화를
+나눴습니다. <---> 날씨는 이맘때쯤이면 꽤 평범한
+편이죠. <---> 올해 이맘때 %cn 의
+날씨는 약간 쌀쌀한 것 같습니다. <---> 작년
+이맘때보다 오늘이 확실히 훨씬 따뜻하네요. <--->
+제 이모할머니께서 일리악 만 건너편의 전문의를 만나러
+가십니다. <---> 이곳은 어두워지는 시간이 항상
+신기하단 말이죠. <---> 이곳에 전쟁 기념비를 세워야
+합니다. <---> 요즘 애들은 마법을 너무 좋아해요.
+%oth, 잘 모르겠네요. <---> 어젯밤에
+아주 이상한 꿈을 꿨습니다. <---> 재미있는 농담을
+들었습니다. %jok <---> %jok 사실
+그건 농담입니다. <---> %jok 그게 무슨
+뜻인지 설명해주실 수 있나요? <---> %reg 의
+법 체계에는 장점과 단점이 공존합니다.
+
+QuestorPostsuccess:  [1008]
+물론 기억하고 있습니다, %pcf.
+그 문헌을 가져다주셨죠, 맞습니까?
+
+QuestorPostfailure:  [1009]
+<ce>제가 드린 것보다 더 간단한 임무는 상상할 수 없군요.
+<ce>그저 희귀한 고대 두루마리를 찾는 것뿐이었는데.
+<ce>이제 당신과 더 대화를 나눌 이유를 찾지 못하겠군요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___questgiver_ 마법사 길드의 _questgiver_ 측을 만났고,
+ ___dungeon_에 숨겨진 고대 문헌을 찾아달라는
+ 의뢰를 받았습니다. %g2 에게 전달하기까지
+ =traveltime_일이 남았습니다.
+
+Message:  1020
+Zephrim alga n' nagog. Carti alga n' belyl. Azuth Zephrim
+ne' nagog. Partik aloy partik frae i eyominathraq n' toyl.
+Berik azuth n' nagog. Charlaq gimle n' maluk Zephrim qork.
+
+Message:  1040
+<ce>이것이 _questgiver_ 측에서 찾으라고 했던 양피지임이
+<ce>분명합니다.
+
+QuestTimeLapse:  [1045]
+<ce>마지막 단어를 읽자, 차가운 돌풍이 불어와 손에서
+<ce>종이를 앗아갈 뻔했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 3 times.
+--               %g2 occurs 17 times.
+--              %jok occurs 9 times.
+--              %oth occurs 15 times.
+--              %pcf occurs 3 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--              %reg occurs 3 times.
+--      =traveltime_ occurs 3 times.
+--       ___dungeon_ occurs 2 times.
+--    ___questgiver_ occurs 4 times.
+
+QBN:
+Item _ingredient_ letter used 1020
+
+Person _questgiver_ group Questor
+
+Place _dungeon_ remote dungeon
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _atronach_ is Ice_atronach
+
+--	Quest start-up:
+	place item _ingredient_ at _dungeon_ 
+	start timer _traveltime_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	toting _ingredient_ and _questgiver_ clicked 
+	give pc nothing 
+	end quest 
+
+_S.02_ task:
+	clicked item _ingredient_ 
+	_ingredient_ used do _S.03_ 
+	--moved "saying 1045" from used do, not a valid argument, to S.03.
+	say 1040 
+
+_S.03_ task:
+	say 1045
+	create foe _atronach_ every 1 minutes 1 times with 100% success 

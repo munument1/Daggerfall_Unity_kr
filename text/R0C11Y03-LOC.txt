@@ -1,0 +1,189 @@
+-- Quest: C:\QUESTS\WORKING\R0C11Y03.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 11
+-- QuestId: 3
+Messages: 21
+Quest: R0C11Y03
+DisplayName: 심장 없는 데이드라
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 지인 중에 _chemist_의 이름으로 불리는 꽤
+<ce>실력 있는 연금술사가 있습니다. 제 계획을 완수하려면
+<ce>%g 에게 아주 희귀한 물건이 필요합니다.
+<ce>바로 데이드라의 심장이지요. 솔직히 말씀드리죠.
+<ce>데이드라들은 이 심장을 되찾으려 할 테니,
+<ce>가는 길에 그들과 마주칠 수도 있습니다.
+<ce>넉넉한 보상을 위해 이런 위험을 감수할 의향이 있으신가요?
+
+RefuseQuest:  [1001]
+<ce>실망스럽지만, 당신의 마음도 이해합니다. 데이드라와 관련된
+<ce>임무에 자원하는 것은 분명 %ra 모험가들에게서 흔히
+<ce>볼 수 있는 용기나 대담함 이상의 것을 요구하니까요.
+
+AcceptQuest:  [1002]
+<ce>정말인가요? 그럼 행운을 빕니다. 여기 데이드라의 심장이
+<ce>있습니다. 만약 =1stparton_일 안에 제 친구 _chemist_의
+<ce>손에 전달되지 않는다면, 너무 오래되어 사용할 수 없게
+<ce>됩니다. 전달을 마친 후, 보상을 받으러 돌아오십시오.
+<ce>___chemist_에게 행운과 신의 가호가 있기를.
+
+--in 1002, added the name of the city you need to go to at the end.
+
+QuestFail:  [1003]
+<ce>당신이 데이드라의 심장을 제 연금술사에게 전달하지 않았다는
+<ce>걸 제가 모를 줄 아셨나요? 분명한 실패에 대한 보상을
+<ce>기대하지는 않으시겠죠. 신선한 데이드라의 심장이 없으면,
+<ce>프로젝트는 또다시 지연될 겁니다. 오블리비언으로 꺼져버려!
+
+QuestComplete:  [1004]
+<ce>훌륭한 솜씨요, %pcf. 그 데이드라 새끼들이 당신을
+<ce>막지 못할 거라 예상했소. 당신의 뛰어난 기술은 충분히
+<ce>확인되었소. 고맙소, 여기 약속한 =reward_ 골드가 있소.
+
+--in 1004, changed _reward_ to =reward_ to ensure specific gold amount.
+
+RumorsDuringQuest:  [1005]
+하늘에 흉조가 나타났습니다. 데이드릭 별들이 밝게 빛나고
+있어요. <---> 마법사 길드의 결사에서는 오늘 밤
+데이드라들이 활발하게 움직인다고 하더군요.
+
+RumorsPostfailure:  [1006]
+점성술적 징후로 보아 데이드라들은 만족한 모양입니다.
+<---> 공기 중에서 유황 냄새가 나는 듯했는데,
+이제는 사라진 것 같군요.
+
+RumorsPostsuccess:  [1007]
+_chemist_의 상점에 활기가 넘치더군요.
+대규모 실험이 진행 중이라던데요.
+<---> _questgiver_의 곁에는 놀라울 정도로 믿음직한
+%ra 용병 덕분에 아주 기뻐하고 있습니다.
+
+QuestorPostsuccess:  [1008]
+용감한 젊은 %ra, 무엇을 도와드릴까요?
+<---> 반갑네, 영웅이여.
+데이드라들이 앙심을 품을까 봐 걱정하지는 않겠지.
+
+QuestorPostfailure:  [1009]
+<ce>당신이 데이드라의 심장을 전달하지 못해 실망했습니다.
+<ce>내가 그걸 잊었을 거라 생각했나 보군요. 당신이 다시 궁정에
+<ce>돌아오기로 한 이유가 그것 말고는 설명이 안 되니까요.
+
+QuestLogEntry:  [1010]
+<ce>오, 놀랍군요. 부패가 거의 없는 훌륭한 데이드라의
+<ce>심장입니다. 이제 서둘러 _questgiver_ 쪽으로 돌아가십시오,
+<ce>%pcf. %g3 의 마음은 복잡합니다. 만약
+<ce>=2ndparton_일 안에 돌아오지 않는다면, %g 는
+<ce>당신이 떠났다는 사실조차 잊어버릴지도 모릅니다.
+
+Message:  1011
+_chemist_요? =chemist_ 같은 사람을 닮았나요?
+제 생각에 %g 는 이곳의 %di 인 것
+같군요. <---> 이곳의 _questgiver_ %di 의
+의뢰를 수행하는 _chemist_의 이름으로 불리는
+연금술사가 있습니다.
+
+Message:  1012
+_questgiver_요? 왜요, %g 는 귀족입니다.
+최근 데이드릭 활동에 연루되어 있죠. <--->
+_questgiver_의 직함은 이곳의 %di 인 귀족입니다.
+<---> 다른 많은 귀족들처럼 _questgiver_도 수십 가지
+계획을 꾸미고 있죠. <---> _questgiver_의 신념은
+많은 귀족들이 그렇듯 연금술을 아주 신뢰합니다.
+
+Message:  1013
+데이드라의 심장이군요. 절대 상하지 않지만,
+어떤 조리법에는 신선한 상태여야 한다고 하더군요.
+<---> 데이드라의 심장이라. 데이드라들이 필멸자의
+손에 들어가는 걸 좋아할 만한 물건은 아니죠.
+
+Message:  1015
+%qdt:
+ ___questgiver_의 _questgiver_ 측이 제게 데이드라의 심장을
+ ___chemist_의 __chemist_에 있는 %g3 의
+ 연금술사에게 가져다 달라고 부탁했습니다. 이 연금술사는
+ _chemist_의 이름으로 불리는 =chemist_인데,
+ 데이드라들이 저를 막으려 하는 상황에서 =1stparton_일 안에
+ %g2 에게 도착할 수 있다면, _questgiver_ 측은 제가
+ __questgiver_ 방향으로 돌아왔을 때 보상을 줄 것입니다.
+
+Message:  1020
+<ce>데이드라가 쉿쉿거리며 말한다.
+<ce>"%pcn, 너는 네 이해를 넘어선 일에 간섭하고 있다.
+<ce>그래, 이제 네 이름은 우리에게 알려졌다. 그리고 우리는 우리
+<ce>형제의 데이드라의 심장이 우리 손에 돌아올 때까지 쉬지 않을
+<ce>것이다. 운명을 맞이할 준비를 해라, 필멸자여..."
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 3 times.
+--                %g occurs 6 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %pcf occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 4 times.
+--       =2alch_ occurs 2 times.
+--       =2questgiver_ occurs 1 time.
+--         =chemist_ occurs 3 times.
+--    ___questgiver_ occurs 1 time.
+--        __chemist_ occurs 1 time.
+--     __questgiver_ occurs 2 times.
+--         _chemist_ occurs 6 times.
+--      _questgiver_ occurs 9 times.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _reward_ gold
+Item _item_ daedra_heart anyInfo 1013
+
+Person _questgiver_ face 112 group Questor anyInfo 1012
+Person _chemist_ group Chemist remote anyInfo 1011
+Person _dummydaedra_ face 102 factiontype Daedra female remote
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+Clock _2ndparton_ 00:00 0 flag 1 range 2 5
+--reverted timer names and removed chaining. works this way, and better.
+
+Foe _daedra_ is Daedroth
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1015 step 0 
+	get item _item_
+
+variable _1stparton_
+_2ndparton_ task:
+	change repute with _questgiver_ by -30 
+	end quest 
+
+_pcgetsgold_ task:
+	when _S.06_ and _npcclicked_ 
+	give pc _reward_ 
+	end quest 
+
+_npcclicked_ task:
+	toting _item_ and _chemist_ clicked 
+	start timer _2ndparton_ 
+	say 1010 
+	change repute with _dummydaedra_ by -20 
+
+until _npcclicked_ performed:
+	create foe _daedra_ every 5 minutes 10 times with 33% success 
+
+variable _qgclicked_
+_queston_ task:
+	when _1stparton_ and not _npcclicked_ 
+	make _item_ permanent 
+	change repute with _questgiver_ by -30 
+	end quest 
+
+_S.06_ task:
+	clicked npc _questgiver_ 
+
+_S.07_ task:
+	injured _daedra_ saying 1020 

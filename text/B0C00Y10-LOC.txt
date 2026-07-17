@@ -1,0 +1,117 @@
+-- Quest: C:\QUESTS\WORKING\B0C00Y10.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: knight
+-- Repute: 0
+-- QuestId: 10
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: B0C00Y10
+DisplayName: 오크 소동
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+나는 _qgiver_ 측이다.
+당신은 이 기사단의 일원이 아니군.
+우리는 당신을 신뢰할 수 있는지 아직 확신할 수 없네. 만약
+우리 지역을 괴롭히는 오크 도적단의 우두머리를 처치한다면,
+우리의 생각을 바꿀 수도 있겠지. 그런 일을 할 배짱이 있나?
+
+RefuseQuest:  [1001]
+왜 놀랍지 않은 걸까?
+우리의 존경을 얻을 준비가 되면 다시 오게.
+
+AcceptQuest:  [1002]
+할 수 있는 만큼 많은 오크를 죽이게. 하지만 반드시
+그들의 우두머리인 =monster_ 처치를 완수해야 하네.
+그 사악한 무리는 ___dungeon_에 숨어 있지.
+만약 =2dung_일 안에 돌아오지 않는다면,
+나는 자네가 모두가 말하는 겁쟁이라는 걸 알게 될 걸세.
+
+QuestComplete:  [1004]
+흠. 자네를 우리 일원으로 고려해봐야겠군.
+나쁘지 않은 솜씨였어, %pcn.
+
+RumorsDuringQuest:  [1005]
+그 오크 부족은 지금까지 기사들을 잘도 피해 다녔지.
+<---> 그 오크 부족은 우두머리가 없으면
+길을 잃을 거야.
+
+RumorsPostfailure:  [1006]
+오크들은 다시 돌아올 것이다.
+그들의 우두머리가 아직 살아있으니까.
+
+RumorsPostsuccess:  [1007]
+어떤 %ra 존재가 갑자기 나타나 오크 우두머리를
+처치하고 떠나버렸어.
+
+QuestorPostsuccess:  [1008]
+무엇을 도와드릴까요, 오크 학살자님?
+
+QuestorPostfailure:  [1009]
+너는 내 시간을 낭비할 가치도 없다, 오크 애호가.
+<---> 내가 왜 비열한 오크 애호가와 대화를
+해야 하지?
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 기사단의 _qgiver_
+ 인물이 ___dungeon_에 본거지를 둔
+ 오크 무리를 소탕하라는 임무를 주었다.
+ 특히 우두머리인 =monster_ 처치가 반드시 필요하다.
+ =2dung_일 안에 %g2 에게 돌아가야 한다.
+ 그렇지 않으면 %g 는 내가 죽은 줄 알 것이다.
+
+Message:  1011
+=monster_ 사망이 확인되었다. 우두머리가 없으니,
+이 오크들은 결코 골칫거리 이상이 되지 못할 것이다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 1 time.
+--               %g2 occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--           =2dung_ occurs 2 times.
+--         =monster_ occurs 3 times.
+--       ___dungeon_ occurs 2 times.
+--        ___qgiver_ occurs 3 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+Person _local_ face 1 group Resident2 local
+
+Place _dungeon_ remote dungeon1
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Orc_sergeant
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	place foe _monster_ at _dungeon_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _S.02_ and _S.01_ 
+	give pc nothing 
+	change repute with _local_ by +4 
+	end quest 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 

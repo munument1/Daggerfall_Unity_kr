@@ -12,9 +12,9 @@ DisplayName: 떠돌이 임프
 QRC:
 
 QuestorOffer:  [1000]
-<ce>제 이름은 _questgiver_입니다.
-<ce>떠돌이 임프를 처치해 줄 사람이 필요합니다.
-<ce>관심 있으신가요? 보수는 _gold_ 골드입니다.
+<ce>제 이름은 _questgiver_입니다. 떠돌이 임프를 처치해 줄
+<ce>사람이 필요합니다. 관심 있으신가요? 보수는 _gold_
+<ce>골드입니다.
 
 RefuseQuest:  [1001]
 <ce>안됐군요.
@@ -27,26 +27,26 @@ RefuseQuest:  [1001]
 AcceptQuest:  [1002]
 <ce>태도가 좋군요, %pcn. 한 가지 말씀 안 드린 게
 <ce>있습니다. 이 임프는 매우 높은 지위의 마법사가 부리던
-<ce>사역마였습니다. 임프가 실험적인 주문에 휘말려 온갖
-<ce>종류의 주문과 같은 능력을 갖게 된 것 같습니다. 그 생물은
+<ce>사역마였습니다. 임프가 실험적인 주문에 휘말려 온갖 종류의
+<ce>주문과 같은 능력을 갖게 된 것 같습니다. 그 생물은
 <ce>__palace_의 _palace_에서 찾을 수 있을 겁니다.
 <ce>보아하니 스스로를 지배자로 생각하는 모양이더군요.
 <ce>조심하십시오, %pcn. 만약 =traveltime_일 안에
 <ce>돌아오지 않는다면, 죽은 것으로 간주하겠습니다.
 
 QuestComplete:  [1004]
-<ce>끈질긴 녀석이었죠, 그렇죠?
-<ce>보수는 확실히 받으실 자격이 있습니다.
+<ce>끈질긴 녀석이었죠, 그렇죠? 보수는 확실히 받으실 자격이
+<ce>있습니다.
 
 RumorsDuringQuest:  [1005]
-_palace_의 __palace_에서 무슨 일이
-벌어지고 있습니다. 아주 이상한 일이죠.
-<---> __palace_의 모든 사람이 _palace_에서
-무슨 일이 일어나는지 궁금해하고 있습니다.
+_palace_의 __palace_에서 무슨 일이 벌어지고
+있습니다. 아주 이상한 일이죠. <---> __palace_의
+모든 사람이 _palace_에서 무슨 일이 일어나는지
+궁금해하고 있습니다.
 
 RumorsPostfailure:  [1006]
-어떤 생물 하나가 _palace_의 __palace_에서
-튀어나와 남쪽으로 날아갔습니다.
+어떤 생물 하나가 _palace_의 __palace_에서 튀어나와
+남쪽으로 날아갔습니다.
 
 RumorsPostsuccess:  [1007]
 그 임프를 처치하기 위해 __palace_에 그
@@ -55,20 +55,20 @@ RumorsPostsuccess:  [1007]
 __palace_에 큰 피해를 입혔을지도 모릅니다.
 
 QuestorPostsuccess:  [1008]
-당신을 잊지 않았습니다, %pcf.
-그 성가신 임프를 처치한 %ra 분이시죠.
+당신을 잊지 않았습니다, %pcf. 그 성가신 임프를
+처치한 %ra 분이시죠.
 
 QuestorPostfailure:  [1009]
-<ce>__palace_의 파괴를 막지 못한 당신은
-<ce>돕기 위해 아무것도 하지 않았군요.
-<ce>그건 제게 아주 비열한 짓으로 보입니다, %pcf.
+<ce>__palace_의 파괴를 막지 못한 당신은 돕기 위해 아무것도
+<ce>하지 않았군요. 그건 제게 아주 비열한 짓으로 보입니다,
+<ce>%pcf.
 
 QuestLogEntry:  [1010]
 %qdt:
- ___questgiver_ 마법사 길드의 _questgiver_께서
- 내게 떠돌이 임프를 처치하라는 임무를 맡기셨다.
- 그 짐승은 __palace_의 _palace_에 숨어 있다.
- 성공하기까지 =traveltime_일이 남았다.
+ ___questgiver_ 마법사 길드의 _questgiver_께서 내게 떠돌이
+ 임프를 처치하라는 임무를 맡기셨다. 그 짐승은
+ __palace_의 _palace_에 숨어 있다. 성공하기까지
+ =traveltime_일이 남았다.
 
 
 -- Symbols used in the QRC file:

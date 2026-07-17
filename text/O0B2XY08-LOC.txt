@@ -1,0 +1,127 @@
+-- Quest: C:\QUESTS\WORKING\O0B2XY08.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: thief
+-- Repute: 2X
+-- QuestId: 8
+Messages: 11
+Quest: O0B2XY08
+DisplayName: 귀중한 약초
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 이름은 _qgiver_입니다. 이번 건은 조금 까다롭네,
+<ce>%pcf. 자네가 _drugs_의 절도를 완수한다면
+<ce>_gold_ 골드를 주겠네. _drugs_의 정체를 알고
+<ce>있겠지? 아주 중독성이 강한 약초라네. 임무를 맡겠나?
+
+RefuseQuest:  [1001]
+<ce>이 임무에 대해 소문이 새어 나간다면,
+<ce>누구를 찾아가야 할지 알겠지, %pcn.
+
+AcceptQuest:  [1002]
+<ce>__mansion_ 쪽으로 가게. _mansion_의 행방을 찾게.
+<ce>_drugs_의 절도를 수행하게.
+<ce>=traveltime_일 안에 가져오면, 보수를 주겠네.
+
+QuestComplete:  [1004]
+<ce>그냥 내 주머니에 슬쩍 넣어두게. 좋아.
+<ce>아무도 당신이 한 짓을 보지 못한 것 같군.
+<ce>여기 _gold_ 골드네, %pcn.
+
+RumorsDuringQuest:  [1005]
+모두가 __mansion_에서 거래되는 _drugs_의
+출처를 궁금해하고 있어요.
+
+RumorsPostfailure:  [1006]
+__mansion_의 _mansion_에 살던 _drugs_ 상인이
+있었는데, 이사를 가버렸답니다.
+
+RumorsPostsuccess:  [1007]
+_mansion_의 소유물이 __mansion_에서 강도를 당했지만,
+주인은 행정관에게 알릴 생각이 없나 봅니다.
+
+QuestorPostsuccess:  [1008]
+그냥 태연하게 행동해요, %pcf.
+_drugs_ 거래는 아직 유효하니까요.
+
+QuestorPostfailure:  [1009]
+<ce>%oth, %pcf. 당신에게 그
+<ce>_drugs_의 회수를 부탁할 수 있을 거라 생각했건만.
+<ce>제대로 일을 처리하고 싶다면, 관련된 %ra 처치부터
+<ce>하는 게 낫겠군요. 오블리비언으로 가버려, 꼬마야.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 도둑 길드의 _qgiver_ 측에서
+ __mansion_에 있는 _mansion_에게서 _drugs_
+ 회수를 부탁하면 보상을 주겠다고 했습니다. 보상을 받으려면
+ =traveltime_일 안에 그에게 돌아가야 합니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 1 time.
+--              %pcf occurs 3 times.
+--              %pcn occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 6 times.
+--      =traveltime_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--        __mansion_ occurs 5 times.
+--           _drugs_ occurs 9 times.
+--            _gold_ occurs 4 times.
+--         _mansion_ occurs 4 times.
+--          _qgiver_ occurs 2 times.
+
+QBN:
+Item _drugs_ drug
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _mansion_ remote house1
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Battle_mage
+Foe _F.01_ is Iron_atronach
+Foe _F.02_ is Daedra_seducer
+Foe _F.03_ is Werewolf
+
+--	Quest start-up:
+	place item _drugs_ at _mansion_ 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pc at _mansion_ set _S.01_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.01_ task:
+	pick one of _guard1_ _guard2_ _guard3_ _guard4_ 
+
+_questdone_ task:
+	toting _drugs_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+_guard1_ task:
+	create foe _F.00_ every 4 minutes 1 times with 10% success 
+
+_guard2_ task:
+	create foe _F.01_ every 4 minutes 1 times with 10% success 
+
+_guard3_ task:
+	create foe _F.02_ every 4 minutes 1 times with 10% success 
+
+_guard4_ task:
+	create foe _F.03_ every 4 minutes 1 times with 10% success 
+
+_S.07_ task:
+	clicked item _drugs_ 
+
+_S.08_ task:
+	when _S.07_ and _traveltime_ 
+	make _drugs_ permanent 

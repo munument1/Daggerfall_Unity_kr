@@ -1,0 +1,51 @@
+---- Example quest used to test Person resource
+---- Send player on a hunt to click both the King and Queen of Daggerfall
+
+Quest: __DEMO07
+
+
+QRC:
+
+QuestLogEntry:  [1010]
+%qdt 당신은 __dirtypit_의 여관
+_dirtypit_에서 _king_의 대면을 갖고,
+대거폴 성의 _queen_의 방문을 완료해야 합니다.
+
+Message: 1030
+이봐요 %pcn 님, 방금 _king_ 항목을
+클릭하셨군요!
+
+Message: 1035
+이봐요 %pcn 님, 방금 _queen_ 항목을
+클릭하셨군요!
+
+Message: 1040
+잘하셨습니다, %pcn 님.
+당신은 대거폴의 왕과 여왕을 클릭하셨습니다.
+
+QBN:
+
+Place _dirtypit_ local tavern
+
+Person _king_ named King_Gothryd
+Person _queen_ named Queen_Aubk-i atHome
+
+
+---- Quest startup
+log 1010 step 0
+create npc at _dirtypit_
+place npc _king_ at _dirtypit_
+
+_clickedKing_ task:
+clicked npc _king_
+say 1030
+
+_clickedQueen_ task:
+clicked npc _queen_
+say 1035
+
+_clickedBoth_ task:
+when _clickedKing_ and _clickedQueen_
+say 1040
+remove log step 0
+end quest

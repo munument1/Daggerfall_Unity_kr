@@ -1,0 +1,110 @@
+-- Quest: C:\QUESTS\WORKING\C0C00Y13.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: temple
+-- Repute: 0
+-- QuestId: 13
+Messages: 12
+Quest: C0C00Y13
+DisplayName: 심부름
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>축복이 있기를, %pcn. 비록 자네는 이교도이고 우리
+<ce>신전을 후원하지 않지만 말일세. 나는 _qgiver_라네.
+<ce>자네가 __qgiver_의 호의를 얻고 싶어 하는군. 이
+<ce>_religitem_ 물건을 =traveltime_일 안에 ___priest_에게
+<ce>전달해주게. 그러면 자네를 좋게 말해줄 수 있네.
+
+RefuseQuest:  [1001]
+<ce>자네 손해일세. 당분간은 이 신전의 호의를 구할 생각은 말게,
+<ce>%pcn.
+
+AcceptQuest:  [1002]
+<ce>여기 _religitem_ 물건이 있네.
+<ce>___priest_에 있는 __priest_의
+<ce>_priest_에게 가져다주게. 아, 깜빡할 뻔했군.
+<ce>경쟁 신전에서 자네를 막으려 폭도들을 보낼지도 모르네.
+
+QuestComplete:  [1004]
+<ce>신의 축복이 있기를, %pcn.
+<ce>이 _religitem_ 물건이 이곳에 절실히 필요했네.
+
+RumorsDuringQuest:  [1005]
+그 _religitem_ 물건을 두고 두 신전이 경쟁 중이라네.
+
+RumorsPostfailure:  [1006]
+_priest_ 측은 %g3 의 _religitem_ 물품을
+얻지 못했고, _qgiver_ 측은 분노하고 있네.
+
+RumorsPostsuccess:  [1007]
+용감한 %ra 덕분에 _priest_ 측과 __qgiver_
+지역은 그 _religitem_ 물품을 손에 넣었네.
+
+QuestorPostsuccess:  [1008]
+%god, 축복이 있기를. 물론 %pcf 에 관해서는
+기억하고말고. 잘 지냈나, 나의 아이야?
+
+QuestorPostfailure:  [1009]
+_priest_의 행방은 묘연하고 _religitem_ 또한 가져오지
+못했으니, 나는 기분이 좋지 않네.
+
+QuestLogEntry:  [1010]
+%qdt:
+ __qgiver_의 _qgiver_ 측에서 내게
+ ___priest_에 있는 __priest_의 _priest_에게
+ _religitem_ 전달이라는 임무를 주었네.
+ =traveltime_일 안에 도착해야 하네.
+
+Message:  1011
+<ce>그 _religitem_의 경우 절대 __priest_에 도착하지 못할
+<ce>걸세. 대신, 내가 자네의 머리를 그들에게 배달해주지!
+
+
+-- Symbols used in the QRC file:
+--
+--               %g3 occurs 1 time.
+--              %god occurs 1 time.
+--              %pcf occurs 1 time.
+--              %pcn occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 16 times.
+--      =traveltime_ occurs 9 times.
+--        ___priest_ occurs 6 times.
+--         __qgiver_ occurs 3 times.
+--          _priest_ occurs 5 times.
+--          _qgiver_ occurs 3 times.
+--       _religitem_ occurs 10 times.
+
+QBN:
+Item _religitem_ religious
+
+Person _qgiver_ group Questor
+Person _priest_ group Group_5.0 remote
+Person _enemy_ face 176 group Local_4.0 remote
+
+Clock _traveltime_ 00:00 0 flag 1 range 1 2
+
+Foe _thief_ is Thief
+Foe _spellsword_ is Spellsword
+
+--	Quest start-up:
+	create foe _thief_ every 12 minutes 2 times with 5% success 
+	create foe _spellsword_ every 12 minutes 2 times with 5% success 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	get item _religitem_ 
+
+_traveltime_ task:
+	change repute with _qgiver_ by -5 
+	end quest 
+
+_questdone_ task:
+	toting _religitem_ and _priest_ clicked 
+	give pc nothing 
+	end quest 
+
+_S.02_ task:
+	injured _spellsword_ saying 1011 
+	injured _thief_ saying 1011 

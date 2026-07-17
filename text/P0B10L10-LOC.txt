@@ -1,0 +1,186 @@
+-- Quest: C:\QUESTS\WORKING\P0B10L10.Qbn.
+-- StartsBy: letter
+-- Questee: member
+-- Questor: vampire
+-- Repute: 10
+-- QuestId: 10
+Messages: 18
+Quest: P0B10L10
+DisplayName: 보호자
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+오류: 퀘스트 텍스트 1000이 호출되었습니다.
+
+RefuseQuest:  [1001]
+오류: 퀘스트 텍스트 1001이 호출되었습니다.
+
+AcceptQuest:  [1002]
+오류: 퀘스트 텍스트 1002이 호출되었습니다.
+
+QuestComplete:  [1004]
+<ce>우리 같은 자가 여행하는 것은 쉬운 일이 아닙니다.
+<ce>_vamp_의 이름으로 불리는 짐까지 더해졌으니, 당신의
+<ce>고난은 짐작하고도 남습니다. 그 독기 어린 =mage_의
+<ce>공포까지 더해졌는데도, 왜 %vam 혈족이 당신을
+<ce>그토록 높이 평가하는지 알겠군요, 훌륭한 %pcf 여.
+
+RumorsDuringQuest:  [1005]
+어떤 이들에 따르면 =mage_의 명성은 %reg 에
+남은 유일하게 제대로 된 뱀파이어 사냥꾼이라고 합니다.
+<---> =mage_의 실력이라면 대부분의
+뱀파이어와 제대로 싸울 수 있을 겁니다.
+
+RumorsPostfailure:  [1006]
+__vamp2_의 어떤 =vamp2_의 행방을 %ra
+%pcn 의 일행이 찾고 있었습니다.
+
+RumorsPostsuccess:  [1007]
+=mage_의 모습은 겉보기엔 %g 가
+자칭하는 그런 뱀파이어 사냥꾼이 아닌가 봅니다.
+<---> =mage_의 활약을 기대했는데.
+%g 가 그렇게 대단하지는 않았나 보군요.
+
+QuestorPostsuccess:  [1008]
+오류: 퀘스트 텍스트 1008이 호출되었습니다.
+
+QuestorPostfailure:  [1009]
+오류: 퀘스트 텍스트 1009이 호출되었습니다.
+
+QuestLogEntry:  [1010]
+__vamp_ ___vamp_
+ 
+친애하는 %pcn 에게,
+ 
+%vam 의 부름이 당신을 필요로 합니다.
+즉시 오십시오.
+ 
+죽음 안에서,
+ 
+_vamp_
+
+Message:  1011
+%qdt:
+ %vam 의 뱀파이어인 _vamp_에게서
+ ___vamp_의 __vamp_의 명칭으로 불리는 곳으로
+ 즉시 와달라는 편지를 받았습니다.
+
+Message:  1012
+<ce>이렇게 빨리 와주셔서 감사합니다.
+<ce>이곳 %reg 에는 우리 부족의 위험한 적이 있습니다.
+<ce>=mage_의 이름으로 불리는 마법사죠.
+<ce>저도 %g2 와 불행한 만남을 가졌습니다.
+<ce>이 문제에 대해 ___vamp2_에 있는 _vamp2_의 조언을
+<ce>구하는 것이 필수적이지만, =mage_의 추격이 저를 찾고
+<ce>있다는 것을 압니다. 저는 직접 여행하기엔 너무 약합니다.
+<ce>당신이 저를 ___vamp2_의 __vamp2_ 쪽으로 호위해
+<ce>주셔야 합니다. 그 악마 마법사가 더 많은 동료를 불러들이기
+<ce>전에 서둘러야 합니다. =queston_일 밤, %pcf.
+<ce>긴 시간은 아니지만, 우리는 시도해야 합니다.
+
+Message:  1013
+<ce>아직 독기가 남아있는 피 빨아먹는 놈이군.
+<ce>이거 상황이 더 흥미로워지겠어!
+
+Message:  1014
+%qdt:
+ 나는 _vamp_의 호위를 맡아 ___vamp2_의
+ _vamp2_ 쪽으로 이동 중입니다. 우리를 뒤쫓는 마법사가
+ 지원군을 부르기 전에 __vamp2_에 도착해야 합니다.
+
+Message:  1015
+<ce>"%pcf!" _vamp_의 외침입니다. "당신은
+<ce>%vam 의 재앙인 =mage_ 처치에 성공했군요!"
+
+Message:  1016
+<ce>"너무 오래 걸리는군," _vamp_의 말과 함께,
+<ce>%g3 의 힘으로 비틀거리며 떠납니다.
+
+Message:  1017
+<ce>창백하고 눈매가 매서운 소년이 당신에게 편지를 건네고는
+<ce>어둠 속으로 사라집니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %dat occurs 1 time.
+--                %g occurs 65 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %pcf occurs 3 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--              %reg occurs 3 times.
+--              %vam occurs 5 times.
+--            =mage_ occurs 8 times.
+--         =queston_ occurs 4 times.
+--           =vamp2_ occurs 4 times.
+--          ___vamp_ occurs 5 times.
+--          __vamp2_ occurs 3 times.
+--           __vamp_ occurs 3 times.
+--           _vamp2_ occurs 2 times.
+--            _vamp_ occurs 9 times.
+
+QBN:
+Item _letter_ letter used 1010
+
+Person _vamp_ factiontype Vampire_Clan local
+Person _vamp2_ factiontype Vampire_Clan remote
+
+
+Clock _queston_ 00:00 0 flag 1 range 1 2
+
+Foe _mage_ is Mage
+
+--	Quest start-up:
+	dialog link for person _vamp2_ 
+	dialog link for person _vamp_ 
+	_letter_ used do _readletter_ 
+	have _letter_ set _S.10_ 
+	give pc _letter_ notify 1017 
+
+_queston_ task:
+	end quest 
+
+_vampclicked_ task:
+	clicked npc _vamp_ 
+	log 1014 step 1 
+	hide npc _vamp_ 
+	say 1012 
+	add _vamp_ face 
+	create npc _vamp2_ 
+
+variable _S.02_
+_S.03_ task:
+	when _vampclicked_ and not _S.04_ 
+	create foe _mage_ every 15 minutes 5 times with 50% success 
+
+_S.04_ task:
+	injured _mage_ 
+	say 1013 
+
+variable _reward_
+_S.06_ task:
+	killed 1 _mage_ 
+	say 1015 
+
+_S.07_ task:
+	clicked npc _vamp2_ 
+	give pc nothing 
+	change repute with _vamp_ by +5 
+	end quest 
+
+_S.08_ task:
+	when _queston_ and not _S.07_ 
+	say 1016 
+	change repute with _vamp_ by -10 
+
+_readletter_ task:
+	add dialog for person _vamp_ 
+	log 1011 step 0 
+	create npc _vamp_ 
+
+_S.10_ task:
+	start timer _queston_ 

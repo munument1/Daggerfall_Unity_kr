@@ -1,0 +1,156 @@
+-- Quest: C:\QUESTS\WORKING\E0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Arkay
+-- Repute: 0
+-- QuestId: 0
+Messages: 21
+Quest: E0B00Y00
+DisplayName: 훼손된 신전
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>사실, 당신 같은 사람이 분명히 필요합니다.
+<ce>근처에 훼손된 신전이
+<ce>하나 있는데, 이름은 ___mondung_입니다.
+<ce>들어본 적이 있을지도 모르겠군요.
+<ce>한동안 그곳은 악의 소굴이었지만,
+<ce>우리는 그 영향력을 무시해 왔습니다.
+<ce>결국 다른 힘들과의 균형을 맞추기 위해서였죠.
+<ce>이제 그 균형이
+<ce>깨졌습니다. 누군가 바로잡아야 합니다.
+<ce>도와주실 수 있겠습니까?
+<--->
+<ce>___mondung_의 균형이 %reg 에 조화를
+<ce>가져오려는 우리의 노력을
+<ce>위협하는 새로운 침입으로 인해 무너졌습니다.
+<ce>우리는 ___mondung_의 정화를 이룰 용사,
+<ce>즉 당신 같은 사람이 필요합니다.
+<ce>해주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>실망스럽군요. 뭐, 분명 다른 사람을 찾을 수 있겠죠.
+
+AcceptQuest:  [1002]
+<ce>훌륭합니다, %pcf. 우리가
+<ce>필요로 하는 건 그 불경한 ___mondung_에 둥지를 튼
+<ce>강력한 라이칸스로프를
+<ce>처치하는 것입니다.
+<ce>그놈이 그 지역에서 우리 교단의 확장을 위협하고 있습니다.
+<ce>=1stparton_일이 지나도 돌아오지 않는다면, 우리가 직접
+<ce>처리할 것이며 당신의 보상은 몰수될 것입니다.
+<ce>당연히, 지금 당장
+<ce>떠나는 게 좋을 겁니다. 행운을 빕니다.
+<--->
+<ce>%oth, 잘됐군요, %pcf. 이제,
+<ce>=1stparton_일 안에 ___mondung_의 평형을 회복해야 합니다.
+<ce>우리가 아는 가장 빠르고 적절한 방법은 ___mondung_의
+<ce>깊은 곳에
+<ce>사악한 둥지를 튼 라이칸스로프를 처치하는 것입니다.
+<ce>서두르세요, %pcf.
+<ce>=1stparton_번의 해가 지기 전까지
+<ce>돌아오지 않으면, 보상은 몰수될 것입니다.
+
+
+QuestFail:  [1003]
+<ce>서두르는 게 좋을 겁니다, %pcf.
+<ce>그 늑대인간형 야수를 처치할 시간이 얼마 남지 않았습니다.
+<ce>정확히 =1stparton_일 남았습니다.
+
+QuestComplete:  [1004]
+<ce>아케이 신전에 큰 공을 세우셨습니다, %pcf.
+<ce>잊지 않을 것입니다. _reward_ 골드를 즐기십시오 --
+<ce>당신은 충분히 그럴 자격이 있습니다.
+
+RumorsDuringQuest:  [1005]
+이 근처에 웨어울프 같은 놈이 돌아다닌다는 소문을 들었어.
+<---> 웨어보어가 ___mondung_의 명칭으로 불리는
+곳에 둥지를 틀었다더군. <---> 어젯밤에 울음소리
+들었어? 늑대 울음소리 말이야?
+
+RumorsPostfailure:  [1006]
+루핀은 정말 떠돌이인가 봐. 우리 루핀이 남쪽으로
+이동했다는 소문을 들었어. <---> 사촌이 그러는데
+우리 웨어보어가 남쪽 어딘가에서 목격됐대.
+
+RumorsPostsuccess:  [1007]
+그 웨어울프가 낮에는 사제였다는 사실이 밝혀졌대!
+<---> 웨어보어가 죽었다니 다들 안심하는 분위기야.
+<---> 누군가 %ra 사냥에 성공했다는
+소식 들었어?
+
+QuestorPostsuccess:  [1008]
+___mondung_ 내의 균형을 회복하신 분을 어떻게
+도와드릴까요?
+
+QuestorPostfailure:  [1009]
+그 루핀을 처치하지 못했군요, %pcf.
+매우 유감입니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 아케이 신전의 _questgiver_ 측에서 ___mondung_의 명칭으로
+ 불리는 그들의 옛 신전에 숨어 있는 웨어크리처를 처치하면
+ _reward_ 골드를 주겠다고 제안했다. ___questgiver_ 쪽으로
+ 돌아오기까지 =1stparton_일의 시간이 있다.
+
+Message:  1020
+<ce>당신은 ___mondung_의 라이칸스로프를 처치했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 1 time.
+--              %pcf occurs 8 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 7 times.
+--       ___mondung_ occurs 13 times.
+--    ___questgiver_ occurs 2 times.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon4
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _wolf_ is Werewolf
+Foe boar is Wereboar
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	pick one of _wereboar_ _werewolf_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_mondead_ task:
+	killed 1 _wolf_ saying 1020 
+	killed 1 boar saying 1020 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 
+
+_werewolf_ task:
+	place foe _wolf_ at _mondung_ 
+
+_wereboar_ task:
+	place foe boar at _mondung_ 

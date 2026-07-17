@@ -1,0 +1,352 @@
+-- Quest: C:\QUESTS\WORKING\S0000999.Qbn.
+-- Main story quest.
+-- QuestId: 999
+Messages: 42
+Quest: S0000999
+DisplayName: 메인 퀘스트 백본
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+오류: MAIN.Q에서 Questtext 1000 호출됨
+
+RefuseQuest:  [1001]
+오류: MAIN.Q에서 Questtext 1001 호출됨
+
+AcceptQuest:  [1002]
+오류: MAIN.Q에서 Questtext 1002 호출됨
+
+QuestFail:  [1003]
+오류: MAIN.Q에서 Questtext 1003 호출됨
+
+QuestLogEntry:  [1010]
+%qdt:
+ 나는 Lysandus 왕의 유령을 조사하라는 황제의 임무를
+ 수행 중이다. 그의 영혼이 대거폴 시를 떠돌고 있다.
+ 황제께서 직접 그의 유령을 잠재우라는 임무를 내리셨다.
+ 그가 대거폴의 여왕에게 보낸 편지에 관한 사소한 문제도
+ 있다. 편지에 무슨 일이 있었는지 알아낸다면 황제께서
+ 매우 고마워하실 것이다. 대거폴에 도착하기 전, 갑작스러운
+ 폭풍으로 배가 전복되었다. 겨우 이 동굴로 살아남았다.
+
+Message:  1011
+%qdt:
+ 나는 여관 방에서 Lady Brisienna를 만났다. 그녀는 일리아크
+ 만의 세 주요 세력이 대거폴, 웨이레스트, 센티넬이라고
+ 말했다. Lysandus 왕의 유령에 대한 미스터리를 조사하려면
+ 이 영지들의 왕가와 대화하는 것부터 시작해야 한다.
+
+Message:  1026
+<ce>당신을 알아보며 미소 짓는 어린 시종이 다가와 당신의
+<ce>이름을 묻지도 않고
+<ce>당신 앞으로 된 편지를 건넵니다.
+<ce>당신의 모든 질문에 그는 그저 멍한 표정과 미소로만
+<ce>대답할 뿐입니다.
+<--->
+<ce>당신의 손에 편지가 쥐어집니다.
+<ce>누가 준 것인지 보려고 뒤를 돌아보지만,
+<ce>군중 속으로 사라지는 제복의 뒷모습만 얼핏 보일 뿐입니다.
+<--->
+<ce>시종이 앞으로 다가와 "%pcn 님께 드리는
+<ce>편지입니다."라고 말하며 쪽지를 건넵니다.
+<--->
+<ce>전령이 당신에게 다가와 편지를 내밉니다. "당신 인상착의를
+<ce>가진 분께 이 편지를 전해달라고 들었습니다."
+<ce>전령이 말합니다. 당신이 편지를 받자,
+<ce>전령은 돌아서서 빠르게 걸어갑니다.
+<--->
+<ce>먹을 것을 찾으려고 가방을 뒤지다가 쪽지를 발견합니다.
+<ce>아까는 없던 것입니다.
+<--->
+<ce>얼굴이 붉어진 전령이 "%pcn 님께 드리는 편지입니다!
+<ce>아, 당신이군요. 여기 있습니다. 가봐야겠네요.
+<ce>다른 배달할 곳이 있어서요."라고 외치며 당신을
+<ce>놀라게 합니다.
+
+Message:  1031
+<ce>%pcn, 당신에게 맡길 특별한
+<ce>임무가 있습니다. 하지만 솔직히 말해서,
+<ce>당신은 아직 제게 능력을 증명하지 못했습니다.
+<ce>당신을 신뢰할 수 있을지 모르겠군요.
+<ce>당신이 제 궁정의 다른 구성원들과 제 가족을
+<ce>어떻게 대하는지 지켜보겠습니다.
+<ce>그것으로 당신의 인품을 판단할 것입니다.
+<--->
+<ce>당신의 용기와 기술은 나무랄 데 없습니다.
+<ce>당신을 신뢰할 수 있다면, 특히 민감한 임무를 맡기고 싶군요.
+<ce>제가 당신을 신뢰할 수 있음을 보여준 뒤 다시 찾아오십시오.
+
+Message:  1032
+<ce>%pcn, 당신에게 완벽한 특별한 임무가
+<ce>있습니다. 하지만 지금 당신에게 그 임무를 준다면 당신의
+<ce>사망 선고서에 서명하는 것과 다름없겠지요.
+<ce>더 숙련된 모습이 되면 다시 찾아오십시오.
+<ce>그때 임무를 맡길지도 모르니.
+<--->
+<ce>정말 안타깝군요, %pcf.
+<ce>당신처럼 신뢰할 수 있는 사람이 필요한
+<ce>특별한 임무가 있습니다. 하지만 살아남으려면 더 뛰어난
+<ce>기술을 가진 사람이 필요합니다.
+<ce>기술을 더 연마한 뒤 다시 찾아오십시오.
+
+Message:  1033
+<ce>%pcn, 당신이라면 내게 도움이 될지도 모르겠군.
+<ce>하지만 아직 당신을 충분히 신뢰할 수 없네.
+<ce>당신이 믿을 만한 %ra 의 명칭으로 불리는 소문이
+<ce>들리면, 다시 와서 물어보게나.
+
+Message:  1034
+<ce>당신의 도움이 절실하네, %pcn.
+<ce>하지만 당신은 내가 해야 할 일을 감당하기엔 너무 약해.
+<ce>더 강해져서 다시 찾아오게.
+
+Message:  1035
+<ce>당신의 손길이 필요한 섬세한 문제들이 있습니다.
+<ce>먼저 당신의 가치를 증명하십시오. 제 후원을 받을 자격이
+<ce>있다는 신뢰를 얻은 뒤 다시 찾아오십시오.
+
+Message:  1036
+<ce>당신이 신뢰할 수 있는 사람이라는 건 압니다.
+<ce>하지만 솔직히 말해서, 당신은 미숙합니다.
+<ce>더 뛰어난 기술을 갖추고 더 치명적인 상대가 된다면,
+<ce>당신에게 아주 흥미로운 일을 맡길 수 있을 것 같군요.
+
+Message:  1040
+%pcn,
+ 
+안녕하신가. 여행은 순조로웠길 바라네. 자네가 대거폴의 유령
+현상에 깊은 관심이 있다고 들었네. 내 아버지와 Lysandus
+왕은 꽤 가까운 사이였지. 나를 찾아온다면 Lysandus와 관련된
+최근 사건들에 대해 약간의 정보를 줄 수 있을지도 모르겠군.
+ 
+Prince Lhotun, Castle Sentinel
+
+Message:  1041
+친애하는 %pcf 님,
+ 
+해외에 있는 제 정보원들에 따르면 당신이 어떤 편지의
+행방에 관심이 있다고 하더군요. 황제라면 그렇게
+부주의해서는 안 되며, 여왕 또한 마찬가지입니다.
+웨이레스트 성으로 저를 찾아오시는 게 좋을 겁니다. 당신이
+흥미로워할 만한 아주 재미있는 소식들을 알고 있거든요.
+ 
+<ce>-- 모르기아 웨이레스트의 공주
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 3 times.
+--              %pcn occurs 7 times.
+--              %qdt occurs 2 times.
+--               %ra occurs 1 time.
+
+QBN:
+Item _I.00_ letter used 1040
+Item _I.01_ letter used 1041
+
+
+
+Clock mainquestclock 00:00 0 flag 9 range 0 0
+
+
+--	Quest start-up:
+	log 1010 step 0 
+
+_S.00_ task:
+	when Prince_Lhotun is available 
+
+_S.01_ task:
+	when Prince_Helseth is available 
+
+_S.02_ task:
+	when Medora is available 
+
+_S.03_ task:
+	when Princess_Morgiah is available 
+
+_S.04_ task:
+	when Queen_Aubk-i is available 
+
+_S.05_ task:
+	when Princess_Elysana is available 
+
+_S.06_ task:
+	when Cyndassa is available 
+
+_S.07_ task:
+	when _S.47_ and _S.48_ 
+	end quest 
+
+_S.08_ task:
+	when repute with Cyndassa is at least 0 
+
+_S.09_ task:
+	when repute with Princess_Elysana is at least 0 
+
+_S.10_ task:
+	when repute with Queen_Aubk-i is at least 0 
+
+_S.11_ task:
+	when repute with Princess_Morgiah is at least 0 
+
+_S.12_ task:
+	when repute with Medora is at least 0 
+
+_S.13_ task:
+	when repute with Prince_Helseth is at least 0 
+
+_S.14_ task:
+	when repute with Prince_Lhotun is at least 0 
+
+_S.15_ task:
+	level 5 completed 
+
+_S.16_ task:
+	level 4 completed 
+
+_S.17_ task:
+	level 8 completed 
+
+_S.18_ task:
+	level 3 completed 
+
+_S.19_ task:
+	level 3 completed 
+
+_S.20_ task:
+	level 6 completed 
+
+_S.21_ task:
+	level 5 completed 
+
+_S.22_ task:
+	when _S.04_ and _S.10_ and not _S.19_ 
+	say 1032 
+
+_S.23_ task:
+	when _S.06_ and _S.08_ and not _S.21_ 
+	say 1034 
+
+_S.24_ task:
+	when _S.05_ and _S.09_ and not _S.20_ 
+	say 1032 
+
+_S.25_ task:
+	when _S.01_ and _S.13_ and not _S.16_ 
+	say 1032 
+
+_S.26_ task:
+	when _S.00_ and _S.14_ and not _S.15_ 
+	say 1032 
+
+_S.27_ task:
+	when _S.02_ and _S.12_ and not _S.17_ 
+	say 1036 
+
+_S.28_ task:
+	when _S.03_ and _S.11_ and not _S.18_ 
+	say 1032 
+
+_S.29_ task:
+	when _S.04_ and not _S.10_ 
+	say 1031 
+
+_S.30_ task:
+	when _S.06_ and not _S.08_ 
+	say 1033 
+
+_S.31_ task:
+	when _S.05_ and not _S.09_ 
+	say 1031 
+
+_S.32_ task:
+	when _S.01_ and not _S.13_ 
+	say 1031 
+
+_S.33_ task:
+	when _S.00_ and not _S.14_ 
+	say 1031 
+
+_S.34_ task:
+	when _S.02_ and not _S.12_ 
+	say 1035 
+
+_S.35_ task:
+	when _S.03_ and not _S.11_ 
+	say 1031 
+
+_S.36_ task:
+	when _S.10_ and _S.19_ and _S.04_ 
+	start quest 5 5 
+	unset _S.04_ 
+
+_S.37_ task:
+	when _S.06_ and _S.08_ and _S.21_ 
+	start quest 7 7 
+	unset _S.30_ _S.23_ _S.06_ 
+
+_S.38_ task:
+	when _S.05_ and _S.09_ and _S.20_ and not _S.47_ 
+	start quest 6 6 
+	unset _S.05_ 
+
+_S.39_ task:
+	when _S.01_ and _S.13_ and _S.16_ and not _S.43_ 
+	start quest 2 2 
+	unset _S.01_ 
+
+_S.40_ task:
+	when _S.00_ and _S.14_ and _S.15_ 
+	start quest 1 1 
+	unset _S.00_ 
+
+_S.41_ task:
+	when _S.02_ and _S.12_ and _S.17_ 
+	start quest 3 3 
+	unset _S.34_ _S.27_ _S.02_ 
+
+_S.42_ task:
+	when _S.03_ and _S.11_ and _S.18_ 
+	start quest 4 4 
+	unset _S.03_ 
+
+ElysannaSatisfied _S.43_
+MetLadyBrisienna _S.44_
+	log 1011 step 1 
+
+_S.45_ task:
+	when _S.14_ and _S.15_ 
+	give pc _I.00_ notify 1026 
+
+_S.46_ task:
+	when _S.11_ and _S.18_ 
+	give pc _I.01_ notify 1026 
+
+MyniseraSatisfied _S.47_
+LiftedCurse _S.48_
+variable mainquestclock
+TookTheCure _S.50_
+variable _S.51_
+variable _S.52_
+variable _S.53_
+_S.54_ task:
+	when _S.51_ 
+	start quest 997 997 
+	clear _S.50_ 
+
+_S.55_ task:
+	when _S.52_ 
+	start quest 998 998 
+	clear _S.50_ 
+
+_S.56_ task:
+	when _S.53_ 
+	start quest 998 998 
+	clear _S.50_ 
+
+_S.57_ task:
+	when _S.50_ 
+	clear _S.52_ _S.51_ _S.54_ _S.55_ 
+	clear _S.50_ _S.57_ _S.53_ _S.56_ 
+
+OpenedShapeshifters _S.58_

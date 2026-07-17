@@ -1,0 +1,174 @@
+-- Quest: C:\QUESTS\WORKING\P0B20L09.Qbn.
+-- StartsBy: letter
+-- Questee: member
+-- Questor: vampire
+-- Repute: 20
+-- QuestId: 9
+Messages: 22
+Quest: P0B20L09
+DisplayName: 선봉대
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+오류: 퀘스트 텍스트 1000 호출됨
+
+RefuseQuest:  [1001]
+오류: 퀘스트 텍스트 1001 호출됨
+
+AcceptQuest:  [1002]
+오류: 퀘스트 텍스트 1002 호출됨
+
+QuestFail:  [1003]
+오류: 퀘스트 텍스트 1003 호출됨
+
+QuestComplete:  [1004]
+<ce>경의를 표합니다, 늑대인간형 야수 사냥꾼이여.
+<ce>당신의 피의 아버지는 당신의 효율적인 섬멸 작업 소식을
+<ce>듣고 매우 기뻐할 것입니다. =wereboar_의 엄니를
+<ce>%vam 사이에서 명예의 징표로 간직하십시오.
+
+RumorsDuringQuest:  [1005]
+___mondung_의 내부는 누구도 절대 들어가서는 안 될
+던전입니다. 절대요.
+
+RumorsPostfailure:  [1006]
+지난밤 ___mondung_에서 승리의 울부짖음이 들려왔습니다.
+
+RumorsPostsuccess:  [1007]
+___mondung_의 내부는 다시 무덤처럼 고요하고
+평화로워졌습니다.
+
+QuestorPostsuccess:  [1008]
+오류: 퀘스트 텍스트 1008 호출됨
+
+QuestorPostfailure:  [1009]
+오류: 퀘스트 텍스트 1009 호출됨
+
+QuestLogEntry:  [1010]
+__vamp_ ___vamp_
+ 
+친애하는 %pcn 에게,
+ 
+%vam 의 부름이 당신을 필요로 합니다.
+즉시 오십시오.
+ 
+죽음 안에서,
+ 
+_vamp_
+
+Message:  1011
+<ce>존경하는 %pcn, 안녕하십니까. %vam 의
+<ce>원로들이 곧 %reg 에서 모일 예정입니다.
+<ce>하지만 조롱이라도 하듯, 라이칸스로프 무리가 원로들이
+<ce>모이기로 한 ___mondung_에 자리를 잡았습니다.
+<ce>부디 이 해충들과 그 일당에게 ___mondung_의 권한이
+<ce>%vam 의 소유이며 우리는 어떠한 침입도 용납하지
+<ce>않음을 보여주십시오. 그들의 우두머리인 웨어보어를 포함하여
+<ce>가능한 한 많이 처치하십시오. 그의 엄니 하나를 가지고
+<ce>=queston_일 밤 안에 돌아오면 %vam 께서 매우
+<ce>감사해하실 것입니다. 안녕히 가십시오.
+
+Message:  1012
+%qdt:
+ %vam 의 _vamp_ 쪽으로부터 ___vamp_에
+ 있는 __vamp_ 쪽으로 즉시 와달라는 긴급한
+ 편지를 받았다.
+
+Message:  1013
+%qdt:
+ _vamp_의 명령으로 나는 ___mondung_ 쪽으로 향했다.
+ 그곳은 뻔뻔한 늑대인간형 야수 무리가 %vam 땅을
+ 침범한 곳이다. 나는 이 흉측한 생물들에게 그들의
+ 잘못을 깨닫게 하고 우두머리의 엄니를 전리품으로 챙겨
+ =queston_일 안에 _vamp_ 쪽으로 돌아가야 한다.
+
+Message:  1017
+<ce>창백하고 눈매가 사나운 소년이 당신에게 편지를 건네고는
+<ce>어둠 속으로 사라집니다.
+
+Message:  1020
+<ce>당신은 라이칸스로프의 우두머리인 =wereboar_ 처치에
+<ce>성공했습니다. 이제 그들은 %vam 의 요새에 침입하는
+<ce>것이 어떤 결과를 초래하는지 알게 될 것입니다.
+
+Message:  1021
+<ce>날 죽이게 하지 마라, 피를 빠는 놈아. 돌아가서
+<ce>%vam 에게 =wereboar_의 전언을 받았다고 전해라.
+<ce>네가 얌전히 굴지 않았기 때문에 집으로 돌려보낸다고 말이다.
+ 
+
+-- Symbols used in the QRC file:
+--
+--              %dat occurs 1 time.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--              %vam occurs 26 times.
+--         =queston_ occurs 2 times.
+--        =wereboar_ occurs 3 times.
+--       ___mondung_ occurs 23 times.
+--          ___vamp_ occurs 16 times.
+
+QBN:
+Item _letter_ letter used 1010
+Item _I.01_ tusk
+
+Person _vamp_ factiontype Vampire_Clan local
+
+Place _mondung_ remote dungeon
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Werewolf
+Foe _wereboar_ is Wereboar
+
+--	Quest start-up:
+	dialog link for person _vamp_ 
+	pc at _mondung_ set _S.07_ 
+	_letter_ used do _readletter_ 
+	have _letter_ set _S.09_ 
+	give pc _letter_ notify 1017 
+	place foe _wereboar_ at _mondung_ 
+
+_queston_ task:
+	change repute with _vamp_ by -5 
+	end quest 
+
+_vampclicked_ task:
+	clicked npc _vamp_ 
+
+_S.06_ task:
+	when _vampclicked_ 
+	reveal _mondung_ 
+	log 1013 step 1 
+	say 1011 
+
+_nononono_ task:
+	when _vampclicked_ and not _S.04_ 
+	clear _vampclicked_ _nononono_ 
+
+_reward_ task:
+	toting _I.01_ and _vamp_ clicked 
+	give pc _I.01_ 
+	end quest 
+
+_S.04_ task:
+	killed 1 _wereboar_ 
+	say 1020 
+
+_readletter_ task:
+	add dialog for person _vamp_ 
+	log 1012 step 0 
+	create npc _vamp_ 
+
+_S.07_ task:
+	create foe _F.00_ every 12 minutes 30 times with 50% success 
+
+_S.08_ task:
+	injured _wereboar_ 
+	give item _I.01_ to _wereboar_ 
+	say 1021 
+
+_S.09_ task:
+	start timer _queston_ 

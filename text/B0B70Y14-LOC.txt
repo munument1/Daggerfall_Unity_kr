@@ -1,0 +1,162 @@
+-- Quest: C:\QUESTS\WORKING\B0B70Y14.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: knight
+-- Repute: 70
+-- QuestId: 14
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: B0B70Y14
+DisplayName: 오블리비언으로부터의 침공
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>%pcf 님, 비상사태입니다. 마법사 길드에서
+<ce>오블리비언과 우리 차원인 문두스 사이의 벽에 균열이
+<ce>생겼음을 발견했습니다.
+<ce>정확히 무슨 의미인지는 모르겠지만, 상황이 좋지 않습니다.
+<ce>온갖 종류의 데이드릭 존재들이
+<ce>우리 세계로 넘어오고 있습니다.
+<ce>마법사 길드에서는 균열을 봉인할 수 있다고 하지만,
+<ce>이미 넘어온 데이드라들을 처치하는 것은 우리의 몫입니다.
+<ce>금전적인 보상이 아닌,
+<ce>명예를 위해 이 임무를 맡아주시겠습니까?
+<--->
+<ce>%pct 님, 마침내 종말이
+<ce>찾아온 것일지도 모릅니다. 수 세기 동안 예언자들은
+<ce>우리 차원인 문두스와 데이드라의 땅인 오블리비언을 가르는
+<ce>에이테리얼 벽이 산산조각 날 날이 올 것이라고 말해왔습니다.
+<ce>마법사 길드에서 균열을 복구하려 하겠지만, 이미 침입한
+<ce>지옥의 피조물들을 처치할 사람이 필요합니다.
+<ce>%pct 님, 당신을 믿어도 되겠습니까?
+
+RefuseQuest:  [1001]
+<ce>우리 세계가 위태로운 상황인데도
+<ce>자신밖에 생각하지 않으시는군요.
+<ce>당신이 ==qgiver_ 관련 사실이 부끄러울 따름입니다.
+
+AcceptQuest:  [1002]
+<ce>그렇다면 서둘러 ___dungeon_ 쪽으로 가십시오.
+<ce>그곳의 복도를 배회하는 데이드라가 얼마나 되는지 알
+<ce>방법이 없습니다. 마법사 길드에서는 마주치는 모든 데이드릭
+<ce>존재를 처치하라고 했습니다. 마지막 침입자가 사라진 것을
+<ce>감지하면 주문을 통해 연락할 것입니다. 서두르십시오.
+<ce>=2dung_일이 지나면 너무 늦을 것입니다.
+
+QuestComplete:  [1004]
+<ce>데이드라를 처치하셨군요, 그렇죠?
+<ce>사실, 좀 당혹스러운 상황입니다. 알고 보니 저희가 한
+<ce>도적 마법사에게 속았습니다. 그녀는 자신이 통제할 수 없는
+<ce>데이드라를 소환했고, 길드가 알기 전에 저희를 시켜 그
+<ce>데이드라를 처치하려 했습니다. 그녀는 이런 이야기를 하면
+<ce>저희가 전사 길드에 돈을 지불하는 대신 무료로 일을 처리해
+<ce>줄 것이라 생각했던 모양입니다. 보통 저희 길드에서는
+<ce>회원들에게 이런 일로 보상을 지급하지 않습니다만, 이번은
+<ce>이례적인 상황입니다. 여기 _gold_ 골드를 받으십시오.
+
+RumorsDuringQuest:  [1005]
+%reg 의 사람들이 마법사 길드가 알고 있는 사실을
+알게 된다면, 모두 폭동을 일으킬 겁니다.
+
+RumorsPostfailure:  [1006]
+%kno 덕분에 탐리엘의 종말을 간신히 막아냈습니다.
+
+RumorsPostsuccess:  [1007]
+듣자 하니 마법사 길드가 ___dungeon_에서 있었던 그 소동
+때문에 %kno 에게 빚을 졌다고 하더군요.
+
+QuestorPostsuccess:  [1008]
+글쎄요, %pcf 님, 세상을 구하신 셈이니 제가
+무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+탐리엘 전체가 멸망할 뻔했습니다, %pcf 님.
+그리고 당신에게 조금 화가 나는군요.
+<---> 지난번의 그 대실패 이후로 당신을 신뢰하지
+않는 저를 탓할 수는 없을 겁니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 ==qgiver_에 있는
+ _qgiver_께서 데이드라들이 차원의 균열을
+ 통해 쏟아져 나오고 있다고 말했습니다.
+ 저는 ___dungeon_ 쪽으로 가서 그들을 모두 처치해야 합니다.
+ 마지막 데이드라를 처치하면 그들이 주문을 통해 저에게
+ 연락할 것입니다. 너무 늦기까지 =2dung_일 남았습니다.
+
+Message:  1011
+<ce>저편에서 들려오는 목소리가 당신의 머릿속에 울립니다...
+<ce>
+<ce>"마지막 데이드라가 죽었다. 이제 탐리엘은 다시 안전하다.
+<ce>이봐, 무슨 짓이야! 내 팔에서 손 떼! 난 길드 마법사라고!
+<ce>그걸 불어 끄지 마..."
+
+
+-- Symbols used in the QRC file:
+--
+--              %kno occurs 2 times.
+--              %pcf occurs 3 times.
+--              %pct occurs 3 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--           =2dung_ occurs 2 times.
+--         ==qgiver_ occurs 2 times.
+--       ___dungeon_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--            _gold_ occurs 2 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _dungeon_ remote dungeon7
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _fire_ is Fire_daedra
+Foe _frost_ is Frost_daedra
+Foe _lesser_ is Daedroth
+Foe _lord_ is Daedra_lord
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _daedra1_ _daedra2_ _daedra3_ _daedra4_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _frost_ 
+	killed 1 _fire_ 
+	killed 1 _lord_ 
+	killed 1 _lesser_ 
+	say 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _S.02_ and _S.01_ 
+	give pc _gold_ 
+	end quest 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 
+
+_daedra1_ task:
+	place foe _lord_ at _dungeon_ 
+
+_daedra2_ task:
+	place foe _lesser_ at _dungeon_ 
+
+_daedra3_ task:
+	place foe _frost_ at _dungeon_ 
+
+_daedra4_ task:
+	place foe _fire_ at _dungeon_ 

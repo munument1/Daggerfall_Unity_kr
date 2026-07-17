@@ -1,0 +1,243 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y17.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 17
+Messages: 51
+Quest: A0C00Y17
+DisplayName: 호위
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>저는 _questgiver_입니다.
+<ce>호위가 필요합니다. __destination_까지 가는 여정에서 저를
+<ce>보호해 주시겠습니까?
+<ce>여기서 =traveltime_일도 채 걸리지 않습니다.
+<--->
+<ce>제 이름은 _questgiver_입니다.
+<ce>당장 ___questgiver_에서 벗어나야 합니다.
+저를 __destination_까지 호위해 줄 사람을 고용하고 싶습니다.
+<ce>보수로 _gold_ 골드를 드리겠습니다.
+<--->
+<ce>도와주셔야 합니다! 제 이름은 _questgiver_입니다.
+<ce>=traveltime_일 안에 __destination_에 도착해야 하는데
+<ce>호위가 필요합니다.
+
+RefuseQuest:  [1001]
+<ce>다른 사람을 찾아봐야겠군요.
+<ce>제 여정을 보호해 줄 사람을요.
+<--->
+<ce>냉혈한 같으니!
+
+AcceptQuest:  [1002]
+<ce>축복이 있기를, %pcn. 짐이 가벼우니 바로
+<ce>출발할 수 있습니다. 공짜로 일하지 않는다는 건 압니다.
+<ce>__destination_ 안에 _destination_까지 데려다주시면 도착했을
+<ce>때 _gold_ 골드를 드리겠습니다.
+
+QuestComplete:  [1004]
+<ce>아! _destination_! 당신은 약속을 지켰군요.
+<ce>여기 약속했던 골드가 있습니다.
+
+RumorsDuringQuest:  [1005]
+<ce>경비병들이 _questgiver_의 행방을 찾고 있다더군요.
+<ce>%g 는 마을에서 도망쳐야 했습니다.
+<--->
+<ce>모르셨나요? 도둑 길드가 _questgiver_의 뒤를
+<ce>쫓고 있습니다. 아니면 다크 브라더후드였나?
+<ce>잊어버렸네요.
+<--->
+<ce>_questgiver_의 강제 결혼 소문을 들었습니다.
+<ce>%g 는 임신한 티가 나기 전에
+<ce>__destination_에 도착해야 합니다.
+
+RumorsPostfailure:  [1006]
+<ce>그들이 _questgiver_ 체포에 성공했습니다.
+<ce>%g 는 다음 주에 재판을 받을 겁니다.
+
+RumorsPostsuccess:  [1007]
+<ce>들으셨나요? 어떤 %ra 의 도움으로
+<ce>_questgiver_의 마을 밖 밀항이 성공했다더군요.
+<ce>그렇지 않았다면 분명 %g2 의 목을 쳤을 겁니다.
+
+QuestorPostsuccess:  [1008]
+<ce>그 마을에서 빠져나오게 해줘서 고마워요, %pcf.
+<ce>제 친구들에게 당신을 추천해 두었습니다.
+
+QuestorPostfailure:  [1009]
+<ce>당신! 마을에서 빠져나가는 걸 도와주지 않은 탓에 도둑
+<ce>길드가 제 가게를 뺏어갔어요! 저리 가세요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___questgiver_에서 _questgiver_ 조우. %g 는
+ __destination_에 있는 _destination_까지 %g2 를
+ 호위해 주면 보수를 주겠다고 했다. 특히 %g 는
+ =traveltime_일 안에 _destination_에 도착해야 한다.
+
+Message:  1019
+<ce>_questgiver_의 말에 따르면, "하!
+<ce>이 %ra 고용으로 이런 상황에서 나를 보호하게 했지.
+<ce>%pcn, 당신이 나를 넘기려는 건가?"
+
+Message:  1020
+<ce>멈춰라! %reg 의 이름으로 _questgiver_의 체포
+<ce>영장이 발부되었다. 우리는 당신이 아니라 %g2 만
+<ce>필요하다. %g2 를 넘기면 자유롭게 해주겠다.
+
+Message:  1021
+<ce>싸울 필요는 없습니다. 우리의 다툼은 _questgiver_ 관련
+<ce>일입니다. 마법사 길드는 배신을 가볍게 여기지 않습니다.
+<ce>%g2 를 우리에게 넘기면 당신은 가던 길을
+<ce>가도 좋습니다.
+
+Message:  1022
+<ce>비켜라, %ra. 우리는 _questgiver_의 신병을 원한다.
+<ce>당신은 우리를 막을 수 없다.
+<ce>그냥 %g2 를 넘겨라. 이봐, _questgiver_.
+<ce>도둑 길드를 속이고 살아남을 수 있을 거라 생각했나?
+
+Message:  1023
+<ce>비켜라, %ra.
+<ce>_questgiver_의 지명수배가 다크 브라더후드에 의해 내려졌다.
+<ce>당신이 %g2 를 보호하려 할 만큼 어리석지는 않겠지?
+
+Message:  1030
+<ce>당신의 눈앞에서 _questgiver_의 살해가 이루어졌습니다.
+
+Message:  1040
+<ce>마음대로 해라. 둘 다 죽여버려!
+
+Message:  1050
+<ce>길을 잃었나요, %pcn?
+<ce>스스로 __destination_까지 가는 길을 찾아야겠군요. 아무것도
+<ce>아닌 일에 감사할 필요는 없죠, 쓸모없는 인간 같으니.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 6 times.
+--               %g2 occurs 12 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 4 times.
+--              %reg occurs 1 time.
+--      =traveltime_ occurs 5 times.
+--    ___questgiver_ occurs 2 times.
+--    __destination_ occurs 20 times.
+--            _gold_ occurs 6 times.
+--      _questgiver_ occurs 16 times.
+
+QBN:
+Item _gold_ gold
+
+Person _questgiver_ group Questor
+Person _mage_ faction The_Mages_Guild remote
+Person _thief_ faction The_Thieves_Guild remote
+Person _darkb_ faction The_Dark_Brotherhood remote
+
+Place _destination_ remote random
+
+Clock _traveltime_ 00:00 0 flag 1 range 0 2
+Clock _extratime_ 03:00 0 flag 1 range 0 1
+
+Foe _mages_ is 2 Mage
+Foe _F.01_ is 2 Thief
+Foe _guards_ is 2 Warrior
+Foe _F.03_ is 2 Assassin
+
+--	Quest start-up:
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pick one of _S.01_ _S.02_ _S.14_ _S.03_ 
+	hide npc _questgiver_ 
+	add _questgiver_ face 
+	create npc at _destination_ 
+
+variable _traveltime_
+_S.01_ task:
+	create foe _guards_ every 5 minutes 5 times with 20% success 
+
+_S.02_ task:
+	create foe _mages_ every 5 minutes 3 times with 25% success 
+
+_S.03_ task:
+	create foe _F.01_ every 5 minutes 3 times with 25% success 
+
+variable _S.04_
+_S.05_ task:
+	injured _mages_ saying 1021 
+	injured _guards_ saying 1020 
+	injured _F.03_ saying 1023 
+	injured _F.01_ saying 1022 
+	prompt 1019 yes _yes_ no _no_ 
+--added underscores to yes
+
+_S.06_ task:
+	give pc _gold_ 
+	drop _questgiver_ face 
+	place npc _questgiver_ at _destination_ 
+	end quest 
+
+_extratime_ task:
+	end quest 
+
+_yes_ task:
+	start timer _extratime_ 
+	say 1030 
+	drop _questgiver_ face 
+
+until _yes_ performed:
+	pc at _destination_ set _S.06_ 
+
+_no_ task:
+	say 1040 
+
+variable _S.10_
+_S.11_ task:
+	when _yes_ and _S.01_ 
+	legal repute +10 
+	restrain foe _guards_ 
+
+_S.12_ task:
+	when _yes_ and _S.02_ 
+	change repute with _mage_ by +10 
+	restrain foe _mages_ 
+
+_S.13_ task:
+	when _yes_ and _S.03_ 
+	change repute with _thief_ by +10 
+	restrain foe _F.01_ 
+
+_S.14_ task:
+	create foe _F.03_ every 5 minutes 3 times with 25% success 
+
+_S.15_ task:
+	when _yes_ and _S.14_ 
+	change repute with _darkb_ by +10 
+	restrain foe _F.03_ 
+
+_S.16_ task:
+	when _no_ and _S.03_ 
+	change repute with _thief_ by -20 
+
+_S.17_ task:
+	when _no_ and _S.01_ 
+	legal repute -20 
+
+_S.18_ task:
+	when _no_ and _S.02_ 
+	change repute with _mage_ by -20 
+
+_S.19_ task:
+	when _no_ and _S.14_ 
+	change repute with _darkb_ by -20 
+
+_S.20_ task:
+	when _traveltime_ and not _S.06_ 
+	say 1050 
+	drop _questgiver_ face 
+	end quest 

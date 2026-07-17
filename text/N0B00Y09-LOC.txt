@@ -1,0 +1,328 @@
+-- Quest: C:\QUESTS\WORKING\N0B00Y09.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: mage
+-- Repute: 0
+-- QuestId: 9
+Messages: 23
+Quest: N0B00Y09
+DisplayName: 연구 노트
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>탐리엘 제국의 최고 연구 기관으로서, 마법사 길드는
+<ce>대륙 전역에 걸쳐 수많은 신비주의자와 학자들을
+<ce>고용하고 있습니다.
+<ce>만약 우리가 길드 대표를 이곳에서 적당한 거리 내의 장소로
+<ce>보낼 수 있다면, 저명한 학자이신 _scholar_님께서
+<ce>%g3 의 연구를 공유하기로 동의하셨습니다.
+<ce>이 일을 맡아주시겠습니까?
+<--->
+<ce>___qgiver_의 마법사 길드에는
+<ce>저명한 연구자이자 학자인 _scholar_님의 연구로부터
+<ce>혜택을 받을 수 있는 흥미로운 기회가 있습니다.
+<ce>%g 님께서는
+<ce>우리가 ___scholar_ 쪽으로 사람을 보내 연구 자료를
+<ce>가져온다면
+<ce>%g3 의 연구 일부를 길드에 기증하기로
+<ce>동의하셨습니다.
+<ce>놀랄 것도 없이, %g 님께서는 강령술사단의
+<ce>개입을 두려워하고 계십니다. 당신도 저만큼이나 이 가능성에
+<ce>들떠 있으리라 생각합니다, %pct 님?
+
+RefuseQuest:  [1001]
+<ce>꽤 실망스럽군요, %pct 님. 제 상태가 더 좋았다면,
+<ce>위대한 _scholar_님을 만날 기회를 냉큼 잡았을 텐데요.
+<ce>당신은 젊음을 낭비하고 있어요, %pct 님.
+
+AcceptQuest:  [1002]
+<ce>훌륭해, 아주 훌륭해. 이제, _scholar_님은 며칠 동안
+<ce>__scholar_의 명칭으로 불리는 곳의 ___scholar_에 머무를
+<ce>예정입니다. 위험 요소는 강령술사단입니다. 그 타락한
+<ce>주문술사들은 _scholar_ 및 %g3 의 연구를 손에
+<ce>넣는 데 혈안이 되어 있습니다. 당신에게 =queston_일의
+<ce>시간을 주겠으니 _scholar_에 다녀오십시오.
+<ce>그렇지 않으면 다른 사람을 보내겠습니다. 행운을 빕니다.
+
+QuestComplete:  [1004]
+<ce>오, 정말 훌륭한 성과입니다.
+<ce>그 빌어먹을 강령술사단도 당신을 상대하기엔 벅찼나 보군요.
+<ce>최고의 솜씨였습니다, %pct 님.
+
+RumorsDuringQuest:  [1005]
+_scholar_님이 학자들 사이에서 유명 인사일지는 몰라도,
+%g 는 그저 =scholar_일 뿐이죠.
+<---> 저명한 _scholar_님이 %reg 방문을
+앞두고 계신 것은 ___scholar_에게 영광입니다.
+
+RumorsPostfailure:  [1006]
+강령술사단은 몇 년 안에 탐리엘의 지배적인 마법 세력이 될
+것입니다. <---> 마법사 길드는 강령술사단으로부터
+스스로를 방어할 능력이 없습니다.
+
+RumorsPostsuccess:  [1007]
+_scholar_의 연구는 여러 방면으로 마법사 길드에 도움이
+될 것입니다. <---> 강령술사단이 _scholar_의
+연구를 손에 넣지는 못한 것 같군요... 아니면 넣었을까요?
+
+QuestorPostsuccess:  [1008]
+자, 그 원고를 가져온 %ra 님이 아니신가.
+잘 지내셨나?
+
+QuestorPostfailure:  [1009]
+<ce>가져오기로 맹세했던 원고를 가져오지 못했으니, 당신과 나눌
+<ce>이야기는 별로 없군요. 다른 곳에서 볼일을 보십시오.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 마법사 길드는 나를 ___scholar_ 쪽으로
+ 보냈다. 그곳에는 저명한 학자인 _scholar_님이
+ __scholar_의 명칭으로 불리는 곳에 머물고 있다.
+ 나는 강령술사단의 요원들을 피해서,
+ %g2 로부터 _scholar_의 연구를 받아
+ =queston_일 이내에 마법사 길드로 돌아와야 한다.
+
+Message:  1011
+__db_ ___db_
+ 
+친애하는 %pcf 님께,
+ 
+잘해주셨습니다, %pcf 님.
+_scholar_님은 우리에게 %g3 의 연구
+노트를 주는 것에 대해 평소처럼 고집을 부리셨지만,
+%g 님께서는 올바른 생각을 가진 마법사 길드의
+"대표"에게 그것을 주는 것을 아주 기쁘게 생각하실 겁니다.
+ 
+당신이 노트를 가지고 이곳 ___db_에 도착하면 꽤
+쏠쏠한 금화 보상이 기다리고 있을 겁니다.
+ 
+당신의,
+ 
+_db_
+
+Message:  1012
+%pcn 님,
+ 
+다크 브라더후드를 적으로 만들지 마십시오.
+우리는 서로에게 큰 도움이 될 수 있지만,
+당신은 우리보다 더 나쁜 적을 원하지는 않을 것입니다.
+_scholar_님의 연구 논문을 손에 넣으면,
+___db_에 있는 __db_의 나에게 가져오십시오.
+ 
+실패하지 마십시오. 그렇지 않으면 오블리비언의 여왕,
+메팔라의 분노가 당신에게 임할 것입니다.
+ 
+_db_
+
+Message:  1013
+<ce>마법사 길드에서 내 연구를 보호하라고 보낸
+<ce>%ra 님이시군요, 그렇죠? 만나서 반갑습니다,
+<ce>젊은이. 여기 그 물건이 있네. 그 지옥 같은 강령술사단을
+<ce>뚫고 가져가길 빌겠네. 난 도저히 그럴 수 없었거든.
+
+Message:  1014
+<ce>_scholar_의 연구를 다크 브라더후드의 _db_에게
+<ce>넘기시겠습니까?
+
+Message:  1015
+어떤 두 희소 상품의 이완기 압력(움직이는 부품 없이
+추진력을 생성하고 가상의 침묵을 유지하는 방식)에 의한
+방식은 수년 동안 티리온 수학자들에 의해 가정되어 왔습니다.
+관습적인 사고에서, 어떤 공식의 기본 매개변수(객관적으로
+말하자면, 객관성 자체가 사실 주관적이라는 점을
+기억하는 것이 필수적입니다)는 항상 몬타우르가 "배후
+매질"이라고 부른 것으로 돌아갑니다. 그러나 단위 원과
+1의 세 세제곱근을 포함하는 복소수 격자에서 시작하여,
+우리는 음의 "반수"를 역추적함으로써 흑과 백의
+이중적 성질을 가진 무한한 분지를 만들 수 있습니다.
+따라서 불포화 공기에서의 단열 냉각 또는 가열 속도는 절대
+온도의 4제곱에 정비례하게 만들 수 있습니다.
+
+Message:  1016
+백색광이 고온의 중간 밀도 가스 아래의 가스를 통과할 때,
+동적 열 불안정이 발생합니다.
+매지카는 보통 매우 희미한 조명원이기 때문에,
+훨씬 더 높은 압력 하의 가스는 퇴화된 물질과 결합하여 그
+너머와 그 아래의 이중 힘을 생성하게 됩니다. 최종 결과는
+서로 얽힌 덕톨리스로 구성된 준수평적 코노리스이며,
+그 말단은 하폴리스처럼 휘어지거나, 스페놀리스처럼 얇거나,
+아크몰리스나 에트몰리스처럼 불일치하게 부풀어 오릅니다.
+따라서 갈레리온 바누스가 "회색 물질"이라고 부른 것의
+보편적 연합에 기여해야 하는 다섯 가지 요소, 즉 인식,
+증거, 본질, 도덕성, 그리고 추출이 있습니다.
+
+Message:  1017
+_scholar_님은 탐리엘에서 가장 존경받는 학자 중 한
+분입니다. <---> _scholar_님은 =scholar_의
+직위에 있으며, 매우 존경받는 학자입니다. <--->
+_scholar_님은 잠시 동안만 %reg 쪽을 방문할
+예정입니다. <---> 제3시대의 가장 뛰어난 지성
+중 한 명이라고들 하죠. <---> _scholar_님도
+%g 님이 천재라는 점에는 분명히 동의할 겁니다.
+<---> _scholar_님은 전형적인 지식인입니다.
+무슨 일이 벌어지는지 전혀 모르죠. <--->
+_scholar_님은 매우 영리하지만, %g3 의 머리가
+가끔 %g3 의 머리 위로 솟구치곤 하죠. <--->
+___db_에 있는 _db_님과 이야기해보세요.
+%g 님도 _scholar_에 대해 묻고 다녔거든요.
+<---> __db_의 =db_님도
+_scholar_에 대해 묻고 있었습니다.
+
+Message:  1018
+<ce>정말 사려 깊은 선물이군요. 마법사 길드 친구들이
+<ce>이걸 잃어버려서 너무 화내지 않았으면 좋겠네요.
+<ce>어차피 그들이 건조한 연구의 실용적인 적용에 대해 뭘
+<ce>알겠어요? 여기, 수고비로 _dbgold_ 금화를 받으세요.
+<ce>좋은 거라도 사 드시고요.
+
+Message:  1019
+<ce>정말 친절하시군요. 다크 브라더후드에서 당신의 수고에
+<ce>대한 보답으로 _dbgold_ 금화를 기꺼이 드리겠습니다.
+<ce>덧붙여서, 당신이 _qgiver_ 및 다른 마법사
+<ce>길드원들과 곤란한 상황에 빠지지 않게 해줄 작은 물건을
+<ce>하나 준비했습니다. 어차피 모든 연구 노트는 비슷하게
+<ce>생겼으니까요. 결과가 나오지 않으면, 길드는 그냥 더 많은
+<ce>조수를 투입하거나 당황하며 프로젝트를 포기할 겁니다.
+<ce>마법사 길드는 금화 걱정을 할 필요가 없어 금전적으로
+<ce>여유로운, 무의미한 일을 할 때 가장 행복해하는 지루한
+<ce>연구원들의 집단일 뿐이니까요.
+
+Message:  1020
+%qdt:
+ 나는 다크 브라더후드의 _db_
+ 쪽으로부터 협박 편지를 받았다.
+ _scholar_의 연구 논문을 마법사 길드 대신 ___db_에
+ 있는 __db_에게 가져오라는 내용이었다.
+
+Message:  1021
+%qdt:
+ 다크 브라더후드의 _db_
+ 쪽에서 나에게 편지를 보냈다.
+ 나의 기지를 칭찬하며, %g 가 ___db_의
+ __db_의 명칭으로 불리는 곳에 있을 것이라고 했다.
+ 연구 논문을 마법사 길드 대신 %g2 에게 가져오면
+ 금화 보상을 주겠다는 내용이었다.
+
+Message:  1022
+<ce>매서운 눈매의 어린 소년이 당신에게 편지를 건네고는
+<ce>골목길로 달려가 버립니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 7 times.
+--               %g2 occurs 4 times.
+--               %g3 occurs 8 times.
+--              %pcf occurs 3 times.
+--              %pcn occurs 1 time.
+--              %pct occurs 7 times.
+--              %qdt occurs 3 times.
+--               %ra occurs 2 times.
+--              %reg occurs 2 times.
+--              =db_ occurs 1 time.
+--         =queston_ occurs 4 times.
+--         =scholar_ occurs 2 times.
+--            ___db_ occurs 13 times.
+--        ___qgiver_ occurs 2 times.
+--       ___scholar_ occurs 4 times.
+--             __db_ occurs 6 times.
+--        __scholar_ occurs 2 times.
+--              _db_ occurs 11 times.
+--          _dbgold_ occurs 2 times.
+--          _qgiver_ occurs 1 time.
+--         _scholar_ occurs 69 times.
+
+QBN:
+Item research1 letter used 1015
+Item letter34 letter used 1011
+Item letter35 letter used 1012
+Item research2 letter used 1016
+Item _dbgold_ gold
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+Person _db_ face 78 faction The_Dark_Brotherhood female local
+Person _scholar_ factiontype Temple remote anyInfo 1017
+
+
+Clock _queston_ 00:00 0 flag 17 range 1 2
+Clock _S.02_ 01:40 13:20
+Clock _S.05_ 06:40 23:20
+
+Foe _hunter_ is Orc_shaman
+
+--	Quest start-up:
+	start timer _queston_ 
+	log 1010 step 0 
+	pick one of _letter_ _letter_ _S.04_ _S.04_ 
+	repute with _db_ exceeds 10 do _S.00_ 
+	letter34 used do _S.15_ 
+	letter35 used do _S.16_ 
+
+_S.00_ task:
+	start timer _S.02_ 
+	clear _letter_ 
+
+until _S.00_ performed:
+	dialog link for person _db_ 
+
+_queston_ task:
+	end quest 
+
+_S.02_ task:
+	give pc letter34 notify 1022 
+
+_letter_ task:
+	start timer _S.05_ 
+
+variable _S.04_
+_S.05_ task:
+	give pc letter35 notify 1022 
+
+_S.06_ task:
+	clicked npc _scholar_ 
+	get item research1 
+	say 1013 
+
+_S.07_ task:
+	toting research1 and _db_ clicked 
+	prompt 1014 yes _S.08_ no _nononono_ 
+
+_S.08_ task:
+	pick one of _S.10_ _S.11_ 
+	change repute with _db_ by +10 
+
+_nononono_ task:
+	get item research1 
+
+_S.10_ task:
+	get item research2 
+	get item _dbgold_ 
+	say 1019 
+	make _dbgold_ permanent 
+
+_S.11_ task:
+	get item _dbgold_ 
+	say 1018 
+	make _dbgold_ permanent 
+	end quest 
+
+_S.12_ task:
+	toting research1 and _qgiver_ clicked 
+
+_S.13_ task:
+	toting research2 and _qgiver_ clicked 
+
+_reward_ task:
+	when _S.12_ or _S.13_ 
+	give pc _gold_ 
+	end quest 
+
+_S.15_ task:
+	add dialog for person _db_ 
+	log 1021 step 1 
+
+_S.16_ task:
+	add dialog for person _db_ 
+	log 1020 step 1 

@@ -1,0 +1,126 @@
+-- Quest: C:\QUESTS\WORKING\M0B50Y09.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: fighter
+-- Repute: 50
+-- QuestId: 9
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 81
+Quest: M0B50Y09
+DisplayName: 가고일 사냥
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>어떤 상인이 괴물, 정확히는 가고일을 처치해 줄
+<ce>사람이 필요하답니다. 보수는 _gold_ 골드입니다.
+<ce>이 일을 도와주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>흠. 용감하고 영웅적인 부류는 아닌가 보군.
+
+AcceptQuest:  [1002]
+<ce>이 상인이 위저드를 고용해 웅장한 저택을 짓게 했다더군요.
+<ce>그런데 이 어리석은 자가 마법사의 임금을 떼먹으려 했답니다.
+<ce>화가 난 위저드는 새 저택에 있던 석상 가고일 중 하나에
+<ce>생명을 불어넣었죠. 그 가고일이 상인을 끊임없이 공격하고
+<ce>있습니다. ___dungeon_ 쪽으로 가서 그것을 처치하십시오.
+<ce>당신에게는 =2dung_일의 시간이 주어집니다.
+
+QuestComplete:  [1004]
+<ce>영웅이여, %pcn! 잘했습니다!
+<ce>이 보잘것없는 _gold_ 골드는 당신의 공로에 비하면
+<ce>턱없이 부족한 보상이지요.
+
+RumorsDuringQuest:  [1005]
+<ce>마법사 길드에서 날뛰는 가고일을 처치하는 것을
+<ce>거부했답니다. 자기들 잘못이 아니라나 뭐라나. 게으른 놈들.
+
+RumorsPostfailure:  [1006]
+<ce>최근에 어떤 상인이 살해당했답니다.
+<ce>가고일이 시체 위를 맴돌고 있었다더군요.
+
+RumorsPostsuccess:  [1007]
+<ce>전사 길드에서 가고일을 처리했답니다.
+<ce>그 친구들은 곁에 두면 든든하다니까.
+
+QuestorPostsuccess:  [1008]
+<ce>가고일 처치, 잘했습니다, %pcn.
+
+QuestorPostfailure:  [1009]
+<ce>그 가고일이 상인을 죽이고 말았군요.
+<ce>애초에 그 일을 맡지 말았어야 했습니다.
+<ce>이제 당신과 길드 모두 체면을 구기게 되었군요.
+
+QuestLogEntry:  [1010]
+%qdt, ___qgiver_의 전사 길드에서 ___dungeon_에
+서식하는 가고일을 처치하라는 임무를 받았다.
+임무를 완수할 시간은 =2dung_일이다.
+
+Message:  1011
+<ce>_monster_의 사망이 확인되었다. 부디 그 어리석은 상인이
+<ce>마법사를 속이면 안 된다는 것을 배웠기를 바란다.
+
+Message:  1080
+<ce>어쩌면 ___newdung_ 쪽으로 가는 이 지도가 거래를 조금
+<ce>더 달콤하게 만들어 줄지도 모르겠군.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--           =2dung_ occurs 3 times.
+--       ___dungeon_ occurs 2 times.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--            _gold_ occurs 2 times.
+--         _monster_ occurs 1 time.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor
+
+Place _dungeon_ remote dungeon
+Place _newdung_ remote dungeon8
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+Clock _end_ 00:00
+
+Foe _monster_ is Gargoyle
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ 
+	place foe _monster_ at _dungeon_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_victory_ task:
+                when _S.01_ and _qgclicked_
+	give pc _gold_ 
+                start timer _end_
+
+_end_ task:
+	end quest 
+
+_qgclicked_ task:
+               clicked npc _qgiver_
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.01_ 
+	clear _qgclicked_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.06_ task:
+	when _map_ and _victory_ 
+	reveal _newdung_ readmap
+    say 1080

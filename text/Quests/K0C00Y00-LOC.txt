@@ -12,9 +12,9 @@ DisplayName: 본보기
 QRC:
 
 QuestorOffer:  [1000]
-<ce>제게 맡길 작은 일에 당신이 적임자일지도 모르겠군요.
-<ce>제 경쟁자가 제 계약을 가로채 불법적이거나, 적어도
-<ce>부도덕한 거래 관계를 맺었습니다. 저는 이 상황을 바로잡고
+<ce>제게 맡길 작은 일에 당신이 적임자일지도 모르겠군요. 제
+<ce>경쟁자가 제 계약을 가로채 불법적이거나, 적어도 부도덕한
+<ce>거래 관계를 맺었습니다. 저는 이 상황을 바로잡고
 <ce>_competitor_에게 다시는 침범하지 말라는 경고를 보내고
 <ce>싶습니다. 누군가는 머리통을 좀 깨뜨려야 할지도 모르겠군요.
 <ce>_reward_ 골드면 이 일을 맡으시겠습니까?
@@ -24,25 +24,25 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>좋습니다. _competitor_ 개체는 __storehouse_에
-<ce>_storehouse_의 명칭으로 불리는 가게를 가지고 있고,
-<ce>그 안에는 제가 되찾고 싶은 _mitem_ 물품이 있습니다.
+<ce>_storehouse_의 명칭으로 불리는 가게를 가지고 있고, 그
+<ce>안에는 제가 되찾고 싶은 _mitem_ 물품이 있습니다.
 <ce>나오는 길에 이 쪽지를 가게 아무 곳에나 떨어뜨려 주십시오.
 <ce>참을 수가 없군요. _competitor_ 개체는 =2storehouse_일 안에
 <ce>그 _mitem_ 물품을 더 안전한 곳으로 옮길 예정이니,
-<ce>신속하게 움직여야 합니다. 그때까지 돌아오지 않으면,
-<ce>당신의 보상은 몰수될 겁니다. _storehouse_ 지역이 지키고
-<ce>있을 거라는 말은 굳이 안 해도 되겠죠? 행운을 빕니다.
+<ce>신속하게 움직여야 합니다. 그때까지 돌아오지 않으면, 당신의
+<ce>보상은 몰수될 겁니다. _storehouse_ 지역이 지키고 있을
+<ce>거라는 말은 굳이 안 해도 되겠죠? 행운을 빕니다.
 
 QuestFail:  [1003]
-<ce>이건 장난이 아닙니다, %pcf.
-<ce>반드시 일을 끝내주십시오.
+<ce>이건 장난이 아닙니다, %pcf. 반드시 일을
+<ce>끝내주십시오.
 
 QuestComplete:  [1004]
-<ce>정말 잘해주셨습니다, %pcf.
-<ce>아, 그래요, 사랑스러운 _mitem_. 이것이 바로
-<ce>_mitem_ 측에서 _competitor_의 파트너에게 담보로
-<ce>맡겼던 바로 그 물건임이 틀림없군요. %g2 몫으로
-<ce>확실히 _reward_ 골드를 받을 자격이 있습니다.
+<ce>정말 잘해주셨습니다, %pcf. 아, 그래요, 사랑스러운
+<ce>_mitem_. 이것이 바로 _mitem_ 측에서
+<ce>_competitor_의 파트너에게 담보로 맡겼던 바로 그 물건임이
+<ce>틀림없군요. %g2 몫으로 확실히 _reward_ 골드를
+<ce>받을 자격이 있습니다.
 
 RumorsDuringQuest:  [1005]
 요즘은 사업 경쟁이 특히나 피비린내 나는 시기지.
@@ -57,9 +57,9 @@ _qgiver_의 상상보다 훨씬 더 독한 상인이더군.
 
 RumorsPostsuccess:  [1007]
 _competitor_ 개체는 %g 가 _qgiver_
-쪽으로부터 어렵게 따낸 계약을 잃어버렸어.
-<---> _qgiver_ 측은 %g3 의 옛 계약을
-되찾았고, 배부른 하피처럼 행복해하고 있지.
+쪽으로부터 어렵게 따낸 계약을 잃어버렸어. <--->
+_qgiver_ 측은 %g3 의 옛 계약을 되찾았고,
+배부른 하피처럼 행복해하고 있지.
 
 QuestorPostsuccess:  [1008]
 좋아, _mitem_ 가져왔으니, 이제 내가 뭘 도와줄까?
@@ -69,11 +69,11 @@ _competitor_의 하수인과는 할 말이 없다.
 
 QuestLogEntry:  [1010]
 %qdt:
- ___qgiver_의 _qgiver_ 측에서 나를
- __storehouse_의 _storehouse_ 쪽으로 보내 그곳에 보관된
- _mitem_ "해방"시키고 쪽지를 남겨두라고 했다.
- 이 일을 마치고 __qgiver_ 쪽으로 =2storehouse_일 안에
- 돌아오면, _reward_ 골드를 받게 된다.
+ ___qgiver_의 _qgiver_ 측에서 나를 __storehouse_의
+ _storehouse_ 쪽으로 보내 그곳에 보관된 _mitem_
+ "해방"시키고 쪽지를 남겨두라고 했다. 이 일을 마치고
+ __qgiver_ 쪽으로 =2storehouse_일 안에 돌아오면,
+ _reward_ 골드를 받게 된다.
 
 Message:  1011
 
@@ -96,8 +96,8 @@ __competitor_ ___competitor_
 <ce>_competitor_
 
 Message:  1013
-<ce>어린 소년이 편지를 건네주고는 질문할 틈도 없이
-<ce>도망쳐 버립니다.
+<ce>어린 소년이 편지를 건네주고는 질문할 틈도 없이 도망쳐
+<ce>버립니다.
 
 Message:  1014
 <ce>_competitor_에게 _gem_ 확보 대가로 _mitem_
@@ -105,12 +105,12 @@ Message:  1014
 
 Message:  1015
 <ce>현명한 결정입니다, %pcf. 이것이 수익성 있는 관계의
-<ce>시작이 될지도 모르겠군요. 반면에 _qgiver_ 수익을
-<ce>내는 날들은 이제 지나가고 있는지도 모르죠.
+<ce>시작이 될지도 모르겠군요. 반면에 _qgiver_ 수익을 내는
+<ce>날들은 이제 지나가고 있는지도 모르죠.
 
 Message:  1016
-<ce>그럼 왜 여기 온 건지 모르겠군.
-<ce>당장 여기서 나가라, %pcf.
+<ce>그럼 왜 여기 온 건지 모르겠군. 당장 여기서 나가라,
+<ce>%pcf.
 
 
 -- Symbols used in the QRC file:

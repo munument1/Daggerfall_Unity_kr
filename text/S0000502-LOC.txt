@@ -1,0 +1,251 @@
+-- Quest: C:\QUESTS\WORKING\S0000502.Qbn.
+-- Main story quest.
+-- QuestId: 502
+Messages: 71
+Quest: S0000502
+DisplayName: 전직 학생 2부
+-- Message panels
+QRC:
+
+QuestComplete:  [1004]
+<ce>내가 작업하던 작은 물건이 여기 있네. 마음에 드는지 보게.
+<ce>난 이만 가겠네!
+
+Message:  1020
+%qdt:
+ 한때 내 추적 대상이었던 반란군 마법사 _rebel_의
+ 요청으로 __tavern_의 _tavern_에서 자신의 전령을
+ 만나달라고 했다. ____tavern_.
+
+Message:  1021
+%qdt:
+ _rebel_ 측이 보낸 아트로나크가 발피에라
+ 섬의 디레니 탑을 탐험하는 것을 도와달라고 전했다.
+ _rebel_ 측이 그곳 어딘가에서 나를 만날 것이다.
+
+Message:  1030
+%pcn: 반갑네!
+ 
+이 편지가 자네에게 잘 전달되길 바라네.
+작은 모험에 관심이 있는가? 그렇다면 __tavern_의
+_tavern_에서 내 전령을 만나게나. ____tavern_.
+ 
+<ce>비공인 마법학의 동료가,
+<ce>
+<ce>_rebel_
+
+Message:  1031
+<ce>문을 통과하자 희미한 유황 냄새가 자네를 맞이하네.
+<ce>저기 있는 건 아트로나크인가?
+<ce>등 뒤에 "나를 때려라"라고 적힌 쪽지가 붙어 있군?
+
+Message:  1032
+<ce>아트로나크가 돌처럼 딱딱한 목소리로 말하네:
+<ce>
+<ce>"안녕 %pcn. 나는 _rebel_의의 겸손한 종,
+<ce>=atronach_ 개체가다. 주인님께서 자네와 함께
+<ce>발피에라 섬의 디레니 탑을 탐험하고 싶어 하신다.
+<ce>상상할 수 없는 경이로움으로 가득 찬 마법의 장소지.
+<ce>주인님께서는 =towertime_일 동안 안에서 기다리실 것이다."
+<ce>
+<ce>그 말을 마치고, =atronach_ 개체가 연기처럼 사라지네.
+
+Message:  1040
+<ce>%pcf, 다시 보니 반갑군! 나 없이 먼저 시작한
+<ce>모양이군 -- 자네가 들고 있는 그 상자가 바로 내가 찾던
+<ce>물건일세. 내가 좀 빌려도 되겠나? 정말 고맙네!
+
+Message:  1041
+<ce>%pcf, 내 작은 파티에 합류해 줘서 기쁘네.
+<ce>들어보게, 내가 찾는 물건이 하나 있는데,
+<ce>디레니 탑 어딘가에 있는 _item_일세. 그 상자만 주면
+<ce>나머지는 다 자네가 가져도 좋네. 자, 그럼 출발해 볼까?
+
+Message:  1042
+<ce>아, 내가 찾던 _item_ 여기 있군.
+<ce>흠, 어떤 종류의 수호자가 있을 줄 알았는데... 어라...
+
+Message:  1043
+<ce>좋아, 즐거웠네. 언젠가 다시 만나세. 잘 가게!
+
+Message:  1050
+<ce>이거나 먹어라! 그리고 이것도! 이 곰팡이 핀 늙은이야!
+
+Message:  1051
+<ce>그 기세지! 이것도 조금 맛보라고!
+
+Message:  1052
+<ce>젠장, 여기서 나가자! 이 주문만 제대로 작동한다면...
+
+Message:  1070
+<ce>까마귀 한 마리가 머리 위를 선회하더니 자네 어깨 위에
+<ce>내려앉네. 아주 특이하게도 부리에 각인된 카드를 물고 있군.
+<ce>까마귀는 자네를 구슬 같은 눈으로 쳐다보더니,
+<ce>셔츠 속에 카드를 넣고 날아가 버리네.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 2 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 1 time.
+--              %pcf occurs 2 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 2 times.
+--        =atronach_ occurs 2 times.
+--       =towertime_ occurs 2 times.
+--       ____tavern_ occurs 6 times.
+--            _item_ occurs 2 times.
+--           _rebel_ occurs 5 times.
+--          _tavern_ occurs 3 times.
+
+QBN:
+Item _letter_ letter used 1030
+Item _item_ item class 1 subclass 10
+Item _reward_ item class 4 subclass 3
+
+Person _rebel_ face 1 named Baltham_Greyman
+
+Place _tavern_ remote tavern
+Place _direni1_ permanent DirenniTower2
+Place _direni2_ permanent DirenniTower3
+--Place aide remote dungeon
+--changed _L.00_ and _L.01_. Quest system could not compile those symbols.
+--using _direni1_ and _direni2_ now.
+--"aide" concept useful in Daggerfall but obsolete for DFU.
+
+Clock _S.00_ 31.06:00 93.18:00
+Clock _S.03_ 30.00:00 0 flag 1 range 0 1
+Clock _towertime_ 31.06:00 0 flag 1 range 0 1
+Clock _S.18_ 00:01 0 flag 1 range 0 1
+Clock _outgoing_ 62.12:00 97.05:20
+--moving the delay from the start of Part 3 to the end of Part 2.
+--The engine could not find a place to put Baltham Greyman
+--in Isle of Balfiera. Hopefully in 2-3 months the player
+--moves to a region compatible with Part 3.
+
+Foe _atronach_ is Iron_atronach
+Foe _guardian_ is Fire_daedra
+Foe _monster1_ is Mummy
+Foe _monster2_ is Zombie
+
+--	Quest start-up:
+	start timer _S.00_ 
+	pc at _direni1_ set _S.10_ 
+
+_S.00_ task:
+	pc at _tavern_ set _S.05_ 
+	_letter_ used do _readletter_ 
+	place item _item_ at _direni2_ 
+	start timer _S.03_ 
+	give pc _letter_ notify 1070 
+	place npc _rebel_ at _direni1_ 
+
+_S.01_ task:
+	injured _atronach_ 
+	start timer _towertime_ 
+	log 1021 step 1 
+	reveal _direni1_ in province 9 at 204718 
+	say 1032 
+	remove foe _atronach_ 
+	--replaced "place foe at remote dungeon" with "remove foe." Always cleaner implementation.
+
+_readletter_ task:
+	log 1020 step 0 
+
+variable _S.03_
+_S.04_ task:
+	clicked npc _rebel_ 
+
+_S.05_ task:
+	say 1031 
+	restrain foe _atronach_ 
+	place foe _atronach_ at _tavern_ 
+
+_S.06_ task:
+	clicked item _item_ 
+	place foe _guardian_ at _direni2_ 
+
+_S.07_ task:
+	when _S.04_ and not _S.06_ 
+	hide npc _rebel_ 
+	say 1041 
+	add _rebel_ face 
+	start task _accompany_
+
+variable _accompany_
+--S.07 is a tremendously faulty task here, so I have to add "accompany"
+--as a permanent countermeasure.
+
+_S.08_ task:
+	toting _item_ and _rebel_ clicked 
+	hide npc _rebel_
+	say 1040 
+	give pc _reward_ 
+	start task _goout_
+
+_outgoing_ task:
+	start quest 503 503 
+	end quest 
+--moved sequel quest to here from "atronach injured" above.
+--DFU considered the Baltham Greyman from 502 to also be the
+--one from 503, mixing the quests together. 503 will now only
+--start when 502 is successfully finished.
+
+_S.09_ task:
+	when _S.06_ and _accompany_ 
+--	place item _item_ at aide 
+	start timer _S.18_ 
+	say 1042
+--action to move item to hidden dungeon is obsolete in DFU. 
+
+variable _S.10_
+_S.11_ task:
+	when _S.10_ and _accompany_ and not _goout_
+	create foe _monster2_ every 7 minutes 10 times with 20% success 
+	create foe _monster1_ every 5 minutes 10 times with 20% success 
+
+_S.12_ task:
+	injured _monster1_ 
+	say 1050 
+	cast Gods'_Fire spell on _monster1_ 
+	unset _S.12_ 
+
+_S.13_ task:
+	injured _monster2_ 
+	say 1051 
+	cast Lightning spell on _monster2_ 
+	unset _S.13_ 
+
+_S.14_ task:
+	when _S.03_ and not _S.01_ 
+	end quest 
+
+variable _towertime_
+_S.16_ task:
+	when not _S.10_ and _accompany_ 
+	when _towertime_ and _accompany_ 
+	say 1043 
+
+_S.17_ task:
+	when _S.16_ and _S.09_ 
+	give pc _reward_ 
+	start task _goout_
+
+_goout_ task:
+	remove log step 0
+	remove log step 1
+	drop _rebel_ face
+	take _item_ from pc
+	start timer _outgoing_
+--go out task added to ensure you can fail the quest without triggering Part 3.
+--any time you're victorious and leave the tower, Part 3 should trigger.
+
+_S.18_ task:
+	say 1052 
+	cast Banish_Daedra spell on _guardian_
+
+_timeup_ task:
+	when _towertime_ and not _goout_
+	when _S.16_ and not _goout_
+	end quest

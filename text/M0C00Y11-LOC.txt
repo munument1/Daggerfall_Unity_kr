@@ -1,0 +1,109 @@
+-- Quest: C:\QUESTS\WORKING\M0C00Y11.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: fighter
+-- Repute: 0
+-- QuestId: 11
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: M0C00Y11
+DisplayName: 거대 전갈 사냥
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 이름은 _qgiver_입니다. 보통은 길드원에게만 일을
+<ce>맡기지만, 당신은 가능성이 보여서 말이죠, %pcn.
+<ce>거대 전갈을 처치해 달라는 의뢰가 들어왔습니다.
+<ce>그 일을 해내면 길드에서 당신의 평판을 눈감아줄지
+<ce>알아보겠습니다. 거래하시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>친절을 베풀려 했더니 돌아오는 게 이거라니.
+<ce>그냥 나가십시오.
+
+AcceptQuest:  [1002]
+<ce>배짱이 있군요, %pcf, 인정하죠.
+<ce>이 전갈은 누군가의 개인 수집품에서 탈출한 모양입니다.
+<ce>지금은 _house_에 구석에 몰려 있죠.
+<ce>오늘 안으로 처치하면 당신을 좋게 추천하겠습니다.
+
+QuestComplete:  [1004]
+<ce>당신을 겁쟁이라고 부르던 사람들의 말이 틀렸나 보군요.
+<ce>적절한 사람들에게 이 일을 꼭 전하겠습니다.
+
+RumorsDuringQuest:  [1005]
+<ce>집에서 거대 전갈을 발견한 불쌍한 바보에 대해 들으셨나요?
+<ce>지금 술에 취해 있다더군요.
+
+RumorsPostfailure:  [1006]
+<ce>어떤 술 취한 바보가 집에 들어갔다가
+<ce>거대 전갈에게 죽었답니다.
+<ce>전사 길드가 그 짐승을 처리했다고 생각했나 보더군요.
+
+RumorsPostsuccess:  [1007]
+<ce>전사 길드는 참 좋은 집단이에요.
+<ce>누군가의 집에 들어온 거대 전갈을 처치해 줬거든요.
+
+QuestorPostsuccess:  [1008]
+<ce>거대 전갈 처치, 잘했습니다.
+<ce>이 속도라면 곧 길드에 정식으로 가입하게 되겠군요.
+
+QuestorPostfailure:  [1009]
+<ce>거대 전갈을 죽여달라고 부탁했을 뿐입니다.
+<ce>당신은 정말 쓸모없는 %pcf 님이군요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 전사 길드에서 _house_에
+ 침입한 거대 전갈을 처치할 기회를 주었습니다.
+ 오늘 안으로 끝내야 합니다.
+
+Message:  1011
+<ce>_monster_ 사망이 확인되었습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 4 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--           _house_ occurs 2 times.
+--         _monster_ occurs 3 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _house_ local random
+
+Clock _2dung_ 1.00:00 0 flag 1 range 0 1
+
+Foe _monster_ is Giant_scorpion
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _house_ 
+	log 1010 step 0 
+	place foe _monster_ at _house_ 
+	create npc at _house_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	when _qgclicked_ and _S.01_ 
+	give pc nothing 
+	end quest 
+
+_qgclicked_ task:
+               clicked npc _qgiver_
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.01_ 
+	clear _qgclicked_ _clearclick_ 

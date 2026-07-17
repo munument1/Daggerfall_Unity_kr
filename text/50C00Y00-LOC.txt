@@ -1,0 +1,157 @@
+-- Quest: C:\QUESTS\WORKING\50C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Peryite
+-- Repute: 0
+-- QuestId: 0
+Messages: 16
+Quest: 50C00Y00
+DisplayName: 페라이트의 퀘스트
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>힘은 많으면 많을수록 좋은 법 아니겠소, 그렇지 않소,
+<ce>%pcf? 당신은 내가 예전에 알던 누군가와 많이
+<ce>닮았군. 하지만 그건 당신의 제1시대 때의 일이었으니,
+<ce>당신일 리는 없겠지, 그렇지 않소? 자,
+<ce>원한다면 내 방패 중 하나인 주문 파괴자를 주겠소. 그것은
+<ce>당신이 원하는 힘을 확실히 줄 것이오. 하지만 먼저, 당신의
+<ce>진지함을 증명할 작은 증거가 필요하오. 당신 진지한 거 맞지?
+
+RefuseQuest:  [1001]
+<ce>마음을 바꿨나 보군? 미안해할 것 없소. 아니라고 말할
+<ce>용기가 있다는 건 성숙하다는 증거니까. 마음이 바뀌면 다시
+<ce>연락해주시오. 당신이 그럴 거라는 걸 알고 있으니까.
+
+AcceptQuest:  [1002]
+<ce>훌륭하오. 명확한 목표를 가진 %ra 종족을
+<ce>보는 건 멋진 일이오. 요즘 시대엔 참 드문 일이지.
+<ce>자, 여기 _monster_, 솔직히 말해 뱀파이어가 하나 있는데,
+<ce>당신이 아주 싫어할 만한 녀석이지.
+<ce>멍청하고, 매력도 없고, 심보가 고약한 놈이오.
+<ce>그놈을 편도 여행으로 저세상에 보내버려야겠소. 그 불쾌한
+<ce>일을 처리한 뒤에는, 내 친구 _qgfriend_ 측을 찾아가시오.
+<ce>매력적인 =qgfriend_ 측이지. 그 친구가 ___qgfriend_의
+<ce>__qgfriend_에서 당신을 기다리고 있을 거요. 자, 서두르라고
+<ce>하고 싶진 않지만, %g2 에게 =1stparton_일
+<ce>이상 기다리게 할 수는 없소. ___mondung_까지 가는 데도
+<ce>꽤 시간이 걸릴 테니, 가는 길에 꾸물거려선 안 될 거요.
+<ce>_qgfriend_ 측이 기꺼이 주문 파괴자를 보여줄 것이오.
+<ce>자, 너무 길게 떠들었군. 만나서 반가웠소.
+
+QuestFail:  [1003]
+<ce>당신은 다른 =qgfriend_의 행방을 찾고 있는 게 분명하오.
+
+QuestComplete:  [1004]
+<ce>거기 있었군, %pct. 나는 _qgfriend_ 측이오.
+<ce>주인님께서 당신이 나를 찾길 원하셨던 것 같은데?
+<ce>주인님께서는 그 끔찍한 _monster_ 개체를 처리한 당신의
+<ce>성과에 매우 만족하고 계시오. 내가 말해도 될지 모르겠지만,
+<ce>주인님께서는 전반적으로 당신을 아주 마음에 들어 하시는
+<ce>것 같군. 여기 당신이 원하던 방패, 주문 파괴자가 있소.
+<ce>주문 시전자들은 당신을 두려워하게 될 것이오.
+<ce>마음에 들길 바라오, %pct.
+
+RumorsDuringQuest:  [1005]
+___mondung_의 =monster_ 관련 소문에 따르면
+친구만큼이나 강력한 적들도 많이 만들었다고들 하더군.
+<---> __qgfriend_에서 아주
+괜찮은 =qgfriend_의 존재를 알게 되었소.
+왜 %g2 를 진작 만나지 못했는지 모르겠군.
+
+RumorsPostfailure:  [1006]
+늙은 =monster_의 거처가 북쪽으로 옮겨졌소. 이제 역병이
+어디를 따라갈지 알겠군. <---> 데이드라조차도
+=monster_ 및 그 힘을 두려워한다고 들었소.
+
+RumorsPostsuccess:  [1007]
+=monster_의 생각에 따르면 스스로가 데이드라보다 더
+강력하다고들 하더군. <---> =monster_의 행보는
+삶과 죽음에 대한 자신의 힘을 과시한 대가를 치른 결과지.
+
+Message:  1011
+_qgfriend_ 측은 아주 유쾌하고 매력적인 =qgfriend_
+측이며, 데이드라 숭배자이기도 하다고들 하더군.
+<---> _qgfriend_ 측은 %reg 에서
+페라이트의 노예라는 소문이 있소.
+
+Message:  1012
+페라이트는 역병과 전염병의 데이드라요.
+<---> 페라이트는 가장 악명 높으면서도 가장
+붙임성 있는 데이드릭 프린스지.
+
+Message:  1013
+주문 파괴자는 주문에 대한 궁극적인 방어 수단이오.
+<---> 주문 파괴자는 주문을 해제하거나 공격적인
+시전자에게 다시 반사할 수도 있소.
+
+Message:  1014
+<ce>=monster_ 처치 완료. 페라이트의 복수가 완료되었소.
+
+Message:  1015
+%qdt:
+ 데이드릭 프린스 페라이트가 나에게 ___mondung_에 가서
+ =monster_의 이름을 지닌 뱀파이어를 처치하라고 했다.
+ 그 후, 나는 ___qgfriend_의 __qgfriend_의 명칭으로 불리는
+ 곳에서 _qgfriend_ 측을 만나 유명한 주문 파괴자 방패를
+ 받아야 한다. 전체 여정을 위해 =1stparton_일이 주어졌다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g2 occurs 2 times.
+--              %pcf occurs 1 time.
+--              %pct occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 5 times.
+--         =monster_ occurs 7 times.
+--        =qgfriend_ occurs 5 times.
+--       ___mondung_ occurs 3 times.
+--      ___qgfriend_ occurs 5 times.
+--         _monster_ occurs 2 times.
+--        _qgfriend_ occurs 6 times.
+
+QBN:
+Item _artifact_ artifact Spell_Breaker anyInfo 1013
+
+Person _questgiver_ face 112 named Peryite anyInfo 1012
+Person _qgfriend_ group Cleric female remote anyInfo 1011
+Person _dummyvamp_ face 1 factiontype Vampire_Clan remote
+
+Place _mondung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 1 range 1 5
+
+Foe _monster_ is Ancient_vampire
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1015 step 0 
+	place foe _monster_ at _mondung_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_pcgetsgold_ task:
+	when _npcclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1014 
+	change repute with _dummyvamp_ by -20 
+
+_npcclicked_ task:
+	clicked npc _qgfriend_ 
+
+_clearclick_ task:
+	when _npcclicked_ and not _mondead_
+	say 1003 
+	clear _npcclicked_ _clearclick_ 

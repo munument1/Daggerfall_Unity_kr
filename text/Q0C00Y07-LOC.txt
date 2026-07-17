@@ -1,0 +1,141 @@
+-- Quest: C:\QUESTS\WORKING\Q0C00Y07.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: witch
+-- Repute: 0
+-- QuestId: 7
+Messages: 14
+Quest: Q0C00Y07
+DisplayName: 투옥된 마녀
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>우리 자매 _witch_의 투옥 사실을 알았습니다.
+<ce>그녀를 구출할 당신 같은 분이 필요합니다. 도와주시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>당신은 얼음 같은 심장을 가졌군요, %pcf.
+<ce>부끄러운 줄 아십시오.
+
+AcceptQuest:  [1002]
+<ce>우리를 위해 이 일을 해주신다면, 정말 감사할 것입니다.
+<ce>___mondung_에서 그녀를 찾으면 이 옷을 주어
+<ce>변장시키십시오. 늦어도 =queston_일 안에는 두 분이
+<ce>함께 돌아오기를 기대하겠습니다.
+
+QuestComplete:  [1004]
+<ce>_witch_, 당신이 무사히 돌아온 것을
+<ce>보니 마음이 놓이는군요. %pcf,
+<ce>당신은 오늘 ==qgiver_의 존경을 얻었습니다.
+
+RumorsDuringQuest:  [1005]
+_witch_에 대한 심문이 끝나면, 그녀는 화형감이지.
+<---> 곧 _witch_에 대한 교수형이나
+화형이 있을 거야.
+
+RumorsPostfailure:  [1006]
+_witch_의 처형은 정말 볼만했지. 온 가족이 즐길 만한
+구경거리였어. <---> 이제 _witch_의 육신은
+재가 되었어. 그녀의 모든 마법도 소용없었지.
+
+RumorsPostsuccess:  [1007]
+_witch_의 도주 소식을 들었어. ==qgiver_의 배후설이
+있더군. <---> _witch_의 심판은 이루어지지
+않았어. 고문조차 제대로 당하지 않았지.
+
+QuestorPostsuccess:  [1008]
+_witch_의 회복 상태는 양호합니다, %pcf.
+기뻐하시겠군요.
+
+QuestorPostfailure:  [1009]
+<ce>우리 자매 _witch_의 죽음을 애도합니다,
+<ce>산 채로 불탔지요. 아마 당신이 그녀를 구할 수도 있었겠지만,
+<ce>그렇지 못했군요. 당신은 이곳에 환영받지 못합니다.
+<ce>아마 아주 오랫동안 그럴 겁니다.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ==qgiver_ 측이 나를 ___mondung_ 방향으로 보냈다.
+ 그곳에는 마녀 자매인 _witch_ 측이 투옥되어 있다.
+ 나는 그녀에게 _clothes_ 개체를 주어 변장시키고,
+ =queston_일이 지나기 전에 ==qgiver_ 쪽으로
+ 돌아와야 한다.
+
+Message:  1011
+<ce>==qgiver_ 측이 보냈나요? ==daedra_께 찬양을!
+<ce>_clothes_ 개체를 입고 여기서 빠져나가죠.
+
+Message:  1012
+<ce>"죄수 _witch_ 측이다!
+<ce>멈춰라! 마녀다!"
+<--->
+<ce>"더는 감옥에 있을 순 없다,
+<ce>_witch_! 이번엔 바로
+<ce>처형장으로 가야지!"
+<--->
+<ce>"멈춰라! 넌
+<ce>_witch_ 측이다!"
+
+Message:  1013
+<ce>"여기서 ==qgiver_까지 돌아갈 수 있을 것 같아요,"
+<ce>_witch_의 감사 인사를 뒤로하고 길을 떠납니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 5 times.
+--              %qdt occurs 1 time.
+--         ==daedra_ occurs 1 time.
+--         ==qgiver_ occurs 6 times.
+--         =queston_ occurs 3 times.
+--       ___mondung_ occurs 2 times.
+--         _clothes_ occurs 2 times.
+--           _witch_ occurs 16 times.
+
+QBN:
+Item _clothes_ womens_robe
+
+Person _qgiver_ group Questor
+Person _witch_ face 1 faction The_Prostitutes female remote
+Person _daedra_ face 105 factiontype Daedra
+
+Place _mondung_ remote dungeon3
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _guard_ is Warrior
+
+--	Quest start-up:
+	dialog link for person _daedra_ 
+	start timer _queston_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	get item _clothes_ 
+	place npc _witch_ at _mondung_ 
+
+_queston_ task:
+	end quest 
+
+_S.01_ task:
+	toting _clothes_ and _witch_ clicked 
+	create foe _guard_ every 2 minutes 30 times with 50% success msg 1012 
+	hide npc _witch_ 
+	say 1011 
+	add _witch_ face 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.03_ task:
+	when _qgclicked_ and not _S.01_ 
+	clear _qgclicked_ _S.03_ 
+
+_reward_ task:
+	when _qgclicked_ and _S.01_ 
+	give pc nothing 
+	end quest 
+
+_S.05_ task:
+	when _queston_ and _S.01_ 
+	say 1013 

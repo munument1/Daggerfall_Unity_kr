@@ -1,0 +1,142 @@
+-- Quest: C:\QUESTS\WORKING\R0C10Y20.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 10
+-- QuestId: 20
+Messages: 16
+Quest: R0C10Y20
+DisplayName: 희귀한 재료
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+제 보물 창고에 있는 아름다운 _reward_ 갖고 싶지
+않으십니까, %pcf 님? 제 연금술사가 중요한 실험에
+꼭 필요한 아주 희귀한 재료를 주문했는데, 누군가 가져와 줄
+사람이 필요합니다. 처리할 수 있겠습니까, %pcf 님?
+
+RefuseQuest:  [1001]
+음, 이상하군요. %pcf 님, 그렇게 용병 같은
+마음가짐은 버리는 게 좋을 겁니다.
+
+AcceptQuest:  [1002]
+훌륭합니다, %pcf 님. 당신이 해낼 줄 알았습니다.
+이 _item1_ ___contact_에 있는 __contact_
+쪽으로 가져가십시오. 그곳에 _contact_의 이름을
+지닌 =contact_ 있을 겁니다. %g2 에게
+남쪽에서 가져온 _item2_ 달라고 하십시오.
+%g 께서 가져오신 물건입니다. =1stparton_일
+내로 다녀오셔야 합니다. 알겠습니까, %pcf 님?
+당신을 믿겠습니다. 후회하게 만들지 마십시오.
+
+QuestFail:  [1003]
+_item2_ 관련 어떻게 되었습니까, %pcf 님?
+기억하고 계시죠? 꾸물거리지 마십시오.
+
+QuestComplete:  [1004]
+타이밍이 좋군요, %pcf 님. 제 연금술사가
+아주 기뻐할 겁니다. 정말 훌륭한 _item2_군요.
+약속한 대로 여기 _reward_ 드립니다. 아름답지 않습니까?
+
+RumorsDuringQuest:  [1005]
+_questgiver_의 연금술사는 한때 에보니움 조각을
+거부한 적이 있습니다. "신선하지" 않다는 이유였죠.
+<---> _questgiver_의 연금술사는 항상 아주 신선한
+재료만 고집합니다. 왜 그런지는 모르겠네요.
+
+RumorsPostfailure:  [1006]
+_questgiver_ 관련 %g3 의 연금술사 때문에
+골머리를 앓고 있습니다. 아주 까다롭다고 들었거든요.
+<---> _questgiver_의 연금술사가 만든 물약 한
+묶음이 전부 폐기 처분되었다더군요.
+
+RumorsPostsuccess:  [1007]
+최근 _questgiver_의 궁전에서 정말 이상한 냄새가 나는
+거 눈치채셨나요? <---> _questgiver_의 궁전에서
+붉은 연기가 새처럼 피어오르는 걸 봤습니다.
+
+QuestorPostsuccess:  [1008]
+당신을 잊은 적은 없습니다, %pcf 님.
+잘 지내셨나요, 친구여? <---> 제 연금술사가
+직접 감사 인사를 전하고 싶어 했지만, 바쁜 모양이군요.
+잘 지내시죠, %pcf 님?
+
+QuestorPostfailure:  [1009]
+제 연금술사가 여기 있었다면 당신이 가져와야 했던
+_item2_ 내놓으라고 요구하고, 그걸로 당신 머리를
+쳤을 겁니다. 하지만 지금은 경고로 끝내겠습니다.
+앞으로 제 도움이 필요할 때 다시는 저를 실망시키지
+마십시오. 이상입니다.
+
+QuestLogEntry:  [1010]
+당신이 _questgiver_의 의뢰를 받은 %pcf 님이시군요,
+그렇죠? 자, 여기 %g 가 원하던
+_item2_입니다. 서둘러 가져가는 게 좋을 겁니다.
+%g3 의 연금술사는 재료의 신선함에
+아주 예민하거든요. 물론 잘못된 생각이지만요.
+_item2_의 상태는 상하지 않습니다. 그래도 뭐,
+사람마다 취향이 다르니 어쩌겠습니까... 자, 서두르세요.
+
+Message:  1015
+%qdt:
+ _questgiver_의 __questgiver_에 있는 ___questgiver_
+ 지역이 =1stparton_일 이내에 _contact_에게서
+ 신선한 _item2_ 물품을 구해다 주면
+ %g2 에게 _reward_ 물품을 주겠다고 했다.
+ _contact_ 측은 ___contact_의 __contact_에 있다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 2 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 2 times.
+--              %pcf occurs 41 times.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--         =contact_ occurs 5 times.
+--    ___questgiver_ occurs 1 time.
+--        __contact_ occurs 5 times.
+--     __questgiver_ occurs 1 time.
+--         _contact_ occurs 3 times.
+--           _item1_ occurs 1 time.
+--           _item2_ occurs 7 times.
+--      _questgiver_ occurs 8 times.
+--          _reward_ occurs 3 times.
+
+QBN:
+Item _reward_ gem
+Item _item1_ turquoise
+Item _item2_ skin
+
+Person _questgiver_ face 72 group Questor
+Person _contact_ face 80 group Chemist remote
+
+
+Clock _1stparton_ 00:00 0 flag 17 range 1 4
+
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1015 step 0 
+	get item _item1_ 
+
+_pcgetsgold_ task:
+	toting _item2_ and _questgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+variable _qgclicked_
+variable _npcclicked_
+_1stparton_ task:
+	make _item2_ permanent 
+	make _item1_ permanent 
+	change repute with _questgiver_ by -20 
+	end quest 
+
+variable _pchasitem1_
+_pchasitem2_ task:
+	toting _item1_ and _contact_ clicked 
+	get item _item2_ 
+	say 1010 

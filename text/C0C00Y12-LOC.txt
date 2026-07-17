@@ -1,0 +1,168 @@
+-- Quest: C:\QUESTS\WORKING\C0C00Y12.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: temple
+-- Repute: 0
+-- QuestId: 12
+Messages: 21
+Quest: C0C00Y12
+DisplayName: 도난당한 물건
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>평소라면 __qgiver_의 일원이 아닌 자에게는 일을
+<ce>맡기지 않았을 걸세. 하지만 지금은 일손이 부족하군.
+<ce>뻔뻔한 도둑이 신전에서 _religitem_ 물건을 훔쳐 갔네.
+<ce>사제가 범인을 똑똑히 보았지. 그저 평범한 거리의 도둑,
+<ce>_thief_의 이름을 지닌 =thief_였는데,
+<ce>그날 신전에 들어와 예배하는 척하고 있었네. 이 도둑을
+<ce>추적해 우리의 훔쳐 간 _religitem_ 물건을 되찾아오게.
+<ce>그럼 앞으로 자네를 좋게 이야기해주겠네.
+
+RefuseQuest:  [1001]
+<ce>기회를 주었더니 내 얼굴에 침을 뱉는군.
+<ce>내게 호의를 구할 생각은 말게.
+
+AcceptQuest:  [1002]
+<ce>=traveltime_일 안에 되찾아와야 하네.
+<ce>그때가 되면 우리 기사단이 수색대를 파견할 수 있을 테니,
+<ce>자네는 기회를 잃게 될 걸세.
+
+QuestComplete:  [1004]
+<ce>모든 찬사를 자네에게 돌리네, %pcn.
+<ce>_religitem_ 물건이 신전으로 돌아왔네.
+<ce>자네는 %god 의 호의를 얻었네.
+
+RumorsDuringQuest:  [1005]
+<ce>_thief_ 지역은 __thiefplace_의 _thiefplace_에 숨어
+<ce>있다네. __qgiver_의 눈을 피해 숨기엔 좋은 곳이지.
+
+RumorsPostfailure:  [1006]
+__qgiver_ 지역의 그 _religitem_ 물건은 영영
+되찾지 못할 모양이군.
+
+RumorsPostsuccess:  [1007]
+_thief_ 측은 심판을 받았고, __qgiver_ 지역은
+그들의 _religitem_ 물품을 되찾았네.
+
+QuestorPostsuccess:  [1008]
+우리의 _religitem_ 물건을 가져다준 사람이 누구인지
+잊었다고 생각하지 말게, %pcf.
+
+QuestorPostfailure:  [1009]
+우리의 _religitem_ 물건은 영원히 사라졌는데 대화를
+하고 싶다고? 믿을 수가 없군.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 __qgiver_ 출신인 _qgiver_께서
+ =thief_인 _thief_에게 도난당한
+ _religitem_ 물건을 되찾을 기회를 주셨다.
+ =traveltime_일 내로 그것을 되찾아야 한다.
+
+Message:  1011
+<ce>%oth! 신전이 고작 그 가치 없는 _religitem_ 물건을
+<ce>되찾으려고 현상금 사냥꾼을 고용했다고? %oth,
+<ce>목숨 걸 만한 가치는 없지. 여기, 가져가게. 이제,
+<ce>자네가 목숨 걸 가치가 있다고 생각하는지 보겠네... 도와줘!!
+<ce>이 %ra 인물이 우리 전리품을 가지고 도망가고 있어!
+
+Message:  1012
+<ce>침입자다! 경보를 울려라! 건물 안에 침입자가 있다!
+
+Message:  1013
+<ce>_thief_... 이름은 익숙한데,
+<ce>어디서 들었는지 기억이 안 나는군.
+<ce>__thiefplace_에서 마주친 누군가였나?
+<ce>더 도움이 되지 못해 미안하네.
+<--->
+<ce>=decoy_의 이름으로 불리는? 물론, %g2 알지.
+<ce>___decoy_에 산다네.
+<--->
+<ce>=thief_에 대해 말하는 거라면,
+<ce>%g 는 예전에 내 주머니를 털려던
+<ce>__thiefplace_ 출신의 좀도둑 같더군.
+
+Message:  1014
+<ce>물론, 그 얄미운 좀도둑은 알지.
+<ce>__thiefplace_에 있는 _thiefplace_ 물건을 확인해보게.
+<ce>
+<ce>_thief_? 그래, %g 는
+<ce>__thiefplace_의 _thiefplace_에 "숨어" 있다네.
+<ce>자네와 내가 %g 가 어디 있는지 아는 이상,
+<ce>그리 조용히 지내는 건 아니겠지만 말이야!
+
+Message:  1020
+<ce>_thief_ 인물이 자네에게 _religitem_ 물건을
+<ce>던져주고는, 그림자 속으로 사라지네. 이제 탈출할 시간이군!
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 9 times.
+--               %g2 occurs 2 times.
+--              %god occurs 2 times.
+--              %oth occurs 2 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--           =decoy_ occurs 2 times.
+--           =thief_ occurs 3 times.
+--      =traveltime_ occurs 3 times.
+--         ___decoy_ occurs 2 times.
+--        ___qgiver_ occurs 7 times.
+--     __thiefplace_ occurs 11 times.
+--          _qgiver_ occurs 1 time.
+--       _religitem_ occurs 10 times.
+--           _thief_ occurs 7 times.
+--      _thiefplace_ occurs 5 times.
+
+QBN:
+Item _religitem_ religious
+
+Person _qgiver_ group Questor
+Person _thief_ face 229 faction The_Thieves_Guild male remote anyInfo 1014 rumors 1013
+Person _decoy_ face 92 group Local_3.1 male remote
+
+Place _thiefplace_ remote house2
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _burglar_ is Burglar
+Foe _rogue_ is Rogue
+
+--	Quest start-up:
+	dialog link for person _decoy_ 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pc at _thiefplace_ set _S.04_ 
+	place npc _thief_ at _thiefplace_ 
+
+_traveltime_ task:
+	make _religitem_ permanent 
+	end quest 
+
+_questdone_ task:
+	toting _religitem_ and _qgiver_ clicked 
+	give pc nothing 
+	end quest 
+
+_S.02_ task:
+	injured _rogue_ saying 1012 
+	injured _burglar_ saying 1012 
+
+_S.03_ task:
+	clicked npc _thief_ 
+	get item _religitem_ saying 1011
+	hide npc _thief_ 
+	say 1020
+--exchanged 1011 and 1020 for better dialogue
+
+variable _S.04_
+_S.05_ task:
+	when _S.04_ and _S.03_ 
+	create foe _rogue_ every 5 minutes 2 times with 80% success 
+	create foe _burglar_ every 5 minutes 2 times with 70% success 
+--drastically increased spawn chance, from 3 and 2%. Nearly impossible to see them otherwise. Also reduced spawn time from 50 to 5.

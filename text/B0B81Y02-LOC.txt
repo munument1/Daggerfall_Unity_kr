@@ -1,0 +1,325 @@
+-- Quest: C:\QUESTS\WORKING\B0B81Y02.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: knight
+-- Repute: 81
+-- QuestId: 2
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 43
+Quest: B0B81Y02
+DisplayName: 잃어버린 유물
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>저는 이 기사단의 _qgiver_입니다. 매우 위험한 의뢰가
+<ce>하나 있습니다. %pcf. 당신은 이 일을 맡을 수
+<ce>있는 몇 안 되는 사람 중 하나입니다. 리치가 언데드 군대를
+<ce>일으키고 있습니다. 누군가 가서 그것을 막아야 합니다.
+
+RefuseQuest:  [1001]
+<ce>알겠습니다, %pcn. 이건 당신에게도 너무 위험합니다.
+<ce>이 일을 해낼 수 있을 만한 다른 영웅이 한두 명 더 있을
+<ce>겁니다. 그들에게 가서 물어보죠.
+
+AcceptQuest:  [1002]
+<ce>당신은 참으로 용감하군요.
+<ce>리치가 ___dungeon_에 자신의 소굴을 마련했습니다. 그곳으로
+<ce>가서 그 사악한 존재를 처치하십시오. =2dung_일 뒤에
+<ce>당신이 돌아오지 않는다면, 우리는 다른 이를 보낼 것입니다.
+
+QuestComplete:  [1004]
+<ce>영웅 %pcn 에게 경의를! 잘했습니다!
+<ce>당신의 이름은 역사에 기록될 것입니다.
+
+RumorsDuringQuest:  [1005]
+%reg 의 상태는 리치의 맹공에 대비하고 있습니다.
+<---> 모든 %reg 의 구성원은 ==qgiver_의
+활약으로 그 리치를 처치할 수 있기를 기도하고 있습니다.
+
+RumorsPostfailure:  [1006]
+리치가 잠시 ___dungeon_의 곁을 떠났습니다. 잠시뿐이죠.
+<---> 리치는 ___dungeon_ 쪽으로 돌아올 것입니다.
+그건 확실합니다.
+
+RumorsPostsuccess:  [1007]
+%reg 의 구원 소식에 우리는 ==qgiver_에게
+감사해야 합니다. <---> ==qgiver_ 출신의
+%ra 기사가 그 아크 리치를 물리쳤습니다.
+
+QuestorPostsuccess:  [1008]
+%reg 의 구원자를 돕지 않는다면 무례한 짓이겠지요,
+안 그렇습니까?
+
+QuestorPostfailure:  [1009]
+리치가 %reg 전부를 파괴하지 않은 건 운이 좋았군요,
+%pcf. <---> %reg 지역은
+그 리치 때문에 심각한 위험에 처했었습니다.
+그런데도 당신은 신경 쓰지 않았죠.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 ==qgiver_의 _qgiver_께서 제게
+ ___dungeon_의 리치를 처단하라는 임무를 맡기셨습니다.
+ 제게는 이 임무를 완수할 =2dung_일의 시간이 있습니다.
+
+Message:  1011
+<ce>리치가 죽었습니다. 마법적인 지원이 사라졌으니,
+<ce>언데드 군대는 다시 무덤으로 돌아갈 것입니다.
+
+Message:  1020
+...드디어 단서를 찾았습니다! 그것이 가리키는 고대의
+강력한 유물은 감히 이름조차 부를 수 없습니다.
+제게는 너무 늦었습니다. 저는 ___dungeon2_의 어두운
+통로 속에서 길을 잃고 이곳에서 죽을 것입니다.
+우선, 단서를 숨겨야겠습니다. 만약 그러지 못한다면...
+
+Message:  1028
+<ce>미안합니다, %pcn.
+<ce>너무 오랫동안 돌아오지 않아서 당신이 죽은 줄 알았습니다.
+<ce>다른 길드원이 그 퀘스트를 맡았습니다.
+
+Message:  1030
+<ce>여기까지 힘들게 걸어와서 저와 대화해놓고 이제
+<ce>와서 계속하고 싶지 않다고요? 말도 안 되는 소리!
+<ce>내 눈앞에서 당장 사라지세요!
+
+Message:  1031
+<ce>나를 방해하다니 저주를 퍼부어주마, %pcn.
+<ce>%oth, 물론 네 이름을 알고 있다. 내 이름은 알려주지
+<ce>않겠다. 평범한 이들이 모르는 것을 알지 못한다면 위저드
+<ce>노릇을 해서 무엇하겠나. 네가 여기 온 이유도 알고 있다.
+<ce>너는 크리사미어를 원하지, 그 이름을 몰랐던 건 아니겠지?
+<ce>그것을 얻는 유일한 방법은 먼저 내 부탁을 들어주는 것이다.
+
+Message:  1032
+<ce>나를 방해하다니 저주를 퍼부어주마, %pcn.
+<ce>%oth, 물론 네 이름을 알고 있다. 평범한 이들이
+<ce>모르는 것을 알지 못한다면 위저드 노릇을 해서 무엇하겠나.
+<ce>네가 여기 온 이유도 알고 있다. 너는 강령술사의
+<ce>목걸이를 원하지, 그 이름을 몰랐던 건 아니겠지?
+<ce>그것을 얻는 유일한 방법은 먼저 내 부탁을 들어주는 것이다.
+
+Message:  1033
+<ce>나를 방해하다니 저주를 퍼부어주마, %pcn.
+<ce>%oth, 물론 네 이름을 알고 있다. 평범한 이들이
+<ce>모르는 것을 알지 못한다면 위저드 노릇을 해서 무엇하겠나.
+<ce>네가 여기 온 이유도 알고 있다. 너는 매그너스의
+<ce>지팡이를 원하지, 그 이름을 몰랐던 건 아니겠지?
+<ce>그것을 얻는 유일한 방법은 먼저 내 부탁을 들어주는 것이다.
+
+Message:  1034
+<ce>나를 방해하다니 저주를 퍼부어주마, %pcn.
+<ce>%oth, 물론 네 이름을 알고 있다. 평범한 이들이
+<ce>모르는 것을 알지 못한다면 위저드 노릇을 해서 무엇하겠나.
+<ce>네가 여기 온 이유도 알고 있다. 너는 흑마법사의
+<ce>반지를 원하지, 그 이름을 몰랐던 건 아니겠지?
+<ce>그것을 얻는 유일한 방법은 먼저 내 부탁을 들어주는 것이다.
+
+Message:  1035
+<ce>사실 나는 당신의 유물이 어디 있는지 모릅니다.
+<ce>나의 증조부께서 한때 그것을 찾으셨죠.
+<ce>가문의 기록에 따르면, 그분이 유물을 찾았을 때 마법사
+<ce>길드가 그것을 빼앗아 어딘가에 숨겼다고 합니다.
+<ce>그 이후로 그분의 영혼은 편히 쉬지 못하셨습니다. 그분의
+<ce>영혼이 안식을 찾을 때 이 머리카락 한 뭉치를 가지고 있다면,
+<ce>당신이 찾는 것이 어디 있는지 알려주실지도 모릅니다.
+<ce>그분은 ___dungeon3_ 부근을 떠돌고 계십니다.
+
+Message:  1040
+<ce>그대는 내 혈통의 징표, 내 후손의 머리카락을 가지고 있구나.
+<ce>내가 이 징표를 기다리며 수십 년간 이 복도를 헤매었다는
+<ce>것을 알아두어라. __mageguild_에 있는 _mageguild_ 쪽으로
+<ce>가거라. 그곳에서 내가 한때 잃어버렸던 것을 찾게 될 것이다.
+
+Message:  1041
+%qdt:
+ ___dungeon2_에 있는 _wizard_의 행방을 찾았다. 이제
+ ___dungeon3_에 있는 %g3 의 증조부를 찾아야 한다.
+ 그분이라면 유물의 위치를 알려줄 수 있을지도 모른다.
+ _wizard_의 도움으로 %g3 의 머리카락 한 뭉치를
+ 얻어 그분의 영혼을 안식에 들게 할 수 있게 되었다.
+
+Message:  1042
+%qdt:
+ _wizard_의 증조부께서 __mageguild_에 있는
+ _mageguild_에서 유물을 찾을 수 있다고 말씀하셨다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g3 occurs 5 times.
+--              %oth occurs 4 times.
+--              %pcf occurs 2 times.
+--              %pcn occurs 7 times.
+--              %qdt occurs 3 times.
+--               %ra occurs 2 times.
+--              %reg occurs 8 times.
+--           =2dung_ occurs 2 times.
+--         ==qgiver_ occurs 6 times.
+--      ___dungeon2_ occurs 2 times.
+--      ___dungeon3_ occurs 3 times.
+--       ___dungeon_ occurs 5 times.
+--        ___qgiver_ occurs 1 time.
+--      __mageguild_ occurs 9 times.
+--          _qgiver_ occurs 2 times.
+--          _wizard_ occurs 3 times.
+
+QBN:
+Item _I.01_ artifact Warlocks_Ring
+Item _I.02_ artifact Necromancers_Amulet
+Item _I.03_ artifact Chrysamere
+Item _I.04_ artifact Staff_of_Magnus
+Item _map_ letter used 1020
+Item _I.06_ item class 17 subclass 13
+
+Person _qgiver_ group Questor
+Person _wizard_ face 1 group Spellcaster remote
+
+Place _dungeon_ remote dungeon
+Place _dungeon2_ remote dungeon
+Place _mageguild_ remote magery
+Place _dungeon3_ remote dungeon0
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+Clock _S.30_ 180.13:20 0 flag 1 range 0 1
+
+Foe _F.00_ is Ancient_lich
+Foe _F.01_ is Lich
+Foe _ghost_ is Wraith
+Foe _battlemage_ is Battle_mage
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _ancientlich_ _lich_ _lich_ 
+	pick one of _artifact1_ _artifact2_ _artifact3_ _artifact4_ 
+
+variable _2dung_
+_S.01_ task:
+	killed 1 _F.01_ saying 1011 
+	killed 1 _F.00_ saying 1011 
+	_map_ used do _readmap_ 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_success_ task:
+	when _S.02_ and _S.01_ 
+	give pc nothing 
+	remove log step 0 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 
+
+variable _S.04_
+variable _S.05_
+_ancientlich_ task:
+	give item _map_ to _F.00_ 
+	place foe _F.00_ at _dungeon_ 
+
+_lich_ task:
+	give item _map_ to _F.01_ 
+	place foe _F.01_ at _dungeon_ 
+
+_artifact1_ task:
+	place item _I.03_ at _mageguild_ 
+
+_artifact2_ task:
+	place item _I.02_ at _mageguild_ 
+
+_artifact3_ task:
+	place item _I.04_ at _mageguild_ 
+
+_artifact4_ task:
+	place item _I.01_ at _mageguild_ 
+
+_readmap_ task:
+	start timer _S.30_ 
+	reveal _dungeon2_ readmap
+	place npc _wizard_ at _dungeon2_ 
+
+_S.13_ task:
+	clicked npc _wizard_ 
+
+_S.14_ task:
+	when _artifact1_ and _S.13_ 
+	prompt 1031 yes yes no _no_ 
+
+_S.15_ task:
+	when _artifact2_ and _S.13_ 
+	prompt 1032 yes yes no _no_ 
+
+_S.16_ task:
+	when _artifact3_ and _S.13_ 
+	prompt 1033 yes yes no _no_ 
+
+_potion_ task:
+	when _artifact4_ and _S.13_ 
+	prompt 1034 yes yes no _no_ 
+
+_S.18_ task:
+	clicked item _I.02_ 
+	clicked item _I.03_ 
+	clicked item _I.01_ 
+	clicked item _I.04_ 
+
+_S.19_ task:
+	when _S.13_ and _S.20_ 
+	clear _S.13_ _S.19_ 
+
+variable _S.20_
+yes task:
+	pc at _mageguild_ set _S.25_ 
+	reveal _dungeon3_
+	say 1035 
+	log 1041 step 1 
+	get item _I.06_ 
+	place foe _ghost_ at _dungeon3_ 
+
+_no_ task:
+	say 1030 
+
+totemReward2 task:
+	killed 1 _ghost_ 
+	have _I.06_ set _S.24_ 
+
+_S.24_ task:
+	log 1042 step 2 
+	say 1040 
+
+_S.25_ task:
+	create foe _battlemage_ every 5 minutes 5 times with 50% success 
+
+_S.26_ task:
+	when _artifact1_ and _S.18_ 
+	make _I.03_ permanent 
+
+_S.27_ task:
+	when _artifact2_ and _S.18_ 
+	make _I.02_ permanent 
+
+_S.28_ task:
+	when _artifact3_ and _S.18_ 
+	make _I.04_ permanent 
+
+_S.29_ task:
+	when _artifact4_ and _S.18_ 
+	make _I.01_ permanent 
+
+_S.30_ task:
+	end quest 
+
+_questdone_ task:
+	when _2dung_ and not _readmap_ 
+	end quest 
+
+_S.32_ task:
+	when _clearclick_ and _2dung_ 
+	say 1028 
+
+_S.33_ task:
+	when _S.26_ or _S.27_ or _S.28_ or _S.29_ 
+	end quest 

@@ -1,0 +1,241 @@
+-- Quest: C:\QUESTS\WORKING\80C0XY00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Malacath
+-- Repute: 0X
+-- QuestId: 0
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 54
+Quest: 80C0XY00
+DisplayName: 말라카스의 퀘스트
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>그래, 권력에 관심이 있던 다른 누군가를 알고 있지. 권력을
+<ce>꿈꾸며 나에게 자신이 항상 갈망하던 아름다움과 우아함을
+<ce>달라고 요청했던 오블리비언의 작은 파니코사 말이야.
+<ce>내가 그것을 아름답게 만들었을 때, 그것은 마치 내가 만들지
+<ce>않은 것처럼 나의 의지에 저항하며 싸웠지. 아마 당신도
+<ce>똑같을지도 모르겠군. 내가 당신을 강하고 아름답게 만든다면,
+<ce>당신은 내가 준 선물을 존중하겠지, 그렇지 않나?
+
+RefuseQuest:  [1001]
+<ce>멍청한 %ra, 거짓말하는 법조차 모르는 건가?
+<ce>당신의 한심한 갈망으로 나의 시간을 낭비하지 마라.
+
+AcceptQuest:  [1002]
+<ce>당신을 믿겠네, %pcn. 한때 내가 신뢰했던
+<ce>배신자 유혹자를 죽이는 대가로, 당신의 세계에서
+<ce>나의 가장 소중한 보물인 _artifact_ 물품을 주겠네.
+<ce>그것은 당신을 정말 강력하게 만들어줄 거야.
+<ce>그 가증스러운 생명체는 ___mondung_에 있을 걸세.
+<ce>그녀를 죽이고 나의 친애하고 신뢰하는 신하, _qgfriend_
+<ce>측을 ___qgfriend_에서 만나게. %g2 에게 편의를
+<ce>위해 그곳 궁전에서 당신을 만나라고 말해두지. 모든 일이
+<ce>효율적으로 처리된다면 =1stparton_일 이상 걸리지 않을 거라
+<ce>생각하네. 가서 나의 명령을 수행하게, %pcn.
+
+QuestFail:  [1003]
+<ce>꺼져라, 침 흘리는 %ra.
+<ce>나는 진짜 인간을 찾고 있다.
+
+QuestComplete:  [1004]
+<ce>당신이 %pcn 의 주인공이군. 말라카스께서 당신을
+<ce>완벽하게 묘사하셨어. 늙은 =monster_ 처치에 성공했군.
+<ce>그녀는 입을 다무는 법을 몰랐거든, 알겠나?
+<ce>어쨌든, 여기 _artifact_의 실물이 있네.
+<ce>꽤 괜찮은 파괴 도구지. 그리고 누가 알겠나? 언젠가 말라카스
+<ce>자신에게 그것을 사용해야 할지도 모르지. 농담일세... 물론.
+
+RumorsDuringQuest:  [1005]
+_murder_ ___ruler_에 있는
+%g3 의 궁전에서 죽은 채로 발견됨.
+<---> 대부분의 데이드라 유혹자는 임무를 띠고 있다.
+___mondung_에 있는 자는 그저 기다리고 있을 뿐이다.
+
+RumorsPostfailure:  [1006]
+하늘에서 들려오던 그 여자의 웃음소리가 아직도
+머릿속을 맴돈다. <---> 어디인지는 모르겠지만,
+며칠 전 밤에 그녀가 날아다니는 것을 본 사람들이 많다.
+
+RumorsPostsuccess:  [1007]
+그 유혹자가 사랑에 빠졌다는 이유로 주인의 대리인들에게
+살해당했다고 들었어. <---> 불안하군 -- 그 유혹자가
+그 구멍 속에 앉아서 무언가를 기다리고 있었다니.
+
+Message:  1011
+_qgfriend_의 신분은 귀족으로, 어둠의 여인과 비밀스러운
+연애를 했다는 소문이 있습니다. <---> _qgfriend_의
+지위는 많은 비밀스러운 충성 관계를 맺고 있는 귀족입니다.
+
+Message:  1012
+말라카스는 거짓과 기만, 위선의 데이드릭 프린스입니다.
+<---> 말라카스는 죽은 개가 구더기를 번식시키듯
+거짓을 퍼뜨립니다.
+
+Message:  1013
+<ce>_artifact_의 위력은 엄청난 워해머로,
+<ce>희생자의 힘을 흡수할 수 있습니다.
+
+
+Message:  1015
+=monster_ 사망.
+
+Message:  1020
+%qdt:
+ 나는 데이드라 군주 말라카스를 소환했다.
+ 그는 과거 자신을 따랐던 데이드라 유혹자 =monster_
+ 개체를 죽이는 대가로 _artifact_ 물품을 주겠다고 했다.
+ 그 유혹자는 ___mondung_의 명칭으로 불리는 곳으로
+ 피신했다. =monster_ 개체를 처치하고 =1stparton_일 안에
+ ___qgfriend_ 궁전으로 가면, _qgfriend_의 이름으로 불리는
+ =qgfriend_ 측이 내게 _artifact_ 물품을 줄 것이다.
+
+Message:  1030
+=monster_,
+ 
+말라카스께서는 _murder_의 죽음을 원하신다.
+%g3 의 요원들이 우리의 음모를 너무 많이 파헤쳤다.
+%reg 관련 우리의 모든 계획이 수포로 돌아가기 전에
+%g 를 반드시 처리해야 한다. %g2 는
+___ruler_의 황궁에 있을 것이다. %g3 의 죽음이
+우리와 연관되어 있다는 흔적을 남기지 않도록 주의하라.
+암살을 완수한 뒤에는 ___mondung_에서 나를 기다려라.
+말라카스께서 내리시는 보상과 다음 임무를 가져오겠다.
+ 
+<ce>_qgfriend_
+
+Message:  1040
+<ce>%oth! _qgfriend_의 정체가 _murder_의 죽음
+<ce>배후에 있었다고? 게다가 데이드라 음모에도 연루되었다고?
+<ce>당신의 도움이 없었다면 이 살인 사건은
+<ce>영원히 해결되지 못했을 겁니다, %pcn.
+<ce>%rt 에 대한 당신의 충성심은 잊지 않겠습니다.
+
+Message:  1041
+<ce>_qgfriend_의 쪽지를 _ruler_에게 전하시겠습니까?
+
+Message:  1050
+<ce>_murder_의 죽음은 여전히 미스터리입니다.
+<ce>_ruler_ 측에서 수사를 지휘하고 있지만,
+<ce>아직 단서가 없습니다.
+<--->
+<ce>분명 _murder_ 관련 사건은 %g3 의
+<ce>%reg 내 부패 수사 때문에 살해당했을 겁니다.
+
+Message:  1051
+<ce>_murder_의 행방과 %rt %rn 전복
+<ce>음모를 조사하던 중 %g 가 "의문의" 죽음을
+<ce>맞이했습니다.
+<ce>_ruler_의 책임 소재를 밝혀내려 하지만,
+<ce>%g 는 결코 진상을 파헤치지 못할 것입니다.
+<--->
+<ce>_murder_의 시체가 ___ruler_의 궁전에서
+<ce>발견되었으며, 고위급 반역에 대한 %g3 의 조사
+<ce>기록인 %g3 의 모든 메모가 도난당했습니다.
+<ce>_ruler_의 살인범 추적 명령에도 불구하고,
+<ce>%g 는 아무런 단서도 잡지 못했습니다.
+
+Message:  1052
+<ce>_ruler_ 측에서 _murder_의 죽음에 대한
+<ce>수사를 지휘하고 있지만,
+<ce>아직 단서가 없습니다.
+<--->
+<ce>_ruler_ 측은 ___ruler_의 황궁에서 발생한
+<ce>_murder_의 죽음을 수사 중입니다.
+
+Message:  1053
+<ce>_ruler_ 측은 _murder_의 죽음에 대한
+<ce>책임자를 찾으려 하지만,
+<ce>%g 는 결코 진상을 파헤치지 못할 것입니다.
+<--->
+<ce>_ruler_ 측은 _murder_의 살인범을 추적하라는
+<ce>명령을 받았으나, 아무런 단서도 잡지 못했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 8 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 19 times.
+--              %oth occurs 1 time.
+--              %pcn occurs 5 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--              %reg occurs 3 times.
+--               %rn occurs 1 time.
+--               %rt occurs 3 times.
+--       =1stparton_ occurs 2 times.
+--         =monster_ occurs 5 times.
+--        =qgfriend_ occurs 1 time.
+--       ___mondung_ occurs 4 times.
+--      ___qgfriend_ occurs 2 times.
+--         ___ruler_ occurs 5 times.
+--        _artifact_ occurs 6 times.
+--          _murder_ occurs 18 times.
+--        _qgfriend_ occurs 7 times.
+--           _ruler_ occurs 11 times.
+
+QBN:
+Item _artifact_ artifact Volendrung anyInfo 1013
+Item _note_ letter used 1030
+
+Person _questgiver_ face 112 named Malacath anyInfo 1012
+Person _qgfriend_ group Noble male remote anyInfo 1011
+Person _murder_ face 1 factiontype Province remote anyInfo 1050 rumors 1051
+Person _ruler_ group Noble remote anyInfo 1052 rumors 1053
+
+Place _mondung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 18 range 2 5
+
+Foe _monster_ is Daedra_seducer
+
+--	Quest start-up:
+	dialog link for person _ruler_ 
+	dialog link for person _murder_ 
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	give item _note_ to _monster_ 
+	_note_ used do _readnote_ 
+	place foe _monster_ at _mondung_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_pcgetsgold_ task:
+	when _npcclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1015 
+	create npc _qgfriend_ 
+
+_npcclicked_ task:
+	clicked npc _qgfriend_ 
+
+--defining clearclick to prevent out-of-place victory condition
+_clearclick_ task:
+	when _npcclicked_ and not _mondead_
+	say 1003
+	clear _npcclicked_ _clearclick_
+
+_readnote_ task:
+	add dialog for person _murder_ 
+
+_rulerclicked_ task:
+	toting _note_ and _ruler_ clicked 
+	prompt 1041 yes _S.09_ no _school_ 
+
+_S.09_ task:
+	say 1040 
+	change repute with _murder_ by +15 
+
+_school_ task:
+	get item _note_ 

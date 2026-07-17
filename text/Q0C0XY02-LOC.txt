@@ -1,0 +1,190 @@
+-- Quest: C:\QUESTS\WORKING\Q0C0XY02.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: witch
+-- Repute: 0X
+-- QuestId: 2
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 21
+Quest: Q0C0XY02
+DisplayName: 배신적인 선물
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>당신은 ==qgiver_ 님을 도우려 하십니까, %pcf 님?
+<ce>많은 이들이 도움을 구하러 오지만, 소원을 이루고 나면
+<ce>우리를 등집니다. 그들의 맹세는 저주가 되고, 그들의 약속은
+<ce>혐오스러운 것이 되곤 하죠. ==qgiver_ 님의 감사를 위해,
+<ce>우리 자매단을 대신하여 한 명의 배신자를 벌해주시겠습니까?
+<ce>
+
+RefuseQuest:  [1001]
+<ce>그것조차 해줄 수 없다는 건가요? %oth 님,
+<ce>==daedra_ 님을 걸고 말하건대, 지키지 못할 약속은 하지
+<ce>않는 편이 낫겠지만, 여전히 마음이 상하는군요.
+
+AcceptQuest:  [1002]
+<ce>정말 하시겠습니까? 하신다면, 훌륭한 _mitem_ 물품을
+<ce>만들어 드리겠습니다. 이제 가장 먼 __tavern_ 방향으로
+<ce>여행을 떠나 우리를 배신한 악당 =man_ 개체를
+<ce>찾으십시오. %g2 스스로를 _man_의 이름으로
+<ce>불리는 자입니다. %g2 에게 이 _jewelry_ 물품을
+<ce>건네고, %g2 에게 이것이 %g3 의 옛
+<ce>연인이 보낸 선물이라고 말한 뒤 우리에게 돌아오십시오.
+<ce>서둘러야 합니다. _jewelry_ 물품이 %g3 의
+<ce>겉모습을 %g3 의 내면의 아름다움과
+<ce>닮게 바꿀 것이기 때문입니다. ==qgiver_ 측은
+<ce>=queston_일 안에 당신을 기다릴 것입니다.
+<ce>==daedra_께서 당신의 성스러운 임무에 미소 지으시길.
+
+--needed to change %g on line 36 due to gender mismatches
+
+QuestComplete:  [1004]
+<ce>훌륭합니다, %pcf 님. ==qgiver_ 님과의
+<ce>약속을 이행하셨군요. 약속했던 _mitem_입니다.
+<ce>불쌍한 _man_. 그들이 %g 를 처형하기 전에
+<ce>%g2 가 깊이 고통받게 내버려 두길 바랍니다.
+
+RumorsDuringQuest:  [1005]
+_man_의 존재는 자수성가한 =man_의
+진정한 본보기입니다. 경이로운 인물이죠. <--->
+==qgiver_의 복수심은 매우 강할 수 있습니다.
+
+RumorsPostfailure:  [1006]
+_man_의 생각에 %g 가 ==qgiver_에게
+빚진 것이 있다는 점은 비웃음거리입니다. <--->
+_man_의 거처는 __tavern_ 쪽을 떠났습니다.
+그리고 %g 는 몹시 그리울 것입니다.
+
+RumorsPostsuccess:  [1007]
+_man_의 모습이 _tavern_의 술집 사람들 앞에서
+끔찍한 괴물로 변했습니다. <---> _man_의
+행보는 데이드라와 거래를 했던 게 분명합니다.
+%oth, 참으로 안타까운 운명이군요.
+
+QuestorPostsuccess:  [1008]
+정말로, 당신이 _mitem_의 경험을 즐기고 있길 바랍니다,
+%pcf 님.
+
+QuestorPostfailure:  [1009]
+<ce>_man_에 대한 우리의 복수는 아직 끝나지 않았습니다!
+<ce>여기서 당장 떠나세요. 그렇지 않으면 %g3 의 마땅한
+<ce>운명이 당신에게 닥칠 것입니다, %pcf 님.
+
+Message:  1011
+<ce>_man_님이 _jewelry_ 물품을 가져다준 것에
+<ce>감사하고 있습니다. %g 는 %g2 에게
+<ce>누가 보냈는지 말해주는 동안 그것을 착용해 봅니다.
+<ce>%g3 의 눈이 ==qgiver_의 이름으로 불리는 이름에
+<ce>공포로 빛나더니, 이내 그 공포가 고통으로 변합니다.
+
+Message:  1012
+<ce>_man_ 처치를 하지 말고, 그저 %g2 에게
+<ce>_jewelry_ 전달을 하라고 했거늘! 멍청이! 암살자!
+<ce>_man_의 %g3 의 오만함에 대해 깊이
+<ce>고통받아야 했지, 고통 없이 죽어서는 안 되었다.
+<ce>==daedra_의 저주가 너에게 임하리라, %pcf.
+
+Message:  1020
+%qdt:
+ %reg 의 ==qgiver_님이 _man_의
+ 이름을 지닌 =man_에게 _jewelry_ 물품을
+ 가져다주라고 하셨다. __tavern_에 있는 그분께 말이다.
+ 서둘러야 한다고 들었는데, _jewelry_ 물품이
+ "%g3 의 외면을 %g3 의 내면의 아름다움과
+ 닮게 변형"시킬 것이기 때문이라 했다. %g3 의
+ 손에 _jewelry_ 물품을 쥐고 =queston_일 이내에
+ ==qgiver_ 측을 가지고 돌아와야 한다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 7 times.
+--               %g2 occurs 6 times.
+--               %g3 occurs 10 times.
+--              %oth occurs 3 times.
+--              %pcf occurs 42 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 1 time.
+--         ==daedra_ occurs 3 times.
+--         ==qgiver_ occurs 9 times.
+--             =man_ occurs 2 times.
+--         =queston_ occurs 4 times.
+--         __tavern_ occurs 4 times.
+--         _jewelry_ occurs 8 times.
+--             _man_ occurs 12 times.
+--           _mitem_ occurs 5 times.
+--          _tavern_ occurs 1 time.
+
+QBN:
+Item _jewelry_ trinket
+Item _mitem_ magic_item
+
+Person _qgiver_ group Questor
+Person _daedra_ face 1 factiontype Daedra remote
+Person _man_ faction Dancers male remote
+--Group 7.0 wouldn't work, needed a local site. Dancers is sufficient for the quest
+
+Place _tavern_ remote tavern
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _zombie_ is Zombie
+Foe _harpy_ is Harpy
+Foe _daedroth_ is Daedroth
+Foe _giant_ is Giant
+
+--	Quest start-up:
+	dialog link for person _daedra_ 
+	start timer _queston_ 
+	log 1020 step 0 
+	get item _jewelry_ 
+	place npc _man_ at _tavern_ 
+
+_queston_ task:
+	end quest 
+
+_S.01_ task:
+	toting _jewelry_ and _man_ clicked 
+	pick one of _S.04_ _S.02_ _S.03_ _S.05_ 
+	hide npc _man_ 
+	say 1011 
+
+_S.02_ task:
+	place foe _giant_ at _tavern_ 
+
+_S.03_ task:
+	place foe _harpy_ at _tavern_ 
+
+_S.04_ task:
+	place foe _daedroth_ at _tavern_ 
+
+_S.05_ task:
+	place foe _zombie_ at _tavern_ 
+
+_S.06_ task:
+	killed 1 _giant_ 
+	killed 1 _harpy_ 
+	killed 1 _zombie_ 
+	killed 1 _daedroth_ 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.08_ task:
+	when _qgclicked_ and _S.06_ 
+	say 1012
+	--this was 1020, could not be correct. changed to 1012.
+	change repute with _man_ by -15 
+	make pc ill with Witches'_Pox 
+	end quest 
+
+_reward_ task:
+	when _qgclicked_ and _S.01_ and not _S.06_ 
+	give pc _mitem_ 
+	end quest 
+
+_S.10_ task:
+	when _qgclicked_ and not _S.01_ 
+	clear _qgclicked_ _S.10_ 

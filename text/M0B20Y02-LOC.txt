@@ -1,0 +1,149 @@
+-- Quest: C:\QUESTS\WORKING\M0B20Y02.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: fighter
+-- Repute: 20
+-- QuestId: 2
+Messages: 81
+Quest: M0B20Y02
+DisplayName: 거인 무리
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>그래, 너한테 작은 일거리가 하나 있어.
+<ce>아무한테나 주는 일은 아니지만, 네가 일을 잘한다는
+<ce>건 알고 있거든. 죽여야 할 거인 무리가 있어.
+<ce>보수는 평범하게 _reward_ 골드 야. 할 마음 있나?
+
+RefuseQuest:  [1001]
+<ce>좋아, 뭐 상관없어.
+<ce>네가 좋아할 만한 일이라고 생각했는데 말이야.
+
+AcceptQuest:  [1002]
+<ce>좋은 거래야, %pcf. 의뢰인은 거인들이 그들의
+<ce>요새인 ___mondung_에 있다고 하더군. 여섯 마리가 있는데,
+<ce>전부 죽이지 않으면 돈을 안 주겠다고 해.
+<ce>=1stparton_일 안에 끝내야 해. 알겠나, %pcf? 좋아.
+
+QuestFail:  [1003]
+<ce>있잖아, 그 여섯 마리 거인들이 숨을 쉬지 않게 되기
+<ce>전까지는 잡담할 시간이 없어.
+
+QuestComplete:  [1004]
+<ce>%oth, 그 거인들은 뭐가 덮쳤는지도 몰랐겠지,
+<ce>그렇지 %pcf? 약속대로 여기 _reward_ 골드다.
+
+RumorsDuringQuest:  [1005]
+___mondung_에 거인 무리가 있지만, 아무도 괴롭히지 않아.
+<---> %t 의 거인
+소탕 의지에 관한 소문을 들었어.
+___mondung_에 있는 거인들을 완전히 없애고 싶어 한다더군.
+
+RumorsPostfailure:  [1006]
+무언가가 그 거인들을 겁주어 쫓아냈어.
+무엇이었을지 궁금하군. <---> 내가 거인 중
+하나였다면 나도 도망쳤을 거야. 너무 시끄럽거든.
+
+RumorsPostsuccess:  [1007]
+새로운 거인 무리가 ___mondung_에 들어오기까지 얼마나
+걸릴지 궁금하군. <---> 그 거인들이 좀 안됐다는
+생각이 들어. 딱히 누구를 괴롭힌 것도 아닌데.
+
+QuestorPostsuccess:  [1008]
+<ce>거인은 강하지. 잘 해냈어 %pcf.
+<ce>길드에서 크게 성공할 거야.
+
+QuestorPostfailure:  [1009]
+<ce>거인들은 당신에게 너무 벅찼나 보군요? 길드에서 당신 대신
+<ce>피그미족이나 상대하게 보냈어야 했나 봅니다.
+
+QuestLogEntry:  [1010]
+<ce>거인들은 모두 죽었습니다.
+
+Message:  1020
+<ce>여기는 거인의 영토다!
+<ce>네 보잘것없는 땅으로 돌아가라
+<ce>%ra 파리!
+<--->
+<ce>어제 %ra 의 식사를 마쳤다.
+<ce>맛이 좋더군.
+<--->
+<ce>박살 내주마! 납작하게 짓눌러주마!
+
+Message:  1030
+%qdt:
+ ___questgiver_의 전사 길드에서 나를 고용해 ___mondung_의
+ 명칭으로 불리는 은신처에 있는 거인 여섯 마리 부족을
+ 처치하라고 했다. 임무를 완수하고 =1stparton_일 안에
+ 돌아와야 보상을 받을 수 있다.
+
+Message:  1080
+<ce>이봐 %pct, 살육을 원한다면 이 지도를 가지고
+<ce>___newdung_ 쪽으로 가봐. 거기엔 널린 게 살육이니까.
+
+
+-- Symbols used in the QRC file:
+--
+--              %oth occurs 1 time.
+--              %pcf occurs 5 times.
+--              %pct occurs 1 time.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--                %t occurs 1 time.
+--       =1stparton_ occurs 3 times.
+--       ___mondung_ occurs 5 times.
+--       ___newdung_ occurs 1 time.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 5 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon13
+Place _newdung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Giant
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	pick one of _map_ _nomap_ _nomap_ _nomap_ 
+	pc at _mondung_ set _S.01_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_S.01_ task:
+	create foe _monster_ every 15 minutes 15 times with 50% success 
+
+_mondead_ task:
+	killed 6 _monster_ 
+	say 1010 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_S.05_ task:
+	injured _monster_ saying 1020 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	clear _qgclicked_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.09_ task:
+	when _map_ and _pcgetsgold_ 
+	reveal _newdung_ readmap
+    say 1080 

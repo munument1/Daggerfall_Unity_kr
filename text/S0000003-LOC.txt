@@ -1,0 +1,169 @@
+-- Quest: C:\QUESTS\WORKING\S0000003.Qbn.
+-- Main story quest.
+-- QuestId: 3
+Messages: 21
+Quest: S0000003
+DisplayName: 메도라 구출
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>반갑소, %pcf. 나는 메도라 디레니, 전 대거폴 궁정
+<ce>소서러요. 리산더스 왕의 영혼을 성불시키려는 당신의 목표를
+<ce>돕고 싶지만, 현재 처지로는 할 수 있는 게 거의 없소.
+<ce>다른 소서러를 찾아가 준다면, 디레니 탑에 걸린 저주를 풀 수
+<ce>있소. 나를 위해 이 일을 해줄 수 있겠소, %pcf?
+
+RefuseQuest:  [1001]
+<ce>당신은 도움이 절실히 필요한 이를 거절했소, %pcf.
+<ce>당신의 양심이 평안하기를 빌겠소.
+
+AcceptQuest:  [1002]
+<ce>당신에게 빚을 지게 되겠군요, %pcf.
+<ce>내 전 주군 리산더스의 어머니인 눌파가는 유명한 신비가지만,
+<ce>아들을 잃은 슬픔으로 미쳐버렸다는 소문이 있소. 만약
+<ce>그게 사실이 아니라면, 그녀는 나를 도울 수 있을 것이오.
+<ce>디레니 탑의 저주를 풀려면 거대 유니콘의 뿔이라는 희귀한
+<ce>아이템이 필요하오. 만약 눌파가가 정말 미쳤다면, 당신이
+<ce>직접 그녀의 성을 뒤져 뿔을 찾아내 내게 가져와야 하오.
+<ce>=2shedungent_일 안으로 돌아오길 기다리겠소.
+
+QuestFail:  [1003]
+<ce>그 뿔 없이는 당신을 전혀 도울 수 없소, %pcf.
+
+QuestComplete:  [1004]
+<ce>당신은 매우 위험한 임무를 성공적으로 마쳤소, %pcf,
+<ce>하지만 앞으로 더 많은 시련이 당신을 기다리고 있소. 뿔을
+<ce>가져옴으로써, 당신은 여왕이 내 탑에 걸어둔 저주를 푸는
+<ce>데 도움을 주었소. 앞으로도 당신의 도움을 기대해도 되겠소?
+<ce>우선, 보상으로 이 _magicitem_ 물품을 받으시오.
+
+RumorsDuringQuest:  [1005]
+오블리비언의 여왕이 도착한 이후로 아무도 발피에라 섬
+근처에 가지 않소. <---> 발피에라는 한때 고급
+휴양지였지만, 지금은 죽은 자들의 땅이 되었소.
+
+RumorsPostfailure:  [1006]
+요정 숙녀는 자신의 마법이 부른 사악함에 그곳에 갇혔다고
+하오. <---> %god 의 저주가 전 대거폴
+마녀에게 내려져, 발피에라에 영원히 저주받았소.
+
+RumorsPostsuccess:  [1007]
+위대한 용사가 사악한 여왕의 저주로부터 발피에라의 불쌍한
+숙녀를 구했소. <---> 한 %ra 의 활약으로
+발피에라 숙녀의 저주가 풀리고 땅이 회복되었소.
+
+QuestorPostsuccess:  [1008]
+<ce>통합된 생각과 조언, 한때 영광스러웠던 사업의
+<ce>동등한 희망과 위험이 한때 나와 함께했으나, 이제 비참함이
+<ce>동등한 파멸로 합쳐졌구나! 영원한, 영원한, 영원한
+<ce>파멸이여. 오, 내 아이야, 왜 듣지 않았느냐, 네 귀,
+<ce>네 영광스러운 필멸자의 얼굴,
+<ce>네 목, 그리고 화살. 오 비참함이여.
+<--->
+<ce>가장 끔찍한 단어 몇 개를 골라내어,
+<ce>아무도 읽지 못하게 하라! 시구들, 시구들을 엮어
+<ce>다른 끔찍한 저주들과 함께 하늘을 저주하라!
+<ce>오블리비언을 저주하라! 내 아들!
+<ce>내 아들은 죽었고 탐리엘이 떨게 하라
+<ce>그와 내가 거부당한 평화를 찾을 때까지.
+<--->
+<ce>말해보라, 어떤 이상한 동기가, 여신이여! 무엇이
+<ce>내 사랑하는 리산더스의 맨 목을 향해 화살을 쏘게 했는가?
+<ce>그는 거기서 애도받고 축복받으며 죽었는가, 아니면
+<ce>내 예쁜 새들이 모두 회색 날개로 변해버렸는가?
+<ce>나는 사후세계, 지하세계, 그리고 그 사이의 세계를 뒤졌지만
+<ce>내 아들의 가벼움을 어디서도 찾을 수 없구나.
+<ce>오, 광기여, 네 가슴에
+<ce>매달려 젖을 빠는구나!
+<--->
+<ce>우리는 그저 죽은 벽이나 둥근 천장의 무덤 같아서,
+<ce>무너져 메아리조차 내지 못하는구나. 오,
+<ce>이 우울한 세상, 얼마나 어두운 그림자나
+<ce>깊은 어둠의 구덩이 속에서, 계집처럼
+<ce>겁에 질려 인류가 살아가는가. 리산더스는 어떻게
+<ce>죽음을 맞이했는가?
+<ce>안개 속에서, 어떻게 된 일인지 모르겠구나.
+<ce>오블리비언은 아직 오지 않았는가?
+<ce>원근법으로 더 가까이 당기거나,
+<ce>순식간에 온 세상을 불태울 유리를 만들리라.
+<ce>잠을 잘 수가 없구나; 내 베개는 고슴도치 새끼들로
+<ce>채워져 있구나.
+
+QuestorPostfailure:  [1009]
+<ce>물론 메도라에게 거대 유니콘의 뿔을 주겠소.
+<ce>결국 그녀는 내 사랑하는 리산더스가 가장 아끼던 이였으니까.
+
+QuestLogEntry:  [1010]
+%qdt:
+ 전 대거폴 궁정 소서러인 메도라가 나를 로스가리안 산맥의
+ 셰둔젠트로 보냈소. 셰둔젠트는 리산더스의 어머니인 눌파가가
+ 사는 곳이오. 그곳에서 나는 거대 유니콘의 뿔을 찾아야 하오.
+ 만약 눌파가가 도울 수 없다면,
+ 그녀의 성 셰둔젠트를 직접 뒤져 뿔을 찾아야 하오.
+ 디레니 탑으로 돌아갈 시간은 =2shedungent_일 남았소.
+
+Message:  1020
+<ce>섬세하고 나선형인 뿔이 살짝 휘어져 있다가 치명적이고
+<ce>날카로운 끝으로 마무리되오. 유니콘의 뿔은 가장 순수한
+<ce>설화석고 상아라고 늘 들어왔소. 이것은 은처럼 보이오.
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 1 time.
+--              %pcf occurs 8 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--     =2shedungent_ occurs 3 times.
+--       _magicitem_ occurs 1 time.
+
+QBN:
+Item horn horn used 1020
+Item _magicitem_ magic_item
+
+Person _medora_ named Medora atHome
+Person _nulfaga_ named Nulfaga atHome
+
+Place _huntstart_ permanent Shedungent4
+
+Clock _2shedungent_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	prompt QuestorOffer yes yes no _no_ 
+
+_2shedungent_ task:
+	end quest 
+
+_S.01_ task:
+	clicked npc _nulfaga_ 
+
+variable _S.02_
+variable _S.03_
+variable _S.04_
+_S.05_ task:
+	when _S.01_ and not _S.09_ 
+	say QuestorPostsuccess 
+	clear _S.01_ _S.05_ 
+
+variable _S.06_
+yes task:
+	place item horn at _huntstart_ marker 1
+	start timer _2shedungent_ 
+	log 1010 step 0 
+	reveal _huntstart_ in province 16 at 50966 
+	say AcceptQuest 
+
+_no_ task:
+	say RefuseQuest 
+	end quest 
+
+LiftedCurse _S.09_
+MedoraGotHorn _S.10_
+	toting horn and _medora_ clicked 
+	give pc _magicitem_ 
+	start quest 18 18 
+	change repute with _medora_ by +10 
+	mute npc _medora_ 
+	end quest 

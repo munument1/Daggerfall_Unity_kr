@@ -1,0 +1,77 @@
+- This is for testing log action + journal ui
+
+Quest: __DEMO02
+
+QRC:
+
+QuestLogEntry: [1010]
+%qdt:
+ __qgiver_, ___qgiver_에 있는 다크 브라더후드의
+ _qgiver_의 지시에 따라 ___mondung_에서 계약을 수행
+ 중인 경쟁 암살자 =assassin_의 소재를 파악하라고 했다.
+ %g 가 =assassin_의 고용주에 대한 단서를 찾을
+ 수 있다면, 그 자도 처리할 생각이다. 어쨌든 이 피비린내
+ 나는 일을 =queston_일 안에 끝내야 한다.
+
+Message:	1012
+%qdt:
+ ___qgiver_의 전사 길드에서 _house_에 침입한 야수를
+ 처치해 달라고 요청했다. 하루 안에 끝내야 한다.
+
+Message:	1013
+%qdt:
+ ___qgiver_의 _qgiver_ 측에서 __house_의
+ _house_에 침입한 호랑이나 곰을 처치해 달라는
+ 의뢰를 받았다. =2dung_일 안에 돌아가면 _gold_
+ 골드를 받을 수 있다.
+
+
+Message:	1014
+%qdt 에, ___agent_의 _agent_의 만남을
+가졌다. %g 는 %g3 의 의뢰인이 데이드릭
+_ingredient_의 행방을 찾고 있다고 말했다. 찾아낸다면
+_artifact_의 보상을 받을 것이다. 데이드릭 _ingredient_의
+위치는 ___dungeon_ 어딘가에 있다. 찾으면 __meetingplace_의
+_meetingplace_에서 _qgiver_의 대면을 갖기로 했다.
+
+Message:	1015
+%qdt:
+ ___qgiver_에서 _qgiver_의 비밀스러운
+ 만남을 통해 위조된 편지를 받았다. __inn_의
+ _inn_에 잠입하여 진짜 편지와 바꿔치기해야 한다.
+ =traveltime_일 안에 이 퀘스트를 완료해야 한다.
+ 들키면, 스스로 해결해야 한다.
+
+Message:	1016
+%qdt ___giver_의 _giver_의 제안에 따라
+%g3 의 책인 _book_의 회수를 완료하면
+_gold_ 골드를 주겠다고 했다.
+
+Message:	1017
+%qdt:
+ ___qgiver_에 있는 ==qgiver_의 _qgiver_ 측에서
+ 데이드라들이 차원 균열을 통해 쏟아져 나오고 있다고 했다.
+ ___dungeon_ 쪽으로 가서 그들을 모두 처치해야 한다.
+ 마지막 한 마리까지 처치하면 주문을 통해 연락이 올 것이다.
+ 너무 늦기 전에 =2dung_일 안에 끝내야 한다.
+
+Message:	1018
+%qdt:
+ ___qgiver_에 있는 __qgiver_의 _qgiver_의
+ 전언에 따르면 %g3 의 신이 분노했다고 한다.
+ %g 는 속죄 의식을 위해 ___dungeon_에서
+ 얻은 오염되지 않은 _ingredient_의 확보가 필요하다.
+ =traveltime_일 안에 __qgiver_에서 _qgiver_의
+ 손에 들어가야 한다.
+
+QBN:
+
+- Headless entry point with custom action
+log 1010 step 0
+log 1012 step 1
+log 1013 step 2
+log 1014 step 3
+log 1015 step 4
+log 1016 step 5
+log 1017 step 6
+log 1018 step 7

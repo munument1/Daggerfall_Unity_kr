@@ -1,0 +1,143 @@
+-- Quest: C:\QUESTS\WORKING\Q0C00Y06.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: witch
+-- Repute: 0
+-- QuestId: 6
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 21
+Quest: Q0C00Y06
+DisplayName: 뱀파이어 문제
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>우려되는 잠재적인 문제가 있습니다. 마녀들을 증오하는 고대
+<ce>뱀파이어가 우리 영토의 버려진 성으로 이주했습니다. 분명히
+<ce>우리가 해결해야 할 상황입니다. 동의하십니까, %pcf?
+
+RefuseQuest:  [1001]
+<ce>당신의 두려움을 이해합니다.
+<ce>오직 매우 유능하거나 매우 어리석은 자만이 고대 뱀파이어를
+<ce>처치하는 데 동의할 것입니다.
+
+AcceptQuest:  [1002]
+<ce>동의하십니까? 하지만 고대 뱀파이어는 결코 만만한
+<ce>상대가 아닙니다. 준비 없이 전투에 임하지 마십시오.
+<ce>이 괴물은 =vamprival_의 이름으로 불리는 불리며,
+<ce>그 새로운 은신처는 ___mondung_입니다. 당신은 그것을
+<ce>___mondung_에서 찾을 것입니다. =1stparton_일 밤 안에
+<ce>돌아오기를 기대하겠습니다. 죽지 마십시오, %pcf.
+
+QuestFail:  [1003]
+<ce>혹시 =vamprival_의 자결을 바랐습니까? 그럴 리 없지요.
+<ce>당신은 %g3 의 죽음의 대리인이 되어야 합니다.
+
+QuestComplete:  [1004]
+<ce>우리는 여기서도 그 고대 뱀파이어의 비명
+<ce>소리를 거의 들을 수 있었습니다, %pcf.
+<ce>당신은 마녀들의 감사를 받았습니다.
+
+RumorsDuringQuest:  [1005]
+___mondung_에서 많은 활동이 있었지만, 그곳은 수년간
+버려진 곳입니다. <---> 저 =vamprival_의
+신분은 귀족입니다. %g 가 ___mondung_ 및
+%reg 정리 작업을 진행 중이라 하더군요.
+
+RumorsPostfailure:  [1006]
+=vamprival_의 ___mondung_ 퇴거 소식을 들었습니다.
+귀족이 살 곳은 아니었죠.
+<---> 이제 =vamprival_의 ___mondung_ 퇴거로,
+%g 는 궁전에 자주 드나듭니다.
+
+RumorsPostsuccess:  [1007]
+그 친절했던 =vamprival_의 정체가 뱀파이어였다니!
+전혀 몰랐습니다! <---> ___mondung_에 있던
+뱀파이어를 처치한 그 훌륭한 %ra 용병에게
+%god 의 가호를.
+
+QuestorPostsuccess:  [1008]
+우리는 =vamprival_의 공로를 잊지 않았습니다,
+%pcf. 당신을 위해 무엇을 도와드릴까요?
+
+QuestorPostfailure:  [1009]
+<ce>=vamprival_의 밤거리 배회는 우리 자매들을 사냥하고
+<ce>있습니다. 당신이 그것을 처치할 수 없다고 말했어야
+<ce>했습니다. 지금 당장 떠나십시오. 더는 할 말이 없습니다.
+
+Message:  1011
+_witch_ 측은 __witch_에 있는
+매우 친절하고 지적인 =witch_입니다.
+<---> _witch_ 측은 당신이 %di 에 있는
+__witch_에서 찾을 수 있는 친절한 =witch_입니다.
+
+Message:  1012
+_witch_의 정체는 ___witch_의 마녀입니다.
+<---> _witch_의 정체는 ___witch_
+마녀이자 =witch_입니다.
+
+Message:  1015
+%qdt:
+ ___witch_의 _witch_ 측은 나를 보내 %reg 의
+ 마녀들을 파괴하려는 고대 뱀파이어를 처치하게 했다. 나는
+ ___mondung_에 있는 그 언데드 괴물을 =1stparton_일 안에
+ 완전히 처치하고 ___witch_ 방향으로 돌아오기로 약속했다.
+
+Message:  1020
+<ce>=vamprival_ 처치에 성공했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 16 times.
+--                %g occurs 4 times.
+--               %g3 occurs 1 time.
+--              %god occurs 2 times.
+--              %pcf occurs 8 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--              %reg occurs 3 times.
+--       =1stparton_ occurs 2 times.
+--       =vamprival_ occurs 14 times.
+--           =witch_ occurs 7 times.
+--      ____mondung_ occurs 11 times.
+--         ___witch_ occurs 26 times.
+
+QBN:
+Item _reward_ magic_item
+
+Person _witch_ face 44 group Questor anyInfo 1011 rumors 1012
+
+Place _mondung_ remote dungeon8
+--removed extraneous underscore from __mondung_.
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _vamprival_ is Ancient_vampire
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1015 step 0 
+	place foe _vamprival_ at _mondung_ 
+
+falseAide0 task:
+	when _vampclicked_ and _S.01_ 
+	give pc _reward_ 
+	end quest 
+
+_S.01_ task:
+	killed 1 _vamprival_ 
+	say 1020 
+
+_vampclicked_ task:
+	clicked npc _witch_ 
+
+_clearclick_ task:
+	when _vampclicked_ and not _S.01_ 
+	say 1003
+	clear _vampclicked_ _clearclick_
+	--replaced "until _vampclicked_ performed" action with _clearclick_. this is more flexible, allowing 1003 message.
+
+_1stparton_ task:
+	end quest 

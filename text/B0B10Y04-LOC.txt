@@ -1,0 +1,180 @@
+-- Quest: C:\QUESTS\WORKING\B0B10Y04.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: knight
+-- Repute: 10
+-- QuestId: 4
+Messages: 18
+Quest: B0B10Y04
+DisplayName: 광기에 찬 용병
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>환영합니다, %pcn. 제 이름은 _qgiver_입니다.
+<ce>기사단은 저지해야 할 광기에 찬 오크 용병에 대한 소식을
+<ce>방금 접했습니다. 이 임무를 맡을 의향이 있으십니까?
+
+RefuseQuest:  [1001]
+<ce>당신의 겸손함은 칭찬받아 마땅합니다, %pcf.
+<ce>마음이 좀 더 강해지면 언제든 다시 찾아오십시오.
+
+AcceptQuest:  [1002]
+<ce>좋습니다. 그리 멀지 않은 곳에 있는 어두운 구덩이,
+<ce>___mondung_의 명칭으로 불리는 저주받은 장소에
+<ce>=soldier_의 이름으로 불리는 _soldier_ 개체가
+<ce>강령술사들보다 더 사악한 배신자 마법사 집단과 공모하여
+<ce>%reg 지역을 파괴하려 하고 있습니다. 아마도 그는
+<ce>%t 에게 부당한 대우를 받았다고 느끼거나, 단순히
+<ce>오크들이 인간에게 품는 이유 없는 증오 때문일지도 모릅니다.
+<ce>중요한 것은 그의 맹목적인 분노와 마법사들의 마법이 정말로
+<ce>재앙적인 결과를 낳기 전에 그를 막아야 한다는 것입니다.
+<ce>%pcf, 수단과 방법을 가리지 말고 그를 막으십시오.
+<ce>=2mondung_일 내로 상황을 해결하지 못한다면, 너무
+<ce>늦지 않았기를 바라며 우리 기사들이 직접 나설 것입니다.
+<ce>부디 그런 상황까지 가지 않기를 바랍니다.
+
+QuestFail:  [1003]
+<ce>지금 ___mondung_에 있어야 하지 않습니까, %pcf?
+
+QuestComplete:  [1004]
+<ce>잘했습니다, %pcf. 오크들이 ___mondung_에서
+<ce>떠나고 있으니, 당신의 임무는 성공한 것이 분명합니다.
+<ce>당신은 우리 기사단의 진정으로 가치 있는 일원입니다.
+
+RumorsDuringQuest:  [1005]
+___mondung_의 위치는 오크들이 모이기에 완벽한 장소입니다.
+아주 외딴곳이니까요.
+<---> 오크들과 배신자 마법사들이 %reg 의
+파멸을 위해 끔찍한 일을 꾸미고 있습니다.
+
+RumorsPostfailure:  [1006]
+이 땅은 마법사들에 의해 저주받았습니다.
+전쟁, 역병, 기근, 혹은 그 모든 것이 닥칠지도 모릅니다.
+<---> 오크와 마법사의 불경한 동맹을 막을 수
+있는 사람은 아무도 없었습니다.
+
+RumorsPostsuccess:  [1007]
+오크들이 갑자기 ___mondung_ 지역을 떠났습니다.
+그들의 우두머리가 병들었거나 죽은 모양입니다.
+<---> %reg 지역은 용감하고 지략 있는
+%ra 용병의 희생으로 구원받았습니다.
+
+QuestorPostsuccess:  [1008]
+반갑습니다, %pct.
+오크 학살자여, 잘 지내고 계십니까?
+
+QuestorPostfailure:  [1009]
+그 오크들과 마법사들을 놓친 것은 정말 안타까운 일입니다.
+뭐, 살다 보면 그럴 수도 있죠.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_에 있는 __qgiver_의 _qgiver_ 측은
+ 제게 %reg 지역을 파괴하려는 _soldier_ 개체를
+ 막으라는 임무를 주었습니다. 그 오크는 부하들과 함께
+ ___mondung_의 명칭으로 불리는 구덩이에 살고 있습니다.
+ 이 위협을 처리하고 __qgiver_ 방향으로 돌아오기까지
+ =2mondung_일이 남았습니다.
+
+Message:  1013
+<ce>당신은 얼룩진 쪽지를 전달받았습니다. 쪽지를 건넨 아이의
+<ce>손도 엉망이었습니다. 전문 전령은 아니었지만, 아이는 쪽지를
+<ce>건네자마자 거의 도망치듯 빠르게 사라졌습니다.
+
+Message:  1014
+<ce>당신은 _soldier_ 처치에 성공했습니다.
+
+Message:  1015
+<ce>아, 그 머리카락. 그렇다면 그녀는 아직 살아있군요...
+<ce>스컬스플리터에게 그의 연인이 %reg 지역을
+<ce>떠나지 않았다고 전해야겠군요. 알려주셔서 감사합니다,
+<ce>%pcf. 만약 제 주인이 마법사 동맹들의 도움을 받아
+<ce>%reg 에 죽음을 가져왔다면, 그는 %t 에게
+<ce>할 수 있는 가장 잔혹한 복수보다 더 소중한 여인을
+<ce>죽였을지도 모릅니다. 다시 한번 감사드립니다, 친구여.
+
+Message:  1017
+<ce>당신이 하늘이 보낸 구원자라는 소문을 들었습니다,
+<ce>%pct. %god 의 가호가 당신과 함께하기를.
+<ce>제 감사를 표할 무언가를 드리고 싶지만 가진 게 없군요.
+<ce>여기, 저를 가엽게 여긴 숙녀분께 받은 물건입니다.
+<ce>너무나 아름답고 귀한 것이라 굶주릴 때도 팔지 못했습니다.
+<ce>제 감사의 표시로 받아주십시오.
+
+
+-- Symbols used in the QRC file:
+--
+--              %god occurs 1 time.
+--              %pcf occurs 6 times.
+--              %pcn occurs 1 time.
+--              %pct occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--              %reg occurs 6 times.
+--                %t occurs 6 times.
+--        =2mondung_ occurs 2 times.
+--         =soldier_ occurs 1 time.
+--       ___mondung_ occurs 6 times.
+--        ___qgiver_ occurs 5 times.
+--         _soldier_ occurs 4 times.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _mondung_ remote dungeon1
+Place tavern local tavern
+
+Clock _2mondung_ 00:00 0 flag 17 range 0 2
+Clock _2letter_ 00:50 2.18:40
+
+Foe _soldier_ is Orc_warlord
+Foe _note_ is 2 Orc
+Foe _F.02_ is Orc_sergeant
+Foe _hunter_ is Orc_shaman
+
+--	Quest start-up:
+	start timer _2mondung_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+
+_2mondung_ task:
+	end quest 
+
+variable _2letter_
+_S.02_ task:
+	when _qgclicked_ and _questdone_ 
+	give pc nothing 
+	change repute with _qgiver_ by +10 
+	end quest 
+
+variable _S.03_
+variable _S.04_
+until _S.04_ performed:
+	pc at _mondung_ set _S.07_ 
+
+_S.05_ task:
+	killed 1 _soldier_ 
+	say 1014 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_S.07_ task:
+	create foe _note_ every 100 minutes 100 times with 12% success 
+	create foe _F.02_ every 107 minutes 50 times with 10% success 
+	create foe _hunter_ every 113 minutes 20 times with 8% success 
+	place foe _soldier_ at _mondung_ 
+
+_questdone_ task:
+	when _S.05_ or _S.04_ 
+
+_S.09_ task:
+	when _2mondung_ and not _questdone_ 
+
+variable _S.10_
+_clearclick_ task:
+	when _qgclicked_ and not _questdone_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 

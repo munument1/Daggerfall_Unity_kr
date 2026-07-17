@@ -1,0 +1,132 @@
+-- Quest: C:\QUESTS\WORKING\I0B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Stendarr
+-- Repute: 0
+-- QuestId: 0
+Messages: 31
+Quest: I0B00Y00
+DisplayName: 특별한 식물
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>우리 치유사가 치유 물약을 만들기 위해 _item_의
+<ce>명칭으로 불리는 특별한 식물이 필요하다고 합니다.
+<ce>많은 보상을 드릴 수는 없지만, _item_ 확보를 통해
+<ce>우리의 성스러운 임무를 도와주신다면 스텐다르 신전의
+<ce>성스러운 상징을 드리겠습니다.
+
+RefuseQuest:  [1001]
+<ce>불행히도 흔한 반응이군요. 우리는 의뢰인을 유혹할 만큼
+<ce>많은 금은보화를 제공할 수 없습니다. 그럼에도 불구하고,
+<ce>당신에게는 특히 실망했군요, %pcf.
+<ce>더 고결한 반응을 기대했었습니다.
+
+AcceptQuest:  [1002]
+<ce>당신은 정말 친절한 마음을 가졌군요, %pcf.
+<ce>우리가 필요한 _item_의 위치는 ___chemist_의
+<ce>__chemist_입니다. =chemist_인 _chemist_께서
+<ce>당신이 =1stparton_일 이내에 도착한다면 우리에게 무료로
+<ce>주실 것입니다. 부디 서둘러 주십시오, %pcf.
+<ce>치유해야 할 부상당한 무고한 이들이 너무나 많습니다.
+
+QuestFail:  [1003]
+<ce>당신과 대화하는 것은 언제나 즐겁습니다, %pcf.
+<ce>하지만 부디 _item_ 확보를 지체하지 마십시오.
+
+QuestComplete:  [1004]
+<ce>그게 _item_인가요, %pcf?
+<ce>오, 스텐다르께 감사합니다.
+<ce>우리 기사단의 상징인 이 성물을 겸허히 받아주십시오.
+
+RumorsDuringQuest:  [1005]
+스텐다르 신전은 내가 아는 유일하게 순수하게 자선적인
+기사단이지. <---> 어머니가 스텐다르 신전의 치유사를
+기다리고 계셔. 상태가 아주 안 좋거든.
+
+RumorsPostfailure:  [1006]
+내 동생은 스텐다르 신전의 그 빌어먹을 치유사를
+기다리다 죽었어. <---> 신전의 치유사가 필요한
+약초를 제때 구하지 못했다더군.
+
+RumorsPostsuccess:  [1007]
+신전에서 몇 번의 아찔한 순간이 있었습니다.
+평소보다 부상자가 더 많았죠. <---> 스텐다르 신께서
+그분의 신전을 굽어살피고 계셨던 게 분명합니다.
+
+QuestorPostsuccess:  [1008]
+_item_ 전달을 해주신 분께 말씀을 드리지 않는 건
+예의가 아니겠지요, %pcf.
+
+QuestorPostfailure:  [1009]
+화는 참겠지만, _item_ 잊으신 건 아니겠지요,
+%pcf? <---> 당신이 _item_ 가져오지
+않아 죽어간 이들에게 직접 말을 걸어보고 싶으신 건가요?
+
+QuestLogEntry:  [1010]
+<ce>_item_ 여기 두겠습니다, %pcf.
+<ce>이제 서둘러 신전으로 돌아가십시오.
+<ce>그곳에는 치료를 기다리는 이들이 많습니다.
+
+Message:  1030
+%qdt:
+ ___questgiver_에 있는 스텐다르 신전에서 제게 그들의 교단
+ 상징을 주겠다고 제안했습니다. 만약 제가 _item_
+ 확보 후 =1stparton_일 안에 그들에게 전달한다면 말이죠.
+ __chemist_ 지역의 ___chemist_에 있는 _chemist_의
+ 이름으로 불리는 자가 제가 제시간에 도착할 수 있다면
+ 그것을 주겠다고 했습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 9 times.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--         =chemist_ occurs 3 times.
+--    ___questgiver_ occurs 1 time.
+--        __chemist_ occurs 5 times.
+--            _item_ occurs 28 times.
+
+QBN:
+Item _reward_ common_symbol
+Item _item_ large_plant
+
+Person _questgiver_ face 112 group Questor
+Person _chemist_ group Chemist remote
+
+
+Clock _1stparton_ 00:00 0 flag 17 range 1 4
+
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	log 1030 step 0 
+
+_1stparton_ task:
+	end quest 
+
+variable _pcgetsgold_
+_npcclicked_ task:
+	clicked npc _chemist_ say 1010 
+	get item _item_ 
+
+_qgclicked_ task:
+	toting _item_ and _questgiver_ clicked 
+	give pc _reward_ 
+	end quest 
+
+_qgclick2_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _qgclick2_ and not _qgclicked_
+	say 1003
+	clear _clearclick_ _qgclick2_
+
+variable _queston_
+variable _S.05_
+_S.06_ task:
+	when _npcclicked_ and _1stparton_ 
+	make _item_ permanent 

@@ -1,0 +1,237 @@
+-- Quest: C:\QUESTS\WORKING\A0C0XY04.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0X
+-- QuestId: 4
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 36
+Quest: A0C0XY04
+DisplayName: 사기꾼
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>제 이름은 _agent_입니다. 저는 무언가를...
+<ce>획득해야 하는 누군가를 대신해 왔습니다.
+<ce>그것을 전달하는 분께는 _artifact_ 쪽으로 보상해 드리죠.
+<ce>그게 무엇인지는 모르겠지만, 힘이 깃든 물건이라고
+<ce>들었습니다. 수락하시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>저를 본 적 없다고 생각하십시오.
+<ce>제게는 강력한 친구들이 많습니다. 저를 곤란하게 만든다면,
+<ce>그들이 당신을 도적처럼 사냥할 것입니다.
+
+AcceptQuest:  [1002]
+<ce>___dungeon_에서 데이드릭 _ingredient_의 획득이
+<ce>필요합니다. 어디에 있는지는 모르지만, 당신이라면 찾을
+<ce>수 있을 겁니다. 데이드릭 _ingredient_의 확보 후, 마을의
+<ce>_meetingplace_ 쪽으로 가져오십시오. 그곳에서 _qgiver_의
+<ce>만남이 가능할 겁니다. 그러면 %g 가 당신에게
+<ce>_artifact_의 보상을 줄 것입니다.
+
+RumorsDuringQuest:  [1005]
+<ce>국왕께서 다음 주에 중요한 발표를 하실 거라는군요.
+
+RumorsPostfailure:  [1006]
+<ce>어떤 불쌍한 바보가 ___dungeon_에 들어갔답니다.
+<ce>그곳은 악마들로 가득하다던데.
+
+RumorsPostsuccess:  [1007]
+<ce>_qgiver_ 근처에는 가지 마십시오.
+<ce>%g 는 거짓말쟁이에 사기꾼이라더군요.
+
+QuestorPostsuccess:  [1008]
+<ce>_qgiver_ 및 그와 관련된 사건은 미안하게 됐습니다.
+<ce>그 일을 만회하기 위해서라도 당신을 도와야겠군요.
+
+QuestorPostfailure:  [1009]
+<ce>_qgiver_ 관련 일은 제 잘못이 아닙니다.
+<ce>이제 당신과 엮이고 싶지 않으니, 저를 내버려 두십시오.
+
+QuestLogEntry:  [1010]
+%qdt 에, ___agent_의 _agent_ 측을 만났다.
+%g 는 %g3 의 의뢰인이
+데이드릭 _ingredient_ 물품을 찾고 있다고 말했다.
+그것을 찾으면 _artifact_ 물품을 받을 것이다.
+데이드릭 _ingredient_ 물품은 ___dungeon_ 어딘가에 있다.
+찾게 되면 __meetingplace_의 _meetingplace_에서 _qgiver_
+측을 만나기로 했다.
+
+Message:  1011
+%qdt 에, 데이드릭 _ingredient_의 수호자가
+_agent_의 의뢰인은 _artifact_조차 가지고 있지
+않다고 말했다. 만약 데이드릭 _ingredient_의 인도를
+요구한다면, 죽음만이 보상으로 돌아올 것이다. 수호자는
+_qgiver_의 무력화가 가능한 마법 토큰을 주었다.
+
+Message:  1012
+<ce>_ingredient_ 수호에 목숨을 걸겠다. _qgiver_의
+<ce>실체는 %g 가 생각하는 그런 존재가 아니라는 걸
+<ce>알아야 한다. _artifact_의 힘은 %g 가 한 번도
+<ce>소유해 본 적 없는 엄청난 위력을 지닌 잃어버린 유물이다.
+<ce>%g 는 %g 가 데이드릭 _ingredient_의
+<ce>획득 즉시 너를 죽이려 할 것이다. 이 헛된 공격을 멈춰라.
+<ce>그러면 _qgiver_의 무력화가 가능한 마법의
+<ce>징표를 주겠다. 만약 %g2 를 죽인다면,
+<ce>마법사 길드가 한동안 너를 좋게 평가하도록 손을 써주지.
+<ce>내 제안을 받아들이겠나?
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+
+Message:  1013
+<ce>바보 같으니! 정말로 이 데이드릭 _ingredient_의
+<ce>대가로 _artifact_의 인도를 기대했나? 내게 너를 위한
+<ce>보상은 죽음뿐이다! 내 본모습을 보고 공포에 떨어라.
+<ce>나는 =monster_다. 죽여라!
+
+Message:  1014
+<ce>뭐... 배신당했군! 환영술을 깨뜨리고 내게 침묵 주문을
+<ce>걸다니. 그 저주받은 _guardian_ =guardian_의 소행이지,
+<ce>%g? 무기를 들어라! 도와줘! 무기를 들어라!
+
+Message:  1015
+<ce>당신의 정신 속으로 낯선 목소리의 부드러운
+<ce>속삭임이 들려옵니다. "잘했다, %pcn 여.
+<ce>_qgiver_, 혹은 %g 가 %g3 의
+<ce>백성들에게 알려진 대로 =monster_의 처단은,
+<ce>너에게 보상을 받을 자격을 주었다. 이제 마법사 길드
+<ce>구성원들은 이전보다 너를 훨씬 더 신뢰하게 될 것이다."
+
+Message:  1020
+<ce>정말 교활한 머리를 가졌군. 감탄했어. 하지만 나를 함부로
+<ce>대할 수는 없을 거다. 토큰은 다시 가져가겠다. 내 가장
+<ce>가까운 동료들이 너를 불신하게 만드는 저주를 내리마.
+
+Message:  1025
+크리사미어는 위대한 힘을 지닌 고대의 유물이다.
+<---> 전설적인 마법 유물이다.
+
+Message:  1030
+그럼 이 토큰을 받아라.
+
+Message:  1035
+죽을 준비나 해라!
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 13 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 2 times.
+--        =guardian_ occurs 1 time.
+--         =monster_ occurs 3 times.
+--         ___agent_ occurs 1 time.
+--       ___dungeon_ occurs 3 times.
+--   __meetingplace_ occurs 3 times.
+--           _agent_ occurs 3 times.
+--        _artifact_ occurs 7 times.
+--        _guardian_ occurs 1 time.
+--      _ingredient_ occurs 9 times.
+--    _meetingplace_ occurs 2 times.
+--          _qgiver_ occurs 9 times.
+
+QBN:
+Item _artifact_ artifact Chrysamere anyInfo 1025
+Item _ingredient_ lodestone
+Item _token_ pearl
+
+Person _qgiver_ face 1 group Chemist local
+Person _agent_ group Questor
+Person _dummymage_ face 1 faction The_Mages_Guild remote
+Person _dummyorc_ face 1 named Gortwog
+Person _dummydarkb_ face 49 faction The_Dark_Brotherhood remote
+
+Place _dungeon_ remote dungeon7
+Place _meetingplace_ local apothecary
+
+Clock _extratime_ 00:30 0 flag 1 range 0 1
+Clock _totaltime_ 90.00:00 0 flag 17 range 0 2
+
+Foe _guardian_ is Daedra_seducer
+Foe _monster_ is Orc_shaman
+Foe _orc_ is Orc_warlord
+Foe _daedras_ is Daedroth
+
+--	Quest start-up:
+	start timer _totaltime_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	give item _ingredient_ to _guardian_ 
+	place foe _guardian_ at _dungeon_ 
+	place npc _qgiver_ at _meetingplace_ 
+
+_giveingredient_ task:
+	toting _ingredient_ and _qgiver_ clicked saying 1013 
+	give item _ingredient_ to _monster_ 
+	cast Shield spell on _monster_ 
+	cast Spell_Reflection spell on _monster_ 
+
+_hitguardian_ task:
+	injured _guardian_ 
+	prompt 1012 yes _yes_ no _no_ 
+--a task yes without underscores is a prima facie danger, though it hasn't caused any problems yet. tasks, items, and so forth should have underscores for style and execution
+
+_yes_ task:
+	log 1011 step 1 
+	get item _token_ 
+	say 1030 
+	restrain foe _guardian_ 
+
+_no_ task:
+	say 1035 
+
+--unused variable _clickonqgiver_
+variable _clickonqgiver_
+_givetoken_ task:
+	toting _token_ and _qgiver_ clicked saying 1014 
+	cast Silence spell on _monster_ 
+
+_shamandead_ task:
+	killed 1 _monster_ 
+	start timer _extratime_ 
+
+_givereward_ task:
+	when _givetoken_ and _shamandead_ 
+	change repute with _dummymage_ by +25
+	change repute with _dummyorc_ by -10 
+	say 1015
+	--"saying ###" as an argument here is unsupported, I gave it its own line
+
+_extratime_ task:
+	make _ingredient_ permanent 
+	end quest 
+
+_totaltime_ task:
+	make _ingredient_ permanent 
+	end quest 
+
+_revealmonsters_ task:
+	when _giveingredient_ or _givetoken_ 
+	create foe _orc_ every 1 minutes 1 times with 100% success 
+	hide npc _qgiver_ 
+	place foe _monster_ at _meetingplace_ 
+
+_S.11_ task:
+	killed 1 _guardian_ 
+
+_betrayguardian_ task:
+	when _yes_ and _S.11_ 
+	create foe _daedras_ every 1 minutes 3 times with 100% success 
+	take _token_ from pc saying 1020 
+	change repute with _dummydarkb_ by -75 

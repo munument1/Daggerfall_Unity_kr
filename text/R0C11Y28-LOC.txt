@@ -1,0 +1,468 @@
+-- Quest: C:\QUESTS\WORKING\R0C11Y28.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: royalty
+-- Repute: 11
+-- QuestId: 28
+Messages: 51
+Quest: R0C11Y28
+DisplayName: 미친 살인마
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+___bookstore_의 거리를 배회하는 악몽이 있습니다.
+사람들은 그를 ___bookstore_ 살인마라고 부르는데, 아직 그가
+인간인지 짐승인지 아무도 모릅니다. 제 최고의 현자 중 한
+명인 _contact_ 측이 희생자들의 시신을 조사하고 있는데,
+%g 가 불안한 편지들을 받기 시작했고 솔직히
+%g3 의 목숨을 걱정하고 있습니다. %g3 의
+두려움이 정당한지 확인하기 위해 %g3 의
+조사 결과를 검토해 줄 사람이 필요합니다. 이 일을
+도와주시겠습니까, %pcf? ___bookstore_ 살인마를
+은퇴시켜 주신다면 _reward_ 골드를 드리겠습니다.
+
+RefuseQuest:  [1001]
+흔한 반응이군요. 그렇다면 선택의 여지가 없네요.
+제가 피하고 싶었던 방법이지만, 좀 더 불미스러운
+인맥을 동원해야겠군요.
+
+AcceptQuest:  [1002]
+어쨌든 %god 에게 감사하죠. %reg 의
+사람들은 공식적인 수사가 진척되지 않는 것에 불안해하고
+있습니다. =total_일 이내에 폭동이 일어날까 두렵군요.
+_contact_의 활동지는 _bookstore_인데,
+곧 누군가를 보낼 거라고 %g2 에게 말해두었습니다.
+몸조심하세요, %pcf. 이 상황이 해결될 때까지,
+___bookstore_의 밤에는 칼이 있다는 걸 명심하세요.
+
+QuestFail:  [1003]
+___bookstore_ 살인마는 여전히 활개 치고 있습니다.
+잡담할 시간 없으니, 당신도 그러지 않는 게 좋을 겁니다.
+
+QuestComplete:  [1004]
+당신 덕분에 %reg 에 다시 평화가 찾아왔군요,
+%pcf. 약속한 _reward_ 골드입니다.
+그 미치광이를 끝장내고 이 일에 대해 신중하게 처리해 준
+대가로 기꺼이 드리지요. 당신이 %reg 에 왔을 때
+%god 께서 진정으로 우리를 축복해 주셨군요.
+
+RumorsDuringQuest:  [1005]
+이제 ___bookstore_의 거리를 걷는 것은 안전하지 않습니다.
+___bookstore_ 살인마 때문이죠. <---> 그 살인마는
+사람이 아니라 우리 모두를 벌하러 온 데이드라라는 소문이
+있습니다. <---> ___bookstore_ 살인마의 마지막
+희생자는 ___bookstore_ 곳곳에서 조각난 채 발견되었습니다.
+<---> 어떤 이들은 그 살인마가 뱀파이어나
+웨어울프가 아닐까 의심하고 있습니다.
+
+RumorsPostfailure:  [1006]
+폭도들을 동원할 필요도 없이 살인은 멈췄습니다.
+살인마가 떠난 모양이군요. <---> _qgiver_님은
+___bookstore_ 살인마가 떠나기로 마음먹은 덕분에
+운이 좋았습니다. 공포가 극에 달하고 있었거든요.
+<---> _qgiver_님은 여전히 불안해하고 있습니다.
+살인마가 사라졌으니 %g2 의 마음도 편해질
+법한데 말이죠. <---> ___bookstore_ 살인마는
+___bookstore_에 나타났던 것처럼 갑자기 사라졌습니다.
+<---> 어떤 이들은 살인마가 여전히 이곳에 머물며
+별의 정렬을 기다리고 있다고 말합니다.
+
+RumorsPostsuccess:  [1007]
+살인마가 죽었다고는 하지만, 여전히 ___bookstore_에서
+혼자 다니기가 두렵습니다. <---> ___bookstore_
+살인마는 그저 불쌍한 미치광이였나 봅니다.
+낭만적인 구석이라곤 전혀 없군요. <---> 최근 도는
+소문으로는 ___bookstore_ 살인마가 뱀파이어는 아니었지만,
+스스로를 뱀파이어라고 믿었다고 합니다.
+
+QuestorPostsuccess:  [1008]
+%pcf 님, ___bookstore_ 살인마 사건을 처리할 때
+보여주신 신중함을 아직 기억하고 있습니다.
+
+QuestorPostfailure:  [1009]
+<ce>___bookstore_ 살인마 사건에서 당신은 실패했소,
+<ce>%pcf. 당신이 다시 실패하지 않을 거라 믿을
+<ce>이유가 전혀 보이지 않는군.
+
+QuestLogEntry:  [1010]
+<ce>아, %pcf, 나의 소중한 %ra 여,
+<ce>와주어서 정말 기쁘오. 내가 살해 협박 편지를 받기 시작한
+<ce>이후로 은둔자가 되었다는 이야기는 분명 들었을 것이오.
+<ce>조사를 그만두지 않으면 목숨을 빼앗겠다는 내용이었지.
+<ce>이제 마을에 내 오랜 동료가 와 있으니 그자의 도움으로
+<ce>이 살인 사건들을 해결할 수 있을지도 모르오. 이 기록들을
+<ce>_vamp_에게 가져다주길 바라오. _hookerhouse_에서 찾을
+<ce>수 있는 =vamp_ 측이지. 혹시 내게 무슨 일이 생기면,
+<ce>누군가 조사를 계속 이어갈 수 있기를 바라오.
+<ce>그건 _vamp_ 측과 당신, %pcf 님이 될 것이오.
+<ce>그러니 밖에서 죽지 않도록 조심하시오.
+
+Message:  1011
+_contact_,
+ 
+목숨이 아깝다면 %reg 살인마의
+희생자들에 대한 조사를 당장 그만두어라.
+너는 지금 눈먼 채 지옥불 속으로 걸어 들어가고 있다.
+ 
+계속한다면 연구가 끝나기도 전에 죽게 될 것이다.
+이것을 엄중한 경고로 받아들여라.
+ 
+<ce>선의의 조언자
+
+Message:  1012
+_contact_,
+ 
+모든 문을 잠그고 _bookstore_의 모든 빛을 꺼버린다 해도,
+우리가 당신이 여전히 금지된 부검을 즐기고 있다는 사실을
+알고 있음을 명심하시오. 우리를 자극하여 힘을 보여달라고
+요구하지 마시오. 우리는 단 한 번만 행동할 것이오.
+ 
+<ce>선의의 조언자
+
+Message:  1013
+_contact_,
+ 
+살인마 희생자들에 대한 당신의 매혹적인 시신
+연구에 대해 꼭 만나서 이야기를 나누고 싶습니다.
+아시다시피 저도 비슷한 조사를 해왔기에,
+저명한 동료와 지식과 경험을 공유한다면 기쁠 것입니다.
+ 
+어떻게 만나는 것이 가장 편할지 전령을 통해 알려주십시오.
+저는 _hookerhouse_에 머물고 있습니다만,
+혹시 _bookstore_에서 만나서 문제의 시신들을
+직접 확인할 수 있다면 더 좋겠습니다.
+어느 쪽이든 당신의 전령과 답장을 기다리고 있겠습니다.
+ 
+<ce>경의를 표하며,
+ 
+<ce>_vamp_
+
+Message:  1014
+%fn 에 대한 부검 보고서:
+ 
+목이 찢겨 나감, 명백히 폭력적인 힘에 의한 것
+(살인마는 미치광이인가? 아그린 감옥(Agryn Prison)에서
+로보르누스(Lobornus)가 범죄적 정신이상자를 다룬 연구를
+확인해 볼 것). 즉사, 저항의 흔적 없음 (살인마가 피해자를
+알았나? 위협으로 보이지 않았나?) 경동맥이 완전히 절단됨,
+검사 시점에는 이미 혈액 손실이 극심함 (시신을 발견한
+_qgiver_에게 경비병들을 보내 인터뷰를 요청할 것).
+ 
+%mn 에 대한 부검 보고서:
+ 
+피험자는 여성 피해자와 유사한 병리학적 증상을 보임.
+목이 폭력적으로 찢겨 나갔고, 상완부에 마치 엄청난
+힘을 가진 남자가 움켜쥔 듯한 멍이 있음 (살인마의
+광기가 초인적인 힘을 만들어내는가? 스스로에게 메모:
+작년 콘클라베(Conclave)에서 로보르누스가 보고한
+흥미로운 사례에 대한 연구 노트를 요청하는 편지를 쓸 것).
+멍은 공격과 사망 사이에 시간이 있었음을 나타내는가?
+(공격과 무관할 수도 있는가? 피해자의 배경을 조사할 것)
+
+Message:  1015
+<ce>결국 _contact_ 측이 그 썩어가는 시체들과 보낸 나날들
+<ce>끝에 %g 가 내놓은 결론이 이거라니. %god,
+<ce>이걸 시작으로 _contact_ 측은 몇 주가 지나도 살인마의
+<ce>정체를 알아내지 못할 거야. 잘 들어, %pcf,
+<ce>_qgiver_ 측을 돕고 싶다면, 이 꽃을 _widow_에
+<ce>있는 _widowhouse_에게 가져다줘. %g3 의 형제는
+<ce>살인마의 희생자 중 한 명인 %mn 개체가었어.
+<ce>사소한 감상처럼 들릴지 모르지만, 이건 _contact_의
+<ce>과학적 촉매제보다 ___bookstore_ 살인마를 찾는 데 훨씬 더
+<ce>도움이 될 거야. 나를 믿어, %pcf.
+
+Message:  1016
+_vamp_의 정체는 _hookerhouse_에서 만난
+=vamp_입니다. 꽤 괜찮은 사람이지만, 어딘가 섬뜩하죠.
+<---> _vamp_의 신원은 _hookerhouse_에
+머물고 있는 =vamp_입니다.
+
+Message:  1017
+_vamp_의 임무는 ___bookstore_에 파견되어
+미친 살인마를 제거하려는 %vcn 중 한 명으로
+활동하는 것입니다. <---> _vamp_의 정체는
+%g3 의 안전을 위협하는 살인마를 막기 위해
+온 %vcn 뱀파이어입니다.
+
+Message:  1018
+불쌍한 _widow_의 처지는 살인마가 %g3 의
+형제를 죽인 이후로 _widowhouse_에 머물고 있습니다.
+<---> %reg 살인마가 _widow_의
+형제를 죽였고, 이제 %g 는 절대 _widowhouse_
+밖으로 나오지 않습니다.
+
+Message:  1019
+<ce>붉은 양귀비꽃인가요? 아, 제 형제의 친구인
+<ce>_rippername_님이시군요, 그렇죠? 형이 죽은 뒤 보내주신
+<ce>위로의 편지는 정말 감사했어요. 형은 친구가 별로 없었고,
+<ce>사실 당신의 이름을 언급한 적도 없었거든요. 하지만 아름다운
+<ce>꽃과 _ripperhouse_ 쪽으로 초대해주신 점은 정말 감사드려요.
+<ce>그곳은 항상 동경하던 곳이라, 안을 꼭 한번 보고 싶었거든요.
+<ce>
+<ce>뭐라고요, 당신은 _rippername_의 본인이 아니라고요?
+<ce>아, 정말 죄송해요. 용서해주세요, 형이 그렇게 된 이후로
+<ce>제정신이 아니었거든요... 아니요, 그 살인마 악마를 찾는
+<ce>데 도움이 될 만한 정보는 없는 것 같아요. 가능하다면 돕고
+<ce>싶지만요. 하지만 형을 죽인 그 흉악범을 꼭 찾아내실 거죠?
+
+Message:  1020
+%qdat: 나는 ___bookstore_의 살인마를 추적 중이다.
+%rt 의 의도는 ___bookstore_ 살인마가 살인
+사건으로 민중이 폭동을 일으키기 전, =total_일 안에
+잡히기를 원한다. _qgiver_에는 살인마의 희생자 시신을
+조사해 온 과학자가 있는데, 최근 살인마로부터 살해 협박을
+받기 시작했다. _contact_의 신원은 그 과학자이며,
+%g 는 _bookstore_에서 연구하고 있다.
+
+Message:  1021
+%qdat: _contact_ 측에서 _hookerhouse_에
+있는 _vamp_의 이름을 지닌 오랜 동료를 만나
+연구를 도우라고 나를 보냈다.
+
+Message:  1022
+%qdat: _bookstore_에 너무 늦게 도착했다.
+_contact_의 살해 협박은 매우 현실적이었던 모양이다.
+내가 발견한 편지 중에는 _contact_의 행방을 묻는
+동료의 편지가 있었는데, _hookerhouse_에 머물고 있는
+_vamp_의 이름으로 불리는 자였다.
+
+Message:  1023
+%qdat: _vamp_ 측을 만났는데, %g3 의
+동료 _contact_의 %reg 살인마 희생자 연구에
+대해 별로 좋게 생각하지 않는 듯했다. _vamp_ 측은
+내게 _widow_의 이름으로 불리는 사람에게 붉은 양귀비를
+가져다주라고 했다. 그자의 형제는 살인마에게 살해당했다.
+몇 가지 의심스러운 점이 있지만, _widow_ 개체가 사는
+_widowhouse_에 가보기 전까지는 확신할 수 없다.
+
+Message:  1024
+%qdat: 고인이 된 _contact_의 동료와 살인마는
+동일 인물이다. _vamp_의 정체는 뱀파이어이지만,
+자신이 살인마는 아니라고 주장한다.
+만약 %g 가 %reg 살인마라고 지목한
+_ripperhouse_의 _rippername_ 처치에 성공한다면,
+_vamp_의 약속대로 _qgiver_에게서 받을 보상
+외에도 추가 보상을 주겠다고 했다.
+
+Message:  1025
+%qdat: =widow_ _vamp_ 측이 나를 보낸
+_widow_ 개체는 내가 _rippername_의 이름으로 불리는
+사람인 줄 알았다. 이 _rippername_ 개체는 _widow_에게
+붉은 양귀비 꽃다발을 보내고 %g2 를 _ripperhouse_의
+명칭으로 불리는 곳으로 초대했다. 살인마의 함정이 분명하다.
+
+Message:  1026
+<ce>어떤 편지를 받고 나를 찾아왔나, %pcn?
+<ce>그 편지들은 모두 내가 썼다는 걸 알고 있겠지.
+<ce>_contact_의 필멸자의 이해를 넘어선 문제를 조사하지
+<ce>말라는 나의 정중한 경고를 거부한 뒤, 나는 %g3 의
+<ce>친구로서 %g2 를 이곳으로 초대했네. 내가
+<ce>뱀파이어가 되기 전, 수년 전에 %g2 를 알았거든.
+<ce>우리는 만나서 시신을 확인하러 _bookstore_ 쪽으로
+<ce>돌아갔고, 그곳에서 나는 %g2 를 죽였네. 아주 고통
+<ce>없이 말이야. %g 가 자신의 연구를 절대 멈추지
+<ce>않으리라는 걸 알 수 있었지. 그 이상은 말할 수 없군. 다만
+<ce>살인자도 나처럼 뱀파이어지만, 불멸의 축복으로 미쳐버렸다는
+<ce>사실뿐. _rippername_, 그것이 살인자의 본명이며
+<ce>%g 는 _ripperhouse_에 살고 있네. 그곳으로
+<ce>가서 %g2 를 처단한다면, 보상을 주겠네. 만약
+<ce>_contact_의 연구를 계속할 생각이라면, 나로서도 어쩔 수
+<ce>없이 그대까지 죽여야겠군. 이것이 나의 간단한 제안일세.
+
+Message:  1027
+_contact_의 신분은 %di 의
+_bookstore_에서 연구하는 꽤 학식 있는 과학자입니다.
+<---> _contact_의 신분은 _bookstore_에서
+일하는 =contact_입니다.
+
+Message:  1028
+_contact_의 업무는 살인마의 희생자들을 해부하는 것인데,
+누군가 그걸 좋아하지 않는 모양입니다.
+<---> _contact_의 신분은 _bookstore_의
+과학자로, 살해 협박 편지를 받고 있습니다.
+
+Message:  1029
+<ce>미친 살인마는 이제 없습니다.
+
+Message:  1050
+<ce>_rippername_ 개체를 처치함으로써, 당신은
+<ce>%reg 지역과 저 모두에게 도움을 주었습니다. 그
+<ce>대가로, 당신에게 _reward2_ 물품을 드립니다. 언젠가 다시
+<ce>만날 수 있겠지요, %pcn. 짧은 만남이었지만 당신은
+<ce>제 흥미를 끌었습니다. 밤이 당신을 안전하게 지켜주길.
+
+
+-- Symbols used in the QRC file:
+--
+--               ___bookstore_ occurs 141 times.
+--               %di occurs 3 times.
+--               %fn occurs 2 times.
+--                %g occurs 117 times.
+--               %g2 occurs 8 times.
+--               %g3 occurs 9 times.
+--              %god occurs 3 times.
+--               %mn occurs 3 times.
+--              %pcf occurs 11 times.
+--              %pcn occurs 2 times.
+--             %qdat occurs 6 times.
+--               %ra occurs 1 time.
+--              %reg occurs 10 times.
+--               %rt occurs 1 time.
+--              %vcn occurs 3 times.
+--         =contact_ occurs 2 times.
+--           =total_ occurs 2 times.
+--            =vamp_ occurs 4 times.
+--           =widow_ occurs 1 time.
+--       _bookstore_ occurs 13 times.
+--         _contact_ occurs 21 times.
+--     _hookerhouse_ occurs 7 times.
+--          _qgiver_ occurs 8 times.
+--         _reward2_ occurs 1 time.
+--          _reward_ occurs 2 times.
+--     _ripperhouse_ occurs 4 times.
+--      _rippername_ occurs 8 times.
+--            _vamp_ occurs 14 times.
+--           _widow_ occurs 11 times.
+--      _widowhouse_ occurs 107 times.
+
+QBN:
+Item _I.00_ letter used 1011
+Item _I.01_ letter used 1012
+Item letter31 letter used 1013
+Item _I.03_ letter used 1014
+-Item _I.04_ dead_body
+Item _reward_ gold
+Item _reward2_ trinket
+-Item _I.08_ item class 26 subclass 3
+Item _I.09_ item class 15 subclass 13
+
+Person _qgiver_ group Questor
+Person _contact_ face 1 group Librarian local anyInfo 1027 rumors 1028
+Person _vamp_ face 1 factiontype Vampire_Clan local anyInfo 1016 rumors 1017
+Person _widow_ face 82 group Resident2 female local anyInfo 1018
+Person _rippername_ face 5 group Group_6.0 male local
+
+Place _bookstore_ local house2
+Place _hookerhouse_ local tavern
+Place _ripperhouse_ local house1
+Place _widowhouse_ local temple
+
+Clock _1stparton_ 00:30 03:00
+Clock _2ndparton_ 00:30 06:00
+Clock _total_ 3.00:00 0 flag 1 range 0 1
+
+Foe _murder_ is Vampire
+
+--	Quest start-up:
+-	place item _I.08_ at _bookstore_ 
+	dialog link for location _ripperhouse_ person _rippername_ 
+	dialog link for person _widow_ 
+	dialog link for person _vamp_ 
+	start timer _total_ 
+	start timer _1stparton_ 
+	log 1020 step 0 
+	place npc _contact_ at _bookstore_ 
+	place npc _vamp_ at _hookerhouse_ 
+	place npc _widow_ at _widowhouse_ 
+-	have _I.04_ set _deadbody_
+--removing everything related to the dead body. It's out of place for
+--the quest, has no relevance and no function. Also had a sprite change
+--since last checked? In any case, not useful.
+
+_S.00_ task:
+	killed 1 _murder_ 
+	say 1029
+
+_1stparton_ task:
+	start timer _2ndparton_ 
+
+variable _2ndparton_
+_S.03_ task:
+	when _2ndparton_ and not _S.13_ 
+	letter31 used do _S.11_ 
+	place item _I.01_ at _bookstore_ 
+	place item _I.00_ at _bookstore_ 
+	place item letter31 at _bookstore_ 
+-	place item _I.04_ at _bookstore_ 
+	hide npc _contact_ 
+
+_vampclicked_ task:
+	clicked npc _vamp_ 
+
+_qgclicked_ task:
+	clicked npc _qgiver_ 
+
+_qgclearclick_ task:
+	when not _S.00_ and _qgclicked_ 
+	clear _qgclicked_ _qgclearclick_
+
+_pcgetsgold_ task:
+	when _S.00_ and _qgclicked_ 
+	give pc _reward_ 
+	unset _qgclicked_ 
+	end quest 
+
+-_deadbody_ task:
+-	take _I.04_ from pc
+--added deadbody task. otherwise body would clog inventory
+
+_S.07_ task:
+	when _S.17_ and not _S.00_ 
+	place foe _murder_ at _ripperhouse_ 
+
+_S.08_ task:
+	when _vampclicked_ and _S.11_ 
+	add dialog for location _ripperhouse_ 
+	log 1024 step 4 
+	say 1026 
+
+_S.09_ task:
+	when _hasletter_ and _vampclicked_
+	add dialog for person _widow_ 
+	log 1023 step 3 
+	get item _I.09_ 
+	say 1015 
+
+variable _hasletter_
+_S.10_ task:
+	clicked npc _contact_ 
+	add dialog for person _vamp_ 
+	log 1021 step 1 
+	get item _I.03_
+	setvar _hasletter_
+	say 1010
+
+_vampclearclick_ task:
+	when _vampclicked_ and not _S.00_
+	clear _vampclicked_ _vampclearclick_
+
+_S.11_ task:
+	add dialog for person _vamp_ 
+	log 1022 step 2 
+
+variable _S.12_
+_S.13_ task:
+	daily from 06:00 to 18:00 
+
+_S.14_ task:
+	when not _S.13_ and not _S.00_ 
+	create foe _murder_ every 15 minutes 1 times with 15% success 
+
+_S.15_ task:
+	toting _I.09_ and _widow_ clicked 
+	add dialog for location _ripperhouse_ 
+	log 1025 step 5 
+	say 1019 
+
+_S.16_ task:
+	when _vampclicked_ and _S.00_ 
+	get item _reward2_ saying 1050 
+	make _reward2_ permanent 
+	unset _vampclicked_ 
+
+_S.17_ task:
+	when _S.15_ or _S.08_ 
+
+_total_ task:
+	end quest 

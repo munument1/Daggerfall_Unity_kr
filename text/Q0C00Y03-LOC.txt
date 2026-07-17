@@ -1,0 +1,174 @@
+-- Quest: C:\QUESTS\WORKING\Q0C00Y03.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: witch
+-- Repute: 0
+-- QuestId: 3
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 14
+Quest: Q0C00Y03
+DisplayName: 홍보
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>==qgiver_ 관련하여 매우 터무니없으면서도 심각한 문제에
+<ce>대해 당신의 도움이 필요합니다. 당신도 %reg 의
+<ce>마녀들이 경멸받는다는 사실을 잘 알고 있을 겁니다.
+<ce>우리의 힘과 고립은 우리를 다루기 어려운 세력으로
+<ce>만들기에 아무도 우리를 오래 신뢰하지 않죠.
+<ce>우리는 곧 우리에게 닥칠 함정을 발견했고, 이를 무력화할
+<ce>당신 같은 사람이 필요합니다. 보상으로 _gem_ 제공할
+<ce>용의가 있는데, 이런 퀘스트에 관심이 있습니까?
+
+RefuseQuest:  [1001]
+<ce>관심 없다고요? %oth, ==qgiver_의 입장에서
+<ce>우리 동맹들의 비겁함은 익숙한 일입니다.
+
+AcceptQuest:  [1002]
+<ce>하겠다고요? 그렇다면 이 아이를 데려가십시오. _child_
+<ce>%g 가 %g3 의 이름이라고 말합니다.
+<ce>우리는 며칠 전 %g3 의 부모에게 버려진
+<ce>%g2 를 발견했습니다. 분명 %g 는 우리가
+<ce>인간 제물이나 무고한 자들의 타락과 같은 일에 연루되었다는
+<ce>것을 적들이 증명할 수 있도록 이곳에 놓인 것이겠지요.
+<ce>납치 같은 흔한 일은 아닐 겁니다. _child_의
+<ce>말에 따르면 %g3 의 부모가 __home_의
+<ce>_home_에 산다고 합니다. 아이를 집으로 데려가십시오.
+<ce>하지만 조심하십시오. 우리의 교활한 적들은 아이가 집으로
+<ce>돌아가는 것을 허용하기보다 당신 둘을 죽이려 할 것입니다.
+<ce>=queston_일 이내에 우리에게 돌아오면 _gem_
+<ce>지급하겠습니다. 행운을 빕니다.
+
+QuestComplete:  [1004]
+<ce>_child_ 귀환이 확인되어 다행입니다.
+<ce>아마도 ==qgiver_ 베푼 친절이 다음 세대를 위해 우리의
+<ce>사악함에 대한 오해를 일부 해소해 줄 것입니다. 여기 당신의
+<ce>_gem_ 있습니다. 감사합니다, %pcf.
+
+RumorsDuringQuest:  [1005]
+==qgiver_의 행위는 납치범보다 훨씬 더 나쁘다고들
+합니다. <---> 만약 그 _child_ 찾지 못하면
+==qgiver_의 운명은 불타버릴 것입니다.
+
+RumorsPostfailure:  [1006]
+==qgiver_의 =child_ 납치설이 돌고 있습니다.
+불쌍한 것. <---> ==qgiver_의 결백을
+증명할 방법이 없습니다.
+
+RumorsPostsuccess:  [1007]
+==qgiver_의 _child_ 납치 혐의는 사실이 아닙니다.
+%g %g3 의 말에 따르면 본인이 하지
+않았다고 합니다. <---> _child_의 말을 믿을
+수 있다면, %g 는 ==qgiver_에게 해를 입은
+것이 아니라 도움을 받은 것입니다.
+
+QuestorPostsuccess:  [1008]
+_child_ 및 ==qgiver_에게 베푼 친절에 감사하며,
+기꺼이 당신과 대화하겠습니다.
+
+QuestorPostfailure:  [1009]
+<ce>우리는 당신에게 어린 _child_의 호위를
+<ce>%g3 의 집까지 부탁했으나, 당신은 실패했습니다.
+<ce>결코 가벼운 부탁이 아니었으며, 그에 따른 비난 또한 가볍지
+<ce>않을 것입니다. ==qgiver_, 저주받은 %ra 여,
+<ce>지금 당장 떠나십시오.
+
+QuestLogEntry:  [1010]
+%qdt:
+ =qgiver_의 마녀 집회에서 버려진 아이를 집으로
+ 데려다주는 중이다. 아이인 _child_ 측은 __home_의
+ _home_에 산다. 마녀들의 적들은 아이가 무사히 집으로
+ 돌아가는 것을 보느니 차라리 우리를 죽이려 할 것이다.
+ 임무를 마치면 _qgiver_에게서 보상을 받기 위해
+ ___qgiver_ 방향으로 돌아가야 한다.
+
+Message:  1011
+<ce>"여기가 제가 사는 곳이에요! 제 집이에요!"
+<ce>_child_의 당신의 뺨에 입을 맞추며 하는 말입니다.
+<ce>"고마워요, %pcf!"
+
+Message:  1012
+<ce>"마녀 애호가! _daedra_의 자식!" 누군가
+<ce>비명을 지릅니다.
+<--->
+<ce>"==daedra_ 개체와 ==qgiver_의 자식이
+<ce>살아남게 두지 마라!" 누군가 소리칩니다.
+<--->
+<ce>"%god 신격이시여, 지옥에서 온 자들의 하수인과
+<ce>아이, 즉 ==qgiver_ 측을 상대할 제 손에
+<ce>힘을 주소서!" 누군가 외칩니다.
+
+Message:  1013
+<ce>"나머지 길은 혼자 갈게요," 아이가 말하며 빠져나가
+<ce>놀라운 민첩성으로 사라집니다.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 4 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 5 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 3 times.
+--              %reg occurs 1 time.
+--         ==daedra_ occurs 1 time.
+--         ==qgiver_ occurs 17 times.
+--           =child_ occurs 1 time.
+--         =queston_ occurs 1 time.
+--           __home_ occurs 2 times.
+--           _child_ occurs 10 times.
+--          _daedra_ occurs 1 time.
+--             _gem_ occurs 5 times.
+--            _home_ occurs 2 times.
+
+QBN:
+Item _gem_ gem
+
+Person _qgiver_ group Questor
+Person _child_ face 105 faction Children
+Person _daedra_ face 69 factiontype Daedra male remote
+
+Place _home_ remote house2
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _warrior_ is Warrior
+
+--	Quest start-up:
+	create foe _warrior_ every 15 minutes 40 times with 100% success msg 1012 
+	start timer _queston_ 
+	log 1010 step 0 
+	pc at _home_ set _S.01_ 
+	add _child_ face 
+
+_queston_ task:
+	end quest 
+
+_S.01_ task:
+	say 1011 
+	drop _child_ face
+	start task _S.07_
+--added start task S.07. 07 was turning off when S.01 deactivated.
+
+_reward_ task:
+	when _S.03_ and _S.07_ 
+	give pc _gem_ 
+	end quest 
+
+_S.03_ task:
+	clicked npc _qgiver_ 
+
+_S.04_ task:
+	when _S.03_ and not _S.07_ 
+	clear _S.03_ _S.04_ 
+
+_S.05_ task:
+	when _queston_ and not _S.07_ 
+	say 1013 
+
+variable _S.06_
+variable _S.07_
+--changed S.07 to empty variable instead of "when S.01"

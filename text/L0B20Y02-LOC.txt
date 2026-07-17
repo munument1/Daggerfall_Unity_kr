@@ -1,0 +1,147 @@
+-- Quest: C:\QUESTS\WORKING\L0B20Y02.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Brotherhood
+-- Repute: 20
+-- QuestId: 2
+Messages: 22
+Quest: L0B20Y02
+DisplayName: 명예 없는 기사
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>아, 당신 안의 낭만주의자에게 호소할 만한 일이 있습니다,
+<ce>%pcf: 비열한 기사가 어여쁜 처녀의 명예를
+<ce>더럽히고는 그녀를 변호하려는 자들과 싸우기를 거부하고
+<ce>있습니다. 불쌍한 소녀는 할 수 있는 유일한 일을 했고,
+<ce>이제 우리가 처리해야 할 일이 생겼습니다. 관심 있으십니까?
+
+RefuseQuest:  [1001]
+<ce>아니요? 당신이 기뻐할 만한 일이라고 생각했는데요.
+<ce>타락한 여자들에게 마음이 약한 다른 해결사들은 많습니다.
+
+AcceptQuest:  [1002]
+<ce>역시 내 생각이 맞았군. 그 기사는 아직 계약 사실을
+<ce>모르는 것 같아. ___mondung_의 명칭으로 불리는 요새
+<ce>깊숙이 틀어박혀 있거든. 분명히 이 교양 없는 전사는
+<ce>우리 일을 쉽게 풀어줄 생각이 없나 봐. 좋아, 계약은
+<ce>=1stparton_일 안에 결판을 내고 자네가 여기로 돌아와
+<ce>보고하는 것으로 되어 있네. 어서 가보게, %pcf.
+<ce>그 가련하고 더럽혀진 귀족 아가씨를 지켜주게나.
+
+QuestFail:  [1003]
+<ce>의뢰인의 감사 인사가 들리지 않는군.
+<ce>그 기사가 아직 살아있다는 뜻이겠지.
+<ce>서둘러 그 실수를 바로잡게, %pcf.
+
+QuestComplete:  [1004]
+<ce>그 도적 기사는 저세상으로 갔나?
+<ce>아마 다음 생에는 칼을 칼집에 넣어두는 지혜를 배우겠지.
+<ce>평소처럼 아주 잘했네, %pcf.
+
+RumorsDuringQuest:  [1005]
+그 군인은 정말 지저분한 놈이야. 명예라고는 눈을 씻고
+찾아볼 수가 없지. <---> 그 귀족 아가씨가 기사를
+유혹하려다 실패했다더군. 그래서 화가 난 모양이야.
+
+RumorsPostfailure:  [1006]
+그 전사는 순진한 여인들을 타락시키려 새로운 땅으로 떠났어.
+<---> 그 군인은 폭풍처럼 ___questgiver_ 쪽을
+떠나며 수많은 상처 입은 마음을 남겼지.
+
+RumorsPostsuccess:  [1007]
+내 생각에 그 군인은 %g2 가 자초한 일을 당한 거야.
+정말 비열한 놈! <---> 누군가 나서서 귀족 아가씨를
+지켜주니 다행이지. 정말 끔찍한 도적 놈이었어.
+
+QuestorPostsuccess:  [1008]
+기사를 처단한 분을 도울 수 있다면 무엇이든 기꺼이
+하겠어요.
+
+QuestorPostfailure:  [1009]
+<ce>고작 기사 하나 처리하지 못하는 %ra 및 그 일행과
+<ce>대화하고 싶을 거라 생각하나? 당장 내 눈앞에서 사라지게.
+
+Message:  1020
+%qdt:
+ ___questgiver_에 있는 다크 브라더후드의 _questgiver_ 측에서
+ 나를 ___mondung_ 쪽으로 보내 기사를 찾아 처단하게 했다.
+ =1stparton_일 안에 일을 마쳐야 한다.
+
+Message:  1021
+<ce>"_damsel_에게 전해라... 그 계집은 더럽혀진...
+<ce>명예를 %reg 의 모든 농부들과 나눌 수 있을 거라고."
+<ce>네가 그를 처단하자 기사가 말한다. 계약이 완수되었다.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 1 time.
+--               %g2 occurs 1 time.
+--              %pcf occurs 6 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 4 times.
+--       ___mondung_ occurs 2 times.
+--    ___questgiver_ occurs 1 time.
+--          _damsel_ occurs 1 time.
+--      _questgiver_ occurs 1 time.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ face 112 group Questor
+Person _damsel_ face 2 group Group_6.0 female local
+
+Place _mondung_ remote dungeon2
+
+Clock _1stparton_ 00:00 0 flag 18 range 0 2
+
+Foe _monster1_ is Knight
+Foe _monster2_ is Warrior
+Foe _monster3_ is Spellsword
+Foe _monster4_ is Nightblade
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	pick one of _S.06_ _S.07_ _S.08_ _S.09_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _S.02_ 
+	give pc _reward_ 
+	end quest 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_S.02_ task:
+	killed 1 _monster4_ saying 1021 
+	killed 1 _monster3_ saying 1021 
+	killed 1 _monster2_ saying 1021 
+	killed 1 _monster1_ saying 1021 
+
+variable _queston_
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_S.06_ task:
+	place foe _monster1_ at _mondung_ 
+
+_S.07_ task:
+	place foe _monster2_ at _mondung_ 
+
+_S.08_ task:
+	place foe _monster3_ at _mondung_ 
+
+_S.09_ task:
+	place foe _monster4_ at _mondung_ 
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.02_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 

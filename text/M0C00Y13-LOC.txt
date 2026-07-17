@@ -1,0 +1,105 @@
+-- Quest: C:\QUESTS\WORKING\M0C00Y13.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: fighter
+-- Repute: 0
+-- QuestId: 13
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 12
+Quest: M0C00Y13
+DisplayName: 야만인 사냥
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>저는 _qgiver_입니다. 전사 길드는 자선 사업을
+<ce>하지 않습니다. 지금 당장 전사가 부족한 게 아니었다면,
+<ce>당신을 돌려보냈을 겁니다, %pcn.
+<ce>날뛰고 있는 야만인을 쫓아낼 전사가 필요합니다.
+<ce>저를 위해 해낸다면 당신이 훌륭한 %ra 임을 모두가
+<ce>알게 해 주겠습니다. 거래하시겠습니까?
+
+RefuseQuest:  [1001]
+<ce>당신은 큰 실수를 저질렀습니다, %pcn.
+<ce>당분간 여기서 일거리를 찾을 생각 마십시오.
+
+AcceptQuest:  [1002]
+<ce>당장 _house_ 쪽으로 가서 그 불쌍한 꼴을 면하십시오.
+<ce>내일 이 시간까지 야만인을 쫓아내면 괜찮을 겁니다.
+
+QuestComplete:  [1004]
+<ce>많이 다치지는 않았습니까? 이런 일을 몇 번 더 해낸다면 당신
+<ce>스스로 전사 길드에 들어올 자격을 증명하게 될 겁니다.
+
+RumorsDuringQuest:  [1005]
+<ce>야만인들이 다시 농장을 습격하고 있습니다.
+
+RumorsPostfailure:  [1006]
+<ce>전사 길드가 개입하기 전에 야만인들이 농장 네 곳을
+<ce>약탈했습니다.
+
+RumorsPostsuccess:  [1007]
+<ce>당신이 그 야만인을 쫓아낸 %ra 맞습니까?
+
+QuestorPostsuccess:  [1008]
+<ce>야만인을 꽤 잘 처리했더군요, %pcf.
+<ce>아주 좋았습니다.
+
+QuestorPostfailure:  [1009]
+<ce>당신이 그 야만인을 처리해 줄 거라 믿었습니다.
+<ce>실패했으니, 다른 사람을 보내 처리하게 할 수밖에 없군요.
+
+QuestLogEntry:  [1010]
+%qdt:
+ ___qgiver_의 전사 길드에서 _house_ 약탈을 일삼는
+ 야만인을 처리할 기회를 주었습니다. 하루의 시간이 있습니다.
+
+Message:  1011
+<ce>_monster_ 사망이 확인되었습니다.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--           _house_ occurs 2 times.
+--         _monster_ occurs 3 times.
+--          _qgiver_ occurs 1 time.
+
+QBN:
+
+Person _qgiver_ group Questor
+
+Place _house_ local random
+
+Clock _2dung_ 1.00:00 0 flag 1 range 0 1
+
+Foe _monster_ is Barbarian
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _house_ 
+	log 1010 step 0 
+	place foe _monster_ at _house_ 
+	create npc at _house_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _monster_ saying 1011 
+
+_S.02_ task:
+	when _qgclicked_ and _S.01_ 
+	give pc nothing 
+	end quest 
+
+_qgclicked_ task:
+               clicked npc _qgiver_
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.01_ 
+	clear _qgclicked_ _clearclick_ 
