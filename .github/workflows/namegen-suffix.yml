@@ -1,0 +1,44 @@
+name: Apply Korean Nord surname suffix
+
+on:
+  push:
+    branches:
+      - agent/namegen-full-korean
+
+permissions:
+  contents: write
+
+jobs:
+  patch-suffix:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/namegen-full-korean
+          fetch-depth: 0
+
+      - name: Patch suffix and remove one-time workflow
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('text/Internal_Strings.csv')
+          text = path.read_text(encoding='utf-8')
+          old = 'nordSurnameImmutableSuffix,sen'
+          new = 'nordSurnameImmutableSuffix,센'
+          if text.count(old) != 1:
+              raise SystemExit(f'Expected exactly one suffix entry, found {text.count(old)}')
+          path.write_text(text.replace(old, new), encoding='utf-8')
+          PY
+          rm .github/workflows/namegen-suffix.yml
+
+      - name: Commit patch
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add text/Internal_Strings.csv .github/workflows/namegen-suffix.yml
+          git commit -m '노드 성씨 접미사를 한글화'
+          git push origin HEAD:agent/namegen-full-korean
