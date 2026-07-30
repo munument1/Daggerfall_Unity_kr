@@ -2,54 +2,54 @@
 
 schema: *key,text
 
-resolution,제니타르의 결의회
+resolution,해상도
 fullscreen,전체 화면
 quality,품질
-play,플레이
+play,게임 시작
 mods,모드
-advanced,고급
-restart,재시작
-restartInfo,처음부터 설정 재시작
+advanced,고급 설정
+restart,다시 시작
+restartInfo,설정을 처음부터 다시 진행합니다
 exit,종료
-modNote,참고: 모드를 활성화하면 성능 요구 사양이 높아질 수 있습니다.
+modNote,참고: 모드를 활성화하면 더 높은 사양이 필요할 수 있습니다
 settingsFolder,설정 폴더
-settingsFolderInfo,더블 클릭하여 폴더 열기
+settingsFolderInfo,더블 클릭하여 폴더를 엽니다
 
 alwayShowOptions,항상 이 창 표시
-alwayShowOptionsInfo,시작 시 항상 이 창 표시 그렇지 않으면 settings.ini를 사용하여 구성하십시오.
+alwayShowOptionsInfo,시작할 때 항상 이 창을 표시합니다\r선택하지 않으면 settings.ini의 설정을 사용합니다
 vsync,수직 동기화
-vsyncInfo,모니터 주사율과 FPS 동기화
-swapHealthAndFatigue,체력 및 피로도 교체
-swapHealthAndFatigueInfo,체력 및 피로도 바 색상 교체
-invertMouseVertical,마우스 반전
-invertMouseVerticalInfo,마우스 시점 수직 반전
-mouseSmoothing,마우스 시점 부드럽게
-mouseSmoothingInfo,1인칭 카메라 부드러움 정도
-leftHandWeapons,왼손 무기
-leftHandWeaponsInfo,화면 왼쪽에 무기 표시
-playerNudity,플레이어 나체
-playerNudityInfo,페이퍼 돌에서 나체 허용
-weaponSwingMode,무기 휘두르기 모드
-weaponSwingModeInfo,클릭 또는 길게 눌러 공격 활성화
-sdfFontRendering,SDF 폰트 렌더링
-sdfFontRenderingInfo,고해상도에서 부드러운 폰트 활성화
-enableController,컨트롤러 활성화
-enableControllerInfo,게임 내 조이스틱 또는 기타 컨트롤러 감지 및 사용 허용
+vsyncInfo,프레임 속도를 모니터 주사율에 맞춥니다
+swapHealthAndFatigue,체력·피로도 색상 맞바꾸기
+swapHealthAndFatigueInfo,체력 바와 피로도 바의 색상을 맞바꿉니다
+invertMouseVertical,마우스 상하 반전
+invertMouseVerticalInfo,마우스로 시점을 움직일 때 상하 방향을 반전합니다
+mouseSmoothing,마우스 시점 보정
+mouseSmoothingInfo,1인칭 카메라 움직임을 부드럽게 보정하는 정도입니다
+leftHandWeapons,왼손 무기 표시
+leftHandWeaponsInfo,무기를 화면 왼쪽에 표시합니다
+playerNudity,플레이어 나체 표시
+playerNudityInfo,페이퍼돌에 나체 표현을 허용합니다
+weaponSwingMode,무기 공격 방식
+weaponSwingModeInfo,클릭하거나 버튼을 누르고 있어 공격하도록 설정합니다
+sdfFontRendering,SDF 글꼴 렌더링
+sdfFontRenderingInfo,고해상도에서 글꼴을 매끄럽게 표시합니다
+enableController,컨트롤러 사용
+enableControllerInfo,조이스틱 등 컨트롤러를 감지하여 게임에서 사용할 수 있게 합니다
 
-findArena2Tip,팁: 대거폴에는 'arena2'라는 폴더가 포함되어 있습니다.
-foundArena2But,'arena2'를 찾았지만
-missingTextures,하나 이상의 TEXTURE 파일이 누락되었습니다.
-missingModels,ARCH3D.BSA가 누락되었습니다.
-missingBlocks,BLOCKS.BSA가 누락되었습니다.
-missingMaps,MAPS.BSA가 누락되었습니다.
-missingSounds,DAGGER.SND가 누락되었습니다.
-missingWoods,WOODS.WLD가 누락되었습니다.
-missingVideos,하나 이상의 .VID 파일이 누락되었습니다.
-justNotValid,유효하지 않은 것으로 보입니다.
-pathValidated,좋습니다! 유효한 대거폴 폴더로 보입니다 :)
+findArena2Tip,도움말: 대거폴 게임 데이터에는 'arena2' 폴더가 있습니다
+foundArena2But,'arena2' 폴더를 찾았지만
+missingTextures,TEXTURE 파일이 하나 이상 없습니다
+missingModels,ARCH3D.BSA 파일이 없습니다
+missingBlocks,BLOCKS.BSA 파일이 없습니다
+missingMaps,MAPS.BSA 파일이 없습니다
+missingSounds,DAGGER.SND 파일이 없습니다
+missingWoods,WOODS.WLD 파일이 없습니다
+missingVideos,.VID 파일이 하나 이상 없습니다
+justNotValid,올바른 게임 데이터 폴더가 아닌 것 같습니다
+pathValidated,좋습니다! 올바른 대거폴 게임 데이터 폴더입니다 :)
 hiddenFolders,숨김 폴더 표시
-testText,테스트
+testText,시험
 okText,확인
-keepSetting,이 설정을 유지하시겠습니까? 8초 후에 변경 사항이 되돌아갑니다.
-incompatibleMods,하나 이상의 모드가 현재 게임 버전과 호환되지 않습니다. 자세한 내용은 모드 창을 확인하십시오. 그래도 계속하시겠습니까?
-showOptionsAgain,대거폴 유니티를 시작할 때 Shift 키를 누르고 있으면 런처가 다시 표시됩니다.
+keepSetting,이 설정을 유지하시겠습니까? 8초 후 이전 설정으로 돌아갑니다.
+incompatibleMods,현재 게임 버전과 호환되지 않는 모드가 있습니다. 자세한 내용은 모드 창에서 확인하십시오. 그래도 계속하시겠습니까?
+showOptionsAgain,대거폴 유니티를 실행할 때 Shift 키를 누르고 있으면 런처를 다시 표시할 수 있습니다
