@@ -1,5 +1,5 @@
 Key,Value
-weaponSwingModes,"바닐라
+weaponSwingModes,"원작
 클릭
 길게 누르기"
 mouseLookSmoothingStrengths,"없음
@@ -8,28 +8,28 @@ mouseLookSmoothingStrengths,"없음
 중간
 높음
 최고"
-configureAdvancedControls,고급 설정 구성
+configureAdvancedControls,고급 조작 설정
 continueUpper,계속
-mouseLookSmoothing,마우스 시점 부드럽게 하기
+mouseLookSmoothing,마우스 시점 보정
 mouseLookSensitivity,마우스 시점 감도
-invertLookY,Y축 시점 반전
+invertLookY,시점 상하 반전
 movementAcceleration,이동 가속
-weaponSwingMode,무기 휘두르기 모드
-bowDrawback,활 - 당기기 및 발사
+weaponSwingMode,무기 공격 방식
+bowDrawback,활 당겨 쏘기
 toggleSneak,은신 전환
-mouseWeaponAttackThreshold,마우스 무기 공격 임계값
-Escape,탈출
+mouseWeaponAttackThreshold,마우스 공격 동작 임계값
+Escape,메뉴/취소
 AutoRun,자동 달리기
-ToggleConsole,콘솔
+ToggleConsole,콘솔 열기/닫기
 PrintScreen,스크린샷
 QuickSave,빠른 저장
 QuickLoad,빠른 불러오기
 close,닫기
-dungeonTextureModes,"클래식
-기후
-기후 전용
+dungeonTextureModes,"원작
+기후별
+기후별만
 무작위
-무작위 전용"
+무작위만"
 cameraRecoilStrengths,"끄기
 낮음 (25%)
 중간 (50%)
@@ -37,39 +37,39 @@ cameraRecoilStrengths,"끄기
 매우 높음 (100%)"
 interactionModeIconModes,"없음
 최소
-큼
-클래식
-색상
+크게
+원작
+컬러
 흑백
-클래식 조준점
-색상 조준점"
-iconsPositioningSchemes,"클래식
+원작 조준선
+컬러 조준선"
+iconsPositioningSchemes,"원작
 중간
 작게
-작은 데크 왼쪽
-작은 데크 오른쪽
-작은 수직 왼쪽
-작은 수직 오른쪽
-작은 수평 하단"
+소형 묶음 - 왼쪽
+소형 묶음 - 오른쪽
+소형 세로 - 왼쪽
+소형 세로 - 오른쪽
+소형 가로 - 하단"
 helmAndShieldMaterialDisplay,"끄기
-가죽 사슬 없음
-가죽 없음
-켜기"
-qualitySettings,"가장 빠르게
-빠르게
-단순하게
-좋게
-아름답게
-환상적으로"
+가죽·사슬 제외
+가죽 제외
+모두 표시"
+qualitySettings,"최저
+낮음
+보통
+높음
+매우 높음
+최고"
 filterModes,"포인트
-이선형
-삼선형"
+이중선형
+삼중선형"
 shadowResolutionModes,"낮음
 중간
 높음
 매우 높음"
-textureArrayLabel,텍스처 배열:
-unsupported,지원되지 않음
-enabled,활성화됨
-disabled,비활성화됨
-textureArrayInfo,더 나은 성능과 모딩 지원을 갖춘 지형 텍스처의 개선된 구현
+textureArrayLabel,텍스처 배열: 
+unsupported,지원 안 함
+enabled,활성화
+disabled,비활성화
+textureArrayInfo,지형 텍스처를 더 효율적으로 처리하여 성능과 모드 지원을 개선합니다
