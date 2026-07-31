@@ -28,10 +28,10 @@ AcceptQuest:  [1002]
 <ce>%g2을 죽여주겠나? 아, %pcf. 그 일을 해준다면
 <ce>내 _artifact_을 주지. 내 노예 _qgfriend_에게
 <ce>맡겨두었다. =monster_이 죽고 나면 ___qgfriend_로 가서
-<ce>__qgfriend_에 있는 내 노예를 만나라. =qgfriend_이니
-<ce>쉽게 알아볼 수 있을 것이다. 그곳에서 _artifact_을
-<ce>받게 될 거야. 이제 나는 오블리비언의 차가운 궁전으로
-<ce>돌아가야 한다. 좋은 소식을 기다리마.
+<ce>__qgfriend_에 있는 내 노예를 만나라. %g2은
+<ce>=qgfriend_이니 쉽게 알아볼 수 있을 것이다. 그곳에서
+<ce>_artifact_을 받게 될 거야. 이제 나는 오블리비언의
+<ce>차가운 궁전으로 돌아가야 한다. 좋은 소식을 기다리마.
 
 QuestFail:  [1003]
 <ce>아니오. 다른 =qgfriend_을 찾는 모양이군요.
