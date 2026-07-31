@@ -1,0 +1,26 @@
+{
+  "official_source": {
+    "repository": "Interkarma/daggerfall-unity",
+    "commit": "81e89e90c27bc3c1a7a61871e545fad129174dec",
+    "version": "Daggerfall Unity v1.1.1"
+  },
+  "completed": [
+    "00B00Y00",
+    "10C00Y00",
+    "20C00Y00",
+    "30C00Y00",
+    "40C00Y00",
+    "50C00Y00",
+    "60C00Y00",
+    "70C00Y00",
+    "A0C00Y06",
+    "A0C00Y07",
+    "A0C00Y08",
+    "A0C00Y10",
+    "A0C00Y11",
+    "A0C00Y12",
+    "A0C00Y14",
+    "A0C00Y15",
+    "A0C00Y17"
+  ]
+}
