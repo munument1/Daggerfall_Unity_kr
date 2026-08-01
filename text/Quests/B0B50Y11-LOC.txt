@@ -11,31 +11,31 @@ DisplayName: 퇴마
 QRC:
 
 QuestorOffer:  [1000]
-<ce>나는 _qgiver_입니다.
-<ce>이 지역 귀족 _nobleman_이 버려진 부동산의 권리증서를
-<ce>얻었는데, 뒤늦게 %g⁠가 그곳에 유령이 나온다는 사실을
-<ce>알았습니다.
-<ce>누군가 그곳으로 가서 유령을 퇴치해야 합니다.
+<ce>나는 _qgiver_입니다. 이 지역 귀족 _nobleman_이 버려진
+<ce>부동산의 권리증서를 얻었는데, 뒤늦게 %g⁠이 그곳에 유령이 나온다는
+<ce>사실을 알았습니다. 누군가 그곳으로 가서 유령을 퇴치해야 합니다.
 <ce>임무를 맡으시겠습니까?
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>유령은 보통 사원에서 처리하는 문제지요.
-<ce>이번 일은 그쪽에 넘겨야겠군요.
+<ce>유령은 보통 사원에서 처리하는 문제지요. 이번 일은 그쪽에 넘겨야겠군요.
+<ce>
 <ce>
 
 AcceptQuest:  [1002]
-<ce>_nobleman_은 =2dung_일 안에 재건 공사를 시작하려
-<ce>합니다.
-<ce>%G⁠가 소유한 ___dungeon_에서 그 영혼을
-<ce>찾을 수 있습니다.
+<ce>_nobleman_은 =2dung_일 안에 재건 공사를 시작하려 합니다.
+<ce>%G⁠이 소유한 ___dungeon_에서 그 영혼을 찾을 수 있습니다.
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>_nobleman_이 무척 기뻐하겠군요.
-<ce>%G⁠는 당신의 이름을 붙인 분수까지 세우겠다고 했습니다.
+<ce>_nobleman_이 무척 기뻐하겠군요. %G⁠은 당신의 이름을 붙인
+<ce>분수까지 세우겠다고 했습니다.
 <ce>
 <ce>
 
@@ -52,21 +52,21 @@ RumorsPostsuccess:  [1007]
 됐습니다.
 
 QuestorPostsuccess:  [1008]
-반갑습니다, %pcf.
-_nobleman_ 일을 도와주셨으니 무엇을 해드릴까요?
+반갑습니다, %pcf. _nobleman_ 일을 도와주셨으니 무엇을
+해드릴까요?
 
 QuestorPostfailure:  [1009]
 _nobleman_에게 실패함으로써 %kno⁠도 실망시켰습니다, %pcf.
 참으로 유감입니다.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 ==qgiver_에 있는 _qgiver_는
-___dungeon_에 출몰하는 유령을 없애달라고 간청했다.
-재건 공사가 시작되기까지 =2dung_일이 남았다.
+%qdt: ___qgiver_의 ==qgiver_에
+있는 _qgiver_는 ___dungeon_에 출몰하는 유령을 없애달라고
+간청했다. 재건 공사가 시작되기까지 =2dung_일이 남았다.
 
 Message:  1011
-<ce>유령은 안식을 얻었습니다.
-<ce>이제 _nobleman_은 ___dungeon_을 재건할 수 있습니다.
+<ce>유령은 안식을 얻었습니다. 이제 _nobleman_은 ___dungeon_을
+<ce>재건할 수 있습니다.
 <ce>
 
 -- Symbols used in the QRC file:

@@ -12,11 +12,11 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>가문에서 대대로 내려온 소중한 _item_이 있습니다.
-<ce>오크 산적들이 이를 훔쳐 몸값을 요구하고 있지요.
-<ce>파렴치한 놈들에게 보상할 생각은 없습니다.
-<ce>은신처에서 _item_을 되찾아오면 몸값 전액인
-<ce>_reward_골드를 드리겠습니다.
-<ce>맡겠습니까?
+<ce>오크 산적들이 이를 훔쳐 몸값을 요구하고 있지요. 파렴치한 놈들에게
+<ce>보상할 생각은 없습니다. 은신처에서 _item_을 되찾아오면 몸값
+<ce>전액인 _reward_골드를 드리겠습니다. 맡겠습니까?
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
@@ -24,24 +24,24 @@ QuestorOffer:  [1000]
 <ce>
 
 RefuseQuest:  [1001]
-<ce>%oth! 이 일을 거절합니까?
-<ce>그렇다면 몸값을 낼 수밖에 없겠군요.
+<ce>%oth! 이 일을 거절합니까? 그렇다면 몸값을 낼 수밖에 없겠군요.
 <ce>실망스럽습니다, %pcf.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>좋습니다.
-<ce>오크의 은신처는 옛 유적 ___itemdung_이라고 합니다.
-<ce>내 _item_도 그곳에 있겠지요.
-<ce>=1stparton_일 안에 돌아오지 않으면 실패로 여기고
-<ce>_item_의 몸값을 오크들에게 지급하겠습니다.
+<ce>좋습니다. 오크의 은신처는 옛 유적 ___itemdung_이라고 합니다.
+<ce>내 _item_도 그곳에 있겠지요. =1stparton_일 안에 돌아오지 않으면
+<ce>실패로 여기고 _item_의 몸값을 오크들에게 지급하겠습니다.
 <ce>실망시키지 마십시오, %pcf.
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
 
 QuestFail:  [1003]
-<ce>당신과 이야기하고 싶지 않습니다, %pcf.
-<ce>내 _item_을 돌려주십시오.
+<ce>당신과 이야기하고 싶지 않습니다, %pcf. 내 _item_을
+<ce>돌려주십시오.
 
 QuestComplete:  [1004]
 <ce>내 _item_을 찾아낼 줄 알았습니다, %pcf.
@@ -53,8 +53,8 @@ QuestComplete:  [1004]
 RumorsDuringQuest:  [1005]
 ___itemdung_에 오크 무리가 진을 쳤대.
 <--->
-___itemdung_의 오크들은 _questgiver_에게서 한몫 뜯어낼 생각인가
-봐.
+___itemdung_의 오크들은 _questgiver_에게서 한몫 뜯어낼
+생각인가 봐.
 
 RumorsPostfailure:  [1006]
 ___itemdung_의 오크들은 _questgiver_가 몸값을 내자 떠났대.
@@ -75,16 +75,15 @@ QuestorPostsuccess:  [1008]
 보상으로 받은 돈을 벌써 다 쓰지는 않았길 바랍니다.
 
 QuestorPostfailure:  [1009]
-<ce>오블리비언으로 가버리십시오, %pcf.
-<ce>임무를 실패한 것을 잊지 않았습니다.
+<ce>오블리비언으로 가버리십시오, %pcf. 임무를 실패한 것을 잊지
+<ce>않았습니다.
 <ce>
 
 QuestLogEntry:  [1010]
 %qdt: ___questgiver_의 __questgiver_에
 있는 _questgiver_는 오크들이 훔친 가보 _item_을 찾아오라고
-나를 ___itemdung_으로 보냈다.
-=1stparton_일 안에 _questgiver_에게 돌려주지 못하면 %g⁠가 몸값을 내고 내
-보상은 사라진다.
+나를 ___itemdung_으로 보냈다. =1stparton_일 안에 _questgiver_에게
+돌려주지 못하면 %g⁠가 몸값을 내고 내 보상은 사라진다.
 
 Message:  1011
 _item_을 찾았습니다.

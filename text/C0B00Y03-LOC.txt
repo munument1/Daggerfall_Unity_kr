@@ -11,15 +11,15 @@ DisplayName: 실종된 학자
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pct, 우리 성직자 중 한 명인 =cleric_
-<ce>_cleric_가 고고학 발굴 도중 실종됐습니다.
-<ce>%g2⁠를 찾는 일을 도와주시겠습니까?
+<ce>%pct, 우리 성직자 중 한 명인 =cleric_ _cleric_가
+<ce>고고학 발굴 도중 실종됐습니다. %g2⁠을 찾는 일을 도와주시겠습니까?
+<ce>
 <ce>
 <ce>
 <--->
-<ce>우리의 가장 고결한 학자 중 한 명인 _cleric_가
-<ce>오래된 폐허 사원을 조사하다 실종된 듯합니다.
-<ce>%g2⁠를 찾는 일을 도와주시겠습니까?
+<ce>우리의 가장 고결한 학자 중 한 명인 _cleric_가 오래된 폐허
+<ce>사원을 조사하다 실종된 듯합니다. %g2⁠을 찾는 일을 도와주시겠습니까?
+<ce>
 <ce>
 <ce>
 
@@ -29,29 +29,30 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>좋습니다.
-<ce>_cleric_는 약 보름 전 ___mondung_으로 발굴을
-<ce>떠났습니다.
-<ce>아무 일도 없을 가능성도 있지만… =queston_일 안에 그곳으로
-<ce>가서 _cleric_를 찾고 돌아오십시오.
-<ce>%god⁠께서 함께하시길 빕니다, %pct.
-<ce>무사히 다녀오십시오.
+<ce>좋습니다. _cleric_는 약 보름 전 ___mondung_으로 발굴을
+<ce>떠났습니다. 아무 일도 없을 가능성도 있지만… =queston_일 안에
+<ce>그곳으로 가서 _cleric_를 찾고 돌아오십시오. %god⁠께서
+<ce>함께하시길 빕니다, %pct. 무사히 다녀오십시오.
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>아, %pct⁠와 선한 _cleric_여.
-<ce>두 분이 다시 __qgiver_으로 돌아오니 반갑습니다.
-<ce>솔직히 최악의 상황을 걱정하고 있었습니다.
+<ce>아, %pct⁠와 선한 _cleric_여. 두 분이 다시
+<ce>__qgiver_으로 돌아오니 반갑습니다. 솔직히 최악의 상황을
+<ce>걱정하고 있었습니다.
 <ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
-_cleric_가 무기도 없이 ___mondung_에 들어가다니 어리석었지.
+_cleric_가 무기도 없이 ___mondung_에 들어가다니
+어리석었지.
 <--->
-___mondung_은 _cleric_ 같은 학구적인 =cleric_가 갈 곳이
-아니야.
+___mondung_은 _cleric_ 같은 학구적인 =cleric_가
+갈 곳이 아니야.
 
 RumorsPostfailure:  [1006]
 모두 _cleric_를 다시 볼 희망을 버렸습니다.
@@ -74,28 +75,28 @@ QuestorPostfailure:  [1009]
 가주십시오.
 
 QuestLogEntry:  [1010]
-%qdt: __qgiver_의 _qgiver_는 ___mondung_에서
-실종된 _cleric_라는 성직자를 구출하라고 했다.
+%qdt: __qgiver_의 _qgiver_는
+___mondung_에서 실종된 _cleric_라는 성직자를 구출하라고 했다.
 =queston_일 안에 그 =cleric_를 찾아
 ___qgiver_의 __qgiver_으로 돌아가야 한다.
 
 Message:  1011
-<ce>“세상에, 깜짝 놀랐습니다, 젊은 %ra⁠여.
-<ce>제가 정말 이 아래에 그렇게 오래 있었습니까?
-<ce>시간이 참 빠르게 흐르는군요.
-<ce>괜찮으시다면 저를 사원까지 호위해주시겠습니까,
-<ce>선한 %pcf⁠여…”
+<ce>“세상에, 깜짝 놀랐습니다, 젊은 %ra 여. 제가 정말 이 아래에
+<ce>그렇게 오래 있었습니까? 시간이 참 빠르게 흐르는군요.
+<ce>괜찮으시다면 저를 사원까지 호위해주시겠습니까, 선한 %pcf 여…”
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
 <--->
-<ce>%god⁠께 감사드립니다. 와주셨군요.
-<ce>거의 일주일 동안 출구를 찾고 있었습니다.
-<ce>당신을 따라 사원으로 돌아가겠습니다.
+<ce>%god⁠께 감사드립니다. 와주셨군요. 거의 일주일 동안 출구를 찾고
+<ce>있었습니다. 당신을 따라 사원으로 돌아가겠습니다.
+<ce>
 
 Message:  1012
-<ce>“아, 여기서부터는 길을 압니다.”
-<ce>_cleric_가 비틀거리며 멀어집니다.
+<ce>“아, 여기서부터는 길을 압니다.” _cleric_가 비틀거리며
+<ce>멀어집니다.
 
 -- Symbols used in the QRC file:
 --

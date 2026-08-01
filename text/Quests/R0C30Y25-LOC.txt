@@ -11,54 +11,55 @@ DisplayName: 도둑 길드
 QRC:
 
 QuestorOffer:  [1000]
-<ce>___contact_에 있는 제 연락책에게 특정 물건을
-<ce>가져다줄 사람이 필요합니다.
-<ce>그 대가로 물건을 하나 받게 될 겁니다.
-<ce>그 물건을 제게 가져오시면 _reward_ 골드를
-<ce>보상으로 드리겠습니다.
+<ce>___contact_에 있는 제 연락책에게 특정 물건을 가져다줄 사람이
+<ce>필요합니다. 그 대가로 물건을 하나 받게 될 겁니다. 그 물건을 제게
+<ce>가져오시면 _reward_ 골드를 보상으로 드리겠습니다.
 <ce>동의하십니까?
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>싫다고요? 아쉽군요.
-<ce>꽤 관대하게 보상할 준비가 되어 있었는데 말이죠.
+<ce>싫다고요? 아쉽군요. 꽤 관대하게 보상할 준비가 되어 있었는데 말이죠.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>좋습니다.
-<ce>이 금괴를 ___contact_의 __contact_에
-<ce>있는 _contact_라는 =contact_에게 가져가십시오.
-<ce>서둘러야 합니다.
-<ce>_contact_는 느린 전령을 기다려주지 않으니까요.
-<ce>행운을 빕니다, %pcf.
-<ce>=1stparton_일 안에 도착해야 합니다.
+<ce>좋습니다. 이 금괴를 ___contact_의 __contact_에
+<ce>있는 _contact_라는 =contact_에게 가져가십시오. 서둘러야 합니다.
+<ce>_contact_는 느린 전령을 기다려주지 않으니까요. 행운을 빕니다,
+<ce>%pcf. =1stparton_일 안에 도착해야 합니다.
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 
 QuestFail:  [1003]
-<ce>제가 가져오라고 보낸 물건을 가지고 오지 않았다면 다시는 저를
-<ce>귀찮게 하지 마십시오.
+<ce>제가 가져오라고 보낸 물건을 가지고 오지 않았다면 다시는 저를 귀찮게
+<ce>하지 마십시오.
 
 QuestComplete:  [1004]
-<ce>훌륭합니다, %pcf.
-<ce>약속대로 제 마법이 깃든 _item2_가지고 돌아오셨군요.
-<ce>길에서 곤란한 일을 겪으셨다는 소식을 듣고, 혹시나 길을 잃으신
-<ce>건 아닐까 걱정하기 시작했답니다.
-<ce>임무를 완수해주신 것에 대한 감사의 표시로, 원래
-<ce>약속했던 _reward_ 골드에 마법 _item3_
-<ce>더해 드리겠습니다.
-<ce>가까운 시일 내에 다시 당신의 도움을 받을 일이 생기겠지요.
-<ce>감사합니다.
+<ce>훌륭합니다, %pcf. 약속대로 제 마법이 깃든 _item2_가지고
+<ce>돌아오셨군요. 길에서 곤란한 일을 겪으셨다는 소식을 듣고, 혹시나
+<ce>길을 잃으신 건 아닐까 걱정하기 시작했답니다. 임무를 완수해주신 것에
+<ce>대한 감사의 표시로, 원래 약속했던 _reward_ 골드에 마법
+<ce>_item3_ 더해 드리겠습니다. 가까운 시일 내에 다시 당신의 도움을
+<ce>받을 일이 생기겠지요. 감사합니다.
+<ce>
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
 최근에 어떤 =contact_ 방문하여 %ra 본 적 있냐고 묻더군요.
 <--->
-얼마 전에는 어떤 =contact_ _item1_ 소지한 %ra 찾고
-있었고요.
+얼마 전에는 어떤 =contact_ _item1_ 소지한 %ra
+찾고 있었고요.
 
 RumorsPostfailure:  [1006]
 글쎄요, _questgiver_가 어떤 %ra 용병 때문에 극에 달했다는
 소문을 들었습니다.
 <--->
-_questgiver_의 용병 의존도는 여전한데, %g⁠의 일이 잘 안 풀렸다는군요.
+_questgiver_의 용병 의존도는 여전한데, %g⁠의 일이 잘 안
+풀렸다는군요.
 
 RumorsPostsuccess:  [1007]
 _questgiver_의 %g⁠의 _item2_ 획득 소문이 들리더군요.
@@ -72,64 +73,58 @@ QuestorPostsuccess:  [1008]
 제가 가장 아끼는 전령님을 위해서라면 무엇이든 기꺼이 도와드리지요.
 
 QuestorPostfailure:  [1009]
-<ce>배달이 확실히 너무... 복잡했나 보군요, 그렇죠?
-<ce>아, %ra⁠의 젊음이란 참 덧없기도 하지.
-<ce>이제 그만 가보게, %pcf.
+<ce>배달이 확실히 너무... 복잡했나 보군요, 그렇죠? 아, %ra⁠의 젊음이란
+<ce>참 덧없기도 하지. 이제 그만 가보게, %pcf.
+<ce>
 
 QuestLogEntry:  [1010]
 %qdt: ___questgiver_의 _questgiver_이 나를
-__contact_의 _contact_이자 %g3 동료인 ___contact_에게
-금괴 하나를 전달하라고 보냈다.
-나는 _contact_의 손에 금괴를 쥐여주고 =1stparton_일 안에
-__questgiver_ 방향으로 돌아와야 _questgiver_에게서 _reward_
-골드를 받을 수 있다.
+__contact_의 _contact_이자 %g3⁠의 동료인 ___contact_에게
+금괴 하나를 전달하라고 보냈다. 나는 _contact_의 손에 금괴를
+쥐여주고 =1stparton_일 안에 __questgiver_ 방향으로 돌아와야
+_questgiver_에게서 _reward_ 골드를 받을 수 있다.
 
 Message:  1011
-<ce>놀랍군요, %pcf.
-<ce>전 금을 정말 좋아하는데, 당신은 어떤가요?
-<ce>뭐, 이 특별한 _item2_ _questgiver_에게
-<ce>전달하고 돌아오면 당신 몫도 챙겨주지요.
-<ce>___questgiver_ 쪽으로 돌아오는 길은 잊지 않았길 바랍니다.
+<ce>놀랍군요, %pcf. 전 금을 정말 좋아하는데, 당신은 어떤가요?
+<ce>뭐, 이 특별한 _item2_ _questgiver_에게 전달하고 돌아오면
+<ce>당신 몫도 챙겨주지요. ___questgiver_ 쪽으로 돌아오는 길은 잊지
+<ce>않았길 바랍니다.
+<ce>
 <ce>
 
 Message:  1015
-_qgenemy_...
-%g⁠는 __thievesguild_ 출신인 것 같군요.
+_qgenemy_... %g⁠는 __thievesguild_ 출신인 것 같군요.
 <--->
-_qgenemy_ 말인가요?
-__thievesguild_ 주변에 물어보세요.
-누군가는 %g2⁠에 대해 알겠지요.
+_qgenemy_ 말인가요? __thievesguild_ 주변에 물어보세요.
+누군가는 %g2 에 대해 알겠지요.
 
 Message:  1016
-<ce>_qgenemy_는 __thievesguild_의 수상한 거래 대부분에 연루됐습니다.
-<ce>_thievesguild_을 찾아보십시오. %g⁠가 %g3 시간을 보내는 곳입니다.
+<ce>_qgenemy_는 __thievesguild_에서 벌어지는 수상한 거래 대부분에
+<ce>연루되어 있습니다. _thievesguild_을 찾아가 보십시오.
+<ce>%g⁠가 %g3 시간을 대부분 보내는 곳입니다.
 
 Message:  1020
-<ce>습격자를 물리치는 동안, 등 뒤에서 무언가가 스치는 것이
-<ce>느껴집니다.
-<ce>살아남기 위해 다시 정신을 집중하기 직전, 도망치는 형체를
-<ce>어렴풋이 보았습니다.
+<ce>습격자를 물리치는 동안, 등 뒤에서 무언가가 스치는 것이 느껴집니다.
+<ce>살아남기 위해 다시 정신을 집중하기 직전, 도망치는 형체를 어렴풋이
+<ce>보았습니다.
+<ce>
 
 Message:  1021
-=thief_,
-
-표적은 %pcn⁠라는 %ra⁠다.
-__contact_에서 _item2_을 받을 것이다.
-_item2_을 내게 가져와라.
-전령은 죽든 살든 상관없다.
-
+<ce>=thief_, 표적은 %pcn 라는 %ra⁠이며
+<ce>__contact_에서 _item2_을 가져갈 것이다.
+<ce>_item2_을 내게 가져와라. 전령은 죽든 살든 상관없다.
 <ce>_qgenemy_
 
 Message:  1030
 <ce>%oth, 대체 누구인데 어떻게 여기 들어온 거지?!
 <ce>당신이 바로 그 _questgiver_의 빌어먹을 전령이군!
-<ce>진작 =thief_에게 시켜서 죽여버렸어야 했는데.
-<ce>내 무른 마음이 항상 문제를 일으킨단 말이지...
-<ce>경비병! 이 침입자를 죽여라!!
+<ce>진작 =thief_에게 시켜서 죽여버렸어야 했는데. 내 무른 마음이
+<ce>항상 문제를 일으킨단 말이지... 경비병! 이 침입자를 죽여라!!
+<ce>
 
 Message:  1035
-<ce>양피지에는 미르크와사의 조류 마녀회가 있는 곳이
-<ce>표시되어 있습니다.
+<ce>양피지에는 미르크와사의 조류 마녀회가 있는 곳이 표시되어 있습니다.
+<ce>
 <ce>
 
 -- Symbols used in the QRC file:

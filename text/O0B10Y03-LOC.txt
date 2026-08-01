@@ -11,10 +11,10 @@ DisplayName: 신전 방문
 QRC:
 
 QuestorOffer:  [1000]
-<ce>관심 있으면 길드 일 하나 맡지.
-<ce>나는 _qgiver_다.
+<ce>관심 있으면 길드 일 하나 맡지. 나는 _qgiver_다.
 <ce>어떤 자가 _temple_에서 _religiousitem_을 훔쳐달라는군.
 <ce>해보겠나?
+<ce>
 <ce>
 <ce>
 
@@ -24,31 +24,30 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>좋아.
-<ce>간단해.
-<ce>__temple_의 _temple_로 가서 _religiousitem_을 훔쳐
-<ce>내게 가져와.
-<ce>평소 길드 보수인 _gold_골드를 주지.
+<ce>좋아. 간단해. __temple_의 _temple_로 가서 _religiousitem_을
+<ce>훔쳐 내게 가져와. 평소 길드 보수인 _gold_골드를 주지.
 <ce>=traveltime_일 안에 내 손에 들어와야 해.
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>참 이해하기 어려운 자도 있다니까.
-<ce>이걸 훔쳐달라고 돈까지 냈다는 게 믿겨?
-<ce>직접 못 가져가게 막는 “흉측한 수호자”라도 있었던 것도 아니고.
-<ce>뭐?
-<ce>있었다고?
-<ce>그렇다면 그자도 아주 미친 건 아니었군.
-<ce>여기 보수다, %pcf.
+<ce>참 이해하기 어려운 자도 있다니까. 이걸 훔쳐달라고 돈까지 냈다는 게 믿겨?
+<ce>직접 못 가져가게 막는 “흉측한 수호자”라도 있었던 것도 아니고. 뭐?
+<ce>있었다고? 그렇다면 그자도 아주 미친 건 아니었군. 여기 보수다, %pcf.
 <ce>같이 일해서 좋았어.
+<ce>
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
-며칠 전에 종기가 났는데...
-이제 다 나았습니다.
+며칠 전에 종기가 났는데... 이제 다 나았습니다.
 <--->
 방금 날씨 이야기만 세 시간이나 했습니다.
 <--->
@@ -64,13 +63,11 @@ RumorsDuringQuest:  [1005]
 <--->
 이 근처에 전쟁 기념상을 세워야 합니다.
 <--->
-요즘 애들과 마법이라니.
-%oth, 잘 모르겠군요.
+요즘 애들과 마법이라니. %oth, 잘 모르겠군요.
 <--->
 어젯밤 정말 이상한 꿈을 꿨습니다.
 <--->
-굉장한 농담을 들었습니다.
-%jok
+굉장한 농담을 들었습니다. %jok
 <--->
 %jok 사실, 농담입니다.
 <--->
@@ -85,21 +82,20 @@ RumorsPostsuccess:  [1007]
 _temple_의 주인이 자기 건물을 털어달라고 도둑들을 고용했다더군.
 
 QuestorPostsuccess:  [1008]
-잘 지내나, %pcf?
-우리를 고용한 자의 소식을 아직 기다리는 중이야.
+잘 지내나, %pcf? 우리를 고용한 자의 소식을 아직 기다리는
+중이야.
 
 QuestorPostfailure:  [1009]
-<ce>그 신전을 오블리비언의 모든 군주가 지키고 있었다 해도
-<ce>상관없어, %pcf.
-<ce>도둑 길드 임무를 실패하는 데에는 어떤 변명도 통하지 않는다.
+<ce>그 신전을 오블리비언의 모든 군주가 지키고 있었다 해도 상관없어,
+<ce>%pcf. 도둑 길드 임무를 실패하는 데에는 어떤 변명도 통하지
+<ce>않는다.
 <ce>
 <ce>
 <ce>
 
 QuestLogEntry:  [1010]
 %qdt: ___qgiver_ 도둑 길드의 _qgiver_는
-__temple_에 있는 _temple_에서 _religiousitem_을 훔치라고
-했다.
+__temple_에 있는 _temple_에서 _religiousitem_을 훔치라고 했다.
 보수를 받으려면 =traveltime_일 안에 %g2⁠에게 가져가야 한다.
 
 -- Symbols used in the QRC file:

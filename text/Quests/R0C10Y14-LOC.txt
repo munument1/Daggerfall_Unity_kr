@@ -11,8 +11,8 @@ DisplayName: 잊어버린 장비
 QRC:
 
 QuestorOffer:  [1000]
-<ce>시간도 거의 들지 않고 _reward_골드도 벌 수
-<ce>있는 간단한 일을 맡겠나?
+<ce>시간도 거의 들지 않고 _reward_골드도 벌 수 있는 간단한 일을
+<ce>맡겠나?
 <ce>
 <ce>
 
@@ -20,15 +20,15 @@ RefuseQuest:  [1001]
 <ce>아니라고? 아쉽군.
 
 AcceptQuest:  [1002]
-<ce>%oth, 잘됐군.
-<ce>멍청한 동료가 %g3 _item_을 챙기지 않고 임무를 떠났네.
-<ce>이걸 ___contact_으로 급히 보내야 해.
-<ce>__contact_이라는 작은 곳에서
-<ce>_contact_라는 =contact_를 찾게.
-<ce>%g2⁠에게 _item_을 주면 %g⁠가 _reward_골드를 줄
-<ce>걸세.
-<ce>%g⁠는 _item_이 있든 없든 =queston_일 뒤
-<ce>__contact_을 떠날 테니 서두르게.
+<ce>%oth, 잘됐군. 멍청한 동료가 %g3 _item_을 챙기지 않고
+<ce>임무를 떠났네. 이걸 ___contact_으로 급히 보내야 해.
+<ce>__contact_이라는 작은 곳에서 _contact_라는 =contact_를 찾게.
+<ce>%g2⁠에게 _item_을 주면 %g⁠가 _reward_골드를 줄 걸세.
+<ce>%g⁠는 _item_이 있든 없든 =queston_일 뒤 __contact_을
+<ce>떠날 테니 서두르게.
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
@@ -38,19 +38,19 @@ AcceptQuest:  [1002]
 <ce>
 
 QuestFail:  [1003]
-<ce>_item_과 배달 장소를 모두 알려줬네.
-<ce>더 이야기할 것이 있나?
+<ce>_item_과 배달 장소를 모두 알려줬네. 더 이야기할 것이 있나?
+<ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>_questgiver_가 보냈나요?
-<ce>%oth, 내 _item_!
-<ce>마침내 왔군요!
-<ce>이것 없이 떠나야 하는 줄 알았습니다.
-<ce>그런데 왜 이렇게 늦었습니까?
-<ce>_item_을 받는데 돈도 줘야 한다고요?
-<ce>_questgiver_가 그렇게 말했다면 따르지요.
-<ce>이제 가봐야겠습니다.
+<ce>_questgiver_가 보냈나요? %oth, 내 _item_!
+<ce>마침내 왔군요! 이것 없이 떠나야 하는 줄 알았습니다.
+<ce>그런데 왜 이렇게 늦었습니까? _item_을 받는데 돈도 줘야 한다고요?
+<ce>_questgiver_가 그렇게 말했다면 따르지요. 이제 가봐야겠습니다.
+<ce>
+<ce>
+<ce>
+<ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -60,25 +60,21 @@ _item_을 찾으면 __contact_의 저 =contact_에게 팔 거야.
 저 =contact_는 며칠째 __contact_ 주변을 서성이고 있어.
 
 RumorsPostfailure:  [1006]
-불쌍한 _contact_.
-%g3 물건이 오지 않아 %g⁠는 빈손으로 떠났대.
+불쌍한 _contact_. %g3 물건이 오지 않아 %g⁠는 빈손으로
+떠났대.
 <--->
-_contact_는 대체 무엇을 기다렸던 걸까?
-기적이라도 바랐나?
+_contact_는 대체 무엇을 기다렸던 걸까? 기적이라도 바랐나?
 
 RumorsPostsuccess:  [1007]
 _contact_는 필요한 것을 얻고 하피처럼 기뻐하며 __contact_을
-떠났어.
-%g⁠는 %g⁠가 원한 것을 얻은 모양이야.
+떠났어. %g⁠는 %g⁠가 원한 것을 얻은 모양이야.
 <--->
 _questgiver_가 고용한 %ra 용병 %g⁠를 칭찬하고 다니더군.
 
 QuestorPostsuccess:  [1008]
-친애하는 친구여, 돌아와서 정말 좋군요.
-일은 어땠습니까?
+친애하는 친구여, 돌아와서 정말 좋군요. 일은 어땠습니까?
 <--->
-임무를 성공시켰다고 들었습니다.
-정말 감사합니다.
+임무를 성공시켰다고 들었습니다. 정말 감사합니다.
 
 QuestorPostfailure:  [1009]
 <ce>연락책을 만나지 못하고 돌아오다니 이상하군요.
@@ -86,8 +82,8 @@ QuestorPostfailure:  [1009]
 <ce>
 
 QuestLogEntry:  [1010]
-%qdt: _questgiver_는 ___contact_의 __contact_에서
-특별한 _item_을 기다리는
+%qdt: _questgiver_는 ___contact_의
+__contact_에서 특별한 _item_을 기다리는
 _contact_라는 =contact_에게 물건을 전하라고 했다.
 _contact_는 =queston_일 안에 _item_을 받든 못 받든
 ___contact_을 떠날 예정이므로 서둘러야 한다.
