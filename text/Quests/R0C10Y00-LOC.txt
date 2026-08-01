@@ -11,38 +11,30 @@ DisplayName: 보석 밀수
 QRC:
 
 QuestorOffer:  [1000]
-<ce>고용 가능한가? 믿을 만한 사람이 은밀한 임무를
-<ce>맡아야 하네. 시간이 꽤 걸릴 수도 있지만
-<ce>충분히 보상하겠네. 관심 있나?
-<ce>
-<ce>
+<ce>고용 가능한가? 믿을 만한 사람이 은밀한 임무를 맡아야 하네.
+<ce>시간이 꽤 걸릴 수도 있지만 충분히 보상하겠네. 관심 있나?
 
 RefuseQuest:  [1001]
 <ce>정말인가? 너무 바쁜 모양이군. 아쉽네.
 
 AcceptQuest:  [1002]
-<ce>좋네. ___npc1_의 _npc1_에게 전할 에메랄드를
-<ce>주겠네. %G는 __npc1_에서 기다릴 걸세.
+<ce>좋네.
+<ce>___npc1_의 _npc1_에게 전할 에메랄드를 주겠네.
+<ce>%g는 __npc1_에서 기다릴 걸세.
 <ce>=1stparton_일 안에 도착해야 하니 매우 중요하네.
-<ce>거기까지 가면 _npc1_이 다음 지시를 줄
-<ce>것이야. 신중하게 행동하게, %pcf. 누군가
-<ce>지켜보고 있을 테니. 행운을 비네.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>거기까지 가면 _npc1_이 다음 지시를 줄 것이야.
+<ce>신중하게 행동하게, %pcf. 누군가 지켜보고 있을 테니.
+<ce>행운을 비네.
 
 QuestFail:  [1003]
 <ce>지금은 더 이야기할 것이 없군.
-<ce>
 <--->
 <ce>내가 자네를 아나?
 
 QuestComplete:  [1004]
 <ce>만나서 반갑네, %pcf. _item2_도 가져왔군. 훌륭해.
-<ce>수고와 신중함에 대한 보상으로 _reward_골드를
-<ce>주지. 자네 이름은 잊지 않겠네.
-<ce>
+<ce>수고와 신중함에 대한 보상으로 _reward_골드를 주지.
+<ce>자네 이름은 잊지 않겠네.
 
 RumorsDuringQuest:  [1005]
 <ce>_questgiver_가 아직 밀수에 손을 대고 있다는군.
@@ -62,43 +54,36 @@ QuestorPostsuccess:  [1008]
 
 QuestorPostfailure:  [1009]
 <ce>임무 실패를 사과하러 기어왔나? 이미 늦었네.
-<ce>
 <--->
-<ce>배달 임무를 망친 %ra가
-<ce>자네였지? 오블리비언으로 꺼져.
-<ce>
+<ce>배달 임무를 망친 %ra가 자네였지? 오블리비언으로 꺼져.
 
 QuestLogEntry:  [1010]
-<ce>좋군. _questgiver_가 전에 고용한
-<ce>운반책은 나를 찾지 못해서 우리가 직접
-<ce>추적해 처리해야 했지. 아주 불쾌했어.
-<ce>여기 _item2_이 있네. ___npc2_의 _npc2_라는
-<ce>=npc2_에게 가져가게. =2ndparton_일 안에
-<ce>도착해야 해. 행운을 비네, %pcf.
-<ce>
+<ce>좋군.
+<ce>_questgiver_가 전에 고용한 운반책은 나를 찾지 못해서 우리가
+<ce>직접 추적해 처리해야 했지. 아주 불쾌했어.
+<ce>여기 _item2_이 있네.
+<ce>___npc2_의 _npc2_라는 =npc2_에게
+<ce>가져가게. =2ndparton_일 안에 도착해야 해. 행운을 비네, %pcf.
 
 Message:  1011
-%qdt: ___questgiver_의 __questgiver_에 있는 _questgiver_는
-___npc1_의 __npc1_으로 가 _npc1_에게 에메랄드를
-전달하라고 했다. 기한은 =1stparton_일이며,
-그곳에서 추가 지시를 받을 수도 있다.
+%qdt: ___questgiver_의 __questgiver_에
+있는 _questgiver_는 ___npc1_의 __npc1_으로 가
+_npc1_에게 에메랄드를 전달하라고 했다.
+기한은 =1stparton_일이며, 그곳에서 추가 지시를 받을 수도 있다.
 
 Message:  1012
-%qdt: _npc1_은 나를 _item2_을 들려 ___npc2_의
-__npc2_에 있는 _npc2_에게 가라고 했다. _npc1_의
-설명으로는 _npc2_는 =npc2_이며, =2ndparton_일 안에
+%qdt: _npc1_은 나를 _item2_을 들려
+___npc2_의 __npc2_에 있는 _npc2_에게 가라고 했다.
+_npc1_의 설명으로는 _npc2_는 =npc2_이며, =2ndparton_일 안에
 %g2에게 도착하면 _npc2_가 보상을 줄 것이다.
 
 Message:  1020
 <ce>도둑 길드는 네가 값비싼 보석을 가지고 있다는 것을 안다.
 <ce>순순히 내놓으면 편하게 보내주지.
-<ce>
-<ce>
 
 Message:  1021
-<ce>아이에게서 동전을 빼앗는 것만큼 쉽군. 이제
-<ce>내 눈앞에서 사라져라, 겁쟁이 운반책.
-<ce>
+<ce>아이에게서 동전을 빼앗는 것만큼 쉽군.
+<ce>이제 내 눈앞에서 사라져라, 겁쟁이 운반책.
 
 -- Symbols used in the QRC file:
 --

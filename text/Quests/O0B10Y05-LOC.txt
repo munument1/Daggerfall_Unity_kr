@@ -13,10 +13,7 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>어이, %pcf! 나 _qgiver_ 기억하지?
-<ce>오늘 길드 일 하나 해볼 텐가? 자네에게
-<ce>딱 맞을 것 같은 일이 있어.
-<ce>
-<ce>
+<ce>오늘 길드 일 하나 해볼 텐가? 자네에게 딱 맞을 것 같은 일이 있어.
 
 RefuseQuest:  [1001]
 <ce>그럼 다음에 하지.
@@ -26,17 +23,10 @@ AcceptQuest:  [1002]
 <ce>__townhouse_의 _townhouse_에 숨겨뒀지.
 <ce>가져오면 길드 보수로 _gold_골드를 주겠다.
 <ce>아, =traveltime_일 안에 가져와야 해.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
 
 QuestComplete:  [1004]
 <ce>흠집 하나 없군. 수호자 때문에 고생했겠어.
-<ce>그자가 그런 짓까지 해뒀을
-<ce>줄은 몰랐거든. 여기 보수다.
-<ce>
+<ce>그자가 그런 짓까지 해뒀을 줄은 몰랐거든. 여기 보수다.
 
 RumorsDuringQuest:  [1005]
 _townhouse_는 그야말로 미술관이나 다름없어.
@@ -81,13 +71,12 @@ QuestorPostsuccess:  [1008]
 QuestorPostfailure:  [1009]
 <ce>자네는 보이는데 가져오기로 한 그림은 보이지 않는군.
 <ce>내가 왜 자네에게 숨을 낭비했을까?
-<ce>
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: _qgiver_는 __townhouse_의 _townhouse_에서 그림을
-훔쳐오라고 했다. =traveltime_일 안에 ___qgiver_의
-도둑 길드에 있는 _qgiver_에게 가져가야 한다.
+%qdt: _qgiver_는 __townhouse_의 _townhouse_에서
+그림을 훔쳐오라고 했다.
+=traveltime_일 안에 ___qgiver_의 도둑 길드에 있는 _qgiver_에게
+가져가야 한다.
 
 -- Symbols used in the QRC file:
 --

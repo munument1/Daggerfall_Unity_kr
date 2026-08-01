@@ -13,42 +13,29 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>%pcn, 매우 위험한 임무가 있습니다.
-<ce>사원이 오크들이 오랫동안 찾아온 사악한 마법
-<ce>무기를 손에 넣었습니다. 놈들은 이미 사원을 두
-<ce>번이나 공격했습니다. 무기를 안전한 피난처로
-<ce>옮겨야 합니다. 우리를 위해 맡아주시겠습니까?
+<ce>사원이 오크들이 오랫동안 찾아온 사악한 마법 무기를 손에
+<ce>넣었습니다. 놈들은 이미 사원을 두 번이나 공격했습니다.
+<ce>무기를 안전한 피난처로 옮겨야 합니다.
+<ce>우리를 위해 맡아주시겠습니까?
 <ce>사원에서 _gold_골드를 드리겠습니다.
-<ce>
-<ce>
-<ce>
 
 RefuseQuest:  [1001]
 <ce>사원에 대한 충성심이 그토록 약하다니 슬프군요.
 <ce>하지만 위험한 임무이니 용서하겠습니다.
-<ce>
-<ce>
 
 AcceptQuest:  [1002]
-<ce>이 _evilitem_을 가져가십시오. ___dungeon_에서
-<ce>오랫동안 이 사원을 섬긴 _custodian_를 찾으십시오.
-<ce>%G은 이 물건을 지키며 오크들의 손에 넘어가지
-<ce>않게 할 겁니다. 사악한 영향에서 당신을
-<ce>보호하도록 주문을 걸어두었지만, 그 주문은
+<ce>이 _evilitem_을 가져가십시오.
+<ce>___dungeon_에서 오랫동안 이 사원을 섬긴 _custodian_를
+<ce>찾으십시오.
+<ce>%g은 이 물건을 지키며 오크들의 손에 넘어가지 않게 할 겁니다.
+<ce>사악한 영향에서 당신을 보호하도록 주문을 걸어두었지만, 그 주문은
 <ce>=traveltime_일 뒤에 풀립니다.
-<ce>
-<ce>
-<ce>
-<ce>
 
 QuestComplete:  [1004]
 <ce>아, 이것이 _qgiver_가 말한 사악한 _evilitem_이군요.
 <ce>방비가 철저한 이곳에 안전하게 보관하겠습니다.
-<ce>_qgiver_는 무사히 배달한 대가로
-<ce>_gold_골드를 지급하라고 했습니다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>_qgiver_는 무사히 배달한 대가로 _gold_골드를
+<ce>지급하라고 했습니다.
 
 RumorsDuringQuest:  [1005]
 오크들이 __qgiver_의 상단을 공격하고 있습니다.
@@ -57,27 +44,22 @@ RumorsPostfailure:  [1006]
 오크들이 결국 _evilitem_을 손에 넣었습니다.
 
 RumorsPostsuccess:  [1007]
-_evilitem_은 오크들의 손이 닿지 않는
-곳에 안전하게 보관됐습니다.
+_evilitem_은 오크들의 손이 닿지 않는 곳에 안전하게 보관됐습니다.
 
 QuestorPostsuccess:  [1008]
-_evilitem_을 처리했다는 말을
-들었습니다. 무엇을 도와드릴까요?
+_evilitem_을 처리했다는 말을 들었습니다. 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
 _evilitem_을 믿고 맡겼는데, 결과가 이렇군요.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에 있는 _qgiver_는 오크들이
-손에 넣지 못하도록 사악한 _evilitem_을 ___dungeon_으로
-배달하라고 했다. 배달 기한은 =traveltime_일이다.
+%qdt: ___qgiver_의 __qgiver_에
+있는 _qgiver_는 오크들이 손에 넣지 못하도록 사악한 _evilitem_을
+___dungeon_으로 배달하라고 했다. 배달 기한은 =traveltime_일이다.
 
 Message:  1011
-<ce>네가 오크의 성스러운 전쟁 무기 ‘맨슈라이커’를
-<ce>운반하는 자로군. 인간을 죽여라! 반드시
-<ce>_evilitem_을 손에 넣어야 한다!
-<ce>
-<ce>
+<ce>네가 오크의 성스러운 전쟁 무기 ‘맨슈라이커’를 운반하는 자로군.
+<ce>인간을 죽여라! 반드시 _evilitem_을 손에 넣어야 한다!
 
 Message:  1012
 <ce>사악한 _evilitem_이 불꽃을 튀기며 산산이 부서집니다.

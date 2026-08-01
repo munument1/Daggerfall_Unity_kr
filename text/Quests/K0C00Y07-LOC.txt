@@ -12,68 +12,49 @@ DisplayName: 몸값
 QRC:
 
 QuestorOffer:  [1000]
-<ce>가엾은 내 사랑
-<ce>_victim_가 도둑
-<ce>길드에 납치됐습니다.
-<ce>도와주시겠습니까? <--->
-<ce>도둑 길드가 가장 소중한
-<ce>_victim_를 데려가 몸값을
-<ce>요구하고 있습니다. 어떤
-<ce>방법으로든 내 연인을 돌려보낼
-<ce>사람이 필요합니다. 제발 도와주십시오.
+<ce>가엾은 내 사랑 _victim_가 도둑 길드에 납치됐습니다.
+<ce>도와주시겠습니까?
+<ce><---> 도둑 길드가 가장 소중한 _victim_를 데려가 몸값을
+<ce>요구하고 있습니다.
+<ce>어떤 방법으로든 내 연인을 돌려보낼 사람이 필요합니다.
+<ce>제발 도와주십시오.
 
 RefuseQuest:  [1001]
-<ce>참으로 냉정한
-<ce>마음이군요, %pcf.
-<ce>납치범들을 혼자
-<ce>상대해야겠습니다.
-<ce><---> 그렇다면 다른
-<ce>사람을 찾겠습니다, %pcn.
+<ce>참으로 냉정한 마음이군요, %pcf.
+<ce>납치범들을 혼자 상대해야겠습니다.
+<ce><---> 그렇다면 다른 사람을 찾겠습니다, %pcn.
 
 AcceptQuest:  [1002]
-<ce>많은 돈은 드릴 수 없습니다,
-<ce>%pcf. 몸값으로 쓸 보석을
-<ce>사느라 가진 돈 대부분을
-<ce>썼습니다. 하지만 사랑하는
-<ce>_victim_가 돌아오면 남은
-<ce>저축인 _gold_골드를
-<ce>드리겠습니다. 납치범들은
-<ce>=2ransom_일 안에
-<ce>___kidnapper_의
-<ce>__kidnapper_로 _gem_을
-<ce>가져오라고 했습니다. 그곳에서
-<ce>그곳의 __kidnapper_에서
-<ce>_kidnapper_라는 이름의
-<ce>=kidnapper_를 찾으십시오.
-<ce>무엇보다 _victim_의 안전이
-<ce>중요하지만, 몸값을 내지 않고
+<ce>많은 돈은 드릴 수 없습니다, %pcf.
+<ce>몸값으로 쓸 보석을 사느라 가진 돈 대부분을 썼습니다.
+<ce>하지만 사랑하는 _victim_가 돌아오면 남은 저축인
+<ce>_gold_골드를 드리겠습니다.
+<ce>납치범들은 =2ransom_일 안에
+<ce>___kidnapper_의 __kidnapper_로 _gem_을
+<ce>가져오라고 했습니다.
+<ce>그곳에서 그곳의 __kidnapper_에서
+<ce>_kidnapper_라는 이름의 =kidnapper_를 찾으십시오.
+<ce>무엇보다 _victim_의 안전이 중요하지만, 몸값을 내지 않고
 <ce>구해준다면 정말 감사하겠습니다.
-<ce>행운을 빌며 %god께서 지켜주시길
-<ce>바랍니다. <---> %god께
-<ce>감사드립니다. 납치범들이 요구한
-<ce>_gem_입니다. 몸값을 내지 않고
-<ce>_victim_를 구할 방법을 찾는다면
-<ce>정말 감사하겠습니다. 보석을 사고 나니
-<ce>저축이 거의 남지 않았지만,
-<ce>_victim_가 돌아오면
-<ce>_gold_골드를 드리겠습니다. 몸값을
-<ce>내야 한다면 반드시 =2ransom_일
-<ce>안에 처리하십시오. 납치범들은
-<ce>___kidnapper_의
-<ce>__kidnapper_에
-<ce>_kidnapper_라는 =kidnapper_를
-<ce>두고 있습니다. =2ransom_일이 지나면
-<ce>%g은 %g3 동료들에게 _victim_의 위치를
-<ce>알리고 %g2을 죽이게 할 겁니다. 제발 막아주십시오.
+<ce>행운을 빌며 %god께서 지켜주시길 바랍니다.
+<ce><---> %god께 감사드립니다.
+<ce>납치범들이 요구한 _gem_입니다.
+<ce>몸값을 내지 않고 _victim_를 구할 방법을 찾는다면 정말
+<ce>감사하겠습니다.
+<ce>보석을 사고 나니 저축이 거의 남지 않았지만, _victim_가
+<ce>돌아오면 _gold_골드를 드리겠습니다.
+<ce>몸값을 내야 한다면 반드시 =2ransom_일 안에 처리하십시오.
+<ce>납치범들은 ___kidnapper_의 __kidnapper_에
+<ce>_kidnapper_라는 =kidnapper_를 두고 있습니다.
+<ce>=2ransom_일이 지나면 %g은 %g3 동료들에게
+<ce>_victim_의 위치를 알리고 %g2을 죽이게 할 겁니다.
+<ce>제발 막아주십시오.
 
 Message:  1099
 <ce>_victim_! 오, %god께 감사드립니다. 살아 있군요!
 <ce>훌륭한 %pcf, 몸값 _gem_도 쓰지 않았군요.
-<ce>어떻게 감사해야 할지 모르겠습니다. 약속한
-<ce>_gold_골드로도 부족하겠지만 받아주십시오.
-<ce>
-<ce>
-<ce>
+<ce>어떻게 감사해야 할지 모르겠습니다.
+<ce>약속한 _gold_골드로도 부족하겠지만 받아주십시오.
 
 QuestComplete:  [1004]
 <ce>받으십시오. 이제 당신 것입니다, 친구여.
@@ -90,54 +71,50 @@ RumorsPostsuccess:  [1007]
 훌륭한 %ra 용병이 도둑들에게서 _victim_를 구출했습니다.
 
 QuestorPostsuccess:  [1008]
-_victim_를 구해주셨군요, %pcf. 물론
-할 수 있는 일이라면 무엇이든 돕겠습니다.
+_victim_를 구해주셨군요, %pcf.
+물론 할 수 있는 일이라면 무엇이든 돕겠습니다.
 
 QuestorPostfailure:  [1009]
-<ce>지금은 당신은 물론 누구와도 이야기하고 싶지
-<ce>않습니다. 그냥 꺼져주지 않겠습니까?
-<ce>
+<ce>지금은 당신은 물론 누구와도 이야기하고 싶지 않습니다.
+<ce>그냥 꺼져주지 않겠습니까?
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에 사는 _qgiver_는 도둑 길드에
-납치된 %g3의 연인 _victim_를 구하기 위한 몸값 _gem_을
-내게 맡겼다. 몸값은 =2ransom_일 안에 내야 하며, 아니면
-_victim_를 죽일 것이다. 납치범의 대리인 _kidnapper_는
-___kidnapper_의 __kidnapper_에서 기다린다. 가능하다면
-_qgiver_는 몸값을 내지 않고 %g3의 연인을 구하기를 원한다.
+%qdt: ___qgiver_의 __qgiver_에 사는
+_qgiver_는 도둑 길드에 납치된 %g3의 연인 _victim_를 구하기
+위한 몸값 _gem_을 내게 맡겼다.
+몸값은 =2ransom_일 안에 내야 하며, 아니면 _victim_를 죽일 것이다.
+납치범의 대리인 _kidnapper_는 ___kidnapper_의 __kidnapper_에서
+기다린다.
+가능하다면 _qgiver_는 몸값을 내지 않고 %g3의 연인을 구하기를 원한다.
 
 Message:  1011
 <ce>_gem_을 _kidnapper_에게 건네겠습니까?
-<ce>
 
 Message:  1012
-<ce>당신이 %pcf지? 도둑 길드가 당신을
-<ce>꽤 좋아하더군. 아, %oth, 알겠어.
-<ce>_qgiver_를 위해 일하면서 %g이 잔꾀 없이
-<ce>몸값을 내도록 확인하러 온 거지?
-<ce>
+<ce>당신이 %pcf지? 도둑 길드가 당신을 꽤 좋아하더군.
+<ce>아, %oth, 알겠어.
+<ce>_qgiver_를 위해 일하면서 %g이 잔꾀 없이 몸값을
+<ce>내도록 확인하러 온 거지?
 
 Message:  1013
-<ce>_victim_가 네 어리석음의
-<ce>대가를 치를 것이다! %oth,
-<ce>=queston_일이 지나기
-<ce>전에 %g은 죽는다!
-<ce>=thug_! 이 %ra를 갈기갈기
-<ce>찢어라! <---> =thug_!
-<ce>내가 _victim_에게 똑같이
-<ce>하는 동안 이 멍청한 %ra를 죽여라!
+<ce>_victim_가 네 어리석음의 대가를 치를 것이다!
+<ce>%oth, =queston_일이 지나기 전에 %g은 죽는다!
+<ce>=thug_! 이 %ra를 갈기갈기 찢어라!
+<ce><---> =thug_!
+<ce>내가 _victim_에게 똑같이 하는 동안 이 멍청한 %ra를
+<ce>죽여라!
 
 Message:  1014
-<ce>_qgiver_가 보냈다고요? %oth, %god께
-<ce>감사드립니다! 어서 여기서 나갑시다!
-<ce>
+<ce>_qgiver_가 보냈다고요?
+<ce>%oth, %god께 감사드립니다! 어서 여기서 나갑시다!
 
 Message:  1015
 =thug_,
 
-길드는 평범한 납치 일에 자네의 힘을 쓰고 싶네. 대상의
-이름은 _victim_다. ___qgiver_의 __qgiver_에 있는 %g3
-집에서 %g2을 데려온 뒤 ___mondung_으로 가게.
+길드는 평범한 납치 일에 자네의 힘을 쓰고 싶네.
+대상의 이름은 _victim_다.
+___qgiver_의 __qgiver_에 있는 %g3 집에서 %g2을 데려온 뒤
+___mondung_으로 가게.
 ___mondung_으로 가는 길은 아래에 적어두었네.
 이 계획이 자네에게 너무 어렵지 않기를 바라지.
 
@@ -146,53 +123,41 @@ ___mondung_으로 가는 길은 아래에 적어두었네.
 Message:  1016
 <ce>%pcf, 무슨 일을 하는지 알고 있기를 바랍니다.
 <ce>_gem_을 돌려받은 건 기쁘지만 _victim_의 목숨을
-<ce>대가로 치르고 싶지는 않습니다. %g이 죽으면
-<ce>내 감사를 기대하지 마십시오.
-<ce>
-<ce>
+<ce>대가로 치르고 싶지는 않습니다.
+<ce>%g이 죽으면 내 감사를 기대하지 마십시오.
 
 Message:  1017
 <ce>_victim_! %god께 감사드립니다. 무사하군요!
-<ce>고맙습니다, 친구여. 몸값을 내지 않았으면
-<ce>좋았겠지만, %pcf, 사랑하는 _victim_가
-<ce>돌아온 것이 무엇보다 중요합니다.
+<ce>고맙습니다, 친구여.
+<ce>몸값을 내지 않았으면 좋았겠지만, %pcf,
+<ce>사랑하는 _victim_가 돌아온 것이 무엇보다 중요합니다.
 <ce>여기 약속한 _gold_골드입니다.
-<ce>
-<ce>
-<ce>
 
 Message:  1018
 <ce>길드가 당신을 좋아하는 이유를 알겠군요.
-<ce>이번 일도 꼭 알려두겠습니다, %pcf. 이제 _qgiver_에게
-<ce>돌아가 %g2에게 _victim_가 곧 도착할 거라고
-<ce>전하십시오. 즐거운 거래였습니다.
-<ce>
-<ce>
-<ce>
+<ce>이번 일도 꼭 알려두겠습니다, %pcf.
+<ce>이제 _qgiver_에게 돌아가 %g2에게 _victim_가 곧
+<ce>도착할 거라고 전하십시오. 즐거운 거래였습니다.
 
 Message:  1019
-<ce>좋습니다. _qgiver_에게 %g3의 _victim_가
-<ce>곧 ___qgiver_에 무사히 도착할 거라고
-<ce>전하십시오. 잘 가십시오.
-<ce>
+<ce>좋습니다.
+<ce>_qgiver_에게 %g3의 _victim_가 곧
+<ce>___qgiver_에 무사히 도착할 거라고 전하십시오.
+<ce>잘 가십시오.
 
 Message:  1020
-<ce>그렇습니다. 당신이 오기 직전에
-<ce>_victim_가 돌아왔습니다, %pcf. 그 끔찍한
-<ce>_kidnapper_를 상대해줘서 고맙습니다.
+<ce>그렇습니다.
+<ce>당신이 오기 직전에 _victim_가 돌아왔습니다, %pcf.
+<ce>그 끔찍한 _kidnapper_를 상대해줘서 고맙습니다.
 <ce>약속한 _gold_골드입니다.
-<ce>
-<ce>
 
 Message:  1021
-<ce>_victim_는 여기서부터 %g이 %g3의 길을 찾아
-<ce>%g3의 연인 _qgiver_에게 갈 수 있다고 말하고,
-<ce>감사를 전한 뒤 달려갑니다.
-<ce>
+<ce>_victim_는 여기서부터 %g이 %g3의 길을 찾아 %g3의 연인
+<ce>_qgiver_에게 갈 수 있다고 말하고, 감사를 전한 뒤
+<ce>달려갑니다.
 
 Message:  1022
 <ce>이제 _victim_는 틀림없이 죽었을 것입니다.
-<ce>
 
 -- Symbols used in the QRC file:
 --

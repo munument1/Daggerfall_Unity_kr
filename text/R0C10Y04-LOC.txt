@@ -11,42 +11,32 @@ DisplayName: 사악한 위저드
 QRC:
 
 QuestorOffer:  [1000]
-<ce>___mondung_ 근처에서 내 땅을 경작하는
-<ce>농부들이 그곳에서 사악한 마법이 행해진다고
-<ce>오래전부터 불평해왔습니다. 이번에는 사실인
-<ce>듯합니다. ___mondung_으로 가 강령술을 쓰는
-<ce>마법사를 죽여줄 사람이 필요합니다. 보수는
-<ce>_reward_골드입니다. 관심 있습니까?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>___mondung_ 근처에서 내 땅을 경작하는 농부들이 그곳에서
+<ce>사악한 마법이 행해진다고 오래전부터 불평해왔습니다.
+<ce>이번에는 사실인 듯합니다.
+<ce>___mondung_으로 가 강령술을 쓰는 마법사를 죽여줄 사람이
+<ce>필요합니다. 보수는 _reward_골드입니다. 관심 있습니까?
 
 RefuseQuest:  [1001]
 <ce>정말입니까? 당신에게 딱 맞는 일이라 생각했는데 곤란하군요.
-<ce>
 
 AcceptQuest:  [1002]
-<ce>%oth, 훌륭합니다. =1stparton_일 안에 마법사를
-<ce>죽여야 하니 바로 출발하십시오. 행운을 빕니다,
-<ce>%pcf. 자비는 베풀지 마십시오.
-<ce>
+<ce>%oth, 훌륭합니다.
+<ce>=1stparton_일 안에 마법사를 죽여야 하니 바로 출발하십시오.
+<ce>행운을 빕니다, %pcf. 자비는 베풀지 마십시오.
 
 QuestFail:  [1003]
 <ce>그 마법사가 죽었다는 소식을 듣기 전에는 보고 싶지 않습니다.
-<ce>
 
 QuestComplete:  [1004]
-<ce>위대한 영웅이 돌아왔군요! 농부들은 땅이 흑마법에서
-<ce>해방된 것을 기뻐하고 있습니다. 감사의 뜻으로
-<ce>_reward_골드를 받으십시오, %pcf.
-<ce>
+<ce>위대한 영웅이 돌아왔군요!
+<ce>농부들은 땅이 흑마법에서 해방된 것을 기뻐하고 있습니다.
+<ce>감사의 뜻으로 _reward_골드를 받으십시오, %pcf.
 
 RumorsDuringQuest:  [1005]
 사악한 마력이 쌓이는 것이 느껴질 정도야.
 <--->
-어떤 마법사가 _questgiver_의 땅을
-폐허로 만들겠다고 맹세했대.
+어떤 마법사가 _questgiver_의 땅을 폐허로 만들겠다고 맹세했대.
 
 RumorsPostfailure:  [1006]
 ___mondung_의 마법사는 떠난 모양이야.
@@ -56,8 +46,7 @@ ___mondung_의 마법사는 떠난 모양이야.
 RumorsPostsuccess:  [1007]
 ___mondung_의 미친 마법사가 용감한 %ra에게 죽었대.
 <--->
-그 마법사가 살아 있었다면 _questgiver_의
-앞날이 위험했을 거야.
+그 마법사가 살아 있었다면 _questgiver_의 앞날이 위험했을 거야.
 
 QuestorPostsuccess:  [1008]
 미친 마법사를 죽인 영웅이군요. 잘 지냈습니까?
@@ -65,36 +54,28 @@ QuestorPostsuccess:  [1008]
 다시 만나 반갑습니다, 미친 마법사를 죽인 분이여.
 
 QuestorPostfailure:  [1009]
-<ce>마법사를 죽이지 못하고 보상을 기대한 것은
-<ce>아니겠지요. 채찍질을 당하지 않은 것만으로
-<ce>운이 좋다고 생각하십시오.
-<ce>
+<ce>마법사를 죽이지 못하고 보상을 기대한 것은 아니겠지요.
+<ce>채찍질을 당하지 않은 것만으로 운이 좋다고 생각하십시오.
 <--->
-<ce>실패한 %ra가 돌아왔군요. 당신이 죽이지 못한
-<ce>마법사도 돌아오겠지요. 이제 가십시오.
-<ce>
+<ce>실패한 %ra가 돌아왔군요.
+<ce>당신이 죽이지 못한 마법사도 돌아오겠지요. 이제 가십시오.
 
 Message:  1011
-<ce>_fakename_ 마법사는 _questgiver_가
-<ce>몹시 증오하는 귀족이야.
+<ce>_fakename_ 마법사는 _questgiver_가 몹시 증오하는 귀족이야.
 <--->
-<ce>_fakename_ 마법사는
-<ce>_questgiver_를 괴롭혀온 귀족이야.
+<ce>_fakename_ 마법사는 _questgiver_를 괴롭혀온 귀족이야.
 
 Message:  1012
 마법사 _fakename_를 죽였습니다.
 
 Message:  1015
-%qdt: ___questgiver_의 __questgiver_에 있는 _questgiver_는
-___mondung_의 미친 마법사를 죽이라고 했다. =1stparton_일
-안에 일을 마치고 %g2에게 돌아가면 보상을 받는다.
+%qdt: ___questgiver_의 __questgiver_에
+있는 _questgiver_는 ___mondung_의 미친 마법사를 죽이라고 했다.
+=1stparton_일 안에 일을 마치고 %g2에게 돌아가면 보상을 받는다.
 
 Message:  1020
-<ce>_questgiver_가 나를 죽이려고 고용한
-<ce>새 바보인가 보군. 곧 네 뼈도 이 던전에 흩어진
-<ce>선배들의 뼈와 함께할 것이다!
-<ce>
-<ce>
+<ce>_questgiver_가 나를 죽이려고 고용한 새 바보인가 보군.
+<ce>곧 네 뼈도 이 던전에 흩어진 선배들의 뼈와 함께할 것이다!
 
 -- Symbols used in the QRC file:
 --

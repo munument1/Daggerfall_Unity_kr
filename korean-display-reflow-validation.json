@@ -1,0 +1,44 @@
+{
+  "scope": "Daggerfall Unity Korean display reflow validation",
+  "baseline_commit": "c3d0b83e6f62ec7ea1fe5d68718d1fe3dd2f7c48",
+  "official_reference": {
+    "version": "Daggerfall Unity v1.1.1",
+    "commit": "81e89e90c27bc3c1a7a61871e545fad129174dec"
+  },
+  "summary": {
+    "quest_files": 265,
+    "quest_message_blocks": 3816,
+    "quest_loc_files": 530,
+    "changed_root_quests": 257,
+    "changed_quest_loc_files": 514,
+    "books": 93,
+    "changed_books": 50,
+    "biogs": 18,
+    "subtitle_files": 13,
+    "subtitle_cues": 88,
+    "centered_lines_before": 9730,
+    "centered_lines_after": 9076,
+    "blocking_errors": 0
+  },
+  "checks": {
+    "quest_headers_and_order": "passed",
+    "quest_macro_token_order": "passed",
+    "quest_qbn_exact": "passed",
+    "quest_root_mirror": "passed",
+    "runtime_undefined_absent": "passed",
+    "uppercase_gender_macros_absent": "passed",
+    "display_width_limits": "passed",
+    "readability_boundaries": "passed",
+    "book_metadata_and_format_tokens": "passed",
+    "biog_srt_namegen": "passed",
+    "transform_idempotence": "passed"
+  },
+  "notes": [
+    {
+      "type": "intentional-repetition",
+      "file": "C0B00Y02-LOC.txt",
+      "message": "repeated 친절하고 wording retained"
+    }
+  ],
+  "blockers": []
+}
