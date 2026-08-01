@@ -25,36 +25,34 @@ jobs:
           ref: agent/korean-display-reflow-qa
           fetch-depth: 0
 
-      - name: Preserve corrected tools outside worktree
+      - name: Preserve and verify compact payload
         shell: bash
         run: |
           set -euo pipefail
-          base64 -d .reflow-bootstrap/reflow-final.gz.b64 | gzip -d > /tmp/reflow_korean_display_text.py
-          base64 -d .reflow-bootstrap/validate-final.gz.b64 | gzip -d > /tmp/validate_korean_display_reflow.py
-          python -m py_compile /tmp/reflow_korean_display_text.py /tmp/validate_korean_display_reflow.py
+          base64 -d .reflow-bootstrap/corrections-small.patch.gz.b64 > /tmp/corrections-small.patch.gz
+          cat .reflow-bootstrap/validate.part.* | base64 -d > /tmp/validate_korean_display_reflow.py
+          cp .reflow-bootstrap/changes-final.json /tmp/korean-display-reflow-changes.json
+          cp .reflow-bootstrap/validation-final.json /tmp/korean-display-reflow-validation.expected.json
+          echo '172b43eaace9dc8c9d86b83ce89f06d519e9d3c1028212b612bede0a5aeaceef  /tmp/corrections-small.patch.gz' | sha256sum -c -
+          echo 'f98192d41f177c79716e6b9848189dda65dccbbc1fa121b8af1773d03bcf731c  /tmp/validate_korean_display_reflow.py' | sha256sum -c -
+          echo '12ca412ac974573b238de907bb0a87928dff7c02e34088d0c8d61d93bce636ad  /tmp/korean-display-reflow-changes.json' | sha256sum -c -
+          echo '20436dde44d40cfac137b2130da476b8b99647153a21a67ab83add45a2187083  /tmp/korean-display-reflow-validation.expected.json' | sha256sum -c -
 
-      - name: Reset to release baseline
+      - name: Restore clean candidate and apply corrections
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin main
-          git reset --hard origin/main
-          git clean -fdx
           rm -rf /tmp/reflow-baseline
           mkdir -p /tmp/reflow-baseline
-          rsync -a --delete --exclude='.git/' ./ /tmp/reflow-baseline/
-          mkdir -p tools
-          cp /tmp/reflow_korean_display_text.py tools/reflow_korean_display_text.py
+          git archive c3d0b83e6f62ec7ea1fe5d68718d1fe3dd2f7c48 | tar -x -C /tmp/reflow-baseline
+          git reset --hard 85aef56fe019ca9b787119152d9df880ad026e4f
+          git clean -fdx
+          gzip -dc /tmp/corrections-small.patch.gz | git apply -
           cp /tmp/validate_korean_display_reflow.py tools/validate_korean_display_reflow.py
-          chmod +x tools/reflow_korean_display_text.py tools/validate_korean_display_reflow.py
-
-      - name: Reflow Korean display text
-        shell: bash
-        run: |
-          set -euo pipefail
-          python tools/reflow_korean_display_text.py . \
-            --write \
-            --report korean-display-reflow-changes.json
+          cp /tmp/korean-display-reflow-changes.json korean-display-reflow-changes.json
+          python -m py_compile tools/reflow_korean_display_text.py tools/validate_korean_display_reflow.py
+          echo '0f5f7575366d561ef808b794a8d36a301d83bcfc58aeccc10ad1fb0e2294741b  tools/reflow_korean_display_text.py' | sha256sum -c -
+          echo 'f98192d41f177c79716e6b9848189dda65dccbbc1fa121b8af1773d03bcf731c  tools/validate_korean_display_reflow.py' | sha256sum -c -
 
       - name: Verify transform idempotence
         shell: bash
@@ -88,17 +86,19 @@ jobs:
           report['checks']['transform_idempotence'] = 'passed'
           path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
+          cmp korean-display-reflow-validation.json /tmp/korean-display-reflow-validation.expected.json
           if grep -R -n --include='*-LOC.txt' '\[undefined\]' text; then exit 1; fi
           if grep -R -n -E --include='*-LOC.txt' '%G(2self|[1234]?)' text; then exit 1; fi
           test "$(find text/Quests -maxdepth 1 -name '*-LOC.txt' | wc -l)" -eq 265
           test "$(find text/Books -maxdepth 1 -name 'BOK*-LOC.txt' | wc -l)" -eq 93
 
-      - name: Commit clean result
+      - name: Commit one clean candidate
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'OpenAI Translation Agent'
           git config user.email 'noreply@openai.com'
           git add -A
+          git reset --soft c3d0b83e6f62ec7ea1fe5d68718d1fe3dd2f7c48
           git commit -m '한국어 표시 줄바꿈 전수 교정'
           git push --force origin HEAD:agent/korean-display-reflow-qa
