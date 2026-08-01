@@ -12,8 +12,8 @@ DisplayName: 도둑 길드에 가담하기
 QRC:
 
 QuestorOffer:  [1000]
-<ce>도둑 길드의 고위 단원에게 어울리는 흥미로운 일이 있다. 만만치 않을 거다.
-<ce>맡겠나?
+<ce>도둑 길드의 고위 단원에게 어울리는 흥미로운
+<ce>일이 있다. 만만치 않을 거다. 맡겠나?
 <ce>
 <ce>
 
@@ -24,18 +24,18 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>눈치가 빠르군. 표적은 여기 ___questgiver_에 있는 _marknpc_다.
-<ce>%G⁠은 자주 이동하며 대개 경호원들의 보호를 받는다. 조심해라.
-<ce>기한은 7일이다. 일을 끝낸 뒤 돌아오면 _gold_골드를 주겠다.
-<ce>_questgiver_를 찾아라.
-<ce>
+<ce>눈치가 빠르군. 표적은 여기
+<ce>___questgiver_에 있는 _marknpc_다.
+<ce>%G⁠은 자주 이동하며 대개 경호원들의 보호를 받는다.
+<ce>조심해라. 기한은 7일이다. 일을 끝낸 뒤 돌아오면
+<ce>_gold_골드를 주겠다. _questgiver_를 찾아라.
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>훌륭한 솜씨다, %pcn. 너무 힘든 일은 아니었기를 바란다.
-<ce>여기 길드 수수료가 있다.
+<ce>훌륭한 솜씨다, %pcn. 너무 힘든 일은
+<ce>아니었기를 바란다. 여기 길드 수수료가 있다.
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -59,9 +59,9 @@ QuestorPostsuccess:  [1008]
 걱정하지 마라.
 
 QuestorPostfailure:  [1009]
-<ce>_marknpc_는 아직 살아 있다, %pcf. 어떤 면에서도 명예롭지
-<ce>않은 상황이며, 나는 전혀 즐겁지 않다.
-<ce>
+<ce>_marknpc_는 아직 살아 있다, %pcf.
+<ce>어떤 면에서도 명예롭지 않은
+<ce>상황이며, 나는 전혀 즐겁지 않다.
 
 QuestLogEntry:  [1010]
 %qdt: 다크 브라더후드를 위해 ___questgiver_의
@@ -69,53 +69,51 @@ _marknpc_를 암살하는 계약을 받았다. 연락책 _questgiver_는
 그자가 자주 이동한다고 했다. 일을 끝낼 시간은 7일이다.
 
 Message:  1015
-<ce>_marknpc_는 아직 살아 있다. 나를 시험하지 마라, %pcn.
-<ce>다크 브라더후드에는 유머 감각이 없다. 방금 _fakeplace_가 가짜
-<ce>주소라는 소식을 들었다. 그곳에는 가지 말고, %g⁠이 어디서 시간을
-<ce>보내는지 다른 단서를 찾아라.
-<ce>
+<ce>_marknpc_는 아직 살아 있다. 나를 시험하지 마라,
+<ce>%pcn. 다크 브라더후드에는 유머 감각이 없다.
+<ce>방금 _fakeplace_가 가짜 주소라는 소식을 들었다.
+<ce>그곳에는 가지 말고, %g⁠이 어디서
+<ce>시간을 보내는지 다른 단서를 찾아라.
 <ce>
 <ce>
 <ce>
 
 Message:  1020
-<ce>_marknpc_는 가끔 나와 밀회를 즐겨. %G⁠은 오래 머물지 않아.
-<ce>%G⁠은 그저 %g3 쾌락을 위해 나를 이용할 뿐이야. 50골드만 주면
-<ce>기꺼이 %g2⁠을 팔아넘기겠어.
-<ce>
+<ce>_marknpc_는 가끔 나와 밀회를 즐겨.
+<ce>%G⁠은 오래 머물지 않아. %G⁠은 그저
+<ce>%g3 쾌락을 위해 나를 이용할 뿐이야.
+<ce>50골드만 주면 기꺼이 %g2⁠을 팔아넘기겠어.
 
 Message:  1021
 <ce>도와줘! _marknpc_! 집 안에 암살자가 있어!
 <ce>
 
 Message:  1022
-<ce>네가 _marknpc_를 죽였어! 살려만 주면 누구 짓인지 절대 말하지
-<ce>않겠다고 맹세할게.
+<ce>네가 _marknpc_를 죽였어! 살려만 주면
+<ce>누구 짓인지 절대 말하지 않겠다고 맹세할게.
 <ce>
 
 Message:  1023
-<ce>_marknpc_는 매일 여섯 시쯤 이곳에 와. %G⁠은 %g3 경호원들을
-<ce>돌려보내고 %G⁠은 한 시간쯤만 머물지.
-<ce>
+<ce>_marknpc_는 매일 여섯 시쯤 이곳에 와.
+<ce>%G⁠은 %g3 경호원들을 돌려보내고
+<ce>%G⁠은 한 시간쯤만 머물지.
 <ce>
 
 Message:  1030
 <ce>_marknpc_는 도둑이자 악당입니다.
 <--->
-<ce>모두 _marknpc_가 _fakeplace_에 드나든다고 생각하지만 %g⁠은
-<ce>그러지 않습니다.
+<ce>모두 _marknpc_가 _fakeplace_에
+<ce>드나든다고 생각하지만 %g⁠은 그러지 않습니다.
 <--->
 <ce>_marknpc_는 보통 %g3 저녁을 _inn_에서 보냅니다.
 <--->
 <ce>_marknpc_는 %g3 아침을 집에서 자며 보냅니다.
 <--->
-<ce>_marknpc_는 _house_에 살지만 %g⁠은 그곳에 오래 머물지
-<ce>않습니다.
+<ce>_marknpc_는 _house_에 살지만 %g⁠은 그곳에 오래 머물지 않습니다.
 <--->
 <ce>오후에는 _marknpc_를 _guildhall_에서 찾을 수 있습니다.
 <--->
-<ce>_guildhall_은 도둑 길드의 아지트라고 들었습니다.
-<ce>그곳을 찾아보십시오.
+<ce>_guildhall_은 도둑 길드의 아지트라고 들었습니다. 그곳을 찾아보십시오.
 <--->
 <ce>_marknpc_에게는 정부가 있습니다.
 <--->
@@ -123,16 +121,16 @@ Message:  1030
 <--->
 <ce>_marknpc_는 경호원을 많이 거느립니다.
 <--->
-<ce>_marknpc_가 %g3 정부를 찾아갈 때면 %g⁠은 %g3 경호원들을
-<ce>돌려보냅니다.
+<ce>_marknpc_가 %g3 정부를 찾아갈 때면
+<ce>%g⁠은 %g3 경호원들을 돌려보냅니다.
 <--->
 <ce>나는 _marknpc_의 경호원들과 엮이고 싶지 않습니다.
 <--->
 <ce>_marknpc_는 마법으로 보호받는다는군요.
 
 Message:  1031
-<ce>_marknpc_가 바닥에 쓰러져 죽습니다. 브라더후드가
-<ce>자랑스러워할 것입니다.
+<ce>_marknpc_가 바닥에 쓰러져 죽습니다.
+<ce>브라더후드가 자랑스러워할 것입니다.
 
 -- Symbols used in the QRC file:
 --

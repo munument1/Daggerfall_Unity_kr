@@ -11,8 +11,8 @@ DisplayName: 투옥된 마녀
 QRC:
 
 QuestorOffer:  [1000]
-<ce>우리 자매 _witch_가 감옥에 갇혔소. 구출하려면 자네 같은 사람이
-<ce>필요하오. 맡겠소?
+<ce>우리 자매 _witch_가 감옥에 갇혔소.
+<ce>구출하려면 자네 같은 사람이 필요하오. 맡겠소?
 <ce>
 <ce>
 
@@ -21,17 +21,17 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>우리를 위해 해준다면 진심으로 감사하겠소. ___mondung_에서
-<ce>그녀를 찾으면 이 옷을 주어 변장시키시오. 늦어도 =queston_일 안에
-<ce>두 사람 모두 돌아오기를 기다리겠소.
-<ce>
+<ce>우리를 위해 해준다면 진심으로 감사하겠소.
+<ce>___mondung_에서 그녀를 찾으면 이 옷을
+<ce>주어 변장시키시오. 늦어도 =queston_일
+<ce>안에 두 사람 모두 돌아오기를 기다리겠소.
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>_witch_, 무사히 돌아온 모습을 보니 마음이 놓이는군.
-<ce>%pcf, 오늘 자네는 ==qgiver_의 존경을 얻었소.
-<ce>
+<ce>_witch_, 무사히 돌아온 모습을
+<ce>보니 마음이 놓이는군. %pcf,
+<ce>오늘 자네는 ==qgiver_의 존경을 얻었소.
 <ce>
 <ce>
 
@@ -55,10 +55,10 @@ QuestorPostsuccess:  [1008]
 _witch_는 잘 회복하고 있소, %pcf. 기쁜 소식일 것이오.
 
 QuestorPostfailure:  [1009]
-<ce>우리 자매 _witch_는 산 채로 불타 죽었소. 자네가 구할 수
-<ce>있었을지도, 아니었을지도 모르지. 하지만 이곳에서 환영받지 못하오.
+<ce>우리 자매 _witch_는 산 채로 불타 죽었소.
+<ce>자네가 구할 수 있었을지도, 아니었을지도 모르지.
+<ce>하지만 이곳에서 환영받지 못하오.
 <ce>아마 아주 오랫동안 그럴 것이오.
-<ce>
 <ce>
 
 QuestLogEntry:  [1010]
@@ -67,8 +67,8 @@ ___mondung_으로 나를 보냈다. 그녀에게 _clothes_을 주어
 변장시키고 =queston_일이 지나기 전에 ==qgiver_로 돌아와야 한다.
 
 Message:  1011
-<ce>==qgiver_가 보냈나요? ==daedra_를 찬양하라! _clothes_을
-<ce>입고 함께 빠져나가죠.
+<ce>==qgiver_가 보냈나요? ==daedra_를 찬양하라!
+<ce>_clothes_을 입고 함께 빠져나가죠.
 <ce>
 <ce>
 
@@ -76,8 +76,8 @@ Message:  1012
 <ce>“죄수 _witch_다! 멈춰라! 마녀다!”
 <ce>
 <--->
-<ce>“이번에는 감옥으로 돌아가지 못한다, _witch_!
-<ce>곧장 처형장으로 가라!”
+<ce>“이번에는 감옥으로 돌아가지 못한다,
+<ce>_witch_! 곧장 처형장으로 가라!”
 <ce>
 <--->
 <ce>“멈춰라! 네가 _witch_지!”

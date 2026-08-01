@@ -11,33 +11,33 @@ DisplayName: 심부름
 QRC:
 
 QuestorOffer:  [1000]
-<ce>축복이 함께하기를, %pcn. 비록 그대가 이교도이며 우리
-<ce>신전을 섬기지는 않지만 말입니다. 나는 _qgiver_입니다.
-<ce>__qgiver_의 호의를 얻고 싶다고 들었습니다. 이 _religitem_을
-<ce>=traveltime_일 안에 ___priest_로 배달해주면 그대를 좋게
-<ce>말해두겠습니다.
-<ce>
+<ce>축복이 함께하기를, %pcn.
+<ce>비록 그대가 이교도이며 우리 신전을 섬기지는
+<ce>않지만 말입니다. 나는 _qgiver_입니다.
+<ce>__qgiver_의 호의를 얻고 싶다고 들었습니다.
+<ce>이 _religitem_을 =traveltime_일 안에 ___priest_로
+<ce>배달해주면 그대를 좋게 말해두겠습니다.
 <ce>
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>손해 보는 것은 그대입니다. 당분간 이 신전의 호의를 구할 생각은 하지
-<ce>마십시오, %pcn.
+<ce>손해 보는 것은 그대입니다. 당분간 이 신전의 호의를
+<ce>구할 생각은 하지 마십시오, %pcn.
 <ce>
 
 AcceptQuest:  [1002]
-<ce>여기 _religitem_이 있습니다. ___priest_의 __priest_에
-<ce>있는 _priest_에게 가져가십시오. 아, 경쟁 신전에서 그대를
-<ce>막으려고 폭한들을 보낼 수도 있다는 말을 깜빡할 뻔했군요.
-<ce>
+<ce>여기 _religitem_이 있습니다.
+<ce>___priest_의 __priest_에 있는 _priest_에게
+<ce>가져가십시오. 아, 경쟁 신전에서 그대를 막으려고 폭한들을
+<ce>보낼 수도 있다는 말을 깜빡할 뻔했군요.
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>신의 은총이 함께하기를, %pcn. 이곳에는 이 _religitem_이
-<ce>절실히 필요했습니다.
+<ce>신의 은총이 함께하기를, %pcn.
+<ce>이곳에는 이 _religitem_이 절실히 필요했습니다.
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -65,8 +65,8 @@ _religitem_을 ___priest_의 __priest_에
 있는 _priest_에게 배달하라고 했다. =traveltime_일 안에 도착해야 한다.
 
 Message:  1011
-<ce>그 _religitem_은 절대로 __priest_에 도착하지 못한다.
-<ce>대신 네 머리를 그들에게 배달해주마!
+<ce>그 _religitem_은 절대로 __priest_에
+<ce>도착하지 못한다. 대신 네 머리를 그들에게 배달해주마!
 <ce>
 <ce>
 

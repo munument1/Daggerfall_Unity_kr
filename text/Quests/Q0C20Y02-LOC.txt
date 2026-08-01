@@ -12,27 +12,27 @@ DisplayName: 값비싼 구매
 QRC:
 
 QuestorOffer:  [1000]
-<ce>그대가 ==questgiver_의 친구라는 것은 알고 있소. 하지만 그대를 도우려면
-<ce>창조에 앞서 파괴하는 주문을 엮어야 하오. 파괴의 축복을 받을 수
-<ce>있도록 약에 넣을 _magicitem_을 가져다주겠소?
-<ce>
-<ce>
+<ce>그대가 ==questgiver_의 친구라는 것은 알고 있소.
+<ce>하지만 그대를 도우려면 창조에
+<ce>앞서 파괴하는 주문을 엮어야 하오.
+<ce>파괴의 축복을 받을 수 있도록 약에
+<ce>넣을 _magicitem_을 가져다주겠소?
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>중요성을 알고도 너무 바빠 맡지 못하겠소? ==questgiver_에게도,
-<ce>그대 %pcn⁠에게도 불행한 일이군.
-<ce>
+<ce>중요성을 알고도 너무 바빠 맡지 못하겠소?
+<ce>==questgiver_에게도, 그대
+<ce>%pcn⁠에게도 불행한 일이군.
 <ce>
 
 AcceptQuest:  [1002]
 <ce>필요한 _magicitem_은 ==other_가 가지고 있소.
-<ce>=1stparton_번째 새벽이 오기 전에 필요하오. ==other_는
-<ce>___other_에서 찾을 수 있으니 _other_를 물어보시오.
+<ce>=1stparton_번째 새벽이 오기 전에 필요하오.
+<ce>==other_는 ___other_에서
+<ce>찾을 수 있으니 _other_를 물어보시오.
 <ce>신과 정령들이 그대의 발을 인도하기를, %pcf.
-<ce>
 <ce>
 <ce>
 
@@ -41,10 +41,10 @@ QuestFail:  [1003]
 <ce>
 
 QuestComplete:  [1004]
-<ce>아, 주문에 필요한 _magicitem_이 왔군. 자매들이여, 서둘러 찢고
-<ce>뜯어 뚜껑을 덮은 통에서 끓이시오. %pcn, 빠른
-<ce>행동과 용기에 대한 감사로 _reward_ 한 덩이를 받으시오.
-<ce>
+<ce>아, 주문에 필요한 _magicitem_이 왔군.
+<ce>자매들이여, 서둘러 찢고 뜯어 뚜껑을 덮은 통에서 끓이시오.
+<ce>%pcn, 빠른 행동과 용기에 대한 감사로
+<ce>_reward_ 한 덩이를 받으시오.
 <ce>
 <ce>
 <ce>
@@ -68,14 +68,14 @@ QuestorPostsuccess:  [1008]
 _reward_은 마음에 드시오, %pcf? 잘 어울리는군.
 
 QuestorPostfailure:  [1009]
-<ce>_magicitem_을 잊은 것이오? %oth, 이제 너무 늦었소.
-<ce>==questgiver_는 실망했소, %pcf. 진심으로 말이오.
-<ce>
+<ce>_magicitem_을 잊은 것이오?
+<ce>%oth, 이제 너무 늦었소. ==questgiver_는
+<ce>실망했소, %pcf. 진심으로 말이오.
 <ce>
 
 QuestLogEntry:  [1010]
-<ce>원하는 _magicitem_ 말인가? 1000골드면 주지. 아주 좋아, 여기 있어.
-<ce>
+<ce>원하는 _magicitem_ 말인가?
+<ce>1000골드면 주지. 아주 좋아, 여기 있어.
 <ce>
 
 Message:  1011
@@ -84,8 +84,8 @@ Message:  1011
 ==questgiver_ 출신인 그녀를 함부로 대하면 안 돼.
 
 Message:  1020
-<ce>_magicitem_은 1000골드보다 싸게는 안 팔아. ==questgiver_에게만
-<ce>그 가격에 넘겨주는 거야.
+<ce>_magicitem_은 1000골드보다 싸게는 안 팔아.
+<ce>==questgiver_에게만 그 가격에 넘겨주는 거야.
 <ce>
 <ce>
 <ce>

@@ -12,13 +12,13 @@ DisplayName: 본보기
 QRC:
 
 QuestorOffer:  [1000]
-<ce>내가 생각한 작은 일에 당신이 적임자일지도 모르겠군요.
-<ce>경쟁 상인이 내 계약을 빼앗아 불법적이거나 적어도 부도덕한 거래를
-<ce>시작했습니다. 상황을 바로잡고 _competitor_에게 다시는 내 영역을
-<ce>넘보지 말라는 경고를 보내고 싶습니다. 누군가의 머리통을 조금 깨뜨려야
-<ce>할 수도 있지요. _reward_골드면 맡겠습니까?
-<ce>
-<ce>
+<ce>내가 생각한 작은 일에 당신이 적임자일지도
+<ce>모르겠군요. 경쟁 상인이 내 계약을 빼앗아
+<ce>불법적이거나 적어도 부도덕한 거래를 시작했습니다.
+<ce>상황을 바로잡고 _competitor_에게 다시는 내
+<ce>영역을 넘보지 말라는 경고를 보내고 싶습니다.
+<ce>누군가의 머리통을 조금 깨뜨려야 할 수도 있지요.
+<ce>_reward_골드면 맡겠습니까?
 <ce>
 <ce>
 
@@ -26,29 +26,29 @@ RefuseQuest:  [1001]
 <ce>%oth, 양심에 맡기려니 오히려 성급해지는군요.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. _competitor_는 __storehouse_에 _storehouse_라는 가게를
-<ce>가지고 있습니다. 그곳에 내가 되찾고 싶은 _mitem_이 있습니다.
+<ce>좋습니다. _competitor_는 __storehouse_에
+<ce>_storehouse_라는 가게를 가지고 있습니다.
+<ce>그곳에 내가 되찾고 싶은 _mitem_이 있습니다.
 <ce>나오는 길에 이 쪽지를 가게 아무 곳에나 내려놓으십시오.
-<ce>_competitor_가 =2storehouse_일 뒤 _mitem_을 더 안전한 곳으로
-<ce>옮길 예정이니 서둘러야 합니다. 그때까지 돌아오지 않으면 보수는 없습니다.
-<ce>_storehouse_에 경비가 있을 거라는 말은 굳이 하지 않아도 되겠지요.
-<ce>행운을 빕니다.
-<ce>
-<ce>
+<ce>_competitor_가 =2storehouse_일 뒤 _mitem_을
+<ce>더 안전한 곳으로 옮길 예정이니 서둘러야 합니다.
+<ce>그때까지 돌아오지 않으면 보수는 없습니다.
+<ce>_storehouse_에 경비가 있을 거라는 말은
+<ce>굳이 하지 않아도 되겠지요. 행운을 빕니다.
 <ce>
 <ce>
 <ce>
 
 QuestFail:  [1003]
-<ce>장난으로 맡긴 일이 아닙니다, %pcf. 반드시 끝내주십시오.
-<ce>
+<ce>장난으로 맡긴 일이 아닙니다, %pcf.
+<ce>반드시 끝내주십시오.
 
 QuestComplete:  [1004]
-<ce>정말 잘했습니다, %pcf. 아, 그래요. 사랑스러운 _mitem_.
-<ce>이것이 바로 _competitor_의 동업자가 %g2⁠에게 담보로 맡긴
-<ce>그 _mitem_이 틀림없군요. 약속한 _reward_골드를 받을
-<ce>자격이 충분합니다.
-<ce>
+<ce>정말 잘했습니다, %pcf.
+<ce>아, 그래요. 사랑스러운 _mitem_.
+<ce>이것이 바로 _competitor_의 동업자가 %g2⁠에게
+<ce>담보로 맡긴 그 _mitem_이 틀림없군요.
+<ce>약속한 _reward_골드를 받을 자격이 충분합니다.
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -103,22 +103,22 @@ __competitor_ ___competitor_
 <ce>_competitor_
 
 Message:  1013
-<ce>어린 소년이 편지를 건네고는 질문할 틈도 없이 달아납니다.
-<ce>
+<ce>어린 소년이 편지를 건네고는
+<ce>질문할 틈도 없이 달아납니다.
 
 Message:  1014
-<ce>_competitor_에게 _mitem_을 주고 대신 _gem_을
-<ce>받겠습니까?
+<ce>_competitor_에게 _mitem_을
+<ce>주고 대신 _gem_을 받겠습니까?
 
 Message:  1015
-<ce>현명한 선택입니다, %pcf. 수익성 있는 관계의 시작이 될지도 모르겠군요.
+<ce>현명한 선택입니다, %pcf.
+<ce>수익성 있는 관계의 시작이 될지도 모르겠군요.
 <ce>반면 _qgiver_가 이익을 보는 날은 이제 끝나가는지도 모르죠.
-<ce>
 <ce>
 
 Message:  1016
-<ce>그렇다면 왜 여기까지 왔는지 모르겠군. 당장 나가시오, %pcf.
-<ce>
+<ce>그렇다면 왜 여기까지 왔는지 모르겠군.
+<ce>당장 나가시오, %pcf.
 
 -- Symbols used in the QRC file:
 --

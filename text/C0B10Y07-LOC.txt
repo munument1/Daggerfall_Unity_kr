@@ -11,26 +11,26 @@ DisplayName: 배달
 QRC:
 
 QuestorOffer:  [1000]
-<ce>축복이 함께하기를, %pcn. __qgiver_에서 심부름을
-<ce>맡아줄 사람이 필요합니다. 이 _religitem_을 =traveltime_일 안에
-<ce>___priest_로 배달하십시오. 사원에서 _gold_골드를
+<ce>축복이 함께하기를, %pcn.
+<ce>__qgiver_에서 심부름을 맡아줄 사람이 필요합니다.
+<ce>이 _religitem_을 =traveltime_일 안에 ___priest_로
+<ce>배달하십시오. 사원에서 _gold_골드를
 <ce>보수로 드리겠습니다. 우리를 위해 맡아주시겠습니까?
-<ce>
 <ce>
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>후우. 이 일을 맡을 다른 사원 신도를 찾아야겠군요.
-<ce>
+<ce>후우. 이 일을 맡을 다른 사원
+<ce>신도를 찾아야겠군요.
 <ce>
 
 AcceptQuest:  [1002]
 <ce>여기 _religitem_입니다. ___priest_의 __priest_에
-<ce>있는 _priest_에게 가져다주십시오. 아, 경쟁 사원에서 당신을
-<ce>막으려고 폭한들을 보낼 수도 있다는 말을 깜빡할 뻔했군요.
-<ce>
+<ce>있는 _priest_에게 가져다주십시오.
+<ce>아, 경쟁 사원에서 당신을 막으려고 폭한들을
+<ce>보낼 수도 있다는 말을 깜빡할 뻔했군요.
 <ce>
 <ce>
 
@@ -91,8 +91,8 @@ _religitem_을 ___priest_의 __priest_에
 있는 _priest_에게 배달하라고 했다. =traveltime_일 안에 도착해야 한다.
 
 Message:  1011
-<ce>그 _religitem_은 절대로 __priest_에 도착하지 못한다.
-<ce>대신 네 머리를 그들에게 배달해주마!
+<ce>그 _religitem_은 절대로 __priest_에
+<ce>도착하지 못한다. 대신 네 머리를 그들에게 배달해주마!
 <ce>
 <ce>
 

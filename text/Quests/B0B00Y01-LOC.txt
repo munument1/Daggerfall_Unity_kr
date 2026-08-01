@@ -11,32 +11,32 @@ DisplayName: 응징
 QRC:
 
 QuestorOffer:  [1000]
-<ce>__qgiver_에 배신자가 있습니다. %g3 형제들을
-<ce>배신한 악랄한 _monster_입니다. 우리 명예가 걸린 일입니다,
-<ce>%pct. 의로운 분노에 동참하십시오.
-<ce>
+<ce>__qgiver_에 배신자가 있습니다.
+<ce>%g3 형제들을 배신한 악랄한 _monster_입니다.
+<ce>우리 명예가 걸린 일입니다, %pct.
+<ce>의로운 분노에 동참하십시오.
 <ce>
 <--->
-<ce>간악한 _monster_가 __qgiver_를 배신했습니다.
-<ce>비겁한 악당을 추적해 %g2⁠을 죽이는 일을 도와주시겠습니까?
-<ce>
+<ce>간악한 _monster_가 __qgiver_를
+<ce>배신했습니다. 비겁한 악당을 추적해
+<ce>%g2⁠을 죽이는 일을 도와주시겠습니까?
 <ce>
 
 RefuseQuest:  [1001]
 <ce>명예롭지 못한 대답이군요. 더 나은 답을 기대했습니다.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. 배신자는 =monster_라는 _monster_이며, %di
-<ce>방향의 ___mondun_에 숨어 있습니다. =queston_일 안에
-<ce>돌아오지 않으면 명예를 잃고 다른 이가 당신의 자리를 대신할 것입니다.
+<ce>좋습니다. 배신자는 =monster_라는 _monster_이며,
+<ce>%di 방향의 ___mondun_에 숨어 있습니다.
+<ce>=queston_일 안에 돌아오지 않으면 명예를
+<ce>잃고 다른 이가 당신의 자리를 대신할 것입니다.
 <ce>우리를 실망시키지 마십시오, %pcf.
-<ce>
 <ce>
 <ce>
 
 QuestFail:  [1003]
-<ce>_monster_는 죽지 않았습니다. 거짓말로 속이려 하지 마십시오.
-<ce>
+<ce>_monster_는 죽지 않았습니다.
+<ce>거짓말로 속이려 하지 마십시오.
 
 QuestComplete:  [1004]
 <ce>잘했습니다. 자랑스러워해도 좋습니다.

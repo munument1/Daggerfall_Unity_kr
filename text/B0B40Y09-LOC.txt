@@ -12,24 +12,24 @@ DisplayName: 거인 사냥
 QRC:
 
 QuestorOffer:  [1000]
-<ce>농장을 습격하고 가축을 잡아먹는 _monster_가 있다는 소식이 막
-<ce>들어왔습니다. 내 이름 말입니까? 실례했군요, %pcf.
-<ce>나는 _qgiver_입니다. _monster_를 죽이러 가시겠습니까?
-<ce>
+<ce>농장을 습격하고 가축을 잡아먹는 _monster_가 있다는
+<ce>소식이 막 들어왔습니다. 내 이름 말입니까?
+<ce>실례했군요, %pcf. 나는 _qgiver_입니다.
+<ce>_monster_를 죽이러 가시겠습니까?
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>고귀한 기사들은 다 어디로 갔습니까? %reg⁠에서 모두 사라지기라도
-<ce>했나요? 물러가십시오, %pcn.
-<ce>
+<ce>고귀한 기사들은 다 어디로 갔습니까?
+<ce>%reg⁠에서 모두 사라지기라도 했나요?
+<ce>물러가십시오, %pcn.
 
 AcceptQuest:  [1002]
-<ce>_monster_는 ___dungeon_을 소굴로 삼았습니다.
-<ce>그곳으로 가서 죽이십시오. 다른 _monster_들도 있을 수 있습니다.
-<ce>필요하면 죽이되, 팔에 곰 발톱 낙인이 찍힌 놈만큼은 반드시 처리하십시오.
-<ce>=2dung_일밖에 없습니다.
-<ce>
+<ce>_monster_는 ___dungeon_을 소굴로
+<ce>삼았습니다. 그곳으로 가서 죽이십시오.
+<ce>다른 _monster_들도 있을 수 있습니다.
+<ce>필요하면 죽이되, 팔에 곰 발톱 낙인이 찍힌 놈만큼은
+<ce>반드시 처리하십시오. =2dung_일밖에 없습니다.
 <ce>
 <ce>
 <ce>
@@ -64,9 +64,9 @@ QuestLogEntry:  [1010]
 관해 알려주었다. 주어진 시간은 =2dung_일뿐이다.
 
 Message:  1011
-<ce>_monster_의 위팔에 곰 발톱 모양 낙인이 선명합니다.
+<ce>_monster_의 위팔에 곰
+<ce>발톱 모양 낙인이 선명합니다.
 <ce>_qgiver_가 말한 바로 그놈이 틀림없습니다.
-<ce>
 <ce>
 
 -- Symbols used in the QRC file:

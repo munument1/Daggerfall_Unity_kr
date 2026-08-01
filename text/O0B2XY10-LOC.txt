@@ -11,9 +11,9 @@ DisplayName: 귀중한 물약
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pcn, 내 이름은 _qgiver_다. _potion_ 하나에
-<ce>대한 정보를 얻었어. 누군가 훔쳐다 줬으면 하지. _gold_골드를 주겠다.
-<ce>어때?
+<ce>%pcn, 내 이름은 _qgiver_다.
+<ce>_potion_ 하나에 대한 정보를 얻었어.
+<ce>누군가 훔쳐다 줬으면 하지. _gold_골드를 주겠다. 어때?
 <ce>
 <ce>
 <ce>
@@ -23,9 +23,9 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>__alchemyshop_의 _alchemyshop_에 _potion_이 있어.
-<ce>가져다가 =traveltime_일 안에 내게 주면 돈을 주지. 그리 어렵지는 않겠지?
-<ce>
+<ce>__alchemyshop_의 _alchemyshop_에
+<ce>_potion_이 있어. 가져다가 =traveltime_일 안에
+<ce>내게 주면 돈을 주지. 그리 어렵지는 않겠지?
 <ce>
 <ce>
 <ce>
@@ -53,9 +53,9 @@ QuestorPostsuccess:  [1008]
 물론 기억하지, %pcf. _potion_ 건이었잖아?
 
 QuestorPostfailure:  [1009]
-<ce>말하지 마. _alchemyshop_까지 가서 _potion_을 찾고는 실수로
-<ce>마셔버렸지? %oth, 도둑은 달라도 이야기는 늘 똑같군.
-<ce>
+<ce>말하지 마. _alchemyshop_까지 가서
+<ce>_potion_을 찾고는 실수로 마셔버렸지?
+<ce>%oth, 도둑은 달라도 이야기는 늘 똑같군.
 <ce>
 <ce>
 

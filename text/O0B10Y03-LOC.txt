@@ -11,23 +11,23 @@ DisplayName: 신전 방문
 QRC:
 
 QuestorOffer:  [1000]
-<ce>관심 있으면 길드 일 하나 맡지. 나는 _qgiver_다.
-<ce>어떤 자가 _temple_에서 _religiousitem_을 훔쳐달라는군.
-<ce>해보겠나?
+<ce>관심 있으면 길드 일 하나 맡지.
+<ce>나는 _qgiver_다. 어떤 자가 _temple_에서
+<ce>_religiousitem_을 훔쳐달라는군. 해보겠나?
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>더 재미있는 일이 생기면 %pcn, 자네를 기억해두지.
-<ce>
+<ce>더 재미있는 일이 생기면
+<ce>%pcn, 자네를 기억해두지.
 <ce>
 
 AcceptQuest:  [1002]
-<ce>좋아. 간단해. __temple_의 _temple_로 가서 _religiousitem_을
-<ce>훔쳐 내게 가져와. 평소 길드 보수인 _gold_골드를 주지.
+<ce>좋아. 간단해. __temple_의 _temple_로
+<ce>가서 _religiousitem_을 훔쳐 내게 가져와.
+<ce>평소 길드 보수인 _gold_골드를 주지.
 <ce>=traveltime_일 안에 내 손에 들어와야 해.
-<ce>
 <ce>
 <ce>
 <ce>
@@ -35,12 +35,12 @@ AcceptQuest:  [1002]
 <ce>
 
 QuestComplete:  [1004]
-<ce>참 이해하기 어려운 자도 있다니까. 이걸 훔쳐달라고 돈까지 냈다는 게 믿겨?
-<ce>직접 못 가져가게 막는 “흉측한 수호자”라도 있었던 것도 아니고. 뭐?
-<ce>있었다고? 그렇다면 그자도 아주 미친 건 아니었군. 여기 보수다, %pcf.
-<ce>같이 일해서 좋았어.
-<ce>
-<ce>
+<ce>참 이해하기 어려운 자도 있다니까.
+<ce>이걸 훔쳐달라고 돈까지 냈다는 게 믿겨?
+<ce>직접 못 가져가게 막는 “흉측한 수호자”라도
+<ce>있었던 것도 아니고. 뭐? 있었다고?
+<ce>그렇다면 그자도 아주 미친 건 아니었군.
+<ce>여기 보수다, %pcf. 같이 일해서 좋았어.
 <ce>
 <ce>
 <ce>
@@ -86,9 +86,9 @@ QuestorPostsuccess:  [1008]
 중이야.
 
 QuestorPostfailure:  [1009]
-<ce>그 신전을 오블리비언의 모든 군주가 지키고 있었다 해도 상관없어,
-<ce>%pcf. 도둑 길드 임무를 실패하는 데에는 어떤 변명도 통하지
-<ce>않는다.
+<ce>그 신전을 오블리비언의 모든 군주가 지키고 있었다
+<ce>해도 상관없어, %pcf. 도둑 길드 임무를
+<ce>실패하는 데에는 어떤 변명도 통하지 않는다.
 <ce>
 <ce>
 <ce>
