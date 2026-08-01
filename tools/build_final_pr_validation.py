@@ -3,7 +3,9 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
+import subprocess
 from collections import Counter
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -11,7 +13,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TEXT = ROOT / 'text'
 QUESTS = TEXT / 'Quests'
-OFFICIAL = Path('/mnt/data/dfu_official/daggerfall-unity-master/Assets/StreamingAssets/Quests')
+BASE_REF = os.environ.get(
+    'VALIDATION_BASE_REF',
+    '67d23e409a4eaa298405be4a023b636ee7325cb9',
+)
+OFFICIAL = Path(os.environ.get(
+    'DFU_OFFICIAL_QUESTS',
+    '/mnt/data/dfu_official/daggerfall-unity-master/Assets/StreamingAssets/Quests',
+))
 TOKEN_RE = re.compile(r'(?:==?[A-Za-z0-9.]+_|_{1,4}[A-Za-z0-9.]+_|%[A-Za-z0-9]+(?:-self)?)')
 HEADER_RE = re.compile(r'^(?:[A-Za-z][A-Za-z0-9_ ]*:\s*\[\d+\]|Message:\s*\d+)$')
 TIME_RE = re.compile(r'^\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}$')
@@ -146,10 +155,99 @@ def validate_json() -> dict:
     return {'files': 1, 'errors': errors}
 
 
+def validate_books() -> dict:
+    files = sorted((TEXT / 'Books').glob('BOK*-LOC.txt'))
+    errors: list[str] = []
+    font_2_files = 0
+    font_4_files = 0
+    for path in files:
+        text = path.read_text(encoding='utf-8-sig')
+        for field in ('Title:', 'Author:', 'IsNaughty:', 'Price:', 'IsUnique:', 'WhenVarSet:', 'Content:'):
+            if not re.search(rf'(?m)^{re.escape(field)}', text):
+                errors.append(f'{path.name}: missing {field}')
+        tags = re.findall(r'\[/font=(\d+)\]', text)
+        if '2' in tags:
+            font_2_files += 1
+        if '4' in tags:
+            font_4_files += 1
+        unexpected = sorted(set(tags) - {'2', '4'})
+        if unexpected:
+            errors.append(f'{path.name}: unexpected font tags {unexpected}')
+    if font_2_files != len(files):
+        errors.append(f'books using [/font=2]: {font_2_files} != {len(files)}')
+    if font_4_files != len(files):
+        errors.append(f'books using [/font=4]: {font_4_files} != {len(files)}')
+    return {
+        'files': len(files),
+        'font_2_files': font_2_files,
+        'font_4_files': font_4_files,
+        'errors': errors,
+    }
+
+
+def validate_fonts() -> dict:
+    errors: list[str] = []
+    expected = {
+        'FONT0000-SDF.ttf': ('Bookk Myungjo', 'Bold'),
+        'FONT0001-SDF.ttf': ('Bookk Myungjo', 'Bold'),
+        'FONT0003-SDF.ttf': ('Bookk Myungjo', 'Light'),
+    }
+    try:
+        from fontTools.ttLib import TTFont
+    except ImportError:
+        return {'files': len(expected), 'errors': ['fontTools is required for font validation']}
+
+    used_codepoints: set[int] = set()
+    # Bookk Myungjo is assigned only to quest journal and book slots. Validate
+    # characters rendered in those views, not control bytes or unrelated UI data.
+    for directory in (QUESTS, TEXT / 'Books'):
+        for path in directory.rglob('*'):
+            if path.is_file() and path.suffix.lower() == '.txt':
+                try:
+                    used_codepoints.update(
+                        ord(char)
+                        for char in path.read_text(encoding='utf-8-sig')
+                        if char.isprintable() and not char.isspace()
+                    )
+                except UnicodeDecodeError:
+                    continue
+
+    hashes: dict[str, str] = {}
+    for filename, (family, style) in expected.items():
+        path = ROOT / 'fonts' / filename
+        hashes[filename] = sha256(path)
+        try:
+            font = TTFont(path)
+            names: dict[int, set[str]] = {}
+            for record in font['name'].names:
+                if record.nameID in (1, 2, 4):
+                    try:
+                        names.setdefault(record.nameID, set()).add(record.toUnicode())
+                    except UnicodeDecodeError:
+                        continue
+            cmap: set[int] = set()
+            for table in font['cmap'].tables:
+                cmap.update(table.cmap)
+            if not any(family in value for value in names.get(1, set()) | names.get(4, set())):
+                errors.append(f'{filename}: family is not {family}')
+            if not any(style in value for value in names.get(2, set()) | names.get(4, set())):
+                errors.append(f'{filename}: style is not {style}')
+            missing = sorted(used_codepoints - cmap)
+            if missing:
+                sample = ', '.join(f'U+{codepoint:04X}' for codepoint in missing[:12])
+                errors.append(f'{filename}: missing {len(missing)} used glyphs ({sample})')
+        except Exception as exc:
+            errors.append(f'{filename}: {exc}')
+    if hashes['FONT0000-SDF.ttf'] != hashes['FONT0001-SDF.ttf']:
+        errors.append('FONT0000 and FONT0001 must use the same Bookk Myungjo Bold bytes')
+    if hashes['FONT0000-SDF.ttf'] == hashes['FONT0003-SDF.ttf']:
+        errors.append('Bookk Myungjo Bold and Light bytes must differ')
+    return {'files': len(expected), 'hashes': hashes, 'errors': errors}
+
+
 def changed_files() -> list[str]:
-    import subprocess
     proc = subprocess.run(
-        ['git', 'diff', '--name-only', 'HEAD'], cwd=ROOT,
+        ['git', 'diff', '--name-only', BASE_REF, '--'], cwd=ROOT,
         check=True, text=True, capture_output=True,
     )
     return [line for line in proc.stdout.splitlines() if line]
@@ -160,11 +258,20 @@ def main() -> None:
     srt = validate_srt()
     biog = validate_biogs()
     namegen = validate_json()
+    books = validate_books()
+    fonts = validate_fonts()
     changed = changed_files()
 
     # Files changed by Korean-aware line reflow (root + Quests mirrors).
-    reflow_files = [p for p in changed if p.startswith('text/') and p.endswith('-LOC.txt')]
-    all_errors = quest['errors'] + srt['errors'] + biog['errors'] + namegen['errors']
+    reflow_files = [
+        p for p in changed
+        if p.endswith('-LOC.txt')
+        and (p.startswith('text/Quests/') or (p.startswith('text/') and p.count('/') == 1))
+    ]
+    all_errors = (
+        quest['errors'] + srt['errors'] + biog['errors'] + namegen['errors']
+        + books['errors'] + fonts['errors']
+    )
     now = datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='seconds')
     report = {
         'project': 'Daggerfall Unity Korean complete retranslation',
@@ -185,6 +292,8 @@ def main() -> None:
             'subtitle_files': srt['files'],
             'subtitle_cues': srt['cues'],
             'biography_files': biog['files'],
+            'book_files': books['files'],
+            'bookk_myungjo_font_files': fonts['files'],
             'blocking_errors': len(all_errors),
         },
         'checks': {
@@ -198,6 +307,11 @@ def main() -> None:
             'subtitle_sequence_timing_korean_presence': 'passed' if not srt['errors'] else 'failed',
             'biog_parser_terminators_and_question_counts': 'passed' if not biog['errors'] else 'failed',
             'name_generator_json': 'passed' if not namegen['errors'] else 'failed',
+            'book_metadata_and_font_tags': 'passed' if not books['errors'] else 'failed',
+            'bookk_myungjo_fonts_and_used_glyphs': {
+                'status': 'passed' if not fonts['errors'] else 'failed',
+                'hashes': fonts.get('hashes', {}),
+            },
         },
         'errors': all_errors,
     }
