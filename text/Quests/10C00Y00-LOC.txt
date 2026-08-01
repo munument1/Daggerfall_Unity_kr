@@ -11,90 +11,90 @@ DisplayName: 메리디아의 퀘스트
 QRC:
 
 QuestorOffer:  [1000]
-<ce>오, 그래요, 사랑하는 이여. 당신의 야망을
-<ce>도와줄 수 있을 것 같군요. 내가 상당히 값진 물건을
-<ce>준다면, 먼저 나를 위해 한 가지 일을 해주겠어요?
+<ce>오, 그래요, 사랑하는 이여.
+<ce>당신의 야망을 도와줄 수 있을 것 같군요.
+<ce>내가 상당히 값진 물건을 준다면, 먼저 나를 위해 한 가지 일을 해주겠어요?
 
 RefuseQuest:  [1001]
-<ce>오, 안됐군요. 친절하게 경고해 두죠. 받기만
-<ce>하고 베풀 줄 모르는 탐욕스러운 %ra 모험가에게는
-<ce>흔히 좋지 않은 일이 생긴답니다.
+<ce>오, 안됐군요. 친절하게 경고해 두죠.
+<ce>받기만 하고 베풀 줄 모르는 탐욕스러운 %ra 모험가에게는 흔히 좋지 않은
+<ce>일이 생긴답니다.
 
 AcceptQuest:  [1002]
-<ce>해주겠다고요? 오, 정말 다정하군요. 내가 아는
-<ce>어떤 _monster_, =monster_보다 훨씬 다정해요.
+<ce>해주겠다고요? 오, 정말 다정하군요.
+<ce>내가 아는 어떤 _monster_, =monster_보다 훨씬 다정해요.
 <ce>그자는 나와 약속을 맺고도 나중에 마음을 바꿔 저버렸죠.
-<ce>___mondung_에 있는 =monster_에게 친히 찾아가, 그런 무례한
-<ce>배신에는 죽음이 따른다는 사실을 %g2에게 알려주세요.
-<ce>그런 다음 나의 소중한 친구 _qgfriend_을 만나러
-<ce>가세요. 그 친구는 ___qgfriend_의 __qgfriend_에서
-<ce>=1stparton_일 동안 당신을 기다리며, 도착하면
-<ce>내 _artifact_을 건넬 거예요. 지금 당신에게 꼭 필요한
-<ce>물건이죠. 자, 어서 출발하세요. 조심하고요.
+<ce>___mondung_에 있는 =monster_에게 친히 찾아가, 그런 무례한 배신에는
+<ce>죽음이 따른다는 사실을 %g2⁠에게 알려주세요.
+<ce>그런 다음 나의 소중한 친구 _qgfriend_을 만나러 가세요.
+<ce>그 친구는 ___qgfriend_의 __qgfriend_에서 =1stparton_일 동안 당신을
+<ce>기다리며, 도착하면 내 _artifact_을 건넬 거예요.
+<ce>지금 당신에게 꼭 필요한 물건이죠.
+<ce>자, 어서 출발하세요. 조심하고요.
 
 QuestFail:  [1003]
-<ce>메리디아의 친절에 보답한답시고,
-<ce>우리 둘 다 =monster_의 생존을 아는데도
-<ce>처치했다고 거짓말하려는 건 아니겠죠?
+<ce>메리디아의 친절에 보답한답시고, 우리 둘 다
+<ce>=monster_의 생존을 아는데도 처치했다고 거짓말하려는 건
+<ce>아니겠죠?
 <ce>제발 그러지 않기를 바라요.
 
 QuestComplete:  [1004]
 <ce>%pcn? 내가 _qgfriend_입니다. 나를 찾고 있었군요.
 <ce>여기 메리디아가 약속한 _artifact_이 있습니다.
-<ce>당신이 계약에서 맡은 몫을 이행해 메리디아께서
-<ce>감명받으셨다는 말도 전해드리죠.
+<ce>당신이 계약에서 맡은 몫을 이행해 메리디아께서 감명받으셨다는 말도
+<ce>전해드리죠.
 
 RumorsDuringQuest:  [1005]
-___mondung_에 있는 그 소서러는 기묘한
-유물을 모으기로 악명 높습니다.
+___mondung_에 있는 그 소서러는 기묘한 유물을 모으기로 악명
+높습니다.
 <--->
-=monster_은 수집품을 늘리려고 정령들과 계약해
-%g3 수집품을 늘린다는군요.
+=monster_은 수집품을 늘리려고 정령들과 계약해 %g3 수집품을
+늘린다는군요.
 
 RumorsPostfailure:  [1006]
 그 수집광 소서러가 마침내 ___mondung_에서 떠났습니다.
 아마 물건을 더 모으러 갔겠죠.
 <--->
-그 =qgfriend_ _qgfriend_은 부정직한 %ra을
+그 =qgfriend_ _qgfriend_은 부정직한 %ra⁠을
 욕하며 __qgfriend_에서 떠났습니다.
 
 RumorsPostsuccess:  [1007]
-=monster_의 수집품 가운데 어떤 생물이
-깨어나 %g2을 죽였다고 합니다.
+=monster_의 수집품 가운데 어떤 생물이 깨어나 %g2⁠를 죽였다고 합니다.
 <--->
-=monster_은 %g3의 방대한 수집품을 노린
-누군가에게 살해된 모양입니다.
+=monster_은 %g3 방대한 수집품을 노린 누군가에게 살해된 모양입니다.
 
 Message:  1011
 _qgfriend_은 여기서 %di 방향에
 있는 __qgfriend_의 =qgfriend_입니다.
 <--->
-_qgfriend_은 내가 __qgfriend_에서 만난 말없는
-=qgfriend_입니다. 그곳은 %di 방향에 있습니다.
+_qgfriend_은 내가 __qgfriend_에서 만난
+말없는 =qgfriend_입니다.
+그곳은 %di 방향에 있습니다.
 
 Message:  1012
-_qgfriend_은 %reg에서 활동하는 메리디아의 수집가 중
-한 명입니다. %g답게 매력적인 인물이죠.
+_qgfriend_은 %reg⁠에서 활동하는 메리디아의 수집가 중
+한 명입니다.
+%g⁠답게 매력적인 인물이죠.
 <--->
-_qgfriend_은 탐욕의 데이드라 귀부인
-메리디아를 섬기는 하수인입니다.
+_qgfriend_은 탐욕의 데이드라 귀부인 메리디아를 섬기는 하수인입니다.
 
 Message:  1013
 메리디아는 데이드라 섭정이며 인간 표본을 수집합니다.
 <--->
-메리디아는 일종의 데이드릭 프린스 대행자이며, 원하는
-것을 손에 넣는 데 조금도 자비가 없습니다.
+메리디아는 일종의 데이드릭 프린스 대행자이며, 원하는 것을 손에 넣는 데
+조금도 자비가 없습니다.
 
 Message:  1014
-<ce>이 반지는 고대의 강력한 유물입니다. 착용자를 바람처럼
-<ce>보이지 않게 하고, 소리 없고 빠르게 만든다고 전해집니다.
+<ce>이 반지는 고대의 강력한 유물입니다.
+<ce>착용자를 바람처럼 보이지 않게 하고, 소리 없고 빠르게 만든다고 전해집니다.
 
 Message:  1020
 %qdt: =1stparton_일 안에 ___mondung_에 있는 _monster_
-=monster_을 찾아 처치해야 한다. 그 뒤 ___qgfriend_의
-___qgfriend_에서 =qgfriend_ _qgfriend_을 만나 메리디아가
-약속한 유물 _artifact_을 받아야 한다. 표적의 이름은
-=monster_이고 연락책의 이름은 _qgfriend_이다.
+=monster_을 찾아 처치해야 한다.
+그 뒤 ___qgfriend_의 ___qgfriend_에서 =qgfriend_
+_qgfriend_을 만나 메리디아가 약속한 유물 _artifact_을 받아야
+한다.
+표적의 이름은 =monster_이고 연락책의 이름은 _qgfriend_이다.
 
 Message:  1030
 <ce>=monster_은 당신의 발치에 쓰러져 죽었다.
@@ -103,8 +103,8 @@ Message:  1030
 Message:  1040
 <ce>그래, 메리디아가 내게 졸개를 보냈군.
 <ce>하지만 나도 동맹이 없는 것은 아니다.
-<ce>오라, 오블리비언의 자식들이여! %g3의 위기에서
-<ce>너희 주인 =monster_을 섬겨라!
+<ce>오라, 오블리비언의 자식들이여!
+<ce>%g3 위기에서 너희 주인 =monster_을 섬겨라!
 
 -- Symbols used in the QRC file:
 --
@@ -124,7 +124,6 @@ Message:  1040
 --        _artifact_ occurs 3 times.
 --         _monster_ occurs 2 times.
 --        _qgfriend_ occurs 9 times.
-
 QBN:
 Item _artifact_ artifact Ring_of_Khajiit anyInfo 1014
 

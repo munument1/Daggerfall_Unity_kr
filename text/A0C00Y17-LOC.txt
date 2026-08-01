@@ -11,107 +11,112 @@ DisplayName: 호위
 QRC:
 
 QuestorOffer:  [1000]
-<ce>저는 _questgiver_입니다. 호위가
-<ce>필요합니다. __destination_까지
-<ce>가는 동안 저를 지켜주시겠습니까? 여기서
-<ce>=traveltime_일도 걸리지 않습니다.
-<ce><---> 제 이름은
-<ce>_questgiver_입니다. 당장
-<ce>___questgiver_에서 벗어나야 합니다.
-<ce>__destination_까지 가는 길을 호위해
-<ce>주신다면 _gold_ 골드를 드리겠습니다.
-<ce><---> 제발 도와주세요! 저는
-<ce>_questgiver_입니다. =traveltime_일 안에
-<ce>__destination_에 도착해야 하는데, 혼자서는 위험합니다.
+<ce>저는 _questgiver_입니다.
+<ce>호위가 필요합니다.
+<ce>__destination_까지 가는 동안 저를 지켜주시겠습니까?
+<ce>여기서 =traveltime_일도 걸리지 않습니다.
+<--->
+<ce>제 이름은 _questgiver_입니다.
+<ce>당장 ___questgiver_에서 벗어나야 합니다.
+<ce>__destination_까지 가는 길을 호위해 주신다면 _gold_
+<ce>골드를 드리겠습니다.
+<--->
+<ce>제발 도와주세요!
+<ce>저는 _questgiver_입니다.
+<ce>=traveltime_일 안에 __destination_에 도착해야 하는데, 혼자서는
+<ce>위험합니다.
 
 RefuseQuest:  [1001]
-<ce>그럼 제 여정을 지켜줄 다른
-<ce>사람을 찾아봐야겠군요.
-<ce><---> 매정한 사람 같으니!
+<ce>그럼 제 여정을 지켜줄 다른 사람을 찾아봐야겠군요.
+<ce>
+<--->
+<ce>매정한 사람 같으니!
 
 AcceptQuest:  [1002]
-<ce>고맙습니다, %pcn. 짐이 가벼워 바로 출발할 수 있습니다.
+<ce>고맙습니다, %pcn.
+<ce>짐이 가벼워 바로 출발할 수 있습니다.
 <ce>공짜로 일하지 않으신다는 것도 압니다.
-<ce>__destination_의 _destination_까지
-<ce>무사히 데려다주시면 도착하는 대로
-<ce>_gold_ 골드를 드리겠습니다.
+<ce>__destination_의 _destination_까지 무사히 데려다주시면
+<ce>도착하는 대로 _gold_ 골드를 드리겠습니다.
 <ce>
 
 QuestComplete:  [1004]
-<ce>아, 드디어 _destination_이군요! 약속을 지켜주셨습니다.
+<ce>아, 드디어 _destination_이군요!
+<ce>약속을 지켜주셨습니다.
 <ce>여기 말씀드린 보수입니다.
-<ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
-<ce>경비대가 _questgiver_을 찾고
-<ce>있다더군요. %G 는 마을에서 달아날
-<ce>수밖에 없었답니다. <---> 모르셨나요?
-<ce>도둑 길드가 _questgiver_을 쫓고
-<ce>있어요. 아니, 다크 브라더후드였던가?
-<ce>헷갈리는군요. <--->
-<ce>_questgiver_이 억지로 혼인하게 됐다는
-<ce>소문을 들었습니다. %G 는 임신한 티가 나기 전에
-<ce>__destination_에 도착해야 한다더군요.
+<ce>경비대가 _questgiver_을 찾고 있다더군요.
+<ce>%G⁠는 마을에서 달아날 수밖에 없었답니다.
+<ce>
+<--->
+<ce>모르셨나요?
+<ce>도둑 길드가 _questgiver_을 쫓고 있어요.
+<ce>아니, 다크 브라더후드였던가? 헷갈리는군요.
+<--->
+<ce>_questgiver_이 억지로 혼인하게 됐다는 소문을 들었습니다.
+<ce>%G⁠는 임신한 티가 나기 전에 __destination_에
+<ce>도착해야 한다더군요.
 
 RumorsPostfailure:  [1006]
-<ce>결국 _questgiver_을 붙잡았답니다. %G 는 다음
-<ce>주에 재판을 받게 될 겁니다.
+<ce>결국 _questgiver_을 붙잡았답니다.
+<ce>%G⁠는 다음 주에 재판을 받게 될 겁니다.
 
 RumorsPostsuccess:  [1007]
-<ce>들으셨나요? 어떤 %ra 덕분에 _questgiver_이
-<ce>간발의 차로 마을을 빠져나갔다더군요. 아니었으면
-<ce>분명 %g2 의 목이 날아갔을 겁니다.
-<ce>
+<ce>들으셨나요?
+<ce>어떤 %ra 덕분에 _questgiver_이 간발의 차로 마을을
+<ce>빠져나갔다더군요.
+<ce>아니었으면 분명 %g2⁠의 목이 날아갔을 겁니다.
 
 QuestorPostsuccess:  [1008]
-<ce>그 마을에서 빠져나오게 해주셔서
-<ce>감사합니다, %pcf. 제 친구 몇 사람에게
-<ce>당신을 추천해 두었습니다.
+<ce>그 마을에서 빠져나오게 해주셔서 감사합니다, %pcf.
+<ce>제 친구 몇 사람에게 당신을 추천해 두었습니다.
+<ce>
 
 QuestorPostfailure:  [1009]
-<ce>당신! 마을을 빠져나가도록 돕지
-<ce>않은 탓에 도둑 길드가 제 가게를
-<ce>빼앗아 갔습니다! 저리 가세요.
+<ce>당신!
+<ce>마을을 빠져나가도록 돕지 않은 탓에 도둑 길드가 제 가게를 빼앗아 갔습니다!
+<ce>저리 가세요.
 
 QuestLogEntry:  [1010]
 %qdt: ___questgiver_에서 _questgiver_을 만났다.
-%G는 __destination_의 _destination_까지 %g2를 호위하면
-보수를 주겠다고 했다. 특히 %g는 =traveltime_일 안에
-_destination_에 도착해야 한다.
+%G⁠는 __destination_의 _destination_까지 %g2⁠를 호위하면 보수를
+주겠다고 했다.
+특히 %g⁠는 =traveltime_일 안에 _destination_에 도착해야 한다.
 
 Message:  1019
-<ce>_questgiver_이 외친다. "하! 이런 일을
-<ce>대비해 이 %ra 을 고용했지. %pcn, 설마
-<ce>나를 넘길 생각은 아니겠지?"
-<ce>
+<ce>_questgiver_이 외친다.
+<ce>"하!
+<ce>이런 일을 대비해 이 %ra 을 고용했지.
+<ce>%pcn, 설마 나를 넘길 생각은 아니겠지?"
 
 Message:  1020
-<ce>멈춰라! %reg 의 이름으로 _questgiver_에 대한 체포
-<ce>영장이 발부됐다. 우리가 원하는 건
-<ce>당신이 아니라 %g2 뿐이다. %g2 를 넘기면
-<ce>당신은 자유롭게 가도 좋다.
-<ce>
+<ce>멈춰라!
+<ce>%reg 의 이름으로 _questgiver_에 대한 체포 영장이
+<ce>발부됐다.
+<ce>우리가 원하는 건 당신이 아니라 %g2⁠뿐이다.
+<ce>%g2⁠를 넘기면 당신은 자유롭게 가도 좋다.
 
 Message:  1021
-<ce>싸울 필요는 없습니다. 우리의 원한은
-<ce>_questgiver_에게 있습니다. 마법사 길드는 배신을
-<ce>가볍게 넘기지 않습니다. %g2 를 넘기면 당신은
-<ce>가던 길을 계속 가도 됩니다.
+<ce>싸울 필요는 없습니다.
+<ce>우리의 원한은 _questgiver_에게 있습니다.
+<ce>마법사 길드는 배신을 가볍게 넘기지 않습니다.
+<ce>%g2⁠를 넘기면 당신은 가던 길을 계속 가도 됩니다.
 <ce>
 
 Message:  1022
-<ce>비켜라, %ra. 우리가 원하는 건 _questgiver_이다.
-<ce>당신이 막을 수 있는 일이 아니니 %g2 를 넘겨라.
-<ce>이봐, _questgiver_. 도둑 길드를 속이고도
-<ce>살아남을 수 있으리라 생각했나?
-<ce>
+<ce>비켜라, %ra.
+<ce>우리가 원하는 건 _questgiver_이다.
+<ce>당신이 막을 수 있는 일이 아니니 %g2⁠를 넘겨라.
+<ce>이봐, _questgiver_.
+<ce>도둑 길드를 속이고도 살아남을 수 있으리라 생각했나?
 <ce>
 
 Message:  1023
-<ce>비켜라, %ra. 다크 브라더후드가 _questgiver_을
-<ce>찾고 있다. 설마 %g2 를 지키겠다고
-<ce>나설 만큼 어리석진 않겠지?
+<ce>비켜라, %ra.
+<ce>다크 브라더후드가 _questgiver_을 찾고 있다.
+<ce>설마 %g2⁠를 지키겠다고 나설 만큼 어리석진 않겠지?
 <ce>
 <ce>
 
@@ -123,9 +128,9 @@ Message:  1040
 <ce>좋을 대로 해라. 둘 다 죽여!
 
 Message:  1050
-<ce>길을 잃기라도 했나요, %pcn? __destination_까지는
-<ce>제가 알아서 가야겠군요. 아무 도움도 안 된 쓸모없는
-<ce>인간에게 감사할 일은 없겠죠.
+<ce>길을 잃기라도 했나요, %pcn?
+<ce>__destination_까지는 제가 알아서 가야겠군요.
+<ce>아무 도움도 안 된 쓸모없는 인간에게 감사할 일은 없겠죠.
 <ce>
 <ce>
 
@@ -143,7 +148,6 @@ Message:  1050
 --    __destination_ occurs 20 times.
 --            _gold_ occurs 6 times.
 --      _questgiver_ occurs 16 times.
-
 QBN:
 Item _gold_ gold
 

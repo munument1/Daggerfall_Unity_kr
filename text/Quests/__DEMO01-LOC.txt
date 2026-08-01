@@ -5,7 +5,6 @@ Quest: __DEMO01
 QRC:
 
 - No text resources
-
 QBN:
 
 - Headless entry point with custom action

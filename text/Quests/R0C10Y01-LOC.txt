@@ -11,33 +11,33 @@ DisplayName: 밀수품 거래
 QRC:
 
 QuestorOffer:  [1000]
-<ce>일거리를 찾는다면 특별한 _item_을
-<ce>내 지인에게 전해줄 사람이 필요하네.
-<ce>보수는 후하게 주지. 관심 있나?
-<ce>
+<ce>일거리를 찾는다면 특별한 _item_을 내 지인에게
+<ce>전해줄 사람이 필요하네.
+<ce>보수는 후하게 주지.
+<ce>관심 있나?
 
 RefuseQuest:  [1001]
 <ce>정말인가? 너무 바쁜 모양이군. 아쉽네.
 
 AcceptQuest:  [1002]
-<ce>좋네. 여기 _item_이 있네. ___contact_에
-<ce>있는 _contact_에게 =queston_일 안에 전달하게.
-<ce>충분한 시간일 걸세. __contact_으로
-<ce>가 _contact_라는 =contact_를 찾으면
-<ce>알아볼 수 있을 거야. 행운을 비네.
-<ce>
-<ce>
-<ce>
+<ce>좋네.
+<ce>여기 _item_이 있네.
+<ce>___contact_에 있는 _contact_에게 =queston_일
+<ce>안에 전달하게.
+<ce>충분한 시간일 걸세.
+<ce>__contact_으로 가 _contact_라는 =contact_를
+<ce>찾으면 알아볼 수 있을 거야.
+<ce>행운을 비네.
 
 QuestFail:  [1003]
-<ce>%pcf, 우리 사이의 작은 약속을 서둘러
-<ce>처리하는 편이 좋을 걸세.
+<ce>%pcf, 우리 사이의 작은 약속을 서둘러 처리하는 편이 좋을
+<ce>걸세.
 
 QuestComplete:  [1004]
-<ce>아, %pcf. _item_도 가져왔군. 훌륭해.
-<ce>수고에 대한 작은 장신구를 주지. 붉은색을
-<ce>좋아하길 바라네. 몸조심하게.
-<ce>
+<ce>아, %pcf.
+<ce>_item_도 가져왔군. 훌륭해.
+<ce>수고에 대한 작은 장신구를 주지.
+<ce>붉은색을 좋아하길 바라네. 몸조심하게.
 
 RumorsDuringQuest:  [1005]
 _questgiver_가 아직 밀수에 손을 댄다는군.
@@ -55,29 +55,31 @@ RumorsPostsuccess:  [1007]
 보석상 한 곳에서 큰 루비를 도둑맞았대.
 
 QuestorPostsuccess:  [1008]
-아, %pcf. 그 루비를 잘 간직하고 있기를 바라네.
+아, %pcf.
+그 루비를 잘 간직하고 있기를 바라네.
 <--->
 다시 만났군, 젊은 친구.
 
 QuestorPostfailure:  [1009]
-<ce>망쳐버린 밀수 건을 사과하러 온
-<ce>모양이군. 받아줄 수 없네.
+<ce>망쳐버린 밀수 건을 사과하러 온 모양이군. 받아줄 수 없네.
+<ce>
 <ce>
 <--->
-<ce>간단한 배달도 못 한 %ra가 자네였나?
+<ce>간단한 배달도 못 한 %ra⁠가 자네였나?
 <ce>내가 왜 시간을 낭비해야 하지?
 <ce>
 <ce>
 
 QuestLogEntry:  [1010]
-%qdt: _questgiver_는 특별한 _item_을 ___contact_의
-_contact_에게 전달하라고 했다. =queston_일 안에 __contact_에
-있는 %g2에게 _item_을 전하지 못하면 보상을 받지 못한다.
+%qdt: _questgiver_는 특별한 _item_을
+___contact_의 _contact_에게 전달하라고 했다.
+=queston_일 안에 __contact_에 있는 %g2⁠에게 _item_을
+전하지 못하면 보상을 받지 못한다.
 
 Message:  1020
-<ce>보석을 내놔. 네가 가진 것을 길드가 알고 있어.
+<ce>보석을 내놔.
+<ce>네가 가진 것을 길드가 알고 있어.
 <ce>거절하면 천천히 죽여주지.
-<ce>
 <ce>
 
 Message:  1021
@@ -95,7 +97,6 @@ Message:  1021
 --       ___contact_ occurs 7 times.
 --            _item_ occurs 7 times.
 --      _questgiver_ occurs 3 times.
-
 QBN:
 Item _reward_ ruby
 Item _item_ ruby

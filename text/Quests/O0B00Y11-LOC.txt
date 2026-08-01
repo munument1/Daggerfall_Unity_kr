@@ -12,20 +12,20 @@ DisplayName: 골동품 상아
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pcf, 간단한 놀이야. 집 안에 가져와야
-<ce>할 물건이 하나 있다. 해보겠나?
-<ce>
+<ce>%pcf, 간단한 놀이야.
+<ce>집 안에 가져와야 할 물건이 하나 있다.
+<ce>해보겠나?
 
 RefuseQuest:  [1001]
 <ce>그런 태도라면 도둑 길드에서 크게 성공하겠군. 틀림없어.
 <ce>
 
 AcceptQuest:  [1002]
-<ce>좋아, 그 기세야. 말했듯 복잡할 것은 없어.
+<ce>좋아, 그 기세야.
+<ce>말했듯 복잡할 것은 없어.
 <ce>의뢰인이 지금 __target_의 _target_에 있는 골동품
-<ce>상아 조각을 원한다. 이틀 안에 가져오면
-<ce>사례금으로 _reward_골드를 주지.
-<ce>
+<ce>상아 조각을 원한다.
+<ce>이틀 안에 가져오면 사례금으로 _reward_골드를 주지.
 <ce>
 <ce>
 <ce>
@@ -35,10 +35,10 @@ QuestFail:  [1003]
 <ce>_heist_은? 어디 있지?
 
 QuestComplete:  [1004]
-<ce>훌륭한 솜씨야, %pcf. 소란도 뒤처리도 없이 내가
-<ce>좋아하는 방식 그대로군. 여기 _reward_골드다.
+<ce>훌륭한 솜씨야, %pcf.
+<ce>소란도 뒤처리도 없이 내가 좋아하는 방식 그대로군.
+<ce>여기 _reward_골드다.
 <ce>일을 잘 마친 것을 축하하지.
-<ce>
 
 RumorsDuringQuest:  [1005]
 무슨 이유인지 _dummy_가 _target_에 경비를 잔뜩 고용했어.
@@ -61,43 +61,45 @@ Message:  1011
 
 Message:  1020
 %qdt: 이틀 안에 __target_의 _target_에서 골동품 상아
-조각을 훔쳐야 한다. __questgiver_의 _questgiver_에게
-전달하면 _reward_골드를 받는다.
+조각을 훔쳐야 한다.
+__questgiver_의 _questgiver_에게 전달하면 _reward_골드를
+받는다.
 
 Message:  1021
-%qdt: 절도가 순조롭게 끝나지 않았다. _questgiver_는
-상아를 가지고 마을을 떠나라고 했다. __safehouse_의
-_safehouse_에서 만날 _contact_에게 전달해야 한다.
+%qdt: 절도가 순조롭게 끝나지 않았다.
+_questgiver_는 상아를 가지고 마을을 떠나라고 했다.
+__safehouse_의 _safehouse_에서 만날 _contact_에게
+전달해야 한다.
 
 Message:  1040
-<ce>이것이 _questgiver_가 훔치라고
-<ce>보낸 상아 조각인 듯합니다.
+<ce>이것이 _questgiver_가 훔치라고 보낸 상아 조각인 듯합니다.
+<ce>
 
 Message:  1050
-<ce>%pcf, 여기서 뭐 하는 거야? 이렇게 간단한
-<ce>일을 어떻게 망쳤는지 모르겠지만, 너와
-<ce>그 망할 상아가 당장 마을을 빠져나가지 않으면
-<ce>우리 모두 감옥에 가거나 더 나쁜 꼴을 당해.
-<ce>네 목숨은 알 바 아니지만 도둑 길드는 지켜야
-<ce>할 명성이 있고, 의뢰인에게 그 물건을 약속했어.
-<ce>__safehouse_로 가. 그곳 _safehouse_에서 _contact_가
-<ce>기다릴 거다. 다시는 망치지 마.
-<ce>
+<ce>%pcf, 여기서 뭐 하는 거야?
+<ce>이렇게 간단한 일을 어떻게 망쳤는지 모르겠지만,
+<ce>너와 그 망할 상아가 당장 마을을 빠져나가지 않으면 우리
+<ce>모두 감옥에 가거나 더 나쁜 꼴을 당해.
+<ce>네 목숨은 알 바 아니지만 도둑 길드는 지켜야 할 명성이 있고,
+<ce>의뢰인에게 그 물건을 약속했어.
+<ce>__safehouse_로 가.
+<ce>그곳 _safehouse_에서 _contact_가 기다릴 거다.
+<ce>다시는 망치지 마.
 <ce>
 <ce>
 <ce>
 
 Message:  1051
 <ce>이게 누구야, 서투른 털이범 %pcn 아닌가?
-<ce>그래도 물건은 가지고 왔군. 머리는 없어도
-<ce>힘은 있다는 뜻이겠지. 설마 아직 돈을
-<ce>받을 수 있다고 생각한 것은 아니겠지?
+<ce>그래도 물건은 가지고 왔군.
+<ce>머리는 없어도 힘은 있다는 뜻이겠지.
+<ce>설마 아직 돈을 받을 수 있다고 생각한 것은 아니겠지?
 <ce>
 <ce>
 
 Message:  1052
-<ce>보기보다 영리하군. 우리가 너를 __target_
-<ce>경비대에 넘기기 전에 꺼져라.
+<ce>보기보다 영리하군.
+<ce>우리가 너를 __target_경비대에 넘기기 전에 꺼져라.
 <ce>
 
 Message:  1053
@@ -113,15 +115,15 @@ Message:  1061
 <ce>이 %ra 쓰레기가 =guard_를 죽였다!
 
 Message:  1062
-<ce>움직이지 마라. 그 자리에서 베어버리겠다!
+<ce>움직이지 마라.
+<ce>그 자리에서 베어버리겠다!
 <ce>_target_에서 훔친 상아를 내놓으면 보내주지.
-<ce>
 <ce>
 
 Message:  1063
 <ce>너 같은 살인자 쓰레기를 처리하는 방법은 잘 알지.
-<ce>=posse_, 이 %ra의 목을 그을 때 _dummy_의
-<ce>상아에 피가 묻지 않게 조심해라.
+<ce>=posse_, 이 %ra⁠의 목을 그을 때
+<ce>_dummy_의 상아에 피가 묻지 않게 조심해라.
 <ce>
 <ce>
 
@@ -144,7 +146,6 @@ Message:  1063
 --          _reward_ occurs 6 times.
 --       _safehouse_ occurs 2 times.
 --          _target_ occurs 7 times.
-
 QBN:
 Item _heist_ ivory
 Item _reward_ gold

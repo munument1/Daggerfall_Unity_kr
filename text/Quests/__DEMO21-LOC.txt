@@ -10,7 +10,6 @@ QuestLogEntry:  [1010]
 
 Message: 1030
 쥐들이 모두 제 구멍으로 황급히 달아났습니다!
-
 QBN:
 
 Foe _rat_ is Giant_rat

@@ -11,13 +11,13 @@ DisplayName: 치명적인 외교
 QRC:
 
 QuestorOffer:  [1000]
-<ce>내가 _qgfriend_와 동맹을 맺으려 한다는 것을 알고
-<ce>있을지도 모르겠군요. 우정을 다지기 위해 %g2를
-<ce>끊임없이 위협하는 괴물을 죽이기로 했습니다.
+<ce>내가 _qgfriend_와 동맹을 맺으려 한다는 것을 알고 있을지도
+<ce>모르겠군요.
+<ce>우정을 다지기 위해 %g2⁠를 끊임없이 위협하는 괴물을 죽이기로
+<ce>했습니다.
 <ce>놈은 ___mondung_의 낡은 폐허에 살고 있습니다.
-<ce>%G는 괴물을 죽인 자에게 _reward_골드를
-<ce>주기로 했지요. 당신 같은 모험가에게
-<ce>좋은 거래 아닙니까, %pcn?
+<ce>%G⁠는 괴물을 죽인 자에게 _reward_골드를 주기로 했지요.
+<ce>당신 같은 모험가에게 좋은 거래 아닙니까, %pcn?
 <ce>
 <ce>
 <ce>
@@ -34,11 +34,11 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>좋은 거래라는 것을 아는군요. _qgfriend_에게
-<ce>=1stparton_일 안에 괴물이 죽을 것이며,
-<ce>아니면 %g가 다른 사람을 고용할 것이라고
-<ce>말했습니다. 괴물을 죽이고 시간이 다 되기 전에
-<ce>___qgfriend_으로 가 %g2를 찾으십시오.
+<ce>좋은 거래라는 것을 아는군요.
+<ce>_qgfriend_에게 =1stparton_일 안에 괴물이 죽을 것이며, 아니면
+<ce>%g⁠가 다른 사람을 고용할 것이라고 말했습니다.
+<ce>괴물을 죽이고 시간이 다 되기 전에 ___qgfriend_으로 가
+<ce>%g2⁠를 찾으십시오.
 <ce>
 <ce>
 <ce>
@@ -50,10 +50,10 @@ QuestFail:  [1003]
 
 QuestComplete:  [1004]
 <ce>_giant_라는 재앙이 끝났다는 소식은 들었습니다.
-<ce>_questgiver_가 어디서 당신을 찾았는지
-<ce>모르지만 %g가 잘 선택했군요. 약속한
-<ce>_reward_골드입니다. 수고했습니다, %pcf.
-<ce>
+<ce>_questgiver_가 어디서 당신을 찾았는지 모르지만 %g⁠가 잘
+<ce>선택했군요.
+<ce>약속한 _reward_골드입니다.
+<ce>수고했습니다, %pcf.
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -68,15 +68,15 @@ RumorsPostfailure:  [1006]
 <ce>_qgfriend_를 괴롭히고 있어.
 
 RumorsPostsuccess:  [1007]
-=giant_의 저주가 마침내 %reg에서 사라졌어.
+=giant_의 저주가 마침내 %reg⁠에서 사라졌어.
 <--->
 성스러운 %ra 전사가 우리 땅의 재앙 =giant_를 죽였대.
 
 QuestorPostsuccess:  [1008]
 내 친구이자 =giant_의 적이여, 무엇을 도와드릴까요?
 <--->
-<ce>당신은 내가 동맹을 맺도록 도왔습니다,
-<ce>%pcf. 무엇을 도와드릴까요?
+<ce>당신은 내가 동맹을 맺도록 도왔습니다, %pcf.
+<ce>무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
 <ce>괴물을 죽이지 못해 일이 복잡해졌습니다.
@@ -84,9 +84,9 @@ QuestorPostfailure:  [1009]
 <ce>
 
 Message:  1011
-<ce>=qgfriend_ 말입니까? _questgiver_의
-<ce>잠재적 동맹이며 ___mondung_의
-<ce>괴물 때문에 고생하는 사람이지요.
+<ce>=qgfriend_ 말입니까?
+<ce>_questgiver_의 잠재적 동맹이며 ___mondung_의 괴물
+<ce>때문에 고생하는 사람이지요.
 <--->
 _qgfriend_는 =giant_의 철천지원수입니다.
 
@@ -96,13 +96,13 @@ Message:  1012
 Message:  1015
 %qdt: ___questgiver_의 _questgiver_는 동맹인
 ___qgfriend_의 _qgfriend_를 위해 ___mondung_ 주변을
-공포에 빠뜨린 =giant_를 죽이라고 했다. =1stparton_일 안에
-괴물을 죽이고 _qgfriend_에게 가면 보상을 받는다.
+공포에 빠뜨린 =giant_를 죽이라고 했다.
+=1stparton_일 안에 괴물을 죽이고 _qgfriend_에게 가면 보상을 받는다.
 
 Message:  1021
-<ce>깜빡할 뻔했군요. ___mondung_의 괴물이
-<ce>어떤 종류인지는 모르지만 공포의 근원은
-<ce>=giant_라는 이름을 쓴답니다.
+<ce>깜빡할 뻔했군요.
+<ce>___mondung_의 괴물이 어떤 종류인지는
+<ce>모르지만 공포의 근원은 =giant_라는 이름을 쓴답니다.
 <ce>
 
 Message:  1030
@@ -130,7 +130,6 @@ Message:  1030
 --        _qgfriend_ occurs 8 times.
 --      _questgiver_ occurs 3 times.
 --          _reward_ occurs 2 times.
-
 QBN:
 Item _reward_ gold
 

@@ -12,46 +12,45 @@ DisplayName: 사냥꾼
 QRC:
 
 QuestorOffer:  [1000]
-<ce>당신을 믿지 않습니다, %pcn. 우리 기사단의
-<ce>일원도 아니지요. 내 신뢰와 조금이나마 존경을
-<ce>얻고 싶다면, 농장을 습격하는 _monster_를 죽이고
-<ce>오십시오. 해낼 자신이 있습니까?
-<ce>
+<ce>당신을 믿지 않습니다, %pcn.
+<ce>우리 기사단의 일원도 아니지요.
+<ce>내 신뢰와 조금이나마 존경을 얻고 싶다면, 농장을
+<ce>습격하는 _monster_를 죽이고 오십시오.
+<ce>해낼 자신이 있습니까?
 <ce>
 
 RefuseQuest:  [1001]
-<ce>그럴 줄 알았습니다. 가슴속에
-<ce>겁쟁이의 심장이 뛰는군요. 당신을
-<ce>보기만 해도 속이 메스껍습니다.
+<ce>그럴 줄 알았습니다.
+<ce>가슴속에 겁쟁이의 심장이 뛰는군요.
+<ce>당신을 보기만 해도 속이 메스껍습니다.
 
 AcceptQuest:  [1002]
 <ce>_monster_는 ___dungeon_을 소굴로 삼았습니다.
-<ce>그곳으로 가서 죽이십시오. 다른 _monster_도
-<ce>있을 수 있지만 그들은 관심 없습니다.
-<ce>등 한가운데 커다란 화상 자국이 있는 놈만
-<ce>찾으십시오. 농민들을 습격한 바로 그놈입니다.
+<ce>그곳으로 가서 죽이십시오.
+<ce>다른 _monster_도 있을 수 있지만 그들은 관심 없습니다.
+<ce>등 한가운데 커다란 화상 자국이 있는 놈만 찾으십시오.
+<ce>농민들을 습격한 바로 그놈입니다.
 <ce>주어진 시간은 =2dung_일입니다.
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>흥. 기대보다는 잘했습니다, %pcn. 언젠가는 기사단에
-<ce>들어올 자격까지 갖출지도 모르겠군요.
-<ce>
+<ce>흥.
+<ce>기대보다는 잘했습니다, %pcn.
+<ce>언젠가는 기사단에 들어올 자격까지 갖출지도 모르겠군요.
 <ce>
 
 RumorsDuringQuest:  [1005]
 그 _monster_는 ___qgiver_의 지독한 골칫거리입니다.
 <--->
-기사단이 그 _monster_를 어떻게든
-해주길 바라는 사람이 많습니다.
+기사단이 그 _monster_를 어떻게든 해주길 바라는 사람이 많습니다.
 
 RumorsPostfailure:  [1006]
-기사단이 아니라 %god께 감사할 일이지요.
+기사단이 아니라 %god⁠께 감사할 일이지요.
 _monster_가 떠났으니까요.
 <--->
-_monster_가 이동한 것은 자연스러운
-일입니다. 하지만 다시 돌아올 겁니다.
+_monster_가 이동한 것은 자연스러운 일입니다.
+하지만 다시 돌아올 겁니다.
 
 RumorsPostsuccess:  [1007]
 모두 그 _monster_를 죽인 기사들에게 감사하고 있습니다.
@@ -59,7 +58,8 @@ RumorsPostsuccess:  [1007]
 기사단이 _monster_ 문제를 해결할 줄은 아무도 몰랐습니다.
 
 QuestorPostsuccess:  [1008]
-좋아, 꼬마. 네가 한 일을 봤으니 이제 예의는 차려주지.
+좋아, 꼬마.
+네가 한 일을 봤으니 이제 예의는 차려주지.
 
 QuestorPostfailure:  [1009]
 _monster_ 애호가는 당장 꺼져라.
@@ -72,8 +72,8 @@ ___dungeon_에서 죽여야 할 _monster_를 알려주었다.
 주어진 시간은 =2dung_일뿐이다.
 
 Message:  1011
-<ce>등에 커다랗게 그을린 자국이 있습니다. _qgiver_가
-<ce>말한 바로 그놈이 틀림없습니다.
+<ce>등에 커다랗게 그을린 자국이 있습니다.
+<ce>_qgiver_가 말한 바로 그놈이 틀림없습니다.
 <ce>
 
 -- Symbols used in the QRC file:
@@ -87,7 +87,6 @@ Message:  1011
 --        ___qgiver_ occurs 1 time.
 --         _monster_ occurs 29 times.
 --          _qgiver_ occurs 4 times.
-
 QBN:
 
 Person _qgiver_ group Questor

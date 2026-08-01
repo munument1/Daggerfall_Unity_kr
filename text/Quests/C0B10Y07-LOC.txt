@@ -11,33 +11,33 @@ DisplayName: 배달
 QRC:
 
 QuestorOffer:  [1000]
-<ce>축복이 함께하기를, %pcn. __qgiver_에서 심부름을
-<ce>맡아줄 사람이 필요합니다. 이 _religitem_을
-<ce>=traveltime_일 안에 ___priest_로 배달하십시오.
+<ce>축복이 함께하기를, %pcn.
+<ce>__qgiver_에서 심부름을 맡아줄 사람이 필요합니다.
+<ce>이 _religitem_을 =traveltime_일 안에 ___priest_로
+<ce>배달하십시오.
 <ce>사원에서 _gold_골드를 보수로 드리겠습니다.
 <ce>우리를 위해 맡아주시겠습니까?
 <ce>
 <ce>
 <ce>
-<ce>
 
 RefuseQuest:  [1001]
-<ce>후우. 이 일을 맡을
-<ce>다른 사원 신도를 찾아야겠군요.
+<ce>후우. 이 일을 맡을 다른 사원 신도를 찾아야겠군요.
+<ce>
 <ce>
 
 AcceptQuest:  [1002]
-<ce>여기 _religitem_입니다. ___priest_의
-<ce>__priest_에 있는 _priest_에게 가져다주십시오.
-<ce>아, 경쟁 사원에서 당신을 막으려고 폭한들을 보낼
-<ce>수도 있다는 말을 깜빡할 뻔했군요.
-<ce>
+<ce>여기 _religitem_입니다.
+<ce>___priest_의 __priest_에 있는 _priest_에게
+<ce>가져다주십시오.
+<ce>아, 경쟁 사원에서 당신을 막으려고 폭한들을 보낼 수도 있다는
+<ce>말을 깜빡할 뻔했군요.
 <ce>
 
 QuestComplete:  [1004]
-<ce>%god의 은총이 함께하기를, %pcn. 이곳에는
-<ce>이 _religitem_이 절실히 필요했습니다. 사원에서
-<ce>_gold_골드를 받기로 했다고 들었습니다.
+<ce>%god⁠의 은총이 함께하기를, %pcn.
+<ce>이곳에는 이 _religitem_이 절실히 필요했습니다.
+<ce>사원에서 _gold_골드를 받기로 했다고 들었습니다.
 <ce>
 <ce>
 <ce>
@@ -49,7 +49,7 @@ RumorsDuringQuest:  [1005]
 <--->
 이맘때 날씨로는 꽤 평범하군요.
 <--->
-올해 %cn은 이맘때치고 조금 쌀쌀한 듯합니다.
+올해 %cn⁠은 이맘때치고 조금 쌀쌀한 듯합니다.
 <--->
 작년 이맘때보다 오늘이 훨씬 따뜻한 건 분명합니다.
 <--->
@@ -59,35 +59,38 @@ RumorsDuringQuest:  [1005]
 <--->
 이 근처에 전쟁 기념상을 세워야 합니다.
 <--->
-요즘 애들과 마법이라니. %oth, 잘 모르겠군요.
+요즘 애들과 마법이라니.
+%oth, 잘 모르겠군요.
 <--->
 어젯밤 정말 이상한 꿈을 꿨습니다.
 <--->
-굉장한 농담을 들었습니다. %jok
+굉장한 농담을 들었습니다.
+%jok
 <--->
 %jok 사실, 농담입니다.
 <--->
 %jok 그게 무슨 뜻인지 설명해주시겠습니까?
 <--->
-%reg의 법률 제도에는 장단점이 있습니다.
+%reg⁠의 법률 제도에는 장단점이 있습니다.
 
 RumorsPostfailure:  [1006]
-__qgiver_에서 %pcn의 이름을 저주하고 있습니다.
+__qgiver_에서 %pcn⁠의 이름을 저주하고 있습니다.
 
 RumorsPostsuccess:  [1007]
-_priest_는 __qgiver_에서 받은 %g3
-선물을 기쁘게 여기는 듯합니다.
+_priest_는 __qgiver_에서 받은 %g3 선물을 기쁘게 여기는
+듯합니다.
 
 QuestorPostsuccess:  [1008]
-_priest_가 %g3 안부를 전했습니다, %pcf. 무엇을 도와드릴까요?
+_priest_가 %g3 안부를 전했습니다, %pcf.
+무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-내가 당신과 이야기한다면 _priest_는
-결코 용서하지 않을 겁니다.
+내가 당신과 이야기한다면 _priest_는 결코 용서하지 않을 겁니다.
 
 QuestLogEntry:  [1010]
-%qdt: __qgiver_의 _qgiver_는 _religitem_을 ___priest_의
-__priest_에 있는 _priest_에게 배달하라고 했다.
+%qdt: __qgiver_의 _qgiver_는 _religitem_을
+___priest_의 __priest_에 있는 _priest_에게
+배달하라고 했다.
 =traveltime_일 안에 도착해야 한다.
 
 Message:  1011
@@ -114,7 +117,6 @@ Message:  1011
 --          _priest_ occurs 5 times.
 --          _qgiver_ occurs 1 time.
 --       _religitem_ occurs 5 times.
-
 QBN:
 Item _religitem_ religious
 Item _gold_ gold

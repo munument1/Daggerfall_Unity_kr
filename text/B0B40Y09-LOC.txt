@@ -12,25 +12,25 @@ DisplayName: 거인 사냥
 QRC:
 
 QuestorOffer:  [1000]
-<ce>농장을 습격하고 가축을 잡아먹는 _monster_가
-<ce>있다는 소식이 막 들어왔습니다. 내 이름 말입니까?
-<ce>실례했군요, %pcf. 나는 _qgiver_입니다.
+<ce>농장을 습격하고 가축을 잡아먹는 _monster_가 있다는 소식이
+<ce>막 들어왔습니다.
+<ce>내 이름 말입니까?
+<ce>실례했군요, %pcf.
+<ce>나는 _qgiver_입니다.
 <ce>_monster_를 죽이러 가시겠습니까?
-<ce>
-<ce>
 
 RefuseQuest:  [1001]
 <ce>고귀한 기사들은 다 어디로 갔습니까?
-<ce>%reg에서 모두 사라지기라도
-<ce>했나요? 물러가십시오, %pcn.
+<ce>%reg⁠에서 모두 사라지기라도 했나요?
+<ce>물러가십시오, %pcn.
 
 AcceptQuest:  [1002]
 <ce>_monster_는 ___dungeon_을 소굴로 삼았습니다.
-<ce>그곳으로 가서 죽이십시오. 다른 _monster_들도
-<ce>있을 수 있습니다. 필요하면 죽이되, 팔에 곰
-<ce>발톱 낙인이 찍힌 놈만큼은 반드시 처리하십시오.
+<ce>그곳으로 가서 죽이십시오.
+<ce>다른 _monster_들도 있을 수 있습니다.
+<ce>필요하면 죽이되, 팔에 곰 발톱 낙인이 찍힌 놈만큼은 반드시
+<ce>처리하십시오.
 <ce>=2dung_일밖에 없습니다.
-<ce>
 <ce>
 <ce>
 <ce>
@@ -49,24 +49,26 @@ ___dungeon_의 거인은 남쪽으로 내려갔다더군요.
 그곳 사람들은 우리를 저주하겠지요.
 
 RumorsPostsuccess:  [1007]
-%kno가 다시 %reg을 구했습니다. 기사단의 %ra가
-___dungeon_의 거인을 죽였습니다.
+%kno⁠가 다시 %reg⁠을 구했습니다.
+기사단의 %ra⁠가 ___dungeon_의 거인을 죽였습니다.
 
 QuestorPostsuccess:  [1008]
-안녕하십니까, 거인 살해자 %pcf. 무엇을 도와드릴까요?
+안녕하십니까, 거인 살해자 %pcf.
+무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
 고작 거인 한 마리 죽이는 법을 배운 뒤 다시 오십시오, %pcf.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에 있는 _qgiver_는
-___dungeon_에서 죽여야 할 _monster_에 관해 알려주었다.
+%qdt: ___qgiver_의 __qgiver_에
+있는 _qgiver_는 ___dungeon_에서 죽여야 할 _monster_에
+관해 알려주었다.
 주어진 시간은 =2dung_일뿐이다.
 
 Message:  1011
-<ce>_monster_의 위팔에 곰 발톱 모양
-<ce>낙인이 선명합니다. _qgiver_가 말한
-<ce>바로 그놈이 틀림없습니다.
+<ce>_monster_의 위팔에 곰 발톱 모양 낙인이 선명합니다.
+<ce>_qgiver_가 말한 바로 그놈이 틀림없습니다.
+<ce>
 <ce>
 
 -- Symbols used in the QRC file:
@@ -82,7 +84,6 @@ Message:  1011
 --        ___qgiver_ occurs 2 times.
 --         _monster_ occurs 8 times.
 --          _qgiver_ occurs 5 times.
-
 QBN:
 Item _gold_ gold
 

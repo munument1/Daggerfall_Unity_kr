@@ -11,8 +11,8 @@ Message: 1022
 타이머 2 시작
 
 Message: 1023
-완료! - 텍스트 리소스 없음
-
+완료!
+- 텍스트 리소스 없음
 QBN:
 
 variable run

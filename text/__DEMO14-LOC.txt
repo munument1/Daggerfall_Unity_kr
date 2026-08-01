@@ -17,7 +17,6 @@ Message:  1012
 
 Message:  1013
 _someitem_에 관해 주변 사람들에게 물어보세요...
-
 QBN:
 
 Person _someperson_ face 81 faction The_Thieves_Guild anyInfo 1011
