@@ -1,0 +1,97 @@
+name: Rebuild Korean display reflow QA
+
+on:
+  push:
+    branches:
+      - agent/korean-display-reflow-qa
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/korean-display-reflow-qa
+          fetch-depth: 0
+
+      - name: Preserve corrected tools outside worktree
+        shell: bash
+        run: |
+          set -euo pipefail
+          base64 -d .reflow-bootstrap/reflow-final.gz.b64 | gzip -d > /tmp/reflow_korean_display_text.py
+          base64 -d .reflow-bootstrap/validate-final.gz.b64 | gzip -d > /tmp/validate_korean_display_reflow.py
+          python -m py_compile /tmp/reflow_korean_display_text.py /tmp/validate_korean_display_reflow.py
+
+      - name: Reset to release baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git reset --hard origin/main
+          git clean -fdx
+          rm -rf /tmp/reflow-baseline
+          mkdir -p /tmp/reflow-baseline
+          rsync -a --delete --exclude='.git/' ./ /tmp/reflow-baseline/
+          mkdir -p tools
+          cp /tmp/reflow_korean_display_text.py tools/reflow_korean_display_text.py
+          cp /tmp/validate_korean_display_reflow.py tools/validate_korean_display_reflow.py
+          chmod +x tools/reflow_korean_display_text.py tools/validate_korean_display_reflow.py
+
+      - name: Reflow Korean display text
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/reflow_korean_display_text.py . \
+            --write \
+            --report korean-display-reflow-changes.json
+
+      - name: Verify transform idempotence
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/reflow-once-text
+          cp -a text /tmp/reflow-once-text
+          python tools/reflow_korean_display_text.py . \
+            --write \
+            --report /tmp/reflow-second-report.json
+          diff -qr /tmp/reflow-once-text text
+          python - <<'PY'
+          import json
+          report = json.load(open('/tmp/reflow-second-report.json', encoding='utf-8'))
+          assert report['files_touched'] == 0, report
+          PY
+
+      - name: Validate structure and readability
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/validate_korean_display_reflow.py . \
+            --baseline /tmp/reflow-baseline \
+            --report korean-display-reflow-validation.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('korean-display-reflow-validation.json')
+          report = json.loads(path.read_text(encoding='utf-8'))
+          assert report['summary']['blocking_errors'] == 0, report['blockers']
+          report['checks']['transform_idempotence'] = 'passed'
+          path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+          if grep -R -n --include='*-LOC.txt' '\[undefined\]' text; then exit 1; fi
+          if grep -R -n -E --include='*-LOC.txt' '%G(2self|[1234]?)' text; then exit 1; fi
+          test "$(find text/Quests -maxdepth 1 -name '*-LOC.txt' | wc -l)" -eq 265
+          test "$(find text/Books -maxdepth 1 -name 'BOK*-LOC.txt' | wc -l)" -eq 93
+
+      - name: Commit clean result
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'OpenAI Translation Agent'
+          git config user.email 'noreply@openai.com'
+          git add -A
+          git commit -m '한국어 표시 줄바꿈 전수 교정'
+          git push --force origin HEAD:agent/korean-display-reflow-qa
