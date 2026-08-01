@@ -1,0 +1,35 @@
+{
+  "scope": "Korean display reflow QA",
+  "baseline_commit": "c3d0b83e6f62ec7ea1fe5d68718d1fe3dd2f7c48",
+  "summary": {
+    "quest_files": 265,
+    "book_files": 93,
+    "files_touched": 307,
+    "centered_blocks_reflowed": 1999,
+    "journal_blocks_reflowed": 350,
+    "quest_prose_blocks_reflowed": 908,
+    "book_paragraphs_normalized": 487,
+    "uppercase_gender_macros_normalized": 136,
+    "redundant_blank_center_lines_removed": 3119,
+    "screenshot_confirmed_textual_fixes": 6
+  },
+  "targeted_follow_up_fixes": [
+    {
+      "file": "K0C30Y03-LOC.txt",
+      "reason": "one-word orphan line joined"
+    },
+    {
+      "file": "N0B00Y17-LOC.txt",
+      "reason": "screenshot-confirmed spacing, phrasing, and width-aware reflow"
+    },
+    {
+      "file": "O0B2XY08-LOC.txt",
+      "reason": "dynamic-token noun phrase kept together"
+    },
+    {
+      "file": "S0000988-LOC.txt",
+      "reason": "ordinary word starting with 장 no longer misclassified as a chapter label"
+    }
+  ],
+  "blockers": []
+}
