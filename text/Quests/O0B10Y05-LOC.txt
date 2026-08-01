@@ -12,9 +12,9 @@ DisplayName: 귀중한 예술품
 QRC:
 
 QuestorOffer:  [1000]
-<ce>어이, %pcf! 나 _qgiver_ 기억하지? 오늘 길드 일 하나 해볼 텐가?
+<ce>어이, %pcf! 나 _qgiver_ 기억하지?
+<ce>오늘 길드 일 하나 해볼 텐가?
 <ce>자네에게 딱 맞을 것 같은 일이 있어.
-<ce>
 <ce>
 <ce>
 
@@ -23,9 +23,9 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>어떤 부자가 꽤 값나가는 그림을 하나 손에 넣었어.
-<ce>__townhouse_의 _townhouse_에 숨겨뒀지. 가져오면 길드 보수로
-<ce>_gold_골드를 주겠다. 아, =traveltime_일 안에 가져와야 해.
-<ce>
+<ce>__townhouse_의 _townhouse_에 숨겨뒀지.
+<ce>가져오면 길드 보수로 _gold_골드를 주겠다.
+<ce>아, =traveltime_일 안에 가져와야 해.
 <ce>
 <ce>
 <ce>
@@ -33,9 +33,9 @@ AcceptQuest:  [1002]
 <ce>
 
 QuestComplete:  [1004]
-<ce>흠집 하나 없군. 수호자 때문에 고생했겠어. 그자가 그런 짓까지
-<ce>해뒀을 줄은 몰랐거든. 여기 보수다.
-<ce>
+<ce>흠집 하나 없군. 수호자 때문에 고생했겠어.
+<ce>그자가 그런 짓까지 해뒀을 줄은
+<ce>몰랐거든. 여기 보수다.
 <ce>
 
 RumorsDuringQuest:  [1005]

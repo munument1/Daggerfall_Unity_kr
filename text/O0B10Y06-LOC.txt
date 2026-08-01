@@ -11,9 +11,9 @@ DisplayName: 보석 강탈
 QRC:
 
 QuestorOffer:  [1000]
-<ce>자네에게 딱 맞는 일이 있어. 보석 절도 건이 하나 들어왔지. 끼어들겠나?
+<ce>자네에게 딱 맞는 일이 있어.
+<ce>보석 절도 건이 하나 들어왔지. 끼어들겠나?
 <ce>길드 표준 보수인 _gold_골드를 주겠다.
-<ce>
 <ce>
 <ce>
 
@@ -22,10 +22,10 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>%oth, 아주 훌륭해. __mansion_의 _mansion_로 가서
-<ce>_jewelry_을 찾아 여기로 가져와. 눈을 크게 뜨고 다녀.
-<ce>그 쓰레기장 같은 곳에 무슨 수호자가 있을지도 모르니까.
-<ce>
+<ce>%oth, 아주 훌륭해. __mansion_의 _mansion_로
+<ce>가서 _jewelry_을 찾아 여기로 가져와.
+<ce>눈을 크게 뜨고 다녀. 그 쓰레기장 같은 곳에
+<ce>무슨 수호자가 있을지도 모르니까.
 <ce>
 <ce>
 <ce>
@@ -51,9 +51,9 @@ QuestorPostsuccess:  [1008]
 건 아니겠지?
 
 QuestorPostfailure:  [1009]
-<ce>%oth, 자네로군. _mansion_의 주인이 이미 _jewelry_을
-<ce>옮겨서 일은 끝났어. 그 대단하신 “노고”에 정말 감사하지.
-<ce>
+<ce>%oth, 자네로군. _mansion_의 주인이
+<ce>이미 _jewelry_을 옮겨서 일은 끝났어.
+<ce>그 대단하신 “노고”에 정말 감사하지.
 <ce>
 <ce>
 

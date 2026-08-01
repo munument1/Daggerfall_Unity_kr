@@ -13,38 +13,38 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>근처 던전에 숨겨진 희귀한 재료를 구해오셔야 합니다.
-<ce>수고비로 _gold_골드를 드리겠습니다. 관심 있으십니까?
-<ce>
+<ce>수고비로 _gold_골드를 드리겠습니다.
+<ce>관심 있으십니까?
 <ce>
 <ce>
 <ce>
 <--->
-<ce>우리의 뛰어난 학생 한 명이 _ingredient_라는 물건에 완전히 정신이
-<ce>팔렸습니다. 전에는 별로 쓸 일이 없던 재료지요. 크게 번거롭지 않다면
-<ce>그곳으로 얼른 가서 우리를 위해 조금 가져와 주시겠습니까?
-<ce>
-<ce>
+<ce>우리의 뛰어난 학생 한 명이
+<ce>_ingredient_라는 물건에 완전히 정신이 팔렸습니다.
+<ce>전에는 별로 쓸 일이 없던 재료지요.
+<ce>크게 번거롭지 않다면 그곳으로 얼른 가서
+<ce>우리를 위해 조금 가져와 주시겠습니까?
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>흥. 다음에 만날 길드원은 좀 더 협조적이면 좋겠군요.
-<ce>
+<ce>흥. 다음에 만날 길드원은
+<ce>좀 더 협조적이면 좋겠군요.
 
 AcceptQuest:  [1002]
-<ce>훌륭한 태도입니다, %pcf. 찾으실 것은 _ingredient_이며,
-<ce>___dungeon_에서 구할 수 있습니다. =traveltime_일 안에 가져오십시오.
-<ce>
+<ce>훌륭한 태도입니다, %pcf. 찾으실 것은
+<ce>_ingredient_이며, ___dungeon_에서
+<ce>구할 수 있습니다. =traveltime_일 안에 가져오십시오.
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>뭐, 이 정도면 되겠군요. 좀 더 신선한 표본은 가져올 수 없었습니까?
-<ce>요즘 길드원들의 수준은 예전 같지 않군요. 어쨌든 여기 수고비입니다,
-<ce>%pcf.
-<ce>
+<ce>뭐, 이 정도면 되겠군요.
+<ce>좀 더 신선한 표본은 가져올 수 없었습니까?
+<ce>요즘 길드원들의 수준은 예전 같지 않군요.
+<ce>어쨌든 여기 수고비입니다, %pcf.
 <ce>
 <ce>
 <ce>
@@ -115,9 +115,9 @@ QuestorPostsuccess:  [1008]
 _ingredient_를 구해주신 분인데 어찌 반갑지 않겠습니까?
 
 QuestorPostfailure:  [1009]
-<ce>그 _ingredient_가 정말 필요했습니다. 이제 중요한 임무를 당신에게
-<ce>맡겨서는 안 된다는 사실을 확실히 알았군요.
-<ce>
+<ce>그 _ingredient_가 정말 필요했습니다.
+<ce>이제 중요한 임무를 당신에게 맡겨서는
+<ce>안 된다는 사실을 확실히 알았군요.
 
 QuestLogEntry:  [1010]
 %qdt: ___dungeon_에 숨겨져 있다는
@@ -126,13 +126,13 @@ _ingredient_의 표본을 구해달라는 의뢰를 받았다. ___qgiver_
 가져오라고 했다.
 
 Message:  1040
-<ce>이것이 _qgiver_가 원하던 _ingredient_인 듯합니다.
-<ce>
+<ce>이것이 _qgiver_가 원하던
+<ce>_ingredient_인 듯합니다.
 
 QuestTimeLapse:  [1045]
-<ce>오늘까지 _ingredient_를 가져오라고 했던 _qgiver_의 부탁이
-<ce>문득 떠오릅니다. %G⁠은 틀림없이 실망할 것입니다.
-<ce>
+<ce>오늘까지 _ingredient_를 가져오라고
+<ce>했던 _qgiver_의 부탁이 문득 떠오릅니다.
+<ce>%G⁠은 틀림없이 실망할 것입니다.
 <ce>
 <ce>
 

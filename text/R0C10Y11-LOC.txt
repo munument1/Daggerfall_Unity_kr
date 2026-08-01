@@ -11,9 +11,9 @@ DisplayName: 밀수품
 QRC:
 
 QuestorOffer:  [1000]
-<ce>작은 심부름을 해줄 시간이 있습니까? 간단한 일이지만 나와 심부름꾼들이
-<ce>모두 바쁩니다. _reward_골드를 더 드리지요. 시간이 있습니까?
-<ce>
+<ce>작은 심부름을 해줄 시간이 있습니까?
+<ce>간단한 일이지만 나와 심부름꾼들이 모두 바쁩니다.
+<ce>_reward_골드를 더 드리지요. 시간이 있습니까?
 <ce>
 <ce>
 <ce>
@@ -21,16 +21,16 @@ QuestorOffer:  [1000]
 <ce>
 
 RefuseQuest:  [1001]
-<ce>싫다고요? %god⁠이 한가한 %ra⁠의 도움으로부터 나를
-<ce>지켜주시길.
+<ce>싫다고요? %god⁠이
+<ce>한가한 %ra⁠의 도움으로부터 나를 지켜주시길.
 
 AcceptQuest:  [1002]
-<ce>운이 좋군요. 이 _item_을 들고 ___qgfriend_의
-<ce>__qgfriend_으로 가십시오. 그곳에서 _qgfriend_라는 이상한
-<ce>=qgfriend_를 찾을 수 있습니다. %g2⁠에게 _item_을 주면
-<ce>%g⁠가 _reward_골드를 줄 겁니다. =queston_일 안에
-<ce>도착해야 하니 서두르십시오.
-<ce>
+<ce>운이 좋군요. 이 _item_을 들고
+<ce>___qgfriend_의 __qgfriend_으로 가십시오.
+<ce>그곳에서 _qgfriend_라는 이상한 =qgfriend_를
+<ce>찾을 수 있습니다. %g2⁠에게 _item_을
+<ce>주면 %g⁠가 _reward_골드를 줄 겁니다.
+<ce>=queston_일 안에 도착해야 하니 서두르십시오.
 <ce>
 <ce>
 <ce>
@@ -43,8 +43,8 @@ QuestFail:  [1003]
 <ce>
 
 QuestComplete:  [1004]
-<ce>_questgiver_가 보낸 전령이군요? 아, 기다리던 _item_입니다.
-<ce>여기 보수입니다. 고맙습니다.
+<ce>_questgiver_가 보낸 전령이군요? 아, 기다리던
+<ce>_item_입니다. 여기 보수입니다. 고맙습니다.
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -60,8 +60,8 @@ _questgiver_가 무능한 %ra 전령 때문에 몹시 화났다는군.
 RumorsPostsuccess:  [1007]
 어떤 =qgfriend_가 _item_을 흔들어 보이며 떠났어.
 <--->
-<ce>_questgiver_의 _item_을 훔친 것은 아마 %g 일 거야.
-<ce>
+<ce>_questgiver_의 _item_을
+<ce>훔친 것은 아마 %g 일 거야.
 
 QuestorPostsuccess:  [1008]
 그 튼튼한 젊은 다리를 보니 누군지 알겠군요. 잘 지냈습니까,

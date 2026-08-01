@@ -11,31 +11,31 @@ DisplayName: 신전에서의 절도
 QRC:
 
 QuestorOffer:  [1000]
-<ce>가능하다면 %pcf, 완전한 바보는 아닌 사람의 도움이 필요합니다.
-<ce>신전에 작은 소포를 전달하라고 다른 용병을 보냈는데 산적에게 빼앗겼습니다.
-<ce>다행히 그 멍청이가 산적들이 어디로 갔는지는 기억하더군요.
-<ce>소포를 되찾아오겠습니까?
-<ce>
+<ce>가능하다면 %pcf, 완전한 바보는 아닌 사람의 도움이
+<ce>필요합니다. 신전에 작은 소포를 전달하라고
+<ce>다른 용병을 보냈는데 산적에게 빼앗겼습니다.
+<ce>다행히 그 멍청이가 산적들이 어디로 갔는지는
+<ce>기억하더군요. 소포를 되찾아오겠습니까?
 <ce>
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>%oth, 그럴 줄 알았습니다. 승낙하고 실패하는 것보다는 낫겠지요.
-<ce>
+<ce>%oth, 그럴 줄 알았습니다.
+<ce>승낙하고 실패하는 것보다는 낫겠지요.
 <ce>
 
 AcceptQuest:  [1002]
 <ce>미리 감사하지요, %pcf. 산적들은 _item_을
 <ce>__itemplace_의 신전 _itemplace_에 팔았습니다.
-<ce>종교적 의미가 있는 모양입니다. 망신을 피하려면 신전에서 _item_을
-<ce>훔치십시오. 그 _item_을 __inn_의 _inn_에
-<ce>있는 _transporter_에게 전하십시오. =1stparton_일 안에 멍청한 _transporter_,
-<ce>즉 %g2 손에 들어가야 하며, 그 뒤 =2ndparton_일 안에 __inn_에서
+<ce>종교적 의미가 있는 모양입니다.
+<ce>망신을 피하려면 신전에서 _item_을 훔치십시오.
+<ce>그 _item_을 __inn_의 _inn_에
+<ce>있는 _transporter_에게 전하십시오.
+<ce>=1stparton_일 안에 멍청한 _transporter_, 즉 %g2 손에
+<ce>들어가야 하며, 그 뒤 =2ndparton_일 안에 __inn_에서
 <ce>이곳으로 돌아오십시오. 시간이 없습니다, %pcf.
-<ce>
-<ce>
 <ce>
 <ce>
 <ce>
@@ -47,9 +47,9 @@ QuestFail:  [1003]
 <ce>
 
 QuestComplete:  [1004]
-<ce>%oth, 돌아왔군요, %pcf. 왜 그런 정신 나간 녀석을
-<ce>고용했는지 모르겠습니다. 여기 충분히 자격을 얻은 _reward_골드입니다.
-<ce>
+<ce>%oth, 돌아왔군요, %pcf.
+<ce>왜 그런 정신 나간 녀석을 고용했는지 모르겠습니다.
+<ce>여기 충분히 자격을 얻은 _reward_골드입니다.
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -74,29 +74,29 @@ QuestorPostsuccess:  [1008]
 신전과 관련된 그 불쾌한 일을 도와준 %ra 군요?
 
 QuestorPostfailure:  [1009]
-<ce>%oth, 당신이군요. 엉망으로 처리한 임무를 사과하러 왔겠지만 그럴
+<ce>%oth, 당신이군요.
+<ce>엉망으로 처리한 임무를 사과하러 왔겠지만 그럴
 <ce>필요 없습니다. 시간이 없으니까요.
-<ce>
 <ce>
 
 QuestLogEntry:  [1010]
-<ce>%god, 와줘서 고맙습니다, %pcf. 서둘러 _questgiver_에게
-<ce>돌아가십시오. =2ndparton_일 안에 돌아오지 않으면 %g⁠는 당신을 모르는
-<ce>척할 것이고 한 푼도 주지 않을 겁니다. %g3 방식을 아니까 믿으십시오.
-<ce>
-<ce>
+<ce>%god, 와줘서 고맙습니다, %pcf.
+<ce>서둘러 _questgiver_에게 돌아가십시오.
+<ce>=2ndparton_일 안에 돌아오지 않으면 %g⁠는 당신을
+<ce>모르는 척할 것이고 한 푼도 주지 않을 겁니다.
+<ce>%g3 방식을 아니까 믿으십시오.
 <ce>
 
 Message:  1011
-<ce>_transporter_는 _questgiver_와 연줄이 있는 신경질적인
-<ce>=transporter_입니다.
+<ce>_transporter_는 _questgiver_와 연줄이
+<ce>있는 신경질적인 =transporter_입니다.
 <--->
 =transporter_인 %g⁠는 __transporter_에서 %di 떨어진
 곳에 있습니다.
 
 Message:  1012
-<ce>_item_을 집어 들었습니다. 이제 _transporter_에게 가져가야
-<ce>합니다.
+<ce>_item_을 집어 들었습니다.
+<ce>이제 _transporter_에게 가져가야 합니다.
 
 Message:  1015
 %qdt: _questgiver_는 __itemplace_의

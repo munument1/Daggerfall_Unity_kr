@@ -11,8 +11,8 @@ DisplayName: 뱀파이어의 유물
 QRC:
 
 QuestorOffer:  [1000]
-<ce>친애하는 %pcf, 우리 중 하나가 되겠다는 결의를 증명할 작은
-<ce>임무를 맡기겠다. __itemdung_의 마법사 길드에는 우리의 _vamprelic_이
+<ce>친애하는 %pcf, 우리 중 하나가 되겠다는 결의를 증명할 작은 임무를
+<ce>맡기겠다. __itemdung_의 마법사 길드에는 우리의 _vamprelic_이
 <ce>보잘것없는 고서처럼 갇혀 있다. 그들이 더 안전한 곳으로 옮기기 전,
 <ce>=1stparton_일 안에 감옥에서 해방시켜라. _vamprelic_을 얻으면 내게 오라.
 <ce>나는 ___vampire_의 __vampire_에서 =1stparton_일 동안 기다리겠다.
@@ -27,11 +27,11 @@ AcceptQuest:  [1002]
 오류: 대거폴 텍스트 1002가 호출되었습니다.
 
 QuestComplete:  [1004]
-<ce>마침내 만나 반갑군, %pcf. 물론 내가 _vampire_다.
-<ce>이제 %vam 혈통이 _vamprelic_을 정당하게 되찾을 것이다.
+<ce>마침내 만나 반갑군, %pcf.
+<ce>물론 내가 _vampire_다. 이제 %vam
+<ce>혈통이 _vamprelic_을 정당하게 되찾을 것이다.
 <ce>보수를 받을 수 있으리라는 어리석은 생각은 하지 마라.
 <ce>%vam⁠을 섬기는 것 자체가 영광이니까.
-<ce>
 <ce>
 <ce>
 <ce>
@@ -58,10 +58,10 @@ QuestorPostsuccess:  [1008]
 감사하지.
 
 QuestorPostfailure:  [1009]
-<ce>%pcf, 지금은 내 인내심의 한계를 시험할 때가 아니다.
-<ce>편지에 분명 _vamprelic_을 가져오라고 썼는데 어디 있지?
+<ce>%pcf, 지금은 내 인내심의 한계를
+<ce>시험할 때가 아니다. 편지에 분명
+<ce>_vamprelic_을 가져오라고 썼는데 어디 있지?
 <ce>형편없는 모습이군, %pcf. 참으로 형편없어.
-<ce>
 <ce>
 <ce>
 
@@ -95,9 +95,9 @@ Message:  1020
 __vampire_의 _vampire_에게 가져가야 한다.
 
 Message:  1030
-<ce>바닥에 떨어진 두루마리가 눈에 들어옵니다. 가까이 살펴보니 당신
-<ce>앞으로 온 편지여서 깜짝 놀랍니다.
-<ce>
+<ce>바닥에 떨어진 두루마리가 눈에 들어옵니다.
+<ce>가까이 살펴보니 당신 앞으로
+<ce>온 편지여서 깜짝 놀랍니다.
 <ce>
 
 -- Symbols used in the QRC file:

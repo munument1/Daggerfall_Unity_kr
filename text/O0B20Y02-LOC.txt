@@ -11,9 +11,9 @@ DisplayName: 귀중한 물건
 QRC:
 
 QuestorOffer:  [1000]
-<ce>목소리 낮춰. 내 이름은... 어, 그냥 _qgiver_라고 불러.
+<ce>목소리 낮춰. 내 이름은...
+<ce>어, 그냥 _qgiver_라고 불러.
 <ce>길드 일이 하나 있어. 보수는 평소대로고. 관심 있나?
-<ce>
 <ce>
 <ce>
 
@@ -22,18 +22,18 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>__mansion_의 _mansion_에서 _magicitem_을 훔쳐.
-<ce>=traveltime_일 안에 끝내지 못하면 거래는 취소다. 그곳에 경비가 있다는
-<ce>말은 했던가? 분명 말한 것 같은데.
-<ce>
+<ce>__mansion_의 _mansion_에서
+<ce>_magicitem_을 훔쳐.
+<ce>=traveltime_일 안에 끝내지 못하면 거래는 취소다.
+<ce>그곳에 경비가 있다는 말은 했던가? 분명 말한 것 같은데.
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>물건 가져왔나? 아! 잘했어. 이번 일의 표준 보수는 _gold_골드다.
+<ce>물건 가져왔나? 아! 잘했어.
+<ce>이번 일의 표준 보수는 _gold_골드다.
 <ce>한곳에서 전부 써버리지는 마.
-<ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -50,8 +50,8 @@ QuestorPostsuccess:  [1008]
 알았어?
 
 QuestorPostfailure:  [1009]
-<ce>이미 _magicitem_을 _mansion_ 밖으로 옮겼어, %pcf.
-<ce>다시 말해 자네는 실패한 거야. 이제 가.
+<ce>이미 _magicitem_을 _mansion_ 밖으로 옮겼어,
+<ce>%pcf. 다시 말해 자네는 실패한 거야. 이제 가.
 <ce>
 <ce>
 

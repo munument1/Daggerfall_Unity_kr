@@ -11,11 +11,11 @@ DisplayName: 퇴마
 QRC:
 
 QuestorOffer:  [1000]
-<ce>나는 _qgiver_입니다. 이 지역 귀족 _nobleman_이 버려진
-<ce>부동산의 권리증서를 얻었는데, 뒤늦게 %g⁠이 그곳에 유령이 나온다는
-<ce>사실을 알았습니다. 누군가 그곳으로 가서 유령을 퇴치해야 합니다.
-<ce>임무를 맡으시겠습니까?
-<ce>
+<ce>나는 _qgiver_입니다. 이 지역 귀족
+<ce>_nobleman_이 버려진 부동산의 권리증서를
+<ce>얻었는데, 뒤늦게 %g⁠이 그곳에 유령이 나온다는
+<ce>사실을 알았습니다. 누군가 그곳으로 가서 유령을
+<ce>퇴치해야 합니다. 임무를 맡으시겠습니까?
 <ce>
 <ce>
 <ce>
@@ -23,19 +23,19 @@ QuestorOffer:  [1000]
 <ce>
 
 RefuseQuest:  [1001]
-<ce>유령은 보통 사원에서 처리하는 문제지요. 이번 일은 그쪽에 넘겨야겠군요.
-<ce>
+<ce>유령은 보통 사원에서 처리하는 문제지요.
+<ce>이번 일은 그쪽에 넘겨야겠군요.
 <ce>
 
 AcceptQuest:  [1002]
-<ce>_nobleman_은 =2dung_일 안에 재건 공사를 시작하려 합니다.
-<ce>%G⁠이 소유한 ___dungeon_에서 그 영혼을 찾을 수 있습니다.
-<ce>
+<ce>_nobleman_은 =2dung_일 안에
+<ce>재건 공사를 시작하려 합니다. %G⁠이
+<ce>소유한 ___dungeon_에서 그 영혼을 찾을 수 있습니다.
 <ce>
 
 QuestComplete:  [1004]
-<ce>_nobleman_이 무척 기뻐하겠군요. %G⁠은 당신의 이름을 붙인
-<ce>분수까지 세우겠다고 했습니다.
+<ce>_nobleman_이 무척 기뻐하겠군요.
+<ce>%G⁠은 당신의 이름을 붙인 분수까지 세우겠다고 했습니다.
 <ce>
 <ce>
 
@@ -65,8 +65,8 @@ QuestLogEntry:  [1010]
 간청했다. 재건 공사가 시작되기까지 =2dung_일이 남았다.
 
 Message:  1011
-<ce>유령은 안식을 얻었습니다. 이제 _nobleman_은 ___dungeon_을
-<ce>재건할 수 있습니다.
+<ce>유령은 안식을 얻었습니다. 이제 _nobleman_은
+<ce>___dungeon_을 재건할 수 있습니다.
 <ce>
 
 -- Symbols used in the QRC file:

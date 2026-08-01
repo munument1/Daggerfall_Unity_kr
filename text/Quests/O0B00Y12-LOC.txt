@@ -11,8 +11,8 @@ DisplayName: 마약 배달
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pcf, 관심 있으면 일 하나 맡기지. 작은 소포를 ___contact1_까지
-<ce>배달해야 해. 어때?
+<ce>%pcf, 관심 있으면 일 하나 맡기지.
+<ce>작은 소포를 ___contact1_까지 배달해야 해. 어때?
 <ce>
 <ce>
 <ce>
@@ -21,12 +21,12 @@ RefuseQuest:  [1001]
 <ce>호의 베풀 생각은 마라, 친구.
 
 AcceptQuest:  [1002]
-<ce>좋아. 소포는 이 _drugs_이다. 최대한 빨리 ___contact1_로
-<ce>가져가. __contact1_에서 _contact1_가 기다릴 거야. 조심해.
-<ce>이 운송 건이 새어나가면 %reg⁠의 밀수판이 자기들 것인 줄
-<ce>아는 프리랜서 밀수꾼들과 한바탕 벌어질 수도 있으니까.
-<ce>
-<ce>
+<ce>좋아. 소포는 이 _drugs_이다.
+<ce>최대한 빨리 ___contact1_로 가져가.
+<ce>__contact1_에서 _contact1_가 기다릴 거야.
+<ce>조심해. 이 운송 건이 새어나가면
+<ce>%reg⁠의 밀수판이 자기들 것인 줄 아는
+<ce>프리랜서 밀수꾼들과 한바탕 벌어질 수도 있으니까.
 <ce>
 <ce>
 <ce>
@@ -36,9 +36,9 @@ QuestFail:  [1003]
 <ce>“최대한 빨리”라고 하지 않았나?
 
 QuestComplete:  [1004]
-<ce>무사히 돌아와서 다행이군. 그런 아마추어들이 우리 조직을 당해낼 리 없지.
+<ce>무사히 돌아와서 다행이군.
+<ce>그런 아마추어들이 우리 조직을 당해낼 리 없지.
 <ce>여기 수고비 _gold_골드다. 잘했어.
-<ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -54,8 +54,7 @@ RumorsPostsuccess:  [1007]
 <ce>
 
 QuestorPostsuccess:  [1008]
-<ce>이게 누구야, 믿음직한 배달꾼 %pcn⁠이잖아.
-<ce>물론 기억하지.
+<ce>이게 누구야, 믿음직한 배달꾼 %pcn⁠이잖아. 물론 기억하지.
 
 QuestorPostfailure:  [1009]
 <ce>물건 하나 배달하지 못한 밀수꾼이 돌아왔군. 무슨 일이지?
@@ -72,19 +71,19 @@ Message:  1021
 있는 =contact2_에게 화물을 전달하라고 했다.
 
 Message:  1030
-<ce>%pcn -- 계획대로 ___contact1_에서 만나지 못해 미안하네.
-<ce>감시가 너무 심해져 그곳에서 기다릴 수 없었어. ___contact2_에
-<ce>대체 인도 장소를 마련했으니, __contact2_에서 기다리는
-<ce>=contact2_를 찾아가게. 등 뒤를 조심하게, _contact1_
+<ce>%pcn -- 계획대로 ___contact1_에서 만나지
+<ce>못해 미안하네. 감시가 너무 심해져 그곳에서 기다릴 수 없었어.
+<ce>___contact2_에 대체 인도 장소를 마련했으니, __contact2_에서
+<ce>기다리는 =contact2_를 찾아가게. 등 뒤를 조심하게, _contact1_
 
 Message:  1031
-<ce>작고 때 묻은 소년이 당신의 소매를 잡아당깁니다. 소년은 종잇조각을
-<ce>건네고 골목으로 달아납니다.
+<ce>작고 때 묻은 소년이 당신의 소매를 잡아당깁니다.
+<ce>소년은 종잇조각을 건네고 골목으로 달아납니다.
 <ce>
 
 Message:  1035
-<ce>도둑 길드 깡패들은 %reg⁠의 _drugs_ 장사를 우리가
-<ce>장악하고 있다는 걸 언제쯤 깨달을 셈이지?
+<ce>도둑 길드 깡패들은 %reg⁠의 _drugs_
+<ce>장사를 우리가 장악하고 있다는 걸 언제쯤 깨달을 셈이지?
 <ce>
 
 -- Symbols used in the QRC file:

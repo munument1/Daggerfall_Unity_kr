@@ -11,11 +11,11 @@ DisplayName: 고대의 두루마리
 QRC:
 
 QuestorOffer:  [1000]
-<ce>흥. 길드원이 아니군요. 비회원에게 일을 맡겨서는 안 되지만,
-<ce>길드의 다른 누구에게도 알려지고 싶지 않은 일이 하나 있습니다.
-<ce>무료로 처리해준다면 당신이 우리와 같은 부류의 %ra⁠라고 널리
-<ce>말해주지요. 어떻습니까, %pcf?
-<ce>
+<ce>흥. 길드원이 아니군요. 비회원에게 일을 맡겨서는
+<ce>안 되지만, 길드의 다른 누구에게도 알려지고 싶지
+<ce>않은 일이 하나 있습니다. 무료로 처리해준다면
+<ce>당신이 우리와 같은 부류의 %ra⁠라고
+<ce>널리 말해주지요. 어떻습니까, %pcf?
 <ce>
 <ce>
 <ce>
@@ -28,18 +28,18 @@ RefuseQuest:  [1001]
 <ce>은혜도 모르는 인간 같으니.
 
 AcceptQuest:  [1002]
-<ce>내 이름은 _questgiver_입니다. ___dungeon_에 고대 문헌
-<ce>하나가 숨겨져 있다고 합니다. =traveltime_일 안에 가져오면 일을 끝낸 것으로
-<ce>하지요.
-<ce>
+<ce>내 이름은 _questgiver_입니다.
+<ce>___dungeon_에 고대 문헌
+<ce>하나가 숨겨져 있다고 합니다.
+<ce>=traveltime_일 안에 가져오면 일을 끝낸 것으로 하지요.
 <ce>
 
 QuestComplete:  [1004]
-<ce>훌륭합니다. 이것을 읽지 말라고 경고했었지요? 문외한들이 흔히 그러듯
-<ce>“nagog”의 g를 강하게 발음했다면 상당히 위험했을 겁니다.
-<ce>도와줘서 고맙습니다, %pcn. 계속 이렇게 한다면 마법사
-<ce>길드 가입도 고려하겠습니다.
-<ce>
+<ce>훌륭합니다. 이것을 읽지 말라고 경고했었지요?
+<ce>문외한들이 흔히 그러듯 “nagog”의 g를
+<ce>강하게 발음했다면 상당히 위험했을 겁니다.
+<ce>도와줘서 고맙습니다, %pcn.
+<ce>계속 이렇게 한다면 마법사 길드 가입도 고려하겠습니다.
 <ce>
 <ce>
 
@@ -134,9 +134,9 @@ QuestorPostsuccess:  [1008]
 물론 기억합니다, %pcf. 그 문헌을 가져온 사람이잖습니까?
 
 QuestorPostfailure:  [1009]
-<ce>내가 맡긴 것보다 간단한 일은 상상하기도 어렵군요. 그저 희귀한 고대
-<ce>두루마리를 찾는 일이었습니다. 이제 당신과 계속 이야기할 이유도
-<ce>상상하기 어렵습니다.
+<ce>내가 맡긴 것보다 간단한 일은 상상하기도 어렵군요.
+<ce>그저 희귀한 고대 두루마리를 찾는 일이었습니다.
+<ce>이제 당신과 계속 이야기할 이유도 상상하기 어렵습니다.
 <ce>
 
 QuestLogEntry:  [1010]
@@ -150,12 +150,12 @@ nagog. Partik aloy partik frae i eyominathraq n' toyl. Berik azuth n'
 nagog. Charlaq gimle n' maluk Zephrim qork.
 
 Message:  1040
-<ce>이것이 _questgiver_가 찾으라고 보낸 양피지인 듯합니다.
-<ce>
+<ce>이것이 _questgiver_가 찾으라고
+<ce>보낸 양피지인 듯합니다.
 
 QuestTimeLapse:  [1045]
-<ce>마지막 단어를 읽자 얼어붙을 듯한 돌풍이 불어 종이를 손에서 낚아챌
-<ce>뻔합니다.
+<ce>마지막 단어를 읽자 얼어붙을 듯한 돌풍이
+<ce>불어 종이를 손에서 낚아챌 뻔합니다.
 <ce>
 
 -- Symbols used in the QRC file:

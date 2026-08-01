@@ -11,36 +11,36 @@ DisplayName: 속죄의 희생
 QRC:
 
 QuestorOffer:  [1000]
-<ce>당신이 사원에 매우 충실하다고 들었습니다. 우리에게 꼭 필요한 일을
-<ce>맡아주십시오. %god⁠께서 우리에게 노하셨습니다.
-<ce>이유는 신경 쓰지 마십시오. 유일한 희망은 속죄 의식을 올리는 것입니다.
-<ce>의식에는 _ingredient_가 필요하며, 정보에 따르면 ___dungeon_에서
+<ce>당신이 사원에 매우 충실하다고 들었습니다.
+<ce>우리에게 꼭 필요한 일을 맡아주십시오.
+<ce>%god⁠께서 우리에게 노하셨습니다.
+<ce>이유는 신경 쓰지 마십시오. 유일한 희망은 속죄
+<ce>의식을 올리는 것입니다. 의식에는 _ingredient_가
+<ce>필요하며, 정보에 따르면 ___dungeon_에서
 <ce>구할 수 있습니다. 가져다주시겠습니까?
-<ce>
-<ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>사원에 대한 충성심이 생각했던 것과 다르군요, %pcn.
-<ce>
+<ce>사원에 대한 충성심이
+<ce>생각했던 것과 다르군요, %pcn.
 <ce>
 
 AcceptQuest:  [1002]
-<ce>의식은 =traveltime_일 안에 거행해야 합니다. 사원에서 보수로
-<ce>_gold_골드를 드리겠습니다. 오염되지 않은 _ingredient_만
-<ce>쓸 수 있습니다. %god⁠의 축복을 받았으니 발견하는 순간
-<ce>알아볼 겁니다.
-<ce>
+<ce>의식은 =traveltime_일 안에 거행해야 합니다.
+<ce>사원에서 보수로 _gold_골드를 드리겠습니다.
+<ce>오염되지 않은 _ingredient_만 쓸 수 있습니다.
+<ce>%god⁠의 축복을 받았으니
+<ce>발견하는 순간 알아볼 겁니다.
 <ce>
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>찾았습니까? _ingredient_군요! 이제 %god⁠께서 노여움을 거두실 겁니다.
+<ce>찾았습니까? _ingredient_군요!
+<ce>이제 %god⁠께서 노여움을 거두실 겁니다.
 <ce>잘했습니다. 여기 보수입니다.
-<ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
