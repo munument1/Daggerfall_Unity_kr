@@ -1,0 +1,99 @@
+name: Apply complete Korean retranslation
+
+on:
+  push:
+    branches:
+      - agent/complete-korean-retranslation
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/complete-korean-retranslation
+          fetch-depth: 0
+
+      - name: Download final translation tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --retry-delay 2 \
+            'https://drive.usercontent.google.com/download?id=1MgGYktwOAw84vSJCAPtNWbhgNqe0lpdt&export=download&confirm=t' \
+            --output /tmp/Daggerfall_Unity_kr_COMPLETE_PR.zip
+          unzip -t /tmp/Daggerfall_Unity_kr_COMPLETE_PR.zip >/dev/null
+          rm -rf /tmp/translated
+          mkdir -p /tmp/translated
+          unzip -q /tmp/Daggerfall_Unity_kr_COMPLETE_PR.zip -d /tmp/translated
+          test -d /tmp/translated/Daggerfall_Unity_kr-main
+
+      - name: Restore final repository tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          rsync -a --delete \
+            --exclude='.git/' \
+            --exclude='.translation-transfer/' \
+            --exclude='.github/workflows/apply-complete-korean-retranslation.yml' \
+            /tmp/translated/Daggerfall_Unity_kr-main/ ./
+          rm -rf .translation-transfer
+          rm -f text/Internal_RSC.before_class_reflow.bak
+
+      - name: Validate restored files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import re
+
+          root = Path('.')
+          quest_dir = root / 'text' / 'Quests'
+          quest_ids = sorted(p.name[:-8] for p in quest_dir.glob('*-LOC.txt'))
+          assert len(quest_ids) == 265, len(quest_ids)
+          for quest_id in quest_ids:
+              root_file = root / 'text' / f'{quest_id}-LOC.txt'
+              mirror_file = quest_dir / f'{quest_id}-LOC.txt'
+              assert root_file.is_file(), quest_id
+              assert root_file.read_bytes() == mirror_file.read_bytes(), quest_id
+
+          json.loads((root / 'text' / 'NameGen.txt').read_text(encoding='utf-8-sig'))
+
+          srt_files = sorted((root / '0' / '0').glob('*.srt'))
+          assert len(srt_files) == 13, len(srt_files)
+          total_cues = 0
+          for path in srt_files:
+              text = path.read_text(encoding='utf-8-sig')
+              cues = re.findall(r'(?m)^\d\d:\d\d:\d\d,\d{3}\s+-->\s+\d\d:\d\d:\d\d,\d{3}\s*$', text)
+              korean_lines = sum(bool(re.search('[가-힣]', line)) for line in text.splitlines())
+              assert cues and korean_lines >= len(cues), (path, len(cues), korean_lines)
+              total_cues += len(cues)
+          assert total_cues == 88, total_cues
+
+          for index in range(18):
+              path = root / 'BIOGs' / f'BIOG{index:02d}T0.TXT'
+              text = path.read_text(encoding='utf-8-sig').replace('\r\n', '\n')
+              questions = re.findall(r'(?m)^(\d+)\.\s', text)
+              assert questions == [str(number) for number in range(1, 13)], path
+              assert text.endswith('\n\n') or text.endswith('\n\x1a') or text.endswith('\n\x1a\n') or text.endswith('\n\n\n'), path
+
+          assert not (root / 'text' / 'Internal_RSC.before_class_reflow.bak').exists()
+          assert (root / 'daggerfall-korean-final-pr-validation.json').is_file()
+          print(f'validation passed: {len(quest_ids)} quests, 18 BIOGs, {len(srt_files)} subtitle files, {total_cues} cues')
+          PY
+
+      - name: Commit final tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'OpenAI Translation Agent'
+          git config user.email 'noreply@openai.com'
+          git add -A
+          git rm --ignore-unmatch .github/workflows/apply-complete-korean-retranslation.yml
+          git commit -m '전체 한국어 재번역 및 구조 수정'
+          git push origin HEAD:agent/complete-korean-retranslation
