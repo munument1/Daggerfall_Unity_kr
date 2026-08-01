@@ -11,41 +11,28 @@ DisplayName: 평화의 선물
 QRC:
 
 QuestorOffer:  [1000]
-<ce>외교적으로 중요한 임무가 있네.
-<ce>평화를 위한 선물을 교환해야 하지. 내 친구
-<ce>_contact_에게 가져다주겠나?
-<ce>
-<ce>
+<ce>외교적으로 중요한 임무가 있네. 평화를 위한 선물을 교환해야 하지.
+<ce>내 친구 _contact_에게 가져다주겠나?
 
 RefuseQuest:  [1001]
-<ce>보상이 적어서인가, 귀찮아서인가, 아니면 임무가
-<ce>하찮아서인가, %pcf? 상관없네. 정치적 입지를
-<ce>다지고 싶은 다른 %ra를 찾으면 되니까.
-<ce>
-<ce>
-<ce>
+<ce>보상이 적어서인가, 귀찮아서인가, 아니면 임무가 하찮아서인가,
+<ce>%pcf? 상관없네.
+<ce>정치적 입지를 다지고 싶은 다른 %ra를 찾으면 되니까.
 
 AcceptQuest:  [1002]
-<ce>좋네, %pcf. 이 _item_을 __palace_의 궁전으로
-<ce>가져가 _contact_라는 =contact_를 찾게.
-<ce>%G가 기다리고 있을 것이며 수고비도 줄
-<ce>걸세. 어서 출발하게, %pcf.
-<ce>
-<ce>
-<ce>
+<ce>좋네, %pcf.
+<ce>이 _item_을 __palace_의 궁전으로 가져가
+<ce>_contact_라는 =contact_를 찾게.
+<ce>%g가 기다리고 있을 것이며 수고비도 줄 걸세.
+<ce>어서 출발하게, %pcf.
 
 QuestFail:  [1003]
-<ce>어서 가게! 잡담할 시간이
-<ce>없네. 할 일이 많지 않은가.
-<ce>
+<ce>어서 가게! 잡담할 시간이 없네. 할 일이 많지 않은가.
 
 QuestComplete:  [1004]
 <ce>아, 아름다운 _item_이군. _questgiver_가 보냈나?
 <ce>어쩌면 모든 것이 오해였을지도 모르겠어.
 <ce>수고비로 _reward_골드를 주지, %pcf.
-<ce>
-<ce>
-<ce>
 
 RumorsDuringQuest:  [1005]
 _contact_가 _questgiver_와의 동맹을 깨려 한다는 소문이 있어.
@@ -55,8 +42,7 @@ _questgiver_는 _contact_와의 관계를 굳히려면 행동해야 해.
 RumorsPostfailure:  [1006]
 _questgiver_와 _contact_의 관계가 어느 때보다 멀어졌어.
 <--->
-_contact_와 _questgiver_의 관계가 완전히
-끊어져도 놀랍지 않을 거야.
+_contact_와 _questgiver_의 관계가 완전히 끊어져도 놀랍지 않을 거야.
 
 RumorsPostsuccess:  [1007]
 _contact_가 _questgiver_의 선물에 아주 만족했다더군.
@@ -70,22 +56,18 @@ QuestorPostsuccess:  [1008]
 %oth, 내가 아끼는 전령이군. 어떻게 지내나?
 
 QuestorPostfailure:  [1009]
-<ce>_contact_에게 _item_을 보내겠다는 약속을
-<ce>지키지 못해 평화 계획이 훨씬 어려워졌네,
-<ce>%pcf. 내 눈앞에서 사라지게.
-<ce>
-<ce>
+<ce>_contact_에게 _item_을 보내겠다는 약속을 지키지
+<ce>못해 평화 계획이 훨씬 어려워졌네, %pcf.
+<ce>내 눈앞에서 사라지게.
 
 QuestLogEntry:  [1010]
-%qdt: _questgiver_는 __palace_ 궁전으로 가 평화의
-선물 _item_을 _contact_에게 전달하라고 했다.
+%qdt: _questgiver_는 __palace_ 궁전으로 가 평화의 선물
+_item_을 _contact_에게 전달하라고 했다.
 =queston_일 안에 도착해야 한다.
 
 Message:  1020
 <ce>_questgiver_가 내게 보낼 물건을 주지 않았나?
 <ce>젠장, 이것이 %g3 계략이라면...
-<ce>
-<ce>
 
 -- Symbols used in the QRC file:
 --

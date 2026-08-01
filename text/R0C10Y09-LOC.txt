@@ -12,51 +12,38 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>건장한 젊은 %ra에게 맡길 일이 있습니다.
-<ce>특별할 것 없는 간단한 심부름이지만 _reward_골드를
-<ce>벌 수 있지요. 관심 있습니까?
-<ce>
+<ce>특별할 것 없는 간단한 심부름이지만 _reward_골드를 벌 수
+<ce>있지요. 관심 있습니까?
 
 RefuseQuest:  [1001]
 <ce>%oth, 공짜 _reward_골드라도 바란 모양이군요.
-<ce>아니면 흥미진진한 일을 기대했습니까? 그런 일은
-<ce>더 기다려야 할 겁니다, %pcf.
-<ce>
-<ce>
+<ce>아니면 흥미진진한 일을 기대했습니까?
+<ce>그런 일은 더 기다려야 할 겁니다, %pcf.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. 내 밑에 _spy_라는 눈에 띄는 =spy_
-<ce>조달책이 있습니다. _spy_가 내 관심을 끄는
-<ce>특별한 _item_을 찾아냈지만 이전 주인들이
-<ce>%g2를 __hidingplace_ 어딘가에 가둬두었지요.
-<ce>공식적으로는 손쓸 수 없으니 __hidingplace_으로
-<ce>가 _spy_를 찾아 내 _item_을 가져오십시오.
-<ce>=1stparton_일 안에 돌아오지 못하면
-<ce>_reward_골드는 없습니다.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>좋습니다.
+<ce>내 밑에 _spy_라는 눈에 띄는 =spy_
+<ce>조달책이 있습니다.
+<ce>_spy_가 내 관심을 끄는 특별한 _item_을
+<ce>찾아냈지만 이전 주인들이 %g2를 __hidingplace_ 어딘가에
+<ce>가둬두었지요.
+<ce>공식적으로는 손쓸 수 없으니 __hidingplace_으로 가
+<ce>_spy_를 찾아 내 _item_을 가져오십시오.
+<ce>=1stparton_일 안에 돌아오지 못하면 _reward_골드는 없습니다.
 
 QuestFail:  [1003]
-<ce>돌아왔군요, %pcf. 하지만 내 _item_이
-<ce>보이지 않으니 반갑지는 않습니다.
-<ce>이해하기 어려운 임무였습니까? 가서 _item_을
-<ce>가져와 내 앞에 내놓으십시오.
-<ce>
-<ce>
-<ce>
+<ce>돌아왔군요, %pcf.
+<ce>하지만 내 _item_이 보이지 않으니 반갑지는 않습니다.
+<ce>이해하기 어려운 임무였습니까?
+<ce>가서 _item_을 가져와 내 앞에 내놓으십시오.
 
 QuestComplete:  [1004]
 <ce>훌륭합니다. 내 _item_이 큰 소동 없이 신속히 돌아왔군요.
 <ce>여기 약속한 _reward_골드입니다.
-<ce>
-<ce>
 
 RumorsDuringQuest:  [1005]
-경비병들이 __hidingplace_을 샅샅이 뒤지며
-도난당한 희귀한 _item_을 찾고 있어.
+경비병들이 __hidingplace_을 샅샅이 뒤지며 도난당한 희귀한 _item_을
+찾고 있어.
 <--->
 최근 개인 소장품에서 희귀한 _item_을 도둑맞았대.
 
@@ -76,42 +63,38 @@ QuestorPostsuccess:  [1008]
 무엇을 도와드릴까요, %pcf? 내게 해준 일은 잊지 않았습니다.
 
 QuestorPostfailure:  [1009]
-나를 실망시킨 사람에게 왜 도움을 줘야
-하는지 모르겠지만 말해보십시오.
+나를 실망시킨 사람에게 왜 도움을 줘야 하는지 모르겠지만 말해보십시오.
 <--->
-<ce>내 물건을 가져오지 못하고도 돌아오다니 배짱이
-<ce>두둑하군요. 난 그런 배짱이 싫습니다.
-<ce>
+<ce>내 물건을 가져오지 못하고도 돌아오다니 배짱이 두둑하군요.
+<ce>난 그런 배짱이 싫습니다.
 
 QuestLogEntry:  [1010]
-<ce>_questgiver_가 보냈다고요? %oth, 오는 소리를
-<ce>듣고 그들이 나를 찾아낸 줄 알았습니다.
+<ce>_questgiver_가 보냈다고요?
+<ce>%oth, 오는 소리를 듣고 그들이 나를 찾아낸 줄 알았습니다.
 <ce>당신이 먼저 와서 다행이군요, %pcf.
-<ce>여기 _item_이 있습니다. 즉시 _questgiver_에게
-<ce>가져가십시오. %g가 며칠 안에 필요로 합니다.
-<ce>이전 주인의 요원들이 __hidingplace_을
-<ce>뒤지고 있으니 조심하십시오.
-<ce>
-<ce>
+<ce>여기 _item_이 있습니다.
+<ce>즉시 _questgiver_에게 가져가십시오.
+<ce>%g가 며칠 안에 필요로 합니다.
+<ce>이전 주인의 요원들이 __hidingplace_을 뒤지고 있으니
+<ce>조심하십시오.
 
 Message:  1011
-=spy_는 여기서 %di 떨어진 _hidingplace_
-근처에 있다고 들었습니다.
+=spy_는 여기서 %di 떨어진 _hidingplace_ 근처에 있다고
+들었습니다.
 <--->
-신경질적인 =spy_ 말입니까? _hidingplace_
-근처에서 %g2를 봤습니다.
+신경질적인 =spy_ 말입니까? _hidingplace_ 근처에서 %g2를 봤습니다.
 
 Message:  1015
-%qdt: ___questgiver_의 __questgiver_에 있는 _questgiver_는
-__hidingplace_ 어딘가에 숨어 있는 _spy_에게서 특별한
-_item_을 받아오라고 했다. 원래 _item_ 주인들이
-방해할 수 있지만 =1stparton_일 안에 _item_을
+%qdt: ___questgiver_의 __questgiver_에
+있는 _questgiver_는 __hidingplace_ 어딘가에 숨어
+있는 _spy_에게서 특별한 _item_을 받아오라고 했다.
+원래 _item_ 주인들이 방해할 수 있지만 =1stparton_일 안에 _item_을
 _questgiver_에게 가져가야 _reward_골드를 받는다.
 
 Message:  1020
-<ce>도와줘서 고맙다, %ra. 우리를 _item_으로 곧장 안내해줄
-<ce>줄 알았지. 여기 네 보상이다. 죽어라!
-<ce>
+<ce>도와줘서 고맙다, %ra.
+<ce>우리를 _item_으로 곧장 안내해줄 줄 알았지.
+<ce>여기 네 보상이다. 죽어라!
 
 -- Symbols used in the QRC file:
 --

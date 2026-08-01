@@ -12,79 +12,62 @@ DisplayName: 뱀파이어 문제
 QRC:
 
 QuestorOffer:  [1000]
-<ce>우려스러운 문제가 생겼소. 마녀를 증오하는
-<ce>고대 뱀파이어가 우리 영토의 버려진
-<ce>성에 들어왔소. 당연히 우리가 바로잡아야
-<ce>할 일이오. 동의하지 않소, %pcf?
-<ce>
-<ce>
+<ce>우려스러운 문제가 생겼소.
+<ce>마녀를 증오하는 고대 뱀파이어가 우리 영토의 버려진 성에
+<ce>들어왔소. 당연히 우리가 바로잡아야 할 일이오.
+<ce>동의하지 않소, %pcf?
 
 RefuseQuest:  [1001]
-<ce>자네가 두려워하는 것도 이해하오. 고대 뱀파이어를
-<ce>죽이겠다고 나설 자는 대단히 유능하거나
-<ce>대단히 어리석은 자뿐이니까.
-<ce>
+<ce>자네가 두려워하는 것도 이해하오.
+<ce>고대 뱀파이어를 죽이겠다고 나설 자는 대단히 유능하거나 대단히
+<ce>어리석은 자뿐이니까.
 
 AcceptQuest:  [1002]
 <ce>맡겠소? 하지만 고대 뱀파이어는 약한 상대가 아니오.
-<ce>준비 없이 싸우러 가지 마시오. 괴물의 이름은
-<ce>=vamprival_, 새 성소는 ___mondung_이오.
+<ce>준비 없이 싸우러 가지 마시오.
+<ce>괴물의 이름은 =vamprival_, 새 성소는 ___mondung_이오.
 <ce>____mondung_에서 찾을 수 있을 것이오.
-<ce>=1stparton_일 밤 안에 돌아오기를
-<ce>기다리겠소. 죽지 마시오, %pcf.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>=1stparton_일 밤 안에 돌아오기를 기다리겠소. 죽지 마시오, %pcf.
 
 QuestFail:  [1003]
-<ce>=vamprival_가 자살하기를 기다렸소?
-<ce>그럴 리 없지. 자네가 %g3 죽음을
-<ce>불러올 자가 되어야 하오.
-<ce>
-<ce>
+<ce>=vamprival_가 자살하기를 기다렸소? 그럴 리 없지.
+<ce>자네가 %g3 죽음을 불러올 자가 되어야 하오.
 
 QuestComplete:  [1004]
-<ce>그 고대 뱀파이어의 비명이 여기까지 들리는 듯했소,
-<ce>%pcf. 마녀들의 감사를 받으시오.
-<ce>
+<ce>그 고대 뱀파이어의 비명이 여기까지 들리는 듯했소, %pcf.
+<ce>마녀들의 감사를 받으시오.
 
 RumorsDuringQuest:  [1005]
 ___mondung_에서 움직임이 많아졌는데 수년간 버려졌던 곳이야.
 <--->
-=vamprival_는 귀족이야. %g은 ___mondung_과
-%reg을 정리하고 있다고 말하더군.
+=vamprival_는 귀족이야.
+%g은 ___mondung_과 %reg을 정리하고 있다고 말하더군.
 
 RumorsPostfailure:  [1006]
-=vamprival_가 마침내 ___mondung_에서
-이사했다더군. 귀족이 살 곳은 아니지.
+=vamprival_가 마침내 ___mondung_에서 이사했다더군.
+귀족이 살 곳은 아니지.
 <--->
-=vamprival_가 ___mondung_에서 나간 뒤
-%g은 궁전에 자주 드나든대.
+=vamprival_가 ___mondung_에서 나간 뒤 %g은 궁전에 자주 드나든대.
 
 RumorsPostsuccess:  [1007]
 그 친절한 =vamprival_가 뱀파이어였다니! 전혀 몰랐어!
 <--->
-훌륭한 %ra 용병이 ___mondung_의 뱀파이어를
-죽였으니 %god께 감사해야 해.
+훌륭한 %ra 용병이 ___mondung_의 뱀파이어를 죽였으니
+%god께 감사해야 해.
 
 QuestorPostsuccess:  [1008]
-=vamprival_를 처리한 일을 잊지 않았소,
-%pcf. 무엇을 도와드릴까?
+=vamprival_를 처리한 일을 잊지 않았소, %pcf. 무엇을 도와드릴까?
 
 QuestorPostfailure:  [1009]
-<ce>=vamprival_는 여전히 밤을 돌아다니며
-<ce>우리 자매의 피를 마시고 있소.
-<ce>이길 수 없다고 처음부터 말했어야지. 이제
-<ce>떠나시오. 더 이야기하지 않겠소.
-<ce>
+<ce>=vamprival_는 여전히 밤을 돌아다니며 우리 자매의 피를 마시고
+<ce>있소. 이길 수 없다고 처음부터 말했어야지. 이제 떠나시오.
+<ce>더 이야기하지 않겠소.
 
 Message:  1011
 _witch_는 __witch_에 있는 아주 친절하고 총명한 =witch_야.
 <--->
-_witch_는 여기서 %di 떨어진 __witch_에서
-찾을 수 있는 친절한 =witch_야.
+_witch_는 여기서 %di 떨어진 __witch_에서 찾을 수
+있는 친절한 =witch_야.
 
 Message:  1012
 _witch_는 ___witch_의 마녀야.
@@ -92,10 +75,10 @@ _witch_는 ___witch_의 마녀야.
 _witch_는 ___witch_에 속한 =witch_ 마녀야.
 
 Message:  1015
-%qdt: ___witch_의 _witch_는 %reg의 마녀들을
-파괴하려는 고대 뱀파이어를 죽이라고 나를 보냈다.
-=1stparton_일 안에 ___mondung_의 언데드 괴물을
-영원히 죽이고 ___witch_로 돌아가기로 했다.
+%qdt: ___witch_의 _witch_는
+%reg의 마녀들을 파괴하려는 고대 뱀파이어를 죽이라고 나를 보냈다.
+=1stparton_일 안에 ___mondung_의 언데드 괴물을 영원히 죽이고
+___witch_로 돌아가기로 했다.
 
 Message:  1020
 <ce>=vamprival_를 죽였습니다.

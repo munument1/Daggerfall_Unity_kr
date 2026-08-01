@@ -11,62 +11,49 @@ DisplayName: 금 밀수
 QRC:
 
 QuestorOffer:  [1000]
-<ce>___contact_에 있는 연락책에게 물건을
-<ce>전해줄 사람이 필요합니다. 그 대가로
-<ce>받은 물건을 제게 가져오면 _reward_골드를
-<ce>드리겠습니다. 맡겠습니까?
-<ce>
-<ce>
+<ce>___contact_에 있는 연락책에게 물건을 전해줄 사람이
+<ce>필요합니다.
+<ce>그 대가로 받은 물건을 제게 가져오면
+<ce>_reward_골드를 드리겠습니다. 맡겠습니까?
 
 RefuseQuest:  [1001]
 <ce>싫습니까? 후한 보상을 준비했는데 아쉽군요.
-<ce>
 
 AcceptQuest:  [1002]
-<ce>좋습니다. 이 금괴를 ___contact_의
-<ce>__contact_에 있는 _contact_라는
-<ce>=contact_에게 전하십시오. 그 __contact_에
-<ce>=1stparton_일 안에 도착하지 못하면 _contact_가
-<ce>떠나 우리 모두 곤란해질 겁니다. 특히 당신이
-<ce>말입니다. 행운을 빕니다, %pcf.
-<ce>
-<ce>
-<ce>
+<ce>좋습니다.
+<ce>이 금괴를 ___contact_의 __contact_에
+<ce>있는 _contact_라는 =contact_에게 전하십시오.
+<ce>그 __contact_에 =1stparton_일 안에 도착하지 못하면
+<ce>_contact_가 떠나 우리 모두 곤란해질 겁니다.
+<ce>특히 당신이 말입니다. 행운을 빕니다, %pcf.
 
 QuestFail:  [1003]
-<ce>아직 시작하지 않았거나 실패를 사과하러
-<ce>온 모양이군요, %pcf. 매우 실망스럽습니다.
-<ce>당신의 무능 때문에 일이 복잡해졌으니
-<ce>당장 움직이십시오, %pcf.
-<ce>
-<ce>
-<ce>
+<ce>아직 시작하지 않았거나 실패를 사과하러 온 모양이군요,
+<ce>%pcf. 매우 실망스럽습니다.
+<ce>당신의 무능 때문에 일이 복잡해졌으니 당장 움직이십시오,
+<ce>%pcf.
 
 QuestComplete:  [1004]
-<ce>훌륭합니다, %pcf. 약속한 _item2_을
-<ce>가져왔군요. 용기와 담력이 대단합니다.
-<ce>앞으로 더 큰 활약을 기대하지요.
-<ce>
-<ce>
+<ce>훌륭합니다, %pcf. 약속한 _item2_을 가져왔군요.
+<ce>용기와 담력이 대단합니다. 앞으로 더 큰 활약을 기대하지요.
 
 RumorsDuringQuest:  [1005]
-<ce>얼마 전 어떤 =contact_가 이곳에 와 %ra를 봤냐고 묻더군.
+<ce>얼마 전 어떤 =contact_가 이곳에 와 %ra를 봤냐고
+<ce>묻더군.
 <--->
-<ce>어떤 =contact_가 _item1_을 가진 %ra를 찾고 있었어.
+<ce>어떤 =contact_가 _item1_을 가진 %ra를 찾고
+<ce>있었어.
 
 RumorsPostfailure:  [1006]
-<ce>_questgiver_가 어떤 %ra
-<ce>용병에게 단단히 화났대.
+<ce>_questgiver_가 어떤 %ra 용병에게 단단히 화났대.
 <--->
-<ce>_questgiver_는 아직 용병을 고용하지만
-<ce>%g의 의뢰가 엉망이 됐다는군.
+<ce>_questgiver_는 아직 용병을 고용하지만 %g의 의뢰가 엉망이
+<ce>됐다는군.
 
 RumorsPostsuccess:  [1007]
-<ce>_questgiver_가 마침내 %g에게
-<ce>필요한 _item2_을 얻었대.
+<ce>_questgiver_가 마침내 %g에게 필요한 _item2_을 얻었대.
 <--->
-<ce>_questgiver_가 어떤 %ra
-<ce>용병을 칭찬하고 다닌다더군.
+<ce>_questgiver_가 어떤 %ra 용병을 칭찬하고 다닌다더군.
 
 QuestorPostsuccess:  [1008]
 다시 만났군요, 젊은 친구. 해준 일은 잊지 않았습니다.
@@ -74,12 +61,9 @@ QuestorPostsuccess:  [1008]
 아, %pcf. 다시 보니 반갑군요.
 
 QuestorPostfailure:  [1009]
-<ce>무능한 %ra 전령이군요. 다시
-<ce>돌아올 배짱은 있었나 봅니다.
+<ce>무능한 %ra 전령이군요. 다시 돌아올 배짱은 있었나 봅니다.
 <--->
-<ce>그 무능한 전령 아닌가? 이제
-<ce>그만 기어가 사라지지 그래?
-<ce>
+<ce>그 무능한 전령 아닌가? 이제 그만 기어가 사라지지 그래?
 
 QuestLogEntry:  [1010]
 %qdt: ___questgiver_의 _questgiver_는
@@ -94,22 +78,16 @@ _questgiver_에게 가져갈 _item2_을 받았다.
 Message:  1020
 <ce>그 금괴는 무거울 텐데 내가 대신 들어주지.
 <ce>순순히 넘기면 목숨은 살려주겠다.
-<ce>
-<ce>
 
 Message:  1021
-<ce>용감한 꼬마 전령이군. 내 친구들에게 네가
-<ce>얼마나 도움이 됐는지 꼭 말해주지.
-<ce>
-<ce>
+<ce>용감한 꼬마 전령이군.
+<ce>내 친구들에게 네가 얼마나 도움이 됐는지 꼭 말해주지.
 
 Message:  1030
 <ce>아, 당신이 전령이군요. 훌륭합니다.
-<ce>이 _item2_을 즉시 _questgiver_에게
-<ce>가져가십시오. %g가 약속대로 보상할 겁니다.
+<ce>이 _item2_을 즉시 _questgiver_에게 가져가십시오.
+<ce>%g가 약속대로 보상할 겁니다.
 <ce>함께 거래해서 기쁘군요, %pcf.
-<ce>
-<ce>
 
 -- Symbols used in the QRC file:
 --

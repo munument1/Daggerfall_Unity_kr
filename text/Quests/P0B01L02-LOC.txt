@@ -11,8 +11,17 @@ DisplayName: 뱀파이어의 유물
 QRC:
 
 QuestorOffer:  [1000]
-<ce>친애하는 %pcf, 우리 중 하나가 되겠다는 결의를 증명할 작은 임무를 맡기겠다. __itemdung_의 마법사 길드에는 우리의 _vamprelic_이 보잘것없는 고서처럼 갇혀 있다. 그들이 더 안전한 곳으로 옮기기 전, =1stparton_일 안에 감옥에서 해방시켜라.
-<ce>_vamprelic_을 얻으면 내게 오라. 나는 ___vampire_의 __vampire_에서 =1stparton_일 동안 기다리겠다. 알아보기는 어렵지 않을 것이다. =vampire_를 찾아라. 더 격식 없는 자리에서 자네와 만나기를 기대하겠다, %pcf. 반드시 오라. 죽음 속에서, %vam의 _vampire_
+<ce>친애하는 %pcf, 우리 중 하나가 되겠다는 결의를
+<ce>증명할 작은 임무를 맡기겠다.
+<ce>__itemdung_의 마법사 길드에는 우리의 _vamprelic_이
+<ce>보잘것없는 고서처럼 갇혀 있다.
+<ce>그들이 더 안전한 곳으로 옮기기 전, =1stparton_일 안에 감옥에서
+<ce>해방시켜라. _vamprelic_을 얻으면 내게 오라.
+<ce>나는 ___vampire_의 __vampire_에서 =1stparton_일 동안
+<ce>기다리겠다. 알아보기는 어렵지 않을 것이다.
+<ce>=vampire_를 찾아라.
+<ce>더 격식 없는 자리에서 자네와 만나기를 기대하겠다, %pcf.
+<ce>반드시 오라. 죽음 속에서, %vam의 _vampire_
 
 RefuseQuest:  [1001]
 오류: 대거폴 텍스트 1001이 호출되었습니다.
@@ -22,49 +31,38 @@ AcceptQuest:  [1002]
 
 QuestComplete:  [1004]
 <ce>마침내 만나 반갑군, %pcf. 물론 내가 _vampire_다.
-<ce>이제 %vam 혈통이 _vamprelic_을 정당하게
-<ce>되찾을 것이다. 보수를 받을 수 있으리라는
-<ce>어리석은 생각은 하지 마라. %vam을
-<ce>섬기는 것 자체가 영광이니까.
-<ce>
-<ce>
-<ce>
+<ce>이제 %vam 혈통이 _vamprelic_을 정당하게 되찾을 것이다.
+<ce>보수를 받을 수 있으리라는 어리석은 생각은 하지 마라.
+<ce>%vam을 섬기는 것 자체가 영광이니까.
 
 RumorsDuringQuest:  [1005]
 마법사 길드가 오래되고 쓸모없는 잡동사니를 많이 버리고 있대.
 <--->
-여러 마법사 길드가 낡은 물건을 한데
-보내는 폐기장이 있다는군.
+여러 마법사 길드가 낡은 물건을 한데 보내는 폐기장이 있다는군.
 
 RumorsPostfailure:  [1006]
-마법사 길드의 경비가 저렇게 삼엄한 것을
-보면 훔칠 만한 것이 있겠지.
+마법사 길드의 경비가 저렇게 삼엄한 것을 보면 훔칠 만한 것이 있겠지.
 <--->
 마법사 길드가 먼지 쌓인 낡은 짐을 마침내 전부 옮겼대.
 
 RumorsPostsuccess:  [1007]
 어젯밤 로칸다의 세 별이 빛났어. 불경한 동맹의 징조라지.
 <--->
-마법사 길드가 그 절도 사건 때문에 어리둥절해한대.
-누가 그런 것을 원했을까?
+마법사 길드가 그 절도 사건 때문에 어리둥절해한대. 누가 그런 것을 원했을까?
 
 QuestorPostsuccess:  [1008]
 반갑다, %pcn. _vamprelic_을 가져온 일에 다시 한번 감사하지.
 
 QuestorPostfailure:  [1009]
-<ce>%pcf, 지금은 내 인내심의 한계를 시험할
-<ce>때가 아니다. 편지에 분명 _vamprelic_을
-<ce>가져오라고 썼는데 어디 있지? 형편없는
-<ce>모습이군, %pcf. 참으로 형편없어.
-<ce>
-<ce>
+<ce>%pcf, 지금은 내 인내심의 한계를 시험할 때가 아니다.
+<ce>편지에 분명 _vamprelic_을 가져오라고 썼는데 어디 있지?
+<ce>형편없는 모습이군, %pcf. 참으로 형편없어.
 
 QuestLogEntry:  [1010]
-그 이름을 쓰는 불길한 인물은 여기서
-%di 떨어진 __vampire_에 있어.
+그 이름을 쓰는 불길한 인물은 여기서 %di 떨어진 __vampire_에 있어.
 <--->
-_vampire_라는 기묘한 =vampire_가 여기서 %di
-떨어진 __vampire_에 머물고 있어.
+_vampire_라는 기묘한 =vampire_가 여기서 %di 떨어진
+__vampire_에 머물고 있어.
 
 Message:  1011
 _vampire_는 %vam 혈통의 일원이며 어린 혈족들의 스승이야.
@@ -83,15 +81,14 @@ Message:  1015
 
 Message:  1020
 %qdt: ___vampire_의 _vampire_에게서 편지를 받았다.
-__itemdung_의 마법사 길드 보안실에서 _vamprelic_을 훔칠
-시간은 =1stparton_일 밤이다. 일을 마치면 _vamprelic_을
-__vampire_의 _vampire_에게 가져가야 한다.
+__itemdung_의 마법사 길드 보안실에서 _vamprelic_을 훔칠 시간은
+=1stparton_일 밤이다.
+일을 마치면 _vamprelic_을 __vampire_의 _vampire_에게 가져가야
+한다.
 
 Message:  1030
 <ce>바닥에 떨어진 두루마리가 눈에 들어옵니다.
-<ce>가까이 살펴보니 당신 앞으로
-<ce>온 편지여서 깜짝 놀랍니다.
-<ce>
+<ce>가까이 살펴보니 당신 앞으로 온 편지여서 깜짝 놀랍니다.
 
 -- Symbols used in the QRC file:
 --

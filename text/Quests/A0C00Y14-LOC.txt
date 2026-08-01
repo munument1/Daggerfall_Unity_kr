@@ -12,48 +12,35 @@ DisplayName: 동네 배달
 QRC:
 
 QuestorOffer:  [1000]
-<ce>저는
-<ce>_questgiver_입니다.
-<ce>간단한 부탁이 하나 있습니다.
-<ce>제 친구에게 물건 하나를
-<ce>전해주시면 감사의 뜻으로
-<ce>_gold_골드를 드리겠습니다.
-<ce>어떠신가요, %pcf? <--->
-<ce>안녕하세요,
-<ce>_questgiver_입니다. 물건
-<ce>하나를 대신 전해줄 사람이
-<ce>필요합니다. 시내를 가로지르면 되는 짧은
-<ce>거리지만 지금은 제가 너무 바빠서요.
+<ce>저는 _questgiver_입니다. 간단한 부탁이 하나 있습니다.
+<ce>제 친구에게 물건 하나를 전해주시면 감사의 뜻으로
+<ce>_gold_골드를 드리겠습니다. 어떠신가요, %pcf?
+<ce><---> 안녕하세요, _questgiver_입니다.
+<ce>물건 하나를 대신 전해줄 사람이 필요합니다.
+<ce>시내를 가로지르면 되는 짧은 거리지만 지금은 제가 너무 바빠서요.
 <ce>수고비로 _gold_골드를 드리겠습니다.
 
 RefuseQuest:  [1001]
-<ce>아쉽군요. <--->
-<ce>그렇다고 그렇게 잘난
-<ce>체할 필요까지는 없잖아요!
-<ce><---> 제대로 일할
-<ce>사람을 다시 찾아봐야겠군요.
+<ce>아쉽군요. <---> 그렇다고 그렇게 잘난 체할 필요까지는 없잖아요!
+<ce><---> 제대로 일할 사람을 다시 찾아봐야겠군요.
 
 AcceptQuest:  [1002]
 <ce>좋습니다! 여기 소포가 있습니다.
-<ce>이 마을의
-<ce>_pickuplocal_에게
-<ce>가져다주세요. 보수는 %G 님이 지불할
-<ce>겁니다. 내일 이 시간까지 도착해야
-<ce>합니다. <---> 드디어 일할 사람을
-<ce>찾았군요. 이걸 이 마을의
-<ce>_pickuplocal_에게 가져다주세요.
-<ce>%G 님이 _gold_골드를 주실 겁니다.
+<ce>이 마을의 _pickuplocal_에게 가져다주세요.
+<ce>보수는 %g 님이 지불할 겁니다.
+<ce>내일 이 시간까지 도착해야 합니다.
+<ce><---> 드디어 일할 사람을 찾았군요.
+<ce>이걸 이 마을의 _pickuplocal_에게 가져다주세요.
+<ce>%g 님이 _gold_골드를 주실 겁니다.
 <ce>내일 이 시간까지 %g2 님에게 전해주세요.
 
 QuestComplete:  [1004]
-<ce>_questgiver_ 님이 제때 보내주시길 기다리고
-<ce>있었습니다. %G는 요즘 몹시 바쁘셨거든요.
+<ce>_questgiver_ 님이 제때 보내주시길 기다리고 있었습니다.
+<ce>%g는 요즘 몹시 바쁘셨거든요.
 <ce>여기 %g가 약속한 _gold_골드입니다.
-<ce>
 
 RumorsDuringQuest:  [1005]
 <ce>이맘때 날씨는 늘 엉망이죠.
-<ce>
 
 RumorsPostfailure:  [1006]
 <ce>여왕이 바람을 피우고 있다는 소문을 들었어요!
@@ -63,11 +50,9 @@ RumorsPostsuccess:  [1007]
 
 QuestorPostsuccess:  [1008]
 <ce>소포를 배달해주셔서 감사합니다, %pcf.
-<ce>
 
 QuestorPostfailure:  [1009]
-<ce>도둑놈! 내 소포를 가져가 놓고
-<ce>_pickuplocal_에게 전하지 않았군.
+<ce>도둑놈! 내 소포를 가져가 놓고 _pickuplocal_에게 전하지 않았군.
 <ce>다시는 당신을 돕지 않겠어.
 
 QuestLogEntry:  [1010]
@@ -77,57 +62,46 @@ ___pickuplocal_의 _pickuplocal_에게 배달하기로 했다.
 
 Message:  1011
 <ce>이 책에는 추억이 담겨 있습니다.
-<ce>_pickuplocal_ 님은 _book_ 사본을
-<ce>본 지 여러 해가 지났거든요.
-<ce>
+<ce>_pickuplocal_ 님은 _book_ 사본을 본 지 여러 해가
+<ce>지났거든요.
 
 Message:  1012
-<ce>_pickuplocal_ 님에게는 %g가 만들고 있는 특별한
-<ce>약에 쓸 _ingredient_ 재료가 필요합니다.
-<ce>
+<ce>_pickuplocal_ 님에게는 %g가 만들고 있는 특별한 약에 쓸
+<ce>_ingredient_ 재료가 필요합니다.
 
 Message:  1013
-<ce>이 _jewelry_ 장신구는 _pickuplocal_
-<ce>님에게 줄 선물입니다. 이것으로 %g2
-<ce>님과의 거래가 성사될 겁니다.
+<ce>이 _jewelry_ 장신구는 _pickuplocal_ 님에게 줄 선물입니다.
+<ce>이것으로 %g2 님과의 거래가 성사될 겁니다.
 
 Message:  1014
-<ce>이 특별한 _mensclothing_ 옷은
-<ce>어머니께서 축제를 맞아 _pickuplocal_
-<ce>님을 위해 만들어주신 겁니다.
+<ce>이 특별한 _mensclothing_ 옷은 어머니께서 축제를 맞아
+<ce>_pickuplocal_ 님을 위해 만들어주신 겁니다.
 
 Message:  1015
-<ce>_pickuplocal_ 님이 이 _painting_
-<ce>그림을 주문하셨습니다. 내일 열릴
-<ce>%g3 모임에 꼭 필요합니다.
+<ce>_pickuplocal_ 님이 이 _painting_ 그림을 주문하셨습니다.
+<ce>내일 열릴 %g3 모임에 꼭 필요합니다.
 
 Message:  1016
-<ce>_pickuplocal_ 님이 이 _potion_ 물약을
-<ce>가능한 한 빨리 필요로 하십니다.
+<ce>_pickuplocal_ 님이 이 _potion_ 물약을 가능한 한 빨리
+<ce>필요로 하십니다.
 
 Message:  1017
-<ce>_pickuplocal_ 님이 협박을 받고
-<ce>있습니다. 이 _weapon_ 무기가 %g3
-<ce>두려움을 가라앉혀줄 겁니다.
+<ce>_pickuplocal_ 님이 협박을 받고 있습니다.
+<ce>이 _weapon_ 무기가 %g3 두려움을 가라앉혀줄 겁니다.
 
 Message:  1018
-<ce>_pickuplocal_ 님의 결혼식에 쓸 훌륭한
-<ce>_womensclothing_ 옷을 샀습니다. 제때 도착하지
-<ce>않으면 정말 창피한 일이 될 겁니다.
-<ce>
+<ce>_pickuplocal_ 님의 결혼식에 쓸 훌륭한 _womensclothing_ 옷을
+<ce>샀습니다. 제때 도착하지 않으면 정말 창피한 일이 될 겁니다.
 
 Message:  1019
 <ce>무슨 일이죠? _questgiver_ 님이요?
 <ce>네, %g가 오늘 중으로 소포를 보낸다고 했습니다.
-<ce>가서 %g2를 찾아보세요. 소포를 가져오는
-<ce>대가를 %g가 줄지도 모르겠군요.
-<ce>
+<ce>가서 %g2를 찾아보세요.
+<ce>소포를 가져오는 대가를 %g가 줄지도 모르겠군요.
 
 Message:  1020
-<ce>_questgiver_이 %g가 소포 배달에 돈을 줄
-<ce>거라고 말하는 걸 들었다. 그 소포를 내놓아라.
-<ce>그러면 다치지 않게 해주지.
-<ce>
+<ce>_questgiver_이 %g가 소포 배달에 돈을 줄 거라고 말하는 걸
+<ce>들었다. 그 소포를 내놓아라. 그러면 다치지 않게 해주지.
 
 -- Symbols used in the QRC file:
 --

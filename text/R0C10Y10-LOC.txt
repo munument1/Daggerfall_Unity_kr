@@ -11,16 +11,11 @@ DisplayName: 무기 보급
 QRC:
 
 QuestorOffer:  [1000]
-<ce>_reward_골드를 벌고 싶다면 내 요원에게
-<ce>작은 소포를 전달하기만 하면
-<ce>됩니다. 지금 결정하십시오.
-<ce>
+<ce>_reward_골드를 벌고 싶다면 내 요원에게 작은 소포를
+<ce>전달하기만 하면 됩니다. 지금 결정하십시오.
 <--->
-<ce>적당한 재능과 평균 이상의 신중함을
-<ce>갖추고 _reward_골드에 하급 전령 노릇을
-<ce>할 사람이 필요합니다. 당신입니까?
-<ce>
-<ce>
+<ce>적당한 재능과 평균 이상의 신중함을 갖추고 _reward_골드에
+<ce>하급 전령 노릇을 할 사람이 필요합니다. 당신입니까?
 
 RefuseQuest:  [1001]
 <ce>정말입니까? 너무 바쁜가 보군요. 당신 손해입니다.
@@ -29,21 +24,16 @@ AcceptQuest:  [1002]
 <ce>훌륭합니다. 여기 _weapon_이 있습니다.
 <ce>=queston_일 안에 ___contact_의 _contact_에게
 <ce>전해야 합니다. 충분한 시간이지요.
-<ce>=contact_인 _contact_를 찾으면
-<ce>알아볼 수 있을 겁니다. 행운을 빕니다.
-<ce>
-<ce>
+<ce>=contact_인 _contact_를 찾으면 알아볼 수 있을 겁니다.
+<ce>행운을 빕니다.
 
 QuestFail:  [1003]
-<ce>간단한 배달도 못 했습니까, %pcf? 아직
-<ce>보상을 기대하는 것은 아니겠지요.
-<ce>
+<ce>간단한 배달도 못 했습니까, %pcf?
+<ce>아직 보상을 기대하는 것은 아니겠지요.
 
 QuestComplete:  [1004]
-<ce>다시 만나 반갑습니다, %pcf.
-<ce>_weapon_도 가져왔군요. 여기 약속한
-<ce>_questgiver_의 _reward_골드입니다.
-<ce>
+<ce>다시 만나 반갑습니다, %pcf. _weapon_도 가져왔군요.
+<ce>여기 약속한 _questgiver_의 _reward_골드입니다.
 
 RumorsDuringQuest:  [1005]
 _questgiver_가 여전히 밀수에 손을 댄다는군.
@@ -68,11 +58,11 @@ QuestorPostsuccess:  [1008]
 QuestorPostfailure:  [1009]
 <ce>나를 위해 배달을 실패했던 %ra와 똑같이 생겼군요.
 <ce>흥미롭습니다. 이제 가십시오.
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_의 __questgiver_에 있는 _questgiver_는
-동맹 _contact_에게 _weapon_을 전달하라고 했다.
+%qdt: ___questgiver_의 __questgiver_에
+있는 _questgiver_는 동맹 _contact_에게 _weapon_을
+전달하라고 했다.
 =queston_일 안에 _weapon_을 _contact_ 손에 넘겨야 한다.
 그 =contact_는 ___contact_의 __contact_에서 찾을 수 있다.
 

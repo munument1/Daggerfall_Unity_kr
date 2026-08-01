@@ -15,49 +15,38 @@ QuestorOffer:  [1000]
 <ce>우리는 자네를 지켜보고 있었어, %pcf.
 <ce>“우리”가 누구인지는 신경 쓰지 마.
 <ce>자네는 이 길드에서 떠오르는 인재니까.
-<ce>보수 없이 특별한 일을 하나 해준다면 앞으로
-<ce>자네를 좋게 볼 수도 있지. 어때?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>보수 없이 특별한 일을 하나 해준다면 앞으로 자네를 좋게 볼 수도
+<ce>있지. 어때?
 
 RefuseQuest:  [1001]
 <ce>등 뒤를 조심해라, 이 더러운 배신자 놈아!
-<ce>
 
 AcceptQuest:  [1002]
-<ce>임무는 아주 간단해. __palace_의 %rt이 최근
-<ce>솜씨가 제법 괜찮은 _jewelry_을 “구입”했어.
+<ce>임무는 아주 간단해.
+<ce>__palace_의 %rt이 최근 솜씨가 제법 괜찮은
+<ce>_jewelry_을 “구입”했어.
 <ce>우리가 가까이서 살펴보고 싶은 물건이지.
-<ce>정확히 =2palace_일 안에 궁전으로 들어갈
-<ce>길을 찾아 그 장신구를 들고 여기로 돌아와.
+<ce>정확히 =2palace_일 안에 궁전으로 들어갈 길을 찾아 그 장신구를
+<ce>들고 여기로 돌아와.
 <ce>진정한 도둑 길드원이라면 불가능한 일은 아니지.
 <ce>뭘 기다리나, %pcf? 어서 가!
-<ce>
-<ce>
-<ce>
-<ce>
 
 QuestFail:  [1003]
 <ce>어서 가라고 했다!
 
 QuestComplete:  [1004]
-<ce>축하한다, %pcf. 머지않아
-<ce>우리에게서 다시 연락이 갈 거야.
-<ce>
+<ce>축하한다, %pcf. 머지않아 우리에게서 다시 연락이 갈 거야.
 
 RumorsDuringQuest:  [1005]
-%t %rn은 %g3의 새 _jewelry_을 무척 자랑스러워하는
-모양이야. 모두가 보고 싶어 하지.
+%t %rn은 %g3의 새 _jewelry_을 무척
+자랑스러워하는 모양이야. 모두가 보고 싶어 하지.
 <--->
 새 _jewelry_ 때문에 _palace_의 경비가 삼엄해졌대.
 
 RumorsPostfailure:  [1006]
 서툰 절도 사건 뒤에 %t의 부하들이 _jewelry_을 되찾았대.
 <--->
-도둑 길드라면 _jewelry_을 손에 넣을
-그런 기회를 망치지는 않았을 텐데.
+도둑 길드라면 _jewelry_을 손에 넣을 그런 기회를 망치지는 않았을 텐데.
 
 RumorsPostsuccess:  [1007]
 도둑 길드가 %t에게서 직접 훔치다니 갈수록 대담해지는군.
@@ -66,13 +55,13 @@ RumorsPostsuccess:  [1007]
 
 QuestLogEntry:  [1010]
 %qdt: 도둑 길드에서 영향력을 얻기 위해 __palace_에
-있는 %t의 궁전 _palace_에 침입하여 %t의 새 _jewelry_을
-훔치기로 했다. =2palace_일 안에 ___qgiver_의
-_qgiver_에게 _jewelry_을 넘겨야 한다.
+있는 %t의 궁전 _palace_에 침입하여
+%t의 새 _jewelry_을 훔치기로 했다.
+=2palace_일 안에 ___qgiver_의 _qgiver_에게 _jewelry_을
+넘겨야 한다.
 
 Message:  1015
 <ce>의뢰받은 _jewelry_을 손에 넣었습니다.
-<ce>
 
 Message:  1020
 <ce>틀림없이 바로 이 물건입니다!
