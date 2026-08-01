@@ -1,20 +1,24 @@
 1
 00:00:00,987 --> 00:00:02,228
+거대한 누미디움이
 Great Numidium
 
 2
 00:00:02,263 --> 00:00:04,339
+대거폴의 용의 부름에 응한다.
 comes to the call of the Dragon of Daggerfall.
 
 3
 00:00:04,501 --> 00:00:07,055
+센티넬과 웨이레스트의 군대는
 The armies of Sentinel and Wayrest
 
 4
 00:00:07,056 --> 00:00:08,705
+흩날리는 낙엽처럼 무너지고,
 fall like scattered leaves,
 
 5
 00:00:08,925 --> 00:00:15,000
+대거폴은 일리악 만을 굳건히 지배하게 된다.
 leaving Daggerfall in secure control of the Iliac Bay.
-

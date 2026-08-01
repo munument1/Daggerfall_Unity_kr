@@ -1,24 +1,29 @@
 1
 00:00:00,754 --> 00:00:02,926
+고트워그의 명령 아래,
 Under the command of Gortwog,
 
 2
 00:00:02,961 --> 00:00:05,825
+누미디움은 일리악 만의 다른 세력들을 파괴한다.
 Numidium destroys the other powers of Iliac Bay:
 
 3
 00:00:05,826 --> 00:00:08,200
+대거폴, 센티넬, 웨이레스트다.
 Daggerfall, Sentinal and Wayrest.
 
 4
 00:00:08,201 --> 00:00:11,395
+오시니움이라는 새로운 오크의 고향이 세워지고,
 The new orcish homeland is carved out for Orsinium,
 
 5
 00:00:11,396 --> 00:00:13,623
+제국은 다시는
 And the Empire will never be able to dispute
 
 6
 00:00:13,624 --> 00:00:18,600
+오크의 동등한 권리에 대한 고트워그의 주장을 부정하지 못하리라.
 Gortwog's claim to orcish equality.
-

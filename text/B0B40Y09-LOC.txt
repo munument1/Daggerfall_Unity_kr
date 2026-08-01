@@ -12,58 +12,62 @@ DisplayName: 거인 사냥
 QRC:
 
 QuestorOffer:  [1000]
-<ce>방금 _monster_의 농장 습격 및 가축
-<ce>포식 소식을 들었습니다. 제 이름이요?
-<ce>천 번 사과드립니다, %pcf. 저는 _qgiver_입니다.
-<ce>가서 그 _monster_ 처치를 부탁드려도 되겠습니까?
+<ce>농장을 습격하고 가축을 잡아먹는 _monster_가
+<ce>있다는 소식이 막 들어왔습니다. 내 이름 말입니까?
+<ce>실례했군요, %pcf. 나는 _qgiver_입니다.
+<ce>_monster_를 죽이러 가시겠습니까?
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>고귀한 기사들은 다 어디에 있습니까? 그들 모두
-<ce>%reg 에서 사라진 것입니까? 가십시오, %pcn.
+<ce>고귀한 기사들은 다 어디로 갔습니까?
+<ce>%reg에서 모두 사라지기라도
+<ce>했나요? 물러가십시오, %pcn.
 
 AcceptQuest:  [1002]
-<ce>_monster_의 ___dungeon_ 은신처가 확인되었습니다.
-<ce>그곳으로 가서 놈을 처치하십시오.
-<ce>그곳에서 다른 _monster_들을 발견할지도 모릅니다.
-<ce>필요하다면 그들도 죽이되, 팔에 곰 발톱 낙인이 찍힌 놈은
-<ce>반드시 처리하십시오. 제게는 =2dung_일밖에 없습니다.
+<ce>_monster_는 ___dungeon_을 소굴로 삼았습니다.
+<ce>그곳으로 가서 죽이십시오. 다른 _monster_들도
+<ce>있을 수 있습니다. 필요하면 죽이되, 팔에 곰
+<ce>발톱 낙인이 찍힌 놈만큼은 반드시 처리하십시오.
+<ce>=2dung_일밖에 없습니다.
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>이제 당신은 진정한 _monster_ 학살자입니다,
-<ce>%pcf! 당신과 악수를 하게 될 줄은 몰랐군요.
+<ce>이제 진정한 _monster_ 사냥꾼이군요, %pcf!
+<ce>내가 직접 당신과 악수하다니 영광입니다.
+<ce>
 
 RumorsDuringQuest:  [1005]
 거인들은 보통 그렇게 공격적이지 않습니다.
-하지만 ___dungeon_에 있는 놈은 확실히 다릅니다.
+하지만 ___dungeon_의 놈은 확실히 다르지요.
 
 RumorsPostfailure:  [1006]
-___dungeon_ 거인이 남쪽으로 이동했다는 소문을 들었습니다.
-그곳 사람들이 저주를 퍼붓고 있겠군요.
+___dungeon_의 거인은 남쪽으로 내려갔다더군요.
+그곳 사람들은 우리를 저주하겠지요.
 
 RumorsPostsuccess:  [1007]
-%kno 의 활약으로 %reg 의 구원이
-다시 이루어졌습니다. 그 기사단의 %ra 측에서
-___dungeon_ 거인을 처치했습니다.
+%kno가 다시 %reg을 구했습니다. 기사단의 %ra가
+___dungeon_의 거인을 죽였습니다.
 
 QuestorPostsuccess:  [1008]
-어서 오십시오, 거인 학살자 %pcf.
-무엇을 도와드릴까요?
+안녕하십니까, 거인 살해자 %pcf. 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-거인 하나 제대로 처치할 줄 알게 되면 다시 오십시오,
-%pcf.
+고작 거인 한 마리 죽이는 법을 배운 뒤 다시 오십시오, %pcf.
 
 QuestLogEntry:  [1010]
-%qdt:
- ___qgiver_에 있는 __qgiver_의 _qgiver_께서
- 제게 ___dungeon_에서 처치해야 할 _monster_에 대해
- 말씀해주셨습니다. 제게는 =2dung_일밖에 없습니다.
+%qdt: ___qgiver_의 __qgiver_에 있는 _qgiver_는
+___dungeon_에서 죽여야 할 _monster_에 관해 알려주었다.
+주어진 시간은 =2dung_일뿐이다.
 
 Message:  1011
-<ce>곰 발톱 낙인이 _monster_의
-<ce>팔 위쪽에서 분명하게 보입니다.
-<ce>이것이 _qgiver_의 언급과 일치하는 놈임이 틀림없습니다.
-
+<ce>_monster_의 위팔에 곰 발톱 모양
+<ce>낙인이 선명합니다. _qgiver_가 말한
+<ce>바로 그놈이 틀림없습니다.
+<ce>
 
 -- Symbols used in the QRC file:
 --

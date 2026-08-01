@@ -7,10 +7,10 @@ Quest: __DEMO15
 QRC:
 
 Message:  1011
-_someperson_의 과거 소유주는 _someitem_였습니다.
+_someitem_은 한때 _someperson_의 소유였습니다.
 
 Message:  1012
-_someitem_의 마법적 힘은 널리 알려져 있습니다.
+_someitem_에는 마법의 힘이 있다고 합니다.
 
 QBN:
 

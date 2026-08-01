@@ -1,8 +1,9 @@
 1
 00:00:00,000 --> 00:00:04,090
-잠은 편치 않았다, 어떤 아름다운 여인의 악몽 때문이었다.
+그대의 잠은 한 아름다운 여인의 악몽으로 뒤숭숭하다.
 Your sleep is troubled by nightmares of a beautiful woman
+
 2
 00:00:04,100 --> 00:00:11,000
-어둠 속에서 네가 죽인.
+어두운 곳에서 그대가 살해하는 여인이다.
 whom you murder in a dark place.

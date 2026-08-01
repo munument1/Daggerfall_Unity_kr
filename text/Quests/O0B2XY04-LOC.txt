@@ -11,51 +11,52 @@ DisplayName: 귀중한 페이지
 QRC:
 
 QuestorOffer:  [1000]
-<ce>임무가 하나 있네. 평범한 길드 업무지. 보수는 _gold_
-<ce>골드네. 표준 길드 수수료 정도지. 관심 있나?
+<ce>일 하나 있어. 평범한 길드 일이지. 보수는 _gold_골드.
+<ce>표준 길드 보수다. 관심 있나?
+<ce>
 
 RefuseQuest:  [1001]
-<ce>자네에겐 안 된 일이군, %pcn.
+<ce>자네만 손해지, %pcn.
 
 AcceptQuest:  [1002]
-<ce>__mansion_ 방향으로 가게. _mansion_ 개체를 찾게. 그
-<ce>안에는 _book_의 명칭으로 불리는 희귀한 책이 있네.
-<ce>=traveltime_일 안에 가져오면 보수를 주겠네. 아주 간단하지,
-<ce>그렇지 않나?
+<ce>__mansion_으로 가서 _mansion_을 찾아. 안에는
+<ce>_book_이라는 희귀한 책이 있어. =traveltime_일 안에
+<ce>가져오면 보수를 주지. 간단하지?
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>아. %oth. 여기 자네의 길드 수수료네. 언젠가 다시
-<ce>함께 일할 수 있으면 좋겠군.
+<ce>아, %oth. 여기 길드 보수다. 언젠가
+<ce>다시 같이 일할 수도 있겠군.
+<ce>
 
 RumorsDuringQuest:  [1005]
-__mansion_의 한 수집가가 방금 _book_의 희귀본을
-구입했답니다.
+__mansion_의 한 수집가가 희귀한 _book_ 사본을 샀대.
 
 RumorsPostfailure:  [1006]
-_mansion_의 보안이 좋지 않아서 귀중품들을 다른 곳으로
-옮겼답니다.
+_mansion_의 보안이 허술해서 귀중품을 모두 옮겼대.
 
 RumorsPostsuccess:  [1007]
-_mansion_에서 도난당한 그 _book_ 사본은 대체할 수
-없는 물건이었죠.
+_mansion_에서 도난당한 _book_ 사본은
+다시 구할 수 없는 것이었대.
 
 QuestorPostsuccess:  [1008]
-오, 안녕, %pcf. 아까 말 안 했던 것 같은데, 그 책을
-가져온 건 정말 잘한 일이었어.
+아, 안녕, %pcf. 전에 말하지 않았다면,
+그 책을 가져온 일은 잘했어.
 
 QuestorPostfailure:  [1009]
-<ce>변명하려고 하지 말게, %pcf. 책이 어디 있는지,
-<ce>얼마나 서둘러야 하는지 말해줬는데도 자네는 그러지 않았지.
-<ce>이제 너무 늦었고, 난 피곤하네. 그냥 착한 %ra 답게
-<ce>썩 꺼져주겠나?
+<ce>변명하려 들지 마, %pcf. 책이 어디 있는지도,
+<ce>서둘러야 한다는 것도 말했는데 자네는
+<ce>듣지 않았어. 이제 늦었고 난 지쳤다.
+<ce>착한 %ra답게 썩 꺼져주겠나?
+<ce>
 
 QuestLogEntry:  [1010]
-%qdt:
- ___qgiver_의 도둑 길드 일원이 제게 __mansion_에 있는
- _mansion_에서 _book_의 명칭으로 불리는 책을 훔쳐
- 오라는 의뢰를 했습니다. _qgiver_까지 돌아오기까지
- =traveltime_일 남았습니다.
-
+%qdt: ___qgiver_의 도둑 길드원이 __mansion_의
+_mansion_에서 _book_을 훔치라고 했다. =traveltime_일 안에
+책을 구해 _qgiver_에게 돌아가야 한다.
 
 -- Symbols used in the QRC file:
 --

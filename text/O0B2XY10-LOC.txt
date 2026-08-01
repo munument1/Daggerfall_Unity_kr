@@ -11,51 +11,59 @@ DisplayName: 귀중한 물약
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pcn, 제 이름은 _qgiver_입니다.
-<ce>_potion_에 대한 정보를 입수했습니다.
-<ce>누군가 그걸 훔쳐다 줬으면 하는데요. 보상으로 _gold_
-<ce>골드를 드리겠습니다. 어떻게 생각하시나요?
+<ce>%pcn, 내 이름은 _qgiver_다. _potion_
+<ce>하나에 대한 정보를 얻었어. 누군가 훔쳐다 줬으면
+<ce>하지. _gold_골드를 주겠다. 어때?
+<ce>
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>진짜 일을 하고 싶어지면 다시 오게, %pcn.
+<ce>진짜 일을 하고 싶어지면 알려줘, %pcn.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>__alchemyshop_의 _alchemyshop_에서 _potion_ 찾을 수
-<ce>있을 거요. 그걸 가져와서 =traveltime_일 안에 내게 주면,
-<ce>보상을 주겠소. 그리 어려운 일은 아니지, 안 그런가?
+<ce>__alchemyshop_의 _alchemyshop_에 _potion_이 있어.
+<ce>가져다가 =traveltime_일 안에 내게 주면 돈을
+<ce>주지. 그리 어렵지는 않겠지?
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>나쁘지 않군, %pcn. 여기 _gold_ 골드일세.
+<ce>나쁘지 않군, %pcn. 여기 _gold_골드다.
+<ce>
 
 RumorsDuringQuest:  [1005]
-_alchemyshop_ 측은 __alchemyshop_에서 가장 좋은 재료를
-취급합니다. <---> 필요한 게 있다면 __alchemyshop_에
-있는 _alchemyshop_ 쪽으로 가보세요.
+_alchemyshop_에는 __alchemyshop_에서
+손꼽히는 좋은 재료가 있어.
+<--->
+웬만한 것은 다 구할 수 있으니 __alchemyshop_의
+_alchemyshop_으로 가봐.
 
 RumorsPostfailure:  [1006]
-_alchemyshop_에 희귀한 _potion_ 있었지만,
-지금은 더 안전한 곳으로 옮겨졌습니다.
+_alchemyshop_에 희귀한 _potion_이 있었지만
+지금은 더 안전한 곳에 있대.
 
 RumorsPostsuccess:  [1007]
-누군가 _alchemyshop_에서 _potion_ 한 병을 훔쳐
-갔답니다. 정말 간도 크지!
+누군가 _alchemyshop_에서 _potion_
+한 병을 훔쳐갔대. 간도 크지!
 
 QuestorPostsuccess:  [1008]
-물론 기억하고말고, %pcf.
-_potion_ 건이었지, 그렇지?
+물론 기억하지, %pcf. _potion_ 건이었잖아?
 
 QuestorPostfailure:  [1009]
-<ce>말도 마. _alchemyshop_까지 가서 _potion_
-<ce>찾아놓고는 실수로 마셔버린 거잖아, 그렇지?
-<ce>%oth, 도둑놈들은 다 똑같아, 매번 같은 소리지.
+<ce>말하지 마. _alchemyshop_까지 가서 _potion_을
+<ce>찾고는 실수로 마셔버렸지? %oth, 도둑은
+<ce>달라도 이야기는 늘 똑같군.
+<ce>
+<ce>
 
 QuestLogEntry:  [1010]
-%qdt:
- ___qgiver_의 도둑 길드원인 _qgiver_
- 측에서 __alchemyshop_에 있는 _alchemyshop_에게서
- _potion_ 훔쳐달라고 의뢰했습니다.
- =traveltime_일 안에 %g2 에게 가져다줘야 합니다.
-
+%qdt: ___qgiver_의 도둑 길드원 _qgiver_는 __alchemyshop_의
+_alchemyshop_에서 _potion_을 훔치라고 했다.
+=traveltime_일 안에 %g2에게 가져가야 한다.
 
 -- Symbols used in the QRC file:
 --

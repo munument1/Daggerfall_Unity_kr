@@ -8,277 +8,292 @@ DisplayName: 토템을 차지할 자
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pcf, 여기서 만나게 되어 기쁩니다. 블레이드와
-<ce>당신의 황제께서 다시 당신을 필요로 합니다. 타이버 셉팀의
-<ce>토템이 발견되었다는 사실을 알고 계실지 모르겠군요. 잠시
-<ce>동안 웨이레스트의 우드본 경이 그것을 가지고 있었습니다.
-<ce>어디서 얻었는지는 여전히 의문입니다. 블레이드는 그것을
-<ce>되찾기 위해 우드본 홀을 습격했습니다. 홀은 함락되었지만,
-<ce>우리 대원들도 많이 희생되었습니다.
+<ce>%pcf, 이곳에서 만나게 되어 반갑습니다.
+<ce>블레이드와 황제 폐하께서 다시 당신을
+<ce>필요로 합니다. 타이버 셉팀의 토템이
+<ce>발견되었다는 사실을 알고 계실지도 모르겠군요.
+<ce>한동안 웨이레스트의 우드본 경이 토템을 가지고
+<ce>있었습니다. 그가 어디서 손에 넣었는지는
+<ce>여전히 수수께끼입니다. 블레이드는 토템을
+<ce>되찾기 위해 우드본 홀을 공격했습니다.
+<ce>홀은 함락됐지만, 우리 대원도 수없이 목숨을
+<ce>잃었습니다. 그 대가는 참혹했습니다.
 <ce>
-<ce>우리는 우드본 홀을 약탈했지만, 토템은 사라진 뒤였습니다.
-<ce>고스리드가 토템을 가지고 있다고 생각할 만한 이유가
-<ce>있습니다. 블레이드는 더 이상 대거폴 성을 습격할 병력이
-<ce>없습니다. 당신은 이런 장소에 잠입하고 탈출하는 데 매우
-<ce>능숙하다는 것을 보여주었죠. 대거폴 성에 들어가서 타이버
-<ce>셉팀의 토템을 되찾아 주시겠습니까?
+<ce>우드본 홀을 점령했을 때 토템은 이미 사라진
+<ce>뒤였습니다. 고스리드가 토템을 가지고 있다고
+<ce>믿을 만한 이유가 있습니다. 블레이드에는
+<ce>이제 대거폴 성을 공격할 병력이 남아 있지
+<ce>않습니다. 하지만 당신은 이런 곳에 잠입했다가
+<ce>빠져나오는 데 탁월한 솜씨를 보여주셨습니다.
+<ce>대거폴 성으로 들어가 타이버 셉팀의
+<ce>토템을 찾아 되찾아 주실 수 있겠습니까?
+<ce>제국의 운명이 달린 일입니다.
 
 RefuseQuest:  [1001]
-<ce>정말 암울한 시대입니다. 만약 고스리드가 만텔라까지 손에
-<ce>넣는다면, 탐리엘은 내전에 휩싸이게 될 것입니다.
+<ce>참으로 암울한 시대군요. 고스리드가
+<ce>만텔라까지 손에 넣는다면 탐리엘은
+<ce>내전에 휩싸이고 말 것입니다.
 
 AcceptQuest:  [1002]
-<ce>당신을 믿을 수 있어서 다행입니다, %pcf. 토템은
-<ce>대거폴의 보물 창고에 있을 가능성이 큽니다. 아주 큰 방이라
-<ce>한눈에 알아볼 수 있을 겁니다. 저는 며칠 내로 떠날
-<ce>예정입니다. 토템을 손에 넣은 후 어디서 만나야 할지 소식을
-<ce>전하겠습니다. 성공하신다면, 황제께서 명하신 대로 위대한
-<ce>힘과 명성을 지닌 유물을 보상으로 드리겠습니다.
-<ce>_artifact4_!
+<ce>당신이라면 도와주실 줄 알았습니다, %pcf.
+<ce>토템은 대거폴 성의 보물 창고에 있을
+<ce>가능성이 큽니다. 아주 거대한 방이니 한눈에
+<ce>알아볼 수 있을 겁니다. 저는 며칠 안에
+<ce>이곳을 떠날 예정입니다. 토템을 손에 넣으면
+<ce>어디서 만날 수 있는지 소식을 보내겠습니다.
+<ce>임무에 성공한다면 황제 폐하의 명에 따라 강대한
+<ce>힘과 명성을 지닌 유물을 당신께 드리겠습니다.
+<ce>바로 _artifact4_입니다!
+<ce>
 
 QuestLogEntry:  [1010]
-%qdt:
- 브리시엔나 경이 내게 타이버 셉팀의 토템을 가져와 달라고
- 부탁했다. 토템은 대거폴 성의 보물 창고에 숨겨져 있다.
- 그녀는 암살자들이 자신을 노리고 있다고 두려워하며, 내가
- 성을 탈출하면 현재 위치를 알리는 편지를 보내겠다고 했다.
- 토템을 가진 자는 강력한 누미디움을 통제하고 타이버 셉팀이
- 그랬던 것처럼 새로운 제국을 건설할 잠재력을 갖게 된다.
+%qdt: 브리시엔나 부인은 타이버 셉팀의 토템을 가져와
+달라고 했다. 토템은 대거폴 성의 보물 창고에 숨겨져 있다.
+그녀는 암살자들이 자신을 노리고 있다고 우려하며, 내가
+성을 빠져나오면 현재 위치를 알리는 편지를 보내겠다고 했다.
+토템을 차지한 자는 강대한 누미디움을 통제하여, 오래전
+타이버 셉팀처럼 새로운 제국을 세울 수도 있다.
 
 Message:  1011
 %pcn,
- 
-즉시 ___tavern_의 __tavern_ 쪽으로 오십시오.
-_tavern_에서 기다리고 있겠습니다. 제국의 운명이 걸린
-일입니다.
- 
-<ce>-- 브리시엔나 경
+
+즉시 ____tavern_의 __tavern_에 있는 _tavern_으로
+오십시오. 그곳에서 기다리겠습니다. 제국의
+운명이 걸린 일일지도 모릅니다.
+
+<ce>-- 브리시엔나 부인
 
 Message:  1015
-<ce>머릿속에서 목소리가 울립니다...
+<ce>머릿속에서 장엄한 목소리가 울립니다...
 <ce>
-<ce>"너는 %pcn 님이구나. 나의 새로운 숙주가 된 자여.
-<ce>이제 명심하고 결심하라. 너는 타이버 셉팀의 토템을 운반할
-<ce>자격이 없다. 오직 그의 혈통만이 나를 운반할 수 있다. 이
-<ce>일을 완수할 시간으로 1년하고 하루를 주겠다."
+<ce>"너는 %pcn. 이제 나의 새로운 숙주다.
+<ce>이 사실을 굳게 명심하라. 너는 타이버 셉팀의
+<ce>토템을 지닐 자격이 없다. 오직 그의 혈통을 이은
+<ce>자만이 나를 지닐 수 있다. 그 일을 이루도록
+<ce>너에게 1년하고 하루를 주겠다."
 
 Message:  1017
-%qdt:
- 타이버 셉팀의 토템이 내 머릿속에 말을 걸었다! 토템은 오직
- 왕족의 피를 이어받은 자만이 자신을 차지할 수 있다고
- 주장한다. 토템은 내게 누가 진정한 주인이 될지 결정할
- 1년하고 하루의 시간을 주었다.
+%qdt: 타이버 셉팀의 토템이 내 머릿속에 말을 걸었다!
+토템은 오직 왕족의 피를 지닌 자만이 자신을
+차지할 수 있다고 한다. 누가 진정한 주인이 되어야 하는지
+결정하도록 내게 1년하고 하루의 시간을 주었다.
 
 Message:  1020
 %pcn,
- 
-당신이 타이버 셉팀의 토템을 찾고 있다는 소문을 들었습니다.
-부정하지 마십시오. 내 첩자들이 확인했습니다. 토템은 평민을
-위한 것이 아니며, 당신은 그것을 사용할 수 없습니다. 토템을
-내게 가져오면 10만 골드를 지불하겠습니다. 어떤 기준으로
-봐도 왕의 몸값에 해당하는 금액입니다. 경고하건대,
-웨이레스트나 대거폴은 왕좌에 충성하지 않습니다. 일리악
-만에서 신뢰할 수 있는 섭정은 나뿐입니다. 다른 자들은
-그것을 사용하여 나를 파멸시키는 데만 쓸 것입니다.
- 
+
+그대가 타이버 셉팀의 토템을 되찾으려 한다는 사실을 알고
+있습니다. 부인하지 마십시오. 내 첩자들이 이미 확인했습니다.
+토템은 평민이 다룰 물건이 아니며 그대는 사용할 수도
+없습니다. 토템을 내게 가져오면 10만 골드를 주겠습니다.
+누가 보아도 왕의 몸값에 맞먹는 액수입니다.
+
+명심하십시오. 웨이레스트도 대거폴도 왕좌에 충성하지
+않습니다. 일리악 만에서 믿을 수 있는 섭정은 오직 나뿐입니다.
+다른 자들은 토템으로 나를 파멸시키려 할 뿐입니다.
+
 <ce>아코리티 센티넬의 여왕
+<ce>
 
 Message:  1021
 고귀한 %pcf,
- 
-당신이 타이버 셉팀의 토템을 찾고 있다는 소문을 들었습니다.
-나 또한 수년간 이 경이로운 유물을 찾아 헤맸습니다. 당신이
-그것을 찾는다면, 당신만의 배를 살 수 있을 만큼 충분한
-몸값을 지불하겠습니다. 고스리드나 아코리티가 제안하는 어떤
-가격보다 더 많이 주겠습니다. 진정한 친구를 잊지 마십시오.
- 
-<ce>웨이레스트의 에드와이어 왕
+
+그대가 타이버 셉팀의 토템을 찾고 있다는 소문을 들었습니다.
+나 역시 오랫동안 이 경이로운 유물을 찾아왔습니다.
+그대가 토템을 찾아낸다면 자기 배 한 척을 사고도
+남을 만큼 후한 대가를 치르겠습니다. 고스리드나 아코리티가
+내놓는 어떤 액수라도 맞추거나 그 이상을 드리겠습니다.
+진정한 친구가 누구인지 잊지 마십시오.
+
+<ce>에드와이어 왕 웨이레스트
+<ce>
 
 Message:  1022
 %pcn,
- 
-당신은 오크가 아니니 그 심정을 이해할 수 없을 겁니다. 내
-종족은 야만인 취급을 받으며 눈에 띄는 즉시 학살당합니다.
-우리가 똑같이 대응하는 것이 그렇게 이상한 일입니까? 폭력은
-폭력을 낳을 뿐입니다.
- 
-나는 내 종족을 진흙탕에서 끌어올리고 싶습니다. 그들을
-탐리엘의 다른 종족들과 동등한 위치에 세울 것입니다. 그러기
-위해서는 타이버 셉팀의 토템이 필요합니다. 피를 흘리지
-않겠다는 약속으로 당신을 모욕하지는 않겠습니다. 내 왕관과
-후계자들의 이름을 걸고 맹세하건대, 오시니움의 경계를 넘어
-지배력을 행사하려 하지는 않을 것입니다. 나의 목표는
-탐리엘을 정복하는 것이 아니라 오크의 고향을 건설하는
-것입니다. 당신이 분명히 원할 만한 유물을 내가 가지고
-있습니다. 타이버 셉팀의 토템을 내게 준다면 그것은 당신의
-것이 될 것입니다.
- 
+
+당신은 오크가 아니니 우리가 어떤 삶을 살아왔는지 어찌
+알겠소? 내 백성은 야만인 취급을 받고 눈에 띄는 즉시
+살해당하오. 우리가 똑같이 맞서는 것이 그토록 이상한
+일이오? 폭력은 또 다른 폭력을 낳는 법이오.
+
+나는 내 민족을 수렁에서 끌어올리고자 하오.
+탐리엘의 다른 민족과 동등한 자리에 세울 것이오.
+그러려면 타이버 셉팀의 토템이 반드시 필요하오.
+피를 전혀 흘리지 않겠다는 거짓 약속으로 당신을 모욕하지는
+않겠소. 그러나 내 왕관과 후계자를 걸고, 오시니움의
+국경을 넘어 지배력을 행사하지 않겠다고 맹세하오.
+내 목적은 탐리엘 정복이 아니라 오크의 조국을 세우는
+것이오. 당신이 탐낼 만한 유물을 하나 가지고 있소.
+타이버 셉팀의 토템을 내게 준다면 그 유물은 당신 것이오.
+
 <ce>-- 고트워그, 전쟁군주이자 왕
 
 Message:  1023
 %pcn,
- 
-당신은 곧 타이버 셉팀의 토템을 손에 넣게 될 것입니다.
-별들이 그렇게 예견했고, 나는 그것을 읽었습니다. 이것을
-명심하십시오. 필멸의 존재들은 모두 자만과 탐욕으로 가득 차
-있습니다. 그들 중 누구에게든 토템을 주는 것은 이 세상에
-필멸자의 허영심을 풀어놓는 것과 같습니다. 그들은 자신이
-탐내는 바로 그것을 파괴하고 말 것입니다. 나는 세속적인
-욕망이 없습니다. 필멸자의 자만도, 사소한 탐욕도 없습니다.
-오직 나 같은 자만이 토템을 안전하게 다룰 수 있습니다. 나는
-그것을 에이테리우스로 가져가 이 세속의 껍데기를 뒤로할
-것이기 때문입니다. 토템이 존재하는 한, 그것은 탐리엘의
-모든 이에게 위험입니다. 토템을 내게 가져오면 내가 세상을
-보호하겠습니다. 금이나 보석은 제안하지 않겠습니다. 오직
-나만이 줄 수 있는 것을 제안하죠. 명성입니다. 탐리엘
-전역에서 당신의 명성이 치솟을 것입니다.
- 
+
+그대는 머지않아 타이버 셉팀의 토템을 손에 넣을 것이다.
+별들이 그렇게 예고했고 나는 그 징조를 읽었다. 명심하라.
+필멸자는 모두 오만과 탐욕으로 가득하다. 그들 중 누구에게든
+토템을 준다면 필멸자의 허영을 이 세상에 풀어놓는
+셈이다. 그들은 자신이 탐내는 것마저 파괴할 것이다.
+나는 세속의 욕망도, 필멸자의 자만도, 하찮은 탐욕도 없다.
+오직 나와 같은 존재만이 토템을 안전하게 다룰 수 있다.
+나는 토템을 에이테리우스로 가져가 이 세속의 껍데기를 버릴
+것이다. 토템이 존재하는 한 탐리엘의 모든 이에게 위협이 된다.
+토템을 내게 가져오면 내가 세상을 지키겠다. 금이나 보석을
+제시하지는 않겠다. 오직 나만이 줄 수 있는 것, 명성을
+주겠다. 탐리엘 전역에서 그대의 이름이 드높아질 것이다.
+
 <ce>강령술사들의 군주, 벌레의 왕
+<ce>
 
 Message:  1024
 %pcn,
- 
-수 세기 전, 타이버 셉팀은 이 땅을 통치하고 위대한
-누미디움으로 제국을 건설했습니다. 누미디움의 힘의 비밀은
-만텔라 안에 담긴 그 심장에 있습니다. 그것은 타이버 셉팀의
-전투마법사의 심장입니다. 그것은 나의 심장입니다. 나의
-만텔라입니다. 나의 토템입니다. 그것은 나 외의 누구의 것도
-아닙니다.
- 
-나는 제국을 얻기도 했고 잃기도 했습니다. 더 이상 필멸자의
-일에 간섭하고 싶지 않습니다. 나는 세계에서 가장 위대한
-유물 중 하나인 _artifact2_의 소유자입니다. 토템과
-교환하여 그것을 가져가도 좋습니다.
- 
-나의 가장 충성스러운 대리인이 ___temple_의 __temple_,
-_temple_에서 당신을 기다릴 것입니다.
- 
+
+수 세기 전 타이버 셉팀은 위대한 누미디움으로
+이 땅을 정복하고 제국을 세웠다. 누미디움의 힘은
+만텔라에 담긴 심장에서 나온다. 그것은 타이버 셉팀의
+전투마법사의 심장이다. 나의 심장이다. 나의 만텔라이며,
+나의 토템이다. 오직 내게만 속한 것이다.
+
+나는 제국을 얻었다가 잃었다. 더는 필멸자의 일에 간섭할
+뜻이 없다. 내게는 세계에서 가장 위대한 유물 가운데 하나인
+_artifact2_가 있다. 토템을 준다면 그것을 그대에게 넘기겠다.
+
+나의 가장 충성스러운 대리인이 ____temple_의 __temple_,
+_temple_에서 그대를 기다릴 것이다.
+
 <ce>언더킹
 
 Message:  1025
 %pcn,
- 
-이 글을 읽고 있다면, 당신은 토템을 손에 넣고 대거폴 성의
-던전에서 탈출한 것이 분명하군요. 나는 ___newplace_의
-__newplace_, _newplace_에 있습니다. 가능한 한 빨리
-토템을 가져오십시오.
- 
-<ce>-- 브리시엔나 경
+
+이 편지를 읽고 있다면 토템을 손에 넣어 대거폴
+성의 던전에서 빠져나온 것이겠군요. 저는
+____newplace_의 __newplace_, _newplace_에 있습니다.
+가능한 한 빨리 그곳으로 토템을 가져오십시오.
+<ce>
+-- 브리시엔나 부인
 
 Message:  1030
-<ce>센티넬의 문장을 입은 시종이 당신에게 편지를 건네고는
-<ce>말없이 사라집니다.
+<ce>센티넬의 제복을 입은 시종이 편지를
+<ce>건네고 아무 말 없이 걸어갑니다.
 
 Message:  1031
-<ce>웨이레스트의 깃발을 든 뚱뚱한 남자가 편지를 들고 당신에게
-<ce>다가옵니다. 그의 침울한 표정은 변함이 없으며, 그는 아무
-<ce>말도 하지 않습니다. 그는 도착했을 때만큼이나 조용히
-<ce>떠납니다.
+<ce>웨이레스트의 깃발을 든 풍채 좋은 남자가 편지를
+<ce>들고 다가옵니다. 그의 침울한 표정은 조금도
+<ce>변하지 않고 입에서는 한마디도 나오지 않습니다.
+<ce>그는 나타났을 때처럼 조용히 사라집니다.
 
 Message:  1032
-<ce>망토를 깊게 눌러쓴 인물이 당신을 향해 다가옵니다. 당신이
-<ce>방어할 준비를 하자, 옹이진 녹색 손이 튀어나와 편지를
-<ce>내밉니다. 멍하니 있는 당신을 뒤로하고 그 인물은
-<ce>사라집니다.
+<ce>망토를 깊이 뒤집어쓴 인물이 발을 끌며 다가옵니다.
+<ce>당신이 방어 자세를 취하자 옹이진 녹색 손이 불쑥
+<ce>튀어나와 편지를 내밉니다. 놀란 당신이 굳어 있는 사이
+<ce>그 인물은 다시 발을 끌며 사라집니다.
 
 Message:  1033
-<ce>뒤에서 누군가 당신의 손목을 낚아챕니다. 몸을 돌리며 당신은
-<ce>경비병을 부르려 입을 엽니다. 해골 같은 손이 당신의 입에
-<ce>편지를 쑤셔 넣습니다. 로브를 깊게 걸친 해골은 당신의
-<ce>손목을 놓고 지나가는 행인들의 눈에 띄지 않게 사라집니다.
+<ce>뒤에서 누군가 당신의 손목을 움켜쥡니다.
+<ce>몸을 돌린 당신이 경비병을 부르려고 입을 여는 순간,
+<ce>해골 손이 편지를 당신의 입에 쑤셔 넣습니다.
+<ce>두꺼운 로브를 걸친 해골은 손목을 놓고 돌아서지만,
+<ce>주변 행인들은 누구도 그 모습을 알아차리지 못합니다.
 
 Message:  1034
-<ce>편지 한 통이 공중에 떠서 당신을 향해 날아옵니다.
-<ce>이상하게도 다른 사람들은 아무도 눈치채지 못하는 듯합니다.
-<ce>편지는 스스로 당신의 가방 속으로 들어갑니다.
+<ce>편지 한 통이 공중을 떠다니며 당신에게 다가옵니다.
+<ce>이상하게도 다른 사람들은 아무도 편지를 보지 못하는
+<ce>듯합니다. 편지는 스스로 당신의 가방 안으로 들어갑니다.
 
 Message:  1040
-<ce>토템을 넘겨라, 그렇지 않으면 그 자리에서 도살해 주마.
-<ce>어때? 우리에게 넘길 텐가, 아니면 강제로 빼앗길 텐가?
+<ce>토템을 넘겨라. 아니면 여기서 네놈을 도륙하겠다.
+<ce>어쩔 테냐? 순순히 우리에게 넘기겠나,
+<ce>아니면 직접 빼앗게 만들겠나?
 
 Message:  1041
-<ce>그럼 강제로 빼앗는 수밖에.
+<ce>그렇다면 직접 빼앗아 주지.
 
 Message:  1042
-<ce>겁쟁이 같으니. 이제 꺼져. 아, 맞다. 누군지는 모르겠지만
-<ce>널파가라는 자를 만나보라고 하더군.
+<ce>겁쟁이 같으니. 이제 꺼져라. 아, 그러고 보니
+<ce>널파가라는 자를 찾아가라는 말을 들었다.
+<ce>그게 누군지는 모르겠지만.
 
 Message:  1043
-<ce>너는 그것조차 가지고 있지 않군! 이제 재미로 너를
-<ce>죽여버리겠다.
+<ce>토템을 가지고 있지도 않잖아?!
+<ce>그렇다면 재미 삼아 죽여주마.
 
 Message:  1050
-<ce>타이버 셉팀의 토템이라! 값으로 매길 수 없는 유물이지. 내가
-<ce>잘 보관하여 대거폴과 웨이레스트의 반란 세력을 억제하겠다.
-<ce>보상 %pcf 님을 받아라. 너는 그 열 배의 가치를
-<ce>해냈다. 만텔라를 찾기 위해 항상 눈을 크게 뜨고 있어야
-<ce>한다. 어떤 소문이라도 열성적으로 추적해라. 만텔라가 없으면
-<ce>토템은 쓸모가 없다.
+<ce>타이버 셉팀의 토템이라! 값을 매길 수 없는 유물이군.
+<ce>내가 잘 지켜 대거폴과 웨이레스트의 반역
+<ce>세력을 억누르겠다. 보상을 받아라, %pcf.
+<ce>그대는 그 열 배의 몫도 해냈다.
+<ce>이제 만텔라의 흔적을 예의주시해야 한다.
+<ce>어떤 소문이든 끈질기게 추적하라. 만텔라가
+<ce>없다면 토템은 아무 쓸모가 없다.
+<ce>
 
 Message:  1051
-<ce>멍청한 놈! 내가 정말로 토템 값을 지불할 줄 알았나?
-<ce>%ra 처치에 나서라!
+<ce>어리석은 자! 내가 정말 토템 값을 치를
+<ce>줄 알았나? 저 %ra을 죽여라!
 
 Message:  1052
-<ce>오크들의 국가가 내 손안에 있다. 너는 내 백성들에게 자유의
-<ce>기회를 주었다, %pcn. 만약 만텔라를 직접
-<ce>되찾아온다면, 그에 대한 보상을 세 배로 주겠다.
+<ce>오크의 나라가 이제 손에 잡힐 듯 가까워졌다.
+<ce>그대는 내 백성에게 자유를 얻을 기회를 주었다,
+<ce>%pcn. 언젠가 만텔라까지 되찾아 온다면
+<ce>그 대가로 세 배의 보상을 주겠다.
+<ce>
 
 Message:  1053
-<ce>이제야 제정신이 드는군. 너를 죽여야 마땅하지만, 나에게는
-<ce>그보다 더 큰 명예가 있다. 대신 보상을 주지. 여기
-<ce>_goldgoth_ 금화를 받아라. 네 변절에 대한 대가다.
-<ce>만텔라를 나에게 가져오면, 너에 대한 내 신뢰가 다시 회복될
-<ce>것이다.
+<ce>이제야 이성을 되찾았군. 그대를 죽여야 마땅하지만,
+<ce>내 명예는 그런 짓을 허락하지 않는다.
+<ce>대신 보상을 주겠다. 여기 _goldgoth_
+<ce>골드를 받아라. 다시 충성을 보인 대가다.
+<ce>만텔라를 내게 가져온다면 그대를 향한
+<ce>신뢰도 완전히 회복될 것이다.
 
 Message:  1054
-<ce>토템! 드디어 내 손안에 들어왔군. 잘했다, %pcf.
-<ce>내가 변신을 완수하면 이 일을 기억하겠다. 이제 만텔라를
-<ce>찾아라. 그것이 없으면 토템은 무용지물이다. 그동안, 세상의
-<ce>칭송을 마음껏 즐겨라.
+<ce>토템! 마침내 내 손에 들어왔군. 잘했다, %pcf.
+<ce>내가 변모를 마치면 그대의 공을 기억하겠다.
+<ce>이제 만텔라를 찾아라. 그것이 없다면
+<ce>토템은 아무 가치도 없다. 그동안에는 온
+<ce>세상의 찬사를 마음껏 누려라.
+<ce>
 
 Message:  1055
-<ce>언더킹께서 매우 기뻐하실 것이다. 그분은 이 잃어버린 물건을
-<ce>평생토록 찾아 헤매셨지. 나는 너에게 이 물건을 주라는
-<ce>지시를 받았다. 현명하게 사용해라. 만약 만텔라를 찾게
-<ce>된다면, 언더킹께서 매우 감사하실 것이다.
+<ce>언더킹께서 크게 기뻐하실 것이다.
+<ce>그분은 여러 생애에 걸쳐 이 잃어버린
+<ce>물건을 찾아오셨다. 나는 그대에게 이 유물을
+<ce>건네라는 명을 받았다. 현명하게 사용하라.
+<ce>언젠가 만텔라를 찾아낸다면 언더킹께서
+<ce>그대에게 깊이 감사하실 것이다.
 
 Message:  1056
-<ce>황제께서 매우 감사하실 것이다. 토템이 잘못된 손에
-<ce>들어갔다면 내전이 시작되었을지도 모른다. 고맙다,
-<ce>%pcf. 이제 널파가에게 가야 한다. 그녀가 만텔라의
-<ce>열쇠를 쥐고 있다. 만텔라를 해방하면, 황제께서 토템을 통해
-<ce>위대한 누미디움을 통제하실 것이다.
+<ce>황제 폐하께서 크게 기뻐하실 것입니다. 토템이 그릇된
+<ce>자의 손에 들어갔다면 내전이 일어났을 수도 있습니다.
+<ce>고맙습니다, %pcf. 이제 널파가에게 가십시오.
+<ce>그녀가 만텔라로 향하는 열쇠를 쥐고 있습니다.
+<ce>만텔라를 해방하면 황제 폐하께서 토템을 통해
+<ce>위대한 누미디움을 통제하실 것입니다.
+
+Message:  1057
+<ce>소지품을 뒤져본 당신은 토템이
+<ce>사라졌다는 사실을 깨닫습니다.
 
 Message:  1060
-<ce>널파가의 분명한 목소리가 당신의 머릿속에 부드럽게
-<ce>울립니다. "토템이 왕족의 피를 가진 자의 손에 들어갔더군.
-<ce>이제 셰둔젠트에서 나를 다시 방문할 때가 된 것 같구나,
-<ce>%pcn. 네 일은 아직 끝나지 않았다."
+<ce>틀림없는 널파가의 목소리가 머릿속에 나직이
+<ce>울립니다. "토템이 왕족의 피를 지닌 자의
+<ce>손에 들어갔구나. 이제 셰둔젠트에 있는 나를
+<ce>다시 찾아올 때가 된 것 같구나, %pcn.
+<ce>네 일은 아직 끝나지 않았다."
+<ce>
+
+Message:  1061
+%qdt: 토템 문제와 관련하여 _nulfaga_가 ____shedungent_의
+___shedungent_로 나를 불렀다.
+
+--this log replaces the Totem one after the totem is given
+--to a person in the MQ
 
 Message:  1070
-<ce>쾌활한 젊은 여성이 당신에게 편지를 건네고 휘파람을 불며
-<ce>걸어갑니다.
-
-
--- Symbols used in the QRC file:
---
---              %pcf occurs 7 times.
---              %pcn occurs 9 times.
---              %qdt occurs 2 times.
---               %ra occurs 2 times.
---     ____newplace_ occurs 1 time.
---       ____tavern_ occurs 1 time.
---       ____temple_ occurs 6 times.
---       __newplace_ occurs 1 time.
---         __tavern_ occurs 1 time.
---         __temple_ occurs 1 time.
---       _artifact2_ occurs 1 time.
---       _artifact4_ occurs 1 time.
---        _goldgoth_ occurs 1 time.
---        _newplace_ occurs 1 time.
---          _tavern_ occurs 1 time.
---          _temple_ occurs 6 times.
+<ce>활기찬 젊은 여성이 편지를 건네고는
+<ce>휘파람을 불며 걸어갑니다.
 
 QBN:
 Item _letter_ letter used 1011
@@ -305,147 +320,151 @@ Person _Akorithi_ named Queen_Akorithi atHome
 Person Gortwog named Gortwog atHome
 Person _Underking_ face 1 faction Agents_of_The_Underking remote
 Person _Kingoworms_ named King_of_Worms atHome
+Person _nulfaga_ named Nulfaga atHome
 
 Place _daggerfall_ permanent DaggerfallCastle2
 Place _tavern_ remote tavern
 Place _temple_ remote temple
 Place _newplace_ remote house2
+Place _shedungent_ permanent Shedungent2
 
-Clock _2letter_ 7.00:00 14.00:00
+Clock _brisiennafirstletter_ 7.00:00 14.00:00
 Clock _delay_ 00:02 0 flag 1 range 0 1
-Clock _S.08_ 366.00:00 0 flag 1 range 0 1
-Clock _S.10_ 7.00:00 14.00:00
-Clock _S.13_ 7.00:00 14.00:00
-Clock _S.18_ 3.00:00 9.00:00
-Clock _S.19_ 7.00:00 14.00:00
-Clock _S.20_ 3.00:00 7.00:00
-Clock _S.38_ 7.00:00 14.00:00
+Clock _oneyear_ 366.00:00
+Clock _akorithiletter_ 7.00:00 14.00:00
+Clock _eadwyreletter_ 7.00:00 14.00:00
+Clock _orcletter_ 3.00:00 9.00:00
+Clock _kowletter_ 7.00:00 14.00:00
+Clock _underkingletter_ 3.00:00 7.00:00
+Clock _brisiennasecondletter_ 7.00:00 14.00:00
 
-Foe _F.00_ is 3 Knight
-Foe _F.01_ is Battle_mage
+Foe _knights_ is 3 Knight
+Foe _mage_ is Battle_mage
 
 --	Quest start-up:
-	start timer _2letter_ 
+	start timer _brisiennafirstletter_ 
+	have _totem_ set _holdtotem_ 
+	pc at _daggerfall_ set _indaggerfall_ 
 
-_2letter_ task:
+_brisiennafirstletter_ task:
 	give pc _letter_ notify 1070 
 	place npc Brisienna at _tavern_ 
 
 _meetladyb_ task:
 	clicked npc Brisienna 
-	prompt QuestorOffer yes yes no _no_ 
+	prompt QuestorOffer yes _brisyes_ no _brisno_ 
 
-yes task:
+_brisyes_ task:
 	place item _totem_ at _daggerfall_ marker 5
 	log 1010 step 0 
 	say AcceptQuest 
 	add Brisienna as questor 
 
-_no_ task:
+_brisno_ task:
 	say RefuseQuest 
 	end quest 
 
-_S.04_ task:
+_clicktotem_ task:
 	clicked item _totem_ 
-	pc at _daggerfall_ set _S.06_ 
 	start timer _delay_ 
 
 _delay_ task:
-	start timer _S.08_ 
+	start timer _oneyear_ 
 	log 1017 step 1 
 	say 1015 
 
-variable _S.06_
-_S.07_ task:
-	when not _S.06_ and _S.04_ 
-	create foe _F.00_ every 1300 minutes 100 times with 10% success 
-	start timer _S.38_ 
-	repute with _Akorithi_ exceeds 5 do _S.09_ 
-	repute with Eadwyre exceeds 15 do _S.12_ 
-	repute with Gortwog exceeds 10 do _S.15_ 
-	repute with _Underking_ exceeds 0 do _S.16_ 
-	repute with _Kingoworms_ exceeds 0 do _S.17_ 
-	have _totem_ set _S.27_ 
+variable _indaggerfall_
+_activatechoice_ task:
+	when not _indaggerfall_ and _clicktotem_ 
+	create foe _knights_ every 1300 minutes 100 times with 100% success 
+	start timer _brisiennasecondletter_ 
+	repute with _Akorithi_ exceeds 5 do _happyakor_ 
+	repute with Eadwyre exceeds 15 do _happyead_ 
+	repute with Gortwog exceeds 10 do _happywog_ 
+	repute with _Underking_ exceeds 0 do _happyunk_ 
+	repute with _Kingoworms_ exceeds 0 do _happykow_ 
 	add Gortwog as questor 
 	add _Akorithi_ as questor 
 	add _Gothryd_ as questor 
 	add Eadwyre as questor 
 	place npc Brisienna at _newplace_ 
 
-_S.08_ task:
+_oneyear_ task:
 	take _totem_ from pc 
+	say 1057
 
-_S.09_ task:
-	start timer _S.10_ 
+_happyakor_ task:
+	start timer _akorithiletter_ 
 
-_S.10_ task:
+_akorithiletter_ task:
 	give pc totemLetter1 notify 1030 
 
-_S.11_ task:
-	when not _S.09_ and _S.07_ 
+_akorithirevenge_ task:
+	when not _happyakor_ and _activatechoice_ 
 	start quest 100 100 
 
-_S.12_ task:
-	start timer _S.13_ 
+_happyead_ task:
+	start timer _eadwyreletter_ 
 
-_S.13_ task:
+_eadwyreletter_ task:
 	give pc totemLetter5 notify 1031 
 
-_S.14_ task:
-	when not _S.12_ and _S.07_ 
+_eadwyrerevenge_ task:
+	when not _happyead_ and _activatechoice_ 
 	start quest 101 101 
 
-_S.15_ task:
-	start timer _S.18_ 
+_happywog_ task:
+	start timer _orcletter_ 
 
-_S.16_ task:
-	start timer _S.20_ 
+_happyunk_ task:
+	start timer _underkingletter_ 
 
-_S.17_ task:
-	start timer _S.19_ 
+_happykow_ task:
+	start timer _kowletter_ 
 
-_S.18_ task:
+_orcletter_ task:
 	give pc _letter4_ notify 1032 
 
-_S.19_ task:
+_kowletter_ task:
 	give pc totemLetter4 notify 1033 
 
-_S.20_ task:
+_underkingletter_ task:
 	give pc totemLetter3 notify 1034 
 	place npc _Underking_ at _temple_ 
 
-_S.21_ task:
-	when not _S.15_ and _S.07_ 
+_gortwogrevenge_ task:
+	when not _happywog_ and _activatechoice_ 
 	start quest 102 102 
 
-_S.22_ task:
-	injured _F.00_ 
-	prompt 1040 yes _S.25_ no _S.26_ 
-	clear _S.22_ _S.26_ _S.28_ _S.29_ 
+_injknight_ task:
+	injured _knights_ 
+	prompt 1040 yes _surrenderchoice_ no _resistsurrender_  
 
-_S.23_ task:
-	when not _S.17_ and _S.07_ 
+_kowrevenge_ task:
+	when not _happykow_ and _activatechoice_ 
 	start quest 103 103 
 
-_S.24_ task:
-	when not _S.16_ and _S.07_ 
+_underkingrevenge_ task:
+	when not _happyunk_ and _activatechoice_ 
 	start quest 104 104 
 
-variable _S.25_
-_S.26_ task:
+variable _surrenderchoice_
+_resistsurrender_ task:
 	say 1041 
 
-_S.27_ task:
-	clear _S.31_ 
+variable _holdtotem_
 
-_S.28_ task:
-	when _S.27_ and _S.25_ 
+_completesurrender_ task:
+	when _holdtotem_ and _surrenderchoice_ 
+	start task _giventodaggerfall_
 	start task _S.31_ 
-	give item _totem_ to _F.00_ 
-	say 1042 
-	restrain foe _F.00_ 
+	take _totem_ from pc
+	say 1042
 
-_S.29_ task:
+variable _giventodaggerfall_
+
+_invalidsurrender_ task:
+	when _surrenderchoice_ and not _holdtotem_ and not _giventodaggerfall_
 	say 1043 
 
 AkorithiGotTotem _S.30_
@@ -486,34 +505,45 @@ UnderkingGotTotem _S.35_
 
 EadwyreGotTotem _S.36_
 	toting _totem_ and Eadwyre clicked 
-	create foe _F.01_ every 1 minutes 5 times with 100% success 
+	create foe _mage_ every 0 minutes 5 times with 100% success 
 	say 1051 
 
-_S.38_ task:
+-- every 1 minutes was too slow, took 25 seconds to spawn them all
+
+_brisiennasecondletter_ task:
 	give pc totemLetter6 notify 1070 
 
-_S.39_ task:
-	when Nulfaga is available 
+_deliveredtotem_ task:
+	when _S.30_ or _S.31_ or _S.32_ or _S.33_ or _S.34_ or _S.35_ or _S.36_
+	clear _holdtotem_
+	stop timer _oneyear_
+	remove foe _knights_
+-- the "remove foe" action here will prevent any further knights from spawning, which is reasonable.
+-- this was previously "restrain foe" which allow more spawned knights, perhaps not pacified, which is strange.
+-- this whole task will remove the totem and the knights, which was probably the original intention.
+-- note that the Sx100 quests will stop when the totem is given, and this is consistent with them.
 
-_S.40_ task:
-	when _S.43_ or _S.44_ 
-
-_S.41_ task:
-	when _S.39_ and _S.40_ and _S.07_ 
+_advancequest_ task:
+	when _deliveredtotem_ and _activatechoice_ and _clicknulfaga_
 	start quest 16 16 
+-- changed "nulfaga available" to "clicked nulfaga."
+-- much more sensible, doesn't cause problems in testing
 
-_S.42_ task:
-	when _S.40_ and _S.07_ 
+_clicknulfaga_ task:
+	clicked npc _nulfaga_
+
+_clearnulfaga_ task:
+	when _clicknulfaga_ and not _deliveredtotem_
+	clear _clicknulfaga_ _clearnulfaga_
+
+_totemspeaks_ task:
+	when _deliveredtotem_ and _activatechoice_ 
 	say 1060 
+	log 1061 step 1
+	reveal _shedungent_
 
-_S.43_ task:
-	when _S.28_ or _S.35_ or _S.36_ or _S.46_ 
-
-_S.44_ task:
-	when _S.30_ or _S.32_ or _S.33_ or _S.34_ 
-
-_S.45_ task:
-	when _S.08_ or _S.41_ 
+_questcleanup_ task:
+	when _oneyear_ or _advancequest_ 
 	drop _Akorithi_ as questor 
 	drop Brisienna as questor 
 	drop Eadwyre as questor 
@@ -521,9 +551,9 @@ _S.45_ task:
 	drop _Gothryd_ as questor 
 	end quest 
 
-_S.46_ task:
+_givetogothryd_ task:
 	toting _totem_ and _Gothryd_ clicked
-    get item _goldgoth_ from _Gothryd_ 
+    get item _goldgoth_
     say 1053 
     make _goldgoth_ permanent  
 	start task _S.31_ 

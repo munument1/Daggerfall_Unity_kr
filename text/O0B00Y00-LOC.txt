@@ -11,87 +11,104 @@ DisplayName: 뜨거운 돌
 QRC:
 
 QuestorOffer:  [1000]
-<ce>들어보게, %pcf, 우리 가족 중 한 명이 곤경에
-<ce>처했네. 가족을 도울 수 있게 며칠 시간 내줄 수 있겠나?
+<ce>이봐, %pcf. 우리 가족 하나가 곤경에 빠졌어.
+<ce>며칠 시간을 내서 가족을 도와주겠나?
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>좋아. 언젠가 자네도 곤경에 처하지 않기를 바랄 뿐이군.
+<ce>좋아. 언젠가 네가 곤경에 빠질 일은
+<ce>없을 거라고 믿는 모양이군.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>좋아, %ra. ___contact_에서 가장 뛰어난 도둑
-<ce>중 한 명이 __contact_의 명칭으로 불리는 쥐구멍 같은
-<ce>곳에 숨어 있네. %g3 의 몸에는 궁전에서 훔쳐낸
-<ce>뜨거운 돌 %g 가 있지. 소문에 따르면 누군가
-<ce>%g2 가 그것을 가진 것을 봤고, 경비병들이
-<ce>그곳을 뒤지고 있다네. __contact_의 주인에 대한 예우로,
-<ce>그들은 =1stparton_일 동안 기다리고 있지. __contact_
-<ce>쪽으로 가서 _contact_에게 이 _metal_ 덩어리를 주고
-<ce>_gems_의 교환을 해 오게. 그런 다음 여기로 가져오는
-<ce>거야. 알아들었나? 좋아. 서두르게, 시간이 없네.
+<ce>좋아, %ra. ___contact_에서 손꼽히는 우리 털이범
+<ce>하나가 __contact_라는 쥐구멍에 숨어 있어.
+<ce>%g3 몸에는 %g이 궁전에서 훔친 뜨거운
+<ce>돌이 있지. 누군가 %g2이 가진 것을 보았고
+<ce>경비대가 장소를 감시하고 있다는 소문이야.
+<ce>__contact_의 주인을 존중한다며 =1stparton_일
+<ce>뒤에 들이닥친다는군. __contact_로 가서
+<ce>_contact_에게 이 _metal_ 덩어리를 주고
+<ce>_gems_과 바꿔온 뒤 여기로 가져와. 알아들었지?
+<ce>좋아. 시간이 없으니 서둘러.
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestFail:  [1003]
-<ce>다시 봐서 반갑네, %pcf, 하지만 빈손으로 오면 안
-<ce>되지. _gems_ 확보를 하기로 했잖나, 기억하나?
+<ce>다시 보니 반갑지만, %pcf, 빈손으로 오면 안 되지.
+<ce>_gems_을 가져오기로 했잖아. 기억하지?
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>잘했네, %pcf. _contact_의 행방이
-<ce>경비병들에게 _gems_의 이름으로 불리는 생각하게
-<ce>만든 _metal_ 조각을 보여주었고, 그들은 사과하는
-<ce>의미로 %g2 에게 술을 한 잔 샀다더군.
-<ce>말했지, 악당의 삶만큼 짜릿한 건 없다고.
-<ce>여기 자네 몫의 _gems_일세 -- _reward_ 골드지.
-<ce>자네가 벌어들인 거야, %pcf.
+<ce>잘했어, %pcf. _contact_가 경비대에게 그들이
+<ce>_gems_이라고 생각한 _metal_ 조각을 보여주자,
+<ce>사과로 %g2에게 술까지 샀다더군. 악당의 삶만
+<ce>한 것이 없다니까. 여기 _gems_에서 나온 네 몫
+<ce>_reward_골드다. 받을 자격이 있어, %pcf.
+<ce>
+<ce>
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
-다들 _contact_의 보석 절도 사실을 알고 있잖아.
-왜 %g2 를 잡지 않는 거지?
-<---> __contact_에는 잘난 척하는 놈들이 많아.
-경비병들은 거기 들어가는 걸 원치 않지.
+_contact_가 그 보석을 훔친 것은 모두가
+아는데 왜 %g2을 잡지 않는 거지?
+<--->
+__contact_에는 건달이 워낙 많아서
+경비대가 들어가기를 꺼린대.
 
 RumorsPostfailure:  [1006]
-경비병들이 드디어 _contact_ 측을 잡았어.
-%g 도 영원히 버틸 수는 없었겠지.
-<---> 그래, 그들은 %t 의 _gems_
-개체를 찾아냈고 그 =contact_ 측을 체포했어.
+경비대가 마침내 _contact_를 잡았어.
+%g도 영원히 버틸 수는 없었겠지.
+<--->
+그래, %t의 _gems_을 찾아서 그 =contact_를 체포했어.
 
 RumorsPostsuccess:  [1007]
-결국 _contact_ 측을 풀어줘야 했어.
-%g 는 무죄였던 모양이야. <---> 어떻게
-_metal_ 개체를 _gems_ 쪽으로 착각할 수가 있지?
-둘 다 돌이긴 하지만, 너무하잖아!
+결국 _contact_를 풀어줘야 했어. %g은 무죄였던 거지.
+<--->
+어떻게 _metal_을 _gems_으로 착각하지?
+둘 다 돌이긴 하지만 너무하잖아!
 
 QuestorPostsuccess:  [1008]
-무슨 일인가, %pcf?
-그 _gems_의 반환을 원하는 건가? 분명 그렇겠지!
+왜 왔지, %pcf? 그 _gems_을 돌려받고 싶은가? 그렇겠지!
 
 QuestorPostfailure:  [1009]
-<ce>_contact_에게서 _gems_ 개체를 가져와서
-<ce>%g2 에게 내가 준 _metal_ 개체를
-<ce>주기로 했던 거 기억 안 나나? %oth!
-<ce>무슨 대단한 과학 기술이라도 되는 줄 알겠군.
+<ce>_contact_에게서 _gems_을 받아오고 %g2에게 내가
+<ce>준 _metal_을 건네기로 한 것을 잊었나? %oth!
+<ce>무슨 어려운 학문이라도 되는 줄 알겠군.
+<ce>
+<ce>
 
 QuestLogEntry:  [1010]
-<ce>%oth, %pcf, 자네는 생명의 은인이야.
-<ce>누군가 내가 _gems_ 개체를 가지고 있는 걸 봤고
-<ce>그게 훔친 보석이라고 생각하는 모양이야. 이 _metal_
-<ce>덩어리가 여기서 빠져나갈 내 티켓이 될 거야. 언젠가 술
-<ce>한 잔 사지. 이제 서둘러 _questgiver_ 쪽으로 돌아가게.
-<ce>자네가 =1stparton_일 안에 돌아오지 않으면 그들은
-<ce>정말 의심할 거야.
+<ce>%oth, %pcf, 네가 살렸어. 누군가 내가 _gems_을
+<ce>가진 것을 보고 훔친 보석이라고 생각한 모양이야.
+<ce>이 _metal_ 덩어리면 여기서 빠져나갈 수 있겠군.
+<ce>나중에 술 한잔 사지. 이제 _questgiver_에게
+<ce>서둘러 돌아가. =1stparton_일 안에 돌아가지
+<ce>않으면 경비들이 크게 의심할 거야.
+<ce>
+<ce>
+<ce>
 
 Message:  1015
-%qdt:
- ___questgiver_에 있는 도둑 길드의 _questgiver_ 측이 나를
- __contact_의 명칭을 지닌 술집이 있는 ___contact_
- 방향으로 보냈다. 나는 훔친 보석을 가진 %g 와
- 교환하기 위해 _contact_에게 줄 _metal_ 개체를
- 가지고 있다. 이 일을 완수하기까지 =1stparton_일이 남았다.
+%qdt: ___questgiver_ 도둑 길드의 _questgiver_는 나를
+___contact_의 __contact_라는 허름한 술집으로 보냈다.
+_contact_에게 _metal_을 주고 %g이 가지고 있다가 목격된
+훔친 돌과 바꿔와야 한다. 기한은 =1stparton_일이다.
 
 Message:  1020
-<ce>자네가 _contact_ 측이 훔친 _gems_
-<ce>개체를 가지고 있다는 확실한 정보를 입수했네.
-<ce>그걸 넘기면 무사히 보내주지.
-
+<ce>_contact_가 훔친 _gems_을 네가 가지고
+<ce>있다는 확실한 정보를 얻었다. 순순히
+<ce>넘기면 다치지 않고 보내주지.
+<ce>
+<ce>
 
 -- Symbols used in the QRC file:
 --

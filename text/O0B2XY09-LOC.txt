@@ -11,52 +11,60 @@ DisplayName: 부유한 상인
 QRC:
 
 QuestorOffer:  [1000]
-<ce>제 이름은 _qgiver_입니다. 어떤 상인 돼지가 방금
-<ce>_coastal_ 개체를 구입했다는 소식을 들었습니다.
-<ce>그걸 훔쳐서 여기로 가져와 주셨으면 합니다.
-<ce>보상으로 _gold_ 골드를 드리죠. 관심 있으신가요?
+<ce>나를 _qgiver_라고 불러. 어떤 돼지 같은 상인이
+<ce>_coastal_을 새로 들여왔다는 소식을
+<ce>들었어. 훔쳐서 여기로 가져와.
+<ce>_gold_골드를 주지. 관심 있나?
+<ce>
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>가던 길 가시오, %pcn.
-<ce>이름값 하는 도둑을 찾아야 하니.
+<ce>가던 길 가, %pcn. 이름값을
+<ce>하는 도둑을 찾아야 하니까.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>__mansion_에서 _mansion_ 쪽으로 가시오.
-<ce>_coastal_ 찾는 건 그리 어렵지 않을 거요. =traveltime_일
-<ce>안에 가져오면, 보상을 주겠소. 질문은 없겠지? 좋소.
+<ce>__mansion_의 _mansion_으로 가. _coastal_을 찾는
+<ce>것은 그리 어렵지 않을 거야. =traveltime_일 안에
+<ce>가져오면 돈을 주지. 질문 없지? 좋아.
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>오호! 이 물건은 생각보다 더 훌륭하군.
-<ce>여기 _gold_ 골드와 %pcn 있네.
-<ce>술이나 나쁜 짓에 다 써버리지 말게나.
+<ce>오호! 이 물건은 생각보다 훨씬 좋군.
+<ce>여기 _gold_골드다, %pcn. 술이나
+<ce>방탕한 짓에 전부 쓰지는 마.
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
-_coastal_의 새로운 선적분이 __mansion_에
-도착했습니다. 정확히 어디에 있는지는 아무도 모릅니다.
+새 _coastal_ 화물이 __mansion_에 들어왔는데
+정확한 위치는 아무도 몰라.
 
 RumorsPostfailure:  [1006]
-누군가 __mansion_에서 _coastal_ 찾아낸 모양입니다.
-다시 배송을 시작했더군요.
+누군가 __mansion_에서 _coastal_을 찾아낸 모양이야.
+다시 다른 곳으로 보내고 있대.
 
 RumorsPostsuccess:  [1007]
-_coastal_ 보관하던 곳이 얼마 전에 털렸다는군요.
+_coastal_을 보관하던 곳이 얼마 전에 털렸대.
 
 QuestorPostsuccess:  [1008]
-자, 그 골드를 술이나 나쁜 짓에 쓰는 건 아니겠지,
-%pcf?
+그 돈을 술이나 방탕한 짓에 쓰고 있는 건 아니겠지, %pcf?
 
 QuestorPostfailure:  [1009]
-<ce>뭐가 더 필요하지? _coastal_ 어디서 찾을지 알려줬건만,
-<ce>늑장을 부리는 바람에 아무짝에도 쓸모없게 됐어.
-<ce>그냥 나가, %pcf. 머리 아프니까.
+<ce>뭘 원하지? _coastal_의 위치를 알려줬는데도
+<ce>늑장을 부려 아무 소용이 없게 만들었잖아.
+<ce>그냥 나가, %pcf. 머리가 아프군.
+<ce>
+<ce>
 
 QuestLogEntry:  [1010]
-%qdt:
- 도둑 길드의 _qgiver_ 측에서 __mansion_에
- 있는 _mansion_에게서 _coastal_ 훔쳐다 달라고
- 의뢰했습니다. 보상을 받으려면 =traveltime_에 있는
- __qgiver_에게 ___qgiver_일 안에 가져다줘야 합니다.
-
+%qdt: 도둑 길드의 _qgiver_는 __mansion_의 _mansion_에서
+_coastal_을 훔치라고 했다. 보수를 받으려면
+=traveltime_일 안에 ___qgiver_의 __qgiver_로 가져가야 한다.
 
 -- Symbols used in the QRC file:
 --

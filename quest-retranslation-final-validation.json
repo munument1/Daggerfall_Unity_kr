@@ -1,0 +1,24 @@
+{
+  "project": "Daggerfall Unity Korean quest retranslation",
+  "official_source_repository": "Interkarma/daggerfall-unity",
+  "official_source_commit": "81e89e90c27bc3c1a7a61871e545fad129174dec",
+  "official_version": "Daggerfall Unity v1.1.1",
+  "quest_files": 265,
+  "message_blocks": 3816,
+  "assembled_loc_files": 530,
+  "key_order_validation": "passed",
+  "exact_source_token_validation": "passed",
+  "control_marker_validation": "passed",
+  "qbn_exact_equality": "passed",
+  "root_mirror_equality": "passed",
+  "korean_aware_line_reflow": "passed",
+  "reflowed_loc_files": 526,
+  "structural_repairs": {
+    "S0000008": [
+      "Message:1057",
+      "Message:1061"
+    ]
+  },
+  "validated_at": "2026-08-01T11:31:07+09:00",
+  "errors": []
+}

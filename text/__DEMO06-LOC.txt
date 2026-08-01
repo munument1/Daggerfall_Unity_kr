@@ -5,15 +5,13 @@ Quest: __DEMO006
 QRC:
 
 Message: 1021
-Timer1 시작됨
+타이머 1 시작
 
 Message: 1022
-Timer2 시작됨
+타이머 2 시작
 
 Message: 1023
-완료!
-
-- No text resources
+완료! - 텍스트 리소스 없음
 
 QBN:
 

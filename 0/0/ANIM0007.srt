@@ -1,20 +1,24 @@
 1
 00:00:00,912 --> 00:00:02,801
+웨이레스트의 에드와이어 왕,
 King Eadwyre of Wayrest,
 
 2
 00:00:02,802 --> 00:00:04,608
+제국의 배신자인 그는,
 traitor to the Empire,
 
 3
 00:00:04,609 --> 00:00:07,972
+거대한 누미디움에게 적들을 멸하라 명한다.
 commands great Numidium to destroy his enemies.
 
 4
 00:00:08,292 --> 00:00:10,723
+대거폴과 센티넬이 먼저 무너지고,
 Daggerfall and Sentinel fall first,
 
 5
 00:00:10,724 --> 00:00:16,000
+웨이레스트는 일리악 만을 완전히 지배하게 된다.
 leaving Wayrest in complete control of Iliac Bay.
-

@@ -12,48 +12,52 @@ DisplayName: 보디가드
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pcn, 목숨이 위태롭습니다.
-<ce>저를 보호해 주시겠습니까? _villains_들이
-<ce>제 땅을 팔지 않겠다고 했다는 이유로 오늘 밤 저를
-<ce>죽이겠다고
-<ce>협박했습니다. _gold_ 골드를 드릴 수
-<ce>있습니다.
+<ce>%pcn, 목숨이 위태롭습니다. 저를 보호해 주시겠습니까?
+<ce>_villains_들이 제 땅을 팔지 않겠다고 했다는
+<ce>이유로 오늘 밤 저를 죽이겠다고 협박했습니다.
+<ce>_gold_ 골드를 드릴 수 있습니다.
+<ce>
+<ce>
 <--->
-<ce>절박한 상황에서 당신을 만났군요, 나의 친애하는
-<ce>%ra. %cn 깡패들이 오늘 밤 제 집을
-<ce>털어버리겠다는 소식을 들었습니다.
-<ce>이 녀석들의 얼굴을 조금 창의적으로
-<ce>고쳐놓는 일을 맡아주실 수 있겠습니까?
+<ce>절박한 상황에서 당신을 만났군요,
+<ce>나의 친애하는 %ra. %cn 깡패들이 오늘 밤
+<ce>제 집을 털어버리겠다는 소식을 들었습니다.
+<ce>이 녀석들의 얼굴을 조금 창의적으로 고쳐놓는
+<ce>일을 맡아주실 수 있겠습니까?
 
 RefuseQuest:  [1001]
-<ce>제 안전은 걱정 마세요, %pcn.
-<ce>어떻게든 다른 보호자를 찾아보겠습니다.
+<ce>제 안전은 걱정 마세요, %pcn. 어떻게든
+<ce>다른 보호자를 찾아보겠습니다.
 
 AcceptQuest:  [1002]
 <ce>감사합니다, 축복을! 그들은 _qgiverhome_
 <ce>공격을 자정 전 3시간 동안 감행할 것입니다.
-<ce>그곳에 가서 저와 함께 그 시간을 기다려 주십시오.
-<ce>그들이 패배하면, 저는 다시 안전해질 것입니다.
+<ce>그곳에 가서 저와 함께 그 시간을
+<ce>기다려 주십시오. 그들이 패배하면,
+<ce>저는 다시 안전해질 것입니다.
 
 QuestComplete:  [1004]
 <ce>당신은 제 목숨을 구해주셨습니다, %pcf.
 <ce>기꺼이 합의한 금액을 지불하겠습니다.
 
 RumorsDuringQuest:  [1005]
-<ce>_qgiver_ 관련하여 도둑 길드와 문제가 생겼답니다.
-<ce>그들이 %g2 손봐주러 갈 거라는 소문을 들었어요.
+<ce>_qgiver_ 관련하여 도둑 길드와 문제가
+<ce>생겼답니다. 그들이 %g2 손봐주러
+<ce>갈 거라는 소문을 들었어요.
 
 RumorsPostfailure:  [1006]
-<ce>최근에 _qgiver_ 봤어요.
-<ce>%g 폭력배들에게 두들겨 맞았더군요.
+<ce>최근에 _qgiver_ 봤어요. %G
+<ce>폭력배들에게 두들겨 맞았더군요.
 
 RumorsPostsuccess:  [1007]
-<ce>당신이 _qgiver_ 괴롭히던 폭력배들을 쫓아낸 그
-<ce>%ra 맞죠? 정말 대단해요!
+<ce>당신이 _qgiver_ 괴롭히던 폭력배들을 쫓아낸
+<ce>그 %ra 맞죠? 정말 대단해요!
+<ce>
 
 QuestorPostsuccess:  [1008]
-<ce>당신이 저를 위해 해준 일은 잊지 않겠습니다, %pcf.
-<ce>그 폭력배들을 쫓아내 주셔서 당신께 큰 신세를 졌습니다.
+<ce>당신이 저를 위해 해준 일은 잊지 않겠습니다,
+<ce>%pcf. 그 폭력배들을 쫓아내 주셔서
+<ce>당신께 큰 신세를 졌습니다.
 
 QuestorPostfailure:  [1009]
 <ce>그 폭력배들이 저를 찾아왔을 때 입은 상처가 아직도
@@ -61,10 +65,9 @@ QuestorPostfailure:  [1009]
 <ce>일을 망치셨군요. 당장 제 눈앞에서 사라지세요.
 
 QuestLogEntry:  [1010]
-%qdt 에서, ___qgiver_의 _qgiver_께서
-저에게 %g2 보호를 요청했습니다.
-_villains_들이 9시에서 자정 사이에 _qgiverhome_에서
-%g2 를 공격하겠다고 협박했습니다.
+%qdt 에서, ___qgiver_의 _qgiver_께서 저에게 %g2 보호를
+요청했습니다. _villains_들이 9시에서 자정 사이에
+_qgiverhome_에서 %g2 를 공격하겠다고 협박했습니다.
 
 Message:  1011
 <ce>이건 당신이 상관할 일이 아니오, 이방인.
@@ -72,24 +75,8 @@ Message:  1011
 <ce>서 있는 그곳에서 베어버릴 것이오!
 
 Message:  1013
-<ce>여기가 틀림없군. _qgiver_ 당신에게 말해준
-<ce>설명과 일치해.
-
-
--- Symbols used in the QRC file:
---
---               %cn occurs 1 time.
---                %g occurs 1 time.
---               %g2 occurs 4 times.
---              %pcf occurs 2 times.
---              %pcn occurs 2 times.
---              %qdt occurs 1 time.
---               %ra occurs 2 times.
---        ___qgiver_ occurs 1 time.
---            _gold_ occurs 2 times.
---          _qgiver_ occurs 9 times.
---      _qgiverhome_ occurs 3 times.
---        _villains_ occurs 2 times.
+<ce>여기가 틀림없군. _qgiver_
+<ce>당신에게 말해준 설명과 일치해.
 
 QBN:
 Item _gold_ gold
@@ -98,64 +85,47 @@ Person _qgiver_ face 1 group Questor
 
 Place _qgiverhome_ local house2
 
-Clock _S.00_ 1.03:00
+Clock _timer_ 1.03:00
 --removed flags to make time limit exact
 
 Foe _villains_ is 2 Assassin
 
 --	Quest start-up:
-	start timer _S.00_ 
+	start timer _timer_ 
 	log 1010 step 0 
-	pc at _qgiverhome_ set _S.05_
+	pc at _qgiverhome_ set _inside_
 	---removed "saying" as unacceptable argument. moved to S.05
-	create npc at _qgiverhome_ 
 
-_S.00_ task:
+_timer_ task:
 	end quest 
 
-_S.01_ task:
-	daily from 21:00 to 22:59
-	--changed 24:00 to 23:59. 24:00 shouldn't exist. Goes to 11 PM due to "latehour" task added below.
+_nighttime_ task:
+	daily from 21:00 to 23:59
+	--changed 24:00 to 23:59. 24:00 shouldn't exist.
 	place npc _qgiver_ at _qgiverhome_ 
 
-_S.02_ task:
+_slain_ task:
 	killed 2 _villains_ 
 
 _questdone_ task:
-	when _S.04_ and _S.02_ 
+	when _clickqgiver_ and _slain_ 
 	give pc _gold_ 
 
-_S.04_ task:
+_clickqgiver_ task:
 	clicked npc _qgiver_ 
 
-_S.05_ task:
+_inside_ task:
 	say 1013
 
-_S.06_ task:
+_inj_ task:
 	injured _villains_ saying 1011 
 
 _clearclick_ task:
-	when not _S.02_ and _S.04_ 
-	clear _S.04_ _clearclick_ 
+	when not _slain_ and _clickqgiver_ 
+	clear _clickqgiver_ _clearclick_ 
 
-_S.08_ task:
-	when _S.05_ and _S.01_ and not _S.06_
-	create foe _villains_ every 10 minutes 1 times with 25% success 
---added "not S06" to prevent multiple spawns
-
-_mmap_ task:
-	when _questdone_ and not _S.05_ 
-	end quest 
-
---on rare occasions, the enemies still would not spawn with the above logic.
---A new back-up logic starting from 11PM is given below, to force an enemy
---spawn if none has been injured by 11PM. If there's a better way to ensure
---the enemies haven't spawned than with "injured," it would be preferable.
-
-_latehour_ task:
-	daily from 23:00 to 23:59
-	place npc _qgiver_ at _qgiverhome_ 
-
-_backupspawn_ task:
-	when _S.05_ and _latehour_ and not _S.06_
-	create foe _villains_ every 0 minutes 1 times with 100% success
+_spawnenemy_ task:
+	when _inside_ and _nighttime_
+	create foe _villains_ every 10 minutes 1 times with 100% success 
+-- even with the previous fix, people are still suffering from impossible quest.
+-- making it 100% spawn chance, no delayed nonsense.

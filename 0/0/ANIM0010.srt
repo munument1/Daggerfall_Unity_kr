@@ -1,16 +1,19 @@
 1
 00:00:00,785 --> 00:00:02,021
+거대한 누미디움은,
 Great Numidium,
 
 2
 00:00:02,022 --> 00:00:04,960
+그 거친 힘은 오직 블레이드만이 제어할 수 있고,
 its raw power tempered only by the Blades,
 
 3
 00:00:04,961 --> 00:00:08,732
+제국에 반기를 든 자식들을 모조리 짓밟아,
 crushes all the rebellious children of the Empire,
 
 4
 00:00:08,733 --> 00:00:13,000
+그들의 군대를 파괴한다.
 destroying their armies.
-

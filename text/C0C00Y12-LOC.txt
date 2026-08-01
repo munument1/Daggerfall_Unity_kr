@@ -11,92 +11,102 @@ DisplayName: 도난당한 물건
 QRC:
 
 QuestorOffer:  [1000]
-<ce>평소라면 __qgiver_의 일원이 아닌 자에게는 일을
-<ce>맡기지 않았을 걸세. 하지만 지금은 일손이 부족하군.
-<ce>뻔뻔한 도둑이 신전에서 _religitem_ 물건을 훔쳐 갔네.
-<ce>사제가 범인을 똑똑히 보았지. 그저 평범한 거리의 도둑,
-<ce>_thief_의 이름을 지닌 =thief_였는데,
-<ce>그날 신전에 들어와 예배하는 척하고 있었네. 이 도둑을
-<ce>추적해 우리의 훔쳐 간 _religitem_ 물건을 되찾아오게.
-<ce>그럼 앞으로 자네를 좋게 이야기해주겠네.
+<ce>평소라면 __qgiver_의 일원이 아닌 사람에게 일을
+<ce>맡기지 않습니다. 하지만 지금은 일손이 부족합니다.
+<ce>뻔뻔한 도둑이 사원에서 _religitem_을
+<ce>훔쳤습니다. 사제가 범인을 똑똑히 보았습니다.
+<ce>예배하는 척하던 평범한 거리 도둑,
+<ce>=thief_ _thief_였습니다. 그자를 추적해
+<ce>훔친 _religitem_을 되찾아오면 앞으로
+<ce>당신을 좋게 말해두겠습니다.
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>기회를 주었더니 내 얼굴에 침을 뱉는군.
-<ce>내게 호의를 구할 생각은 말게.
+<ce>기회를 줬더니 내 얼굴에 침을 뱉는군요.
+<ce>내게 호의를 청할 생각은 마십시오.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>=traveltime_일 안에 되찾아와야 하네.
-<ce>그때가 되면 우리 기사단이 수색대를 파견할 수 있을 테니,
-<ce>자네는 기회를 잃게 될 걸세.
+<ce>=traveltime_일 안에 되찾아야 합니다.
+<ce>그 뒤에는 기사단이 수색대를 파견할 수 있으니
+<ce>당신의 기회는 사라질 겁니다.
+<ce>
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>모든 찬사를 자네에게 돌리네, %pcn.
-<ce>_religitem_ 물건이 신전으로 돌아왔네.
-<ce>자네는 %god 의 호의를 얻었네.
+<ce>모든 찬사를 보냅니다, %pcn.
+<ce>_religitem_이 사원으로 돌아왔습니다.
+<ce>당신은 %god의 총애를 얻었습니다.
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
-<ce>_thief_ 지역은 __thiefplace_의 _thiefplace_에 숨어
-<ce>있다네. __qgiver_의 눈을 피해 숨기엔 좋은 곳이지.
+<ce>_thief_는 __thiefplace_의 _thiefplace_에 숨어 있습니다.
+<ce>__qgiver_을 피해 숨기에는 좋은 곳이지요.
 
 RumorsPostfailure:  [1006]
-__qgiver_ 지역의 그 _religitem_ 물건은 영영
-되찾지 못할 모양이군.
+__qgiver_은 _religitem_을 영영 되찾지 못할 모양입니다.
 
 RumorsPostsuccess:  [1007]
-_thief_ 측은 심판을 받았고, __qgiver_ 지역은
-그들의 _religitem_ 물품을 되찾았네.
+_thief_는 심판을 받았고, __qgiver_은
+_religitem_을 되찾았습니다.
 
 QuestorPostsuccess:  [1008]
-우리의 _religitem_ 물건을 가져다준 사람이 누구인지
-잊었다고 생각하지 말게, %pcf.
+_religitem_을 되찾아준 사람이 누구인지 벌써
+잊었다고 생각하지 마십시오, %pcf.
 
 QuestorPostfailure:  [1009]
-우리의 _religitem_ 물건은 영원히 사라졌는데 대화를
-하고 싶다고? 믿을 수가 없군.
+_religitem_은 영영 사라졌는데 나와 이야기하고
+싶다고요? 기가 막히는군요.
 
 QuestLogEntry:  [1010]
-%qdt:
- ___qgiver_의 __qgiver_ 출신인 _qgiver_께서
- =thief_인 _thief_에게 도난당한
- _religitem_ 물건을 되찾을 기회를 주셨다.
- =traveltime_일 내로 그것을 되찾아야 한다.
+%qdt: ___qgiver_의 __qgiver_에 있는 _qgiver_는 =thief_
+_thief_에게 도난당한 _religitem_을 되찾을 기회를 주었다.
+=traveltime_일 안에 회수해야 한다.
 
 Message:  1011
-<ce>%oth! 신전이 고작 그 가치 없는 _religitem_ 물건을
-<ce>되찾으려고 현상금 사냥꾼을 고용했다고? %oth,
-<ce>목숨 걸 만한 가치는 없지. 여기, 가져가게. 이제,
-<ce>자네가 목숨 걸 가치가 있다고 생각하는지 보겠네... 도와줘!!
-<ce>이 %ra 인물이 우리 전리품을 가지고 도망가고 있어!
+<ce>“%oth! 고작 그 쓸모없는 _religitem_을
+<ce>되찾겠다고 사원에서 현상금 사냥꾼을 고용했어?
+<ce>%oth, 목숨 걸 만한 물건은 아니지. 자, 가져가.
+<ce>이제 너도 목숨 걸 가치가 있는지 보자고… 도와줘!
+<ce>이 %ra가 우리 전리품을 훔쳐간다!”
+<ce>
+<ce>
+<ce>
+<ce>
 
 Message:  1012
-<ce>침입자다! 경보를 울려라! 건물 안에 침입자가 있다!
+<ce>침입자다! 경보를 울려라!
+<ce>건물 안에 침입자가 있다!
+<ce>
 
 Message:  1013
-<ce>_thief_... 이름은 익숙한데,
-<ce>어디서 들었는지 기억이 안 나는군.
-<ce>__thiefplace_에서 마주친 누군가였나?
-<ce>더 도움이 되지 못해 미안하네.
+<ce>_thief_… 익숙한 이름인데 누구인지는 모르겠군요.
+<ce>__thiefplace_에서 마주친 사람이었나?
+<ce>도움이 못 돼 미안합니다.
 <--->
-<ce>=decoy_의 이름으로 불리는? 물론, %g2 알지.
-<ce>___decoy_에 산다네.
+<ce>=decoy_라고요? 물론 %g2을 압니다. ___decoy_에 살지요.
 <--->
-<ce>=thief_에 대해 말하는 거라면,
-<ce>%g 는 예전에 내 주머니를 털려던
-<ce>__thiefplace_ 출신의 좀도둑 같더군.
+<ce>=thief_를 말하는 거라면, %g은 예전에 내 주머니를
+<ce>털려던 __thiefplace_의 비열한 좀도둑 같습니다.
 
 Message:  1014
-<ce>물론, 그 얄미운 좀도둑은 알지.
-<ce>__thiefplace_에 있는 _thiefplace_ 물건을 확인해보게.
+<ce>물론 그 재빠른 좀도둑을 알지요. __thiefplace_의 _thiefplace_을 찾아보십시오.
 <ce>
-<ce>_thief_? 그래, %g 는
-<ce>__thiefplace_의 _thiefplace_에 "숨어" 있다네.
-<ce>자네와 내가 %g 가 어디 있는지 아는 이상,
-<ce>그리 조용히 지내는 건 아니겠지만 말이야!
+<ce>_thief_라고요? 그래요, %g은 __thiefplace_의 _thiefplace_에
+<ce>“숨어” 있습니다. 당신과 내가 %g의 위치를 아는 걸 보면 그리 조용히 지내는 건 아니지만요.
 
 Message:  1020
-<ce>_thief_ 인물이 자네에게 _religitem_ 물건을
-<ce>던져주고는, 그림자 속으로 사라지네. 이제 탈출할 시간이군!
-
+<ce>_thief_가 _religitem_을 던져주고 그림자 속으로
+<ce>사라집니다. 이제 탈출해야 합니다!
+<ce>
 
 -- Symbols used in the QRC file:
 --
