@@ -1,28 +1,34 @@
 1
 00:00:01,177 --> 00:00:03,114
+만텔라가 에테리우스에서 풀려나고,
 The Mantella is released from the Atherius
 
 2
 00:00:03,115 --> 00:00:04,354
+센티넬의 명령에 따라
 and at the command of Sentinel
 
 3
 00:00:04,355 --> 00:00:06,554
+거대한 누미디움을 불러낸다.
 draws forth great Numidium.
 
 4
 00:00:06,555 --> 00:00:08,558
+일리악 만의 다른 세력들은
 The other powers of Iliac Bay
 
 5
 00:00:08,559 --> 00:00:10,917
+아이들의 장난감처럼 쓸려 나가고,
 are swept aside like children's toys
 
 6
 00:00:10,918 --> 00:00:13,027
+센티넬의 백월은
 placing the White Moon of Sentinel
 
 7
 00:00:13,028 --> 00:00:17,000
+일리악 만의 패권을 차지한다.
 in ascendancy over the Iliac Bay.
-

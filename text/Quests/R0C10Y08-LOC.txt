@@ -11,98 +11,102 @@ DisplayName: 신전에서의 절도
 QRC:
 
 QuestorOffer:  [1000]
-가능하다면, %pcf, 완전히 멍청이는 아니라고
-생각되는 사람의 도움이 필요합니다. 신전에 작은 소포를
-전달하라고 다른 용병을 보냈는데, 별로 값비싼 물건도
-아니건만 도둑맞고 말았습니다. 뭐, 적어도 그 멍청한
-고용인은 산적들이 어디로 갔는지는 기억하고 있더군요. 혹시
-내 소포를 되찾아오는 일을 도와줄 수 있겠습니까?
+<ce>가능하다면 %pcf, 완전한 바보는 아닌 사람의
+<ce>도움이 필요합니다. 신전에 작은 소포를 전달하라고
+<ce>다른 용병을 보냈는데 산적에게 빼앗겼습니다.
+<ce>다행히 그 멍청이가 산적들이 어디로 갔는지는
+<ce>기억하더군요. 소포를 되찾아오겠습니까?
+<ce>
+<ce>
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-%oth, 그렇게 말할까 봐 걱정했습니다. 뭐,
-알겠습니다. 승낙하고 실패하는 것보다는 낫겠지요.
+<ce>%oth, 그럴 줄 알았습니다. 승낙하고
+<ce>실패하는 것보다는 낫겠지요.
+<ce>
 
 AcceptQuest:  [1002]
-미리 감사드립니다, %pcf. 자, 복잡한 사정이
-있습니다. 산적들이 _item_의 물건을 __itemplace_에
-있는 신전, _itemplace_에 팔아넘겼습니다. 그들에게는 어떤
-종교적 의미가 있는 모양입니다. 망신을 피하기 위해, 당신이
-신전에서 _item_의 물건을 훔쳐내어 _transporter_에게
-전달해주었으면 합니다. %g2 는 __inn_의
-_inn_에 있습니다. _item_의 기한은
-=1stparton_일이며, 그 안에 멍청한 _transporter_의 손에
-들어가야 합니다. 그리고 당신은 그 후 =2ndparton_일 안에
-__inn_에서 이곳으로 돌아와야 합니다. 이해했습니까?
-시간이 별로 없습니다. 당신을 믿겠습니다, %pcf.
-행운을 빌며, 작별입니다.
+<ce>미리 감사하지요, %pcf. 산적들은 _item_을
+<ce>__itemplace_의 신전 _itemplace_에 팔았습니다.
+<ce>종교적 의미가 있는 모양입니다. 망신을 피하려면
+<ce>신전에서 _item_을 훔치십시오. 그 _item_을
+<ce>__inn_의 _inn_에 있는 _transporter_에게
+<ce>전하십시오. =1stparton_일 안에 멍청한
+<ce>_transporter_, 즉 %g2 손에 들어가야 하며,
+<ce>그 뒤 =2ndparton_일 안에 __inn_에서 이곳으로
+<ce>돌아오십시오. 시간이 없습니다, %pcf.
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestFail:  [1003]
-네? 일을 시작하기도 전에 보상을 바란 건 아니겠지요,
-%pcf?
+<ce>일을 시작하기도 전에 보상을 바라지는 않았겠지요, %pcf?
+<ce>
 
 QuestComplete:  [1004]
-%oth, 다시 돌아왔군요, %pcf. 애초에 왜
-그런 정신 나간 녀석을 고용했는지 모르겠습니다. 자, 여기
-당신의 _reward_ 금화입니다. 충분히 받을 자격이
-있습니다.
+<ce>%oth, 돌아왔군요, %pcf. 왜 그런 정신 나간
+<ce>녀석을 고용했는지 모르겠습니다. 여기 충분히
+<ce>자격을 얻은 _reward_골드입니다.
+<ce>
 
 RumorsDuringQuest:  [1005]
-_itemplace_의 경비가 강화되고 있습니다. <---> 무슨
-이유인지 _itemplace_의 경계가 평소보다 삼엄합니다.
+_itemplace_의 경비가 강화되고 있어.
+<--->
+어째서인지 _itemplace_의 경계가 평소보다 삼엄해.
 
 RumorsPostfailure:  [1006]
-_itemplace_의 도난품이었던 _item_의 회수에
-성공했습니다. <---> _itemplace_의 조치로
-도난당했던 _item_의 물건을 되찾아 더 안전한 곳으로
-옮겼습니다.
+_itemplace_에서 도난당했던 _item_을 되찾았대.
+<--->
+_itemplace_는 도난당한 _item_을 회수해
+더 안전한 곳으로 옮겼어.
 
 RumorsPostsuccess:  [1007]
-어떤 귀중한 _item_의 물건이 _itemplace_에서
-도난당했습니다. <---> 이제 신전까지 털리는
-지경이군요. 충격적입니다.
+귀중한 _item_이 _itemplace_에서 도난당했대.
+<--->
+이제 신전까지 털리는군. 충격적인 일이야.
 
 QuestorPostsuccess:  [1008]
-다시 뵙게 되어 정말 기쁩니다. 무엇을 도와드릴까요?
-<---> 신전과 관련된 그 불쾌한 일을 도와주었던
-%ra 맞지요?
+다시 만나 정말 반갑습니다. 무엇을 도와드릴까요?
+<--->
+신전과 관련된 그 불쾌한 일을 도와준 %ra군요?
 
 QuestorPostfailure:  [1009]
-%oth, 당신이군요. 엉망진창으로 임무를 수행한 것에
-대해 사과하러 온 모양인데, 그럴 필요 없습니다. 시간이
-없거든요.
+<ce>%oth, 당신이군요. 엉망으로 처리한
+<ce>임무를 사과하러 왔겠지만 그럴 필요
+<ce>없습니다. 시간이 없으니까요.
+<ce>
 
 QuestLogEntry:  [1010]
-%god, 와주어서 고맙습니다, %pcf. 잘
-들으세요, 서둘러 _questgiver_ 쪽으로 돌아가야 합니다.
-=2ndparton_일 안에 돌아오지 않으면 %g 는 당신의
-존재 자체를 잊은 척할 것이고, 당신은 구리 한 닢도 받지
-못할 겁니다. %g3 의 방식을 잘 아니까, 내 말을
-믿으세요.
+<ce>%god, 와줘서 고맙습니다, %pcf.
+<ce>서둘러 _questgiver_에게 돌아가십시오.
+<ce>=2ndparton_일 안에 돌아오지 않으면 %g는 당신을
+<ce>모르는 척할 것이고 한 푼도 주지 않을 겁니다.
+<ce>%g3 방식을 아니까 믿으십시오.
+<ce>
 
 Message:  1011
-_transporter_의 정체는 _questgiver_ 및 연줄이 있는,
-신경질적으로 보이는 =transporter_입니다. <--->
-=transporter_ -- %g 의 %di 의 위치는
-__transporter_입니다.
+<ce>_transporter_는 _questgiver_와 연줄이
+<ce>있는 신경질적인 =transporter_입니다.
+<--->
+=transporter_인 %g는 __transporter_에서
+%di 떨어진 곳에 있습니다.
 
 Message:  1012
-_item_의 물건을 집어 들었습니다. 이제
-_transporter_에게 가져다주면 됩니다.
+<ce>_item_을 집어 들었습니다. 이제
+<ce>_transporter_에게 가져가야 합니다.
 
 Message:  1015
-%qdt:
- _questgiver_ 가 __itemplace_에 있는 _itemplace_ 로 저를
- 보내 _item_ 하나를 훔치게 한 뒤, __inn_에 있는
- _transporter_에게 _inn_의 장소에서 전달하라고
- 했습니다. 배달을 완료하기까지 =1stparton_일이 남았습니다.
- 마지막으로, 보상을 받으러 돌아가야 합니다.
- __inn_에서 ___questgiver_에 있는 _questgiver_의 집인
- __questgiver_까지 이동하는 데 =2ndparton_일이
- 주어졌습니다.
+%qdt: _questgiver_는 __itemplace_의 _itemplace_에서
+_item_을 훔쳐 __inn_의 _inn_에 있는 _transporter_에게
+전달하라고 했다. =1stparton_일 안에 배달한 뒤, __inn_에서
+___questgiver_의 __questgiver_에 있는 _questgiver_에게
+=2ndparton_일 안에 돌아가야 한다.
 
 Message:  1020
-<ce>도둑 잡아라! 우리 성스러운 _item_의 비열한 모독자다!
-
+<ce>도둑이다! 성스러운 _item_을 더럽히는 자를 잡아라!
 
 -- Symbols used in the QRC file:
 --

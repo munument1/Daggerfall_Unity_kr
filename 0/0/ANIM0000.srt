@@ -1,24 +1,29 @@
 1
 00:00:05,700 --> 00:00:11,253
-타이버 셉팀의 통치 이후 400년이 지나, 시작은 끝을 맞으며,
+타이버 셉팀의 치세로부터 사백 년 뒤, 시작은 끝과 만나고,
 Four hundred years after Tiber Septim's reign, the beginning will meet the end,
+
 2
 00:00:11,263 --> 00:00:15,391
-탐리엘 제국에서 피의 순환은 끝나리라.
+탐리엘 제국에서 피로 이어진 고리는 닫히리라.
 and the bloody circle will close in the Empire of Tamriel.
+
 3
 00:00:15,441 --> 00:00:23,735
-셉팀 왕조에 걸맞지 못한 자손이, 제국의 연대를 흐트리고 균열을 부르며.
+셉팀 왕조의 자격 없는 후계자들은 제국의 결속이 느슨해지고 갈라지도록 내버려 두었다.
 The unworthy heirs of the Septim Dynasty, have allowed the bonds of the Empire to weaken and crack.
+
 4
 00:00:23,744 --> 00:00:28,481
-유리엘 셉팁 7세는 조상들이 무시한 바를 고치지 못하리니.
+유리엘 셉팀 7세는 선조들이 외면한 것을 바로잡지 못하리니.
 Uriel Septim VII cannot repair what his ancestors ignored.
+
 5
 00:00:28,600 --> 00:00:34,090
-속주들은 방치된 아이처럼 서로 싸워 반란에 취하고,
+속주들은 방치된 아이들처럼 서로 다투며 반란에 취했고,
 The provinces fight among themselves like neglected children, drunk with rebellion,
+
 6
 00:00:34,091 --> 00:00:38,670
-한 불굴의 권능이 그 모습을 감추고 있으나, 영원하진 않으리라.
+한 불굴의 힘은 모습을 감추고 있으나, 영원히 숨지는 않으리라.
 and one indomitable power hides itself, but not forever.

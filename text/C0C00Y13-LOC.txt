@@ -11,56 +11,64 @@ DisplayName: 심부름
 QRC:
 
 QuestorOffer:  [1000]
-<ce>축복이 있기를, %pcn. 비록 자네는 이교도이고 우리
-<ce>신전을 후원하지 않지만 말일세. 나는 _qgiver_라네.
-<ce>자네가 __qgiver_의 호의를 얻고 싶어 하는군. 이
-<ce>_religitem_ 물건을 =traveltime_일 안에 ___priest_에게
-<ce>전달해주게. 그러면 자네를 좋게 말해줄 수 있네.
+<ce>축복이 함께하기를, %pcn. 비록 그대가 이교도이며
+<ce>우리 신전을 섬기지는 않지만 말입니다.
+<ce>나는 _qgiver_입니다. __qgiver_의 호의를
+<ce>얻고 싶다고 들었습니다. 이 _religitem_을
+<ce>=traveltime_일 안에 ___priest_로 배달해주면
+<ce>그대를 좋게 말해두겠습니다.
+<ce>
+<ce>
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>자네 손해일세. 당분간은 이 신전의 호의를 구할 생각은 말게,
-<ce>%pcn.
+<ce>손해 보는 것은 그대입니다. 당분간 이 신전의 호의를
+<ce>구할 생각은 하지 마십시오, %pcn.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>여기 _religitem_ 물건이 있네.
-<ce>___priest_에 있는 __priest_의
-<ce>_priest_에게 가져다주게. 아, 깜빡할 뻔했군.
-<ce>경쟁 신전에서 자네를 막으려 폭도들을 보낼지도 모르네.
+<ce>여기 _religitem_이 있습니다. ___priest_의
+<ce>__priest_에 있는 _priest_에게 가져가십시오.
+<ce>아, 경쟁 신전에서 그대를 막으려고 폭한들을 보낼
+<ce>수도 있다는 말을 깜빡할 뻔했군요.
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>신의 축복이 있기를, %pcn.
-<ce>이 _religitem_ 물건이 이곳에 절실히 필요했네.
+<ce>신의 은총이 함께하기를, %pcn. 이곳에는
+<ce>이 _religitem_이 절실히 필요했습니다.
+<ce>
 
 RumorsDuringQuest:  [1005]
-그 _religitem_ 물건을 두고 두 신전이 경쟁 중이라네.
+두 신전이 그 _religitem_을 먼저 차지하려고 경쟁 중입니다.
 
 RumorsPostfailure:  [1006]
-_priest_ 측은 %g3 의 _religitem_ 물품을
-얻지 못했고, _qgiver_ 측은 분노하고 있네.
+_priest_는 끝내 %g3 _religitem_을 받지
+못했고, _qgiver_는 격노했습니다.
 
 RumorsPostsuccess:  [1007]
-용감한 %ra 덕분에 _priest_ 측과 __qgiver_
-지역은 그 _religitem_ 물품을 손에 넣었네.
+용감한 %ra 덕분에 _priest_와 __qgiver_이
+그 _religitem_을 손에 넣었습니다.
 
 QuestorPostsuccess:  [1008]
-%god, 축복이 있기를. 물론 %pcf 에 관해서는
-기억하고말고. 잘 지냈나, 나의 아이야?
+%god의 축복이 함께하기를. 물론 %pcf을 기억합니다.
+잘 지냈습니까, 나의 아이여?
 
 QuestorPostfailure:  [1009]
-_priest_의 행방은 묘연하고 _religitem_ 또한 가져오지
-못했으니, 나는 기분이 좋지 않네.
+_priest_는 끝내 _religitem_을 받지 못했습니다.
+나는 전혀 유쾌하지 않습니다.
 
 QuestLogEntry:  [1010]
-%qdt:
- __qgiver_의 _qgiver_ 측에서 내게
- ___priest_에 있는 __priest_의 _priest_에게
- _religitem_ 전달이라는 임무를 주었네.
- =traveltime_일 안에 도착해야 하네.
+%qdt: __qgiver_의 _qgiver_는 _religitem_을 ___priest_의
+__priest_에 있는 _priest_에게 배달하라고 했다.
+=traveltime_일 안에 도착해야 한다.
 
 Message:  1011
-<ce>그 _religitem_의 경우 절대 __priest_에 도착하지 못할
-<ce>걸세. 대신, 내가 자네의 머리를 그들에게 배달해주지!
-
+<ce>그 _religitem_은 절대로 __priest_에 도착하지 못한다.
+<ce>대신 네 머리를 그들에게 배달해주마!
+<ce>
+<ce>
 
 -- Symbols used in the QRC file:
 --

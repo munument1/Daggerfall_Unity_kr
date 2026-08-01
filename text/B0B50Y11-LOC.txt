@@ -11,58 +11,63 @@ DisplayName: 퇴마
 QRC:
 
 QuestorOffer:  [1000]
-<ce>저는 _qgiver_입니다. 지역 귀족 중 한 명인
-<ce>_nobleman_께서 방금 버려진 부동산의 권리증을 얻었습니다.
-<ce>너무 늦게도, %g 께서는 그곳에 유령이 나온다는
-<ce>사실을 알게 되었습니다. 누군가 가서 그곳을 떠도는 유령을
-<ce>쫓아내야 합니다. 이 퀘스트를 맡아주시겠습니까?
+<ce>나는 _qgiver_입니다. 이 지역 귀족 _nobleman_이
+<ce>버려진 부동산의 권리증서를 얻었는데, 뒤늦게
+<ce>%g이 그곳에 유령이 나온다는 사실을 알았습니다.
+<ce>누군가 그곳으로 가서 유령을 퇴치해야
+<ce>합니다. 임무를 맡으시겠습니까?
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>유령은 보통 신전의 문제입니다.
-<ce>이 일은 그들에게 넘겨야겠군요.
+<ce>유령은 보통 사원에서 처리하는 문제지요.
+<ce>이번 일은 그쪽에 넘겨야겠군요.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>_nobleman_님은 =2dung_일 이내에 재건을 시작하고
-<ce>싶어 합니다. %g 께서는 ___dungeon_의 권리증을
-<ce>가지고 있으며, 그곳에서 영혼을 찾을 수 있을 것입니다.
+<ce>_nobleman_은 =2dung_일 안에 재건 공사를
+<ce>시작하려 합니다. %G이 소유한 ___dungeon_에서
+<ce>그 영혼을 찾을 수 있습니다.
+<ce>
 
 QuestComplete:  [1004]
-<ce>_nobleman_님께서 매우 기뻐하실 것입니다.
-<ce>%g 께서는 심지어 당신의 이름을 딴 분수를
-<ce>헌정하겠다고 제안했습니다.
+<ce>_nobleman_이 무척 기뻐하겠군요. %G은 당신의 이름을
+<ce>붙인 분수까지 세우겠다고 했습니다.
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
-_nobleman_님께서 ___dungeon_의 권리증을 받아들이다니
-제정신이 아닙니다. 미쳤거나 멍청한 게 분명합니다.
+_nobleman_이 ___dungeon_의 권리증서를
+받다니 미쳤거나 멍청한 겁니다.
 
 RumorsPostfailure:  [1006]
-불쌍한 _nobleman_님께서 %kno 에게 ___dungeon_
-퇴마를 요청했지만, 실패하고 말았습니다.
+가엾은 _nobleman_은 ___dungeon_의 유령을 쫓아달라고
+%kno에 부탁했지만 실패했습니다.
 
 RumorsPostsuccess:  [1007]
-___dungeon_님께서는 %kno 덕분에 창고나 별장으로
-탈바꿈할 수 있게 되었습니다.
+%kno 덕분에 ___dungeon_을 창고나
+별장으로 만들 수 있게 됐습니다.
 
 QuestorPostsuccess:  [1008]
-반갑습니다, %pcf.
-_nobleman_의 조력자로서, 제가 무엇을 도와드릴까요?
+반갑습니다, %pcf. _nobleman_ 일을
+도와주셨으니 무엇을 해드릴까요?
 
 QuestorPostfailure:  [1009]
-당신은 _nobleman_ 임무를 실패함으로써 %kno 님을
-실망시켰습니다, %pcf. 정말 큰 실망이군요.
-
+_nobleman_에게 실패함으로써 %kno도 실망시켰습니다,
+%pcf. 참으로 유감입니다.
 
 QuestLogEntry:  [1010]
-%qdt:
- ___qgiver_에 있는 ==qgiver_의
- _qgiver_ 측이 제게 ___dungeon_ 지역을
- 떠도는 유령을 쫓아내 달라고 간청했습니다.
- 재건을 시작하기까지 =2dung_일이 남았습니다.
+%qdt: ___qgiver_의 ==qgiver_에 있는 _qgiver_는
+___dungeon_에 출몰하는 유령을 없애달라고 간청했다.
+재건 공사가 시작되기까지 =2dung_일이 남았다.
 
 Message:  1011
-<ce>유령이 성불했습니다. _nobleman_의 도움으로 ___dungeon_
-<ce>재건이 가능해졌습니다.
-
+<ce>유령은 안식을 얻었습니다. 이제 _nobleman_은
+<ce>___dungeon_을 재건할 수 있습니다.
+<ce>
 
 -- Symbols used in the QRC file:
 --

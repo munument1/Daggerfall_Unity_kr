@@ -11,112 +11,126 @@ DisplayName: 영토 전쟁
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%vam 의 더 큰 영광을 위해 위험한 임무를 맡아보지
-<ce>않겠나?
+<ce>%vam의 더 큰 영광을
+<ce>위해 위험한 임무를 맡아보겠나?
+<ce>
 
 RefuseQuest:  [1001]
-<ce>%vam 의 다른 자에게 맡기고 영예를 놓치고 싶은
-<ce>건가? 좋네, 하지만 자네의 유순함에 실망했다는 건 인정하지.
+<ce>이 영예를 놓치고 다른 %vam에게
+<ce>맡기겠다는 건가? 좋다. 하지만 자네의
+<ce>고분고분함에는 실망했어.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>자네는 정말 아름다울 정도로 순종적이군, %pcf. 경쟁
-<ce>뱀파이어가 내 영토로 들어왔다. 자네가 그놈을 죽여야겠어.
-<ce>조심하게, %pcf. 뱀파이어 고대 뱀파이어는, 비록
-<ce>%vam 보다 열등한 부족이라 해도 만만한 상대가
-<ce>아니니까. 준비 없이 전투에 뛰어들지 마라. 이놈은
-<ce>_vampname_의 이름으로 불리는 불리며, %g3 의
-<ce>새로운 성소는 ___mondung_ 지역이다. 그놈은 희생자의
-<ce>가죽으로 만든 _vampproof_ 측을 자랑하는 것으로 유명하지.
-<ce>그걸 가져오게. =1stparton_일 밤 뒤에 이곳에서 다시 보길
-<ce>기대하마. 죽지 마라, %pcf.
+<ce>참으로 아름답게 순종하는군, %pcf. 경쟁 혈통의
+<ce>뱀파이어가 내 영토에 들어왔다. 자네가 죽여라.
+<ce>조심해야 한다, %pcf. %vam보다 열등한 혈통이라
+<ce>해도 고대 뱀파이어는 약한 상대가 아니다.
+<ce>준비 없이 싸우러 가지 마라. 이름은 _vampname_,
+<ce>%g3의 새 성소는 ___mondung_이다. 놈은 희생자
+<ce>가죽으로 만든 _vampproof_을 몹시 자랑한다.
+<ce>그것을 가져와라. =1stparton_일 밤 안에 돌아오기를
+<ce>기다리겠다. 죽지 마라, %pcf.
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestFail:  [1003]
-<ce>혹시 _vampname_의 자살을 바랐나? 그럴 리가 없지. 자네가
-<ce>%g3 의 죽음의 대리인이 되어야 한다.
+<ce>_vampname_가 스스로 목숨을 끊기를 기다렸나?
+<ce>그럴 리 없지. 자네가 %g3의 죽음을
+<ce>불러올 자가 되어야 한다.
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>돌아왔구나, %pcf, 내 아이야. 흥미롭군. 사실 자네의
-<ce>안위가 꽤 걱정되었거든. 뱀파이어가 %vam 의
-<ce>뱀파이어에게 감상적이라니, 정말 말도 안 되는 일이지!
-<ce>%vam 장로들의 축하를 전하마. 그들이 자네에게 이
-<ce>_reward_ 물품을 주라고 하더군. 보수 같은 저속한 것으로
-<ce>생각하지 마라. 그저 가족이 주는 선물일 뿐이니까.
+<ce>돌아온 것을 환영한다, %pcf, 나의 아이야.
+<ce>이상하게도 자네의 안위를 꽤 걱정했어.
+<ce>%vam의 뱀파이어가 감상에 빠지다니 터무니없군!
+<ce>%vam 장로들의 축하를 전하지. 장로들은 이 _reward_을
+<ce>주라고 했다. 보수 같은 천박한 것으로 여기지 마라.
+<ce>그저 가족이 주는 선물이다.
+<ce>
+<ce>
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
-___mondung_에서 많은 활동이 있었지만, 그곳은 수년간
-버려진 곳이었어. <---> 그 _vampname_의 신분은
-귀족이야. %g 가 ___mondung_ 및
-%reg 정리를 맡고 있다고 하더군.
+수년간 버려졌던 ___mondung_에서 요즘 움직임이 많아졌어.
+<--->
+_vampname_는 귀족이야. %g은 ___mondung_와
+%reg을 정리하고 있다고 말하더군.
 
 RumorsPostfailure:  [1006]
-_vampname_의 이사 소식을 들었어. ___mondung_에서
-떠났다더군. 귀족이 살 곳은 아니지. <---> 이제
-_vampname_의 거처가 ___mondung_에서 옮겨졌으니,
-%g 는 궁전에 자주 드나들 거야.
+_vampname_가 마침내 ___mondung_에서
+나갔다더군. 귀족이 살 곳은 아니지.
+<--->
+_vampname_가 ___mondung_에서 옮긴 뒤로
+%g은 궁전에 자주 드나든대.
 
 RumorsPostsuccess:  [1007]
-그 친절한 _vampname_의 정체가 뱀파이어였다니! 전혀
-몰랐어! <---> 그 훌륭한 %ra 용병이
-___mondung_의 뱀파이어를 처치했으니 %god 에게
-감사해야 해.
+그 친절한 _vampname_가 뱀파이어였다니! 전혀 몰랐어!
+<--->
+훌륭한 %ra 용병이 ___mondung_의 뱀파이어를
+죽였으니 %god께 감사해야 해.
 
 QuestorPostsuccess:  [1008]
-반갑네, %pcf. 새로운 _reward_의 경험을 즐기고
-있길 바라네.
+반갑다, %pcf. 새 _reward_을 잘 쓰고 있기를 바란다.
 
 QuestorPostfailure:  [1009]
-<ce>_vampname_의 밤길은 여전히 계속되는군, %pcf.
-<ce>이번 임무는 용납할 수 없는 방식으로 처리되었어.
-<ce>%vam 의 모두가... 자네에게 실망했다네.
+<ce>_vampname_는 아직도 밤거리를 걷고 있다,
+<ce>%pcf. 이번 일의 처리는 용납할 수 없어.
+<ce>온 %vam이... 자네에게 실망했다.
+<ce>
+<ce>
+<ce>
 
 Message:  1020
-친애하는 %pcn,
- 
-%vam 에게 잠재적인 문제가 생긴 것 같네. 곧
-___vampire_ 쪽으로 오게.
- 
-죽음 속에서,
-<ce>_vampire_
+<ce>친애하는 %pcn, %vam에 문제가 생길 듯하다. 가능한 한 빨리 ___vampire_의 내게 오라. 죽음 속에서, _vampire_
 
 Message:  1011
-%g 는 __vampire_에 있는 아주 친절하고 지적인
-=vampire_ 측이야. <---> _vampire_ 측은 이곳
-%di 의 __vampire_에서 찾을 수 있는 그 친절한
-=vampire_ 측이지.
+%G은 __vampire_에 있는 아주 친절하고 영리한 =vampire_야.
+<--->
+_vampire_는 여기서 %di 떨어진
+__vampire_에 있는 친절한 =vampire_지.
 
 Message:  1012
-_vampire_의 혈통은 %vam 뱀파이어다.
-<---> _vampire_의 신분은 더 어린 뱀파이어들을
-가르치는 %vam 의 젊은 뱀파이어다.
+_vampire_는 %vam 혈통의 뱀파이어야.
+<--->
+_vampire_는 더 어린 뱀파이어들을
+가르치는 %vam의 젊은 뱀파이어야.
 
 Message:  1013
-_vampname_의 _vampproof_ 소재는 기묘한 창백한 가죽으로
-만들어졌다.
+_vampname_의 _vampproof_은 기묘하게
+창백한 가죽으로 만들어졌다.
 
 Message:  1015
 오류 -- 1015가 표시되고 있음
 
 Message:  1021
-편지를 받았다.
+편지를 받았습니다.
 
 Message:  1022
-<ce>나는 죽음에서 한 번 돌아왔다. 다시 돌아올 것이다. 그리고
-<ce>돌아오면 자네와 _vampire_의 행방을 자네들이 그러하듯
-<ce>창백한 벌레처럼 사냥할 것이다!
+<ce>나는 한 번 죽음에서 돌아왔다. 다시 돌아올
+<ce>것이다. 그때에는 자네와 _vampire_를 창백한
+<ce>벌레 사냥하듯 추적해 죽이겠다!
+<ce>
+<ce>
 
 Message:  1025
-%qdt:
- ___vampire_의 _vampire_의 부름을 받아
- %vam 업무차 __vampire_ 쪽으로 소환되었다.
+%qdt: ___vampire_의 _vampire_가 %vam의
+일로 나를 __vampire_에 불렀다.
 
 Message:  1026
-%qdt:
- _vampire_의 명령으로 _vampname_의 이름으로 불리는
- 고대 뱀파이어를 처치하러 ___mondung_ 쪽으로 향했다. 도살
- 시간 이후, 나는 킬의 증거로 아주 특별한 _vampproof_의
- 확보를 마쳤으며 =1stparton_일 밤 안에 __vampire_ 쪽으로
- 돌아와야 한다.
-
+%qdt: _vampire_는 _vampname_라는 고대 뱀파이어를
+죽이기 위해 나를 ___mondung_으로 보냈다. 처치한
+뒤 특별한 _vampproof_을 증거로 챙겨 =1stparton_일
+밤 안에 __vampire_로 돌아가야 한다.
 
 -- Symbols used in the QRC file:
 --

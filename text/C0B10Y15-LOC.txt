@@ -11,95 +11,106 @@ DisplayName: 유물
 QRC:
 
 QuestorOffer:  [1000]
-<ce>%pct, __questgiver_께서 %god 의 잃어버린
-<ce>_item_ 중 하나를 되찾아오는 위험한 임무를 맡아줄
-<ce>사람이 필요하십니다. 당신은 =lich_의 힘에 맞서야
-<ce>합니다. 그는 이 유물을 만들었으나 사원을 배신하고
-<ce>악의 길로 빠졌습니다. 그는 이제 리치가 되어 여전히
-<ce>_item_의 수호자가 되었습니다. 하시겠습니까?
+<ce>%pct, __questgiver_에서 %god의 잃어버린
+<ce>_item_ 중 하나를 되찾는 위험한 임무를 맡아줄
+<ce>사람이 필요합니다. 유물을 만들고도 사원을
+<ce>배신해 악에 빠진 =lich_의 힘에 맞서야 합니다.
+<ce>그는 이제 리치가 되어 여전히 _item_을
+<ce>지키고 있습니다. 맡으시겠습니까?
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>알겠습니다. 리치는 당신처럼 젊고 경험이 부족한 이에게는
-<ce>두려운 상대지요. 아마 더 성장하면 다시 이 임무를 맡을 수
-<ce>있을 겁니다. %god 의 가호가 함께하기를.
+<ce>이해합니다. 리치는 젊고 경험이 부족한
+<ce>이가 맞서기에는 무서운 상대입니다.
+<ce>더 성장한 뒤 다시 도전할 수도
+<ce>있겠지요. %god께서 함께하시길.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>당신의 용기는 가상하나, 당신이 마주할 위험을 생각하면
-<ce>몸이 떨리는군요. =lich_의 ___mondung_에 있는
-<ce>%god 의 _item_ 수호가 확인되었습니다.
-<ce>기억하십시오, 리치를 죽일 필요는 없습니다.
-<ce>그저 _item_의 회수 후 이곳 __questgiver_에게
-<ce>가져오기만 하면 됩니다. =qtime_일 안에 소식이 없으면,
-<ce>당신을 위해 떠난 이들의 노래를 부를 것입니다.
-<ce>%god 의 축복이 함께하기를, %pcn.
+<ce>그 용기는 존경스럽지만, 앞으로 마주할 위험을
+<ce>생각하면 두렵군요. =lich_는 ___mondung_에서 %god의
+<ce>_item_을 지키고 있습니다. 리치를 죽일 필요는
+<ce>없습니다. _item_만 되찾아 이곳 __questgiver_으로
+<ce>가져오십시오. =qtime_일 안에 소식이 없으면
+<ce>당신을 위해 망자의 노래를 부르겠습니다.
+<ce>%god의 축복이 함께하기를, %pcn.
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestFail:  [1003]
-<ce>떠나기를 주저하는 마음은 이해하지만, %pcf,
-<ce>기다린다고 해서 위험이 줄어들지는 않습니다.
+<ce>떠나기를 주저하는 마음은 이해합니다,
+<ce>%pcf. 하지만 기다린다고 위험이
+<ce>줄어드는 것은 아닙니다.
 
 QuestComplete:  [1004]
-<ce>위대한 %god 께 찬양을!
-<ce>당신이 정말로 성공할 줄은 감히 기대하지도 못했습니다.
-<ce>%god 의 은총이 이 공로에 대해 분명히
-<ce>당신을 비출 것입니다. 사원의 감사의 작은 표시로,
-<ce>이 마법이 깃든 _reward_의 수여를 받아주십시오.
+<ce>위대한 %god을 찬양하라! 정말 성공하리라고는 감히
+<ce>기대하지 못했습니다. 이 공로로 %god의 은총이
+<ce>분명 당신을 비출 겁니다. 사원의 작은 감사 표시로
+<ce>이 마법의 _reward_을 받으십시오.
+<ce>
+<ce>
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
-<ce>__questgiver_의 잃어버린 _item_에 대한 갈망은 크지만,
-<ce>리치 =lich_의 상대할 의지가 있는 자를 누가
-<ce>찾을 수 있을까?
+<ce>__questgiver_은 오래전에 잃은 _item_을 되찾고
+<ce>싶어 하지만, 리치 =lich_에게 맞설 사람이 과연 있을까요?
 
 RumorsPostfailure:  [1006]
-<ce>__questgiver_의 _item_에 대한 의심이 이제
-<ce>___mondung_에 없었다는 소문으로 번지고 있습니다.
+<ce>__questgiver_에서는 결국 _item_이 ___mondung_에
+<ce>있었던 게 아니라고 생각하는 모양입니다.
 
 RumorsPostsuccess:  [1007]
-<ce>___mondung_에 들어가 __questgiver_의 _item_ 회수 후
-<ce>돌아온 %ra 에 대한 이야기를 들었습니까?
+<ce>___mondung_에 들어가 __questgiver_의 _item_을
+<ce>가지고 돌아온 %ra 이야기를 들었습니까?
 
 QuestorPostsuccess:  [1008]
-<ce>%pcf, 그 리치를 물리친 당신은 언제든 이곳에
-<ce>환영받을 것입니다!
+<ce>%pcf, 리치에게 맞서준 뒤로는 언제든
+<ce>이곳에서 환영받을 겁니다.
 
 QuestorPostfailure:  [1009]
-<ce>___mondung_에서 우리의 _item_ 회수에 실패한 것을
-<ce>탓하려는 것은 아니지만, 당신이 완수할 수 없는 임무를
-<ce>수락했다는 사실에 실망했습니다.
+<ce>___mondung_에서 _item_을 되찾지 못한 것 자체는
+<ce>탓하지 않겠습니다. 하지만 끝낼 수 없는 임무를
+<ce>맡았다는 사실은 실망스럽군요.
+<ce>
 
 Message:  1015
-<ce>어디선가 불길한 목소리가 속삭입니다,
+<ce>어디선가 불길한 목소리가 속삭입니다.
 <ce>
-<ce>"_item_의 존재는 너나 __questgiver_의
-<ce>감상적인 바보들의 것이 아니다.
-<ce>그러므로 나는 정당하게 내 것을 되찾겠다."
+<ce>“_item_은 네 것도, __questgiver_의
+<ce>감상적인 바보들 것도 아니다. 그러니 정당한
+<ce>내 소유물을 되찾아가겠다.”
 <ce>
-<ce>_item_의 소멸이 임박했습니다.
+<ce>_item_이 사라집니다.
 
 Message:  1020
-%qdt:
- ___questgiver_의 __questgiver_께서 신성한 물건인
- _item_ 회수를 ___mondung_에서 진행하라고 하셨다.
- 문제는 리치인 =lich_ 존재가 지키고 있다는 것이다.
- =lich_ 처치까지는 필요 없지만, _item_ 확보 후
- =qtime_일 이내에 _questgiver_에게 돌아와야 한다.
+%qdt: ___questgiver_의 __questgiver_은 ___mondung_에서
+신성한 물건 _item_을 되찾으라고 했다. 문제는 리치 =lich_가
+지키고 있다는 점이다. =lich_를 죽일 필요는 없으며, _item_만
+되찾아 =qtime_일 안에 _questgiver_에게 돌아가면 된다.
 
 Message:  1030
-<ce>이것이 분명 __questgiver_의 오래전 잃어버린
-<ce>_item_임이 틀림없다.
+<ce>이것이 분명 __questgiver_에서
+<ce>오래전에 잃어버린 _item_입니다.
 
 Message:  1035
-<ce>뭐라고요? 신성한 _item_ 회수뿐만 아니라
-<ce>사악한 =lich_ 처치까지 해냈다고요?
-<ce>당신은 진정 %god 의 총애를 받는 자입니다.
-<ce>당신은 분명 우리 교단에서 크게 출세할 것입니다.
+<ce>뭐라고요? 신성한 _item_을 되찾은 데다
+<ce>사악한 =lich_까지 죽였습니까? 당신은 진정
+<ce>%god의 총애를 받는 자입니다. 우리 교단에서
+<ce>크게 출세할 것이 분명합니다.
+<ce>
 
 Message:  1040
-<ce>=lich_의 분노 섞인 쉭쉭거림이 들립니다:
+<ce>=lich_가 분노에 차 쉭쉭거립니다.
 <ce>
-<ce>"__questgiver_의 개 같은 놈들아, 내 _item_의 소유권은
-<ce>절대 넘기지 않는다! 내가 만들었으니 내가 가질 것이다.
-<ce>무덤조차도 나를 막을 수는 없다."
-
+<ce>“__questgiver_의 개들아, 내 _item_은 절대
+<ce>가질 수 없다! 내가 만들었으니 내가 간직할 것이다.
+<ce>무덤조차도 나를 막을 수 없다.”
+<ce>
+<ce>
 
 -- Symbols used in the QRC file:
 --

@@ -12,80 +12,93 @@ DisplayName: 뱀파이어 문제
 QRC:
 
 QuestorOffer:  [1000]
-<ce>우려되는 잠재적인 문제가 있습니다. 마녀들을 증오하는 고대
-<ce>뱀파이어가 우리 영토의 버려진 성으로 이주했습니다. 분명히
-<ce>우리가 해결해야 할 상황입니다. 동의하십니까, %pcf?
+<ce>우려스러운 문제가 생겼소. 마녀를 증오하는
+<ce>고대 뱀파이어가 우리 영토의 버려진
+<ce>성에 들어왔소. 당연히 우리가 바로잡아야
+<ce>할 일이오. 동의하지 않소, %pcf?
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>당신의 두려움을 이해합니다.
-<ce>오직 매우 유능하거나 매우 어리석은 자만이 고대 뱀파이어를
-<ce>처치하는 데 동의할 것입니다.
+<ce>자네가 두려워하는 것도 이해하오. 고대 뱀파이어를
+<ce>죽이겠다고 나설 자는 대단히 유능하거나
+<ce>대단히 어리석은 자뿐이니까.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>동의하십니까? 하지만 고대 뱀파이어는 결코 만만한
-<ce>상대가 아닙니다. 준비 없이 전투에 임하지 마십시오.
-<ce>이 괴물은 =vamprival_의 이름으로 불리는 불리며,
-<ce>그 새로운 은신처는 ___mondung_입니다. 당신은 그것을
-<ce>___mondung_에서 찾을 것입니다. =1stparton_일 밤 안에
-<ce>돌아오기를 기대하겠습니다. 죽지 마십시오, %pcf.
+<ce>맡겠소? 하지만 고대 뱀파이어는 약한 상대가 아니오.
+<ce>준비 없이 싸우러 가지 마시오. 괴물의 이름은
+<ce>=vamprival_, 새 성소는 ___mondung_이오.
+<ce>____mondung_에서 찾을 수 있을 것이오.
+<ce>=1stparton_일 밤 안에 돌아오기를
+<ce>기다리겠소. 죽지 마시오, %pcf.
+<ce>
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestFail:  [1003]
-<ce>혹시 =vamprival_의 자결을 바랐습니까? 그럴 리 없지요.
-<ce>당신은 %g3 의 죽음의 대리인이 되어야 합니다.
+<ce>=vamprival_가 자살하기를 기다렸소?
+<ce>그럴 리 없지. 자네가 %g3 죽음을
+<ce>불러올 자가 되어야 하오.
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>우리는 여기서도 그 고대 뱀파이어의 비명
-<ce>소리를 거의 들을 수 있었습니다, %pcf.
-<ce>당신은 마녀들의 감사를 받았습니다.
+<ce>그 고대 뱀파이어의 비명이 여기까지 들리는 듯했소,
+<ce>%pcf. 마녀들의 감사를 받으시오.
+<ce>
 
 RumorsDuringQuest:  [1005]
-___mondung_에서 많은 활동이 있었지만, 그곳은 수년간
-버려진 곳입니다. <---> 저 =vamprival_의
-신분은 귀족입니다. %g 가 ___mondung_ 및
-%reg 정리 작업을 진행 중이라 하더군요.
+___mondung_에서 움직임이 많아졌는데 수년간 버려졌던 곳이야.
+<--->
+=vamprival_는 귀족이야. %g은 ___mondung_과
+%reg을 정리하고 있다고 말하더군.
 
 RumorsPostfailure:  [1006]
-=vamprival_의 ___mondung_ 퇴거 소식을 들었습니다.
-귀족이 살 곳은 아니었죠.
-<---> 이제 =vamprival_의 ___mondung_ 퇴거로,
-%g 는 궁전에 자주 드나듭니다.
+=vamprival_가 마침내 ___mondung_에서
+이사했다더군. 귀족이 살 곳은 아니지.
+<--->
+=vamprival_가 ___mondung_에서 나간 뒤
+%g은 궁전에 자주 드나든대.
 
 RumorsPostsuccess:  [1007]
-그 친절했던 =vamprival_의 정체가 뱀파이어였다니!
-전혀 몰랐습니다! <---> ___mondung_에 있던
-뱀파이어를 처치한 그 훌륭한 %ra 용병에게
-%god 의 가호를.
+그 친절한 =vamprival_가 뱀파이어였다니! 전혀 몰랐어!
+<--->
+훌륭한 %ra 용병이 ___mondung_의 뱀파이어를
+죽였으니 %god께 감사해야 해.
 
 QuestorPostsuccess:  [1008]
-우리는 =vamprival_의 공로를 잊지 않았습니다,
-%pcf. 당신을 위해 무엇을 도와드릴까요?
+=vamprival_를 처리한 일을 잊지 않았소,
+%pcf. 무엇을 도와드릴까?
 
 QuestorPostfailure:  [1009]
-<ce>=vamprival_의 밤거리 배회는 우리 자매들을 사냥하고
-<ce>있습니다. 당신이 그것을 처치할 수 없다고 말했어야
-<ce>했습니다. 지금 당장 떠나십시오. 더는 할 말이 없습니다.
+<ce>=vamprival_는 여전히 밤을 돌아다니며
+<ce>우리 자매의 피를 마시고 있소.
+<ce>이길 수 없다고 처음부터 말했어야지. 이제
+<ce>떠나시오. 더 이야기하지 않겠소.
+<ce>
 
 Message:  1011
-_witch_ 측은 __witch_에 있는
-매우 친절하고 지적인 =witch_입니다.
-<---> _witch_ 측은 당신이 %di 에 있는
-__witch_에서 찾을 수 있는 친절한 =witch_입니다.
+_witch_는 __witch_에 있는 아주 친절하고 총명한 =witch_야.
+<--->
+_witch_는 여기서 %di 떨어진 __witch_에서
+찾을 수 있는 친절한 =witch_야.
 
 Message:  1012
-_witch_의 정체는 ___witch_의 마녀입니다.
-<---> _witch_의 정체는 ___witch_
-마녀이자 =witch_입니다.
+_witch_는 ___witch_의 마녀야.
+<--->
+_witch_는 ___witch_에 속한 =witch_ 마녀야.
 
 Message:  1015
-%qdt:
- ___witch_의 _witch_ 측은 나를 보내 %reg 의
- 마녀들을 파괴하려는 고대 뱀파이어를 처치하게 했다. 나는
- ___mondung_에 있는 그 언데드 괴물을 =1stparton_일 안에
- 완전히 처치하고 ___witch_ 방향으로 돌아오기로 약속했다.
+%qdt: ___witch_의 _witch_는 %reg의 마녀들을
+파괴하려는 고대 뱀파이어를 죽이라고 나를 보냈다.
+=1stparton_일 안에 ___mondung_의 언데드 괴물을
+영원히 죽이고 ___witch_로 돌아가기로 했다.
 
 Message:  1020
-<ce>=vamprival_ 처치에 성공했습니다.
-
+<ce>=vamprival_를 죽였습니다.
 
 -- Symbols used in the QRC file:
 --

@@ -14,6 +14,7 @@ game,게임
 controls,조작
 audio,소리
 spells,마법
+meleeAttacks,근접 공격
 tooltips,툴팁
 hud,HUD
 gui,GUI
@@ -59,6 +60,10 @@ bowDrawback,활 당겨 쏘기
 bowDrawbackInfo,마우스 오른쪽 버튼을 누르는 동안 활시위를 당기고 버튼을 놓으면 발사합니다
 toggleSneak,은신 전환
 toggleSneakInfo,은신 키를 계속 누르지 않아도 은신 상태가 유지되게 합니다
+meleeAttackDetection,근접 공격 판정
+meleeAttackDetectionInfo,근접 공격의 대상 판정 정밀도를 설정합니다
+meleeAttackFriendlyProtection,우호·중립 대상 보호
+meleeAttackFriendlyProtectionInfo,적대적이지 않은 대상을 실수로 공격하지 않도록 합니다
 
 toolTips,툴팁
 toolTipsInfo,GUI 항목의 설명을 표시합니다

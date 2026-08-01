@@ -10,40 +10,59 @@ QRC:
 QuestorOffer:  [1000]
 
 
+
+
 RefuseQuest:  [1001]
+
+
 
 
 AcceptQuest:  [1002]
 
 
+
+
 QuestFail:  [1003]
+
+
 
 
 QuestComplete:  [1004]
 
 
+
+
 RumorsDuringQuest:  [1005]
-유령들이 대거폴의 거리를 배회하고 있네.
+대거폴의 거리에 유령들이 출몰하고 있네.
 <--->
 밤에는 대거폴의 거리를 걷지 말게.
 <--->
-<ce>리산더스 왕의 유령이 밤마다 옛 수도를 배회하고 있네.
-<ce>아무도 그 이유를 모르지.
+<ce>리산더스 왕의 망령이 밤마다 옛 수도를 떠돌고
+<ce>있다네. 아무도 그 이유를 모르지.
 
 RumorsPostfailure:  [1006]
+
+
 
 
 RumorsPostsuccess:  [1007]
 
 
+
+
 QuestorPostsuccess:  [1008]
+
+
 
 
 QuestorPostfailure:  [1009]
 
 
 
--- QRC 파일에 사용된 기호: -- *** 없음 ***
+
+
+-- Symbols used in the QRC file:
+--    ***  None  ***
 
 QBN:
 

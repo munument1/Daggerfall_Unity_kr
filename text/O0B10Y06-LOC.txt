@@ -11,49 +11,56 @@ DisplayName: 보석 강탈
 QRC:
 
 QuestorOffer:  [1000]
-<ce>자네에게 딱 맞는 일이 있네. 보석 강탈 건이 하나 들어왔어.
-<ce>참여할 텐가? 표준 길드 보수로 _gold_ 골드를 주지.
+<ce>자네에게 딱 맞는 일이 있어. 보석 절도
+<ce>건이 하나 들어왔지. 끼어들겠나? 길드 표준
+<ce>보수인 _gold_골드를 주겠다.
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>가보게. 이 일을 맡을 다른 길드 멤버를 찾아봐야겠군.
+<ce>그럼 가봐. 이 일을 원하는 다른 길드원을 찾아야겠군.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>%oth, 아주 훌륭해.
-<ce>__mansion_에 있는 _mansion_ 쪽으로 가게. _jewelry_
-<ce>물품을 찾아서 여기까지 가져오게. 눈 크게 뜨고 다니라고. 그
-<ce>쓰레기장 같은 곳에 어떤 종류의 수호자가 있을지 모르니까.
+<ce>%oth, 아주 훌륭해. __mansion_의 _mansion_로
+<ce>가서 _jewelry_을 찾아 여기로 가져와.
+<ce>눈을 크게 뜨고 다녀. 그 쓰레기장 같은 곳에
+<ce>무슨 수호자가 있을지도 모르니까.
+<ce>
+<ce>
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>잘했네, %pcn. 여기 길드 보수일세.
+<ce>잘했어, %pcn. 여기 길드 보수다.
+<ce>
 
 RumorsDuringQuest:  [1005]
-다들 _mansion_의 방어는 난공불락이라고 하더군.
+_mansion_는 난공불락이라고 하더군.
 
 RumorsPostfailure:  [1006]
-누군가 _mansion_의 물건을 털려고 했지만, 실패했어.
+누군가 _mansion_에 침입하려 했지만 실패했어.
 
 RumorsPostsuccess:  [1007]
-_mansion_님이 도둑맞았답니다. 믿기 힘든 일이죠.
-<---> _mansion_님조차 도둑을 맞을 정도라면,
-이제 안전한 곳은 어디에도 없어요.
+_mansion_가 털렸다니 도저히 믿기 어려운 일이야.
+<--->
+_mansion_도 털릴 수 있다면 안전한 곳은 어디에도 없지.
 
 QuestorPostsuccess:  [1008]
-어떻게 지내시나요, %pcf 님?
-벌써 _gold_ 골드를 다 써버린 건 아니겠죠?
+어떻게 지내나, %pcf? 벌써 _gold_골드를
+전부 써버린 건 아니겠지?
 
 QuestorPostfailure:  [1009]
-<ce>%oth, 당신이군요. _mansion_의 주인인 그자가
-<ce>이미 _jewelry_의 위치를 옮겨버려서 모든 게 끝났습니다.
-<ce>당신의 그 소위 '열심히 한' 노고에 정말 감사드려요.
-<ce>정말 대단하시네요.
+<ce>%oth, 자네로군. _mansion_의 주인이
+<ce>이미 _jewelry_을 옮겨서 일은 끝났어.
+<ce>그 대단하신 “노고”에 정말 감사하지.
+<ce>
+<ce>
 
 QuestLogEntry:  [1010]
-%qdt:
- ___qgiver_에 있는 _qgiver_님이 제게
- 의뢰하여 ___mansion_에 있는 _mansion_에서
- _jewelry_의 탈취를 지시했습니다.
- %g2 님께 돌려주기까지 =traveltime_일 남았습니다.
-
+%qdt: ___qgiver_의 _qgiver_는 ___mansion_에
+있는 _mansion_에서 _jewelry_을 빼오라고 의뢰했다.
+=traveltime_일 안에 %g2에게 가져가야 한다.
 
 -- Symbols used in the QRC file:
 --

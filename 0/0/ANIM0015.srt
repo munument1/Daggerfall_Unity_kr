@@ -1,32 +1,39 @@
 1
 00:00:00,895 --> 00:00:03,217
+수 세기에 걸친 죽지 못한 잠을 떨쳐 내고,
 Centuries of undead sleep are shaken off,
 
 2
 00:00:03,218 --> 00:00:04,818
+언더킹이 깨어난다.
 rousing the Underking.
 
 3
 00:00:04,819 --> 00:00:07,519
+어떤 필멸의 힘도 막을 수 없다.
 No mortal force could stop his fateful
 
 4
 00:00:07,520 --> 00:00:08,520
+그가 자신의 심장의 망령과 운명적으로 다시 만나는 것을.
 reunion with the ghost of his heart,
 
 5
 00:00:09,619 --> 00:00:13,209
+그는 모든 것을 삼키는 불꽃의 포옹 속에서 그것과 하나가 된다.
 and he joins with it in an all consuming fiery embrace.
 
 6
 00:00:13,210 --> 00:00:14,534
+그리고 단 한순간,
 And for just one moment
 
 7
 00:00:14,535 --> 00:00:17,344
+그는 피와 살을 되찾고, 축복받은 죽음이
 he is flesh and blood and blessed death
 
 8
 00:00:17,345 --> 00:00:20,900
+타이버 셉팀의 전투마법사에게 허락된다.
 is granted to Tiber Septim's Battlemage.
-

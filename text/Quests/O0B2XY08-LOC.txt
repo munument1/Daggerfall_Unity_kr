@@ -11,54 +11,60 @@ DisplayName: 귀중한 약초
 QRC:
 
 QuestorOffer:  [1000]
-<ce>제 이름은 _qgiver_입니다. 이번 건은 조금 까다롭네,
-<ce>%pcf. 자네가 _drugs_의 절도를 완수한다면
-<ce>_gold_ 골드를 주겠네. _drugs_의 정체를 알고
-<ce>있겠지? 아주 중독성이 강한 약초라네. 임무를 맡겠나?
+<ce>내 이름은 _qgiver_다. 이번 일은 조금 민감해,
+<ce>%pcf. _drugs_을 훔쳐오면 _gold_골드를 주지.
+<ce>_drugs_이 뭔지는 알겠지? 중독성이
+<ce>아주 강한 약초다. 맡겠나?
+<ce>
+<ce>
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
-<ce>이 임무에 대해 소문이 새어 나간다면, 누구를 찾아가야 할지
-<ce>알겠지, %pcn.
+<ce>이 일에 대한 소문이 새면 누구를
+<ce>찾아가야 할지 알겠지, %pcn.
+<ce>
 
 AcceptQuest:  [1002]
-<ce>__mansion_ 쪽으로 가게. _mansion_의 행방을 찾게.
-<ce>_drugs_의 절도를 수행하게. =traveltime_일 안에
-<ce>가져오면, 보수를 주겠네.
+<ce>__mansion_으로 가서 _mansion_을 찾아.
+<ce>_drugs_을 훔쳐 =traveltime_일 안에
+<ce>가져오면 보수를 주지.
+<ce>
+<ce>
 
 QuestComplete:  [1004]
-<ce>그냥 내 주머니에 슬쩍 넣어두게. 좋아. 아무도 당신이 한
-<ce>짓을 보지 못한 것 같군. 여기 _gold_ 골드네,
-<ce>%pcn.
+<ce>그냥 내 주머니에 슬쩍 넣어. 좋아. 아무도 못
+<ce>본 것 같군. 여기 _gold_골드다, %pcn.
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
-모두가 __mansion_에서 거래되는 _drugs_의 출처를
-궁금해하고 있어요.
+__mansion_에서 거래되는 _drugs_이
+어디서 나오는지 모두 궁금해해.
 
 RumorsPostfailure:  [1006]
-__mansion_의 _mansion_에 살던 _drugs_ 상인이
-있었는데, 이사를 가버렸답니다.
+__mansion_의 _mansion_에 살던 _drugs_
+장수가 있었는데 이사했대.
 
 RumorsPostsuccess:  [1007]
-_mansion_의 소유물이 __mansion_에서 강도를 당했지만,
-주인은 행정관에게 알릴 생각이 없나 봅니다.
+__mansion_의 _mansion_가 털렸는데도 주인은
+행정관에게 신고하지 않을 모양이야.
 
 QuestorPostsuccess:  [1008]
-그냥 태연하게 행동해요, %pcf. _drugs_ 거래는
-아직 유효하니까요.
+태연하게 굴어, %pcf. _drugs_ 건은 아직 열기가 가시지 않았어.
 
 QuestorPostfailure:  [1009]
-<ce>%oth, %pcf. 당신에게 그 _drugs_의
-<ce>회수를 부탁할 수 있을 거라 생각했건만. 제대로 일을
-<ce>처리하고 싶다면, 관련된 %ra 처치부터 하는 게
-<ce>낫겠군요. 오블리비언으로 가버려, 꼬마야.
+<ce>%oth, %pcf. 자네라면 _drugs_을 가져올 줄 알았는데.
+<ce>일을 제대로 하려면 관련된 %ra부터 죽여야 하나 보군.
+<ce>오블리비언으로 꺼져, 애송이.
+<ce>
+<ce>
+<ce>
 
 QuestLogEntry:  [1010]
-%qdt:
- ___qgiver_에 있는 도둑 길드의 _qgiver_ 측에서
- __mansion_에 있는 _mansion_에게서 _drugs_ 회수를
- 부탁하면 보상을 주겠다고 했습니다. 보상을 받으려면
- =traveltime_일 안에 그에게 돌아가야 합니다.
-
+%qdt: ___qgiver_ 도둑 길드의 _qgiver_는 __mansion_의
+_mansion_에서 _drugs_을 훔쳐오면 돈을 주겠다고 했다.
+보수를 받으려면 =traveltime_일 안에 돌아가야 한다.
 
 -- Symbols used in the QRC file:
 --

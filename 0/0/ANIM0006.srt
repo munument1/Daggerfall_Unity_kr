@@ -1,20 +1,24 @@
 1
 00:00:00,834 --> 00:00:02,854
+만텔라가 에테리우스에서 내던져진다.
 The Mantella is hurled from Aetherius.
 
 2
 00:00:02,855 --> 00:00:05,903
+거대한 누미디움의 텅 빈 가슴에 이끌리지만,
 Although drawn to the empty chest of great Numidium,
 
 3
 00:00:05,904 --> 00:00:09,258
+벌레의 왕의 의지가 그것을 자신의 곁으로 부른다.
 the will of the King of Worms commands it to his side.
 
 4
 00:00:09,661 --> 00:00:12,488
+그 힘으로 벌레의 왕은 필멸의 육신을 벗고,
 With its power, the King of Worms leaves his mortal frame
 
 5
 00:00:12,489 --> 00:00:16,500
+오블리비언의 신들 반열에 오른다.
 and joins the ranks of the Gods in Oblivion.
-
