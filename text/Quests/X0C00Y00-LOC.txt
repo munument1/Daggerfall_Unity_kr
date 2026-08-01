@@ -11,61 +11,61 @@ DisplayName: 허씬의 퀘스트
 QRC:
 
 QuestorOffer:  [1000]
-<ce>작은 부탁 하나만 들어준다면 아주 훌륭한 보상,
-<ce>_artifact_를 네 손에 쥐여주마. 내게는 내가
-<ce>베푼 온갖 축복을 받고도 불행해하는 자식이
-<ce>하나 있다. 그 녀석에게... 뭐라고들 하지?
-<ce>교훈을 줘야겠구나. 아주 혹독한 교훈을.
+<ce>작은 부탁 하나만 들어준다면 아주 훌륭한 보상, _artifact_를
+<ce>네 손에 쥐여주마.
+<ce>내게는 내가 베푼 온갖 축복을 받고도 불행해하는 자식이
+<ce>하나 있다.
+<ce>그 녀석에게...
+<ce>뭐라고들 하지?
+<ce>교훈을 줘야겠구나.
+<ce>아주 혹독한 교훈을.
 <ce>받아들일 만한 계약인가, %pct?
-<ce>
-<ce>
-<ce>
 <ce>
 
 RefuseQuest:  [1001]
 <ce>몹시 실망스럽군, %pct.
 <--->
-<ce>나를 소환하는 일도 드물지만, 소환에 응할
-<ce>여유가 생기는 일은 더더욱 드물다. 솔직히
-<ce>말해 내 귀중한 시간만 낭비했군.
+<ce>나를 소환하는 일도 드물지만, 소환에 응할 여유가 생기는 일은
+<ce>더더욱 드물다.
+<ce>솔직히 말해 내 귀중한 시간만 낭비했군.
 <ce>
 <ce>
 
 AcceptQuest:  [1002]
-<ce>좋다. 내 자식은 웨어보어로, ___mondung_에
-<ce>굴을 틀었다. 찾기는 어렵지 않을 것이다.
-<ce>그 녀석의 뻔한 고통을 끝내는 데 =1stparton_일이면
-<ce>충분하겠지. 일을 마치면 ___contact_의
-<ce>__contact_로 가서 _contact_를 찾아라.
-<ce>지금부터 =1stparton_일 안에 웨어보어를
-<ce>죽이고 도착하면 %g이 _artifact_를 줄 것이다.
-<ce>즐거운 거래였네, %pct. 행운을 빌지.
-<ce>
-<ce>
+<ce>좋다.
+<ce>내 자식은 웨어보어로, ___mondung_에 굴을 틀었다.
+<ce>찾기는 어렵지 않을 것이다.
+<ce>그 녀석의 뻔한 고통을 끝내는 데 =1stparton_일이면 충분하겠지.
+<ce>일을 마치면 ___contact_의 __contact_로 가서
+<ce>_contact_를 찾아라.
+<ce>지금부터 =1stparton_일 안에 웨어보어를 죽이고 도착하면 %g⁠가
+<ce>_artifact_를 줄 것이다.
+<ce>즐거운 거래였네, %pct.
+<ce>행운을 빌지.
 <ce>
 <ce>
 <ce>
 <ce>
 
 QuestFail:  [1003]
-<ce>이봐, %pcf. 너도 나도 그 웨어보어가 아직 살아
-<ce>있다는 걸 안다. 계약은 계약이다.
-<ce>
+<ce>이봐, %pcf.
+<ce>너도 나도 그 웨어보어가 아직 살아 있다는 걸 안다.
+<ce>계약은 계약이다.
 <ce>
 
 QuestComplete:  [1004]
-<ce>어서 오게, %pcf. 결국 해냈군. 허씬께서
-<ce>자네를 눈여겨보셨다. 결코 작은 업적이 아니지.
-<ce>약속받은 _artifact_일세. 몸조심하게.
-<ce>
-<ce>
+<ce>어서 오게, %pcf. 결국 해냈군.
+<ce>허씬께서 자네를 눈여겨보셨다.
+<ce>결코 작은 업적이 아니지.
+<ce>약속받은 _artifact_일세.
+<ce>몸조심하게.
 
 RumorsDuringQuest:  [1005]
-여기서 %di 떨어진 ___mondung_에서 끔찍한
-비명과 꿀꿀거리는 소리가 들린대.
+여기서 %di 떨어진 ___mondung_에서 끔찍한 비명과 꿀꿀거리는
+소리가 들린대.
 <--->
-%di 쪽의 ___mondung_에 미쳐 날뛰는
-반인반돼지 괴물이 있다는군.
+%di 쪽의 ___mondung_에 미쳐 날뛰는 반인반돼지 괴물이
+있다는군.
 
 RumorsPostfailure:  [1006]
 이곳에 있던 돼지 괴물이 무언가에 쫓기듯 북쪽으로 달아났어.
@@ -78,14 +78,13 @@ RumorsPostsuccess:  [1007]
 이 근처를 돌아다니던 돼지 괴물은 어떻게 된 걸까?
 
 Message:  1011
-데이드릭 프린스 가운데 가장 미천한 존재이며,
-사냥을 관장하는 군주입니다.
+데이드릭 프린스 가운데 가장 미천한 존재이며, 사냥을 관장하는 군주입니다.
 <--->
 허씬은 모든 라이칸스로프를 창조했다고 전해집니다.
 
 Message:  1012
-여기서 %di 떨어진 __contact_에 행동이
-수상한 =contact_가 있어.
+여기서 %di 떨어진 __contact_에 행동이 수상한 =contact_가
+있어.
 <--->
 그 이름의 =contact_라면 얼마 전 %di 쪽 __contact_에서 봤어.
 
@@ -93,8 +92,8 @@ Message:  1013
 <ce>_artifact_가 무슨 힘을 지녔는지는 전혀 모르겠습니다.
 
 Message:  1020
-%qdt: 데이드릭 프린스 허씬은 _artifact_를
-대가로 ___mondung_의 웨어보어를 죽이라고 했다.
+%qdt: 데이드릭 프린스 허씬은 _artifact_를 대가로
+___mondung_의 웨어보어를 죽이라고 했다.
 =1stparton_일 안에 웨어보어를 죽인 뒤, =1stparton_일 안에
 ___contact_의 __contact_로 가서 =contact_인
 _contact_를 만나 _artifact_를 받아야 한다.
@@ -117,7 +116,6 @@ Message:  1030
 --        __contact_ occurs 5 times.
 --        _artifact_ occurs 9 times.
 --         _contact_ occurs 9 times.
-
 QBN:
 Item _artifact_ artifact Hircine_Ring anyInfo 1013
 

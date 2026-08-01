@@ -11,26 +11,26 @@ DisplayName: 귀중한 페이지
 QRC:
 
 QuestorOffer:  [1000]
-<ce>일 하나 있어. 평범한 길드 일이지. 보수는 _gold_골드.
+<ce>일 하나 있어. 평범한 길드 일이지.
+<ce>보수는 _gold_골드.
 <ce>표준 길드 보수다. 관심 있나?
-<ce>
 
 RefuseQuest:  [1001]
 <ce>자네만 손해지, %pcn.
 
 AcceptQuest:  [1002]
-<ce>__mansion_으로 가서 _mansion_을 찾아. 안에는
-<ce>_book_이라는 희귀한 책이 있어. =traveltime_일 안에
-<ce>가져오면 보수를 주지. 간단하지?
-<ce>
+<ce>__mansion_으로 가서 _mansion_을 찾아.
+<ce>안에는 _book_이라는 희귀한 책이 있어.
+<ce>=traveltime_일 안에 가져오면 보수를 주지.
+<ce>간단하지?
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>아, %oth. 여기 길드 보수다. 언젠가
-<ce>다시 같이 일할 수도 있겠군.
-<ce>
+<ce>아, %oth.
+<ce>여기 길드 보수다.
+<ce>언젠가 다시 같이 일할 수도 있겠군.
 
 RumorsDuringQuest:  [1005]
 __mansion_의 한 수집가가 희귀한 _book_ 사본을 샀대.
@@ -39,24 +39,24 @@ RumorsPostfailure:  [1006]
 _mansion_의 보안이 허술해서 귀중품을 모두 옮겼대.
 
 RumorsPostsuccess:  [1007]
-_mansion_에서 도난당한 _book_ 사본은
-다시 구할 수 없는 것이었대.
+_mansion_에서 도난당한 _book_ 사본은 다시 구할 수
+없는 것이었대.
 
 QuestorPostsuccess:  [1008]
-아, 안녕, %pcf. 전에 말하지 않았다면,
-그 책을 가져온 일은 잘했어.
+아, 안녕, %pcf.
+전에 말하지 않았다면, 그 책을 가져온 일은 잘했어.
 
 QuestorPostfailure:  [1009]
-<ce>변명하려 들지 마, %pcf. 책이 어디 있는지도,
-<ce>서둘러야 한다는 것도 말했는데 자네는
-<ce>듣지 않았어. 이제 늦었고 난 지쳤다.
-<ce>착한 %ra답게 썩 꺼져주겠나?
-<ce>
+<ce>변명하려 들지 마, %pcf.
+<ce>책이 어디 있는지도, 서둘러야 한다는 것도 말했는데 자네는 듣지
+<ce>않았어.
+<ce>이제 늦었고 난 지쳤다.
+<ce>착한 %ra⁠답게 썩 꺼져주겠나?
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 도둑 길드원이 __mansion_의
-_mansion_에서 _book_을 훔치라고 했다. =traveltime_일 안에
-책을 구해 _qgiver_에게 돌아가야 한다.
+%qdt: ___qgiver_의 도둑 길드원이
+__mansion_의 _mansion_에서 _book_을 훔치라고 했다.
+=traveltime_일 안에 책을 구해 _qgiver_에게 돌아가야 한다.
 
 -- Symbols used in the QRC file:
 --
@@ -72,7 +72,6 @@ _mansion_에서 _book_을 훔치라고 했다. =traveltime_일 안에
 --            _gold_ occurs 1 time.
 --         _mansion_ occurs 4 times.
 --          _qgiver_ occurs 3 times.
-
 QBN:
 Item _book_ book3
 Item _gold_ gold

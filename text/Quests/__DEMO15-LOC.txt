@@ -11,7 +11,6 @@ _someitem_은 한때 _someperson_의 소유였습니다.
 
 Message:  1012
 _someitem_에는 마법의 힘이 있다고 합니다.
-
 QBN:
 
 Person _someperson_ face 81 faction The_Thieves_Guild anyInfo 1011

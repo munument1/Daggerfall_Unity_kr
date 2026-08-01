@@ -7,12 +7,12 @@ QRC:
 
 QuestLogEntry:  [1010]
 %qdt ____TestBuilding_의 __TestBuilding_에
-있는 _TestBuilding_으로 소환되었다. 서둘러야
-한다, %pcn. 지체할 시간이 없다!
+있는 _TestBuilding_으로 소환되었다.
+서둘러야 한다, %pcn.
+지체할 시간이 없다!
 
 Message: 1050
 당신은 __TestBuilding_의 _TestBuilding_에 도착했습니다.
-
 QBN:
 
 ---- Define a target site using Place resource

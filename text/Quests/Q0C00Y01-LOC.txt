@@ -12,66 +12,66 @@ DisplayName: 비방
 QRC:
 
 QuestorOffer:  [1000]
-<ce>적들이 우리 마녀 집회를 억압하려고
-<ce>퍼뜨린 악의적인 문서를 찾아주었으면 하오.
-<ce>거짓말로 가득한 그 문서가 어디에 놓였는지는
-<ce>알지만, 수호자와 싸워 가져올 자가 필요하오.
+<ce>적들이 우리 마녀 집회를 억압하려고 퍼뜨린 악의적인 문서를
+<ce>찾아주었으면 하오.
+<ce>거짓말로 가득한 그 문서가 어디에 놓였는지는 알지만,
+<ce>수호자와 싸워 가져올 자가 필요하오.
 <ce>==qgiver_를 위해 도와주겠소?
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>싫다는 것이오? %oth, 그렇다면
-<ce>==qgiver_의 호의를 바라지 마시오.
+<ce>싫다는 것이오?
+<ce>%oth, 그렇다면 ==qgiver_의 호의를 바라지 마시오.
 <ce>
 
 AcceptQuest:  [1002]
-<ce>도와주겠소? 그렇다면 반박할 길 없는 우리의 감사를
-<ce>받게 될 것이오. 문서는 %reg의 __temple_이라는
-<ce>마을에 있는 신전, _temple_ 어딘가에 보관되어 있소.
-<ce>아마 잠긴 문 뒤에서 막강한 _guardian_가
-<ce>지키고 있을 것이오. 문서를 내게 가져오면
-<ce>집회에서 만든 _mitem_을 주겠소. 늦어도
-<ce>=queston_일 안에 돌아오시오.
-<ce>
+<ce>도와주겠소?
+<ce>그렇다면 반박할 길 없는 우리의 감사를 받게 될 것이오.
+<ce>문서는 %reg⁠의 __temple_이라는 마을에
+<ce>있는 신전, _temple_ 어딘가에 보관되어 있소.
+<ce>아마 잠긴 문 뒤에서 막강한 _guardian_가 지키고 있을
+<ce>것이오.
+<ce>문서를 내게 가져오면 집회에서 만든 _mitem_을 주겠소.
+<ce>늦어도 =queston_일 안에 돌아오시오.
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>아, 저주받은 문서로군. 자매단을 위해 봉사한
-<ce>자네를 칭찬하겠소, %pct. 약속한 _mitem_이오.
-<ce>==qgiver_의 감사가 반드시 물질적이어야만
-<ce>느낄 수 있는 것은 아니오.
-<ce>
+<ce>아, 저주받은 문서로군.
+<ce>자매단을 위해 봉사한 자네를 칭찬하겠소, %pct.
+<ce>약속한 _mitem_이오.
+<ce>==qgiver_의 감사가 반드시 물질적이어야만 느낄 수 있는 것은
+<ce>아니오.
 <ce>
 
 RumorsDuringQuest:  [1005]
-새로 나온 『==qgiver_의 역사』를 읽어봤어? 충격적이더군!
+새로 나온 『==qgiver_의 역사』를 읽어봤어?
+충격적이더군!
 
 RumorsPostfailure:  [1006]
 『==qgiver_의 역사』가 제국 도시에서 대량으로 인쇄되고 있대.
 
 RumorsPostsuccess:  [1007]
-『==qgiver_의 역사』를 읽은 사람은
-있지만 유일한 사본이 사라졌대.
+『==qgiver_의 역사』를 읽은 사람은 있지만 유일한 사본이 사라졌대.
 
 QuestorPostsuccess:  [1008]
 _mitem_은 마음에 드시오, %pcf?
 자네는 분명 받을 자격이 있었소.
 
 QuestorPostfailure:  [1009]
-<ce>저주받은 문서가 무지한 대중에게 복제되려고
-<ce>제국 도시로 가버렸소, %pcf. 자네는 ==qgiver_를
-<ce>실망시켰소. 이곳에서 나가시오.
-<ce>
+<ce>저주받은 문서가 무지한 대중에게 복제되려고 제국 도시로
+<ce>가버렸소, %pcf.
+<ce>자네는 ==qgiver_를 실망시켰소.
+<ce>이곳에서 나가시오.
 <ce>
 <ce>
 
 QuestLogEntry:  [1010]
-%qdt: __temple_의 _temple_에서 ==qgiver_에 관한
-문서를 가져와 =queston_일 안에 돌아오기로 했다.
+%qdt: __temple_의 _temple_에서 ==qgiver_에
+관한 문서를 가져와 =queston_일 안에 돌아오기로 했다.
 문서는 아마 강력한 _guardian_가 지키고 있을 것이다.
 
 Message:  1011
@@ -79,19 +79,20 @@ Message:  1011
 <ce>
 
 Message:  1012
-==qgiver_의 가장 악랄한 관습 중 하나는 ==daedra_를
-기리는 의식이다. 갓난아이의 살을 불타는 유황 위에서 사흘
-반 동안 삶아 단단한 가죽처럼 만든다. 그렇게 나온 섬유를
-검은 고양이 머리에 꿰매어 씌우고, 고양이가 막을 갉아
-찢거나 질식해 죽을 때까지 우리에 가둔다. 고양이가 죽으면
-마녀들은 ==daedra_가 간청에 응하지 않을 것임을 안다.
+==qgiver_의 가장 악랄한 관습 중 하나는 ==daedra_를 기리는
+의식이다.
+갓난아이의 살을 불타는 유황 위에서 사흘 반 동안 삶아 단단한 가죽처럼
+만든다.
+그렇게 나온 섬유를 검은 고양이 머리에 꿰매어 씌우고, 고양이가 막을 갉아
+찢거나 질식해 죽을 때까지 우리에 가둔다.
+고양이가 죽으면 마녀들은 ==daedra_가 간청에 응하지 않을 것임을 안다.
 살아남으면 ==qgiver_는 ==daedra_에게 무엇이든 청할 수 있다.
 군주의 죽음이나 훼손, 경제 파탄, 기근, 역병, 전쟁...
 
 Message:  1013
-<ce>악마의 졸개! ==qgiver_의 노예! %god의
-<ce>정의로운 손이 너를 내리칠 것이다!
-<ce>
+<ce>악마의 졸개!
+<ce>==qgiver_의 노예!
+<ce>%god⁠의 정의로운 손이 너를 내리칠 것이다!
 <ce>
 
 -- Symbols used in the QRC file:
@@ -109,7 +110,6 @@ Message:  1013
 --        _guardian_ occurs 3 times.
 --           _mitem_ occurs 3 times.
 --          _temple_ occurs 2 times.
-
 QBN:
 Item _document_ letter used 1012
 --added underscores to document

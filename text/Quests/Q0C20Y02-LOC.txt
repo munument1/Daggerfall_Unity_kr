@@ -12,27 +12,27 @@ DisplayName: 값비싼 구매
 QRC:
 
 QuestorOffer:  [1000]
-<ce>그대가 ==questgiver_의 친구라는 것은
-<ce>알고 있소. 하지만 그대를 도우려면
-<ce>창조에 앞서 파괴하는 주문을 엮어야 하오.
-<ce>파괴의 축복을 받을 수 있도록 약에 넣을
-<ce>_magicitem_을 가져다주겠소?
+<ce>그대가 ==questgiver_의 친구라는 것은 알고 있소.
+<ce>하지만 그대를 도우려면 창조에 앞서 파괴하는 주문을 엮어야
+<ce>하오.
+<ce>파괴의 축복을 받을 수 있도록 약에 넣을 _magicitem_을
+<ce>가져다주겠소?
 <ce>
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>중요성을 알고도 너무 바빠 맡지
-<ce>못하겠소? ==questgiver_에게도, 그대
-<ce>%pcn에게도 불행한 일이군.
+<ce>중요성을 알고도 너무 바빠 맡지 못하겠소?
+<ce>==questgiver_에게도, 그대 %pcn⁠에게도 불행한 일이군.
+<ce>
 <ce>
 
 AcceptQuest:  [1002]
 <ce>필요한 _magicitem_은 ==other_가 가지고 있소.
 <ce>=1stparton_번째 새벽이 오기 전에 필요하오.
 <ce>==other_는 ___other_에서 찾을 수 있으니
-<ce>_other_를 물어보시오. 신과 정령들이
-<ce>그대의 발을 인도하기를, %pcf.
+<ce>_other_를 물어보시오.
+<ce>신과 정령들이 그대의 발을 인도하기를, %pcf.
 <ce>
 <ce>
 
@@ -42,18 +42,17 @@ QuestFail:  [1003]
 
 QuestComplete:  [1004]
 <ce>아, 주문에 필요한 _magicitem_이 왔군.
-<ce>자매들이여, 서둘러 찢고 뜯어 뚜껑을 덮은 통에서
-<ce>끓이시오. %pcn, 빠른 행동과 용기에 대한 감사로
+<ce>자매들이여, 서둘러 찢고 뜯어 뚜껑을 덮은 통에서 끓이시오.
+<ce>%pcn, 빠른 행동과 용기에 대한 감사로
 <ce>_reward_ 한 덩이를 받으시오.
 <ce>
 <ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
-마녀들이 우리 옛 %t를 달팽이로 바꿨던 때를 기억해?
+마녀들이 우리 옛 %t⁠를 달팽이로 바꿨던 때를 기억해?
 <--->
-==questgiver_를 만나는 것보다 나쁜 일은
-그들의 분노를 사는 것뿐이야.
+==questgiver_를 만나는 것보다 나쁜 일은 그들의 분노를 사는 것뿐이야.
 
 RumorsPostfailure:  [1006]
 어젯밤 숲에서 울부짖는 소리를 들었어.
@@ -65,21 +64,23 @@ RumorsPostfailure:  [1006]
 RumorsPostsuccess:  [1007]
 ==questgiver_가 어떤 계획의 성공을 축하하고 있대.
 <--->
-공기의 냄새만으로 취할 것 같아. 기뻐하는 마녀들의 축복이지.
+공기의 냄새만으로 취할 것 같아.
+기뻐하는 마녀들의 축복이지.
 
 QuestorPostsuccess:  [1008]
-_reward_은 마음에 드시오, %pcf? 잘 어울리는군.
+_reward_은 마음에 드시오, %pcf?
+잘 어울리는군.
 
 QuestorPostfailure:  [1009]
-<ce>_magicitem_을 잊은 것이오? %oth,
-<ce>이제 너무 늦었소. ==questgiver_는
-<ce>실망했소, %pcf. 진심으로 말이오.
-<ce>
+<ce>_magicitem_을 잊은 것이오?
+<ce>%oth, 이제 너무 늦었소.
+<ce>==questgiver_는 실망했소, %pcf.
+<ce>진심으로 말이오.
 
 QuestLogEntry:  [1010]
-<ce>원하는 _magicitem_ 말인가? 1000골드면
-<ce>주지. 아주 좋아, 여기 있어.
-<ce>
+<ce>원하는 _magicitem_ 말인가?
+<ce>1000골드면 주지.
+<ce>아주 좋아, 여기 있어.
 
 Message:  1011
 그녀는 ==questgiver_의 매우 현명한 여인이야.
@@ -95,9 +96,10 @@ Message:  1020
 
 Message:  1025
 %qdt: ==questgiver_의 _questgiver_는 ___other_에
-있는 _other_라는 =other_가 가진 _magicitem_을
-가져오라고 했다. =1stparton_일 안에 _magicitem_을
-구해 ___questgiver_로 돌아가야 한다. ==other_
+있는 _other_라는 =other_가 가진 _magicitem_을 가져오라고
+했다.
+=1stparton_일 안에 _magicitem_을 구해 ___questgiver_로 돌아가야 한다.
+==other_
 
 -- Symbols used in the QRC file:
 --
@@ -115,7 +117,6 @@ Message:  1025
 --           _other_ occurs 2 times.
 --      _questgiver_ occurs 1 time.
 --          _reward_ occurs 2 times.
-
 QBN:
 Item _reward_ gem
 Item _magicitem_ magic_item

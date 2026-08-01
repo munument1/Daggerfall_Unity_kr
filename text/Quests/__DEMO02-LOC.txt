@@ -6,7 +6,6 @@ QRC:
 
 Message: 1010
 모자와 선글라스 착용
-
 QBN:
 
 variable hat

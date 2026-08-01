@@ -12,32 +12,32 @@ QRC:
 
 QuestorOffer:  [1000]
 <ce>%pcf, 아무래도 큰 곤경에 빠진 것 같습니다.
-<ce>예전 동료 하나가 내 삶을 더 비참하게 만들
-<ce>작정으로 가짜 금괴를 넘긴 모양입니다.
-<ce>나는 아무것도 모르고 그것을 가장 소중한 동맹
-<ce>네 명에게 보수로 건넸습니다. 그들이 금이
-<ce>아니라 포스카륨이라는 걸 알아내기 전에 회수해야
-<ce>합니다. 늦어도 =2mondung_일 안에 말이지요.
-<ce>되찾아오는 가짜 금괴 하나당 _reward1_골드를
-<ce>드리겠습니다. 괜찮은 제안입니까?
-<ce>
+<ce>예전 동료 하나가 내 삶을 더 비참하게 만들 작정으로 가짜 금괴를
+<ce>넘긴 모양입니다.
+<ce>나는 아무것도 모르고 그것을 가장 소중한 동맹 네 명에게 보수로
+<ce>건넸습니다.
+<ce>그들이 금이 아니라 포스카륨이라는 걸 알아내기 전에
+<ce>회수해야 합니다.
+<ce>늦어도 =2mondung_일 안에 말이지요.
+<ce>되찾아오는 가짜 금괴 하나당 _reward1_골드를 드리겠습니다.
+<ce>괜찮은 제안입니까?
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>싫다고요? 정말입니까? 알겠습니다. 분명
-<ce>더 협조적인 사람을 찾을 수 있겠지요.
+<ce>싫다고요? 정말입니까? 알겠습니다.
+<ce>분명 더 협조적인 사람을 찾을 수 있겠지요.
 
 AcceptQuest:  [1002]
-<ce>%oth, 좋습니다. 금괴 하나는 __depository_의
-<ce>_depository_라는 은행에 있고, 하나는 ___mondung_이라는
-<ce>요새에 있습니다. 세 번째는 궁전의 __palace_에,
-<ce>마지막 하나는 __mansion_의 _mansion_에 있습니다.
+<ce>%oth, 좋습니다.
+<ce>금괴 하나는 __depository_의 _depository_라는 은행에 있고,
+<ce>하나는 ___mondung_이라는 요새에 있습니다.
+<ce>세 번째는 궁전의 __palace_에, 마지막 하나는
+<ce>__mansion_의 _mansion_에 있습니다.
 <ce>주어진 시간은 =2mondung_일뿐입니다.
-<ce>네 개를 모두 놓치는 것보다는 하나라도
-<ce>가져오는 편이 낫습니다. 행운을 빕니다, %pcf.
-<ce>%god께서 여정을 지켜주시길.
-<ce>
+<ce>네 개를 모두 놓치는 것보다는 하나라도 가져오는 편이 낫습니다.
+<ce>행운을 빕니다, %pcf.
+<ce>%god⁠께서 여정을 지켜주시길.
 <ce>
 <ce>
 
@@ -49,25 +49,34 @@ QuestComplete:  [1004]
 <ce>
 
 RumorsDuringQuest:  [1005]
-<ce>어떤 사람이 _depository_로 가는 길을 묻더군요. 은행원처럼 보이지는 않았습니다. <---> ___mondung_에서 사람을 모집하는 모양입니다. 적어도 그곳은 꽤 분주하더군요. <---> 이 지역에 도둑이 있다는 소문 때문에 _palace_에서 경비를 강화하고 있습니다. <---> _mansion_의 하녀가 수상한 자들이 집을 지켜보고 있었다더군요.
+어떤 사람이 _depository_로 가는 길을 묻더군요.
+은행원처럼 보이지는 않았습니다.
+<--->
+<ce>___mondung_에서 사람을 모집하는 모양입니다.
+적어도 그곳은 꽤 분주하더군요.
+<--->
+이 지역에 도둑이 있다는 소문 때문에 _palace_에서 경비를
+강화하고 있습니다.
+<--->
+_mansion_의 하녀가 수상한 자들이 집을 지켜보고 있었다더군요.
 
 RumorsPostfailure:  [1006]
-%t %rn은 밀수 조직의 우두머리가
-_qgiver_라고 생각하는 모양입니다.
+%t %rn⁠은 밀수 조직의 우두머리가 _qgiver_라고
+생각하는 모양입니다.
 <--->
 _qgiver_가 포스카륨을 금인 척 밀수해왔다더군요.
 <--->
 듣자 하니 _palace_는 _qgiver_와의 관계를 완전히 끊었습니다.
 <--->
-___mondung_에서는 _qgiver_의 사업을
-모조리 무너뜨리려 한답니다.
+___mondung_에서는 _qgiver_의 사업을 모조리 무너뜨리려
+한답니다.
 
 RumorsPostsuccess:  [1007]
-_qgiver_가 %g3 서투른 동맹들이 도둑맞은 금을
-친절하게도 모두 대신 채워주었다더군요.
+_qgiver_가 %g3 서투른 동맹들이 도둑맞은 금을 친절하게도 모두 대신
+채워주었다더군요.
 <--->
-%reg의 주요 상인들 사이에서 _qgiver_의
-인기가 계속 치솟고 있습니다.
+%reg⁠의 주요 상인들 사이에서 _qgiver_의 인기가 계속
+치솟고 있습니다.
 
 QuestorPostsuccess:  [1008]
 반갑소, 가짜 금을 나르던 사람.
@@ -76,17 +85,18 @@ QuestorPostfailure:  [1009]
 한때 내 재정적 미래를 당신에게 맡겼던 걸 기억하오, %pcf?
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 _qgiver_는 %g이 %g3 동맹들에게 건넨
-가짜 금괴 네 개 중 하나 이상을 진실이 드러나기 전에,
-즉 =2mondung_일 안에 회수해달라고 부탁했다.
-금괴는 __palace_의 _palace_, ___mondung_, __mansion_의
-_mansion_, __depository_의 _depository_에 하나씩 있다.
+%qdt: ___qgiver_의 _qgiver_는 %g⁠가
+%g3 동맹들에게 건넨 가짜 금괴 네 개 중 하나 이상을 진실이 드러나기
+전에, 즉 =2mondung_일 안에 회수해달라고 부탁했다.
+금괴는 __palace_의 _palace_, ___mondung_,
+__mansion_의 _mansion_, __depository_의 _depository_에
+하나씩 있다.
 되찾는 금괴 하나당 _reward1_골드를 받는다.
 
 Message:  1015
-<ce>%oth, 잘했습니다, %pcf. 시간을 너무
-<ce>적게 준 건 아닐까 걱정했는데, 가짜
-<ce>금과 바꿀 진짜 금을 드리지요.
+<ce>%oth, 잘했습니다, %pcf.
+<ce>시간을 너무 적게 준 건 아닐까 걱정했는데, 가짜 금과 바꿀 진짜
+<ce>금을 드리지요.
 <ce>
 
 -- Symbols used in the QRC file:
@@ -111,7 +121,6 @@ Message:  1015
 --          _palace_ occurs 3 times.
 --          _qgiver_ occurs 10 times.
 --         _reward1_ occurs 2 times.
-
 QBN:
 Item _goldBrick1_ gold_bar
 Item _goldBrick2_ gold_bar

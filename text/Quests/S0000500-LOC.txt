@@ -8,96 +8,99 @@ DisplayName: 카바르 경 퀘스트 2부
 QRC:
 
 QuestComplete:  [1004]
-<ce>%pcf, 친구라던 자들이 대부분 나를 버렸을 때 당신은
-<ce>내 목숨을 구해주었소. 나는 당신에게 빚을 졌소.
-<ce>예전만큼 재산이 넉넉하지는 않지만, 감사의
-<ce>표시로 이 _gold_골드를 받아주시오.
-<ce>
+<ce>%pcf, 친구라던 자들이 대부분 나를 버렸을 때 당신은 내
+<ce>목숨을 구해주었소.
+<ce>나는 당신에게 빚을 졌소.
+<ce>예전만큼 재산이 넉넉하지는 않지만, 감사의 표시로
+<ce>이 _gold_골드를 받아주시오.
 
 RumorsDuringQuest:  [1005]
-<ce>_queen_의 고위 영주 중 한 명이 반역죄로 체포되었다고
-<ce>하오. 그의 친구들이 자비를 구하고 있지만, 여왕은
-<ce>이미 그의 처형 날짜를 잡았다고 하더군.
+<ce>_queen_의 고위 영주 중 한 명이 반역죄로 체포되었다고 하오.
+<ce>그의 친구들이 자비를 구하고 있지만, 여왕은 이미 그의 처형 날짜를
+<ce>잡았다고 하더군.
 
 RumorsPostsuccess:  [1007]
-<ce>_traitor_의 센티넬 성 지하 감옥 탈출 소식을 들었나? _queen_의 경비병들
-<ce>코앞에서 빠져나갔다더군. 여왕이 무척 화가 났을 게야!
+<ce>_traitor_가 센티넬 성 지하 감옥을 탈출했다더군.
+<ce>_queen_의 경비병 코앞에서 빠져나가 여왕이 몹시 화났겠어!
 
 Message:  1020
-%qdt: _contact1_에게서 편지를 받았다. 센티넬의
-_traitor_에 관한 생사가 걸린 일이라며 ____tavern_의
-__tavern_에 있는 _tavern_에서 %g2를 만나달라고 했다.
+%qdt: _contact1_에게서 편지를 받았다.
+센티넬의 _traitor_에 관한 생사가 걸린 일이라며
+____tavern_의 __tavern_에 있는 _tavern_에서 %g2⁠를
+만나달라고 했다.
 
 Message:  1021
-%qdt: _contact1_을 만났다. _traitor_는 센티넬
-성 지하 감옥에서 =executiondelay_일 뒤의 처형을
-기다리고 있다고 한다. _contact1_은 너무 늦기 전에
-_traitor_를 구해달라고 애원했다.
+%qdt: _contact1_을 만났다.
+_traitor_는 센티넬 성 지하 감옥에서 =executiondelay_일 뒤의 처형을
+기다리고 있다고 한다.
+_contact1_은 너무 늦기 전에 _traitor_를 구해달라고 애원했다.
 
 Message:  1022
 %qdt: 센티넬 성의 지하 감옥에서 _traitor_를 구출했다.
-____safehouse_의 __safehouse_에 있는 _safehouse_로
-데려가 그곳에서 동료 _contact2_를 만나야 한다.
+____safehouse_의 __safehouse_에 있는 _safehouse_로 데려가
+그곳에서 동료 _contact2_를 만나야 한다.
 
 Message:  1030
-친애하는 %pcn께,
+친애하는 %pcn⁠께,
 
-_traitor_의 친구라면 가능한 한 빨리 ____tavern_의
-__tavern_에 있는 _tavern_으로 와주십시오. 생사가 걸린
-일입니다! =firsttimer_일 안에 저를 찾아주십시오.
+_traitor_의 친구라면 가능한 한 빨리
+____tavern_의 __tavern_에 있는 _tavern_으로
+와주십시오.
+생사가 걸린 일입니다!
+=firsttimer_일 안에 저를 찾아주십시오.
 
 <ce>_contact1_
 
 Message:  1040
-<ce>%pcn? 당신이 마지막 희망이오! _traitor_의
-<ce>친구와 동맹들은 폭군 _queen_가 날조된
-<ce>반역죄로 그를 체포하자 모두 등을 돌렸소.
-<ce>그는 지금 센티넬 성 지하 감옥에서
-<ce>처형을 기다리고 있소. 그를 조금이라도
-<ce>아낀다면 확실한 죽음에서 구해주시오.
+<ce>%pcn?
+<ce>당신이 마지막 희망이오!
+<ce>_traitor_의 친구와 동맹들은 폭군 _queen_가
+<ce>날조된 반역죄로 그를 체포하자 모두 등을 돌렸소.
+<ce>그는 지금 센티넬 성 지하 감옥에서 처형을 기다리고 있소.
+<ce>그를 조금이라도 아낀다면 확실한 죽음에서 구해주시오.
 <ce>그는 당신의 기량과 용기를 자주 칭찬했소.
-<ce>당신이라면 우리를 도와줄 것이오. 남은 목숨은
-<ce>=executiondelay_일뿐이오! 서두르시오!
-<ce>
+<ce>당신이라면 우리를 도와줄 것이오.
+<ce>남은 목숨은 =executiondelay_일뿐이오!
+<ce>서두르시오!
 <ce>
 <ce>
 <ce>
 
 Message:  1041
-<ce>%oth, 당신을 보니 정말 반갑소. 경보가 울리기 전에
-<ce>빠져나가야 하오. 당신이 나타났을 때 막 탈출
-<ce>계획을 짜고 있었지만, 이제는 필요 없겠군.
+<ce>%oth, 당신을 보니 정말 반갑소.
+<ce>경보가 울리기 전에 빠져나가야 하오.
+<ce>당신이 나타났을 때 막 탈출 계획을 짜고 있었지만, 이제는 필요
+<ce>없겠군.
 <ce>나는 늘 당신을 든든한 오른팔이라고 불렀소.
-<ce>내가 센티넬의 왕이 되면 당신을 곁에 두고
-<ce>왕국에서 가장 부유한 영주로 만들어주겠소!
-<ce>괜찮은 약속 아니오? 추격을 따돌리면 ____safehouse_의
-<ce>__safehouse_에 있는 _safehouse_로 데려다주시오.
-<ce>그곳 친구가 센티넬 정복을 다시 준비하도록
-<ce>도울 것이오. 앞장서시오, 훌륭한 %pcn.
+<ce>내가 센티넬의 왕이 되면 당신을 곁에 두고 왕국에서 가장
+<ce>부유한 영주로 만들어주겠소!
+<ce>괜찮은 약속 아니오?
+<ce>추격을 따돌리면 ____safehouse_의 __safehouse_에
+<ce>있는 _safehouse_로 데려다주시오.
+<ce>그곳 친구가 센티넬 정복을 다시 준비하도록 도울 것이오.
+<ce>앞장서시오, 훌륭한 %pcn.
 <ce>=escapetime_일 안에 연락책을 만나야 하오!
-<ce>
-<ce>
 <ce>
 <ce>
 <ce>
 <ce>
 
 Message:  1050
-<ce>경보를 울려라! _traitor_가
-<ce>탈출한다! =guards_, 어서 와라!
+<ce>경보를 울려라! _traitor_가 탈출한다!
+<ce>=guards_, 어서 와라!
 
 Message:  1051
-<ce>_traitor_가 당신의 손을 굳게 잡고
-<ce>진지하게 말합니다. “그 절망의 구렁텅이에서
-<ce>나를 구해줘서 고맙소. 하지만 여기서
-<ce>당신과 헤어져야겠소.”
+<ce>_traitor_가 당신의 손을 굳게 잡고 진지하게 말합니다.
+<ce>“그 절망의 구렁텅이에서 나를 구해줘서 고맙소.
+<ce>하지만 여기서 당신과 헤어져야겠소.”
+<ce>
 <ce>
 <ce>
 
 Message:  1060
-<ce>센티넬의 _traitor_가 반역죄로 처형됐다는
-<ce>소식 들었소? 꽤 볼 만했다더군. _queen_의 성
-<ce>앞 광장에서 교수형에 처했다지.
+<ce>센티넬의 _traitor_가 반역죄로 처형됐다는 소식 들었소?
+<ce>꽤 볼 만했다더군.
+<ce>_queen_의 성 앞 광장에서 교수형에 처했다지.
 <--->
 <ce>센티넬의 _traitor_가 반역죄로 교수형을 당했다더군.
 <ce>죽기 전에 아주 볼썽사납게 목숨을 구걸했다지.
@@ -126,7 +129,6 @@ Message:  1070
 --       _safehouse_ occurs 2 times.
 --          _tavern_ occurs 2 times.
 --         _traitor_ occurs 14 times.
-
 QBN:
 Item _letter_ letter used 1030
 Item _gold_ gold

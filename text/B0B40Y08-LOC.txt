@@ -12,10 +12,10 @@ DisplayName: 오크와 관련된 더 많은 문제
 QRC:
 
 QuestorOffer:  [1000]
-<ce>나는 _qgiver_라고 합니다. 자신이 있다면 맡길
-<ce>일이 있습니다. 강력한 오크 무리가 %reg의
-<ce>상단을 습격하고 있습니다. 그들을 이끄는
-<ce>오크 군주를 죽여야 합니다.
+<ce>나는 _qgiver_라고 합니다.
+<ce>자신이 있다면 맡길 일이 있습니다.
+<ce>강력한 오크 무리가 %reg⁠의 상단을 습격하고 있습니다.
+<ce>그들을 이끄는 오크 군주를 죽여야 합니다.
 <ce>
 <ce>
 <ce>
@@ -24,27 +24,27 @@ RefuseQuest:  [1001]
 <ce>겁쟁이.
 
 AcceptQuest:  [1002]
-<ce>오크들은 ___dungeon_을 작전 기지로 사용하고
-<ce>있습니다. 몇 마리를 죽이든 상관없지만 =monster_의
-<ce>목만큼은 반드시 베십시오. 놈이 군주입니다.
-<ce>=2dung_일 안에 소식을 전하면 당신의 명예는
-<ce>더럽혀지지 않을 것입니다.
-<ce>
+<ce>오크들은 ___dungeon_을 작전 기지로 사용하고 있습니다.
+<ce>몇 마리를 죽이든 상관없지만 =monster_의 목만큼은 반드시
+<ce>베십시오.
+<ce>놈이 군주입니다.
+<ce>=2dung_일 안에 소식을 전하면 당신의 명예는 더럽혀지지
+<ce>않을 것입니다.
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>오크의 위협이 %reg에서 사라졌습니다.
-<ce>모두 %pcn을 찬양하십시오!
+<ce>오크의 위협이 %reg⁠에서 사라졌습니다.
+<ce>모두 %pcn⁠을 찬양하십시오!
 <ce>
 
 RumorsDuringQuest:  [1005]
-___dungeon_의 오크들 때문에 ___qgiver_
-상인들의 삶이 고달파졌습니다.
+___dungeon_의 오크들 때문에 ___qgiver_ 상인들의 삶이
+고달파졌습니다.
 
 RumorsPostfailure:  [1006]
-___dungeon_의 오크들은 다른 곳을 약탈하러
-갔습니다. 하지만 얼마나 오래 비워둘까요?
+___dungeon_의 오크들은 다른 곳을 약탈하러 갔습니다.
+하지만 얼마나 오래 비워둘까요?
 
 RumorsPostsuccess:  [1007]
 용감한 %ra 덕분에 ___dungeon_에서 오크들이 사라졌습니다.
@@ -52,12 +52,12 @@ RumorsPostsuccess:  [1007]
 QuestLogEntry:  [1010]
 %qdt: ___qgiver_의 ==qgiver_에 있는 _qgiver_는
 ___dungeon_의 강력한 오크 무리를 이끄는 _monster_
-=monster_를 죽일 기회를 주었다. 오크들이 %reg을
-휩쓸기 전에 처리할 시간은 =2dung_일이다.
+=monster_를 죽일 기회를 주었다.
+오크들이 %reg⁠을 휩쓸기 전에 처리할 시간은 =2dung_일이다.
 
 Message:  1011
-<ce>=monster_는 죽었습니다. 오크들은 더 이상
-<ce>%reg을 위협하지 못할 것입니다.
+<ce>=monster_는 죽었습니다.
+<ce>오크들은 더 이상 %reg⁠을 위협하지 못할 것입니다.
 <ce>
 
 -- Symbols used in the QRC file:
@@ -74,7 +74,6 @@ Message:  1011
 --        ___qgiver_ occurs 1 time.
 --         _monster_ occurs 1 time.
 --          _qgiver_ occurs 2 times.
-
 QBN:
 
 Person _qgiver_ group Questor

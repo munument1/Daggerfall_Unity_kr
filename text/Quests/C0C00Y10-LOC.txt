@@ -11,118 +11,126 @@ DisplayName: 치유
 QRC:
 
 QuestorOffer:  [1000]
-<ce>사원과 좋은 관계를 맺는 가장 좋은 방법은
-<ce>누군가를 치료하는 것입니다.
-<ce>당신에게 도움이 될 만한 환자를 알고
-<ce>있습니다, %pcn. 맡으시겠습니까?
-<ce>
+<ce>사원과 좋은 관계를 맺는 가장 좋은 방법은 누군가를
+<ce>치료하는 것입니다.
+<ce>당신에게 도움이 될 만한 환자를 알고 있습니다,
+<ce>%pcn.
+<ce>맡으시겠습니까?
 <--->
-<ce>나는 _giver_입니다. 당신은 __giver_의
-<ce>서열에서 높지 않군요. 내가 아는
-<ce>사람을 치료할 방법을 찾아낸다면 당신을
-<ce>좋게 말해줄 수도 있습니다.
+<ce>나는 _giver_입니다.
+<ce>당신은 __giver_의 서열에서 높지 않군요.
+<ce>내가 아는 사람을 치료할 방법을 찾아낸다면 당신을 좋게
+<ce>말해줄 수도 있습니다.
 <ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>간단한 치료조차 맡을 의지나 능력이 없다면 사원
-<ce>지도자들에게 추천할 수 없습니다.
+<ce>간단한 치료조차 맡을 의지나 능력이 없다면 사원 지도자들에게
+<ce>추천할 수 없습니다.
 <ce>
 <ce>
 
 AcceptQuest:  [1002]
-<ce>___cousin_의 _cousin_가 희귀한 병으로 고통받고
-<ce>있습니다. 성직자를 보내 %g2을 치료하려던
-<ce>참이지만 하루 이틀 미루겠습니다. 치료법을
-<ce>찾아낸다면 __giver_에서의 평판이 좋아질 겁니다.
+<ce>___cousin_의 _cousin_가 희귀한 병으로
+<ce>고통받고 있습니다.
+<ce>성직자를 보내 %g2⁠를 치료하려던 참이지만 하루 이틀
+<ce>미루겠습니다.
+<ce>치료법을 찾아낸다면 __giver_에서의 평판이
+<ce>좋아질 겁니다.
 <ce>주어진 시간은 =questtime_일뿐입니다.
-<ce>
-<ce>
 <ce>
 
 QuestFail:  [1003]
-%qdt: ___giver_의 __giver_에 있는 _giver_는 ___cousin_의
-_cousin_를 치료할 기회를 주었다. =questtime_일 안에
-%g2을 치료하지 못하면 다른 사람이 대신 파견될 것이다.
+%qdt: ___giver_의 __giver_에
+있는 _giver_는 ___cousin_의 _cousin_를
+치료할 기회를 주었다.
+=questtime_일 안에 %g2⁠를 치료하지 못하면 다른 사람이 대신 파견될 것이다.
 
 QuestComplete:  [1004]
 <ce>_cousin_가 훨씬 건강해 보입니다.
-<ce>분명 %g은 완전히 나았습니다.
+<ce>분명 %g⁠는 완전히 나았습니다.
 <ce>
 
 RumorsDuringQuest:  [1005]
-불쌍한 _cousin_. 그 =cousin_가 얼마나 고통스러울까요!
+불쌍한 _cousin_.
+그 =cousin_가 얼마나 고통스러울까요!
 
 RumorsPostfailure:  [1006]
-__giver_의 _giver_가 그 %ra에게 몹시 화가 났습니다.
+__giver_의 _giver_가 그 %ra⁠에게 몹시 화가 났습니다.
 
 RumorsPostsuccess:  [1007]
-치료받은 _cousin_는 __giver_의 _giver_의 사촌이었습니다.
+치료받은 _cousin_는
+__giver_의 _giver_의 사촌이었습니다.
 
 QuestorPostsuccess:  [1008]
-_cousin_가 나았다는 소식을 들었습니다. %god께서
-축복하시길, %pcf. 무엇이 필요합니까?
+_cousin_가 나았다는 소식을 들었습니다.
+%god⁠께서 축복하시길, %pcf.
+무엇이 필요합니까?
 
 QuestorPostfailure:  [1009]
-_cousin_가 죽었습니다. 당신 탓입니다, %pcf.
+_cousin_가 죽었습니다.
+당신 탓입니다, %pcf.
 
 Message:  1025
-<ce>지켜보겠습니다. 환자의 이름은
-<ce>_cousin_이며 %g은 ___cousin_에 있습니다.
+<ce>지켜보겠습니다.
+<ce>환자의 이름은 _cousin_이며 %g⁠는
+<ce>___cousin_에 있습니다.
 <ce>=questtime_일 안에 능력을 증명하십시오.
-<ce>
 
 --duplicate 1006 removed
 
 QuestLogEntry:  [1010]
-<ce>너무 기운이 없어요. 무엇이 잘못된
-<ce>건지 모르겠어요. 저를 도우러 오셨나요?
-<ce>치료약을 가지고 있나요? 그렇다면
-<ce>제게 사용해서 낫게 해주세요.
+<ce>너무 기운이 없어요.
+<ce>무엇이 잘못된 건지 모르겠어요.
+<ce>저를 도우러 오셨나요? 치료약을 가지고 있나요?
+<ce>그렇다면 제게 사용해서 낫게 해주세요.
 
 Message:  1011
 <ce>그렇게 하시겠습니까?
 
 Message:  1012
-%g3 병에 관해 들었습니다. ___healer_의
-_healer_에게 치료약이 있다는군요.
+%g3 병에 관해 들었습니다.
+___healer_의 _healer_에게 치료약이 있다는군요.
 <--->
-%g2에 관한 소문을 들었습니다. 병에 걸렸고, ___healer_의
-_healer_가 치료약을 갖고 있다고 했습니다.
+%g2⁠에 관한 소문을 들었습니다.
+병에 걸렸고, ___healer_의 _healer_가 치료약을 갖고 있다고
+했습니다.
 
 Message:  1013
-<ce>안녕하세요. ___cousin_의 _cousin_와 %g3
-<ce>병에 관해 들었습니다. 칼리론의 저주입니다.
-<ce>흔히 회색열병으로 오인하지요. 치료할 수 있는 흰서리
-<ce>뿌리가 있습니다. 다만 한 번만 쓸 수 있습니다.
+<ce>안녕하세요.
+<ce>___cousin_의 _cousin_와 %g3 병에 관해
+<ce>들었습니다.
+<ce>칼리론의 저주입니다.
+<ce>흔히 회색열병으로 오인하지요.
+<ce>치료할 수 있는 흰서리 뿌리가 있습니다.
+<ce>다만 한 번만 쓸 수 있습니다.
 <ce>금화 스무 닢에 팔겠습니다.
-<ce>
-<ce>
-<ce>
 
 Message:  1014
 <ce>흰서리 뿌리를 사겠습니까?
 
 Message:  1015
-<ce>미안하지만 흰서리 뿌리를
-<ce>살 돈이 부족한 듯합니다.
+<ce>미안하지만 흰서리 뿌리를 살 돈이 부족한 듯합니다.
+<ce>
 
 Message:  1016
-<ce>감사합니다, %pcn. 흰서리 뿌리를 사용하겠습니다.
-<ce>아무리 감사해도 부족하군요. 남은
-<ce>여정이 안전하기를 바랍니다.
+<ce>감사합니다, %pcn.
+<ce>흰서리 뿌리를 사용하겠습니다. 아무리 감사해도 부족하군요.
+<ce>남은 여정이 안전하기를 바랍니다.
 
 Message:  1017
-%qdt: ___healer_의 _healer_에게서 칼리론의 저주를 치료하는
-흰서리 뿌리를 샀다. 이 병은 _cousin_를 괴롭히고 있다.
+%qdt: ___healer_의 _healer_에게서 칼리론의 저주를
+치료하는 흰서리 뿌리를 샀다.
+이 병은 _cousin_를 괴롭히고 있다.
 
 Message:  1018
-%qdt: _cousin_에게 흰서리 뿌리를 주어 %g2의 칼리론의 저주를
-치료했다. 이제 __giver_에서 나를 더 높이 평가할지도 모른다.
+%qdt: _cousin_에게 흰서리 뿌리를 주어
+%g2⁠의 칼리론의 저주를 치료했다.
+이제 __giver_에서 나를 더 높이 평가할지도 모른다.
 
 Message:  1019
-<ce>흰서리 뿌리는 사용하자마자
-<ce>빠르게 녹아 사라집니다.
+<ce>흰서리 뿌리는 사용하자마자 빠르게 녹아 사라집니다.
+<ce>
 
 -- Symbols used in the QRC file:
 --
@@ -143,7 +151,6 @@ Message:  1019
 --          _cousin_ occurs 16 times.
 --           _giver_ occurs 5 times.
 --          _healer_ occurs 39 times.
-
 QBN:
 Item _talisman_ root_tendrils
 -added underscores to talisman
