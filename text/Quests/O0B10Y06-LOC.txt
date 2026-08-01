@@ -11,10 +11,10 @@ DisplayName: 보석 강탈
 QRC:
 
 QuestorOffer:  [1000]
-<ce>자네에게 딱 맞는 일이 있어.
-<ce>보석 절도 건이 하나 들어왔지.
-<ce>끼어들겠나?
+<ce>자네에게 딱 맞는 일이 있어. 보석 절도 건이 하나 들어왔지. 끼어들겠나?
 <ce>길드 표준 보수인 _gold_골드를 주겠다.
+<ce>
+<ce>
 <ce>
 
 RefuseQuest:  [1001]
@@ -22,11 +22,11 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>%oth, 아주 훌륭해.
-<ce>__mansion_의 _mansion_로 가서 _jewelry_을 찾아
-<ce>여기로 가져와.
-<ce>눈을 크게 뜨고 다녀.
+<ce>%oth, 아주 훌륭해. __mansion_의 _mansion_로 가서
+<ce>_jewelry_을 찾아 여기로 가져와. 눈을 크게 뜨고 다녀.
 <ce>그 쓰레기장 같은 곳에 무슨 수호자가 있을지도 모르니까.
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
@@ -47,20 +47,20 @@ _mansion_가 털렸다니 도저히 믿기 어려운 일이야.
 _mansion_도 털릴 수 있다면 안전한 곳은 어디에도 없지.
 
 QuestorPostsuccess:  [1008]
-어떻게 지내나, %pcf?
-벌써 _gold_골드를 전부 써버린 건 아니겠지?
+어떻게 지내나, %pcf? 벌써 _gold_골드를 전부 써버린
+건 아니겠지?
 
 QuestorPostfailure:  [1009]
-<ce>%oth, 자네로군.
-<ce>_mansion_의 주인이 이미 _jewelry_을 옮겨서 일은
-<ce>끝났어.
-<ce>그 대단하신 “노고”에 정말 감사하지.
+<ce>%oth, 자네로군. _mansion_의 주인이 이미 _jewelry_을
+<ce>옮겨서 일은 끝났어. 그 대단하신 “노고”에 정말 감사하지.
+<ce>
+<ce>
 <ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 _qgiver_는 ___mansion_에
-있는 _mansion_에서 _jewelry_을 빼오라고 의뢰했다.
-=traveltime_일 안에 %g2⁠에게 가져가야 한다.
+%qdt: ___qgiver_의 _qgiver_는
+___mansion_에 있는 _mansion_에서 _jewelry_을 빼오라고
+의뢰했다. =traveltime_일 안에 %g2⁠에게 가져가야 한다.
 
 -- Symbols used in the QRC file:
 --

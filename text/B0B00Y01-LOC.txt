@@ -11,14 +11,14 @@ DisplayName: 응징
 QRC:
 
 QuestorOffer:  [1000]
-<ce>__qgiver_에 배신자가 있습니다.
-<ce>%g3 형제들을 배신한 악랄한 _monster_입니다.
-<ce>우리 명예가 걸린 일입니다, %pct.
-<ce>의로운 분노에 동참하십시오.
+<ce>__qgiver_에 배신자가 있습니다. %g3 형제들을
+<ce>배신한 악랄한 _monster_입니다. 우리 명예가 걸린 일입니다,
+<ce>%pct. 의로운 분노에 동참하십시오.
+<ce>
 <ce>
 <--->
 <ce>간악한 _monster_가 __qgiver_를 배신했습니다.
-<ce>비겁한 악당을 추적해 %g2⁠를 죽이는 일을 도와주시겠습니까?
+<ce>비겁한 악당을 추적해 %g2⁠을 죽이는 일을 도와주시겠습니까?
 <ce>
 <ce>
 
@@ -26,17 +26,17 @@ RefuseQuest:  [1001]
 <ce>명예롭지 못한 대답이군요. 더 나은 답을 기대했습니다.
 
 AcceptQuest:  [1002]
-<ce>좋습니다.
-<ce>배신자는 =monster_라는 _monster_이며, %di
-<ce>방향의 ___mondun_에 숨어 있습니다.
-<ce>=queston_일 안에 돌아오지 않으면 명예를 잃고 다른 이가
-<ce>당신의 자리를 대신할 것입니다.
+<ce>좋습니다. 배신자는 =monster_라는 _monster_이며, %di
+<ce>방향의 ___mondun_에 숨어 있습니다. =queston_일 안에
+<ce>돌아오지 않으면 명예를 잃고 다른 이가 당신의 자리를 대신할 것입니다.
 <ce>우리를 실망시키지 마십시오, %pcf.
+<ce>
+<ce>
 <ce>
 
 QuestFail:  [1003]
-<ce>_monster_는 죽지 않았습니다.
-<ce>거짓말로 속이려 하지 마십시오.
+<ce>_monster_는 죽지 않았습니다. 거짓말로 속이려 하지 마십시오.
+<ce>
 
 QuestComplete:  [1004]
 <ce>잘했습니다. 자랑스러워해도 좋습니다.
@@ -45,8 +45,8 @@ RumorsDuringQuest:  [1005]
 그 _monster_는 지옥의 사냥개에게 쫓기듯 ___mondun_으로
 달아났습니다.
 <--->
-%kno⁠에게 %g⁠가 저지른 짓을 생각하면 _qgiver_가 =monster_를
-그냥 둘 수는 없지요.
+%kno⁠에게 %g⁠이 저지른 짓을 생각하면 _qgiver_가
+=monster_를 그냥 둘 수는 없지요.
 
 RumorsPostfailure:  [1006]
 =monster_는 _qgiver_가 생각한 것보다 훨씬 강한 모양입니다.
@@ -56,15 +56,14 @@ RumorsPostfailure:  [1006]
 괴롭히고 있습니다.
 
 RumorsPostsuccess:  [1007]
-=monster_의 최후가 증명해주지요.
-%kno⁠를 함부로 건드려서는 안 됩니다.
+=monster_의 최후가 증명해주지요. %kno⁠를 함부로 건드려서는
+안 됩니다.
 <--->
 기사단이라면 =monster_ 같은 멍청이에게 조금은 자비를 베풀 줄
 알았습니다.
 
 QuestorPostsuccess:  [1008]
-=monster_ 사건에서 능력을 증명하셨습니다.
-무엇을 도와드릴까요?
+=monster_ 사건에서 능력을 증명하셨습니다. 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
 =monster_ 사건으로 __qgiver_가 망신을 당했습니다.
@@ -73,8 +72,8 @@ QuestorPostfailure:  [1009]
 QuestLogEntry:  [1010]
 %qdt: ___qgiver_의 %kno⁠는
 =monster_라는 _monster_를 찾아 죽이라고 명했다.
-그는 %g3 은신처인 ___mondun_에 있다.
-임무를 완수할 시간은 =queston_일이다.
+그는 %g3 은신처인 ___mondun_에 있다. 임무를 완수할 시간은
+=queston_일이다.
 
 Message:  1011
 <ce>당신은 _monster_ =monster_를 죽였습니다.

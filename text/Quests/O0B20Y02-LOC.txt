@@ -11,11 +11,11 @@ DisplayName: 귀중한 물건
 QRC:
 
 QuestorOffer:  [1000]
-<ce>목소리 낮춰. 내 이름은...
-<ce>어, 그냥 _qgiver_라고 불러.
-<ce>길드 일이 하나 있어.
-<ce>보수는 평소대로고.
-<ce>관심 있나?
+<ce>목소리 낮춰. 내 이름은... 어, 그냥 _qgiver_라고 불러.
+<ce>길드 일이 하나 있어. 보수는 평소대로고. 관심 있나?
+<ce>
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
 <ce>자세한 말을 하지 않길 잘했군. 이제 나가.
@@ -23,18 +23,18 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>__mansion_의 _mansion_에서 _magicitem_을 훔쳐.
-<ce>=traveltime_일 안에 끝내지 못하면 거래는 취소다.
-<ce>그곳에 경비가 있다는 말은 했던가?
-<ce>분명 말한 것 같은데.
+<ce>=traveltime_일 안에 끝내지 못하면 거래는 취소다. 그곳에 경비가 있다는
+<ce>말은 했던가? 분명 말한 것 같은데.
+<ce>
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>물건 가져왔나?
-<ce>아! 잘했어.
-<ce>이번 일의 표준 보수는 _gold_골드다.
+<ce>물건 가져왔나? 아! 잘했어. 이번 일의 표준 보수는 _gold_골드다.
 <ce>한곳에서 전부 써버리지는 마.
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
 __mansion_의 _mansion_에는 희귀한 마법 물건이 아주 많대.
@@ -43,26 +43,23 @@ RumorsPostfailure:  [1006]
 보안을 위해 _magicitem_을 _mansion_ 밖으로 옮겼대.
 
 RumorsPostsuccess:  [1007]
-_mansion_에서 _magicitem_을 도둑맞았대.
-엄청난 추문이지.
+_mansion_에서 _magicitem_을 도둑맞았대. 엄청난 추문이지.
 
 QuestorPostsuccess:  [1008]
-나를 보고 놀랐나, %pcf?
-내가 _magicitem_을 들고 달아났을 줄 알았어?
+나를 보고 놀랐나, %pcf? 내가 _magicitem_을 들고 달아났을 줄
+알았어?
 
 QuestorPostfailure:  [1009]
-<ce>이미 _magicitem_을 _mansion_ 밖으로 옮겼어,
-<ce>%pcf.
-<ce>다시 말해 자네는 실패한 거야.
-<ce>이제 가.
+<ce>이미 _magicitem_을 _mansion_ 밖으로 옮겼어, %pcf.
+<ce>다시 말해 자네는 실패한 거야. 이제 가.
+<ce>
+<ce>
 
 QuestLogEntry:  [1010]
-%qdt: 길드의 _qgiver_, 적어도 %g⁠는 %g2self⁠을 그렇게
-불렀다.
-그자는 __mansion_의 _mansion_에서 _magicitem_을 훔치라고
-했다.
-=traveltime_일 안에 ___qgiver_의 __qgiver_에 있는 %g2⁠에게
-가져가야 한다.
+%qdt: 길드의 _qgiver_, 적어도 %g⁠은 %g2self⁠를
+그렇게 불렀다. 그자는 __mansion_의 _mansion_에서
+_magicitem_을 훔치라고 했다. =traveltime_일 안에
+___qgiver_의 __qgiver_에 있는 %g2⁠에게 가져가야 한다.
 
 -- Symbols used in the QRC file:
 --

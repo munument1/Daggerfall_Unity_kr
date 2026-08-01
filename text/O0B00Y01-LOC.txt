@@ -12,30 +12,30 @@ DisplayName: 무기 공급
 QRC:
 
 QuestorOffer:  [1000]
-<ce>좋아, %pcf.
-<ce>아주 간단한 일이야.
-<ce>네가 어려워할 리 없지.
-<ce>이 _weapons_을 ___contact_의 우리 요원에게
-<ce>가져가서 %g3 대금을 받아 돌아오면 된다.
-<ce>할 수 있겠나, %pcf?
+<ce>좋아, %pcf. 아주 간단한 일이야. 네가 어려워할 리 없지.
+<ce>이 _weapons_을 ___contact_의 우리 요원에게 가져가서
+<ce>%g3⁠의 대금을 받아 돌아오면 된다. 할 수 있겠나, %pcf?
+<ce>
+<ce>
+<ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>싫다고?
-<ce>임무가 얼마나 더 쉬워야 하지?
-<ce>가만히 서 있으면 장어로 때려주는 것?
-<ce>그것도 괜찮은 생각인데!
-<ce>%oth, 쓸모없는 인간 같으니.
+<ce>싫다고? 임무가 얼마나 더 쉬워야 하지? 가만히 서 있으면 장어로 때려주는 것?
+<ce>그것도 괜찮은 생각인데! %oth, 쓸모없는 인간 같으니.
+<ce>
+<ce>
+<ce>
 
 AcceptQuest:  [1002]
-<ce>좋아.
-<ce>접선책은 예상대로 =contact_다.
-<ce>___contact_의 __contact_라는 구석진 곳에 있을
-<ce>거야.
+<ce>좋아. 접선책은 예상대로 =contact_다.
+<ce>___contact_의 __contact_라는 구석진 곳에 있을 거야.
 <ce>_contact_는 ___contact_에서 전리품을 얻었고 그것을
-<ce>우리에게 가져오길 원한다.
-<ce>이 정도를 감당할 수 있다면 변명 없이 =1stparton_일 안에 돌아와.
-<ce>좋아, 가봐.
+<ce>우리에게 가져오길 원한다. 이 정도를 감당할 수 있다면 변명 없이
+<ce>=1stparton_일 안에 돌아와. 좋아, 가봐.
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
@@ -43,60 +43,55 @@ AcceptQuest:  [1002]
 
 QuestFail:  [1003]
 <ce>그래, 돌아오기는 했는데 _contact_의 전리품은 어디 있지?
-<ce>우리를 속일 생각은 아니겠지, %pcf?
-<ce>그렇다면 다시 생각하는 게 좋아.
+<ce>우리를 속일 생각은 아니겠지, %pcf? 그렇다면 다시 생각하는 게
+<ce>좋아.
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>오, 멋진 _gems_이군.
-<ce>_contact_가 준 건가?
-<ce>%oth, %g⁠는 ___contact_에서 잘 지내는 모양이야.
-<ce>잘했어, %pcf.
-<ce>여기 수고비 _reward_골드다.
+<ce>오, 멋진 _gems_이군. _contact_가 준 건가?
+<ce>%oth, %g⁠은 ___contact_에서 잘 지내는 모양이야.
+<ce>잘했어, %pcf. 여기 수고비 _reward_골드다.
+<ce>
+<ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
 요즘 도시 경비대는 무기를 든 사람이라면 매처럼 감시하고 있어.
 <--->
-%t⁠이 암살을 두려워하는 모양이야.
-경비대가 대거 풀렸어.
+%t⁠이 암살을 두려워하는 모양이야. 경비대가 대거 풀렸어.
 
 RumorsPostfailure:  [1006]
-어떤 =contact_가 체포됐어.
-%g⁠는 무기 밀매상이었다더군.
+어떤 =contact_가 체포됐어. %g⁠은 무기 밀매상이었다더군.
 <--->
-도둑 길드도 별것 아니야.
-단원 하나가 __contact_에서 잡혔거든.
+도둑 길드도 별것 아니야. 단원 하나가 __contact_에서 잡혔거든.
 
 RumorsPostsuccess:  [1007]
-_weapons_을 밀수해 들여온다는군.
-대단한 배짱이야.
+_weapons_을 밀수해 들여온다는군. 대단한 배짱이야.
 <--->
-%t⁠은 도둑 길드의 밀수를 몹시 두려워했지만 이제 %g⁠는 잊은
+%t⁠은 도둑 길드의 밀수를 몹시 두려워했지만 이제 %g⁠은 잊은
 모양이야.
 
 QuestorPostsuccess:  [1008]
-그래, 무슨 일이지, %pcf?
-_gems_을 돌려받고 싶나?
+그래, 무슨 일이지, %pcf? _gems_을 돌려받고 싶나?
 
 QuestorPostfailure:  [1009]
 <ce>_contact_에게서 가져온 것이 없다면 이야기할 생각도 없어,
 <ce>%pcf.
 
 QuestLogEntry:  [1010]
-<ce>잘했어, %pcf.
-<ce>이 _weapons_을 들고는 여기까지 쉽게 오지 못했을 거야.
-<ce>지금까지 훔친 것 중 하나인 _gems_을 주지.
+<ce>잘했어, %pcf. 이 _weapons_을 들고는 여기까지 쉽게 오지
+<ce>못했을 거야. 지금까지 훔친 것 중 하나인 _gems_을 주지.
 <ce>_questgiver_에게 가져가 %g2⁠에게 내가 무사하다고 전해줘.
-<ce>다시 한번 고맙다, %pcf.
-<ce>나중에 보자.
+<ce>다시 한번 고맙다, %pcf. 나중에 보자.
+<ce>
+<ce>
 <ce>
 
 Message:  1020
-<ce>%nrn⁠의 이름으로 멈춰라!
-<ce>네가 무기를 밀수하고 있다는 것을 안다.
+<ce>%nrn⁠의 이름으로 멈춰라! 네가 무기를 밀수하고 있다는 것을 안다.
 <ce>항복하지 않으면 대가를 치를 것이다.
+<ce>
 <ce>
 
 Message:  1021
@@ -106,8 +101,8 @@ Message:  1021
 <ce>
 
 Message:  1022
-<ce>우리는 그 _weapons_을 원한다.
-<ce>순순히 넘기면 너무 심하게 두들겨 패지는 않겠다.
+<ce>우리는 그 _weapons_을 원한다. 순순히 넘기면 너무 심하게 두들겨
+<ce>패지는 않겠다.
 <ce>
 
 Message:  1023
@@ -117,9 +112,8 @@ Message:  1023
 Message:  1030
 %qdt: ___questgiver_ 도둑 길드의 _questgiver_는
 ___contact_의 __contact_에 있는 _contact_에게
-_weapons_을 배달하라고 했다.
-그러면 접선책이 내가 길드로 가져갈 전리품을 줄 것이다.
-기한은 =1stparton_일이다.
+_weapons_을 배달하라고 했다. 그러면 접선책이 내가 길드로 가져갈
+전리품을 줄 것이다. 기한은 =1stparton_일이다.
 
 -- Symbols used in the QRC file:
 --

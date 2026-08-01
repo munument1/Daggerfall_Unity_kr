@@ -12,10 +12,10 @@ DisplayName: 귀중한 예술품
 QRC:
 
 QuestorOffer:  [1000]
-<ce>어이, %pcf!
-<ce>나 _qgiver_ 기억하지?
-<ce>오늘 길드 일 하나 해볼 텐가?
+<ce>어이, %pcf! 나 _qgiver_ 기억하지? 오늘 길드 일 하나 해볼 텐가?
 <ce>자네에게 딱 맞을 것 같은 일이 있어.
+<ce>
+<ce>
 <ce>
 
 RefuseQuest:  [1001]
@@ -23,9 +23,9 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>어떤 부자가 꽤 값나가는 그림을 하나 손에 넣었어.
-<ce>__townhouse_의 _townhouse_에 숨겨뒀지.
-<ce>가져오면 길드 보수로 _gold_골드를 주겠다.
-<ce>아, =traveltime_일 안에 가져와야 해.
+<ce>__townhouse_의 _townhouse_에 숨겨뒀지. 가져오면 길드 보수로
+<ce>_gold_골드를 주겠다. 아, =traveltime_일 안에 가져와야 해.
+<ce>
 <ce>
 <ce>
 <ce>
@@ -33,17 +33,16 @@ AcceptQuest:  [1002]
 <ce>
 
 QuestComplete:  [1004]
-<ce>흠집 하나 없군.
-<ce>수호자 때문에 고생했겠어.
-<ce>그자가 그런 짓까지 해뒀을 줄은 몰랐거든.
-<ce>여기 보수다.
+<ce>흠집 하나 없군. 수호자 때문에 고생했겠어. 그자가 그런 짓까지
+<ce>해뒀을 줄은 몰랐거든. 여기 보수다.
+<ce>
+<ce>
 
 RumorsDuringQuest:  [1005]
 _townhouse_는 그야말로 미술관이나 다름없어.
 
 RumorsPostfailure:  [1006]
-며칠 전에 종기가 났는데...
-이제 다 나았습니다.
+며칠 전에 종기가 났는데... 이제 다 나았습니다.
 <--->
 방금 날씨 이야기만 세 시간이나 했습니다.
 <--->
@@ -59,13 +58,11 @@ RumorsPostfailure:  [1006]
 <--->
 이 근처에 전쟁 기념상을 세워야 합니다.
 <--->
-요즘 애들과 마법이라니.
-%oth, 잘 모르겠군요.
+요즘 애들과 마법이라니. %oth, 잘 모르겠군요.
 <--->
 어젯밤 정말 이상한 꿈을 꿨습니다.
 <--->
-굉장한 농담을 들었습니다.
-%jok
+굉장한 농담을 들었습니다. %jok
 <--->
 %jok 사실, 농담입니다.
 <--->
@@ -88,10 +85,10 @@ QuestorPostfailure:  [1009]
 <ce>
 
 QuestLogEntry:  [1010]
-%qdt: _qgiver_는 __townhouse_의 _townhouse_에서
-그림을 훔쳐오라고 했다.
-=traveltime_일 안에 ___qgiver_의 도둑 길드에 있는 _qgiver_에게
-가져가야 한다.
+%qdt: _qgiver_는 __townhouse_의
+_townhouse_에서 그림을 훔쳐오라고 했다. =traveltime_일 안에
+___qgiver_의 도둑 길드에 있는 _qgiver_에게 가져가야
+한다.
 
 -- Symbols used in the QRC file:
 --

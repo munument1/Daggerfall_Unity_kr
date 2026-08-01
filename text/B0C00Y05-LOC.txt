@@ -12,14 +12,14 @@ DisplayName: 배신자
 QRC:
 
 QuestorOffer:  [1000]
-<ce>당신은 아직 우리 기사단의 신뢰를 얻지 못했습니다,
-<ce>%pcn.
-<ce>하지만 신뢰를 얻을 방법이 하나 있습니다.
-<ce>___qgiver_에 기사단을 적에게 팔아넘긴
-<ce>비열한 _monster_가 있습니다.
-<ce>반역의 정당한 대가는 죽음이라고 생각하지 않습니까,
-<ce>%pcn?
+<ce>당신은 아직 우리 기사단의 신뢰를 얻지 못했습니다, %pcn.
+<ce>하지만 신뢰를 얻을 방법이 하나 있습니다. ___qgiver_에
+<ce>기사단을 적에게 팔아넘긴 비열한 _monster_가 있습니다.
+<ce>반역의 정당한 대가는 죽음이라고 생각하지 않습니까, %pcn?
 <ce>기사단을 위해 처리하시겠습니까?
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 
@@ -29,21 +29,21 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>배신자는 =monster_라는 _monster_로, 겁쟁이답게
-<ce>___mondun_에 숨어 있습니다.
-<ce>=queston_일 안에 돌아오지 않으면 우리의 신뢰는 사라지고
-<ce>다른 자가 당신의 자리를 대신할 것입니다.
+<ce>___mondun_에 숨어 있습니다. =queston_일 안에 돌아오지
+<ce>않으면 우리의 신뢰는 사라지고 다른 자가 당신의 자리를 대신할 것입니다.
+<ce>
 <ce>
 <ce>
 <ce>
 <ce>
 
 QuestFail:  [1003]
-<ce>_monster_는 죽지 않았습니다.
-<ce>아니라고 우길 생각은 마십시오.
+<ce>_monster_는 죽지 않았습니다. 아니라고 우길 생각은 마십시오.
+<ce>
 
 QuestComplete:  [1004]
-<ce>소문만큼 형편없는 자는 아니었군요.
-<ce>%pcn, 이제 이 기사단에서 약간의 존경을 얻었습니다.
+<ce>소문만큼 형편없는 자는 아니었군요. %pcn, 이제 이 기사단에서
+<ce>약간의 존경을 얻었습니다.
 <ce>
 <ce>
 
@@ -51,7 +51,7 @@ RumorsDuringQuest:  [1005]
 그 _monster_는 지옥의 사냥개라도 쫓아오는 듯 ___mondun_으로
 달아났습니다.
 <--->
-%g⁠가 기사단에 저지른 일을 생각하면 _qgiver_가 =monster_를
+%g⁠이 기사단에 저지른 일을 생각하면 _qgiver_가 =monster_를
 그냥 놓아줄 수는 없지요.
 
 RumorsPostfailure:  [1006]
@@ -62,26 +62,26 @@ RumorsPostfailure:  [1006]
 괴롭힙니다.
 
 RumorsPostsuccess:  [1007]
-=monster_의 최후가 증명했지요.
-==qgiver_를 우습게 보면 안 됩니다.
+=monster_의 최후가 증명했지요. ==qgiver_를 우습게
+보면 안 됩니다.
 <--->
-기사단이 =monster_ 같은 멍청이에게는 좀 더 자비로울 줄 알았습니다.
+기사단이 =monster_ 같은 멍청이에게는 좀 더 자비로울 줄
+알았습니다.
 
 QuestorPostsuccess:  [1008]
 살인자여, 가능한 일이라면 무엇이든 기꺼이 돕겠습니다.
 
 QuestorPostfailure:  [1009]
-마음이 너무 물렀군요, %pcf.
-내 시간을 낭비하지 마십시오.
+마음이 너무 물렀군요, %pcf. 내 시간을 낭비하지 마십시오.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 _qgiver_는 ___mondun_에
-숨어 있는 =monster_라는 _monster_를 찾아 죽이라고 했다.
-임무를 끝낼 시간은 =queston_일이다.
+%qdt: ___qgiver_의 _qgiver_는
+___mondun_에 숨어 있는 =monster_라는 _monster_를
+찾아 죽이라고 했다. 임무를 끝낼 시간은 =queston_일이다.
 
 Message:  1011
-<ce>_monster_인 =monster_를 죽였습니다.
-<ce>기사단이 자랑스러워할 것입니다.
+<ce>_monster_인 =monster_를 죽였습니다. 기사단이
+<ce>자랑스러워할 것입니다.
 
 Message:  1080
 <ce>감사의 표시로 ___newdung_으로 가는 지도를 받으십시오.

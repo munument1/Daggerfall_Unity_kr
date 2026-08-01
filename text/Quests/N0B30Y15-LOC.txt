@@ -12,10 +12,10 @@ DisplayName: 떠돌이 임프
 QRC:
 
 QuestorOffer:  [1000]
-<ce>내 이름은 _questgiver_입니다.
-<ce>길드에서 통제를 벗어난 임프 하나를 죽일 사람이 필요합니다.
-<ce>관심 있습니까?
-<ce>보수는 _gold_골드입니다.
+<ce>내 이름은 _questgiver_입니다. 길드에서 통제를 벗어난 임프 하나를
+<ce>죽일 사람이 필요합니다. 관심 있습니까? 보수는 _gold_골드입니다.
+<ce>
+<ce>
 
 RefuseQuest:  [1001]
 <ce>안됐군요.
@@ -26,23 +26,23 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>좋은 태도입니다, %pcn.
-<ce>아직 말하지 않은 것이 하나 있습니다.
-<ce>그 임프는 지위 높은 마법사의 사역마였습니다.
-<ce>실험 주문에 휘말린 뒤 온갖 주문과 비슷한 능력을 얻은
-<ce>모양입니다.
-<ce>놈은 __palace_의 _palace_에 있으며, 스스로
-<ce>통치자라도 된 듯 행동합니다.
-<ce>조심하십시오, %pcn.
-<ce>=traveltime_일 안에 돌아오지 않으면 죽은 것으로 여기겠습니다.
+<ce>좋은 태도입니다, %pcn. 아직 말하지 않은 것이 하나 있습니다.
+<ce>그 임프는 지위 높은 마법사의 사역마였습니다. 실험 주문에 휘말린 뒤
+<ce>온갖 주문과 비슷한 능력을 얻은 모양입니다.
+<ce>놈은 __palace_의 _palace_에 있으며, 스스로 통치자라도
+<ce>된 듯 행동합니다. 조심하십시오, %pcn. =traveltime_일 안에
+<ce>돌아오지 않으면 죽은 것으로 여기겠습니다.
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>작지만 만만치 않은 녀석이었지요?
-<ce>보수를 받을 자격은 충분합니다.
+<ce>작지만 만만치 않은 녀석이었지요? 보수를 받을 자격은 충분합니다.
+<ce>
 
 RumorsDuringQuest:  [1005]
 __palace_의 _palace_에서 이상한 일이 벌어지고 있어.
@@ -62,20 +62,20 @@ RumorsPostsuccess:  [1007]
 입혔을 거야.
 
 QuestorPostsuccess:  [1008]
-당신을 잊지 않았습니다, %pcf.
-그 성가신 임프를 죽인 %ra⁠지요.
+당신을 잊지 않았습니다, %pcf. 그 성가신 임프를 죽인
+%ra 지요.
 
 QuestorPostfailure:  [1009]
-<ce>그 임프 때문에 __palace_가 거의 파괴될 뻔했는데 당신은
-<ce>아무 도움도 주지 않았습니다.
-<ce>내가 보기에는 참으로 비열한 행동입니다, %pcf.
+<ce>그 임프 때문에 __palace_가 거의 파괴될 뻔했는데 당신은 아무
+<ce>도움도 주지 않았습니다. 내가 보기에는 참으로 비열한 행동입니다,
+<ce>%pcf.
 <ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_ 마법사 길드의 _questgiver_는 통제를
-벗어난 임프를 없애라고 했다.
-그 짐승은 __palace_의 _palace_에 숨어 있다.
-성공할 시간은 =traveltime_일이다.
+%qdt: ___questgiver_ 마법사 길드의 _questgiver_는
+통제를 벗어난 임프를 없애라고 했다. 그 짐승은
+__palace_의 _palace_에 숨어 있다. 성공할 시간은
+=traveltime_일이다.
 
 -- Symbols used in the QRC file:
 --

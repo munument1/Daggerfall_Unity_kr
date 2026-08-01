@@ -11,15 +11,15 @@ DisplayName: 도난당한 물건
 QRC:
 
 QuestorOffer:  [1000]
-<ce>평소라면 __qgiver_의 일원이 아닌 사람에게 일을 맡기지
-<ce>않습니다.
-<ce>하지만 지금은 일손이 부족합니다.
-<ce>뻔뻔한 도둑이 사원에서 _religitem_을 훔쳤습니다.
-<ce>사제가 범인을 똑똑히 보았습니다.
-<ce>예배하는 척하던 평범한 거리 도둑, =thief_
-<ce>_thief_였습니다.
-<ce>그자를 추적해 훔친 _religitem_을 되찾아오면 앞으로 당신을
-<ce>좋게 말해두겠습니다.
+<ce>평소라면 __qgiver_의 일원이 아닌 사람에게 일을 맡기지 않습니다.
+<ce>하지만 지금은 일손이 부족합니다. 뻔뻔한 도둑이 사원에서 _religitem_을
+<ce>훔쳤습니다. 사제가 범인을 똑똑히 보았습니다. 예배하는 척하던
+<ce>평범한 거리 도둑, =thief_ _thief_였습니다.
+<ce>그자를 추적해 훔친 _religitem_을 되찾아오면 앞으로 당신을 좋게
+<ce>말해두겠습니다.
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 <ce>
@@ -28,22 +28,22 @@ QuestorOffer:  [1000]
 <ce>
 
 RefuseQuest:  [1001]
-<ce>기회를 줬더니 내 얼굴에 침을 뱉는군요.
-<ce>내게 호의를 청할 생각은 마십시오.
+<ce>기회를 줬더니 내 얼굴에 침을 뱉는군요. 내게 호의를 청할 생각은
+<ce>마십시오.
 <ce>
 
 AcceptQuest:  [1002]
-<ce>=traveltime_일 안에 되찾아야 합니다.
-<ce>그 뒤에는 기사단이 수색대를 파견할 수 있으니 당신의 기회는
-<ce>사라질 겁니다.
+<ce>=traveltime_일 안에 되찾아야 합니다. 그 뒤에는 기사단이 수색대를 파견할 수
+<ce>있으니 당신의 기회는 사라질 겁니다.
+<ce>
 <ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>모든 찬사를 보냅니다, %pcn.
-<ce>_religitem_이 사원으로 돌아왔습니다.
-<ce>당신은 %god⁠의 총애를 얻었습니다.
+<ce>모든 찬사를 보냅니다, %pcn. _religitem_이 사원으로
+<ce>돌아왔습니다. 당신은 %god⁠의 총애를 얻었습니다.
+<ce>
 <ce>
 <ce>
 
@@ -69,17 +69,17 @@ _religitem_은 영영 사라졌는데 나와 이야기하고 싶다고요?
 QuestLogEntry:  [1010]
 %qdt: ___qgiver_의 __qgiver_에
 있는 _qgiver_는 =thief_ _thief_에게
-도난당한 _religitem_을 되찾을 기회를 주었다.
-=traveltime_일 안에 회수해야 한다.
+도난당한 _religitem_을 되찾을 기회를 주었다. =traveltime_일 안에
+회수해야 한다.
 
 Message:  1011
-<ce>“%oth!
-<ce>고작 그 쓸모없는 _religitem_을 되찾겠다고 사원에서 현상금
-<ce>사냥꾼을 고용했어?
-<ce>%oth, 목숨 걸 만한 물건은 아니지.
-<ce>자, 가져가.
-<ce>이제 너도 목숨 걸 가치가 있는지 보자고… 도와줘!
+<ce>“%oth! 고작 그 쓸모없는 _religitem_을 되찾겠다고 사원에서
+<ce>현상금 사냥꾼을 고용했어? %oth, 목숨 걸 만한 물건은 아니지.
+<ce>자, 가져가. 이제 너도 목숨 걸 가치가 있는지 보자고… 도와줘!
 <ce>이 %ra⁠가 우리 전리품을 훔쳐간다!”
+<ce>
+<ce>
+<ce>
 <ce>
 <ce>
 
@@ -90,24 +90,25 @@ Message:  1012
 
 Message:  1013
 <ce>_thief_… 익숙한 이름인데 누구인지는 모르겠군요.
-<ce>__thiefplace_에서 마주친 사람이었나?
-<ce>도움이 못 돼 미안합니다.
+<ce>__thiefplace_에서 마주친 사람이었나? 도움이 못 돼 미안합니다.
+<ce>
 <--->
-<ce>=decoy_라고요? 물론 %g2⁠를 압니다. ___decoy_에 살지요.
+<ce>=decoy_라고요? 물론 %g2⁠을 압니다. ___decoy_에 살지요.
 <--->
-<ce>=thief_를 말하는 거라면, %g⁠는 예전에 내 주머니를 털려던
+<ce>=thief_를 말하는 거라면, %g⁠은 예전에 내 주머니를 털려던
 <ce>__thiefplace_의 비열한 좀도둑 같습니다.
 
 Message:  1014
-<ce>물론 그 재빠른 좀도둑을 알지요.
-<ce>__thiefplace_의 _thiefplace_을 찾아보십시오. _thief_라고요?
-<ce>%g⁠는 __thiefplace_의 _thiefplace_에 “숨어” 있습니다.
-<ce>당신과 내가 %g⁠의 위치를 아니, 조용히 숨은 셈은 아니지요.
+<ce>물론 그 재빠른 좀도둑을 알지요. __thiefplace_의 _thiefplace_을
+<ce>찾아보십시오. _thief_라고요? 그래요, %g⁠은
+<ce>__thiefplace_의 _thiefplace_에 “숨어” 있습니다.
+<ce>당신과 내가 %g⁠의 위치를 아는 걸 보면 그리 조용히 지내는 건
+<ce>아니지만요.
 
 Message:  1020
-<ce>_thief_가 _religitem_을 던져주고 그림자 속으로
-<ce>사라집니다.
+<ce>_thief_가 _religitem_을 던져주고 그림자 속으로 사라집니다.
 <ce>이제 탈출해야 합니다!
+<ce>
 
 -- Symbols used in the QRC file:
 --

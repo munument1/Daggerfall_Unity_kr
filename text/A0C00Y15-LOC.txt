@@ -12,20 +12,21 @@ DisplayName: 장거리 배달
 QRC:
 
 QuestorOffer:  [1000]
-<ce>소문은 많이 들었습니다, %pcn.
-<ce>저는 _questgiver_입니다.
-<ce>부탁 하나 드려도 될까요?
-<ce>조만간 ___pickupregion_ 근처를 지나실 예정이라면,
-<ce>그곳의 누군가에게 소포를 전해주셨으면 합니다.
+<ce>소문은 많이 들었습니다, %pcn. 저는 _questgiver_입니다.
+<ce>부탁 하나 드려도 될까요? 조만간 ___pickupregion_ 근처를 지나실
+<ce>예정이라면, 그곳의 누군가에게 소포를 전해주셨으면 합니다.
 <ce>사례로 _gold_골드를 드리겠습니다.
 <ce>
 <ce>
+<ce>
+<ce>
+<ce>
 <--->
-<ce>명성은 익히 들었습니다, %pcn.
-<ce>배달을 맡길 사람이 필요합니다.
+<ce>명성은 익히 들었습니다, %pcn. 배달을 맡길 사람이 필요합니다.
 <ce>혹시 조만간 ___pickupregion_ 쪽으로 가실 예정인가요?
-<ce>소포 하나를 전해주시면 수고비로
-<ce>_gold_골드를 드리겠습니다.
+<ce>소포 하나를 전해주시면 수고비로 _gold_골드를 드리겠습니다.
+<ce>
+<ce>
 <ce>
 <ce>
 
@@ -39,25 +40,25 @@ RefuseQuest:  [1001]
 <ce>
 
 AcceptQuest:  [1002]
-<ce>좋습니다!
-<ce>이 소포를 ___pickupregion_으로 가져가 _pickupregion_ 님을 찾으세요.
-<ce>보수는 %G⁠님이 지불할 겁니다.
-<ce>=traveltime_일 안에 도착해야 합니다.
-<ce>여기 소포입니다.
+<ce>좋습니다! 이 소포를 ___pickupregion_으로 가져가 _pickupregion_
+<ce>님을 찾으세요. 보수는 %G 님이 지불할 겁니다. =traveltime_일 안에
+<ce>도착해야 합니다. 여기 소포입니다.
+<ce>
+<ce>
+<ce>
 <--->
-<ce>운이 좋군요!
-<ce>제 친구는 ___pickupregion_의 _pickupregion_ 님입니다.
-<ce>주변에 물어보면 누구나 %g2⁠를 알 겁니다.
-<ce>보수는 %G⁠님이 바로 주실 겁니다.
-<ce>=traveltime_일보다 늦는다면 차라리 버리는 편이 나을 겁니다.
+<ce>운이 좋군요! 제 친구는 ___pickupregion_의 _pickupregion_ 님입니다.
+<ce>주변에 물어보면 누구나 %g2 님을 알 겁니다. 보수는 %G 님이 바로
+<ce>주실 겁니다. =traveltime_일보다 늦는다면 차라리 버리는 편이 나을 겁니다.
 <ce>여기 있습니다.
+<ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
 <ce>_questgiver_ 님이 제때 보내주시길 기다리고 있었습니다.
-<ce>%G⁠님은 요즘 몹시 바쁘셨거든요.
-<ce>여기 약속받은 _gold_골드입니다.
+<ce>%G 님은 요즘 몹시 바쁘셨거든요. 여기 약속받은 _gold_골드입니다.
+<ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -77,19 +78,19 @@ QuestorPostsuccess:  [1008]
 <ce>
 
 QuestorPostfailure:  [1009]
-<ce>이런 악당 같으니!
-<ce>내 소포를 어떻게 한 거지? 팔아버렸나?
+<ce>이런 악당 같으니! 내 소포를 어떻게 한 거지? 팔아버렸나?
 <ce>___pickupregion_에 도착하지 않았어. 당장 나가.
+<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_의 _questgiver_에게서 소포를 받아
-___pickupregion_의 _pickupregion_에게 배달하기로 했다.
+%qdt: ___questgiver_의 _questgiver_에게서
+소포를 받아 ___pickupregion_의 _pickupregion_에게 배달하기로 했다.
 =traveltime_일 안에 전해야 한다.
 
 Message:  1011
-<ce>이 책에는 추억이 담겨 있습니다.
-<ce>_pickupregion_ 님은 _book_ 사본을 본 지 여러 해가
-<ce>지났거든요.
+<ce>이 책에는 추억이 담겨 있습니다. _pickupregion_ 님은 _book_
+<ce>사본을 본 지 여러 해가 지났거든요.
+<ce>
 <ce>
 
 Message:  1012
@@ -99,12 +100,12 @@ Message:  1012
 
 Message:  1013
 <ce>이 _jewelry_ 장신구는 _pickupregion_님에게 줄 선물입니다.
-<ce>이것으로 %g2⁠와의 거래가 성사될 겁니다.
+<ce>이것으로 %g2⁠님과의 거래가 성사될 겁니다.
 <ce>
 
 Message:  1014
-<ce>이 특별한 _mensclothing_ 옷은 어머니께서 축제를 맞아
-<ce>_pickupregion_님을 위해 만들어주신 겁니다.
+<ce>이 특별한 _mensclothing_ 옷은 어머니께서 축제를 맞아 _pickupregion_님을
+<ce>위해 만들어주신 겁니다.
 <ce>
 
 Message:  1015
@@ -113,25 +114,25 @@ Message:  1015
 <ce>
 
 Message:  1016
-<ce>_pickupregion_ 님이 이 _potion_ 물약을 가능한 한 빨리
-<ce>필요로 하십니다.
+<ce>_pickupregion_ 님이 이 _potion_ 물약을 가능한 한 빨리 필요로
+<ce>하십니다.
 
 Message:  1017
-<ce>_pickupregion_ 님이 협박을 받고 있습니다.
-<ce>이 _weapon_ 무기가 %g3 두려움을 가라앉혀줄 겁니다.
+<ce>_pickupregion_ 님이 협박을 받고 있습니다. 이 _weapon_ 무기가
+<ce>%g3 두려움을 가라앉혀줄 겁니다.
 <ce>
 
 Message:  1018
-<ce>_pickupregion_ 님의 결혼식에 쓸 훌륭한 _womensclothing_ 옷을
-<ce>샀습니다.
+<ce>_pickupregion_ 님의 결혼식에 쓸 훌륭한 _womensclothing_ 옷을 샀습니다.
 <ce>제때 도착하지 않으면 정말 창피한 일이 될 겁니다.
+<ce>
 <ce>
 
 Message:  1019
-<ce>무슨 일이죠?
-<ce>_questgiver_ 님이요?
-<ce>네, %g⁠님이 소포를 보내주겠다고 했습니다.
-<ce>곧 받지 못하면 너무 늦습니다.
+<ce>무슨 일이죠? _questgiver_ 님이요? 네, %g 님이 소포를 보내주겠다고
+<ce>했습니다. 곧 받지 못하면 너무 늦습니다.
+<ce>
+<ce>
 
 Message:  1020
 <ce>_questgiver_ 님이 보낸 소포를 가지고 있다는 걸 안다.

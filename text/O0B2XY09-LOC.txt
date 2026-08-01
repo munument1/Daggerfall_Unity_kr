@@ -11,33 +11,33 @@ DisplayName: 부유한 상인
 QRC:
 
 QuestorOffer:  [1000]
-<ce>나를 _qgiver_라고 불러.
-<ce>어떤 돼지 같은 상인이 _coastal_을 새로 들여왔다는 소식을
-<ce>들었어.
-<ce>훔쳐서 여기로 가져와.
-<ce>_gold_골드를 주지.
-<ce>관심 있나?
+<ce>나를 _qgiver_라고 불러. 어떤 돼지 같은 상인이 _coastal_을
+<ce>새로 들여왔다는 소식을 들었어. 훔쳐서 여기로 가져와.
+<ce>_gold_골드를 주지. 관심 있나?
+<ce>
+<ce>
+<ce>
 <ce>
 
 RefuseQuest:  [1001]
-<ce>가던 길 가, %pcn.
-<ce>이름값을 하는 도둑을 찾아야 하니까.
+<ce>가던 길 가, %pcn. 이름값을 하는 도둑을 찾아야 하니까.
+<ce>
 <ce>
 
 AcceptQuest:  [1002]
-<ce>__mansion_의 _mansion_으로 가.
-<ce>_coastal_을 찾는 것은 그리 어렵지 않을 거야.
-<ce>=traveltime_일 안에 가져오면 돈을 주지.
-<ce>질문 없지?
+<ce>__mansion_의 _mansion_으로 가. _coastal_을 찾는 것은
+<ce>그리 어렵지 않을 거야. =traveltime_일 안에 가져오면 돈을 주지. 질문 없지?
 <ce>좋아.
+<ce>
+<ce>
 <ce>
 <ce>
 
 QuestComplete:  [1004]
-<ce>오호!
-<ce>이 물건은 생각보다 훨씬 좋군.
-<ce>여기 _gold_골드다, %pcn.
-<ce>술이나 방탕한 짓에 전부 쓰지는 마.
+<ce>오호! 이 물건은 생각보다 훨씬 좋군. 여기 _gold_골드다,
+<ce>%pcn. 술이나 방탕한 짓에 전부 쓰지는 마.
+<ce>
+<ce>
 <ce>
 
 RumorsDuringQuest:  [1005]
@@ -55,11 +55,11 @@ QuestorPostsuccess:  [1008]
 그 돈을 술이나 방탕한 짓에 쓰고 있는 건 아니겠지, %pcf?
 
 QuestorPostfailure:  [1009]
-<ce>뭘 원하지?
-<ce>_coastal_의 위치를 알려줬는데도 늑장을 부려 아무 소용이
-<ce>없게 만들었잖아.
-<ce>그냥 나가, %pcf.
-<ce>머리가 아프군.
+<ce>뭘 원하지? _coastal_의 위치를 알려줬는데도 늑장을 부려 아무
+<ce>소용이 없게 만들었잖아. 그냥 나가, %pcf. 머리가 아프군.
+<ce>
+<ce>
+<ce>
 
 QuestLogEntry:  [1010]
 %qdt: 도둑 길드의 _qgiver_는
