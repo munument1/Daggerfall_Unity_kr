@@ -13,18 +13,17 @@
 - `current_korean`: 현재 한국어
 - `reviewed_korean`: 줄바꿈 수정안
 - `status`: `미검수`, `검수 중`, `완료`, `재확인`
-- `issue_type`: 문제 유형
 - `notes`: 번역 문제나 인게임 확인 메모
 
 다음 관리자·검증용 열은 삭제하지 않고 숨긴다.
 
 - `record_id`, `source_file`, `quest_id`, `key`, `header`
-- `reviewer`
+- `reviewer`, `issue_type`
 - `source_hash`, `content_signature`
 - `token_sequence`, `structural_sequence`
 - `current_lines`, `current_max_width`, `check_result`
 
-`reviewer`는 사람이 직접 입력하지 않는다. 수정자 확인은 Google Sheets의 버전 기록과 셀 수정 기록을 사용한다. 숨긴 열은 CSV 왕복 호환성을 위해 당분간 유지한다.
+`reviewer`와 `issue_type`은 사람이 직접 입력하지 않는다. 수정자 확인은 Google Sheets의 버전 기록과 셀 수정 기록을 사용한다. 숨긴 열은 CSV 왕복 호환성을 위해 당분간 유지한다.
 
 ## 허용·차단 규칙
 
@@ -71,9 +70,9 @@ python tools/linebreak_review_pipeline.py extract \
 3. `reviewed_korean`에서 줄바꿈과 `<ce>` 배치만 수정한다.
 4. 실제 게임 화면에서 확인한다.
 5. 이상이 없으면 `status`를 `완료`로 바꾼다.
-6. 번역 문제는 `notes`에 기록하고 `status`를 `재확인`으로 둔다.
+6. 번역 문제나 특이사항은 `notes`에 기록하고 `status`를 `재확인`으로 둔다.
 
-수정자 이름은 별도로 입력하지 않는다. 관리자는 Google Sheets 버전 기록으로 변경자를 확인한다.
+수정자 이름과 문제 유형은 별도로 입력하지 않는다. 관리자는 Google Sheets 버전 기록으로 변경자를 확인한다.
 
 ## 3. 완료 행 사전 검증
 
