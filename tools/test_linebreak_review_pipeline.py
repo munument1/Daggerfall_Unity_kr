@@ -120,6 +120,32 @@ class PipelineTests(unittest.TestCase):
         result = self.run_cli("validate-sheet", "--localized-dir", self.localized, "--sheet", self.output, expected=1)
         self.assertIn("non-whitespace Korean content changed", result.stderr)
 
+    def test_multiple_tab_csvs_are_combined(self):
+        rows = self.extract()
+        rows[0]["status"] = "완료"
+        self.save(rows)
+        empty_tab = self.output.with_name("empty-tab.csv")
+        with empty_tab.open("w", encoding="utf-8-sig", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=rows[0].keys())
+            writer.writeheader()
+        self.run_cli(
+            "validate-sheet", "--localized-dir", self.localized,
+            "--sheet", self.output, empty_tab,
+        )
+
+    def test_duplicate_rows_across_tabs_are_rejected(self):
+        rows = self.extract()
+        duplicate_tab = self.output.with_name("duplicate-tab.csv")
+        with duplicate_tab.open("w", encoding="utf-8-sig", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=rows[0].keys())
+            writer.writeheader()
+            writer.writerows(rows)
+        result = self.run_cli(
+            "validate-sheet", "--localized-dir", self.localized,
+            "--sheet", self.output, duplicate_tab, expected=1,
+        )
+        self.assertIn("duplicate record_id across sheets", result.stderr)
+
     def test_unapproved_rows_are_not_written(self):
         self.extract()
         self.run_cli("apply", "--localized-dir", self.localized, "--sheet", self.output, "--output-dir", self.applied)
