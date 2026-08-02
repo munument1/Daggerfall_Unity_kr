@@ -1,6 +1,9 @@
 name: Export official quests (temporary)
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - agent/linebreak-review-sheet
