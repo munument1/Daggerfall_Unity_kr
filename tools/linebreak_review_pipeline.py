@@ -212,16 +212,33 @@ def load_sheet(path: Path) -> list[dict[str, str]]:
         reader = csv.DictReader(handle)
         missing = [name for name in CSV_COLUMNS if name not in (reader.fieldnames or [])]
         if missing:
-            raise ValueError(f"sheet is missing columns: {', '.join(missing)}")
+            raise ValueError(f"{path}: sheet is missing columns: {', '.join(missing)}")
         rows = list(reader)
     seen: set[str] = set()
     for row in rows:
         record_id = row["record_id"]
         if not record_id:
-            raise ValueError("empty record_id")
+            raise ValueError(f"{path}: empty record_id")
         if record_id in seen:
-            raise ValueError(f"duplicate record_id: {record_id}")
+            raise ValueError(f"{path}: duplicate record_id: {record_id}")
         seen.add(record_id)
+    return rows
+
+
+def load_sheets(paths: Iterable[Path]) -> list[dict[str, str]]:
+    """Combine category-tab CSV exports while rejecting duplicate review rows."""
+    rows: list[dict[str, str]] = []
+    locations: dict[str, Path] = {}
+    for path in paths:
+        for row in load_sheet(path):
+            record_id = row["record_id"]
+            previous = locations.get(record_id)
+            if previous is not None:
+                raise ValueError(
+                    f"duplicate record_id across sheets: {record_id} ({previous} / {path})"
+                )
+            locations[record_id] = path
+            rows.append(row)
     return rows
 
 
@@ -257,7 +274,7 @@ def rows_by_quest(rows: Iterable[dict[str, str]]) -> dict[str, dict[str, dict[st
 
 
 def validate_sheet(args: argparse.Namespace) -> None:
-    rows = load_sheet(args.sheet)
+    rows = load_sheets(args.sheets)
     grouped = rows_by_quest(rows)
     errors: list[str] = []
     approved_count = 0
@@ -285,7 +302,7 @@ def validate_sheet(args: argparse.Namespace) -> None:
 
 
 def apply_sheet(args: argparse.Namespace) -> None:
-    rows = load_sheet(args.sheet)
+    rows = load_sheets(args.sheets)
     grouped = rows_by_quest(rows)
     errors: list[str] = []
     changed_files = 0
@@ -349,12 +366,12 @@ def build_parser() -> argparse.ArgumentParser:
 
     check = sub.add_parser("validate-sheet", help="validate approved sheet rows without writing files")
     check.add_argument("--localized-dir", type=Path, required=True)
-    check.add_argument("--sheet", type=Path, required=True)
+    check.add_argument("--sheet", dest="sheets", type=Path, nargs="+", required=True)
     check.set_defaults(func=validate_sheet)
 
     apply_cmd = sub.add_parser("apply", help="apply approved sheet rows to a separate output directory")
     apply_cmd.add_argument("--localized-dir", type=Path, required=True)
-    apply_cmd.add_argument("--sheet", type=Path, required=True)
+    apply_cmd.add_argument("--sheet", dest="sheets", type=Path, nargs="+", required=True)
     apply_cmd.add_argument("--output-dir", type=Path, required=True)
     apply_cmd.set_defaults(func=apply_sheet)
     return parser
