@@ -4,7 +4,13 @@
 
 현재 1차 범위는 **퀘스트·NPC 대화 265개, 메시지 3,816개**다. 루트 퀘스트 파일과 `text/Quests` 미러를 중복 검수하지 않도록 `text/Quests`를 기준 데이터로 사용한다.
 
-## 검수 시트 구성
+## 검수 탭 구성
+
+사람들이 출력 형식을 혼동하지 않도록 다음 탭으로 분리한다.
+
+- `가운데 정렬`: `<ce>`가 붙는 대화창·선택지 패널
+- `퀘스트 일지`: `%qdt`, `%qdat`, `QuestLogEntry` 문구
+- `일반 메시지`: 위 두 형식에 속하지 않는 메시지
 
 검수자 화면에는 다음 열만 표시한다.
 
@@ -14,16 +20,9 @@
 - `reviewed_korean`: 줄바꿈 수정안
 - `status`: `미검수`, `검수 중`, `완료`, `재확인`
 - `notes`: 번역 문제나 인게임 확인 메모
+- `자동 경고`: 예상 가로 폭이 기준을 넘을 때 표시되는 사전 경고
 
-다음 관리자·검증용 열은 삭제하지 않고 숨긴다.
-
-- `record_id`, `source_file`, `quest_id`, `key`, `header`
-- `reviewer`, `issue_type`
-- `source_hash`, `content_signature`
-- `token_sequence`, `structural_sequence`
-- `current_lines`, `current_max_width`, `check_result`
-
-`reviewer`와 `issue_type`은 사람이 직접 입력하지 않는다. 수정자 확인은 Google Sheets의 버전 기록과 셀 수정 기록을 사용한다. 숨긴 열은 CSV 왕복 호환성을 위해 당분간 유지한다.
+관리자·검증용 ID, 파일 경로, 키, 해시, 토큰, 구조 정보 열은 삭제하지 않고 숨긴다. 수정자 이름은 별도로 입력하지 않으며 Google Sheets 버전 기록으로 확인한다.
 
 ## 허용·차단 규칙
 
@@ -61,37 +60,43 @@ python tools/linebreak_review_pipeline.py extract \
   A0C00Y11 N0B00Y17 S0000999
 ```
 
-생성된 CSV를 Google Sheets에 가져온다. `english`, `current_korean`, `reviewed_korean` 열은 폭을 충분히 넓혀 셀 자동 줄바꿈이 실제 개행처럼 보이지 않게 한다.
+추출 결과를 `category` 값에 따라 세 탭으로 나눈다. 각 탭은 같은 CSV 열 구조를 유지해야 한다.
 
 ## 2. 공동검수 운영
 
-1. 필터로 담당 범위를 정한다.
+1. 작업할 문구의 출력 형식에 맞는 탭을 연다.
 2. 작업을 시작할 때 `status`를 `검수 중`으로 바꾼다.
 3. `reviewed_korean`에서 줄바꿈과 `<ce>` 배치만 수정한다.
-4. 실제 게임 화면에서 확인한다.
+4. `자동 경고`를 참고하고 실제 게임 화면에서 확인한다.
 5. 이상이 없으면 `status`를 `완료`로 바꾼다.
-6. 번역 문제나 특이사항은 `notes`에 기록하고 `status`를 `재확인`으로 둔다.
+6. 번역 문제나 특이사항은 `notes`에 기록하고 필요하면 `status`를 `재확인`으로 둔다.
 
-수정자 이름과 문제 유형은 별도로 입력하지 않는다. 관리자는 Google Sheets 버전 기록으로 변경자를 확인한다.
+`자동 경고`는 한글·전각 문자를 2칸, 영문·숫자·기호를 1칸으로 계산하는 보수적인 추정치다. 실제 DFU 폰트 픽셀 폭의 확정 판정은 아니다.
 
 ## 3. 완료 행 사전 검증
 
-검수 탭을 CSV로 내려받은 뒤 실행한다.
+세 탭을 각각 CSV로 내려받아 한 번에 전달한다. 빈 탭도 헤더가 있는 CSV라면 함께 넘겨도 된다.
 
 ```bash
 python tools/linebreak_review_pipeline.py validate-sheet \
   --localized-dir text/Quests \
-  --sheet work/linebreak-review/reviewed.csv
+  --sheet \
+    work/linebreak-review/centered.csv \
+    work/linebreak-review/journal.csv \
+    work/linebreak-review/general.csv
 ```
 
-`완료`, `승인`, `approved`, `done` 상태인 행만 검사한다. 검증 오류가 하나라도 있으면 종료 코드 1로 실패한다.
+`완료`, `승인`, `approved`, `done` 상태인 행만 검사한다. 탭 사이에 같은 `record_id`가 중복되면 실패한다.
 
 ## 4. 별도 폴더에 적용
 
 ```bash
 python tools/linebreak_review_pipeline.py apply \
   --localized-dir text/Quests \
-  --sheet work/linebreak-review/reviewed.csv \
+  --sheet \
+    work/linebreak-review/centered.csv \
+    work/linebreak-review/journal.csv \
+    work/linebreak-review/general.csv \
   --output-dir work/linebreak-review/applied
 ```
 
@@ -112,6 +117,8 @@ python -m unittest tools/test_linebreak_review_pipeline.py -v
 - 마지막 메시지 뒤 심볼 주석의 본문 제외 및 적용 시 보존
 - 공백 외 문구 변경 차단
 - 미승인 행 미출력
+- 여러 탭 CSV 동시 검증·적용
+- 탭 간 중복 `record_id` 차단
 
 ## 현재 한계
 
