@@ -16,20 +16,28 @@ from typing import Iterable
 HEADER_RE = re.compile(
     r"^(QuestorOffer|RefuseQuest|AcceptQuest|QuestFail|QuestComplete|"
     r"RumorsDuringQuest|RumorsPostfailure|RumorsPostsuccess|"
-    r"QuestorPostsuccess|QuestorPostfailure|QuestLogEntry|Message):"
+    r"QuestorPostsuccess|QuestorPostfailure|QuestLogEntry|QuestTimeLapse|Message):"
     r"\s*(?:\[(\d+)\]|(\d+))?\s*$"
 )
-TOKEN_RE = re.compile(r"(?:%[A-Za-z0-9-]+|=[A-Za-z0-9.]+_|_{1,3}[A-Za-z0-9.]+_)")
+TOKEN_RE = re.compile(r"(?:==?[A-Za-z0-9.$]+_|_{1,4}[A-Za-z0-9.$]+_|%[A-Za-z0-9]+(?:-self)?)")
 STRUCTURAL_RE = re.compile(r"<--->|%qdt|%qdat")
 SYMBOLS_MARKER = "-- Symbols used in the QRC file:"
+EDITORIAL_NOTE_RE = re.compile(r"^-\s*(?:moved|corrected|lowered|changed)\b", re.IGNORECASE)
 APPROVED_STATUSES = {"완료", "승인", "approved", "done"}
+MACRO_WIDTH = {
+    "%pcn": 16, "%pcf": 10, "%pct": 14, "%ra": 10, "%reg": 14,
+    "%rn": 14, "%rt": 12, "%g": 4, "%g1": 4, "%g2": 4,
+    "%g2self": 8, "%g3": 4, "%g4": 4, "%G": 4, "%G1": 4,
+    "%G2": 4, "%G2self": 8, "%G3": 4, "%G4": 4, "%god": 10,
+    "%oth": 10, "%qdt": 24, "%qdat": 24,
+}
 CSV_COLUMNS = [
     "record_id", "category", "source_file", "quest_id", "key", "header",
-    "english", "current_korean", "reviewed_korean", "status", "reviewer",
-    "issue_type", "notes", "source_hash", "content_signature",
-    "token_sequence", "structural_sequence", "current_lines",
-    "current_max_width", "check_result",
+    "english", "current_korean", "reviewed_korean", "status", "notes",
+    "source_hash", "content_signature", "token_sequence",
+    "structural_sequence", "current_lines", "current_max_width",
 ]
+REQUIRED_COLUMNS = CSV_COLUMNS
 
 
 @dataclass(frozen=True)
@@ -37,6 +45,7 @@ class Block:
     key: str
     header: str
     body: str
+    trailer: str = ""
 
 
 def read_text(path: Path) -> str:
@@ -74,9 +83,28 @@ def parse_blocks(qrc: str) -> list[Block]:
         number = match.group(2) or match.group(3) or str(index)
         key = f"{match.group(1)}:{number}"
         body_lines = lines[start + 1:end]
+        pos = len(body_lines) - 1
+        while pos >= 0 and not body_lines[pos].strip():
+            pos -= 1
+        comment_end = pos
+        while pos >= 0 and (
+            body_lines[pos].lstrip().startswith("--")
+            or EDITORIAL_NOTE_RE.match(body_lines[pos].strip())
+        ):
+            pos -= 1
+        seen_comment = pos < comment_end
+        if seen_comment:
+            while pos >= 0 and not body_lines[pos].strip():
+                pos -= 1
+            trailer_start = pos + 1
+            trailer_lines = body_lines[trailer_start:]
+            body_lines = body_lines[:trailer_start]
+        else:
+            trailer_lines = []
         while body_lines and not body_lines[-1].strip():
             body_lines.pop()
-        blocks.append(Block(key=key, header=header, body="\n".join(body_lines)))
+        trailer = ("\n" + "\n".join(trailer_lines)) if trailer_lines else ""
+        blocks.append(Block(key=key, header=header, body="\n".join(body_lines), trailer=trailer))
     return blocks
 
 
@@ -94,13 +122,42 @@ def sequence(pattern: re.Pattern[str], text: str) -> list[str]:
     return pattern.findall(text)
 
 
+def char_width(char: str) -> int:
+    if char == "\u2060" or unicodedata.combining(char):
+        return 0
+    if char == "\t":
+        return 4
+    if char.isspace():
+        return 1
+    return 2 if unicodedata.east_asian_width(char) in {"W", "F"} else 1
+
+
+def token_width(token: str) -> int:
+    if token in MACRO_WIDTH:
+        return MACRO_WIDTH[token]
+    if token.startswith("%"):
+        return 8
+    if token.startswith("="):
+        return 7 if re.search(r"time|day|gold|reward|amount|count|part", token, re.I) else 12
+    if token.startswith("____"):
+        return 20
+    if token.startswith("___"):
+        return 18
+    if token.startswith("__"):
+        return 15
+    if token.startswith("_"):
+        return 14
+    return sum(char_width(char) for char in token)
+
+
 def visual_width(text: str) -> int:
-    width = 0
-    for char in text:
-        if unicodedata.combining(char):
-            continue
-        width += 2 if unicodedata.east_asian_width(char) in {"W", "F"} else 1
-    return width
+    total = 0
+    position = 0
+    for match in TOKEN_RE.finditer(text):
+        total += sum(char_width(char) for char in text[position:match.start()])
+        total += token_width(match.group(0))
+        position = match.end()
+    return total + sum(char_width(char) for char in text[position:])
 
 
 def body_metrics(body: str) -> tuple[int, int]:
@@ -127,10 +184,19 @@ def centered_line_errors(body: str) -> list[str]:
     return errors
 
 
+def is_centered_panel(body: str) -> bool:
+    """Return true only when every visible non-separator line is centered."""
+    visible = [
+        raw.strip() for raw in body.splitlines()
+        if raw.strip() and raw.strip() != "<--->"
+    ]
+    return bool(visible) and all(line.startswith("<ce>") for line in visible)
+
+
 def classify(block: Block) -> str:
     if block.key.startswith("QuestLogEntry:") or "%qdt" in block.body or "%qdat" in block.body:
         return "퀘스트 일지"
-    if "<ce>" in block.body:
+    if is_centered_panel(block.body):
         return "가운데 정렬 패널"
     return "일반 메시지"
 
@@ -165,8 +231,6 @@ def make_record(quest_id: str, source_file: str, en: Block, ko: Block) -> dict[s
         "current_korean": ko.body,
         "reviewed_korean": ko.body,
         "status": "미검수",
-        "reviewer": "",
-        "issue_type": "",
         "notes": "",
         "source_hash": sha256_text(ko.body),
         "content_signature": sha256_text(canonical_content(ko.body)),
@@ -174,7 +238,6 @@ def make_record(quest_id: str, source_file: str, en: Block, ko: Block) -> dict[s
         "structural_sequence": json.dumps(sequence(STRUCTURAL_RE, ko.body), ensure_ascii=False),
         "current_lines": lines,
         "current_max_width": max_width,
-        "check_result": "대기",
     }
 
 
@@ -191,9 +254,9 @@ def export_csv(args: argparse.Namespace) -> None:
         ko_message_qrc, _ = split_qrc_suffix(ko_qrc)
         en_blocks, ko_blocks = parse_blocks(en_message_qrc), parse_blocks(ko_message_qrc)
         verify_pair(qid, en_blocks, ko_blocks)
-        source_file = ko_path.as_posix()
+        source_file = f"text/Quests/{ko_path.name}"
         for en, ko in zip(en_blocks, ko_blocks):
-            if "<ce>" in ko.body:
+            if classify(ko) == "가운데 정렬 패널":
                 source_errors = centered_line_errors(ko.body)
                 if source_errors:
                     raise ValueError(f"{qid} {ko.key}: {source_errors[0]}")
@@ -210,7 +273,7 @@ def export_csv(args: argparse.Namespace) -> None:
 def load_sheet(path: Path) -> list[dict[str, str]]:
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
-        missing = [name for name in CSV_COLUMNS if name not in (reader.fieldnames or [])]
+        missing = [name for name in REQUIRED_COLUMNS if name not in (reader.fieldnames or [])]
         if missing:
             raise ValueError(f"{path}: sheet is missing columns: {', '.join(missing)}")
         rows = list(reader)
@@ -261,7 +324,7 @@ def validate_review(row: dict[str, str], current: Block) -> list[str]:
     expected_structural = json.loads(row["structural_sequence"] or "[]")
     if expected_structural != sequence(STRUCTURAL_RE, reviewed):
         errors.append("<--->/%qdt/%qdat sequence changed")
-    if "<ce>" in current.body:
+    if classify(current) == "가운데 정렬 패널":
         errors.extend(centered_line_errors(reviewed))
     return errors
 
@@ -330,7 +393,7 @@ def apply_sheet(args: argparse.Namespace) -> None:
                     body = row["reviewed_korean"].rstrip()
                     file_applied += 1
                     applied_rows += 1
-            rendered.append(block.header + "\n" + body)
+            rendered.append(block.header + "\n" + body + block.trailer)
 
         missing_keys = sorted(set(quest_rows) - {block.key for block in blocks})
         errors.extend(f"{qid} {key}: block no longer exists" for key in missing_keys if approved(quest_rows[key]))
