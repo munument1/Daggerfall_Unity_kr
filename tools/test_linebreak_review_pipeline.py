@@ -20,6 +20,9 @@ Message:  1000
 <--->
 <ce>Second choice.
 
+-- Symbols used in the QRC file:
+-- _name_ occurs 1 time.
+
 QBN:
 variable _done_
 """
@@ -34,6 +37,9 @@ Message:  1000
 <ce>줄바꿈 시험입니다.
 <--->
 <ce>두 번째 선택지입니다.
+
+-- Symbols used in the QRC file:
+-- _name_ occurs 1 time.
 
 QBN:
 variable _done_
@@ -83,6 +89,28 @@ class PipelineTests(unittest.TestCase):
         self.run_cli("apply", "--localized-dir", self.localized, "--sheet", self.output, "--output-dir", self.applied)
         applied = (self.applied / "TEST0001-LOC.txt").read_text(encoding="utf-8")
         self.assertIn("<ce>두 번째\n<ce>선택지입니다.", applied)
+
+    def test_centered_line_without_ce_is_rejected(self):
+        rows = self.extract()
+        rows[0]["status"] = "완료"
+        rows[0]["reviewed_korean"] = rows[0]["reviewed_korean"].replace(
+            "<ce>줄바꿈 시험입니다.", "줄바꿈 시험입니다."
+        )
+        self.save(rows)
+        result = self.run_cli(
+            "validate-sheet", "--localized-dir", self.localized, "--sheet", self.output, expected=1
+        )
+        self.assertIn("is missing <ce>", result.stderr)
+
+    def test_symbol_comment_suffix_is_preserved(self):
+        rows = self.extract()
+        self.assertNotIn("Symbols used", rows[0]["current_korean"])
+        rows[0]["status"] = "완료"
+        self.save(rows)
+        self.run_cli("apply", "--localized-dir", self.localized, "--sheet", self.output, "--output-dir", self.applied)
+        applied = (self.applied / "TEST0001-LOC.txt").read_text(encoding="utf-8")
+        self.assertIn("-- Symbols used in the QRC file:", applied)
+        self.assertIn("-- _name_ occurs 1 time.", applied)
 
     def test_content_change_is_rejected(self):
         rows = self.extract()
