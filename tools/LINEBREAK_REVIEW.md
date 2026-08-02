@@ -6,7 +6,7 @@
 
 정식 Google Sheets:
 
-https://docs.google.com/spreadsheets/d/16gCOVZ-f_yMGOtB9W4jQocZCbyNPQjmwV-e00706qZY/edit?gid=1161325612#gid=1161325612
+https://docs.google.com/spreadsheets/d/1Dfr8wvMRvkU2HlpYj9RNf0oc44WtxIGDhllF2JaQbz0/edit?usp=sharing
 
 ## 시트 구성
 
