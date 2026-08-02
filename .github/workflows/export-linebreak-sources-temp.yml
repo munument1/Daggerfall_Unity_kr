@@ -1,0 +1,46 @@
+name: Export linebreak sources (temporary)
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Korean main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: korean
+          sparse-checkout: |
+            text/Quests
+          sparse-checkout-cone-mode: false
+
+      - name: Checkout official Daggerfall Unity source
+        uses: actions/checkout@v4
+        with:
+          repository: Interkarma/daggerfall-unity
+          ref: 81e89e90c27bc3c1a7a61871e545fad129174dec
+          path: official
+          sparse-checkout: |
+            Assets/StreamingAssets/Quests
+          sparse-checkout-cone-mode: false
+
+      - name: Assemble source bundle
+        run: |
+          mkdir -p linebreak-sources/korean linebreak-sources/official
+          cp -a korean/text/Quests/. linebreak-sources/korean/
+          cp -a official/Assets/StreamingAssets/Quests/. linebreak-sources/official/
+
+      - name: Upload sources
+        uses: actions/upload-artifact@v4
+        with:
+          name: dfu-linebreak-sources
+          path: linebreak-sources
+          if-no-files-found: error
+          retention-days: 1
