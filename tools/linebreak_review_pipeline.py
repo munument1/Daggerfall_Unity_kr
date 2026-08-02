@@ -23,6 +23,7 @@ TOKEN_RE = re.compile(r"(?:==?[A-Za-z0-9.$]+_|_{1,4}[A-Za-z0-9.$]+_|%[A-Za-z0-9]
 STRUCTURAL_RE = re.compile(r"<--->|%qdt|%qdat")
 SYMBOLS_MARKER = "-- Symbols used in the QRC file:"
 EDITORIAL_NOTE_RE = re.compile(r"^-\s*(?:moved|corrected|lowered|changed)\b", re.IGNORECASE)
+CENTER_SEPARATOR_LABEL = "──── 선택지 구분 ────"
 APPROVED_STATUSES = {"완료", "승인", "approved", "done"}
 MACRO_WIDTH = {
     "%pcn": 16, "%pcf": 10, "%pct": 14, "%ra": 10, "%reg": 14,
@@ -184,6 +185,42 @@ def centered_line_errors(body: str) -> list[str]:
     return errors
 
 
+def centered_body_to_sheet(body: str) -> str:
+    """Hide QRC control markers and discard blank lines in centered review rows."""
+    visible: list[str] = []
+    for raw in body.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        if line == "<--->":
+            visible.append(CENTER_SEPARATOR_LABEL)
+            continue
+        if line.startswith("<ce>"):
+            line = line[4:].lstrip()
+        if not line:
+            continue
+        visible.append(line)
+    return "\n".join(visible)
+
+
+def centered_sheet_to_body(text: str) -> str:
+    """Restore QRC control markers from the simplified centered review view."""
+    restored: list[str] = []
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        if line in {CENTER_SEPARATOR_LABEL, "<--->"}:
+            restored.append("<--->")
+            continue
+        if line.startswith("<ce>"):
+            line = line[4:].lstrip()
+        if not line:
+            continue
+        restored.append("<ce>" + line)
+    return "\n".join(restored)
+
+
 def is_centered_panel(body: str) -> bool:
     """Return true only when every visible non-separator line is centered."""
     visible = [
@@ -220,16 +257,23 @@ def verify_pair(quest_id: str, english: list[Block], korean: list[Block]) -> Non
 
 def make_record(quest_id: str, source_file: str, en: Block, ko: Block) -> dict[str, str | int]:
     lines, max_width = body_metrics(ko.body)
+    category = classify(ko)
+    if category == "가운데 정렬 패널":
+        english = centered_body_to_sheet(en.body)
+        current_korean = centered_body_to_sheet(ko.body)
+    else:
+        english = en.body
+        current_korean = ko.body
     return {
         "record_id": f"quest:{quest_id}:{ko.key}",
-        "category": classify(ko),
+        "category": category,
         "source_file": source_file,
         "quest_id": quest_id,
         "key": ko.key,
         "header": ko.header,
-        "english": en.body,
-        "current_korean": ko.body,
-        "reviewed_korean": ko.body,
+        "english": english,
+        "current_korean": current_korean,
+        "reviewed_korean": current_korean,
         "status": "미검수",
         "notes": "",
         "source_hash": sha256_text(ko.body),
@@ -311,7 +355,12 @@ def approved(row: dict[str, str]) -> bool:
 
 def validate_review(row: dict[str, str], current: Block) -> list[str]:
     errors: list[str] = []
-    reviewed = row["reviewed_korean"].rstrip()
+    reviewed_sheet = row["reviewed_korean"].rstrip()
+    reviewed = (
+        centered_sheet_to_body(reviewed_sheet)
+        if classify(current) == "가운데 정렬 패널"
+        else reviewed_sheet
+    )
     if not reviewed:
         return ["reviewed_korean is empty"]
     if row["source_hash"] != sha256_text(current.body):
@@ -327,6 +376,13 @@ def validate_review(row: dict[str, str], current: Block) -> list[str]:
     if classify(current) == "가운데 정렬 패널":
         errors.extend(centered_line_errors(reviewed))
     return errors
+
+
+def reviewed_body(row: dict[str, str], current: Block) -> str:
+    reviewed = row["reviewed_korean"].rstrip()
+    if classify(current) == "가운데 정렬 패널":
+        return centered_sheet_to_body(reviewed)
+    return reviewed
 
 
 def rows_by_quest(rows: Iterable[dict[str, str]]) -> dict[str, dict[str, dict[str, str]]]:
@@ -390,7 +446,7 @@ def apply_sheet(args: argparse.Namespace) -> None:
                 if row_errors:
                     errors.extend(f"{qid} {block.key}: {message}" for message in row_errors)
                 else:
-                    body = row["reviewed_korean"].rstrip()
+                    body = reviewed_body(row, block)
                     file_applied += 1
                     applied_rows += 1
             rendered.append(block.header + "\n" + body + block.trailer)
