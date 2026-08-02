@@ -83,24 +83,50 @@ class PipelineTests(unittest.TestCase):
     def test_linebreak_only_review_is_applied(self):
         rows = self.extract()
         rows[0]["status"] = "완료"
-        rows[0]["reviewed_korean"] = "<ce>안녕하세요, _name_ 님. 줄바꿈\n<ce>시험입니다.\n<--->\n<ce>두 번째\n<ce>선택지입니다."
+        rows[0]["reviewed_korean"] = (
+            "안녕하세요, _name_ 님. 줄바꿈\n"
+            "시험입니다.\n"
+            "──── 선택지 구분 ────\n"
+            "두 번째\n"
+            "선택지입니다."
+        )
         self.save(rows)
         self.run_cli("validate-sheet", "--localized-dir", self.localized, "--sheet", self.output)
         self.run_cli("apply", "--localized-dir", self.localized, "--sheet", self.output, "--output-dir", self.applied)
         applied = (self.applied / "TEST0001-LOC.txt").read_text(encoding="utf-8")
         self.assertIn("<ce>두 번째\n<ce>선택지입니다.", applied)
+        self.assertIn("<--->", applied)
 
-    def test_centered_line_without_ce_is_rejected(self):
+    def test_centered_export_hides_markers_and_removes_blank_lines(self):
+        korean = KOREAN.replace(
+            "<ce>안녕하세요, _name_ 님.\n<ce>줄바꿈 시험입니다.",
+            "<ce>안녕하세요, _name_ 님.\n\n<ce>줄바꿈 시험입니다.",
+        )
+        (self.localized / "TEST0001-LOC.txt").write_text(korean, encoding="utf-8")
+        rows = self.extract()
+        self.assertNotIn("<ce>", rows[0]["english"])
+        self.assertNotIn("<ce>", rows[0]["current_korean"])
+        self.assertNotIn("<--->", rows[0]["current_korean"])
+        self.assertNotIn("\n\n", rows[0]["current_korean"])
+        self.assertIn("──── 선택지 구분 ────", rows[0]["current_korean"])
+
+    def test_centered_blank_lines_are_not_reintroduced_on_apply(self):
+        korean = KOREAN.replace(
+            "<ce>안녕하세요, _name_ 님.\n<ce>줄바꿈 시험입니다.",
+            "<ce>안녕하세요, _name_ 님.\n\n<ce>줄바꿈 시험입니다.",
+        )
+        (self.localized / "TEST0001-LOC.txt").write_text(korean, encoding="utf-8")
         rows = self.extract()
         rows[0]["status"] = "완료"
         rows[0]["reviewed_korean"] = rows[0]["reviewed_korean"].replace(
-            "<ce>줄바꿈 시험입니다.", "줄바꿈 시험입니다."
+            "안녕하세요, _name_ 님.\n", "안녕하세요, _name_ 님.\n\n"
         )
         self.save(rows)
-        result = self.run_cli(
-            "validate-sheet", "--localized-dir", self.localized, "--sheet", self.output, expected=1
-        )
-        self.assertIn("is missing <ce>", result.stderr)
+        self.run_cli("validate-sheet", "--localized-dir", self.localized, "--sheet", self.output)
+        self.run_cli("apply", "--localized-dir", self.localized, "--sheet", self.output, "--output-dir", self.applied)
+        applied = (self.applied / "TEST0001-LOC.txt").read_text(encoding="utf-8")
+        self.assertIn("<ce>안녕하세요, _name_ 님.\n<ce>줄바꿈 시험입니다.", applied)
+        self.assertNotIn("<ce>안녕하세요, _name_ 님.\n\n<ce>줄바꿈 시험입니다.", applied)
 
     def test_symbol_comment_suffix_is_preserved(self):
         rows = self.extract()
