@@ -21,6 +21,7 @@ HEADER_RE = re.compile(
 )
 TOKEN_RE = re.compile(r"(?:%[A-Za-z0-9-]+|=[A-Za-z0-9.]+_|_{1,3}[A-Za-z0-9.]+_)")
 STRUCTURAL_RE = re.compile(r"<--->|%qdt|%qdat")
+SYMBOLS_MARKER = "-- Symbols used in the QRC file:"
 APPROVED_STATUSES = {"완료", "승인", "approved", "done"}
 CSV_COLUMNS = [
     "record_id", "category", "source_file", "quest_id", "key", "header",
@@ -48,6 +49,17 @@ def split_sections(text: str) -> tuple[str, str, str]:
     pre, rest = text.split("QRC:", 1)
     qrc, qbn = rest.split("QBN:", 1)
     return pre + "QRC:\n", qrc.strip("\n"), "QBN:" + qbn
+
+
+def split_qrc_suffix(qrc: str) -> tuple[str, str]:
+    """Separate trailing symbol comments so they are never treated as message text."""
+    marker = qrc.find(SYMBOLS_MARKER)
+    if marker < 0:
+        return qrc.rstrip("\n"), ""
+    suffix_start = marker
+    while suffix_start > 0 and qrc[suffix_start - 1] == "\n":
+        suffix_start -= 1
+    return qrc[:suffix_start].rstrip("\n"), qrc[suffix_start:]
 
 
 def parse_blocks(qrc: str) -> list[Block]:
@@ -101,6 +113,18 @@ def body_metrics(body: str) -> tuple[int, int]:
             line = line[4:]
         visible_lines.append(line)
     return len(visible_lines), max((visual_width(line) for line in visible_lines), default=0)
+
+
+def centered_line_errors(body: str) -> list[str]:
+    """Require every visible line in a centered panel to carry its own <ce> marker."""
+    errors: list[str] = []
+    for line_number, raw in enumerate(body.splitlines(), 1):
+        line = raw.strip()
+        if not line or line == "<--->":
+            continue
+        if not line.startswith("<ce>"):
+            errors.append(f"centered panel line {line_number} is missing <ce>")
+    return errors
 
 
 def classify(block: Block) -> str:
@@ -163,10 +187,17 @@ def export_csv(args: argparse.Namespace) -> None:
             raise FileNotFoundError(f"missing pair for {qid}: {en_path} / {ko_path}")
         _, en_qrc, _ = split_sections(read_text(en_path))
         _, ko_qrc, _ = split_sections(read_text(ko_path))
-        en_blocks, ko_blocks = parse_blocks(en_qrc), parse_blocks(ko_qrc)
+        en_message_qrc, _ = split_qrc_suffix(en_qrc)
+        ko_message_qrc, _ = split_qrc_suffix(ko_qrc)
+        en_blocks, ko_blocks = parse_blocks(en_message_qrc), parse_blocks(ko_message_qrc)
         verify_pair(qid, en_blocks, ko_blocks)
         source_file = ko_path.as_posix()
-        records.extend(make_record(qid, source_file, en, ko) for en, ko in zip(en_blocks, ko_blocks))
+        for en, ko in zip(en_blocks, ko_blocks):
+            if "<ce>" in ko.body:
+                source_errors = centered_line_errors(ko.body)
+                if source_errors:
+                    raise ValueError(f"{qid} {ko.key}: {source_errors[0]}")
+            records.append(make_record(qid, source_file, en, ko))
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8-sig", newline="") as handle:
@@ -213,6 +244,8 @@ def validate_review(row: dict[str, str], current: Block) -> list[str]:
     expected_structural = json.loads(row["structural_sequence"] or "[]")
     if expected_structural != sequence(STRUCTURAL_RE, reviewed):
         errors.append("<--->/%qdt/%qdat sequence changed")
+    if "<ce>" in current.body:
+        errors.extend(centered_line_errors(reviewed))
     return errors
 
 
@@ -234,7 +267,8 @@ def validate_sheet(args: argparse.Namespace) -> None:
             errors.append(f"{qid}: localized file not found")
             continue
         _, qrc, _ = split_sections(read_text(ko_path))
-        blocks = {block.key: block for block in parse_blocks(qrc)}
+        message_qrc, _ = split_qrc_suffix(qrc)
+        blocks = {block.key: block for block in parse_blocks(message_qrc)}
         for key, row in quest_rows.items():
             if not approved(row):
                 continue
@@ -264,7 +298,8 @@ def apply_sheet(args: argparse.Namespace) -> None:
             errors.append(f"{qid}: localized file not found")
             continue
         pre, qrc, qbn = split_sections(read_text(source))
-        blocks = parse_blocks(qrc)
+        message_qrc, qrc_suffix = split_qrc_suffix(qrc)
+        blocks = parse_blocks(message_qrc)
         rendered: list[str] = []
         file_applied = 0
         for block in blocks:
@@ -285,7 +320,7 @@ def apply_sheet(args: argparse.Namespace) -> None:
         if file_applied:
             target = args.output_dir / source.name
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(pre + "\n\n".join(rendered) + "\n\n" + qbn, encoding="utf-8", newline="\n")
+            target.write_text(pre + "\n\n".join(rendered) + qrc_suffix + "\n\n" + qbn, encoding="utf-8", newline="\n")
             changed_files += 1
             report.append({"quest_id": qid, "applied_rows": file_applied, "output": target.as_posix()})
 
