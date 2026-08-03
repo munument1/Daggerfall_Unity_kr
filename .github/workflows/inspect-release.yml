@@ -3,11 +3,10 @@ name: Publish Daggerfall Unity Korean r3
 on:
   pull_request:
     branches: [main]
-    types: [synchronize, reopened]
+    types: [opened]
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   publish:
@@ -176,7 +175,7 @@ jobs:
             --notes-file "$NOTES" \
             --latest
 
-      - name: Verify published assets and report
+      - name: Verify published assets
         run: |
           set -euo pipefail
           RELEASE_JSON="$WORK/release.json"
@@ -189,15 +188,8 @@ jobs:
             'SHA256SUMS.txt'; do
             jq -e --arg asset "$asset" '.assets[] | select(.name == $asset and .state == "uploaded")' "$RELEASE_JSON" >/dev/null
           done
-          URL="$(jq -r '.url' "$RELEASE_JSON")"
-          HASHES="$(cat "$SUMS")"
-          gh pr comment "$GITHUB_EVENT_PATH" --body "릴리즈 게시 완료: $URL
-
-\`$TAG\` / 기준 커밋 \`$TARGET_SHA\`
-
-\`\`\`
-$HASHES
-\`\`\`"
+          cat "$RELEASE_JSON"
+          cat "$SUMS"
 
       - name: Remove temporary branch
         run: git push origin --delete agent/release-inspect-20260803
