@@ -1,0 +1,59 @@
+name: Inspect release conventions
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    if: github.head_ref == 'agent/release-inspect-20260803'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout inspection branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/release-inspect-20260803
+          fetch-depth: 0
+
+      - name: Inspect releases, tags, and package folders
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo '=== repository ==='
+            echo "main_sha=$(git rev-parse origin/main)"
+            echo
+            echo '=== releases ==='
+            gh release list --repo "$GITHUB_REPOSITORY" --limit 30 || true
+            echo
+            echo '=== release details ==='
+            while IFS=$'\t' read -r title type tag published; do
+              [ -n "$tag" ] || continue
+              echo "--- $tag ---"
+              gh release view "$tag" --repo "$GITHUB_REPOSITORY" --json tagName,name,isDraft,isPrerelease,publishedAt,assets --jq '{tagName,name,isDraft,isPrerelease,publishedAt,assets:[.assets[]|{name,size,digest,downloadCount}]}' || true
+            done < <(gh release list --repo "$GITHUB_REPOSITORY" --limit 10)
+            echo
+            echo '=== tags ==='
+            git tag --sort=-creatordate | head -30
+            echo
+            echo '=== package folders ==='
+            for d in BIOGs fonts movies text textures 0; do
+              if [ -d "$d" ]; then
+                printf '%s\tfiles=%s\tbytes=%s\n' "$d" "$(find "$d" -type f | wc -l)" "$(du -sb "$d" | cut -f1)"
+              else
+                echo "$d MISSING"
+              fi
+            done
+          } > tools/_temp_release_report.txt
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tools/_temp_release_report.txt
+          if ! git diff --cached --quiet; then
+            git commit -m '임시 릴리즈 규칙 조사 결과'
+            git push origin HEAD:agent/release-inspect-20260803
+          fi
