@@ -9,78 +9,78 @@ Quest: B0B50Y11
 DisplayName: 퇴마
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>나는 _qgiver_입니다. 이 지역 귀족
-<ce>_nobleman_이 버려진 부동산의 권리증서를
-<ce>얻었는데, 뒤늦게 %g⁠이 그곳에 유령이 나온다는
-<ce>사실을 알았습니다. 누군가 그곳으로 가서 유령을
-<ce>퇴치해야 합니다. 임무를 맡으시겠습니까?
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>나는 _qgiver_입니다.
+<ce>이 지역 귀족 _nobleman_이
+<ce>버려진 부동산의 권리증서를 손에 넣었는데,
+<ce>뒤늦게 %g가 그곳에 유령이 나온다는 사실을 알았습니다.
+<ce>누군가 그곳으로 가서 유령을 퇴치해야 합니다.
+<ce>이 임무를 맡으시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>유령은 보통 사원에서 처리하는 문제지요.
+<ce>유령은 보통 신전에서 처리하는 문제지요.
 <ce>이번 일은 그쪽에 넘겨야겠군요.
-<ce>
 
 AcceptQuest:  [1002]
 <ce>_nobleman_은 =2dung_일 안에
-<ce>재건 공사를 시작하려 합니다. %G⁠이
-<ce>소유한 ___dungeon_에서 그 영혼을 찾을 수 있습니다.
-<ce>
+<ce>재건 공사를 시작하려 합니다.
+<ce>%G이 권리증서를 소유한 ___dungeon_에서
+<ce>그 영혼을 찾을 수 있습니다.
 
 QuestComplete:  [1004]
 <ce>_nobleman_이 무척 기뻐하겠군요.
-<ce>%G⁠은 당신의 이름을 붙인 분수까지 세우겠다고 했습니다.
-<ce>
-<ce>
+<ce>%G은 당신의 이름을 붙인 분수까지
+<ce>세우겠다고 했습니다.
 
 RumorsDuringQuest:  [1005]
-_nobleman_이 ___dungeon_의 권리증서를 받다니
-미쳤거나 멍청한 겁니다.
+_nobleman_이 ___dungeon_의 소유권 증서를
+받아들이다니 미쳤거나 멍청한 겁니다.
 
 RumorsPostfailure:  [1006]
-가엾은 _nobleman_은 ___dungeon_의 유령을 쫓아달라고
-%kno⁠에 부탁했지만 실패했습니다.
+가엾은 _nobleman_은 ___dungeon_의 악령을 쫓아달라고
+%kno⁠에 호소했지만, 그들은 실패했습니다.
 
 RumorsPostsuccess:  [1007]
-%kno 덕분에 ___dungeon_을 창고나 별장으로 만들 수 있게
-됐습니다.
+%kno 덕분에 ___dungeon_을
+창고나 여름 별장으로 쓸 수 있게 됐습니다.
 
 QuestorPostsuccess:  [1008]
-반갑습니다, %pcf. _nobleman_ 일을 도와주셨으니 무엇을
-해드릴까요?
+반갑습니다, %pcf.
+_nobleman_의 일을 도와주셨으니
+무엇을 해드릴까요?
 
 QuestorPostfailure:  [1009]
-_nobleman_에게 실패함으로써 %kno⁠도 실망시켰습니다, %pcf.
-참으로 유감입니다.
+그대는 _nobleman_을 저버렸고,
+그것은 곧 %kno⁠를 저버린 것입니다, %pcf.
+참으로 큰 실망입니다.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 ==qgiver_에
-있는 _qgiver_는 ___dungeon_에 출몰하는 유령을 없애달라고
-간청했다. 재건 공사가 시작되기까지 =2dung_일이 남았다.
+%qdt:
+___qgiver_의 ==qgiver_에 있는 _qgiver_는
+___dungeon_에 출몰하는 유령을
+없애달라고 간청했다.
+
+재건 공사가 시작되기까지
+=2dung_일이 남았다.
 
 Message:  1011
-<ce>유령은 안식을 얻었습니다. 이제 _nobleman_은
-<ce>___dungeon_을 재건할 수 있습니다.
-<ce>
+<ce>유령은 안식을 얻었습니다.
+<ce>이제 _nobleman_은 ___dungeon_을
+<ce>재건할 수 있습니다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 3 times.
---              %kno occurs 5 times.
---              %pcf occurs 17 times.
+--                %g occurs 1 time.
+--              %kno occurs 3 times.
+--              %pcf occurs 2 times.
 --              %qdt occurs 1 time.
 --           =2dung_ occurs 2 times.
 --         ==qgiver_ occurs 1 time.
---       ___dungeon_ occurs 8 times.
+--       ___dungeon_ occurs 6 times.
 --        ___qgiver_ occurs 1 time.
---        _nobleman_ occurs 12 times.
+--        _nobleman_ occurs 8 times.
 --          _qgiver_ occurs 2 times.
+
 QBN:
 Item _gold_ gold
 

@@ -9,7 +9,6 @@ Quest: P0B20L09
 DisplayName: 선봉대
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 오류: 퀘스트 텍스트 1000이 호출되었습니다.
 
@@ -23,21 +22,23 @@ QuestFail:  [1003]
 오류: 퀘스트 텍스트 1003이 호출되었습니다.
 
 QuestComplete:  [1004]
-<ce>변신 야수 학살자에게 경의를 표한다.
-<ce>자네가 얼마나 효율적으로 박멸했는지 들으면
-<ce>혈조도 몹시 기뻐할 것이다. =wereboar_의 엄니는
-<ce>%vam 사이에서 명예의 표식으로 간직해라.
-<ce>
+<ce>변신 야수 사냥꾼에게 경의를 표한다.
+<ce>자네가 얼마나 효율적으로 놈들을 박멸했는지 들으면
+<ce>혈조도 몹시 기뻐할 것이다.
+<ce>=wereboar_의 엄니는 %vam 사이에서
+<ce>명예의 표식으로 간직해라.
 
 RumorsDuringQuest:  [1005]
 ___mondung_은 누구도 들어가서는 안 되는 던전이야.
 절대로.
 
 RumorsPostfailure:  [1006]
-지난밤 ___mondung_에서 승리를 자축하는 울부짖음이 들렸어.
+지난밤 ___mondung_에서
+승리를 자축하는 울부짖음이 들렸어.
 
 RumorsPostsuccess:  [1007]
-___mondung_은 다시 무덤처럼 고요하고 평화로워졌어.
+___mondung_은 다시
+무덤처럼 고요하고 평화로워졌어.
 
 QuestorPostsuccess:  [1008]
 오류: 퀘스트 텍스트 1008이 호출되었습니다.
@@ -46,65 +47,75 @@ QuestorPostfailure:  [1009]
 오류: 퀘스트 텍스트 1009가 호출되었습니다.
 
 QuestLogEntry:  [1010]
-__vamp_ ___vamp_
+__vamp_
+___vamp_
 
 친애하는 %pcn⁠에게,
 
-%vam⁠이 자네를 필요로 한다. 즉시 오라.
+%vam⁠이 그대를 필요로 한다.
+즉시 오라.
 
-죽음 속에서, _vamp_
+죽음 속에서,
+_vamp_
 
 Message:  1011
 <ce>존귀한 %pcn, 좋은 저녁이다.
-<ce>%vam⁠의 원로들이 곧 %reg⁠에서 회합을 열 예정이다.
-<ce>그런데 우리를 조롱하듯 변신 괴물 무리가 회합
-<ce>장소인 ___mondung_에 둥지를 틀었다.
-<ce>이 해충과 그 동류에게 ___mondung_은
-<ce>%vam⁠의 땅이며 침입자를 용납하지 않음을 보여줘라.
-<ce>우두머리인 웨어보어를 포함해 가능한 한 많이 죽여라.
-<ce>=queston_일 밤 안에 그 엄니 하나를 가져오면
-<ce>%vam⁠이 크게 감사할 것이다. 잘 가라.
-<ce>
-<ce>
-<ce>
+<ce>%vam의 원로들이 곧 %reg에서 회합을 열 예정이다.
+<ce>그런데 우리를 조롱하듯 변신 야수 무리가
+<ce>회합 장소인 ___mondung_에 자리를 잡았어.
+<ce>이 해충들과 그 동류에게 ___mondung_은
+<ce>%vam의 땅이며 침입자를 용납하지 않는다는 것을 보여 줘라.
+<ce>우두머리인 멧돼지인간을 포함해
+<ce>가능한 한 많이 죽여라.
+<ce>밤이 =queston_번 지나기 전에
+<ce>그 우두머리의 엄니 하나를 가져오면
+<ce>%vam이 크게 감사할 것이다.
+<ce>잘 가라.
 
 Message:  1012
-%qdt: %vam⁠의 _vamp_에게서 긴급한 편지를
-받았다. ___vamp_의 __vamp_으로 즉시 오라고 한다.
+%qdt:
+%vam⁠의 _vamp_에게서 긴급한 편지를 받았다.
+
+___vamp_의 __vamp_으로
+즉시 오라고 한다.
 
 Message:  1013
-%qdt: _vamp_는 뻔뻔한 변신 괴물들이
-%vam⁠의 땅을 침범한 ___mondung_으로 나를 보냈다.
-흉측한 괴물들에게 잘못을 깨우쳐주고 우두머리의 엄니를 전리품으로
-챙겨 =queston_일 밤 안에 _vamp_에게 돌아가야 한다.
+%qdt:
+_vamp_는 뻔뻔한 수인들이
+%vam⁠의 영역을 침범한 ___mondung_으로
+나를 보냈다.
+
+그 흉측한 괴물들에게 대가를 치르게 하고,
+우두머리의 엄니를 전리품으로 챙겨
+=queston_밤 안에 _vamp_에게 돌아가야 한다.
 
 Message:  1017
-<ce>창백하고 눈이 사나운 소년이 편지를
-<ce>건네고 어둠 속으로 사라집니다.
-<ce>
+<ce>창백하고 사나운 눈을 한 소년이
+<ce>편지를 건네고 어둠 속으로 사라집니다.
 
 Message:  1020
-<ce>변신 괴물의 우두머리 =wereboar_를 죽였습니다.
-<ce>이제 놈들은 %vam⁠의 요새를
-<ce>침범할 생각을 하지 못할 것입니다.
-<ce>
+<ce>변신 야수들의 우두머리 =wereboar_를 처치했습니다.
+<ce>이제 놈들은 %vam의 요새를
+<ce>함부로 침범해서는 안 된다는 사실을 알게 될 것입니다.
 
 Message:  1021
-<ce>나더러 널 죽이게 하지 마라, 흡혈귀야.
-<ce>돌아가서 %vam⁠에게 =wereboar_가 네가
-<ce>얌전히 굴지 않아서 집으로 돌려보냈다고 전해.
+<ce>나더러 널 죽이게 만들지 마라, 흡혈귀야.
+<ce>돌아가서 %vam에게 이렇게 전해.
+<ce>네가 얌전히 굴지 않아서
+<ce>=wereboar_가 집으로 돌려보냈다고.
 
 -- Symbols used in the QRC file:
 --
---              %dat occurs 1 time.
---              %pcn occurs 3 times.
---              %qdt occurs 1 time.
+--              %dat occurs 0 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 2 times.
 --              %reg occurs 1 time.
---              %vam occurs 26 times.
+--              %vam occurs 9 times.
 --         =queston_ occurs 2 times.
 --        =wereboar_ occurs 3 times.
---       ___mondung_ occurs 23 times.
---          ___vamp_ occurs 16 times.
+--       ___mondung_ occurs 6 times.
+--          ___vamp_ occurs 2 times.
+
 QBN:
 Item _letter_ letter used 1010
 Item _I.01_ tusk

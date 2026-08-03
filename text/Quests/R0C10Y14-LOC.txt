@@ -9,99 +9,104 @@ Quest: R0C10Y14
 DisplayName: 잊어버린 장비
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>시간도 거의 들지 않고 _reward_골드도
-<ce>벌 수 있는 간단한 일을 맡겠나?
-<ce>
-<ce>
+<ce>시간도 거의 들지 않고
+<ce>_reward_골드도 벌 수 있는
+<ce>간단한 일을 맡을 수 있습니까?
 
 RefuseQuest:  [1001]
-<ce>아니라고? 아쉽군.
+<ce>싫다고요? 안타깝군요.
 
 AcceptQuest:  [1002]
-<ce>%oth, 잘됐군. 멍청한 동료가 %g3 _item_을
-<ce>챙기지 않고 임무를 떠났네. 이걸 ___contact_으로
-<ce>급히 보내야 해. __contact_이라는 작은 곳에서
-<ce>_contact_라는 =contact_를 찾게. %g2⁠에게
-<ce>_item_을 주면 %g⁠가 _reward_골드를 줄 걸세.
-<ce>%g⁠는 _item_이 있든 없든 =queston_일 뒤
-<ce>__contact_을 떠날 테니 서두르게.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>%oth, 잘됐습니다.
+<ce>제 멍청한 동료가 %g3 _item_을 두고 임무를 떠났습니다.
+<ce>이 물건을 즉시 ___contact_으로 보내야 합니다.
+<ce>그곳의 __contact_이라는 작은 장소에서
+<ce>_contact_라는 =contact_를 찾으십시오.
+<ce>%g2에게 _item_을 건네면
+<ce>%g가 _reward_골드를 줄 것입니다.
+<ce>마지막으로 하나만 기억하십시오.
+<ce>%g는 _item_이 있든 없든 =queston_일 뒤
+<ce>__contact_을 떠납니다.
+<ce>그러니 서둘러 출발하십시오.
 
 QuestFail:  [1003]
-<ce>_item_과 배달 장소를 모두 알려줬네.
-<ce>더 이야기할 것이 있나?
-<ce>
+<ce>_item_도 주었고 전달할 장소도 알려 줬습니다.
+<ce>더 이야기할 것이 있습니까?
 
 QuestComplete:  [1004]
-<ce>_questgiver_가 보냈나요? %oth, 내 _item_!
-<ce>마침내 왔군요! 이것 없이 떠나야 하는 줄 알았습니다.
-<ce>그런데 왜 이렇게 늦었습니까? _item_을
-<ce>받는데 돈도 줘야 한다고요? _questgiver_가
-<ce>그렇게 말했다면 따르지요. 이제 가봐야겠습니다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>_questgiver_가 보냈습니까?
+<ce>%oth, 제 _item_이군요!
+<ce>마침내 왔네요. 이것 없이 떠나야 하는 줄 알았습니다.
+<ce>그런데 왜 이렇게 오래 걸렸습니까?
+<ce>제 물건을 받는데 제가 돈까지 줘야 한다고요?
+<ce>_questgiver_가 그렇게 말했다면 어쩔 수 없지요.
+<ce>이미 시간을 충분히 낭비했습니다.
+<ce>이제 출발해야겠습니다.
 
 RumorsDuringQuest:  [1005]
-_item_을 찾으면 __contact_의 저 =contact_에게 팔 거야.
-절박해 보이더군.
+내게 _item_이 있다면
+__contact_의 저 =contact_에게 팔겠어.
+몹시 절박해 보이더군.
 <--->
-저 =contact_는 며칠째 __contact_ 주변을 서성이고 있어.
+저 =contact_는 며칠째
+__contact_ 주변에서 풀이 죽어 지내고 있어.
 
 RumorsPostfailure:  [1006]
-불쌍한 _contact_. %g3 물건이 오지 않아 %g⁠는 빈손으로
-떠났대.
+가엾은 _contact_.
+%g3 물건이 끝내 오지 않아
+%g⁠는 빈손으로 떠났대.
 <--->
-_contact_는 대체 무엇을 기다렸던 걸까? 기적이라도 바랐나?
+_contact_는 대체 무엇을 기다렸던 걸까?
+기적이라도 바랐나?
 
 RumorsPostsuccess:  [1007]
-_contact_는 필요한 것을 얻고 하피처럼 기뻐하며 __contact_을
-떠났어. %g⁠는 %g⁠가 원한 것을 얻은 모양이야.
+_contact_는 하피처럼 기뻐하며
+__contact_을 떠났어.
+%g⁠가 원하던 것을 얻은 모양이야.
 <--->
-_questgiver_가 고용한 %ra 용병 %g⁠를 칭찬하고 다니더군.
+_questgiver_는 %g⁠가 고용한
+어떤 %ra 용병을 칭찬하고 다니더군.
 
 QuestorPostsuccess:  [1008]
-친애하는 친구여, 돌아와서 정말 좋군요. 일은 어땠습니까?
+친애하는 친구여,
+돌아와 주어 정말 반갑군요.
+어떻게 지내셨습니까?
 <--->
-임무를 성공시켰다고 들었습니다. 정말 감사합니다.
+임무가 성공했다는 보고를 받았습니다.
+진심으로 감사드립니다.
 
 QuestorPostfailure:  [1009]
-<ce>연락책을 만나지
-<ce>못하고 돌아오다니 이상하군요.
-<ce>
+<ce>제 연락책에게 도착하지 못했는데도
+<ce>다시 돌아왔군요.
+<ce>참 이상한 행동입니다.
 
 QuestLogEntry:  [1010]
-%qdt: _questgiver_는 ___contact_의
-__contact_에서 특별한 _item_을 기다리는
-_contact_라는 =contact_에게 물건을 전하라고 했다.
-_contact_는 =queston_일 안에 _item_을 받든 못 받든
-___contact_을 떠날 예정이므로 서둘러야 한다.
+%qdt:
+_questgiver_는 특별한 _item_을 전달하라고
+나를 ___contact_로 보냈다.
+
+_contact_라는 =contact_가
+그곳의 __contact_에서 물건을 기다리고 있다.
+%G⁠는 _item_을 받든 받지 못하든
+=queston_일 뒤 ___contact_을 떠날 예정이므로
+서둘러야 한다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 6 times.
+--                %g occurs 5 times.
 --               %g2 occurs 1 time.
 --               %g3 occurs 2 times.
 --              %oth occurs 2 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
---         =contact_ occurs 6 times.
+--         =contact_ occurs 4 times.
 --         =queston_ occurs 2 times.
---       ___contact_ occurs 16 times.
---            _item_ occurs 9 times.
+--       ___contact_ occurs 3 times.
+--            _item_ occurs 8 times.
 --      _questgiver_ occurs 4 times.
---          _reward_ occurs 3 times.
+--          _reward_ occurs 2 times.
+
 QBN:
 Item _reward_ gold
 Item _item_ magic_item

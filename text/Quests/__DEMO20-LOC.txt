@@ -5,10 +5,11 @@ Quest: __DEMO20
 
 
 QRC:
-
 QuestLogEntry:  [1010]
-%qdt 집으로 쓰이는 장소를 아무 곳이나 하나 찾아내고
+%qdt:
+집으로 쓰이는 장소를 아무 곳이나 하나 찾아내고,
 야외 지역도 탐험해야 한다.
+
 QBN:
 
 ---- Quest startup

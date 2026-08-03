@@ -9,43 +9,33 @@ Quest: C0B00Y03
 DisplayName: 실종된 학자
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>%pct, 우리 성직자 중 한 명인 =cleric_
-<ce>_cleric_가 고고학 발굴 도중 실종됐습니다.
-<ce>%g2⁠을 찾는 일을 도와주시겠습니까?
-<ce>
-<ce>
+<ce>%pct, 우리 성직자 중 한 명인
+<ce>_cleric_라는 =cleric_가
+<ce>고고학 발굴 도중 실종됐습니다.
+<ce>%g2를 찾는 일을 도와주시겠습니까?
 <--->
 <ce>우리의 가장 고결한 학자 중 한 명인 _cleric_가
-<ce>오래된 폐허 사원을 조사하다 실종된 듯합니다.
-<ce>%g2⁠을 찾는 일을 도와주시겠습니까?
-<ce>
-<ce>
+<ce>오래된 폐허 신전을 조사하다 실종됐습니다.
+<ce>%g2를 찾는 일을 도와주시겠습니까?
 
 RefuseQuest:  [1001]
 <ce>솔직히 말하면 상당히 냉정한 태도군요, %pcf.
-<ce>
-<ce>
 
 AcceptQuest:  [1002]
-<ce>좋습니다. _cleric_는 약 보름 전 ___mondung_으로
-<ce>발굴을 떠났습니다. 아무 일도 없을 가능성도 있지만…
-<ce>=queston_일 안에 그곳으로 가서 _cleric_를
-<ce>찾고 돌아오십시오. %god⁠께서 함께하시길
-<ce>빕니다, %pct. 무사히 다녀오십시오.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>좋습니다.
+<ce>_cleric_는 약 보름 전에
+<ce>___mondung_으로 발굴을 떠났습니다.
+<ce>아무 일도 없을 가능성도 있지만...
+<ce>=queston_일 안에 그곳으로 가서 _cleric_를 찾고
+<ce>이곳으로 돌아오십시오.
+<ce>%god께서 함께하시길 빕니다, %pct.
+<ce>무사히 다녀오십시오.
 
 QuestComplete:  [1004]
-<ce>아, %pct⁠와 선한 _cleric_여.
+<ce>아, %pct. 그리고 선한 _cleric_여.
 <ce>두 분이 다시 __qgiver_으로 돌아오니 반갑습니다.
 <ce>솔직히 최악의 상황을 걱정하고 있었습니다.
-<ce>
-<ce>
 
 RumorsDuringQuest:  [1005]
 _cleric_가 무기도 없이 ___mondung_에 들어가다니
@@ -55,63 +45,66 @@ ___mondung_은 _cleric_ 같은 학구적인 =cleric_가
 갈 곳이 아니야.
 
 RumorsPostfailure:  [1006]
-모두 _cleric_를 다시 볼 희망을 버렸습니다.
+모두 _cleric_를 다시 볼 수 있다는
+희망을 버렸습니다.
 <--->
-__qgiver_은 _cleric_의 실종을 슬퍼하고 있습니다.
+__qgiver_은 _cleric_의 실종을
+슬퍼하고 있습니다.
 
 RumorsPostsuccess:  [1007]
-그 %ra 덕분에 _cleric_는 ___mondung_의 역사를
-집필하기 시작했습니다.
+그 %ra 덕분에 _cleric_는
+___mondung_의 역사를 집필하기 시작했습니다.
 <--->
-_cleric_를 구출해 __qgiver_에서 당신을 더 높이 평가하게
-됐습니다.
+_cleric_를 구출한 일로
+__qgiver_은 당신을 더 높이 평가하게 되었습니다.
 
 QuestorPostsuccess:  [1008]
-_cleric_를 위해 해주신 일을 생각하면 당연히 돕겠습니다,
-%pcf.
+_cleric_를 위해 해주신 일을 생각하면,
+당연히 돕겠습니다, %pcf.
 
 QuestorPostfailure:  [1009]
-아직도 _cleric_를 기억하고 있습니다, %pcf.
+아직도 _cleric_에게 벌어진 일을 기억하고 있습니다, %pcf.
 가주십시오.
 
 QuestLogEntry:  [1010]
-%qdt: __qgiver_의 _qgiver_는
-___mondung_에서 실종된 _cleric_라는 성직자를 구출하라고 했다.
+%qdt:
+__qgiver_의 _qgiver_는
+___mondung_에서 실종된 성직자 _cleric_를
+구출해달라고 했다.
+
 =queston_일 안에 그 =cleric_를 찾아
-___qgiver_의 __qgiver_으로 돌아가야 한다.
+___qgiver_의 __qgiver_로 돌아가야 한다.
 
 Message:  1011
-<ce>“세상에, 깜짝 놀랐습니다, 젊은 %ra 여.
-<ce>제가 정말 이 아래에 그렇게 오래 있었습니까?
-<ce>시간이 참 빠르게 흐르는군요. 괜찮으시다면 저를
-<ce>사원까지 호위해주시겠습니까, 선한 %pcf 여…”
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>"세상에, 깜짝 놀랐습니다, 젊은 %ra.
+<ce>제가 정말 이 아래에서 그렇게 오래 지냈습니까?
+<ce>시간이 참 빠르게 흐르는군요.
+<ce>괜찮으시다면 저를 신전까지 호위해주시겠습니까,
+<ce>선한 %pcf?"
 <--->
-<ce>%god⁠께 감사드립니다. 와주셨군요.
+<ce>"%god께 감사드립니다. 와주셨군요.
 <ce>거의 일주일 동안 출구를 찾고 있었습니다.
-<ce>당신을 따라 사원으로 돌아가겠습니다.
+<ce>당신을 따라 신전으로 돌아가겠습니다."
 
 Message:  1012
-<ce>“아, 여기서부터는 길을 압니다.”
-<ce>_cleric_가 비틀거리며 멀어집니다.
+<ce>"아, 여기서부터는 길을 압니다."
+<ce>_cleric_가 비틀거리며 떠납니다.
 
 -- Symbols used in the QRC file:
 --
---               %g2 occurs 4 times.
+--               %g2 occurs 2 times.
 --              %god occurs 2 times.
---              %pcf occurs 36 times.
+--              %pcf occurs 4 times.
 --              %pct occurs 3 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 2 times.
 --          =cleric_ occurs 3 times.
 --         =queston_ occurs 2 times.
---       ___mondung_ occurs 6 times.
---        ___qgiver_ occurs 7 times.
---          _cleric_ occurs 16 times.
+--       ___mondung_ occurs 5 times.
+--        ___qgiver_ occurs 1 time.
+--          _cleric_ occurs 15 times.
 --          _qgiver_ occurs 1 time.
+
 QBN:
 
 Person _qgiver_ group Questor

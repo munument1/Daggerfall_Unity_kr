@@ -9,108 +9,117 @@ Quest: E0B00Y00
 DisplayName: 훼손된 신전
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>마침 우리에게는 그대 같은 사람이 필요합니다.
-<ce>근처에 ___mondung_이라는 더럽혀진
-<ce>신전이 있습니다. 들어본 적이 있을지도 모르겠군요.
-<ce>오랫동안 악의 소굴이었지만, 다른 힘을
-<ce>견제하는 균형추였기에 그 영향력을 묵인해왔습니다.
+<ce>근처에 ___mondung_이라는 더럽혀진 신전이 있습니다.
+<ce>들어본 적이 있을지도 모르겠군요.
+<ce>오랫동안 악의 소굴이었지만,
+<ce>다른 힘을 견제하는 균형추였기에
+<ce>그 영향력을 묵인해왔습니다.
 <ce>그러나 이제 균형이 무너졌습니다.
-<ce>누군가 바로잡아야 합니다. 도와주시겠습니까?
-<ce>
+<ce>누군가 바로잡아야 합니다.
+<ce>도와주시겠습니까?
 <--->
 <ce>___mondung_의 균형이 새로운 침입자 때문에 깨져
-<ce>%reg⁠에 조화를 가져오려는 우리의 노력이
-<ce>위협받고 있습니다. ___mondung_을 바로잡을
-<ce>용사가 필요합니다. 그대가 맡아주시겠습니까?
-<ce>
-<ce>
+<ce>%reg에 조화를 가져오려는 우리의 노력이
+<ce>위협받고 있습니다.
+<ce>___mondung_을 바로잡을 용사가 필요합니다.
+<ce>그대가 맡아주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>실망스럽군요. 다른 사람을 찾아보겠습니다.
-<ce>
+<ce>실망스럽군요.
+<ce>다른 사람을 찾아보겠습니다.
 
 AcceptQuest:  [1002]
-<ce>훌륭합니다, %pcf. 불경한 ___mondung_에
-<ce>둥지를 튼 강력한 라이칸스로프를 처치해야 합니다.
+<ce>훌륭합니다, %pcf.
+<ce>불경한 ___mondung_에 둥지를 튼
+<ce>강력한 변신 야수를 처치해야 합니다.
 <ce>그 괴물은 그 지역에서 우리 교단이
-<ce>확장되는 것을 방해하고 있습니다.
-<ce>=1stparton_일이 지나도록 돌아오지 않으면 우리가
-<ce>직접 움직일 것이며, 그대의 보수는 사라집니다.
+<ce>세력을 넓히는 것을 방해하고 있습니다.
+<ce>=1stparton_일 안에 돌아오지 않으면
+<ce>우리가 직접 움직일 것이며,
+<ce>그대는 보수를 받을 수 없습니다.
 <ce>곧장 출발하십시오. 행운을 빕니다.
-<ce>
-<ce>
 <--->
-<ce>%oth, 좋습니다, %pcf.
+<ce>%oth. 좋습니다, %pcf.
 <ce>___mondung_의 균형을 회복할 시간은
-<ce>=1stparton_일뿐입니다. 가장 빠르고 적절한 방법은
-<ce>___mondung_ 깊숙한 곳에 더러운
-<ce>둥지를 튼 라이칸스로프를 처치하는 것입니다.
-<ce>서두르십시오, %pcf. =1stparton_번의 해가
-<ce>지기 전에 돌아오지 않으면 보수는 사라집니다.
-<ce>
-<ce>
-<ce>
+<ce>=1stparton_일뿐입니다.
+<ce>가장 빠르고 적절한 방법은
+<ce>___mondung_ 깊숙한 곳에 둥지를 튼
+<ce>변신 야수를 처치하는 것입니다.
+<ce>서두르십시오, %pcf.
+<ce>=1stparton_일 안에 돌아오지 않으면
+<ce>보수를 받을 수 없습니다.
 
 QuestFail:  [1003]
 <ce>서두르는 편이 좋겠습니다, %pcf.
-<ce>그 늑대인간 짐승을 죽일 시간이 얼마 남지
-<ce>않았습니다. 정확히 =1stparton_일입니다.
-<ce>
+<ce>그 변신 야수를 죽일 시간은
+<ce>정확히 =1stparton_일뿐입니다.
 
 QuestComplete:  [1004]
 <ce>아케이 신전에 큰 공을 세웠습니다, %pcf.
-<ce>잊히지 않을 공적입니다. _reward_골드를
-<ce>받으십시오. 충분히 받을 자격이 있습니다.
-<ce>
+<ce>잊히지 않을 공적입니다.
+<ce>_reward_골드를 받으십시오.
+<ce>충분히 받을 자격이 있습니다.
 
 RumorsDuringQuest:  [1005]
 이 근처에 늑대인간 같은 것이 돌아다닌다는군요.
 <--->
-웨어보어가 ___mondung_이라는 곳에 둥지를 틀었다고 합니다.
+멧돼지인간이 ___mondung_이라는 곳에
+소굴을 마련했다고 합니다.
 <--->
-어젯밤 울음소리 들었습니까? 늑대 울음소리 말입니다.
+어젯밤 울음소리 들었습니까?
+늑대 울음소리 말입니다.
 
 RumorsPostfailure:  [1006]
-늑대 인간들은 정말 떠돌이인가 봅니다. 그 늑대가 남쪽으로 갔다는군요.
+늑대인간들은 정말 떠돌이인가 봅니다.
+우리 쪽 늑대인간이 남쪽으로 갔다는군요.
 <--->
-내 사촌이 그러는데 그 웨어보어가 남쪽에서 목격됐답니다.
+내 사촌 말로는 그 멧돼지인간이
+남쪽 어딘가에서 목격됐답니다.
 
 RumorsPostsuccess:  [1007]
-그 늑대인간은 낮에는 사제였다는 사실이 밝혀졌답니다!
+그 늑대인간은 낮에는
+사제였다는 사실이 밝혀졌답니다!
 <--->
-웨어보어가 죽어서 안심하는 사람이 많습니다.
+그 멧돼지인간이 죽었다는 사실에
+안도하는 사람이 많습니다.
 <--->
-어떤 %ra⁠가 그 변신 괴물을 추적해 죽였다는 이야기 들었습니까?
+어떤 %ra⁠가 그 변신 괴물을
+추적해 죽였다는 이야기 들었습니까?
 
 QuestorPostsuccess:  [1008]
-___mondung_의 균형을 되찾은 분을 어떻게 도와드릴까요?
+___mondung_의 균형을 되찾은 분을
+어떻게 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-그 늑대 짐승을 처치하지 못했군요, %pcf. 몹시 유감입니다.
+그 늑대인간을 처치하지 못했군요, %pcf.
+몹시 유감입니다.
 
 QuestLogEntry:  [1010]
-%qdt: 아케이 신전의 _questgiver_는 그들의 옛 신전
-___mondung_에 숨어 있는 변신 괴물을 죽이면 _reward_골드를
-주겠다고 했다. 임무를 마치고 ___questgiver_로 돌아갈 시간은
-=1stparton_일이다.
+%qdt:
+아케이 신전의 _questgiver_는
+그들의 옛 신전인 ___mondung_에 숨어 있는
+수인을 처치하면 _reward_ 골드를 주겠다고 했다.
+
+임무를 마치고 =1stparton_일 안에
+___questgiver_로 돌아가야 한다.
 
 Message:  1020
-<ce>___mondung_의 라이칸스로프를 처치했습니다.
-<ce>
+<ce>___mondung_의 변신 야수를 처치했습니다.
 
 -- Symbols used in the QRC file:
 --
 --              %oth occurs 1 time.
---              %pcf occurs 8 times.
+--              %pcf occurs 6 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
 --              %reg occurs 1 time.
---       =1stparton_ occurs 7 times.
---       ___mondung_ occurs 13 times.
---    ___questgiver_ occurs 2 times.
+--       =1stparton_ occurs 5 times.
+--       ___mondung_ occurs 10 times.
+--    ___questgiver_ occurs 1 time.
 --          _reward_ occurs 2 times.
+
 QBN:
 Item _reward_ gold
 

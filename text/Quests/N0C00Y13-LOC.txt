@@ -9,39 +9,35 @@ Quest: N0C00Y13
 DisplayName: 고대의 두루마리
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>흥. 길드원이 아니군요. 비회원에게 일을 맡겨서는
-<ce>안 되지만, 길드의 다른 누구에게도 알려지고 싶지
-<ce>않은 일이 하나 있습니다. 무료로 처리해준다면
-<ce>당신이 우리와 같은 부류의 %ra⁠라고
-<ce>널리 말해주지요. 어떻습니까, %pcf?
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>흠. 길드원이 아니군요.
+<ce>비회원에게 일을 맡겨서는 안 됩니다.
+<ce>하지만 길드의 다른 누구에게도 알리고 싶지 않은
+<ce>일이 하나 있지요.
+<ce>무료로 처리해 준다면 당신이 우리 취향에 맞는
+<ce>%ra라고 널리 말해 주겠습니다.
+<ce>어떻습니까, %pcf?
 
 RefuseQuest:  [1001]
 <ce>가십시오. 성가시군요.
 <--->
-<ce>은혜도 모르는 인간 같으니.
+<ce>은혜도 모르는 자 같으니.
 
 AcceptQuest:  [1002]
 <ce>내 이름은 _questgiver_입니다.
-<ce>___dungeon_에 고대 문헌
-<ce>하나가 숨겨져 있다고 합니다.
-<ce>=traveltime_일 안에 가져오면 일을 끝낸 것으로 하지요.
-<ce>
+<ce>___dungeon_에 고대 두루마리 하나가
+<ce>숨겨져 있다고 합니다.
+<ce>=traveltime_일 안에 가져오면
+<ce>일을 끝낸 것으로 하지요.
 
 QuestComplete:  [1004]
-<ce>훌륭합니다. 이것을 읽지 말라고 경고했었지요?
-<ce>문외한들이 흔히 그러듯 “nagog”의 g를
-<ce>강하게 발음했다면 상당히 위험했을 겁니다.
+<ce>훌륭합니다.
+<ce>이것을 읽지 말라고 미리 경고했었지요?
+<ce>문외한들이 흔히 그러듯 "nagog"의 g를
+<ce>센소리로 발음했다면 상당히 위험했을 겁니다.
 <ce>도와줘서 고맙습니다, %pcn.
-<ce>계속 이렇게 한다면 마법사 길드 가입도 고려하겠습니다.
-<ce>
-<ce>
+<ce>계속 이런 모습을 보인다면
+<ce>마법사 길드 가입도 고려하겠습니다.
 
 RumorsDuringQuest:  [1005]
 며칠 전에 종기가 났는데... 이제 다 나았습니다.
@@ -131,47 +127,57 @@ RumorsPostsuccess:  [1007]
 %reg⁠의 법률 제도에는 장단점이 있습니다.
 
 QuestorPostsuccess:  [1008]
-물론 기억합니다, %pcf. 그 문헌을 가져온 사람이잖습니까?
+물론 기억합니다, %pcf.
+그 문헌을 가져온 분이잖습니까?
 
 QuestorPostfailure:  [1009]
-<ce>내가 맡긴 것보다 간단한 일은 상상하기도 어렵군요.
+<ce>내가 맡긴 것보다 간단한 임무는
+<ce>상상하기도 어렵군요.
 <ce>그저 희귀한 고대 두루마리를 찾는 일이었습니다.
-<ce>이제 당신과 계속 이야기할 이유도 상상하기 어렵습니다.
-<ce>
+<ce>이제 당신과 계속 이야기할 이유 역시
+<ce>상상하기 어렵습니다.
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_ 마법사 길드의 _questgiver_를
-만났다. %g2⁠은 ___dungeon_에 숨겨진 고대 문헌을 찾으라고 했다.
-그 문헌을 가져갈 가져갈 시간은 =traveltime_일이다.
+%qdt:
+___questgiver_ 마법사 길드의 _questgiver_를 만났다.
+%g2⁠는 ___dungeon_에 숨겨진
+고대 문헌을 찾아오라고 했다.
+
+=traveltime_일 안에 그 문헌을
+%g2⁠에게 가져다줘야 한다.
 
 Message:  1020
-Zephrim alga n' nagog. Carti alga n' belyl. Azuth Zephrim ne'
-nagog. Partik aloy partik frae i eyominathraq n' toyl. Berik azuth n'
-nagog. Charlaq gimle n' maluk Zephrim qork.
+Zephrim alga n' nagog. Carti
+alga n' belyl. Azuth Zephrim ne'
+nagog. Partik aloy partik frae i
+eyominathraq n' toyl. Berik azuth
+n' nagog. Charlaq gimle n' maluk
+Zephrim qork.
 
 Message:  1040
-<ce>이것이 _questgiver_가 찾으라고
-<ce>보낸 양피지인 듯합니다.
+<ce>이것이 _questgiver_가 찾으라고 한
+<ce>바로 그 양피지인 듯합니다.
 
 QuestTimeLapse:  [1045]
-<ce>마지막 단어를 읽자 얼어붙을 듯한 돌풍이
-<ce>불어 종이를 손에서 낚아챌 뻔합니다.
-<ce>
+<ce>마지막 단어를 읽는 순간,
+<ce>얼어붙을 듯한 돌풍이 불어
+<ce>종이를 손에서 낚아챌 뻔합니다.
 
 -- Symbols used in the QRC file:
 --
 --               %cn occurs 3 times.
---               %g2 occurs 17 times.
+--               %g2 occurs 2 times.
 --              %jok occurs 9 times.
---              %oth occurs 15 times.
---              %pcf occurs 3 times.
+--              %oth occurs 3 times.
+--              %pcf occurs 2 times.
 --              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
 --              %reg occurs 3 times.
---      =traveltime_ occurs 3 times.
+--      =traveltime_ occurs 2 times.
 --       ___dungeon_ occurs 2 times.
---    ___questgiver_ occurs 4 times.
+--    ___questgiver_ occurs 1 time.
+
 QBN:
 Item _ingredient_ letter used 1020
 

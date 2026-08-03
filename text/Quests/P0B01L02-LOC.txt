@@ -9,16 +9,23 @@ Quest: P0B01L02
 DisplayName: 뱀파이어의 유물
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>친애하는 %pcf, 우리 중 하나가 되겠다는 결의를 증명할 작은 임무를
-<ce>맡기겠다. __itemdung_의 마법사 길드에는 우리의 _vamprelic_이
-<ce>보잘것없는 고서처럼 갇혀 있다. 그들이 더 안전한 곳으로 옮기기 전,
-<ce>=1stparton_일 안에 감옥에서 해방시켜라. _vamprelic_을 얻으면 내게 오라.
-<ce>나는 ___vampire_의 __vampire_에서 =1stparton_일 동안 기다리겠다.
-<ce>알아보기는 어렵지 않을 것이다. =vampire_를 찾아라.
-<ce>더 격식 없는 자리에서 자네와 만나기를 기대하겠다, %pcf.
-<ce>반드시 오라. 죽음 속에서, %vam⁠의 _vampire_
+<ce>친애하는 %pcf,
+<ce>우리 중 하나가 되겠다는 결의를 증명할
+<ce>작은 임무를 맡기겠다.
+<ce>__itemdung_의 마법사 길드에는
+<ce>우리의 _vamprelic_이 하찮은 고서처럼 갇혀 있다.
+<ce>그들이 더 안전한 장소로 옮기려 하니,
+<ce>=1stparton_일 안에 감옥에서 해방시켜라.
+<ce>_vamprelic_을 손에 넣으면 내게 오라.
+<ce>나는 ___vampire_의 __vampire_에서
+<ce>=1stparton_일 동안 기다리겠다.
+<ce>알아보기는 어렵지 않을 것이다.
+<ce>=vampire_를 찾아라.
+<ce>더 격식 없는 자리에서 자네와 만나기를 기대하겠다,
+<ce>%pcf. 반드시 오도록.
+<ce>죽음 속에서,
+<ce>%vam의 _vampire_
 
 RefuseQuest:  [1001]
 오류: 대거폴 텍스트 1001이 호출되었습니다.
@@ -28,90 +35,103 @@ AcceptQuest:  [1002]
 
 QuestComplete:  [1004]
 <ce>마침내 만나 반갑군, %pcf.
-<ce>물론 내가 _vampire_다. 이제 %vam
-<ce>혈통이 _vamprelic_을 정당하게 되찾을 것이다.
-<ce>보수를 받을 수 있으리라는 어리석은 생각은 하지 마라.
-<ce>%vam⁠을 섬기는 것 자체가 영광이니까.
-<ce>
-<ce>
-<ce>
+<ce>물론 내가 _vampire_다.
+<ce>이제 %vam 혈족이 _vamprelic_을
+<ce>정당하게 되찾아 갈 것이다.
+<ce>보수를 받을 수 있으리라는
+<ce>어리석은 생각은 하지 마라.
+<ce>%vam을 섬기는 것 자체가 영광이니까.
 
 RumorsDuringQuest:  [1005]
-마법사 길드가 오래되고 쓸모없는 잡동사니를 많이 버리고 있대.
+마법사 길드가 오래되고 쓸모없는
+잡동사니를 많이 버리고 있대.
 <--->
-여러 마법사 길드가 낡은 물건을 한데 보내는 폐기장이 있다는군.
+여러 마법사 길드가 낡은 물건을
+한데 보내는 폐기장이 있다는군.
 
 RumorsPostfailure:  [1006]
-마법사 길드의 경비가 저렇게 삼엄한 것을 보면 훔칠 만한 것이
-있겠지.
+마법사 길드의 경비가 저렇게 삼엄한 것을 보면
+훔칠 만한 것이 있겠지.
 <--->
-마법사 길드가 먼지 쌓인 낡은 짐을 마침내 전부 옮겼대.
+마법사 길드가 먼지 쌓인 낡은 짐을
+마침내 전부 옮겼대.
 
 RumorsPostsuccess:  [1007]
-어젯밤 로칸다의 세 별이 빛났어. 불경한 동맹의 징조라지.
+어젯밤 로칸다의 세 별이 빛났어.
+불경한 동맹의 징조라지.
 <--->
 마법사 길드가 그 절도 사건 때문에 어리둥절해한대.
 누가 그런 것을 원했을까?
 
 QuestorPostsuccess:  [1008]
-반갑다, %pcn. _vamprelic_을 가져온 일에 다시 한번
-감사하지.
+반갑다, %pcn.
+_vamprelic_을 가져다준 일에
+다시 한번 감사하지.
 
 QuestorPostfailure:  [1009]
 <ce>%pcf, 지금은 내 인내심의 한계를
-<ce>시험할 때가 아니다. 편지에 분명
-<ce>_vamprelic_을 가져오라고 썼는데 어디 있지?
-<ce>형편없는 모습이군, %pcf. 참으로 형편없어.
-<ce>
-<ce>
+<ce>시험할 때가 아니다.
+<ce>편지에 _vamprelic_을 가져오라고
+<ce>분명히 적었는데 어디 있지?
+<ce>참으로 형편없는 모습이군, %pcf.
+<ce>아주 형편없어.
 
 QuestLogEntry:  [1010]
-그 이름을 쓰는 불길한 인물은 여기서 %di 떨어진 __vampire_에
-있어.
+그 이름을 쓰는 불길한 인물은
+여기서 %di 방향의 __vampire_에 있어.
 <--->
-_vampire_라는 기묘한 =vampire_가 여기서 %di 떨어진
-__vampire_에 머물고 있어.
+_vampire_라는 기묘한 =vampire_가
+여기서 %di 방향의 __vampire_에 머물고 있어.
 
 Message:  1011
-_vampire_는 %vam 혈통의 일원이며 어린 혈족들의 스승이야.
+_vampire_는 %vam 혈족의 일원이며
+어린 혈족들의 스승이야.
 <--->
-_vampire_는 %vam⁠에서도 꽤 젊지만 자부심이 강하고 힘도
-세지.
+_vampire_는 %vam⁠에서도 꽤 젊지만,
+자부심이 강하고 힘도 세지.
 
 Message:  1013
-그저 _vamprelic_이다. 보기 좋은 물건은 아니군.
+그저 _vamprelic_이야.
+보기 좋은 물건은 아니군.
 <--->
-기괴하게 생긴 _vamprelic_이다.
+기괴하게 생긴 _vamprelic_이야.
 
 Message:  1015
-듣기로는 %vam 원로회의 _vamprelic_이라고 해.
+듣기로는 %vam 원로회의의
+_vamprelic_이라고 해.
 <--->
-%vam⁠의 주인들이 특정한 비밀 의식에 쓰는 _vamprelic_이야.
+%vam⁠의 지배자들이 특정한 비밀 의식에 사용하는
+_vamprelic_이야.
 
 Message:  1020
-%qdt: ___vampire_의 _vampire_에게서
-편지를 받았다. __itemdung_의 마법사 길드 보안실에서 _vamprelic_을
-훔칠 시간은 =1stparton_일 밤이다. 일을 마치면 _vamprelic_을
+%qdt:
+___vampire_의 _vampire_에게서 편지를 받았다.
+
+__itemdung_의 마법사 길드에 있는 보안실에서
+_vamprelic_을 훔쳐야 한다.
+기한은 =1stparton_밤이다.
+
+일을 마치면 _vamprelic_을
 __vampire_의 _vampire_에게 가져가야 한다.
 
 Message:  1030
-<ce>바닥에 떨어진 두루마리가 눈에 들어옵니다.
-<ce>가까이 살펴보니 당신 앞으로
-<ce>온 편지여서 깜짝 놀랍니다.
-<ce>
+<ce>바닥에 떨어진 두루마리 하나가 눈에 들어옵니다.
+<ce>가까이 살펴보니 당신 앞으로 온 편지여서
+<ce>깜짝 놀랍니다.
 
 -- Symbols used in the QRC file:
 --
 --               %di occurs 2 times.
---              %pcf occurs 9 times.
+--              %pcf occurs 5 times.
 --              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
---              %vam occurs 14 times.
+--              %vam occurs 7 times.
 --       =1stparton_ occurs 3 times.
---         =vampire_ occurs 4 times.
+--         =vampire_ occurs 2 times.
 --       __itemdung_ occurs 2 times.
---        __vampire_ occurs 14 times.
---       _vamprelic_ occurs 27 times.
+--        __vampire_ occurs 4 times.
+--       _vamprelic_ occurs 11 times.
+
 QBN:
 Item _vamprelic_ religious anyInfo 1013 used 1015
 Item _letter_ letter used QuestorOffer

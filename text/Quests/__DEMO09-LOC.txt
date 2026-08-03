@@ -5,104 +5,107 @@ Quest: __DEMO09
 
 
 QRC:
-
 QuestorOffer:  [1000]
-<ce>나는 _qgiver_입니다. 주민 한 사람이 집에
-<ce>야생 짐승이 들어왔다며 도움을 청했습니다.
-<ce>누군가 가서 처리해야 합니다. 길드에서 _gold_골드를
-<ce>지급하겠습니다. 맡으시겠습니까, %pcn?
-<ce>
-<ce>
+<ce>저는 _qgiver_입니다.
+<ce>지역 주민 한 명에게 의뢰가 들어왔습니다.
+<ce>집에 야생동물이 들어갔다고 합니다.
+<ce>누군가 가서 그 짐승을 죽여야 합니다.
+<ce>길드에서 _gold_ 골드를 드리겠습니다.
+<ce>맡으시겠습니까, %pcn?
 
 RefuseQuest:  [1001]
 <ce>다른 누군가가 이 성가신 곰을
-<ce>처리해 주겠다고 나서겠지요.
-<ce>
+<ce>처리하겠다고 나서겠지요.
 
 AcceptQuest:  [1002]
-<ce>"좋아, %pcf 님. 마을에 있는 _house_
-<ce>쪽으로 가세요. 하루 안에 끝내야 합니다.
-<ce>자기 집에 동물이 돌아다니는 걸 좋아할 사람은 없으니까요.
-<ce>짐승을 처치하고 돌아오면 보상을 준비해 두겠습니다."
-<ce>_qgiver_ 님이 외칩니다, "이봐요,
-<ce>_house_에 있는 동물이 대체 무슨 동물이죠?"
-<ce>
-<ce>
+<ce>"좋습니다, %pcf.
+<ce>마을에 있는 _house_로 가십시오.
+<ce>하루 안에 일을 끝내야 합니다.
+<ce>누구도 자기 집에 짐승이 돌아다니기를
+<ce>바라지는 않을 테니까요.
+<ce>짐승을 죽이고 돌아오면 보수를 준비해두겠습니다."
+<ce>_qgiver_가 외친다.
+<ce>"이봐요, _house_에 들어간 것이
+<ce>무슨 동물이라고 했죠?"
 
 QuestComplete:  [1004]
-<ce>잘하셨습니다, %pcf 님.
+<ce>잘했습니다, %pcf.
 <ce>여기 _gold_ 골드입니다.
 
 RumorsDuringQuest:  [1005]
-<ce>들으셨나요? 마을 건물에 동물이 들어왔다더군요.
-<ce>부디 빨리 처리했으면 좋겠네요.
-<ce>
+<ce>들으셨나요?
+<ce>마을의 한 건물에 동물이 들어갔다더군요.
+<ce>어서 처리되면 좋겠습니다.
 
 RumorsPostfailure:  [1006]
-<ce>전사 길드에서 _house_에 들어온 곰을
-<ce>죽였다더군요. 그들이 있어서 다행이에요.
-<ce>
+<ce>전사 길드가 _house_에 들어간 곰을
+<ce>죽였다는군요.
+<ce>그들이 있어서 다행입니다.
 
 RumorsPostsuccess:  [1007]
-<ce>그 생물이 마을에서 쫓겨나기 전에
-<ce>어떤 여자를 할퀴었다더군요. 참 안됐죠.
+<ce>그 짐승이 마을에서 쫓겨나기 전에
+<ce>어떤 여자를 심하게 할퀴었다더군요.
+<ce>참 안된 일입니다.
 
 QuestorPostsuccess:  [1008]
-<ce>그 짐승을 죽이느라 고생하셨습니다.
+<ce>그 짐승을 잘 처리했군요.
 <ce>무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-<ce>그 생물이 집 주인을 잡아먹었다는 소문이 있더군요.
-<ce>우리 길드 평판만 나빠졌잖아요.
-<ce>다음엔 더 잘해보세요.
+<ce>그 짐승이 집주인을 잡아먹었다는군요.
+<ce>길드의 평판만 나빠졌습니다.
+<ce>다음에는 좀 더 잘하십시오.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_ 전사 길드에서 _house_에
-침입한 야생 짐승을 죽여달라고 의뢰했다. 하루 안에 끝내야 한다.
+%qdt:
+___qgiver_ 전사 길드에서
+_house_에 침입한 야생 짐승을 처치해달라고 의뢰했다.
+하루 안에 끝내야 한다.
 
 Message:  1011
-<ce>곰이 죽었습니다.
+<ce>곰이 죽었다.
 
 Message:  1012
-<ce>하피가 죽었습니다.
+<ce>하피가 죽었다.
 
 Message:  1013
-<ce>거미가 죽었습니다.
+<ce>거미가 죽었다.
 
 Message:  1014
-<ce>호랑이가 죽었습니다.
+<ce>호랑이가 죽었다.
 
 Message:  1021
-<ce>위층에서 누군가 외치는
-<ce>소리가 들립니다. "곰이다."
+<ce>위층에서 누군가 외치는 소리가 들린다.
+<ce>"곰이다."
 
 Message:  1022
-<ce>위층에서 누군가 외치는
-<ce>소리가 들립니다. "하피다."
+<ce>위층에서 누군가 외치는 소리가 들린다.
+<ce>"하피다."
 
 Message:  1023
-<ce>위층에서 누군가 외치는
-<ce>소리가 들립니다. "거미다."
+<ce>위층에서 누군가 외치는 소리가 들린다.
+<ce>"거미다."
 
 Message:  1024
-<ce>위층에서 누군가 외치는
-<ce>소리가 들립니다. "호랑이다."
+<ce>위층에서 누군가 외치는 소리가 들린다.
+<ce>"호랑이다."
 
 Message:  1080
-<ce>그건 그렇고, 그 짐승과 즐거운 시간을
-<ce>보내신 것 같으니, ___newdung_ 위치가
-<ce>표시된 지도를 드리지요. 마음껏 즐기시길.
+<ce>그건 그렇고, 그 짐승과 꽤 즐거운 시간을
+<ce>보낸 듯하니 ___newdung_의 지도를 드리지요.
+<ce>마음껏 즐기십시오.
 
 -- Symbols used in the QRC file:
 --
 --              %pcf occurs 2 times.
---              %pcn occurs 2 times.
+--              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
---       ___newdung_ occurs 3 times.
+--       ___newdung_ occurs 1 time.
 --        ___qgiver_ occurs 1 time.
---            _gold_ occurs 9 times.
---           _house_ occurs 5 times.
+--            _gold_ occurs 2 times.
+--           _house_ occurs 4 times.
 --          _qgiver_ occurs 2 times.
+
 QBN:
 Item _gold_ gold
 

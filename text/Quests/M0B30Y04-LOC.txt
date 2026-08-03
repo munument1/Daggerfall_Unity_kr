@@ -9,66 +9,61 @@ Quest: M0B30Y04
 DisplayName: 전사 길드 리치
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>잘 들어, %pcf. 자네가 이미 우리 일을 여러 번
-<ce>해내지 않았다면 이런 제안은 꺼내지도 않았을 거야.
+<ce>잘 들어, %pcf.
+<ce>자네가 이미 우리 일을 여러 번 해내지 않았다면
+<ce>이런 제안은 꺼내지도 않았을 거야.
 <ce>솔직히 말하기조차 싫은 일이 하나 있거든.
-<ce>달을 따오라는 요구만큼 황당하면서도 훨씬 위험한 일이지.
+<ce>달을 따오라는 소리만큼 황당하면서
+<ce>훨씬 더 위험한 일이지.
 <ce>___mondung_에 있는 리치를 죽이는 거야.
 <ce>그런데 보수는 고작 _reward_골드뿐이라네.
 <ce>설마 관심 있는 건 아니겠지?
-<ce>
-<ce>
-<ce>
 
 RefuseQuest:  [1001]
-<ce>%god⁠께 감사할 일이군. 아직 조금은
-<ce>제정신이 남아 있었어. 그 리치는 그냥 제멋대로
-<ce>날뛰게 내버려 두지. 나도 그편이 마음 편해.
-<ce>
-<ce>
+<ce>%god께 감사할 일이군.
+<ce>아직 조금은 제정신이 남아 있었어.
+<ce>그 리치는 그냥 제멋대로 날뛰게 내버려두지.
+<ce>나도 그편이 마음 편해.
 
 AcceptQuest:  [1002]
 <ce>이런, 말하지 말았어야 했는데.
 <ce>정말 하겠다면 구할 수 있는 최고의 장비를 챙겨라.
-<ce>마법 장비든, 에보니 검이든, 뭐든 말이야.
+<ce>마법 장비든 에보니 검이든, 뭐든 말이야.
 <ce>리치를 =1stparton_일 안에 오블리언으로 보내고,
 <ce>그 안에 여기로 돌아와야 보수를 받을 수 있다.
 <ce>정말 믿을 수 없는 녀석이군, %pcf.
 <ce>행운을 빈다. 분명 필요할 테니까.
-<ce>
-<ce>
-<ce>
 
 QuestFail:  [1003]
 <ce>리치 사냥 전에 잠시 쉬는 건가, %pcf?
-<ce>너무 오래 미루진 말게.
-<ce>
+<ce>너무 오래 미루지는 말게.
 
 QuestComplete:  [1004]
 <ce>솔직히 자네를 다시 보게 될 줄은 몰랐어, %pcf.
-<ce>%god⁠가 자네를 보살피는 게 분명하군.
+<ce>%god가 자네를 보살피는 게 분명하군.
 <ce>약속한 _reward_골드다. 잘 쓰게.
-<ce>
 
 RumorsDuringQuest:  [1005]
-어떤 멍청한 %ra⁠가 ___mondung_의 리치를 잡으러
-간다더군.
+어떤 멍청한 %ra⁠가
+___mondung_의 리치와 맞서러 간다더군.
 <--->
-모두 ___mondung_의 리치를 잡으러 간 %ra⁠를 두고 내기
-중이야.
+모두 ___mondung_의 리치를 잡으러 가는
+그 %ra⁠를 두고 내기 중이야.
 
 RumorsPostfailure:  [1006]
-그 리치는 아직 어딘가에 있고, 우리에게 단단히 화가 났어.
+그 리치는 아직 어딘가에 있고,
+우리에게 단단히 화가 났어.
 <--->
-그냥 리치를 내버려뒀어야 했어. 괜히 화나게 만들었잖아.
+그냥 그 리치를 내버려뒀어야 했어.
+괜히 화나게 만들었잖아.
 
 RumorsPostsuccess:  [1007]
-누군가 정말 그 리치를 죽였어! 리치는 불사신인 줄 알았는데.
+누군가 정말 그 리치를 죽였어!
+리치는 불사신인 줄 알았는데.
 <--->
-그 리치를 죽이러 간 %ra⁠가 실패할 거라 내기했다가 돈을
-잃었어.
+그 리치를 죽이러 간 %ra⁠가 실패할 거라고 내기했다가
+돈을 잃었어.
 
 QuestorPostsuccess:  [1008]
 <ce>리치 사냥꾼이 돌아왔군!
@@ -77,37 +72,39 @@ QuestorPostsuccess:  [1008]
 QuestorPostfailure:  [1009]
 <ce>나라면 리치와 싸우는 일은 맡지 않았을 거야.
 <ce>자네가 왜 맡았는지 도무지 이해할 수 없군.
-<ce>이제 리치조차 죽이지
-<ce>못한 멍청이처럼 보일 뿐이야.
+<ce>결국 죽이지도 못했으니
+<ce>이제 멍청해 보일 뿐이야.
 
 Message:  1020
-<ce>보잘것없는 필멸자여! 언데드의 일에
-<ce>끼어들지 말았어야 했다. 이제 너를 내가
-<ce>죽인 %ra 용병 수집품에 추가해주마.
-<ce>
-<ce>
-<ce>
+<ce>보잘것없는 필멸자여!
+<ce>언데드의 일에 끼어들지 말았어야 했다.
+<ce>이제 너도 내가 죽인 %ra 용병들의
+<ce>대열에 넣어주마.
 
 Message:  1030
-%qdt: ___questgiver_의 전사 길드가 =1stparton_일
-안에 리치를 처치하라고 의뢰했다. 리치의 은신처는 ___mondung_다.
+%qdt:
+___questgiver_의 전사 길드는
+=1stparton_일 안에 리치를 처치해달라고 했다.
+
+리치의 은신처는 ___mondung_다.
 
 Message:  1080
 <ce>자, ___newdung_로 가는 지도를 받게.
-<ce>자네 같은 리치 사냥꾼이라면 아침
-<ce>식사 전 몸풀기 정도겠지.
+<ce>자네 같은 리치 사냥꾼이라면
+<ce>아침 식사 전 몸풀기 정도겠지.
 
 -- Symbols used in the QRC file:
 --
 --              %god occurs 2 times.
 --              %pcf occurs 4 times.
 --              %qdt occurs 1 time.
---               %ra occurs 6 times.
+--               %ra occurs 4 times.
 --       =1stparton_ occurs 2 times.
---       ___mondung_ occurs 5 times.
+--       ___mondung_ occurs 4 times.
 --       ___newdung_ occurs 1 time.
 --    ___questgiver_ occurs 1 time.
---          _reward_ occurs 3 times.
+--          _reward_ occurs 2 times.
+
 QBN:
 Item _reward_ gold
 

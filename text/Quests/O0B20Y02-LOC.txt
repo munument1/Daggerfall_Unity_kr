@@ -9,72 +9,79 @@ Quest: O0B20Y02
 DisplayName: 귀중한 물건
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>목소리 낮춰. 내 이름은...
-<ce>어, 그냥 _qgiver_라고 불러.
-<ce>길드 일이 하나 있어. 보수는 평소대로고. 관심 있나?
-<ce>
-<ce>
+<ce>목소리를 낮춰.
+<ce>내 이름은... 어, 그냥 _qgiver_라고 불러.
+<ce>길드 일이 하나 있어.
+<ce>보수는 평소와 같고.
+<ce>여기까지 듣고 관심이 생기나?
 
 RefuseQuest:  [1001]
-<ce>자세한 말을 하지 않길 잘했군. 이제 나가.
-<ce>
+<ce>자세한 내용을 말하지 않길 잘했군.
+<ce>이제 나가.
 
 AcceptQuest:  [1002]
 <ce>__mansion_의 _mansion_에서
-<ce>_magicitem_을 훔쳐.
+<ce>_magicitem_을 훔쳐야 해.
 <ce>=traveltime_일 안에 끝내지 못하면 거래는 취소다.
-<ce>그곳에 경비가 있다는 말은 했던가? 분명 말한 것 같은데.
-<ce>
-<ce>
-<ce>
+<ce>그곳에 경비가 있다는 말은 했던가?
+<ce>분명 말한 것 같은데.
 
 QuestComplete:  [1004]
-<ce>물건 가져왔나? 아! 잘했어.
-<ce>이번 일의 표준 보수는 _gold_골드다.
-<ce>한곳에서 전부 써버리지는 마.
-<ce>
+<ce>물건을 가져왔나?
+<ce>아, 잘했어.
+<ce>이번 일의 표준 수당은 _gold_골드다.
+<ce>한곳에서 전부 써 버리지는 마.
 
 RumorsDuringQuest:  [1005]
-__mansion_의 _mansion_에는 희귀한 마법 물건이 아주 많대.
+__mansion_의 _mansion_에는
+희귀한 마법 물건이 아주 많대.
 
 RumorsPostfailure:  [1006]
-보안을 위해 _magicitem_을 _mansion_ 밖으로 옮겼대.
+보안을 위해 _magicitem_을
+_mansion_ 밖으로 옮겼대.
 
 RumorsPostsuccess:  [1007]
-_mansion_에서 _magicitem_을 도둑맞았대. 엄청난 추문이지.
+_mansion_에서 _magicitem_을 도둑맞았대.
+정말 큰 추문이지.
 
 QuestorPostsuccess:  [1008]
-나를 보고 놀랐나, %pcf? 내가 _magicitem_을 들고 달아났을 줄
-알았어?
+나를 보고 놀랐나, %pcf?
+내가 _magicitem_을 들고 달아났을 거라고 생각했어?
 
 QuestorPostfailure:  [1009]
-<ce>이미 _magicitem_을 _mansion_ 밖으로 옮겼어,
-<ce>%pcf. 다시 말해 자네는 실패한 거야. 이제 가.
-<ce>
-<ce>
+<ce>그들은 이미 _magicitem_을
+<ce>_mansion_ 밖으로 옮겼어, %pcf.
+<ce>다시 말해 자네는 임무에 실패했다는 뜻이지.
+<ce>이제 가.
 
 QuestLogEntry:  [1010]
-%qdt: 길드의 _qgiver_, 적어도 %g⁠은 %g2self⁠를
-그렇게 불렀다. 그자는 __mansion_의 _mansion_에서
-_magicitem_을 훔치라고 했다. =traveltime_일 안에
-___qgiver_의 __qgiver_에 있는 %g2⁠에게 가져가야 한다.
+%qdt:
+길드의 _qgiver_, 적어도 %g⁠는
+%g2-self⁠를 그렇게 불렀다.
+
+%g⁠는 __mansion_의 _mansion_에서
+_magicitem_을 훔치라고 했다.
+
+=traveltime_일 안에 그것을
+___qgiver_의 __qgiver_에 있는
+%g2⁠에게 가져다줘야 한다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 1 time.
---               %g2 occurs 2 times.
+--                %g occurs 2 times.
+--               %g2 occurs 1 time.
 --              %pcf occurs 2 times.
 --              %qdt occurs 1 time.
 --      =traveltime_ occurs 2 times.
---        ___qgiver_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
 --        __mansion_ occurs 3 times.
---         __qgiver_ occurs 4 times.
+--         __qgiver_ occurs 1 time.
 --            _gold_ occurs 1 time.
---       _magicitem_ occurs 21 times.
+--       _magicitem_ occurs 6 times.
 --         _mansion_ occurs 6 times.
 --          _qgiver_ occurs 2 times.
+
 QBN:
 Item _magicitem_ magic_item
 Item _gold_ gold

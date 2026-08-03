@@ -9,106 +9,104 @@ Quest: P0B00L03
 DisplayName: 영토 전쟁
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>%vam⁠의 더 큰 영광을
-<ce>위해 위험한 임무를 맡아보겠나?
-<ce>
+<ce>%vam의 더 큰 영광을 위해
+<ce>위험한 임무를 맡아 보겠나?
 
 RefuseQuest:  [1001]
-<ce>이 영예를 놓치고 다른 %vam⁠에게
+<ce>이 영예를 놓치고 다른 %vam의 일원에게
 <ce>맡기겠다는 건가? 좋다.
-<ce>하지만 자네의 고분고분함에는 실망했어.
-<ce>
+<ce>하지만 자네의 지나친 순종에는 실망했어.
 
 AcceptQuest:  [1002]
 <ce>참으로 아름답게 순종하는군, %pcf.
-<ce>경쟁 혈통의 뱀파이어가 내 영토에 들어왔다.
-<ce>자네가 죽여라. 조심해야 한다, %pcf.
-<ce>%vam⁠보다 열등한 혈통이라 해도 고대 뱀파이어는
-<ce>약한 상대가 아니다. 준비 없이 싸우러 가지 마라.
-<ce>이름은 _vampname_, %g3⁠의 새 성소는 ___mondung_이다.
-<ce>놈은 희생자 가죽으로 만든 _vampproof_을 몹시
-<ce>자랑한다. 그것을 가져와라. =1stparton_일 밤 안에
-<ce>돌아오기를 기다리겠다. 죽지 마라, %pcf.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>경쟁 혈족의 흡혈귀가 내 영토에 들어왔다.
+<ce>자네가 놈을 죽여라.
+<ce>조심해야 한다, %pcf.
+<ce>%vam보다 열등한 혈족 출신이라 해도
+<ce>고대 흡혈귀는 결코 약한 상대가 아니다.
+<ce>준비 없이 싸우러 가지 마라.
+<ce>놈의 이름은 _vampname_이며,
+<ce>%g3 새 은신처는 ___mondung_이다.
+<ce>희생자들의 가죽으로 만든 _vampproof_을
+<ce>몹시 자랑한다는군.
+<ce>놈을 죽이고 그것도 가져와라.
+<ce>밤이 =1stparton_번 지나기 전에
+<ce>이곳으로 돌아오기를 기다리겠다.
+<ce>죽지 마라, %pcf.
 
 QuestFail:  [1003]
-<ce>_vampname_가 스스로 목숨을
-<ce>끊기를 기다렸나? 그럴 리 없지.
-<ce>자네가 %g3⁠의 죽음을 불러올 자가 되어야 한다.
-<ce>
-<ce>
+<ce>_vampname_가 스스로 목숨을 끊기를
+<ce>기다리고 있었나? 그럴 가능성은 없지.
+<ce>자네가 %g3 죽음을 불러오는 자가 되어야 한다.
 
 QuestComplete:  [1004]
 <ce>돌아온 것을 환영한다, %pcf, 나의 아이야.
-<ce>이상하게도 자네의 안위를 꽤 걱정했어.
-<ce>%vam⁠의 뱀파이어가 감상에 빠지다니 터무니없군!
-<ce>%vam 장로들의 축하를 전하지.
-<ce>장로들은 이 _reward_을 주라고 했다.
-<ce>보수 같은 천박한 것으로 여기지 마라. 그저 가족이 주는 선물이다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>이상하게도 나는 자네의 안위를 꽤 걱정했어.
+<ce>%vam의 흡혈귀가 감상에 빠지다니,
+<ce>참으로 터무니없는 일이군!
+<ce>%vam 원로들의 축하를 전하지.
+<ce>그들이 이 _reward_을 자네에게 주라고 했다.
+<ce>보수처럼 천박한 것으로 생각하지 마라.
+<ce>그저 가족이 건네는 선물이니까.
 
 RumorsDuringQuest:  [1005]
-수년간 버려졌던 ___mondung_에서 요즘 움직임이 많아졌어.
+수년간 버려졌던 ___mondung_에서
+요즘 움직임이 많아졌어.
 <--->
-_vampname_는 귀족이야. %g⁠은 ___mondung_와 %reg⁠을
+_vampname_는 귀족이야.
+%g⁠는 ___mondung_과 %reg⁠을
 정리하고 있다고 말하더군.
 
 RumorsPostfailure:  [1006]
-_vampname_가 마침내 ___mondung_에서 나갔다더군.
+_vampname_가 마침내
+___mondung_에서 나갔다더군.
 귀족이 살 곳은 아니지.
 <--->
-_vampname_가 ___mondung_에서 옮긴 뒤로 %g⁠은 궁전에
-자주 드나든대.
+_vampname_가 ___mondung_에서 옮긴 뒤,
+%g⁠는 궁전에 자주 드나든대.
 
 RumorsPostsuccess:  [1007]
-그 친절한 _vampname_가 뱀파이어였다니! 전혀 몰랐어!
+그 친절한 _vampname_가 뱀파이어였다니!
+전혀 몰랐어!
 <--->
-훌륭한 %ra 용병이 ___mondung_의 뱀파이어를 죽였으니
-%god⁠께 감사해야 해.
+훌륭한 %ra 용병이 ___mondung_의
+뱀파이어를 죽였으니 %god⁠께 감사해야 해.
 
 QuestorPostsuccess:  [1008]
-반갑다, %pcf. 새 _reward_을 잘 쓰고 있기를 바란다.
+반갑다, %pcf.
+새 _reward_을 잘 쓰고 있기를 바란다.
 
 QuestorPostfailure:  [1009]
-<ce>_vampname_는 아직도 밤거리를 걷고 있다,
-<ce>%pcf. 이번 일의 처리는 용납할 수 없어.
-<ce>온 %vam⁠이... 자네에게 실망했다.
-<ce>
-<ce>
-<ce>
+<ce>_vampname_는 아직도 밤거리를 돌아다닌다, %pcf.
+<ce>이번 임무를 처리한 방식은 도저히 용납할 수 없어.
+<ce>%vam 전체가...
+<ce>자네에게 실망했다.
 
 Message:  1020
-<ce>친애하는 %pcn, %vam⁠에 문제가 생길 듯하다.
-<ce>가능한 한 빨리 ___vampire_의 내게 오라. 죽음 속에서, _vampire_
+<ce>친애하는 %pcn,
+<ce>걱정스러운 문제가 %vam에 생겼다.
+<ce>가능한 한 빨리 ___vampire_에 있는
+<ce>내게 오라.
+<ce>죽음 속에서,
+<ce>_vampire_
 
 Message:  1011
-%G⁠은 __vampire_에 있는 아주 친절하고 영리한 =vampire_야.
+%G⁠은 __vampire_에 있는
+아주 친절하고 영리한 =vampire_야.
 <--->
-_vampire_는 여기서 %di 떨어진 __vampire_에
-있는 친절한 =vampire_지.
+_vampire_는 여기서 %di 방향의 __vampire_에 있는
+친절한 =vampire_지.
 
 Message:  1012
-_vampire_는 %vam 혈통의 뱀파이어야.
+_vampire_는 %vam 혈족의 뱀파이어야.
 <--->
-_vampire_는 더 어린 뱀파이어들을 가르치는 %vam⁠의 젊은
-뱀파이어야.
+_vampire_는 더 어린 뱀파이어들을 가르치는
+%vam⁠의 젊은 뱀파이어야.
 
 Message:  1013
-_vampname_의 _vampproof_은 기묘하게 창백한 가죽으로
-만들어졌다.
+_vampname_의 _vampproof_.
+기묘하게 창백한 가죽으로 만들어졌다.
 
 Message:  1015
 오류 -- 1015가 표시되고 있음
@@ -117,42 +115,45 @@ Message:  1021
 편지를 받았습니다.
 
 Message:  1022
-<ce>나는 한 번 죽음에서 돌아왔다. 다시 돌아올 것이다.
-<ce>그때에는 자네와 _vampire_를
-<ce>창백한 벌레 사냥하듯 추적해 죽이겠다!
-<ce>
-<ce>
+<ce>나는 이미 한 번 죽음에서 돌아왔다.
+<ce>또다시 돌아올 것이다.
+<ce>그때는 자네와 _vampire_를
+<ce>창백한 벌레처럼 사냥해 죽이겠다!
 
 Message:  1025
-%qdt: ___vampire_의 _vampire_가
-%vam⁠의 일로 나를 __vampire_에 불렀다.
+%qdt:
+___vampire_의 _vampire_가
+%vam 관련 일로 나를 __vampire_에 불렀다.
 
 Message:  1026
-%qdt: _vampire_는 _vampname_라는 고대
-뱀파이어를 죽이기 위해 나를 ___mondung_으로 보냈다.
-처치한 뒤 특별한 _vampproof_을 증거로 챙겨 =1stparton_일 밤 안에
-__vampire_로 돌아가야 한다.
+%qdt:
+_vampire_는 _vampname_라는 고대 뱀파이어를 죽이라고
+나를 ___mondung_으로 보냈다.
+
+처치한 뒤 증거로 특별한 _vampproof_을 챙겨
+=1stparton_밤 안에 __vampire_로 돌아가야 한다.
 
 -- Symbols used in the QRC file:
 --
---               %di occurs 2 times.
---                %g occurs 3 times.
+--               %di occurs 1 time.
+--                %g occurs 2 times.
 --               %g3 occurs 2 times.
 --              %god occurs 1 time.
---              %pcf occurs 7 times.
---              %pcn occurs 2 times.
+--              %pcf occurs 6 times.
+--              %pcn occurs 1 time.
 --              %qdt occurs 2 times.
 --               %ra occurs 1 time.
 --              %reg occurs 1 time.
---              %vam occurs 12 times.
---       =1stparton_ occurs 4 times.
+--              %vam occurs 10 times.
+--       =1stparton_ occurs 2 times.
 --         =vampire_ occurs 2 times.
---       ___mondung_ occurs 25 times.
---       ___vampire_ occurs 10 times.
---          _reward_ occurs 18 times.
+--       ___mondung_ occurs 7 times.
+--       ___vampire_ occurs 2 times.
+--          _reward_ occurs 2 times.
 --         _vampire_ occurs 7 times.
 --        _vampname_ occurs 9 times.
 --       _vampproof_ occurs 3 times.
+
 QBN:
 Item _reward_ magic_item
 Item _vampproof_ boots anyInfo 1013

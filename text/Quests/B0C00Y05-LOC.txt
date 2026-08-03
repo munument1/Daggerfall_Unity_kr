@@ -10,102 +10,98 @@ Quest: B0C00Y05
 DisplayName: 배신자
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>당신은 아직 우리 기사단의 신뢰를 얻지 못했습니다,
-<ce>%pcn. 하지만 신뢰를 얻을 방법이 하나 있습니다.
-<ce>___qgiver_에 기사단을 적에게
-<ce>팔아넘긴 비열한 _monster_가 있습니다.
-<ce>반역의 정당한 대가는 죽음이라고 생각하지 않습니까,
-<ce>%pcn? 기사단을 위해 처리하시겠습니까?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>당신은 아직 우리 기사단의 신뢰를 얻지 못했습니다, %pcn.
+<ce>하지만 그 신뢰를 얻을 방법이 하나 있습니다.
+<ce>___qgiver_에 기사단을 적에게 팔아넘긴
+<ce>비열한 _monster_가 있습니다.
+<ce>반역의 정당한 대가는 죽음이라고 생각하지 않습니까, %pcn?
+<ce>기사단을 위해 그자를 처리하시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>당분간 이 기사단의 호의는 기대하지 마십시오.
-<ce>
+<ce>당분간 이 기사단의 호의는
+<ce>기대하지 마십시오.
 
 AcceptQuest:  [1002]
 <ce>배신자는 =monster_라는 _monster_로,
 <ce>겁쟁이답게 ___mondun_에 숨어 있습니다.
-<ce>=queston_일 안에 돌아오지 않으면 우리의 신뢰는
-<ce>사라지고 다른 자가 당신의 자리를 대신할 것입니다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>=queston_일 안에 돌아오지 않으면
+<ce>우리는 당신에 대한 신뢰를 거두고,
+<ce>다른 사람에게 임무를 맡길 것입니다.
 
 QuestFail:  [1003]
-<ce>_monster_는 죽지 않았습니다.
+<ce>그 _monster_는 아직 살아 있습니다.
 <ce>아니라고 우길 생각은 마십시오.
 
 QuestComplete:  [1004]
-<ce>소문만큼 형편없는 자는 아니었군요. %pcn,
-<ce>이제 이 기사단에서 약간의 존경을 얻었습니다.
-<ce>
-<ce>
+<ce>소문만큼 형편없는 사람은 아니었군요, %pcn.
+<ce>이제 이 기사단에서 조금이나마 존경을 얻었습니다.
 
 RumorsDuringQuest:  [1005]
-그 _monster_는 지옥의 사냥개라도 쫓아오는 듯 ___mondun_으로
-달아났습니다.
+그 _monster_는 지옥의 사냥개라도 뒤쫓는 것처럼
+___mondun_으로 달아났습니다.
 <--->
-%g⁠이 기사단에 저지른 일을 생각하면 _qgiver_가 =monster_를
-그냥 놓아줄 수는 없지요.
+%g⁠가 기사단에 저지른 일을 생각하면,
+_qgiver_가 =monster_를 그냥 놓아줄 수는 없지요.
 
 RumorsPostfailure:  [1006]
-=monster_는 _qgiver_가 생각한 것보다 강한 모양입니다.
+=monster_는 _qgiver_가 생각한 것보다
+훨씬 질긴 모양입니다.
 대단한 탈출이군요.
 <--->
-=monster_는 북쪽으로 갔다지만, %g3 기억은 여전히 기사단을
-괴롭힙니다.
+=monster_는 북쪽으로 갔다지만,
+%g3 기억은 여전히 기사단을 괴롭히고 있습니다.
 
 RumorsPostsuccess:  [1007]
-=monster_의 최후가 증명했지요. ==qgiver_를 우습게
-보면 안 됩니다.
+=monster_의 이야기가 증명하지요.
+==qgiver_를 함부로 건드리면 안 됩니다.
 <--->
-기사단이 =monster_ 같은 멍청이에게는 좀 더 자비로울 줄
-알았습니다.
+기사단이 =monster_ 같은 멍청이에게는
+좀 더 자비로울 줄 알았습니다.
 
 QuestorPostsuccess:  [1008]
-살인자여, 가능한 일이라면 무엇이든 기꺼이 돕겠습니다.
+그자를 죽인 분이라면
+무엇이든 기꺼이 돕겠습니다.
 
 QuestorPostfailure:  [1009]
-마음이 너무 물렀군요, %pcf. 내 시간을 낭비하지 마십시오.
+마음이 너무 물렀군요, %pcf.
+내 시간을 낭비하지 마십시오.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 _qgiver_는
-___mondun_에 숨어 있는 =monster_라는 _monster_를
-찾아 죽이라고 했다. 임무를 끝낼 시간은 =queston_일이다.
+%qdt:
+___qgiver_의 _qgiver_는
+___mondun_에 숨어 다니는
+=monster_라는 _monster_를 찾아 처치하라고 했다.
+
+기한은 =queston_일이다.
 
 Message:  1011
-<ce>_monster_인 =monster_를 죽였습니다.
-<ce>기사단이 자랑스러워할 것입니다.
+<ce>_monster_ =monster_를 죽였습니다.
+<ce>기사단에서도 이 일을 자랑스러워할 것입니다.
 
 Message:  1080
-<ce>감사의 표시로 ___newdung_으로
-<ce>가는 지도를 받으십시오. 소문에 따르면
-<ce>해충이 들끓는 역겨운 구덩이라고 합니다.
-<ce>풋내기 기사가 청소하며 즐기기에 딱 알맞은 곳이지요.
-<ce>
-<ce>
+<ce>감사의 표시로 ___newdung_으로 가는
+<ce>이 지도를 받아주십시오.
+<ce>소문에 따르면 해충이 들끓는 역겨운 구덩이라더군요.
+<ce>성장 중인 기사가 청소하며 즐기기에
+<ce>딱 알맞은 곳이지요.
 
 -- Symbols used in the QRC file:
 --
 --                %g occurs 1 time.
 --               %g3 occurs 1 time.
---              %pcf occurs 2 times.
+--              %pcf occurs 1 time.
 --              %pcn occurs 3 times.
 --              %qdt occurs 1 time.
 --         ==qgiver_ occurs 1 time.
---         =monster_ occurs 28 times.
+--         =monster_ occurs 8 times.
 --         =queston_ occurs 2 times.
 --        ___mondun_ occurs 3 times.
 --       ___newdung_ occurs 1 time.
 --        ___qgiver_ occurs 2 times.
 --         _monster_ occurs 6 times.
 --          _qgiver_ occurs 3 times.
+
 QBN:
 
 Person _qgiver_ group Questor

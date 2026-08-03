@@ -9,136 +9,146 @@ Quest: Z0C00Y00
 DisplayName: 메팔라의 퀘스트
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>역시 너였군. 이런 소환에는 애초에 응하지 말았어야 했는데.
-<ce>벌레가 말벌이 되고 싶어 하는 건 자연스러운
-<ce>욕망인지도 모르지. 좋다, %pcf.
-<ce>힘을 주겠다. 다만 먼저 성가신 하급 귀족
-<ce>하나를 암살해라. 믿고 맡겨도 되겠느냐?
-<ce>
-<ce>
-<ce>
+<ce>역시 너였군. 이런 소환에는
+<ce>애초에 응하지 말았어야 했는데.
+<ce>벌레가 말벌이 되고 싶어 하는 것은
+<ce>자연스러운 욕망인지도 모르지.
+<ce>좋다, %pcf. 힘을 주겠다.
+<ce>다만 먼저 성가신 하급 귀족 하나를 암살해라.
+<ce>믿고 맡겨도 되겠느냐?
 
 RefuseQuest:  [1001]
-<ce>오히려 잘됐군. 배은망덕하고 게으른
-<ce>시궁창의 부랑자에게 힘의 기반을 마련해주는
-<ce>것보다 내 시간을 쓸 만한 곳은 많으니까.
+<ce>오히려 잘됐군.
+<ce>배은망덕하고 게으른 시궁창의 부랑자에게
+<ce>힘의 기반을 마련해 주는 것보다
+<ce>내 시간을 쓸 곳은 많으니까.
 
 AcceptQuest:  [1002]
-<ce>그나마 쓸모가 있군. 성가신 관리 _enemy_는
-<ce>__palace_의 궁전 안에 안전하게 숨어 있다고
-<ce>믿고 있다. 어떻게 들어갈지는 네가 생각해라.
-<ce>그런 생각을 할 수 있다면 말이지.
+<ce>그나마 쓸모가 있군.
+<ce>성가신 관리 _enemy_는 __palace_의 궁전에서
+<ce>안전하게 지내고 있다고 믿고 있다.
+<ce>어떻게 들어갈지는 네가 생각해라.
+<ce>그럴 만한 생각을 할 수 있다면 말이지.
 <ce>죽지 않고 해낸다면 ___qgfriend_으로 가라.
-<ce>내 하인이 새로운 힘의 원천 _artifact_를
-<ce>가져다줄 것이다. 하인 _qgfriend_에게
-<ce>__qgfriend_에서 =1stparton_일 동안
-<ce>기다리라고 하겠다. 늦지 마라. 이상이다.
-<ce>
-<ce>
-<ce>
+<ce>내 하인이 새로운 힘의 원천인 _artifact_를
+<ce>가져다줄 것이다.
+<ce>하인 _qgfriend_에게 __qgfriend_에서
+<ce>=1stparton_일 동안 기다리라고 하겠다.
+<ce>늦지 마라. 이상이다.
 
 QuestFail:  [1003]
-<ce>아니, 아니, 아니! 먼저 __palace_의 기사를
-<ce>죽이고, 그다음 나를 찾아오는 거다!
+<ce>아니, 아니, 아니, 아니!
+<ce>먼저 __palace_의 기사를 죽이고,
+<ce>그다음 나를 찾아오는 거다!
 <ce>%oth, 메팔라의 말이 옳았군.
-<ce>
 
 QuestComplete:  [1004]
 <ce>안녕하십니까, %pcf. 저는 _qgfriend_입니다.
 <ce>메팔라께서 당신이 올 수도 있다고 하셨지만,
 <ce>_enemy_와 맞붙고 살아남을 가능성은 의심하시더군요.
-<ce>그래도 제가 칼을 가져온 게 다행이지요?
+<ce>그래도 제가 검을 가져온 것이 다행이지요?
 <ce>메팔라께 호되게 꾸지람을 들었다면 유감입니다.
-<ce>_enemy_가 죽었으니 기분도 훨씬
-<ce>좋아지시겠지요. 그것만으로도 감사드립니다.
-<ce>
-<ce>
+<ce>_enemy_가 죽었으니 기분도 훨씬 좋아지시겠지요.
+<ce>그것만으로도 감사드립니다.
 
 --removed odd <---> in 1004.
 
+
 RumorsDuringQuest:  [1005]
-_enemy_는 %g⁠이 다크 브라더후드 본부로 가는 %g3 길을
-찾아낼 수 있다고 말합니다.
+_enemy_는 %g⁠이 다크 브라더후드 본부로 가는
+%g3 길을 찾아낼 수 있다고 말합니다.
 <--->
-_enemy_가 맞서고 있으니 다크 브라더후드도 두려움에 떨겠군요.
+_enemy_가 맞서고 있으니
+다크 브라더후드도 두려움에 떨겠군요.
 
 RumorsPostfailure:  [1006]
-다크 브라더후드가 _enemy_를 죽이려고 사람을 보냈지만 %g2⁠을
-처리하지 못했습니다!
+다크 브라더후드가 _enemy_를 죽이려고
+사람을 보냈지만 %g2⁠을 처리하지 못했습니다!
 <--->
-암살이 실패한 뒤 _enemy_는 __palace_에서 떠났습니다.
+암살이 실패한 뒤
+_enemy_는 __palace_에서 떠났습니다.
 
 RumorsPostsuccess:  [1007]
-_enemy_는 나이트사이드 어사일럼의 위치를 거의 알아냈던
-모양입니다.
+_enemy_는 나이트사이드 어사일럼의 위치를
+거의 알아냈던 모양입니다.
 <--->
-다크 브라더후드가 _enemy_와 %g3 야망에 관한 소문을 들은
-듯합니다.
+다크 브라더후드가 _enemy_와
+%g3 야망에 관한 소문을 들은 듯합니다.
 
 Message:  1011
-_qgfriend_라면 여기서 %di 떨어진 __qgfriend_에서
-신분을 낮추고 지내는 거만한 =qgfriend_입니다.
+_qgfriend_라면 여기서 %di 떨어진
+__qgfriend_에서 신분을 낮추고 지내는
+거만한 =qgfriend_입니다.
 <--->
-_qgfriend_라는 이름의 =qgfriend_는 %di 쪽
-__qgfriend_에 있습니다.
+_qgfriend_라는 이름의 =qgfriend_는
+%di 쪽 __qgfriend_에 있습니다.
 
 Message:  1012
-_qgfriend_는 %reg⁠에서 활동하는 메팔라의 요원으로,
+_qgfriend_는 %reg⁠에서 활동하는
+메팔라의 요원으로,
 __qgfriend_을 거점으로 삼고 있습니다.
 <--->
-_qgfriend_는 메팔라의 졸개입니다. %g⁠은
-__qgfriend_의 =qgfriend_이지요.
+_qgfriend_는 메팔라의 졸개입니다.
+%g⁠은 __qgfriend_의 =qgfriend_이지요.
 
 Message:  1013
-메팔라는 살인의 데이드라 섭정이며 다크 브라더후드의 수호자입니다.
+메팔라는 살인의 데이드라 섭정이며,
+다크 브라더후드의 수호자입니다.
 <--->
-메팔라는 살인을 관장하는 오블리비언의 프린스입니다.
+메팔라는 살인을 관장하는
+오블리비언의 프린스입니다.
 
 Message:  1014
 <ce>_artifact_는 흡혈귀의 힘이 깃든 유물입니다.
-<ce>희생자의 생명력을 빨아들여 주인을 살찌웁니다.
+<ce>희생자의 생명력을 흡수해 주인에게 나누어 줍니다.
 
 Message:  1020
-%qdt: 데이드릭 프린스 메팔라와 계약했다.
-_enemy_라는 관리를 죽이면 _artifact_라는 유물을 주겠다고 한다.
-메팔라의 연락책 _qgfriend_는 ___qgfriend_의 __qgfriend_에서
-=1stparton_일 동안 기다릴 것이다. 문제는 _enemy_가
-__palace_의 궁전에서 산다는 점이다. %g2⁠에게 접근하기가 쉽지
-않을 것이다.
+%qdt:
+데이드릭 프린스 메팔라와 계약했다.
+_enemy_라는 관리를 죽이면
+_artifact_라는 유물을 주겠다고 한다.
+
+메팔라의 연락책 _qgfriend_는
+___qgfriend_의 __qgfriend_에서
+=1stparton_일 동안 기다릴 것이다.
+
+문제는 _enemy_가 __palace_의 궁전에 산다는 점이다.
+%g2⁠에게 접근하기가 쉽지 않을 것이다.
 
 Message:  1030
-<ce>메팔라가 기뻐하겠군요. _enemy_는
-<ce>죽었습니다. 이제 탈출할 시간입니다.
-<ce>
+<ce>메팔라가 기뻐하겠군요.
+<ce>_enemy_는 죽었습니다.
+<ce>이제 탈출할 시간입니다.
 
 Message:  1040
 <ce>누구냐? 여기서 뭘 하는 거지?
 
 Message:  1041
 <ce>숨어드는 암살자 놈들은 하나같이 똑같군.
-<ce>그래서 진짜 경호원을 고용했지. =bodyguard_!
-<ce>일어나라, 이 덩치만 큰 멍청아. 죽여!
+<ce>그래서 진짜 경호원을 고용했지.
+<ce>=bodyguard_! 일어나라, 이 덩치만 큰 멍청아.
+<ce>죽여!
 
 -- Symbols used in the QRC file:
 --
 --               %di occurs 2 times.
 --                %g occurs 2 times.
---               %g2 occurs 3 times.
---               %g3 occurs 8 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 2 times.
 --              %oth occurs 1 time.
---              %pcf occurs 3 times.
+--              %pcf occurs 2 times.
 --              %qdt occurs 1 time.
 --              %reg occurs 1 time.
 --       =1stparton_ occurs 2 times.
 --       =bodyguard_ occurs 1 time.
---        =qgfriend_ occurs 5 times.
+--        =qgfriend_ occurs 3 times.
 --         __palace_ occurs 4 times.
 --       __qgfriend_ occurs 6 times.
 --        _artifact_ occurs 3 times.
---           _enemy_ occurs 18 times.
---        _qgfriend_ occurs 8 times.
+--           _enemy_ occurs 12 times.
+--        _qgfriend_ occurs 7 times.
+
 QBN:
 Item _artifact_ artifact Ebony_Blade anyInfo 1014
 

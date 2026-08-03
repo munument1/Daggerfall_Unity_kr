@@ -9,128 +9,132 @@ Quest: R0C11Y16
 DisplayName: 첩보 장비
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>며칠 여유가 있고 _reward_ 골드를
-<ce>더 벌고 싶으시다면, 속도와 섬세함이
-<ce>필요한 임무가 하나 있습니다.
-<ce>
+<ce>며칠 여유가 있고
+<ce>_reward_골드를 더 벌고 싶다면,
+<ce>속도와 섬세함이 필요한 임무가 하나 있습니다.
 
 RefuseQuest:  [1001]
-<ce>싫다고요? 며칠 일해서 _reward_ 골드를 버는
-<ce>걸 거절할 줄은 몰랐군요. 그 정도 돈이면 살인도
-<ce>마다하지 않을 농노들이 얼마나 많은지 아십니까?
-<ce>뭐, 좋습니다. 당신의 인생이니 당신 마음대로 하세요.
-<ce>
+<ce>싫다고요?
+<ce>며칠 일하고 _reward_골드를 받는 제안을
+<ce>거절할 줄은 몰랐군요.
+<ce>그만한 돈이라면 사람을 죽일 농민도 수두룩할 텐데.
+<ce>뭐, 당신 인생이니 알아서 하십시오.
 
 AcceptQuest:  [1002]
-<ce>좋습니다, %pcf. ___npc1_에 첩자 _npc1_가
-<ce>있는데, %g3 감시를 계속하려면 망원경이 필요합니다.
-<ce>%g⁠가 우리 공동의 친구에게 흥미로울 만한 무언가도 찾아냈다고 합니다.
-<ce>이 망원경을 ___npc1_의 __npc1_에
-<ce>있는 =npc1_에게 가져가면 다음 지시를
-<ce>받을 겁니다. 행운을 빕니다, %pcf.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>훌륭합니다, %pcf.
+<ce>___npc1_에 제 첩자 _npc1_가 있습니다.
+<ce>%g3 감시 활동을 계속하려면 망원경이 필요하지요.
+<ce>그리고 %g가 우리 공동의 친구가
+<ce>흥미로워할 물건을 찾아냈다고 합니다.
+<ce>그 물건도 전달해야 합니다.
+<ce>여기 망원경을 가져가십시오.
+<ce>___npc1_의 __npc1_에 있는 =npc1_에게 전하면
+<ce>다음 지시를 받을 것입니다.
+<ce>행운을 빕니다, %pcf.
 
 QuestFail:  [1003]
-<ce>여기서 빈둥거린다고 해서 부자가
-<ce>되지는 않을 겁니다, %pcf.
+<ce>여기서 빈둥거려 봐야
+<ce>돈이 더 생기지는 않습니다, %pcf.
 
 QuestComplete:  [1004]
-<ce>당신이 %pcn⁠이군요. _npc1_에게서
-<ce>기다리라는 말을 들었습니다. 나는 _npc2_입니다.
-<ce>그 유물을 봅시다. 참 흥미롭군요. 여기 _reward_골드입니다.
-<ce>나를 본 적은 없는 겁니다. 알겠습니까?
-<ce>
-<ce>
-<ce>
+<ce>당신이 %pcn이군요.
+<ce>_npc1_에게서 온다고 들었습니다.
+<ce>저는 _npc2_입니다.
+<ce>그 유물을 한번 봅시다.
+<ce>과연 흥미롭군요.
+<ce>여기 약속한 _reward_골드입니다.
+<ce>저를 본 적은 없는 겁니다. 알겠습니까?
 
 RumorsDuringQuest:  [1005]
-_questgiver_에게 정말 첩보망이 있다면, 아주 잘 숨겨져 있는 게
-분명합니다.
+_questgiver_에게 정말 첩보망이 있다면
+아주 잘 숨겨져 있는 게 분명합니다.
 <--->
-_npc1_의 정체가 첩자라는 말이 있지만, %g⁠는 절대
-__npc1_을 떠나지 않죠.
+_npc1_가 첩자라는 말이 있지만,
+%g⁠는 절대 __npc1_을 떠나지 않죠.
 
 RumorsPostfailure:  [1006]
-결국 그들이 _npc1_를 붙잡아 %g3⁠의 부정한 전리품을
-압수했다고 하더군요.
+결국 그들이 _npc1_를 붙잡아
+%g3⁠의 부정한 전리품을 압수했다더군요.
 <--->
-사람들은 _npc1_가 _questgiver_을 위해 일하는 첩자였다고
-말합니다.
+사람들은 _npc1_가 _questgiver_를 위해 일하는
+첩자였다고 말합니다.
 
 RumorsPostsuccess:  [1007]
-___npc1_ 어디를 가든 누군가 지켜보고 있다는 느낌이
-듭니다.
+___npc1_ 어디를 가든
+누군가 지켜보고 있다는 느낌이 듭니다.
 <--->
-궁전에서 훔쳐 간 그 유물을 과연 찾을 수 있을지 모르겠군요.
+궁전에서 도난당한 그 유물을
+과연 찾을 수 있을지 모르겠군요.
 
 QuestorPostsuccess:  [1008]
-아니, 이게 누구신가, 내가 가장 아끼는 첩자 아니신가.
+아니, 이게 누구신가.
+내가 가장 아끼는 첩자 아니신가.
 잘 지냈나, 젊은 %pcf?
 <--->
-일이 아무 문제 없이 잘 해결되었다고 들었네. 잘했네, %pcf.
+일이 아무 문제 없이 잘 해결됐다고 들었네.
+잘했네, %pcf.
 
 QuestorPostfailure:  [1009]
-<ce>내가 맡긴 임무는 실패로 끝났지, 그렇지 않나?
-<ce>내가 굳이 당신과 대화를 나눌 이유가 있을까?
-<ce>
-<ce>
+<ce>제가 맡긴 임무는 실패로 끝났지요?
+<ce>굳이 당신과 이야기해야 할
+<ce>급한 이유도 없어 보이는군요.
 
 QuestLogEntry:  [1010]
-<ce>때맞춰 왔군요, %pcf. 나는 _npc1_이고,
-<ce>당신이 든 건 내 망원경입니다. _questgiver_에게
-<ce>내가 작은 일을 맡길 거라는 말도 들었겠지요.
-<ce>이 유물을 ___npc2_의 =npc2_
-<ce>_npc2_에게 가져가십시오. __npc2_에서
-<ce>%g2⁠를 찾을 수 있고 보수도 받을 겁니다.
-<ce>%g⁠는 =2ndparton_일 안에 기다리고 있으니 서두르십시오.
+<ce>때맞춰 왔군요, %pcf.
+<ce>내 이름은 _npc1_입니다.
+<ce>당신이 들고 있는 것은 내 망원경인 듯하군요.
 <ce>
+<ce>_questgiver_에게 내가 작은 일을
+<ce>맡길 것이라는 말을 들었겠지요.
+<ce>이 유물을 ___npc2_의 __npc2_에 있는
+<ce>=npc2_ _npc2_에게 가져가십시오.
 <ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>그곳에서 %g2⁠와 보수를 모두 찾을 수 있습니다.
+<ce>%g⁠는 =2ndparton_일 안에 오기를 기다리니
+<ce>서두르는 것이 좋겠습니다.
 
 Message:  1015
-%qdt: ___questgiver_의 _questgiver_에게
-고용된 첩자가 망원경을 필요로 하기에 제가 전달을 부탁받았습니다.
-___npc1_에 있는 _npc1_의 __npc1_까지
-=1stparton_일 안에 가야 합니다. 그곳에 도착하면 추가 지시를 받을 것입니다.
+%qdt:
+___questgiver_의 _questgiver_가 고용한 첩자에게
+망원경이 필요해 배달을 맡았다.
+
+=1stparton_일 안에 ___npc1_의 __npc1_에 있는
+_npc1_에게 가져다줘야 한다.
+그곳에서 다음 지시를 받을 것이다.
 
 Message:  1016
-%qdt: _npc1_에게 %g3⁠의 망원경을 건네주었고,
-%g⁠는 저를 어떤 유물을 가진 ___npc2_의 _npc2_ 사람에게
-보냈습니다. __npc2_, ___npc2_에
-있는 _npc2_의 거처까지 =2ndparton_일 안에 가야 합니다.
+%qdt:
+_npc1_에게 %g3 망원경을 건네주었다.
+%g⁠는 유물 _item2_을 주며
+___npc2_의 __npc2_에 있는
+_npc2_에게 가져가라고 했다.
+
+_npc2_는 =npc2_이며,
+=2ndparton_일 안에 %g2⁠에게 도착해야 한다.
 
 -- Symbols used in the QRC file:
 --
 --                %g occurs 4 times.
---               %g2 occurs 1 time.
+--               %g2 occurs 2 times.
 --               %g3 occurs 3 times.
---              %pcf occurs 44 times.
+--              %pcf occurs 6 times.
 --              %pcn occurs 1 time.
 --              %qdt occurs 2 times.
---       =1stparton_ occurs 2 times.
---       =2ndparton_ occurs 7 times.
+--       =1stparton_ occurs 1 time.
+--       =2ndparton_ occurs 2 times.
 --            =npc1_ occurs 1 time.
---            =npc2_ occurs 1 time.
+--            =npc2_ occurs 2 times.
 --          ___npc1_ occurs 4 times.
---          ___npc2_ occurs 5 times.
+--          ___npc2_ occurs 2 times.
 --    ___questgiver_ occurs 1 time.
 --           __npc1_ occurs 3 times.
---           __npc2_ occurs 4 times.
+--           __npc2_ occurs 2 times.
 --            _npc1_ occurs 8 times.
 --            _npc2_ occurs 4 times.
 --      _questgiver_ occurs 4 times.
 --          _reward_ occurs 3 times.
+
 QBN:
 Item _reward_ gold
 Item _item1_ telescope

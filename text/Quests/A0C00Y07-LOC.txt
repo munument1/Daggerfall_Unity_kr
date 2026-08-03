@@ -10,23 +10,27 @@ Quest: A0C00Y07
 DisplayName: 해충 구제
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>도움이 필요합니다. 저는 _qgiver_라고 합니다.
-<ce>제가 당신을 돕기보다는 당신이 저를 도와주시길
-<ce>바라야겠군요. _house_에 괴물들이
-<ce>들끓고 있습니다. 모두 없애주시겠습니까?
+<ce>도움이 필요합니다.
+<ce>저는 _qgiver_라고 합니다.
+<ce>제가 당신을 돕기보다는
+<ce>당신이 저를 도와주시길 바라야겠군요.
+<ce>_house_에 괴물들이 들끓고 있습니다.
+<ce>모두 없애주시겠습니까?
 <ce>보수로 _gold_ 골드를 드리겠습니다.
 
 RefuseQuest:  [1001]
-<ce>도움이 필요해요! 아무도 저를 도와주지 않는 겁니까?
+<ce>도움이 필요해요!
+<ce>아무도 저를 도와주지 않는 겁니까?
 
 AcceptQuest:  [1002]
-<ce>고맙습니다, 정말 고맙습니다! 내일 이 시간까지
-<ce>놈들이 사라지지 않으면 저는 파산하고 말 겁니다.
+<ce>고맙습니다, 정말 고맙습니다!
+<ce>내일 이 시간까지 놈들이 사라지지 않으면
+<ce>저는 파산하고 말 겁니다.
 
 QuestComplete:  [1004]
-<ce>정말 다행입니다. 그 흉측한 것들이 얼마나 싫었는지 몰라요.
+<ce>정말 다행입니다.
+<ce>그 흉측한 것들이 얼마나 싫었는지 몰라요.
 <ce>큰 도움을 주셨습니다, %pcn.
 <ce>약속드린 _gold_ 골드입니다.
 
@@ -36,17 +40,19 @@ RumorsDuringQuest:  [1005]
 <ce>거대한 벌레가 득실거린다더군!
 <--->
 <ce>_qgiver_가 딱하게 됐어.
-<ce>%G3 _house_는 독침이 달린
-<ce>열두 피트짜리 쥐들에게 거의 점령당했다더군.
-<ce>눈빛 한 번으로 사람을 돌로 만든다는 소문까지 있어!
+<ce>%G3 _house_는
+<ce>독침이 달린 열두 피트짜리 쥐들에게
+<ce>거의 점령당했다더군.
+<ce>눈빛 한 번으로 사람을
+<ce>돌로 만든다는 소문까지 있어!
 
 RumorsPostfailure:  [1006]
 <ce>_qgiver_는 결국
 <ce>_house_를 팔아야 했다더군.
 <--->
 <ce>전사 길드의 누군가가
-<ce>_qgiver_의 _house_에
-<ce>들끓는 괴물들을 없애려다 죽었다는군.
+<ce>_qgiver_의 _house_에 들끓는
+<ce>괴물들을 없애려다 죽었다는군.
 
 RumorsPostsuccess:  [1007]
 <ce>_qgiver_의 %g3 _house_를
@@ -58,28 +64,32 @@ RumorsPostsuccess:  [1007]
 <ce>죽이려고 사람을 고용했다더군요.
 
 QuestorPostsuccess:  [1008]
-<ce>%pcf, 제 _house_에서 괴물들을
-<ce>몰아내주신 은혜를 잊지 않겠습니다.
+<ce>%pcf, 제 _house_에서
+<ce>괴물들을 몰아내주신 은혜를 잊지 않겠습니다.
 <--->
-<ce>여러분, 주목해주십시오. 제 친구이자 최고의 구제
-<ce>전문가인 %pcn⁠을 소개합니다. %G 는 제
-<ce>_house_에서 괴물 서른여섯 마리를 몰아냈습니다!
+<ce>여러분, 주목해주십시오.
+<ce>제 친구이자 최고의 구제 전문가인
+<ce>%pcn⁠을 소개합니다.
+<ce>%G 는 제 _house_에서
+<ce>괴물 서른여섯 마리를 몰아냈습니다!
 
 QuestorPostfailure:  [1009]
 <ce>당신 때문에 망했어요!
-<ce>_house_ 안의 괴물
-<ce>몇 마리조차 처리하지
-<ce>못해서 결국 집을 잃었다고요.
+<ce>_house_ 안의 괴물 몇 마리조차
+<ce>처리하지 못해서 결국 집을 잃었다고요.
 <--->
 <ce>저를 실망시킨 그 %ra 아닌가요?
 <ce>_house_에 들끓던 괴물들을
-<ce>죽여달라고 고용했는데 끝내
-<ce>해내지 못했군요. 저리 가세요.
+<ce>죽여달라고 고용했는데
+<ce>끝내 해내지 못했군요. 저리 가세요.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_에서 _qgiver_를 만났다.
-%G 는 __house_에 있는 _house_의 괴물들을 없애달라고
-부탁했다. %G⁠는 하루 안에 모두 처리해야 한다고 했다.
+%qdt:
+___qgiver_에서 _qgiver_를 만났다.
+
+%G는 __house_의 _house_에 있는 괴물들을
+없애달라고 했다.
+하루 안에 모두 처리해야 한다.
 
 Message:  1011
 <ce>이 정도면 충분하겠군.
@@ -91,17 +101,18 @@ Message:  1012
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 3 times.
---               %g3 occurs 5 times.
+--                %g occurs 0 times.
+--               %g3 occurs 2 times.
 --              %pcf occurs 1 time.
 --              %pcn occurs 2 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 2 times.
 --        ___qgiver_ occurs 1 time.
 --          __house_ occurs 1 time.
---            _gold_ occurs 3 times.
---           _house_ occurs 18 times.
+--            _gold_ occurs 2 times.
+--           _house_ occurs 12 times.
 --          _qgiver_ occurs 8 times.
+
 QBN:
 Item _gold_ gold
 

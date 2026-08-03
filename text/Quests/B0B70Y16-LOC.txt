@@ -10,42 +10,36 @@ Quest: B0B70Y16
 DisplayName: 용 학살자
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>쉿! 아무에게도 들키면 안 됩니다, %pct.
+<ce>쉿!
+<ce>아무에게도 들키면 안 됩니다, %pct.
 <ce>방금 용이 목격됐다는 소식을 들었습니다!
-<ce>다 자란 용은 아니고, 작은 새끼 용이지만요.
-<ce>==qgiver_의 일원에게 용을 죽이는
-<ce>것보다 영웅적인 임무는 없습니다.
+<ce>다 자란 용은 아니고 작은 새끼 용이지만요.
+<ce>==qgiver_의 일원에게 용을 죽이는 것보다
+<ce>영웅적인 임무는 없습니다.
 <ce>내가 위치를 알려줄 테니 당신이 가서 죽이십시오.
-<ce>영광은 우리 둘이 함께 차지하면 됩니다. 거래하시겠습니까?
-<ce>
-<ce>
-<ce>
+<ce>영광은 우리 둘이 함께 차지하면 됩니다.
+<ce>거래하시겠습니까?
 <--->
-<ce>당신이 진정 ==qgiver_의 일원임을 증명할 때가
-<ce>왔습니다, %pct. 용을 죽일 때입니다.
-<ce>
+<ce>당신이 진정 ==qgiver_의 일원임을 증명할 때가 왔습니다,
+<ce>%pct.
+<ce>용을 죽일 때입니다.
 
 RefuseQuest:  [1001]
 <ce>이 일을 다른 사람에게 발설하면
 <ce>==qgiver_에서 쫓겨나게 만들겠습니다.
-<ce>
 
 AcceptQuest:  [1002]
 <ce>용의 알은 ___dungeon_에서 막 부화했습니다.
 <ce>다른 새끼 용이 더 있는지는 모르겠습니다.
-<ce>=2dung_일 동안은 이 일을
-<ce>비밀로 감출 수 있습니다.
-<ce>
-<ce>
+<ce>이 일을 비밀로 감출 수 있는 시간은
+<ce>=2dung_일뿐입니다.
 
 QuestComplete:  [1004]
-<ce>모두 %pcn⁠을 찬양하라!
-<ce>오늘부터 용살자라 불릴 영웅이다! 든든한 오른팔이자
-<ce>귀중한 조력자 _qgiver_도 찬양하라!
-<ce>
-<ce>
+<ce>모두 %pcn을 찬양하라!
+<ce>오늘부터 용살자라 불릴 영웅이다!
+<ce>그리고 그 든든한 오른팔이자 귀중한 조력자,
+<ce>_qgiver_도 찬양하라!
 
 RumorsDuringQuest:  [1005]
 별다른 흥미로운 일은 없습니다.
@@ -90,36 +84,43 @@ ___dungeon_의 용은 100피트나 됐답니다!
 %ra⁠가 죽인 용은 점심 한 끼에 소 마흔 마리를 먹었다더군요!
 
 QuestorPostsuccess:  [1008]
-동료 용살자를 위해 무엇을 도와드릴까요?
+나와 같은 용 사냥꾼이여,
+무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-용을 처리하지 못해 정말 실망했습니다. 나를 내버려 두십시오.
+그 용을 처리하지 못해
+정말 실망했습니다.
+나를 내버려두십시오.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 ==qgiver_에
-있는 _qgiver_는 ___dungeon_에서 용의 알이 부화했다고 말했다.
-짐승을 죽이고 그 영광을 누릴 시간은 =2dung_일이다.
+%qdt:
+___qgiver_의 ==qgiver_에 있는 _qgiver_는
+___dungeon_에서 용의 알이 부화했다고 말했다.
+
+=2dung_일 안에 그 짐승을 처치하고
+그 영광을 누려야 한다.
 
 Message:  1011
-<ce>새끼 용이 죽었습니다. ==qgiver_에서는
-<ce>앞으로 몇 년이고 이 일을 이야기할 것입니다!
-<ce>
+<ce>새끼 용이 죽었습니다.
+<ce>==qgiver_에서는 앞으로 몇 년이고
+<ce>이 일을 이야기할 것입니다!
 
 -- Symbols used in the QRC file:
 --
 --               %cn occurs 1 time.
 --              %jok occurs 3 times.
 --              %kno occurs 1 time.
---              %oth occurs 5 times.
+--              %oth occurs 1 time.
 --              %pcn occurs 1 time.
 --              %pct occurs 2 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
 --              %reg occurs 1 time.
---           =2dung_ occurs 3 times.
---         ==qgiver_ occurs 6 times.
+--           =2dung_ occurs 2 times.
+--         ==qgiver_ occurs 5 times.
 --       ___dungeon_ occurs 5 times.
---        ___qgiver_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+
 QBN:
 
 Person _qgiver_ group Questor

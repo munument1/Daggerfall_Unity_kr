@@ -9,116 +9,118 @@ Quest: R0C10Y12
 DisplayName: 밀수품
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>조금 곤란한 상황에 처했네. 법적으로 내
-<ce>것이라 할 수 없는 물건을 가지고 있지.
-<ce>이것을 ___contact_의 연락책에게 전해주면
-<ce>_reward_골드를 주겠네. 적당하겠나?
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>조금 난처한 상황에 처했습니다.
+<ce>최악은 아니지만 확실히 곤란하군요.
+<ce>솔직히 말해 법적으로 제 것이 아닌 물건을
+<ce>하나 가지고 있습니다.
+<ce>그것을 ___contact_에 있는 제 연락책에게
+<ce>전달하면 후하게 보상하겠습니다.
+<ce>_reward_골드면 공정한 대가겠습니까?
 
 RefuseQuest:  [1001]
-<ce>도움이 필요한 순간에 나를 버리다니
-<ce>실망스럽군, 젊은 %ra.
-<ce>
+<ce>제가 가장 도움이 필요한 순간에 저를 버리다니,
+<ce>젊은 %ra여. 몹시 실망스럽군요.
 
 AcceptQuest:  [1002]
-<ce>도와주겠나? %god⁠께 감사드리지. 이 _item_을
-<ce>가지고 ___contact_의 __contact_으로
-<ce>가 _contact_라는 =contact_를 찾게.
-<ce>_item_을 다른 곳으로 가져갈 생각은 말게.
+<ce>도와주겠다고요? %god께 감사드리지요.
+<ce>이 _item_을 가지고 ___contact_의
+<ce>__contact_으로 가십시오.
+<ce>그곳에서 _contact_라는 =contact_를 찾으세요.
+<ce>_item_을 다른 곳으로 빼돌릴 생각은 하지 마십시오.
 <ce>=queston_일 안에 __contact_에 도착하지 않으면
-<ce>_contact_가 직접 자네를 찾아갈 걸세. 서두르게.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>_contact_가 직접 당신을 찾아갈 겁니다.
+<ce>서두르십시오. 시간이 중요합니다.
 
 QuestFail:  [1003]
-<ce>왜 아직 여기 있나?
-<ce>지시는 명확했으니 가서 수행하게.
-<ce>
+<ce>왜 아직 여기 있습니까?
+<ce>지시는 분명히 내렸으니 어서 수행하십시오.
 
 QuestComplete:  [1004]
-<ce>좋은 날이네, %pcf. 내가 _contact_일세.
-<ce>신중하게 처리해줘서 고맙군.
-<ce>신중함은 귀중한 자질이지. 여기 보상이 있네.
-<ce>
-<ce>
-<ce>
+<ce>안녕하십니까, %pcf.
+<ce>제가 _contact_입니다.
+<ce>이 일을 신중하게 처리해 주셔서 감사합니다.
+<ce>신중함은 귀중한 자질이지요.
+<ce>여기 보수입니다.
+<ce>그럼 안녕히 가십시오.
 
 RumorsDuringQuest:  [1005]
-경비병들이 _item_을 찾으려고 _questgiver_의 집까지
-뒤졌대.
+경비병들이 _item_ 화물을 찾으려고
+_questgiver_의 집까지 뒤졌대.
 <--->
-_item_의 행방은 완전한 수수께끼야.
+그 _item_이 어디로 사라졌는지는 완전한 수수께끼야.
+모두가 궁금해하고 있어.
 
 RumorsPostfailure:  [1006]
-_questgiver_에게 정말 창피한 일이야. 도난당한 _item_이
-%g2⁠에게까지 추적됐으니.
+_questgiver_에게는 정말 창피한 일이야.
+도난당한 _item_의 행방이 %g2⁠에게까지 이어졌으니.
 <--->
-_questgiver_의 _item_ 밀수 시도가 ___contact_으로
-향했다더군.
+_questgiver_가 _item_을 ___contact_로
+밀수하려 했다더군.
 
 RumorsPostsuccess:  [1007]
-경비병들이 도난당한 _item_ 수색을 포기했대.
+경비병들이 도난당한 _item_의 수색을 포기했대.
 <--->
-_questgiver_가 _item_ 때문에 의심받았다니 믿을 수 있어?
+_questgiver_가 그 _item_과 관련 있다고
+의심받았다니 믿을 수 있어?
 
 QuestorPostsuccess:  [1008]
-다시 만나 반갑네, %pcf. 임무를 마쳤다고 들었어.
+다시 만나 반갑네, %pcf.
+임무를 마쳤다고 들었어.
 <--->
-돌아와서 기쁘군, %pcf. 자네 덕분에 곤란을 면했네.
+돌아와서 기쁘군, %pcf.
+자네 덕분에 곤란을 면했네.
 
 QuestorPostfailure:  [1009]
-<ce>연락책에게서 자네가 오지 않았다는 말을 들었네.
-<ce>프로답지 못했어, %pcf. 이제 사라지게. 할 일이 많아.
-<ce>
+<ce>연락책 말로는 당신이 끝내 나타나지 않았다더군요.
+<ce>몹시 프로답지 못한 행동입니다, %pcf.
+<ce>이제 떠나십시오. 저는 할 일이 있습니다.
 
 Message:  1011
-_questgiver_는 작은 영주지만 거물 _item_ 밀수꾼이야.
+_questgiver_는 보잘것없는 통치자지만
+거물 _item_ 밀수꾼이야.
 <--->
-_questgiver_의 사업은 %g3 머리끝까지 _item_ 밀수에
-빠져 있어.
+_questgiver_는 이 _item_ 밀수에
+감당하지 못할 만큼 깊이 빠져 있어.
 
 Message:  1012
 _contact_는 장물아비라는 소문이 있어.
 <--->
-_contact_? 여기서 %di 떨어진 __contact_에서
-활동하는 수상한 =contact_ 말인가?
+_contact_ 말인가?
+여기서 %di 방향의 __contact_에서 활동하는
+수상한 =contact_이지.
 
 Message:  1015
-%qdt: ___questgiver_의 _questgiver_에게서
-_item_을 받아 ___contact_의 __contact_에
-있는 _contact_에게 전달하기로 했다. =queston_일 안에
-_item_을 ___contact_에게 넘겨야 한다.
+%qdt:
+___questgiver_의 _questgiver_에게서
+도난품 _item_을 전달하는 임무를 맡았다.
+
+목적지는 ___contact_의 __contact_에 있는
+_contact_다.
+=queston_일 안에 _item_을
+___contact_까지 가져가야 한다.
 
 Message:  1023
-누가 1023을 호출했는가?
+누가 1023을 호출하고 있지?
 
 -- Symbols used in the QRC file:
 --
---               %di occurs 11 times.
---               %g2 occurs 3 times.
---               %g3 occurs 1 time.
+--               %di occurs 1 time.
+--               %g2 occurs 1 time.
+--               %g3 occurs 0 times.
 --              %god occurs 1 time.
 --              %pcf occurs 4 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
---         =contact_ occurs 3 times.
+--         =contact_ occurs 2 times.
 --         =queston_ occurs 2 times.
---       ___contact_ occurs 6 times.
+--       ___contact_ occurs 5 times.
 --    ___questgiver_ occurs 1 time.
---        __contact_ occurs 20 times.
---            _item_ occurs 20 times.
+--        __contact_ occurs 4 times.
+--            _item_ occurs 12 times.
 --      _questgiver_ occurs 7 times.
 --          _reward_ occurs 1 time.
+
 QBN:
 Item _reward_ gold
 Item _item_ drug

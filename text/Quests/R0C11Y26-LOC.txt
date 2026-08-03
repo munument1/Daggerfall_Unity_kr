@@ -9,254 +9,289 @@ Quest: R0C11Y26
 DisplayName: 미친 도살자
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>%pcn, ____qgiver_ 살인마라
-<ce>불리는 미치광이가 ___qgiver_을
-<ce>공포에 빠뜨리고 있습니다. 경비대와 치안대도
-<ce>속수무책이고 정체를 밝힐 단서조차 없습니다.
-<ce>당신에게는 비공식적인 인맥과 수단이 있다고 들었습니다.
-<ce>모든 ____qgiver_을 위해, 그리고
-<ce>상당한 골드를 받고 이 일을 맡겠습니까?
-<ce>
-<ce>
+<ce>%pcn, ____qgiver_ 살인마라고 불리는 미치광이가
+<ce>___qgiver_을 공포에 몰아넣고 있습니다.
+<ce>제 경비대와 치안대도 속수무책이며,
+<ce>정체를 알아낼 단서는 하나도 없습니다.
+<ce>당신에게는 여러 수단과 다소 비정상적인
+<ce>연줄이 있다고 들었습니다.
+<ce>모든 ____qgiver_ 주민을 위해,
+<ce>그리고 상당한 금화를 받고 이 일을 도와주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>흔한 반응이군. 그렇다면 선택의 여지가 없군.
-<ce>피하고 싶었던 방법이지만, 내 인맥 중 가장 좋지
-<ce>않은 자들에게 도움을 요청할 수밖에 없겠어.
-<ce>
+<ce>드물지 않은 대답이군요.
+<ce>그렇다면 선택의 여지가 없습니다.
+<ce>피하고 싶었던 방법이지만,
+<ce>평판이 나쁜 인맥에 도움을 청해야겠군요.
 
 AcceptQuest:  [1002]
 <ce>당신은 진정한 친구입니다, %pcf.
-<ce>____qgiver_ 시민들은 공식 수사가
-<ce>진전되지 않아 불안해하고 있습니다.
-<ce>다음 희생자가 자신일까 두려워 곧 폭동이 날 지경입니다.
-<ce>아마 =total_일도 남지 않았겠지요.
-<ce>비공식적으로 고용한 사람은 편지들을 분석하는 학자
-<ce>_contact_뿐입니다. 먼저 _bookstore_으로 가
-<ce>%g2⁠와 이야기하고 %g3 진행 상황을 확인하십시오.
-<ce>이 수수께끼를 풀지 못한다면 %god⁠께서
-<ce>우리 모두를 도우셔야 할 겁니다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>____qgiver_ 주민들은 공식 수사가 진전되지 않아
+<ce>점점 불안해하고 있습니다.
+<ce>살인마가 다음에는 자신을 노릴까 두려워해
+<ce>상황은 폭발하기 직전입니다.
+<ce>아마 =total_일 안에 폭동이 일어날지도 모릅니다.
+<ce>이 일에 비공식적으로 고용한 사람은
+<ce>지역 학자 _contact_뿐입니다.
+<ce>%g는 제게 온 편지 몇 통을 분석하고 있습니다.
+<ce>먼저 _bookstore_으로 가서 %g2와 이야기하고
+<ce>%g3 진행 상황을 확인하십시오.
+<ce>이 수수께끼를 풀지 못한다면
+<ce>%god께서 우리 모두를 도우셔야 할 겁니다.
 
 QuestFail:  [1003]
 <ce>____qgiver_ 살인마는 아직도 활개 치고 있습니다.
-<ce>나도, 당신도 잡담할 시간이 없습니다.
-<ce>
+<ce>저도 당신도 잡담할 시간은 없습니다.
 
 QuestComplete:  [1004]
-<ce>당신 덕분에 ___qgiver_에 다시 평화가 찾아왔습니다,
-<ce>%pcf. 여기 약속한 _reward_골드입니다.
-<ce>그 미치광이의 종말을 위해서라면 기꺼이 드리겠습니다.
+<ce>당신 덕분에 ___qgiver_에 다시 평화가 찾아왔습니다, %pcf.
+<ce>여기 약속한 _reward_골드입니다.
+<ce>그 미치광이를 끝장낸 대가라면 기꺼이 드리지요.
 <ce>당신이 ____qgiver_에 왔을 때
-<ce>%god⁠께서 우리를 축복하신 겁니다.
-<ce>
+<ce>%god께서 우리를 진정 축복하신 것입니다.
 
 RumorsDuringQuest:  [1005]
 더 이상 ___qgiver_의 거리를 걷는 건 안전하지 않아.
-____qgiver_살인마 때문이지.
+____qgiver_ 살인마 때문이지.
 <--->
-____qgiver_살인마는 사람이 아니라 우리를 벌하러 온
-데이드라라는 소문이 있더군.
+____qgiver_ 살인마는 사람이 아니라
+우리를 벌하러 온 데이드라라는 소문이 있더군.
 <--->
-____qgiver_살인마의 마지막 희생자는 ___qgiver_
-곳곳에서 조각난 채 발견되었어.
+____qgiver_ 살인마의 마지막 희생자는
+___qgiver_ 곳곳에 조각난 채 흩어져 발견됐어.
 <--->
-어떤 이들은 ____qgiver_살인마가 뱀파이어나 웨어울프일지도
-모른다고 의심하더군.
+어떤 이들은 ____qgiver_ 살인마가
+뱀파이어나 웨어울프일지도 모른다고 의심하더군.
 
 RumorsPostfailure:  [1006]
-폭동 없이 살인이 멈췄어. 살인마가 떠난 모양이야.
+폭도들을 동원할 필요도 없이 살인이 멈췄어.
+살인마가 떠난 모양이야.
 <--->
-____qgiver_살인마가 떠나기로 마음먹은 건 _qgiver_에게는
-천운이지. 공포가 극에 달하고 있었거든.
+____qgiver_ 살인마가 떠나기로 한 건
+_qgiver_에게는 천운이지.
+공포가 퍼지기 시작하고 있었거든.
 
 RumorsPostsuccess:  [1007]
 _rippername_가 ____qgiver_ 살인마였다니 믿을 수 없어.
 %g⁠는 그렇게 친절하고 조용했는데.
 <--->
-%oth, _rippername_의 집 밑에서 해골 산이 발견됐대.
+%oth, _rippername_의 집 밑에서
+해골이 산더미처럼 발견됐대.
 <--->
-_rippername_는 늘 혼자 지내며 %g2self⁠밖에 몰랐다고 하더군.
+_rippername_는 주로 혼자 지내며
+%g2-self에게만 관심을 두었다고 하더군.
 전형적이지.
 
 QuestorPostsuccess:  [1008]
-____qgiver_살인마 미스터리를 해결한 %ra⁠에게는
-언제나 시간이 있지, %pcf.
+____qgiver_ 살인마 사건을 해결한 %ra⁠에게는
+언제나 시간을 내줄 수 있지, %pcf.
 <--->
-자네가 아니었다면 ____qgiver_살인마는 여전히 우리를
-공포에 떨게 했을 거야. 무엇을 도와줄까?
+자네가 아니었다면 ____qgiver_ 살인마는
+여전히 우리를 공포에 떨게 했을 거야.
+무엇을 도와줄까?
 
 QuestorPostfailure:  [1009]
-<ce>____qgiver_살인마가 떠난 건 자네에게 다행인 줄 알게.
-<ce>그렇지 않았다면 자네에게 매우 화가 났을 테니까.
-<ce>사실, 지금도 화가 나 있네. 꺼져버려, %pcf.
-<ce>
+<ce>____qgiver_ 살인마가 다른 곳으로 떠난 것을
+<ce>다행으로 여기십시오.
+<ce>그렇지 않았다면 당신에게 몹시 화가 났을 겁니다.
+<ce>사실 지금도 화가 나 있습니다.
+<ce>꺼지십시오, %pcf.
 
 QuestLogEntry:  [1010]
-<ce>때맞춰 왔군요, %pcf. 상황을 밝힐지도 모르는
-<ce>_hooker_라는 =hooker_를 만나러 _hookerhouse_으로
-<ce>가려던 참입니다. 솔직히 창녀지만 _qgiver_가
-<ce>받은 편지 위에 이름이 적혔다 지워져 있었습니다.
-<ce>살인마가 _hooker_에게 편지를 쓰다 마음을
-<ce>바꿨다면 %g⁠가 정체를 알 수도 있겠지요.
-<ce>편지를 가지고 _hookerhouse_으로 가보십시오.
+<ce>때맞춰 왔군요, %pcf.
+<ce>이 사건의 실마리를 알고 있을지도 모르는 사람을
+<ce>_hookerhouse_에서 만나려던 참입니다.
 <ce>
+<ce>그 사람은 _hooker_라는 =hooker_입니다.
+<ce>솔직히 말하면 매춘부이지요.
+<ce>_qgiver_가 받은 편지 맨 위에는
+<ce>그녀의 이름이 적혔다가 지워져 있었습니다.
 <ce>
+<ce>살인마가 _hooker_에게 편지를 쓰다가
+<ce>마음을 바꾼 것일지도 모릅니다.
+<ce>그렇다면 %g⁠가 살인마의 정체를
+<ce>알고 있을 가능성이 있습니다.
 <ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>시도해볼 가치는 있겠지요.
+<ce>편지를 가지고 _hookerhouse_로 가보십시오.
 
 Message:  1011
-<ce>_qgiver_, 마지막 놈은 정말 맛있더군, 한 입 베어 물기도 했지.
-<ce>너의 온 가족도 맛있어 보이더군 -- 아마도 살인마가 다음엔 너를
-<ce>방문할지도 모르겠군. 찢고 또 찢고, 그 다음에 점수를 매기기
-<ce>위해 약간의 RIPPING을 하겠지. 친애하는 너의, ____qgiver_살인마
+<ce>_qgiver_,
+<ce>마지막 놈은 정말 마싰더군.
+<ce>한 입 베어 무렀지.
+<ce>너희 가족도 전부 먹음직스러워 보여.
+<ce>어쩌면 다음에는 살인마가 너를 찿아갈지도 몰라.
+<ce>찢고 또 찟고, 원한을 갚으려고
+<ce>조금 더 찢어 주지.
+<ce>우아하게 너의,
+<ce>____qgiver_ 살인마
 
 Message:  1012
-<ce>_qgiver_, 할 수 있다면 나를 잡아봐라.
-<ce>아마 이제는 너의 ____qgiver_의 안위가 걱정되겠지,
-<ce>이제 피로 흠뻑 젖었으니까. 너의 친구, ____qgiver_살인마
+<ce>_qgiver_,
+<ce>잡을 수 이쓰면 잡아 봐.
+<ce>이제는 너의 ____qgiver_이 걱정되겠지.
+<ce>피에 푹 젖었으니까.
+<ce>너의 칭구,
+<ce>____qgiver_ 살인마
 
 Message:  1013
-<ce>_contact_, 내 미친 숭배자에 관해
-<ce>당신의 거처나 내 거처에서 만나 이야기하고 싶군요.
-<ce>도움이 될 만한 편지를 한 통 받았습니다. 당신의, _hooker_
+<ce>_contact_에게,
+<ce>나의 미친 숭배자에 관해
+<ce>당신의 거처든 제 거처든 만나 이야기하고 싶습니다.
+<ce>도움이 될 만한 편지를 한 통 받았습니다.
+<ce>진심을 담아,
+<ce>_hooker_
 
 Message:  1014
 _hooker_,
 
-내 친구가 되겠다고 말해놓고, 거리에서 마주쳤을 때 나를 못 본
-척하더군.
+내 친구가 되겠다고 해놓고
+거리에서 마주치자 나를 못 본 척했더군.
 
-나를 다시 화나게 만들고 싶지는 않겠지, 그렇지?
+나를 또 화나게 만들고 싶지는 않겠지?
 
 _rippername_
 
 Message:  1015
 <ce>_contact_과 함께 일하시나요, %pcf?
-<ce>%g⁠는 내가 지난밤 받은 편지에 관심이 있었어요.
-<ce>_rippername_는 내 손님이었는데 즐기는
-<ce>방식도, 생각도 아주 비정상이었죠.
-<ce>%g2⁠가 불쌍했지만 %g2⁠가 더 무서웠어요.
-<ce>그래서 %g2⁠에게 내가 %g2⁠를 좋아한다고 믿게
-<ce>내버려두었어요. 이제 이런 편지를 받습니다.
-<ce>%g⁠가 ____qgiver_ 살인마일 가능성이 큽니다.
-<ce>직접 확인하려면 _ripperhouse_에 사는 %g2⁠를 찾아가세요.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>%g가 제가 며칠 전 밤에 받은 편지에 관심을 보였어요.
+<ce>_rippername_는 제 손님이었는데,
+<ce>즐기는 방식도 평소 생각도 정말 제정신이 아니었죠.
+<ce>%g2가 불쌍하기도 했지만 대부분은 무서웠어요.
+<ce>그래서 제가 %g2를 좋아한다고 믿도록 내버려두었지요.
+<ce>물론 이제는 이런 편지를 받고 있고요.
+<ce>%g가 ____qgiver_ 살인마일 가능성이 아주 높아요.
+<ce>직접 확인하고 싶다면
+<ce>_ripperhouse_에 사는 %g2를 찾아가세요.
 
 Message:  1016
-_hooker_는 흔한 매춘부입니다. 관심 있다면 여기서
-%di⁠에 있습니다.
+_hooker_는 흔한 매춘부입니다.
+관심이 있다면 여기서 %di 방향에 있어요.
 <--->
-_hooker_는 싸구려 매춘부일 뿐입니다. 찾는다면
-%di⁠에 있습니다.
+_hooker_는 싸구려 매춘부일 뿐입니다.
+찾는다면 %di 방향으로 가보세요.
 
 Message:  1017
-_hooker_는 _rippername_ 인물과 어울려 다녔어요.
-아주 으스스한 사람이었죠.
+_hooker_는 _rippername_이라는 사람과 어울려 다녔어요.
+아주 으스스한 자였죠.
 <--->
-_hooker_는 살인마에 대해 모든 것을 알고 있어요.
-%g3⁠의 _rippername_에 대해 물어보세요. 아주 불쾌한 인간이죠.
+_hooker_는 살인마에 관해 잘 알고 있어요.
+%g3⁠에게 _rippername_에 대해 물어보세요.
+아주 불쾌한 인간이죠.
 
 Message:  1020
-%qdat: ___qgiver_에서 _qgiver_와 만나
-____qgiver_ 살인마 사건을 맡았다. %G⁠는 ___qgiver_
-전체가 폭도로 변하기 전 =total_일 안에 살인마를 잡기를 원한다.
-유일한 단서는 살인마가 _qgiver_에게 보낸 편지를 분석하는 학자
-_contact_이며, _contact_은 _bookstore_에서 일한다.
+%qdat:
+___qgiver_에 도착해 _qgiver_와
+____qgiver_ 살인마 사건에 관해 이야기했다.
+
+%rt⁠은 ___qgiver_ 전체가 성난 폭도로 변하기 전에
+=total_일 안에 살인마를 잡기를 원한다.
+
+유일한 단서는 살인마가 _qgiver_에게 보낸 편지를
+조사하고 있는 학자 _contact_다.
+_contact_은 _bookstore_에서 일한다.
 
 Message:  1021
-%qdat: _contact_은 살인마의 정보를 알지도 모르는
-매춘부 _hooker_를 만나라고 나를 _hookerhouse_으로 보냈다.
+%qdat:
+_contact_은 살인마에 관한 정보를
+알고 있을지도 모르는 매춘부 _hooker_를 만나라며
+나를 _hookerhouse_로 보냈다.
 
 Message:  1022
-%qdat: 내가 도착하기 전에 ____qgiver_ 살인마가
-_contact_을 만났다. __contact_에서 찾은 편지에는
-_hooker_가 “미친 숭배자”에 관해 _contact_과 만나고 싶다고
-적혀 있었다. 다음에는 그 여자를 찾아야 하며, 이번에는 더 빨리
-도착해야 한다.
+%qdat:
+내가 도착하기 전에 ____qgiver_ 살인마가
+_contact_을 만나고 떠났다.
+
+__contact_에서 발견한 편지 가운데 하나에는
+_hooker_가 '정신 나간 추종자'에 관해
+_contact_과 만나고 싶다고 적혀 있었다.
+
+다음으로 _hooker_를 찾아야 한다.
+이번에는 더 일찍 도착해야 할 것이다.
 
 Message:  1023
-%qdat: _hooker_는 살인마일 만큼 미친 손님
-_rippername_에 대해 알려주었다. %g⁠는 _ripperhouse_에 산다.
-이것이 마지막 기록이 아니기를 바란다.
+%qdat:
+_hooker_는 살인마라고 해도 믿을 만큼
+미친 손님에 관해 알려주었다.
+
+이름은 _rippername_이며,
+_ripperhouse_에 산다고 한다.
+이것이 내가 남기는 마지막 기록이 아니기를 바란다.
 
 Message:  1024
-%qdat: _hooker_의 숭배자가 나보다 먼저 찾아온
-모양이다. %g2 집에서 _rippername_가 쓴 편지를 발견했다.
-충분히 불안정해 보여 살인마일 가능성이 있다. 조사할 가치는 있다.
+%qdat:
+_hooker_의 추종자가 나보다 먼저
+그녀를 찾아온 모양이다.
+
+%g2 집에서 _rippername_가 보낸 편지를 발견했다.
+우리의 살인마라고 의심할 만큼
+불안하고 수상한 내용이었다.
+어쨌든 조사해볼 가치는 있다.
 
 Message:  1025
-_contact_은 %di⁠에 있는 _bookstore_의 아주
-박식한 학자예요.
+_contact_은 여기서 %di 방향에 있는
+_bookstore_의 아주 박식한 학자예요.
 <--->
-_contact_은 가끔 인간의 정신에 관한 특정 문제에
-대해 _qgiver_의 가정교사 노릇을 하기도 하죠.
+_contact_은 인간의 정신에 관한 문제를 두고
+가끔 _qgiver_를 가르치기도 하죠.
 
 Message:  1026
-_contact_은 살인마를 쫓다가 언젠가 큰코다칠 멍청한 노인이에요.
+_contact_은 살인마를 쫓다가
+언젠가 큰코다칠 어리석은 노인이에요.
 <--->
-_contact_은 _bookstore_의 현자인데, 살인마 사건에
-위험할 정도로 깊이 관여되어 있죠.
+_contact_은 _bookstore_의 현자로,
+살인마 사건에 위험할 만큼 깊이 관여하고 있죠.
 
 Message:  1040
-_rippername_요? 아마 _ripperhouse_에서 %g2⁠를 찾으실 수 있을
-거예요.
+_rippername_요?
+아마 _ripperhouse_에서 %g2⁠를 찾을 수 있을 거예요.
 <--->
-_rippername_에 대해서는 잘 몰라요. 주로 혼자 지내거든요.
+_rippername_에 대해서는 잘 몰라요.
+대부분 혼자 지내거든요.
 <--->
-_ripperhouse_에 사는 아주 착한 청년, _rippername_에
-대해 들어보셨나요?
+_rippername_은 _ripperhouse_에 사는
+그 친절한 젊은이예요.
 
 Message:  1041
-<ce>평범해 보이지만, 그에 대해 다르게 생각하게
-<ce>만들 만한 이야기들을 몇 가지 들었어요.
+<ce>겉보기에는 충분히 평범하지만,
+<ce>다르게 생각하게 만들 이야기를 몇 가지 들었어요.
 <--->
-<ce>착한 사람이긴 한데, 좀 이상해요.
-<ce>가끔 제정신인지 의심스러울 때가 있죠.
+<ce>친절하기는 하지만 조금 이상해요.
+<ce>가끔은 제정신이 맞는지 의심스럽다니까요.
 
 Message:  1050
-<ce>내 여자친구와 함께 있는 걸 봤다!
-<ce>그렇게 서로 좋아한다면 이제 둘 다 함께 찢겨 죽어라!
-<ce>
+<ce>내 여자와 함께 있는 것을 봤다!
+<ce>그렇게 서로 좋아한다면
+<ce>이제 둘이 함께 찢겨 죽어라!
 
 -- Symbols used in the QRC file:
 --
---               ___qgiver_ occurs 2 times.
---               %di occurs 4 times.
---                %g occurs 6 times.
---               %g2 occurs 11 times.
---               %g3 occurs 7 times.
---              %god occurs 3 times.
+--               ___qgiver_ occurs 6 times.
+--               %di occurs 3 times.
+--                %g occurs 5 times.
+--               %g2 occurs 6 times.
+--               %g3 occurs 2 times.
+--              %god occurs 2 times.
 --              %oth occurs 1 time.
---              %pcf occurs 7 times.
+--              %pcf occurs 6 times.
 --              %pcn occurs 1 time.
 --             %qdat occurs 5 times.
 --               %ra occurs 1 time.
---              ____qgiver_ occurs 33 times.
+--              ____qgiver_ occurs 20 times.
 --          =hooker_ occurs 1 time.
 --           =total_ occurs 2 times.
---        ___qgiver_ occurs 4 times.
+--        ___qgiver_ occurs 6 times.
 --        __contact_ occurs 1 time.
---       _bookstore_ occurs 5 times.
+--       _bookstore_ occurs 4 times.
 --         _contact_ occurs 12 times.
---          _hooker_ occurs 16 times.
+--          _hooker_ occurs 13 times.
 --     _hookerhouse_ occurs 3 times.
---          _qgiver_ occurs 8 times.
+--          _qgiver_ occurs 7 times.
 --          _reward_ occurs 1 time.
---     _ripperhouse_ occurs 5 times.
---      _rippername_ occurs 29 times.
+--     _ripperhouse_ occurs 4 times.
+--      _rippername_ occurs 12 times.
+
 QBN:
 Item _I.00_ letter used 1011
 Item _I.01_ letter used 1012

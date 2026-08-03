@@ -9,145 +9,148 @@ Quest: B0B00Y00
 DisplayName: 공주
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>%pcf, 공주 _lady_께서
+<ce>%pcf, _lady_ 공주님께서
 <ce>우리의 보호를 받던 중 납치되셨습니다.
-<ce>공주를 구하는 것은 우리 기사들의 책무입니다.
+<ce>공주님을 구하는 것은 우리 기사들의 책무입니다.
 <ce>불행히도 많은 단원이 전쟁터에 나가 있습니다.
-<ce>진정한 기사도의 정신으로, 공주를 사로잡은
-<ce>_monster_에게서 구출해주시겠습니까?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>진정한 기사도의 정신으로,
+<ce>공주님을 사로잡은 _monster_에게서
+<ce>구출해주시겠습니까?
 <--->
-<ce>전쟁으로 기사단의 손이 너무 부족해져
-<ce>%reg 귀족 여성의 정조를
-<ce>지키는 중대한 의무조차 소홀해졌습니다.
-<ce>며칠 전 끌려간 공주 _lady_를 구하러
-<ce>갈 사람은 문자 그대로 아무도 없습니다.
-<ce>이보다 명예로운 임무를 맡을 여유가 있으십니까?
-<ce>
-<ce>
-<ce>
+<ce>전쟁 때문에 기사단의 인력이 너무 부족해져
+<ce>%reg 귀족 여성들의 명예와 안전을 지키는
+<ce>중요한 의무조차 소홀해졌습니다.
+<ce>며칠 전 끌려간 _lady_ 공주님을 구하러 갈 사람이
+<ce>문자 그대로 아무도 없습니다.
+<ce>이 명예로운 임무를 맡을 여유가 있으십니까?
 
 RefuseQuest:  [1001]
-<ce>아, 우리 기사단의 정신과는 거리가
-<ce>먼 대답이군요. 무고한 이의 정조를
-<ce>지키는 것보다 중요한 일은 없습니다.
-<ce>
+<ce>아, 우리 기사단의 정신과는 거리가 먼 대답이군요.
+<ce>무고한 이들의 명예와 안전을 지키는 것보다
+<ce>중요한 일은 없습니다.
 
 AcceptQuest:  [1002]
-<ce>맡아주시겠습니까? 용감한 마음을 지니셨군요.
-<ce>_monster_는 무시무시한 적이니 전투를
-<ce>철저히 준비하십시오. 무모하게 굴지는 마십시오.
-<ce>우리가 바라는 것은 오직 공주의 구출입니다.
-<ce>_monster_를 내버려두고 구할 수 있다면 그렇게
-<ce>하십시오. =2mondung_일 안에 돌아오지 않으면
+<ce>맡아주시겠습니까?
+<ce>참으로 용감한 마음을 지니셨군요.
+<ce>_monster_는 무시무시한 적이니
+<ce>전투에 대비하십시오.
+<ce>하지만 무모하게 굴지는 마십시오.
+<ce>우리가 바라는 것은 오직 공주님의 구출입니다.
+<ce>_monster_와 싸우지 않고 구할 수 있다면
+<ce>그대로 내버려두십시오.
+<ce>=2mondung_일 안에 돌아오지 않으면
 <ce>실패한 것으로 보고 다른 사람을 보내겠습니다.
-<ce>다른 이가 구출의 명예를 차지하게 하고 싶지는
-<ce>않겠지요. ___mondung_으로 가는
-<ce>여정에 %god⁠의 축복이 함께하기를.
-<ce>
-<ce>
-<ce>
+<ce>다른 이가 구출의 명예를 차지하게 하고 싶지는 않겠지요.
+<ce>___mondung_으로 가는 여정에
+<ce>%god의 축복이 함께하기를.
 
 QuestFail:  [1003]
 <ce>서두르십시오, %pcf.
 <ce>이제 =2mondung_일밖에 남지 않았습니다.
 
 QuestComplete:  [1004]
-<ce>공주 _lady_님, 공주를 구한 훌륭한 은인
-<ce>%pcn⁠을 정식으로 소개하겠습니다.
-<ce>친구여, 오늘 참으로 명예롭고 훌륭한 일을
-<ce>해냈습니다. 결코 잊히지 않을 것입니다.
-<ce>
-<ce>
+<ce>_lady_ 공주님,
+<ce>공주님을 구한 훌륭한 은인 %pcn을
+<ce>정식으로 소개하겠습니다.
+<ce>친구여, 오늘 참으로 훌륭하고 명예로운 일을 해냈습니다.
+<ce>이 공적은 결코 잊히지 않을 것입니다.
 
 RumorsDuringQuest:  [1005]
-가엾은 공주 _lady_. 아버지가 ___qgiver_에 오면
-격노하겠군요.
+가엾은 공주 _lady_.
+공주의 아버지가 ___qgiver_에 도착하면
+몹시 격노하겠군요.
 <--->
-_qgiver_는 공주 _lady_의 아버지에게 공주를 지키겠다고
-약속했습니다.
+_qgiver_는 공주 _lady_의 아버지에게
+공주를 지키겠다고 약속했습니다.
 
 RumorsPostfailure:  [1006]
 공주는 혼자서 ___mondung_을 탈출했답니다.
-기사도의 용맹이 참 대단하군요.
+기사들의 용맹도 참 대단하군요.
 <--->
-공주가 피를 많이 흘려 창백한 모습으로 혼자 ___qgiver_에
-돌아왔습니다.
+공주가 피를 많이 흘려 창백한 채
+혼자 ___qgiver_로 걸어 들어왔습니다.
 
 RumorsPostsuccess:  [1007]
-기사들은 _lady_를 구한 위대한 %ra⁠의 영웅적인 행동을
-축하하고 있습니다.
+기사들은 _lady_를 구한 위대한 %ra⁠의
+영웅적인 활약을 축하하고 있습니다.
 <--->
-_lady_ 아가씨는 자신을 구한 용감한 %ra⁠에 관한 시를
-쓰기 시작했습니다.
+공주 _lady_는 자신을 구한 용감한 %ra⁠에 관한
+시를 쓰기 시작했습니다.
 
 QuestorPostsuccess:  [1008]
-안녕하십니까, %pct. _lady_ 아가씨는 잘 지내고
-있으니 기뻐하셔도 좋습니다.
+반갑습니다, %pct.
+공주 _lady_는 잘 지내고 있으니
+기뻐하셔도 좋습니다.
 
 QuestorPostfailure:  [1009]
-_lady_ 아가씨 사건은 참으로 엉망이었습니다.
-당신도 잊고 싶겠지요.
+공주 _lady_ 사건은 참으로 엉망이었습니다.
+당신도 이제 그 일을 잊고 싶겠지요.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에
-있는 _qgiver_는 _monster_에게 붙잡혀 ___mondung_에
-갇힌 아름다운 _lady_ 아가씨를 구해달라는 임무를 맡겼다.
-다른 이가 내 명예와 영광을 차지하러 파견되기 전에, =2mondung_일
-안에 그녀를 구출해야 한다.
+%qdt:
+___qgiver_의 __qgiver_에 있는 _qgiver_는
+_monster_에게 붙잡혀 ___mondung_에 갇힌
+아름다운 _lady_ 아가씨를 구해달라고 했다.
+
+다른 사람이 파견되어 내 명예와 영광을 차지하기 전에,
+=2mondung_일 안에 그녀를 구출해야 한다.
 
 Message:  1011
-<ce>작고 야윈 창백한 소년이 당신에게 쉿
-<ce>소리를 내며 쪽지를 손에 쥐여줍니다.
-<ce>알아차리자마자 자취를 감춥니다.
+<ce>작고 야윈 창백한 소년이
+<ce>당신에게 쉿 소리를 내며 쪽지를 손에 쥐여줍니다.
+<ce>당신이 알아차리기 무섭게 소년은 자취를 감춥니다.
 
 Message:  1012
-<ce>당신은 _lady_의 악몽 속
-<ce>괴물인 _monster_를 죽였습니다.
+<ce>_lady_의 악몽에 나오던 괴물,
+<ce>_monster_를 처치했습니다.
 
 Message:  1013
-<ce>_lady_ 아가씨는 혼자 집으로
-<ce>돌아가겠다며 당신을 떠납니다.
+<ce>_lady_ 영애는 이제 혼자서
+<ce>집으로 돌아가겠다며 당신을 떠납니다.
 
 Message:  1014
 친애하는 %pcf⁠에게,
 
-소중한 친구인 %reg⁠의 _monster_들이 제 동족
-하나의 다소 음탕한 계획을 방해하는 일을 원치 않을까 두려워 임무를
-망설였다면, 걱정하지 마십시오. =monster_는 우리의 차가운
-마음에도 한 달 묵은 토사물 웅덩이만큼이나 하찮은 존재입니다.
-마음껏 즐기십시오. 마음이 내킨다면 _lady_와도 말이지요.
+그대의 소중한 친구인 %reg⁠의 _monster_s가
+자기들 가운데 하나의 다소 음탕한 계획을
+그대가 방해하는 것을 원치 않을까 두려워
+임무를 망설였다면, 걱정하지 마십시오.
+
+=monster_는 우리의 차가운 마음에도
+한 달 묵은 토사물 웅덩이만큼이나
+하찮은 존재입니다.
+
+마음껏 즐기십시오.
+마음이 내킨다면 _lady_와도 말이지요.
 
 <ce>그대의 소중한 친구들,
 <ce>%reg⁠의 가장 오래된 세력
 
 Message:  1015
-<ce>"당신이 %pcf⁠이군요! %god⁠께
-<ce>감사드립니다! 저는 _lady_예요.
-<ce>어서 여기서 나가요. 지금 당장요!"
+<ce>"당신이 %pcf군요!
+<ce>%god께 감사드립니다!
+<ce>저는 _lady_예요.
+<ce>어서 이곳을 빠져나가요. 지금 당장요!"
 
 -- Symbols used in the QRC file:
 --
---               ___qgiver_ occurs 2 times.
---              %god occurs 3 times.
---              %pcf occurs 5 times.
+--               ___qgiver_ occurs 3 times.
+--              %god occurs 2 times.
+--              %pcf occurs 4 times.
 --              %pcn occurs 1 time.
 --              %pct occurs 1 time.
 --              %qdt occurs 1 time.
 --               %ra occurs 2 times.
---              %reg occurs 4 times.
---        =2mondung_ occurs 4 times.
+--              %reg occurs 3 times.
+--        =2mondung_ occurs 3 times.
 --         =monster_ occurs 1 time.
---       ___mondung_ occurs 4 times.
---        ___qgiver_ occurs 2 times.
---            _lady_ occurs 18 times.
---         _monster_ occurs 9 times.
+--       ___mondung_ occurs 3 times.
+--        ___qgiver_ occurs 3 times.
+--            _lady_ occurs 14 times.
+--         _monster_ occurs 6 times.
 --          _qgiver_ occurs 2 times.
+
 QBN:
 Item letter31 letter used 1014
 

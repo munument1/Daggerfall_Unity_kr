@@ -8,41 +8,35 @@ Quest: A0C01Y13
 DisplayName: 명예 훼손
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>좋은 날입니다.
-<ce>나는 _giver_라고 합니다.
+<ce>좋은 날입니다. 나는 _giver_라고 합니다.
 <ce>요즘 내 이름을 들어봤을지도 모르겠군요.
-<ce>누군가 내 사생활에
-<ce>관한 끔찍한 거짓말을
-<ce>거리마다 퍼뜨리고 있습니다.
-<ce>그 소문을 멈춰주는 사람에게
-<ce>_gold_골드를 드리겠습니다.
+<ce>누군가 내 사생활에 관한 끔찍한 거짓말을 거리마다 퍼뜨리고 있습니다.
+<ce>그 소문을 멈춰주는 사람에게 _gold_골드를 드리겠습니다.
 <ce>맡아주시겠습니까?
 <--->
-<ce>나에 관한 악의적이고 노골적인
-<ce>비방은 당장 끝나야 합니다.
-<ce>소문의 근원을 익명으로
-<ce>추적해줄 사람이 필요합니다.
-<ce>_gold_골드면 당신의 조사
-<ce>능력을 빌리기에 충분하겠습니까?
+<ce>나에 관한 악의적이고 노골적인 비방은 당장 끝나야 합니다.
+<ce>소문의 근원을 익명으로 추적해줄 사람이 필요합니다.
+<ce>_gold_골드면 당신의 조사 능력을 빌리기에 충분하겠습니까?
 
 RefuseQuest:  [1001]
-<ce>내가 약속을 지키지 않는다는 소문을
-<ce>들었나 보군요. 빌어먹을 거짓말입니다!
+<ce>내가 약속을 지키지 않는다는 소문을 들었나 보군요.
+<ce>빌어먹을 거짓말입니다!
 
 AcceptQuest:  [1002]
 <ce>정말 맡아주겠습니까? 훌륭합니다.
-<ce>이 악질적인 소문의 배후가 누구인지 증거를 찾아
-<ce>돌아오십시오. 그러면 보수를 드리겠습니다.
+<ce>이 악질적인 소문의 배후가 누구인지 증거를 찾아 돌아오십시오.
+<ce>그러면 보수를 드리겠습니다.
 <ce>한 달 안에 돌아오지 않으면 실패한 것으로 알겠습니다.
-<ce>
-<ce>
 
 QuestFail:  [1003]
-%qdt: 누군가 ___giver_에서 _giver_에
-관한 소문을 퍼뜨리고 있다. %G⁠은 이를 멈추는 대가로 _gold_골드를
-제시했다. 성공했다는 증거를 가지고 돌아올 시간은 한 달이다.
+%qdt:
+누군가 ___giver_에서 _giver_에 관한
+소문을 퍼뜨리고 있다.
+
+%G는 소문을 멈추고 성공했다는 증거를 가져오면
+_gold_ 골드를 주겠다고 했다.
+기한은 한 달이다.
 
 QuestComplete:  [1004]
 <ce>당신은 명예롭게 행동했습니다, %pcn. 고맙습니다.
@@ -59,12 +53,12 @@ RumorsDuringQuest:  [1005]
 
 RumorsPostfailure:  [1006]
 <ce>_giver_는 완전히 따돌림당하고 있습니다.
-<ce>마을 사람 누구도 %g2⁠과 엮이려 하지 않지요.
-<ce>%g⁠이 저질렀다는 일들을 들어봤습니까?
+<ce>마을 사람 누구도 %g2과 엮이려 하지 않지요.
+<ce>%g이 저질렀다는 일들을 들어봤습니까?
 
 RumorsPostsuccess:  [1007]
-<ce>_lover_가 ___dungeon_에서 어떤 %ra⁠에게
-<ce>구출됐다는군요. 이봐요, 당신이 그 %ra 아닙니까?
+<ce>_lover_가 ___dungeon_에서 어떤 %ra에게 구출됐다는군요.
+<ce>이봐요, 당신이 그 %ra 아닙니까?
 
 QuestorPostsuccess:  [1008]
 <ce>내 여동생의 연인 _lover_에게 저지른 일을
@@ -72,20 +66,31 @@ QuestorPostsuccess:  [1008]
 <ce>어떻게든 보상할 기회를 주십시오.
 
 QuestorPostfailure:  [1009]
-<ce>당신은 나를 실망시켰습니다! 내 여동생이 이제
-<ce>나와 말도 하지 않는데, 전부 당신 탓입니다.
+<ce>당신은 나를 실망시켰습니다!
+<ce>내 여동생이 이제 나와 말도 하지 않는데,
+<ce>전부 당신 탓입니다.
 
 QuestLogEntry:  [1010]
-%qdt: _giver_가 %g3 여동생
-_sister_와 거래하여 그녀의 연인 _lover_를 납치하려
-했다는 사실을 알아냈다. _giver_가 받은 편지에 그 계획이
-적혀 있다.
+%qdt:
+_giver_가 %g3 자매 _sister_와 거래해
+그녀의 연인 _lover_를 납치하려 했다는
+사실을 알아냈다.
+
+_giver_가 받은 편지에
+그 계획이 자세히 적혀 있다.
 
 Message:  1015
-_giver_, 간단히 말하죠. 당신 말대로 _lover_는 도가
-지나칩니다. 조금 겁을 줘야 할지도 모르겠군요. 나는 오늘 밤 여행을
-떠날 테니 내일 해 질 무렵 그를 데려가세요. 다시 연락하겠지만,
-일주일 이상 붙잡아둘 필요는 없을 겁니다.
+_giver_에게,
+
+간단히 말하죠.
+당신 말대로 _lover_는 도가 지나칩니다.
+조금 겁을 줄 필요가 있을지도 모르겠군요.
+
+나는 오늘 밤 여행을 떠날 테니,
+내일 해 질 무렵 그를 데려가세요.
+다시 연락하겠지만,
+일주일 넘게 붙잡아둘 필요는 없을 겁니다.
+
 <ce>-_sister_
 
 Message:  1017
@@ -95,38 +100,37 @@ Message:  1017
 <ce>그 남자 이름은 _lover_라고 합니다.
 <ce>확실한 것은 _giver_와 %g3 여동생이
 <ce>_lover_를 처리하기로 거래했다는 사실입니다.
-<ce>방법까지는 모르지만, 어떤 젊은이가 _sister_에게서 계획이
-<ce>적힌 편지를 받아 _giver_에게 전달했다고 했습니다.
-<ce>
-<ce>
+<ce>방법까지는 모르지만, 어떤 젊은이가 _sister_에게서
+<ce>계획이 적힌 편지를 받아 _giver_에게 전달했다고 했습니다.
 
 Message:  1018
-%qdt: 나는 _lover_ 납치 계획이 적힌 편지를
-_giver_에게 보여주었다. 그러자 _giver_는 %G⁠이 도적들을
-고용해 그를 ___dungeon_에 가뒀다고 털어놓았다.
-%g⁠은 살려달라고 빌며 _lover_를 구해달라고 부탁했다.
+%qdt:
+_lover_ 납치 계획이 적힌 편지를
+_giver_에게 보여주었다.
+
+그러자 _giver_는 %g가 도적들을 고용해
+_lover_를 ___dungeon_에 가뒀다고 털어놓았다.
+
+%G는 목숨을 구걸하며
+_lover_를 구해달라고 부탁했다.
 
 Message:  1020
-<ce>거짓말이오, 전부 거짓말! 거리에서 떠도는
-<ce>그 역겨운 소문들이 지긋지긋합니다.
+<ce>거짓말이오, 전부 거짓말!
+<ce>거리에서 떠도는 그 역겨운 소문들이 지긋지긋합니다.
 <ce>어서 그 소문을 멈춰주십시오!
 
 Message:  1021
-<ce>뭐라고요!? 이게 대체... 제발, 죽이지 마십시오!
+<ce>뭐라고요!? 이게 대체...
+<ce>제발, 죽이지 마십시오!
 <ce>여동생이 시킨 일이었습니다. 해칠 생각은 없었어요.
-<ce>그 남자를 조금 겁줘서 여동생을 더 소중히
-<ce>여기게 만들어달라고 했을 뿐입니다.
-<ce>하지 말았어야 했는데, 이제 감당할 수
-<ce>없는 지경이 됐습니다. 도적들을 고용해 그를
-<ce>데려가 ___dungeon_에 가두라고 했습니다.
+<ce>그 남자를 조금 겁줘서 여동생을 더 소중히 여기게 해달라고 했을 뿐입니다.
+<ce>하지 말았어야 했는데, 이제 감당할 수 없는 지경이 됐습니다.
+<ce>도적들을 고용해 그를 데려가 ___dungeon_에 가두라고 했습니다.
 <ce>겁만 주려 했는데 돌아오지 않아요!
-<ce>너무 멀리 갔다는 걸 압니다. 제발 그를 구해주십시오.
+<ce>너무 멀리 갔다는 걸 압니다.
+<ce>제발 그를 구해주십시오.
 <ce>숨길 수 있을 줄 알았지만 이제는 불가능합니다.
 <ce>여동생이 돌아왔을 때 그가 없다면 나를 죽일 겁니다!
-<ce>
-<ce>
-<ce>
-<ce>
 
 Message:  1022
 <ce>요즘은 _giver_ 이야기뿐이더군요.
@@ -137,18 +141,16 @@ Message:  1022
 <--->
 <ce>보통 _giver_는 __giver_에서 찾을 수 있습니다.
 <--->
-<ce>_giver_요? %g2⁠은 __giver_나
-<ce>자기 집 _givershouse_에 있을 겁니다.
+<ce>_giver_요? %g2은 __giver_나 자기 집 _givershouse_에 있을 겁니다.
 <--->
 <ce>_giver_는 ___giver_에서 평판이 좋습니다.
 <--->
 <ce>_inn_에 가보십시오. 흥미로운 소문은 늘 그곳에 있으니까요.
 <--->
-<ce>_giver_는 %g3 여동생
-<ce>_sister_와 함께 물건을 사는 모습이 자주 보입니다.
+<ce>_giver_는 %g3 여동생 _sister_와 함께 물건을 사는 모습이 자주 보입니다.
 <--->
-<ce>_giver_가 _inn_에서 물건을
-<ce>훔친다더군요. 아니, 다른 사람이었나?
+<ce>_giver_가 _inn_에서 물건을 훔친다더군요.
+<ce>아니, 다른 사람이었나?
 <--->
 <ce>_giver_가 자기 여동생을 살해했답니다.
 <--->
@@ -160,8 +162,7 @@ Message:  1022
 <--->
 <ce>_giver_는 오크들과 한패라더군요.
 <--->
-<ce>이번 주 ___giver_에서는 누구보다
-<ce>_giver_에 관한 소문이 많이 돌고 있습니다.
+<ce>이번 주 ___giver_에서는 누구보다 _giver_에 관한 소문이 많이 돌고 있습니다.
 <--->
 <ce>_giver_가 %g3 여동생의 연인을 납치하기로 했답니다.
 <--->
@@ -183,45 +184,47 @@ Message:  1030
 <ce>분명 _giver_가 무슨 짓을 꾸민 겁니다.
 
 Message:  2000
-<ce>%god⁠께 감사드립니다! 누군가 나를 찾아냈군요!
+<ce>%god께 감사드립니다! 누군가 나를 찾아냈군요!
 <ce>이곳에서 영영 못 나가는 줄 알았습니다.
-<ce>살아남으려고 며칠 동안 이 통로를 헤맸습니다. 뭐라고요?
-<ce>_sister_와 _giver_가 이 일의 배후였다고요?
-<ce>나를 __sistershouse_의 _sistershouse_까지
-<ce>데려다주면 후하게 보답하겠습니다.
+<ce>살아남으려고 며칠 동안 이 통로를 헤맸습니다.
+<ce>뭐라고요? _sister_와 _giver_가 이 일의 배후였다고요?
+<ce>나를 __sistershouse_의 _sistershouse_까지 데려다주면
+<ce>후하게 보답하겠습니다.
 <ce>그다음에는 그 둘을 직접 상대하죠!
-<ce>
 
 Message:  2001
-%qdt: 나는 _lover_를 찾았고, 그를
-__sistershouse_의 _sistershouse_까지 호위하고 있다.
+%qdt:
+_lover_를 찾았다.
+
+지금은 %g2를 __sistershouse_의 _sistershouse_까지
+호위하는 중이다.
 
 Message:  2005
 <ce>_lover_가 말합니다.
 <ce>"도와줘서 고맙습니다, %pcn.
 <ce>하지만 여기서부터는 혼자 집으로 가겠습니다."
-<ce>
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 5 times.
---               %g2 occurs 2 times.
---               %g3 occurs 16 times.
+--                %g occurs 2 times.
+--               %g2 occurs 3 times.
+--               %g3 occurs 7 times.
 --              %god occurs 1 time.
 --              %pcn occurs 2 times.
 --              %qdt occurs 4 times.
---               %ra occurs 4 times.
+--               %ra occurs 2 times.
 --       ___dungeon_ occurs 3 times.
---         ___giver_ occurs 11 times.
---   __sistershouse_ occurs 3 times.
---           _giver_ occurs 38 times.
---     _givershouse_ occurs 4 times.
+--         ___giver_ occurs 3 times.
+--   __sistershouse_ occurs 2 times.
+--           _giver_ occurs 33 times.
+--     _givershouse_ occurs 2 times.
 --            _gold_ occurs 3 times.
---             _inn_ occurs 4 times.
---           _lover_ occurs 14 times.
+--             _inn_ occurs 3 times.
+--           _lover_ occurs 13 times.
 --      _magicsword_ occurs 1 time.
---          _sister_ occurs 29 times.
+--          _sister_ occurs 8 times.
 --    _sistershouse_ occurs 2 times.
+
 QBN:
 Item _letter_ letter used 1015
 Item _gold_ gold

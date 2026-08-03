@@ -9,74 +9,76 @@ Quest: O0B2XY10
 DisplayName: 귀중한 물약
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>%pcn, 내 이름은 _qgiver_다.
-<ce>_potion_ 하나에 대한 정보를 얻었어.
-<ce>누군가 훔쳐다 줬으면 하지. _gold_골드를 주겠다. 어때?
-<ce>
-<ce>
-<ce>
+<ce>_potion_ 하나에 관한 정보를 얻었어.
+<ce>그걸 훔쳐다 줄 사람이 필요하지.
+<ce>보수는 _gold_골드다.
+<ce>어떻게 할래?
 
 RefuseQuest:  [1001]
-<ce>진짜 일을 하고 싶어지면 알려줘, %pcn.
-<ce>
+<ce>진짜 일을 하고 싶어지면 알려 줘, %pcn.
 
 AcceptQuest:  [1002]
 <ce>__alchemyshop_의 _alchemyshop_에
-<ce>_potion_이 있어. 가져다가 =traveltime_일 안에
-<ce>내게 주면 돈을 주지. 그리 어렵지는 않겠지?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>_potion_이 하나 있다.
+<ce>훔쳐서 =traveltime_일 안에 내게 가져오면
+<ce>돈을 주지.
+<ce>그리 어려운 일은 아니겠지?
 
 QuestComplete:  [1004]
-<ce>나쁘지 않군, %pcn. 여기 _gold_골드다.
-<ce>
+<ce>나쁘지 않군, %pcn.
+<ce>여기 _gold_골드다.
 
 RumorsDuringQuest:  [1005]
-_alchemyshop_에는 __alchemyshop_에서 손꼽히는 좋은 재료가 있어.
+_alchemyshop_에는 __alchemyshop_에서 손꼽히는
+좋은 재료가 있어.
 <--->
-웬만한 것은 다 구할 수 있으니 __alchemyshop_의 _alchemyshop_으로
-가봐.
+웬만한 것은 다 구할 수 있으니
+__alchemyshop_의 _alchemyshop_으로 가봐.
 
 RumorsPostfailure:  [1006]
-_alchemyshop_에 희귀한 _potion_이 있었지만 지금은 더
-안전한 곳에 있대.
+_alchemyshop_에 희귀한 _potion_이 있었지만,
+지금은 더 안전한 곳에 있대.
 
 RumorsPostsuccess:  [1007]
-누군가 _alchemyshop_에서 _potion_ 한 병을 훔쳐갔대.
+누군가 _alchemyshop_에서
+_potion_ 한 병을 훔쳐갔대.
 간도 크지!
 
 QuestorPostsuccess:  [1008]
-물론 기억하지, %pcf. _potion_ 건이었잖아?
+물론 기억하지, %pcf.
+_potion_ 건이었잖아?
 
 QuestorPostfailure:  [1009]
-<ce>말하지 마. _alchemyshop_까지 가서
-<ce>_potion_을 찾고는 실수로 마셔버렸지?
+<ce>말하지 않아도 알아.
+<ce>_alchemyshop_까지 가서 _potion_을 찾은 뒤
+<ce>실수로 마셔 버린 거지?
 <ce>%oth, 도둑은 달라도 이야기는 늘 똑같군.
-<ce>
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 도둑 길드원 _qgiver_는
-__alchemyshop_의 _alchemyshop_에서 _potion_을 훔치라고 했다.
-=traveltime_일 안에 %g2⁠에게 가져가야 한다.
+%qdt:
+___qgiver_의 도둑 길드원 _qgiver_는
+__alchemyshop_의 _alchemyshop_에서
+_potion_을 훔치라고 했다.
+
+=traveltime_일 안에
+%g2⁠에게 가져다줘야 한다.
 
 -- Symbols used in the QRC file:
 --
---               %g2 occurs 3 times.
+--               %g2 occurs 1 time.
 --              %oth occurs 1 time.
 --              %pcf occurs 1 time.
---              %pcn occurs 4 times.
+--              %pcn occurs 3 times.
 --              %qdt occurs 1 time.
 --      =traveltime_ occurs 2 times.
 --        ___qgiver_ occurs 1 time.
---    __alchemyshop_ occurs 11 times.
---            _gold_ occurs 3 times.
+--    __alchemyshop_ occurs 4 times.
+--            _gold_ occurs 2 times.
 --          _potion_ occurs 7 times.
 --          _qgiver_ occurs 2 times.
+
 QBN:
 Item _potion_ Elixir_vitae
 Item _gold_ gold

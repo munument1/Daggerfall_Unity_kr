@@ -10,36 +10,30 @@ Quest: O0B10Y05
 DisplayName: 귀중한 예술품
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>어이, %pcf! 나 _qgiver_ 기억하지?
-<ce>오늘 길드 일 하나 해볼 텐가?
-<ce>자네에게 딱 맞을 것 같은 일이 있어.
-<ce>
-<ce>
+<ce>어이, %pcf!
+<ce>나 _qgiver_ 기억하지?
+<ce>오늘 길드 일 하나 맡아 볼 텐가?
+<ce>자네에게 딱 맞을 듯한 일이 있어.
 
 RefuseQuest:  [1001]
-<ce>그럼 다음에 하지.
+<ce>그럼 다음 기회에 하지.
 
 AcceptQuest:  [1002]
-<ce>어떤 부자가 꽤 값나가는 그림을 하나 손에 넣었어.
-<ce>__townhouse_의 _townhouse_에 숨겨뒀지.
-<ce>가져오면 길드 보수로 _gold_골드를 주겠다.
+<ce>부자 하나가 최근 제법 값나가는 그림을 손에 넣었어.
+<ce>__townhouse_의 _townhouse_에 숨겨 두었지.
+<ce>그걸 가져오면 길드 수당으로 _gold_골드를 주겠다.
 <ce>아, =traveltime_일 안에 가져와야 해.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
 
 QuestComplete:  [1004]
-<ce>흠집 하나 없군. 수호자 때문에 고생했겠어.
-<ce>그자가 그런 짓까지 해뒀을 줄은
-<ce>몰랐거든. 여기 보수다.
-<ce>
+<ce>흠집 하나 없군.
+<ce>수호자 때문에 고생했겠어.
+<ce>그자가 그런 것까지 준비해 두었을 줄은 몰랐거든.
+<ce>여기 보수다.
 
 RumorsDuringQuest:  [1005]
-_townhouse_는 그야말로 미술관이나 다름없어.
+_townhouse_는 그야말로
+미술관이나 다름없어.
 
 RumorsPostfailure:  [1006]
 며칠 전에 종기가 났는데... 이제 다 나았습니다.
@@ -73,37 +67,42 @@ RumorsPostfailure:  [1006]
 RumorsPostsuccess:  [1007]
 _townhouse_는 강력한 수호자가 있었는데도 털렸어.
 <--->
-_townhouse_를 턴 자는 자기 일을 확실히 아는 놈이었겠지.
+_townhouse_를 턴 자는
+무슨 일을 하는지 확실히 아는 놈이었겠지.
 
 QuestorPostsuccess:  [1008]
-그 그림은 암시장에서 아주 비싼 값에 팔렸어, %pcf.
+그 그림은 암시장에서
+아주 비싼 값에 팔렸어, %pcf.
 
 QuestorPostfailure:  [1009]
-<ce>자네는 보이는데 가져오기로 한 그림은 보이지 않는군.
-<ce>내가 왜 자네에게 숨을 낭비했을까?
-<ce>
-<ce>
+<ce>자네는 보이는데,
+<ce>가져오기로 한 그림은 보이지 않는군.
+<ce>내가 왜 자네에게 말이나 꺼냈을까?
 
 QuestLogEntry:  [1010]
-%qdt: _qgiver_는 __townhouse_의
-_townhouse_에서 그림을 훔쳐오라고 했다. =traveltime_일 안에
-___qgiver_의 도둑 길드에 있는 _qgiver_에게 가져가야
-한다.
+%qdt:
+_qgiver_는 __townhouse_의 _townhouse_에서
+그림을 훔쳐오라고 했다.
+
+=traveltime_일 안에 그림을
+___qgiver_의 도둑 길드에 있는
+_qgiver_에게 가져다줘야 한다.
 
 -- Symbols used in the QRC file:
 --
 --               %cn occurs 1 time.
 --              %jok occurs 3 times.
---              %oth occurs 5 times.
---              %pcf occurs 16 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 2 times.
 --              %qdt occurs 1 time.
 --              %reg occurs 1 time.
---      =traveltime_ occurs 3 times.
---        ___qgiver_ occurs 2 times.
+--      =traveltime_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
 --      __townhouse_ occurs 2 times.
 --            _gold_ occurs 1 time.
 --          _qgiver_ occurs 3 times.
 --       _townhouse_ occurs 5 times.
+
 QBN:
 Item _painting_ painting
 Item _gold_ gold

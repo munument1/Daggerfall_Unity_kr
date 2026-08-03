@@ -10,81 +10,85 @@ Quest: A0C00Y12
 DisplayName: 초판본
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>실례합니다. 혹시 _book_이라는 책을 읽어보셨습니까?
-<ce>아주 훌륭한 책이라 초판본을 한 권 가지고 있었지요.
+<ce>실례합니다.
+<ce>혹시 _book_이라는 책을 읽어보셨습니까?
+<ce>아주 훌륭한 책이라
+<ce>초판본을 한 권 가지고 있었지요.
 <ce>아니, 가지고 있었다고 해야겠군요.
-<ce>누군가 훔쳐 간 모양입니다. 가장 먼저 되찾아
-<ce>주는 분께 _gold_골드를 드리겠습니다.
+<ce>누군가 훔쳐 간 모양입니다.
+<ce>가장 먼저 되찾아 주는 분께
+<ce>_gold_골드를 드리겠습니다.
 <ce>찾아주실 수 있겠습니까?
 
 RefuseQuest:  [1001]
-<ce>유감이군요. 그 책을 꼭 되찾아야 하는데 말입니다.
+<ce>유감이군요.
+<ce>그 책을 꼭 되찾아야 하는데 말입니다.
 
 AcceptQuest:  [1002]
-<ce>좋습니다! 초판본이라 제게는 무척 소중한 책입니다.
+<ce>좋습니다!
+<ce>초판본이라 제게는 무척 소중한 책입니다.
 <ce>다만 누가 가져갔는지는 전혀 모르겠습니다.
 <ce>마을 사람들에게 물어보시는 게 좋겠군요.
 
 QuestComplete:  [1004]
-<ce>훌륭합니다! 제 _book_ 초판본이군요! 잘하셨습니다,
-<ce>%pcn. 약속드린 _gold_골드입니다.
+<ce>훌륭합니다!
+<ce>제 _book_ 초판본이군요!
+<ce>잘하셨습니다, %pcn.
+<ce>약속드린 _gold_골드입니다.
 
 RumorsDuringQuest:  [1005]
-<ce>_giver_님이 냄새나는 낡은
-<ce>책을 필사적으로 찾고 있더군요.
-<ce>대체 누가 그런 걸 훔쳐 가고 싶어 하겠어요?
+<ce>_giver_님이 냄새나는 낡은 책을
+<ce>필사적으로 찾고 있더군요.
+<ce>대체 누가 그런 걸
+<ce>훔쳐 가고 싶어 하겠어요?
 
 RumorsPostfailure:  [1006]
-<ce>_giver_님이 결국 포기하고 그 소중한 책을
-<ce>한 권 더 샀다더군요. %g 님이 책을
-<ce>찾으려고 사람까지 고용했다는 것 아십니까?
+<ce>_giver_님이 결국 포기하고
+<ce>그 소중한 책을 한 권 더 샀다더군요.
+<ce>%g 님이 책을 찾으려고
+<ce>사람까지 고용했다는 것 아십니까?
 <ce>정말 어리석은 짓이지요!
 
 RumorsPostsuccess:  [1007]
-<ce>_giver_님의 책을 %g2 대신 찾아준 %ra
-<ce>님이시군요. %G 님이 온 동네에 자랑하고 다닙니다.
+<ce>_giver_님의 책을 %g2 대신 찾아준
+<ce>%ra 님이시군요.
+<ce>%G 님이 온 동네에 자랑하고 다닙니다.
 <ce>마치 왕이라도 구해준 것처럼 말이지요.
-<ce>
 
 QuestorPostsuccess:  [1008]
-<ce>제 친구 %pcf 님을
-<ce>위해서라면 무엇이든 해야지요.
-<ce>소중한 책을 되찾아주셔서 진심으로 감사합니다.
+<ce>제 친구 %pcf 님을 위해서라면
+<ce>무엇이든 해야지요.
+<ce>소중한 책을 되찾아주셔서
+<ce>진심으로 감사합니다.
 
 QuestorPostfailure:  [1009]
-<ce>흥. 책을 찾아달라고 고용했는데 실패하셨군요.
+<ce>흥.
+<ce>책을 찾아달라고 고용했는데 실패하셨군요.
 <ce>결국 제가 직접 다른 사본을 사야 했습니다.
 <ce>당신과는 더 할 말이 없습니다.
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___giver_의 _giver_ 님이
-%g3 의 책인 _book_을 찾아주면 _gold_골드를 주겠다고
-제안했다.
+%qdt:
+___giver_의 _giver_는
+%g3 책 _book_을 찾아주면
+_gold_ 골드를 주겠다고 했다.
 
 Message:  1014
-<ce>_informant1_에 있는 _informant_님을
-<ce>찾아가 보십시오.
-<ce>%G⁠님은 __informant1_
-<ce>주변의 소식을 모두 아는 듯하니까요.
+<ce>_informant1_에 있는 _informant_님을 찾아가 보십시오.
+<ce>%G님은 __informant1_ 주변의 소식을 모두 아는 듯하니까요.
 <--->
-<ce>근처 여관에서 물어보시는
-<ce>게 좋겠습니다.
+<ce>근처 여관에서 물어보시는 게 좋겠습니다.
 <ce>그런 곳에는 온갖 소문이 모이니까요.
 <--->
 <ce>_informant1_에 가보십시오.
 <ce>늘 이야기가 오가는 곳입니다.
 <--->
-<ce>그 책은 _giver_님에게서
-<ce>도난당했습니다.
+<ce>그 책은 _giver_님에게서 도난당했습니다.
 <--->
-<ce>_giver_님이 그 책을
-<ce>수소문하고 다니더군요.
+<ce>_giver_님이 그 책을 수소문하고 다니더군요.
 <--->
-<ce>저도 읽어봤는데 꽤
-<ce>재미있었습니다.
+<ce>저도 읽어봤는데 꽤 재미있었습니다.
 <--->
 <ce>도서관에 한번 들러보시는 게 좋겠군요.
 
@@ -94,48 +98,52 @@ Message:  1015
 Message:  1025
 <ce>안녕하세요, %pcn.
 <ce>저를 찾고 다닌다는 소문을 들었습니다.
-<ce>그럴 수밖에요. __informant1_의 소식은 모두 제
-<ce>귀를 거치니까요. 제 이야기는 이쯤 하지요.
+<ce>그럴 수밖에요. __informant1_의 소식은 모두 제 귀를 거치니까요.
+<ce>제 이야기는 이쯤 하지요.
 <ce>_giver_님의 불행에 관해서는 들었습니다.
-<ce>_thief_님을 찾고 계시지요? %G 님은 한동안
-<ce>_book_의 초판본을 탐내고 있었습니다.
-<ce>게다가 %g 님은 남의 물건을 허락 없이 가져가는
-<ce>부류이기도 하지요. 무슨 뜻인지 아시겠습니까?
-<ce>
-<ce>
+<ce>_thief_님을 찾고 계시지요?
+<ce>%G 님은 한동안 _book_의 초판본을 탐내고 있었습니다.
+<ce>게다가 %g 님은 남의 물건을 허락 없이 가져가는 부류이기도 하지요.
+<ce>무슨 뜻인지 아시겠습니까?
 
 Message:  1035
-%qdt: _informant_님에게서 사라진 _book_에
-관한 귀중한 정보를 얻었다. %G 님은 _thief_님이 이 일에 얽혀
-있다고 의심한다. 이제 %g2 님의 행방만 찾으면 된다...
+%qdt:
+_informant_에게서 사라진 _book_에 관한
+귀중한 정보를 얻었다.
+
+%G는 _thief_가 이 일에
+어떤 식으로든 얽혀 있다고 생각한다.
+
+이제 %g2만 찾으면 되는데...
 
 Message:  1027
-_thief_님은 __house_의 _house_에 삽니다.
+_thief_는 __house_의 _house_에 삽니다.
 <--->
-_thief_님은 __house_에 삽니다.
+_thief_는 __house_에 삽니다.
 <--->
-_thief_님은 %g3 밤을 _house_에서 보냅니다.
+_thief_는 밤마다 _house_에서 지냅니다.
 <--->
-_thief_님은 %g3 집에서 찾아보십시오. %G 님은
-__house_에 삽니다.
+_thief_를 찾으려면 %g3 집으로 가보십시오.
+%G⁠은 __house_에 삽니다.
 <--->
-_thief_님은 _store_에서 자주 거래합니다.
+_thief_는 _store_에서 자주 거래합니다.
 <--->
-_store_에서 물건을 둘러보십시오. _thief_님도 자주
-가는 곳입니다.
+_store_에서 물건을 둘러보는 것도 좋겠습니다.
+_thief_도 그곳을 이용합니다.
 <--->
-_store_는 장물 거래로 유명합니다. _thief_님도 장물이
-많지요.
+_store_는 장물 거래로 유명한 곳입니다.
+_thief_에게도 장물이 많지요.
 <--->
-_thief_님이 _store_에서 목격되었습니다.
+_thief_가 _store_에서 목격되었습니다.
 <--->
-_inn_은 도둑들이 자주 모이는 곳입니다.
+_inn_은 여러 도둑이 자주 모이는 곳입니다.
 <--->
-_thief_님은 _inn_에서 술 마시기를 좋아합니다.
+_thief_는 _inn_에서 술 마시기를 좋아합니다.
 <--->
-_thief_님이 가장 좋아하는 선술집은 _inn_입니다.
+_thief_가 가장 좋아하는 선술집은 _inn_입니다.
 <--->
-_thief_님이 좋아하는 음식은 _inn_에서 팝니다.
+_thief_가 가장 좋아하는 음식은
+_inn_에서 내놓습니다.
 
 Message:  1030
 <ce>책을 원한다고? 네가 그렇게 강해 보이진 않는데.
@@ -143,25 +151,26 @@ Message:  1030
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 7 times.
---               %g2 occurs 3 times.
---               %g3 occurs 3 times.
+--                %g occurs 2 times.
+--               %g2 occurs 2 times.
+--               %g3 occurs 2 times.
 --              %pcf occurs 1 time.
 --              %pcn occurs 2 times.
 --              %qdt occurs 2 times.
 --               %ra occurs 1 time.
 --         ___giver_ occurs 1 time.
---          __house_ occurs 5 times.
---     __informant1_ occurs 3 times.
---            _book_ occurs 6 times.
---           _giver_ occurs 32 times.
---            _gold_ occurs 7 times.
---           _house_ occurs 1 time.
+--          __house_ occurs 3 times.
+--     __informant1_ occurs 2 times.
+--            _book_ occurs 5 times.
+--           _giver_ occurs 8 times.
+--            _gold_ occurs 3 times.
+--           _house_ occurs 2 times.
 --      _informant1_ occurs 2 times.
 --       _informant_ occurs 2 times.
---             _inn_ occurs 5 times.
+--             _inn_ occurs 4 times.
 --           _store_ occurs 4 times.
---           _thief_ occurs 23 times.
+--           _thief_ occurs 13 times.
+
 QBN:
 Item _book_ book2 anyInfo 1014 used 1015
 Item _gold_ gold

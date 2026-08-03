@@ -9,140 +9,139 @@ Quest: A0C10Y05
 DisplayName: 중매쟁이
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>나는 _betrothed_와 약혼한 사이입니다.
-<ce>불행히도 _ruler_가 _betrothed_를
-<ce>두고 다른 계획을 꾸미고 있습니다.
-<ce>유일한 희망은 %g2⁠을 신전으로
-<ce>데려가 _ruler_에게 붙잡히기
-<ce>전에 혼례를 마치는 것입니다.
-<ce>약혼자를 신전까지 데려가는
-<ce>동안 나를 지켜주시겠습니까?
-<ce>_gold_골드를 드리겠습니다.
+<ce>불행히도 _ruler_가 _betrothed_를 두고
+<ce>다른 계획을 꾸미고 있습니다.
+<ce>유일한 희망은 %g2를 신전으로 데려가
+<ce>_ruler_에게 붙잡히기 전에 혼례를 마치는 것입니다.
+<ce>약혼자를 신전까지 데려가는 동안
+<ce>나를 지켜주시겠습니까?
+<ce>보수로 _gold_골드를 드리겠습니다.
 <--->
 <ce>__betrothedhome_에서 사랑하는 _betrothed_가
-<ce>잔혹한 _ruler_의 폭정에
-<ce>시달리며 나를 기다리고 있습니다.
-<ce>_betrothed_가 갇혀 있는 동안은 잠도
-<ce>이룰 수 없지만, 우리를 갈라놓으려는
-<ce>_ruler_의 부하들이 두렵습니다.
-<ce>나와 함께 __betrothedhome_로 가서 지켜주시겠습니까?
+<ce>잔혹한 _ruler_의 폭정에 시달리며 나를 기다리고 있습니다.
+<ce>_betrothed_가 그렇게 갇혀 있는 동안은
+<ce>잠도 이룰 수 없지만,
+<ce>우리를 갈라놓으려는 _ruler_의 부하들이 두렵습니다.
+<ce>나와 함께 __betrothedhome_로 가서
+<ce>나를 지켜주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>아아, 사랑하는 _betrothed_를 _ruler_에게서
-<ce>지켜줄 다른 호위자를 찾아야겠군요.
-<ce>
+<ce>아아, 사랑하는 _betrothed_를
+<ce>_ruler_에게서 지켜줄
+<ce>다른 호위자를 찾아야겠군요.
 
 AcceptQuest:  [1002]
 <ce>한없이 감사드립니다, %pcn.
 <ce>서둘러 _betrothed_를 찾으러 갑시다.
-<ce>__betrothedhome_의 _betrothedhome_에서 %g2⁠을 만날 수 있습니다.
-<ce>
-<ce>
+<ce>%g2는 __betrothedhome_의
+<ce>_betrothedhome_에서 찾을 수 있습니다.
 
 QuestComplete:  [1004]
-<ce>%pcf, 우리는 큰 빚을 졌습니다.
-<ce>이제 혼례가 시작됐으니 _ruler_도 막을 수 없습니다.
+<ce>%pcf, 우리는 당신에게 큰 빚을 졌습니다.
+<ce>이제 혼례가 시작됐으니
+<ce>_ruler_도 더는 막을 수 없습니다.
 <ce>약속한 _gold_골드입니다.
-<ce>
 
 RumorsDuringQuest:  [1005]
 <ce>_ruler_가 하렘이라도 만들려나 봐.
-<ce>%g⁠이 %g3 경비병들을 보내
+<ce>%g이 %g3 경비병들을 보내
 <ce>_betrothed_를 데려오라고 했다더군.
 
 RumorsPostfailure:  [1006]
-<ce>_betrothed_가 _ruler_의 하렘에
-<ce>들어갔다는군. 내가 보기에는 납치나 다름없어.
-<ce>
+<ce>_betrothed_가 _ruler_의 하렘에 들어갔다는군.
+<ce>내가 보기에는 납치나 다름없어.
 
 RumorsPostsuccess:  [1007]
 <ce>_qgiver_와 _betrothed_가
-<ce>방금 결혼했대. 정말 기쁜 소식 아닌가?
+<ce>방금 결혼했대.
+<ce>정말 기쁜 소식 아닌가?
 
 QuestorPostsuccess:  [1008]
 <ce>_betrothed_와 내가 감사드립니다.
-<ce>당신이 아니었다면 %g⁠은
+<ce>당신이 아니었다면 %g는
 <ce>_ruler_와 강제로 결혼해야 했을 겁니다.
 
 QuestorPostfailure:  [1009]
 <ce>내 _betrothed_를 영원히 잃었습니다!
-<ce>%G⁠은 _ruler_와 강제로 혼인하게 됐습니다.
-<ce>그런데도 내 도움을 바라다니, 당장 나가십시오!
+<ce>%G은 _ruler_와 강제로 혼인하게 됐습니다.
+<ce>그런데도 내 도움을 바라다니,
+<ce>당장 나가십시오!
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 _qgiver_는
-_betrothed_를 찾으러 __betrothedhome_까지 %g2⁠을 호위해 달라고 부탁했다.
-_qgiver_는 _betrothed_와 약혼했지만, _ruler_는 혼례를
-막으려고 _qgiver_를 죽이려 한다. 두 사람은
-__temple_의 _temple_에서 결혼할 예정이다.
+%qdt:
+___qgiver_의 _qgiver_는
+_betrothed_를 찾으러 __betrothedhome_까지
+%g2를 호위해달라고 했다.
+
+_qgiver_는 _betrothed_와 약혼했지만,
+_ruler_는 혼인을 막기 위해
+_qgiver_를 죽이려 한다.
+
+두 사람은 __temple_의 _temple_에서
+결혼할 예정이다.
 
 Message:  1011
 <ce>아, 사랑하는 _betrothed_!
-<ce>%pcn⁠이 _ruler_의 위협에서 우리를
-<ce>지켜주기로 했어요. 서둘러요, %pcn.
+<ce>%pcn이 _ruler_의 위협으로부터
+<ce>우리를 지켜주기로 했어요.
+<ce>서둘러요, %pcn.
 <ce>__temple_의 _temple_로 우리를 데려다주세요.
-<ce>
-<ce>
 
 Message:  1012
-<ce>우리는 _ruler_의 명령으로 이 혼례를
-<ce>막으러 왔다. _betrothed_가 지금
-<ce>순순히 따라오면 아무도 다치지 않는다.
-<ce>
-<ce>
+<ce>우리는 _ruler_의 명령을 받고
+<ce>이 결혼을 막으러 왔다.
+<ce>_betrothed_가 지금 순순히 따라오면
+<ce>아무도 다치지 않는다.
 
 Message:  1013
-<ce>그래, _qgiver_. 네 몸을 지키겠다고 이런
-<ce>보잘것없는 자를 고용했군. 네가 저항했다는 사실을
-<ce>_ruler_가 알면 기뻐하지 않을 거다.
+<ce>그래, _qgiver_.
+<ce>널 지키겠다고 이런 보잘것없는 자를 고용했군.
+<ce>네가 저항했다는 사실을 _ruler_가 알면
+<ce>기뻐하지 않을 거다.
 <ce>비켜라. _betrothed_를 데려가겠다.
 <ce>저항할수록 상황만 더 나빠질 뿐이다.
-<ce>
-<ce>
-<ce>
 
 Message:  1014
 <ce>_qgiver_가 흥분한 목소리로 속삭입니다.
-<ce>"그래! _ruler_의 불한당들이 내
-<ce>사랑을 가둔 곳이 바로 여기야. 서둘러야 해!"
-<ce>
-<ce>
+<ce>"그래!
+<ce>_ruler_의 불한당들이 내 사랑을 가둔 곳이
+<ce>바로 여기야.
+<ce>서둘러야 해!"
 
 Message:  1015
-<ce>"%oth!" _qgiver_가 외칩니다.
-<ce>"저기 _temple_이 보여요! 이제 _priest_가
-<ce>우리를 혼인시켜주기만 하면 _betrothed_는
-<ce>영원히 _ruler_의 손에서 벗어날 수 있어요!"
-<ce>
-<ce>
-<ce>
+<ce>"%oth!"
+<ce>_qgiver_가 외칩니다.
+<ce>"저기 _temple_이 보여요!
+<ce>이제 _priest_가 우리를 혼인시켜주기만 하면
+<ce>_betrothed_는 영원히 _ruler_의 손에서
+<ce>벗어날 수 있어요!"
 
 Message:  1020
-<ce>_qgiver_가 혐오스러운 표정으로 %g2⁠의 머리를 젓습니다.
+<ce>_qgiver_가 역겹다는 듯 %g2 머리를 젓습니다.
 <ce>"결국 _betrothed_를 직접 구하러 가야겠군.
 <ce>당신은 나를 실망시켰습니다, %pcf."
-<ce>
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 3 times.
+--                %g occurs 2 times.
 --               %g2 occurs 4 times.
---               %g3 occurs 3 times.
---              %pcf occurs 4 times.
+--               %g3 occurs 1 time.
+--              %pcf occurs 2 times.
 --              %pcn occurs 3 times.
 --              %qdt occurs 1 time.
 --        ___qgiver_ occurs 1 time.
---  __betrothedhome_ occurs 5 times.
---         __temple_ occurs 4 times.
---       _betrothed_ occurs 19 times.
+--  __betrothedhome_ occurs 4 times.
+--         __temple_ occurs 2 times.
+--       _betrothed_ occurs 18 times.
 --   _betrothedhome_ occurs 1 time.
---            _gold_ occurs 4 times.
+--            _gold_ occurs 2 times.
 --          _priest_ occurs 1 time.
 --          _qgiver_ occurs 8 times.
---           _ruler_ occurs 18 times.
+--           _ruler_ occurs 16 times.
 --          _temple_ occurs 3 times.
+
 QBN:
 Item _gold_ gold
 

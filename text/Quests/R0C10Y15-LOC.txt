@@ -9,124 +9,129 @@ Quest: R0C10Y15
 DisplayName: 네 번째 사람
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>네 번째 사람이 필요한 조금 복잡한 임무가 있습니다.
-<ce>며칠쯤 걸리겠지만 주머니에는 _reward_골드가
-<ce>들어갈 겁니다. 흥미가 생깁니까?
-<ce>
-<ce>
+<ce>네 번째 사람이 필요한
+<ce>조금 복잡한 임무가 있습니다.
+<ce>며칠 정도 걸리겠지만,
+<ce>주머니에 _reward_골드가 더 들어갈 겁니다.
+<ce>흥미가 생깁니까?
 
 RefuseQuest:  [1001]
-<ce>실망스럽군요. 뭐, 어쩔 수 없죠.
-<ce>
+<ce>실망스럽군요.
+<ce>뭐, 어쩔 수 없지요.
 
 AcceptQuest:  [1002]
-<ce>___npc1_에 연락책 _npc1_가 있고,
-<ce>그 사람이 ___npc2_의 다른 동료에게
-<ce>필요한 물건을 가지고 있습니다.
-<ce>물론 ___npc1_의 _npc1_에게는
-<ce>%g3 물건의 대가를 치러야 하지요. 이 다이아몬드를 건네십시오.
+<ce>___npc1_에 있는 제 연락책 _npc1_가
+<ce>___npc2_의 다른 동료에게 필요한 물건을 가지고 있습니다.
+<ce>물론 _npc1_에게는 그 물건의 대가를 지불해야 합니다.
+<ce>그래서 이 다이아몬드를 대금으로 가져다주어야 하지요.
 <ce>=1stparton_일 안에 %g3 손에 들어가야 합니다.
-<ce>__npc1_에 도착하면 _npc1_가 다음 지시를 줄 겁니다.
-<ce>고맙습니다, %pcf. %god⁠께서 함께하시길.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>__npc1_에 도착하면 _npc1_가
+<ce>다음 지시를 내릴 것입니다.
+<ce>고맙습니다, %pcf.
+<ce>%god께서 함께하시기를.
 
 QuestFail:  [1003]
-<ce>복잡한 일이라는 건 압니다, %pcf.
-<ce>그래도 그 두꺼운 머리뼈 안에 작은 뇌 하나쯤은
-<ce>들었으리라 생각했지요. 나는 같은 말을
-<ce>반복하는 사람이 아니니 메모라도 해두었기를 바랍니다.
-<ce>
-<ce>
+<ce>복잡한 일이라는 것은 압니다, %pcf.
+<ce>하지만 그 두꺼운 머리뼈 안에
+<ce>작은 뇌 하나쯤은 들어 있다고 생각했지요.
+<ce>저는 같은 말을 반복하지 않으니
+<ce>메모라도 해 두었기를 바랍니다.
 
 QuestComplete:  [1004]
-<ce>아, _item2_이군요. 영영 도착하지 않을까 걱정했습니다.
+<ce>아, _item2_이군요.
+<ce>영영 도착하지 않을까 걱정했습니다.
 <ce>여기 약속한 _reward_골드입니다.
-<ce>_npc1_에게 내가 %g3 신세를 졌다고
-<ce>전하십시오. 당신에게도 감사드립니다.
-<ce>
+<ce>_npc1_에게 제가 %g3 신세를 졌다고 전하십시오.
+<ce>당신에게도 감사드립니다.
 
 RumorsDuringQuest:  [1005]
-__npc2_의 _npc2_가 아직도 %g3 _item2_
-때문에 고래고래 소리를 지른대.
+__npc2_의 _npc2_가 아직도
+%g3 _item2_ 때문에 고래고래 소리를 지른대.
 <--->
-%oth, _npc1_는 정말 탐욕스러워. 돈을 받지 않으면
-%g3 어머니도 돕지 않을걸.
+%oth, 그 _npc1_는 정말 탐욕스러워.
+돈을 받지 않으면 %g3 어머니조차 돕지 않을걸.
 
 RumorsPostfailure:  [1006]
-_questgiver_가 어떤 %ra 모험가에게 불같이 화가 났다는군.
+_questgiver_가 어떤 %ra 모험가에게
+불같이 화가 났다는군.
 <--->
-_npc2_가 %g3 잃어버린 마법 물건 때문에
-격분해서 __npc2_을 떠났대.
+_npc2_는 %g3 마법 물건을 잃어버린 일로
+격분해 __npc2_을 떠났대.
 
 RumorsPostsuccess:  [1007]
-_questgiver_와 _npc2_는 대체 무슨 관계일까?
+_questgiver_와 _npc2_는
+대체 무슨 관계일까?
 <--->
-_npc1_가 %g3 _item2_을 팔았다던데, 탐리엘에서
-대체 무슨 값을 받았을까?
+_npc1_가 %g3 _item2_을 팔았다던데,
+대체 어떤 대가를 받았을까?
 
 QuestorPostsuccess:  [1008]
-아니, 이게 누구신가. 최고의 배달부 %pcn 아니신가요.
+아니, 이게 누구신가.
+최고의 전령 %pcn 아니신가요?
 잘 지냈나요, 친구?
 <--->
-내가 어려울 때 도와주었죠, %pcf. 무엇을 도와드릴까요?
+내가 어려울 때 도와주었죠, %pcf.
+무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-<ce>배달을 완수하지 못한 것에
-<ce>대해 사과하러 오신 거겠죠, %pcf.
-<ce>사과는 받지 않겠습니다. 이제 그만 나가주세요.
-<ce>
-<ce>
+<ce>배달을 끝내지 못한 것을 사과하러 왔습니까, %pcf?
+<ce>사과는 받아들이지 않겠습니다.
+<ce>이제 떠나십시오.
 
 QuestLogEntry:  [1010]
-<ce>%god⁠께 감사드립니다, %pcf.
-<ce>어서 다이아몬드를 주십시오. 이제 이 _item2_을
+<ce>%god⁠께 감사할 일이군요.
+<ce>도착해주어서 다행입니다, %pcf.
+<ce>어서 다이아몬드를 주십시오.
+<ce>
+<ce>이제 이 _item2_을
 <ce>___npc2_의 __npc2_에 있는 _npc2_에게
-<ce>가져가십시오. 도착하면 %g⁠가 보수를 줄 겁니다.
-<ce>
-<ce>
+<ce>가져가십시오.
+<ce>그곳에 도착하면 %g⁠가 보수를 줄 겁니다.
 
 Message:  1015
-%qdt: ___questgiver_의 _questgiver_는 나를
-___npc1_에 있는 %g3 연락책에게 보냈다.
-__npc1_의 _npc1_라는 =npc1_에게 _item1_을
-전하고 %g2⁠에게서 다음 지시를 받아야 한다. ___npc1_까지 갈
-시간은 =1stparton_일이다.
+%qdt:
+___questgiver_의 _questgiver_는
+%g3 연락책에게 _item1_을 전달하라고 했다.
+
+그 연락책은 ___npc1_의 __npc1_에 있는
+=npc1_ _npc1_다.
+=1stparton_일 안에 %g2⁠에게 물건을 전하면
+다음 지시를 받을 것이다.
 
 Message:  1016
-%qdt: _npc1_는 나를
-___npc2_의 __npc2_에 있는 _npc2_에게 보냈다.
-=2ndparton_일 안에 %g2⁠에게 _item2_을 전달해야 한다.
+%qdt:
+_npc1_는 나를 ___npc2_의 __npc2_에 있는
+_npc2_에게 보냈다.
+
+=2ndparton_일 안에
+_item2_을 %g2⁠에게 전달해야 한다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 3 times.
+--                %g occurs 1 time.
 --               %g2 occurs 2 times.
---               %g3 occurs 12 times.
---              %god occurs 3 times.
+--               %g3 occurs 7 times.
+--              %god occurs 2 times.
 --              %oth occurs 1 time.
---              %pcf occurs 13 times.
+--              %pcf occurs 5 times.
 --              %pcn occurs 1 time.
 --              %qdt occurs 2 times.
 --               %ra occurs 1 time.
 --       =1stparton_ occurs 2 times.
---       =2ndparton_ occurs 3 times.
---            =npc1_ occurs 9 times.
+--       =2ndparton_ occurs 1 time.
+--            =npc1_ occurs 1 time.
 --          ___npc2_ occurs 3 times.
 --    ___questgiver_ occurs 1 time.
 --           __npc1_ occurs 2 times.
---           __npc2_ occurs 5 times.
+--           __npc2_ occurs 4 times.
 --           _item1_ occurs 1 time.
---           _item2_ occurs 8 times.
---            _npc1_ occurs 10 times.
+--           _item2_ occurs 5 times.
+--            _npc1_ occurs 8 times.
 --            _npc2_ occurs 5 times.
 --      _questgiver_ occurs 3 times.
---          _reward_ occurs 4 times.
+--          _reward_ occurs 2 times.
+
 QBN:
 Item _reward_ gold
 Item _item1_ diamond

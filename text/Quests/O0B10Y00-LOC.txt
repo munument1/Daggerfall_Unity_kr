@@ -9,126 +9,127 @@ Quest: O0B10Y00
 DisplayName: 도난당한 보석
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>이봐, %pcf. 우리 가족 한 명이 곤경에 빠졌어.
-<ce>며칠 내서 가족을 도와주겠나?
-<ce>
-<ce>
+<ce>이봐, %pcf.
+<ce>우리 가족 중 한 명이 곤경에 처했어.
+<ce>며칠 시간을 내서 가족을 도와주겠나?
 
 RefuseQuest:  [1001]
-<ce>좋아. 너는 언젠가 곤경에 빠질
-<ce>일이 없으리라 믿는 모양이군.
-<ce>
+<ce>좋아, 그렇다면 말이지.
+<ce>자네는 언젠가 자신이 곤경에 빠질 일은
+<ce>없을 거라고 믿는 모양이군.
 
 AcceptQuest:  [1002]
-<ce>좋아, %ra. ___contact_에서 손꼽히는 우리
-<ce>털이범 하나가 __contact_라는 쥐구멍에 숨어 있어.
-<ce>%g3 몸에는 %g⁠이 궁전에서 훔친 뜨거운 돌이 있지.
-<ce>누군가 %g2⁠이 가진 걸 보았고 경비대가 그곳을
-<ce>감시한다는 소문이야. __contact_의 주인을 봐줘서
-<ce>=1stparton_일 뒤에 들이닥칠 거래. __contact_로
-<ce>가서 _contact_에게 이 _metal_ 덩어리를
-<ce>주고 _gems_과 바꿔온 다음 여기로 가져와.
-<ce>알아들었지? 좋아. 시간이 없으니 서둘러.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>좋아, %ra.
+<ce>___contact_에서 손꼽히는 우리 빈집털이범 하나가
+<ce>__contact_이라는 쥐구멍에 숨어 있어.
+<ce>%g3 몸에는 %g가 궁전에서 훔친 값비싼 보석이 있지.
+<ce>누군가 %g2가 가진 것을 보았고,
+<ce>경비대가 그곳을 감시하고 있다는 소문이야.
+<ce>__contact_의 주인을 봐줘서
+<ce>밤이 =1stparton_번 지나기 전까지는
+<ce>들이닥치지 않고 기다린다고 해.
+<ce>__contact_으로 가서 _contact_에게
+<ce>이 _metal_ 덩어리를 건네고 _gems_과 맞바꾼 뒤,
+<ce>그 _gems_을 이곳으로 가져와.
+<ce>알아들었지? 좋아.
+<ce>시간이 없으니 서둘러.
 
 QuestFail:  [1003]
-<ce>다시 보니 반갑지만, %pcf, 빈손으로 오면 안 되지.
-<ce>_gems_을 가져오기로 했잖아. 기억하지?
-<ce>
-<ce>
+<ce>다시 보니 반갑지만, %pcf.
+<ce>빈손으로 오면 안 되지.
+<ce>_gems_을 가져오기로 했잖아.
+<ce>기억하지?
 
 QuestComplete:  [1004]
-<ce>잘했어, %pcf. _contact_가 경비대에게
-<ce>그들이 _gems_이라고 생각한 _metal_
-<ce>조각을 보여주자, 사과한다며 %g2⁠에게 술까지
-<ce>샀다더군. 악당의 삶만 한 것이 없다니까.
-<ce>여기 _gems_에서 나온 네 몫 _reward_골드다.
+<ce>잘했어, %pcf.
+<ce>_contact_가 경비대에게
+<ce>그들이 _gems_이라고 생각했던 _metal_ 조각을 보여 주자,
+<ce>사과하는 뜻으로 %g2에게 술까지 사 줬다더군.
+<ce>악당의 삶만 한 것도 없다니까.
+<ce>여기 _gems_에서 나온 자네 몫인 _reward_골드다.
 <ce>받을 자격이 있어, %pcf.
-<ce>
-<ce>
-<ce>
 
 RumorsDuringQuest:  [1005]
-_contact_가 그 보석을 훔친 것은 모두가 아는데 왜 %g2⁠을 잡지
-않는 거지?
+_contact_가 그 보석을 훔친 것은 모두가 아는데,
+왜 %g2⁠를 잡지 않는 거지?
 <--->
-__contact_에는 건달이 워낙 많아서 경비대가 들어가기를 꺼린대.
+__contact_에는 무장한 패거리가 워낙 많아서
+경비병들을 들이지 않는대.
 
 RumorsPostfailure:  [1006]
-경비대가 마침내 _contact_를 잡았어. %g⁠도 영원히 버틸 수는
-없었겠지.
+경비대가 마침내 _contact_를 잡았어.
+%g⁠도 영원히 막아낼 수는 없었겠지.
 <--->
-그래, %t⁠의 _gems_을 찾아서 그 =contact_를
-체포했어.
+그래, %t⁠의 _gems_을 찾아내고
+그 =contact_를 체포했어.
 
 RumorsPostsuccess:  [1007]
-결국 _contact_를 풀어줘야 했어. %g⁠은 무죄였던 거지.
+결국 _contact_를 풀어줘야 했어.
+%g⁠는 무죄였던 거지.
 <--->
 어떻게 _metal_을 _gems_으로 착각하지?
 둘 다 돌이긴 하지만 너무하잖아!
 
 QuestorPostsuccess:  [1008]
-왜 왔지, %pcf? 그 _gems_을 돌려받고 싶은가?
-그렇겠지!
+무슨 일이지, %pcf?
+그 _gems_을 돌려받고 싶은 건가?
+당연히 그렇겠지!
 
 QuestorPostfailure:  [1009]
-<ce>_contact_에게서 _gems_을 받아오고 %g2⁠에게
-<ce>내가 준 _metal_을 건네기로 한 것을 잊었나?
+<ce>_contact_에게서 _gems_을 받아 오고,
+<ce>%g2에게 내가 준 _metal_을 건네기로 했던 것을 잊었나?
 <ce>%oth! 무슨 어려운 학문이라도 되는 줄 알겠군.
-<ce>
-<ce>
 
 QuestLogEntry:  [1010]
 <ce>%oth, %pcf, 네가 살렸어.
-<ce>누군가 내가 _gems_을 가진 것을
-<ce>보고 훔친 보석이라고 생각한 모양이야.
-<ce>이 _metal_ 덩어리면 여기서 빠져나갈 수 있겠군.
-<ce>나중에 술 한잔 사지. 이제 _questgiver_에게 서둘러 돌아가.
-<ce>=1stparton_일 안에 돌아가지 않으면 경비들이 크게 의심할 거야.
+<ce>누군가 내가 _gems_을 가진 모습을 보고
+<ce>도난당한 보석이라고 여긴 모양이야.
 <ce>
+<ce>이 _metal_ 덩어리면
+<ce>여기서 빠져나갈 수 있겠군.
+<ce>나중에 술 한잔 사지.
 <ce>
-<ce>
+<ce>이제 _questgiver_에게 서둘러 돌아가.
+<ce>=1stparton_일 안에 돌아가지 않으면
+<ce>그들이 크게 의심할 거야.
 
 Message:  1015
-%qdt: ___questgiver_ 도둑 길드의 _questgiver_는
-나를 ___contact_의 __contact_라는 허름한 술집으로 보냈다.
-_contact_에게 _metal_을 주고 %g⁠이 지니다가 목격된 훔친
-돌과 바꿔와야 한다. 기한은 =1stparton_일이다.
+%qdt:
+___questgiver_ 도둑 길드의 _questgiver_는
+나를 ___contact_의 __contact_라는
+허름한 술집으로 보냈다.
+
+_contact_에게 _metal_을 주고,
+%g⁠가 지니고 있다가 목격된 도난품과
+바꿔와야 한다.
+
+기한은 =1stparton_일이다.
 
 Message:  1020
 <ce>_contact_가 훔친 _gems_을
 <ce>네가 가지고 있다는 확실한 정보를 얻었다.
-<ce>순순히 넘기면 다치지 않고 보내주지.
-<ce>
-<ce>
+<ce>순순히 넘기면 다치지 않고 보내 주지.
 
 -- Symbols used in the QRC file:
 --
 --                %g occurs 4 times.
---               %g2 occurs 6 times.
+--               %g2 occurs 4 times.
 --               %g3 occurs 1 time.
 --              %oth occurs 2 times.
---              %pcf occurs 8 times.
+--              %pcf occurs 6 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
---                %t occurs 2 times.
---       =1stparton_ occurs 6 times.
---         =contact_ occurs 4 times.
+--                %t occurs 1 time.
+--       =1stparton_ occurs 3 times.
+--         =contact_ occurs 1 time.
 --    ___questgiver_ occurs 1 time.
---        __contact_ occurs 14 times.
---            _gems_ occurs 14 times.
---           _metal_ occurs 7 times.
+--        __contact_ occurs 5 times.
+--            _gems_ occurs 11 times.
+--           _metal_ occurs 6 times.
 --      _questgiver_ occurs 2 times.
 --          _reward_ occurs 1 time.
+
 QBN:
 Item _reward_ gold
 Item _metal_ element

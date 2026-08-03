@@ -10,132 +10,128 @@ Quest: L0B10Y03
 DisplayName: 무단 결근
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>브라더후드는 모든 형제가 언제 어디에 있는지
-<ce>안다는 사실을 자랑으로 여긴다. 지난 티르다스에
-<ce>네가 서 있던 자리도 한 자 이내로 말할 수 있지.
+<ce>다크 브라더후드는 모든 형제가
+<ce>언제 어디에 있는지 안다는 사실을 자랑으로 여긴다.
+<ce>지난 티르다스에 네가 서 있던 자리도
+<ce>한 자 이내로 말할 수 있지.
 <ce>그런데 형제 하나가 임무 중 사라졌다.
-<ce>=target_를 찾아라. %g⁠에게 %g3 부재를
-<ce>설명할 합당한 변명이 없다면 %g2⁠을 정리해라.
+<ce>=target_를 찾아라.
+<ce>%g에게 %g3 부재를 설명할 합당한 변명이 없다면
+<ce>%g2를 정리해라.
 <ce>이 일을 맡을 시간은 있겠지?
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
 <--->
 <ce>알다시피 누구도 다크 브라더후드를 떠날 수 없다.
-<ce>한 형제가 임무 중 사라졌으니 =target_가
-<ce>죽었는지 살았는지 알아야 한다.
+<ce>한 형제가 임무 중 사라졌으니,
+<ce>=target_가 죽었는지 살았는지 알아야 한다.
 <ce>이 임무는 네게 맡긴다.
-<ce>
-<ce>
 
 RefuseQuest:  [1001]
-<ce>정말인가? 가끔은 임무 하나쯤
-<ce>거절할 권리도 있겠지.
-<ce>
+<ce>정말인가?
+<ce>가끔은 임무 하나쯤 거절할 권리도 있겠지.
 
 AcceptQuest:  [1002]
-<ce>좋다. =target_에게는 ___contact_에 사는
-<ce>사촌이 있다. _contact_라는 =contact_이며,
+<ce>좋다. =target_에게는
+<ce>___contact_에 사는 사촌이 있다.
+<ce>_contact_라는 =contact_이며,
 <ce>보통 __contact_에서 찾을 수 있다.
-<ce>%g2⁠과 단호하게 이야기해 %g3 사촌이 어디 있는지 알아내라.
+<ce>%g2와 단호하게 이야기해
+<ce>%g3 사촌이 어디 있는지 알아내라.
 <ce>이 일을 처리하고 돌아올 시간은 =queston_일이다.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
 
 QuestComplete:  [1004]
 <ce>=target_가 흡혈귀였다고?
-<ce>이제야 상황이 설명되는군. 아직 치료받지
-<ce>않았다면 신전에서 몸을 살펴보는 편이 좋다.
-<ce>=target_의 피 빠는 가족이 되고 싶지는 않을 테니까.
-<ce>
-<ce>
-<ce>
+<ce>이제야 상황이 설명되는군.
+<ce>아직 치료받지 않았다면
+<ce>신전에서 몸을 살펴보는 편이 좋다.
+<ce>=target_의 흡혈귀 가족이 되고 싶지는 않을 테니까.
 
 RumorsDuringQuest:  [1005]
-누구도, 정말 누구도 다크 브라더후드를 배신하지 못합니다.
+누구도, 정말 누구도
+다크 브라더후드를 배신하지 못합니다.
 <--->
-=target_는 %g⁠이 사라지기 전 %reg 어딘가의 남작을
-노렸다고 합니다.
+=target_는 %g⁠가 사라지기 전
+%reg 어딘가의 남작을 노렸다고 합니다.
 
 RumorsPostfailure:  [1006]
-=target_가 죽었다는 사람도 있습니다. 하지만 %g2⁠을 봤다는
-이들도 있지요… 밤에만요.
+=target_가 죽었다는 사람도 있습니다.
+하지만 %g2⁠를 봤다는 이들도 있지요...
+오직 밤에만 말입니다.
 
 RumorsPostsuccess:  [1007]
-브라더후드가 그 피 빠는 괴물을 죽였다니 우습군요.
+브라더후드가 그 흡혈귀를 죽였다니 우습군요.
 서로 잘 지낼 줄 알았는데.
 <--->
-=target_의 마지막 표적은 %g⁠이 생각했던 것보다 훨씬
-위험했던 모양입니다.
+=target_의 마지막 표적은
+%g⁠가 예상했던 것보다 훨씬 강했던 모양입니다.
 
 QuestorPostsuccess:  [1008]
-안녕, %pcf. 흡혈귀와 싸운 뒤 사제에게 진찰은 받았기를
-바란다.
+안녕, %pcf.
+흡혈귀와 싸운 뒤
+사제에게 진찰은 받았기를 바란다.
 
 QuestorPostfailure:  [1009]
 <ce>임무에 실패한 자에게 줄 것은 경멸뿐이다.
 <ce>꺼져라, %pcf.
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 다크 브라더후드 소속
-_qgiver_는 사라진 형제를 추적하고, 합당한 설명이 없다면
-정리하라고 했다. 그자의 이름은 =target_이며, ___contact_에
-사는 _contact_라는 =contact_인 사촌이 있다.
-사촌이 아는 것을 알아내고 =target_를 추적해 __qgiver_로
-돌아올 시간은 =queston_일이다.
+%qdt:
+___qgiver_의 다크 브라더후드 소속 _qgiver_는
+사라진 형제를 추적하고,
+합당한 설명을 내놓지 못하면 처리하라고 했다.
+
+그자의 이름은 =target_이며,
+___contact_에 사는 =contact_ _contact_가 사촌이다.
+
+=queston_일 안에 사촌이 아는 것을 알아내고,
+=target_를 추적한 뒤 __qgiver_로 돌아가야 한다.
 
 Message:  1011
 <ce>=target_가 ___mondung_의 남작을
-<ce>찾으러 간 뒤로 %g⁠에게서 아무 소식도 듣지
-<ce>못했습니다. 그 남작은 이상한 자였지요.
-<ce>낮에는 나오지 않고 으스스한 곳에서
-<ce>살았으니 누군가 죽이려 한 것도 당연합니다.
-<ce>그래도 내 사촌의 브라더후드 경력을 끝낸 자가
+<ce>찾으러 간 뒤로 아무 소식도 듣지 못했습니다.
+<ce>그 남작은 이상한 자였지요.
+<ce>낮에는 모습을 드러내지 않고
+<ce>으스스한 곳에서 살았으니,
+<ce>누군가 죽이려 한 것도 당연합니다.
+<ce>그래도 내 사촌의 다크 브라더후드 경력을 끝낸 자가
 <ce>그 비쩍 마르고 창백한 남작일 줄은 몰랐습니다.
-<ce>
-<ce>
-<ce>
 
 Message:  1012
-%qdt: _contact_는 =target_가 장부 정리를
-위해 의문의 남작을 찾아 ___mondung_으로 갔다고 말했다.
+%qdt:
+_contact_의 말에 따르면,
+=target_는 의문의 남작을 처리하러
+___mondung_으로 갔다고 한다.
+
 다음 목적지는 ___mondung_이다.
 
 Message:  1013
-<ce>“남작이 내게 준 불멸을 너와도 나누어주마.”
+<ce>"남작이 내게 준 불멸을
+<ce>너와도 나누어주마."
 <ce>=target_가 쉿쉿거리며 말합니다.
-<ce>
 
 Message:  1014
-<ce>흡혈귀 =target_가 마침내 안식을 얻었습니다.
-<ce>
+<ce>흡혈귀 =target_가
+<ce>마침내 안식을 얻었습니다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 6 times.
---               %g2 occurs 4 times.
+--                %g occurs 3 times.
+--               %g2 occurs 3 times.
 --               %g3 occurs 2 times.
---              %pcf occurs 5 times.
+--              %pcf occurs 2 times.
 --              %qdt occurs 2 times.
---              %reg occurs 2 times.
+--              %reg occurs 1 time.
 --         =contact_ occurs 2 times.
 --         =queston_ occurs 2 times.
---          =target_ occurs 16 times.
+--          =target_ occurs 14 times.
 --       ___contact_ occurs 2 times.
 --       ___mondung_ occurs 3 times.
 --        ___qgiver_ occurs 1 time.
 --        __contact_ occurs 1 time.
---         __qgiver_ occurs 2 times.
+--         __qgiver_ occurs 1 time.
 --         _contact_ occurs 3 times.
 --          _qgiver_ occurs 1 time.
+
 QBN:
 
 Person _qgiver_ group Questor

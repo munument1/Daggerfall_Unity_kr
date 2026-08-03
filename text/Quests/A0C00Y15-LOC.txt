@@ -10,25 +10,20 @@ Quest: A0C00Y15
 DisplayName: 장거리 배달
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>소문은 많이 들었습니다,
-<ce>%pcn.
+<ce>소문은 들었습니다, %pcn.
 <ce>저는 _questgiver_입니다.
-<ce>부탁 하나 드려도 될까요?
-<ce>조만간 ___pickupregion_
-<ce>근처를 지나실 예정이라면,
-<ce>그곳의 누군가에게 소포를
-<ce>전해주셨으면 합니다.
-<ce>사례로 _gold_골드를 드리겠습니다.
+<ce>부탁 하나 드려도 되겠습니까?
+<ce>조만간 ___pickupregion_을 지나가신다면,
+<ce>그곳에 있는 누군가에게
+<ce>소포를 전해주셨으면 합니다.
+<ce>사례로 _gold_ 골드를 드리겠습니다.
 <--->
-<ce>명성은 익히 들었습니다,
-<ce>%pcn.
+<ce>명성은 익히 들었습니다, %pcn.
 <ce>배달을 맡길 사람이 필요합니다.
-<ce>혹시 조만간 ___pickupregion_
-<ce>쪽으로 가실 예정인가요?
-<ce>소포 하나를 전해주시면 수고비로
-<ce>_gold_골드를 드리겠습니다.
+<ce>혹시 조만간 ___pickupregion_으로 가십니까?
+<ce>소포 하나를 그곳에 전해주시면
+<ce>수고비로 _gold_ 골드를 드리겠습니다.
 
 RefuseQuest:  [1001]
 <ce>아쉽군요.
@@ -36,121 +31,119 @@ RefuseQuest:  [1001]
 <ce>제대로 일할 사람을
 <ce>다시 찾아봐야겠군요.
 <--->
-<ce>소문으로 듣던 %pcn⁠님과는
-<ce>다른 분인가 보군요.
+<ce>소문으로 듣던 %pcn와는
+<ce>다른 사람인가 보군요.
 
 AcceptQuest:  [1002]
-<ce>좋습니다! 이 소포를
-<ce>___pickupregion_으로 가져가
-<ce>_pickupregion_ 님을 찾으세요.
-<ce>보수는 %G 님이 지불할 겁니다.
+<ce>좋습니다! 이 소포를 ___pickupregion_으로 가져가
+<ce>_pickupregion_를 찾으세요.
+<ce>보수는 %G가 지불할 겁니다.
 <ce>=traveltime_일 안에 도착해야 합니다.
 <ce>여기 소포입니다.
 <--->
-<ce>운이 좋군요! 제 친구는
-<ce>___pickupregion_의 _pickupregion_ 님입니다.
-<ce>주변에 물어보면 누구나 %g2 님을 알 겁니다.
-<ce>보수는 %G 님이 바로 주실 겁니다.
-<ce>=traveltime_일보다 늦는다면 차라리
-<ce>버리는 편이 나을 겁니다.
+<ce>운이 좋군요! 제 친구 _pickupregion_는
+<ce>___pickupregion_에 있습니다.
+<ce>주변에 물어보면 누구나 %g2를 알 겁니다.
+<ce>%G가 바로 보수를 줄 겁니다.
+<ce>=traveltime_일보다 늦는다면
+<ce>차라리 버리는 편이 낫습니다.
 <ce>여기 있습니다.
 
 QuestComplete:  [1004]
-<ce>_questgiver_ 님이 제때 보내주시길 기다리고
-<ce>있었습니다. %G 님은 요즘 몹시 바쁘셨거든요.
-<ce>여기 약속받은 _gold_골드입니다.
-<ce>
+<ce>_questgiver_가 제때 이것을 보내주기를
+<ce>바라고 있었습니다.
+<ce>%G는 요즘 무척 바빴거든요.
+<ce>여기 약속받은 _gold_ 골드입니다.
 
 RumorsDuringQuest:  [1005]
-<ce>오크들이 또 말썽을 피우고 있다더군요.
+<ce>오크들이 다시 말썽을 일으키고 있다는군요.
 
 RumorsPostfailure:  [1006]
 <ce>죽은 리산더스 왕의 유령이
 <ce>대거폴에 나타났다는군요.
 
 RumorsPostsuccess:  [1007]
-<ce>대거폴 앞바다에서 폭풍에 배 한 척이 난파됐다고 합니다.
+<ce>대거폴 해안 바로 앞에서 폭풍으로
+<ce>배 한 척이 난파됐다고 합니다.
 <ce>황제의 사절이 타고 있었다더군요.
-<ce>
 
 QuestorPostsuccess:  [1008]
-<ce>___pickupregion_까지 소포를
-<ce>전해주셔서 진심으로 감사합니다.
+<ce>___pickupregion_까지 소포를 전해주셔서
+<ce>진심으로 감사합니다.
 
 QuestorPostfailure:  [1009]
 <ce>이런 악당 같으니! 내 소포를 어떻게 한 거지?
-<ce>팔아버렸나? ___pickupregion_에
-<ce>도착하지 않았어. 당장 나가.
+<ce>팔아버렸나?
+<ce>___pickupregion_에 도착하지 않았어.
+<ce>당장 나가.
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_의 _questgiver_에게서
-소포를 받아 ___pickupregion_의 _pickupregion_에게 배달하기로 했다.
-=traveltime_일 안에 전해야 한다.
+%qdt:
+___questgiver_의 _questgiver_는
+___pickupregion_의 _pickupregion_에게
+소포를 배달하라고 했다.
+
+=traveltime_일 안에 전달해야 한다.
 
 Message:  1011
 <ce>이 책에는 추억이 담겨 있습니다.
-<ce>_pickupregion_ 님은 _book_
-<ce>사본을 본 지 여러 해가 지났거든요.
-<ce>
+<ce>_pickupregion_는 _book_ 한 부를
+<ce>몇 년 동안 보지 못했거든요.
 
 Message:  1012
-<ce>_pickupregion_ 님에게는 %g⁠가 만들고
-<ce>있는 특별한 약에 쓸 _ingredient_ 재료가 필요합니다.
-<ce>
+<ce>_pickupregion_는 %g가 만들고 있는
+<ce>특별한 약에 쓸 _ingredient_가 필요합니다.
 
 Message:  1013
-<ce>이 _jewelry_ 장신구는
-<ce>_pickupregion_님에게 줄 선물입니다.
-<ce>이것으로 %g2⁠님과의 거래가 성사될 겁니다.
+<ce>이 _jewelry_는 _pickupregion_에게 줄 선물입니다.
+<ce>이것으로 %g2와 맺은 거래가 확정될 겁니다.
 
 Message:  1014
-<ce>이 특별한 _mensclothing_ 옷은 어머니께서
-<ce>축제를 맞아 _pickupregion_님을
-<ce>위해 만들어주신 겁니다.
+<ce>이 특별한 _mensclothing_는 어머니가
+<ce>축하 행사를 위해 _pickupregion_에게
+<ce>만들어준 것입니다.
 
 Message:  1015
-<ce>_pickupregion_ 님이 이 _painting_
-<ce>그림을 주문하셨습니다.
-<ce>내일 열릴 %g3 모임에 꼭 필요합니다.
+<ce>_pickupregion_가 이 _painting_를 주문했습니다.
+<ce>내일 열리는 %g3 모임에 맞춰
+<ce>도착해야 합니다.
 
 Message:  1016
-<ce>_pickupregion_ 님이 이 _potion_
-<ce>물약을 가능한 한 빨리 필요로 하십니다.
+<ce>_pickupregion_에게 이 _potion_가
+<ce>가능한 한 빨리 필요합니다.
 
 Message:  1017
-<ce>_pickupregion_ 님이 협박을 받고 있습니다.
-<ce>이 _weapon_ 무기가
-<ce>%g3 두려움을 가라앉혀줄 겁니다.
+<ce>_pickupregion_가 협박받고 있습니다.
+<ce>이 _weapon_만 있으면
+<ce>%g3 마음도 놓일 겁니다.
 
 Message:  1018
-<ce>_pickupregion_ 님의 결혼식에 쓸
-<ce>훌륭한 _womensclothing_ 옷을 샀습니다.
-<ce>제때 도착하지 않으면 정말 창피한 일이 될 겁니다.
-<ce>
+<ce>_pickupregion_의 결혼식 선물로
+<ce>이 훌륭한 _womensclothing_를 샀습니다.
+<ce>제때 도착하지 않으면 정말 난처해질 겁니다.
 
 Message:  1019
-<ce>무슨 일이죠? _questgiver_ 님이요?
-<ce>네, %g 님이 소포를 보내주겠다고 했습니다.
-<ce>곧 받지 못하면 너무 늦습니다.
-<ce>
+<ce>무슨 일이죠? _questgiver_요?
+<ce>네, %g가 소포를 보내기로 했습니다.
+<ce>곧 도착하지 않으면 너무 늦을 겁니다.
 
 Message:  1020
-<ce>_questgiver_ 님이 보낸 소포를 가지고 있다는 걸 안다.
+<ce>_questgiver_가 보낸 소포를
+<ce>가지고 있다는 걸 안다.
 <ce>내놓으면 아무도 다치지 않을 거다.
-<ce>
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 6 times.
+--                %g occurs 2 times.
 --               %g2 occurs 2 times.
---               %g3 occurs 13 times.
+--               %g3 occurs 2 times.
 --              %pcn occurs 3 times.
 --              %qdt occurs 1 time.
 --      =traveltime_ occurs 3 times.
---  ___pickupregion_ occurs 8 times.
+--  ___pickupregion_ occurs 7 times.
 --    ___questgiver_ occurs 1 time.
---            _book_ occurs 3 times.
---            _gold_ occurs 5 times.
+--            _book_ occurs 1 time.
+--            _gold_ occurs 3 times.
 --      _ingredient_ occurs 1 time.
 --         _jewelry_ occurs 1 time.
 --    _mensclothing_ occurs 1 time.
@@ -160,6 +153,7 @@ Message:  1020
 --      _questgiver_ occurs 5 times.
 --          _weapon_ occurs 1 time.
 --  _womensclothing_ occurs 1 time.
+
 QBN:
 Item _book_ book0
 Item _womensclothing_ womens_clothing

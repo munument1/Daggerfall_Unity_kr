@@ -10,25 +10,28 @@ Quest: M0B11Y18
 DisplayName: 카바르 경 퀘스트 1부
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>%pcf, 극도의 신중함이 필요한 중요한 임무가
-<ce>하나 있습니다. 도와주겠다고 약속하기 전에는
-<ce>자세한 이야기를 할 수 없습니다. 어떻습니까?
-<ce>
+<ce>%pcf, 극도의 신중함이 필요한
+<ce>중요한 임무가 하나 있습니다.
+<ce>도와주겠다고 약속하기 전에는
+<ce>자세한 이야기를 할 수 없습니다.
+<ce>어떻습니까?
 
 RefuseQuest:  [1001]
-<ce>%oth, 당신에게 더 많은 것을 기대했는데 실망이군요.
+<ce>%oth, 당신에게 더 많은 것을 기대했는데
+<ce>실망이군요.
 
 AcceptQuest:  [1002]
 <ce>오랜 친구가 심각한 위험에 처했습니다.
-<ce>검을 능숙하게 다루면서도 비밀을 지킬 수 있는 호위가
-<ce>필요하지요. 당연히 당신이 떠올랐습니다.
+<ce>검을 능숙하게 다루면서도
+<ce>비밀을 지킬 수 있는 호위가 필요하지요.
+<ce>당연히 당신이 떠올랐습니다.
 <ce>_target_가 오늘 밤 10시에
 <ce>_targethouse_에서 당신을 기다릴 겁니다.
-<ce>도착하면 %G⁠이 자세한 사정을 설명할 겁니다.
-<ce>나도 함께 가고 싶지만, 내가 %g3 친구로 알려져
-<ce>있어 자칫 %g3 적들을 %g2⁠에게 이끌 수 있습니다.
+<ce>도착하면 %G가 자세한 사정을 설명할 겁니다.
+<ce>나도 함께 가고 싶지만,
+<ce>내가 %g3 친구로 알려져 있어
+<ce>자칫 %g3 적들을 %g2에게 이끌 수 있습니다.
 <ce>이번 일은 특히 뒤를 조심하십시오.
 
 QuestFail:  [1003]
@@ -37,163 +40,187 @@ QuestFail:  [1003]
 QuestComplete:  [1004]
 <ce>왕국을 위협하는 중대한 음모를 알려주셨군요.
 <ce>진심으로 감사드립니다.
-<ce>사례로 이 _reward_골드를 받아주십시오.
+<ce>사례로 _reward_골드를 받아주십시오.
 
 RumorsDuringQuest:  [1005]
-<ce>_enemy_가 ___stronghold_에서 용병들을
-<ce>모으고 있다던데, 무슨 일을 꾸미는 걸까요?
+<ce>_enemy_가 ___stronghold_에서
+<ce>용병들을 모으고 있다던데,
+<ce>무슨 일을 꾸미는 걸까요?
 
 RumorsPostfailure:  [1006]
-<ce>__targethouse_의 매복 사건을 들었습니까?
+<ce>__targethouse_에서 벌어진 매복 사건을 들었습니까?
 <ce>센티넬 여왕의 대리인이 살해당했다는군요.
 
 RumorsPostsuccess:  [1007]
-<ce>센티넬의 궁정 귀족 한 명이 왕좌를 노리고
-<ce>음모를 꾸미다가 여왕에게 발각됐답니다.
+<ce>센티넬의 궁정 귀족 한 명이
+<ce>왕좌를 노리고 음모를 꾸미다가
+<ce>여왕에게 발각됐답니다.
 <ce>여왕은 ___stronghold_에 있는 그의 요새를 파괴했지요.
 <--->
 <ce>_ruler_의 군대가 ___stronghold_를 공격했지만,
 <ce>정작 목표였던 반역자 _traitor_는 달아났다는군요.
 
 QuestorPostsuccess:  [1008]
-<ce>_target_는 죽었지만, 그래도
-<ce>_ruler_에게 무사히 소식을 전했다더군요.
+<ce>_target_는 죽었지만,
+<ce>그래도 _ruler_에게 무사히 소식을 전했다더군요.
 
 QuestorPostfailure:  [1009]
-<ce>_target_를 _ruler_에게 호위하는 임무는 어떻게 된 겁니까?
+<ce>_target_를 _ruler_에게 데려가는
+<ce>호위 임무는 어떻게 된 겁니까?
 
 Message:  1020
-%qdt: ___questgiver_의 __questgiver_에
-있는 _questgiver_가 오늘 밤 10시에 _targethouse_에서 _target_를
-만나라고 부탁했다. _target_가 강력한 적들에게 위협받고 있다는 것
-말고는 아는 것이 없다.
+%qdt:
+___questgiver_의 __questgiver_에 있는 _questgiver_는
+오늘 밤 10시에 _targethouse_에서
+_target_를 만나라고 부탁했다.
+
+_target_가 강력한 적들에게 위협받고 있다는 것 말고는
+아는 것이 없다.
 
 Message:  1021
-%qdt: _target_를 만났다. 이제 함께 센티넬로
-향한다.
+%qdt:
+_target_를 만났다.
+이제 함께 센티넬로 향하는 중이다.
 
 Message:  1022
-%qdt: _targethouse_를 떠나다 매복 공격을 받았고,
-_target_가 살해당했다. 그러나 죽기 직전 %g⁠은 편지 한 장을
-내게 건넸다. %g⁠이 건넨 편지는 센티넬의 _ruler_ 궁정에
-있는 _traitor_가 반역자임을 폭로하고 있었다.
-_target_의 마지막 부탁대로 편지를 _ruler_에게 전해야 한다.
-=patsy_일 안에 보여드려야 한다.
+%qdt:
+_targethouse_를 떠나다 매복 공격을 받았고,
+_target_가 살해당했다.
+
+하지만 죽기 직전 %g⁠는 편지 한 통을 내게 건넸다.
+그 편지는 센티넬의 _ruler_ 궁정에 있는
+_traitor_가 반역자라는 사실을 폭로하고 있었다.
+
+_target_의 마지막 부탁대로
+=patsy_일 안에 편지를 _ruler_에게 전해야 한다.
 
 Message:  1023
-%qdt: _ruler_에게 반역의 편지를 보여드렸지만,
-_traitor_는 이미 ___stronghold_의 요새로 달아난 뒤였다.
-여왕은 요새에 잠입해 _traitor_를 생포하거나 처단하라고 명했다.
-임무를 완수하고 센티넬로 돌아올 기한은 =gettraitor_일이다.
+%qdt:
+_ruler_에게 반역을 입증하는 편지를 보여드렸지만,
+_traitor_는 이미 ___stronghold_에 있는
+자신의 요새로 달아난 뒤였다.
+
+여왕은 요새에 잠입해 _traitor_를
+생포하거나 처단하라고 명했다.
+
+=gettraitor_일 안에 임무를 완수하고
+센티넬로 돌아와야 한다.
 
 Message:  1030
-친애하는 %pcn,
+친애하는 %pcn에게,
 
-계획이 바뀌었습니다. _questgiver_가 급히 도시를 떠나면서 내게
-대신 당신을 만나달라고 부탁했습니다. _tavern_로 즉시 와주십시오.
+계획이 바뀌었습니다.
+_questgiver_가 급히 도시를 떠나면서
+_tavern_에서 당신을 대신 만나달라고
+제게 부탁했습니다.
+즉시 와주십시오.
 대단히 긴급한 일입니다.
 
 <ce>_enemy_
 
 Message:  1031
-친애하는 _enemy_,
+친애하는 _enemy_에게,
 
-___stronghold_에서 내 병력을 훈련하는 일이 순조롭다니 기쁘군.
-_ruler_를 쓰러뜨리려면 병사를 더 고용해야 하니, 자금을
-마련하는 대로 추가로 보내겠네. 그녀와 정면으로 싸우면 승산이 없다는
-자네 판단은 옳지만, 성을 기습하는 작전만으로도 지금보다 많은
-병력이 필요하다고 보네.
+___stronghold_에서 내 병력을 훈련하는 일이
+순조롭다니 기쁘군.
+_ruler_를 쓰러뜨리려면 병사를 더 고용해야 하니,
+자금을 마련하는 대로 추가로 보내겠네.
+그녀와 정면으로 싸우면 승산이 없다는 자네 판단은 옳지만,
+성 자체를 기습하는 작전에도
+지금보다 많은 병력이 필요하다고 보네.
 
-몇 주 뒤 ___stronghold_에 도착하면 자세히 논의하지.
-그전에 연락할 일이 생기면 나는 __palace_의 궁전에 있네.
-모든 일이 잘 풀리면 곧 새로운 동맹을 얻을지도 모르지.
-이곳의 상황을 다시 안정시킨 뒤에는 센티넬로 돌아가 친애하는 여왕께
-경의를, 어쩌면 '마지막 경의'를 표해야겠군. 최근 그녀의 첩자들이
-내 뒤를 밟고 있으니, 여왕이 좋아하는 비굴한 충성극을 벌여 의심을
-잠재우겠네.
+몇 주 뒤 ___stronghold_에 도착하면
+이 일을 자세히 논의하지.
+그전에 연락할 일이 생기면
+나는 __palace_의 궁전에 머물고 있네.
+모든 일이 잘 풀리면
+곧 새로운 동맹을 확보할 수도 있겠지.
 
-진행 상황을 계속 보고하게.
+이곳의 상황이 다시 순조롭게 돌아가면
+센티넬로 돌아가 친애하는 여왕께 경의를 표해야겠네.
+어쩌면 '마지막 경의'가 될지도 모르지!
+최근 그녀의 첩자들이 내 뒤를 밟고 있으니,
+여왕이 그토록 좋아하는 비굴한 복종을 연기해
+의심을 잠재울 생각이네.
+
+진행 상황을 계속 알려주게.
 
 <ce>진심을 담아,
-<ce>
-<ce>_traitor_, __palace_
-<ce>
+<ce>_traitor_
+<ce>__palace_
 
 Message:  1032
-<ce>성별을 분간하기 어려운 어린아이가 쪽지를
-<ce>건네고는 당신이 반응하기도 전에 달아납니다.
-<ce>
+<ce>성별을 분간하기 어려운 어린아이가
+<ce>쪽지를 건네고는,
+<ce>당신이 반응하기도 전에 달아납니다.
 
 Message:  1040
-<ce>%pcn 맞지요? 연락할 수 있어 다행입니다.
-<ce>_questgiver_가 상황을 자세히 설명했습니까? 역시 아니군요.
+<ce>%pcn 맞지요?
+<ce>연락할 수 있어 다행입니다.
+<ce>_questgiver_가 상황을 자세히 설명했습니까?
+<ce>역시 아니군요.
 <ce>요점만 말하자면 강령술사들이 연루되어 있습니다.
 <ce>그들과 맞서는 건 대단히 위험하지요.
 <ce>하지만 당신에게 줄 _amulet_가 있습니다.
-<ce>강령술사의 요원이 가까이 오면 이 부적이
-<ce>경고해줄 겁니다. 분명 도움이 될 겁니다.
-<ce>늘 주위를 경계하십시오, 친구여.
-<ce>
-<ce>
-<ce>
+<ce>강령술사의 요원이 가까이 오면
+<ce>이 부적이 경고해줄 겁니다.
+<ce>분명 도움이 될 테니 늘 주위를 경계하십시오, 친구여.
 
 Message:  1041
-<ce>당신이 %pcn 입니까?
+<ce>당신이 %pcn입니까?
 <ce>_questgiver_가 인상착의를 잘 설명해주었군요.
-<ce>나는 _target_입니다. 지금 당장 센티넬로 가야 합니다.
-<ce>더 말할 수는 없지만, _ruler_의 적들이 우리를
-<ce>막기 위해 무엇이든 할 거라는 것만은 알아두십시오.
-<ce>
+<ce>나는 _target_입니다.
+<ce>지금 당장 센티넬로 가야 합니다.
+<ce>더 말할 수는 없지만,
+<ce>_ruler_의 적들이 우리를 막기 위해
+<ce>무엇이든 할 거라는 것만은 알아두십시오.
 
 Message:  1042
 <ce>_target_가 숨을 헐떡입니다.
-<ce>돌아보니 깃털 달린 화살이 %g3 가슴을 꿰뚫고 있습니다.
-<ce>%g⁠은 %g3 무릎을 꿇으며 %g⁠이 편지
-<ce>한 장을 당신 손에 쥐여주고 속삭입니다.
-<ce>
+<ce>돌아보니 깃털 달린 화살이
+<ce>%g3 가슴을 꿰뚫고 있습니다.
+<ce>%g는 %g3 무릎을 꿇으며
+<ce>편지 한 장을 당신 손에 쥐여주고 속삭입니다.
 <ce>"_traitor_는 센티넬의 반역자입니다.
 <ce>반드시 이것을 _ruler_에게 전해주십시오."
-<ce>
 <ce>_target_는 숨을 거두었습니다.
 
 Message:  1043
 <ce>갑자기 눈부신 빛이 당신을 에워쌉니다.
-<ce>아래를 내려다보니 빛은 _enemy_가 준
-<ce>부적에서 뿜어져 나오고 있습니다. 발밑의 땅이
-<ce>갈라지는 듯하더니 어둠이 당신을 집어삼킵니다.
-<ce>
-<ce>
+<ce>아래를 내려다보니 빛은
+<ce>_enemy_가 준 부적에서 뿜어져 나오고 있습니다.
+<ce>발밑의 땅이 갈라지는 듯하더니
+<ce>어둠이 당신을 집어삼킵니다.
 
 Message:  1050
 <ce>반역을 입증하는 편지를
 <ce>_ruler_에게 건네겠습니까?
 
 Message:  1051
-<ce>"무슨 편지지? %god⁠이시여, _traitor_가
-<ce>나를 상대로 음모를 꾸미고 있다고?! 경비병!
-<ce>성 안을 샅샅이 뒤져 _traitor_를
-<ce>당장 내 앞으로 끌고 오너라!"
-<ce>
+<ce>"무슨 편지지? %god이시여,
+<ce>_traitor_가 나를 상대로 음모를 꾸미고 있다고?!
+<ce>경비병! 성 안을 샅샅이 뒤져
+<ce>_traitor_를 당장 내 앞으로 끌고 오너라!"
 <ce>경비병들이 방에서 뛰쳐나갑니다.
-<ce>몇 분 뒤 한 명이 돌아와 경례하고, _traitor_를
-<ce>어디에서도 찾지 못했다고 보고합니다.
-<ce>
+<ce>몇 분 뒤 한 명이 돌아와 경례하고,
+<ce>_traitor_를 어디에서도 찾지 못했다고 보고합니다.
 <ce>_ruler_가 당신을 돌아봅니다.
-<ce>
-<ce>"반역이 탄로 날 것을 미리 알아챈
-<ce>게 분명하군. 아마 편지에 적힌
-<ce>___stronghold_의 요새로 달아났을 것이다.
+<ce>"반역이 탄로 날 것을 미리 알아챈 게 분명하군.
+<ce>아마 편지에 적힌 ___stronghold_의 요새로
+<ce>달아났을 것이다.
 <ce>지금 상황에서는 정면 공격을 피하고 싶다.
-<ce>그대는 그 지역에 익숙하지? 나를 위해 한 번
-<ce>더 수고하여 이 반역자를 심판해주겠는가?"
-<ce>
+<ce>그대는 그 지역에 익숙하지?
+<ce>나를 위해 한 번 더 수고하여
+<ce>이 반역자를 심판해주겠는가?"
 
 Message:  1052
 <ce>%pcn, 그대는 센티넬 왕좌에 대한 충성을
-<ce>훌륭히 증명했다. _traitor_의 요새를
-<ce>공격하기 전까지 =gettraitor_일을 기다리겠다.
+<ce>훌륭히 증명했다.
+<ce>_traitor_의 요새를 공격하기 전까지
+<ce>=gettraitor_일을 기다리겠다.
 <ce>이제 _traitor_를 무법자로 선포한다.
-<ce>가능하면 생포하되, 필요하다면 죽여도 좋다.
+<ce>가능하면 생포하되,
+<ce>필요하다면 죽여도 좋다.
 
 Message:  1053
 <ce>좋다. 그자는 내가 직접 처리하겠다.
@@ -201,100 +228,101 @@ Message:  1053
 Message:  1054
 <ce>_ruler_가 편지를 펼쳐 읽습니다.
 <ce>그녀의 얼굴이 분노로 굳어집니다.
-<ce>
-<ce>"의심할 여지가 없다. 이것은 그자의 개인
-<ce>인장과 서명이 분명하다. 경비병!
-<ce>대연회장으로 가서 _traitor_를
-<ce>당장 체포해 지하 감옥에 처넣어라!"
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>"의심할 여지가 없다.
+<ce>이것은 그자의 개인 인장과 서명이 분명하다.
+<ce>경비병! 대연회장으로 가서
+<ce>_traitor_를 당장 체포해
+<ce>지하 감옥에 처넣어라!"
 <ce>그녀가 당신을 돌아봅니다.
 
 Message:  1055
-<ce>결국 이렇게 되었군. _traitor_는 스스로
-<ce>길을 택했고, 그대 덕분에 그 대가를 치렀다.
-<ce>센티넬을 위해 봉사한 보답으로 마법이
-<ce>깃든 이 _queenreward_을 받도록 하라.
+<ce>결국 이렇게 되었군.
+<ce>_traitor_는 스스로 길을 택했고,
+<ce>그대 덕분에 그 대가를 치렀다.
+<ce>센티넬을 위해 봉사한 보답으로
+<ce>마법이 깃든 선물을 내리겠다.
+<ce>_queenreward_다. 받도록 하라.
 
 Message:  1056
-<ce>%oth! _traitor_는 정말 미꾸라지
-<ce>같은 자로군. 하지만 걱정하지 말라.
-<ce>언젠가는 반드시 찾아낼 것이다. 센티넬의 정의는
-<ce>그자가 어디에 숨든 끝까지 뒤쫓을 것이다.
+<ce>%oth! _traitor_는 정말 미꾸라지 같은 자로군.
+<ce>하지만 걱정하지 말라.
+<ce>언젠가는 반드시 찾아낼 것이다.
+<ce>센티넬의 정의는 그자가 어디에 숨든
+<ce>끝까지 뒤쫓을 것이다.
 <ce>공범들은 모두 체포됐거나 왕국에서 달아났으니,
 <ce>적어도 _traitor_는 더 이상 위협이 되지 않는다.
 <ce>%pcn, 센티넬을 위해 봉사한 보답으로
-<ce>마법이 깃든 이 _queenreward_을 받아주기 바란다.
+<ce>마법이 깃든 선물을 받아주기 바란다.
+<ce>_queenreward_다.
 <ce>그대는 충분히 받을 자격이 있다.
-<ce>
 
 Message:  1060
-<ce>반역을 입증하는 편지를 _traitor_에게 건네겠습니까?
+<ce>반역을 입증하는 편지를
+<ce>_traitor_에게 건네겠습니까?
 
 Message:  1061
 <ce>내가 그대를 잘못 판단한 모양이군, %pcn.
 <ce>어쩌면 우리는 친구가 될 수도 있겠어.
-<ce>자, 수고비로 이 _traitorreward_을 받게.
+<ce>자, 수고에 대한 보상이다.
+<ce>_traitorreward_다. 받게.
 
 Message:  1062
 <ce>_traitor_가 당신을 뚫어지게 바라봅니다.
-<ce>당신이 누구인지 알아보자 얼굴에서
-<ce>핏기가 가십니다. 누가 막기도 전에
-<ce>그는 몸을 돌려 문을 향해 달아납니다.
+<ce>당신이 누구인지 알아보자
+<ce>그의 얼굴에서 핏기가 가십니다.
+<ce>누가 막기도 전에 몸을 돌려
+<ce>문을 향해 달아납니다.
 
 Message:  1070
-<ce>비천한 %ra 놈! _traitor_의 일에
-<ce>끼어든 대가를 치르게 해주마.
+<ce>비천한 %ra 놈!
+<ce>_traitor_의 일에 끼어든 대가를 치르게 해주마.
 
 Message:  1071
 <ce>항복해서 센티넬 거리를 끌려다니며
-<ce>사람들의 구경거리가 되라고? 절대로 그럴 수 없다!
-<ce>
+<ce>사람들의 구경거리가 되라고?
+<ce>절대로 그럴 수 없다!
 
 Message:  1072
-<ce>_traitor_는 죽었습니다.
+<ce>_traitor_가 죽었습니다.
 
 Message:  1073
 <ce>_traitor_가 무기를 내던집니다.
-<ce>항복하는 줄 알고 공격을 멈춘 순간, 그는
-<ce>손가락의 반지를 비틉니다. _traitor_가 빛의 안개
-<ce>속으로 사라지는 가운데 희미한 외침이 들립니다.
-<ce>
-<ce>
-<ce>"그년에게 전해라! 이게 끝이 아니라고!"
-<ce>
-<ce>
+<ce>항복하는 줄 알고 공격을 멈춘 순간,
+<ce>그는 손가락의 반지를 비틉니다.
+<ce>_traitor_가 빛의 안개 속으로 사라지는 가운데
+<ce>희미한 외침이 들립니다.
+<ce>"그년에게 전해라!
+<ce>이게 끝이 아니라고!"
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 10 times.
---               %g2 occurs 6 times.
---               %g3 occurs 8 times.
+--                %g occurs 2 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 4 times.
 --              %god occurs 1 time.
 --              %oth occurs 2 times.
 --              %pcf occurs 1 time.
---              %pcn occurs 9 times.
+--              %pcn occurs 7 times.
 --              %qdt occurs 4 times.
 --               %ra occurs 1 time.
 --      =gettraitor_ occurs 2 times.
 --    ___questgiver_ occurs 1 time.
---    ___stronghold_ occurs 10 times.
+--    ___stronghold_ occurs 7 times.
 --         __palace_ occurs 2 times.
 --     __questgiver_ occurs 1 time.
 --    __targethouse_ occurs 1 time.
 --          _amulet_ occurs 1 time.
---           _enemy_ occurs 5 times.
+--           _enemy_ occurs 4 times.
 --     _queenreward_ occurs 2 times.
 --      _questgiver_ occurs 4 times.
---          _reward_ occurs 2 times.
---           _ruler_ occurs 225 times.
---          _target_ occurs 64 times.
+--          _reward_ occurs 1 time.
+--           _ruler_ occurs 12 times.
+--          _target_ occurs 11 times.
 --     _targethouse_ occurs 3 times.
 --          _tavern_ occurs 1 time.
---         _traitor_ occurs 24 times.
+--         _traitor_ occurs 21 times.
 --   _traitorreward_ occurs 1 time.
+
 QBN:
 Item _amulet_ amulet
 Item _reward_ gold

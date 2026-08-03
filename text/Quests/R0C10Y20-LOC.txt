@@ -9,100 +9,99 @@ Quest: R0C10Y20
 DisplayName: 희귀한 재료
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>내 보물고의 아름다운 _reward_을 갖고
-<ce>싶습니까, %pcf? 연금술사가 중요한 실험에
-<ce>쓸 아주 희귀한 재료를 주문했습니다.
-<ce>가져올 사람이 필요한데 맡을 수 있겠습니까, %pcf?
-<ce>
-<ce>
-<ce>
+<ce>제 보물고에 있는 아름다운 _reward_을
+<ce>갖고 싶습니까, %pcf?
+<ce>제 연금술사가 중요한 실험에 필요한
+<ce>매우 희귀한 재료를 주문했습니다.
+<ce>그것을 받아 올 사람이 필요한데,
+<ce>당신이 맡을 수 있겠습니까?
 
 RefuseQuest:  [1001]
-<ce>음, 이상하군요. %pcf, 그렇게 용병
-<ce>같은 마음가짐은 버리는 게 좋을 겁니다.
-<ce>
+<ce>뜻밖이군요.
+<ce>%pcf, 그렇게 돈만 밝히는 용병 같은
+<ce>마음가짐은 버리는 편이 좋겠습니다.
 
 AcceptQuest:  [1002]
-<ce>훌륭합니다, %pcf. 이 _item1_을
-<ce>___contact_의 __contact_으로 가져가십시오.
-<ce>그곳에서 _contact_라는 =contact_를
-<ce>찾아 %g2⁠에게 남쪽에서 가져온 _item2_을
-<ce>달라고 하십시오. %g⁠가 가지고 있습니다.
-<ce>=1stparton_일 안에 다녀와야 합니다, %pcf.
-<ce>당신을 믿겠습니다. 후회하게 만들지 마십시오.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>훌륭합니다, %pcf. 맡아 줄 줄 알았습니다.
+<ce>이 _item1_을 ___contact_의 __contact_으로 가져가십시오.
+<ce>그곳에서 _contact_라는 =contact_를 찾아
+<ce>%g2에게 남쪽에서 가져온 _item2_을 달라고 하십시오.
+<ce>%g가 가지고 있습니다.
+<ce>=1stparton_일 안에 그곳에 다녀와야 합니다.
+<ce>당신을 믿겠습니다, %pcf.
+<ce>후회하게 만들지 마십시오.
 
 QuestFail:  [1003]
-<ce>_item2_ 어떻게 되었습니까, %pcf?
-<ce>기억하고 계시죠? 꾸물거리지 마십시오.
+<ce>_item2_은 어디 있습니까, %pcf?
+<ce>기억하고 계시지요?
+<ce>꾸물거리지 마십시오.
 
 QuestComplete:  [1004]
-<ce>타이밍이 좋군요, %pcf.
-<ce>제 연금술사가 아주 기뻐할 겁니다.
-<ce>정말 훌륭한 _item2_군요. 약속한 대로 여기
-<ce>_reward_ 드립니다. 아름답지 않습니까?
-<ce>
+<ce>때맞춰 돌아왔군요, %pcf.
+<ce>제 연금술사가 무척 기뻐할 겁니다.
+<ce>정말 훌륭한 _item2_이군요.
+<ce>약속한 _reward_입니다.
+<ce>아름답지 않습니까?
 
 RumorsDuringQuest:  [1005]
-_questgiver_의 연금술사는 한때 에보니움 조각을 거부한 적이 있습니다.
+_questgiver_의 연금술사는 한때
+에보니움 조각을 거부한 적이 있습니다.
 "신선하지" 않다는 이유였죠.
 <--->
-_questgiver_의 연금술사는 항상 아주 신선한 재료만 고집합니다.
+_questgiver_의 연금술사는
+항상 아주 신선한 재료만 고집합니다.
 왜 그런지는 모르겠네요.
 
 RumorsPostfailure:  [1006]
-_questgiver_ %g3⁠의 연금술사 때문에 골머리를 앓고 있습니다.
+_questgiver_는 %g3 연금술사 때문에
+골머리를 앓고 있습니다.
 아주 까다롭다고 들었거든요.
 <--->
-_questgiver_의 연금술사가 만든 물약 한 묶음이 전부 폐기
-처분되었다더군요.
+_questgiver_의 연금술사가 만든 물약을
+한 묶음 통째로 폐기했다더군요.
 
 RumorsPostsuccess:  [1007]
-최근 _questgiver_의 궁전에서 정말 이상한 냄새가 나는 거
-눈치채셨나요?
+최근 _questgiver_의 궁전에서
+정말 이상한 냄새가 나는 것, 눈치채셨나요?
 <--->
-_questgiver_의 궁전에서 붉은 연기가 새처럼 피어오르는 걸
-봤습니다.
+_questgiver_의 궁전에서 붉은 연기가
+새처럼 피어오르는 걸 봤습니다.
 
 QuestorPostsuccess:  [1008]
-당신을 잊은 적은 없습니다, %pcf. 잘 지내셨나요, 친구여?
+당신을 잊은 적은 없습니다, %pcf.
+잘 지내셨나요, 친구여?
 <--->
-제 연금술사가 직접 감사 인사를 전하고 싶어 했지만, 바쁜 모양이군요.
+제 연금술사가 직접 감사 인사를 전하고 싶어 했지만
+지금은 바쁜 모양이군요.
 잘 지내시죠, %pcf?
 
 QuestorPostfailure:  [1009]
-<ce>제 연금술사가 여기 있었다면 당신이 가져와야
-<ce>했던 _item2_ 내놓으라고 요구하고,
-<ce>그걸로 당신 머리를 쳤을 겁니다. 하지만 지금은
-<ce>경고로 끝내겠습니다. 앞으로 제 도움이 필요할 때
-<ce>다시는 저를 실망시키지 마십시오. 이상입니다.
-<ce>
-<ce>
-<ce>
+<ce>제 연금술사가 이곳에 있었다면
+<ce>가져오기로 한 _item2_을 내놓으라고 한 뒤,
+<ce>그것으로 당신의 머리를 내리쳤을 겁니다.
+<ce>하지만 지금은 경고로 끝내지요.
+<ce>앞으로 제 도움이 필요할 때는 다시 실패하지 마십시오.
+<ce>이상입니다.
 
 QuestLogEntry:  [1010]
-<ce>당신이 _questgiver_가 보낸 %pcf⁠이군요.
-<ce>여기 %g⁠가 원한 _item2_입니다.
-<ce>서둘러 돌아가십시오. %g3 연금술사는 재료의 신선도에
-<ce>몹시 까다롭습니다. 잘못된 집착이지요.
+<ce>당신이 _questgiver_가 보낸 %pcf⁠이군요, 맞지요?
+<ce>여기 %g⁠가 원한 _item2_이 있습니다.
+<ce>이걸 가지고 서둘러 돌아가십시오.
+<ce>%g3 연금술사는 재료의 신선도에
+<ce>몹시 민감하거든요.
+<ce>물론 쓸데없는 걱정입니다.
 <ce>_item2_은 상하지 않으니까요.
-<ce>그래도 취향은 사람마다 다르니, 어서 가십시오.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>그래도 누군가의 독은...
+<ce>자, 이제 서두르십시오.
 
 Message:  1015
-%qdt: ___questgiver_의 __questgiver_에
-있는 _questgiver_는 =1stparton_일 안에 _contact_에게서 %g2⁠를
-위해 신선한 _item2_을 가져오면 _reward_을 주겠다고 했다.
+%qdt:
+___questgiver_의 __questgiver_에 있는 _questgiver_는
+=1stparton_일 안에 _contact_에게서
+신선한 _item2_을 구해 %g2⁠에게 가져다주면
+_reward_을 주겠다고 했다.
+
 _contact_는 ___contact_의 __contact_에 있다.
 
 -- Symbols used in the QRC file:
@@ -110,18 +109,19 @@ _contact_는 ___contact_의 __contact_에 있다.
 --                %g occurs 2 times.
 --               %g2 occurs 2 times.
 --               %g3 occurs 2 times.
---              %pcf occurs 41 times.
+--              %pcf occurs 9 times.
 --              %qdt occurs 1 time.
 --       =1stparton_ occurs 2 times.
---         =contact_ occurs 5 times.
+--         =contact_ occurs 1 time.
 --    ___questgiver_ occurs 1 time.
---        __contact_ occurs 5 times.
+--        __contact_ occurs 2 times.
 --     __questgiver_ occurs 1 time.
 --         _contact_ occurs 3 times.
 --           _item1_ occurs 1 time.
 --           _item2_ occurs 7 times.
 --      _questgiver_ occurs 8 times.
 --          _reward_ occurs 3 times.
+
 QBN:
 Item _reward_ gem
 Item _item1_ turquoise

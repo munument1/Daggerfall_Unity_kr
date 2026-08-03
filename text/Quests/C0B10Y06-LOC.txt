@@ -9,88 +9,91 @@ Quest: C0B10Y06
 DisplayName: 속죄의 희생
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>당신이 사원에 매우 충실하다고 들었습니다.
+<ce>당신이 신전에 매우 충실하다고 들었습니다.
 <ce>우리에게 꼭 필요한 일을 맡아주십시오.
-<ce>%god⁠께서 우리에게 노하셨습니다.
-<ce>이유는 신경 쓰지 마십시오. 유일한 희망은 속죄
-<ce>의식을 올리는 것입니다. 의식에는 _ingredient_가
-<ce>필요하며, 정보에 따르면 ___dungeon_에서
-<ce>구할 수 있습니다. 가져다주시겠습니까?
-<ce>
-<ce>
+<ce>%god께서 우리에게 노하셨습니다.
+<ce>그 이유는 신경 쓰지 마십시오.
+<ce>유일한 희망은 속죄 의식을 올리는 것입니다.
+<ce>의식에는 _ingredient_가 필요하며,
+<ce>정보에 따르면 ___dungeon_에서 구할 수 있습니다.
+<ce>가져다주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>사원에 대한 충성심이
-<ce>생각했던 것과 다르군요, %pcn.
-<ce>
+<ce>신전에 대한 충성심이
+<ce>내가 생각했던 것과 다르군요, %pcn.
 
 AcceptQuest:  [1002]
 <ce>의식은 =traveltime_일 안에 거행해야 합니다.
-<ce>사원에서 보수로 _gold_골드를 드리겠습니다.
-<ce>오염되지 않은 _ingredient_만 쓸 수 있습니다.
-<ce>%god⁠의 축복을 받았으니
-<ce>발견하는 순간 알아볼 겁니다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>이 일을 마치면 신전에서 _gold_골드를 드리겠습니다.
+<ce>오염되지 않은 _ingredient_만 사용할 수 있습니다.
+<ce>%god의 축복을 받았으니,
+<ce>그것을 발견하면 바로 알아볼 수 있을 겁니다.
 
 QuestComplete:  [1004]
-<ce>찾았습니까? _ingredient_군요!
-<ce>이제 %god⁠께서 노여움을 거두실 겁니다.
+<ce>찾아왔습니까?
+<ce>_ingredient_군요!
+<ce>이제 %god께서 노여움을 거두실 겁니다.
 <ce>잘했습니다. 여기 보수입니다.
-<ce>
 
 RumorsDuringQuest:  [1005]
-요즘 __qgiver_의 분위기가 상당히… 살벌합니다.
+요즘 __qgiver_의 분위기가
+상당히... 살벌합니다.
 <--->
-__qgiver_에서 허가받지 않은 난교 의식이 열렸다는군요.
+__qgiver_에서 허가받지 않은
+난교 의식이 열렸다는군요.
 <--->
-누군가 __qgiver_의 의식에서 %god⁠의 이름을 거꾸로
-읊었답니다.
+누군가 __qgiver_의 의식에서
+%god⁠의 이름을 거꾸로 읊었답니다.
 
 RumorsPostfailure:  [1006]
-__qgiver_은 아직도 신의 총애를 잃은 상태입니다.
+__qgiver_은 아직도
+신의 총애를 잃은 상태입니다.
 
 RumorsPostsuccess:  [1007]
-__qgiver_은 다시 신의 총애를 받게 됐습니다.
+__qgiver_은 다시
+신의 총애를 받게 되었습니다.
 
 QuestorPostsuccess:  [1008]
 %god⁠의 노여움을 달래주었군요, %pct.
-무엇을 도와드릴까요?
+물론이지요. 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-%god⁠께서 __qgiver_을 미워하시는 동안 나도 그대를
-미워하겠소, %pct.
+%god⁠께서 __qgiver_을 미워하시는 동안,
+나도 그대를 미워하겠소, %pct.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에
-있는 _qgiver_는 %g3 신이 노했다고 말했다. %G⁠은 속죄 의식에
-쓸 오염되지 않은 _ingredient_를 ___dungeon_에서 구해야 한다.
-=traveltime_일 안에 __qgiver_의 _qgiver_에게 전달해야 한다.
+%qdt:
+___qgiver_의 __qgiver_에 있는 _qgiver_는
+%g3 신이 분노했다고 말했다.
+
+%G는 속죄 의식에 사용할
+오염되지 않은 _ingredient_를
+___dungeon_에서 구해야 한다.
+
+=traveltime_일 안에 __qgiver_의 _qgiver_에게
+전달해야 한다.
 
 Message:  1011
-<ce>바로 이것입니다! _ingredient_의 순수함이 느껴집니다.
+<ce>바로 이것입니다!
+<ce>_ingredient_의 순수함이 느껴집니다.
 <ce>이제 _qgiver_에게 가져가야 합니다.
-<ce>
-<ce>
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 1 time.
+--                %g occurs 0 times.
 --               %g3 occurs 1 time.
 --              %god occurs 6 times.
---              %pcn occurs 2 times.
---              %pct occurs 18 times.
+--              %pcn occurs 1 time.
+--              %pct occurs 2 times.
 --              %qdt occurs 1 time.
---      =traveltime_ occurs 3 times.
---       ___dungeon_ occurs 4 times.
---        ___qgiver_ occurs 12 times.
+--      =traveltime_ occurs 2 times.
+--       ___dungeon_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
 --            _gold_ occurs 1 time.
 --      _ingredient_ occurs 5 times.
 --          _qgiver_ occurs 3 times.
+
 QBN:
 Item _ingredient_ organs
 Item _gold_ gold

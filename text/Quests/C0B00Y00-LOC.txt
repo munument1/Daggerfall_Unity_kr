@@ -10,62 +10,70 @@ Quest: C0B00Y00
 DisplayName: 유령의 집
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>__house_의 집 하나에 언데드 유령이 나타나고 있습니다.
+<ce>__house_의 집 하나에
+<ce>어떤 언데드 영혼이 출몰하고 있습니다.
 <ce>그 영혼을 퇴마할 사람이 필요합니다.
-<ce>맡으시겠습니까? 보수는 _gold_골드입니다.
-<ce>
+<ce>맡으시겠습니까?
+<ce>보수는 _gold_골드입니다.
 
 RefuseQuest:  [1001]
 <ce>부끄러워할 일은 아닙니다.
 <ce>당신 취향에 맞는 다른 일을 찾아보지요.
 
 AcceptQuest:  [1002]
-<ce>유령이 혼자 감당하기에는 너무
-<ce>강하다면 그냥 빠져나오십시오.
+<ce>유령이 혼자 감당하기에 너무 강하다면
+<ce>그냥 빠져나오십시오.
 <ce>목숨을 지켰다고 탓할 사람은 없습니다.
 <ce>장소는 __house_의 _house_입니다.
-<ce>=traveltime_일 뒤에는 다른 사람을 보내겠습니다.
-<ce>
+<ce>=traveltime_일 안에 처리하지 못하면
+<ce>다른 사람을 보내겠습니다.
 
 QuestComplete:  [1004]
-<ce>유령이 사라졌군요. 제단에서 그 영혼을 위해 향을
-<ce>피우겠습니다. 여기 신전에서 드리는 보수입니다.
+<ce>유령이 사라졌군요.
+<ce>제단에서 그 영혼을 위해 향을 피우겠습니다.
+<ce>여기 신전에서 드리는 보수입니다.
 
 RumorsDuringQuest:  [1005]
-_house_의 유령은 죽일 수 없다고들 합니다.
+_house_의 유령은
+죽일 수 없다고들 합니다.
 
 RumorsPostfailure:  [1006]
 _house_의 유령은 계속 돌아올 겁니다.
 <--->
-_house_의 영혼들은 아직도 안식을 얻지 못했습니다.
+_house_의 영혼들은 아직도
+안식을 얻지 못했습니다.
 
 RumorsPostsuccess:  [1007]
-_house_은 마침내 정화됐습니다.
+_house_는 마침내 정화되었습니다.
 <--->
 _house_의 영혼들은 드디어 안식을 얻었습니다.
 
 QuestorPostsuccess:  [1008]
-_house_의 퇴마사여, 무엇을 도와드릴까요?
+_house_에서 악령을 몰아낸 분이여,
+무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-_house_에 아직 유령이 나오는데 내가 당신과 이야기해야 합니까?
+_house_에 아직 유령이 나오는데,
+내가 당신과 이야기해야 합니까?
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에
-있는 _qgiver_는 __house_의 _house_에 출몰하는 언데드
-유령을 없애라고 했다. 임무를 끝낼 시간은 =traveltime_일이다.
+%qdt:
+___qgiver_의 __qgiver_에 있는 _qgiver_는
+__house_의 _house_에 출몰하는 언데드를
+없애달라고 했다.
+
+기한은 =traveltime_일이다.
 
 Message:  1011
 <ce>나는 이 집을 지은 자의 조상이다.
-<ce>이곳은 이제 죽은 자들의 것이니 모든 산 자는 물러가라.
-<ce>
+<ce>이곳은 이제 죽은 자들의 것이니,
+<ce>살아 있는 모든 것은 물러가라.
 
 Message:  1012
-<ce>왜 그 괴물과 싸우지 않고 나온 것인지
-<ce>알겠습니다, %pcn. 유령의 정체를
-<ce>확인한 것만으로도 신전은 감사하고 있습니다.
+<ce>왜 그 괴물과 싸우지 않고 나왔는지 이해합니다, %pcn.
+<ce>유령의 정체를 확인한 것만으로도
+<ce>신전에서는 감사하고 있습니다.
 <ce>여기 금화 두 닢을 받으십시오.
 
 -- Symbols used in the QRC file:
@@ -76,9 +84,10 @@ Message:  1012
 --        ___qgiver_ occurs 1 time.
 --          __house_ occurs 3 times.
 --         __qgiver_ occurs 1 time.
---            _gold_ occurs 2 times.
+--            _gold_ occurs 1 time.
 --           _house_ occurs 9 times.
 --          _qgiver_ occurs 1 time.
+
 QBN:
 Item _gold_ gold
 Item boobyprize gold range 2 to 2

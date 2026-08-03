@@ -10,86 +10,87 @@ Quest: N0B30Y15
 DisplayName: 떠돌이 임프
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>내 이름은 _questgiver_입니다. 길드에서 통제를
-<ce>벗어난 임프 하나를 죽일 사람이 필요합니다.
-<ce>관심 있습니까? 보수는 _gold_골드입니다.
-<ce>
+<ce>내 이름은 _questgiver_입니다.
+<ce>길드의 통제를 벗어난 임프 하나를
+<ce>죽일 사람이 필요합니다.
+<ce>관심 있습니까?
+<ce>보수는 _gold_골드입니다.
 
 RefuseQuest:  [1001]
 <ce>안됐군요.
 <--->
 <ce>참 유감입니다.
 <--->
-<ce>알겠습니다. 그럼 다른 곳으로 가보십시오, %pcn.
-<ce>
+<ce>알겠습니다.
+<ce>그럼 다른 곳으로 가 보십시오, %pcn.
 
 AcceptQuest:  [1002]
 <ce>좋은 태도입니다, %pcn.
-<ce>아직 말하지 않은 것이 하나 있습니다.
-<ce>그 임프는 지위 높은 마법사의 사역마였습니다.
-<ce>실험 주문에 휘말린 뒤 온갖 주문과 비슷한 능력을 얻은
-<ce>모양입니다. 놈은 __palace_의 _palace_에
-<ce>있으며, 스스로 통치자라도 된 듯 행동합니다.
-<ce>조심하십시오, %pcn. =traveltime_일 안에
-<ce>돌아오지 않으면 죽은 것으로 여기겠습니다.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>아직 말씀드리지 않은 것이 하나 있습니다.
+<ce>그 임프는 지위가 매우 높은 마법사의 사역마였습니다.
+<ce>실험 주문에 휘말린 뒤 온갖 주문과 비슷한 능력을
+<ce>얻게 된 모양입니다.
+<ce>놈은 __palace_의 _palace_에 있으며,
+<ce>스스로 통치자가 될 자격이 있다고 생각하는 듯합니다.
+<ce>조심하십시오, %pcn.
+<ce>=traveltime_일 안에 돌아오지 않으면
+<ce>죽은 것으로 여기겠습니다.
 
 QuestComplete:  [1004]
 <ce>작지만 만만치 않은 녀석이었지요?
 <ce>보수를 받을 자격은 충분합니다.
 
 RumorsDuringQuest:  [1005]
-__palace_의 _palace_에서 이상한 일이 벌어지고 있어.
+__palace_의 _palace_에서
+무언가 이상한 일이 벌어지고 있어.
 <--->
-__palace_ 사람들은 모두 그곳 _palace_에서 무슨 일이
-벌어지는지 궁금해하지.
+__palace_ 사람들은 모두
+그곳 _palace_에서 무슨 일이 일어나는지 궁금해하지.
 
 RumorsPostfailure:  [1006]
-어떤 생물이 __palace_의 _palace_에서 날아 나와 남쪽으로
-사라졌어.
+어떤 생물이 __palace_의 _palace_에서
+날아 나와 남쪽으로 사라졌어.
 
 RumorsPostsuccess:  [1007]
-그 %ra 용병이 __palace_에 있어 임프를 죽여준 것을
-%god⁠께 감사해야 해.
+그 %ra 용병이 __palace_에 있어
+임프를 죽여준 것을 %god⁠께 감사해야 해.
 <--->
-그 %ra⁠의 도움이 없었다면 임프가 __palace_에 큰 피해를
-입혔을 거야.
+그 %ra⁠의 도움이 없었다면
+임프가 __palace_에 큰 피해를 입혔을 거야.
 
 QuestorPostsuccess:  [1008]
-당신을 잊지 않았습니다, %pcf. 그 성가신 임프를 죽인
-%ra 지요.
+당신을 잊지 않았습니다, %pcf.
+그 성가신 임프를 죽인 %ra지요.
 
 QuestorPostfailure:  [1009]
 <ce>그 임프 때문에 __palace_가
-<ce>거의 파괴될 뻔했는데 당신은 아무 도움도 주지 않았습니다.
+<ce>거의 파괴될 뻔했는데,
+<ce>당신은 아무 도움도 주지 않았습니다.
 <ce>내가 보기에는 참으로 비열한 행동입니다, %pcf.
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_ 마법사 길드의 _questgiver_는
-통제를 벗어난 임프를 없애라고 했다. 그 짐승은
-__palace_의 _palace_에 숨어 있다. 성공할 시간은
-=traveltime_일이다.
+%qdt:
+___questgiver_ 마법사 길드의 _questgiver_는
+통제를 벗어난 임프를 처치하라고 했다.
+
+그 짐승은 __palace_의 _palace_에 숨어 있다.
+기한은 =traveltime_일이다.
 
 -- Symbols used in the QRC file:
 --
 --              %god occurs 1 time.
---              %pcf occurs 4 times.
---              %pcn occurs 4 times.
+--              %pcf occurs 2 times.
+--              %pcn occurs 3 times.
 --              %qdt occurs 1 time.
---               %ra occurs 17 times.
---      =traveltime_ occurs 4 times.
+--               %ra occurs 3 times.
+--      =traveltime_ occurs 2 times.
 --    ___questgiver_ occurs 1 time.
 --         __palace_ occurs 8 times.
---            _gold_ occurs 6 times.
+--            _gold_ occurs 1 time.
 --          _palace_ occurs 5 times.
 --      _questgiver_ occurs 2 times.
+
 QBN:
 Item _gold_ gold
 

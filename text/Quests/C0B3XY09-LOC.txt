@@ -10,91 +10,82 @@ Quest: C0B3XY09
 DisplayName: 위대한 악
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>%pcn, 내 이름은 _qgiver_입니다.
-<ce>%god⁠께서 근처 던전 깊은 곳에서
+<ce>%god께서 근처 던전 깊은 곳에서
 <ce>거대한 악이 자라고 있다고 예언하셨습니다.
-<ce>그곳으로 가서 파괴해주십시오. 맡으시겠습니까?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>그곳으로 가서 그 악을 파괴해주십시오.
+<ce>맡으시겠습니까?
 
 RefuseQuest:  [1001]
 <ce>지체할 시간이 없습니다.
 <ce>이 임무를 맡을 다른 사람을 찾아야 합니다.
-<ce>
 
 AcceptQuest:  [1002]
 <ce>낭비할 시간이 없습니다.
 <ce>___dungeon_으로 가십시오.
 <ce>그곳에서 _evilfocus_를 찾을 수 있습니다.
-<ce>=traveltime_일 안에 파괴하면 모든 것이 다시 평온해질 겁니다.
-<ce>일이 끝나면 사원에 징조가 나타날 것입니다.
-<ce>돌아오면 후하게 보상하겠습니다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>=traveltime_일 안에 파괴하면
+<ce>모든 것이 다시 평온해질 것입니다.
+<ce>일이 끝나면 신전에 징조가 나타날 겁니다.
+<ce>그 뒤 돌아오면 후하게 보상하겠습니다.
 
 QuestComplete:  [1004]
-<ce>%pcn, 우리 모든 성직자가
-<ce>감사드립니다. 악은 파괴됐습니다.
-<ce>약속대로 _gold_골드를 보수로 드리겠습니다.
-<ce>
-<ce>
-<ce>
+<ce>%pcn, 우리 모든 성직자가 감사드립니다.
+<ce>악은 파괴되었습니다.
+<ce>약속대로 보수 _gold_골드를 드리겠습니다.
 
 RumorsDuringQuest:  [1005]
-__qgiver_에서 갑자기 ___dungeon_에 큰 관심을
-보이고 있습니다.
+__qgiver_은 갑자기
+___dungeon_에 큰 관심을 보이고 있습니다.
 
 RumorsPostfailure:  [1006]
-악은 아직 ___dungeon_ 안에 있지만 형태를 바꿨습니다.
+그 악은 아직 ___dungeon_ 안에 있지만,
+모습을 바꾸었습니다.
 
 RumorsPostsuccess:  [1007]
-__qgiver_에서 거의 아무도 몰랐던 ___dungeon_의 악을
-파괴했습니다.
+__qgiver_이 ___dungeon_에 존재한다는 사실을
+거의 아무도 몰랐던 악을 파괴했습니다.
 
 QuestorPostsuccess:  [1008]
-_evilfocus_를 파괴한 분이군요. 물론 기억합니다.
+_evilfocus_를 파괴한 분이군요.
+물론 기억합니다.
 
 QuestorPostfailure:  [1009]
-_evilfocus_는 아직도 번성하고 있습니다. 당신에게 줄 것은
-경멸뿐입니다.
+_evilfocus_는 아직도 건재합니다.
+당신에게 줄 것은 경멸뿐입니다.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에
-있는 _qgiver_는 ___dungeon_의 사악한 _evilfocus_를
-파괴하라고 했다. =traveltime_일 안에 끝내지 못하면 악이 무고한 세상에,
-아니 대체로 무고한 세상에 풀려날 것이다.
+%qdt:
+___qgiver_의 __qgiver_에 있는 _qgiver_는
+___dungeon_의 사악한 _evilfocus_를
+파괴하라고 했다.
+
+=traveltime_일 안에 끝내지 못하면
+그 악이 죄 없는 세상에 풀려날 것이다.
+뭐, 대체로 죄 없는 세상에 말이다.
 
 Message:  1011
 <ce>_evilfocus_에 손을 뻗자
-<ce>아름다운 여인으로 변합니다.
-<ce>
-<ce>“맛있어 보이는 젊은 필멸자군! _evilfocus_를
-<ce>파괴하러 왔겠지. 더 좋은 생각이 있어.
-<ce>이 마법의 _magicitem_을 줄 테니 사원으로
-<ce>돌아가 _evilfocus_를 찾지 못했다고 말해.
-<ce>그들도 너를 탓하기 어렵고, 너는
-<ce>_magicitem_을 가질 수 있잖아.”
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>그것이 아름다운 여인으로 변합니다.
+<ce>"맛있어 보이는 젊은 필멸자군!
+<ce>_evilfocus_를 파괴하러 왔겠지.
+<ce>더 좋은 생각이 있어.
+<ce>이 마법의 _magicitem_을 줄 테니
+<ce>신전으로 돌아가 _evilfocus_를
+<ce>찾지 못했다고 말해.
+<ce>그들도 너를 탓하기 어려울 테고,
+<ce>너는 _magicitem_을 가질 수 있잖아."
 
 Message:  1012
-<ce>“그렇다면 경건한 필멸자답게 죽어라!”
-<ce>
+<ce>"그렇다면 경건한 필멸자답게 죽어라!"
 
 Message:  1013
-<ce>저주가 풀렸습니다. _qgiver_에게 보고해야 합니다.
+<ce>저주가 풀렸습니다.
+<ce>_qgiver_에게 보고해야 합니다.
 
 Message:  1014
-<ce>이 배신으로 인한 __qgiver_의 분노는
+<ce>이 배신으로 일어난 __qgiver_의 분노는
 <ce>쉽게 가라앉지 않을 것입니다.
 
 -- Symbols used in the QRC file:
@@ -103,12 +94,13 @@ Message:  1014
 --              %pcn occurs 2 times.
 --              %qdt occurs 1 time.
 --      =traveltime_ occurs 2 times.
---       ___dungeon_ occurs 8 times.
---        ___qgiver_ occurs 4 times.
---       _evilfocus_ occurs 9 times.
+--       ___dungeon_ occurs 5 times.
+--        ___qgiver_ occurs 1 time.
+--       _evilfocus_ occurs 7 times.
 --            _gold_ occurs 1 time.
 --       _magicitem_ occurs 2 times.
---          _qgiver_ occurs 2 times.
+--          _qgiver_ occurs 3 times.
+
 QBN:
 Item _evilfocus_ religious
 Item _gold_ gold

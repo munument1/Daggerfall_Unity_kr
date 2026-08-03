@@ -9,84 +9,87 @@ Quest: L0B00Y00
 DisplayName: 배신자 일원
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>브라더후드 안에 배신자가 있다.
+<ce>다크 브라더후드 안에 배신자가 있다.
 <ce>이 골칫거리를 장부에서 정리해주겠지?
-<ce>
 <--->
-<ce>때때로 브라더후드도 내부 장부를 정리해야 한다.
-<ce>우리 조직 안에서 반드시
-<ce>결산해야 할 배신자가 발견됐다.
+<ce>때때로 우리도 내부 장부를 정리해야 한다.
+<ce>조직 안에서 반드시 결산해야 할 배신자가 발견됐다.
 <ce>그 영예로운 일을 네게 맡기겠다.
-<ce>
 
 RefuseQuest:  [1001]
-<ce>명예롭지 못한 대답이군. 더 나은 모습을 기대했다.
+<ce>명예롭지 못한 대답이군.
+<ce>더 나은 모습을 기대했다.
 
 AcceptQuest:  [1002]
-<ce>좋다. 배신자는 %di 방향의 ___mondun_에
-<ce>숨어 있다. =queston_일 안에 돌아오지 않으면
-<ce>명예를 잃고, 다른 자가 네 자리를 대신할 것이다.
+<ce>좋다. 배신자는 %di 방향의
+<ce>___mondun_에 숨어 있다.
+<ce>=queston_일 안에 돌아오지 않으면 명예를 잃고,
+<ce>다른 자가 네 자리를 대신할 것이다.
 <ce>우리를 실망시키지 마라, %pcf.
-<ce>
-<ce>
 
 QuestFail:  [1003]
 <ce>그 배신자는 아직 죽지 않았다.
 <ce>달리 설득하려 들지 마라.
 
 QuestComplete:  [1004]
-<ce>잘했다. 자랑스러워해도 좋다.
+<ce>잘했다.
+<ce>자랑스러워해도 좋다.
 
 RumorsDuringQuest:  [1005]
-그 암살자는 지옥의 사냥개라도 뒤쫓는 것처럼 ___mondun_으로
-달아났답니다.
+그 암살자는 지옥의 사냥개라도 뒤쫓는 것처럼
+___mondun_으로 달아났답니다.
 <--->
-_qgiver_가 그 배신자를 그냥 둘 리 없지요. %g⁠이 브라더후드에
-저지른 일을 생각해보십시오.
+_qgiver_가 그 배신자를 그냥 둘 리 없지요.
+%g⁠가 브라더후드에 저지른 일을 생각해보십시오.
 
 RumorsPostfailure:  [1006]
-그 배신자는 _qgiver_가 생각한 것보다 훨씬 질긴 모양입니다.
+그 배신자는 _qgiver_가 생각한 것보다
+훨씬 질긴 모양입니다.
 대단한 탈출이군요.
 <--->
 <ce>그 나이트블레이드는 북쪽으로 갔다지만,
-그 기억은 아직도 브라더후드를 괴롭히고 있습니다.
+<ce>그 일의 기억은 아직도 브라더후드를 괴롭히고 있습니다.
 
 RumorsPostsuccess:  [1007]
-그 배신자의 이야기가 증명하지요. 브라더후드를 함부로 건드리면
-안 됩니다.
+그 배신자의 이야기가 증명하지요.
+브라더후드를 함부로 건드리면 안 됩니다.
 <--->
-브라더후드가 그 멍청한 배신자 암살자에게 자비를 베풀 줄은
-몰랐습니다.
+브라더후드가 그 멍청한 배신자 암살자에게
+자비를 베풀 줄은 몰랐습니다.
 
 QuestorPostsuccess:  [1008]
-배신자를 처단한 자여, 무엇이 필요한가?
+배신자를 처단한 자여,
+무엇이 필요한가?
 
 QuestorPostfailure:  [1009]
 <ce>너와 이야기하는 것이 불편하군.
-<ce>그 배신자를 정리하라고 믿고 맡겼던 것 아닌가?
-<ce>
+<ce>그 배신자를 정리하라고
+<ce>믿고 맡겼던 것 아닌가?
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 다크 브라더후드는 길드를
-배신한 자를 찾아 죽이라고 했다. 그 변절한 암살자는 ___mondun_에
-숨어 있다. 임무를 완수할 시간은 =queston_일이다.
+%qdt:
+___qgiver_의 다크 브라더후드는
+길드를 배신한 자를 찾아 처치하라고 했다.
+
+변절한 암살자는 ___mondun_에 숨어 있다.
+기한은 =queston_일이다.
 
 Message:  1021
-<ce>“나는… 네가 생각하는… 배신자가 아니다.
-<ce>진짜… 배신자는…” 계약이 이행되었습니다.
-<ce>
+<ce>"나는... 네가 생각하는 배신자가 아니다.
+<ce>진짜 배신자는..."
+<ce>계약이 이행되었습니다.
 
 -- Symbols used in the QRC file:
 --
 --               %di occurs 1 time.
---                %g occurs 2 times.
---              %pcf occurs 2 times.
+--                %g occurs 1 time.
+--              %pcf occurs 1 time.
 --              %qdt occurs 1 time.
---         =queston_ occurs 3 times.
+--         =queston_ occurs 2 times.
 --        ___mondun_ occurs 3 times.
---        ___qgiver_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+
 QBN:
 
 Person _qgiver_ group Questor

@@ -9,92 +9,93 @@ Quest: N0B20Y05
 DisplayName: 위험한 위저드
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>미쳐버린 마법사 _wizard_에 대해서는 틀림없이
-<ce>들었겠지요. %g⁠이 %g3⁠의 수중에 거대한 힘을
-<ce>쥐고 있어 %rt %rn⁠께서는
-<ce>_wizard_에 대한 공격을 미뤄왔지만,
-<ce>이제 그 방침도 끝입니다. %t⁠께서 그 정신
-<ce>나간 마법사를 없앨 사람을 보내달라고 하셨습니다.
-<ce>마법이 걸린 _reward_을 대가로 맡아주시겠습니까?
-<ce>
-<ce>
-<ce>
+<ce>미쳐 버린 마법사 _wizard_에 관한 이야기는
+<ce>틀림없이 들었겠지요.
+<ce>%g가 %g3 뜻대로 부릴 수 있는 힘이 워낙 막강해
+<ce>%rt %rn께서는 그동안 _wizard_를 향한 공격을
+<ce>미뤄 오셨지만, 이제 그 방침도 끝났습니다.
+<ce>%t께서 그 정신 나간 마법사를 없앨 사람을
+<ce>보내 달라고 요청하셨습니다.
+<ce>마법이 깃든 _reward_을 대가로
+<ce>이 일을 맡아 주시겠습니까?
 <--->
-<ce>%reg⁠의 백성들은 한동안 온 땅을
-<ce>공포에 빠뜨린 미친 마법사에게 마법사
-<ce>길드가 맞서야 한다고 요구해왔습니다.
-<ce>이제 대마도학장님의 직접 명령에 따라 길드가
-<ce>행동에 나섭니다. 학술 기관이 내릴 만한 임무는
-<ce>아니지만, 그 미친 마법사를 찾아가
-<ce>갈기갈기 찢어놓을 의지와 실력이 있습니까?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>%reg의 백성들은 오랫동안 온 땅을 공포에 빠뜨린
+<ce>미친 마법사에게 마법사 길드가 맞서야 한다고
+<ce>요구해 왔습니다.
+<ce>이제 대마도학장님의 직접 명령에 따라
+<ce>우리도 행동에 나서기로 했지요.
+<ce>학술 기관이 맡길 법한 임무는 아니지만,
+<ce>그 미친 마법사를 찾아가 갈기갈기 찢어 놓을
+<ce>의지와 실력이 있습니까?
 
 RefuseQuest:  [1001]
-<ce>젠장. 이번만큼은 당신을 믿어도 되리라 생각했는데.
-<ce>
+<ce>젠장.
+<ce>이번 일만큼은 당신을 믿어도 되리라 생각했는데.
 
 AcceptQuest:  [1002]
-<ce>훌륭합니다. 우리를 실망시키지 않으리라
-<ce>믿었습니다, %pcf. _wizard_는
-<ce>%g3⁠의 연구실 ___mondung_에 머물지만,
-<ce>길어야 =1stparton_일 뒤에는 다른 곳으로 옮길 겁니다.
-<ce>%t⁠께서는 =1stparton_일 안에 그 마법사가
-<ce>죽었다는 보고를 원하십니다. 일을 마치고도
-<ce>지체하지 마십시오. =1stparton_일 뒤에 뵙겠습니다.
+<ce>훌륭합니다.
+<ce>우리를 실망시키지 않으리라 믿었습니다, %pcf.
+<ce>_wizard_는 %g3 연구실인 ___mondung_에
+<ce>길어야 =1stparton_일 동안 머문 뒤
+<ce>다른 곳으로 옮길 것입니다.
+<ce>%t께서는 =1stparton_일 안에
+<ce>그 마법사가 죽었다는 보고를 원하십니다.
+<ce>처치한 뒤에도 지체하지 마십시오.
+<ce>=1stparton_일 안에 다시 뵙겠습니다.
 <ce>감사드리며 행운을 빕니다, %pcf.
-<ce>
-<ce>
 
 QuestFail:  [1003]
-<ce>전에 이야기한 일을 하러 움직여야 하지 않겠습니까?
-<ce>
+<ce>전에 이야기한 일을 처리하러
+<ce>이제 움직여야 하지 않겠습니까?
 
 QuestComplete:  [1004]
-<ce>또 한 번 당신의 솜씨와 신속함에 놀랐습니다,
-<ce>%pcf. 훌륭한 성과입니다.
-<ce>%t⁠께서도 나만큼 기뻐하실 겁니다.
-<ce>여기 약속한 _reward_입니다. 잘 쓰십시오.
-<ce>
-<ce>
+<ce>또 한 번 당신의 솜씨와 신속함에 놀랐습니다, %pcf.
+<ce>훌륭한 성과입니다.
+<ce>%t께서도 나만큼 기뻐하실 겁니다.
+<ce>여기 약속한 _reward_입니다.
+<ce>잘 사용하십시오.
 
 RumorsDuringQuest:  [1005]
-마법사 길드가 ___mondung_의 미친 마법사를 처리할 사람을
-보냈대.
+마법사 길드가 ___mondung_의 미친 마법사를
+처리할 사람을 보냈대.
 <--->
-모두 그 마법사가 다음에는 무슨 짓을 벌일지 숨죽여 기다리고 있어.
+모두 그 마법사의 다음 행동을 기다리며
+숨을 죽이고 있어.
 
 RumorsPostfailure:  [1006]
-마법사 길드조차 그 미쳐버린 마술사를 어쩌지 못했어.
+마법사 길드조차
+그 미쳐버린 마법사를 어쩌지 못했어.
 <--->
-_wizard_가 어디로 갔는지는 아무도 모르지만, %g1⁠이 사라지기
-전까지는 어디도 안전하지 않아.
+_wizard_가 어디에 있는지는 아무도 모르지만,
+%g1⁠가 사라지기 전까지 어디도 안전하지 않아.
 
 RumorsPostsuccess:  [1007]
-___mondung_의 미친 마법사 이야기는 이제 이것으로 끝이면
-좋겠군.
+___mondung_의 미친 마법사 이야기는
+이것으로 끝이기를 바라야겠군.
 <--->
-걱정할 미친 마법사가 없어지니 세상이 조금 조용해진 것 같아.
+걱정할 미친 마법사가 없어지니
+조금 조용해진 것 같아.
 
 QuestorPostsuccess:  [1008]
-안녕하십니까, %pcf. 그 미친 마법사에게 너무 심하게 다치지는
-않았길 바랍니다.
+안녕하십니까, %pcf.
+그 미친 마법사에게
+너무 심하게 다치지는 않았길 바랍니다.
 
 QuestorPostfailure:  [1009]
-<ce>돌아오기는 했지만 ___mondung_의 미친
-<ce>마법사는 죽이지 못했군요.
-<ce>가망이 없습니다, %pcf. 정말 가망이 없어요.
-<ce>
-<ce>
+<ce>돌아오기는 했지만,
+<ce>___mondung_의 미친 마법사는
+<ce>죽이지 못했군요.
+<ce>가망이 없습니다, %pcf.
+<ce>정말 가망이 없어요.
 
 Message:  1030
-%qdt: ___questgiver_의 마법사 길드는
-___mondung_의 마법사를 죽이라고 했다. 보상을 받으려면 =1stparton_일
-안에 임무를 마쳐야 한다.
+%qdt:
+___questgiver_의 마법사 길드는
+___mondung_의 마법사를 처치해달라고 했다.
+
+보상을 받으려면 =1stparton_일 안에
+임무를 끝내야 한다.
 
 Message:  1040
 <ce>___mondung_의 미친 마법사
@@ -104,18 +105,19 @@ Message:  1040
 --
 --                %g occurs 1 time.
 --               %g1 occurs 1 time.
---               %g3 occurs 3 times.
---              %pcf occurs 6 times.
+--               %g3 occurs 2 times.
+--              %pcf occurs 5 times.
 --              %qdt occurs 1 time.
 --              %reg occurs 1 time.
 --               %rn occurs 1 time.
 --               %rt occurs 1 time.
 --                %t occurs 3 times.
---       =1stparton_ occurs 10 times.
---       ___mondung_ occurs 8 times.
+--       =1stparton_ occurs 4 times.
+--       ___mondung_ occurs 6 times.
 --    ___questgiver_ occurs 1 time.
 --          _reward_ occurs 2 times.
 --          _wizard_ occurs 5 times.
+
 QBN:
 Item _reward_ magic_item
 

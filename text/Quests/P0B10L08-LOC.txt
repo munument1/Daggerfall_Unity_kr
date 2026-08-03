@@ -9,7 +9,6 @@ Quest: P0B10L08
 DisplayName: 결의의 시험
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 오류: 퀘스트 텍스트 1000이 호출되었습니다.
 
@@ -23,25 +22,24 @@ QuestFail:  [1003]
 오류: 퀘스트 텍스트 1003이 호출되었습니다.
 
 QuestComplete:  [1004]
-<ce>오늘 밤 자네는 %vam⁠에 영예를 안겼다, %pcf.
-<ce>==daedra_는 다른 어떤 뱀파이어 혈통도
-<ce>얻지 못한 존중을 우리와 자네에게 보냈다.
-<ce>자네의 혈조가 %vam⁠에서 차지한 자네의 자리가
-<ce>영원함을 상징하는 이 _gem_을 주라고 했다.
-<ce>
-<ce>
+<ce>오늘 밤 자네는 %vam에 영예를 안겼다, %pcf.
+<ce>==daedra_는 다른 어떤 흡혈귀 혈족도 얻지 못한 존중을
+<ce>우리와 자네에게 보여 주었다.
+<ce>자네의 혈조가 %vam에서 차지한 자네의 자리가
+<ce>영원하다는 상징으로 이 _gem_을 주라고 했다.
 
 RumorsDuringQuest:  [1005]
 ___mondung_에서 이상한 일이 벌어지고 있어.
-평소보다도 더 이상한 일 말이야.
+평소보다도 훨씬 이상한 일 말이야.
 
 RumorsPostfailure:  [1006]
-___mondung_ 주변은 조용해졌어. 그래도 밤이면 데이드라의 별이
-타오르지.
+___mondung_ 주변은 조용해졌어.
+그래도 밤이면 데이드라의 별이 타오르지.
 
 RumorsPostsuccess:  [1007]
-___mondung_은 조용해졌어. 어젯밤에는 데이드라의 별조차
-한결 희미했지.
+___mondung_은 조용해졌어.
+어젯밤에는 데이드라의 별조차
+한결 희미하게 빛났지.
 
 QuestorPostsuccess:  [1008]
 오류: 퀘스트 텍스트 1008이 호출되었습니다.
@@ -50,122 +48,130 @@ QuestorPostfailure:  [1009]
 오류: 퀘스트 텍스트 1009가 호출되었습니다.
 
 QuestLogEntry:  [1010]
-__vamp_ ___vamp_
+__vamp_
+___vamp_
 
 친애하는 %pcn⁠에게,
 
-%vam⁠이 자네를 필요로 한다. 즉시 오라.
+%vam⁠이 그대를 필요로 한다.
+즉시 오라.
 
-죽음 속에서, _vamp_
+죽음 속에서,
+_vamp_
 
 Message:  1011
-<ce>아, %pcf. 편지를 받았군. 우리 혈통의 고대인이자
-<ce>자네의 혈조가 자신을 몹시 불쾌하게 한 일을 조사하라고 했다.
-<ce>그의 성소에서 칼에 감겨 발견된 편지의 사본이 여기 있다.
-<ce>보낸 자는 상당한 힘을 지녔으며 %vam⁠의 힘을
-<ce>시험하려는 것이 분명해. 편지에 적힌 던전
-<ce>___mondung_으로 가서 편지를 쓴
-<ce>_daedra_를 찾아라. %g2⁠에게 %vam⁠은 함부로
-<ce>위협하거나 비웃을 유약한 무리가 아님을 보여줘.
-<ce>%vam⁠의 긍지가 자네와 함께한다, %pcf.
+<ce>아, %pcf. 내 편지를 받았군.
+<ce>우리 혈족의 고대인이자 자네의 혈조가
+<ce>그를 몹시 불쾌하게 한 일을 조사해 달라고 했다.
+<ce>그의 성소에서 칼에 감긴 채 발견된
+<ce>편지의 사본이 여기 있다.
+<ce>보낸 자는 상당한 힘을 지녔으며
+<ce>%vam의 힘을 시험하려는 것이 분명하다.
+<ce>편지에 적힌 던전 ___mondung_으로 가서
+<ce>편지를 쓴 _daedra_를 찾아라.
+<ce>%g2에게 %vam은 함부로 위협하거나 비웃을
+<ce>나약한 무리가 아니라는 사실을 보여 줘.
+<ce>%vam의 긍지가 자네와 함께한다, %pcf.
 <ce>=queston_일 안에 일을 해결하고 돌아오라.
 <ce>우리를 실망시키지 마라, %pcf.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
 
 Message:  1012
-%qdt: ___vamp_의 _vamp_가 우리
-혈통 %vam⁠을 모욕한 ___mondung_의 _daedra_가 쓴
-편지를 보여주었다. ___mondung_으로 가서 이 _daedra_에게
-%g3 말을 후회하게 만들어야 한다. =queston_일 안에 일을 마치고
+%qdt:
+___vamp_의 _vamp_는
+우리 혈통 %vam⁠을 모욕한
+___mondung_의 _daedra_가 쓴 편지를 보여주었다.
+
+___mondung_으로 가서 이 _daedra_가
+%g3 말을 후회하게 만들어야 한다.
+
+=queston_일 안에 일을 마치고
 __vamp_으로 돌아가야 한다.
 
 Message:  1013
-피 빠는 해면에게,
+피를 빨아먹는 해면아,
 
-내 마녀회에 따르면 너희 괴물들, 피 냄새를 킁킁거리는 기괴한 도깨비
-무리가 %reg⁠의 공포 사업을 독점해왔고, 내 자식들은
-%vam⁠의 무시무시한 힘 때문에 영토를 넓히기를 두려워했다고 한다.
-그 겁쟁이들은 마땅히 벌했으며 이제 내 마녀회가 나아간다.
+내 마녀회에 따르면 너희 괴물들,
+피 냄새를 킁킁거리는 기괴한 도깨비 무리가
+%reg⁠의 공포 사업을 독점해왔다고 한다.
+내 자식들은 %vam⁠의 순수한 힘을 두려워해
+영토를 넓히지 못하고 있었지.
+그 겁쟁이들은 마땅한 벌을 받았고,
+이제 내 마녀회가 전진한다.
 
-스스로 %vam⁠이라 부르는 안일한 독수리들이 우리 마녀회가 한때
-믿었던 힘을 조금이라도 지녔다면 내 도전에 응해라.
-그렇지 않다면 %reg⁠에서 %vam⁠과 너희 하찮은 범죄가
-차지할 자리가 조금 줄어들 준비를 해라.
+스스로 %vam⁠이라 부르는 안일한 독수리들에게
+우리 마녀회가 한때 믿었던 힘이
+조금이라도 남아 있다면 내 도전에 응해라.
+그렇지 않다면 %reg⁠에서
+%vam⁠과 너희 하찮은 범죄가 차지할 자리가
+조금 줄어들 각오를 해라.
 
-나는 ==daedra_ 마녀회의 _daedra_다. 결투를 신청한다.
-___mondung_에서 답을 기다리겠다.
+나는 ==daedra_ 마녀회의 _daedra_다.
+이것을 정식 도전으로 받아들여라.
+___mondung_에서 너희의 답을 기다리겠다.
 
 Message:  1014
-%qdt: %vam⁠의 _vamp_에게서 편지를 받았다.
-___vamp_의 __vamp_으로 즉시 오라고 한다.
+%qdt:
+%vam⁠의 _vamp_에게서 편지를 받았다.
+
+___vamp_의 __vamp_으로
+즉시 오라고 한다.
 
 Message:  1015
 <ce>___mondung_에 온 것을 환영한다, %pcn.
-<ce>%vam⁠을 대표해 오블리비언의 군주 ==daedra_의 마녀회가
-<ce>이제부터 %reg⁠의 지배자임을 인정하러 왔나?
-<ce>
-<ce>
-<ce>
+<ce>%vam을 대표해 온 모양이군.
+<ce>오블리비언의 군주 ==daedra_를 섬기는 마녀회가
+<ce>이제부터 %reg에서 가장 강한 세력임을
+<ce>인정하러 왔나?
 
 Message:  1016
-<ce>겁쟁이 흡혈귀 같으니. 더 기대하지도 않았지만 희망은 품었지.
+<ce>겁쟁이 흡혈귀 같으니.
+<ce>더 나은 대답을 기대하지는 않았지만,
+<ce>그래도 조금은 희망했지.
 <ce>_vamp_에게 돌아가라, 애송아.
-<ce>
-<ce>
 
 Message:  1017
 <ce>감히 내 면전에서 ==daedra_의 지배권에
-<ce>도전하겠다고, 언데드 벌레야? =daedroth_가
-<ce>네 건방진 뼈를 으깨며 즐거워할 것이다!
-<ce>허풍만큼 싸움도 잘하는 %vam⁠의 일원을 보여봐라!
-<ce>
-<ce>
-<ce>
+<ce>도전하겠다고, 언데드 벌레야?
+<ce>=daedroth_가 네 건방진 뼈를
+<ce>으깨며 즐거워할 것이다!
+<ce>허풍만큼 싸움도 잘하는 %vam의 일원을
+<ce>한번 보여 봐라!
 
 Message:  1018
-<ce>머릿속에서 ==daedra_의 목소리가 들립니다.
-<ce>“%vam⁠이 존중받을 자격이 있음을 증명했군.
-<ce>_vamp_에게 %reg⁠은 너희 것이라고 전해라.
-<ce>흥미로운 표본이야, %pcn.
-<ce>우리는 분명 다시 만나게 될 것이다.”
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>머릿속에서 ==daedra_가 말하는 소리가 들립니다.
+<ce>"%vam이 존중받을 자격이 있음을 내게 증명했군.
+<ce>_vamp_에게 %reg은 너희 것이라고 전해라.
+<ce>참으로 흥미로운 표본이구나, %pcn.
+<ce>우리는 분명 다시 만나게 될 것이다."
 
 Message:  1019
-<ce>%vam⁠을 실망시켰군, %pcf.
-<ce>==daedra_ 마녀회가 우리에게 도전했는데 자네는
-<ce>수치만 안겼다. 부끄러운 밤이야.
-<ce>
+<ce>%vam을 실망시켰군, %pcf.
+<ce>==daedra_의 마녀회가 우리에게 도전했는데,
+<ce>자네는 우리에게 수치만 안겼어.
+<ce>참으로 부끄러운 밤이군.
 
 Message:  1021
-<ce>몹시 창백하고 눈이 사나운 소년이
+<ce>몹시 창백하고 사나운 눈을 한 소년이
 <ce>편지를 건네고 어둠 속으로 사라집니다.
-<ce>
 
 -- Symbols used in the QRC file:
 --
 --               %g2 occurs 1 time.
 --               %g3 occurs 1 time.
---              %pcf occurs 8 times.
---              %pcn occurs 4 times.
+--              %pcf occurs 5 times.
+--              %pcn occurs 3 times.
 --              %qdt occurs 2 times.
---              %reg occurs 6 times.
---              %vam occurs 18 times.
+--              %reg occurs 4 times.
+--              %vam occurs 15 times.
 --         ==daedra_ occurs 6 times.
 --        =daedroth_ occurs 1 time.
 --         =queston_ occurs 2 times.
---       ___mondung_ occurs 11 times.
---          ___vamp_ occurs 12 times.
+--       ___mondung_ occurs 8 times.
+--          ___vamp_ occurs 3 times.
 --          _daedra_ occurs 4 times.
 --             _gem_ occurs 1 time.
---            _vamp_ occurs 8 times.
+--            _vamp_ occurs 5 times.
+
 QBN:
 Item _letter_ letter used 1010
 Item _letter2_ letter used 1013
