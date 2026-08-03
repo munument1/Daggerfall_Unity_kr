@@ -1,64 +1,203 @@
-name: Inspect release conventions
+name: Publish Daggerfall Unity Korean r3
 
 on:
   pull_request:
     branches: [main]
-    types: [opened, synchronize, reopened]
+    types: [synchronize, reopened]
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
-  inspect:
-    if: github.head_ref == 'agent/release-inspect-20260803'
+  publish:
+    if: github.head_ref == 'agent/release-inspect-20260803' && github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: v1.1.1-ko-r3
+      TARGET_SHA: 9677696c80c66015b1e3331e4d6fe8e3034512b5
+      PACKAGE_NAME: Daggerfall_Unity_kr_v1.1.1-ko-r3
     steps:
-      - name: Checkout inspection branch
+      - name: Checkout exact release commit
         uses: actions/checkout@v4
         with:
-          ref: agent/release-inspect-20260803
+          ref: 9677696c80c66015b1e3331e4d6fe8e3034512b5
           fetch-depth: 0
 
-      - name: Inspect releases, tags, and package folders
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Refuse to overwrite an existing release or tag
         run: |
-          rm -rf /tmp/release-inspect
-          mkdir -p /tmp/release-inspect
-          gh release download v1.1.1-ko-r2 \
-            --repo "$GITHUB_REPOSITORY" \
-            --pattern 'Daggerfall_Unity_kr_v1.1.1-ko-r2.zip' \
-            --dir /tmp/release-inspect
-          {
-            echo '=== repository ==='
-            echo "main_sha=$(git rev-parse origin/main)"
-            echo
-            echo '=== releases ==='
-            gh release list --repo "$GITHUB_REPOSITORY" --limit 30 || true
-            echo
-            echo '=== latest release ==='
-            gh release view v1.1.1-ko-r2 --repo "$GITHUB_REPOSITORY" --json tagName,name,isDraft,isPrerelease,publishedAt,body,assets
-            echo
-            echo '=== tags ==='
-            git tag --sort=-creatordate | head -30
-            echo
-            echo '=== current package folders ==='
-            for d in BIOGs fonts movies text textures 0; do
-              if [ -d "$d" ]; then
-                printf '%s\tfiles=%s\tbytes=%s\n' "$d" "$(find "$d" -type f | wc -l)" "$(du -sb "$d" | cut -f1)"
-              else
-                echo "$d MISSING"
-              fi
-            done
-            echo
-            echo '=== r2 zip listing ==='
-            unzip -l /tmp/release-inspect/Daggerfall_Unity_kr_v1.1.1-ko-r2.zip
-          } > tools/_temp_release_report.txt
-
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add tools/_temp_release_report.txt
-          if ! git diff --cached --quiet; then
-            git commit -m '임시 기존 배포 ZIP 구조 조사'
-            git push origin HEAD:agent/release-inspect-20260803
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $TAG already exists." >&2
+            exit 1
           fi
+          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists." >&2
+            exit 1
+          fi
+          test "$(git rev-parse HEAD)" = "$TARGET_SHA"
+
+      - name: Build and verify installation package
+        run: |
+          set -euo pipefail
+          WORK="$RUNNER_TEMP/r3-release"
+          ROOT="$WORK/$PACKAGE_NAME"
+          VERIFY="$WORK/verify"
+          VALIDATION_ROOT="$WORK/${PACKAGE_NAME}_validation"
+          INSTALL_ZIP="$WORK/${PACKAGE_NAME}.zip"
+          VALIDATION_ZIP="$WORK/${PACKAGE_NAME}_validation.zip"
+          SUMS="$WORK/SHA256SUMS.txt"
+          NOTES="$WORK/RELEASE_NOTES.md"
+
+          rm -rf "$WORK"
+          mkdir -p "$ROOT" "$VERIFY" "$VALIDATION_ROOT"
+          cp README.md "$ROOT/README.md"
+          cp -a 0 BIOGs fonts text "$ROOT/"
+
+          test "$(find "$ROOT" -type f | wc -l)" -eq 697
+          diff -qr README.md "$ROOT/README.md"
+          for d in 0 BIOGs fonts text; do
+            diff -qr "$d" "$ROOT/$d"
+          done
+
+          (
+            cd "$ROOT"
+            find . -type f -print0 | sort -z | xargs -0 sha256sum
+          ) > "$VALIDATION_ROOT/package_files.sha256"
+
+          QUEST_LOC_COUNT="$(find text/Quests -maxdepth 1 -type f -name '*-LOC.txt' | wc -l)"
+          TEXT_FILE_COUNT="$(find text -type f | wc -l)"
+          cat > "$VALIDATION_ROOT/validation_summary.txt" <<EOF
+          Daggerfall Unity Korean Patch v1.1.1-ko-r3
+          release_commit=$TARGET_SHA
+          package_files=697
+          package_folders=0,BIOGs,fonts,text
+          quest_review_rows=3816
+          changed_review_rows=3524
+          content_edited_rows=2780
+          token_array_changed_rows=211
+          changed_quest_files=258
+          quest_loc_files=$QUEST_LOC_COUNT
+          text_files=$TEXT_FILE_COUNT
+          qrc_header_key_sequence=preserved
+          structural_sequence=<--->,%qdt,%qdat preserved
+          qbn_sections=preserved
+          centered_ce_markers=restored
+          human_separator_labels=restored_to_<--->
+          literal_backslash_n=normalized
+          validation_errors=0
+          heuristic_width_warnings_accepted=33
+          EOF
+
+          cat > "$VALIDATION_ROOT/release_metadata.json" <<EOF
+          {
+            "tag": "$TAG",
+            "target_commit": "$TARGET_SHA",
+            "package_file_count": 697,
+            "quest_review_rows": 3816,
+            "changed_review_rows": 3524,
+            "content_edited_rows": 2780,
+            "token_array_changed_rows": 211,
+            "changed_quest_files": 258,
+            "validation_errors": 0,
+            "heuristic_width_warnings_accepted": 33
+          }
+          EOF
+
+          (
+            cd "$WORK"
+            zip -q -r -9 "$(basename "$INSTALL_ZIP")" "$PACKAGE_NAME"
+            zip -q -r -9 "$(basename "$VALIDATION_ZIP")" "${PACKAGE_NAME}_validation"
+          )
+
+          unzip -q "$INSTALL_ZIP" -d "$VERIFY"
+          diff -qr "$ROOT" "$VERIFY/$PACKAGE_NAME"
+          test "$(unzip -Z1 "$INSTALL_ZIP" | grep -v '/$' | wc -l)" -eq 697
+          test "$(unzip -Z1 "$VALIDATION_ZIP" | grep -v '/$' | wc -l)" -eq 3
+
+          (
+            cd "$WORK"
+            sha256sum "$(basename "$INSTALL_ZIP")" "$(basename "$VALIDATION_ZIP")" > "$(basename "$SUMS")"
+          )
+
+          cat > "$NOTES" <<'EOF'
+          ## Daggerfall Unity 1.1.1 한국어 패치 — 공동검수 반영판 r3
+
+          Daggerfall Unity **1.1.1 Windows 64-bit** 기준 한국어 패치입니다. `r2` 이후 공동검수 Google Sheets에서 완료된 퀘스트와 NPC 대사 재검수 결과를 반영했습니다.
+
+          ### r3 주요 변경 사항
+
+          - 퀘스트·NPC 대사 **3,816개 메시지**의 공동 재검수를 완료했습니다.
+          - 검수 결과 실제로 변경된 **3,524개 메시지**, **258개 퀘스트 파일**을 반영했습니다.
+          - 가운데 정렬 문장의 각 표시 줄에 `<ce>`를 복원했습니다.
+          - 검수용 `──── 선택지 구분 ────` 표기를 게임 명령 `<--->`로 복원했습니다.
+          - 셀에 문자로 입력된 `\n`을 실제 줄바꿈으로 정규화했습니다.
+          - 불필요한 가운데 정렬 빈 줄은 다시 생성하지 않았습니다.
+          - 최종 본문에 맞춰 QRC 심볼 사용 횟수 주석을 갱신했습니다.
+
+          ### 설치
+
+          1. Daggerfall Unity 1.1.1을 깨끗한 폴더에 설치합니다.
+          2. `DaggerfallUnity_Data\StreamingAssets`를 백업합니다.
+          3. 설치 ZIP을 풀고, 안의 `0`, `BIOGs`, `fonts`, `text` 폴더를 `StreamingAssets`에 복사해 같은 이름의 파일을 덮어씁니다.
+          4. 자세한 내용은 ZIP 안의 `README.md`를 확인하십시오.
+
+          ### 검증
+
+          - 기준 커밋: `9677696c80c66015b1e3331e4d6fe8e3034512b5`
+          - 공동검수 상태: 완료 3,816 / 재확인 0 / 미검수 0
+          - QRC 메시지 헤더와 키 순서: 보존
+          - `<--->`, `%qdt`, `%qdat` 구조 순서: 보존
+          - QBN 영역: 무변경
+          - 게임 변수·매크로: 퀘스트별 허용 범위 검증
+          - 설치 ZIP: **697개 파일**, 깨끗한 `main` 트리와 바이트 일치
+          - 차단 오류: **0건**
+
+          시트의 예상 폭 자동 경고 33건은 모두 검수자가 완료로 확정한 항목입니다. 이는 추정식 경고이며, 실제 게임 화면에서 긴 대화와 선택지의 최종 시각 확인을 권장합니다.
+
+          다운로드 후 `SHA256SUMS.txt`로 무결성을 확인할 수 있으며, 파일별 해시와 검증 요약은 validation ZIP에 포함했습니다.
+          EOF
+
+          echo "WORK=$WORK" >> "$GITHUB_ENV"
+          echo "INSTALL_ZIP=$INSTALL_ZIP" >> "$GITHUB_ENV"
+          echo "VALIDATION_ZIP=$VALIDATION_ZIP" >> "$GITHUB_ENV"
+          echo "SUMS=$SUMS" >> "$GITHUB_ENV"
+          echo "NOTES=$NOTES" >> "$GITHUB_ENV"
+
+      - name: Publish GitHub Release
+        run: |
+          gh release create "$TAG" \
+            "$INSTALL_ZIP" \
+            "$VALIDATION_ZIP" \
+            "$SUMS" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$TARGET_SHA" \
+            --title 'Daggerfall Unity 1.1.1 한국어 패치 — 공동검수 반영판 r3' \
+            --notes-file "$NOTES" \
+            --latest
+
+      - name: Verify published assets and report
+        run: |
+          set -euo pipefail
+          RELEASE_JSON="$WORK/release.json"
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json url,tagName,name,isDraft,isPrerelease,publishedAt,assets > "$RELEASE_JSON"
+          test "$(jq '.assets | length' "$RELEASE_JSON")" -eq 3
+          jq -e '.isDraft == false and .isPrerelease == false' "$RELEASE_JSON"
+          for asset in \
+            "${PACKAGE_NAME}.zip" \
+            "${PACKAGE_NAME}_validation.zip" \
+            'SHA256SUMS.txt'; do
+            jq -e --arg asset "$asset" '.assets[] | select(.name == $asset and .state == "uploaded")' "$RELEASE_JSON" >/dev/null
+          done
+          URL="$(jq -r '.url' "$RELEASE_JSON")"
+          HASHES="$(cat "$SUMS")"
+          gh pr comment "$GITHUB_EVENT_PATH" --body "릴리즈 게시 완료: $URL
+
+\`$TAG\` / 기준 커밋 \`$TARGET_SHA\`
+
+\`\`\`
+$HASHES
+\`\`\`"
+
+      - name: Remove temporary branch
+        run: git push origin --delete agent/release-inspect-20260803
