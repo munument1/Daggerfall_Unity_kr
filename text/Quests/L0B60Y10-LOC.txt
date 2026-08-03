@@ -10,12 +10,10 @@ Quest: L0B60Y10
 DisplayName: 베테랑
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>너에게도 힘든 일이 될 수 있다, %pcf.
-<ce>%reg⁠에서 손꼽히는 전사 중 하나다. 정말 맡겠나?
-<ce>
-<ce>
+<ce>표적은 %reg에서 손꼽히는 전사 중 하나다.
+<ce>정말 맡겠나?
 
 RefuseQuest:  [1001]
 <ce>탓하지 않겠다.
@@ -23,74 +21,80 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>이 일에 도전할 줄 알았다.
-<ce>네 장례식이 될지도 모르지. 표적은 경기장
-<ce>검투사 따위가 아니라 베토니 전쟁의 노병이다.
+<ce>네 장례식이 될지도 모르지.
+<ce>표적은 경기장 검투사 따위가 아니라
+<ce>베토니 전쟁의 노병이다.
 <ce>소문이 사실이라면 아홉 명을 죽였다.
 <ce>___mondung_의 _mondung_으로 가라.
 <ce>전쟁 때 무릎에 창을 맞아 다리를 절기 때문에
-<ce>쉽게 알아볼 수 있다. =1stparton_일 안에 돌아와라.
-<ce>
-<ce>
-<ce>
+<ce>쉽게 알아볼 수 있다.
+<ce>=1stparton_일 안에 돌아와라.
 
 QuestFail:  [1003]
-<ce>누구를 죽였다고 생각하는지는
-<ce>모르겠지만 표적은 아니었다.
-<ce>___mondung_으로 돌아가 계약한 일을 끝내라.
-<ce>
+<ce>누구를 죽였다고 생각하는지는 모르겠지만,
+<ce>그자는 표적이 아니었다.
+<ce>___mondung_로 돌아가
+<ce>우리가 계약받은 일을 끝내라.
 
 QuestComplete:  [1004]
-<ce>엄청난 싸움이었다지! 벌써 들었다.
+<ce>엄청난 싸움이었다지!
+<ce>벌써 소문을 들었다.
 <ce>거리의 소문은 말보다 빠르거든.
-<ce>여기 일에 대한 _reward_골드다, %pcf.
-<ce>
+<ce>여기 약속한 _reward_골드다, %pcf.
 
 RumorsDuringQuest:  [1005]
-대거폴에서 벌어지는 일을 보면 참 안타깝습니다.
+대거폴에서 벌어지는 일을 보면
+참 안타깝습니다.
 
 RumorsPostfailure:  [1006]
-여왕이 임신했다는군요. 적어도 모두 그렇게 말합니다.
+여왕이 임신했다는군요.
+적어도 모두 그렇게 말합니다.
 
 RumorsPostsuccess:  [1007]
-그 전쟁 영웅 소식 들었습니까? 결투에서 죽었다더군요.
+그 전쟁 영웅 소식 들었습니까?
+결투에서 죽었다더군요.
 안타까운 일입니다.
 
 QuestorPostsuccess:  [1008]
-그 전쟁 영웅과 벌인 싸움은 아직도 %pcn⁠에서 회자되고 있다.
+그 전쟁 영웅과 벌인 싸움은
+아직도 사람들 사이에서 회자되고 있네, %pcn.
 
 QuestorPostfailure:  [1009]
-전쟁 영웅을 죽이는 계약에 실패했군. 브라더후드는 실패를 잊지
-않는다.
+전쟁 영웅을 죽이는 계약에 실패했군.
+브라더후드는 실패를 잊지 않는다.
 
 Message:  1020
-%qdt: ___questgiver_의 다크 브라더후드에서 받은
-계약은 ___mondung_의 _mondung_에 있는 전쟁 영웅을
-죽이는 것이다. =1stparton_일 안에 일을 끝내야 한다.
+%qdt:
+___questgiver_의 다크 브라더후드에서 받은 계약은
+___mondung_의 _mondung_에 있는
+전쟁 영웅을 암살하는 것이다.
+
+=1stparton_일 안에 끝내야 한다.
 
 Message:  1021
-<ce>“당신은… 베토니 전쟁의…
-<ce>모든 병사가 실패한 일을… 해냈군.”
-<ce>
+<ce>"당신은... 베토니 전쟁의 모든 병사가
+<ce>실패한 일을... 해냈군."
 <ce>계약이 이행되었습니다.
 
 Message:  1022
-<ce>“다리를 전다고 나를 불구로 생각하지 마라.
-<ce>네 팔다리를 하나씩 찢어주겠다!”
-<ce>
+<ce>"다리를 전다고 나를 불구로 생각하지 마라.
+<ce>네 팔다리를 하나씩 찢어주겠다!"
 
 Message:  1023
-<ce>이자는 사람이 아닙니다! 흡혈귀입니다!
+<ce>이자는 사람이 아닙니다!
+<ce>흡혈귀입니다!
 
 -- Symbols used in the QRC file:
 --
---              %pcf occurs 3 times.
---              %pcn occurs 2 times.
+--              %pcf occurs 2 times.
+--              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
 --              %reg occurs 1 time.
---       =1stparton_ occurs 4 times.
+--       =1stparton_ occurs 2 times.
 --    ___questgiver_ occurs 1 time.
---        __mondung_ occurs 8 times.
---          _reward_ occurs 3 times.
+--        __mondung_ occurs 0 times.
+--          _reward_ occurs 1 time.
+
 QBN:
 Item _reward_ gold
 

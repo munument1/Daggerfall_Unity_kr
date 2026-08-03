@@ -10,108 +10,114 @@ Quest: Q0C20Y02
 DisplayName: 값비싼 구매
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>그대가 ==questgiver_의 친구라는 것은 알고 있소.
-<ce>하지만 그대를 도우려면 창조에
-<ce>앞서 파괴하는 주문을 엮어야 하오.
-<ce>파괴의 축복을 받을 수 있도록 약에
-<ce>넣을 _magicitem_을 가져다주겠소?
-<ce>
-<ce>
-<ce>
+<ce>하지만 그대를 도우려면 주문 하나를 엮어야 하오.
+<ce>창조하기에 앞서 먼저 파괴해야 하는 주문이지.
+<ce>그 파괴로 그대가 축복받을 수 있도록,
+<ce>물약에 넣을 _magicitem_을 가져다주겠소?
 
 RefuseQuest:  [1001]
-<ce>중요성을 알고도 너무 바빠 맡지 못하겠소?
-<ce>==questgiver_에게도, 그대
-<ce>%pcn⁠에게도 불행한 일이군.
-<ce>
+<ce>이 일의 중요성을 알면서도
+<ce>너무 바빠 맡지 못하겠소?
+<ce>==questgiver_에게도, 그대 %pcn에게도
+<ce>불행한 일이군.
 
 AcceptQuest:  [1002]
-<ce>필요한 _magicitem_은 ==other_가 가지고 있소.
-<ce>=1stparton_번째 새벽이 오기 전에 필요하오.
-<ce>==other_는 ___other_에서
-<ce>찾을 수 있으니 _other_를 물어보시오.
-<ce>신과 정령들이 그대의 발을 인도하기를, %pcf.
-<ce>
-<ce>
+<ce>우리에게 필요한 _magicitem_은
+<ce>==other_가 가지고 있소.
+<ce>새벽이 =1stparton_번 밝기 전에 가져와야 하오.
+<ce>==other_는 ___other_에 있으니
+<ce>_other_를 수소문하시오.
+<ce>신과 정령들이 그대의 발걸음을 인도하기를, %pcf.
 
 QuestFail:  [1003]
-<ce>_magicitem_ 말이오, %pcf. 잊었소?
-<ce>
+<ce>_magicitem_ 말이오, %pcf.
+<ce>잊은 것이오?
 
 QuestComplete:  [1004]
 <ce>아, 주문에 필요한 _magicitem_이 왔군.
-<ce>자매들이여, 서둘러 찢고 뜯어 뚜껑을 덮은 통에서 끓이시오.
-<ce>%pcn, 빠른 행동과 용기에 대한 감사로
+<ce>자매들이여, 서둘러 찢고 뜯어
+<ce>뚜껑을 덮은 통에서 끓이시오.
+<ce>%pcn, 빠른 행동과 용기에 감사하는 뜻으로
 <ce>_reward_ 한 덩이를 받으시오.
-<ce>
-<ce>
-<ce>
 
 RumorsDuringQuest:  [1005]
-마녀들이 우리 옛 %t⁠를 달팽이로 바꿨던 때를 기억해?
+마녀들이 우리 옛 %t⁠를
+달팽이로 바꿨던 때를 기억해?
 <--->
-==questgiver_를 만나는 것보다 나쁜 일은 그들의 분노를 사는 것뿐이야.
+==questgiver_를 직접 만나는 것보다 나쁜 일은
+그들의 분노를 사는 것뿐이야.
 
 RumorsPostfailure:  [1006]
-어젯밤 숲에서 울부짖는 소리를 들었어. 마녀들이 날뛰는 모양이야.
+어젯밤 숲에서 울부짖는 소리를 들었어.
+마녀들이 날뛰는 모양이야.
 <--->
-바람에 실린 시큼한 냄새가 나지? ==questgiver_가 화났다는 뜻이야.
+바람에 실린 시큼한 냄새가 나지?
+==questgiver_가 화났다는 뜻이야.
 
 RumorsPostsuccess:  [1007]
-==questgiver_가 어떤 계획의 성공을 축하하고 있대.
+==questgiver_가 어떤 계획의 완성을
+축하하고 있다는군.
 <--->
-공기의 냄새만으로 취할 것 같아. 기뻐하는 마녀들의 축복이지.
+공기의 냄새만으로도 취할 것 같아.
+기뻐하는 마녀들이 내린 축복이지.
 
 QuestorPostsuccess:  [1008]
-_reward_은 마음에 드시오, %pcf? 잘 어울리는군.
+_reward_은 마음에 드시오, %pcf?
+내 생각에는 그대에게 잘 어울리는군.
 
 QuestorPostfailure:  [1009]
 <ce>_magicitem_을 잊은 것이오?
-<ce>%oth, 이제 너무 늦었소. ==questgiver_는
-<ce>실망했소, %pcf. 진심으로 말이오.
-<ce>
+<ce>%oth, 이제는 너무 늦었소.
+<ce>==questgiver_는 그대에게 실망했소, %pcf.
+<ce>진심으로 말이오.
 
 QuestLogEntry:  [1010]
-<ce>원하는 _magicitem_ 말인가?
-<ce>1000골드면 주지. 아주 좋아, 여기 있어.
-<ce>
+<ce>원하는 것이 _magicitem_인가?
+<ce>1000 골드면 자네 것이네.
+<ce>좋아, 여기 있네.
 
 Message:  1011
-그녀는 ==questgiver_의 매우 현명한 여인이야.
+그녀는 ==questgiver_의
+매우 지혜로운 여인이야.
 <--->
-==questgiver_ 출신인 그녀를 함부로 대하면 안 돼.
+==questgiver_ 출신인 그녀를
+함부로 대하면 안 돼.
 
 Message:  1020
-<ce>_magicitem_은 1000골드보다 싸게는 안 팔아.
-<ce>==questgiver_에게만 그 가격에 넘겨주는 거야.
-<ce>
-<ce>
-<ce>
+<ce>이 _magicitem_은 1000골드보다 싸게는 못 넘겨.
+<ce>그 가격도 ==questgiver_한테만 해 주는 거야.
 
 Message:  1025
-%qdt: ==questgiver_의 _questgiver_는
-___other_에 있는 _other_라는 =other_가 가진
-_magicitem_을 가져오라고 했다. =1stparton_일 안에 _magicitem_을
-구해 ___questgiver_로 돌아가야 한다. ==other_
+%qdt:
+==questgiver_의 _questgiver_는
+==other_가 보관하고 있는 _magicitem_을
+가져오라고 했다.
+
+그 물건은 ___other_에 있는
+=other_ _other_가 가지고 있다.
+
+=1stparton_일 안에 _magicitem_을 구해
+___questgiver_로 돌아가야 한다.
 
 -- Symbols used in the QRC file:
 --
 --              %oth occurs 1 time.
---              %pcf occurs 5 times.
---              %pcn occurs 3 times.
+--              %pcf occurs 4 times.
+--              %pcn occurs 2 times.
 --              %qdt occurs 1 time.
 --                %t occurs 1 time.
 --       =1stparton_ occurs 2 times.
 --          ==other_ occurs 3 times.
---     ==questgiver_ occurs 30 times.
---           =other_ occurs 4 times.
+--     ==questgiver_ occurs 10 times.
+--           =other_ occurs 1 time.
 --    ___questgiver_ occurs 1 time.
 --       _magicitem_ occurs 9 times.
 --           _other_ occurs 2 times.
 --      _questgiver_ occurs 1 time.
 --          _reward_ occurs 2 times.
+
 QBN:
 Item _reward_ gem
 Item _magicitem_ magic_item

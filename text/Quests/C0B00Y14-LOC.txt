@@ -10,13 +10,11 @@ Quest: C0B00Y14
 DisplayName: 언데드 사냥
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>%pct, 위험한 임무를 맡기려 합니다.
-<ce>미리 말씀드리자면 상당히 강력한 언데드
-<ce>생명체를 처치해야 하는 일입니다.
-<ce>그래도 __questgiver_을 위해 임무를 맡겠습니까?
-<ce>
+<ce>미리 말씀드리자면,
+<ce>상당히 강력한 언데드 생명체를 처치해야 합니다.
+<ce>그래도 __questgiver_의 의뢰를 맡으시겠습니까?
 
 RefuseQuest:  [1001]
 <ce>당신을 탓할 수는 없습니다.
@@ -25,107 +23,118 @@ RefuseQuest:  [1001]
 AcceptQuest:  [1002]
 <ce>그 용기는 우리 교단의 명예입니다, %pcf.
 <ce>우리는 ___mondung_이라는 곳을 정화하려 합니다.
-<ce>오래전에는 우리 사원이었으나, 더럽혀진
-<ce>복도에는 이제 언데드 망령이 출몰합니다.
-<ce>그 불안한 영혼을 처치하고 시신에 이 특별히
-<ce>준비한 성수를 뿌리십시오. =qtime_일 안에 돌아오지
-<ce>않으면 당신의 죽은 영혼을 위해 향을 피우고,
-<ce>다른 이를 보내 원수를 갚게 하겠습니다.
-<ce>%god⁠께서 함께하시길 빕니다.
-<ce>
-<ce>
-<ce>
+<ce>오래전에는 우리 신전이었으나,
+<ce>더럽혀진 복도에는 이제 언데드 망령이 출몰합니다.
+<ce>그 망령을 처치한 뒤,
+<ce>시신에 특별히 준비한 이 성수를 뿌리십시오.
+<ce>=qtime_일 안에 돌아오지 않으면
+<ce>당신의 떠난 영혼을 위해 향을 피우고,
+<ce>다른 사람을 보내 원수를 갚게 하겠습니다.
+<ce>%god께서 함께하시길 빕니다.
 
 QuestFail:  [1003]
-<ce>%pct, ___mondung_의 정화를 돕고
-<ce>싶지 않았다면 처음부터 그렇게 말했어야 합니다.
-<ce>
+<ce>%pct, ___mondung_의 정화를 돕고 싶지 않았다면
+<ce>처음부터 그렇게 말했어야 합니다.
 
 QuestComplete:  [1004]
-<ce>%god⁠을 찬양하라, 무사히 돌아왔군요!
+<ce>%god을 찬양하라!
+<ce>무사히 돌아왔군요!
 <ce>우리 예언자들은 ___mondung_의 악이
 <ce>정화됐다고 이미 보고했습니다.
 <ce>__questgiver_을 훌륭히 섬겨주었습니다.
-<ce>
 
 RumorsDuringQuest:  [1005]
-__questgiver_은 ___mondung_을 옛 영광의 모습으로
-복원할 계획입니다.
+__questgiver_은 ___mondung_을
+옛 영광을 되찾은 모습으로 복원할 계획입니다.
 
 RumorsPostfailure:  [1006]
-<ce>___mondung_의 악은 __questgiver_이
-<ce>몰아내기에는 너무 강한 모양입니다.
+<ce>___mondung_의 악은
+<ce>__questgiver_에서 몰아내기에는
+<ce>너무 강한 모양입니다.
 
 RumorsPostsuccess:  [1007]
-<ce>__questgiver_에서 ___mondung_을 정화할 교단원을 보냈습니다.
+<ce>__questgiver_에서
+<ce>___mondung_의 정화를 시작할 교단원을 보냈습니다.
 
 QuestorPostsuccess:  [1008]
-<ce>반갑습니다, %pcf. ___mondung_
-<ce>원정은 우리에게 큰 도움이 됐습니다.
+<ce>반갑습니다, %pcf.
+<ce>___mondung_ 원정은 우리에게 큰 도움이 됐습니다.
 
 QuestorPostfailure:  [1009]
-<ce>무슨 일입니까? ___mondung_의 악령을
-<ce>처리해달라는 부탁은 저버렸으면서요.
+<ce>무슨 일입니까?
+<ce>___mondung_의 악령을 처리해달라는
+<ce>내 부탁은 저버렸으면서요.
 
 Message:  1020
-%qdt: ___questgiver_의 __questgiver_에
-있는 _questgiver_는 ___mondung_에 출몰하는 언데드 생명체를
-처치하라고 했다. %G⁠은 영혼이 돌아오지 못하도록 괴물의 시신에 뿌릴
-특별히 준비된 성수 한 병을 주었다. =qtime_일 안에 _questgiver_에게
-돌아오지 않으면 %g⁠은 다른 사람을 보내야 한다.
+%qdt:
+___questgiver_의 __questgiver_에 있는 _questgiver_는
+___mondung_에 출몰하는 언데드 생명체를
+처치하라고 했다.
+
+%G는 괴물의 영혼이 돌아오지 못하도록
+시신에 뿌릴 특별한 성수 한 병을 주었다.
+
+=qtime_일 안에 _questgiver_에게 돌아오지 못하면
+%g는 다른 사람을 보내야 한다.
 
 Message:  1021
-%qdt: ___questgiver_의 __questgiver_에
-있는 _questgiver_는 ___mondung_에 출몰하는 언데드 생명체를
-처치하라고 했다. 그러나 먼저 ___priest_의 __priest_에
-있는 _priest_를 찾아가 특별히 준비된 성수에 마지막 축복을
-받아야 한다. 영혼이 ___mondung_으로 돌아오지 못하게 하려면
-괴물의 시신에 그 성수를 뿌려야 한다. =qtime_일 안에 _questgiver_에게
-돌아오지 않으면 %g⁠은 다른 사람을 보내야 한다.
+%qdt:
+___questgiver_의 __questgiver_에 있는 _questgiver_는
+___mondung_에 출몰하는 언데드 생명체를
+처치하라고 했다.
+
+먼저 ___priest_의 __priest_에 있는 _priest_를 찾아가
+특별히 준비된 성수에 마지막 축복을 받아야 한다.
+
+괴물의 영혼이 ___mondung_으로 돌아오지 못하도록
+시신에 그 성수를 뿌려야 한다.
+
+=qtime_일 안에 _questgiver_에게 돌아오지 못하면
+%g는 다른 사람을 보낼 것이다.
 
 Message:  1050
-<ce>아, 잠깐만요. 요즘 자꾸 잊어버리는군요!
-<ce>먼저 성수를 ___priest_의 __priest_에
-<ce>있는 _priest_에게 가져가십시오.
-<ce>%G⁠이 마지막 축복을 내려줄 겁니다.
-<ce>
+<ce>아, 잠깐만요.
+<ce>요즘 자꾸 잊어버리는군요!
+<ce>먼저 성수를 ___priest_의 __priest_에 있는
+<ce>_priest_에게 가져가십시오.
+<ce>%G이 마지막 축복을 내려줄 겁니다.
 
 Message:  1051
 <ce>_priest_가 말없이 병을 받아듭니다.
-<ce>%G⁠이 엄숙히 병을 축복하고,
+<ce>%G이 엄숙하게 병을 축복하고,
 <ce>이어 당신에게도 축복을 내립니다.
-<ce>%G⁠은 병을 돌려준 뒤 %g3 명상으로 돌아갑니다.
+<ce>%G은 병을 돌려준 뒤 %g3 명상으로 돌아갑니다.
 
 Message:  1060
-<ce>“나는 =monster1_다! 내 육신을 죽일 수는
-<ce>있어도 나는 언제나 ___mondung_에
-<ce>있는 내 보금자리로 돌아올 것이다!”
-<ce>
+<ce>"나는 =monster1_다!
+<ce>내 육신을 죽일 수는 있어도,
+<ce>나는 언제나 ___mondung_에 있는
+<ce>내 보금자리로 돌아올 것이다!"
 
 Message:  1061
-<ce>=monster1_의 유해에 성수를 뿌리자 절망에 찬
-<ce>울부짖음이 ___mondung_의 어두운 복도에
-<ce>울려 퍼지고, 서서히 멀어지며 사라집니다.
-<ce>
-<ce>
+<ce>=monster1_의 유해에 성수를 뿌리자,
+<ce>절망에 찬 울부짖음이
+<ce>___mondung_의 어두운 복도에 울려 퍼집니다.
+<ce>그 소리는 서서히 멀어지며 사라집니다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 6 times.
---               %g3 occurs 2 times.
---              %god occurs 3 times.
+--                %g occurs 2 times.
+--               %g3 occurs 1 time.
+--              %god occurs 2 times.
 --              %pcf occurs 2 times.
 --              %pct occurs 2 times.
 --              %qdt occurs 2 times.
 --        =monster1_ occurs 2 times.
 --           =qtime_ occurs 3 times.
---       ___mondung_ occurs 23 times.
+--       ___mondung_ occurs 13 times.
 --        ___priest_ occurs 2 times.
 --    ___questgiver_ occurs 2 times.
 --         __priest_ occurs 2 times.
---     __questgiver_ occurs 11 times.
+--     __questgiver_ occurs 7 times.
 --          _priest_ occurs 3 times.
 --      _questgiver_ occurs 4 times.
+
 QBN:
 Item _I.00_ item class 10 subclass 4
 

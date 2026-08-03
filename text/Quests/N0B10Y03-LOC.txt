@@ -10,103 +10,109 @@ Quest: N0B10Y03
 DisplayName: 길드 경비
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>마법사 길드에서 오늘 밤 마법의 _treasure_를
-<ce>지킬 사람이 필요합니다. 우리를 위해 경비를
-<ce>맡을 수 있겠습니까? 보수는 _potion_입니다.
-<ce>
-<ce>
-<ce>
+<ce>지킬 사람이 필요합니다.
+<ce>우리를 위해 경비를 맡을 수 있겠습니까?
+<ce>보수로 _potion_을 드리지요.
 <--->
 <ce>길드 회관이라... 어떻게 설명해야 할까요?
-<ce>살다 보면, 아시겠지만, 꼭 그런
-<ce>사람들이 있지요. 그러니까 길드는 늘...
-<ce>아니, 정확히는 그들과 문제가... 됐습니다.
-<ce>젊은 %pct, 경비가 필요합니다. 맡겠습니까?
-<ce>
-<ce>
+<ce>살다 보면 언제나 그런 사람들이 있지 않습니까?
+<ce>그저... 길드는 늘 그들을 위해...
+<ce>아니, 정확히 말하면 그들과 문제가...
+<ce>됐습니다.
+<ce>젊은 %pct, 경비원이 필요합니다.
+<ce>맡겠습니까?
 
 RefuseQuest:  [1001]
-<ce>문제없습니다. 항상 일거리를 찾는
-<ce>다른 길드원들이 있으니까요.
-<ce>
+<ce>괜찮습니다.
+<ce>일을 찾는 다른 길드원은 언제나 있으니까요.
 
 AcceptQuest:  [1002]
-<ce>자정까지 마법사 길드로 오십시오.
-<ce>당신의 경비 임무는 새벽 3시까지 지속될 것입니다.
-<ce>
-<ce>
+<ce>자정까지 마법사 길드에 오십시오.
+<ce>경비 임무는 새벽 3시까지 이어집니다.
 
 QuestComplete:  [1004]
-<ce>잘했습니다, %pcf. 그 도둑들은
-<ce>당신을 상대로는 어림도 없었겠군요.
-<ce>여기, 이 _potion_ 받으세요.
-<ce>이것이 우리가 해줄 수 있는 최소한의 성의입니다.
-<ce>
+<ce>잘했습니다, %pcf.
+<ce>그 도둑들은 당신을 상대로
+<ce>아무것도 해 보지 못했겠군요.
+<ce>자, 이 _potion_을 받으십시오.
+<ce>이 정도는 해 드려야지요.
 
 RumorsDuringQuest:  [1005]
-도둑들은 마법사 길드의 _treasure_이 매우 가치 있다고
-생각하는 모양입니다.
+도둑들은 마법사 길드의 _treasure_이
+매우 값진 물건이라고 생각하는 모양입니다.
 <--->
-도둑들이 마법사 길드의 _treasure_을 훔치겠다고 위협하고 있습니다.
+도둑들이 마법사 길드의 _treasure_을
+훔치겠다고 위협하고 있습니다.
 
 RumorsPostfailure:  [1006]
-도둑들이 결국 그 _treasure_을 손에 넣었군요.
+도둑들이 결국
+그 _treasure_을 손에 넣었군요.
 <--->
-마법사 길드는 진짜 경비원을 고용했어야 했습니다.
-그래서 _treasure_을 잃어버린 거죠.
+마법사 길드가 제대로 된 경비병을 고용했어야 합니다.
+그래서 _treasure_을 잃은 거죠.
 
 RumorsPostsuccess:  [1007]
-그 도둑들은 다시는 그 _treasure_을 노리지 않을 겁니다,
+그 도둑들은 다시는
+그 _treasure_을 노리지 않을 겁니다.
 장담하죠.
 <--->
-그 _treasure_을 노렸던 도둑들은 진짜 경비원이 있을 줄은
-몰랐을 겁니다, 장담하죠.
+그 _treasure_을 노린 도둑들은
+진짜 경비병이 있을 줄 몰랐을 겁니다.
+장담하죠.
 
 QuestorPostsuccess:  [1008]
-어떻게 지내시나요, %pcf? 그 _potion_은 어디 쓸모가
-있었나요?
+어떻게 지내시나요, %pcf?
+그 _potion_은 쓸 곳을 찾으셨습니까?
 
 QuestorPostfailure:  [1009]
-<ce>_treasure_는 사라졌지만, 당신은 여기 있군요?
-<ce>이건 그다지 공평한 교환은 아니라고 생각합니다.
-<ce>저를 떠나주세요, %pcn.
-<ce>
+<ce>_treasure_는 사라졌는데,
+<ce>당신은 여기 있군요?
+<ce>그다지 공평한 교환은 아닌 것 같습니다.
+<ce>이제 가 보십시오, %pcn.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 마법사 길드에서
-마법의 _treasure_를 지키기로 했다. 자정부터 새벽 세 시까지 그곳에
-있어야 한다.
+%qdt:
+___qgiver_의 마법사 길드에서
+마법의 _treasure_를 지키기로 했다.
+
+자정부터 새벽 세 시까지
+그곳을 지켜야 한다.
 
 -moved line down from %qdt line.
 
+
 Message:  1011
-%qdt: 유혹을 참지 못하고 내가 지켜야
-했던 _treasure_를 훔쳐버렸다. 분명 길드에서 나를 쫓을 것이다.
+%qdt:
+유혹을 참지 못했다.
+내가 지켜야 했던 _treasure_를
+훔쳐버렸다.
+
+분명 길드에서 나를 쫓을 것이다.
 
 Message:  1012
-<ce>이것 좀 봐, 얘들아. 경비원이군.
+<ce>이것 좀 봐, 얘들아.
+<ce>경비병이 하나 왔군.
 <ce>아이고, 무서워서 온몸이 떨리네.
-<ce>도둑 길드를 건드리면 어떻게 되는지
-<ce>보여주게 혀를 문에 걸어두자. 잡아!
-<ce>
-<ce>
+<ce>도둑 길드를 건드리면 어떻게 되는지 보여 주게,
+<ce>혀를 잘라 문에 걸어 두자.
+<ce>잡아!
 
 Message:  1013
-<ce>마법사 길드의 도둑이자 배신자에
-<ce>대한 현상금을 청구합니다.
-<ce>
+<ce>마법사 길드의 도둑이자 배신자인
+<ce>이 자에게 걸린 현상금을 요구한다.
 
 -- Symbols used in the QRC file:
 --
 --              %pcf occurs 2 times.
---              %pcn occurs 2 times.
+--              %pcn occurs 1 time.
 --              %pct occurs 1 time.
---              %qdt occurs 2 times.
+--              %qdt occurs 3 times.
 --        ___qgiver_ occurs 1 time.
---          _potion_ occurs 33 times.
---        _treasure_ occurs 11 times.
+--          _potion_ occurs 3 times.
+--        _treasure_ occurs 10 times.
+
 QBN:
 Item _treasure_ magic_item
 Item _potion_ gem

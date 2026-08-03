@@ -9,96 +9,99 @@ Quest: Q0C00Y07
 DisplayName: 투옥된 마녀
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>우리 자매 _witch_가 감옥에 갇혔소.
-<ce>구출하려면 자네 같은 사람이 필요하오. 맡겠소?
-<ce>
-<ce>
+<ce>그녀를 구하려면 그대 같은 사람이 필요하오.
+<ce>도와주겠소?
 
 RefuseQuest:  [1001]
-<ce>얼음 같은 심장을 지녔군, %pcf. 부끄러운 줄 아시오.
-<ce>
+<ce>얼음처럼 차가운 심장을 지녔군, %pcf.
+<ce>부끄러운 줄 아시오.
 
 AcceptQuest:  [1002]
-<ce>우리를 위해 해준다면 진심으로 감사하겠소.
-<ce>___mondung_에서 그녀를 찾으면 이 옷을
-<ce>주어 변장시키시오. 늦어도 =queston_일
-<ce>안에 두 사람 모두 돌아오기를 기다리겠소.
-<ce>
-<ce>
+<ce>우리를 위해 해 준다면 진심으로 감사하겠소.
+<ce>___mondung_에서 그녀를 찾으면
+<ce>변장할 수 있도록 이 옷을 건네시오.
+<ce>늦어도 =queston_일 안에는
+<ce>두 사람 모두 이곳으로 돌아오기를 기다리겠소.
 
 QuestComplete:  [1004]
-<ce>_witch_, 무사히 돌아온 모습을
-<ce>보니 마음이 놓이는군. %pcf,
-<ce>오늘 자네는 ==qgiver_의 존경을 얻었소.
-<ce>
-<ce>
+<ce>_witch_, 무사히 돌아온 그대를 보니
+<ce>마음이 참으로 기쁘오.
+<ce>%pcf, 오늘 그대는
+<ce>==qgiver_의 존경을 얻었소.
 
 RumorsDuringQuest:  [1005]
-_witch_ 심문이 끝나면 불쏘시개 신세야.
+_witch_의 심문이 끝나면
+곧 화형당할 거야.
 <--->
-곧 _witch_를 교수형에 처하거나 불태울 거래.
+머지않아 _witch_를 교수형에 처하거나
+불태울 거래.
 
 RumorsPostfailure:  [1006]
-_witch_ 처형은 볼만했어. 온 가족이 즐길 구경거리였지.
+_witch_의 처형은 볼만했어.
+온 가족이 즐길 구경거리였지.
 <--->
-이제 _witch_는 한 줌 재야. 그 많은 주문도 도움이 안 됐지.
+이제 _witch_는 한 줌의 재야.
+그 많은 주문도 도움이 되지 못했지.
 
 RumorsPostsuccess:  [1007]
-_witch_가 달아났대. ==qgiver_가 뒤를 봐줬다는군.
+_witch_가 달아났대.
+==qgiver_가 뒤를 봐줬다는군.
 <--->
-_witch_는 정의의 심판을 받지 않았어. 제대로 고문조차 받지
-않았지.
+_witch_는 끝내 정의의 심판을 받지 않았어.
+제대로 고문조차 받지 않았지.
 
 QuestorPostsuccess:  [1008]
-_witch_는 잘 회복하고 있소, %pcf. 기쁜 소식일 것이오.
+_witch_는 잘 회복하고 있소, %pcf.
+그대도 기뻐할 소식일 것이오.
 
 QuestorPostfailure:  [1009]
 <ce>우리 자매 _witch_는 산 채로 불타 죽었소.
-<ce>자네가 구할 수 있었을지도, 아니었을지도 모르지.
-<ce>하지만 이곳에서 환영받지 못하오.
+<ce>그대가 구할 수 있었을지도,
+<ce>그러지 못했을지도 모르지.
+<ce>하지만 그대는 이곳에서 환영받지 못하오.
 <ce>아마 아주 오랫동안 그럴 것이오.
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ==qgiver_는 마녀 자매 _witch_가 갇힌
-___mondung_으로 나를 보냈다. 그녀에게 _clothes_을 주어
-변장시키고 =queston_일이 지나기 전에 ==qgiver_로 돌아와야 한다.
+%qdt:
+==qgiver_는 마녀 자매 _witch_가 갇혀 있는
+___mondung_으로 나를 보냈다.
+
+그녀에게 _clothes_을 주어 변장시키고,
+=queston_일이 지나기 전에 ==qgiver_로 돌아와야 한다.
 
 Message:  1011
-<ce>==qgiver_가 보냈나요? ==daedra_를 찬양하라!
-<ce>_clothes_을 입고 함께 빠져나가죠.
-<ce>
-<ce>
+<ce>==qgiver_가 보냈나요?
+<ce>==daedra_를 찬양하라!
+<ce>_clothes_을 입으면 함께 몰래 빠져나갈 수 있겠어요.
 
 Message:  1012
-<ce>“죄수 _witch_다! 멈춰라! 마녀다!”
-<ce>
+<ce>"죄수 _witch_다!
+<ce>멈춰라! 마녀다!"
 <--->
-<ce>“이번에는 감옥으로 돌아가지 못한다,
-<ce>_witch_! 곧장 처형장으로 가라!”
-<ce>
+<ce>"이번에는 감옥으로 돌아가지 못한다, _witch_!
+<ce>곧장 처형장으로 보내 주마!"
 <--->
-<ce>“멈춰라! 네가 _witch_지!”
-<ce>
+<ce>"멈춰라!
+<ce>네가 _witch_지!"
 
 Message:  1013
-<ce>“여기서부터는 ==qgiver_로 돌아갈 수 있을 것 같아요.”
-<ce>_witch_가 감사하고 길을 떠납니다.
-<ce>
-<ce>
+<ce>"여기서부터는 혼자 ==qgiver_로
+<ce>돌아갈 수 있을 것 같아요."
+<ce>_witch_는 감사 인사를 건넨 뒤 길을 떠납니다.
 
 -- Symbols used in the QRC file:
 --
---              %pcf occurs 5 times.
+--              %pcf occurs 3 times.
 --              %qdt occurs 1 time.
 --         ==daedra_ occurs 1 time.
 --         ==qgiver_ occurs 6 times.
---         =queston_ occurs 3 times.
+--         =queston_ occurs 2 times.
 --       ___mondung_ occurs 2 times.
 --         _clothes_ occurs 2 times.
---           _witch_ occurs 16 times.
+--           _witch_ occurs 15 times.
+
 QBN:
 Item _clothes_ womens_robe
 

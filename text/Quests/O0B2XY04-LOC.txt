@@ -9,69 +9,75 @@ Quest: O0B2XY04
 DisplayName: 귀중한 페이지
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>일 하나 있어. 평범한 길드 일이지.
-<ce>보수는 _gold_골드. 표준 길드 보수다. 관심 있나?
-<ce>
+<ce>일 하나 있어.
+<ce>평범한 길드 일이지.
+<ce>보수는 _gold_골드,
+<ce>표준 길드 수당이다.
+<ce>관심 있나?
 
 RefuseQuest:  [1001]
 <ce>자네만 손해지, %pcn.
 
 AcceptQuest:  [1002]
 <ce>__mansion_으로 가서 _mansion_을 찾아.
-<ce>안에는 _book_이라는 희귀한 책이 있어.
-<ce>=traveltime_일 안에 가져오면 보수를 주지. 간단하지?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>그 안에 _book_이라는 희귀한 책이 있어.
+<ce>=traveltime_일 안에 내게 가져오면 보수를 주지.
+<ce>간단하지?
 
 QuestComplete:  [1004]
-<ce>아, %oth. 여기 길드 보수다.
-<ce>언젠가 다시 같이 일할 수도 있겠군.
-<ce>
+<ce>아, %oth.
+<ce>여기 길드 수당이다.
+<ce>언젠가 다시 함께 일할 수도 있겠군.
 
 RumorsDuringQuest:  [1005]
-__mansion_의 한 수집가가 희귀한 _book_ 사본을 샀대.
+__mansion_의 한 수집가가
+희귀한 _book_ 사본을 샀대.
 
 RumorsPostfailure:  [1006]
-_mansion_의 보안이 허술해서 귀중품을 모두 옮겼대.
+_mansion_의 보안이 허술해서
+귀중품을 전부 다른 곳으로 옮겼대.
 
 RumorsPostsuccess:  [1007]
-_mansion_에서 도난당한 _book_ 사본은 다시 구할 수
-없는 것이었대.
+_mansion_에서 도난당한 _book_ 사본은
+다시는 구할 수 없는 물건이었대.
 
 QuestorPostsuccess:  [1008]
-아, 안녕, %pcf. 전에 말하지 않았다면, 그 책을 가져온 일은
-잘했어.
+아, 안녕, %pcf.
+전에 말하지 않았다면,
+그 책을 가져온 일은 정말 잘했어.
 
 QuestorPostfailure:  [1009]
 <ce>변명하려 들지 마, %pcf.
-<ce>책이 어디 있는지도, 서둘러야 한다는 것도
-<ce>말했는데 자네는 듣지 않았어. 이제 늦었고 난 지쳤다.
-<ce>착한 %ra 답게 썩 꺼져주겠나?
-<ce>
+<ce>책이 어디 있는지도 알려 줬고,
+<ce>서둘러야 한다고도 했지만 자네는 그러지 않았어.
+<ce>이제는 너무 늦었고, 나는 지쳤다.
+<ce>착한 %ra답게 썩 꺼져 주겠나?
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 도둑 길드원이
-__mansion_의 _mansion_에서 _book_을 훔치라고 했다.
-=traveltime_일 안에 책을 구해 _qgiver_에게 돌아가야 한다.
+%qdt:
+___qgiver_의 도둑 길드원이
+__mansion_의 _mansion_에서
+_book_을 훔치라고 했다.
+
+=traveltime_일 안에 책을 구해
+_qgiver_에게 돌아가야 한다.
 
 -- Symbols used in the QRC file:
 --
 --              %oth occurs 1 time.
 --              %pcf occurs 2 times.
---              %pcn occurs 2 times.
+--              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
---               %ra occurs 2 times.
+--               %ra occurs 1 time.
 --      =traveltime_ occurs 2 times.
 --        ___qgiver_ occurs 1 time.
 --        __mansion_ occurs 3 times.
 --            _book_ occurs 4 times.
 --            _gold_ occurs 1 time.
 --         _mansion_ occurs 4 times.
---          _qgiver_ occurs 3 times.
+--          _qgiver_ occurs 1 time.
+
 QBN:
 Item _book_ book3
 Item _gold_ gold

@@ -10,129 +10,133 @@ Quest: O0B00Y01
 DisplayName: 무기 공급
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>좋아, %pcf. 아주 간단한 일이야.
-<ce>네가 어려워할 리 없지. 이 _weapons_을
-<ce>___contact_의 우리 요원에게 가져가서 %g3⁠의 대금을
-<ce>받아 돌아오면 된다. 할 수 있겠나, %pcf?
-<ce>
-<ce>
-<ce>
+<ce>자네가 어려워할 이유도 없지.
+<ce>이 _weapons_을 ___contact_에 있는 우리 요원에게 전달하고,
+<ce>%g3가 대금으로 건네는 물건을 받아 이곳으로 가져오면 돼.
+<ce>해낼 수 있겠나, %pcf?
 
 RefuseQuest:  [1001]
-<ce>싫다고? 임무가 얼마나 더 쉬워야 하지?
-<ce>가만히 서 있으면 장어로 때려주는 것?
-<ce>그것도 괜찮은 생각인데! %oth, 쓸모없는 인간 같으니.
-<ce>
-<ce>
+<ce>싫다고?
+<ce>임무가 얼마나 더 쉬워야 하는 거지?
+<ce>가만히 서 있으면 내가 장어로 때려 주는 일?
+<ce>그것도 나쁘지 않은 생각인데!
+<ce>%oth, 아까운 시간만 버렸군.
 
 AcceptQuest:  [1002]
 <ce>좋아. 접선책은 예상대로 =contact_다.
-<ce>___contact_의 __contact_라는 구석진 곳에
-<ce>있을 거야. _contact_는 ___contact_에서
-<ce>전리품을 얻었고 그것을 우리에게 가져오길 원한다.
-<ce>이 정도를 감당할 수 있다면 변명 없이
-<ce>=1stparton_일 안에 돌아와. 좋아, 가봐.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>___contact_의 __contact_이라는 구석진 곳에
+<ce>머물고 있을 거야.
+<ce>_contact_는 ___contact_에서 전리품을 하나 손에 넣었고,
+<ce>자네가 그것을 우리에게 가져오기를 바라고 있어.
+<ce>이 정도를 감당할 수 있다면
+<ce>변명 없이 =1stparton_일 안에 돌아와.
+<ce>좋아, 이제 가.
 
 QuestFail:  [1003]
-<ce>그래, 돌아오기는 했는데 _contact_의 전리품은 어디 있지?
+<ce>그래, 돌아오기는 했는데
+<ce>_contact_의 전리품은 어디 있지?
 <ce>우리를 속일 생각은 아니겠지, %pcf?
-<ce>그렇다면 다시 생각하는 게 좋아.
-<ce>
-<ce>
+<ce>그렇다면 다시 생각하는 편이 좋을 거야.
 
 QuestComplete:  [1004]
-<ce>오, 멋진 _gems_이군. _contact_가 준 건가?
-<ce>%oth, %g⁠은 ___contact_에서 잘 지내는 모양이야.
-<ce>잘했어, %pcf. 여기 수고비 _reward_골드다.
-<ce>
-<ce>
-<ce>
+<ce>오, 멋진 _gems_이군.
+<ce>_contact_가 자네에게 준 건가?
+<ce>%oth, %g는 ___contact_에서
+<ce>제법 잘 지내는 모양이야.
+<ce>잘했어, %pcf.
+<ce>여기 수고비 _reward_골드다.
 
 RumorsDuringQuest:  [1005]
-요즘 도시 경비대는 무기를 든 사람이라면 매처럼 감시하고 있어.
+요즘 도시 경비대는
+무기를 든 사람이라면 매처럼 감시하고 있어.
 <--->
-%t⁠이 암살을 두려워하는 모양이야. 경비대가 대거 풀렸어.
+%t⁠이 암살을 두려워하는 모양이야.
+경비대가 대거 배치됐어.
 
 RumorsPostfailure:  [1006]
-어떤 =contact_가 체포됐어. %g⁠은 무기 밀매상이었다더군.
+어떤 =contact_가 체포됐어.
+%g⁠는 무기 밀매상이었다더군.
 <--->
-도둑 길드도 별것 아니야. 단원 하나가 __contact_에서 잡혔거든.
+도둑 길드도 별것 아니야.
+단원 하나가 __contact_에서 잡혔거든.
 
 RumorsPostsuccess:  [1007]
-_weapons_을 밀수해 들여온다는군. 대단한 배짱이야.
+_weapons_을 밀수해 들여온다는군.
+대단한 배짱이야.
 <--->
-%t⁠은 도둑 길드의 밀수를 몹시 두려워했지만 이제 %g⁠은 잊은
-모양이야.
+%t⁠은 도둑 길드의 밀수를 몹시 경계했지만,
+이제 %g⁠는 신경 쓰지 않는 모양이야.
 
 QuestorPostsuccess:  [1008]
-그래, 무슨 일이지, %pcf? _gems_을 돌려받고 싶나?
+그래, 무슨 일이지, %pcf?
+_gems_을 돌려받고 싶나?
 
 QuestorPostfailure:  [1009]
-<ce>_contact_에게서 가져온 것이 없다면
-<ce>이야기할 생각도 없어, %pcf.
+<ce>_contact_에게서 받아 온 것이 없다면
+<ce>자네와 이야기할 생각도 없어, %pcf.
 
 QuestLogEntry:  [1010]
-<ce>잘했어, %pcf. 이 _weapons_을
-<ce>들고는 여기까지 쉽게 오지 못했을 거야.
-<ce>지금까지 훔친 것 중 하나인 _gems_을 주지.
-<ce>_questgiver_에게 가져가 %g2⁠에게 내가 무사하다고 전해줘.
-<ce>다시 한번 고맙다, %pcf. 나중에 보자.
+<ce>잘했어, %pcf.
+<ce>이 _weapons_을 들고는
+<ce>여기까지 쉽게 오지 못했을 거야.
 <ce>
+<ce>지금까지 훔친 물건 가운데 하나인
+<ce>_gems_을 주지.
+<ce>_questgiver_에게 가져가서
+<ce>%g2⁠에게 내가 무사하다고 전해줘.
 <ce>
+<ce>다시 한번 고맙다, %pcf.
+<ce>나중에 보자.
 
 Message:  1020
-<ce>%nrn⁠의 이름으로 멈춰라!
-<ce>네가 무기를 밀수하고 있다는 것을 안다.
-<ce>항복하지 않으면 대가를 치를 것이다.
-<ce>
+<ce>%nrn의 이름으로 멈춰라!
+<ce>네가 무기를 밀수하고 있다는 사실을 알고 있다.
+<ce>항복하지 않으면 대가를 치르게 될 것이다.
 
 Message:  1021
-<ce>도둑 길드를 위해 _weapons_을 밀수한다고 들었다.
-<ce>내게 넘기면 목숨은 살려주지.
-<ce>
-<ce>
+<ce>도둑 길드를 위해 _weapons_s을
+<ce>밀수하고 있다고 들었다.
+<ce>그걸 내게 넘기면 목숨은 살려 주지.
 
 Message:  1022
-<ce>우리는 그 _weapons_을 원한다.
-<ce>순순히 넘기면 너무 심하게 두들겨 패지는 않겠다.
-<ce>
+<ce>우리는 그 _weapons_s을 원한다.
+<ce>순순히 넘기면 아주 심하게 두들겨 패지는 않겠다.
 
 Message:  1023
-<ce>다치기 싫으면 이제 여기서 꺼져라.
-<ce>
+<ce>다치기 싫으면
+<ce>이제 이곳에서 꺼져라.
 
 Message:  1030
-%qdt: ___questgiver_ 도둑 길드의 _questgiver_는
-___contact_의 __contact_에 있는 _contact_에게
-_weapons_을 배달하라고 했다. 그러면 접선책이 내가 길드로 가져갈
-전리품을 줄 것이다. 기한은 =1stparton_일이다.
+%qdt:
+___questgiver_ 도둑 길드의 _questgiver_는
+___contact_의 __contact_에 있는
+_contact_에게 _weapons_을 전달하라고 했다.
+
+그러면 _contact_은
+내가 길드로 가져갈 전리품을 줄 것이다.
+기한은 =1stparton_일이다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 41 times.
+--                %g occurs 3 times.
 --               %g2 occurs 1 time.
 --               %g3 occurs 1 time.
 --              %nrn occurs 1 time.
 --              %oth occurs 2 times.
---              %pcf occurs 12 times.
+--              %pcf occurs 8 times.
 --              %qdt occurs 1 time.
 --                %t occurs 2 times.
---       =1stparton_ occurs 4 times.
---         =contact_ occurs 7 times.
+--       =1stparton_ occurs 2 times.
+--         =contact_ occurs 2 times.
 --    ___questgiver_ occurs 1 time.
---        __contact_ occurs 8 times.
+--        __contact_ occurs 3 times.
 --            _gems_ occurs 3 times.
 --      _questgiver_ occurs 2 times.
 --          _reward_ occurs 1 time.
 --         _weapons_ occurs 6 times.
+
 QBN:
 Item _reward_ gold range 25 to 75
 Item _weapons_ weapon

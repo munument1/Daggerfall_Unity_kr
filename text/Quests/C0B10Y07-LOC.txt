@@ -9,41 +9,33 @@ Quest: C0B10Y07
 DisplayName: 배달
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>축복이 함께하기를, %pcn.
 <ce>__qgiver_에서 심부름을 맡아줄 사람이 필요합니다.
-<ce>이 _religitem_을 =traveltime_일 안에 ___priest_로
-<ce>배달하십시오. 사원에서 _gold_골드를
-<ce>보수로 드리겠습니다. 우리를 위해 맡아주시겠습니까?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>이 _religitem_을 =traveltime_일 안에
+<ce>___priest_로 배달해주십시오.
+<ce>보수로 _gold_골드를 드리겠습니다.
+<ce>우리를 위해 맡아주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>후우. 이 일을 맡을 다른 사원
-<ce>신도를 찾아야겠군요.
-<ce>
+<ce>후우.
+<ce>이 일을 맡을 다른 신전 신도를 찾아야겠군요.
 
 AcceptQuest:  [1002]
-<ce>여기 _religitem_입니다. ___priest_의 __priest_에
-<ce>있는 _priest_에게 가져다주십시오.
-<ce>아, 경쟁 사원에서 당신을 막으려고 폭한들을
-<ce>보낼 수도 있다는 말을 깜빡할 뻔했군요.
-<ce>
-<ce>
+<ce>여기 _religitem_이 있습니다.
+<ce>___priest_의 __priest_에 있는
+<ce>_priest_에게 가져다주십시오.
+<ce>아, 경쟁 신전에서 당신을 막으려고
+<ce>폭한들을 보낼 수도 있다는 말을
+<ce>깜빡할 뻔했군요.
 
 QuestComplete:  [1004]
-<ce>%god⁠의 은총이 함께하기를, %pcn.
+<ce>%god의 은총이 함께하기를, %pcn.
 <ce>이곳에는 이 _religitem_이 절실히 필요했습니다.
-<ce>사원에서 _gold_골드를 받기로 했다고 들었습니다.
-<ce>
-<ce>
-<ce>
+<ce>보수로 _gold_골드를 받기로 했다고 들었습니다.
 
 RumorsDuringQuest:  [1005]
-며칠 전에 종기가 났는데… 이제 다 나았습니다.
+며칠 전에 종기가 났는데... 이제 다 나았습니다.
 <--->
 방금 날씨 이야기만 세 시간이나 했습니다.
 <--->
@@ -72,29 +64,33 @@ RumorsDuringQuest:  [1005]
 %reg⁠의 법률 제도에는 장단점이 있습니다.
 
 RumorsPostfailure:  [1006]
-__qgiver_에서 %pcn⁠의 이름을 저주하고 있습니다.
+__qgiver_은
+%pcn⁠의 이름을 저주하고 있습니다.
 
 RumorsPostsuccess:  [1007]
-_priest_는 __qgiver_에서 받은 %g3 선물을 기쁘게
-여기는 듯합니다.
+_priest_는 __qgiver_에서 받은
+%g3 선물을 기쁘게 여기는 듯합니다.
 
 QuestorPostsuccess:  [1008]
 _priest_가 %g3 안부를 전했습니다, %pcf.
 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-내가 당신과 이야기한다면 _priest_는 결코 용서하지 않을 겁니다.
+내가 당신과 이야기한다면
+_priest_는 결코 나를 용서하지 않을 겁니다.
 
 QuestLogEntry:  [1010]
-%qdt: __qgiver_의 _qgiver_는
-_religitem_을 ___priest_의 __priest_에
-있는 _priest_에게 배달하라고 했다. =traveltime_일 안에 도착해야 한다.
+%qdt:
+__qgiver_의 _qgiver_는
+_religitem_을 ___priest_의 __priest_에 있는
+_priest_에게 전달하라고 했다.
+
+=traveltime_일 안에 도착해야 한다.
 
 Message:  1011
-<ce>그 _religitem_은 절대로 __priest_에
-<ce>도착하지 못한다. 대신 네 머리를 그들에게 배달해주마!
-<ce>
-<ce>
+<ce>그 _religitem_은 절대로
+<ce>__priest_에 도착하지 못한다.
+<ce>대신 네 머리를 그들에게 배달해주마!
 
 -- Symbols used in the QRC file:
 --
@@ -102,18 +98,19 @@ Message:  1011
 --               %g3 occurs 2 times.
 --              %god occurs 1 time.
 --              %jok occurs 3 times.
---              %oth occurs 5 times.
+--              %oth occurs 1 time.
 --              %pcf occurs 1 time.
 --              %pcn occurs 3 times.
 --              %qdt occurs 1 time.
 --              %reg occurs 1 time.
---      =traveltime_ occurs 3 times.
---        ___priest_ occurs 6 times.
+--      =traveltime_ occurs 2 times.
+--        ___priest_ occurs 3 times.
 --         __qgiver_ occurs 4 times.
 --            _gold_ occurs 2 times.
 --          _priest_ occurs 5 times.
 --          _qgiver_ occurs 1 time.
 --       _religitem_ occurs 5 times.
+
 QBN:
 Item _religitem_ religious
 Item _gold_ gold

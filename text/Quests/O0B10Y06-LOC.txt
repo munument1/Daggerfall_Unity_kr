@@ -9,74 +9,77 @@ Quest: O0B10Y06
 DisplayName: 보석 강탈
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>자네에게 딱 맞는 일이 있어.
-<ce>보석 절도 건이 하나 들어왔지. 끼어들겠나?
-<ce>길드 표준 보수인 _gold_골드를 주겠다.
-<ce>
-<ce>
+<ce>자네에게 딱 맞는 일이 하나 있어.
+<ce>보석 절도 계획이 진행 중이지.
+<ce>끼어들겠나?
+<ce>보수는 표준 길드 수당인 _gold_골드다.
 
 RefuseQuest:  [1001]
-<ce>그럼 가봐. 이 일을 원하는 다른 길드원을 찾아야겠군.
-<ce>
+<ce>그럼 가 봐.
+<ce>이 일을 원하는 다른 길드원을 찾아야겠군.
 
 AcceptQuest:  [1002]
-<ce>%oth, 아주 훌륭해. __mansion_의 _mansion_로
-<ce>가서 _jewelry_을 찾아 여기로 가져와.
-<ce>눈을 크게 뜨고 다녀. 그 쓰레기장 같은 곳에
-<ce>무슨 수호자가 있을지도 모르니까.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>%oth, 아주 훌륭해.
+<ce>__mansion_의 _mansion_으로 가서
+<ce>_jewelry_을 찾아 이곳으로 가져와.
+<ce>눈을 크게 뜨고 다녀.
+<ce>그 쓰레기장 같은 곳에 무슨 수호자가 있다더군.
 
 QuestComplete:  [1004]
-<ce>잘했어, %pcn. 여기 길드 보수다.
-<ce>
+<ce>잘했어, %pcn.
+<ce>여기 길드 수당이다.
 
 RumorsDuringQuest:  [1005]
-_mansion_는 난공불락이라고 하더군.
+_mansion_는
+아무도 침입할 수 없는 곳이라고 하더군.
 
 RumorsPostfailure:  [1006]
-누군가 _mansion_에 침입하려 했지만 실패했어.
+누군가 _mansion_에 침입하려 했지만
+실패했어.
 
 RumorsPostsuccess:  [1007]
-_mansion_가 털렸다니 도저히 믿기 어려운 일이야.
+_mansion_가 털렸다니
+도저히 믿기 어려운 일이야.
 <--->
-_mansion_도 털릴 수 있다면 안전한 곳은 어디에도 없지.
+_mansion_도 털릴 수 있다면
+안전한 곳은 어디에도 없지.
 
 QuestorPostsuccess:  [1008]
-어떻게 지내나, %pcf? 벌써 _gold_골드를 전부 써버린
-건 아니겠지?
+어떻게 지내나, %pcf?
+벌써 _gold_골드를 전부 써버린 건 아니겠지?
 
 QuestorPostfailure:  [1009]
-<ce>%oth, 자네로군. _mansion_의 주인이
-<ce>이미 _jewelry_을 옮겨서 일은 끝났어.
-<ce>그 대단하신 “노고”에 정말 감사하지.
-<ce>
-<ce>
+<ce>%oth, 자네로군.
+<ce>_mansion_의 주인이 이미 _jewelry_을 옮겨 버렸어.
+<ce>그러니 일은 끝난 셈이지.
+<ce>자네의 그 대단하신 "노고"에 정말 감사한다.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 _qgiver_는
-___mansion_에 있는 _mansion_에서 _jewelry_을 빼오라고
-의뢰했다. =traveltime_일 안에 %g2⁠에게 가져가야 한다.
+%qdt:
+___qgiver_의 _qgiver_는
+___mansion_의 _mansion_에서
+_jewelry_을 빼오라고 의뢰했다.
+
+=traveltime_일 안에
+%g2⁠에게 가져다줘야 한다.
 
 -- Symbols used in the QRC file:
 --
---               %g2 occurs 3 times.
+--               %g2 occurs 1 time.
 --              %oth occurs 2 times.
 --              %pcf occurs 1 time.
 --              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
---      =traveltime_ occurs 3 times.
+--      =traveltime_ occurs 1 time.
 --       ___mansion_ occurs 1 time.
 --        ___qgiver_ occurs 1 time.
 --        __mansion_ occurs 1 time.
---            _gold_ occurs 16 times.
---         _jewelry_ occurs 5 times.
+--            _gold_ occurs 2 times.
+--         _jewelry_ occurs 3 times.
 --         _mansion_ occurs 7 times.
 --          _qgiver_ occurs 1 time.
+
 QBN:
 Item _jewelry_ trinket
 Item _gold_ gold

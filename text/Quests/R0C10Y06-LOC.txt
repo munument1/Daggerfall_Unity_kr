@@ -9,81 +9,82 @@ Quest: R0C10Y06
 DisplayName: 가보
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>가문에서 대대로 내려온
-<ce>소중한 _item_이 있습니다.
-<ce>오크 산적들이 이를 훔쳐 몸값을 요구하고 있지요.
-<ce>파렴치한 놈들에게 보상할 생각은 없습니다.
-<ce>은신처에서 _item_을 되찾아오면 몸값 전액인
-<ce>_reward_골드를 드리겠습니다. 맡겠습니까?
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>제게는 가문 대대로 물려받은
+<ce>매우 소중한 _item_이 있습니다.
+<ce>그 사실을 아는 소규모 오크 산적 무리가
+<ce>물건을 훔쳐 몸값을 요구하고 있지요.
+<ce>그런 만행에 보상할 생각은 없습니다.
+<ce>대신 놈들의 은신처에 들어가 _item_을 되찾아 오면,
+<ce>몸값 전액인 _reward_골드를 당신에게 드리겠습니다.
+<ce>맡겠습니까?
 
 RefuseQuest:  [1001]
-<ce>%oth! 이 일을 거절합니까? 그렇다면 몸값을
-<ce>낼 수밖에 없겠군요. 실망스럽습니다, %pcf.
-<ce>
+<ce>%oth! 저를 위해 이 일을 해 주지 않겠다고요?
+<ce>그렇다면 몸값을 지불할 수밖에 없겠군요.
+<ce>실망스럽습니다, %pcf.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. 오크의 은신처는 옛 유적 ___itemdung_이라고 합니다.
-<ce>내 _item_도 그곳에 있겠지요.
-<ce>=1stparton_일 안에 돌아오지 않으면 실패로 여기고
-<ce>_item_의 몸값을 오크들에게 지급하겠습니다.
-<ce>실망시키지 마십시오, %pcf.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>좋습니다.
+<ce>오크들의 은신처는 ___itemdung_이라는
+<ce>오래된 폐허에 있다고 들었습니다.
+<ce>제 _item_도 그곳에 보관하고 있겠지요.
+<ce>=1stparton_일 안에 돌아오지 않으면
+<ce>물건을 찾지 못한 것으로 여기고,
+<ce>당신에게 줄 보상금을 오크들에게 몸값으로 지급하겠습니다.
+<ce>이 일에서 저를 실망시키지 마십시오, %pcf.
+<ce>행운을 빕니다.
 
 QuestFail:  [1003]
-<ce>당신과 이야기하고 싶지 않습니다, %pcf.
-<ce>내 _item_을 돌려주십시오.
+<ce>이야기하고 싶지 않습니다, %pcf.
+<ce>제가 원하는 것은 _item_입니다.
+<ce>가서 되찾아 오십시오.
 
 QuestComplete:  [1004]
-<ce>내 _item_을 찾아낼 줄 알았습니다, %pcf.
-<ce>_item_의 몸값으로 준비한 돈을 기꺼이
-<ce>드리지요. 아무리 감사해도 부족합니다.
-<ce>
-<ce>
+<ce>왠지 당신이 제 _item_을 찾아낼 줄 알았습니다, %pcf.
+<ce>_item_의 몸값으로 마련해 둔 금화를
+<ce>기꺼이 드리지요.
+<ce>아무리 감사해도 부족합니다.
 
 RumorsDuringQuest:  [1005]
-___itemdung_에 오크 무리가 진을 쳤대.
+___itemdung_에 오크 무리가 진을 치고 있어.
 <--->
-___itemdung_의 오크들은 _questgiver_에게서 한몫 뜯어낼
-생각인가 봐.
+___itemdung_의 오크들은
+_questgiver_에게서 한몫 챙길 생각인가 봐.
 
 RumorsPostfailure:  [1006]
-___itemdung_의 오크들은 _questgiver_가 몸값을 내자 떠났대.
+___itemdung_의 오크들은
+_questgiver_가 돈을 주자 떠났대.
 <--->
-_questgiver_는 어떤 %ra 모험가 때문에 몹시 화났어.
+_questgiver_는 어떤 %ra 모험가에게
+몹시 화가 난 모양이야.
 
 RumorsPostsuccess:  [1007]
-<ce>오크들이 _questgiver_의 가보를
-<ce>도둑맞았다고 불평하고 있어.
+<ce>오크 무리가 _questgiver_가
+<ce>자신들의 유물을 훔쳤다고 불평하고 있어.
 <--->
 <ce>___itemdung_은 생각만큼
-<ce>안전한 은신처가 아닌가 봐.
+<ce>안전한 은신처가 아니었던 모양이야.
 
 QuestorPostsuccess:  [1008]
-<ce>다시 만나 반갑습니다, 젊은 친구. 오크 건은 잊지 않았습니다.
-<ce>
+<ce>다시 만나 반갑습니다, 젊은 친구.
+<ce>오크와 관련된 일은 잊지 않았습니다.
 <--->
-보상으로 받은 돈을 벌써 다 쓰지는 않았길 바랍니다.
+내가 준 보상금을 벌써 전부 쓰지는 않았겠지요, 친구?
 
 QuestorPostfailure:  [1009]
-<ce>오블리비언으로 가버리십시오, %pcf.
-<ce>임무를 실패한 것을 잊지 않았습니다.
-<ce>
+<ce>오블리비언으로 꺼지십시오, %pcf.
+<ce>제 임무를 실패한 일은 아직 잊지 않았습니다.
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_의 __questgiver_에
-있는 _questgiver_는 오크들이 훔친 가보 _item_을 찾아오라고
-나를 ___itemdung_으로 보냈다. =1stparton_일 안에 _questgiver_에게
-돌려주지 못하면 %g⁠가 몸값을 내고 내 보상은 사라진다.
+%qdt:
+___questgiver_의 __questgiver_에 있는 _questgiver_는
+오크 무리가 훔쳐 간 오래된 가보 _item_을 찾으러
+나를 ___itemdung_으로 보냈다.
+
+=1stparton_일 안에 _questgiver_에게 돌려주지 못하면
+%g⁠는 몸값을 지불할 것이고,
+내 보상은 사라질 것이다.
 
 Message:  1011
 _item_을 찾았습니다.
@@ -92,15 +93,16 @@ _item_을 찾았습니다.
 --
 --                %g occurs 1 time.
 --              %oth occurs 1 time.
---              %pcf occurs 7 times.
+--              %pcf occurs 5 times.
 --              %qdt occurs 1 time.
---               %ra occurs 4 times.
+--               %ra occurs 1 time.
 --       =1stparton_ occurs 2 times.
 --      ___itemdung_ occurs 6 times.
---    ___questgiver_ occurs 2 times.
---            _item_ occurs 14 times.
+--    ___questgiver_ occurs 1 time.
+--            _item_ occurs 8 times.
 --      _questgiver_ occurs 6 times.
 --          _reward_ occurs 1 time.
+
 QBN:
 Item _item_ trinket
 Item _reward_ gold

@@ -9,123 +9,129 @@ Quest: R0C10Y02
 DisplayName: 금 밀수
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>___contact_에 있는 연락책에게 물건을
-<ce>전해줄 사람이 필요합니다.
-<ce>그 대가로 받은 물건을 제게 가져오면
-<ce>_reward_골드를 드리겠습니다. 맡겠습니까?
-<ce>
-<ce>
+<ce>___contact_에 있는 제 연락책에게
+<ce>물건 하나를 전달할 사람이 필요합니다.
+<ce>그 대가로 다른 물건을 받게 될 것입니다.
+<ce>그 물건을 제게 가져오면
+<ce>_reward_골드를 보상으로 드리지요.
+<ce>맡겠습니까?
 
 RefuseQuest:  [1001]
-<ce>싫습니까? 후한 보상을 준비했는데 아쉽군요.
-<ce>
+<ce>싫다고요? 안타깝군요.
+<ce>상당히 후하게 보상할 생각이었는데.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. 이 금괴를 ___contact_의 __contact_에
-<ce>있는 _contact_라는 =contact_에게 전하십시오.
-<ce>그 __contact_에 =1stparton_일 안에
-<ce>도착하지 못하면 _contact_가 떠나 우리
-<ce>모두 곤란해질 겁니다. 특히 당신이 말입니다.
+<ce>좋습니다. 이 금괴를 가져가십시오.
+<ce>___contact_의 __contact_에 있는
+<ce>_contact_라는 =contact_에게 전하면 됩니다.
+<ce>서둘러야 합니다.
+<ce>=1stparton_일 안에 __contact_에 도착하지 못하면
+<ce>_contact_가 떠나 버리고 우리 모두 불쾌해질 겁니다.
+<ce>특히 당신이 말이지요.
 <ce>행운을 빕니다, %pcf.
-<ce>
-<ce>
-<ce>
 
 QuestFail:  [1003]
-<ce>아직 시작하지 않았거나 실패를 사과하러 온
-<ce>모양이군요, %pcf. 매우 실망스럽습니다.
-<ce>당신의 무능 때문에 일이 복잡해졌으니
-<ce>당장 움직이십시오, %pcf.
-<ce>
-<ce>
-<ce>
+<ce>아직 출발하지 않았거나,
+<ce>실패를 사과하러 돌아온 모양이군요, %pcf.
+<ce>참으로 실망스럽습니다. 대단히 실망스럽군요.
+<ce>당신의 무능 때문에 일이 복잡해졌습니다.
+<ce>다음에는 사람을 제대로 골라야겠지요.
+<ce>어서 움직이십시오, %pcf. 당장.
 
 QuestComplete:  [1004]
-<ce>훌륭합니다, %pcf. 약속한 _item2_을
-<ce>가져왔군요. 용기와 담력이 대단합니다.
-<ce>앞으로 더 큰 활약을 기대하지요.
-<ce>
-<ce>
+<ce>훌륭합니다, %pcf.
+<ce>약속대로 제 _item2_을 가지고 돌아왔군요.
+<ce>당신의 용기와 담력은 실로 대단합니다.
+<ce>가까운 시일 안에 다시 당신의 도움을
+<ce>받을 일이 생기겠지요.
+<ce>감사합니다.
 
 RumorsDuringQuest:  [1005]
-<ce>얼마 전 어떤 =contact_가 이곳에 와 %ra⁠를 봤냐고 묻더군.
+<ce>얼마 전 어떤 =contact_가 이곳에 와서
+<ce>%ra를 보았느냐고 묻더군.
 <--->
-<ce>어떤 =contact_가 _item1_을 가진 %ra⁠를 찾고 있었어.
+<ce>한동안 어떤 =contact_가
+<ce>_item1_을 가진 %ra를 찾고 있었어.
 
 RumorsPostfailure:  [1006]
-<ce>_questgiver_가 어떤 %ra
-<ce>용병에게 단단히 화났대.
+<ce>듣자 하니 _questgiver_가
+<ce>어떤 %ra 용병에게 몹시 화가 났대.
 <--->
-<ce>_questgiver_는 아직 용병을
-<ce>고용하지만 %g⁠의 의뢰가 엉망이 됐다는군.
+<ce>_questgiver_는 아직도 용병에게 일을 맡기지만,
+<ce>이번에는 %g가 크게 당했다더군.
 
 RumorsPostsuccess:  [1007]
-<ce>_questgiver_가 마침내 %g⁠에게
-<ce>필요한 _item2_을 얻었대.
+<ce>_questgiver_가 마침내
+<ce>%g에게 필요했던 _item2_을 얻었다더군.
 <--->
-<ce>_questgiver_가 어떤 %ra
-<ce>용병을 칭찬하고 다닌다더군.
+<ce>_questgiver_가 어떤 %ra 용병을
+<ce>입이 마르도록 칭찬하고 다닌대.
 
 QuestorPostsuccess:  [1008]
-다시 만났군요, 젊은 친구. 해준 일은 잊지 않았습니다.
+다시 만났군요, 젊은 친구.
+당신이 해준 일은 잊지 않았습니다.
 <--->
-아, %pcf. 다시 보니 반갑군요.
+아, %pcf.
+다시 만나 반갑습니다.
 
 QuestorPostfailure:  [1009]
-<ce>무능한 %ra 전령이군요.
-<ce>다시 돌아올 배짱은 있었나 봅니다.
+<ce>이 무능한 %ra가 돌아왔군요.
+<ce>다시 나타날 배짱은 있었나 봅니다.
 <--->
 <ce>그 무능한 전령 아닌가?
-<ce>이제 그만 기어가 사라지지 그래?
-<ce>
+<ce>이제 어디론가 기어가 사라지지 그래?
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_의 _questgiver_는
-___contact_의 _contact_에게 금괴를 가져가라고 했다.
-목적지는 __contact_에 있는 =contact_의 거점이다.
-=1stparton_일 안에 %g3 손에 금괴를 넘겨야 보상을 받는다.
+%qdt:
+___questgiver_의 _questgiver_는
+금괴 하나를 연락책 _contact_에게
+전달하라고 했다.
+
+_contact_는 ___contact_의 __contact_에
+거점을 둔 =contact_다.
+=1stparton_일 안에 금괴를 %g3 손에 넘겨야
+약속된 보상을 받을 수 있다.
 
 Message:  1011
-%qdt: 금괴를 _contact_에게 전달하고 그 대가로
-_questgiver_에게 가져갈 _item2_을 받았다.
+%qdt:
+금괴를 _contact_에게 전달했다.
+%g⁠는 _questgiver_에게 가져다줄
+_item2_을 내게 주었다.
 
 Message:  1020
-<ce>그 금괴는 무거울 텐데 내가 대신 들어주지.
-<ce>순순히 넘기면 목숨은 살려주겠다.
-<ce>
-<ce>
+<ce>그 금괴는 꽤 무거울 텐데.
+<ce>내가 짐을 덜어 주지.
+<ce>순순히 넘기면 보내 주겠다.
 
 Message:  1021
-<ce>용감한 꼬마 전령이군. 내 친구들에게
-<ce>네가 얼마나 도움이 됐는지 꼭 말해주지.
-<ce>
-<ce>
+<ce>참 용감한 꼬마 전령이군.
+<ce>내 친구들에게도 네가 얼마나
+<ce>도움이 되는 사람인지 꼭 알려 주지.
 
 Message:  1030
-<ce>아, 당신이 전령이군요. 훌륭합니다.
-<ce>이 _item2_을 즉시 _questgiver_에게
-<ce>가져가십시오. %g⁠가 약속대로 보상할 겁니다.
-<ce>함께 거래해서 기쁘군요, %pcf.
-<ce>
-<ce>
+<ce>아, 당신이 전령이군요.
+<ce>훌륭합니다, 아주 훌륭해요.
+<ce>이제 이 _item2_을 즉시 _questgiver_에게 돌려주십시오.
+<ce>그러면 %g가 약속대로 보상할 것입니다.
+<ce>당신과 거래하게 되어 즐거웠습니다, %pcf!
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 5 times.
+--                %g occurs 4 times.
 --               %g3 occurs 1 time.
---              %pcf occurs 8 times.
+--              %pcf occurs 6 times.
 --              %qdt occurs 2 times.
---               %ra occurs 8 times.
+--               %ra occurs 5 times.
 --       =1stparton_ occurs 2 times.
---         =contact_ occurs 9 times.
+--         =contact_ occurs 4 times.
 --    ___questgiver_ occurs 1 time.
---        __contact_ occurs 7 times.
---           _item1_ occurs 5 times.
+--        __contact_ occurs 3 times.
+--           _item1_ occurs 1 time.
 --           _item2_ occurs 4 times.
---      _questgiver_ occurs 8 times.
---          _reward_ occurs 3 times.
+--      _questgiver_ occurs 7 times.
+--          _reward_ occurs 1 time.
+
 QBN:
 Item _reward_ gold
 Item _item1_ gold_bar

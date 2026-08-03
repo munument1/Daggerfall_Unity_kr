@@ -5,10 +5,11 @@ Quest: __DEMO07
 
 
 QRC:
-
 QuestLogEntry:  [1010]
-%qdt __dirtypit_의 여관 _dirtypit_에서
-_king_를 만난 뒤, 대거폴 성의 _queen_를 찾아가야 한다.
+%qdt:
+__dirtypit_의 여관 _dirtypit_에서
+_king_를 만난 뒤,
+대거폴 성의 _queen_를 찾아가야 한다.
 
 Message: 1030
 이봐요 %pcn 님, 방금 _king_ 항목을 클릭하셨군요!
@@ -17,8 +18,9 @@ Message: 1035
 이봐요 %pcn 님, 방금 _queen_ 항목을 클릭하셨군요!
 
 Message: 1040
-잘하셨습니다, %pcn 님. 당신은 대거폴의 왕과 여왕을
-클릭하셨습니다.
+잘하셨습니다, %pcn 님.
+당신은 대거폴의 왕과 여왕을 클릭하셨습니다.
+
 QBN:
 
 Place _dirtypit_ local tavern

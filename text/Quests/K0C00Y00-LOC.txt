@@ -10,34 +10,30 @@ Quest: K0C00Y00
 DisplayName: 본보기
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>내가 생각한 작은 일에 당신이 적임자일지도
-<ce>모르겠군요. 경쟁 상인이 내 계약을 빼앗아
+<ce>내가 생각한 일에 당신이 적임자일지도 모르겠군요.
+<ce>경쟁 상인이 내 계약을 빼앗아
 <ce>불법적이거나 적어도 부도덕한 거래를 시작했습니다.
-<ce>상황을 바로잡고 _competitor_에게 다시는 내
-<ce>영역을 넘보지 말라는 경고를 보내고 싶습니다.
-<ce>누군가의 머리통을 조금 깨뜨려야 할 수도 있지요.
+<ce>상황을 바로잡고 _competitor_에게
+<ce>다시는 내 영역을 넘보지 말라는 경고를 보내고 싶습니다.
+<ce>누군가의 머리통을 몇 개 깨뜨려야 할 수도 있지요.
 <ce>_reward_골드면 맡겠습니까?
-<ce>
-<ce>
 
 RefuseQuest:  [1001]
-<ce>%oth, 양심에 맡기려니 오히려 성급해지는군요.
+<ce>%oth. 당신의 양심을 기대한 내가 경솔했군요.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. _competitor_는 __storehouse_에
+<ce>좋습니다.
+<ce>_competitor_는 __storehouse_에
 <ce>_storehouse_라는 가게를 가지고 있습니다.
-<ce>그곳에 내가 되찾고 싶은 _mitem_이 있습니다.
-<ce>나오는 길에 이 쪽지를 가게 아무 곳에나 내려놓으십시오.
-<ce>_competitor_가 =2storehouse_일 뒤 _mitem_을
-<ce>더 안전한 곳으로 옮길 예정이니 서둘러야 합니다.
-<ce>그때까지 돌아오지 않으면 보수는 없습니다.
+<ce>그곳에 내가 빼내오길 원하는 _mitem_이 있습니다.
+<ce>나오는 길에는 이 쪽지를 가게 아무 곳에나 놓고 오십시오.
+<ce>_competitor_가 =2storehouse_일 뒤
+<ce>_mitem_을 더 안전한 곳으로 옮길 예정이니 서둘러야 합니다.
+<ce>그때까지 돌아오지 않으면 보수는 받을 수 없습니다.
 <ce>_storehouse_에 경비가 있을 거라는 말은
-<ce>굳이 하지 않아도 되겠지요. 행운을 빕니다.
-<ce>
-<ce>
-<ce>
+<ce>굳이 하지 않아도 되겠지요.
+<ce>행운을 빕니다.
 
 QuestFail:  [1003]
 <ce>장난으로 맡긴 일이 아닙니다, %pcf.
@@ -45,80 +41,90 @@ QuestFail:  [1003]
 
 QuestComplete:  [1004]
 <ce>정말 잘했습니다, %pcf.
-<ce>아, 그래요. 사랑스러운 _mitem_.
-<ce>이것이 바로 _competitor_의 동업자가 %g2⁠에게
-<ce>담보로 맡긴 그 _mitem_이 틀림없군요.
+<ce>아, 아름다운 _mitem_이군요.
+<ce>이것은 틀림없이 _competitor_의 동업자가
+<ce>%g2에게 담보로 맡겼던 바로 그 _mitem_입니다.
 <ce>약속한 _reward_골드를 받을 자격이 충분합니다.
-<ce>
 
 RumorsDuringQuest:  [1005]
-요즘은 사업 경쟁이 유난히 피비린내 나는 시기지.
+요즘은 사업 경쟁이
+유난히 피비린내 나는 시기지.
 <--->
-_qgiver_와 _competitor_는 고스리드와 아코리티보다 더
-지독한 원수라네.
+_qgiver_와 _competitor_는
+고스리드와 아코리티보다도 더 지독한 원수라네.
 
 RumorsPostfailure:  [1006]
-_competitor_가 %g3 새로운 거래를 들먹이며 _qgiver_의 면전에서
-대놓고 비웃고 있지.
+_competitor_가 %g3 최신 거래를 들이밀며
+_qgiver_의 면전에서 대놓고 비웃고 있지.
 <--->
-알고 보니 _competitor_는 _qgiver_가 상상한 것보다 훨씬 더
-독한 상인이더군.
+알고 보니 _competitor_는 _qgiver_가 상상한 것보다
+훨씬 더 만만치 않은 상인이더군.
 
 RumorsPostsuccess:  [1007]
-_competitor_가 _qgiver_에게서 빼앗으려고 %g⁠이 그토록
-애쓴 계약을 잃었다더군.
+_competitor_가 _qgiver_에게서 따내려고
+%g⁠가 그토록 애쓴 계약을 잃었다더군.
 <--->
-_qgiver_는 %g3 옛 계약을 되찾고 배부른 하피처럼 기뻐하고 있지.
+_qgiver_는 %g3 옛 계약을 되찾아
+배부른 하피처럼 기뻐하고 있지.
 
 QuestorPostsuccess:  [1008]
-_mitem_을 되찾아주었으니, 이제 무엇을 도와드릴까요?
+_mitem_을 되찾아주셨으니,
+이제 무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-_competitor_의 앞잡이와는 할 말이 없습니다.
+_competitor_의 앞잡이와는
+할 말이 없습니다.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 _qgiver_는 나를
-__storehouse_의 _storehouse_로 보내 그곳에 보관된 _mitem_을
-'해방'하고 쪽지를 남겨두라고 했다. =2storehouse_일 안에 __qgiver_로
-돌아오면 _reward_골드를 받는다.
+%qdt:
+___qgiver_의 _qgiver_는
+__storehouse_의 _storehouse_에 보관된
+_mitem_을 '해방'하고 쪽지를 남겨두라고 했다.
+
+=2storehouse_일 안에 __qgiver_로 돌아오면
+_reward_ 골드를 받을 수 있다.
 
 Message:  1011
-
 _competitor_,
 
-자네 보물에는 더 나은 경비가 필요하겠군.
+자네 경비를 지켜줄 경비를 구하게.
 
 <ce>친애하는 친구가
 
 Message:  1012
-__competitor_ ___competitor_
+__competitor_
+___competitor_
 
-친애하는 %pcn,
+친애하는 %pcn에게,
 
-쪽지는 잘 받았습니다. 아주 재미있더군요. 이제 고려해볼 만한 제안을
-하나 하지요. 훔친 _mitem_을 내게 가져오면 _gem_으로
-보상하겠습니다. 그 _mitem_을 고용주에게 가져가면 적 하나가
-생길 겁니다.
+쪽지는 잘 받았습니다.
+아주 재미있더군요.
+이제 고려해볼 만한 제안을 하나 하지요.
+
+훔친 _mitem_을 내게 가져오면
+_gem_으로 보상하겠습니다.
+그 _mitem_을 고용주에게 가져간다면
+적 하나를 만들게 될 겁니다.
 
 <ce>_competitor_
 
 Message:  1013
-<ce>어린 소년이 편지를 건네고는
+<ce>어린 소년이 당신에게 편지를 건네고는
 <ce>질문할 틈도 없이 달아납니다.
 
 Message:  1014
-<ce>_competitor_에게 _mitem_을
-<ce>주고 대신 _gem_을 받겠습니까?
+<ce>_competitor_에게 _mitem_을 건네고
+<ce>그 대가로 _gem_을 받겠습니까?
 
 Message:  1015
 <ce>현명한 선택입니다, %pcf.
-<ce>수익성 있는 관계의 시작이 될지도 모르겠군요.
-<ce>반면 _qgiver_가 이익을 보는 날은 이제 끝나가는지도 모르죠.
-<ce>
+<ce>서로 돈이 되는 관계의 시작일지도 모르겠군요.
+<ce>반면 _qgiver_가 이익을 챙기던 시절은
+<ce>이제 끝나가고 있을지도 모르지요.
 
 Message:  1016
-<ce>그렇다면 왜 여기까지 왔는지 모르겠군.
-<ce>당장 나가시오, %pcf.
+<ce>그렇다면 왜 여기까지 왔는지 모르겠군요.
+<ce>당장 나가십시오, %pcf.
 
 -- Symbols used in the QRC file:
 --
@@ -126,21 +132,22 @@ Message:  1016
 --               %g2 occurs 1 time.
 --               %g3 occurs 2 times.
 --              %oth occurs 1 time.
---              %pcf occurs 6 times.
---              %pcn occurs 2 times.
+--              %pcf occurs 4 times.
+--              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
 --     =2storehouse_ occurs 2 times.
---    ___competitor_ occurs 5 times.
+--    ___competitor_ occurs 1 time.
 --        ___qgiver_ occurs 1 time.
 --     __competitor_ occurs 1 time.
 --         __qgiver_ occurs 1 time.
 --     __storehouse_ occurs 2 times.
---      _competitor_ occurs 16 times.
---             _gem_ occurs 3 times.
---           _mitem_ occurs 11 times.
+--      _competitor_ occurs 12 times.
+--             _gem_ occurs 2 times.
+--           _mitem_ occurs 9 times.
 --          _qgiver_ occurs 7 times.
---          _reward_ occurs 13 times.
+--          _reward_ occurs 3 times.
 --      _storehouse_ occurs 3 times.
+
 QBN:
 Item _letter_ letter used 1011
 Item _mitem_ magic_item

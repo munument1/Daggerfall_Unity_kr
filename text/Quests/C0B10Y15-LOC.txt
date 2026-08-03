@@ -9,125 +9,122 @@ Quest: C0B10Y15
 DisplayName: 유물
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>%pct, __questgiver_에서
-<ce>%god⁠의 잃어버린 _item_ 중 하나를
-<ce>되찾는 위험한 임무를 맡아줄 사람이 필요합니다.
-<ce>유물을 만들고도 사원을 배신해 악에 빠진 =lich_의 힘에
-<ce>맞서야 합니다. 그는 이제 리치가 되어 여전히
-<ce>_item_을 지키고 있습니다. 맡으시겠습니까?
-<ce>
-<ce>
+<ce>%god의 잃어버린 _item_ 중 하나를 되찾는
+<ce>위험한 임무를 맡아줄 사람이 필요합니다.
+<ce>그 유물을 만든 뒤 신전을 배신하고 악에 빠진
+<ce>=lich_의 힘에 맞서야 합니다.
+<ce>그자는 이제 리치가 되어 여전히 _item_을 지키고 있습니다.
+<ce>이 임무를 맡으시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>이해합니다. 리치는 젊고 경험이
-<ce>부족한 이가 맞서기에는 무서운 상대입니다.
-<ce>더 성장한 뒤 다시 도전할 수도 있겠지요.
-<ce>%god⁠께서 함께하시길.
-<ce>
+<ce>이해합니다.
+<ce>리치는 젊고 경험이 부족한 사람이
+<ce>맞서기에는 무서운 상대이지요.
+<ce>더 성장한 뒤 다시 도전할 수도 있을 겁니다.
+<ce>%god께서 함께하시길.
 
 AcceptQuest:  [1002]
-<ce>그 용기는 존경스럽지만, 앞으로 마주할 위험을 생각하면
-<ce>두렵군요. =lich_는 ___mondung_에서
-<ce>%god⁠의 _item_을 지키고 있습니다.
-<ce>리치를 죽일 필요는 없습니다. _item_만 되찾아
-<ce>이곳 __questgiver_으로 가져오십시오. =qtime_일 안에
-<ce>소식이 없으면 당신을 위해 망자의 노래를 부르겠습니다.
-<ce>%god⁠의 축복이 함께하기를, %pcn.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>그 용기는 존경스럽지만,
+<ce>앞으로 마주할 위험을 생각하면 두렵군요.
+<ce>=lich_는 ___mondung_에서
+<ce>%god의 _item_을 지키고 있습니다.
+<ce>리치를 죽일 필요는 없습니다.
+<ce>_item_만 되찾아 이곳 __questgiver_으로 가져오십시오.
+<ce>=qtime_일 안에 소식이 없으면
+<ce>당신을 위해 망자의 노래를 부르겠습니다.
+<ce>%god의 축복이 함께하기를, %pcn.
 
 QuestFail:  [1003]
-<ce>떠나기를 주저하는 마음은 이해합니다,
-<ce>%pcf. 하지만 기다린다고
-<ce>위험이 줄어드는 것은 아닙니다.
+<ce>떠나기를 주저하는 마음은 이해합니다, %pcf.
+<ce>하지만 기다린다고 위험이 줄어드는 것은 아닙니다.
 
 QuestComplete:  [1004]
-<ce>위대한 %god⁠을 찬양하라!
-<ce>정말 성공하리라고는 감히 기대하지 못했습니다.
-<ce>이 공로로 %god⁠의 은총이 분명 당신을 비출 겁니다.
-<ce>사원의 작은 감사 표시로 이 마법의 _reward_을 받으십시오.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>위대한 %god을 찬양하라!
+<ce>당신이 정말 성공하리라고는 감히 기대하지 못했습니다.
+<ce>이 공로로 %god의 은총이 분명 당신을 비출 겁니다.
+<ce>신전의 작은 감사 표시로
+<ce>이 마법의 _reward_을 받아주십시오.
 
 RumorsDuringQuest:  [1005]
-<ce>__questgiver_은 오래전에 잃은 _item_을 되찾고 싶어
-<ce>하지만, 리치 =lich_에게 맞설 사람이 과연 있을까요?
+<ce>__questgiver_에서는 오래전에 잃은 _item_을
+<ce>되찾고 싶어 하지만,
+<ce>리치 =lich_에게 맞설 사람이 과연 있을까요?
 
 RumorsPostfailure:  [1006]
-<ce>__questgiver_에서는 결국 _item_이
-<ce>___mondung_에 있었던 게 아니라고 생각하는 모양입니다.
+<ce>__questgiver_에서는 이제
+<ce>_item_이 애초에 ___mondung_에 없었다고
+<ce>생각하는 모양입니다.
 
 RumorsPostsuccess:  [1007]
-<ce>___mondung_에 들어가 __questgiver_의 _item_을
-<ce>가지고 돌아온 %ra 이야기를 들었습니까?
+<ce>___mondung_에 들어가
+<ce>__questgiver_의 _item_을 가지고 돌아온
+<ce>%ra 이야기를 들었습니까?
 
 QuestorPostsuccess:  [1008]
-<ce>%pcf, 리치에게 맞서준 뒤로는
-<ce>언제든 이곳에서 환영받을 겁니다.
+<ce>%pcf, 그 리치에게 맞서준 뒤로는
+<ce>언제든 이곳에서 환영받을 겁니다!
 
 QuestorPostfailure:  [1009]
-<ce>___mondung_에서 _item_을
-<ce>되찾지 못한 것 자체는 탓하지 않겠습니다.
-<ce>하지만 끝낼 수 없는 임무를 맡았다는 사실은 실망스럽군요.
-<ce>
+<ce>___mondung_에서 _item_을 되찾지 못한 것 자체는
+<ce>탓하지 않겠습니다.
+<ce>하지만 끝낼 수 없는 임무를 맡았다는 사실은
+<ce>실망스럽군요.
 
 Message:  1015
 <ce>어디선가 불길한 목소리가 속삭입니다.
-<ce>
-<ce>“_item_은 네 것도,
+<ce>"_item_은 네 것도,
 <ce>__questgiver_의 감상적인 바보들 것도 아니다.
-<ce>그러니 정당한 내 소유물을 되찾아가겠다.”
-<ce>
+<ce>그러니 정당한 내 소유물을 되찾아가겠다."
 <ce>_item_이 사라집니다.
 
 Message:  1020
-%qdt: ___questgiver_의 __questgiver_은
-___mondung_에서 신성한 물건 _item_을 되찾으라고 했다.
-문제는 리치 =lich_가 지키고 있다는 점이다. =lich_를 죽일
-필요는 없으며, _item_만 되찾아 =qtime_일 안에 _questgiver_에게
-돌아가면 된다.
+%qdt:
+___questgiver_의 __questgiver_는
+___mondung_에서 신성한 물건 _item_을
+되찾으라고 했다.
+
+문제는 리치 =lich_가 그 물건을 지키고 있다는 점이다.
+=lich_를 죽일 필요는 없다.
+
+_item_만 되찾아 =qtime_일 안에
+_questgiver_에게 돌아가면 된다.
 
 Message:  1030
 <ce>이것이 분명 __questgiver_에서
 <ce>오래전에 잃어버린 _item_입니다.
 
 Message:  1035
-<ce>뭐라고요? 신성한 _item_을 되찾은
-<ce>데다 사악한 =lich_까지 죽였습니까?
-<ce>당신은 진정 %god⁠의 총애를 받는 자입니다.
+<ce>뭐라고요?
+<ce>신성한 _item_을 되찾은 데다
+<ce>사악한 =lich_까지 죽였습니까?
+<ce>당신은 진정 %god의 총애를 받는 자입니다.
 <ce>우리 교단에서 크게 출세할 것이 분명합니다.
-<ce>
 
 Message:  1040
 <ce>=lich_가 분노에 차 쉭쉭거립니다.
-<ce>
-<ce>“__questgiver_의 개들아, 내 _item_은 절대
-<ce>가질 수 없다! 내가 만들었으니 내가 간직할 것이다.
-<ce>무덤조차도 나를 막을 수 없다.”
-<ce>
-<ce>
+<ce>"__questgiver_의 개들아!
+<ce>내 _item_은 절대 가질 수 없다!
+<ce>내가 만들었으니 내가 간직할 것이다.
+<ce>무덤조차도 나를 막을 수 없다."
 
 -- Symbols used in the QRC file:
 --
---              %god occurs 8 times.
+--              %god occurs 7 times.
 --              %pcf occurs 2 times.
---              %pcn occurs 2 times.
+--              %pcn occurs 1 time.
 --              %pct occurs 1 time.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
---            =lich_ occurs 11 times.
---           =qtime_ occurs 3 times.
---       ___mondung_ occurs 6 times.
---    ___questgiver_ occurs 11 times.
---            _item_ occurs 19 times.
---      _questgiver_ occurs 3 times.
---          _reward_ occurs 2 times.
+--            =lich_ occurs 7 times.
+--           =qtime_ occurs 2 times.
+--       ___mondung_ occurs 5 times.
+--    ___questgiver_ occurs 1 time.
+--            _item_ occurs 15 times.
+--      _questgiver_ occurs 1 time.
+--          _reward_ occurs 1 time.
+
 QBN:
 Item _item_ talisman
 Item _reward_ magic_item

@@ -9,39 +9,37 @@ Quest: C0C00Y13
 DisplayName: 심부름
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>축복이 함께하기를, %pcn.
-<ce>비록 그대가 이교도이며 우리 신전을 섬기지는
-<ce>않지만 말입니다. 나는 _qgiver_입니다.
+<ce>비록 그대가 이교도이며
+<ce>우리 신전을 섬기지는 않지만 말입니다.
+<ce>나는 _qgiver_입니다.
 <ce>__qgiver_의 호의를 얻고 싶다고 들었습니다.
-<ce>이 _religitem_을 =traveltime_일 안에 ___priest_로
-<ce>배달해주면 그대를 좋게 말해두겠습니다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>이 _religitem_을 =traveltime_일 안에
+<ce>___priest_로 배달해주면
+<ce>그대를 좋게 말해두겠습니다.
 
 RefuseQuest:  [1001]
-<ce>손해 보는 것은 그대입니다. 당분간 이 신전의 호의를
-<ce>구할 생각은 하지 마십시오, %pcn.
-<ce>
+<ce>손해 보는 것은 그대입니다.
+<ce>당분간 이 신전의 호의를 구할 생각은
+<ce>하지 마십시오, %pcn.
 
 AcceptQuest:  [1002]
 <ce>여기 _religitem_이 있습니다.
-<ce>___priest_의 __priest_에 있는 _priest_에게
-<ce>가져가십시오. 아, 경쟁 신전에서 그대를 막으려고 폭한들을
-<ce>보낼 수도 있다는 말을 깜빡할 뻔했군요.
-<ce>
-<ce>
+<ce>___priest_의 __priest_에 있는
+<ce>_priest_에게 가져가십시오.
+<ce>아, 경쟁 신전에서 그대를 막으려고
+<ce>폭한들을 보낼 수도 있다는 말을
+<ce>깜빡할 뻔했군요.
 
 QuestComplete:  [1004]
 <ce>신의 은총이 함께하기를, %pcn.
-<ce>이곳에는 이 _religitem_이 절실히 필요했습니다.
-<ce>
+<ce>이곳에는 이 _religitem_이
+<ce>절실히 필요했습니다.
 
 RumorsDuringQuest:  [1005]
-두 신전이 그 _religitem_을 먼저 차지하려고 경쟁 중입니다.
+두 신전이 그 _religitem_을
+먼저 차지하려고 경쟁하고 있습니다.
 
 RumorsPostfailure:  [1006]
 _priest_는 끝내 %g3 _religitem_을 받지 못했고,
@@ -52,38 +50,42 @@ RumorsPostsuccess:  [1007]
 그 _religitem_을 손에 넣었습니다.
 
 QuestorPostsuccess:  [1008]
-%god⁠의 축복이 함께하기를. 물론 %pcf⁠을 기억합니다.
+%god⁠의 축복이 함께하기를.
+물론 %pcf⁠을 기억합니다.
 잘 지냈습니까, 나의 아이여?
 
 QuestorPostfailure:  [1009]
 _priest_는 끝내 _religitem_을 받지 못했습니다.
-나는 전혀 유쾌하지 않습니다.
+나는 전혀 기쁘지 않습니다.
 
 QuestLogEntry:  [1010]
-%qdt: __qgiver_의 _qgiver_는
-_religitem_을 ___priest_의 __priest_에
-있는 _priest_에게 배달하라고 했다. =traveltime_일 안에 도착해야 한다.
+%qdt:
+__qgiver_의 _qgiver_는
+_religitem_을 ___priest_의 __priest_에 있는
+_priest_에게 전달하라고 했다.
+
+=traveltime_일 안에 도착해야 한다.
 
 Message:  1011
-<ce>그 _religitem_은 절대로 __priest_에
-<ce>도착하지 못한다. 대신 네 머리를 그들에게 배달해주마!
-<ce>
-<ce>
+<ce>그 _religitem_은 절대로
+<ce>__priest_에 도착하지 못한다.
+<ce>대신 네 머리를 그들에게 배달해주마!
 
 -- Symbols used in the QRC file:
 --
 --               %g3 occurs 1 time.
 --              %god occurs 1 time.
 --              %pcf occurs 1 time.
---              %pcn occurs 4 times.
+--              %pcn occurs 3 times.
 --              %qdt occurs 1 time.
---               %ra occurs 16 times.
---      =traveltime_ occurs 9 times.
---        ___priest_ occurs 6 times.
+--               %ra occurs 1 time.
+--      =traveltime_ occurs 2 times.
+--        ___priest_ occurs 3 times.
 --         __qgiver_ occurs 3 times.
 --          _priest_ occurs 5 times.
 --          _qgiver_ occurs 3 times.
---       _religitem_ occurs 10 times.
+--       _religitem_ occurs 9 times.
+
 QBN:
 Item _religitem_ religious
 

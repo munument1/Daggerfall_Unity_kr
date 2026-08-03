@@ -10,78 +10,83 @@ Quest: B0C00Y10
 DisplayName: 오크 소동
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>나는 _qgiver_입니다. 당신은 이 기사단의 일원이
-<ce>아니며, 아직 믿을 만한 사람인지도 알 수 없습니다.
-<ce>이 지역을 괴롭히는 오크 도적단의 우두머리를
-<ce>죽인다면 우리 생각이 달라질지도 모르지요.
+<ce>나는 _qgiver_입니다.
+<ce>당신은 이 기사단의 일원이 아니며,
+<ce>아직 믿을 만한 사람인지도 알 수 없습니다.
+<ce>이 지역을 괴롭히는 오크 도적단의 우두머리를 죽인다면
+<ce>우리 생각이 달라질지도 모르지요.
 <ce>그런 일을 감당할 배짱이 있습니까?
-<ce>
-<ce>
 
 RefuseQuest:  [1001]
-<ce>별로 놀랍지도 않군요.
+<ce>왜 놀랍지도 않은지 모르겠군요.
 <ce>우리의 존경을 얻을 준비가 되면 돌아오십시오.
-<ce>
 
 AcceptQuest:  [1002]
-<ce>가능한 한 많은 오크를 죽이되 우두머리
-<ce>=monster_만큼은 반드시 처리하십시오.
+<ce>가능한 한 많은 오크를 죽이되,
+<ce>우두머리 =monster_만큼은 반드시 처리하십시오.
 <ce>그 사악한 무리는 ___dungeon_에 숨어 있습니다.
-<ce>=2dung_일 안에 돌아오지 않으면, 모두가 말하던
-<ce>대로 당신이 겁쟁이라는 사실을 알게 되겠지요.
-<ce>
-<ce>
-<ce>
+<ce>=2dung_일 안에 돌아오지 않으면,
+<ce>모두가 말한 대로 당신이 겁쟁이라는 사실을
+<ce>확인하게 되겠지요.
 
 QuestComplete:  [1004]
 <ce>흠. 기사단 가입을 고려해볼 만하겠군요.
 <ce>제법 훌륭한 솜씨였습니다, %pcn.
-<ce>
 
 RumorsDuringQuest:  [1005]
-그 오크 부족은 지금까지 기사단을 잘도 피해왔습니다.
+그 오크 부족은 지금까지
+기사단을 잘도 피해왔습니다.
 <--->
-우두머리가 없다면 그 오크 부족은 갈피를 잡지 못할 겁니다.
+우두머리가 없다면 그 오크 부족은
+갈피를 잡지 못할 겁니다.
 
 RumorsPostfailure:  [1006]
-우두머리가 살아 있는 한 오크들은 다시 돌아올 겁니다.
+우두머리가 살아 있는 한,
+오크들은 다시 돌아올 겁니다.
 
 RumorsPostsuccess:  [1007]
-어디선가 나타난 %ra⁠가 오크 우두머리를 죽이고 사라졌답니다.
+어디선가 나타난 %ra⁠가
+오크 우두머리를 죽이고 사라졌답니다.
 
 QuestorPostsuccess:  [1008]
-오크 살해자여, 무엇을 도와드릴까요?
+오크 사냥꾼이여,
+무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-오크와 어울리는 자에게 낭비할 시간은 없습니다.
+오크 편을 드는 자에게
+낭비할 시간은 없습니다.
 <--->
-내가 왜 형편없는 오크 애호가와 이야기해야 합니까?
+내가 왜 형편없는 오크 애호가와
+이야기해야 합니까?
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 기사단에
-있는 _qgiver_는 ___dungeon_을 근거지로 삼은 오크 무리를
-소탕하라고 했다. 특히 우두머리 =monster_를 죽여야 한다.
-=2dung_일 안에 %g2⁠에게 돌아가지 않으면 %g⁠은 내가 죽었다고
-여길 것이다.
+%qdt:
+___qgiver_ 기사단의 _qgiver_는
+___dungeon_을 근거지로 삼은 오크 무리를
+소탕하라고 했다.
+
+특히 우두머리 =monster_를 처치해야 한다.
+=2dung_일 안에 %g2에게 돌아가지 않으면
+%g는 내가 죽었다고 여길 것이다.
 
 Message:  1011
 <ce>=monster_는 죽었습니다.
-<ce>우두머리를 잃은 오크들은 이제 성가신
-<ce>존재 이상이 되지 못할 것입니다.
+<ce>우두머리를 잃은 오크들은 이제
+<ce>성가신 존재 이상이 되지 못할 것입니다.
 
 -- Symbols used in the QRC file:
 --
 --                %g occurs 1 time.
 --               %g2 occurs 1 time.
---              %pcn occurs 2 times.
+--              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
 --           =2dung_ occurs 2 times.
 --         =monster_ occurs 3 times.
 --       ___dungeon_ occurs 2 times.
---        ___qgiver_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+
 QBN:
 
 Person _qgiver_ group Questor

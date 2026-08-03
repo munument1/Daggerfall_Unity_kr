@@ -9,101 +9,110 @@ Quest: M0B20Y02
 DisplayName: 거인 무리
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>그래, 자네에게 맡길 작은 일이 하나 있어.
 <ce>아무에게나 주는 일은 아니지만,
 <ce>자네가 일을 잘한다는 건 알거든.
-<ce>죽여야 할 거인 무리가 있다. 보수는 평범하게
-<ce>_reward_골드다. 해볼 생각 있나?
-<ce>
+<ce>죽여야 할 거인 무리가 있다.
+<ce>보수는 평범하게 _reward_골드다.
+<ce>해볼 생각 있나?
 
 RefuseQuest:  [1001]
-<ce>좋아, 마음대로 해. 자네 취향에
-<ce>딱 맞는 일인 줄 알았을 뿐이야.
+<ce>좋아, 마음대로 해.
+<ce>자네 취향에 딱 맞는 일인 줄 알았을 뿐이야.
 
 AcceptQuest:  [1002]
-<ce>좋아, %pcf. 의뢰인의 말로는 거인들이
-<ce>요새 ___mondung_에 있다더군. 모두 여섯 마리다.
+<ce>좋아, %pcf.
+<ce>의뢰인의 말로는 거인들이
+<ce>요새 ___mondung_에 있다더군.
+<ce>모두 여섯 마리다.
 <ce>한 놈이라도 살아 있으면 돈을 주지 않겠답니다.
-<ce>기한은 =1stparton_일이다. 알겠나, %pcf? 좋아.
-<ce>
-<ce>
-<ce>
+<ce>기한은 =1stparton_일이다.
+<ce>알겠나, %pcf? 좋아.
 
 QuestFail:  [1003]
-<ce>그 여섯 거인이 모두 숨을 멈출
-<ce>때까지는 잡담할 시간이 없다.
-<ce>
+<ce>그 여섯 거인이 모두 숨을 멈출 때까지
+<ce>잡담할 시간은 없어.
 
 QuestComplete:  [1004]
-<ce>%oth, 그 거인들은 뭐가 덮쳤는지도 몰랐겠지,
-<ce>%pcf? 약속대로 _reward_골드다.
-<ce>
+<ce>%oth, 그 거인들은
+<ce>뭐에 당했는지도 몰랐겠지, %pcf?
+<ce>약속대로 _reward_골드다.
 
 RumorsDuringQuest:  [1005]
-___mondung_에 거인 무리가 있지만 누구에게도 피해를 주진
-않아.
+___mondung_에 거인 무리가 있지만,
+누구도 괴롭히지는 않아.
 <--->
-%t⁠은 ___mondung_의 거인들을 이번에 완전히 없애려
-한다더군.
+%t⁠은 ___mondung_의 거인들을
+이번에 완전히 없애려 한다더군.
 
 RumorsPostfailure:  [1006]
-무언가가 거인들을 겁줘서 쫓아냈다는데, 대체 뭐였을까?
+무언가가 그 거인들을 겁줘서 떠나게 했다는데,
+대체 뭐였을까?
 <--->
-내가 그 거인들이라도 달아났을 거야. 오가는 사람이 너무 많잖아.
+내가 그 거인들이라도 달아났을 거야.
+오가는 사람이 너무 많잖아.
 
 RumorsPostsuccess:  [1007]
-새 거인 무리가 ___mondung_에 들어오기까지 얼마나 걸릴까?
+새로운 거인 무리가 ___mondung_에 들어오기까지
+얼마나 걸릴까?
 <--->
-그 거인들이 조금 불쌍하군. 사실 누구를 괴롭힌 것도 아닌데.
+그 거인들이 조금 불쌍하군.
+사실 누구를 괴롭힌 것도 아닌데.
 
 QuestorPostsuccess:  [1008]
-<ce>거인은 강한 상대지. 잘했다, %pcf.
+<ce>거인은 강한 상대지.
+<ce>잘했다, %pcf.
 <ce>자네는 길드에서 크게 될 거야.
 
 QuestorPostfailure:  [1009]
-<ce>거인이 자네에게 너무 벅찼나? 길드에서는 거인
-<ce>대신 난쟁이라도 잡으러 보냈어야 했겠군.
-<ce>
+<ce>거인이 자네에게 너무 벅찼나?
+<ce>길드에서는 거인 대신
+<ce>피그미나 잡으러 보냈어야 했겠군.
 
 QuestLogEntry:  [1010]
-<ce>거인 여섯 마리를 모두 죽였습니다.
+<ce>거인들을 모두 처치했습니다.
 
 Message:  1020
-<ce>여기는 거인의 땅이다! 보잘것없는 네
-<ce>땅으로 돌아가라, %ra 파리야!
-<ce>
+<ce>여기는 거인의 땅이다!
+<ce>보잘것없는 네 땅으로 돌아가라,
+<ce>이 %ra 파리야!
 <--->
-<ce>어제도 %ra 하나를 먹었지. 맛이 좋더군.
-<ce>
+<ce>어제도 %ra 하나를 먹었지.
+<ce>맛이 좋더군.
 <--->
-<ce>박살 내주마! 납작하게 짓눌러주마!
+<ce>박살 내주마!
+<ce>납작하게 짓눌러주마!
 
 Message:  1030
-%qdt: ___questgiver_의 전사 길드가 거인 여섯
-마리를 죽이라고 나를 고용했다. 놈들의 은신처는 ___mondung_다.
-임무를 완수하고 =1stparton_일 안에 돌아와야 보수를 받는다.
+%qdt:
+___questgiver_의 전사 길드는
+___mondung_에 은신한 거인 여섯 마리를
+처치해달라고 했다.
+
+임무를 완수하고 =1stparton_일 안에 돌아와야
+보수를 받을 수 있다.
 
 Message:  1080
-<ce>이봐 %pct, 살육을 원한다면 이 지도를
-<ce>가지고 ___newdung_로 가봐.
-<ce>거기엔 널린 게 살육이니까.
-<ce>
+<ce>이봐, %pct.
+<ce>살육을 원한다면 이 지도를 들고
+<ce>___newdung_로 가봐.
+<ce>거기에는 널린 게 살육이니까.
 
 -- Symbols used in the QRC file:
 --
 --              %oth occurs 1 time.
---              %pcf occurs 5 times.
+--              %pcf occurs 4 times.
 --              %pct occurs 1 time.
 --              %qdt occurs 1 time.
 --               %ra occurs 2 times.
 --                %t occurs 1 time.
---       =1stparton_ occurs 3 times.
+--       =1stparton_ occurs 2 times.
 --       ___mondung_ occurs 5 times.
 --       ___newdung_ occurs 1 time.
 --    ___questgiver_ occurs 1 time.
---          _reward_ occurs 5 times.
+--          _reward_ occurs 2 times.
+
 QBN:
 Item _reward_ gold
 

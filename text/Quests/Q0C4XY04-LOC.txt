@@ -9,99 +9,109 @@ Quest: Q0C4XY04
 DisplayName: 데이드라의 심장
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>==questgiver_가 다시 그대의 친절과 힘을 빌려야겠소.
-<ce>주문에 쓸 데이드라의 심장이 필요한데,
-<ce>그대가 직접 갓 뽑은 것이어야 하오.
-<ce>사랑하는 이모들을 위해 데이드라
-<ce>하나를 찾아 죽여주겠소?
-<ce>
-<ce>
+<ce>==questgiver_가 다시 그대의 친절과 힘을
+<ce>빌리고자 하오.
+<ce>주문에 쓸 데이드라의 심장이 필요하나,
+<ce>갓 뽑은 심장이어야 하며
+<ce>그대가 직접 뽑아야 하오.
+<ce>사랑하는 이모들을 위해 데이드라 하나를
+<ce>찾아 죽여 주겠소?
 
 RefuseQuest:  [1001]
-<ce>싫다고? 오, 슬픈 밤이여.
+<ce>싫다고? 아, 슬픈 밤이여.
 
 AcceptQuest:  [1002]
 <ce>여신께서 우리에게 미소 지으시는군, %pcn.
 <ce>근처 던전에 데이드라가 들끓고 있소.
-<ce>군주의 심장은 구더기로 썩었으니
-<ce>피하고 다른 데이드라의 심장을 가져오시오.
-<ce>___mondung_으로 가 데이드라를 죽이고 해가
-<ce>=1stparton_번 지기 전에 돌아오시오, %pcn.
-<ce>
-<ce>
-<ce>
+<ce>데이드라 군주의 심장만 아니면 무엇이든 좋소.
+<ce>그들의 심장은 벌레가 들끓어 썩었으니까.
+<ce>___mondung_으로 가서 데이드라를 죽이고,
+<ce>해가 =1stparton_번 지기 전에
+<ce>심장을 가져오시오, %pcn.
 
 QuestFail:  [1003]
-<ce>심장은 ___mondung_에 있는 데이드라의 가슴속에
-<ce>있소, %pcn. 여기서 찾지 마시오.
-<ce>
-<ce>
+<ce>심장은 ___mondung_에 있는
+<ce>데이드라의 가슴속에 있소, %pcn.
+<ce>여기서 찾지 마시오.
 
 QuestComplete:  [1004]
-<ce>보시오! %pcn⁠의 피 묻은 손에서 아직도 김이
-<ce>나고 뛰고 있지 않소. 식기 전에 짭짤한 수프에 넣어야겠군.
-<ce>%pcn, 수고에 대한 _reward_을
-<ce>받으시오. 가엾은 마녀들에게 참 잘해주었소.
-<ce>
-<ce>
-<ce>
+<ce>보시오! %pcn의 피 묻은 손에서
+<ce>아직도 김이 나고 뛰고 있지 않소!
+<ce>열기가 식기 전에 소금기 도는 수프에 넣어야겠군.
+<ce>%pcn, 수고에 대한 _reward_을 받으시오.
+<ce>가엾은 마녀들에게 참 잘해 주었소.
 
 RumorsDuringQuest:  [1005]
-___mondung_의 데이드라들이 무언가 꾸미는 게 분명해.
-엄청난 무리야!
+___mondung_의 데이드라들이
+무언가 꾸미는 게 분명해.
+저렇게 많이 모이다니!
 <--->
-%god⁠이 우리를 저주했나 봐. 아니고서야 데이드라들이 왜
+%god⁠이 우리를 저주했나 봐.
+아니고서야 데이드라들이 왜
 ___mondung_에 몰려들었겠어?
 
 RumorsPostfailure:  [1006]
-%god⁠께 감사해. 데이드라들이 ___mondung_에서 떠났어.
-며칠 동안 잠도 못 잤다고!
+%god⁠께 감사해.
+데이드라들이 ___mondung_에서 떠났어.
+며칠 밤을 잠도 못 잤다고!
 <--->
-데이드라들이 나타났을 때처럼 신비롭게 ___mondung_에서 떠났어.
-잘됐지.
+데이드라들은 나타났을 때처럼
+수수께끼처럼 ___mondung_을 떠났어.
+속이 다 시원하군.
 
 RumorsPostsuccess:  [1007]
-어젯밤처럼 별이 어두워지는 것은 데이드라가 죽었다는 징조야.
+어젯밤처럼 별들이 어두워지는 것은
+데이드라의 죽음을 알리는 징조야.
 <--->
-어젯밤 숲의 음악을 들었어? 마녀들이 축하하는 게 분명해.
+어젯밤 숲에서 들린 음악을 들었어?
+마녀들이 축하하는 게 분명해.
 
 QuestorPostsuccess:  [1008]
-==questgiver_의 친구여, 그대와 _reward_은 잘 지내고 있소?
+==questgiver_의 친구여,
+그대와 _reward_은 잘 지내고 있소?
 
 QuestorPostfailure:  [1009]
 <ce>스튜에 넣을 심장을 기대했소, %pcf.
-<ce>너무 바빴다면 말했어야지.
-<ce>세워둔 계획을 모두 버려야 했소.
-<ce>자네는 우리의 친구지만... 그래도 슬프군.
-<ce>
-<ce>
+<ce>너무 바빴다면 말했어야 했소.
+<ce>세워 둔 계획을 모두 버려야 했으니 말이오.
+<ce>그대는 우리의 친구지만...
+<ce>그래도 우리는 슬프오.
 
 Message:  1011
-_questgiver_는 =questgiver_이며 ==questgiver_의 일원이야.
+_questgiver_는 =questgiver_이며
+==questgiver_의 일원이야.
 <--->
-그녀는 %reg⁠에 거처를 둔 마녀 중 하나야.
+그녀는 %reg⁠에 거처를 둔
+마녀 가운데 하나야.
 
 Message:  1012
 ___mondung_은 뱀파이어 소굴이라는 소문이 있어.
 <--->
-밤의 종족들이 ___mondung_에 살지. 낮에는 절대 나오지 않아.
+밤의 종족들이 ___mondung_에 살지.
+낮에는 절대 나오지 않아.
 <--->
-___mondung_? 거긴 오크 요새 아니야?
+___mondung_?
+거긴 오크 요새 아니야?
 <--->
-언데드가 ___mondung_의 복도를 돌아다녀. 가까이 가지 않을
-거야.
+언데드가 ___mondung_의 복도를 돌아다닌대.
+나는 가까이 가지 않겠어.
 
 Message:  1015
-%qdt: ==questgiver_의 _questgiver_는
-___mondung_으로 가 유혹자, 데이드로스, 화염 또는 서리 데이드라
-가운데 하나를 죽이고 심장을 가져오라고 했다. =1stparton_일 안에
+%qdt:
+==questgiver_의 _questgiver_는
+___mondung_으로 가서 데이드라의 심장을
+가져오라고 했다.
+
+유혹자, 데이드로스, 화염 데이드라,
+서리 데이드라 가운데 무엇이든 상관없다.
+
+=1stparton_일 안에 심장을 가지고
 ___questgiver_로 돌아가야 한다.
 
 Message:  1040
-<ce>아직 꿈틀거리는 시체에서 완벽한 심장을 뽑아냅니다.
-<ce>
+<ce>아직 꿈틀거리는 시체에서
+<ce>온전한 심장을 뽑아냅니다.
 
 -- Symbols used in the QRC file:
 --
@@ -109,12 +119,13 @@ Message:  1040
 --              %pcf occurs 1 time.
 --              %pcn occurs 5 times.
 --              %qdt occurs 1 time.
---              %reg occurs 3 times.
---       =1stparton_ occurs 4 times.
---     ==questgiver_ occurs 6 times.
---       ___mondung_ occurs 16 times.
---    ___questgiver_ occurs 3 times.
---          _reward_ occurs 14 times.
+--              %reg occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--     ==questgiver_ occurs 4 times.
+--       ___mondung_ occurs 11 times.
+--    ___questgiver_ occurs 1 time.
+--          _reward_ occurs 2 times.
+
 QBN:
 Item _reward_ malachite
 Item _heart_ daedra_heart

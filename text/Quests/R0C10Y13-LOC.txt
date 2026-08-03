@@ -9,101 +9,106 @@ Quest: R0C10Y13
 DisplayName: 평화의 선물
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>외교적으로 중요한 임무가 있네.
-<ce>평화를 위한 선물을 교환해야 하지.
-<ce>내 친구 _contact_에게 가져다주겠나?
-<ce>
-<ce>
+<ce>외교적으로 중요한 임무가 하나 있습니다.
+<ce>평화를 위한 선물을 교환해야 하지요.
+<ce>부탁인데 제 친구 _contact_에게
+<ce>이 선물을 가져다주시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>보상이 적어서인가, 귀찮아서인가, 아니면
-<ce>임무가 하찮아서인가, %pcf? 상관없네.
-<ce>정치적 입지를 다지고 싶은 다른 %ra⁠를 찾으면 되니까.
-<ce>
-<ce>
-<ce>
+<ce>보상이 적어서입니까, 귀찮아서입니까,
+<ce>아니면 임무가 하찮아서입니까, %pcf?
+<ce>상관없습니다.
+<ce>정치적 입지를 높이고 싶은 다른 %ra를
+<ce>쉽게 찾을 수 있으니까요.
 
 AcceptQuest:  [1002]
-<ce>좋네, %pcf. 이 _item_을 __palace_의 궁전으로
-<ce>가져가 _contact_라는 =contact_를 찾게.
-<ce>%G⁠가 기다리고 있을 것이며 수고비도 줄 걸세.
-<ce>어서 출발하게, %pcf.
-<ce>
-<ce>
-<ce>
+<ce>좋습니다, %pcf. 잘 들으십시오.
+<ce>이 _item_을 __palace_의 궁전으로 가져가
+<ce>_contact_라는 =contact_를 찾으세요.
+<ce>그 사람이 바로 수신인입니다.
+<ce>%G가 당신을 기다리고 있을 것이며,
+<ce>수고에 대한 보상도 줄 가능성이 큽니다.
+<ce>어서 출발하십시오.
+<ce>실패하지 마십시오, %pcf.
 
 QuestFail:  [1003]
-<ce>어서 가게! 잡담할 시간이 없네.
-<ce>할 일이 많지 않은가.
-<ce>
+<ce>어서 가십시오!
+<ce>잡담할 때가 아닙니다.
+<ce>당신에게는 해야 할 일이 있습니다.
 
 QuestComplete:  [1004]
-<ce>아, 아름다운 _item_이군. _questgiver_가 보냈나?
-<ce>어쩌면 모든 것이 오해였을지도 모르겠어.
-<ce>수고비로 _reward_골드를 주지, %pcf.
-<ce>
-<ce>
-<ce>
+<ce>오, 정말 아름다운 _item_이군요.
+<ce>_questgiver_가 보냈다고요?
+<ce>그렇다면 모든 일이 단순한 오해였을지도 모르겠군요.
+<ce>수고한 대가로 _reward_골드를 드리겠습니다, %pcf.
 
 RumorsDuringQuest:  [1005]
-_contact_가 _questgiver_와의 동맹을 깨려 한다는 소문이
-있어.
+_contact_가 _questgiver_와의 동맹을
+깨려 한다는 소문이 있어.
 <--->
-_questgiver_는 _contact_와의 관계를 굳히려면 행동해야 해.
+_questgiver_는 _contact_와의 관계를 굳히려면
+뭔가 조치를 취해야 해.
 
 RumorsPostfailure:  [1006]
-_questgiver_와 _contact_의 관계가 어느 때보다 멀어졌어.
+_questgiver_와 _contact_의 관계가
+그 어느 때보다 멀어졌어.
 <--->
-_contact_와 _questgiver_의 관계가 완전히 끊어져도 놀랍지
-않을 거야.
+_contact_와 _questgiver_가 완전히 관계를 끊어도
+놀랍지 않을 거야.
 
 RumorsPostsuccess:  [1007]
-_contact_가 _questgiver_의 선물에 아주 만족했다더군.
+_contact_가 _questgiver_의 선물에
+아주 만족했다더군.
 <--->
 _questgiver_가 _item_을 _contact_에게 보내서 다행이야.
-%god⁠께 감사해야지. 자칫 험악해질 뻔했어.
+%god⁠께 감사해야지.
+자칫 험악해질 뻔했어.
 
 QuestorPostsuccess:  [1008]
-평화의 사절이 왔군. 잘 지냈나, 친구?
+아, 평화의 사절이 왔군.
+잘 지냈나, 친구?
 <--->
-%oth, 내가 아끼는 전령이군. 어떻게 지내나?
+%oth, 내가 가장 아끼는 전령이군.
+어떻게 지내나?
 
 QuestorPostfailure:  [1009]
-<ce>_contact_에게 _item_을 보내겠다는
-<ce>약속을 지키지 못해 평화 계획이 훨씬 어려워졌네,
-<ce>%pcf. 내 눈앞에서 사라지게.
-<ce>
-<ce>
+<ce>_contact_에게 전달하기로 한 _item_을
+<ce>끝내 가져다주지 않았군요.
+<ce>덕분에 제 평화 계획이 훨씬 어려워졌습니다, %pcf.
+<ce>제 눈앞에서 사라지십시오.
 
 QuestLogEntry:  [1010]
-%qdt: _questgiver_는 __palace_ 궁전으로 가
-평화의 선물 _item_을 _contact_에게 전달하라고 했다.
+%qdt:
+_questgiver_는 보상을 암시하며
+__palace_의 궁전으로 가서
+평화의 선물인 _item_을
+_contact_에게 전달하라고 했다.
+
 =queston_일 안에 도착해야 한다.
 
 Message:  1020
-<ce>_questgiver_가 내게 보낼 물건을 주지 않았나?
-<ce>젠장, 이것이 %g3 계략이라면...
-<ce>
-<ce>
+<ce>_questgiver_가 제게 전할 물건을
+<ce>주지 않았습니까?
+<ce>빌어먹을, 이것이 %g3 계략이라면...
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 1 time.
+--                %g occurs 0 times.
 --               %g3 occurs 1 time.
 --              %god occurs 1 time.
 --              %oth occurs 1 time.
---              %pcf occurs 8 times.
+--              %pcf occurs 5 times.
 --              %qdt occurs 1 time.
---               %ra occurs 5 times.
---         =contact_ occurs 2 times.
+--               %ra occurs 1 time.
+--         =contact_ occurs 1 time.
 --         =queston_ occurs 1 time.
 --         __palace_ occurs 2 times.
 --         _contact_ occurs 10 times.
 --            _item_ occurs 5 times.
 --      _questgiver_ occurs 9 times.
---          _reward_ occurs 2 times.
+--          _reward_ occurs 1 time.
+
 QBN:
 Item _reward_ gold
 Item _item_ trinket

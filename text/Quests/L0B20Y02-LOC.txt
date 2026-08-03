@@ -9,101 +9,102 @@ Quest: L0B20Y02
 DisplayName: 명예 없는 기사
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>네 안의 낭만주의자에게 어울릴
-<ce>일이 있다, %pcf. 비열한 기사가
-<ce>한 귀부인의 명예를 더럽히고도 그녀를
-<ce>변호하려는 누구와도 싸우려 하지 않았다.
+<ce>네 안의 낭만주의자에게 어울릴 일이 있다, %pcf.
+<ce>비열한 기사가 한 귀부인의 명예를 더럽히고도
+<ce>그녀를 변호하려는 누구와도 싸우려 하지 않았다.
 <ce>가엾은 여인은 할 수 있는 유일한 일을 했고,
-<ce>이제 우리가 장부를 정리할 차례다. 관심 있겠지?
-<ce>
-<ce>
+<ce>이제 우리가 장부를 정리할 차례다.
+<ce>관심 있겠지?
 
 RefuseQuest:  [1001]
-<ce>아닌가? 네가 즐길 줄 알았는데.
-<ce>타락한 여인에게 마음 약한 다른 장부 정리꾼은 많다.
-<ce>
-<ce>
-<ce>
+<ce>아닌가?
+<ce>네가 즐길 줄 알았는데.
+<ce>타락한 여인에게 마음 약한
+<ce>다른 장부 정리꾼은 많다.
 
 AcceptQuest:  [1002]
-<ce>그럴 줄 알았다. 그 기사는 아직 계약을 모르고
+<ce>그럴 줄 알았다.
+<ce>그 기사는 아직 계약을 모르고,
 <ce>___mondung_이라는 요새 깊숙이 틀어박혀 있다.
 <ce>이 천박한 전사는 일을 쉽게 해줄 생각이 없는 모양이군.
-<ce>계약대로 =1stparton_일 안에 정리하고 돌아와 보고해라.
+<ce>계약대로 =1stparton_일 안에 정리하고
+<ce>그 안에 돌아와 보고해라.
 <ce>어서 가라, %pcf.
 <ce>더럽혀진 가엾은 귀부인의 명예를 지켜라.
-<ce>
-<ce>
-<ce>
-<ce>
 
 QuestFail:  [1003]
 <ce>의뢰인의 감사가 들리지 않는군.
 <ce>그 기사가 아직 살아 있다는 뜻이겠지.
 <ce>서둘러 그 누락을 바로잡아라, %pcf.
-<ce>
 
 QuestComplete:  [1004]
 <ce>그 악당 기사는 저세상으로 갔나?
-<ce>다음 생에는 칼을 칼집에 넣어둘 지혜를 갖추겠지.
+<ce>다음 생에는 칼을 칼집에 넣어둘
+<ce>지혜를 갖추겠지.
 <ce>늘 그렇듯 잘했다, %pcf.
-<ce>
-<ce>
 
 RumorsDuringQuest:  [1005]
-그 병사는 정말 비열한 개자식입니다. 명예라고는 전혀 없지요.
+그 병사는 정말 비열한 개자식입니다.
+명예라고는 조금도 없지요.
 <--->
-그 귀부인이 기사를 유혹하려다 실패해서 화가 났다는군요.
+그 귀부인이 기사를 유혹하려다 실패해서
+화가 났다는군요.
 
 RumorsPostfailure:  [1006]
-그 전사는 다른 땅의 얌전한 여인들을 타락시키러 떠났습니다.
+그 전사는 다른 땅의 얌전한 여인들을
+타락시키러 떠났습니다.
 <--->
-그 병사는 태풍처럼 ____questgiver_를 떠나며 상처 입은 마음만
-남겼습니다.
+그 병사는 태풍처럼 ____questgiver_를 떠나며
+상처받은 마음만 남겼습니다.
 
 RumorsPostsuccess:  [1007]
-내 생각에는 그 병사가 %g2⁠에게 마땅한 대가를 치른 겁니다.
+내 생각에는 그 병사가
+마땅한 대가를 치른 겁니다.
 정말 비열한 자였지요.
 <--->
-누군가 귀부인의 명예를 지킬 용기가 있어 다행입니다.
-저주받을 악당이었어요.
+누군가 위험에 처한 귀부인을
+지킬 용기가 있어 다행입니다.
+저주받을 흉악한 악당이었어요.
 
 QuestorPostsuccess:  [1008]
-기사 사냥꾼을 도울 수 있다면 무엇이든 기꺼이 하겠다.
+기사를 죽인 분을 도울 수 있다면
+무엇이든 기꺼이 하겠습니다.
 
 QuestorPostfailure:  [1009]
-<ce>형편없는 기사 하나 죽이지
-<ce>못하는 %ra⁠와 내가 왜 이야기하고 싶을
-<ce>거라 생각하지? 당장 사라져라.
-<ce>
+<ce>형편없는 기사 하나 죽이지 못하는 %ra와
+<ce>내가 왜 이야기하고 싶을 거라 생각하지?
+<ce>당장 내 앞에서 사라져라.
 
 Message:  1020
-%qdt: ___questgiver_의 다크 브라더후드 소속
-_questgiver_는 나를 ___mondung_으로 보내 기사 하나를 찾아
-죽이라고 했다. =1stparton_일 안에 일을 끝내야 한다.
+%qdt:
+___questgiver_의 다크 브라더후드 소속 _questgiver_는
+___mondung_으로 가서 기사 한 명을
+찾아 죽이라고 했다.
+
+=1stparton_일 안에 일을 끝내야 한다.
 
 Message:  1021
-<ce>“_damsel_에게 전해라… 그년의 더럽혀진…
-<ce>명예는 %reg⁠의 모든 농장 소년과…
-<ce>나눠도 된다고.” 기사가 장부에서 지워지며
-<ce>마지막 말을 내뱉습니다. 계약이 이행되었습니다.
-<ce>
+<ce>"_damsel_에게 전해라...
+<ce>그년의 더럽혀진 명예는...
+<ce>%reg의 모든 농장 소년과 나눠도 된다고..."
+<ce>기사가 마지막 말을 내뱉습니다.
+<ce>계약이 이행되었습니다.
 
 -- Symbols used in the QRC file:
 --
---               %cn occurs 1 time.
---               %g2 occurs 1 time.
---              %pcf occurs 6 times.
+--               %cn occurs 0 times.
+--               %g2 occurs 0 times.
+--              %pcf occurs 4 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
 --              %reg occurs 1 time.
---       =1stparton_ occurs 4 times.
+--       =1stparton_ occurs 2 times.
 --       ___mondung_ occurs 2 times.
 --    ___questgiver_ occurs 1 time.
 --          _damsel_ occurs 1 time.
 --      _questgiver_ occurs 1 time.
+
 QBN:
 Item _reward_ gold
 

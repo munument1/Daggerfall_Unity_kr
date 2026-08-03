@@ -9,55 +9,51 @@ Quest: Y0C00Y00
 DisplayName: 메이룬스 데이건의 퀘스트
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>힘을 원하는가? 그래, 많은 자가 힘 원한다.
-<ce>왜 원하는지는 거의 모른다. _artifact_ 원하는가?
-<ce>아주 특별하다, _artifact_.
-<ce>아주 좋다, 그래 그래. 한 가지 해라.
-<ce>그러면 네 것이다. 벌받아야 할 내 자식 있다.
-<ce>사랑스럽고 사랑스러운 _artifact_ 위해 해주겠나, 그래?
-<ce>
-<ce>
-<ce>
+<ce>하지만 왜 원하는지는 거의 모른다.
+<ce>_artifact_ 원하는가? 아주 특별하다, _artifact_.
+<ce>아주 좋다, 그래 그래.
+<ce>한 가지 해라. 그러면 네 것이 된다.
+<ce>벌받아야 할 내 자식 하나 있다.
+<ce>사랑스럽고 사랑스러운 _artifact_ 위해
+<ce>해 주겠나, 그래?
 
 RefuseQuest:  [1001]
 <ce>크아! 필멸생물이 메이룬스 데이건에게 거절한다!
-<ce>필멸생물의 시간, 데이건에게 아무 의미 없다.
-<ce>데이건은 모욕 기억한다, 그래.
-<ce>하미타는 필멸생물에게 너무 검다.
-<ce>아니, 나는... 기억한다... %pcn.
-<ce>
+<ce>필멸생물아, 네 시간은 데이건에게 아무 의미도 없다.
+<ce>데이건은 모욕을 기억한다, 그래.
+<ce>하미타는 필멸생물에게 너무 어둡다, 아니...
+<ce>나는... 기억한다... %pcn.
 
 AcceptQuest:  [1002]
-<ce>음, 필멸생물 용감하다. 좋아 좋아. 이제 ___mondung_으로
-<ce>가서 서리 데이드라 죽여라. 안전하다고 생각한다, 하!
-<ce>우리는 서리살점 찢고 온 사방에 흩뿌린다.
-<ce>놈을 죽이고 =contact_인 _contact_에게 가라.
-<ce>%g2⁠은 __tavern_에 있다.
-<ce>아주 좋은 _artifact_가 너 기다린다.
-<ce>서리 데이드라 죽이고 =1stparton_번 문두스의 밤이
-<ce>지나기 전에 _contact_를 만나라.
+<ce>음, 필멸생물 용감하다. 좋아 좋아.
+<ce>이제 ___mondung_으로 가서 서리 데이드라 죽여라.
+<ce>안전하다고 생각한다, 하!
+<ce>우리는 서리살점을 도륙해 사방에 흩뿌린다.
+<ce>놈을 죽인 뒤 =contact_로 가서
+<ce>__tavern_에 있는 %g2 _contact_를 만나라.
+<ce>아주 좋은 _artifact_가 너를 기다린다.
+<ce>문두스의 밤이 =1stparton_번 지나기 전에
+<ce>서리 데이드라 죽이고 _contact_를 만나라.
 <ce>가라, %pcn. 데이건 기다린다.
-<ce>
 
 QuestFail:  [1003]
-<ce>%pcn 맞으시지요? 저는 _contact_입니다.
-<ce>조언을 하나 드리겠습니다. 메이룬스 데이건은
-<ce>생각 없는 두꺼비처럼 보여도 그렇지 않습니다.
-<ce>서리 데이드라가 아직 살아 있다는 걸 알고
-<ce>있으니 계약을 지키는 편이 좋을 겁니다.
-<ce>
-<ce>
+<ce>안녕하십니까. %pcn 맞으시지요?
+<ce>저는 _contact_입니다.
+<ce>한 가지 조언을 드리겠습니다.
+<ce>메이룬스 데이건은 생각 없는 두꺼비처럼 보여도
+<ce>실제로는 그렇지 않습니다.
+<ce>서리 데이드라가 아직 살아 있다는 것을 알고 있으니,
+<ce>그와 맺은 계약을 지키는 편이 좋을 것입니다.
 
 QuestComplete:  [1004]
-<ce>%pcn 맞으시지요? 저는 _contact_입니다.
-<ce>메이룬스 데이건의 길 잃은 자식 하나를 제대로
-<ce>바로잡으셨다고 들었습니다. 훌륭하군요.
+<ce>아, %pcn 맞으시지요?
+<ce>저는 _contact_입니다.
+<ce>메이룬스 데이건의 엇나간 자식 하나를
+<ce>제대로 바로잡으셨다고 들었습니다. 훌륭하군요.
 <ce>약속받은 _artifact_입니다. 잘 쓰십시오.
 <ce>다시 만날 일은 없을 듯하군요. 안녕히 가십시오.
-<ce>
-<ce>
 
 RumorsDuringQuest:  [1005]
 ___mondung_ 쪽에서 찬바람이 불어옵니다.
@@ -65,8 +61,8 @@ ___mondung_ 쪽에서 찬바람이 불어옵니다.
 요즘 날씨가 유난히 추워졌군요.
 
 RumorsPostfailure:  [1006]
-미쳐 날뛰는 =contact_가 %ra 모험가를 욕하며 이곳을
-지나갔습니다.
+미쳐 날뛰는 =contact_가
+%ra 모험가를 욕하며 이곳을 지나갔습니다.
 <--->
 오늘 밤 메이룬스 데이건의 별이 불타오르는군요.
 
@@ -76,14 +72,16 @@ RumorsPostsuccess:  [1007]
 날씨가 예전만큼 매섭지는 않군요.
 
 Message:  1011
-메이룬스 데이건은 파괴의 군주이며, 데이드라 가운데 가장 폭력적인
-존재입니다.
+메이룬스 데이건은 파괴의 군주이며,
+데이드라 가운데 가장 폭력적인 존재입니다.
 <--->
-데이건은 무지한 짐승처럼 보이지만 사실 상당히 교활합니다.
+데이건은 무지한 짐승처럼 보이지만
+사실 상당히 교활합니다.
 
 Message:  1012
-_contact_라는 소름 끼치는 =contact_를 _tavern_에서
-봤습니다. %g2⁠을 직접 봤습니다.
+_contact_라는 소름 끼치는 =contact_를
+_tavern_에서 봤습니다.
+%g2⁠을 직접 봤습니다.
 <--->
 여기서 %di 떨어진 곳에 _tavern_이 있습니다.
 그곳을 찾아보십시오.
@@ -92,11 +90,17 @@ Message:  1013
 <ce>_artifact_가 무슨 힘을 지녔는지는 전혀 모릅니다.
 
 Message:  1020
-%qdt: 데이드릭 프린스 메이룬스 데이건은
+%qdt:
+데이드릭 프린스 메이룬스 데이건은
 ___mondung_의 서리 데이드라를 죽이라고 했다.
-일을 마친 뒤 =1stparton_일 안에 _contact_를 만나면, 데이건을
-위해 서리 데이드라를 죽인 보상으로 _artifact_를 받을 수 있다.
-%G⁠은 __tavern_의 _tavern_에서 기다릴 것이다.
+
+처치를 마친 뒤 =1stparton_일 안에
+_contact_를 만나면,
+메이룬스 데이건을 위해 서리 데이드라를 죽인 보상으로
+_artifact_를 받을 수 있다.
+
+%G⁠은 __tavern_의 _tavern_에서
+나를 기다릴 것이다.
 
 Message:  1030
 데이건의 사냥감이 오블리비언으로 돌아갔습니다.
@@ -104,18 +108,19 @@ Message:  1030
 -- Symbols used in the QRC file:
 --
 --               %di occurs 1 time.
---                %g occurs 1 time.
+--                %g occurs 0 times.
 --               %g2 occurs 2 times.
---              %pcn occurs 5 times.
+--              %pcn occurs 4 times.
 --              %qdt occurs 1 time.
---               %ra occurs 10 times.
+--               %ra occurs 1 time.
 --       =1stparton_ occurs 2 times.
 --         =contact_ occurs 3 times.
---       ___mondung_ occurs 4 times.
---         __tavern_ occurs 3 times.
---        _artifact_ occurs 9 times.
+--       ___mondung_ occurs 3 times.
+--         __tavern_ occurs 2 times.
+--        _artifact_ occurs 7 times.
 --         _contact_ occurs 6 times.
---          _tavern_ occurs 8 times.
+--          _tavern_ occurs 3 times.
+
 QBN:
 Item _artifact_ artifact Mehrunes_Razor anyInfo 1013
 

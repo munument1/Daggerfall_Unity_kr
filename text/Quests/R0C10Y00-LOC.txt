@@ -9,106 +9,117 @@ Quest: R0C10Y00
 DisplayName: 보석 밀수
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>고용 가능한가? 믿을 만한 사람이 은밀한 임무를
-<ce>맡아야 하네. 시간이 꽤 걸릴 수도
-<ce>있지만 충분히 보상하겠네. 관심 있나?
-<ce>
-<ce>
+<ce>일을 맡을 수 있다면,
+<ce>믿을 만한 사람에게 은밀한 임무를 맡기고 싶네.
+<ce>시간이 꽤 걸릴 수도 있지만
+<ce>그에 걸맞게 보상하겠다고 약속하지.
+<ce>관심 있나?
 
 RefuseQuest:  [1001]
-<ce>정말인가? 너무 바쁜 모양이군. 아쉽네.
+<ce>정말인가? 너무 바쁜 모양이군.
+<ce>안타깝네.
 
 AcceptQuest:  [1002]
-<ce>좋네. ___npc1_의 _npc1_에게 전할 에메랄드를
-<ce>주겠네. %G⁠는 __npc1_에서 기다릴 걸세.
-<ce>=1stparton_일 안에 도착해야 하니 매우 중요하네.
-<ce>거기까지 가면 _npc1_이 다음 지시를 줄 것이야.
+<ce>좋네. 이 에메랄드를 ___npc1_에 있는
+<ce>내 연락책 _npc1_에게 전하게.
+<ce>%G는 __npc1_에서 기다릴 걸세.
+<ce>=1stparton_일 안에 도착해야 하니
+<ce>이 점이 매우 중요하네.
+<ce>그곳에 도착하면 _npc1_이 다음 지시를 내릴 것이야.
 <ce>신중하게 행동하게, %pcf.
-<ce>누군가 지켜보고 있을 테니. 행운을 비네.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>누군가 자네를 지켜보고 있을 테니.
+<ce>행운을 빌고, 고맙네.
 
 QuestFail:  [1003]
 <ce>지금은 더 이야기할 것이 없군.
-<ce>
 <--->
 <ce>내가 자네를 아나?
 
 QuestComplete:  [1004]
-<ce>만나서 반갑네, %pcf. _item2_도 가져왔군.
-<ce>훌륭해. 수고와 신중함에 대한 보상으로
-<ce>_reward_골드를 주지. 자네 이름은 잊지 않겠네.
-<ce>
+<ce>아, 다시 만나 반갑네, %pcf.
+<ce>_item2_도 가져왔군. 훌륭해.
+<ce>수고와 신중한 처신에 대한 보상으로
+<ce>_reward_골드를 주지.
+<ce>자네 이름은 잊히지 않을 걸세.
 
 RumorsDuringQuest:  [1005]
-<ce>_questgiver_가 아직 밀수에 손을 대고 있다는군.
+<ce>듣자 하니 _questgiver_가
+<ce>아직도 밀수에 손을 대고 있다더군.
 <--->
-<ce>요즘 밀수가 엄청나게 늘었어.
+<ce>요즘 밀수가 유난히 크게 늘었어.
 
 RumorsPostfailure:  [1006]
-<ce>_questgiver_가 어떤 %ra 모험가 때문에 불같이 화났대.
+<ce>_questgiver_가 어떤 %ra 모험가 때문에
+<ce>불같이 화가 났다는군.
 
 RumorsPostsuccess:  [1007]
-<ce>_item2_ 밀수의 우두머리가 누구인지는 아무도 몰라.
+<ce>_item2_ 밀수를 뒤에서 지휘하는 자가
+<ce>누구인지는 아무도 몰라.
 
 QuestorPostsuccess:  [1008]
-<ce>아, 가끔 일해주는 내 밀수꾼이군. 무엇을 도와줄까?
+<ce>아, 가끔 일을 맡기는 내 밀수꾼이군.
+<ce>무엇을 도와줄까?
 <--->
-<ce>다시 만났군. 아쉽지만 당장은 더 맡길 배달이 없어.
+<ce>다시 만났군.
+<ce>아쉽지만 지금은 더 맡길 배달이 없어.
 
 QuestorPostfailure:  [1009]
-<ce>임무 실패를 사과하러 기어왔나? 이미 늦었네.
-<ce>
+<ce>그 임무를 실패한 일을 사과하러
+<ce>기어 돌아왔나? 이미 늦었네.
 <--->
-<ce>배달 임무를 망친 %ra⁠가 자네였지?
+<ce>배달 임무를 망친 %ra가 자네였지?
 <ce>오블리비언으로 꺼져.
-<ce>
 
 QuestLogEntry:  [1010]
-<ce>좋군. _questgiver_가 전에 고용한 운반책은 나를
-<ce>찾지 못해서 우리가 직접 추적해 처리해야 했지.
-<ce>아주 불쾌했어. 여기 _item2_이 있네.
-<ce>___npc2_의 _npc2_라는 =npc2_에게
-<ce>가져가게. =2ndparton_일 안에 도착해야 해.
-<ce>행운을 비네, %pcf.
+<ce>좋아, 왔군.
+<ce>_questgiver_가 전에 고용한 운반책은
+<ce>나를 찾지 못해서 우리가 직접 추적해야 했지.
+<ce>아주 불쾌한 일이었어.
 <ce>
+<ce>여기 _item2_이 있네.
+<ce>___npc2_에 있는 =npc2_ _npc2_에게 가져가게.
+<ce>=2ndparton_일 안에 도착해야 하네.
+<ce>행운을 비네, %pcf.
 
 Message:  1011
-%qdt: ___questgiver_의 __questgiver_에
-있는 _questgiver_는 ___npc1_의 __npc1_으로 가
-_npc1_에게 에메랄드를 전달하라고 했다. 기한은 =1stparton_일이며,
-그곳에서 추가 지시를 받을 수도 있다.
+%qdt:
+___questgiver_의 __questgiver_에 있는 _questgiver_는
+___npc1_의 __npc1_으로 가서
+_npc1_에게 에메랄드를 전달하라고 했다.
+
+기한은 =1stparton_일이며,
+그곳에서 다음 지시를 받을 수도 있다.
 
 Message:  1012
-%qdt: _npc1_은 나를 _item2_을 들려
-___npc2_의 __npc2_에 있는 _npc2_에게 가라고 했다.
-_npc1_의 설명으로는 _npc2_는 =npc2_이며,
-=2ndparton_일 안에 %g2⁠에게 도착하면 _npc2_가 보상을 줄 것이다.
+%qdt:
+_npc1_는 _item2_을 주며
+___npc2_의 __npc2_에 있는
+_npc2_에게 가져가라고 했다.
+
+_npc1_의 설명에 따르면 _npc2_는 =npc2_다.
+=2ndparton_일 안에 %g2⁠에게 도착하면
+_npc2_가 보상을 줄 것이다.
 
 Message:  1020
-<ce>도둑 길드는 네가 값비싼 보석을 가지고 있다는 것을 안다.
-<ce>순순히 내놓으면 편하게 보내주지.
-<ce>
-<ce>
+<ce>도둑 길드는 네가 상당히 값비싼 보석을
+<ce>가지고 있다는 사실을 알고 있다.
+<ce>순순히 내놓으면 쉽게 보내 주지.
 
 Message:  1021
 <ce>아이에게서 동전을 빼앗는 것만큼 쉽군.
-<ce>이제 내 눈앞에서 사라져라, 겁쟁이 운반책.
-<ce>
+<ce>이제 내 눈앞에서 사라져라,
+<ce>다리 풀린 겁쟁이 전령아.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 1 time.
---               %g2 occurs 13 times.
---              %pcf occurs 5 times.
+--                %g occurs 0 times.
+--               %g2 occurs 1 time.
+--              %pcf occurs 3 times.
 --              %qdt occurs 2 times.
---               %ra occurs 3 times.
+--               %ra occurs 2 times.
 --       =1stparton_ occurs 2 times.
---       =2ndparton_ occurs 6 times.
+--       =2ndparton_ occurs 2 times.
 --            =npc2_ occurs 2 times.
 --          ___npc1_ occurs 2 times.
 --          ___npc2_ occurs 2 times.
@@ -116,11 +127,12 @@ Message:  1021
 --           __npc1_ occurs 2 times.
 --           __npc2_ occurs 1 time.
 --     __questgiver_ occurs 1 time.
---           _item2_ occurs 7 times.
+--           _item2_ occurs 4 times.
 --            _npc1_ occurs 5 times.
 --            _npc2_ occurs 4 times.
---      _questgiver_ occurs 5 times.
+--      _questgiver_ occurs 4 times.
 --          _reward_ occurs 1 time.
+
 QBN:
 Item _reward_ gold
 Item _item1_ emerald

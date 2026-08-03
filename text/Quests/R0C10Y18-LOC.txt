@@ -9,126 +9,128 @@ Quest: R0C10Y18
 DisplayName: 대여 중인 물건
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>%pcf, 며칠 정도 시간을 내어
-<ce>제 부탁을 하나 들어주시겠습니까?
-<ce>빌려준 물건을 주인에게 돌려주기만 하면 됩니다.
-<ce>그리 힘든 일은 아니며, 보상으로 _reward_
-<ce>골드를 드리겠습니다. 꽤 솔깃한 제안이지 않습니까?
-<ce>
+<ce>%pcf, 며칠 시간을 내어
+<ce>작은 부탁 하나를 들어주시겠습니까?
+<ce>제가 빌린 물건을 주인에게 돌려주기만 하면 됩니다.
+<ce>그리 힘든 일은 아니며,
+<ce>보상으로 _reward_골드를 드리지요.
+<ce>제법 솔깃한 제안 아닙니까?
 
 RefuseQuest:  [1001]
-<ce>아쉽군요. 그럼 다른 사람을 고용해야겠네요.
-<ce>
+<ce>안타깝군요.
+<ce>그렇다면 다른 사람을 고용해야겠네요.
 
 AcceptQuest:  [1002]
 <ce>%oth, 바로 그 기세입니다!
-<ce>___npc1_의 __npc1_에 있는 사제이자 내
-<ce>좋은 친구 _npc1_에게서 _item1_을 빌렸습니다.
-<ce>%g⁠가 =1stparton_일 안에 필요로 하니 서둘러
-<ce>%g2⁠에게 돌려주십시오. 부탁합니다, %pcf.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>이 _item1_은 ___npc1_의 __npc1_에 있는
+<ce>사제이자 제 좋은 친구 _npc1_에게 빌린 것입니다.
+<ce>%g가 =1stparton_일 안에 필요로 하니
+<ce>서둘러 %g2에게 돌려주십시오.
+<ce>고맙습니다, %pcf.
 
 QuestFail:  [1003]
-<ce>서두르라고 말씀드리지 않았습니까, %pcf?
+<ce>서두르라고 하지 않았습니까, %pcf?
 
 QuestComplete:  [1004]
-<ce>아, 좋습니다. _item2_은 듣던 대로
-<ce>훌륭하군요. 잘했습니다, %pcf.
-<ce>신속함과 침묵의 대가로 _reward_골드를 드립니다.
-<ce>
+<ce>아, 좋습니다.
+<ce>_item2_은 듣던 대로 정교하고 훌륭하군요.
+<ce>잘했습니다, %pcf.
+<ce>신속하고 조용히 처리한 대가로
+<ce>_reward_골드를 드리겠습니다.
 
 RumorsDuringQuest:  [1005]
-__npc1_ 지역을 오가는 사람들이 부쩍 늘었더군요.
+__npc1_을 오가는 사람들이 부쩍 늘었더군요.
 무슨 일인지 모르겠습니다.
 <--->
-_npc1_가 %g3⁠의 _item1_을 찾고 있던데, %g⁠가 그런
-걸 좋아하는 줄은 몰랐네요.
+_npc1_가 %g3 _item1_을 찾고 있던데,
+%g⁠가 그런 걸 좋아하는 줄은 몰랐네요.
 
 RumorsPostfailure:  [1006]
-__npc1_ 언제부터 밀수 거점으로 쓰였는지 모르겠군요.
+__npc1_이 언제부터 밀수 거점으로 쓰였는지 모르겠군요.
 정말 추잡한 일입니다.
 <--->
 그들은 _item1_ 안에 보석을 숨겨 밀수하고 있었어요.
 이제 보니 너무 뻔한 수법이었네요, 그렇지 않나요?
 
 RumorsPostsuccess:  [1007]
-재미있군요. __npc1_ 쪽으로 향하는 _item1_
-화물이 있다는 건 알았지만, 뭔가 이상했습니다.
+재미있군요.
+__npc1_ 쪽으로 향하는 _item1_ 화물이 있다는 건 알았지만,
+뭔가 이상했습니다.
 <--->
-___npc2_ _item2_ 밀수의 온상이라고들 하더군요.
+___npc2_는 _item2_ 밀수의 온상이라고들 하더군요.
 아주 교묘하게 숨겨져 있나 봅니다.
 
 QuestorPostsuccess:  [1008]
-돌아오셨군요. 보석에 대해 말씀드릴 수 없었던 점, 이해하시죠?
+돌아오셨군요.
+보석에 대해 말씀드릴 수 없었던 점은 이해하시죠?
 <--->
-아니, %pcf 아닙니까. 보석 밀수 건은 정말 잘 처리해주셨습니다,
-친구여.
+아니, %pcf 아닙니까.
+보석 밀수 건은 정말 잘 처리해주셨습니다, 친구여.
 
 QuestorPostfailure:  [1009]
-<ce>%pcf, 실패하신 퀘스트가 결코 작은
-<ce>일은 아니었습니다. 시간이 지나면 용서할 수
-<ce>있을지도 모르겠군요. 어쩌면 말이죠.
-<ce>
+<ce>당신이 실패한 일은 결코 사소하지 않았습니다, %pcf.
+<ce>시간이 지나면 용서할 수도 있겠지요.
+<ce>어쩌면 말입니다.
 
 QuestLogEntry:  [1010]
 <ce>아, 내 _item1_이 돌아왔군요.
-<ce>고맙습니다, %pcf. 그런데 안에 무언가 끼어 있군요.
-<ce>이 돌을 ___npc2_의 __npc2_에
-<ce>있는 _questgiver_의 친구 _npc2_에게 가져다주겠습니까?
-<ce>%g⁠가 보수를 가지고 있을 겁니다. _npc2_는
-<ce>%g⁠가 =2ndparton_일 넘게 기다리면 참지 못하니 서두르십시오.
+<ce>고맙습니다, %pcf.
+<ce>그런데 안에 무언가 끼어 있군요.
+<ce>아, 이 돌이었군요.
 <ce>
+<ce>이 조약돌을 ___npc2_의 __npc2_에 있는
+<ce>_questgiver_의 친구 _npc2_에게
+<ce>가져다주시겠습니까?
 <ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>%g⁠가 당신의 보수를 가지고 있을 겁니다.
+<ce>하지만 서두르는 편이 좋습니다.
+<ce>_npc2_는 =2ndparton_일 넘게 기다리면
+<ce>인내심을 잃으니까요.
 
 Message:  1015
-%qdt: ___questgiver_의 _questgiver_는
-_item1_을 ___npc1_의 사제에게 돌려주라고 했다.
-__npc1_에서 =npc1_인 _npc1_를 찾아 =1stparton_일
-안에 전달해야 한다.
+%qdt:
+___questgiver_의 _questgiver_는
+_item1_을 사제에게 전달하라고 했다.
+
+그 사제는 ___npc1_의 __npc1_에 있는
+=npc1_ _npc1_다.
+=1stparton_일 안에 도착해야 한다.
 
 Message:  1016
-%qdt: _item1_ 안에는 _item2_이
-숨겨져 있었다. 약속받은 _reward_골드를 받으려면 =2ndparton_일 안에
-___npc2_의 __npc2_에 있는 제3자 _npc2_에게
-_item2_을 전달해야 한다.
+%qdt:
+_item1_ 안에 _item2_이 숨겨져 있었다.
+
+약속받은 _reward_ 골드를 받으려면
+=2ndparton_일 안에 _item2_을
+___npc2_의 __npc2_에 있는
+제삼자 _npc2_에게 전달해야 한다.
 
 Message:  1020
-<ce>%reg⁠에서 밀수는 도둑 길드만 할 수 있다.
-<ce>_questgiver_는 %g⁠가 규칙 위에 있다고 생각했겠지.
-<ce>하지만 %G⁠는 틀렸다. _item2_을 내놓아라.
-<ce>_questgiver_도 도둑 길드를 거스르면 어떻게
-<ce>되는지 배우게 될 거다. 내놓지 않으면 죽이겠다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>%reg에서 밀수할 권리는 도둑 길드에만 있다.
+<ce>_questgiver_는 %g가 규칙 위에 있다고 생각했겠지.
+<ce>하지만 %G는 틀렸다.
+<ce>_item2_을 내놓아라.
+<ce>_questgiver_도 도둑 길드를 거스른 대가를 배우게 될 거다.
+<ce>내놓지 않으면 죽이겠다.
 
 Message:  1021
-<ce>도둑 길드를 건드리면 어떻게 되는지 아는
-<ce>사람들에게 다 전하십시오. 이제 여기서 나가시죠.
-<ce>
+<ce>도둑 길드를 건드리지 말라고
+<ce>아는 사람 모두에게 전해라.
+<ce>이제 꺼져.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 6 times.
+--                %g occurs 4 times.
 --               %g2 occurs 1 time.
 --               %g3 occurs 1 time.
 --              %oth occurs 1 time.
---              %pcf occurs 9 times.
+--              %pcf occurs 7 times.
 --              %qdt occurs 2 times.
 --              %reg occurs 1 time.
---       =1stparton_ occurs 4 times.
---       =2ndparton_ occurs 3 times.
---            =npc1_ occurs 3 times.
+--       =1stparton_ occurs 2 times.
+--       =2ndparton_ occurs 2 times.
+--            =npc1_ occurs 1 time.
 --          ___npc2_ occurs 3 times.
 --    ___questgiver_ occurs 1 time.
 --           __npc1_ occurs 5 times.
@@ -139,6 +141,7 @@ Message:  1021
 --            _npc2_ occurs 3 times.
 --      _questgiver_ occurs 4 times.
 --          _reward_ occurs 3 times.
+
 QBN:
 Item _reward_ gold
 Item _item1_ religious

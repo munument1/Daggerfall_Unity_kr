@@ -10,64 +10,56 @@ Quest: N0B00Y06
 DisplayName: 미라 붕대
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>%oth, 물약에 쓰려던 미라 붕대가 온통 푸르스름해진
-<ce>걸 발견하는 것보다 더 짜증 나는 일이 있을까요?
-<ce>길드의 붕대를 써도 되지만, 조제법에는 분명히
-<ce>'최상급으로 신선한 미라 붕대'가 필요하다고
-<ce>적혀 있습니다. 그게 무슨 뜻인지는 모르겠지만요.
-<ce>혹시 붕대가 남아도는 미라에게서 천
-<ce>조각을 좀 구해다 주실 생각은 없으십니까?
-<ce>
-<ce>
-<ce>
+<ce>%oth, 물약에 쓰려던 미라 붕대가
+<ce>온통 푸르스름해진 걸 발견하는 것보다
+<ce>더 짜증 나는 일이 있을까요?
+<ce>길드의 붕대를 써도 되지만,
+<ce>조제법에는 분명히 '최상급으로 신선한
+<ce>미라 붕대'가 필요하다고 적혀 있습니다.
+<ce>그게 무슨 뜻인지는 모르겠지만요.
+<ce>혹시 붕대가 남아도는 미라에게서
+<ce>천 조각을 좀 구해다 주시겠습니까?
 <--->
 <ce>조제법이란 참 어처구니없는 물건입니다, %pct.
-<ce>지금 '큼직한 =mummy_ 조각'이 필요한 공식을
-<ce>연구하고 있는데, =mummy_가 뭘까요? 약초? 광물?
-<ce>조사해보니 =mummy_는 미라였습니다. 놀랍지요.
-<ce>게다가 그 미라는 바로 이곳 %reg⁠에 있습니다.
+<ce>지금 '큼직한 =mummy_ 조각'이 필요한
+<ce>공식을 연구하고 있습니다.
+<ce>그런데 =mummy_가 뭘까요? 약초? 광물?
+<ce>조사해보니 =mummy_는 미라였습니다.
+<ce>놀랍지요.
+<ce>게다가 그 미라는 바로 이곳 %reg에 있습니다.
 <ce>그 무덤에 가서 =mummy_ 조각을 가져오면
 <ce>_gold_골드를 드리겠습니다. 어떻습니까?
-<ce>
-<ce>
 
 RefuseQuest:  [1001]
-<ce>이런, %oth. 동네 잡화점에 다녀오는
-<ce>일은 아니지만, 조금쯤은 열의와 모험심
-<ce>같은 것을 보일 줄 알았습니다.
-<ce>
-<ce>
+<ce>이런, %oth.
+<ce>동네 잡화점에 다녀오는 일은 아니지만,
+<ce>조금쯤은 열의와 모험심을
+<ce>보일 줄 알았습니다.
 
 AcceptQuest:  [1002]
-<ce>아주 좋습니다, %pct. 보수는
-<ce>_gold_골드입니다. 미라의 무덤은 그리 멀지
-<ce>않으니 =queston_일이면 다녀오기에 충분할 겁니다.
+<ce>아주 좋습니다, %pct.
+<ce>보수는 _gold_골드입니다.
+<ce>미라의 무덤은 그리 멀지 않으니
+<ce>=queston_일이면 다녀오기에 충분할 겁니다.
 <ce>반드시 신선해야 한다는 걸 기억하십시오.
-<ce>가능하면 몸에서 직접 떼어내세요. 장소 이름은
-<ce>아마 ___mondung_ 비슷한 것이었습니다.
-<ce>몹시 끔찍한 곳일 테니 검이나 비슷한 것을 챙겨가는
-<ce>편이 좋겠군요. 행운을 빕니다, 젊은 %ra.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>가능하면 몸에서 직접 떼어내세요.
+<ce>장소 이름은 아마 ___mondung_ 비슷했습니다.
+<ce>몹시 끔찍한 곳일 테니
+<ce>검이나 비슷한 것을 챙겨가는 편이 좋겠군요.
+<ce>행운을 빕니다, 젊은 %ra.
 
 QuestComplete:  [1004]
-<ce>정말 훌륭한 붕대 조각이군요. 대단히 고맙습니다.
+<ce>정말 훌륭한 붕대 조각이군요.
+<ce>대단히 고맙습니다.
 <ce>보수는 _gold_골드로 합의했었지요?
-<ce>
-<ce>
 
 RumorsDuringQuest:  [1005]
-___mondung_에 있는 =mummy_는 고대
-%reg⁠의 %t⁠에게서 남은 유해라고 합니다.
+___mondung_에 있는 =mummy_는
+고대 %reg⁠의 %t⁠에게서 남은 유해라고 합니다.
 <--->
-=mummy_는 죽기에는 너무 사악했던 고대
-%reg⁠의 %t 였다고 합니다.
+=mummy_는 죽을 수 없을 만큼 사악했던
+고대 %reg⁠의 %t⁠였다고 합니다.
 
 RumorsPostfailure:  [1006]
 며칠 전에 종기가 났는데... 이제 다 나았습니다.
@@ -99,50 +91,54 @@ RumorsPostfailure:  [1006]
 %reg⁠의 법률 제도에는 장단점이 있습니다.
 
 RumorsPostsuccess:  [1007]
-%reg⁠에서 =mummy_의 통치는 제1시대 이전에 시작되어
-당신의 손에 끝났습니다.
+%reg⁠에서 =mummy_의 통치는
+제1시대 이전에 시작되어 당신의 손에 끝났습니다.
 <--->
-=mummy_의 공헌 덕분에 _qgiver_는 마침내 %g3⁠의 물약을
-완성할 수 있게 됐습니다.
+=mummy_가 남긴 재료 덕분에 _qgiver_는
+마침내 %g3 물약을 완성할 수 있게 됐습니다.
 
 QuestorPostsuccess:  [1008]
-잘 지내십니까, %pcf? 미라 부패병 같은 것에 걸리지는 않았기를
-바랍니다.
+잘 지내십니까, %pcf?
+미라 부패병 같은 것에
+걸리지는 않았기를 바랍니다.
 
 QuestorPostfailure:  [1009]
 <ce>그 붕대가 필요했습니다, %pcf.
-<ce>필요한 물건이 손에 없으면 정말 짜증이 나는 법이지요.
-<ce>
+<ce>필요한 물건이 손에 없으면
+<ce>정말 짜증이 나는 법이지요.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_ 마법사 길드의 _qgiver_는
-___mondung_으로 가서 =mummy_라는 미라의 붕대를 조금
-떼어오라고 했다. 기한은 =queston_일이다.
+%qdt:
+___qgiver_ 마법사 길드의 _qgiver_는
+___mondung_으로 가서
+=mummy_라는 미라의 붕대 일부를
+벗겨 가져오라고 했다.
+
+기한은 =queston_일이다.
 
 Message:  1011
-<ce>_qgiver_가 당신에게 구해오라고
-<ce>한 =mummy_의 붕대를 찾았습니다.
-<ce>
-<ce>
+<ce>_qgiver_가 구해오라고 한
+<ce>=mummy_의 붕대를 찾았습니다.
 
 -- Symbols used in the QRC file:
 --
 --               %cn occurs 1 time.
 --               %g3 occurs 1 time.
 --              %jok occurs 3 times.
---              %oth occurs 7 times.
+--              %oth occurs 3 times.
 --              %pcf occurs 2 times.
 --              %pct occurs 2 times.
 --              %qdt occurs 1 time.
---               %ra occurs 2 times.
---              %reg occurs 21 times.
+--               %ra occurs 1 time.
+--              %reg occurs 5 times.
 --                %t occurs 2 times.
---           =mummy_ occurs 11 times.
+--           =mummy_ occurs 10 times.
 --         =queston_ occurs 2 times.
 --       ___mondung_ occurs 3 times.
 --        ___qgiver_ occurs 1 time.
---            _gold_ occurs 7 times.
+--            _gold_ occurs 3 times.
 --          _qgiver_ occurs 3 times.
+
 QBN:
 Item _wrappings_ mummy_wrappings
 Item _gold_ gold

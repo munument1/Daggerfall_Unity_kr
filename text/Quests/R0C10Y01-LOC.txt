@@ -9,93 +9,99 @@ Quest: R0C10Y01
 DisplayName: 밀수품 거래
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>일거리를 찾는다면 특별한 _item_을
-<ce>내 지인에게 전해줄 사람이 필요하네.
-<ce>보수는 후하게 주지. 관심 있나?
-<ce>
+<ce>일거리를 원한다면 특별한 _item_을
+<ce>제 지인에게 전해 줄 사람이 필요합니다.
+<ce>보상은 대단히 후하게 드리지요.
+<ce>관심 있습니까?
 
 RefuseQuest:  [1001]
-<ce>정말인가? 너무 바쁜 모양이군. 아쉽네.
+<ce>정말입니까? 너무 바쁜 모양이군요.
+<ce>안타깝습니다.
 
 AcceptQuest:  [1002]
-<ce>좋네. 여기 _item_이 있네.
-<ce>___contact_에 있는 _contact_에게
-<ce>=queston_일 안에 전달하게. 충분한 시간일 걸세.
-<ce>__contact_으로 가 _contact_라는 =contact_를
-<ce>찾으면 알아볼 수 있을 거야. 행운을 비네.
-<ce>
-<ce>
-<ce>
+<ce>훌륭합니다. 여기 _item_입니다.
+<ce>_contact_가 =queston_일 안에
+<ce>___contact_에서 받아야 합니다.
+<ce>시간이 빠듯하지만 충분하기를 바랍니다.
+<ce>__contact_으로 가서 =contact_를 찾으면
+<ce>_contact_를 알아볼 수 있을 겁니다.
+<ce>행운을 빌며, 고맙습니다.
 
 QuestFail:  [1003]
-<ce>%pcf, 우리 사이의 작은 약속을
+<ce>%pcf, 우리 사이의 작은 거래를
 <ce>서둘러 처리하는 편이 좋을 걸세.
 
 QuestComplete:  [1004]
-<ce>아, %pcf. _item_도 가져왔군.
-<ce>훌륭해. 수고에 대한 작은 장신구를 주지.
-<ce>붉은색을 좋아하길 바라네. 몸조심하게.
-<ce>
+<ce>아, 다시 만나 반갑네, %pcf.
+<ce>_item_도 가져왔군. 훌륭해.
+<ce>수고한 대가로 작은 장신구를 하나 주지.
+<ce>붉은색을 좋아하기를 바라네.
+<ce>몸조심하게.
 
 RumorsDuringQuest:  [1005]
-_questgiver_가 아직 밀수에 손을 댄다는군.
+_questgiver_가 아직도
+밀수에 손을 대고 있다더군.
 <--->
 요즘 밀수가 엄청나게 늘었어.
 
 RumorsPostfailure:  [1006]
-최근 누군가 아주 멋진 _item_을 발견했대.
+최근 누군가 이 근처에서
+아주 멋진 _item_을 발견했대.
 <--->
-_questgiver_가 어떤 %ra 모험가 때문에 불같이 화났다는군.
+_questgiver_가 어떤 %ra 모험가에게
+불같이 화가 났다는군.
 
 RumorsPostsuccess:  [1007]
-어떤 =contact_가 이곳에 와 _item_을 흔들어 보이더군.
+어떤 =contact_가 방금 여기 와서
+_item_을 흔들어 보이더군.
 <--->
-보석상 한 곳에서 큰 루비를 도둑맞았대.
+어떤 보석상에서 커다란 루비를
+도난당했다고 신고했다는군.
 
 QuestorPostsuccess:  [1008]
-아, %pcf. 그 루비를 잘 간직하고 있기를 바라네.
+아, %pcf.
+그 루비를 안전하게 보관하고 있기를 바라네, 친구.
 <--->
 다시 만났군, 젊은 친구.
 
 QuestorPostfailure:  [1009]
-<ce>망쳐버린 밀수 건을 사과하러
-<ce>온 모양이군. 받아줄 수 없네.
-<ce>
+<ce>망쳐 버린 밀수 건을 사과하러 온 모양이군.
+<ce>사과는 받아들이지 않겠네.
 <--->
-<ce>간단한 배달도 못 한 %ra⁠가 자네였나?
-<ce>내가 왜 시간을 낭비해야 하지?
-<ce>
-<ce>
+<ce>간단한 배달조차 못 한 %ra가 자네였나?
+<ce>자네에게 말이나 걸어 봐야 무슨 소용이지?
 
 QuestLogEntry:  [1010]
-%qdt: _questgiver_는 특별한 _item_을
-___contact_의 _contact_에게 전달하라고 했다.
-=queston_일 안에 __contact_에 있는 %g2⁠에게 _item_을
-전하지 못하면 보상을 받지 못한다.
+%qdt:
+_questgiver_는 _item_을
+___contact_의 __contact_에 있는
+연락책 _contact_에게 전달하라고 했다.
+
+=queston_일 안에 %g2⁠에게 전달하지 못하면
+보상을 잃게 된다.
 
 Message:  1020
-<ce>보석을 내놔. 네가 가진 것을 길드가 알고 있어.
-<ce>거절하면 천천히 죽여주지.
-<ce>
-<ce>
+<ce>보석 내놔.
+<ce>네가 가진 거 다 알아. 길드가 그랬거든.
+<ce>안 내놓으면 아주 천천히 죽여야겠네.
 
 Message:  1021
-<ce>곱기도 하군. 내 마음이 바뀌기 전에 꺼져.
-<ce>
+<ce>참 곱기도 하군.
+<ce>내 마음이 바뀌기 전에 꺼져.
 
 -- Symbols used in the QRC file:
 --
---               %g2 occurs 13 times.
+--               %g2 occurs 1 time.
 --              %pcf occurs 3 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 2 times.
 --         =contact_ occurs 2 times.
 --         =queston_ occurs 2 times.
---       ___contact_ occurs 7 times.
---            _item_ occurs 7 times.
+--       ___contact_ occurs 2 times.
+--            _item_ occurs 6 times.
 --      _questgiver_ occurs 3 times.
+
 QBN:
 Item _reward_ ruby
 Item _item_ ruby

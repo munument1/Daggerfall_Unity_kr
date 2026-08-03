@@ -9,163 +9,173 @@ Quest: U0C00Y00
 DisplayName: 보에시아의 퀘스트
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>힘이라, 하! 문두스를 기어 다니는 %ra⁠가
+<ce>힘이라, 하! 문두스를 기어 다니는 %ra가
 <ce>진정한 힘을 얻으면 무엇을 해야 할지나 알까?
 <ce>다른 필멸자 몇 명을 윽박지르고 싶은 거겠지?
-<ce>뭐, 그 정도는 마련해줄 수 있다.
-<ce>내가 주는 힘을 실제로 휘두를 배짱이 있음을 보여봐라.
+<ce>뭐, 그 정도는 마련해 줄 수 있다.
+<ce>내가 주는 힘을 실제로 휘두를 배짱이 있음을 보여라.
 <ce>그 대가로 누군가를 죽이겠느냐?
-<ce>
 
 RefuseQuest:  [1001]
-<ce>퉤, 역겹군요. %pcf,
-<ce>철이 들거나 싸울 상대를 찾는 게
-<ce>아니라면 다시는 나를 소환하지 마세요.
+<ce>퉤, 역겹군.
+<ce>%pcf, 철이 들거나 싸울 상대를 찾는 것이 아니라면
+<ce>다시는 나를 소환하지 마라.
 
 AcceptQuest:  [1002]
 <ce>그래, 적어도 올바른 방향으로 첫발은 뗐군.
 <ce>힘을 얻기 위해 도살할 마검사는 =monster_다.
 <ce>수년 동안 나를 지독하게 성가시게 한,
 <ce>완벽하게 매력적이고 자비로운 멍청이지.
-<ce>%g3⁠의 요새 ___mondung_에서 %g2⁠를 찾을 수 있다.
-<ce>=monster_가 귀하신 몸이라고 해서 %g⁠가 싸울 줄 모를
-<ce>거라 생각하지 마라. 선물을 받으려면 조금은 고생해야지.
-<ce>살인을 끝낸 뒤에는 ___qgfriend_에
-<ce>있는 내 대리인 _qgfriend_를 만나라.
-<ce>__qgfriend_에서 빈둥거리는 =qgfriend_를
-<ce>찾으면 된다. %g2⁠를 기다리게 하지 마라.
-<ce>%g2⁠에게 =1stparton_일 안에 네가 간다고 전해두지.
-<ce>충분한 시간일 거다. 지켜보겠다.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>%g3의 요새인 ___mondung_에서 %g2를 찾을 수 있다.
+<ce>=monster_가 귀하신 몸이라고 해서
+<ce>%g가 싸울 줄 모를 거라 생각하지 마라.
+<ce>선물을 받으려면 조금은 고생해야지.
+<ce>살인을 끝낸 뒤 ___qgfriend_에 있는
+<ce>내 대리인 _qgfriend_를 만나라.
+<ce>__qgfriend_에서 빈둥거리는 =qgfriend_를 찾으면 된다.
+<ce>%g2를 기다리게 하지 마라.
+<ce>=1stparton_일 안에 네가 간다고 %g2에게 전해 두지.
+<ce>충분한 시간일 것이다. 지켜보겠다.
 
 QuestFail:  [1003]
 <ce>가던 길 가세요, %ra.
-<ce>우리 나눌 이야기는 없습니다.
+<ce>우리끼리 나눌 이야기는 없습니다.
 
 QuestComplete:  [1004]
-<ce>당신이 %pcn 인가요.
+<ce>당신이 %pcn인가요?
 <ce>흠, 보에시아가 말한 것만큼 보잘것없지는 않군요.
 <ce>칭찬으로 받아들이세요. 그리고 이것도 받으시죠.
 <ce>보에시아가 직접 만든 _artifact_입니다.
 <ce>힘을 찾는 데 도움이 될 거라고 생각하시더군요.
-<ce>그분이 당신에게 관심을 보이는 건 확실합니다.
-<ce>“보잘것없다”라고 말할 때의 미소를 보면 알 수 있었죠.
-<ce>
-<ce>
+<ce>그분이 당신에게 관심을 보이는 것은 확실합니다.
+<ce>"보잘것없다"라고 말할 때의 미소를 보면 알 수 있었죠.
 
 RumorsDuringQuest:  [1005]
-다음 시장 선거가 있다면, 저는 =monster_에게 투표할 겁니다.
+다음 시장 선거가 있다면,
+저는 =monster_에게 투표할 겁니다.
 <--->
-그 =monster_의 성품은 정말 다정하고 친절하며 관대합니다.
+그 =monster_의 성품은
+정말 다정하고 친절하며 관대합니다.
 %reg⁠의 자랑이죠.
 
 RumorsPostfailure:  [1006]
 탐리엘의 누가 =monster_의 암살을 원하겠어요?
 %g⁠가 무사해서 %god⁠께 감사합니다.
 <--->
-=monster_의 암살자 조우 소식을 들었습니다. 다행히 그 암살자는
-무능했습니다.
+=monster_의 암살자 조우 소식을 들었습니다.
+다행히 그 암살자는 무능했습니다.
 
 RumorsPostsuccess:  [1007]
-%reg 전체의 비극입니다. 어떤 괴물이 =monster_의 목숨을
-앗아갔을까요?
+%reg 전체의 비극입니다.
+어떤 괴물이 =monster_의 목숨을 앗아갔을까요?
 <--->
 %oth, =monster_의 죽음이라니 믿을 수가 없어요.
 정말 비극적이고 끔찍한 낭비입니다.
 
 Message:  1011
-_qgfriend_의 이름은 __qgfriend_에서 거칠게 말하던
+_qgfriend_의 이름은
+__qgfriend_에서 거칠게 말하던
 그 =qgfriend_입니다.
 <--->
-그건 %di 쪽 __qgfriend_에 있는 그 불량배의 이름입니다.
+그건 %di 쪽 __qgfriend_에 있는
+그 불량배의 이름입니다.
 
 Message:  1012
-_qgfriend_의 정체는 탐리엘에 있는 데이드릭 프린스
-보에시아의 대리인 중 한 명입니다.
+_qgfriend_의 정체는 탐리엘에 있는
+데이드릭 프린스 보에시아의
+대리인 중 한 명입니다.
 <--->
-_qgfriend_의 정체는 데이드릭 프린스 보에시아를 위해 일하는 심술궂은
-불량배입니다.
+_qgfriend_의 정체는
+데이드릭 프린스 보에시아를 위해 일하는
+심술궂은 불량배입니다.
 
 Message:  1013
-보에시아는 잔혹함과 고문의 데이드릭 프린스입니다.
+보에시아는 잔혹함과 고문의
+데이드릭 프린스입니다.
 좋은 분은 아니죠.
 <--->
-그분은 오블리비언의 프린스이자 데이드릭 섭정 중 한 명이며,
+그분은 오블리비언의 프린스이자
+데이드릭 섭정 중 한 명이며,
 정말 살인자입니다.
 
 Message:  1014
-_artifact_의 기능은 착용자를 여러 종류의 해로부터 보호하는 것입니다.
-화염과 생명력 흡수가 가장 잘 알려진 두 가지입니다.
+_artifact_의 기능은
+착용자를 여러 종류의 해로부터
+보호하는 것입니다.
+화염과 생명력 흡수가
+가장 잘 알려진 두 가지입니다.
 
 QuestLogEntry:  [1010]
-%qdt: 보에시아와 계약을 맺었다. ___mondung_에
-있는 %g3⁠의 요새에 사는 마검사 =monster_를 죽이는 대가로
-_artifact_이라는 유물을 받는다. 마검사를 처치하고 =1stparton_일 안에
-___qgfriend_의 __qgfriend_에 있는 보에시아의 연락책
-_qgfriend_를 만나야 한다.
+%qdt:
+보에시아와 계약을 맺었다.
+___mondung_에 있는 %g3 요새에 사는
+마검사 =monster_를 죽이는 대가로
+_artifact_라는 유물을 받는다.
+
+마검사를 처치하고 =1stparton_일 안에
+___qgfriend_의 __qgfriend_에 있는
+보에시아의 연락책 _qgfriend_를 만나야 한다.
 
 Message:  1030
-<ce>보에시아와의 계약을 이행했습니다.
-<ce>=monster_가 죽었습니다.
+<ce>보에시아와 맺은 계약을 이행했습니다.
+<ce>=monster_는 죽었습니다.
 
 Message:  1040
 =monster_에게,
 
-당장 ___mondung_에서 빠져나오세요! 보에시아가 당신을
-죽이도록 손을 썼다는 사실을 알아냈습니다. 당신의 경솔한 행동은
-나중에 따지겠습니다. 지금은 늘 만나던 곳으로 가세요.
-%reg⁠에서 탈출시킬 준비가 끝나면 제가 직접 만나러
-가겠습니다.
+당장 ___mondung_에서 빠져나오세요!
+보에시아가 당신을 죽이도록
+손을 썼다는 사실을 알아냈습니다.
+당신의 경솔한 행동은 나중에 따지겠습니다.
+지금은 늘 만나던 곳으로 가세요.
+%reg⁠에서 탈출시킬 준비가 끝나면
+제가 직접 만나러 가겠습니다.
 
 <ce>등 뒤를 조심하세요.
 <ce>
-<ce>_mfriend_ ___mfriend_
-<ce>
+<ce>_mfriend_
+<ce>___mfriend_
 
 Message:  1041
 <ce>어떻게 들어온 거지... %oth!
-<ce>=monster_ 때문에 언젠가는 죽을 줄 알았어. 들어봐.
-<ce>%g⁠가 내 편지를 아무 데나 흘리고 다닐 만큼 내
-<ce>목숨을 가볍게 여기니 %g⁠는 더는 보호할 가치가 없어.
-<ce>___hideout_에서 %g2⁠를 찾을 수 있다.
-<ce>이제 %g2⁠와는 완전히 손을 떼겠어.
-<ce>
-<ce>
-<ce>
+<ce>=monster_ 때문에 언젠가는 죽을 줄 알았어.
+<ce>잘 들어. %g가 내 편지를 아무 데나 흘리고 다닐 만큼
+<ce>내 목숨을 가볍게 여긴다면 더는 보호할 가치가 없어.
+<ce>___hideout_에서 %g2를 찾을 수 있다.
+<ce>이제 %g2와는 완전히 손을 떼겠어.
 
 Message:  1042
-%qdt: ___mondung_에서 =monster_를 놓쳤지만,
+%qdt:
+___mondung_에서 =monster_를 놓쳤지만,
 %g⁠가 지금 ___hideout_에 숨어 있다는 사실을 알아냈다.
+
 %G⁠는 두 번 다시 달아나지 못할 것이다.
 
 -- Symbols used in the QRC file:
 --
 --               %di occurs 1 time.
---                %g occurs 6 times.
---               %g2 occurs 7 times.
+--                %g occurs 4 times.
+--               %g2 occurs 5 times.
 --               %g3 occurs 2 times.
 --              %god occurs 1 time.
---              %oth occurs 3 times.
+--              %oth occurs 2 times.
 --              %pcf occurs 1 time.
 --              %pcn occurs 1 time.
 --              %qdt occurs 2 times.
 --               %ra occurs 2 times.
---              %reg occurs 10 times.
---       =1stparton_ occurs 3 times.
---         =monster_ occurs 16 times.
+--              %reg occurs 3 times.
+--       =1stparton_ occurs 2 times.
+--         =monster_ occurs 13 times.
 --        =qgfriend_ occurs 2 times.
 --       ___hideout_ occurs 2 times.
 --       ___mfriend_ occurs 1 time.
 --       ___mondung_ occurs 4 times.
---      ___qgfriend_ occurs 7 times.
+--      ___qgfriend_ occurs 2 times.
 --        _artifact_ occurs 3 times.
 --         _mfriend_ occurs 1 time.
 --        _qgfriend_ occurs 5 times.
+
 QBN:
 Item _artifact_ artifact Ebony_Mail anyInfo 1014
 Item _letter_ letter used 1040

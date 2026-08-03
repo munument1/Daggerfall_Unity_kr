@@ -10,51 +10,44 @@ Quest: N0C00Y11
 DisplayName: 재료 구하기
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>나는 _qgiver_입니다.
-<ce>원칙적으로 일의 보수를 받는 것은 길드원뿐입니다.
-<ce>하지만 처리해야 할 작은 일이 하나 있습니다.
-<ce>무료로 맡아준다면 길드에 당신을
-<ce>좋게 말해주겠습니다. 하겠습니까?
-<ce>
-<ce>
+<ce>원칙적으로 길드의 일로 보수를 받는 것은
+<ce>길드원뿐입니다.
+<ce>하지만 처리해야 할 작은 일이 하나 있지요.
+<ce>무료로 맡아준다면 길드에 당신을 좋게 말해 주겠습니다.
+<ce>도와주겠습니까?
 <--->
-<ce>나는 _qgiver_입니다. 길드의 일은 길드원에게만 주지만,
-<ce>아무도 맡으려 하지 않는 작은 일이 하나 있습니다.
-<ce>우리 괴짜 대가 한 명이 _ingredient_ 표본을
-<ce>반드시 구해오라고 고집하는데 재고가 떨어졌습니다.
-<ce>가져온다면 무척 고맙겠고 길드에서
-<ce>당신의 입지도 분명 좋아질 겁니다.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>나는 _qgiver_입니다.
+<ce>길드의 일은 길드원에게만 맡기지만,
+<ce>아무도 하려 들지 않는 작은 일이 하나 있습니다.
+<ce>우리의 괴짜 대가 한 분이 _ingredient_ 표본을
+<ce>반드시 구해 오라고 고집하는데,
+<ce>마침 재고가 완전히 떨어졌습니다.
+<ce>가져다준다면 무척 감사하겠고,
+<ce>길드에서 당신의 평판도 분명 좋아질 겁니다.
 
 RefuseQuest:  [1001]
-<ce>이럴 줄 알았습니다. 이 대화도 지겹군요,
-<ce>%pcn. 그럼 이만.
-<ce>
+<ce>이럴 줄 알았습니다.
+<ce>당신과 나누는 대화도 이제 지겹군요, %pcn.
+<ce>그럼 이만.
 
 AcceptQuest:  [1002]
 <ce>훌륭한 태도입니다, %pcf.
-<ce>_ingredient_이 필요합니다. 지금 내가 아는
-<ce>유일한 표본은 ___dungeon_에 있습니다.
+<ce>_ingredient_이 필요합니다.
+<ce>현재 내가 아는 유일한 표본은
+<ce>___dungeon_에서 찾을 수 있습니다.
 <ce>=traveltime_일 안에 가져오십시오.
-<ce>
-<ce>
 
 QuestComplete:  [1004]
-<ce>더 나은 표본도 본 적이 있습니다. 오는 내내
-<ce>깔고 앉아 있었습니까? 어쨌든 쓸 수는 있겠군요.
-<ce>길드 회관에서 당신을 좋게 말해두겠습니다.
-<ce>
-<ce>
+<ce>이보다 상태가 좋은 표본도 본 적이 있습니다.
+<ce>돌아오는 내내 깔고 앉아 있었습니까?
+<ce>어쨌든 쓸 수는 있겠군요.
+<ce>길드 회관에서 당신을 좋게 말해 두겠습니다.
 
 RumorsDuringQuest:  [1005]
-길드의 그 괴짜 마법사는 ___dungeon_의 _ingredient_이
-최고라고 우기고 있어.
+길드의 그 괴짜 마법사는
+___dungeon_의 _ingredient_이 최고라고 우기고 있어.
 
 RumorsPostfailure:  [1006]
 며칠 전에 종기가 났는데... 이제 다 나았습니다.
@@ -115,50 +108,52 @@ RumorsPostsuccess:  [1007]
 %reg⁠의 법률 제도에는 장단점이 있습니다.
 
 QuestorPostsuccess:  [1008]
-당신을 잊지 않았습니다, %pcf. _ingredient_을 가져온
-%ra 지요.
+당신을 잊지 않았습니다, %pcf.
+_ingredient_을 가져온 %ra지요.
 
 QuestorPostfailure:  [1009]
-<ce>내가 부탁한 일은 그리 어렵지도 않았습니다,
-<ce>%pcf. 그저 _ingredient_을 조금
-<ce>구해오면 됐지요. 그것조차 못했는데 내가
-<ce>왜 당신에게 숨을 낭비해야 합니까?
-<ce>
+<ce>내가 부탁한 일은 그리 어렵지도 않았습니다, %pcf.
+<ce>그저 _ingredient_을 조금 구해 오면 됐지요.
+<ce>그것조차 하지 못했는데,
+<ce>내가 왜 당신에게 계속 말을 낭비해야 합니까?
 
 QuestLogEntry:  [1010]
-%qdt: ___dungeon_에 숨겨져 있다는 _ingredient_
-표본을 찾아달라는 부탁을 받았다. ___qgiver_ 마법사
-길드의 _qgiver_는 =traveltime_일 안에 %g2⁠에게 그것을 가져오라고
-했다.
+%qdt:
+___dungeon_에 숨겨져 있다는
+_ingredient_ 표본을 찾아야 한다.
+
+___qgiver_ 마법사 길드의 _qgiver_는
+=traveltime_일 안에 그것을
+%g2⁠에게 가져오라고 했다.
 
 Message:  1040
-<ce>이것이 _qgiver_가 찾아달라고
-<ce>한 _ingredient_임이 틀림없습니다.
+<ce>이것이 _qgiver_가 찾아 달라고 한
+<ce>_ingredient_임이 틀림없습니다.
 
 Message:  1080
-<ce>마법사 길드의 특별한 감사로 ___newdung_으로
-<ce>가는 지도를 드리겠습니다. 당신 같은 사람은
-<ce>이런 물건만 보면 군침을 흘린다고 들었습니다.
-<ce>
-<ce>
+<ce>마법사 길드에서 특별히 감사하는 뜻으로
+<ce>___newdung_의 위치가 표시된 지도를 드리겠습니다.
+<ce>당신 같은 사람은 이런 물건만 보면
+<ce>군침을 흘린다고 들었습니다.
 
 -- Symbols used in the QRC file:
 --
 --               %cn occurs 2 times.
---               %g2 occurs 2 times.
+--               %g2 occurs 1 time.
 --              %jok occurs 6 times.
---              %oth occurs 10 times.
+--              %oth occurs 2 times.
 --              %pcf occurs 3 times.
---              %pcn occurs 3 times.
+--              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
---               %ra occurs 27 times.
+--               %ra occurs 1 time.
 --              %reg occurs 2 times.
 --      =traveltime_ occurs 2 times.
 --       ___dungeon_ occurs 3 times.
 --       ___newdung_ occurs 1 time.
 --        ___qgiver_ occurs 1 time.
---      _ingredient_ occurs 61 times.
+--      _ingredient_ occurs 7 times.
 --          _qgiver_ occurs 4 times.
+
 QBN:
 Item _ingredient_ organs
 

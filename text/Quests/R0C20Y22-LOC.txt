@@ -9,143 +9,151 @@ Quest: R0C20Y22
 DisplayName: 오크와의 거래
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>아, %pcf. 와주어 기쁩니다.
-<ce>특별한 _item_을 지인에게
-<ce>전달할 사람을 찾고 있습니다.
-<ce>위험한 임무인 만큼 보수도 후할 겁니다. 관심 있습니까?
-<ce>
-<ce>
-<ce>
+<ce>아, %pcf. 마침 와 주셔서 기쁩니다.
+<ce>일을 맡을 수 있다면 특별한 _item_을
+<ce>제 지인에게 전달해 주셨으면 합니다.
+<ce>위험한 임무인 만큼 보상은 대단히 후할 겁니다.
+<ce>관심 있습니까?
 
 RefuseQuest:  [1001]
-<ce>정말입니까? 너무 바쁘신가 보군요. 아쉽네요.
+<ce>정말입니까? 너무 바쁜 모양이군요.
+<ce>안타깝습니다.
 
 AcceptQuest:  [1002]
 <ce>훌륭합니다. 여기 _item_입니다.
-<ce>=queston_일 안에 ___contact_의 _contact_에게
-<ce>전달해야 합니다. _contact_는 __contact_에
-<ce>있는 =contact_라 쉽게 알아볼 겁니다.
-<ce>운송을 막으려는 오크를 만날 수도
-<ce>있지만 상대하는 법은 알겠지요. 행운을 빕니다.
-<ce>
-<ce>
-<ce>
+<ce>_contact_가 =queston_일 안에
+<ce>___contact_에서 받아야 합니다.
+<ce>시간은 충분할 겁니다.
+<ce>__contact_에 있는 =contact_를 찾으면
+<ce>_contact_를 쉽게 알아볼 수 있을 것입니다.
+<ce>이 화물이 전달되는 것을 원치 않는 오크들과
+<ce>마주칠 수도 있습니다.
+<ce>그들을 상대하는 법은 알고 있으리라 믿습니다.
+<ce>행운을 빕니다.
 
 QuestFail:  [1003]
-<ce>속도가 생명입니다, %pcf. 오크들이 밤마다
-<ce>___questgiver_ 주변을 배회하는 것이 목격되었습니다.
-<ce>그들이 더 대담해지기 전에 서둘러 길을 떠나는 것이 좋을 겁니다.
-<ce>
+<ce>속도가 중요합니다, %pcf.
+<ce>오크들이 밤마다 ___questgiver_ 주변을
+<ce>배회하는 모습이 목격되었습니다.
+<ce>더 대담해지기 전에 길을 떠나는 편이 좋습니다.
 
 QuestComplete:  [1004]
-<ce>아, %pcf, 다시 뵙게 되어 반갑습니다.
-<ce>그리고 _item_도 가져오셨군요. 훌륭합니다.
-<ce>여기 수고비로 작은 장신구를 하나 드리지요.
-<ce>빨간색을 좋아하시길 바랍니다. 몸조심하십시오.
+<ce>아, 다시 만나 반갑습니다, %pcf.
+<ce>_item_도 가져오셨군요. 훌륭합니다.
+<ce>수고비로 작은 장신구를 하나 드리지요.
+<ce>붉은색을 좋아하시기를 바랍니다.
+<ce>몸조심하십시오.
 
 RumorsDuringQuest:  [1005]
-_questgiver_의 밀수업에 관한 소문이 있더군.
+_questgiver_는 아직도 밀수에 손을 대고 있다더군.
 <--->
-<ce>어젯밤 경비병들이 오크 몇 마리를 쫓아냈다는 소리를 들었어.
-<ce>도대체 무슨 일로 마을까지 들어온 거지?
+<ce>어젯밤 경비병들이 오크 둘을 쫓아냈다는 소리를 들었어.
+<ce>무슨 일로 마을까지 들어온 걸까?
 
 RumorsPostfailure:  [1006]
-최근 누군가 이곳 근처에서 아주 아름다운 _item_ 발견 소식을
-전하더군.
+최근 누군가 이 근처에서
+아주 멋진 _item_을 발견했다더군.
 <--->
-듣자 하니 _questgiver_의 분노가 어떤 %ra 모험가에게
-향했다더군.
+_questgiver_가 어떤 %ra 모험가에게
+몹시 화가 났다는 소문이 있어.
 
 RumorsPostsuccess:  [1007]
-어떤 =contact_이 방금 여기 와서 _item_을 휘두르고
-다녔어.
+어떤 =contact_이 방금 여기 와서
+_item_을 흔들어 보였어.
 <--->
-어떤 보석상에서 큰 루비를 도난당했다고 신고했다는군.
+어떤 보석상에서 커다란 루비를
+도난당했다고 신고했다는군.
 
 QuestorPostsuccess:  [1008]
-당신의 임무가 성공했다는 소식을 들었습니다, %pcf. 잘됐군요.
-아주 잘됐습니다.
+당신의 임무가 성공했다는 소식을 들었습니다, %pcf.
+잘됐군요. 아주 잘됐습니다.
 <--->
-배달이 성공했다는 소식을 들어 기쁩니다. 무엇을 도와드릴까요?
+배달이 성공했다는 소식을 들어 기쁩니다.
+무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-<ce>배달을 완수하지 못한 그 전령이군요, 그렇지요?
-<ce>당신에게 다시 입을 여는 건 어리석은 짓이겠지요?
-<ce>참고로, 이건 수사 의문문입니다.
-<ce>
-<ce>
+<ce>배달을 끝내지 못한 그 전령이군요, 그렇지요?
+<ce>당신에게 다시 말을 거는 것은 어리석은 짓이겠지요?
+<ce>참고로 대답을 기대한 질문은 아닙니다.
 
 QuestLogEntry:  [1010]
-%qdt: _questgiver_는 _item_을
-___contact_에 사는 _contact_에게 전달하라고 했다.
-%G⁠는 __contact_에서 만나 =queston_일 안에 배달하면
-보수를 줄 것이다. 물론 _item_을 노리는 오크들에게 당하지
-않아야 한다.
+%qdt:
+_questgiver_는 _item_을
+___contact_에 있는 _contact_에게
+전달해달라고 했다.
+
+=queston_일 안에 배달을 마치면
+%G⁠는 __contact_에서 만나 보상을 줄 것이다.
+물론 _item_을 노리는 오크들에게
+먼저 갈기갈기 찢기지 않아야 한다.
 
 Message:  1012
-___orsinium_에서 온 그 오크 애호가와는 엮이지 않는 게 좋을
-거야.
+___orsinium_에서 온 그 오크 애호가와는
+엮이지 않는 게 좋을 거야.
 <--->
-___orsinium_의 _orsinium_ 말이야? 그들은 %g⁠가 실제로
-오크들과 대화를 나눈다고 하더군.
+___orsinium_의 _orsinium_ 말이야?
+%g⁠가 정말 오크들과 이야기를 나눈다더군.
 
 Message:  1013
-_orsinium_의 명성은 ___orsinium_에서 오크 동조자로 꽤
-유명하지.
+_orsinium_은 ___orsinium_에서
+오크 동조자로 잘 알려져 있지.
 <--->
-<ce>나는 _orsinium_의 정체가 더러운 오크 애호가라는 사실을 알고 있어.
-<ce>___orsinium_ 밖에서 그 짐승들과 만나는 %g2⁠를 직접 봤거든.
-<ce>내 생각엔 %G⁠를 당장 마을에서 쫓아내야 해.
+<ce>_orsinium_이 더러운 오크 애호가라는 건 확실해.
+<ce>___orsinium_ 밖에서 그 짐승들과 만나는 %g2⁠를
+<ce>내가 직접 봤거든. 내 생각엔 %G⁠를 마을에서 쫓아내야 해.
 
 Message:  1015
-_questgiver_의 부인에도 불구하고, 사람들은 %g⁠가 밀수업에 손을
-대고 있다고 하더군.
+_questgiver_는 부인하겠지만,
+%g⁠가 밀수에 손을 대고 있다는 소문이 있어.
 <--->
-<ce>_questgiver_의 연루 의혹에 관해 옛 오시니움에서
-<ce>약탈한 전리품을 들여오는 밀수 조직과 관련이 있다는 소문이 있어.
+<ce>_questgiver_가 옛 오시니움에서 약탈한 전리품을 들여오는
+<ce>밀수 조직에 연루됐다는 소문이 있어.
 
 Message:  1016
-<ce>_questgiver_의 옛 오시니움 전리품 거래가 계속된다면 우리 모두에게
-<ce>오크들을 불러들이는 꼴이 될 거야. _orsinium_의 공개적인
-<ce>_questgiver_ 고발에도, 물론 아무런 조치도 취해지지 않았지.
+<ce>_questgiver_가 오시니움의 전리품을 계속 거래하면
+<ce>결국 오크들의 분노가 우리 모두에게 닥칠 거야.
+<ce>_orsinium_가 공개적으로 _questgiver_를 고발했지만,
+<ce>물론 아무 조치도 이루어지지 않았지.
 <--->
-<ce>_questgiver_의 출처는 모르겠지만, 최근 %g2⁠가
-<ce>아주 정교한 골동품 장신구를 걸치고 있는 걸 봤어.
-<ce>내가 틀리지 않았다면, 고대 오시니움의 장인이 만든 물건일 거야.
+<ce>_questgiver_가 어디서 구했는지는 모르겠지만,
+<ce>최근 %g2가 아주 정교한 골동품 장신구를
+<ce>걸치고 있는 모습을 봤어.
+<ce>내가 틀리지 않았다면 고대 오시니움의 장인이 만든 물건이야.
 
 Message:  1020
-<ce>저를 찾아주셔서 기쁩니다, %pcn.
-<ce>당신이 운반 중인 _item_ 항목은 오크의 고대 수도인
-<ce>오시니움에서 훔친 물건이라는 사실을 아셔야 합니다.
-<ce>_questgiver_는 대부분의 사람처럼 오크를 경멸하기에, 그들은
-<ce>도난당한 재산을 되찾기 위해 폭력에 의존할 수밖에 없습니다.
-<ce>하지만 당신은 고용주보다 더 깨어있는 사람이길 바랍니다.
-<ce>만약 저에게 _item_ 항목을 주신다면,
-<ce>정당한 주인에게 돌아가도록 조치하겠습니다.
-<ce>
+<ce>저를 찾아와 주셔서 기쁩니다, %pcn.
+<ce>당신이 운반하는 _item_은
+<ce>오크의 고대 수도 오시니움에서 도난당한 물건입니다.
+<ce>_questgiver_는 대부분의 사람처럼 오크를
+<ce>경멸할 가치조차 없는 존재로 여기지요.
+<ce>그래서 오크들은 도난당한 재산을 되찾으려고
+<ce>폭력에 의존할 수밖에 없습니다.
+<ce>하지만 당신은 고용주보다 현명하기를 바랍니다.
+<ce>_item_을 제게 주면
+<ce>정당한 주인에게 돌려보내겠습니다.
 
 Message:  1021
-<ce>_item_ 건네주시겠습니까?
+<ce>_item_을 건네겠습니까?
 
 Message:  1022
-<ce>당신에 대한 제 판단이 옳았군요.
-<ce>감사합니다, %pcf. 이 은혜는 잊지 않겠습니다.
+<ce>당신에 대한 제 판단이 옳아서 기쁘군요.
+<ce>감사합니다, %pcf.
+<ce>이 은혜는 잊지 않겠습니다.
 
 Message:  1023
-<ce>매우 유감스러운 일이군요. 뭐, 우리 모두에게는 각자의 이유가
-<ce>있으니까요. 이 결정을 안고 살아가시길 바랍니다.
-<ce>
+<ce>참으로 유감스럽군요.
+<ce>누구에게나 각자의 이유는 있겠지요.
+<ce>이 결정을 내리고도 마음 편히 살 수 있기를 바랍니다.
 
 Message:  1030
-<ce>오크가 바닥으로 쓰러지며 알아듣기 힘든 억양으로 헐떡이며 말합니다.
+<ce>오크가 바닥에 쓰러지며
+<ce>거의 알아들을 수 없는 억양으로 헐떡입니다.
 <ce>"_orsinium_... 가라... _orsinium_..."
-<ce>
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 6 times.
+--                %g occurs 2 times.
 --               %g2 occurs 2 times.
 --              %pcf occurs 5 times.
 --              %pcn occurs 1 time.
@@ -154,12 +162,13 @@ Message:  1030
 --         =contact_ occurs 2 times.
 --         =queston_ occurs 2 times.
 --       ___contact_ occurs 2 times.
---      ___orsinium_ occurs 6 times.
+--      ___orsinium_ occurs 4 times.
 --    ___questgiver_ occurs 1 time.
---        __contact_ occurs 5 times.
---            _item_ occurs 12 times.
---        _orsinium_ occurs 7 times.
---      _questgiver_ occurs 11 times.
+--        __contact_ occurs 2 times.
+--            _item_ occurs 10 times.
+--        _orsinium_ occurs 6 times.
+--      _questgiver_ occurs 9 times.
+
 QBN:
 Item _reward_ ruby
 Item _item_ trinket

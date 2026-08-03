@@ -9,96 +9,99 @@ Quest: R0C20Y07
 DisplayName: 잃어버린 사파이어
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>제게는 신중한 도움이 필요한 친구이자
+<ce>신중한 도움이 필요한 친구이자
 <ce>잠재적인 동맹이 한 명 있습니다.
-<ce>비교적 간단한 회수 작업인데, 제 친구가 매우 후하게
-<ce>사례할 것이며 저 또한 크게 감사할 것입니다.
-<ce>이 일은 아주 곧, =1stparton_일 이내에 완수되어야 합니다.
-<ce>관심이 있으시다면 자세히 말씀드리겠습니다.
-<ce>
+<ce>비교적 간단한 회수 작업이며,
+<ce>친구는 아주 후하게 보상할 것이고 저도 크게 감사할 겁니다.
+<ce>다만 =1stparton_일 안에 매우 빠르게 끝내야 합니다.
+<ce>관심이 있다면 자세히 설명하지요.
 
 RefuseQuest:  [1001]
-<ce>시작부터 거절하는 것이 승낙했다가 실패하는 것보다 분명 낫겠지요.
-<ce>조금 실망스럽긴 하지만, 곧 괜찮아질 겁니다.
-<ce>
+<ce>처음부터 거절하는 것이
+<ce>승낙하고 실패하는 것보다는 분명 낫겠지요.
+<ce>조금 실망스럽지만 곧 괜찮아질 겁니다.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. 내 친구는 ___qgfriend_의 _qgfriend_입니다.
-<ce>%G⁠는 사파이어 하나를 잃었고 첩자들이 하필
-<ce>___itemdung_에서 찾아냈습니다. 그 보석은 %g⁠가
-<ce>제3자에게 빌린 것이므로 반드시 되찾아야 합니다.
-<ce>=1stparton_일 안에 ___itemdung_에서 찾아
-<ce>___qgfriend_의 _qgfriend_에게
-<ce>가져가십시오. =1stparton_일을 넘기면 안 됩니다.
-<ce>%g3 보상은 후할 겁니다, %pcf.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>훌륭합니다. 도와줄 줄 알았습니다.
+<ce>제 친구는 ___qgfriend_의 _qgfriend_입니다.
+<ce>%G가 사파이어 하나를 잃어버렸고,
+<ce>제 첩자들은 그 보석이 하필 ___itemdung_에
+<ce>들어갔다는 사실을 알아냈습니다.
+<ce>_qgfriend_는 그 보석을 제3자에게 빌렸으므로
+<ce>반드시 되찾아야 합니다.
+<ce>=1stparton_일 안에 %g3 손에 돌아가지 않으면
+<ce>큰 문제가 생길 것입니다.
+<ce>게다가 현재 보석을 가진 자들은
+<ce>곧 ___itemdung_을 떠날 예정이라고 합니다.
+<ce>즉시 출발해 사파이어를 되찾고,
+<ce>=1stparton_일 안에 ___qgfriend_의
+<ce>_qgfriend_에게 전달하십시오.
+<ce>행운을 빕니다, %pcf.
+<ce>저를 자랑스럽게 해 주세요.
 
 QuestFail:  [1003]
 <ce>사파이어는 어디 있습니까, %pcf?
-<ce>무언가 잊으신 건가요? %oth!
+<ce>무언가 잊은 것은 아닌가요? %oth!
 
 QuestComplete:  [1004]
-<ce>오, %pcf, 그 사파이어를
-<ce>찾아주셔서 얼마나 안도했는지 모릅니다.
-<ce>만약 찾지 못했다면 어땠을지 생각조차 하기 싫군요.
-<ce>여기 제가 드릴 수 있는 최고의 보상인 _reward_입니다.
-<ce>부디 제 진심 어린 감사와 함께 받아주십시오.
-<ce>
+<ce>오, %pcf. 사파이어를 찾아 주셔서
+<ce>얼마나 안도했는지 모릅니다.
+<ce>찾지 못했다면 어떻게 되었을지 생각조차 하기 싫군요.
+<ce>제가 드릴 수 있는 최고의 보상인 _reward_입니다.
+<ce>진심 어린 감사와 함께 받아 주십시오.
 
 RumorsDuringQuest:  [1005]
-___itemdung_의 그 도둑들은 꽤 강력한 경비병들을 두고 있지.
+___itemdung_의 도둑들은
+상당히 강력한 경비병들을 두고 있지.
 <--->
-_qgfriend_는 최근 들어 몹시 불안해하고 있어.
+_qgfriend_는 요즘 몹시 불안해하고 있어.
 
 RumorsPostfailure:  [1006]
-듣자 하니 어떤 강력한 위저드가 _qgfriend_에게 원한을 품고
-있다더군.
+듣자 하니 어떤 강력한 마법사가
+_qgfriend_를 해치려 한다더군.
 <--->
-_questgiver_의 불만은 괜찮은 %ra 용병이 부족하다는
-것이지.
+_questgiver_는 쓸 만한 %ra 용병이
+턱없이 부족하다고 불평하고 있어.
 
 RumorsPostsuccess:  [1007]
-알고 보니 _qgfriend_의 행위는 보석을 훔친 게 아니었어.
-그들은 보석을 발견한 것뿐이지.
+알고 보니 _qgfriend_는 그 보석을 훔치지 않았어.
+보석이 발견됐거든.
 <--->
-_qgfriend_의 혐의는 도둑질이었지만, %g⁠가 훔쳤다고 알려진
-보석은 결국 그들이 찾아냈어.
+_qgfriend_는 도둑으로 몰렸지만,
+%g⁠가 훔쳤다던 보석이 발견됐어.
 
 QuestorPostsuccess:  [1008]
 제 친구에게 당신이 사파이어를 손에 넣었다고 들었습니다.
-이제, 제가 무엇을 도와드릴까요?
+무엇을 도와드릴까요?
 <--->
-다시 뵙게 되어 기쁩니다. 제 친구가 그 작은 푸른 선물에 대해 아주
-고마워하더군요.
+다시 뵙게 되어 기쁩니다.
+제 친구가 그 작은 푸른 선물을 아주 고마워하더군요.
 
 QuestorPostfailure:  [1009]
-<ce>당신의 배짱에는 감탄했습니다, %pcn.
-<ce>퀘스트에 실패하고도 사파이어 없이 돌아오다니.
-<ce>
-<ce>
+<ce>배짱 하나는 대단하군요, %pcn.
+<ce>사파이어를 되찾는 임무에 실패하고도
+<ce>감히 다시 돌아오다니.
 
 QuestLogEntry:  [1010]
-%qdt: ___questgiver_의 _questgiver_의 의뢰로
-제게 __qgfriend_의 _qgfriend_, ___qgfriend_인
-%g3⁠의 친구에게서 도난당한 사파이어를 찾아오라는 임무를 맡겼다.
-___itemdung_에서 __qgfriend_까지 사파이어를 가져와 보상을
-받기까지 =1stparton_일이 남았다.
+%qdt:
+___questgiver_의 _questgiver_는
+%g3 친구인 _qgfriend_에게서 도난당한
+사파이어를 찾아달라고 했다.
+
+_qgfriend_는 ___qgfriend_의 __qgfriend_에 있다.
+=1stparton_일 안에 ___itemdung_에서 사파이어를 찾아
+__qgfriend_로 가져가야 보상을 받을 수 있다.
 
 Message:  1011
 사파이어를 찾았습니다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 3 times.
+--                %g occurs 1 time.
 --               %g3 occurs 2 times.
---              %oth occurs 2 times.
---              %pcf occurs 4 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 3 times.
 --              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
@@ -106,9 +109,10 @@ Message:  1011
 --      ___itemdung_ occurs 4 times.
 --      ___qgfriend_ occurs 3 times.
 --    ___questgiver_ occurs 1 time.
---       __qgfriend_ occurs 9 times.
+--       __qgfriend_ occurs 2 times.
 --      _questgiver_ occurs 2 times.
 --          _reward_ occurs 1 time.
+
 QBN:
 Item _reward_ magic_item
 Item _item_ sapphire

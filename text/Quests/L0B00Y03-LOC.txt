@@ -9,94 +9,96 @@ Quest: L0B00Y03
 DisplayName: 배신자 마법사
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>마법사 길드가 자신들이 처리하기에는
 <ce>너무 지저분하고 역겨운 일을 가져왔다.
-<ce>변절한 마법사를 서둘러 정리해야 한다. 관심 있나?
-<ce>
-<ce>
+<ce>변절한 마법사를 서둘러 정리해야 한다.
+<ce>관심 있나?
 <--->
 <ce>마법사 길드가 또 우리 고객이 됐다.
 <ce>그들 중 하나가 박쥐 내장을 너무 들이마셨는지
-<ce>날뛰고 있다. 흥미롭지 않나, %pct?
-<ce>
-<ce>
+<ce>날뛰고 있다.
+<ce>흥미롭지 않나, %pct?
 
 RefuseQuest:  [1001]
 <ce>실망스럽군.
 
 AcceptQuest:  [1002]
-<ce>좋다. 그 마법사 이름은 =mage_다. 여러 마법 물건을
-<ce>훔쳐 달아났지만, 마법사 길드는 %g⁠이 훔친 것을 네가
-<ce>가져도 상관하지 않는다. 그저 %g2⁠이 죽기를 바랄 뿐이지.
+<ce>좋다. 그 마법사 이름은 =mage_다.
+<ce>여러 마법 물건을 훔쳐 달아났지만,
+<ce>마법사 길드는 %g가 훔친 것을 네가 가져도
+<ce>상관하지 않는다.
+<ce>그저 %g2가 죽기를 바랄 뿐이지.
 <ce>장부를 정리할 시간은 =queston_일이다.
-<ce>%g2⁠은 ___mondung_이라는 끔찍한 곳에
-<ce>웅크리고 있다. 변절 마법사가 하나 줄어든
-<ce>세상으로 만들어 =queston_일 안에 돌아와라.
+<ce>%g2는 ___mondung_이라는 끔찍한 곳에 숨어 있다.
+<ce>변절 마법사가 하나 줄어든 세상으로 만들어
+<ce>=queston_일 안에 돌아와라.
 <ce>메팔라께서 네 팔을 굳게 하시길, %pct.
-<ce>
-<ce>
-<ce>
-<ce>
 
 QuestComplete:  [1004]
 <ce>그 불꽃시전자의 불꽃을 껐나, %pcf?
-<ce>메팔라와 그분의 자녀들이 너를 기뻐하신다.
-<ce>
-<ce>
+<ce>메팔라와 그분의 자녀들이
+<ce>너를 기뻐하신다.
 
 RumorsDuringQuest:  [1005]
-마법사 길드는 =mage_가 통제에서 벗어났다는 사실을
-부정하고 있습니다.
+마법사 길드는 =mage_가
+통제에서 벗어났다는 사실을 부정하고 있습니다.
 <--->
-등불 기사단은 너무 공식적인 조직이라 =mage_ 같은 자를
-처리하지 못하지요.
+등불 기사단은 =mage_를 상대하기에는
+지나치게 공식적인 조직이지요.
 
 RumorsPostfailure:  [1006]
 =mage_는 일리악 만 건너편으로 달아났습니다.
-%g3 계획이 무엇인지 누가 알겠습니까?
+%g3 속셈이 무엇인지는 누가 알겠습니까?
 
 RumorsPostsuccess:  [1007]
-사람들 말로는 등불 기사단이 =mage_를 죽였다더군요.
+사람들 말로는
+등불 기사단이 =mage_를 죽였다더군요.
 <--->
-그 _mage_를 살려두었다면 무슨 일이 벌어졌을지 누가
-알겠습니까?
+그 _mage_를 살려두었다면
+무슨 일이 벌어졌을지 누가 알겠습니까?
 
 QuestorPostsuccess:  [1008]
-반갑도다. 마법사 사냥꾼이여, =qgiver_가 무엇을 도와주랴?
+반갑도다.
+마법사 사냥꾼이여,
+=qgiver_가 무엇을 도와주랴?
 
 QuestorPostfailure:  [1009]
-<ce>너는 우리와의 계약에 실패했고, 그 때문에
-<ce>우리도 마법사 길드와의 계약을 지키지 못했다.
+<ce>너는 우리와의 계약에 실패했고,
+<ce>그 때문에 우리도 마법사 길드와의 계약을
+<ce>지키지 못했다.
 <ce>지금 너에게 줄 것은 경멸뿐이다, %pcf.
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에 있는 다크
-브라더후드의 _qgiver_는 마법사 길드의 변절 마법사를 처리하라고
-나를 ___mondung_으로 보냈다. 이 일을 끝낼 시간은
-=queston_일이다.
+%qdt:
+___qgiver_의 __qgiver_에 있는
+다크 브라더후드의 _qgiver_는
+마법사 길드의 변절 마법사를 처리하라고
+나를 ___mondung_으로 보냈다.
+
+기한은 =queston_일이다.
 
 Message:  1011
 <ce>=mage_의 빛이 꺼졌습니다.
-<ce>브라더후드와 마법사 길드가 기뻐할 것입니다.
+<ce>다크 브라더후드와 마법사 길드가
+<ce>기뻐할 것입니다.
 
 -- Symbols used in the QRC file:
 --
 --                %g occurs 1 time.
 --               %g2 occurs 2 times.
 --               %g3 occurs 1 time.
---              %pcf occurs 4 times.
---              %pct occurs 4 times.
+--              %pcf occurs 2 times.
+--              %pct occurs 2 times.
 --              %qdt occurs 1 time.
---            =mage_ occurs 7 times.
+--            =mage_ occurs 6 times.
 --          =qgiver_ occurs 1 time.
---         =queston_ occurs 4 times.
+--         =queston_ occurs 3 times.
 --       ___mondung_ occurs 2 times.
---        ___qgiver_ occurs 2 times.
+--        ___qgiver_ occurs 1 time.
 --            _mage_ occurs 1 time.
 --          _qgiver_ occurs 1 time.
+
 QBN:
 
 Person _qgiver_ group Questor

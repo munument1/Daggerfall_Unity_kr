@@ -9,16 +9,16 @@ Quest: 20C00Y00
 DisplayName: 몰라그 발의 퀘스트
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>힘을 원하는가, %pcn.
 <ce>힘은 지혜보다 훨씬 손에 잡히는 가치가 있지.
-<ce>그렇지 않은가? 네 가치를 판단할 수 있도록 한 가지
-<ce>수고를 맡기겠다. 물론 불쾌한 일은 아니다.
-<ce>오히려 즐길지도 모르지. 간단한 암살이다.
+<ce>그렇지 않은가?
+<ce>네 가치를 판단할 수 있도록 한 가지 수고를 맡기겠다.
+<ce>물론 불쾌한 일은 아니다. 오히려 즐길지도 모르지.
+<ce>간단한 암살이다.
 <ce>완수하면 _artifact_을 보상으로 주겠다.
-<ce>그러면 네가 진정한 힘을 누릴 준비가
-<ce>되었는지 알 수 있겠지. 받아들이겠는가?
+<ce>그러면 네가 진정한 힘을 누릴 준비가 되었는지 알 수 있겠지.
+<ce>받아들이겠는가?
 
 RefuseQuest:  [1001]
 <ce>우리의 시간을 낭비했군. 우리는 불쾌하다.
@@ -28,18 +28,17 @@ AcceptQuest:  [1002]
 <ce>목표는 =monster_이라는 이름의 _monster_이다.
 <ce>이 지긋지긋한 불꽃술사는 계약도 맺지 않고
 <ce>우리의 이름을 불러 우리의 힘을 끌어다 쓰고 있다.
-<ce>무지해서 벌인 짓일 수도 있으나, 자비를 베풀 수는 없다.
-<ce>%g3⁠의 실험실 ___mondung_에서 그 마법사를
-<ce>찾아 %g2⁠을 파괴하라. 그런 다음 =1stparton_일이 지나기
-<ce>전에 _tavern_이라는 __tavern_에서
-<ce>우리의 대리인인 =contact_ _contact_을 만나라.
-<ce>그곳에서 %g⁠가 _artifact_을 줄 것이다.
+<ce>무지해서 벌인 짓일 수도 있으나 자비를 베풀 수는 없다.
+<ce>%g3 실험실인 ___mondung_에서 그 마법사를 찾아 %g2을 파괴하라.
+<ce>그런 다음 =1stparton_일이 지나기 전에
+<ce>_tavern_이라는 __tavern_에서
+<ce>우리의 대리인 _contact_을 만나라. %g은 =contact_이다.
+<ce>그곳에서 %g가 _artifact_을 줄 것이다.
 <ce>꾸물대지 마라. 시간이 촉박하다.
 <ce>우리는 지켜보고 있다. 실패하지 마라.
 
 QuestFail:  [1003]
-<ce>잘 들어라, %pcf. 너와 나
-<ce>모두 =monster_이 아직 살아 있다는 것을 안다.
+<ce>잘 들어라, %pcf. 너와 나 모두 =monster_이 아직 살아 있다는 것을 안다.
 <ce>계약은 계약이며, 몰라그 발은 결코 잊지 않는다.
 
 QuestComplete:  [1004]
@@ -48,58 +47,65 @@ QuestComplete:  [1004]
 <ce>물론 _artifact_도 여기 있다. 마음껏 쓰고, 잘 가게.
 
 RumorsDuringQuest:  [1005]
-모두 ___mondung_에서 벌어지는 실험을 두고 수군댑니다.
+모두 ___mondung_에서 벌어지는 실험을 두고
+수군거리고 있습니다.
 <--->
-%di 방향의 ___mondung_에서 이상한 일이 벌어지고 있습니다.
+%di 방향의 ___mondung_에서
+이상한 일이 벌어지고 있습니다.
 
 RumorsPostfailure:  [1006]
-저 밝은 붉은 별은 데이드라 몰라그 발의 분노라고 합니다.
+저 밝은 붉은 별은
+데이드라 몰라그 발의 분노라고 합니다.
 <--->
-이 근처에서 어떤 미친 =contact_이 계약을 들먹이며 소리치고
-다녔습니다.
+이 근처에서 어떤 미친 =contact_이
+계약을 들먹이며 소리치고 다녔습니다.
 
 RumorsPostsuccess:  [1007]
 요즘 ___mondung_ 주변이 아주 조용합니다.
 <--->
-___mondung_ 주변이 한동안 소란스러웠지만, 이제는
-모두 잠잠해졌습니다.
+___mondung_ 주변이 한동안 소란스러웠지만,
+이제는 모두 잠잠해졌습니다.
 
 Message:  1011
-위엄 있는 데이드릭 프린스로, 모든 데이드라 가운데 가장 권력에
-굶주렸다고 합니다.
+위엄 있는 데이드릭 프린스로,
+모든 데이드라 가운데 가장 권력에 굶주렸다고 합니다.
 <--->
-몰라그 발은 탐리엘을 자신의 영역으로 만들려는 집착에 사로잡혔다고
-합니다.
+몰라그 발은 탐리엘을 자신의 영역으로 만들려는
+집착에 사로잡혔다고 합니다.
 
 Message:  1012
-이상하게 행동하는 =contact_이 여기서 %di 방향에
-있는 __tavern_에 있었습니다.
+이상하게 행동하는 =contact_이
+여기서 %di 방향의 __tavern_에 있었습니다.
 <--->
-그런 이름의 =contact_이 얼마 전까지 여기서 %di
-방향의 __tavern_에 있었습니다.
+그런 이름의 =contact_이 얼마 전까지
+여기서 %di 방향의 __tavern_에 머물렀습니다.
 
 Message:  1013
-몰라그 발의 철퇴는 희생자의 매지카를 빼앗습니다.
+몰라그 발의 철퇴는
+희생자의 매지카를 빼앗습니다.
 <--->
-<ce>몰라그 발의 철퇴는 평민들에게 흡혈귀의 철퇴라고도 불리며,
-<ce>희생자의 마력을 소유자에게 흘려보내는 통로입니다.
+<ce>몰라그 발의 철퇴는 평범한 사람들에게
+<ce>뱀파이어의 철퇴라고도 불리며,
+<ce>마력을 사용자에게 흘려보내는 통로입니다.
 
 Message:  1020
-%qdt: 데이드릭 프린스 몰라그 발은 던전
-___mondung_에 있는 정체불명의 주문 시전자를 죽이라고 명령했다.
-=1stparton_일 안에 그 마법사를 죽인 뒤, _tavern_이라는
-__tavern_에서 그의 협력자 _contact_을 만나면 _artifact_을
-받을 수 있다.
+%qdt:
+데이드라 군주 몰라그 발은
+___mondung_에 있는 정체불명의 주문 시전자를
+죽이라고 명했다.
+
+=1stparton_일 안에 마법사를 처치하고,
+__tavern_의 _tavern_에서
+그의 협력자 _contact_을 만나면
+_artifact_을 받을 수 있다.
 
 Message:  1030
-<ce>=monster_은 죽었다. 몰라그 발과 맺은 계약을
-<ce>이행했다. 이제 보상을 받으러 갈 차례다.
-<ce>
-<ce>
-<ce>
+<ce>=monster_은 죽었다.
+<ce>몰라그 발과 맺은 계약을 이행했다.
+<ce>이제 보상을 받으러 갈 차례다.
 
 Message:  1040
-<ce>=monster_은 %g3⁠의 지팡이를
+<ce>=monster_은 %g3의 지팡이를
 <ce>치켜들더니 천둥소리와 함께 사라진다.
 
 Message:  1060
@@ -111,7 +117,7 @@ Message:  1060
 -- Symbols used in the QRC file:
 --
 --               %di occurs 3 times.
---                %g occurs 1 time.
+--                %g occurs 2 times.
 --               %g2 occurs 1 time.
 --               %g3 occurs 2 times.
 --              %pcf occurs 2 times.
@@ -120,14 +126,15 @@ Message:  1060
 --       =1stparton_ occurs 2 times.
 --         =contact_ occurs 4 times.
 --         =monster_ occurs 4 times.
---       ___hideout_ occurs 2 times.
+--       ___hideout_ occurs 1 time.
 --       ___mondung_ occurs 6 times.
 --         __tavern_ occurs 4 times.
---        _artifact_ occurs 5 times.
+--        _artifact_ occurs 4 times.
 --         _contact_ occurs 2 times.
 --           _dummy_ occurs 1 time.
 --         _monster_ occurs 1 time.
 --          _tavern_ occurs 2 times.
+
 QBN:
 Item _artifact_ artifact Mace_of_Molag_Bal anyInfo 1013
 Item _map_ letter used 1060

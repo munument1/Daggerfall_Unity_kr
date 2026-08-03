@@ -9,43 +9,38 @@ Quest: K0C00Y08
 DisplayName: 희귀한 책
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>_book_에 대해 들어봤습니까?
 <ce>거의 볼 수 없는 매우 희귀한 책인데,
-<ce>%reg⁠의 어느 던전에
-<ce>묻힌 사본을 찾아냈습니다.
-<ce>지금 _upfront_골드를
-<ce>드리고, 책을 가져오면
-<ce>_gold_골드를
-<ce>더 드리겠습니다.
+<ce>%reg의 어느 던전에 묻혀 있는 사본을 찾아냈습니다.
+<ce>지금 _upfront_골드를 드리고,
+<ce>책을 가져오면 _gold_골드를 더 드리겠습니다.
 <ce>거래하시겠습니까?
 <--->
 <ce>어떤 가게에서도 구할 수 없고,
-<ce>값이 천문학적으로 비싼
+<ce>구한다 해도 값이 천문학적으로 비싼
 <ce>특별한 책을 찾고 있습니다.
-<ce>최근 가까운 던전에서 사본이
-<ce>발견됐다는 소문을 들었습니다.
-<ce>찾아주신다면 지금 _upfront_골드,
+<ce>최근 가까운 던전에서 사본이 발견됐다는 소문을 들었습니다.
+<ce>그 책을 찾아주신다면 지금 _upfront_골드,
 <ce>돌아온 뒤 _gold_골드를 더 드리겠습니다.
 <ce>거래하시겠습니까, %pcf?
 
 RefuseQuest:  [1001]
-<ce>알겠습니다. 다른 용병을 찾아보지요.
-<ce>
+<ce>알겠습니다.
+<ce>다른 용병을 찾아보지요.
 
 AcceptQuest:  [1002]
-<ce>좋습니다. =queston_일 안에
-<ce>___mondung_에서 책을 꺼내 돌아오십시오.
-<ce>그 시간이 지나면 _gold_골드는 받을 수 없습니다.
-<ce>책 이름은 _book_입니다. 행운을 빕니다, %pcf.
-<ce>
-<ce>
+<ce>좋습니다.
+<ce>=queston_일 안에 ___mondung_에서 책을 찾아
+<ce>이곳으로 돌아오십시오.
+<ce>기한이 지나면 _gold_골드는 받을 수 없습니다.
+<ce>책 이름은 _book_입니다.
+<ce>행운을 빕니다, %pcf.
 
 QuestComplete:  [1004]
-<ce>아, 훌륭합니다. 약속한 _gold_골드입니다.
+<ce>아, 훌륭합니다.
+<ce>여기 약속한 _gold_골드입니다.
 <ce>정말 고맙습니다, %pcf.
-<ce>
 
 RumorsDuringQuest:  [1005]
 며칠 전에 종기가 났는데... 이제 다 나았습니다.
@@ -106,50 +101,53 @@ RumorsPostfailure:  [1006]
 %reg⁠의 법률 제도에는 장단점이 있습니다.
 
 RumorsPostsuccess:  [1007]
-_qgiver_는 %g3⁠의 새 수집품을 얻어 하피처럼 기뻐하고 있습니다.
+_qgiver_는 새로 손에 넣은 %g3 물건 때문에
+하피라도 된 듯 기뻐하고 있습니다.
 
 QuestorPostsuccess:  [1008]
-_book_을 가져다준 위대한 %ra 여, 무엇을 도와드릴까요?
+오, _book_을 가져다준 %ra여.
+무엇을 도와드릴까요?
 
 QuestorPostfailure:  [1009]
-<ce>_book_은 다시 사라졌는데 나를 귀찮게
-<ce>하다니 참으로 뻔뻔하군요. 썩 꺼지십시오.
-<ce>
-<ce>
+<ce>_book_은 다시 사라졌는데
+<ce>나를 귀찮게 하다니 참으로 뻔뻔하군요.
+<ce>썩 꺼지십시오.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 __qgiver_에 사는
-_qgiver_는 아주 희귀한 책 _book_을 찾으라고 나를
-___mondung_으로 보냈다. =queston_일 안에 돌아오면
-_gold_골드를 받는다.
+%qdt:
+___qgiver_의 __qgiver_에 있는 _qgiver_는
+매우 희귀한 책 _book_을 찾으라고
+나를 ___mondung_으로 보냈다.
+
+=queston_일 안에 돌아오면
+_gold_ 골드를 받을 수 있다.
 
 Message:  1011
 <ce>_book_을 손에 넣었습니다.
-<ce>
 
 Message:  1012
 <ce>_qgiver_가 화를 낼 것입니다.
-<ce>%g2⁠에게 책을 가져다주기로 한 기한이 지났습니다.
-<ce>
+<ce>%g2에게 책을 가져다주기로 한 기한이 지났습니다.
 
 -- Symbols used in the QRC file:
 --
 --               %cn occurs 2 times.
---               %g2 occurs 3 times.
+--               %g2 occurs 1 time.
 --               %g3 occurs 1 time.
 --              %jok occurs 6 times.
---              %oth occurs 10 times.
---              %pcf occurs 5 times.
+--              %oth occurs 2 times.
+--              %pcf occurs 3 times.
 --              %qdt occurs 1 time.
---               %ra occurs 2 times.
+--               %ra occurs 1 time.
 --              %reg occurs 3 times.
---         =queston_ occurs 7 times.
+--         =queston_ occurs 2 times.
 --       ___mondung_ occurs 2 times.
---        ___qgiver_ occurs 2 times.
---            _book_ occurs 17 times.
---            _gold_ occurs 14 times.
+--        ___qgiver_ occurs 1 time.
+--            _book_ occurs 6 times.
+--            _gold_ occurs 5 times.
 --          _qgiver_ occurs 3 times.
 --         _upfront_ occurs 2 times.
+
 QBN:
 Item _gold_ gold
 Item _upfront_ gold range 5 to 50

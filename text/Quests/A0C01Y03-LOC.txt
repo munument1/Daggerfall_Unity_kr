@@ -9,142 +9,158 @@ Quest: A0C01Y03
 DisplayName: 수수께끼
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>나는 _qgiver_입니다.
-<ce>사람을 추적하는 데 능한 모험가의 도움이 필요합니다.
-<ce>나는 _spouse_를 사랑하지만, %g⁠은 자신의 스승
-<ce>_hermit_가 사라지며 남긴 수수께끼를 풀어 내
-<ce>가치를 증명하지 않으면 결혼하지 않겠다고 합니다.
-<ce>%g⁠이 사라진 뒤 남겨진 단서는 그것뿐입니다.
-<ce>%g2⁠을 찾아 %g3⁠의 수수께끼에 대한 답을 알아내 주십시오.
-<ce>그것은 %g3⁠이 남긴 마지막 시험입니다.
-<ce>성공한다면 _gold_골드를 드리겠습니다.
+<ce>사람을 추적할 전문가가 필요합니다.
+<ce>나는 _spouse_를 사랑하지만,
+<ce>%g는 스승 _hermit_가 사라지며 남긴
+<ce>수수께끼를 풀어 내 가치를 증명하지 않으면
+<ce>결혼하지 않겠다고 합니다.
+<ce>%g2를 찾아 %g3 수수께끼의 답을 알아내주십시오.
+<ce>성공하면 _gold_ 골드를 드리겠습니다.
 
 RefuseQuest:  [1001]
-<ce>내 부탁을 맡아줄 모험가를 계속 찾아보겠습니다.
-<ce>이런 일에 관심이 있을 만한 사람을
-<ce>만나면 _qgiver_에게 보내주십시오.
-<ce>
+<ce>내 부탁을 맡아줄 모험가를
+<ce>계속 찾아보겠습니다.
+<ce>이런 임무에 관심을 보일 만한 사람을 만나면
+<ce>_qgiver_에게 보내주십시오.
 
 AcceptQuest:  [1002]
-<ce>_hermit_를 찾는 데
-<ce>도움을 줄 사람은 _spouse_뿐입니다.
-<ce>%G⁠은 ___spouse_에 있습니다.
-<ce>이 꽃을 가져가십시오. %g3⁠이 가장 좋아하는 꽃이니,
-<ce>%g2⁠의 호감을 살지도 모릅니다. 그리고 여기
-<ce>_hermit_의 수수께끼가 적힌 편지가 있습니다.
-<ce>석 달 안에 돌아오지 않으면 실패한 것으로 알겠습니다.
-<ce>
-<ce>
+<ce>_hermit_를 찾는 데 도움을 줄 사람은
+<ce>_spouse_뿐입니다.
+<ce>%G는 ___spouse_에 있습니다.
+<ce>이 꽃을 가져가십시오.
+<ce>%g3가 가장 좋아하는 꽃이니,
+<ce>%g2의 호감을 살지도 모릅니다.
+<ce>여기 _hermit_의 수수께끼가 적힌 편지도 있습니다.
+<ce>석 달 안에 돌아오지 않으면
+<ce>실패한 것으로 여기겠습니다.
 
 QuestComplete:  [1004]
-<ce>_qgiver_가 _hermit_의 편지를 뜯어봅니다.
-<ce>"친절이라! 물론이지. 이제 _spouse_가
-<ce>왜 나를 이 일에 내몰았는지 알겠군.
-<ce>%g2⁠을 사랑하는 것만으로는 부족하고,
-<ce>%g2⁠에게 친절을 보여야 했던 거야.
-<ce>정말 큰 도움이 되었소, %pcf. 약속한 보수요."
-<ce>
+<ce>_qgiver_가 _hermit_의 편지를 뜯어본다.
+<ce>"친절! 당연한 답이었군.
+<ce>이제 _spouse_가 왜 나에게
+<ce>이 임무를 맡겼는지 알겠어.
+<ce>%g2를 사랑하는 것만으로는 부족했어.
+<ce>%g2에게 친절도 베풀어야 했던 거야.
+<ce>큰 도움이 되었소, %pcf.
+<ce>여기 약속한 보상이오."
 
 RumorsDuringQuest:  [1005]
-<ce>_qgiver_가 사랑에 푹 빠졌다더군요.
-<ce>%G⁠은 오래전부터 _spouse_에게
+<ce>_qgiver_가 사랑에 푹 빠졌다는군요.
+<ce>%G는 오래전부터 _spouse_에게
 <ce>청혼을 받아달라고 애쓰고 있답니다.
 
 RumorsPostfailure:  [1006]
 <ce>___spouse_의 _spouse_가 결혼했다는군요.
-<ce>_qgiver_가 %g 소식을 들으면 가슴이 무너지겠어요.
-<ce>
+<ce>_qgiver_가 이 사실을 알게 되면
+<ce>%g는 가슴이 무너지겠어요.
 
 RumorsPostsuccess:  [1007]
-<ce>좋은 소식입니다! _spouse_와 _qgiver_가
-<ce>얼마 전에 결혼했다더군요.
+<ce>좋은 소식입니다!
+<ce>_spouse_와 _qgiver_가
+<ce>최근에 결혼했다는군요.
 
 QuestorPostsuccess:  [1008]
 <ce>내 수수께끼의 답을 찾아준
-<ce>%ra⁠의 부탁이라면 무엇이든 들어드리지요.
+<ce>%ra의 부탁이라면 무엇이든 들어드리지요.
 <ce>_spouse_와 나는 이제 부부랍니다.
 
 QuestorPostfailure:  [1009]
-<ce>은둔자의 수수께끼를 풀지 못한 그 %ra⁠로군요.
+<ce>은둔자의 수수께끼에 답하지 못한
+<ce>그 %ra로군요.
 <ce>실패한 영웅에게 맡길 일은 없습니다.
-<ce>
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 _qgiver_가
-_hermit_를 찾아달라고 부탁했다. _hermit_가
-어떤 수수께끼의 답을 알고 있다고 한다. 유일한 단서는 %g⁠이 한때
+%qdt:
+___qgiver_의 _qgiver_는
+_hermit_를 찾아달라고 했다.
+
+_hermit_가 어떤 수수께끼의 답을
+알고 있다고 한다.
+
+유일한 단서는 %g가 한때
 ___spouse_의 _spouse_와 함께 일했다는 사실뿐이다.
-석 달 안에 성공을 알려야 한다.
+석 달 안에 성공 여부를 보고해야 한다.
 
 Message:  1011
 <ce>_flowers_까지 가져올 필요는 없었어요.
 <ce>_hermit_는 __school_의 유명한 스승
-<ce>_teacher_에게 배우러 떠났습니다. 이 책을 %g2⁠에게
-<ce>건네면 %g⁠이 당신을 좋게 봐줄지도 모르겠군요.
-<ce>
+<ce>_teacher_에게 배우러 떠났습니다.
+<ce>이 책을 %g2에게 건네면
+<ce>%g가 당신을 좋게 봐줄지도 모르겠군요.
 
 Message:  1012
-<ce>_hermit_는 낯선 사람에게 %g3⁠의 행방을 말하지
-<ce>말라고 했습니다. 하지만 _spouse_에게서
-<ce>_book_을 가져왔으니 평범한 낯선 이는 아니겠군요.
-<ce>_hermit_는 비전 지식을 연구하려고 %g2self⁠을
-<ce>던전에 가뒀습니다. 지도에 위치를 표시했습니다.
+<ce>_hermit_는 낯선 사람에게
+<ce>%g3 행방을 밝히지 말라고 했습니다.
+<ce>하지만 _spouse_에게서 _book_을 가져왔으니
+<ce>그저 낯선 사람은 아니겠군요.
+<ce>_hermit_는 비전 지식을 연구하려고 던전에 들어가
+<ce>%g2self를 세상과 격리했습니다.
+<ce>지도에 위치를 표시해두었습니다.
 <ce>행운을 빕니다, %pcn.
-<ce>
-<ce>
 
 Message:  1013
 <ce>귀찮게 구는 건 질색이야!
-<ce>그 멍청한 수수께끼의 답을 줘야만 네가
-<ce>사라진다면, 자, 가져가라. 불꽃 데이드라를
-<ce>불러 길을 안내하게 하기 전에 당장 꺼져!
-<ce>
-<ce>
+<ce>그 멍청한 수수께끼의 답을 줘야
+<ce>네가 사라지겠다면, 자, 가져가라.
+<ce>불꽃 데이드라를 불러
+<ce>길을 안내하게 하기 전에 당장 꺼져!
 
 Message:  1014
-사랑도 증오도 말하지 말고 대답하라. 네가 내게 줄 수 있지만,
+사랑이나 증오를 말하지 말고
+이것에 답해라.
+
+네가 내게 줄 수 있지만,
 내가 스스로는 결코 살 수 없는 선물은 무엇인가?
 
 Message:  1015
-%qdt , 나는 _spouse_와 이야기했다.
-%G⁠은 _hermit_가 __school_의 _teacher_에게 배우러
-떠났다고 말했다.
+%qdt:
+_spouse_와 이야기했다.
+
+%G는 _hermit_가 __school_의 _teacher_에게
+배우기 위해 떠났다고 말했다.
 
 Message:  1016
-%qdt , 나는 _hermit_의 스승인
-__school_의 _teacher_를 만났다. %G⁠은 _hermit_가
-___dungeon_에 %g2self⁠을 가뒀다고 말했다.
+%qdt:
+_hermit_의 스승인
+__school_의 _teacher_를 만났다.
+
+%G는 _hermit_가 %g2self를 세상과 격리한 채
+___dungeon_에 은둔했다고 말했다.
 
 Message:  1017
-사랑도 증오도 말하지 말고 대답하라. 네가 내게 줄 수 있지만,
+사랑이나 증오를 말하지 말고
+이것에 답해라.
+
+네가 내게 줄 수 있지만,
 내가 스스로는 결코 살 수 없는 선물은 무엇인가?
 
 '친절이야, 멍청아!'
 
 -- Symbols used in the QRC file:
 --
---              %dat occurs 2 times.
---                %g occurs 12 times.
---               %g2 occurs 8 times.
---           %g2self occurs 3 times.
+--              %dat occurs 0 times.
+--                %g occurs 4 times.
+--               %g2 occurs 5 times.
+--           %g2self occurs 2 times.
 --               %g3 occurs 3 times.
 --              %pcf occurs 1 time.
---              %pcn occurs 2 times.
---              %qdt occurs 1 time.
+--              %pcn occurs 1 time.
+--              %qdt occurs 3 times.
 --               %ra occurs 2 times.
 --       ___dungeon_ occurs 1 time.
 --        ___qgiver_ occurs 1 time.
---        ___spouse_ occurs 4 times.
---         __school_ occurs 4 times.
+--        ___spouse_ occurs 3 times.
+--         __school_ occurs 3 times.
 --            _book_ occurs 1 time.
 --         _flowers_ occurs 1 time.
---            _gold_ occurs 3 times.
+--            _gold_ occurs 1 time.
 --          _hermit_ occurs 12 times.
---          _qgiver_ occurs 8 times.
+--          _qgiver_ occurs 7 times.
 --          _spouse_ occurs 10 times.
 --         _teacher_ occurs 3 times.
+
 QBN:
 Item _book_ book
 Item _letter_ letter used 1014

@@ -10,127 +10,134 @@ Quest: A0C0XY04
 DisplayName: 사기꾼
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>제 이름은 _agent_입니다. 어떤 물건을...
-<ce>손에 넣으려는 분을 대신해 왔습니다.
+<ce>내 이름은 _agent_입니다.
+<ce>어떤 물건을... 손에 넣으려는 분을 대신해 왔습니다.
 <ce>그 물건을 가져오는 사람에게는
-<ce>_artifact_를 보상으로 주겠답니다.
-<ce>그게 정확히 무엇인지는 모르지만, 강력한 힘이
-<ce>깃든 물건이라고 들었습니다. 맡아주시겠습니까?
-<ce>
-<ce>
+<ce>_artifact_를 보상으로 준답니다.
+<ce>그게 정확히 무엇인지는 모르지만,
+<ce>강력한 힘을 지닌 물건이라고 들었습니다.
+<ce>이 일을 맡으시겠습니까?
 
 RefuseQuest:  [1001]
-<ce>나를 본 일은 잊으십시오. 내게는 강력한 친구들이
-<ce>많습니다. 괜한 문제를 일으키면 그들이
-<ce>당신을 도적처럼 끝까지 사냥할 겁니다.
-<ce>
+<ce>나를 봤다는 사실은 잊으십시오.
+<ce>내게는 강력한 친구들이 있습니다.
+<ce>괜한 문제를 일으키면,
+<ce>그들이 당신을 흉악한 도적처럼 끝까지 사냥할 겁니다.
 
 AcceptQuest:  [1002]
 <ce>___dungeon_에서 데이드릭 _ingredient_를
-<ce>가져와야 합니다. 정확한 위치는 모르지만,
-<ce>당신이라면 찾아낼 수 있겠지요. 데이드릭 _ingredient_를
-<ce>구하면 이 마을의 _meetingplace_로 가져오십시오.
+<ce>가져와야 합니다.
+<ce>그곳이 어디인지는 모르지만,
+<ce>당신이라면 찾아낼 수 있겠지요.
+<ce>데이드릭 _ingredient_를 구하면
+<ce>이 마을의 _meetingplace_로 가져오십시오.
 <ce>그곳에서 _qgiver_를 만나게 될 것이며,
-<ce>%g⁠이 _artifact_를 보상으로 줄 겁니다.
-<ce>
-<ce>
-<ce>
+<ce>%g이 _artifact_를 넘겨줄 겁니다.
 
 RumorsDuringQuest:  [1005]
-<ce>국왕이 다음 주에 중대한 발표를 한다는군요.
-<ce>
+<ce>국왕이 다음 주에
+<ce>중대한 발표를 한다는군요.
 
 RumorsPostfailure:  [1006]
-<ce>어떤 불쌍한 바보가 ___dungeon_에 들어갔다더군요.
+<ce>어떤 불쌍한 바보가
+<ce>___dungeon_에 들어갔다더군요.
 <ce>그곳은 악마들로 득실거린답니다.
 
 RumorsPostsuccess:  [1007]
 <ce>_qgiver_에게 가까이 가지 마십시오.
-<ce>%g⁠은 거짓말쟁이에 사기꾼이라더군요.
+<ce>%g은 거짓말쟁이에 사기꾼이라더군요.
 
 QuestorPostsuccess:  [1008]
 <ce>_qgiver_와 있었던 일은 유감입니다.
-<ce>그 일을 만회하는 셈 치고 당신을 도와야겠군요.
-<ce>
+<ce>그 일을 만회하는 셈 치고
+<ce>당신을 도와야겠군요.
 
 QuestorPostfailure:  [1009]
-<ce>_qgiver_와 관련된 일은 내
-<ce>잘못이 아닙니다. 이제 당신과 엮이고
-<ce>싶지 않으니 내버려 두십시오.
+<ce>_qgiver_와 관련된 일은
+<ce>내 잘못이 아닙니다.
+<ce>이제 당신과 엮이고 싶지 않으니
+<ce>나를 내버려두십시오.
 
 QuestLogEntry:  [1010]
-%qdt , 나는 ___agent_의 _agent_를
-만났다. %G⁠은 %g3⁠의뢰인이 데이드릭 _ingredient_를 찾고 있다고 말했다.
-그것을 구하면 _artifact_를 받는다. 데이드릭 _ingredient_는
-___dungeon_ 어딘가에 있다. 찾은 뒤
-__meetingplace_의 _meetingplace_에서 _qgiver_를 만나야 한다.
+%qdt:
+___agent_의 _agent_를 만났다.
+
+%G는 %g3 수상한 의뢰인이
+데이드릭 _ingredient_를 찾고 있다고 말했다.
+그것을 구하면 _artifact_를 받을 수 있다.
+
+데이드릭 _ingredient_는 ___dungeon_ 어딘가에 있다.
+찾은 뒤 __meetingplace_의 _meetingplace_에서
+_qgiver_를 만나야 한다.
 
 Message:  1011
-%qdt , 데이드릭 _ingredient_의 수호자는
-_agent_의 의뢰인이 _artifact_를 가지고 있지도 않다고 말했다.
-데이드릭 _ingredient_를 넘겨주면 죽음만이 보상으로 돌아올 것이라고 한다.
-수호자는 _qgiver_를 무력화할 수 있는 마법의 징표를 내게 주었다.
+%qdt:
+데이드릭 _ingredient_의 수호자에게
+뜻밖의 이야기를 들었다.
+
+_agent_의 수상한 의뢰인은
+_artifact_를 가지고 있지도 않으며,
+데이드릭 _ingredient_를 넘기면
+죽음만이 보상으로 돌아올 것이라고 한다.
+
+수호자는 _qgiver_를 무력하게 만드는
+마법의 징표를 내게 주었다.
 
 Message:  1012
-<ce>나는 데이드릭 _ingredient_를 지키기 위해 죽을 때까지 싸울 것이다.
-<ce>_qgiver_는 %G⁠이 보이는 모습과 전혀 다른 존재다.
-<ce>_artifact_는 %g⁠이 한 번도 소유한 적
-<ce>없는, 오래전에 사라진 강력한 유물이다.
-<ce>%g⁠은 데이드릭 _ingredient_를 손에 넣는
-<ce>즉시 너를 죽일 생각이다. 이 헛된 공격을 멈추면
-<ce>_qgiver_를 무력화할 마법의 징표를 주겠다.
-<ce>%g⁠이 원하는 대로 움직이지 마라.
-<ce>만약 %g2⁠을 죽인다면 마법사 길드가 한동안 너를
-<ce>호의적으로 보도록 해주겠다. 받아들이겠나?
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>나는 데이드릭 _ingredient_를 지키기 위해
+<ce>죽을 때까지 싸울 것이다.
+<ce>하지만 _qgiver_는 %g이 겉으로 보이는 모습과
+<ce>전혀 다른 자라는 사실을 알아야 한다.
+<ce>_artifact_는 오래전에 사라진 강력한 유물이며,
+<ce>%g이 소유한 적도 없는 물건이다.
+<ce>%G은 데이드릭 _ingredient_를 손에 넣는 즉시
+<ce>너를 죽일 생각이다.
+<ce>이 헛된 공격을 멈추면
+<ce>_qgiver_를 무력화할 수 있는 마법의 징표를 주겠다.
+<ce>%g2를 죽인다면,
+<ce>마법사 길드가 오랫동안 너를 호의적으로 보도록 해주지.
+<ce>내 제안을 받아들이겠나?
 
 Message:  1013
-<ce>바보 같으니! 정말 이 데이드릭 _ingredient_를
-<ce>가져오면 _artifact_를 줄 거라 믿었나?
+<ce>바보 같으니!
+<ce>정말 이 데이드릭 _ingredient_를 가져오면
+<ce>_artifact_를 줄 거라고 믿었나?
 <ce>내가 줄 보상은 죽음뿐이다!
 <ce>내 진짜 모습을 보고 공포에 떨어라.
-<ce>나는 =monster_다. 저자를 죽여라!
-<ce>
-<ce>
-<ce>
+<ce>나는 =monster_다!
+<ce>저자를 죽여라!
 
 Message:  1014
-<ce>뭐야... 배신당했군! 환영을 깨뜨리고 내게 침묵
-<ce>주문까지 걸다니. 그 저주받은 _guardian_
-<ce>=guardian_가 시킨 짓이지, %g?
-<ce>무기를 들어라! 도와줘! 모두 무기를 들어라!
-<ce>
-<ce>
-<ce>
+<ce>뭐야... 배신당했군!
+<ce>내 환영을 깨뜨리고 침묵 주문까지 걸다니.
+<ce>그 저주받은 _guardian_ =guardian_가
+<ce>시킨 짓이지, %g?
+<ce>무기를 들어라!
+<ce>도와줘!
+<ce>모두 무기를 들어라!
 
 Message:  1015
-<ce>머릿속에서 낯선 목소리의 부드러운 속삭임이 들립니다.
-<ce>"잘했다, %pcn. _qgiver_,
-<ce>즉 자기 백성에게 =monster_로 알려진
-<ce>%g⁠을 처단했으니 보상을 받을 자격이 있다.
-<ce>이제 마법사 길드원들은 전보다 훨씬 더 너를
-<ce>신뢰할 것이다. 이것이 %g3 보상이다."
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>머릿속에서 낯선 목소리가
+<ce>부드럽게 속삭입니다.
+<ce>"잘했다, %pcn.
+<ce>_qgiver_, 즉 %g3 백성에게
+<ce>=monster_로 알려진 %g를 처단했으니
+<ce>보상을 받을 자격이 있다.
+<ce>이제 마법사 길드원들은 전보다 훨씬 더
+<ce>너를 신뢰할 것이다."
 
 Message:  1020
-<ce>참으로 간교한 머리를 가졌군. 감탄할 만하다.
+<ce>참으로 교활한 머리를 가졌군.
+<ce>감탄할 만하다.
 <ce>하지만 나를 함부로 배신할 수 있다고 생각하지 마라.
-<ce>징표는 되찾아가겠다. 내 가장 가까운 동료들이
-<ce>너를 불신하게 만드는 저주를 내리마.
-<ce>
-<ce>
-<ce>
+<ce>내 징표는 되찾아가겠다.
+<ce>그리고 내 가장 가까운 동료들에게
+<ce>불신받도록 너를 저주하겠다.
 
 Message:  1025
-크리사미어는 위대한 힘을 지닌 고대 유물이다.
+크리사미어는 위대한 힘을 지닌
+고대 유물이다.
 <--->
 전설적인 마법 유물이다.
 
@@ -142,22 +149,23 @@ Message:  1035
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 13 times.
+--                %g occurs 6 times.
 --               %g2 occurs 1 time.
 --               %g3 occurs 2 times.
 --              %pcn occurs 1 time.
 --              %qdt occurs 2 times.
 --        =guardian_ occurs 1 time.
---         =monster_ occurs 3 times.
+--         =monster_ occurs 2 times.
 --         ___agent_ occurs 1 time.
 --       ___dungeon_ occurs 3 times.
---   __meetingplace_ occurs 3 times.
+--   __meetingplace_ occurs 1 time.
 --           _agent_ occurs 3 times.
---        _artifact_ occurs 7 times.
+--        _artifact_ occurs 6 times.
 --        _guardian_ occurs 1 time.
 --      _ingredient_ occurs 9 times.
 --    _meetingplace_ occurs 2 times.
 --          _qgiver_ occurs 9 times.
+
 QBN:
 Item _artifact_ artifact Chrysamere anyInfo 1025
 Item _ingredient_ lodestone

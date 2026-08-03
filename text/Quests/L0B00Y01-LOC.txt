@@ -9,117 +9,112 @@ Quest: L0B00Y01
 DisplayName: 탈출 불가
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>알다시피, %pct, 다크
-<ce>브라더후드에는 실패할 자리가 없다.
+<ce>알다시피, %pct,
+<ce>다크 브라더후드에는 실패가 용납되지 않는다.
 <ce>우리를 실망시킨 형제는 장부 정리의 대상이 되지.
 <ce>그런 전직 단원 하나를 찾아 바로잡아라.
-<ce>
-<ce>
-<ce>
-<ce>
 <--->
-<ce>임무에 실패한 브라더후드 요원을 정리하는 것은
-<ce>엄숙한 의무이며, 전혀 불쾌하지도 않은 일이다.
+<ce>임무에 실패한 다크 브라더후드 요원을 정리하는 것은
+<ce>엄숙한 의무이며, 그리 불쾌한 일도 아니다.
 <ce>이 임무를 맡을 시간은 있겠지?
-<ce>
-<ce>
-<ce>
 
 RefuseQuest:  [1001]
 <ce>내가 제대로 들은 건가, %pct?
 <ce>형제들과 협력하지 않으려 하다니 유감이군.
-<ce>
-<ce>
 
 AcceptQuest:  [1002]
-<ce>좋다, %pct. =target_는 %g3⁠가
-<ce>브라더후드에서 지낸 동안 배운 것이 있어 현명하게
-<ce>%g2self⁠를 숨겼다. 하지만 __snitch_에는
-<ce>_snitch_라는 비참한 =snitch_인 우리 연락책이 있다.
-<ce>%g2⁠에게서 =target_의 위치를 알아내라.
+<ce>좋다, %pct.
+<ce>=target_는 다크 브라더후드에서 지내며
+<ce>배운 것이 있어 현명하게 %g2self를 숨겼다.
+<ce>하지만 __snitch_에는
+<ce>_snitch_라는 비참한 =snitch_인 연락책이 있다.
+<ce>%g2에게서 =target_의 위치를 알아내라.
 <ce>장부 정리를 끝내고 =queston_일 안에 돌아오도록.
-<ce>
-<ce>
-<ce>
-<ce>
 
 QuestComplete:  [1004]
-<ce>잘했다, %pct. 브라더후드를 실망시킬
-<ce>생각을 하는 모든 자에게 훌륭한 교훈이 되겠군.
-<ce>
+<ce>잘했다, %pct.
+<ce>다크 브라더후드를 실망시킬 생각을 하는
+<ce>모든 자에게 훌륭한 교훈이 되겠군.
 
 RumorsDuringQuest:  [1005]
-=target_는 %reg 어딘가에 숨어 버들가지처럼 떨고
-있을 겁니다.
+=target_는 %reg 어딘가에 숨어
+버들가지처럼 떨고 있을 겁니다.
 <--->
-=target_도 제법 괜찮은 암살자였습니다. 충분히 뛰어나지는
-못했지만요.
+=target_도 제법 괜찮은 암살자였습니다.
+충분히 뛰어나지는 못했던 모양이지만요.
 
 RumorsPostfailure:  [1006]
-브라더후드를 이길 수도 있나 봅니다. =target_가 그 증거지요.
+브라더후드를 이길 수도 있나 봅니다.
+=target_가 그 증거지요.
 <--->
-=target_는 다크 브라더후드를 향해 대놓고 %g3 코를 납작하게
-만들고 있습니다.
+=target_는 %g3 코를 치켜들고
+다크 브라더후드를 대놓고 조롱하고 있습니다.
 
 RumorsPostsuccess:  [1007]
-=target_는 한 번 브라더후드를 실망시켰고, 이것이 %g⁠에게
-돌아온 %g3 보상이었다고 합니다.
+=target_는 한 번 브라더후드를 저버렸고,
+그 결과 %g⁠에게 돌아온 것이
+바로 %g3 보상이었다고 합니다.
 <--->
-다크 브라더후드는 실패를 용납하지 않습니다. 불쌍한 =target_를
-보십시오.
+다크 브라더후드는 실패를 용납하지 않습니다.
+가엾은 =target_에게 벌어진 일을 보십시오.
 
 QuestorPostsuccess:  [1008]
-안녕, %pcn. 잘못을 저지른 우리 형제를 처단한 자를
+안녕, %pcn.
+배신한 우리 형제를 처단한 자를
 어떻게 도와줄까?
 
 QuestorPostfailure:  [1009]
-<ce>정리해보자. 브라더후드를 실망시킨 _target_를
-<ce>정리하라고 보냈더니… 네가 실패했군.
-<ce>그런데 이제 와서 잡담이나 하겠다고? 믿기 어렵군.
-<ce>
+<ce>정리해보자.
+<ce>다크 브라더후드를 실망시킨 _target_를
+<ce>정리하라고 보냈더니... 네가 실패했군.
+<ce>그런데 이제 와서 잡담이나 하겠다고?
+<ce>믿기 어렵군.
 
 QuestLogEntry:  [1010]
-%qdt: ___qgiver_의 다크 브라더후드는 임무에
-실패한 형제를 정리하라고 했다. ___snitch_의 __snitch_에
-있는 밀고자 _snitch_를 만나면 =target_가 어디로 달아났는지
+%qdt:
+___qgiver_의 다크 브라더후드는
+임무에 실패한 형제를 찾아 처리하라고 했다.
+
+___snitch_의 __snitch_에 있는 밀고자 _snitch_를 만나면
+=target_가 어디로 달아났는지
 알려줄 것이다.
 
 Message:  1011
-<ce>%pcn 인가? 나는 _snitch_라네.
+<ce>%pcn인가? 나는 _snitch_라네.
 <ce>자네가 쫓는 물고기는 낚싯바늘에서 빠져나가
-<ce>___mondung_에서 호화롭게 살고 있지. 조심하게, %ra.
-<ce>=target_는 싸울 줄 알고 %g⁠은 겁에 질렸으니까.
-<ce>
-<ce>
-<ce>
+<ce>___mondung_에서 호화롭게 살고 있지.
+<ce>조심하게, %ra.
+<ce>=target_는 싸울 줄 아는 데다
+<ce>겁에 질린 상태니까.
 
 Message:  1012
-%qdt: _snitch_는 =target_가
-___mondung_에 있다고 말했다.
+%qdt:
+_snitch_의 말에 따르면
+=target_는 ___mondung_에 있다.
 
 Message:  1013
 <ce>=target_를 처단했습니다.
-<ce>브라더후드가 기뻐할 것입니다.
+<ce>다크 브라더후드가 기뻐할 것입니다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 3 times.
---               %g2 occurs 2 times.
---               %g3 occurs 4 times.
---              %pcn occurs 3 times.
+--                %g occurs 1 time.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %pcn occurs 2 times.
 --              %pct occurs 4 times.
 --              %qdt occurs 2 times.
 --               %ra occurs 1 time.
 --              %reg occurs 1 time.
---         =queston_ occurs 2 times.
+--         =queston_ occurs 1 time.
 --          =snitch_ occurs 1 time.
---          =target_ occurs 47 times.
---       ___mondung_ occurs 3 times.
+--          =target_ occurs 12 times.
+--       ___mondung_ occurs 2 times.
 --        ___qgiver_ occurs 1 time.
---        ___snitch_ occurs 9 times.
+--        ___snitch_ occurs 1 time.
 --          _target_ occurs 1 time.
+
 QBN:
 
 Person _qgiver_ group Questor

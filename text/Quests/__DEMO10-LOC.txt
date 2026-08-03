@@ -4,10 +4,11 @@ Quest: __DEMO10
 
 
 QRC:
-
 QuestLogEntry:  [1010]
-%qdt: __tavern_에 있는 _tavern_에서 물건을
-찾아야 합니다.
+%qdt:
+__tavern_의 _tavern_에서
+그 물건을 찾아야 한다.
+
 QBN:
 
 Item _item1_ organs

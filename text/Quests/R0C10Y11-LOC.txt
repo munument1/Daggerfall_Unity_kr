@@ -9,108 +9,114 @@ Quest: R0C10Y11
 DisplayName: 밀수품
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>작은 심부름을 해줄 시간이 있습니까?
-<ce>간단한 일이지만 나와 심부름꾼들이 모두 바쁩니다.
-<ce>_reward_골드를 더 드리지요. 시간이 있습니까?
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>혹시 제 작은 심부름을 맡을 시간이 있습니까?
+<ce>아주 간단한 일이라 제가 직접 하거나
+<ce>심부름꾼에게 맡길 수도 있지만,
+<ce>지금은 모두 너무 바쁩니다.
+<ce>보상으로 _reward_골드를 더 드리지요.
+<ce>시간이 있습니까?
 
 RefuseQuest:  [1001]
-<ce>싫다고요? %god⁠이
-<ce>한가한 %ra⁠의 도움으로부터 나를 지켜주시길.
+<ce>싫다고요?
+<ce>%god께서 한가한 %ra들의 손길에서
+<ce>저를 구해 주시기를.
 
 AcceptQuest:  [1002]
-<ce>운이 좋군요. 이 _item_을 들고
-<ce>___qgfriend_의 __qgfriend_으로 가십시오.
-<ce>그곳에서 _qgfriend_라는 이상한 =qgfriend_를
-<ce>찾을 수 있습니다. %g2⁠에게 _item_을
-<ce>주면 %g⁠가 _reward_골드를 줄 겁니다.
-<ce>=queston_일 안에 도착해야 하니 서두르십시오.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>운이 좋군요.
+<ce>이 _item_을 가지고 ___qgfriend_의
+<ce>__qgfriend_으로 가십시오.
+<ce>그곳에 _qgfriend_라는 특이한 =qgfriend_가 있습니다.
+<ce>%g2에게 _item_을 건네면
+<ce>%g가 _reward_골드를 줄 것입니다.
+<ce>=queston_일 안에 도착해야 하지만
+<ce>건장한 젊은 다리가 있으니 문제없겠지요.
+<ce>어서 출발하십시오.
 
 QuestFail:  [1003]
-<ce>당신은 %pcf⁠와 똑같이 생겼지만 그럴 리 없지요.
-<ce>%pcn⁠는 지금 ___qgfriend_으로 가는 길일 테니까.
-<ce>
+<ce>%pcf와 거의 똑같이 생겼지만
+<ce>당신이 그 사람일 리는 없겠지요.
+<ce>%pcn는 지금 ___qgfriend_으로
+<ce>가는 길일 테니까요.
 
 QuestComplete:  [1004]
-<ce>_questgiver_가 보낸 전령이군요? 아, 기다리던
-<ce>_item_입니다. 여기 보수입니다. 고맙습니다.
-<ce>
+<ce>_questgiver_가 전령으로 고용한 사람입니까?
+<ce>아, 제가 기다리던 _item_이군요.
+<ce>아주 좋습니다.
+<ce>여기 금화입니다. 고맙습니다.
 
 RumorsDuringQuest:  [1005]
-_questgiver_가 여전히 밀수에 손을 댄다는군.
+_questgiver_가 아직도
+밀수에 손을 대고 있다더군.
 <--->
-최근 밀수가 엄청나게 늘었어.
+최근 들어 밀수가 엄청나게 늘었어.
 
 RumorsPostfailure:  [1006]
 누군가 외딴곳에서 _item_을 발견했대.
 <--->
-_questgiver_가 무능한 %ra 전령 때문에 몹시 화났다는군.
+_questgiver_가 무능한 %ra 전령 때문에
+몹시 화났다는군.
 
 RumorsPostsuccess:  [1007]
-어떤 =qgfriend_가 _item_을 흔들어 보이며 떠났어.
+어떤 =qgfriend_가 방금 여기 와서
+_item_을 흔들어 보였어.
 <--->
-<ce>_questgiver_의 _item_을
-<ce>훔친 것은 아마 %g 일 거야.
+<ce>_questgiver_가 그 _item_을 훔친 건 아닌 모양이야.
+<ce>아니면 %g⁠가 먹어버렸거나.
 
 QuestorPostsuccess:  [1008]
-그 튼튼한 젊은 다리를 보니 누군지 알겠군요. 잘 지냈습니까,
-오랜 전령이여?
+그 튼튼한 젊은 다리를 보니 누군지 알겠군요.
+잘 지냈습니까, 내 오랜 전령이여?
 <--->
 옛 고용주를 다시 찾아왔군요, %pcf?
 
 QuestorPostfailure:  [1009]
-<ce>기억합니다. 간단한 %ra 배달 임무를 망친 사람이군요.
-<ce>%oth, 당신에게 쓸 시간이 없습니다.
-<ce>
-<ce>
+<ce>기억합니다.
+<ce>그 간단한 배달을 실패한 %ra군요.
+<ce>%oth, 당신에게 쓸 시간은 없습니다.
 
 Message:  1011
-%G⁠는 도둑질 버릇이 있기는 하지만 존경받는 통치자야.
+%G⁠는 도벽이 있기는 하지만
+아주 존경받는 통치자야.
 <--->
 듣기로는 거물 보석 밀수꾼이라더군.
 
 Message:  1012
-_questgiver_의 장물아비 중 하나야. _qgfriend_는 사실
-__qgfriend_ 안에 있어.
+_questgiver_의 장물아비 중 하나야.
+_qgfriend_는 __qgfriend_에서 살다시피 해.
 <--->
-그 =qgfriend_ 말인가? _qgfriend_는 __qgfriend_의 밀수꾼
-소굴에 있는 장물아비야.
+그 =qgfriend_ 말인가?
+_qgfriend_는 __qgfriend_의 밀수꾼 소굴에서
+장물을 처리하는 자야.
 
 Message:  1015
-%qdt: __questgiver_의 _questgiver_는
-_item_을 _qgfriend_에게 전달하라고 했다.
-_qgfriend_는 ___qgfriend_의 __qgfriend_에 있으며 기한은
-=queston_일이다.
+%qdt:
+__questgiver_의 _questgiver_는
+동료 _qgfriend_에게 _item_을 전달하라고 했다.
+
+_qgfriend_는 ___qgfriend_의 __qgfriend_에 머물고 있다.
+그곳까지 약 =queston_일이 걸리며,
+내게 주어진 기한도 그만큼이다.
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 4 times.
+--                %g occurs 2 times.
 --               %g2 occurs 1 time.
 --              %god occurs 1 time.
 --              %oth occurs 1 time.
---              %pcf occurs 7 times.
+--              %pcf occurs 2 times.
 --              %pcn occurs 1 time.
 --              %qdt occurs 1 time.
---               %ra occurs 4 times.
+--               %ra occurs 3 times.
 --        =qgfriend_ occurs 3 times.
 --         =queston_ occurs 2 times.
---      ___qgfriend_ occurs 18 times.
+--      ___qgfriend_ occurs 3 times.
 --     __questgiver_ occurs 1 time.
---            _item_ occurs 13 times.
+--            _item_ occurs 7 times.
 --        _qgfriend_ occurs 5 times.
 --      _questgiver_ occurs 6 times.
 --          _reward_ occurs 2 times.
+
 QBN:
 Item _reward_ gold
 Item _item_ ring

@@ -9,14 +9,14 @@ Quest: A0C01Y09
 DisplayName: 생일 선물
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>실례합니다. 제 이름은 _questg_입니다.
-<ce>당신을 믿어도 될지는 모르겠지만 부탁할 일이 있습니다.
-<ce>제 여동생 _sister_가 다음 달에 생일을 맞는데,
-<ce>축하 자리에 쓸 _item_이 꼭 필요합니다.
-<ce>보수는 _gold_골드입니다. 맡아주시겠습니까?
-<ce>
+<ce>당신을 어떻게 봐야 할지는 모르겠지만,
+<ce>부탁할 일이 있습니다.
+<ce>내 자매 _sister_가 다음 달 생일을 맞는데,
+<ce>축하 행사에 쓸 _item_이 꼭 필요합니다.
+<ce>보수는 _gold_ 골드입니다.
+<ce>맡아주시겠습니까?
 
 RefuseQuest:  [1001]
 <ce>뭐, 어쩔 수 없군요. 좋은 하루 보내십시오.
@@ -32,39 +32,38 @@ RefuseQuest:  [1001]
 
 AcceptQuest:  [1002]
 <ce>훌륭합니다! 현명한 선택이군요.
-<ce>쉽게 벌 수 있는 돈입니다. _store_로
-<ce>가서 _merchant_를 찾으십시오. %G⁠이 내가
-<ce>원하는 바로 그 _item_을 갖고 있습니다.
+<ce>쉽게 벌 수 있는 돈입니다.
+<ce>_store_로 가서 _merchant_를 찾으십시오.
+<ce>%G이 내가 원하는 바로 그 _item_을 갖고 있습니다.
 <ce>축하일까지 한 달밖에 남지 않았다는 걸 잊지 마십시오.
 <--->
 <ce>좋습니다. 쉽게 벌 수 있는 돈이지요.
 <ce>내가 원하는 물건은 _store_에 가야 구할 수 있습니다.
-<ce>_merchant_에게 말을 거십시오. %G⁠이 그 가게를 운영합니다.
+<ce>_merchant_에게 말을 거십시오. %G이 그 가게를 운영합니다.
 
 QuestComplete:  [1004]
 <ce>아주 잘하셨습니다, %pcn. 약속한 보수입니다.
 
 RumorsDuringQuest:  [1005]
-<ce>_questg_가 %g3 여동생
-<ce>_sister_를 정말 싫어한다는군요.
-<ce>그런데 %g⁠은 곧 결혼할 예정이랍니다.
+<ce>_questg_가 %g3 여동생 _sister_를 정말 싫어한다는군요.
+<ce>그런데 %g은 곧 결혼할 예정이랍니다.
 
 RumorsPostfailure:  [1006]
-<ce>_sister_가 %g2⁠을 독살하려던
-<ce>계획을 알아냈다는 소식 들으셨습니까?
+<ce>_sister_가 %g2을 독살하려던 계획을
+<ce>알아냈다는 소식 들으셨습니까?
 
 RumorsPostsuccess:  [1007]
 <ce>_sister_가 죽은 채 발견됐답니다!
 <ce>그것도 %g3 결혼식 바로 전날 밤에요.
 
 QuestorPostsuccess:  [1008]
-<ce>흠, 그렇군요. 내 여동생의 혼례를 위해 그...
-<ce>물건을 가져다주었으니,
+<ce>흠, 그렇군요.
+<ce>내 여동생의 혼례를 위해 그... 물건을 가져다주었으니,
 <ce>당신에게 빚진 셈이겠군요.
 
 QuestorPostfailure:  [1009]
-<ce>배신자! 간단한 심부름을
-<ce>맡겼더니 _sister_에게 모든 걸 떠벌리다니.
+<ce>배신자!
+<ce>간단한 심부름을 맡겼더니 _sister_에게 모든 걸 떠벌리다니.
 <ce>앞으로 나한테서 도움받을 생각은 마십시오.
 
 Message:  1011
@@ -74,69 +73,68 @@ Message:  1011
 Message:  1013
 <ce>_item_을 가지고 있습니다.
 <ce>_questg_에게 건네겠습니까?
-<ce>
 
 Message:  1025
-%qdt: 나는 ___questg_의 _questg_에게서
-_gold_골드를 받는 조건으로, 한 달 뒤 열릴 _questg_의 여동생
-_sister_의 생일 축하에 쓸 _item_을
-_store_의 _merchant_에게서 구해오기로 했다.
-축하일 전에 _item_을 가지고 돌아가야 한다.
+%qdt:
+___questg_의 _questg_에게
+_gold_ 골드를 받는 조건으로,
+_store_의 _merchant_에게서 _item_을 구해오기로 했다.
+
+한 달 뒤 열리는 _questg_의 자매 _sister_의
+생일잔치 전에 _item_을 가지고 돌아가야 한다.
 
 Message:  1040
 <ce>어서 오십시오. 내가 _merchant_입니다.
 <ce>_item_ 말입니까? 가지고 있지요.
-<ce>20골드를 받았으니 _item_은
-<ce>당신 것입니다. 들러주셔서 감사합니다.
+<ce>20골드를 받았으니 _item_은 당신 것입니다.
+<ce>들러주셔서 감사합니다.
 
 Message:  1041
 <ce>어서 오십시오. 내가 _merchant_입니다.
 <ce>_item_ 말입니까? 가지고 있지요.
 <ce>20골드에 _item_을 드리겠습니다.
 <ce>아, 미안하지만 돈이 모자라는 것 같군요.
-<ce>
 
 Message:  1050
 <ce>안녕하세요? 무슨 일입니까?
-<ce>_questg_가 내 생일 축하에 쓸
-<ce>_item_을 원한다고요? 정말 멋진 생각이군요!
+<ce>_questg_가 내 생일 축하에 쓸 _item_을 원한다고요?
+<ce>정말 멋진 생각이군요!
 <ce>깜짝 선물을 망치지 않겠다고 약속할게요.
 
 Message:  1051
-<ce>누구죠? 어떻게 들어왔습니까? 뭐라고요? _questg_가
-<ce>%g2⁠에게 _item_을 가져다주라고 했다고요?
+<ce>누구죠? 어떻게 들어왔습니까?
+<ce>뭐라고요? _questg_가 %g2에게 _item_을 가져다주라고 했다고요?
 <ce>그 사람이 그걸로 무슨 짓을 할지 아십니까? 나는 압니다.
-<ce>_item_은 내 사랑하는 오빠가 즐겨 만드는
-<ce>물약의 재료예요. 사람을 죽이는 독약이지요.
-<ce>절대로 %g2⁠에게 주면 안 됩니다!
+<ce>_item_은 내 사랑하는 오빠가 즐겨 만드는 물약의 재료예요.
+<ce>사람을 죽이는 독약이지요.
+<ce>절대로 %g2에게 주면 안 됩니다!
 <ce>제발 _item_을 내게 가져다주세요.
 <ce>그러지 않으면 내가 죽을지도 모릅니다!
-<ce>
 
 Message:  1060
-<ce>일단 받기는 하죠. 하지만 이러면
-<ce>깜짝 선물이 망가지는 것 아닙니까?
+<ce>일단 받기는 하죠.
+<ce>하지만 이러면 깜짝 선물이 망가지는 것 아닙니까?
 <ce>참 이상한 분이군요, %pcn.
 
 Message:  1061
 <ce>감사합니다. 이제 내 오빠는 이것을 쓰지 못할 겁니다.
 <ce>옳은 일을 하셨어요. 정말 감사합니다.
-<ce>
 
 -- Symbols used in the QRC file:
 --
---                %g occurs 7 times.
---               %g2 occurs 5 times.
---               %g3 occurs 3 times.
---              %pcn occurs 4 times.
+--                %g occurs 1 time.
+--               %g2 occurs 3 times.
+--               %g3 occurs 2 times.
+--              %pcn occurs 2 times.
 --              %qdt occurs 1 time.
 --        ___questg_ occurs 1 time.
---            _gold_ occurs 3 times.
---            _item_ occurs 18 times.
---        _merchant_ occurs 7 times.
+--            _gold_ occurs 2 times.
+--            _item_ occurs 14 times.
+--        _merchant_ occurs 5 times.
 --          _questg_ occurs 7 times.
---          _sister_ occurs 8 times.
+--          _sister_ occurs 7 times.
 --           _store_ occurs 3 times.
+
 QBN:
 Item _item_ large_plant
 Item _gold_ gold

@@ -10,122 +10,127 @@ Quest: O0B00Y11
 DisplayName: 골동품 상아
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
-<ce>%pcf, 간단한 놀이야.
-<ce>집 안에 가져와야 할 물건이 하나 있다. 해보겠나?
-<ce>
+<ce>%pcf, 간단한 일이야.
+<ce>집 안에 훔쳐 와야 할 물건이 하나 있어.
+<ce>맡겠나?
 
 RefuseQuest:  [1001]
-<ce>그런 태도라면 도둑 길드에서 크게 성공하겠군. 틀림없어.
-<ce>
+<ce>그런 태도라면 도둑 길드에서
+<ce>아주 크게 성공하겠군.
+<ce>틀림없어.
 
 AcceptQuest:  [1002]
-<ce>좋아, 그 기세야. 말했듯 복잡할 것은 없어.
-<ce>의뢰인이 지금 __target_의 _target_에
-<ce>있는 골동품 상아 조각을 원한다. 이틀 안에
-<ce>가져오면 사례금으로 _reward_골드를 주지.
-<ce>
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>좋아, 바로 그 기세야.
+<ce>말했듯 복잡한 일은 아니야.
+<ce>의뢰인이 현재 __target_의 _target_에 있는
+<ce>골동품 상아 조각 하나를 원하고 있어.
+<ce>이틀 안에 내게 가져오면
+<ce>사례금으로 _reward_골드를 주지.
 
 QuestFail:  [1003]
-<ce>_heist_은? 어디 있지?
+<ce>_heist_은?
+<ce>어디 있지?
 
 QuestComplete:  [1004]
 <ce>훌륭한 솜씨야, %pcf.
-<ce>소란도 뒤처리도 없이 내가 좋아하는 방식 그대로군.
-<ce>여기 _reward_골드다. 일을 잘 마친 것을 축하하지.
-<ce>
+<ce>소란도 없고 뒤처리할 일도 없이,
+<ce>내가 좋아하는 방식대로 끝났군.
+<ce>여기 _reward_골드다.
+<ce>일을 잘 마친 것을 축하하지.
 
 RumorsDuringQuest:  [1005]
-무슨 이유인지 _dummy_가 _target_에 경비를 잔뜩
-고용했어.
+무슨 이유인지 _dummy_가
+_target_에 경비를 잔뜩 고용했어.
 
 RumorsPostfailure:  [1006]
-_target_에서 벌어진 엉망진창 침입 사건 들었어?
+_target_에서 벌어진
+엉성한 침입 사건 이야기 들었어?
 
 RumorsPostsuccess:  [1007]
-<ce>누군가 _target_에 침입해 그 많은 경비의 코앞에서
-<ce>_dummy_의 귀중한 골동품 상아를 훔쳐 달아났대!
+<ce>누군가 _target_에 침입해
+<ce>그 많은 경비병의 코앞에서 _dummy_의
+<ce>귀중한 골동품 상아를 훔쳐 달아났대!
 
 QuestorPostsuccess:  [1008]
-무엇을 도와줄까, 나의 털이범 친구?
+무엇을 도와줄까,
+내 솜씨 좋은 털이범 친구?
 
 QuestorPostfailure:  [1009]
-그 간단한 절도를 엉망으로 만든 일은 도무지 잊히지 않는군.
+그 간단한 절도를 엉망으로 만든 일은
+도무지 잊히지 않는군.
 
 Message:  1011
-<ce>요즘 _target_에는 고용 경비가 들끓어. 이유는 모르겠군.
+<ce>요즘 _target_에는 고용된 경비병들이 들끓어.
+<ce>이유는 모르겠지만.
 
 Message:  1020
-%qdt: 이틀 안에 __target_의 _target_에서
-골동품 상아 조각을 훔쳐야 한다. __questgiver_의 _questgiver_에게
-전달하면 _reward_골드를 받는다.
+%qdt:
+이틀 안에 __target_에 있는 _target_에게서
+골동품 상아 조각을 훔쳐야 한다.
+
+그것을 __questgiver_의 _questgiver_에게 전달하면
+_reward_ 골드를 받을 수 있다.
 
 Message:  1021
-%qdt: 절도가 순조롭게 끝나지 않았다.
-_questgiver_는 상아를 가지고 마을을 떠나라고 했다.
-__safehouse_의 _safehouse_에서 만날 _contact_에게
-전달해야 한다.
+%qdt:
+절도가 순조롭게 끝나지 않았다.
+_questgiver_는 상아를 가지고
+마을을 떠나라고 했다.
+
+__safehouse_의 _safehouse_에서 기다리는
+_contact_에게 전달해야 한다.
 
 Message:  1040
-<ce>이것이 _questgiver_가 훔치라고
-<ce>보낸 상아 조각인 듯합니다.
+<ce>이것이 _questgiver_가 훔쳐 오라고 한
+<ce>상아 조각인 듯합니다.
 
 Message:  1050
-<ce>%pcf, 여기서 뭐 하는 거야?
-<ce>이렇게 간단한 일을 어떻게 망쳤는지 모르겠지만,
+<ce>%pcf, 여기서 뭘 하는 거야?
+<ce>이렇게 간단한 일을 어떻게 망쳤는지는 모르겠지만,
 <ce>너와 그 망할 상아가 당장 마을을 빠져나가지 않으면
-<ce>우리 모두 감옥에 가거나 더 나쁜 꼴을 당해.
-<ce>네 목숨은 알 바 아니지만 도둑 길드는 지켜야
-<ce>할 명성이 있고, 의뢰인에게 그 물건을 약속했어.
-<ce>__safehouse_로 가. 그곳 _safehouse_에서
-<ce>_contact_가 기다릴 거다. 다시는 망치지 마.
-<ce>
-<ce>
-<ce>
-<ce>
+<ce>우리 모두 감옥에 가거나 더 끔찍한 꼴을 당할 거야.
+<ce>네 목숨이야 알 바 아니지만,
+<ce>도둑 길드는 지켜야 할 명성이 있고
+<ce>의뢰인에게 그 물건을 넘기겠다고 약속했어.
+<ce>__safehouse_로 가.
+<ce>그곳 _safehouse_에서 _contact_가 기다릴 거다.
+<ce>다시는 망치지 마.
 
 Message:  1051
-<ce>이게 누구야, 서투른 털이범 %pcn
-<ce>아닌가? 그래도 물건은 가지고 왔군.
+<ce>이게 누구야,
+<ce>서투른 빈집털이범 %pcn 아닌가?
+<ce>그래도 물건은 무사히 가져왔군.
 <ce>머리는 없어도 힘은 있다는 뜻이겠지.
-<ce>설마 아직 돈을 받을 수 있다고 생각한 것은 아니겠지?
-<ce>
-<ce>
+<ce>설마 아직 보수를 받을 수 있다고
+<ce>생각한 것은 아니겠지?
 
 Message:  1052
-<ce>보기보다 영리하군. 우리가 너를
-<ce>__target_경비대에 넘기기 전에 꺼져라.
-<ce>
+<ce>보기보다는 영리하군.
+<ce>우리가 너를 __target_의 경비대에 넘기기로
+<ce>마음을 바꾸기 전에 어서 가라.
 
 Message:  1053
-<ce>그렇다면 네 시체에서 빼앗는 수밖에 없겠군.
-<ce>
+<ce>그렇다면 네 시체에서
+<ce>빼앗는 수밖에 없겠군.
 
 Message:  1060
 <ce>%oth, 제법 사나운 녀석이군, 그렇지?
-<ce>정말로 다치기 전에 여기서 꺼져라.
-<ce>
+<ce>정말 크게 다치기 전에 이곳에서 꺼져라.
 
 Message:  1061
 <ce>이 %ra 쓰레기가 =guard_를 죽였다!
 
 Message:  1062
-<ce>움직이지 마라. 그 자리에서 베어버리겠다!
-<ce>_target_에서 훔친 상아를 내놓으면 보내주지.
-<ce>
-<ce>
+<ce>움직이지 마라.
+<ce>그 자리에서 베어 버리겠다!
+<ce>_target_에게서 훔친 상아를 내놓으면
+<ce>살려 보내 주지.
 
 Message:  1063
-<ce>너 같은 살인자 쓰레기를 처리하는 방법은 잘 알지.
-<ce>=posse_, 이 %ra⁠의 목을 그을 때
-<ce>_dummy_의 상아에 피가 묻지 않게 조심해라.
-<ce>
-<ce>
+<ce>너 같은 살인자 쓰레기를 처리하는 법은 잘 알지.
+<ce>=posse_, 이 %ra의 목을 벨 때
+<ce>_dummy_의 상아에 피가 묻지 않도록 조심해라.
 
 -- Symbols used in the QRC file:
 --
@@ -133,19 +138,20 @@ Message:  1063
 --              %pcf occurs 3 times.
 --              %pcn occurs 1 time.
 --              %qdt occurs 2 times.
---               %ra occurs 5 times.
---           =guard_ occurs 2 times.
+--               %ra occurs 2 times.
+--           =guard_ occurs 1 time.
 --           =posse_ occurs 1 time.
 --     __questgiver_ occurs 1 time.
---      __safehouse_ occurs 3 times.
---         __target_ occurs 4 times.
+--      __safehouse_ occurs 2 times.
+--         __target_ occurs 3 times.
 --         _contact_ occurs 2 times.
 --           _dummy_ occurs 3 times.
---           _heist_ occurs 2 times.
+--           _heist_ occurs 1 time.
 --      _questgiver_ occurs 3 times.
---          _reward_ occurs 6 times.
+--          _reward_ occurs 3 times.
 --       _safehouse_ occurs 2 times.
 --          _target_ occurs 7 times.
+
 QBN:
 Item _heist_ ivory
 Item _reward_ gold

@@ -10,75 +10,90 @@ Quest: A0C00Y08
 DisplayName: 암살자
 -- Message panels
 QRC:
-
 QuestorOffer:  [1000]
 <ce>내 이름은 중요하지 않습니다.
-<ce>당신이 알아야 할 건 피를 조금 흘리는 일을
-<ce>두려워하지 않는 사람이 필요하다는 것뿐이죠.
+<ce>당신이 알아야 할 건
+<ce>피를 조금 흘리는 일을 두려워하지 않는
+<ce>사람이 필요하다는 것뿐이죠.
 <ce>보수는 _gold_ 골드입니다.
-<ce>관심 없다면 지금 말하십시오. 이 일을 맡겠습니까?
+<ce>관심 없다면 지금 말하십시오.
+<ce>이 일을 맡겠습니까?
 <--->
-<ce>쉿! 목소리를 낮추세요. 더 말하기 전에 묻겠습니다.
-<ce>골드를 받고 사람을 죽일 수 있는 %ra 입니까?
-<ce>_gold_ 골드라면요?
+<ce>쉿! 목소리를 낮추세요.
+<ce>더 말하기 전에 묻겠습니다.
+<ce>골드를 받고 사람을 죽일 수 있는
+<ce>%ra 입니까? _gold_ 골드라면요?
 <--->
-<ce>피를 보고도 기절하지 않을 사람을 찾고 있습니다.
-<ce>사람의 피 말입니다. _gold_
-<ce>골드에 사람 하나 죽일 수 있겠습니까?
+<ce>피를 보고도 기절하지 않을
+<ce>사람을 찾고 있습니다.
+<ce>사람의 피 말입니다.
+<ce>_gold_ 골드에 사람 하나
+<ce>죽일 수 있겠습니까?
 
 RefuseQuest:  [1001]
 <ce>당신은 나를 본 적이 없습니다.
 <--->
-<ce>꺼지세요. 우리가 함께 이야기하는 모습을
+<ce>꺼지세요.
+<ce>우리가 함께 이야기하는 모습을
 <ce>남에게 보이고 싶지 않습니다.
 <--->
 <ce>좋습니다. 마음대로 하세요.
 
 AcceptQuest:  [1002]
-<ce>_darkb_를 죽여주십시오. 문제는 다크
-<ce>브라더후드가 이 일을 맡지 않으려 한다는 겁니다.
-<ce>무슨 빚진 호의가 있다더군요. 그래서 독립적인
-<ce>암살자가 필요합니다. 일주일 안에 일을 끝내고
-<ce>돌아오면 _gold_ 골드를 드리겠습니다.
-<ce>_questgiver_를 찾으세요. 여기서 기다리겠습니다.
+<ce>_darkb_를 죽여주십시오.
+<ce>문제는 다크 브라더후드가 이 일을
+<ce>맡지 않으려 한다는 겁니다.
+<ce>무슨 빚진 호의가 있다더군요.
+<ce>그래서 독립적인 암살자가 필요합니다.
+<ce>일주일 안에 일을 끝내고 돌아오면
+<ce>_gold_ 골드를 드리겠습니다.
+<ce>_questgiver_를 찾으세요.
+<ce>여기서 기다리겠습니다.
 
 QuestComplete:  [1004]
-<ce>마침내 복수했군! 그런데 당장 마을을 떠나는 게
-<ce>좋을 겁니다. 브라더후드가 이 일을 알아챘다는
-<ce>소문이 있어요. 여기 보수요, %pcf.
+<ce>마침내 복수했군!
+<ce>그런데 당장 마을을 떠나는 게 좋을 겁니다.
+<ce>브라더후드가 이 일을 알아챘다는
+<ce>소문이 있어요.
+<ce>여기 보수요, %pcf.
 
 RumorsDuringQuest:  [1005]
-<ce>_questgiver_가 _darkb_를 몹시 증오한다더군.
+<ce>_questgiver_가 _darkb_를
+<ce>몹시 증오한다더군.
 <--->
-<ce>_darkb_는 다크 브라더후드와 연줄이 있다더군요.
+<ce>_darkb_는 다크 브라더후드와
+<ce>연줄이 있다더군요.
 
 RumorsPostsuccess:  [1007]
 <ce>누군가 _darkb_를 죽였대.
 <ce>그것도 대낮에 공개적으로!
 <--->
 <ce>살인 사건 소식 들었나요?
-<ce>_darkb_가
-<ce>암살자에게 살해됐대요.
+<ce>_darkb_가 암살자에게 살해됐대요.
 <--->
 <ce>난 원래 _darkb_를 좋아하지 않았어.
 <ce>누군가 마침내 %g2 를 처리했다니 다행이지.
 <ce>다크 브라더후드 소행이라는군.
 
 QuestorPostsuccess:  [1008]
-<ce>목소리를 낮추세요. _darkb_를 죽여준
-<ce>빚은 인정하지만, 사람들이 내가 그 일에
-<ce>관여했다고 생각하길 바라진 않습니다.
+<ce>목소리를 낮추세요.
+<ce>_darkb_를 죽여준 빚은 인정하지만,
+<ce>사람들이 내가 그 일에 관여했다고
+<ce>생각하길 바라진 않습니다.
 
 QuestorPostfailure:  [1009]
 <ce>일을 맡겼지만 해내지 못했군요.
 <ce>_darkb_만 죽이면 됐는데.
-<ce>이젠 너무 늦었고 다크 브라더후드가 나를
-<ce>쫓고 있습니다. 그냥 나를 내버려두세요.
+<ce>이젠 너무 늦었고,
+<ce>다크 브라더후드가 나를 쫓고 있습니다.
+<ce>그냥 나를 내버려두세요.
 
 QuestLogEntry:  [1010]
-%qdt: _darkb_ 암살 계약을 받아들였다.
-일주일 안에 일을 끝내고 ___questgiver_의 _questgiver_에게
-돌아가야 한다.
+%qdt:
+_darkb_를 죽이는 계약을 맡았다.
+
+일주일 안에 일을 끝내고
+___questgiver_의 _questgiver_에게 돌아가야 한다.
 
 Message:  1015
 <ce>_darkb_는 죽지 않았잖아!
@@ -88,24 +103,31 @@ Message:  1021
 <ce>도와줘! 살인자다! 도와줘!
 
 Message:  1022
-<ce>비겁한 놈! 이게 무슨 암살이냐? 무기를 들어라! 무기를!
+<ce>비겁한 놈!
+<ce>이게 무슨 암살이냐?
+<ce>무기를 들어라! 무기를!
 
 Message:  1023
 <ce>맞았다! %oth.
 
 Message:  1024
-<ce>비겁한 놈! 아무 이유도, 도발도 없이 나를 공격하다니.
+<ce>비겁한 놈!
+<ce>아무 이유도, 도발도 없이
+<ce>나를 공격하다니.
 
 Message:  1030
-<ce>_questgiver_? %g2 에 관해서는 별로 아는 게 없습니다.
+<ce>_questgiver_?
+<ce>%g2 에 관해서는 별로 아는 게 없습니다.
 <ce>늘 %g2self 일에만 신경 쓰더군요.
 
 Message:  1031
-<ce>_questgiver_에게 수상한 친구들이 많다는 소문은
-<ce>들었습니다. 하지만 내게 들었다고 하진 마세요.
+<ce>_questgiver_에게 수상한 친구들이
+<ce>많다는 소문은 들었습니다.
+<ce>하지만 내게 들었다고 하진 마세요.
 
 Message:  1032
-<ce>훌륭하고 반듯한 시민이지요. 누구에게 물어봐도 그럴 겁니다.
+<ce>훌륭하고 반듯한 시민이지요.
+<ce>누구에게 물어봐도 그럴 겁니다.
 
 Message:  1033
 <ce>_darkb_는 보통 _place_에 있지만,
@@ -114,18 +136,19 @@ Message:  1033
 
 -- Symbols used in the QRC file:
 --
---               %g2 occurs 4 times.
---           %g2self occurs 2 times.
+--               %g2 occurs 2 times.
+--           %g2self occurs 1 time.
 --               %g3 occurs 1 time.
---              %oth occurs 2 times.
---              %pcf occurs 4 times.
+--              %oth occurs 1 time.
+--              %pcf occurs 2 times.
 --              %qdt occurs 1 time.
 --               %ra occurs 1 time.
---    ___questgiver_ occurs 2 times.
---           _darkb_ occurs 15 times.
---            _gold_ occurs 9 times.
+--    ___questgiver_ occurs 1 time.
+--           _darkb_ occurs 11 times.
+--            _gold_ occurs 4 times.
 --           _place_ occurs 1 time.
---      _questgiver_ occurs 8 times.
+--      _questgiver_ occurs 5 times.
+
 QBN:
 Item _gold_ gold
 
