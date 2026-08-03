@@ -23,6 +23,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          rm -rf /tmp/release-inspect
+          mkdir -p /tmp/release-inspect
+          gh release download v1.1.1-ko-r2 \
+            --repo "$GITHUB_REPOSITORY" \
+            --pattern 'Daggerfall_Unity_kr_v1.1.1-ko-r2.zip' \
+            --dir /tmp/release-inspect
           {
             echo '=== repository ==='
             echo "main_sha=$(git rev-parse origin/main)"
@@ -30,17 +36,13 @@ jobs:
             echo '=== releases ==='
             gh release list --repo "$GITHUB_REPOSITORY" --limit 30 || true
             echo
-            echo '=== release details ==='
-            while IFS=$'\t' read -r title type tag published; do
-              [ -n "$tag" ] || continue
-              echo "--- $tag ---"
-              gh release view "$tag" --repo "$GITHUB_REPOSITORY" --json tagName,name,isDraft,isPrerelease,publishedAt,assets --jq '{tagName,name,isDraft,isPrerelease,publishedAt,assets:[.assets[]|{name,size,digest,downloadCount}]}' || true
-            done < <(gh release list --repo "$GITHUB_REPOSITORY" --limit 10)
+            echo '=== latest release ==='
+            gh release view v1.1.1-ko-r2 --repo "$GITHUB_REPOSITORY" --json tagName,name,isDraft,isPrerelease,publishedAt,body,assets
             echo
             echo '=== tags ==='
             git tag --sort=-creatordate | head -30
             echo
-            echo '=== package folders ==='
+            echo '=== current package folders ==='
             for d in BIOGs fonts movies text textures 0; do
               if [ -d "$d" ]; then
                 printf '%s\tfiles=%s\tbytes=%s\n' "$d" "$(find "$d" -type f | wc -l)" "$(du -sb "$d" | cut -f1)"
@@ -48,12 +50,15 @@ jobs:
                 echo "$d MISSING"
               fi
             done
+            echo
+            echo '=== r2 zip listing ==='
+            unzip -l /tmp/release-inspect/Daggerfall_Unity_kr_v1.1.1-ko-r2.zip
           } > tools/_temp_release_report.txt
 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add tools/_temp_release_report.txt
           if ! git diff --cached --quiet; then
-            git commit -m '임시 릴리즈 규칙 조사 결과'
+            git commit -m '임시 기존 배포 ZIP 구조 조사'
             git push origin HEAD:agent/release-inspect-20260803
           fi
