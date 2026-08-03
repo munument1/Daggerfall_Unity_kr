@@ -1,0 +1,26 @@
+=== repository ===
+main_sha=9677696c80c66015b1e3331e4d6fe8e3034512b5
+
+=== releases ===
+Daggerfall Unity 1.1.1 한국어 패치 — 표시 재조판 교정판 r2	Latest	v1.1.1-ko-r2	2026-08-01T11:08:46Z
+Daggerfall Unity 1.1.1 한국어 패치 — 전체 재번역판 r1		v1.1.1-ko-r1	2026-08-01T04:29:03Z
+1.1.1 번역		엘더스크롤2_번역	2026-07-15T16:33:36Z
+
+=== release details ===
+--- v1.1.1-ko-r2 ---
+{"assets":[{"digest":"sha256:bc43603ad09706437282cb83d6d8c45e5033b69f071c67ca0953f98fe0d01dd7","downloadCount":22,"name":"Daggerfall_Unity_kr_v1.1.1-ko-r2.zip","size":60247617},{"digest":"sha256:58766bc169e9b786b71e1b1703fa154dcd0357c769200a54ab6575481d3f173b","downloadCount":5,"name":"Daggerfall_Unity_kr_v1.1.1-ko-r2_validation.zip","size":6314},{"digest":"sha256:b5a75b5fda406761acbdcadeed1bd2301910b896c0b213d1159853e9de8ed500","downloadCount":1,"name":"SHA256SUMS.txt","size":217}],"isDraft":false,"isPrerelease":false,"name":"Daggerfall Unity 1.1.1 한국어 패치 — 표시 재조판 교정판 r2","publishedAt":"2026-08-01T11:08:46Z","tagName":"v1.1.1-ko-r2"}
+--- 2026-08-01T04:29:03Z ---
+--- 2026-07-15T16:33:36Z ---
+
+=== tags ===
+v1.1.1-ko-r2
+v1.1.1-ko-r1
+엘더스크롤2_번역
+
+=== package folders ===
+BIOGs	files=19	bytes=59520
+fonts	files=7	bytes=30362361
+movies MISSING
+text	files=654	bytes=5977191
+textures MISSING
+0	files=16	bytes=48945024
